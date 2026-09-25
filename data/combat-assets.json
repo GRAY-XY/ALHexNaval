@@ -1,0 +1,152 @@
+[
+  {
+    "id": "shell",
+    "sourceId": "item__bullet1",
+    "name": "bullet1",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\炮弹\\item__bullet1\\kuasheAP_6710576878922775893.png",
+    "path": "assets/combat/shell.png",
+    "width": 117,
+    "height": 40,
+    "sha256": "2f166126a6d90e8b428ee0ff791a05fe983d88a9649eec6dc55114a7466f1639"
+  },
+  {
+    "id": "torpedo",
+    "sourceId": "item__torpedo01",
+    "name": "torpedo01",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\鱼雷\\item__torpedo01\\Torpedo01_4188893520601756502.png",
+    "path": "assets/combat/torpedo.png",
+    "width": 88,
+    "height": 34,
+    "sha256": "3db8e50326461cdc3053613759d100beeecbd971dc2d6084f0046b4a30e81aa9"
+  },
+  {
+    "id": "bomb",
+    "sourceId": "item__bomberbombwhite",
+    "name": "bomberbombwhite",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\鱼雷\\item__bomberbombwhite\\BomberbombWhite_-2741793674129254635.png",
+    "path": "assets/combat/bomb.png",
+    "width": 128,
+    "height": 70,
+    "sha256": "2ececed9ee6a968b5dfc09ebba539abd77ccf26fdf2ec46e158b3dd3e45be7a0"
+  },
+  {
+    "id": "us-fighter",
+    "sourceId": "chargo__f4f",
+    "name": "F4F野猫",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__f4f\\F4F_-849259398318155649.png",
+    "path": "assets/combat/us-fighter.png",
+    "width": 248,
+    "height": 235,
+    "sha256": "1182d4eb5abb469b9bd91d31426ef1120b012b1aeab8f54f4d2e6fca588f23ea"
+  },
+  {
+    "id": "us-bomber",
+    "sourceId": "chargo__sbdwuwei",
+    "name": "默认白鹰轰炸机",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__sbdwuwei\\SBD_238669907265134893.png",
+    "path": "assets/combat/us-bomber.png",
+    "width": 244,
+    "height": 228,
+    "sha256": "6a7264e17d9ad8a9c9003c11c8fcf73a0062bb387aac4307bfa11fa744a99327"
+  },
+  {
+    "id": "us-torpedo",
+    "sourceId": "chargo__tbd",
+    "name": "默认白鹰鱼雷机",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__tbd\\tbd_6797871824073537158.png",
+    "path": "assets/combat/us-torpedo.png",
+    "width": 253,
+    "height": 239,
+    "sha256": "96db54bb1f588922355169b4cf61c72373d830dc4768458799cb516d70cc0b9b"
+  },
+  {
+    "id": "uk-fighter",
+    "sourceId": "chargo__haipenhuo",
+    "name": "默认皇家战斗机",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__haipenhuo\\haipenhuo_1412194614680112174.png",
+    "path": "assets/combat/uk-fighter.png",
+    "width": 250,
+    "height": 237,
+    "sha256": "19141de59b92334cb133f5e43b7e13332357ced13250900e1c5d3b5542ccac3b"
+  },
+  {
+    "id": "uk-bomber",
+    "sourceId": "chargo__haiyan",
+    "name": "海燕",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__haiyan\\haiyan_5664999668619054010.png",
+    "path": "assets/combat/uk-bomber.png",
+    "width": 254,
+    "height": 235,
+    "sha256": "c52510d0ee08832aca73fd4ebc63bd91d5114b9a503ae14414d1e49fcc09a9c0"
+  },
+  {
+    "id": "uk-torpedo",
+    "sourceId": "chargo__jianyu",
+    "name": "默认皇家鱼雷机",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__jianyu\\jianyu_268136160969535213.png",
+    "path": "assets/combat/uk-torpedo.png",
+    "width": 256,
+    "height": 241,
+    "sha256": "b9eaad0847c30374c596613ca02ff175d7b7dd073b7f42279e165f496c9529e0"
+  },
+  {
+    "id": "jp-fighter",
+    "sourceId": "chargo__lingzhan21",
+    "name": "零战二一型",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__lingzhan21\\lingzhan21_-3048243259104240110.png",
+    "path": "assets/combat/jp-fighter.png",
+    "width": 224,
+    "height": 227,
+    "sha256": "1872ad7d5ae1c5b7436d31759fe6b2004482705cb4e30c008f8ce4524146f01d"
+  },
+  {
+    "id": "jp-bomber",
+    "sourceId": "chargo__99shijianbao1",
+    "name": "默认重樱轰炸机",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__99shijianbao1\\99shijianbao1_1211452928793697292.png",
+    "path": "assets/combat/jp-bomber.png",
+    "width": 254,
+    "height": 242,
+    "sha256": "31e454bcdb3e389a410829254c4113430cae96c5e2c80ed60c09d599787eb71a"
+  },
+  {
+    "id": "jp-torpedo",
+    "sourceId": "chargo__97jiangong",
+    "name": "默认重樱鱼雷机",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__97jiangong\\97jiangong_-8652586360511419369.png",
+    "path": "assets/combat/jp-torpedo.png",
+    "width": 255,
+    "height": 236,
+    "sha256": "6a1f6ae262db078e31bd83d797b1116a9649463e35d09acdbf2eb15e50710799"
+  },
+  {
+    "id": "de-fighter",
+    "sourceId": "chargo__bf109t",
+    "name": "BF-109T舰载战斗机T1",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__bf109t\\BF109T_-2456814318407773006.png",
+    "path": "assets/combat/de-fighter.png",
+    "width": 251,
+    "height": 240,
+    "sha256": "48cee10f7beaa9fae85abe28289924c9f5cbb6ce0ae4b1b9120b501910acd9cc"
+  },
+  {
+    "id": "de-bomber",
+    "sourceId": "chargo__ju87c",
+    "name": "Ju-87C俯冲轰炸机T1",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__ju87c\\JU87C_-1175850130464108421.png",
+    "path": "assets/combat/de-bomber.png",
+    "width": 243,
+    "height": 235,
+    "sha256": "9e6b2841266d26c5276b0fc2c2a5468f11d9115c0baca998b2b851870f85d2db"
+  },
+  {
+    "id": "de-torpedo",
+    "sourceId": "chargo__ju87d4",
+    "name": "Ju-87 D-4",
+    "source": "D:\\ALHexNaval\\ALChibiAssets\\battle-assets\\飞机\\chargo__ju87d4\\Ju87D4_-7939359047166642712.png",
+    "path": "assets/combat/de-torpedo.png",
+    "width": 247,
+    "height": 244,
+    "sha256": "bd30b0757da90185c1dd88996272ed8e8362cbc54ba3e84c6996a2738ad459ba"
+  }
+]

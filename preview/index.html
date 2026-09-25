@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AL六角海战 · 首批舰船素材</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/pixi.min.js"></script>
+  <script defer src="vendor/pixi-spine.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <div><span class="eyebrow">AL HEX NAVAL · ASSET COLLECTION 01</span><h1>第一批舰船，整装待发。</h1><p>12 艘代表舰船 · 默认皮肤 · 独立骨骼素材</p></div>
+    <a href="../素材清单.csv" download>下载素材清单 ↗</a>
+  </header>
+  <main>
+    <div class="toolbar"><span id="summary">正在读取舰船资料…</span><button id="verify" disabled>检查全部动画</button></div>
+    <p id="verification-status" role="status">点击舰船，查看待机、移动、攻击与技能动作。</p>
+    <section id="grid" class="grid" aria-label="首批舰船素材"></section>
+    <div class="footer">素材准备阶段 · 舰船阵营为原始身份，实际对局势力另行分配</div>
+  </main>
+  <dialog id="detail">
+    <div class="dialog-head"><div><span id="ship-type" class="eyebrow"></span><h2 id="ship-name"></h2></div><button id="close" aria-label="关闭预览">关闭 ×</button></div>
+    <div class="dialog-body"><div id="stage" class="stage"><span id="player-status" role="status">正在加载动画…</span></div>
+      <div class="controls"><p id="identity"></p><label>动作<select id="animation" disabled></select></label><div class="row"><button id="pause" disabled>暂停</button><button id="reset" disabled>重置视图</button></div><label>播放速度<select id="speed"><option value="0.5">0.5 倍</option><option value="1" selected>1 倍</option><option value="2">2 倍</option></select></label><label>缩放<input id="zoom" type="range" min="30" max="200" value="100"></label><p id="action-info"></p><p class="hint">受击效果由后续游戏的闪白与震动表现；原素材没有独立受击动作。</p><a id="asset-folder" target="_blank" rel="noopener">查看独立素材目录 ↗</a></div>
+    </div>
+  </dialog>
+</body>
+</html>

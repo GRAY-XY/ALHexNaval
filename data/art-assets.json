@@ -1,0 +1,58 @@
+{
+  "version": 4,
+  "generatedAt": "2026-09-19",
+  "style": "B watercolor maritime atlas",
+  "generator": "OpenAI built-in image generation",
+  "directionalManifest": "data/directional-art.json",
+  "landDetailManifest": "data/land-detail-art.json",
+  "assets": [
+    {
+      "path": "assets/terrain/watercolor-ocean.png",
+      "sha256": "c84c32504abfb037f003a1257df6a5b269e21a3a0851ee90640c07a127206e9c",
+      "purpose": "Watercolor ocean wash applied to deep sea, sea, and shallow-water hexes",
+      "promptSummary": "Seamless top-down turquoise watercolor ocean wash on cold-press paper; no objects, coast, grid, text, or watermark"
+    },
+    {
+      "path": "assets/terrain/watercolor-land.png",
+      "sha256": "ef6a063a03804c8126a26dd278896eec0a3569cbcbb357dbcbabd9629d7ddd36",
+      "purpose": "Watercolor ground wash applied to island hexes",
+      "promptSummary": "Seamless top-down sage and olive watercolor island ground on cold-press paper; no objects, coast, grid, text, or watermark"
+    },
+    {
+      "path": "assets/terrain/watercolor-mountain-range.png",
+      "sha256": "62b26d17a4b42e8bff638785a92f53d577d11398606c9a162077386298cdbdb7",
+      "purpose": "Legacy single-angle mountain retained for rollback; superseded by six directional variants",
+      "promptSummary": "Transparent top-down oblique watercolor mountain range with five to seven connected granite peaks, blue-grey shadow, ivory snow and dark pines; no grid, coast, text, or watermark"
+    },
+    {
+      "path": "assets/terrain/watercolor-harbor.png",
+      "sha256": "b99a3219cdd5ecd889ec514b72c42b8c1e9ba5fd238aad235afcc4768e5d0915",
+      "purpose": "Legacy single-angle harbor retained for rollback; superseded by six directional variants",
+      "promptSummary": "Transparent watercolor coastal harbor with white-stone town, red roofs, lighthouse, long pier, crates, bollards and crane; no water, coast, grid, text, or icon"
+    },
+    {
+      "path": "assets/terrain/source-sheets/watercolor-harbor-six-source.png",
+      "sha256": "09357e888be74ed6cccaa6526c4dbed3bfde1189780f96c6f6a18afbfb303baf",
+      "purpose": "Six separately painted fixed-camera harbor directions; sliced into the runtime variants recorded by the directional manifest",
+      "promptSummary": "Same oblique watercolor harbor with upright buildings and six separately painted pier directions"
+    },
+    {
+      "path": "assets/terrain/source-sheets/watercolor-mountain-six-source.png",
+      "sha256": "968b4e886244f89d55752cea5110f0b9a8a0c763a62ee053fe008f8d96c0681c",
+      "purpose": "Six separately painted fixed-camera multi-hex ridge directions; sliced into the runtime variants recorded by the directional manifest",
+      "promptSummary": "Connected watercolor mountain range with fixed lighting and six separately painted ridge directions"
+    },
+    {
+      "path": "assets/terrain/source-sheets/watercolor-coast-six-source.png",
+      "sha256": "c34eff9f432809e712aab22a37381463e3cef02f5b1ce96c9829f6a1157a9dbf",
+      "purpose": "Six separately painted shoreline-edge directions with sand, surf, turquoise shallows and rocks",
+      "promptSummary": "Transparent watercolor shoreline overlays for all six hex directions, each painted independently instead of rotated"
+    },
+    {
+      "path": "assets/terrain/source-sheets/watercolor-land-decoration-six-source.png",
+      "sha256": "4b56e79ce2f71f9bfc1bb109ff802c31aa8f684a59e8c96e43213d92ea8ae5c3",
+      "purpose": "Six transparent watercolor land-detail clusters, sliced into runtime forest, rock, meadow and trail sprites",
+      "promptSummary": "Reference-matched watercolor terrain atlas containing dense forest, sparse grove, rocky grassland, meadow trail, forest boulders and woodland thicket"
+    }
+  ]
+}

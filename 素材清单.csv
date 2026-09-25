@@ -1,0 +1,13 @@
+﻿ID,舰船,阵营,舰种,皮肤,Spine版本,动作数,素材目录
+lafei,拉菲,白鹰,驱逐舰,拉菲,3.8.99,20,assets/ships/lafei/default
+biaoqiang,标枪,皇家,驱逐舰,标枪,3.8.99,20,assets/ships/biaoqiang/default
+lingbo,绫波,重樱,驱逐舰,绫波,3.8.99,20,assets/ships/lingbo/default
+z23,Z23,铁血,驱逐舰,Z23,3.8.99,20,assets/ships/z23/default
+hailunna,海伦娜,白鹰,轻巡洋舰,海伦娜,3.8.99,20,assets/ships/hailunna/default
+beierfasite,贝尔法斯特,皇家,轻巡洋舰,贝尔法斯特,3.8.99,20,assets/ships/beierfasite/default
+gaoxiong,高雄,重樱,重巡洋舰,高雄,3.8.99,21,assets/ships/gaoxiong/default
+ougen,欧根亲王,铁血,重巡洋舰,欧根亲王,3.8.99,20,assets/ships/ougen/default
+yanzhan,厌战,皇家,战列舰,厌战,3.8.99,22,assets/ships/yanzhan/default
+bisimai,俾斯麦,铁血,战列舰,俾斯麦,3.8.99,22,assets/ships/bisimai/default
+qiye,企业,白鹰,航空母舰,企业,3.8.99,20,assets/ships/qiye/default
+dujiaoshou,独角兽,皇家,轻型航空母舰,独角兽,3.8.99,20,assets/ships/dujiaoshou/default
