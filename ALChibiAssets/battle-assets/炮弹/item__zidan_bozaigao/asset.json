@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_bozaigao",
+  "model": "zidan_bozaigao",
+  "name": "钵仔糕子弹",
+  "names": [
+    "钵仔糕子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bozaigao",
+  "path": "battle-assets/炮弹/item__zidan_bozaigao",
+  "images": [
+    {
+      "file": "baozaigao01_-7196511679350893057.png",
+      "name": "baozaigao01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7196511679350893057,
+      "source": "CAB-3ff652a8b0a37a3a770f1f25b83b0bcf"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3360005,
+    3360006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bozaigao/baozaigao01_-7196511679350893057.png"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "item__chuifadaodan",
+  "model": "chuifadaodan",
+  "name": "chuifadaodan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/chuifadaodan",
+  "path": "battle-assets/炮弹/item__chuifadaodan",
+  "images": [
+    {
+      "file": "daodan_01_-3716897591293255919.png",
+      "name": "daodan_01",
+      "width": 233,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -3716897591293255919,
+      "source": "CAB-ab4c88d749b473895ad83c1afccdde3a"
+    }
+  ],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    20114000,
+    20116100,
+    20116101,
+    20117100,
+    3022334,
+    3040004,
+    3114009,
+    3114010,
+    3114011,
+    3114012,
+    3114013,
+    3114014,
+    3114015,
+    3114016,
+    3114017,
+    3114018,
+    3119029,
+    3180215,
+    3185017,
+    3347013,
+    9999995
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__chuifadaodan/daodan_01_-3716897591293255919.png"
+}

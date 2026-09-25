@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_reno",
+  "model": "zidan_reno",
+  "name": "zidan_reno",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_reno",
+  "path": "battle-assets/炮弹/item__zidan_reno",
+  "images": [
+    {
+      "file": "newbullet2blue_-253248460710273840.png",
+      "name": "newbullet2blue",
+      "width": 94,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -253248460710273840,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    167258,
+    167259
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_reno/newbullet2blue_-253248460710273840.png"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_pailidexiangzhi",
+  "model": "zidan_pailidexiangzhi",
+  "name": "迷你相纸子弹",
+  "names": [
+    "迷你相纸子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_pailidexiangzhi",
+  "path": "battle-assets/炮弹/bulletall__zidan_pailidexiangzhi",
+  "images": [
+    {
+      "file": "zidan_pailidexiangzhi_1774672306399794471.png",
+      "name": "zidan_pailidexiangzhi",
+      "width": 128,
+      "height": 57,
+      "role": "原始精灵",
+      "path_id": 1774672306399794471,
+      "source": "CAB-6ad8755971ddb432e4a45f896d322709"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_shaonv",
+  "model": "feiji_shaonv",
+  "name": "乡间少女啾（鱼雷）",
+  "names": [
+    "乡间少女啾（鱼雷）",
+    "乡间少女啾（战斗）",
+    "乡间少女啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_shaonv",
+  "path": "battle-assets/飞机/chargo__feiji_shaonv",
+  "images": [
+    {
+      "file": "feiji_shaonv_-56187307918683410.png",
+      "name": "feiji_shaonv",
+      "width": 256,
+      "height": 197,
+      "role": "战斗贴图",
+      "path_id": -56187307918683410,
+      "source": "CAB-c2a3079886314002f168cc5ebf83e269"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_shaonv/feiji_shaonv_-56187307918683410.png"
+}

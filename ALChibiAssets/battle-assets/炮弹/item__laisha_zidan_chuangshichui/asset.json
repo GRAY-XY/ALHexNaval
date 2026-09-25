@@ -1,0 +1,28 @@
+{
+  "id": "item__laisha_zidan_chuangshichui",
+  "model": "laisha_zidan_chuangshichui",
+  "name": "laisha_zidan_chuangshichui",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_zidan_chuangshichui",
+  "path": "battle-assets/炮弹/item__laisha_zidan_chuangshichui",
+  "images": [
+    {
+      "file": "chuizi_602960887235588879.png",
+      "name": "chuizi",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 602960887235588879,
+      "source": "CAB-0efc4aee24bdd6c3c1675b81afdd21e8"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19495
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laisha_zidan_chuangshichui/chuizi_602960887235588879.png"
+}

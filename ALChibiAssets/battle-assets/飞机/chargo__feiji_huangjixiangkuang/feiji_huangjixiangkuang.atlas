@@ -1,0 +1,41 @@
+
+feiji_huangjixiangkuang.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huakuang
+  rotate: false
+  xy: 2, 2
+  size: 333, 326
+  orig: 333, 326
+  offset: 0, 0
+  index: -1
+jiujiu
+  rotate: false
+  xy: 182, 330
+  size: 154, 147
+  orig: 154, 147
+  offset: 0, 0
+  index: -1
+xx_b
+  rotate: true
+  xy: 2, 420
+  size: 57, 58
+  orig: 57, 58
+  offset: 0, 0
+  index: -1
+xx_b_2
+  rotate: true
+  xy: 62, 420
+  size: 57, 58
+  orig: 57, 58
+  offset: 0, 0
+  index: -1
+xx_b_3
+  rotate: true
+  xy: 122, 420
+  size: 57, 58
+  orig: 57, 58
+  offset: 0, 0
+  index: -1

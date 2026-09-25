@@ -1,0 +1,37 @@
+{
+  "id": "item__paodan_aqua",
+  "model": "paodan_aqua",
+  "name": "AQUA！！！！！",
+  "names": [
+    "AQUA！！！！！"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_aqua",
+  "path": "battle-assets/炮弹/item__paodan_aqua",
+  "images": [
+    {
+      "file": "paodan_aqua_2_3054710003355089153.png",
+      "name": "paodan_aqua_2",
+      "width": 31,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 3054710003355089153,
+      "source": "CAB-44368bd44a9f123ce9ffaea69e2c5b08"
+    },
+    {
+      "file": "paodan_aqua_1_-3714699243604471238.png",
+      "name": "paodan_aqua_1",
+      "width": 128,
+      "height": 143,
+      "role": "战斗贴图",
+      "path_id": -3714699243604471238,
+      "source": "CAB-44368bd44a9f123ce9ffaea69e2c5b08"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_aqua/paodan_aqua_2_3054710003355089153.png"
+}

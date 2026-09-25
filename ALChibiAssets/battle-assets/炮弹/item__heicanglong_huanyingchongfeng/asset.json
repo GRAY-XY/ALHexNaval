@@ -1,0 +1,17 @@
+{
+  "id": "item__heicanglong_huanyingchongfeng",
+  "model": "heicanglong_huanyingchongfeng",
+  "name": "heicanglong_huanyingchongfeng",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heicanglong_huanyingchongfeng",
+  "path": "battle-assets/炮弹/item__heicanglong_huanyingchongfeng",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29645090
+  ],
+  "has_preview": false,
+  "prefab": true
+}

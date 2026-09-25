@@ -1,0 +1,22 @@
+{
+  "id": "artresource__item__bulletall__zhaomingdan__animation__zhaomingdan__zhaomingdan_2",
+  "model": "zhaomingdan_2",
+  "name": "zhaomingdan_2",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zhaomingdan/animation/zhaomingdan/zhaomingdan_2",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zhaomingdan__animation__zhaomingdan__zhaomingdan_2",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [
+    "zhaomingdan_2"
+  ],
+  "bullet_ids": [
+    104,
+    904,
+    2061,
+    19145
+  ],
+  "has_preview": false,
+  "prefab": false
+}

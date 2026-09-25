@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__zhongcai_plane2",
+  "model": "zhongcai_plane2",
+  "name": "【大世界】仲裁机关_塞壬鱼雷机lv1",
+  "names": [
+    "【大世界】仲裁机关_塞壬鱼雷机lv1",
+    "【大世界】仲裁机关_塞壬鱼雷机lv2",
+    "【大世界】仲裁机关_塞壬鱼雷机lv3"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/zhongcai_plane2",
+  "path": "battle-assets/飞机图标/aircrafticon__zhongcai_plane2",
+  "images": [
+    {
+      "file": "zhongcai_plane2_-2764518851326940852.png",
+      "name": "zhongcai_plane2",
+      "width": 44,
+      "height": 37,
+      "role": "原始精灵",
+      "path_id": -2764518851326940852,
+      "source": "CAB-c7a9f1aae87d5eca38bc3d6d01dfc427"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

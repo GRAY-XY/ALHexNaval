@@ -1,0 +1,55 @@
+
+jiaotang_white_quzhu.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4
+  rotate: true
+  xy: 2, 2
+  size: 78, 52
+  orig: 78, 52
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 252
+  size: 376, 205
+  orig: 376, 205
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: true
+  xy: 56, 4
+  size: 76, 56
+  orig: 76, 56
+  offset: 0, 0
+  index: -1
+guanhuan
+  rotate: false
+  xy: 114, 16
+  size: 244, 64
+  orig: 244, 64
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: true
+  xy: 380, 105
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: false
+  xy: 2, 167
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: false
+  xy: 2, 82
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1

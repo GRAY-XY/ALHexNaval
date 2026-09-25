@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_maikefeng",
+  "model": "zidan_maikefeng",
+  "name": "金话筒子弹",
+  "names": [
+    "金话筒子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_maikefeng",
+  "path": "battle-assets/炮弹/item__zidan_maikefeng",
+  "images": [
+    {
+      "file": "zidan_maikefeng_7049446787430937918.png",
+      "name": "zidan_maikefeng",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": 7049446787430937918,
+      "source": "CAB-70cf8102b0c5018e44a3d27f5c73af9d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_maikefeng/zidan_maikefeng_7049446787430937918.png"
+}

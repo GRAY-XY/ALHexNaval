@@ -1,0 +1,45 @@
+{
+  "id": "item__heiqiyebomb",
+  "model": "heiqiyebomb",
+  "name": "heiqiyebomb",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/heiqiyebomb",
+  "path": "battle-assets/鱼雷/item__heiqiyebomb",
+  "images": [
+    {
+      "file": "Bomberbomb2000lb_heiqiye_-5093661838899981204.png",
+      "name": "Bomberbomb2000lb_heiqiye",
+      "width": 169,
+      "height": 110,
+      "role": "战斗贴图",
+      "path_id": -5093661838899981204,
+      "source": "CAB-eda541250dd7d655987d503ff815323b"
+    },
+    {
+      "file": "Bomberbomb2000lb_-6698023320320725254.png",
+      "name": "Bomberbomb2000lb",
+      "width": 126,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": -6698023320320725254,
+      "source": "CAB-563a32b473eb0f8a893fa65823ef5b33"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    620002,
+    620003,
+    620004,
+    620005,
+    892725,
+    3065035,
+    3240106,
+    3246053,
+    3207011
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__heiqiyebomb/Bomberbomb2000lb_heiqiye_-5093661838899981204.png"
+}

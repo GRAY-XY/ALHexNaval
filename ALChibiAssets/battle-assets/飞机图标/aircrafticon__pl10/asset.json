@@ -1,0 +1,25 @@
+{
+  "id": "aircrafticon__pl10",
+  "model": "pl10",
+  "name": "pl10",
+  "names": [],
+  "category": "飞机图标",
+  "source": "aircrafticon/pl10",
+  "path": "battle-assets/飞机图标/aircrafticon__pl10",
+  "images": [
+    {
+      "file": "PL10_-689372903490548533.png",
+      "name": "PL10",
+      "width": 44,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -689372903490548533,
+      "source": "CAB-a985cf507763d9bec4e4edb392367d97"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

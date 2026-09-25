@@ -1,0 +1,32 @@
+{
+  "id": "item__heiwuzidan",
+  "model": "heiwuzidan",
+  "name": "heiwuzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heiwuzidan",
+  "path": "battle-assets/炮弹/item__heiwuzidan",
+  "images": [
+    {
+      "file": "heiwuzidan_01_-7161949170032645599.png",
+      "name": "heiwuzidan_01",
+      "width": 193,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": -7161949170032645599,
+      "source": "CAB-5b5efa633e6230d315bc724c0d2a8b2c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    690115,
+    750097,
+    20401800,
+    3059417,
+    3059418
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heiwuzidan/heiwuzidan_01_-7161949170032645599.png"
+}

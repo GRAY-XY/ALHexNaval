@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_fensexingxing",
+  "model": "zidan_fensexingxing",
+  "name": "zidan_fensexingxing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_fensexingxing",
+  "path": "battle-assets/炮弹/item__zidan_fensexingxing",
+  "images": [
+    {
+      "file": "AL_Star03_-5675545304793802594.png",
+      "name": "AL_Star03",
+      "width": 100,
+      "height": 100,
+      "role": "战斗贴图",
+      "path_id": -5675545304793802594,
+      "source": "CAB-9ac42ec5a5ec0e3ba59242f73e32b2b1"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19686
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fensexingxing/AL_Star03_-5675545304793802594.png"
+}

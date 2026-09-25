@@ -1,0 +1,90 @@
+
+chongying_m_qingxun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 374, 243
+  size: 267, 149
+  orig: 267, 149
+  offset: 0, 0
+  index: -1
+houzu
+  rotate: true
+  xy: 525, 294
+  size: 78, 74
+  orig: 78, 74
+  offset: 0, 0
+  index: -1
+houzu2
+  rotate: false
+  xy: 490, 98
+  size: 140, 143
+  orig: 140, 143
+  offset: 0, 0
+  index: -1
+huo
+  rotate: true
+  xy: 2, 5
+  size: 505, 258
+  orig: 505, 258
+  offset: 0, 0
+  index: -1
+qianzu
+  rotate: true
+  xy: 612, 15
+  size: 81, 50
+  orig: 81, 50
+  offset: 0, 0
+  index: -1
+qianzu2
+  rotate: true
+  xy: 490, 5
+  size: 91, 120
+  orig: 91, 120
+  offset: 0, 0
+  index: -1
+shetou
+  rotate: false
+  xy: 419, 12
+  size: 45, 26
+  orig: 45, 26
+  offset: 0, 0
+  index: -1
+weiba1
+  rotate: false
+  xy: 262, 40
+  size: 226, 181
+  orig: 226, 181
+  offset: 0, 0
+  index: -1
+weiba2
+  rotate: true
+  xy: 262, 223
+  size: 287, 110
+  orig: 287, 110
+  offset: 0, 0
+  index: -1
+yan1
+  rotate: false
+  xy: 262, 2
+  size: 57, 36
+  orig: 57, 36
+  offset: 0, 0
+  index: -1
+yan2
+  rotate: false
+  xy: 321, 11
+  size: 96, 27
+  orig: 96, 27
+  offset: 0, 0
+  index: -1
+yan3
+  rotate: true
+  xy: 525, 374
+  size: 136, 43
+  orig: 136, 43
+  offset: 0, 0
+  index: -1

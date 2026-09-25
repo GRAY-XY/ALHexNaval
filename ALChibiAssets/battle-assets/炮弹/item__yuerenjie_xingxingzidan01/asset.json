@@ -1,0 +1,45 @@
+{
+  "id": "item__yuerenjie_xingxingzidan01",
+  "model": "yuerenjie_xingxingzidan01",
+  "name": "yuerenjie_xingxingzidan01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yuerenjie_xingxingzidan01",
+  "path": "battle-assets/炮弹/item__yuerenjie_xingxingzidan01",
+  "images": [
+    {
+      "file": "xinxin02_-5258897559001781279.png",
+      "name": "xinxin02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5258897559001781279,
+      "source": "CAB-a4291f243713c06117e60470cd82ec06"
+    },
+    {
+      "file": "xinxin01_4117089039869745052.png",
+      "name": "xinxin01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4117089039869745052,
+      "source": "CAB-a4291f243713c06117e60470cd82ec06"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710035,
+    710036,
+    900510,
+    900511,
+    900512,
+    900513,
+    900514,
+    900515,
+    900516
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yuerenjie_xingxingzidan01/xinxin02_-5258897559001781279.png"
+}

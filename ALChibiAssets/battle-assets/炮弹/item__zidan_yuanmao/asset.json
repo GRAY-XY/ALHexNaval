@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yuanmao",
+  "model": "zidan_yuanmao",
+  "name": "童心圆帽子弹",
+  "names": [
+    "童心圆帽子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yuanmao",
+  "path": "battle-assets/炮弹/item__zidan_yuanmao",
+  "images": [
+    {
+      "file": "zidan_yuanmao_5144227748025881107.png",
+      "name": "zidan_yuanmao",
+      "width": 117,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": 5144227748025881107,
+      "source": "CAB-8234751aaf31ab6dbad5320a61f2ea7e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yuanmao/zidan_yuanmao_5144227748025881107.png"
+}

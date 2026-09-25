@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_guancai",
+  "model": "paodan_guancai",
+  "name": "血色永眠炮弹",
+  "names": [
+    "血色永眠炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_guancai",
+  "path": "battle-assets/炮弹/item__paodan_guancai",
+  "images": [
+    {
+      "file": "paodan_guancai_2713907276168628932.png",
+      "name": "paodan_guancai",
+      "width": 128,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 2713907276168628932,
+      "source": "CAB-a254fd56d03d18aebde7fa23c7da4f0d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_guancai/paodan_guancai_2713907276168628932.png"
+}

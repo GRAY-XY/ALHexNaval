@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guangmingzhifeng",
+  "model": "zidan_guangmingzhifeng",
+  "name": "光明之风子弹",
+  "names": [
+    "光明之风子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guangmingzhifeng",
+  "path": "battle-assets/炮弹/item__zidan_guangmingzhifeng",
+  "images": [
+    {
+      "file": "zidan_guangmingzhifeng_-7350190994328334821.png",
+      "name": "zidan_guangmingzhifeng",
+      "width": 96,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -7350190994328334821,
+      "source": "CAB-721b2069855799171fd9759e5c418835"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guangmingzhifeng/zidan_guangmingzhifeng_-7350190994328334821.png"
+}

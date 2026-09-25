@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_feijiqiu",
+  "model": "feiji_feijiqiu",
+  "name": "飞翔暴君（鱼雷）",
+  "names": [
+    "飞翔暴君（鱼雷）",
+    "飞翔暴君（战斗）",
+    "飞翔暴君（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_feijiqiu",
+  "path": "battle-assets/飞机/chargo__feiji_feijiqiu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_feijiqiu_5072230400515016696.png",
+      "name": "feiji_feijiqiu",
+      "width": 256,
+      "height": 258,
+      "role": "战斗贴图",
+      "path_id": 5072230400515016696,
+      "source": "CAB-f92170d26586a83c181e0890dcbcd4d8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_feijiqiu/aircraft_shadow_2192772484218123160.png"
+}

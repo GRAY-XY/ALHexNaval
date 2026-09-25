@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_majiangpai",
+  "model": "zidan_majiangpai",
+  "name": "麻将牌子弹",
+  "names": [
+    "麻将牌子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_majiangpai",
+  "path": "battle-assets/炮弹/item__zidan_majiangpai",
+  "images": [
+    {
+      "file": "zidan_majiangpai_-8725970028191260788.png",
+      "name": "zidan_majiangpai",
+      "width": 127,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -8725970028191260788,
+      "source": "CAB-f0cae5de452d7599e78873a89f44ccba"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_majiangpai/zidan_majiangpai_-8725970028191260788.png"
+}

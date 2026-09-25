@@ -1,0 +1,48 @@
+{
+  "id": "item__nina_zhanji_all",
+  "model": "nina_zhanji_all",
+  "name": "nina_zhanji_all",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/nina_zhanji_all",
+  "path": "battle-assets/炮弹/item__nina_zhanji_all",
+  "images": [
+    {
+      "file": "zhanji02_-3638044827740878784.png",
+      "name": "zhanji02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3638044827740878784,
+      "source": "CAB-1589f4c24a7bb633b1ef9aa8bbd03674"
+    },
+    {
+      "file": "zhanji01_1447267230438896846.png",
+      "name": "zhanji01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1447267230438896846,
+      "source": "CAB-1589f4c24a7bb633b1ef9aa8bbd03674"
+    },
+    {
+      "file": "vfx_wave09_3389414431381521510.png",
+      "name": "vfx_wave09",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 3389414431381521510,
+      "source": "CAB-1589f4c24a7bb633b1ef9aa8bbd03674"
+    }
+  ],
+  "particle_systems": 41,
+  "animations": [
+    "zhuaji"
+  ],
+  "bullet_ids": [
+    168236
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__nina_zhanji_all/zhanji02_-3638044827740878784.png"
+}

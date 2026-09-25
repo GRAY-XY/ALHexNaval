@@ -1,0 +1,38 @@
+{
+  "id": "item__mojiaduoer_futou",
+  "model": "mojiaduoer_futou",
+  "name": "mojiaduoer_futou",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/mojiaduoer_futou",
+  "path": "battle-assets/炮弹/item__mojiaduoer_futou",
+  "images": [
+    {
+      "file": "futou_zidan_612465232286623252.png",
+      "name": "futou_zidan",
+      "width": 255,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": 612465232286623252,
+      "source": "CAB-6cd5dc2e1982e5d5c96a466d78fbb3af"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    164461,
+    164462,
+    164463,
+    164464,
+    164465,
+    164466,
+    164467,
+    164468,
+    164469,
+    164470,
+    3250001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__mojiaduoer_futou/futou_zidan_612465232286623252.png"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "aircrafticon__liefeng",
+  "model": "liefeng",
+  "name": "烈风",
+  "names": [
+    "烈风",
+    "葛城支援弹幕烈风Lv1",
+    "小大凤技能烈风Lv1",
+    "【战术研修II】【BOSS】飞龙-战斗机",
+    "第13章大凤战斗机",
+    "【困难13章】大凤战斗机",
+    "翔鹤战斗机",
+    "瑞鹤战斗机",
+    "翔鹤浮游炮",
+    "赤城战斗机",
+    "赤城浮游炮",
+    "加贺战斗机",
+    "加贺浮游炮"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/liefeng",
+  "path": "battle-assets/飞机图标/aircrafticon__liefeng",
+  "images": [
+    {
+      "file": "liefeng_-1040571726571443465.png",
+      "name": "liefeng",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -1040571726571443465,
+      "source": "CAB-c43c91447e116afe11425b535278a9a1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_nailao",
+  "model": "zidan_nailao",
+  "name": "奶酪弹",
+  "names": [
+    "奶酪弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_nailao",
+  "path": "battle-assets/炮弹/item__zidan_nailao",
+  "images": [
+    {
+      "file": "zidan_nailao_-745898131954776495.png",
+      "name": "zidan_nailao",
+      "width": 128,
+      "height": 75,
+      "role": "战斗贴图",
+      "path_id": -745898131954776495,
+      "source": "CAB-748da4ccd13cdeddfd48a0a9b2ec2159"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710107
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_nailao/zidan_nailao_-745898131954776495.png"
+}

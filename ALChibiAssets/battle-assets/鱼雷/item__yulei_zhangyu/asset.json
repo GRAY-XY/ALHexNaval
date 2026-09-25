@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhangyu",
+  "model": "yulei_zhangyu",
+  "name": "章鱼鱼雷",
+  "names": [
+    "章鱼鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhangyu",
+  "path": "battle-assets/鱼雷/item__yulei_zhangyu",
+  "images": [
+    {
+      "file": "yulei_zhangyu_8901880971892613452.png",
+      "name": "yulei_zhangyu",
+      "width": 128,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 8901880971892613452,
+      "source": "CAB-1120edab98eb2e3558ba7428a91369b6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhangyu/yulei_zhangyu_8901880971892613452.png"
+}

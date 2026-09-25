@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_tieta",
+  "model": "feiji_tieta",
+  "name": "皇家铁塔(鱼雷)",
+  "names": [
+    "皇家铁塔(鱼雷)",
+    "皇家铁塔(战斗)",
+    "皇家铁塔(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_tieta",
+  "path": "battle-assets/飞机/chargo__feiji_tieta",
+  "images": [
+    {
+      "file": "feiji_tieta_-7643867374707498852.png",
+      "name": "feiji_tieta",
+      "width": 256,
+      "height": 109,
+      "role": "战斗贴图",
+      "path_id": -7643867374707498852,
+      "source": "CAB-e52ae522dd6dd4570b75a6f0f6882a9b"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_tieta/feiji_tieta_-7643867374707498852.png"
+}

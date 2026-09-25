@@ -1,0 +1,39 @@
+{
+  "id": "item__music_genzong",
+  "model": "music_genzong",
+  "name": "music_genzong",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/music_genzong",
+  "path": "battle-assets/炮弹/item__music_genzong",
+  "images": [
+    {
+      "file": "yinfu_06_-6089807089801473578.png",
+      "name": "yinfu_06",
+      "width": 249,
+      "height": 248,
+      "role": "战斗贴图",
+      "path_id": -6089807089801473578,
+      "source": "CAB-7a56e3f78e0c483d5cd4655cb4a03b8f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19049,
+    19050,
+    19051,
+    19052,
+    19053,
+    19054,
+    19055,
+    19056,
+    19057,
+    19058,
+    19213,
+    79632
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__music_genzong/yinfu_06_-6089807089801473578.png"
+}

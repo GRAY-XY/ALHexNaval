@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yongquan",
+  "model": "paodan_yongquan",
+  "name": "泳圈炮弹",
+  "names": [
+    "泳圈炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yongquan",
+  "path": "battle-assets/炮弹/item__paodan_yongquan",
+  "images": [
+    {
+      "file": "paodan_yongquan_6378972575313190695.png",
+      "name": "paodan_yongquan",
+      "width": 128,
+      "height": 134,
+      "role": "战斗贴图",
+      "path_id": 6378972575313190695,
+      "source": "CAB-92133d2057121a07db2c926e7fa363d7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yongquan/paodan_yongquan_6378972575313190695.png"
+}

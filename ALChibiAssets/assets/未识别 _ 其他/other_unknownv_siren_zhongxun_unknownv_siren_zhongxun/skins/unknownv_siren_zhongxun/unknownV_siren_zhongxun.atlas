@@ -1,0 +1,160 @@
+
+unknownV_siren_zhongxun.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 529
+  size: 482, 605
+  orig: 482, 605
+  offset: 0, 0
+  index: -1
+body_swim
+  rotate: true
+  xy: 609, 169
+  size: 482, 605
+  orig: 482, 605
+  offset: 0, 0
+  index: -1
+pao_1
+  rotate: true
+  xy: 1495, 90
+  size: 432, 108
+  orig: 432, 108
+  offset: 0, 0
+  index: -1
+pao_2
+  rotate: false
+  xy: 2, 296
+  size: 413, 231
+  orig: 413, 231
+  offset: 0, 0
+  index: -1
+pao_3
+  rotate: false
+  xy: 1605, 2
+  size: 428, 135
+  orig: 428, 135
+  offset: 0, 0
+  index: -1
+shui_1
+  rotate: true
+  xy: 1611, 139
+  size: 872, 165
+  orig: 872, 165
+  offset: 0, 0
+  index: -1
+shui_2
+  rotate: true
+  xy: 1778, 139
+  size: 872, 165
+  orig: 872, 165
+  offset: 0, 0
+  index: -1
+shui_3
+  rotate: false
+  xy: 609, 653
+  size: 872, 165
+  orig: 872, 165
+  offset: 0, 0
+  index: -1
+xian_1
+  rotate: true
+  xy: 2, 54
+  size: 108, 167
+  orig: 108, 167
+  offset: 0, 0
+  index: -1
+xian_2
+  rotate: true
+  xy: 1216, 528
+  size: 123, 205
+  orig: 123, 205
+  offset: 0, 0
+  index: -1
+xian_3
+  rotate: true
+  xy: 689, 63
+  size: 104, 295
+  orig: 104, 295
+  offset: 0, 0
+  index: -1
+xian_4
+  rotate: false
+  xy: 1216, 92
+  size: 277, 430
+  orig: 277, 430
+  offset: 0, 0
+  index: -1
+xian_5
+  rotate: false
+  xy: 380, 8
+  size: 307, 159
+  orig: 307, 159
+  offset: 0, 0
+  index: -1
+xian_6
+  rotate: true
+  xy: 2, 164
+  size: 130, 376
+  orig: 130, 376
+  offset: 0, 0
+  index: -1
+xian_7
+  rotate: true
+  xy: 417, 179
+  size: 348, 187
+  orig: 348, 187
+  offset: 0, 0
+  index: -1
+ye_1
+  rotate: true
+  xy: 171, 85
+  size: 77, 141
+  orig: 77, 141
+  offset: 0, 0
+  index: -1
+ye_1_swim
+  rotate: true
+  xy: 171, 6
+  size: 77, 141
+  orig: 77, 141
+  offset: 0, 0
+  index: -1
+ye_2
+  rotate: true
+  xy: 986, 96
+  size: 71, 115
+  orig: 71, 115
+  offset: 0, 0
+  index: -1
+ye_2_swim
+  rotate: false
+  xy: 1103, 52
+  size: 71, 115
+  orig: 71, 115
+  offset: 0, 0
+  index: -1
+ye_3
+  rotate: false
+  xy: 1483, 672
+  size: 126, 146
+  orig: 126, 146
+  offset: 0, 0
+  index: -1
+ye_3_swim
+  rotate: false
+  xy: 1483, 524
+  size: 126, 146
+  orig: 126, 146
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 609, 820
+  size: 1000, 191
+  orig: 1000, 191
+  offset: 0, 0
+  index: -1

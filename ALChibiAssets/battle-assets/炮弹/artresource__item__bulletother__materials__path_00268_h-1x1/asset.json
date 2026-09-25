@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletother__materials__path_00268_h-1x1",
+  "model": "path_00268_h-1x1",
+  "name": "path_00268_h-1x1",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/materials/path_00268_h-1x1",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__materials__path_00268_h-1x1",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

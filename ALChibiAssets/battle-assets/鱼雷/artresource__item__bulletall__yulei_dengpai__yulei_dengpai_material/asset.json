@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yulei_dengpai__yulei_dengpai_material",
+  "model": "yulei_dengpai_material",
+  "name": "yulei_dengpai_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_dengpai/yulei_dengpai_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_dengpai__yulei_dengpai_material",
+  "images": [
+    {
+      "file": "yulei_dengpai_95872906322991211.png",
+      "name": "yulei_dengpai",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 95872906322991211,
+      "source": "CAB-bdb7614a3b922fb674b255f582b671ab"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

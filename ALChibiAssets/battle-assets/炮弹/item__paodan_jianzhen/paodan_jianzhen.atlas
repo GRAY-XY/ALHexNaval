@@ -1,0 +1,90 @@
+
+paodan_jianzhen.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jian_1
+  rotate: false
+  xy: 2, 341
+  size: 224, 71
+  orig: 224, 71
+  offset: 0, 0
+  index: -1
+jian_2
+  rotate: false
+  xy: 228, 341
+  size: 222, 71
+  orig: 222, 71
+  offset: 0, 0
+  index: -1
+jian_3
+  rotate: false
+  xy: 452, 341
+  size: 222, 71
+  orig: 222, 71
+  offset: 0, 0
+  index: -1
+jian_4
+  rotate: false
+  xy: 676, 341
+  size: 224, 71
+  orig: 224, 71
+  offset: 0, 0
+  index: -1
+jian_5
+  rotate: false
+  xy: 2, 268
+  size: 222, 71
+  orig: 222, 71
+  offset: 0, 0
+  index: -1
+jian_6
+  rotate: false
+  xy: 226, 267
+  size: 224, 72
+  orig: 224, 72
+  offset: 0, 0
+  index: -1
+jianqi_1
+  rotate: false
+  xy: 375, 122
+  size: 373, 108
+  orig: 373, 108
+  offset: 0, 0
+  index: -1
+jianqi_2
+  rotate: true
+  xy: 902, 37
+  size: 375, 116
+  orig: 375, 116
+  offset: 0, 0
+  index: -1
+jianqi_3
+  rotate: false
+  xy: 379, 2
+  size: 376, 118
+  orig: 376, 118
+  offset: 0, 0
+  index: -1
+jianqi_4
+  rotate: false
+  xy: 452, 232
+  size: 371, 107
+  orig: 371, 107
+  offset: 0, 0
+  index: -1
+jianqi_5
+  rotate: false
+  xy: 2, 158
+  size: 371, 107
+  orig: 371, 107
+  offset: 0, 0
+  index: -1
+jianqi_6
+  rotate: false
+  xy: 2, 11
+  size: 375, 109
+  orig: 375, 109
+  offset: 0, 0
+  index: -1

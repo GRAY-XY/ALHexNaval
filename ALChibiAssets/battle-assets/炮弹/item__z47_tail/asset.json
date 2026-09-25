@@ -1,0 +1,29 @@
+{
+  "id": "item__z47_tail",
+  "model": "z47_tail",
+  "name": "z47_tail",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/z47_tail",
+  "path": "battle-assets/炮弹/item__z47_tail",
+  "images": [
+    {
+      "file": "bulletGER_green_-6005591768475271041.png",
+      "name": "bulletGER_green",
+      "width": 92,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": -6005591768475271041,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170521,
+    170522
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__z47_tail/bulletGER_green_-6005591768475271041.png"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item__yulei_youling",
+  "model": "yulei_youling",
+  "name": "幽灵鱼雷",
+  "names": [
+    "幽灵鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_youling",
+  "path": "battle-assets/鱼雷/item__yulei_youling",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3139011
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "youlingyulei.skel",
+    "atlas": "youlingyulei.atlas",
+    "pages": [
+      "youlingyulei.png"
+    ]
+  }
+}

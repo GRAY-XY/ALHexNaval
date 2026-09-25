@@ -1,0 +1,62 @@
+
+jiangfeng_alter_shadow.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 288, 2
+  size: 633, 477
+  orig: 633, 477
+  offset: 0, 0
+  index: -1
+heiyan_1
+  rotate: true
+  xy: 253, 697
+  size: 105, 210
+  orig: 105, 210
+  offset: 0, 0
+  index: -1
+heiyan_2
+  rotate: true
+  xy: 2, 235
+  size: 274, 284
+  orig: 274, 284
+  offset: 0, 0
+  index: -1
+heiyan_3
+  rotate: true
+  xy: 2, 552
+  size: 172, 247
+  orig: 172, 247
+  offset: 0, 0
+  index: -1
+heiyan_4
+  rotate: false
+  xy: 731, 481
+  size: 259, 190
+  orig: 259, 190
+  offset: 0, 0
+  index: -1
+kuosan_1
+  rotate: false
+  xy: 251, 511
+  size: 478, 160
+  orig: 478, 160
+  offset: 0, 0
+  index: -1
+kuosan_2
+  rotate: false
+  xy: 465, 673
+  size: 389, 129
+  orig: 389, 129
+  offset: 0, 0
+  index: -1
+kuosan_3
+  rotate: false
+  xy: 2, 726
+  size: 249, 76
+  orig: 249, 76
+  offset: 0, 0
+  index: -1

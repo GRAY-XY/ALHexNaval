@@ -1,0 +1,34 @@
+
+hangtianyulei.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 14
+  size: 118, 89
+  orig: 118, 89
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 249, 2
+  size: 131, 48
+  orig: 131, 48
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 249, 52
+  size: 130, 51
+  orig: 130, 51
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 122, 50
+  size: 125, 53
+  orig: 125, 53
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_bangbangtang",
+  "model": "zidan_bangbangtang",
+  "name": "棒棒糖子弹",
+  "names": [
+    "棒棒糖子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bangbangtang",
+  "path": "battle-assets/炮弹/item__zidan_bangbangtang",
+  "images": [
+    {
+      "file": "zidan_bangbangtang_3758273432318033954.png",
+      "name": "zidan_bangbangtang",
+      "width": 128,
+      "height": 59,
+      "role": "战斗贴图",
+      "path_id": 3758273432318033954,
+      "source": "CAB-374a82346dc511adae1154e0e917a5b9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bangbangtang/zidan_bangbangtang_3758273432318033954.png"
+}

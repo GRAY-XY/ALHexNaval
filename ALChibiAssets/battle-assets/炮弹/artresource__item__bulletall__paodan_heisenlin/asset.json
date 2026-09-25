@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__paodan_heisenlin",
+  "model": "paodan_heisenlin",
+  "name": "黑森林蛋糕炮弹",
+  "names": [
+    "黑森林蛋糕炮弹"
+  ],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_heisenlin",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_heisenlin",
+  "images": [
+    {
+      "file": "paodan_heisenlin_3264095557105347844.png",
+      "name": "paodan_heisenlin",
+      "width": 128,
+      "height": 102,
+      "role": "原始精灵",
+      "path_id": 3264095557105347844,
+      "source": "CAB-c204076943fd7c04db02ddcd5b7a77ea"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

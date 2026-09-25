@@ -1,0 +1,37 @@
+{
+  "id": "item__dulianglai_daoguang",
+  "model": "dulianglai_daoguang",
+  "name": "dulianglai_daoguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/dulianglai_daoguang",
+  "path": "battle-assets/炮弹/item__dulianglai_daoguang",
+  "images": [
+    {
+      "file": "huoyan01_-4392782930225173256.png",
+      "name": "huoyan01",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4392782930225173256,
+      "source": "CAB-d055443585fc88d13cf3d3986584cf44"
+    },
+    {
+      "file": "huoyan02_1829412784436203938.png",
+      "name": "huoyan02",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1829412784436203938,
+      "source": "CAB-d055443585fc88d13cf3d3986584cf44"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    160936
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__dulianglai_daoguang/huoyan01_-4392782930225173256.png"
+}

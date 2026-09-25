@@ -1,0 +1,33 @@
+{
+  "id": "artresource__item__bulletall__hwxgz_2",
+  "model": "hwxgz_2",
+  "name": "hwxgz_2",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/hwxgz_2",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__hwxgz_2",
+  "images": [
+    {
+      "file": "hwxgz_2_-7844946202667261918.png",
+      "name": "hwxgz_2",
+      "width": 128,
+      "height": 88,
+      "role": "原始精灵",
+      "path_id": -7844946202667261918,
+      "source": "CAB-3e1df906b1daca289bfc3d213c912249"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    7110,
+    7111,
+    19907,
+    19908,
+    940051,
+    990321,
+    990361
+  ],
+  "has_preview": true,
+  "prefab": false
+}

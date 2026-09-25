@@ -1,0 +1,49 @@
+{
+  "id": "aircrafticon__alter_plane2",
+  "model": "alter_plane2",
+  "name": "【大世界】黑飞龙飞机2",
+  "names": [
+    "【大世界】黑飞龙飞机2",
+    "【大世界】第五章剧情_5-6剧情战_黑方舟支援飞机1",
+    "【大世界】第五章剧情_5-6剧情战_黑飞龙支援飞机",
+    "【大世界】黑飞龙_p2_强力飞机lv1",
+    "【大世界】黑飞龙_p2_强力飞机lv2",
+    "【大世界】黑飞龙_p2_强力飞机lv3",
+    "【大世界】黑飞龙_p2_强力飞机lv4",
+    "【大世界】黑飞龙_p2_强力飞机lv5",
+    "【大世界】黑飞龙_p4_强力飞机lv1",
+    "【大世界】黑飞龙_p4_强力飞机lv2",
+    "【大世界】黑飞龙_p4_强力飞机lv3",
+    "【大世界】黑飞龙_p4_强力飞机lv4",
+    "【大世界】黑飞龙_p4_强力飞机lv5",
+    "【大世界】黑方舟 第一波 飞机 LV1",
+    "【大世界】黑方舟 第一波 飞机 LV2",
+    "【大世界】黑方舟 第一波 飞机 LV3",
+    "【大世界】黑方舟 第一波 飞机 LV4",
+    "【大世界】黑方舟 第一波 飞机 LV5",
+    "【大世界】黑苍龙 第二波 余烬飞机 LV1",
+    "【大世界】黑苍龙 第二波 余烬飞机 LV2",
+    "【大世界】黑苍龙 第二波 余烬飞机 LV3",
+    "【大世界】黑苍龙 第二波 余烬飞机 LV4",
+    "【大世界】黑苍龙 第二波 余烬飞机 LV5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/alter_plane2",
+  "path": "battle-assets/飞机图标/aircrafticon__alter_plane2",
+  "images": [
+    {
+      "file": "alter_plane2_-162907154164683191.png",
+      "name": "alter_plane2",
+      "width": 44,
+      "height": 44,
+      "role": "原始精灵",
+      "path_id": -162907154164683191,
+      "source": "CAB-5865f79eade62ba0ebb51e9be44682b1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

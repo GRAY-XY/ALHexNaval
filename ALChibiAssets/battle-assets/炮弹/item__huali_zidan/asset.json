@@ -1,0 +1,35 @@
+{
+  "id": "item__huali_zidan",
+  "model": "huali_zidan",
+  "name": "huali_zidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/huali_zidan",
+  "path": "battle-assets/炮弹/item__huali_zidan",
+  "images": [
+    {
+      "file": "zidan02_-7105490478042120678.png",
+      "name": "zidan02",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7105490478042120678,
+      "source": "CAB-38ed151dde93f50dcdcb49a7fe94a22c"
+    },
+    {
+      "file": "zidan01_-6450161485194127237.png",
+      "name": "zidan01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6450161485194127237,
+      "source": "CAB-38ed151dde93f50dcdcb49a7fe94a22c"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__huali_zidan/zidan02_-7105490478042120678.png"
+}

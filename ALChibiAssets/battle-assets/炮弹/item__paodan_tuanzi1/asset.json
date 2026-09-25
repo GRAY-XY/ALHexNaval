@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_tuanzi1",
+  "model": "paodan_tuanzi1",
+  "name": "千早炮弹",
+  "names": [
+    "千早炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tuanzi1",
+  "path": "battle-assets/炮弹/item__paodan_tuanzi1",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "idom_qianzao.skel",
+    "atlas": "idom_qianzao.atlas",
+    "pages": [
+      "idom_qianzao.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_jiujiuwanou",
+  "model": "paodan_jiujiuwanou",
+  "name": "展品啾炮弹",
+  "names": [
+    "展品啾炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jiujiuwanou",
+  "path": "battle-assets/炮弹/item__paodan_jiujiuwanou",
+  "images": [
+    {
+      "file": "paodan_jiujiuwanou_-3668026963406381046.png",
+      "name": "paodan_jiujiuwanou",
+      "width": 126,
+      "height": 75,
+      "role": "战斗贴图",
+      "path_id": -3668026963406381046,
+      "source": "CAB-b72da2c92c89068ec064959b631ecde8"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jiujiuwanou/paodan_jiujiuwanou_-3668026963406381046.png"
+}

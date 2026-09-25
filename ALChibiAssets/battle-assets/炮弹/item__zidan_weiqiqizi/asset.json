@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_weiqiqizi",
+  "model": "zidan_weiqiqizi",
+  "name": "黑白围棋子弹",
+  "names": [
+    "黑白围棋子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_weiqiqizi",
+  "path": "battle-assets/炮弹/item__zidan_weiqiqizi",
+  "images": [
+    {
+      "file": "weiqi01_759823530743691426.png",
+      "name": "weiqi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 759823530743691426,
+      "source": "CAB-e32eb23c6f652bde3a6f3636917c073d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_weiqiqizi/weiqi01_759823530743691426.png"
+}

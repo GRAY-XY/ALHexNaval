@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__idom_yizhi__idom_yizhi_material",
+  "model": "idom_yizhi_material",
+  "name": "idom_yizhi_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/idom_yizhi/idom_yizhi_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__idom_yizhi__idom_yizhi_material",
+  "images": [
+    {
+      "file": "idom_yizhi_7497532034391947619.png",
+      "name": "idom_yizhi",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7497532034391947619,
+      "source": "CAB-cbb98e2bc9cb471cadea201e9364f744"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

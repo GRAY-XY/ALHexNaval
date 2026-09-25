@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__fenglingyulei__fenglingyulei_material",
+  "model": "fenglingyulei_material",
+  "name": "fenglingyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/fenglingyulei/fenglingyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__fenglingyulei__fenglingyulei_material",
+  "images": [
+    {
+      "file": "fenglingyulei_-779702028447278325.png",
+      "name": "fenglingyulei",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -779702028447278325,
+      "source": "CAB-3c1e00ba6016a45b43de9643a8b18182"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

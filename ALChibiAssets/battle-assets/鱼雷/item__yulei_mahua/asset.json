@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_mahua",
+  "model": "yulei_mahua",
+  "name": "麻花鱼雷",
+  "names": [
+    "麻花鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_mahua",
+  "path": "battle-assets/鱼雷/item__yulei_mahua",
+  "images": [
+    {
+      "file": "yulei_mahua_4322529101310980185.png",
+      "name": "yulei_mahua",
+      "width": 128,
+      "height": 41,
+      "role": "战斗贴图",
+      "path_id": 4322529101310980185,
+      "source": "CAB-976a7a8f60cc31ec4505cbc3a8c1cfc2"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3360105
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_mahua/yulei_mahua_4322529101310980185.png"
+}

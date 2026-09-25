@@ -1,0 +1,33 @@
+{
+  "id": "item__zidan_tangguo",
+  "model": "zidan_tangguo",
+  "name": "糖果子弹",
+  "names": [
+    "糖果子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tangguo",
+  "path": "battle-assets/炮弹/item__zidan_tangguo",
+  "images": [
+    {
+      "file": "tangguo_-5295901703064350899.png",
+      "name": "tangguo",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5295901703064350899,
+      "source": "CAB-ccf1d60a31cb37e54f2a4f84b3f3acc4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    710102,
+    3163009,
+    3169004,
+    3169011
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tangguo/tangguo_-5295901703064350899.png"
+}

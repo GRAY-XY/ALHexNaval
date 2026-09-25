@@ -1,0 +1,32 @@
+{
+  "id": "item__sprfes_bullet_tongban",
+  "model": "sprfes_bullet_tongban",
+  "name": "铜板子弹",
+  "names": [
+    "铜板子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/sprfes_bullet_tongban",
+  "path": "battle-assets/炮弹/item__sprfes_bullet_tongban",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3119103,
+    3359202,
+    3359203,
+    3359204,
+    3359205,
+    3359206,
+    3359207
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "tongban.skel",
+    "atlas": "tongban.atlas",
+    "pages": [
+      "tongban.png"
+    ]
+  }
+}

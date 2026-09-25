@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shengdanlaojiu__shengdanlaojiu_material",
+  "model": "shengdanlaojiu_material",
+  "name": "shengdanlaojiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/shengdanlaojiu/shengdanlaojiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__shengdanlaojiu__shengdanlaojiu_material",
+  "images": [
+    {
+      "file": "shengdanlaojiu_-3097934157196643899.png",
+      "name": "shengdanlaojiu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3097934157196643899,
+      "source": "CAB-1d40f8e48b51beec1899e2d9fe6ed003"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__zidan_gouyu",
+  "model": "zidan_gouyu",
+  "name": "勾玉子弹",
+  "names": [
+    "勾玉子弹"
+  ],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_gouyu",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_gouyu",
+  "images": [
+    {
+      "file": "zidan_gouyu_-452217560797798297.png",
+      "name": "zidan_gouyu",
+      "width": 128,
+      "height": 57,
+      "role": "原始精灵",
+      "path_id": -452217560797798297,
+      "source": "CAB-caf0dc2f40aeeb6bd36cb7c5492b9cdf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

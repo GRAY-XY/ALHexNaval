@@ -1,0 +1,55 @@
+
+xiongyingpaodan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 210, 138
+  orig: 210, 138
+  offset: 0, 0
+  index: -1
+cb_L_1
+  rotate: false
+  xy: 214, 8
+  size: 136, 132
+  orig: 136, 132
+  offset: 0, 0
+  index: -1
+cb_L_2
+  rotate: false
+  xy: 621, 28
+  size: 136, 112
+  orig: 136, 112
+  offset: 0, 0
+  index: -1
+cb_L_3
+  rotate: true
+  xy: 759, 38
+  size: 102, 147
+  orig: 102, 147
+  offset: 0, 0
+  index: -1
+cb_R_1
+  rotate: true
+  xy: 482, 14
+  size: 126, 137
+  orig: 126, 137
+  offset: 0, 0
+  index: -1
+cb_R_2
+  rotate: true
+  xy: 908, 13
+  size: 127, 83
+  orig: 127, 83
+  offset: 0, 0
+  index: -1
+cb_R_3
+  rotate: false
+  xy: 352, 12
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

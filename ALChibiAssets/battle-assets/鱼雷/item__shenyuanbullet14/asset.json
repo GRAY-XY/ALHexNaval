@@ -1,0 +1,44 @@
+{
+  "id": "item__shenyuanbullet14",
+  "model": "shenyuanbullet14",
+  "name": "shenyuanbullet14",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/shenyuanbullet14",
+  "path": "battle-assets/鱼雷/item__shenyuanbullet14",
+  "images": [
+    {
+      "file": "shenyuanbullet14_-5369611669865933248.png",
+      "name": "shenyuanbullet14",
+      "width": 124,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -5369611669865933248,
+      "source": "CAB-10b410a9eb14905985d8e14347d8d75d"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3222015,
+    3222016,
+    3222017,
+    3223002,
+    3228003,
+    3228036,
+    3295015,
+    3295048,
+    3331217,
+    3331503,
+    3331504,
+    3331505,
+    3331506,
+    3331507,
+    3331508,
+    3331509,
+    3331510
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__shenyuanbullet14/shenyuanbullet14_-5369611669865933248.png"
+}

@@ -1,0 +1,90 @@
+
+dushi_zibao.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guanban
+  rotate: false
+  xy: 376, 14
+  size: 118, 93
+  orig: 118, 93
+  offset: 0, 0
+  index: -1
+ji
+  rotate: true
+  xy: 209, 43
+  size: 208, 120
+  orig: 208, 120
+  offset: 0, 0
+  index: -1
+lou
+  rotate: false
+  xy: 331, 5
+  size: 43, 102
+  orig: 43, 102
+  offset: 0, 0
+  index: -1
+penkou
+  rotate: true
+  xy: 2, 2
+  size: 23, 115
+  orig: 23, 115
+  offset: 0, 0
+  index: -1
+yuanquan1
+  rotate: true
+  xy: 209, 6
+  size: 35, 28
+  orig: 35, 28
+  offset: 0, 0
+  index: -1
+yuanquan2
+  rotate: true
+  xy: 239, 6
+  size: 35, 27
+  orig: 35, 27
+  offset: 0, 0
+  index: -1
+yuanquan3
+  rotate: true
+  xy: 268, 6
+  size: 35, 27
+  orig: 35, 27
+  offset: 0, 0
+  index: -1
+zd01
+  rotate: true
+  xy: 2, 27
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zd02
+  rotate: true
+  xy: 71, 27
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zd03
+  rotate: true
+  xy: 140, 27
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zhadan_1
+  rotate: true
+  xy: 331, 109
+  size: 142, 83
+  orig: 142, 83
+  offset: 0, 0
+  index: -1
+zhadan_2
+  rotate: true
+  xy: 416, 109
+  size: 142, 83
+  orig: 142, 83
+  offset: 0, 0
+  index: -1

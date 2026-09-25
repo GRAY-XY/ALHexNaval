@@ -1,0 +1,31 @@
+{
+  "id": "item__mofazidan04",
+  "model": "mofazidan04",
+  "name": "mofazidan04",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/mofazidan04",
+  "path": "battle-assets/炮弹/item__mofazidan04",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19245,
+    78211,
+    170183,
+    730033,
+    750132,
+    853113,
+    853114,
+    853115,
+    855110,
+    20321600,
+    20321601,
+    29610021,
+    29621130,
+    29655022,
+    29655036
+  ],
+  "has_preview": false,
+  "prefab": true
+}

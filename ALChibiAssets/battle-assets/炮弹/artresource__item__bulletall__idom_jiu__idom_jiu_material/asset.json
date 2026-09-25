@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__idom_jiu__idom_jiu_material",
+  "model": "idom_jiu_material",
+  "name": "idom_jiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/idom_jiu/idom_jiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__idom_jiu__idom_jiu_material",
+  "images": [
+    {
+      "file": "idom_jiu_8241625847778034300.png",
+      "name": "idom_jiu",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 8241625847778034300,
+      "source": "CAB-93ac8696ec777eb104b08510d95ed13c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

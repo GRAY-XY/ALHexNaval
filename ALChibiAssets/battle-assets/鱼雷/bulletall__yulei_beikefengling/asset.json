@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_beikefengling",
+  "model": "yulei_beikefengling",
+  "name": "贝壳风铃鱼雷",
+  "names": [
+    "贝壳风铃鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_beikefengling",
+  "path": "battle-assets/鱼雷/bulletall__yulei_beikefengling",
+  "images": [
+    {
+      "file": "yulei_beikefengling_-547333144079023508.png",
+      "name": "yulei_beikefengling",
+      "width": 128,
+      "height": 37,
+      "role": "原始精灵",
+      "path_id": -547333144079023508,
+      "source": "CAB-cccce5d864906c8676227f21883be355"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

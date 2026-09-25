@@ -1,0 +1,76 @@
+
+zhongfeiji.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+base
+  rotate: false
+  xy: 2, 82
+  size: 141, 171
+  orig: 141, 171
+  offset: 0, 0
+  index: -1
+dizuo
+  rotate: true
+  xy: 2, 32
+  size: 25, 81
+  orig: 25, 81
+  offset: 0, 0
+  index: -1
+fenzhen
+  rotate: true
+  xy: 114, 42
+  size: 17, 7
+  orig: 17, 7
+  offset: 0, 0
+  index: -1
+guanmen
+  rotate: true
+  xy: 76, 8
+  size: 22, 30
+  orig: 22, 30
+  offset: 0, 0
+  index: -1
+ji
+  rotate: true
+  xy: 85, 34
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+ji_hei
+  rotate: true
+  xy: 109, 61
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+kaimen
+  rotate: false
+  xy: 108, 2
+  size: 38, 30
+  orig: 38, 30
+  offset: 0, 0
+  index: -1
+ls_2
+  rotate: true
+  xy: 2, 59
+  size: 21, 105
+  orig: 21, 105
+  offset: 0, 0
+  index: -1
+ls_3
+  rotate: true
+  xy: 2, 9
+  size: 21, 72
+  orig: 21, 72
+  offset: 0, 0
+  index: -1
+shizheng
+  rotate: false
+  xy: 123, 43
+  size: 7, 16
+  orig: 7, 16
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_suanpan",
+  "model": "paodan_suanpan",
+  "name": "如意算盘炮弹",
+  "names": [
+    "如意算盘炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_suanpan",
+  "path": "battle-assets/炮弹/item__paodan_suanpan",
+  "images": [
+    {
+      "file": "paodan_suanpan_-4022961437590670286.png",
+      "name": "paodan_suanpan",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -4022961437590670286,
+      "source": "CAB-9a6db7f78fa05c9d69913768e38ae3f0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_suanpan/paodan_suanpan_-4022961437590670286.png",
+  "spine": {
+    "skel": "paodan_suanpan.skel",
+    "atlas": "paodan_suanpan.atlas",
+    "pages": [
+      "paodan_suanpan.png"
+    ]
+  }
+}

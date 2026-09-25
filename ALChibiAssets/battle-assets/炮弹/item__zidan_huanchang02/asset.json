@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_huanchang02",
+  "model": "zidan_huanchang02",
+  "name": "zidan_huanchang02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_huanchang02",
+  "path": "battle-assets/炮弹/item__zidan_huanchang02",
+  "images": [
+    {
+      "file": "huanchang02_-5878979195578763117.png",
+      "name": "huanchang02",
+      "width": 232,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": -5878979195578763117,
+      "source": "CAB-99774cd25a8c61785f5224fbf6fe208d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    163817
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huanchang02/huanchang02_-5878979195578763117.png"
+}

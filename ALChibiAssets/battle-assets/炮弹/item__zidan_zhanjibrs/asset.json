@@ -1,0 +1,19 @@
+{
+  "id": "item__zidan_zhanjibrs",
+  "model": "zidan_zhanjibrs",
+  "name": "黑色斩击弹",
+  "names": [
+    "黑色斩击弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhanjibrs",
+  "path": "battle-assets/炮弹/item__zidan_zhanjibrs",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3279110
+  ],
+  "has_preview": false,
+  "prefab": true
+}

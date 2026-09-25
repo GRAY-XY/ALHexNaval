@@ -1,0 +1,46 @@
+{
+  "id": "item__banai03",
+  "model": "banai03",
+  "name": "banai03",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/banai03",
+  "path": "battle-assets/炮弹/item__banai03",
+  "images": [
+    {
+      "file": "D_Glow_01A_-8905779048531165808.png",
+      "name": "D_Glow_01A",
+      "width": 512,
+      "height": 512,
+      "role": "战斗贴图",
+      "path_id": -8905779048531165808,
+      "source": "CAB-eb8af57e04c50cf3f958ccf44a2c22f5"
+    },
+    {
+      "file": "banai03_2665993064267698476.png",
+      "name": "banai03",
+      "width": 89,
+      "height": 32,
+      "role": "战斗贴图",
+      "path_id": 2665993064267698476,
+      "source": "CAB-aa5b18f8398e67c562b0b8ed4feef8da"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    600909,
+    600910,
+    600920,
+    600930,
+    600940,
+    856572,
+    856573,
+    856574,
+    856575,
+    856576
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__banai03/D_Glow_01A_-8905779048531165808.png"
+}

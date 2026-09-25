@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_pingguotang",
+  "model": "feiji_pingguotang",
+  "name": "苹果糖摊(鱼雷)",
+  "names": [
+    "苹果糖摊(鱼雷)",
+    "苹果糖摊(战斗)",
+    "苹果糖摊(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_pingguotang",
+  "path": "battle-assets/飞机/chargo__feiji_pingguotang",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_pingguotang_-1581867316249415632.png",
+      "name": "feiji_pingguotang",
+      "width": 256,
+      "height": 239,
+      "role": "战斗贴图",
+      "path_id": -1581867316249415632,
+      "source": "CAB-198052d845aabe4e5accfcfd911fb61d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_pingguotang/aircraft_shadow_2192772484218123160.png"
+}

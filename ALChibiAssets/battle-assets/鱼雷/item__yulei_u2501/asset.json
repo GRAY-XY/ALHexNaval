@@ -1,0 +1,26 @@
+{
+  "id": "item__yulei_u2501",
+  "model": "yulei_u2501",
+  "name": "yulei_u2501",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_u2501",
+  "path": "battle-assets/鱼雷/item__yulei_u2501",
+  "images": [
+    {
+      "file": "yulei_u2501_-2266493965144442001.png",
+      "name": "yulei_u2501",
+      "width": 419,
+      "height": 243,
+      "role": "战斗贴图",
+      "path_id": -2266493965144442001,
+      "source": "CAB-08a46d4df0c03e0233dcf195f9513ca6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_u2501/yulei_u2501_-2266493965144442001.png"
+}

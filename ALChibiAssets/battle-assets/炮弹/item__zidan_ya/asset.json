@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_ya",
+  "model": "zidan_ya",
+  "name": "獠牙子弹",
+  "names": [
+    "獠牙子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_ya",
+  "path": "battle-assets/炮弹/item__zidan_ya",
+  "images": [
+    {
+      "file": "zidan_ya_-1898322781597500794.png",
+      "name": "zidan_ya",
+      "width": 72,
+      "height": 24,
+      "role": "战斗贴图",
+      "path_id": -1898322781597500794,
+      "source": "CAB-8518604bbb6d8c276917418a5f5c287a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_ya/zidan_ya_-1898322781597500794.png"
+}

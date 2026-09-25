@@ -1,0 +1,26 @@
+{
+  "id": "item__2b_daoguangzidan03",
+  "model": "2b_daoguangzidan03",
+  "name": "2b_daoguangzidan03",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/2b_daoguangzidan03",
+  "path": "battle-assets/炮弹/item__2b_daoguangzidan03",
+  "images": [
+    {
+      "file": "daoguang01_-6039758139247629093.png",
+      "name": "daoguang01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6039758139247629093,
+      "source": "CAB-2f0ec5d7eec5f3f2f59b79d356c10fbc"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__2b_daoguangzidan03/daoguang01_-6039758139247629093.png"
+}

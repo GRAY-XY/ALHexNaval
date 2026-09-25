@@ -1,0 +1,31 @@
+{
+  "id": "item__ciweidan_zidan01",
+  "model": "ciweidan_zidan01",
+  "name": "ciweidan_zidan01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ciweidan_zidan01",
+  "path": "battle-assets/炮弹/item__ciweidan_zidan01",
+  "images": [
+    {
+      "file": "ciweidan_-5767940185731839370.png",
+      "name": "ciweidan",
+      "width": 224,
+      "height": 93,
+      "role": "战斗贴图",
+      "path_id": -5767940185731839370,
+      "source": "CAB-a2abe94c38df5fc6564dd0d9896d6372"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    1816,
+    1817,
+    1818,
+    9008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ciweidan_zidan01/ciweidan_-5767940185731839370.png"
+}

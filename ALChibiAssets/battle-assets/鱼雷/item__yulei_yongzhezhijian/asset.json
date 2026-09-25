@@ -1,0 +1,31 @@
+{
+  "id": "item__yulei_yongzhezhijian",
+  "model": "yulei_yongzhezhijian",
+  "name": "勇者之剑鱼雷",
+  "names": [
+    "勇者之剑鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yongzhezhijian",
+  "path": "battle-assets/鱼雷/item__yulei_yongzhezhijian",
+  "images": [
+    {
+      "file": "yulei_yongzhezhijian_-3130178956749477687.png",
+      "name": "yulei_yongzhezhijian",
+      "width": 128,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": -3130178956749477687,
+      "source": "CAB-4176f4888af5dc5093e9950553f3aeab"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3382001,
+    3382003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yongzhezhijian/yulei_yongzhezhijian_-3130178956749477687.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guangpan",
+  "model": "zidan_guangpan",
+  "name": "唱片子弹",
+  "names": [
+    "唱片子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guangpan",
+  "path": "battle-assets/炮弹/item__zidan_guangpan",
+  "images": [
+    {
+      "file": "zidan_guangpan_2220475693087317445.png",
+      "name": "zidan_guangpan",
+      "width": 128,
+      "height": 72,
+      "role": "战斗贴图",
+      "path_id": 2220475693087317445,
+      "source": "CAB-f90cfc0c8c385f48f694982d77e3303a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guangpan/zidan_guangpan_2220475693087317445.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yaojingzhangyu",
+  "model": "paodan_yaojingzhangyu",
+  "name": "深海冲击炮弹",
+  "names": [
+    "深海冲击炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yaojingzhangyu",
+  "path": "battle-assets/炮弹/item__paodan_yaojingzhangyu",
+  "images": [
+    {
+      "file": "paodan_yaojingzhangyu_-292408867252549363.png",
+      "name": "paodan_yaojingzhangyu",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -292408867252549363,
+      "source": "CAB-9b811a8db3b81e145db78d53709189da"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yaojingzhangyu/paodan_yaojingzhangyu_-292408867252549363.png"
+}

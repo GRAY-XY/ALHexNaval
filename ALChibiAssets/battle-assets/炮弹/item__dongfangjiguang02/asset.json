@@ -1,0 +1,43 @@
+{
+  "id": "item__dongfangjiguang02",
+  "model": "dongfangjiguang02",
+  "name": "dongfangjiguang02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/dongfangjiguang02",
+  "path": "battle-assets/炮弹/item__dongfangjiguang02",
+  "images": [
+    {
+      "file": "dongfangjiguang02_-659324501118634350.png",
+      "name": "dongfangjiguang02",
+      "width": 450,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": -659324501118634350,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    856323,
+    856344,
+    856545,
+    856566,
+    856645,
+    856827,
+    856833,
+    3139103,
+    3146402,
+    3150214,
+    3151113,
+    3159004,
+    3231103,
+    3340137,
+    3385029,
+    3385129
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__dongfangjiguang02/dongfangjiguang02_-659324501118634350.png"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "item__bullet_rabbitwhite",
+  "model": "bullet_rabbitwhite",
+  "name": "bullet_rabbitwhite",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_rabbitwhite",
+  "path": "battle-assets/炮弹/item__bullet_rabbitwhite",
+  "images": [
+    {
+      "file": "bullet_rabbitwhite_8508481641055697283.png",
+      "name": "bullet_rabbitwhite",
+      "width": 99,
+      "height": 107,
+      "role": "战斗贴图",
+      "path_id": 8508481641055697283,
+      "source": "CAB-d098eea47c0c29a3acb80829500ba5cd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160885,
+    170102
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_rabbitwhite/bullet_rabbitwhite_8508481641055697283.png"
+}

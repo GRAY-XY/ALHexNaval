@@ -1,0 +1,28 @@
+{
+  "id": "item__yuhei01",
+  "model": "yuhei01",
+  "name": "yuhei01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yuhei01",
+  "path": "battle-assets/炮弹/item__yuhei01",
+  "images": [
+    {
+      "file": "yuhei01_7187765726586282948.png",
+      "name": "yuhei01",
+      "width": 245,
+      "height": 37,
+      "role": "战斗贴图",
+      "path_id": 7187765726586282948,
+      "source": "CAB-6492a2b9993f84c9b7f79ac0d85fc22d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yuhei01/yuhei01_7187765726586282948.png"
+}

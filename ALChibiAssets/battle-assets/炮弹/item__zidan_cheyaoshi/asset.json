@@ -1,0 +1,44 @@
+{
+  "id": "item__zidan_cheyaoshi",
+  "model": "zidan_cheyaoshi",
+  "name": "跑车钥匙子弹",
+  "names": [
+    "跑车钥匙子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_cheyaoshi",
+  "path": "battle-assets/炮弹/item__zidan_cheyaoshi",
+  "images": [
+    {
+      "file": "particles02_7588584155182929762.png",
+      "name": "particles02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7588584155182929762,
+      "source": "CAB-64ab93c008f6336f33c1bbc7bd3f4cd9"
+    },
+    {
+      "file": "zidan_cheyaoshi_8573896603165414621.png",
+      "name": "zidan_cheyaoshi",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8573896603165414621,
+      "source": "CAB-64ab93c008f6336f33c1bbc7bd3f4cd9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_cheyaoshi/particles02_7588584155182929762.png",
+  "spine": {
+    "skel": "zidan_cheyaoshi.skel",
+    "atlas": "zidan_cheyaoshi.atlas",
+    "pages": [
+      "zidan_cheyaoshi.png"
+    ]
+  }
+}

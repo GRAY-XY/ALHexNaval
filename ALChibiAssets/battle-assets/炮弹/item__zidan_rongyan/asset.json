@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_rongyan",
+  "model": "zidan_rongyan",
+  "name": "熔岩弹",
+  "names": [
+    "熔岩弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_rongyan",
+  "path": "battle-assets/炮弹/item__zidan_rongyan",
+  "images": [
+    {
+      "file": "zidan_rongyan_452067990497952808.png",
+      "name": "zidan_rongyan",
+      "width": 128,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": 452067990497952808,
+      "source": "CAB-eda2608e91405c5c374fd22cd1be6d61"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_rongyan/zidan_rongyan_452067990497952808.png"
+}

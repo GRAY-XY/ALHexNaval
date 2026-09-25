@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jiutong",
+  "model": "yulei_jiutong",
+  "name": "酒桶鱼雷",
+  "names": [
+    "酒桶鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jiutong",
+  "path": "battle-assets/鱼雷/item__yulei_jiutong",
+  "images": [
+    {
+      "file": "yulei_jiutong_-549960865006973253.png",
+      "name": "yulei_jiutong",
+      "width": 128,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": -549960865006973253,
+      "source": "CAB-eec40b8412f432f7a5ee5df199271f02"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jiutong/yulei_jiutong_-549960865006973253.png"
+}

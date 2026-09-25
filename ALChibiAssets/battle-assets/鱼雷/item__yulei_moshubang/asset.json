@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_moshubang",
+  "model": "yulei_moshubang",
+  "name": "魔术棒鱼雷",
+  "names": [
+    "魔术棒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_moshubang",
+  "path": "battle-assets/鱼雷/item__yulei_moshubang",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "moshubangyulei.skel",
+    "atlas": "moshubangyulei.atlas",
+    "pages": [
+      "moshubangyulei.png"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+
+unknownV_boss_magician_feiji.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fuyou_1
+  rotate: false
+  xy: 2, 2
+  size: 118, 67
+  orig: 118, 67
+  offset: 0, 0
+  index: -1
+fuyou_p1
+  rotate: false
+  xy: 62, 80
+  size: 20, 8
+  orig: 20, 8
+  offset: 0, 0
+  index: -1
+fuyou_p2
+  rotate: false
+  xy: 84, 80
+  size: 38, 8
+  orig: 38, 8
+  offset: 0, 0
+  index: -1
+fuyou_p3
+  rotate: false
+  xy: 2, 82
+  size: 21, 6
+  orig: 21, 6
+  offset: 0, 0
+  index: -1
+fuyou_p4
+  rotate: false
+  xy: 2, 71
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+fuyou_p5
+  rotate: false
+  xy: 25, 81
+  size: 21, 7
+  orig: 21, 7
+  offset: 0, 0
+  index: -1
+fuyou_p6
+  rotate: false
+  xy: 48, 81
+  size: 12, 7
+  orig: 12, 7
+  offset: 0, 0
+  index: -1

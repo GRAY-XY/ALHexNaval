@@ -1,0 +1,55 @@
+{
+  "id": "item__jinshi_lvguang_bullet",
+  "model": "jinshi_lvguang_bullet",
+  "name": "jinshi_lvguang_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jinshi_lvguang_bullet",
+  "path": "battle-assets/炮弹/item__jinshi_lvguang_bullet",
+  "images": [
+    {
+      "file": "line08_-6830302593199360903.png",
+      "name": "line08",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6830302593199360903,
+      "source": "CAB-40b9eff1a41cb853b193a29fe9e3452f"
+    },
+    {
+      "file": "ring01_-5274955921385858086.png",
+      "name": "ring01",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -5274955921385858086,
+      "source": "CAB-40b9eff1a41cb853b193a29fe9e3452f"
+    },
+    {
+      "file": "glow_2_-1648932381268313747.png",
+      "name": "glow 2",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1648932381268313747,
+      "source": "CAB-40b9eff1a41cb853b193a29fe9e3452f"
+    },
+    {
+      "file": "tex_uifx_mask_314_5383617826891928923.png",
+      "name": "tex_uifx_mask_314",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5383617826891928923,
+      "source": "CAB-40b9eff1a41cb853b193a29fe9e3452f"
+    }
+  ],
+  "particle_systems": 17,
+  "animations": [],
+  "bullet_ids": [
+    161143
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__jinshi_lvguang_bullet/line08_-6830302593199360903.png"
+}

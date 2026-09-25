@@ -1,0 +1,167 @@
+
+yulei_hongying.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hongying
+  rotate: false
+  xy: 2, 21
+  size: 199, 105
+  orig: 199, 105
+  offset: 0, 0
+  index: -1
+huaban_1
+  rotate: true
+  xy: 92, 6
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+huaban_10
+  rotate: true
+  xy: 136, 7
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+huaban_10_2
+  rotate: true
+  xy: 146, 7
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+huaban_11
+  rotate: true
+  xy: 70, 3
+  size: 16, 9
+  orig: 16, 9
+  offset: 0, 0
+  index: -1
+huaban_11_2
+  rotate: true
+  xy: 81, 3
+  size: 16, 9
+  orig: 16, 9
+  offset: 0, 0
+  index: -1
+huaban_1_2
+  rotate: true
+  xy: 103, 6
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+huaban_2
+  rotate: true
+  xy: 174, 10
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+huaban_2_2
+  rotate: true
+  xy: 184, 10
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+huaban_3
+  rotate: true
+  xy: 156, 6
+  size: 13, 7
+  orig: 13, 7
+  offset: 0, 0
+  index: -1
+huaban_3_2
+  rotate: true
+  xy: 165, 6
+  size: 13, 7
+  orig: 13, 7
+  offset: 0, 0
+  index: -1
+huaban_4
+  rotate: true
+  xy: 194, 9
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1
+huaban_4_2
+  rotate: true
+  xy: 203, 116
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1
+huaban_5
+  rotate: true
+  xy: 203, 105
+  size: 9, 7
+  orig: 9, 7
+  offset: 0, 0
+  index: -1
+huaban_5_2
+  rotate: true
+  xy: 203, 94
+  size: 9, 7
+  orig: 9, 7
+  offset: 0, 0
+  index: -1
+huaban_6
+  rotate: false
+  xy: 28, 10
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+huaban_6_2
+  rotate: false
+  xy: 49, 10
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+huaban_7
+  rotate: true
+  xy: 2, 2
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+huaban_7_2
+  rotate: true
+  xy: 15, 2
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+huaban_8
+  rotate: true
+  xy: 114, 6
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+huaban_8_2
+  rotate: true
+  xy: 125, 6
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+huaban_9
+  rotate: false
+  xy: 28, 2
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1
+huaban_9_2
+  rotate: false
+  xy: 39, 2
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__muyuefeiji__muyuefeiji_material",
+  "model": "muyuefeiji_material",
+  "name": "muyuefeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/muyuefeiji/muyuefeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__muyuefeiji__muyuefeiji_material",
+  "images": [
+    {
+      "file": "muyuefeiji_7925725874129336820.png",
+      "name": "muyuefeiji",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7925725874129336820,
+      "source": "CAB-9c1ee2989d9ecf7a23eb33994aee7812"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

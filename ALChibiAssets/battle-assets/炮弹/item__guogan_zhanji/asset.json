@@ -1,0 +1,17 @@
+{
+  "id": "item__guogan_zhanji",
+  "model": "guogan_zhanji",
+  "name": "guogan_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/guogan_zhanji",
+  "path": "battle-assets/炮弹/item__guogan_zhanji",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160922
+  ],
+  "has_preview": false,
+  "prefab": true
+}

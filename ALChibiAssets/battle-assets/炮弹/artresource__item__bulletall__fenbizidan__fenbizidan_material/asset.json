@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__fenbizidan__fenbizidan_material",
+  "model": "fenbizidan_material",
+  "name": "fenbizidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/fenbizidan/fenbizidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__fenbizidan__fenbizidan_material",
+  "images": [
+    {
+      "file": "fenbizidan_-590409110901705953.png",
+      "name": "fenbizidan",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -590409110901705953,
+      "source": "CAB-b44c84fb9dcd6e76253f30ffd7e52786"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

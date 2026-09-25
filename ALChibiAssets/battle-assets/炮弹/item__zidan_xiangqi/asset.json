@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xiangqi",
+  "model": "zidan_xiangqi",
+  "name": "象棋子弹",
+  "names": [
+    "象棋子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xiangqi",
+  "path": "battle-assets/炮弹/item__zidan_xiangqi",
+  "images": [
+    {
+      "file": "xiangqi_3025108089638272031.png",
+      "name": "xiangqi",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3025108089638272031,
+      "source": "CAB-35561d642faa29d11c9d841f2e12a2ab"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xiangqi/xiangqi_3025108089638272031.png"
+}

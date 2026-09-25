@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zidan_shizixing__zidan_shizixing_material",
+  "model": "zidan_shizixing_material",
+  "name": "zidan_shizixing_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_shizixing/zidan_shizixing_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_shizixing__zidan_shizixing_material",
+  "images": [
+    {
+      "file": "zidan_shizixing_-7951624975820721829.png",
+      "name": "zidan_shizixing",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7951624975820721829,
+      "source": "CAB-5fbe65cc22b76b5e5fdd77b1e7b8e4b8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_tieqiao",
+  "model": "yulei_tieqiao",
+  "name": "矿镐鱼雷",
+  "names": [
+    "矿镐鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tieqiao",
+  "path": "battle-assets/鱼雷/item__yulei_tieqiao",
+  "images": [
+    {
+      "file": "yulei_tieqiao_-5578837199681371525.png",
+      "name": "yulei_tieqiao",
+      "width": 159,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -5578837199681371525,
+      "source": "CAB-09b2dfd12e1d69b96a4443ff194d1516"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tieqiao/yulei_tieqiao_-5578837199681371525.png"
+}

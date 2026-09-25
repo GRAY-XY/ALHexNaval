@@ -1,0 +1,31 @@
+{
+  "id": "item__wuzang_laser",
+  "model": "wuzang_laser",
+  "name": "wuzang_laser",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/wuzang_laser",
+  "path": "battle-assets/炮弹/item__wuzang_laser",
+  "images": [
+    {
+      "file": "AL_Smoke07_2568558077492797202.png",
+      "name": "AL_Smoke07",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2568558077492797202,
+      "source": "CAB-a1203757fab74900503c86a32a1fc892"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [
+    "fumilulu"
+  ],
+  "bullet_ids": [
+    3025002,
+    3320514
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__wuzang_laser/AL_Smoke07_2568558077492797202.png"
+}

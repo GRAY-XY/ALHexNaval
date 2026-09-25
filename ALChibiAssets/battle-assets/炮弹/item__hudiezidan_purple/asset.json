@@ -1,0 +1,24 @@
+{
+  "id": "item__hudiezidan_purple",
+  "model": "hudiezidan_purple",
+  "name": "hudiezidan_purple",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hudiezidan_purple",
+  "path": "battle-assets/炮弹/item__hudiezidan_purple",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    760088,
+    760089,
+    760090,
+    760091,
+    760092,
+    760093,
+    760094,
+    760095
+  ],
+  "has_preview": false,
+  "prefab": true
+}

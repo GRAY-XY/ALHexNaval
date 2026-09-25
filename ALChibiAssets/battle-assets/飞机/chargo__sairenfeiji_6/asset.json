@@ -1,0 +1,58 @@
+{
+  "id": "chargo__sairenfeiji_6",
+  "model": "sairenfeiji_6",
+  "name": "量产型塞壬航母IV型轰炸机T1 (飞机 I",
+  "names": [
+    "量产型塞壬航母IV型轰炸机T1 (飞机 I",
+    "量产型塞壬航母IV型轰炸机T1 (飞机 II",
+    "量产型塞壬航母IV型轰炸机T1 (飞机 III",
+    "量产型塞壬航母IV型轰炸机T1 (飞机 IV",
+    "量产型塞壬航母IV型轰炸机T1 (飞机 V",
+    "量产型塞壬航母IV型战斗机T1 (飞机 I",
+    "量产型塞壬航母IV型战斗机T1 (飞机 II",
+    "量产型塞壬航母IV型战斗机T1 (飞机 III",
+    "量产型塞壬航母IV型战斗机T1 (飞机 IV",
+    "量产型塞壬航母IV型战斗机T1 (飞机 V",
+    "【精英】执棋者IV型 轰炸机T3 I",
+    "【精英】执棋者IV型 轰炸机T3 II",
+    "【精英】执棋者IV型 轰炸机T3 III",
+    "【精英】执棋者IV型 轰炸机T3 IV",
+    "【精英】执棋者IV型 轰炸机T3 V",
+    "【精英】执棋者IV型 鱼雷机T3 I",
+    "【精英】执棋者IV型 鱼雷机T3 II",
+    "【精英】执棋者IV型 鱼雷机T3 III",
+    "【精英】执棋者IV型 鱼雷机T3 IV",
+    "【精英】执棋者IV型 鱼雷机T3 V",
+    "【2025约战联动L6-4】BOSS宝剑VII「Impulse」战斗机",
+    "【2025约战联动L6-4】BOSS宝剑VII「Impulse」轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/sairenfeiji_6",
+  "path": "battle-assets/飞机/chargo__sairenfeiji_6",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "sairenfeiji_6_2411851615696485517.png",
+      "name": "sairenfeiji_6",
+      "width": 239,
+      "height": 171,
+      "role": "战斗贴图",
+      "path_id": 2411851615696485517,
+      "source": "CAB-886f310a7845e2006b1d038c9bdf4b6f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sairenfeiji_6/aircraft_shadow_2192772484218123160.png"
+}

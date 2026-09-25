@@ -1,0 +1,37 @@
+{
+  "id": "chargo__qiangfeng",
+  "model": "qiangfeng",
+  "name": "强风",
+  "names": [
+    "强风"
+  ],
+  "category": "飞机",
+  "source": "chargo/qiangfeng",
+  "path": "battle-assets/飞机/chargo__qiangfeng",
+  "images": [
+    {
+      "file": "qiangfeng_4558252675174794245.png",
+      "name": "qiangfeng",
+      "width": 252,
+      "height": 250,
+      "role": "战斗贴图",
+      "path_id": 4558252675174794245,
+      "source": "CAB-8947d305bc17f023f6269d2b595ad144"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__qiangfeng/qiangfeng_4558252675174794245.png"
+}

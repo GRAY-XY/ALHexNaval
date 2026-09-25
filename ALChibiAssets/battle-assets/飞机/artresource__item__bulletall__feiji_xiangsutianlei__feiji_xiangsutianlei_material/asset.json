@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_xiangsutianlei__feiji_xiangsutianlei_material",
+  "model": "feiji_xiangsutianlei_material",
+  "name": "feiji_xiangsutianlei_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_xiangsutianlei/feiji_xiangsutianlei_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_xiangsutianlei__feiji_xiangsutianlei_material",
+  "images": [
+    {
+      "file": "feiji_xiangsutianlei_-806805138631917398.png",
+      "name": "feiji_xiangsutianlei",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -806805138631917398,
+      "source": "CAB-fa8d5dbb3ff499ed68dbdb45e0f18955"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

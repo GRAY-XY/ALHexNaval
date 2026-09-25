@@ -1,0 +1,181 @@
+
+feiji_hailananying.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beimao
+  rotate: false
+  xy: 353, 346
+  size: 267, 82
+  orig: 267, 82
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 458
+  size: 812, 447
+  orig: 812, 447
+  offset: 0, 0
+  index: -1
+leg_b1
+  rotate: true
+  xy: 787, 182
+  size: 145, 142
+  orig: 145, 142
+  offset: 0, 0
+  index: -1
+leg_b2
+  rotate: false
+  xy: 566, 153
+  size: 136, 160
+  orig: 136, 160
+  offset: 0, 0
+  index: -1
+leg_f2
+  rotate: false
+  xy: 704, 199
+  size: 58, 114
+  orig: 58, 114
+  offset: 0, 0
+  index: -1
+tuo_1
+  rotate: false
+  xy: 353, 444
+  size: 432, 12
+  orig: 432, 12
+  offset: 0, 0
+  index: -1
+tuo_2
+  rotate: false
+  xy: 353, 430
+  size: 432, 12
+  orig: 432, 12
+  offset: 0, 0
+  index: -1
+tuo_3
+  rotate: false
+  xy: 353, 315
+  size: 432, 12
+  orig: 432, 12
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: true
+  xy: 816, 556
+  size: 349, 167
+  orig: 349, 167
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 142
+  size: 349, 314
+  orig: 349, 314
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: true
+  xy: 985, 850
+  size: 55, 34
+  orig: 55, 34
+  offset: 0, 0
+  index: -1
+tx_10
+  rotate: true
+  xy: 787, 346
+  size: 110, 24
+  orig: 110, 24
+  offset: 0, 0
+  index: -1
+tx_2
+  rotate: true
+  xy: 985, 791
+  size: 57, 31
+  orig: 57, 31
+  offset: 0, 0
+  index: -1
+tx_3
+  rotate: true
+  xy: 969, 458
+  size: 96, 43
+  orig: 96, 43
+  offset: 0, 0
+  index: -1
+tx_4
+  rotate: false
+  xy: 622, 346
+  size: 92, 40
+  orig: 92, 40
+  offset: 0, 0
+  index: -1
+tx_5
+  rotate: true
+  xy: 985, 634
+  size: 100, 29
+  orig: 100, 29
+  offset: 0, 0
+  index: -1
+tx_6
+  rotate: true
+  xy: 985, 569
+  size: 63, 19
+  orig: 63, 19
+  offset: 0, 0
+  index: -1
+tx_7
+  rotate: true
+  xy: 969, 329
+  size: 127, 41
+  orig: 127, 41
+  offset: 0, 0
+  index: -1
+tx_8
+  rotate: false
+  xy: 622, 388
+  size: 132, 40
+  orig: 132, 40
+  offset: 0, 0
+  index: -1
+tx_9
+  rotate: true
+  xy: 985, 736
+  size: 53, 31
+  orig: 53, 31
+  offset: 0, 0
+  index: -1
+zong_1
+  rotate: true
+  xy: 704, 66
+  size: 114, 63
+  orig: 114, 63
+  offset: 0, 0
+  index: -1
+zong_2
+  rotate: true
+  xy: 816, 341
+  size: 213, 151
+  orig: 213, 151
+  offset: 0, 0
+  index: -1
+zong_3
+  rotate: false
+  xy: 353, 185
+  size: 211, 128
+  orig: 211, 128
+  offset: 0, 0
+  index: -1
+zong_44
+  rotate: true
+  xy: 931, 81
+  size: 246, 90
+  orig: 246, 90
+  offset: 0, 0
+  index: -1
+zong_5
+  rotate: true
+  xy: 353, 2
+  size: 181, 74
+  orig: 181, 74
+  offset: 0, 0
+  index: -1

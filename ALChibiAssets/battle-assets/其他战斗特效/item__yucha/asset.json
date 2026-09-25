@@ -1,0 +1,26 @@
+{
+  "id": "item__yucha",
+  "model": "yucha",
+  "name": "yucha",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/yucha",
+  "path": "battle-assets/其他战斗特效/item__yucha",
+  "images": [
+    {
+      "file": "yucha_-9019671359883351421.png",
+      "name": "yucha",
+      "width": 410,
+      "height": 143,
+      "role": "战斗贴图",
+      "path_id": -9019671359883351421,
+      "source": "CAB-9e6e7c32cbbdfd048d9b62d6f255bd1e"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__yucha/yucha_-9019671359883351421.png"
+}

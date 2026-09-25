@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_yuanhuanguangren",
+  "model": "paodan_yuanhuanguangren",
+  "name": "古立特骑士光轮炮弹",
+  "names": [
+    "古立特骑士光轮炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yuanhuanguangren",
+  "path": "battle-assets/炮弹/item__paodan_yuanhuanguangren",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "gulite_yuanhuanguangren.skel",
+    "atlas": "gulite_yuanhuanguangren.atlas",
+    "pages": [
+      "gulite_yuanhuanguangren.png"
+    ]
+  }
+}

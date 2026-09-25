@@ -1,0 +1,48 @@
+
+chuitou.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 53
+  size: 167, 201
+  orig: 167, 201
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 251, 2
+  size: 252, 77
+  orig: 252, 77
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 410, 26
+  size: 228, 77
+  orig: 228, 77
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 489, 38
+  size: 216, 78
+  orig: 216, 78
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 330, 11
+  size: 243, 78
+  orig: 243, 78
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 171, 2
+  size: 252, 78
+  orig: 252, 78
+  offset: 0, 0
+  index: -1

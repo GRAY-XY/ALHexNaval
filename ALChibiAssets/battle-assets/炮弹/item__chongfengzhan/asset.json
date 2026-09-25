@@ -1,0 +1,21 @@
+{
+  "id": "item__chongfengzhan",
+  "model": "chongfengzhan",
+  "name": "chongfengzhan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/chongfengzhan",
+  "path": "battle-assets/炮弹/item__chongfengzhan",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29600200,
+    29631000,
+    29631001,
+    29631002,
+    29631003
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,37 @@
+{
+  "id": "item__unknownv_sairenyulei",
+  "model": "unknownv_sairenyulei",
+  "name": "unknownv_sairenyulei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/unknownv_sairenyulei",
+  "path": "battle-assets/鱼雷/item__unknownv_sairenyulei",
+  "images": [
+    {
+      "file": "unknownV_sairenyulei_shadow_-3600248490356906529.png",
+      "name": "unknownV_sairenyulei_shadow",
+      "width": 232,
+      "height": 69,
+      "role": "战斗贴图",
+      "path_id": -3600248490356906529,
+      "source": "CAB-230e9417f2e05eec20d35ad49a6371f0"
+    },
+    {
+      "file": "unknownV_sairenyulei_-5777050482154576011.png",
+      "name": "unknownV_sairenyulei",
+      "width": 232,
+      "height": 69,
+      "role": "战斗贴图",
+      "path_id": -5777050482154576011,
+      "source": "CAB-230e9417f2e05eec20d35ad49a6371f0"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3279003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__unknownv_sairenyulei/unknownV_sairenyulei_shadow_-3600248490356906529.png"
+}

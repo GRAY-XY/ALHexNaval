@@ -1,0 +1,34 @@
+
+gangyishawa_baoxiang.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 186, 95
+  size: 181, 81
+  orig: 181, 81
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 186, 18
+  size: 169, 75
+  orig: 169, 75
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 369, 2
+  size: 174, 82
+  orig: 174, 82
+  offset: 0, 0
+  index: -1
+gangyishawa_baoxiang
+  rotate: true
+  xy: 2, 9
+  size: 167, 182
+  orig: 167, 182
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,33 @@
+{
+  "id": "item__al_flower02",
+  "model": "al_flower02",
+  "name": "al_flower02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/al_flower02",
+  "path": "battle-assets/炮弹/item__al_flower02",
+  "images": [
+    {
+      "file": "Al_Flower02_4989709236782717826.png",
+      "name": "Al_Flower02",
+      "width": 254,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": 4989709236782717826,
+      "source": "CAB-84f16812f7a82c07ac63736314c178c5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19372,
+    19373,
+    19374,
+    19375,
+    19376,
+    19377
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__al_flower02/Al_Flower02_4989709236782717826.png"
+}

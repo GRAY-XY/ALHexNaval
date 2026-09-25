@@ -1,0 +1,37 @@
+{
+  "id": "chargo__tbdvt-8",
+  "model": "tbdvt-8",
+  "name": "TBD蹂躏者(VT-8中队)",
+  "names": [
+    "TBD蹂躏者(VT-8中队)"
+  ],
+  "category": "飞机",
+  "source": "chargo/tbdvt-8",
+  "path": "battle-assets/飞机/chargo__tbdvt-8",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "tbdvt-8_4839436885638320877.png",
+      "name": "tbdvt-8",
+      "width": 252,
+      "height": 239,
+      "role": "战斗贴图",
+      "path_id": 4839436885638320877,
+      "source": "CAB-bfc76febc6fd68a4ed89421e39f0e911"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__tbdvt-8/aircraft_shadow_2192772484218123160.png"
+}

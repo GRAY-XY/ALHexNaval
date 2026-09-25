@@ -1,0 +1,117 @@
+
+xiong_zhuiluo.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+x-armL
+  rotate: true
+  xy: 205, 886
+  size: 113, 178
+  orig: 113, 178
+  offset: 0, 0
+  index: -1
+x-armR
+  rotate: true
+  xy: 2, 888
+  size: 111, 201
+  orig: 111, 201
+  offset: 0, 0
+  index: -1
+x-body
+  rotate: true
+  xy: 2, 2
+  size: 360, 495
+  orig: 360, 495
+  offset: 0, 0
+  index: -1
+x-collar
+  rotate: false
+  xy: 2, 494
+  size: 418, 198
+  orig: 418, 198
+  offset: 0, 0
+  index: -1
+x-handL
+  rotate: true
+  xy: 385, 881
+  size: 118, 153
+  orig: 118, 153
+  offset: 0, 0
+  index: -1
+x-handLb
+  rotate: true
+  xy: 697, 878
+  size: 121, 185
+  orig: 121, 185
+  offset: 0, 0
+  index: -1
+x-handR_a
+  rotate: true
+  xy: 540, 881
+  size: 118, 155
+  orig: 118, 155
+  offset: 0, 0
+  index: -1
+x-handR_b
+  rotate: false
+  xy: 139, 753
+  size: 138, 131
+  orig: 138, 131
+  offset: 0, 0
+  index: -1
+x-tuiL
+  rotate: false
+  xy: 884, 873
+  size: 132, 126
+  orig: 132, 126
+  offset: 0, 0
+  index: -1
+x-tuiR
+  rotate: true
+  xy: 2, 756
+  size: 130, 135
+  orig: 130, 135
+  offset: 0, 0
+  index: -1
+x_pifeng
+  rotate: false
+  xy: 422, 364
+  size: 451, 319
+  orig: 451, 319
+  offset: 0, 0
+  index: -1
+x_xiuziL
+  rotate: true
+  xy: 545, 685
+  size: 191, 248
+  orig: 191, 248
+  offset: 0, 0
+  index: -1
+x_xiuziR
+  rotate: true
+  xy: 279, 694
+  size: 185, 264
+  orig: 185, 264
+  offset: 0, 0
+  index: -1
+
+xiong_zhuiluo2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+111
+  rotate: false
+  xy: 2, 2
+  size: 427, 566
+  orig: 427, 566
+  offset: 0, 0
+  index: -1
+222
+  rotate: false
+  xy: 431, 24
+  size: 430, 544
+  orig: 430, 544
+  offset: 0, 0
+  index: -1

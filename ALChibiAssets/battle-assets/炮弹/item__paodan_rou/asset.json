@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_rou",
+  "model": "paodan_rou",
+  "name": "肉肉炮弹",
+  "names": [
+    "肉肉炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_rou",
+  "path": "battle-assets/炮弹/item__paodan_rou",
+  "images": [
+    {
+      "file": "paodan_rou_1369012279548422806.png",
+      "name": "paodan_rou",
+      "width": 128,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": 1369012279548422806,
+      "source": "CAB-32b209b4ee841da5982be746c8aec46c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_rou/paodan_rou_1369012279548422806.png"
+}

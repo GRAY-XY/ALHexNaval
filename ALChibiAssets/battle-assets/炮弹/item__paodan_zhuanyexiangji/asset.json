@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_zhuanyexiangji",
+  "model": "paodan_zhuanyexiangji",
+  "name": "单反相机炮弹",
+  "names": [
+    "单反相机炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhuanyexiangji",
+  "path": "battle-assets/炮弹/item__paodan_zhuanyexiangji",
+  "images": [
+    {
+      "file": "paodan_zhuanyexiangji_-7267974728015888204.png",
+      "name": "paodan_zhuanyexiangji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7267974728015888204,
+      "source": "CAB-e3ab8c9b1770216470b85c85fa9e1834"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhuanyexiangji/paodan_zhuanyexiangji_-7267974728015888204.png",
+  "spine": {
+    "skel": "paodan_zhuanyexiangji.skel",
+    "atlas": "paodan_zhuanyexiangji.atlas",
+    "pages": [
+      "paodan_zhuanyexiangji.png"
+    ]
+  }
+}

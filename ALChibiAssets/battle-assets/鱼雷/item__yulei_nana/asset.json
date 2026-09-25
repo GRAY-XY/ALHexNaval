@@ -1,0 +1,29 @@
+{
+  "id": "item__yulei_nana",
+  "model": "yulei_nana",
+  "name": "yulei_nana",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_nana",
+  "path": "battle-assets/鱼雷/item__yulei_nana",
+  "images": [
+    {
+      "file": "yulei_nana_-3187252131357119581.png",
+      "name": "yulei_nana",
+      "width": 176,
+      "height": 58,
+      "role": "战斗贴图",
+      "path_id": -3187252131357119581,
+      "source": "CAB-d16356cdd935a3b9eddc33bf0060cbf8"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    166723,
+    3227204
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nana/yulei_nana_-3187252131357119581.png"
+}

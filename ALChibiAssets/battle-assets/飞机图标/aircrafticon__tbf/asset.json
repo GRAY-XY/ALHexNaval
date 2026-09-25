@@ -1,0 +1,47 @@
+{
+  "id": "aircrafticon__tbf",
+  "model": "tbf",
+  "name": "TBF复仇者",
+  "names": [
+    "TBF复仇者",
+    "TBF复仇者(VT-8中队)",
+    "普林斯顿技能鱼雷机Lv1",
+    "萨拉托加技能鱼雷机Lv0",
+    "埃塞克斯技能鱼雷机Lv0",
+    "独立技能鱼雷机Lv1",
+    "邦克山技能鱼雷机Lv1",
+    "英仙座技能TBFLv1",
+    "大黄蜂II技能鱼雷机Lv1",
+    "萨拉托加技能鱼雷机Lv1",
+    "普林斯顿META技能鱼雷机Lv1",
+    "富兰克林技能鱼雷机Lv1",
+    "富兰克林强化技能鱼雷机Lv1",
+    "埃塞克斯技能声导鱼雷机Lv1",
+    "贝劳森林TBF复仇者",
+    "科本斯技能鱼雷机1Lv1",
+    "科本斯技能鱼雷机2Lv1",
+    "【2020埃塞克斯世界BOSS E难度】 鱼雷机*5",
+    "【2020埃塞克斯世界BOSS N难度】 鱼雷机*7",
+    "【2020埃塞克斯世界BOSS H难度】 鱼雷机*10",
+    "【2020埃塞克斯世界BOSS EX难度】 鱼雷机*10"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tbf",
+  "path": "battle-assets/飞机图标/aircrafticon__tbf",
+  "images": [
+    {
+      "file": "tbf_7061239526412302296.png",
+      "name": "tbf",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 7061239526412302296,
+      "source": "CAB-6f2e687c05f0a44f86fdd5c9e3df67ee"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

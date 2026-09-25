@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_ganlanqiu",
+  "model": "zidan_ganlanqiu",
+  "name": "橄榄球子弹",
+  "names": [
+    "橄榄球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_ganlanqiu",
+  "path": "battle-assets/炮弹/item__zidan_ganlanqiu",
+  "images": [
+    {
+      "file": "zidan_ganlanqiu_754610580700681371.png",
+      "name": "zidan_ganlanqiu",
+      "width": 128,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": 754610580700681371,
+      "source": "CAB-61f86b19710f816a7d52ae186431af7f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3160012
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_ganlanqiu/zidan_ganlanqiu_754610580700681371.png"
+}

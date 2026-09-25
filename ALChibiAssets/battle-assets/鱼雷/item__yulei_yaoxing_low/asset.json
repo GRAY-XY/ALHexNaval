@@ -1,0 +1,37 @@
+{
+  "id": "item__yulei_yaoxing_low",
+  "model": "yulei_yaoxing_low",
+  "name": "yulei_yaoxing_low",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_yaoxing_low",
+  "path": "battle-assets/鱼雷/item__yulei_yaoxing_low",
+  "images": [
+    {
+      "file": "shanguang_01_-8783301334698594251.png",
+      "name": "shanguang_01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8783301334698594251,
+      "source": "CAB-476b2a34f26cf78ced454cf46381c864"
+    },
+    {
+      "file": "yulei01_8264266033219061017.png",
+      "name": "yulei01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8264266033219061017,
+      "source": "CAB-476b2a34f26cf78ced454cf46381c864"
+    }
+  ],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    710212
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yaoxing_low/shanguang_01_-8783301334698594251.png"
+}

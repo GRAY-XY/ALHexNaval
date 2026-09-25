@@ -1,0 +1,40 @@
+{
+  "id": "chargo__ju87d4",
+  "model": "ju87d4",
+  "name": "Ju-87 D-4",
+  "names": [
+    "Ju-87 D-4",
+    "彼得史特拉塞技能JU87鱼雷机LV1",
+    "马克斯鱼雷机Lv1",
+    "【2024鲁梅活动 剧情战】我方铁血航母 鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/ju87d4",
+  "path": "battle-assets/飞机/chargo__ju87d4",
+  "images": [
+    {
+      "file": "Ju87D4_-7939359047166642712.png",
+      "name": "Ju87D4",
+      "width": 247,
+      "height": 244,
+      "role": "战斗贴图",
+      "path_id": -7939359047166642712,
+      "source": "CAB-f340d9686917841a1f1794eec54d8e66"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ju87d4/Ju87D4_-7939359047166642712.png"
+}

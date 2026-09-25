@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_lianjieqi",
+  "model": "zidan_lianjieqi",
+  "name": "车厢挂钩子弹",
+  "names": [
+    "车厢挂钩子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_lianjieqi",
+  "path": "battle-assets/炮弹/item__zidan_lianjieqi",
+  "images": [
+    {
+      "file": "zidan_lianjieqi_5255726037785170484.png",
+      "name": "zidan_lianjieqi",
+      "width": 128,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": 5255726037785170484,
+      "source": "CAB-a4f79157f3827aba8fded4fe11bcf386"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lianjieqi/zidan_lianjieqi_5255726037785170484.png"
+}

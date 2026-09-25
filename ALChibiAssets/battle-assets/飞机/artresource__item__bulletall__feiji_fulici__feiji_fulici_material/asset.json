@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_fulici__feiji_fulici_material",
+  "model": "feiji_fulici_material",
+  "name": "feiji_fulici_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_fulici/feiji_fulici_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_fulici__feiji_fulici_material",
+  "images": [
+    {
+      "file": "feiji_fulici_8369863392520322452.png",
+      "name": "feiji_fulici",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8369863392520322452,
+      "source": "CAB-8a7c20f34c23fc92112aaa55e135f98a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

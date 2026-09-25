@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_modoutengwan",
+  "model": "yulei_modoutengwan",
+  "name": "鱼雷·魔豆藤蔓",
+  "names": [
+    "鱼雷·魔豆藤蔓"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_modoutengwan",
+  "path": "battle-assets/鱼雷/item__yulei_modoutengwan",
+  "images": [
+    {
+      "file": "yulei_modoutengwan_-8478561225615855555.png",
+      "name": "yulei_modoutengwan",
+      "width": 128,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -8478561225615855555,
+      "source": "CAB-6b883b9efed7641e3854383113be1451"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_modoutengwan/yulei_modoutengwan_-8478561225615855555.png"
+}

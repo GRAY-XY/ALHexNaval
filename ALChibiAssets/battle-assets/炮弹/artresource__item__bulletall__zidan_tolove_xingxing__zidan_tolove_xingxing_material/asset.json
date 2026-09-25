@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zidan_tolove_xingxing__zidan_tolove_xingxing_material",
+  "model": "zidan_tolove_xingxing_material",
+  "name": "zidan_tolove_xingxing_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_tolove_xingxing/zidan_tolove_xingxing_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_tolove_xingxing__zidan_tolove_xingxing_material",
+  "images": [
+    {
+      "file": "zidan_tolove_xingxing_1000920700036666970.png",
+      "name": "zidan_tolove_xingxing",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1000920700036666970,
+      "source": "CAB-fd00f292f9a6d8104c1643213db03a5a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

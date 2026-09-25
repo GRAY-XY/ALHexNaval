@@ -1,0 +1,30 @@
+{
+  "id": "item__heifangzhou_gun02",
+  "model": "heifangzhou_gun02",
+  "name": "heifangzhou_gun02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_gun02",
+  "path": "battle-assets/炮弹/item__heifangzhou_gun02",
+  "images": [
+    {
+      "file": "heifangzhou_gun_shadow_2357006750972401389.png",
+      "name": "heifangzhou_gun_shadow",
+      "width": 206,
+      "height": 48,
+      "role": "原始纹理",
+      "path_id": 2357006750972401389,
+      "source": "CAB-48caac0c2e995ba59699c4c7592c08f7"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29643000,
+    29643011,
+    29643013
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heifangzhou_gun02/heifangzhou_gun_shadow_2357006750972401389.png"
+}

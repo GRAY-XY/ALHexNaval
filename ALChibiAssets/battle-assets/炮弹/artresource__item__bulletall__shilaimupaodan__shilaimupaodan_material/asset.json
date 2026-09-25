@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shilaimupaodan__shilaimupaodan_material",
+  "model": "shilaimupaodan_material",
+  "name": "shilaimupaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/shilaimupaodan/shilaimupaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__shilaimupaodan__shilaimupaodan_material",
+  "images": [
+    {
+      "file": "shilaimupaodan_329906992104009019.png",
+      "name": "shilaimupaodan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 329906992104009019,
+      "source": "CAB-ea91748c56789cbdbbcdfefd31f86689"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

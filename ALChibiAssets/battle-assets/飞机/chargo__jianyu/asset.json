@@ -1,0 +1,58 @@
+{
+  "id": "chargo__jianyu",
+  "model": "jianyu",
+  "name": "默认皇家鱼雷机",
+  "names": [
+    "默认皇家鱼雷机",
+    "剑鱼",
+    "皇家方舟技能LV1",
+    "皇家方舟改技能剑鱼",
+    "黑方舟技能-特殊鱼雷机Lv1",
+    "半人马技能鱼雷机Lv0",
+    "小光辉技能鱼雷机Lv1",
+    "小光辉圣光飞机Lv1",
+    "鹰技能剑鱼 Lv1",
+    "百眼巨人剑鱼弹幕Lv1",
+    "光荣meta鱼雷飞机弹幕Lv1",
+    "【俾斯麦活动A2】鱼雷机",
+    "【俾斯麦活动A3】鱼雷机",
+    "【俾斯麦活动C2】鱼雷机",
+    "【俾斯麦活动C3】鱼雷机",
+    "【美系前哨站】鱼雷机",
+    "【意大利活动A3】BOSS-光辉 鱼雷机",
+    "【意大利活动C3】BOSS-光辉 鱼雷机",
+    "【hololive联动TS4】BOSS-时乃空 鱼雷机",
+    "【翻格子活动】皇家鱼雷机",
+    "【大世界】皇家航母精英专属_剑鱼（胜利）",
+    "【大世界】黑方舟剑鱼oldtype"
+  ],
+  "category": "飞机",
+  "source": "chargo/jianyu",
+  "path": "battle-assets/飞机/chargo__jianyu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "jianyu_268136160969535213.png",
+      "name": "jianyu",
+      "width": 256,
+      "height": 241,
+      "role": "战斗贴图",
+      "path_id": 268136160969535213,
+      "source": "CAB-27ae4904adcc021dc71e8305135c5e05"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__jianyu/aircraft_shadow_2192772484218123160.png"
+}

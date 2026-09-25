@@ -1,0 +1,31 @@
+{
+  "id": "item__bullet_faa",
+  "model": "bullet_faa",
+  "name": "bullet_faa",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_faa",
+  "path": "battle-assets/炮弹/item__bullet_faa",
+  "images": [
+    {
+      "file": "bullet_baihu_-4769879364325397423.png",
+      "name": "bullet_baihu",
+      "width": 97,
+      "height": 22,
+      "role": "战斗贴图",
+      "path_id": -4769879364325397423,
+      "source": "CAB-685f87ce11c9b00aef17c11cdaa99261"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    2001,
+    2002,
+    2003,
+    2004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_faa/bullet_baihu_-4769879364325397423.png"
+}

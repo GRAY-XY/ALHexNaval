@@ -1,0 +1,51 @@
+{
+  "id": "chargo__ad1",
+  "model": "ad1",
+  "name": "AD1天袭者",
+  "names": [
+    "AD1天袭者",
+    "约克城Ⅱ天袭者舰载机",
+    "约克城Ⅱ一技能弹幕",
+    "埃塞克斯技能AD1 Lv1",
+    "独立专武弹幕",
+    "【大世界】约克城meta 轰炸机（领域展开后间隔大幅度缩短) Lv1",
+    "【大世界】约克城meta 轰炸机 Lv2",
+    "【大世界】约克城meta 轰炸机 Lv3",
+    "【大世界】约克城meta 轰炸机 Lv4",
+    "【大世界】约克城meta 轰炸机 Lv5",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv1",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv2",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv3",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv4",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv5"
+  ],
+  "category": "飞机",
+  "source": "chargo/ad1",
+  "path": "battle-assets/飞机/chargo__ad1",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "ad1_-2150192450238891494.png",
+      "name": "ad1",
+      "width": 240,
+      "height": 221,
+      "role": "战斗贴图",
+      "path_id": -2150192450238891494,
+      "source": "CAB-ba5d6a44154396ff02febe1698e4f0ec"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ad1/aircraft_shadow_2192772484218123160.png"
+}

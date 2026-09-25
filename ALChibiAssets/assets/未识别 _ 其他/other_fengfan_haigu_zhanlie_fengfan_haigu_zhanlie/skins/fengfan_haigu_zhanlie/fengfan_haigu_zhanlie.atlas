@@ -1,0 +1,97 @@
+
+fengfan_haigu_zhanlie.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body1
+  rotate: false
+  xy: 166, 410
+  size: 333, 196
+  orig: 333, 196
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 501, 305
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 2
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 863, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+zg_1
+  rotate: true
+  xy: 21, 596
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+zg_2
+  rotate: true
+  xy: 36, 595
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+zg_3
+  rotate: false
+  xy: 78, 593
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+zg_4
+  rotate: true
+  xy: 2, 601
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+zg_5
+  rotate: false
+  xy: 51, 595
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+zg_6
+  rotate: true
+  xy: 11, 599
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+zg_7
+  rotate: false
+  xy: 93, 591
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+zg_8
+  rotate: false
+  xy: 65, 595
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+zg_9
+  rotate: false
+  xy: 111, 573
+  size: 53, 33
+  orig: 53, 33
+  offset: 0, 0
+  index: -1

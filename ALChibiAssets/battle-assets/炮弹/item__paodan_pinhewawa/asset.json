@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_pinhewawa",
+  "model": "paodan_pinhewawa",
+  "name": "怪谈啾啾炮弹",
+  "names": [
+    "怪谈啾啾炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_pinhewawa",
+  "path": "battle-assets/炮弹/item__paodan_pinhewawa",
+  "images": [
+    {
+      "file": "paodan_pinhewawa_6458239956787439811.png",
+      "name": "paodan_pinhewawa",
+      "width": 128,
+      "height": 113,
+      "role": "战斗贴图",
+      "path_id": 6458239956787439811,
+      "source": "CAB-9b3a54697111fe3d0a7bfc58aa40c08f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_pinhewawa/paodan_pinhewawa_6458239956787439811.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_xiuhuaxie",
+  "model": "yulei_xiuhuaxie",
+  "name": "绣花鞋鱼雷",
+  "names": [
+    "绣花鞋鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiuhuaxie",
+  "path": "battle-assets/鱼雷/item__yulei_xiuhuaxie",
+  "images": [
+    {
+      "file": "yulei_xiuhuaxie_7480529521836083193.png",
+      "name": "yulei_xiuhuaxie",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7480529521836083193,
+      "source": "CAB-dfba0e5f8717f50701f2255382d8a89b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiuhuaxie/yulei_xiuhuaxie_7480529521836083193.png",
+  "spine": {
+    "skel": "yulei_xiuhuaxie.skel",
+    "atlas": "yulei_xiuhuaxie.atlas",
+    "pages": [
+      "yulei_xiuhuaxie.png"
+    ]
+  }
+}

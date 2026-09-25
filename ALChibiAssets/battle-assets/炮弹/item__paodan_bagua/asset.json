@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_bagua",
+  "model": "paodan_bagua",
+  "name": "卦盘炮弹",
+  "names": [
+    "卦盘炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_bagua",
+  "path": "battle-assets/炮弹/item__paodan_bagua",
+  "images": [
+    {
+      "file": "paodan_bagua_-3159504176942117127.png",
+      "name": "paodan_bagua",
+      "width": 128,
+      "height": 125,
+      "role": "战斗贴图",
+      "path_id": -3159504176942117127,
+      "source": "CAB-10293d57e91b2621649c0b441ed2c29f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_bagua/paodan_bagua_-3159504176942117127.png"
+}

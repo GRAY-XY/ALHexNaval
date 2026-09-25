@@ -1,0 +1,45 @@
+{
+  "id": "item__shengmading_yumao",
+  "model": "shengmading_yumao",
+  "name": "shengmading_yumao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shengmading_yumao",
+  "path": "battle-assets/炮弹/item__shengmading_yumao",
+  "images": [
+    {
+      "file": "yumao01_-2438492572905050946.png",
+      "name": "yumao01",
+      "width": 124,
+      "height": 57,
+      "role": "战斗贴图",
+      "path_id": -2438492572905050946,
+      "source": "CAB-ca2e0365f276cd71fa4d3f7fb26bde2a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    163331,
+    163332,
+    163333,
+    163334,
+    163335,
+    163336,
+    163401,
+    163402,
+    163403,
+    163404,
+    163405,
+    163406,
+    3218501,
+    3218502,
+    3218503,
+    3218504,
+    3218505,
+    3218506
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shengmading_yumao/yumao01_-2438492572905050946.png"
+}

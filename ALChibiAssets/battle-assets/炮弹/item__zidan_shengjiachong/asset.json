@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shengjiachong",
+  "model": "zidan_shengjiachong",
+  "name": "金色圣甲虫子弹",
+  "names": [
+    "金色圣甲虫子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shengjiachong",
+  "path": "battle-assets/炮弹/item__zidan_shengjiachong",
+  "images": [
+    {
+      "file": "zidan_shengjiachong_7376121744196991752.png",
+      "name": "zidan_shengjiachong",
+      "width": 128,
+      "height": 89,
+      "role": "战斗贴图",
+      "path_id": 7376121744196991752,
+      "source": "CAB-8a03a3e8a06a8e95f4baa8bcf8a761c8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shengjiachong/zidan_shengjiachong_7376121744196991752.png"
+}

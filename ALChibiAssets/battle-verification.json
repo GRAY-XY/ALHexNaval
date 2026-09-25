@@ -1,0 +1,1819 @@
+{
+  "assets": 2786,
+  "categories": {
+    "飞机图标": 200,
+    "炮弹": 1600,
+    "飞机": 516,
+    "鱼雷": 410,
+    "其他战斗特效": 60
+  },
+  "visible": {
+    "飞机图标": 200,
+    "炮弹": 1320,
+    "飞机": 513,
+    "鱼雷": 377,
+    "其他战斗特效": 35
+  },
+  "image_files": 3020,
+  "spine_assets": 255,
+  "spine_browser_check": {
+    "tested": 255,
+    "failed": [],
+    "results": [
+      {
+        "id": "chargo__feiji_3rd",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_baiying",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_chonglang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_cowboy",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_doa",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_eagle",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_feitianjiuyuanche",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_fulici",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_gongduola",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_hangkongwutai",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_heisenlinzhon",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_hunianxianhe",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_hunianxianhe_small",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_huoche",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_huoyanfenghuang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_idolfeiji",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_jiuweihu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_judayanlong",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_juyanlong",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_juyanlong1",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_juyanlong2",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_kelalin",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_lunyijiu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_motan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_ouxiangyingyuanjiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_pugongying",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_saomiao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_saoqingniang",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_shenshengtianshi",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_shilaimu",
+        "actions": [
+          "normal",
+          "normal_2"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_shixianggui",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_super",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tianchenghongzha",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tianchengyulei",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tianchengzhandou",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tiane",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tiangoujuu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tianshijiu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tongxinzhifeiji",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_tongxinzhuqingting",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_vtuber1",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_vtuber2",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_weixingbanwu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_xiangsutianlei",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_xintiao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_yaoyu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_youlingfashi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_youlingnanguache",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_youzhisan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__feiji_zhiyuan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__haibao_hongzha",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__haibao_yulei",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__mantou_feiji",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__shengdan_feiji",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__shengdan_feiji2",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__sprfes_caishen",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "chargo__sprfes_denglong",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__2b_slash",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__a2_slash",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__afuleer_xiaoxiong",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_guanglun01",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_guanglun02",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_guanglun03",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_guanglun04",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_guanglun05",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_guanglun06",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_guanglun07",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_haibao",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_mantou",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_xianyu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__bullet_xinnian",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__feiji_bote_zhiyuan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__nep_bullet_anniu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__nep_bullet_shilaimu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__nep_bullet_shizi",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__nep_bullet_xianggu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_benzhong",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_bijia",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_bingzhui",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_bodongquan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_bulipaodan",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_chuitou",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_chuitou1",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_chuizi",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_chushou",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_dal_xuanlanjiangui",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_dengguangwurenji",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_diancai",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_dianzan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_dongzhigouwuhe",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_emozhutai",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_fangxiangpan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_feibiaopan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_gouhuo",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_gouwuhe",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_guaidaomianju",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_hailang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_hongyue",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huangguan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huntianyi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_black",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_black_middle",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_black_small",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_middle",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_purple",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_purple_middle",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_purple_small",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huoqiu_small",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_huweilingdang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_jianzhen",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_jiaya",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_jingxihezi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_jinwu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_jiuhulu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_liandao",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_luntaijiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_moshumao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_nengliangdan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_nengliangmaodian",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_pojiutong",
+        "actions": [
+          "animation"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_pugongying",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_renzheliandao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_shengqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_shoutibao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_shoutun",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_shujushanchu",
+        "actions": [
+          "normal",
+          "normal2"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_shutenghuahuan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_suanpan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tangguohe",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tiandeng",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tianshideng",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tideng",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tierruite",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tuanzi1",
+        "actions": [
+          "animation"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tuanzi2",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tuanzi3",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tutuhuoqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_tuzimoshumao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_wanzhengyushi",
+        "actions": [
+          "animation"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_weiqiguan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_xiangxun",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_xigua",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_xingxi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_xiongying",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_xuancaidengqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_xuesebianfu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_xuezi",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_youling",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_yuanhuanguangren",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_zhenzhuxianglian",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__paodan_zhuanyexiangji",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__pixel_bullet_large",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__qinli_2_slash",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__qinli_slash",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sairenyulei",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sairenyulei_shadow",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sairenyulei_shadow_big",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sairenyulei_shadow_huge",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__school_biandangpaodan",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__school_bullet_fenbi",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__school_bullet_huaban",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__school_heibancapaodan",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__school_liangjiaoqipaodan",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__shi_huoqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sprfes_bullet_jinyuanbao",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sprfes_bullet_juzi",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sprfes_bullet_paozhang",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sprfes_bullet_tongban",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__sprfes_torpedo_zhongguojie",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__torpedo_haibao",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__torpedo_mantou",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__torpedo_shengdanshu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__torpedo_xianyu",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yuanyizhezhi_juemieguangjian",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_baomihua",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_bolang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_buguangbang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_ceshizhe",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_chongnengyulei",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_chuanmao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_daliyaofengmishui",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_dazhentong",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_dengpai",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_dongzhidengpai",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_emoweiba",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_fengche",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_fengling",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_hangtian",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_heibaiqi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_heiwudengpai",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_hongying",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_hongzhu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_huapin",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_huojian",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_jiangbei",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_jingjimeigui",
+        "actions": [
+          "nromal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_jinli",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_kapaishan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_lazhu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_liusu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_luomazhu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_moshubang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_nengliangdao2",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_penqijijia",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_qipaoguojiuping",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_sanchaji",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_tolove_haitun",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_weigan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_weizaozhengjian",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_xiangsufeidan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_xiangyunshanzi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_xiuhuaxie",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_xueqia",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_youling",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_yunshi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_yutu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_yuzan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_zuanshishoubiao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__yulei_zuantou",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zhongcaizheyulei",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_bingqiang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_bulizidan",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_bulizidan1",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_cheyaoshi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_cup",
+        "actions": [
+          "bullet"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_dongzhiqiqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_feicuiyuhuan",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_fengyu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_fenhudie",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_fuguhuaibiao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_gaojiaobei",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_guangying",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_gudianbishou",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_heiwuqiqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_honglanqiu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_jiancifeiye",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_jiguangqiliu",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_languihuo",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_moshuifeiniao",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_moshukapai1",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_moshukapai2",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_qigongbo",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_sansepaopao",
+        "actions": [
+          "1",
+          "2",
+          "3"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_shengjie",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_shizixing",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_tolove_xingxing",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_toumingshuidi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_wanyueyushi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_xiangnang",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_xuancaihuatong",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_youhuo",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_yuedongfeiti",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_zhenliejiantou",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      },
+      {
+        "id": "item__zidan_zhongshiqianbi",
+        "actions": [
+          "normal"
+        ],
+        "ok": true
+      }
+    ]
+  },
+  "missing_files": [],
+  "extraction_errors": [],
+  "missing_native_dependencies": [
+    "island/effect/texture/vfx_mask20"
+  ]
+}

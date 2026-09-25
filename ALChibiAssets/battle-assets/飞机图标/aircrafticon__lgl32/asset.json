@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__lgl32",
+  "model": "lgl32",
+  "name": "LGL.32",
+  "names": [
+    "LGL.32"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/lgl32",
+  "path": "battle-assets/飞机图标/aircrafticon__lgl32",
+  "images": [
+    {
+      "file": "lgl32_6493129747805999908.png",
+      "name": "lgl32",
+      "width": 44,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 6493129747805999908,
+      "source": "CAB-cb84f4e28a9b944f973066785df5637c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

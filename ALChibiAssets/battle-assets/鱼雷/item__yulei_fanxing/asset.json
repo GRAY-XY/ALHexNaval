@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_fanxing",
+  "model": "yulei_fanxing",
+  "name": "流星鱼雷",
+  "names": [
+    "流星鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fanxing",
+  "path": "battle-assets/鱼雷/item__yulei_fanxing",
+  "images": [
+    {
+      "file": "smoke01_-3628856567389328698.png",
+      "name": "smoke01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3628856567389328698,
+      "source": "CAB-31734021df0be66c74ae8fced3b0cfc9"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_fanxing/smoke01_-3628856567389328698.png"
+}

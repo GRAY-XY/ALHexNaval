@@ -1,0 +1,37 @@
+{
+  "id": "item__gulite_kuashe",
+  "model": "gulite_kuashe",
+  "name": "gulite_kuashe",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulite_kuashe",
+  "path": "battle-assets/炮弹/item__gulite_kuashe",
+  "images": [
+    {
+      "file": "kuashe01_7416546735996494017.png",
+      "name": "kuashe01",
+      "width": 183,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": 7416546735996494017,
+      "source": "CAB-2b471593f31072b213db3302d084e205"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    846,
+    850,
+    161217,
+    161219,
+    855003,
+    855004,
+    855008,
+    855012,
+    3051003,
+    3279201
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulite_kuashe/kuashe01_7416546735996494017.png"
+}

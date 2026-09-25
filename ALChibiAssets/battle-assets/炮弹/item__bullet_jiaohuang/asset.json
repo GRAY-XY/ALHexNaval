@@ -1,0 +1,28 @@
+{
+  "id": "item__bullet_jiaohuang",
+  "model": "bullet_jiaohuang",
+  "name": "bullet_jiaohuang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_jiaohuang",
+  "path": "battle-assets/炮弹/item__bullet_jiaohuang",
+  "images": [
+    {
+      "file": "sairenfeiji_jiaohuang_3017234681098248340.png",
+      "name": "sairenfeiji_jiaohuang",
+      "width": 247,
+      "height": 172,
+      "role": "战斗贴图",
+      "path_id": 3017234681098248340,
+      "source": "CAB-458fd9d88fca03e6a6b18ce03b2d0152"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3075030
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_jiaohuang/sairenfeiji_jiaohuang_3017234681098248340.png"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "item__keyan_huoyanshisheng",
+  "model": "keyan_huoyanshisheng",
+  "name": "keyan_huoyanshisheng",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/keyan_huoyanshisheng",
+  "path": "battle-assets/炮弹/item__keyan_huoyanshisheng",
+  "images": [
+    {
+      "file": "feilong_01_-5718053382406644387.png",
+      "name": "feilong_01",
+      "width": 240,
+      "height": 244,
+      "role": "战斗贴图",
+      "path_id": -5718053382406644387,
+      "source": "CAB-0503344e7855f364232158276fa8bf49"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19320,
+    363007,
+    363011,
+    363012,
+    363014,
+    363015,
+    364037,
+    853041,
+    853137,
+    853351,
+    853352,
+    853361
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__keyan_huoyanshisheng/feilong_01_-5718053382406644387.png"
+}

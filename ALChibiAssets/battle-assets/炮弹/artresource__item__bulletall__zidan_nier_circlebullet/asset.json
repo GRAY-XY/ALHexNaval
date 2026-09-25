@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__zidan_nier_circlebullet",
+  "model": "zidan_nier_circlebullet",
+  "name": "Double Burst",
+  "names": [
+    "Double Burst"
+  ],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_nier_circlebullet",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_nier_circlebullet",
+  "images": [
+    {
+      "file": "zidan_nier_circlebullet_1307535229253319873.png",
+      "name": "zidan_nier_circlebullet",
+      "width": 128,
+      "height": 100,
+      "role": "原始精灵",
+      "path_id": 1307535229253319873,
+      "source": "CAB-13e212e305fa6e0dbb27d7111463fb71"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

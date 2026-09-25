@@ -1,0 +1,62 @@
+{
+  "id": "chargo__sairenfeiji_lianjin_ii",
+  "model": "sairenfeiji_lianjin_ii",
+  "name": "【2025优米雅联动 TS5】BOSS 炼金武装航母 轰炸机",
+  "names": [
+    "【2025优米雅联动 TS5】BOSS 炼金武装航母 轰炸机",
+    "【2025优米雅联动 TS5】BOSS 炼金武装航母 战斗机",
+    "【2025优米雅联动 EX普通】航母小怪舰载机",
+    "【2025优米雅联动 EX困难】航母小怪舰载机",
+    "【2025优米雅联动 剧情战】我方优米雅战斗机",
+    "【2025优米雅联动 剧情战】我方优米雅鱼雷机",
+    "【2025优米雅联动】航母-炼金魔物飞龙 轰炸机 Lv1",
+    "【2025优米雅联动】航母-炼金魔物飞龙 轰炸机 Lv2",
+    "【2025优米雅联动】航母-炼金魔物飞龙 轰炸机 Lv3",
+    "【2025优米雅联动】航母-炼金魔物飞龙 轰炸机 Lv4",
+    "【2025优米雅联动】航母-炼金魔物飞龙 轰炸机 Lv5",
+    "【2025优米雅联动】航母-炼金魔物飞龙 战斗机 Lv1",
+    "【2025优米雅联动】航母-炼金魔物飞龙 战斗机 Lv2",
+    "【2025优米雅联动】航母-炼金魔物飞龙 战斗机 Lv3",
+    "【2025优米雅联动】航母-炼金魔物飞龙 战斗机 Lv4",
+    "【2025优米雅联动】航母-炼金魔物飞龙 战斗机 Lv5",
+    "【2025优米雅联动】炼金武装航母 轰炸机 Lv1",
+    "【2025优米雅联动】炼金武装航母 轰炸机 Lv2",
+    "【2025优米雅联动】炼金武装航母 轰炸机 Lv3",
+    "【2025优米雅联动】炼金武装航母 轰炸机 Lv4",
+    "【2025优米雅联动】炼金武装航母 轰炸机 Lv5",
+    "【2025优米雅联动】炼金武装航母 战斗机 Lv1",
+    "【2025优米雅联动】炼金武装航母 战斗机 Lv2",
+    "【2025优米雅联动】炼金武装航母 战斗机 Lv3",
+    "【2025优米雅联动】炼金武装航母 战斗机 Lv4",
+    "【2025优米雅联动】炼金武装航母 战斗机 Lv5"
+  ],
+  "category": "飞机",
+  "source": "chargo/sairenfeiji_lianjin_ii",
+  "path": "battle-assets/飞机/chargo__sairenfeiji_lianjin_ii",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "sairenfeiji_lianjin_II_7120188078399108676.png",
+      "name": "sairenfeiji_lianjin_II",
+      "width": 401,
+      "height": 195,
+      "role": "战斗贴图",
+      "path_id": 7120188078399108676,
+      "source": "CAB-4645b31e6d3dc085f842ea5937c884af"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sairenfeiji_lianjin_ii/aircraft_shadow_2192772484218123160.png"
+}

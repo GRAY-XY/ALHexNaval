@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_chabei",
+  "model": "yulei_chabei",
+  "name": "茶杯小妖鱼雷",
+  "names": [
+    "茶杯小妖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chabei",
+  "path": "battle-assets/鱼雷/item__yulei_chabei",
+  "images": [
+    {
+      "file": "yulei_chabei_-3389438005519510579.png",
+      "name": "yulei_chabei",
+      "width": 127,
+      "height": 61,
+      "role": "战斗贴图",
+      "path_id": -3389438005519510579,
+      "source": "CAB-ccf12a4474b4447b06226ada43f29c26"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chabei/yulei_chabei_-3389438005519510579.png"
+}

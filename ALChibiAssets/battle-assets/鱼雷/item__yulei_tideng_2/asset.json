@@ -1,0 +1,18 @@
+{
+  "id": "item__yulei_tideng_2",
+  "model": "yulei_tideng_2",
+  "name": "yulei_tideng_2",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_tideng_2",
+  "path": "battle-assets/鱼雷/item__yulei_tideng_2",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3146227,
+    3146228
+  ],
+  "has_preview": false,
+  "prefab": true
+}

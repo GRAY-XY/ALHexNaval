@@ -1,0 +1,49 @@
+{
+  "id": "item__yanzhan_dajian",
+  "model": "yanzhan_dajian",
+  "name": "yanzhan_dajian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yanzhan_dajian",
+  "path": "battle-assets/炮弹/item__yanzhan_dajian",
+  "images": [
+    {
+      "file": "jian02_-8457203139916669557.png",
+      "name": "jian02",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8457203139916669557,
+      "source": "CAB-f25b4097542c356d57be5d3c0671b141"
+    },
+    {
+      "file": "glow_2_-1648932381268313747.png",
+      "name": "glow 2",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1648932381268313747,
+      "source": "CAB-f25b4097542c356d57be5d3c0671b141"
+    },
+    {
+      "file": "jian01_7596304812818588050.png",
+      "name": "jian01",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7596304812818588050,
+      "source": "CAB-f25b4097542c356d57be5d3c0671b141"
+    }
+  ],
+  "particle_systems": 20,
+  "animations": [
+    "yanzhandajian"
+  ],
+  "bullet_ids": [
+    168111,
+    168112
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yanzhan_dajian/jian02_-8457203139916669557.png"
+}

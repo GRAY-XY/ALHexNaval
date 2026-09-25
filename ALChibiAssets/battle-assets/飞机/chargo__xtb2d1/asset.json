@@ -1,0 +1,37 @@
+{
+  "id": "chargo__xtb2d1",
+  "model": "xtb2d1",
+  "name": "XTB2D-1天空海盗",
+  "names": [
+    "XTB2D-1天空海盗"
+  ],
+  "category": "飞机",
+  "source": "chargo/xtb2d1",
+  "path": "battle-assets/飞机/chargo__xtb2d1",
+  "images": [
+    {
+      "file": "XTB2D1_-6061934938583906309.png",
+      "name": "XTB2D1",
+      "width": 248,
+      "height": 242,
+      "role": "战斗贴图",
+      "path_id": -6061934938583906309,
+      "source": "CAB-fdf343bdbcfafd539bdaf1c058b91779"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__xtb2d1/XTB2D1_-6061934938583906309.png"
+}

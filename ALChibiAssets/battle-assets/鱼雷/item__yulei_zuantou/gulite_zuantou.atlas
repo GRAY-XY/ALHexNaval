@@ -1,0 +1,62 @@
+
+gulite_zuantou.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huohua_1
+  rotate: false
+  xy: 246, 48
+  size: 76, 81
+  orig: 76, 81
+  offset: 0, 0
+  index: -1
+huohua_2
+  rotate: false
+  xy: 169, 10
+  size: 75, 82
+  orig: 75, 82
+  offset: 0, 0
+  index: -1
+huohua_3
+  rotate: true
+  xy: 2, 2
+  size: 63, 65
+  orig: 63, 65
+  offset: 0, 0
+  index: -1
+huohua_4
+  rotate: false
+  xy: 69, 3
+  size: 62, 62
+  orig: 62, 62
+  offset: 0, 0
+  index: -1
+huoyan_1
+  rotate: true
+  xy: 133, 4
+  size: 61, 34
+  orig: 61, 34
+  offset: 0, 0
+  index: -1
+huoyan_2
+  rotate: false
+  xy: 135, 94
+  size: 87, 35
+  orig: 87, 35
+  offset: 0, 0
+  index: -1
+zuantou_1
+  rotate: true
+  xy: 135, 131
+  size: 123, 121
+  orig: 123, 121
+  offset: 0, 0
+  index: -1
+zuantou_2
+  rotate: false
+  xy: 2, 67
+  size: 131, 187
+  orig: 131, 187
+  offset: 0, 0
+  index: -1

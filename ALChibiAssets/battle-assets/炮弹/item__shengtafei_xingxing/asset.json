@@ -1,0 +1,28 @@
+{
+  "id": "item__shengtafei_xingxing",
+  "model": "shengtafei_xingxing",
+  "name": "shengtafei_xingxing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shengtafei_xingxing",
+  "path": "battle-assets/炮弹/item__shengtafei_xingxing",
+  "images": [
+    {
+      "file": "shengtafei_xingxing_-2050543158805104141.png",
+      "name": "shengtafei_xingxing",
+      "width": 131,
+      "height": 146,
+      "role": "战斗贴图",
+      "path_id": -2050543158805104141,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    170717
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shengtafei_xingxing/shengtafei_xingxing_-2050543158805104141.png"
+}

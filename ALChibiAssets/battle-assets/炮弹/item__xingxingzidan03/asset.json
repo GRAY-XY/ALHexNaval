@@ -1,0 +1,21 @@
+{
+  "id": "item__xingxingzidan03",
+  "model": "xingxingzidan03",
+  "name": "xingxingzidan03",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xingxingzidan03",
+  "path": "battle-assets/炮弹/item__xingxingzidan03",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    750099,
+    900506,
+    900507,
+    900508,
+    900509
+  ],
+  "has_preview": false,
+  "prefab": true
+}

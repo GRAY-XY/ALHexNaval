@@ -1,0 +1,46 @@
+{
+  "id": "chargo__udf_feiji03",
+  "model": "udf_feiji03",
+  "name": "【量产型】联合防卫部队-维修中心无人机（源源不断）Lv1",
+  "names": [
+    "【量产型】联合防卫部队-维修中心无人机（源源不断）Lv1",
+    "【量产型】联合防卫部队-维修中心无人机（源源不断）Lv2",
+    "【量产型】联合防卫部队-维修中心无人机（源源不断）Lv3",
+    "【量产型】联合防卫部队-维修中心无人机（源源不断）Lv4",
+    "【量产型】联合防卫部队-维修中心无人机（源源不断）Lv5",
+    "【大世界】大黄蜂meta 空袭 UDF自杀式无人机 Lv1",
+    "【大世界】大黄蜂meta 空袭 UDF自杀式无人机 Lv2",
+    "【大世界】大黄蜂meta 空袭 UDF自杀式无人机 Lv3",
+    "【大世界】大黄蜂meta 空袭 UDF自杀式无人机 Lv4",
+    "【大世界】大黄蜂meta 空袭 UDF自杀式无人机 Lv5"
+  ],
+  "category": "飞机",
+  "source": "chargo/udf_feiji03",
+  "path": "battle-assets/飞机/chargo__udf_feiji03",
+  "images": [
+    {
+      "file": "udf_feiji03_-2895550809915335108.png",
+      "name": "udf_feiji03",
+      "width": 294,
+      "height": 186,
+      "role": "战斗贴图",
+      "path_id": -2895550809915335108,
+      "source": "CAB-e46b1eed8d511aa1cdc58a9ea93ac89c"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__udf_feiji03/udf_feiji03_-2895550809915335108.png"
+}

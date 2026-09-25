@@ -1,0 +1,48 @@
+{
+  "id": "item__fuximeta_bullet",
+  "model": "fuximeta_bullet",
+  "name": "fuximeta_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/fuximeta_bullet",
+  "path": "battle-assets/炮弹/item__fuximeta_bullet",
+  "images": [
+    {
+      "file": "jian01_-6784267465278311681.png",
+      "name": "jian01",
+      "width": 245,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": -6784267465278311681,
+      "source": "CAB-028843980c2d786c81031eaf8ecf6103"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    164591,
+    164592,
+    164593,
+    164594,
+    164595,
+    164596,
+    164597,
+    164598,
+    164599,
+    164600,
+    164601,
+    164602,
+    164603,
+    164604,
+    164605,
+    164606,
+    164607,
+    164608,
+    164609,
+    164610,
+    170501
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__fuximeta_bullet/jian01_-6784267465278311681.png"
+}

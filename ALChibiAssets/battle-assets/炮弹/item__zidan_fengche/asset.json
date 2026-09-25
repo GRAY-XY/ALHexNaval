@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_fengche",
+  "model": "zidan_fengche",
+  "name": "风车子弹",
+  "names": [
+    "风车子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fengche",
+  "path": "battle-assets/炮弹/item__zidan_fengche",
+  "images": [
+    {
+      "file": "zidan_fengche_2951398015574144366.png",
+      "name": "zidan_fengche",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 2951398015574144366,
+      "source": "CAB-484b156fd9001ed709f4793bd05bec72"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fengche/zidan_fengche_2951398015574144366.png"
+}

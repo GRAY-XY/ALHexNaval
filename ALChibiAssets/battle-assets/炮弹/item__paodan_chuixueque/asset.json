@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_chuixueque",
+  "model": "paodan_chuixueque",
+  "name": "吹雪雀炮弹",
+  "names": [
+    "吹雪雀炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chuixueque",
+  "path": "battle-assets/炮弹/item__paodan_chuixueque",
+  "images": [
+    {
+      "file": "paodan_chuixueque_-2771881557964866013.png",
+      "name": "paodan_chuixueque",
+      "width": 124,
+      "height": 123,
+      "role": "战斗贴图",
+      "path_id": -2771881557964866013,
+      "source": "CAB-fb0b9f0b7ddb175ce4d0167c96211be3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19085
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chuixueque/paodan_chuixueque_-2771881557964866013.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_gujingling",
+  "model": "yulei_gujingling",
+  "name": "古精灵之箭鱼雷",
+  "names": [
+    "古精灵之箭鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_gujingling",
+  "path": "battle-assets/鱼雷/item__yulei_gujingling",
+  "images": [
+    {
+      "file": "yulei_gujingling_-983561285680978365.png",
+      "name": "yulei_gujingling",
+      "width": 123,
+      "height": 115,
+      "role": "战斗贴图",
+      "path_id": -983561285680978365,
+      "source": "CAB-d2a23a1b357e25f64c122d3945c092ae"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_gujingling/yulei_gujingling_-983561285680978365.png"
+}

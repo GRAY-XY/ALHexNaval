@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_zhuchaoren",
+  "model": "feiji_zhuchaoren",
+  "name": "小猪超人？！(鱼雷)",
+  "names": [
+    "小猪超人？！(鱼雷)",
+    "小猪超人？！(战斗)",
+    "小猪超人？！(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_zhuchaoren",
+  "path": "battle-assets/飞机/chargo__feiji_zhuchaoren",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_zhuchaoren_5947015584388090613.png",
+      "name": "feiji_zhuchaoren",
+      "width": 128,
+      "height": 94,
+      "role": "战斗贴图",
+      "path_id": 5947015584388090613,
+      "source": "CAB-de33c31d33f774953ccf1041f557c1e1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_zhuchaoren/aircraft_shadow_2192772484218123160.png"
+}

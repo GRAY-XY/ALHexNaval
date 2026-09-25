@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xigua",
+  "model": "zidan_xigua",
+  "name": "西瓜子弹",
+  "names": [
+    "西瓜子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xigua",
+  "path": "battle-assets/炮弹/item__zidan_xigua",
+  "images": [
+    {
+      "file": "zidan_xigua_-1487550685905910134.png",
+      "name": "zidan_xigua",
+      "width": 128,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": -1487550685905910134,
+      "source": "CAB-29422a8e436f5bb5db446f12aa70c9d2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xigua/zidan_xigua_-1487550685905910134.png"
+}

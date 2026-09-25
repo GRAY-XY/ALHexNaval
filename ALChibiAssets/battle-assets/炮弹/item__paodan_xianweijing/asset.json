@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xianweijing",
+  "model": "paodan_xianweijing",
+  "name": "显微镜炮弹",
+  "names": [
+    "显微镜炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xianweijing",
+  "path": "battle-assets/炮弹/item__paodan_xianweijing",
+  "images": [
+    {
+      "file": "paodan_xianweijing_3120730753437746648.png",
+      "name": "paodan_xianweijing",
+      "width": 123,
+      "height": 152,
+      "role": "战斗贴图",
+      "path_id": 3120730753437746648,
+      "source": "CAB-1f1fc21a8cfce520344b928010e7e0f0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xianweijing/paodan_xianweijing_3120730753437746648.png"
+}

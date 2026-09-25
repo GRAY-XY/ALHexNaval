@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jiatui",
+  "model": "yulei_jiatui",
+  "name": "木腿鱼雷",
+  "names": [
+    "木腿鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jiatui",
+  "path": "battle-assets/鱼雷/item__yulei_jiatui",
+  "images": [
+    {
+      "file": "yulei_jiatui_5865640268518106000.png",
+      "name": "yulei_jiatui",
+      "width": 128,
+      "height": 35,
+      "role": "战斗贴图",
+      "path_id": 5865640268518106000,
+      "source": "CAB-6bf45e4b7bc2f552872065d0a176246a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jiatui/yulei_jiatui_5865640268518106000.png"
+}

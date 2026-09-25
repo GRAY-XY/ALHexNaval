@@ -1,0 +1,32 @@
+{
+  "id": "item__yulei_yumi",
+  "model": "yulei_yumi",
+  "name": "玉米鱼雷",
+  "names": [
+    "玉米鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yumi",
+  "path": "battle-assets/鱼雷/item__yulei_yumi",
+  "images": [
+    {
+      "file": "yulei_yumi_-1027555332156247810.png",
+      "name": "yulei_yumi",
+      "width": 128,
+      "height": 83,
+      "role": "战斗贴图",
+      "path_id": -1027555332156247810,
+      "source": "CAB-923b99892aad35cadf83ed7655c10608"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    660009,
+    660010,
+    660011
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yumi/yulei_yumi_-1027555332156247810.png"
+}

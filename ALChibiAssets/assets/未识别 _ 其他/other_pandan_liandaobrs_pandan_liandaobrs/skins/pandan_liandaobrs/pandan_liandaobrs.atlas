@@ -1,0 +1,34 @@
+
+pandan_liandaobrs.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+liandao
+  rotate: true
+  xy: 2, 49
+  size: 430, 286
+  orig: 430, 286
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: true
+  xy: 290, 174
+  size: 305, 199
+  orig: 305, 199
+  offset: 0, 0
+  index: -1
+tx_2
+  rotate: false
+  xy: 290, 2
+  size: 316, 170
+  orig: 316, 170
+  offset: 0, 0
+  index: -1
+tx_3
+  rotate: false
+  xy: 491, 280
+  size: 181, 199
+  orig: 181, 199
+  offset: 0, 0
+  index: -1

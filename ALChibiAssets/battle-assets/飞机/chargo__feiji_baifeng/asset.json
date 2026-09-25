@@ -1,0 +1,40 @@
+{
+  "id": "chargo__feiji_baifeng",
+  "model": "feiji_baifeng",
+  "name": "白凤流星",
+  "names": [
+    "白凤流星",
+    "【2025白凤UR活动A】我方支援弹幕 白凤 飞机",
+    "【2025白凤UR活动B】我方支援弹幕 白凤 飞机",
+    "【2025白凤UR活动C】我方支援弹幕 白凤 飞机",
+    "【2025白凤UR活动D】我方支援弹幕 白凤 飞机",
+    "【2025白凤UR活动SP】我方支援弹幕 白凤 飞机",
+    "【2025白凤UR活动】我方支援弹幕 白凤 飞机（装饰用陪飞的，无挂载武器）",
+    "【2025白凤UR活动EX普通】BOSS 白凤 第二波 轰炸机",
+    "【2025白凤UR活动EX普通】BOSS 白凤 第二波 战斗机",
+    "【2026虎UR活动B1】BOSS 白凤 第二波 轰炸机",
+    "【2026虎UR活动B1】BOSS 白凤 第二波 战斗机",
+    "【2026虎UR活动D1】BOSS 白凤 第二波 轰炸机",
+    "【2026虎UR活动D1】BOSS 白凤 第二波 战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_baifeng",
+  "path": "battle-assets/飞机/chargo__feiji_baifeng",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_baifeng/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_chuidiren",
+  "model": "yulei_chuidiren",
+  "name": "鱼雷·吹笛人",
+  "names": [
+    "鱼雷·吹笛人"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chuidiren",
+  "path": "battle-assets/鱼雷/item__yulei_chuidiren",
+  "images": [
+    {
+      "file": "yulei_chuidiren_-3597316971796708266.png",
+      "name": "yulei_chuidiren",
+      "width": 128,
+      "height": 29,
+      "role": "战斗贴图",
+      "path_id": -3597316971796708266,
+      "source": "CAB-ded5f60e2a908109396dad9bc1558f73"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chuidiren/yulei_chuidiren_-3597316971796708266.png"
+}

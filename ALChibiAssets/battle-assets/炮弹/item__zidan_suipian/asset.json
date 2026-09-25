@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_suipian",
+  "model": "zidan_suipian",
+  "name": "情报注入装置",
+  "names": [
+    "情报注入装置"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_suipian",
+  "path": "battle-assets/炮弹/item__zidan_suipian",
+  "images": [
+    {
+      "file": "line01_-8632122999460943574.png",
+      "name": "line01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8632122999460943574,
+      "source": "CAB-d410df57200ad325190315d6f3767930"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_suipian/line01_-8632122999460943574.png"
+}

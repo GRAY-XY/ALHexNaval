@@ -1,0 +1,42 @@
+{
+  "id": "item__ouxiang_hong",
+  "model": "ouxiang_hong",
+  "name": "ouxiang_hong",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_hong",
+  "path": "battle-assets/炮弹/item__ouxiang_hong",
+  "images": [
+    {
+      "file": "red_605851812727781610.png",
+      "name": "red",
+      "width": 95,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": 605851812727781610,
+      "source": "CAB-0d0156d08c48f4070920ffeabfb8a485"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170014,
+    852312,
+    852532,
+    852642,
+    852643,
+    852644,
+    852645,
+    852646,
+    852647,
+    852681,
+    852682,
+    852683,
+    852684,
+    852685,
+    852686
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_hong/red_605851812727781610.png"
+}

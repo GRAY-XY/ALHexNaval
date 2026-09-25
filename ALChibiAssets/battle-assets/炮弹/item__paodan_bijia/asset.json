@@ -1,0 +1,53 @@
+{
+  "id": "item__paodan_bijia",
+  "model": "paodan_bijia",
+  "name": "毛笔架炮弹",
+  "names": [
+    "毛笔架炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_bijia",
+  "path": "battle-assets/炮弹/item__paodan_bijia",
+  "images": [
+    {
+      "file": "paodan_bijia_-9047233011342808558.png",
+      "name": "paodan_bijia",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -9047233011342808558,
+      "source": "CAB-2d366ba73430c38d823af5d7b557340f"
+    },
+    {
+      "file": "line02_-5826848410022628868.png",
+      "name": "line02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5826848410022628868,
+      "source": "CAB-2d366ba73430c38d823af5d7b557340f"
+    },
+    {
+      "file": "particles01_-3310787673558051681.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3310787673558051681,
+      "source": "CAB-2d366ba73430c38d823af5d7b557340f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_bijia/paodan_bijia_-9047233011342808558.png",
+  "spine": {
+    "skel": "paodan_bijia.skel",
+    "atlas": "paodan_bijia.atlas",
+    "pages": [
+      "paodan_bijia.png"
+    ]
+  }
+}

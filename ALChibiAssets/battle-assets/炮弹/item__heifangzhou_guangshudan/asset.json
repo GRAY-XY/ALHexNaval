@@ -1,0 +1,32 @@
+{
+  "id": "item__heifangzhou_guangshudan",
+  "model": "heifangzhou_guangshudan",
+  "name": "heifangzhou_guangshudan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_guangshudan",
+  "path": "battle-assets/炮弹/item__heifangzhou_guangshudan",
+  "images": [
+    {
+      "file": "guangshudan_6555138370574133719.png",
+      "name": "guangshudan",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6555138370574133719,
+      "source": "CAB-4ddfd0b7f16af9e98c328e4cf4c9e6c8"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    879027,
+    29643028,
+    3061304,
+    3061305,
+    3264005
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heifangzhou_guangshudan/guangshudan_6555138370574133719.png"
+}

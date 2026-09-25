@@ -1,0 +1,33 @@
+{
+  "version": "0.6.4",
+  "date": "2026-09-18",
+  "url": "http://127.0.0.1:18768/",
+  "method": "Actual in-app browser UI and screenshots; real Spine timeline state checks are recorded separately",
+  "passed": true,
+  "checks": [
+    { "name": "Laffey cannon attack visibly changes the native pose and resolves enemy durability 3 to 1", "passed": true },
+    { "name": "Pausing preserves the attack pose across subsequent idle synchronization; resuming returns to standing", "passed": true },
+    { "name": "Bismarck main gun plays its distinct attack pose and sinks the 1-HP enemy Laffey", "passed": true },
+    { "name": "Sunken Laffey waits for impact, then keeps the collapsed final pose and fades instead of standing again", "passed": true },
+    { "name": "Bismarck moves three sea hexes from 20,23 to 23,23 with a movement pose; oil 50 to 47", "passed": true },
+    { "name": "Enterprise launch triggers its skill action; three 4-plane squadrons start with 20 AP and 4 turns, oil 47 to 38", "passed": true },
+    { "name": "Carrier pose changes through launch and resumes ambient animation after the clip", "passed": true },
+    { "name": "No browser console errors were captured during the scenario", "passed": true },
+    { "name": "Original 256-by-256 four-faction round-1 battle restored with 50 oil, 12 live friendly ships and no airborne squadrons; both animation and flight resumed", "passed": true }
+  ],
+  "screenshots": [
+    "output/screenshots/state-animation-attack-paused.png",
+    "output/screenshots/state-animation-idle.png",
+    "output/screenshots/state-animation-main-gun.png",
+    "output/screenshots/state-animation-defeated.png",
+    "output/screenshots/state-animation-moving.png",
+    "output/screenshots/state-animation-carrier-launch.png",
+    "output/screenshots/state-animation-launch-complete.png"
+  ],
+  "relatedChecks": "output/state-animation-verification.json",
+  "limits": [
+    "Browser screenshots show representative DD, BB and CV poses; all 12 actual copied skeleton files and complete clip transitions are checked by the separate real-Spine test.",
+    "Current assets have no native hurt clip; hit feedback uses flash and shake.",
+    "Victory animation awaits the complete-match victory system."
+  ]
+}

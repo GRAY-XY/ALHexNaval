@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shoudiantong",
+  "model": "yulei_shoudiantong",
+  "name": "手电筒鱼雷",
+  "names": [
+    "手电筒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shoudiantong",
+  "path": "battle-assets/鱼雷/item__yulei_shoudiantong",
+  "images": [
+    {
+      "file": "diantong01_-1027147947251052814.png",
+      "name": "diantong01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1027147947251052814,
+      "source": "CAB-72ca2e563939bca1496e45a7290e56ba"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shoudiantong/diantong01_-1027147947251052814.png"
+}

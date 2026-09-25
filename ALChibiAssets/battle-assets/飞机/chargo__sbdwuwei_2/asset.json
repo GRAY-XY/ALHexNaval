@@ -1,0 +1,37 @@
+{
+  "id": "chargo__sbdwuwei_2",
+  "model": "sbdwuwei_2",
+  "name": "SBD-3无畏(麦克拉斯基队)",
+  "names": [
+    "SBD-3无畏(麦克拉斯基队)"
+  ],
+  "category": "飞机",
+  "source": "chargo/sbdwuwei_2",
+  "path": "battle-assets/飞机/chargo__sbdwuwei_2",
+  "images": [
+    {
+      "file": "SBDwuwei_2_6436604331732634860.png",
+      "name": "SBDwuwei_2",
+      "width": 248,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": 6436604331732634860,
+      "source": "CAB-1345ee7b652d8c63a81fe6ef304f7b90"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sbdwuwei_2/SBDwuwei_2_6436604331732634860.png"
+}

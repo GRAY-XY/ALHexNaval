@@ -1,0 +1,26 @@
+{
+  "id": "item__hu_xingxingpaodan",
+  "model": "hu_xingxingpaodan",
+  "name": "hu_xingxingpaodan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hu_xingxingpaodan",
+  "path": "battle-assets/炮弹/item__hu_xingxingpaodan",
+  "images": [
+    {
+      "file": "xingxing01_-9070721941769043462.png",
+      "name": "xingxing01",
+      "width": 253,
+      "height": 253,
+      "role": "战斗贴图",
+      "path_id": -9070721941769043462,
+      "source": "CAB-e1c73b3083bd2b995e5e44eb5efd19b4"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hu_xingxingpaodan/xingxing01_-9070721941769043462.png"
+}

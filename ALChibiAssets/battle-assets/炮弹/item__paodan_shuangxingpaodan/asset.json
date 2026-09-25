@@ -1,0 +1,39 @@
+{
+  "id": "item__paodan_shuangxingpaodan",
+  "model": "paodan_shuangxingpaodan",
+  "name": "炮弹:双星系统",
+  "names": [
+    "炮弹:双星系统"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shuangxingpaodan",
+  "path": "battle-assets/炮弹/item__paodan_shuangxingpaodan",
+  "images": [
+    {
+      "file": "shuangxing02_4786818335693648128.png",
+      "name": "shuangxing02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4786818335693648128,
+      "source": "CAB-a37d023ab1e273ff3bd904bcd81ad49e"
+    },
+    {
+      "file": "shuangxing01_8673423578154870138.png",
+      "name": "shuangxing01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8673423578154870138,
+      "source": "CAB-a37d023ab1e273ff3bd904bcd81ad49e"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [
+    "shuangxingani"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shuangxingpaodan/shuangxing02_4786818335693648128.png"
+}

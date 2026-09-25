@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__denglong__denglong_material",
+  "model": "denglong_material",
+  "name": "denglong_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/denglong/denglong_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__denglong__denglong_material",
+  "images": [
+    {
+      "file": "denglong_-1321317336568766563.png",
+      "name": "denglong",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1321317336568766563,
+      "source": "CAB-52eb7bd2dd177cc28d4d368c4bb56bde"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

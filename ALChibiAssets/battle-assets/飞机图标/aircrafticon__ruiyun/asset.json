@@ -1,0 +1,42 @@
+{
+  "id": "aircrafticon__ruiyun",
+  "model": "ruiyun",
+  "name": "默认潜母水侦",
+  "names": [
+    "默认潜母水侦",
+    "瑞云",
+    "山城改技能Lv0",
+    "千岁千代田技能瑞云",
+    "第14章指挥舰 -战斗机",
+    "第14章山城改 -战斗机",
+    "第14章扶桑改 -战斗机",
+    "第14章-1BOSS山城改 -战斗机",
+    "第14章-2BOSS扶桑改 -战斗机",
+    "【困难14章】指挥舰 -战斗机",
+    "【困难14章】山城改 -战斗机",
+    "【困难14章】扶桑改 -战斗机",
+    "【困难14章】-1BOSS山城改 -战斗机",
+    "【困难14章】-2BOSS扶桑改 -战斗机",
+    "【主线15-2】BOSS 伊势改&日向改 战斗机",
+    "山城改BOSS水上机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ruiyun",
+  "path": "battle-assets/飞机图标/aircrafticon__ruiyun",
+  "images": [
+    {
+      "file": "ruiyun_-5062983763629980292.png",
+      "name": "ruiyun",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -5062983763629980292,
+      "source": "CAB-bdbba54d68bec40de8c68fea14241f28"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

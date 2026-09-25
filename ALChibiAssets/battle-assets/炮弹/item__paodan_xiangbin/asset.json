@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xiangbin",
+  "model": "paodan_xiangbin",
+  "name": "香槟炮弹",
+  "names": [
+    "香槟炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiangbin",
+  "path": "battle-assets/炮弹/item__paodan_xiangbin",
+  "images": [
+    {
+      "file": "paodan_xiangbin_-80662977303349084.png",
+      "name": "paodan_xiangbin",
+      "width": 128,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -80662977303349084,
+      "source": "CAB-c70f146dd06147c3c01f73c6b5cb7cdb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xiangbin/paodan_xiangbin_-80662977303349084.png"
+}

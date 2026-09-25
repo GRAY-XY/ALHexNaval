@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_fanzuiyugaohan",
+  "model": "paodan_fanzuiyugaohan",
+  "name": "犯罪预告函炮弹",
+  "names": [
+    "犯罪预告函炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_fanzuiyugaohan",
+  "path": "battle-assets/炮弹/bulletall__paodan_fanzuiyugaohan",
+  "images": [
+    {
+      "file": "paodan_fanzuiyugaohan_-3552125839083981134.png",
+      "name": "paodan_fanzuiyugaohan",
+      "width": 128,
+      "height": 117,
+      "role": "原始精灵",
+      "path_id": -3552125839083981134,
+      "source": "CAB-55e3c04f1d36ac8d70eccb52cc94aa54"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_yutu",
+  "model": "yulei_yutu",
+  "name": "浊影鱼雷",
+  "names": [
+    "浊影鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yutu",
+  "path": "battle-assets/鱼雷/item__yulei_yutu",
+  "images": [
+    {
+      "file": "yulei_yutu_-95148771373729729.png",
+      "name": "yulei_yutu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -95148771373729729,
+      "source": "CAB-a7738698cd4c46cad7b36f54c84b3a6d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yutu/yulei_yutu_-95148771373729729.png",
+  "spine": {
+    "skel": "yulei_yutu.skel",
+    "atlas": "yulei_yutu.atlas",
+    "pages": [
+      "yulei_yutu.png"
+    ]
+  }
+}

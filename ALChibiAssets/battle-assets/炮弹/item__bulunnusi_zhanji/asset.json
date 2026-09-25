@@ -1,0 +1,17 @@
+{
+  "id": "item__bulunnusi_zhanji",
+  "model": "bulunnusi_zhanji",
+  "name": "bulunnusi_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulunnusi_zhanji",
+  "path": "battle-assets/炮弹/item__bulunnusi_zhanji",
+  "images": [],
+  "particle_systems": 98,
+  "animations": [],
+  "bullet_ids": [
+    79976
+  ],
+  "has_preview": false,
+  "prefab": true
+}

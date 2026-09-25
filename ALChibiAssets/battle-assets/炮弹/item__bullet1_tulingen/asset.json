@@ -1,0 +1,30 @@
+{
+  "id": "item__bullet1_tulingen",
+  "model": "bullet1_tulingen",
+  "name": "bullet1_tulingen",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet1_tulingen",
+  "path": "battle-assets/炮弹/item__bullet1_tulingen",
+  "images": [
+    {
+      "file": "bullet_tulingen_-7769321329328241757.png",
+      "name": "bullet_tulingen",
+      "width": 85,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -7769321329328241757,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19608,
+    170012,
+    170015
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet1_tulingen/bullet_tulingen_-7769321329328241757.png"
+}

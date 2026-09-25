@@ -1,0 +1,15 @@
+{
+  "id": "item__laisha_shanguangbaolie",
+  "model": "laisha_shanguangbaolie",
+  "name": "laisha_shanguangbaolie",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/laisha_shanguangbaolie",
+  "path": "battle-assets/其他战斗特效/item__laisha_shanguangbaolie",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,83 @@
+
+feiji_feitianjiche.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boli_b
+  rotate: true
+  xy: 548, 37
+  size: 87, 76
+  orig: 87, 76
+  offset: 0, 0
+  index: -1
+boli_f
+  rotate: true
+  xy: 454, 30
+  size: 94, 92
+  orig: 94, 92
+  offset: 0, 0
+  index: -1
+cheti
+  rotate: false
+  xy: 2, 94
+  size: 269, 159
+  orig: 269, 159
+  offset: 0, 0
+  index: -1
+fengyi
+  rotate: false
+  xy: 306, 5
+  size: 146, 102
+  orig: 146, 102
+  offset: 0, 0
+  index: -1
+jiu_1
+  rotate: true
+  xy: 273, 109
+  size: 144, 171
+  orig: 144, 171
+  offset: 0, 0
+  index: -1
+lunzi_1
+  rotate: false
+  xy: 128, 3
+  size: 87, 89
+  orig: 87, 89
+  offset: 0, 0
+  index: -1
+lunzi_2
+  rotate: false
+  xy: 217, 3
+  size: 87, 89
+  orig: 87, 89
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 2, 23
+  size: 124, 69
+  orig: 124, 69
+  offset: 0, 0
+  index: -1
+mask
+  rotate: false
+  xy: 548, 2
+  size: 58, 33
+  orig: 58, 33
+  offset: 0, 0
+  index: -1
+qiancha
+  rotate: true
+  xy: 608, 5
+  size: 30, 42
+  orig: 30, 42
+  offset: 0, 0
+  index: -1
+tuowe
+  rotate: true
+  xy: 446, 126
+  size: 127, 145
+  orig: 127, 145
+  offset: 0, 0
+  index: -1

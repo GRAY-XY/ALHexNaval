@@ -1,0 +1,35 @@
+{
+  "id": "item__cave_bullet06_big",
+  "model": "cave_bullet06_big",
+  "name": "cave_bullet06_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/cave_bullet06_big",
+  "path": "battle-assets/炮弹/item__cave_bullet06_big",
+  "images": [
+    {
+      "file": "cave_bullet06_-4184528515276521609.png",
+      "name": "cave_bullet06",
+      "width": 96,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -4184528515276521609,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710049,
+    3151106,
+    3151107,
+    3151118,
+    3201014,
+    3201015,
+    3201016,
+    3201017
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__cave_bullet06_big/cave_bullet06_-4184528515276521609.png"
+}

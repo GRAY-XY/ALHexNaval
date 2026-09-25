@@ -1,0 +1,18 @@
+{
+  "id": "item__chuyue_zhanji",
+  "model": "chuyue_zhanji",
+  "name": "chuyue_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/chuyue_zhanji",
+  "path": "battle-assets/炮弹/item__chuyue_zhanji",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170194,
+    364009
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__xsb3c1",
+  "model": "xsb3c1",
+  "name": "实验型XSB3C-1",
+  "names": [
+    "实验型XSB3C-1",
+    "【大世界】第五章剧情_友方支援_航空支援飞机",
+    "【大世界】第五章剧情_5-6剧情战_企业支援飞机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/xsb3c1",
+  "path": "battle-assets/飞机图标/aircrafticon__xsb3c1",
+  "images": [
+    {
+      "file": "XSB3C1_-7930828949114450401.png",
+      "name": "XSB3C1",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -7930828949114450401,
+      "source": "CAB-9cc11d57d7752e5c1275f1f727277aa2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

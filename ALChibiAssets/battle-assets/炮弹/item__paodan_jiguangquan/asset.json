@@ -1,0 +1,17 @@
+{
+  "id": "item__paodan_jiguangquan",
+  "model": "paodan_jiguangquan",
+  "name": "辉光能量炮弹",
+  "names": [
+    "辉光能量炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jiguangquan",
+  "path": "battle-assets/炮弹/item__paodan_jiguangquan",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

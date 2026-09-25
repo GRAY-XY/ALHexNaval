@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__feiji_wuxing",
+  "model": "feiji_wuxing",
+  "name": "定安戊型水上机Lv1",
+  "names": [
+    "定安戊型水上机Lv1",
+    "【2026春节共斗 N难度】BOSS 定安 水上飞机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_wuxing",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_wuxing",
+  "images": [
+    {
+      "file": "feiji_wuxing_3860096603651576697.png",
+      "name": "feiji_wuxing",
+      "width": 45,
+      "height": 39,
+      "role": "原始精灵",
+      "path_id": 3860096603651576697,
+      "source": "CAB-586a2d65497d282a41adfda8f1451b67"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

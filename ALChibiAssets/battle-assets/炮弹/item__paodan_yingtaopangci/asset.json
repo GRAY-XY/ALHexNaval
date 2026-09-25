@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yingtaopangci",
+  "model": "paodan_yingtaopangci",
+  "name": "爱之甜心炮弹",
+  "names": [
+    "爱之甜心炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yingtaopangci",
+  "path": "battle-assets/炮弹/item__paodan_yingtaopangci",
+  "images": [
+    {
+      "file": "paodan_yingtaopangci_4143855215363807498.png",
+      "name": "paodan_yingtaopangci",
+      "width": 128,
+      "height": 91,
+      "role": "战斗贴图",
+      "path_id": 4143855215363807498,
+      "source": "CAB-22052479355cd544bfc73d0c354924f2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yingtaopangci/paodan_yingtaopangci_4143855215363807498.png"
+}

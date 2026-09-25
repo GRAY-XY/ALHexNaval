@@ -1,0 +1,118 @@
+
+paodan_renzheliandao.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+liandao
+  rotate: false
+  xy: 533, 46
+  size: 131, 112
+  orig: 131, 112
+  offset: 0, 0
+  index: -1
+yu_1
+  rotate: false
+  xy: 2, 2
+  size: 175, 156
+  orig: 175, 156
+  offset: 0, 0
+  index: -1
+yu_1_2
+  rotate: false
+  xy: 179, 2
+  size: 175, 156
+  orig: 175, 156
+  offset: 0, 0
+  index: -1
+yu_1_3
+  rotate: false
+  xy: 356, 2
+  size: 175, 156
+  orig: 175, 156
+  offset: 0, 0
+  index: -1
+yu_2
+  rotate: false
+  xy: 666, 119
+  size: 42, 39
+  orig: 42, 39
+  offset: 0, 0
+  index: -1
+yu_2_2
+  rotate: false
+  xy: 710, 119
+  size: 42, 39
+  orig: 42, 39
+  offset: 0, 0
+  index: -1
+yu_2_3
+  rotate: false
+  xy: 754, 119
+  size: 42, 39
+  orig: 42, 39
+  offset: 0, 0
+  index: -1
+yu_3
+  rotate: true
+  xy: 798, 123
+  size: 35, 31
+  orig: 35, 31
+  offset: 0, 0
+  index: -1
+yu_3_2
+  rotate: false
+  xy: 798, 90
+  size: 35, 31
+  orig: 35, 31
+  offset: 0, 0
+  index: -1
+yu_3_3
+  rotate: false
+  xy: 831, 127
+  size: 35, 31
+  orig: 35, 31
+  offset: 0, 0
+  index: -1
+yu_4
+  rotate: false
+  xy: 747, 89
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+yu_4_2
+  rotate: false
+  xy: 765, 89
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+yu_4_3
+  rotate: false
+  xy: 835, 97
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+yu_5
+  rotate: false
+  xy: 666, 89
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+yu_5_2
+  rotate: false
+  xy: 693, 89
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+yu_5_3
+  rotate: false
+  xy: 720, 89
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1

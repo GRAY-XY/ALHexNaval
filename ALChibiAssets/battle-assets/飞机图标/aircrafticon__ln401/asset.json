@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__ln401",
+  "model": "ln401",
+  "name": "霞飞鱼雷机弹幕Lv1",
+  "names": [
+    "霞飞鱼雷机弹幕Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ln401",
+  "path": "battle-assets/飞机图标/aircrafticon__ln401",
+  "images": [
+    {
+      "file": "LN401_-4991848345691849264.png",
+      "name": "LN401",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -4991848345691849264,
+      "source": "CAB-c475b0b7e1b08c3ec9b9c533ac5fad97"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

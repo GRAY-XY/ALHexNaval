@@ -1,0 +1,28 @@
+{
+  "id": "item__pingzhao_gouyu_mini",
+  "model": "pingzhao_gouyu_mini",
+  "name": "pingzhao_gouyu_mini",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/pingzhao_gouyu_mini",
+  "path": "battle-assets/炮弹/item__pingzhao_gouyu_mini",
+  "images": [
+    {
+      "file": "zidan_gouyu_-452217560797798297.png",
+      "name": "zidan_gouyu",
+      "width": 128,
+      "height": 57,
+      "role": "战斗贴图",
+      "path_id": -452217560797798297,
+      "source": "CAB-caf0dc2f40aeeb6bd36cb7c5492b9cdf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161095
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__pingzhao_gouyu_mini/zidan_gouyu_-452217560797798297.png"
+}

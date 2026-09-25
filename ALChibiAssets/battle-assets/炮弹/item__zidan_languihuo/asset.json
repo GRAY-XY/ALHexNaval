@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_languihuo",
+  "model": "zidan_languihuo",
+  "name": "幽蓝鬼火子弹",
+  "names": [
+    "幽蓝鬼火子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_languihuo",
+  "path": "battle-assets/炮弹/item__zidan_languihuo",
+  "images": [
+    {
+      "file": "zidan_languihuo_4432503352357868525.png",
+      "name": "zidan_languihuo",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4432503352357868525,
+      "source": "CAB-410636fc1e4fa4f9e66b15b15ae1100f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_languihuo/zidan_languihuo_4432503352357868525.png",
+  "spine": {
+    "skel": "zidan_languihuo.skel",
+    "atlas": "zidan_languihuo.atlas",
+    "pages": [
+      "zidan_languihuo.png"
+    ]
+  }
+}

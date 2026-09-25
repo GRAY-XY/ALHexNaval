@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__fire_01",
+  "model": "fire_01",
+  "name": "fire_01",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/fire_01",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__fire_01",
+  "images": [
+    {
+      "file": "fire_01_-716990571053279814.png",
+      "name": "fire_01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -716990571053279814,
+      "source": "CAB-ac6c97886dcf89ea9b5d03f343723013"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

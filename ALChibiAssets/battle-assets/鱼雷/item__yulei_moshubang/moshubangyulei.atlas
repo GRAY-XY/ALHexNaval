@@ -1,0 +1,125 @@
+
+moshubangyulei.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+moshubang
+  rotate: false
+  xy: 415, 382
+  size: 258, 76
+  orig: 258, 76
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 2
+  size: 1008, 378
+  orig: 1008, 378
+  offset: 0, 0
+  index: -1
+xx_1
+  rotate: false
+  xy: 113, 437
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+xx_10
+  rotate: false
+  xy: 284, 428
+  size: 34, 30
+  orig: 34, 30
+  offset: 0, 0
+  index: -1
+xx_11
+  rotate: false
+  xy: 93, 440
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+xx_12
+  rotate: false
+  xy: 219, 434
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+xx_13
+  rotate: false
+  xy: 245, 433
+  size: 37, 25
+  orig: 37, 25
+  offset: 0, 0
+  index: -1
+xx_14
+  rotate: true
+  xy: 2, 448
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: -1
+xx_15
+  rotate: false
+  xy: 320, 428
+  size: 44, 30
+  orig: 44, 30
+  offset: 0, 0
+  index: -1
+xx_2
+  rotate: false
+  xy: 136, 434
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+xx_3
+  rotate: true
+  xy: 54, 442
+  size: 16, 17
+  orig: 16, 17
+  offset: 0, 0
+  index: -1
+xx_4
+  rotate: false
+  xy: 19, 444
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+xx_5
+  rotate: false
+  xy: 73, 442
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+xx_6
+  rotate: true
+  xy: 36, 443
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+xx_7
+  rotate: false
+  xy: 366, 423
+  size: 47, 35
+  orig: 47, 35
+  offset: 0, 0
+  index: -1
+xx_8
+  rotate: false
+  xy: 162, 434
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+xx_9
+  rotate: true
+  xy: 190, 434
+  size: 24, 27
+  orig: 24, 27
+  offset: 0, 0
+  index: -1

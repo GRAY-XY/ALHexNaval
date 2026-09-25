@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yidalimian",
+  "model": "paodan_yidalimian",
+  "name": "意面炮弹",
+  "names": [
+    "意面炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yidalimian",
+  "path": "battle-assets/炮弹/item__paodan_yidalimian",
+  "images": [
+    {
+      "file": "paodan_yidalimian_-4636402589808476295.png",
+      "name": "paodan_yidalimian",
+      "width": 128,
+      "height": 73,
+      "role": "战斗贴图",
+      "path_id": -4636402589808476295,
+      "source": "CAB-51d2a4418ed9ccedb611629f1b338bd3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yidalimian/paodan_yidalimian_-4636402589808476295.png"
+}

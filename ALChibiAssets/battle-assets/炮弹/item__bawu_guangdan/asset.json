@@ -1,0 +1,29 @@
+{
+  "id": "item__bawu_guangdan",
+  "model": "bawu_guangdan",
+  "name": "bawu_guangdan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bawu_guangdan",
+  "path": "battle-assets/炮弹/item__bawu_guangdan",
+  "images": [
+    {
+      "file": "zidan03_-6139871837269053381.png",
+      "name": "zidan03",
+      "width": 254,
+      "height": 59,
+      "role": "战斗贴图",
+      "path_id": -6139871837269053381,
+      "source": "CAB-1353eb1b3c5090a51b3cdaae340e505c"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    168252,
+    3335021
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bawu_guangdan/zidan03_-6139871837269053381.png"
+}

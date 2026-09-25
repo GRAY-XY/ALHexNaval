@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhutong",
+  "model": "yulei_zhutong",
+  "name": "水墨竹简鱼雷",
+  "names": [
+    "水墨竹简鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhutong",
+  "path": "battle-assets/鱼雷/item__yulei_zhutong",
+  "images": [
+    {
+      "file": "yulei_zhutong_2714426516846436998.png",
+      "name": "yulei_zhutong",
+      "width": 128,
+      "height": 27,
+      "role": "战斗贴图",
+      "path_id": 2714426516846436998,
+      "source": "CAB-243339dbdac7c2d70fd3001500607b50"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhutong/yulei_zhutong_2714426516846436998.png"
+}

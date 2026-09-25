@@ -1,0 +1,26 @@
+{
+  "id": "item__paodan_shandian",
+  "model": "paodan_shandian",
+  "name": "闪电炮弹",
+  "names": [
+    "闪电炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shandian",
+  "path": "battle-assets/炮弹/item__paodan_shandian",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    3139408,
+    3159046,
+    3201233,
+    3205031,
+    3205131,
+    3221020,
+    3239023,
+    3279027
+  ],
+  "has_preview": false,
+  "prefab": true
+}

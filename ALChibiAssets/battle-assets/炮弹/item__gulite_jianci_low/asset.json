@@ -1,0 +1,49 @@
+{
+  "id": "item__gulite_jianci_low",
+  "model": "gulite_jianci_low",
+  "name": "gulite_jianci_low",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulite_jianci_low",
+  "path": "battle-assets/炮弹/item__gulite_jianci_low",
+  "images": [
+    {
+      "file": "jianci01_789984312127101547.png",
+      "name": "jianci01",
+      "width": 254,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": 789984312127101547,
+      "source": "CAB-eb76e7440400eab0baf8c0fca935c48f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    29650008,
+    29650009,
+    29650010,
+    29650011,
+    29650012,
+    29650013,
+    29650014,
+    29650015,
+    29650022,
+    29650024,
+    29650026,
+    29650028,
+    29650030,
+    3091009,
+    3091011,
+    3155018,
+    3155027,
+    3244017,
+    3207013,
+    3207014,
+    3355414,
+    3380003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulite_jianci_low/jianci01_789984312127101547.png"
+}

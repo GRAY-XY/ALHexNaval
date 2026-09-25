@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_bingqiang",
+  "model": "zidan_bingqiang",
+  "name": "冰枪子弹",
+  "names": [
+    "冰枪子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bingqiang",
+  "path": "battle-assets/炮弹/item__zidan_bingqiang",
+  "images": [
+    {
+      "file": "zidan_bingqiang_-6916557460770240397.png",
+      "name": "zidan_bingqiang",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6916557460770240397,
+      "source": "CAB-93f4ae0d12d2883118297fb5593d51b8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bingqiang/zidan_bingqiang_-6916557460770240397.png",
+  "spine": {
+    "skel": "zidan_bingqiang.skel",
+    "atlas": "zidan_bingqiang.atlas",
+    "pages": [
+      "zidan_bingqiang.png"
+    ]
+  }
+}

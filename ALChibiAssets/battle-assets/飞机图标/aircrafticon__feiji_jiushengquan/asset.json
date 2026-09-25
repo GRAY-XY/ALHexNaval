@@ -1,0 +1,34 @@
+{
+  "id": "aircrafticon__feiji_jiushengquan",
+  "model": "feiji_jiushengquan",
+  "name": "【2026DOA三期活动】假日花船 航母战斗机 Lv1",
+  "names": [
+    "【2026DOA三期活动】假日花船 航母战斗机 Lv1",
+    "【2026DOA三期活动】假日花船 航母战斗机 Lv2",
+    "【2026DOA三期活动】假日花船 航母战斗机 Lv3",
+    "【2026DOA三期活动】假日花船 航母战斗机 Lv4",
+    "【2026DOA三期活动】假日花船 航母战斗机 Lv5",
+    "海滨度假啾（鱼雷）",
+    "海滨度假啾（战斗）",
+    "海滨度假啾（轰炸）"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_jiushengquan",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_jiushengquan",
+  "images": [
+    {
+      "file": "feiji_jiushengquan_9090313577216729603.png",
+      "name": "feiji_jiushengquan",
+      "width": 45,
+      "height": 41,
+      "role": "原始精灵",
+      "path_id": 9090313577216729603,
+      "source": "CAB-0d9368f4cbd6fe314b97b51fd8570eb2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

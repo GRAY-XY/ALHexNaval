@@ -1,0 +1,27 @@
+{
+  "id": "item__zidan_bulizidan1",
+  "model": "zidan_bulizidan1",
+  "name": "zidan_bulizidan1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_bulizidan1",
+  "path": "battle-assets/炮弹/item__zidan_bulizidan1",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710037,
+    710038,
+    710039,
+    710040
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "bulizidan.skel",
+    "atlas": "bulizidan.atlas",
+    "pages": [
+      "bulizidan.png"
+    ]
+  }
+}

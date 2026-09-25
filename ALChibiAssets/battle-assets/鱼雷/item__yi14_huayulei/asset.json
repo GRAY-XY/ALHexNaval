@@ -1,0 +1,26 @@
+{
+  "id": "item__yi14_huayulei",
+  "model": "yi14_huayulei",
+  "name": "yi14_huayulei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yi14_huayulei",
+  "path": "battle-assets/鱼雷/item__yi14_huayulei",
+  "images": [
+    {
+      "file": "hua01_7240056793568733173.png",
+      "name": "hua01",
+      "width": 227,
+      "height": 74,
+      "role": "战斗贴图",
+      "path_id": 7240056793568733173,
+      "source": "CAB-cee21a3e94bef7f817dbb453ba975b6c"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yi14_huayulei/hua01_7240056793568733173.png"
+}

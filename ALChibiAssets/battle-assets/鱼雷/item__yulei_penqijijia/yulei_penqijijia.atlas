@@ -1,0 +1,48 @@
+
+yulei_penqijijia.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tuowei_1
+  rotate: false
+  xy: 381, 168
+  size: 148, 82
+  orig: 148, 82
+  offset: 0, 0
+  index: -1
+tuowei_1_1
+  rotate: false
+  xy: 531, 168
+  size: 148, 82
+  orig: 148, 82
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 120
+  size: 377, 130
+  orig: 377, 130
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 2, 2
+  size: 318, 116
+  orig: 318, 116
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: false
+  xy: 601, 35
+  size: 190, 131
+  orig: 190, 131
+  offset: 0, 0
+  index: -1
+yulei
+  rotate: false
+  xy: 322, 6
+  size: 277, 112
+  orig: 277, 112
+  offset: 0, 0
+  index: -1

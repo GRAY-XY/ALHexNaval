@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_bolandengbaomen",
+  "model": "feiji_bolandengbaomen",
+  "name": "纪念城门(鱼雷)",
+  "names": [
+    "纪念城门(鱼雷)",
+    "纪念城门(战斗)",
+    "纪念城门(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_bolandengbaomen",
+  "path": "battle-assets/飞机/chargo__feiji_bolandengbaomen",
+  "images": [
+    {
+      "file": "feiji_bolandengbaomen_5575400930381073338.png",
+      "name": "feiji_bolandengbaomen",
+      "width": 256,
+      "height": 260,
+      "role": "战斗贴图",
+      "path_id": 5575400930381073338,
+      "source": "CAB-f46fd2b19a86b0b3dcd288030fb7474d"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_bolandengbaomen/feiji_bolandengbaomen_5575400930381073338.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dianhuating",
+  "model": "paodan_dianhuating",
+  "name": "电话亭炮弹",
+  "names": [
+    "电话亭炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dianhuating",
+  "path": "battle-assets/炮弹/item__paodan_dianhuating",
+  "images": [
+    {
+      "file": "paodan_dianhuating_-8826972524790851181.png",
+      "name": "paodan_dianhuating",
+      "width": 128,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": -8826972524790851181,
+      "source": "CAB-4e1b5a18d0f7e329b97b0d5311b4ad00"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dianhuating/paodan_dianhuating_-8826972524790851181.png"
+}

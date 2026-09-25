@@ -1,0 +1,36 @@
+{
+  "id": "item__yuanyizhezhi_juemieguangjian",
+  "model": "yuanyizhezhi_juemieguangjian",
+  "name": "yuanyizhezhi_juemieguangjian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yuanyizhezhi_juemieguangjian",
+  "path": "battle-assets/炮弹/item__yuanyizhezhi_juemieguangjian",
+  "images": [
+    {
+      "file": "yuanyizhezhi_juemieguangjian_-4875741252586845819.png",
+      "name": "yuanyizhezhi_juemieguangjian",
+      "width": 1024,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": -4875741252586845819,
+      "source": "CAB-288370c66bf3e6003f8a9f3c8d89b1bb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    169352,
+    3335013
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yuanyizhezhi_juemieguangjian/yuanyizhezhi_juemieguangjian_-4875741252586845819.png",
+  "spine": {
+    "skel": "yuanyizhezhi_juemieguangjian.skel",
+    "atlas": "yuanyizhezhi_juemieguangjian.atlas",
+    "pages": [
+      "yuanyizhezhi_juemieguangjian.png"
+    ]
+  }
+}

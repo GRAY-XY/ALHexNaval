@@ -1,0 +1,28 @@
+{
+  "id": "item__leigeluo_tuzi",
+  "model": "leigeluo_tuzi",
+  "name": "leigeluo_tuzi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/leigeluo_tuzi",
+  "path": "battle-assets/炮弹/item__leigeluo_tuzi",
+  "images": [
+    {
+      "file": "xiaixong_1782517661338575645.png",
+      "name": "xiaixong",
+      "width": 171,
+      "height": 248,
+      "role": "战斗贴图",
+      "path_id": 1782517661338575645,
+      "source": "CAB-895ecdf0c3eefc0cfa9ba7d68b06a5d3"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    160886
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__leigeluo_tuzi/xiaixong_1782517661338575645.png"
+}

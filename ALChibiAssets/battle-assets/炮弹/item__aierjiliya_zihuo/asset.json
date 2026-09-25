@@ -1,0 +1,17 @@
+{
+  "id": "item__aierjiliya_zihuo",
+  "model": "aierjiliya_zihuo",
+  "name": "aierjiliya_zihuo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/aierjiliya_zihuo",
+  "path": "battle-assets/炮弹/item__aierjiliya_zihuo",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    170092
+  ],
+  "has_preview": false,
+  "prefab": true
+}

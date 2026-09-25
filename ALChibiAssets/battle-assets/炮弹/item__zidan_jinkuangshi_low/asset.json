@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_jinkuangshi_low",
+  "model": "zidan_jinkuangshi_low",
+  "name": "zidan_jinkuangshi_low",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_jinkuangshi_low",
+  "path": "battle-assets/炮弹/item__zidan_jinkuangshi_low",
+  "images": [
+    {
+      "file": "zidan_jinkuangshi_-7549482692224246632.png",
+      "name": "zidan_jinkuangshi",
+      "width": 97,
+      "height": 51,
+      "role": "战斗贴图",
+      "path_id": -7549482692224246632,
+      "source": "CAB-9fa058a3a704437e5cb70ff6084a448a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3217034,
+    3217052
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jinkuangshi_low/zidan_jinkuangshi_-7549482692224246632.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_feitubanshou",
+  "model": "zidan_feitubanshou",
+  "name": "锈蚀钳夹子弹",
+  "names": [
+    "锈蚀钳夹子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_feitubanshou",
+  "path": "battle-assets/炮弹/item__zidan_feitubanshou",
+  "images": [
+    {
+      "file": "zidan_feitubanshou_2535806217819415178.png",
+      "name": "zidan_feitubanshou",
+      "width": 128,
+      "height": 58,
+      "role": "战斗贴图",
+      "path_id": 2535806217819415178,
+      "source": "CAB-e79c419ee273eac57a3b9fb5b2d3d5ef"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_feitubanshou/zidan_feitubanshou_2535806217819415178.png"
+}

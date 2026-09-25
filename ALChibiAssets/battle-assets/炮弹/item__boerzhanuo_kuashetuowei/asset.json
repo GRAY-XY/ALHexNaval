@@ -1,0 +1,28 @@
+{
+  "id": "item__boerzhanuo_kuashetuowei",
+  "model": "boerzhanuo_kuashetuowei",
+  "name": "boerzhanuo_kuashetuowei",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/boerzhanuo_kuashetuowei",
+  "path": "battle-assets/炮弹/item__boerzhanuo_kuashetuowei",
+  "images": [
+    {
+      "file": "bullet_boerzhanuo_-3481190748048030486.png",
+      "name": "bullet_boerzhanuo",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -3481190748048030486,
+      "source": "CAB-dbdb76bd423eb77d48a732cfdc74a05e"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    170701
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__boerzhanuo_kuashetuowei/bullet_boerzhanuo_-3481190748048030486.png"
+}

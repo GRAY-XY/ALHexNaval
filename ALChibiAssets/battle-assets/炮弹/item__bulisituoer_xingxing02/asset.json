@@ -1,0 +1,29 @@
+{
+  "id": "item__bulisituoer_xingxing02",
+  "model": "bulisituoer_xingxing02",
+  "name": "bulisituoer_xingxing02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulisituoer_xingxing02",
+  "path": "battle-assets/炮弹/item__bulisituoer_xingxing02",
+  "images": [
+    {
+      "file": "xinxin01_-227593045476317199.png",
+      "name": "xinxin01",
+      "width": 210,
+      "height": 212,
+      "role": "战斗贴图",
+      "path_id": -227593045476317199,
+      "source": "CAB-77603ae1270d3616c51b65e76b1822e7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    79811,
+    79812
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulisituoer_xingxing02/xinxin01_-227593045476317199.png"
+}

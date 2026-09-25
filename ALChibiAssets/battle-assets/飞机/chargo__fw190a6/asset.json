@@ -1,0 +1,38 @@
+{
+  "id": "chargo__fw190a6",
+  "model": "fw190a6",
+  "name": "试作舰载型FW-190 A-6/R6",
+  "names": [
+    "试作舰载型FW-190 A-6/R6",
+    "【2024鲁梅活动 剧情战】我方铁血航母 战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/fw190a6",
+  "path": "battle-assets/飞机/chargo__fw190a6",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "Fw190A6_4853680056286981125.png",
+      "name": "Fw190A6",
+      "width": 256,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": 4853680056286981125,
+      "source": "CAB-acf1663f2133bc46851a7cac17454332"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fw190a6/aircraft_shadow_2192772484218123160.png"
+}

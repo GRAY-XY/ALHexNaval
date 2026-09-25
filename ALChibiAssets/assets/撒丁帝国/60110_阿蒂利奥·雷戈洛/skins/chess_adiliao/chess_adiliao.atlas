@@ -1,0 +1,153 @@
+
+chess_adiliao.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1-1
+  rotate: false
+  xy: 2, 376
+  size: 441, 425
+  orig: 441, 425
+  offset: 0, 0
+  index: -1
+1-2
+  rotate: false
+  xy: 864, 996
+  size: 404, 376
+  orig: 404, 376
+  offset: 0, 0
+  index: -1
+1-3
+  rotate: true
+  xy: 445, 446
+  size: 403, 406
+  orig: 403, 406
+  offset: 0, 0
+  index: -1
+1-4
+  rotate: false
+  xy: 421, 947
+  size: 441, 425
+  orig: 441, 425
+  offset: 0, 0
+  index: -1
+1-5
+  rotate: true
+  xy: 853, 448
+  size: 404, 376
+  orig: 404, 376
+  offset: 0, 0
+  index: -1
+2-1
+  rotate: false
+  xy: 1270, 1097
+  size: 372, 275
+  orig: 372, 275
+  offset: 0, 0
+  index: -1
+2-2
+  rotate: true
+  xy: 279, 2
+  size: 372, 255
+  orig: 372, 255
+  offset: 0, 0
+  index: -1
+2-3
+  rotate: false
+  xy: 1231, 545
+  size: 387, 340
+  orig: 387, 340
+  offset: 0, 0
+  index: -1
+2-4
+  rotate: true
+  xy: 2, 2
+  size: 372, 275
+  orig: 372, 275
+  offset: 0, 0
+  index: -1
+2-5
+  rotate: true
+  xy: 536, 72
+  size: 372, 255
+  orig: 372, 255
+  offset: 0, 0
+  index: -1
+binjiao_1
+  rotate: false
+  xy: 915, 869
+  size: 57, 84
+  orig: 57, 84
+  offset: 0, 0
+  index: -1
+binjiao_2
+  rotate: true
+  xy: 1415, 1042
+  size: 53, 61
+  orig: 53, 61
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 980, 856
+  size: 159, 138
+  orig: 159, 138
+  offset: 0, 0
+  index: -1
+chuan
+  rotate: false
+  xy: 2, 803
+  size: 417, 569
+  orig: 417, 569
+  offset: 0, 0
+  index: -1
+daimao
+  rotate: false
+  xy: 1141, 887
+  size: 109, 107
+  orig: 109, 107
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 600, 852
+  size: 146, 93
+  orig: 146, 93
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: false
+  xy: 1270, 1020
+  size: 143, 75
+  orig: 143, 75
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 853, 77
+  size: 369, 389
+  orig: 369, 389
+  offset: 0, 0
+  index: -1
+hair_b
+  rotate: false
+  xy: 864, 955
+  size: 114, 39
+  orig: 114, 39
+  offset: 0, 0
+  index: -1
+qi1
+  rotate: true
+  xy: 421, 851
+  size: 94, 177
+  orig: 94, 177
+  offset: 0, 0
+  index: -1
+qi2
+  rotate: true
+  xy: 748, 854
+  size: 91, 165
+  orig: 91, 165
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,36 @@
+{
+  "id": "item__paodan_songshuyu_m",
+  "model": "paodan_songshuyu_m",
+  "name": "paodan_songshuyu_m",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_songshuyu_m",
+  "path": "battle-assets/炮弹/item__paodan_songshuyu_m",
+  "images": [
+    {
+      "file": "paodan_songshuyu_2126103950844468592.png",
+      "name": "paodan_songshuyu",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": 2126103950844468592,
+      "source": "CAB-8fee95f27b3e2aaade3e4b9936c2b837"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3366006,
+    3366011,
+    3366012,
+    3366013,
+    3366014,
+    3366015,
+    3366016,
+    3366017,
+    3366018
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_songshuyu_m/paodan_songshuyu_2126103950844468592.png"
+}

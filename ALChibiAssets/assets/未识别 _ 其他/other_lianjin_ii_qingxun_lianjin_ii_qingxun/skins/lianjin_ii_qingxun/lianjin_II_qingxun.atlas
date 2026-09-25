@@ -1,0 +1,132 @@
+
+lianjin_II_qingxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qx_1
+  rotate: true
+  xy: 382, 419
+  size: 175, 224
+  orig: 175, 224
+  offset: 0, 0
+  index: -1
+qx_11
+  rotate: false
+  xy: 2, 394
+  size: 176, 162
+  orig: 176, 162
+  offset: 0, 0
+  index: -1
+qx_12
+  rotate: false
+  xy: 180, 270
+  size: 187, 140
+  orig: 187, 140
+  offset: 0, 0
+  index: -1
+qx_13
+  rotate: true
+  xy: 733, 490
+  size: 337, 224
+  orig: 337, 224
+  offset: 0, 0
+  index: -1
+qx_14
+  rotate: false
+  xy: 2, 215
+  size: 140, 177
+  orig: 140, 177
+  offset: 0, 0
+  index: -1
+qx_15
+  rotate: false
+  xy: 2, 41
+  size: 104, 172
+  orig: 104, 172
+  offset: 0, 0
+  index: -1
+qx_16
+  rotate: false
+  xy: 551, 175
+  size: 138, 191
+  orig: 138, 191
+  offset: 0, 0
+  index: -1
+qx_2
+  rotate: true
+  xy: 374, 262
+  size: 155, 175
+  orig: 155, 175
+  offset: 0, 0
+  index: -1
+qx_3
+  rotate: true
+  xy: 144, 144
+  size: 124, 199
+  orig: 124, 199
+  offset: 0, 0
+  index: -1
+qx_4
+  rotate: true
+  xy: 180, 412
+  size: 144, 192
+  orig: 144, 192
+  offset: 0, 0
+  index: -1
+qx_5
+  rotate: true
+  xy: 722, 333
+  size: 155, 188
+  orig: 155, 188
+  offset: 0, 0
+  index: -1
+qx_6
+  rotate: false
+  xy: 382, 596
+  size: 349, 231
+  orig: 349, 231
+  offset: 0, 0
+  index: -1
+qx_7
+  rotate: false
+  xy: 2, 558
+  size: 378, 269
+  orig: 378, 269
+  offset: 0, 0
+  index: -1
+qx_8
+  rotate: true
+  xy: 608, 368
+  size: 226, 112
+  orig: 226, 112
+  offset: 0, 0
+  index: -1
+qx_9
+  rotate: true
+  xy: 345, 2
+  size: 258, 66
+  orig: 258, 66
+  offset: 0, 0
+  index: -1
+shui_1
+  rotate: true
+  xy: 959, 313
+  size: 270, 30
+  orig: 270, 30
+  offset: 0, 0
+  index: -1
+shui_2
+  rotate: true
+  xy: 991, 343
+  size: 240, 30
+  orig: 240, 30
+  offset: 0, 0
+  index: -1
+shui_3
+  rotate: true
+  xy: 959, 585
+  size: 242, 34
+  orig: 242, 34
+  offset: 0, 0
+  index: -1

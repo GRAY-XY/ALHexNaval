@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_tangguohe",
+  "model": "paodan_tangguohe",
+  "name": "魔法炮弹",
+  "names": [
+    "魔法炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tangguohe",
+  "path": "battle-assets/炮弹/item__paodan_tangguohe",
+  "images": [
+    {
+      "file": "paodan_tangguohe_3294828882670300466.png",
+      "name": "paodan_tangguohe",
+      "width": 1024,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": 3294828882670300466,
+      "source": "CAB-a0a7f8058dd14e42702fd56252bf3ca1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tangguohe/paodan_tangguohe_3294828882670300466.png",
+  "spine": {
+    "skel": "paodan_tangguohe.skel",
+    "atlas": "paodan_tangguohe.atlas",
+    "pages": [
+      "paodan_tangguohe.png"
+    ]
+  }
+}

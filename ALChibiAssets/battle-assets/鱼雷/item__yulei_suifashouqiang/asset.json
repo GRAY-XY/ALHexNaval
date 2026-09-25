@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_suifashouqiang",
+  "model": "yulei_suifashouqiang",
+  "name": "燧发手枪鱼雷",
+  "names": [
+    "燧发手枪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_suifashouqiang",
+  "path": "battle-assets/鱼雷/item__yulei_suifashouqiang",
+  "images": [
+    {
+      "file": "yulei_suifashouqiang_-2762423406385854825.png",
+      "name": "yulei_suifashouqiang",
+      "width": 128,
+      "height": 58,
+      "role": "战斗贴图",
+      "path_id": -2762423406385854825,
+      "source": "CAB-a244f1a084d927eb3598268a607f0015"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_suifashouqiang/yulei_suifashouqiang_-2762423406385854825.png"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_shuangcengshoulian",
+  "model": "yulei_shuangcengshoulian",
+  "name": "冰蓝手链鱼雷",
+  "names": [
+    "冰蓝手链鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_shuangcengshoulian",
+  "path": "battle-assets/鱼雷/bulletall__yulei_shuangcengshoulian",
+  "images": [
+    {
+      "file": "yulei_shuangcengshoulian_-6968246223482648969.png",
+      "name": "yulei_shuangcengshoulian",
+      "width": 128,
+      "height": 44,
+      "role": "原始精灵",
+      "path_id": -6968246223482648969,
+      "source": "CAB-85a2793cc4be86cd400e6a9260c3987e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

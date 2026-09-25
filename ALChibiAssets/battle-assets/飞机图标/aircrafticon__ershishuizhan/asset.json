@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__ershishuizhan",
+  "model": "ershishuizhan",
+  "name": "二式水上战斗机",
+  "names": [
+    "二式水上战斗机",
+    "大山 技能飞机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ershishuizhan",
+  "path": "battle-assets/飞机图标/aircrafticon__ershishuizhan",
+  "images": [
+    {
+      "file": "ershishuizhan_-69911721859121056.png",
+      "name": "ershishuizhan",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -69911721859121056,
+      "source": "CAB-951fa7a4b9a0bf37df3afcccc9f62000"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

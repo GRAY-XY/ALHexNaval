@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__shizhizidiangaier",
+  "model": "shizhizidiangaier",
+  "name": "信浓技能试制紫电改二 LV1",
+  "names": [
+    "信浓技能试制紫电改二 LV1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/shizhizidiangaier",
+  "path": "battle-assets/飞机图标/aircrafticon__shizhizidiangaier",
+  "images": [
+    {
+      "file": "shizhizidiangaier_2351758782674826528.png",
+      "name": "shizhizidiangaier",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 2351758782674826528,
+      "source": "CAB-51db3b9c992aeb7f0cdab2940f66779e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

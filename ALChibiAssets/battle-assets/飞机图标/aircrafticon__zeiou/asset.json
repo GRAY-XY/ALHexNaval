@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__zeiou",
+  "model": "zeiou",
+  "name": "默认皇家轰炸机",
+  "names": [
+    "默认皇家轰炸机",
+    "贼鸥",
+    "【翻格子活动】皇家轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/zeiou",
+  "path": "battle-assets/飞机图标/aircrafticon__zeiou",
+  "images": [
+    {
+      "file": "zeiou_-8401220854105078206.png",
+      "name": "zeiou",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -8401220854105078206,
+      "source": "CAB-fb1186711981cede0a85096ced91b7b7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,114 @@
+// Historical version-4 browser scenario, retained as evidence for turn-browser-verification.json.
+// Its formation controls were removed in version 8; current UI evidence is box-selection-browser-verification.json.
+async (page) => {
+  const report = { verifiedAt: new Date().toISOString(), passed: true, checks: [], benchmarks: [], pageErrors: [], consoleErrors: [] };
+  page.on('pageerror', error => report.pageErrors.push(String(error)));
+  page.on('console', event => { if (event.type() === 'error') report.consoleErrors.push(event.text()); });
+  const ensure = (value, label) => { if (!value) throw Error(label); report.checks.push(label); };
+  const ready = async size => { await page.waitForFunction(size => window.navalMap?.ready && window.navalMap.world.width === size && !window.navalMap.dirty && !window.navalMap.ships.moving && !window.navalMap.terrain.stats().pendingChunks, size); };
+  const state = () => page.evaluate(() => window.navalMap.match.save());
+  const normalize = value => Array.isArray(value) ? value.map(normalize) : value && typeof value==='object' ? Object.fromEntries(Object.keys(value).sort().map(key=>[key,normalize(value[key])])) : value;
+  const equal = (a,b) => JSON.stringify(normalize(a)) === JSON.stringify(normalize(b));
+  const turn = () => page.getByRole('button', { name: '结束本方回合 →', exact: true }).click();
+  const newGame = async (size, teams = 4) => {
+    await page.getByRole('combobox', { name: '新战局海域规模', exact: true }).selectOption(String(size));
+    await page.getByRole('combobox', { name: '新战局势力数', exact: true }).selectOption(String(teams));
+    await page.getByRole('button', { name: '建立新战局', exact: true }).click(); await ready(size);
+  };
+  const targetFor = async (minimum = 5, maximum = 11) => page.evaluate(({minimum,maximum}) => {
+    const map = window.navalMap, u = map.match.unit(map.selected), leader = map.match.leader(u), w = Math.sqrt(3)*42;
+    for (let distance=1;distance<=maximum;distance++) for (const [dx,dy] of [[-distance,0],[distance,0],[0,-distance],[0,distance],[-distance,-distance]]) {
+      const target = { col:leader.col+dx,row:leader.row+dy }, route=map.match.route(u.instanceId,target);
+      if (!route || route.cost<minimum || route.cost>maximum+6) continue;
+      const p = cell => ({x:w*(cell.col+(cell.row&1)*.5)+w/2,y:42+63*cell.row}), a=p(leader), b=p(target);
+      map.camera.focus({x:(a.x+b.x)/2,y:(a.y+b.y)/2+80},.85); map.dirty=true;
+      return { target, route, id:u.instanceId };
+    } throw Error('No navigable test target');
+  }, {minimum,maximum});
+  const screen = cell => page.evaluate(cell => {
+    const w=Math.sqrt(3)*42,p=window.navalMap.camera.worldToScreen({x:w*(cell.col+(cell.row&1)*.5)+w/2,y:42+63*cell.row}),rect=document.getElementById('map-viewport').getBoundingClientRect();
+    return {x:p.x+rect.left,y:p.y+rect.top};
+  },cell);
+  await page.setViewportSize({width:1440,height:1050}); await newGame(128,4);
+  const initial=await state();ensure(initial.teams.length===4&&initial.units.length===48,'Four independent players each command all 12 representative ships');
+  for(const team of initial.teams)ensure(initial.units.filter(u=>u.ownerId===team.id).length===12,`Player ${team.id} can use the entire ship roster regardless of source faction`);
+  ensure(await page.evaluate(()=>[...document.querySelectorAll('.ship-row')].length===12&&[...document.querySelectorAll('.ship-row')].every(row=>window.navalMap.match.unit(row.dataset.instance).ownerId===window.navalMap.match.active.id)),'Sidebar contains only the current player ships');
+  ensure((await page.locator('#selected-oil .ap-number').textContent()).trim()==='50 / 50'&&await page.getByRole('progressbar',{name:'本队共享石油'}).getAttribute('aria-valuenow')==='50','Selected ship clearly shows the shared 50-point oil pool');
+  ensure(await page.locator('.ship-ap-value').count()===12&&await page.locator('.ship-ap-value').first().textContent()==='1 / 1','Every own ship row displays its independent combat action');
+  await page.getByRole('button',{name:'定位 海伦娜',exact:true}).click();
+  const picked=await page.evaluate(()=>window.navalMap.selected);await page.locator('#map-viewport').focus();await page.keyboard.press('Tab');
+  ensure(await page.evaluate(id=>window.navalMap.selected!==id,picked),'Tab cycles to the next unit needing movement orders');
+  await page.getByRole('button',{name:'定位 拉菲',exact:true}).click();
+  await page.getByRole('button',{name:'定位 海伦娜',exact:true}).click({modifiers:['Control']});
+  await page.getByRole('button',{name:'定位 厌战',exact:true}).click({modifiers:['Control']});
+  ensure(await page.evaluate(()=>window.navalMap.chosen.size===3),'Control-click selects three friendly ships');
+  await page.getByRole('button',{name:'编成舰队',exact:true}).click();
+  const grouped=await state();ensure(grouped.fleets.length===1&&grouped.fleets[0].members.length===3,'Fleet button creates a three-ship formation');
+  const planned=await targetFor(55,70);await ready(128);const destination=await screen(planned.target);
+  await page.mouse.move(destination.x,destination.y);await page.waitForFunction(()=>!!window.navalMap.routePreview);
+  ensure((await page.locator('#route-info').textContent()).includes('至少'),'Hover displays oil cost and estimated owner turns');
+  await page.screenshot({path:'output/playwright/回合-编队航线.png'});
+  const calibration=await page.evaluate(()=>window.navalMap.ships.stats().calibration);
+  await page.mouse.click(destination.x,destination.y,{button:'right'});
+  const sailed=await state();ensure(sailed.fleets[0].order&&sailed.units.some(u=>u.col!==grouped.units.find(v=>v.instanceId===u.instanceId).col||u.row!==grouped.units.find(v=>v.instanceId===u.instanceId).row),'Right-click moves formation and keeps its remaining long-distance order');
+  await page.waitForFunction(()=>window.navalMap.ships.moving);
+  await page.waitForFunction(()=>window.navalMap.ships.visuals.some(v=>v.motion&&v.rig?.state.getCurrent(0)?.animation.name==='move'));
+  const animation=await page.evaluate(()=>window.navalMap.ships.visuals.filter(v=>v.motion&&v.rig).map(v=>v.rig.state.getCurrent(0).animation.name));
+  ensure(animation.length>0&&animation.every(name=>name==='move'),'Moving members actually play the original movement animation');
+  await ready(128);
+  const stable=await page.evaluate(()=>window.navalMap.ships.stats().calibration);
+  ensure(calibration.every(before=>{const after=stable.find(v=>v.id===before.id);return after&&after.scale===before.scale&&after.pivotX===before.pivotX&&after.pivotY===before.pivotY;}),'Movement retains authored feet pivots and rig scale');
+  ensure(new Set(sailed.units.map(u=>`${u.col},${u.row}`)).size===sailed.units.length,'All ships end movement on unique hexes');
+  ensure(await page.getByRole('progressbar',{name:'本队共享石油'}).getAttribute('aria-valuenow')===String(sailed.teams[0].oil),'Oil card reflects fuel spent by formation movement');
+  for(let i=0;i<4;i++)await turn();await ready(128);
+  const continued=await state();ensure(continued.round===2&&continued.activeIndex===0,'All four forces act before the next round starts');
+  ensure(await page.evaluate(()=>document.getElementById('fleet-list').dataset.owner==='1'&&[...document.querySelectorAll('.ship-row')].every(row=>window.navalMap.match.unit(row.dataset.instance).ownerId===1)),'Turn handoff swaps the sidebar to the incoming player without retaining enemy rows');
+  ensure(continued.units.some(u=>u.ownerId===1&&(u.col!==sailed.units.find(v=>v.instanceId===u.instanceId).col||u.row!==sailed.units.find(v=>v.instanceId===u.instanceId).row)),'Formation automatically continues when its owner receives the next turn');
+  await page.getByRole('button',{name:'保存',exact:true}).click();const manual=await state();await turn();
+  await page.getByRole('button',{name:'读取',exact:true}).click();await page.getByRole('button',{name:/^手动存档/}).click();await ready(128);
+  ensure(equal(await state(),manual),'Manual load restores exact turn, resources, formation and destination');
+  await page.reload();await ready(128);ensure(equal(await state(),manual),'Reload recovers the automatic save without losing orders');
+  const exportEvent=page.waitForEvent('download');await page.getByRole('button',{name:'导出',exact:true}).click();const download=await exportEvent;
+  await download.saveAs('output/exported-test-match.json');ensure(download.suggestedFilename().endsWith('.json'),'Export creates a downloadable JSON save');
+  await turn();await page.locator('#import-file').setInputFiles('output/exported-test-match.json');await ready(128);
+  ensure(equal(await state(),manual),'Importing a valid JSON restores the exported match state');
+  await page.locator('#import-file').setInputFiles('output/invalid-test-match.json');
+  await page.waitForFunction(()=>document.getElementById('message').textContent.includes('无效'));
+  ensure(equal(await state(),manual),'Invalid imports show an error and leave the live match unchanged');
+  await page.getByRole('button',{name:'解散编队',exact:true}).click();ensure((await state()).fleets.length===0,'Disband removes membership and fleet orders');
+  await newGame(128,4);const beforeEnemy=await state(),enemy=beforeEnemy.units.find(u=>u.ownerId===2);
+  await page.evaluate(enemy=>{const m=window.navalMap,w=Math.sqrt(3)*42;m.camera.focus({x:w*(enemy.col+(enemy.row&1)*.5)+w/2,y:42+63*enemy.row},.92);m.dirty=true;},enemy);await ready(128);
+  const ep=await screen(enemy);await page.mouse.click(ep.x,ep.y-30);await page.waitForFunction(()=>document.getElementById('message').textContent.includes('只能选择本方'));
+  ensure(equal(await state(),beforeEnemy)&&await page.evaluate(()=>window.navalMap.match.unit(window.navalMap.selected).ownerId===window.navalMap.match.active.id),'Clicking another player ship keeps the sidebar selection within the current player roster');
+  await page.getByRole('button',{name:'定位 拉菲',exact:true}).click();const short=await targetFor(1,2);await ready(128);const sp=await screen(short.target);
+  await page.getByRole('button',{name:'航行指令 (R)',exact:true}).click();await page.mouse.click(sp.x,sp.y);await ready(128);
+  ensure((await state()).units.find(u=>u.assetId==='lafei').col===short.target.col,'Movement mode accepts left-click orders as an alternative to right-click');
+  await page.getByRole('button',{name:'航行指令 (R)',exact:true}).click();
+  const oilBeforeWait=(await state()).teams[0].oil;await page.getByRole('button',{name:'本回合待命',exact:true}).click();ensure((await state()).units[0].status==='wait','Wait ends the selected ship turn');
+  ensure((await state()).teams[0].oil===oilBeforeWait,'Waiting one ship does not consume or refund team oil');
+  for(let i=0;i<4;i++)await turn();await ready(128);ensure((await state()).units[0].status==='ready'&&(await state()).teams[0].oil===50,'Waiting ships recover and team oil refills on the next owner turn');
+  await page.getByRole('button',{name:'持续驻留',exact:true}).click();for(let i=0;i<4;i++)await turn();await ready(128);
+  ensure((await state()).units[0].status==='hold'&&(await state()).units[0].action===0,'Persistent hold continues across rounds');
+  await page.getByRole('button',{name:'定位 拉菲',exact:true}).click();
+  await page.getByRole('button',{name:'唤醒',exact:true}).click();ensure((await state()).units[0].status==='ready'&&(await state()).units[0].action===0,'Wake changes standing order without refunding the combat action');
+  await newGame(128,8);ensure((await state()).teams.length===8&&(await state()).units.length===96,'Eight players each receive the entire 12-ship roster');for(let i=0;i<8;i++){await turn();ensure(await page.evaluate(()=>document.querySelectorAll('.ship-row').length===12&&[...document.querySelectorAll('.ship-row')].every(row=>window.navalMap.match.unit(row.dataset.instance).ownerId===window.navalMap.match.active.id)),`Eight-player handoff ${i+1} lists only the new owner ships`);}await ready(128);ensure((await state()).round===2,'Eight forces rotate completely before advancing the round');
+  await page.getByRole('button',{name:'读取',exact:true}).click();await page.getByRole('button',{name:/^上一战局/}).click();await ready(128);ensure((await state()).teams.length===4,'Previous match slot recovers the game replaced by new-match creation');
+  for(const size of [128,256,512]) {
+    await newGame(size,4);
+    for(const name of ['拉菲','标枪','绫波','Z23','海伦娜','贝尔法斯特','高雄','欧根亲王','厌战','俾斯麦','企业','独角兽'])await page.getByRole('button',{name:`定位 ${name}`,exact:true}).click();
+    await page.waitForFunction(()=>window.navalMap.ships.stats().assetsLoaded===12);await page.getByRole('button',{name:'定位 拉菲',exact:true}).click();await page.getByRole('button',{name:'⌖ 返回舰队',exact:true}).click();await ready(size);
+    const result=await page.evaluate(()=>window.navalMap.benchmark(60,true));report.benchmarks.push(result);
+    ensure(result.ships.errors.length===0&&result.terrain.cachedChunks<=result.terrain.chunkLimit,`${size} map keeps all 12 assets valid and terrain cache bounded`);
+    const longRoute=await page.evaluate(()=>{const m=window.navalMap,u=m.match.unit(m.selected),target=m.world.nearbySea({col:m.world.width-8,row:m.world.height-8}),start=performance.now(),route=m.match.route(u.instanceId,target);return {size:m.world.width,elapsedMs:performance.now()-start,cost:route?.cost,cells:route?.cells.length,visited:route?.visited};});
+    report.longRoutes??=[];report.longRoutes.push(longRoute);ensure(longRoute.cells>100,`${size} map supports a real cross-map hex route`);
+  }
+  await page.setViewportSize({width:980,height:760});await page.getByRole('button',{name:'⌖ 返回舰队',exact:true}).click();await ready(512);
+  const layout=await page.evaluate(()=>({width:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,minimapBottom:document.getElementById('minimap').getBoundingClientRect().bottom,footerTop:document.querySelector('footer').getBoundingClientRect().top,fleetListHeight:document.getElementById('fleet-list').clientHeight}));
+  ensure(layout.scroll<=layout.width&&layout.minimapBottom<=layout.footerTop&&layout.fleetListHeight>=40,'980px window keeps fleet, minimap and save controls reachable');
+  await page.screenshot({path:'output/playwright/回合-紧凑窗口.png'});
+  await page.setViewportSize({width:1440,height:1050});await newGame(256,4);await page.getByRole('button',{name:'定位 拉菲',exact:true}).click();
+  const finalTarget=await targetFor(5,8);await ready(256);const fp=await screen(finalTarget.target);await page.mouse.move(fp.x,fp.y);await page.waitForFunction(()=>!!window.navalMap.routePreview);
+  await page.screenshot({path:'output/playwright/回合-战术指挥.png'});
+  ensure(!report.pageErrors.length&&!report.consoleErrors.length,'No uncaught or console errors during turn, movement, fleet and save operations');
+  return report;
+}

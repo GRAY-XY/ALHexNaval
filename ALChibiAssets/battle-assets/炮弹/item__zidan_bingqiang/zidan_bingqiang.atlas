@@ -1,0 +1,132 @@
+
+zidan_bingqiang.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jian
+  rotate: false
+  xy: 109, 54
+  size: 154, 25
+  orig: 154, 25
+  offset: 0, 0
+  index: -1
+qi
+  rotate: true
+  xy: 2, 14
+  size: 111, 83
+  orig: 111, 83
+  offset: 0, 0
+  index: -1
+tuowei_b
+  rotate: false
+  xy: 92, 15
+  size: 189, 28
+  orig: 189, 28
+  offset: 0, 0
+  index: -1
+tuowei_f1
+  rotate: true
+  xy: 87, 45
+  size: 34, 20
+  orig: 34, 20
+  offset: 0, 0
+  index: -1
+tuowei_l1
+  rotate: false
+  xy: 68, 3
+  size: 156, 3
+  orig: 156, 3
+  offset: 0, 0
+  index: -1
+tuowei_l2
+  rotate: false
+  xy: 39, 8
+  size: 81, 4
+  orig: 81, 4
+  offset: 0, 0
+  index: -1
+tuowei_s1
+  rotate: true
+  xy: 29, 4
+  size: 8, 3
+  orig: 8, 3
+  offset: 0, 0
+  index: -1
+tuowei_s3
+  rotate: false
+  xy: 39, 2
+  size: 13, 4
+  orig: 13, 4
+  offset: 0, 0
+  index: -1
+tuowei_s4
+  rotate: false
+  xy: 54, 2
+  size: 12, 4
+  orig: 12, 4
+  offset: 0, 0
+  index: -1
+tuowei_s6
+  rotate: true
+  xy: 34, 4
+  size: 8, 3
+  orig: 8, 3
+  offset: 0, 0
+  index: -1
+tuowei_s7
+  rotate: true
+  xy: 87, 14
+  size: 29, 3
+  orig: 29, 3
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: true
+  xy: 87, 81
+  size: 44, 31
+  orig: 44, 31
+  offset: 0, 0
+  index: -1
+xh_1
+  rotate: false
+  xy: 2, 4
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+xh_1_2
+  rotate: false
+  xy: 11, 4
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+xh_1_3
+  rotate: false
+  xy: 20, 4
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+xhp_4
+  rotate: false
+  xy: 120, 109
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+xhp_4_2
+  rotate: false
+  xy: 120, 91
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+xhp_4_3
+  rotate: false
+  xy: 138, 109
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1

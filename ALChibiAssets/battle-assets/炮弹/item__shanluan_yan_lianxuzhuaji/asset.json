@@ -1,0 +1,57 @@
+{
+  "id": "item__shanluan_yan_lianxuzhuaji",
+  "model": "shanluan_yan_lianxuzhuaji",
+  "name": "shanluan_yan_lianxuzhuaji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_yan_lianxuzhuaji",
+  "path": "battle-assets/炮弹/item__shanluan_yan_lianxuzhuaji",
+  "images": [
+    {
+      "file": "zhuahen04_3147887734991692836.png",
+      "name": "zhuahen04",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 3147887734991692836,
+      "source": "CAB-14c774ff686860a047f35e481b5886de"
+    },
+    {
+      "file": "zhuahen01_3560570761739670546.png",
+      "name": "zhuahen01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3560570761739670546,
+      "source": "CAB-14c774ff686860a047f35e481b5886de"
+    },
+    {
+      "file": "zhuahen02_6008198112753705618.png",
+      "name": "zhuahen02",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6008198112753705618,
+      "source": "CAB-14c774ff686860a047f35e481b5886de"
+    },
+    {
+      "file": "zhuahen02_glow_6074952949593890080.png",
+      "name": "zhuahen02_glow",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6074952949593890080,
+      "source": "CAB-14c774ff686860a047f35e481b5886de"
+    }
+  ],
+  "particle_systems": 61,
+  "animations": [
+    "zhuaji"
+  ],
+  "bullet_ids": [
+    19723
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shanluan_yan_lianxuzhuaji/zhuahen04_3147887734991692836.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_love",
+  "model": "paodan_love",
+  "name": "恋星炮弹",
+  "names": [
+    "恋星炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_love",
+  "path": "battle-assets/炮弹/item__paodan_love",
+  "images": [
+    {
+      "file": "paodan_love_-7099206499598129685.png",
+      "name": "paodan_love",
+      "width": 128,
+      "height": 111,
+      "role": "战斗贴图",
+      "path_id": -7099206499598129685,
+      "source": "CAB-2433d75f6da3916a30f63521f26abfe8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_love/paodan_love_-7099206499598129685.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_danhuangguan",
+  "model": "yulei_danhuangguan",
+  "name": "单簧管鱼雷",
+  "names": [
+    "单簧管鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_danhuangguan",
+  "path": "battle-assets/鱼雷/item__yulei_danhuangguan",
+  "images": [
+    {
+      "file": "yulei_danhuangguan_1661882134684268363.png",
+      "name": "yulei_danhuangguan",
+      "width": 128,
+      "height": 37,
+      "role": "战斗贴图",
+      "path_id": 1661882134684268363,
+      "source": "CAB-63a263248cd9289968eaaf582cadf96d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_danhuangguan/yulei_danhuangguan_1661882134684268363.png"
+}

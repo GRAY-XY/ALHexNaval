@@ -1,0 +1,244 @@
+
+unknownV_boss_star.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jz_pao1
+  rotate: true
+  xy: 856, 512
+  size: 96, 123
+  orig: 96, 123
+  offset: 0, 0
+  index: -1
+jz_pao2
+  rotate: true
+  xy: 2, 2
+  size: 122, 114
+  orig: 122, 114
+  offset: 0, 0
+  index: -1
+jz_pao3
+  rotate: false
+  xy: 856, 610
+  size: 98, 115
+  orig: 98, 115
+  offset: 0, 0
+  index: -1
+jz_pao4
+  rotate: false
+  xy: 727, 401
+  size: 105, 101
+  orig: 105, 101
+  offset: 0, 0
+  index: -1
+pangxie_1
+  rotate: false
+  xy: 305, 523
+  size: 54, 32
+  orig: 54, 32
+  offset: 0, 0
+  index: -1
+pangxie_10
+  rotate: false
+  xy: 329, 71
+  size: 71, 95
+  orig: 71, 95
+  offset: 0, 0
+  index: -1
+pangxie_11
+  rotate: false
+  xy: 601, 308
+  size: 129, 91
+  orig: 129, 91
+  offset: 0, 0
+  index: -1
+pangxie_12
+  rotate: true
+  xy: 405, 308
+  size: 215, 119
+  orig: 215, 119
+  offset: 0, 0
+  index: -1
+pangxie_13
+  rotate: false
+  xy: 235, 168
+  size: 105, 184
+  orig: 105, 184
+  offset: 0, 0
+  index: -1
+pangxie_14
+  rotate: true
+  xy: 2, 313
+  size: 166, 128
+  orig: 166, 128
+  offset: 0, 0
+  index: -1
+pangxie_15
+  rotate: true
+  xy: 342, 255
+  size: 97, 56
+  orig: 97, 56
+  offset: 0, 0
+  index: -1
+pangxie_16
+  rotate: true
+  xy: 242, 520
+  size: 35, 61
+  orig: 35, 61
+  offset: 0, 0
+  index: -1
+pangxie_17
+  rotate: false
+  xy: 508, 205
+  size: 234, 101
+  orig: 234, 101
+  offset: 0, 0
+  index: -1
+pangxie_18
+  rotate: true
+  xy: 132, 117
+  size: 235, 101
+  orig: 235, 101
+  offset: 0, 0
+  index: -1
+pangxie_19
+  rotate: false
+  xy: 179, 557
+  size: 224, 147
+  orig: 224, 147
+  offset: 0, 0
+  index: -1
+pangxie_2
+  rotate: false
+  xy: 361, 525
+  size: 64, 30
+  orig: 64, 30
+  offset: 0, 0
+  index: -1
+pangxie_20
+  rotate: false
+  xy: 179, 354
+  size: 224, 148
+  orig: 224, 148
+  offset: 0, 0
+  index: -1
+pangxie_21
+  rotate: false
+  xy: 2, 481
+  size: 175, 223
+  orig: 175, 223
+  offset: 0, 0
+  index: -1
+pangxie_22
+  rotate: true
+  xy: 2, 126
+  size: 185, 121
+  orig: 185, 121
+  offset: 0, 0
+  index: -1
+pangxie_23
+  rotate: true
+  xy: 405, 561
+  size: 143, 146
+  orig: 143, 146
+  offset: 0, 0
+  index: -1
+pangxie_24
+  rotate: false
+  xy: 118, 15
+  size: 90, 100
+  orig: 90, 100
+  offset: 0, 0
+  index: -1
+pangxie_25
+  rotate: false
+  xy: 744, 199
+  size: 99, 108
+  orig: 99, 108
+  offset: 0, 0
+  index: -1
+pangxie_3
+  rotate: true
+  xy: 132, 416
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+pangxie_4
+  rotate: false
+  xy: 400, 203
+  size: 106, 103
+  orig: 106, 103
+  offset: 0, 0
+  index: -1
+pangxie_5
+  rotate: false
+  xy: 508, 97
+  size: 95, 106
+  orig: 95, 106
+  offset: 0, 0
+  index: -1
+pangxie_6
+  rotate: true
+  xy: 612, 504
+  size: 345, 242
+  orig: 345, 242
+  offset: 0, 0
+  index: -1
+pangxie_7
+  rotate: true
+  xy: 732, 309
+  size: 90, 100
+  orig: 90, 100
+  offset: 0, 0
+  index: -1
+pangxie_8
+  rotate: false
+  xy: 179, 506
+  size: 61, 49
+  orig: 61, 49
+  offset: 0, 0
+  index: -1
+pangxie_9
+  rotate: false
+  xy: 235, 50
+  size: 92, 116
+  orig: 92, 116
+  offset: 0, 0
+  index: -1
+paoguan_1
+  rotate: false
+  xy: 834, 342
+  size: 70, 160
+  orig: 70, 160
+  offset: 0, 0
+  index: -1
+paoguan_2
+  rotate: false
+  xy: 856, 727
+  size: 98, 122
+  orig: 98, 122
+  offset: 0, 0
+  index: -1
+paoguan_3
+  rotate: false
+  xy: 526, 397
+  size: 73, 162
+  orig: 73, 162
+  offset: 0, 0
+  index: -1
+paoguan_4
+  rotate: true
+  xy: 601, 401
+  size: 101, 124
+  orig: 101, 124
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 706
+  size: 608, 143
+  orig: 608, 143
+  offset: 0, 0
+  index: -1

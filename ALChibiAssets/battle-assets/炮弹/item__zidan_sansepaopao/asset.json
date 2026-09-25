@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_sansepaopao",
+  "model": "zidan_sansepaopao",
+  "name": "梦幻泡泡子弹",
+  "names": [
+    "梦幻泡泡子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_sansepaopao",
+  "path": "battle-assets/炮弹/item__zidan_sansepaopao",
+  "images": [
+    {
+      "file": "zidan_sansepaopao_-4807458328876372870.png",
+      "name": "zidan_sansepaopao",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4807458328876372870,
+      "source": "CAB-c09ab150ba678c40ab37b9d323cd295e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_sansepaopao/zidan_sansepaopao_-4807458328876372870.png",
+  "spine": {
+    "skel": "zidan_sansepaopao.skel",
+    "atlas": "zidan_sansepaopao.atlas",
+    "pages": [
+      "zidan_sansepaopao.png"
+    ]
+  }
+}

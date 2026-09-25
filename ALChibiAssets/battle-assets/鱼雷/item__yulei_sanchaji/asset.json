@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_sanchaji",
+  "model": "yulei_sanchaji",
+  "name": "三叉戟鱼雷",
+  "names": [
+    "三叉戟鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_sanchaji",
+  "path": "battle-assets/鱼雷/item__yulei_sanchaji",
+  "images": [
+    {
+      "file": "yulei_sanchaji_1066319401265273202.png",
+      "name": "yulei_sanchaji",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1066319401265273202,
+      "source": "CAB-787d6ad73cf440a5541cdcc3bc00c4c2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_sanchaji/yulei_sanchaji_1066319401265273202.png",
+  "spine": {
+    "skel": "yulei_sanchaji.skel",
+    "atlas": "yulei_sanchaji.atlas",
+    "pages": [
+      "yulei_sanchaji.png"
+    ]
+  }
+}

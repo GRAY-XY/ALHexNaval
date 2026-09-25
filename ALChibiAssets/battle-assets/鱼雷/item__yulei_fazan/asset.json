@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_fazan",
+  "model": "yulei_fazan",
+  "name": "发簪鱼雷",
+  "names": [
+    "发簪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fazan",
+  "path": "battle-assets/鱼雷/item__yulei_fazan",
+  "images": [
+    {
+      "file": "yulei_fazan_-4387513500255105644.png",
+      "name": "yulei_fazan",
+      "width": 128,
+      "height": 41,
+      "role": "战斗贴图",
+      "path_id": -4387513500255105644,
+      "source": "CAB-7fa5228c75ecf94a39882ad60a36d6f0"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_fazan/yulei_fazan_-4387513500255105644.png"
+}

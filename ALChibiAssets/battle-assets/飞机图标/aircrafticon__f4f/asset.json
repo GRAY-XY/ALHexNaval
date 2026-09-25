@@ -1,0 +1,49 @@
+{
+  "id": "aircrafticon__f4f",
+  "model": "f4f",
+  "name": "F4F野猫",
+  "names": [
+    "F4F野猫",
+    "美系舰载-战斗机I（大世界通用飞机）",
+    "美系舰载-战斗机II",
+    "美系舰载-战斗机III",
+    "美系舰载-战斗机IV",
+    "美系舰载-战斗机V",
+    "【战术研修】【BOSS】萨拉托加-战斗机",
+    "大黄蜂-战斗机",
+    "第一章第一关大黄蜂boss专用战斗机T1",
+    "世界boss专用战斗机T1",
+    "【新美系活动B2】BOSS –大黄蜂 战斗机",
+    "【新美系活动D2】BOSS –大黄蜂 战斗机",
+    "【2022公海舰队活动】剧情战 美系支援飞机 战斗机",
+    "挑战关卡8战斗机T1",
+    "天秤座战斗机",
+    "七夕活动F4F野猫",
+    "美系舰载-战斗机I",
+    "【大世界】美系舰载-战斗机I",
+    "【大世界】美系舰载-战斗机II",
+    "【大世界】美系舰载-战斗机III",
+    "【大世界】美系舰载-战斗机IV",
+    "【大世界】美系舰载-战斗机V",
+    "【2023克莱蒙梭活动】剧情战 美系支援飞机 战斗机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/f4f",
+  "path": "battle-assets/飞机图标/aircrafticon__f4f",
+  "images": [
+    {
+      "file": "F4F_3476798259535368147.png",
+      "name": "F4F",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 3476798259535368147,
+      "source": "CAB-ee062a6b6f5be84971af2b7c09cf0ea9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

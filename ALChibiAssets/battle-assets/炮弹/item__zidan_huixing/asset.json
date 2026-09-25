@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_huixing",
+  "model": "zidan_huixing",
+  "name": "zidan_huixing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_huixing",
+  "path": "battle-assets/炮弹/item__zidan_huixing",
+  "images": [
+    {
+      "file": "huixingzidan_4156062021767942372.png",
+      "name": "huixingzidan",
+      "width": 255,
+      "height": 133,
+      "role": "战斗贴图",
+      "path_id": 4156062021767942372,
+      "source": "CAB-62fd2cf1674d4aa35cc797de2329be59"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19876
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huixing/huixingzidan_4156062021767942372.png"
+}

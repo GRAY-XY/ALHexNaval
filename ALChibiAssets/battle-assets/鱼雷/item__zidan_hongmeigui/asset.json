@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_hongmeigui",
+  "model": "zidan_hongmeigui",
+  "name": "zidan_hongmeigui",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/zidan_hongmeigui",
+  "path": "battle-assets/鱼雷/item__zidan_hongmeigui",
+  "images": [
+    {
+      "file": "hua01_8744532940049599708.png",
+      "name": "hua01",
+      "width": 226,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": 8744532940049599708,
+      "source": "CAB-a8b6d896eabb1f7fad967136a7b77d4f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    164231
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__zidan_hongmeigui/hua01_8744532940049599708.png"
+}

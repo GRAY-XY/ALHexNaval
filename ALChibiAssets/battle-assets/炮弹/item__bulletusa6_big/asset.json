@@ -1,0 +1,31 @@
+{
+  "id": "item__bulletusa6_big",
+  "model": "bulletusa6_big",
+  "name": "bulletusa6_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletusa6_big",
+  "path": "battle-assets/炮弹/item__bulletusa6_big",
+  "images": [
+    {
+      "file": "bullet_UK6_1093550001453730834.png",
+      "name": "bullet_UK6",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 1093550001453730834,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161204,
+    3076101,
+    3076109,
+    3258001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletusa6_big/bullet_UK6_1093550001453730834.png"
+}

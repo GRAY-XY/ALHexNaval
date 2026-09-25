@@ -1,0 +1,27 @@
+
+paodan_dongzhigouwuhe.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sidai_1
+  rotate: true
+  xy: 138, 16
+  size: 203, 98
+  orig: 203, 98
+  offset: 0, 0
+  index: -1
+sidai_2
+  rotate: true
+  xy: 2, 2
+  size: 217, 134
+  orig: 217, 134
+  offset: 0, 0
+  index: -1
+xiangzi
+  rotate: false
+  xy: 238, 59
+  size: 156, 160
+  orig: 156, 160
+  offset: 0, 0
+  index: -1

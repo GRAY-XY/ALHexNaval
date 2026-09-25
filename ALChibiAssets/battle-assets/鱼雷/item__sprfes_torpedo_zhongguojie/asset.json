@@ -1,0 +1,30 @@
+{
+  "id": "item__sprfes_torpedo_zhongguojie",
+  "model": "sprfes_torpedo_zhongguojie",
+  "name": "中国结鱼雷",
+  "names": [
+    "中国结鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/sprfes_torpedo_zhongguojie",
+  "path": "battle-assets/鱼雷/item__sprfes_torpedo_zhongguojie",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3119101,
+    3119107,
+    3119213,
+    3364001,
+    3364004
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "zhongguojie.skel",
+    "atlas": "zhongguojie.atlas",
+    "pages": [
+      "zhongguojie.png"
+    ]
+  }
+}

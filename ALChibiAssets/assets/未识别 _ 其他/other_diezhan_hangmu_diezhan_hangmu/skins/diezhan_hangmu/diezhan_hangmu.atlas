@@ -1,0 +1,83 @@
+
+diezhan_hangmu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 148
+  size: 667, 355
+  orig: 667, 355
+  offset: 0, 0
+  index: -1
+hm01
+  rotate: false
+  xy: 353, 70
+  size: 354, 35
+  orig: 354, 35
+  offset: 0, 0
+  index: -1
+hm02
+  rotate: false
+  xy: 2, 97
+  size: 349, 49
+  orig: 349, 49
+  offset: 0, 0
+  index: -1
+hm03
+  rotate: false
+  xy: 353, 107
+  size: 354, 39
+  orig: 354, 39
+  offset: 0, 0
+  index: -1
+ji1
+  rotate: false
+  xy: 671, 160
+  size: 77, 80
+  orig: 77, 80
+  offset: 0, 0
+  index: -1
+ji1_qiang
+  rotate: false
+  xy: 2, 42
+  size: 160, 53
+  orig: 160, 53
+  offset: 0, 0
+  index: -1
+ji2
+  rotate: false
+  xy: 671, 242
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+ji2_qiang
+  rotate: false
+  xy: 164, 42
+  size: 160, 53
+  orig: 160, 53
+  offset: 0, 0
+  index: -1
+jianzaiji
+  rotate: false
+  xy: 671, 324
+  size: 195, 179
+  orig: 195, 179
+  offset: 0, 0
+  index: -1
+langan
+  rotate: false
+  xy: 2, 10
+  size: 241, 30
+  orig: 241, 30
+  offset: 0, 0
+  index: -1
+weapon_HG_fire1
+  rotate: false
+  xy: 245, 2
+  size: 64, 38
+  orig: 64, 38
+  offset: 0, 0
+  index: -1

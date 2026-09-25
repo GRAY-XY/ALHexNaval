@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__hangtianyulei__hangtianyulei_material",
+  "model": "hangtianyulei_material",
+  "name": "hangtianyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/hangtianyulei/hangtianyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__hangtianyulei__hangtianyulei_material",
+  "images": [
+    {
+      "file": "hangtianyulei_6166330053070153435.png",
+      "name": "hangtianyulei",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6166330053070153435,
+      "source": "CAB-ed65d694169f4c09a7a565f002f261f3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

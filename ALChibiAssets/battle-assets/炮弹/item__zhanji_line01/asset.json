@@ -1,0 +1,18 @@
+{
+  "id": "item__zhanji_line01",
+  "model": "zhanji_line01",
+  "name": "zhanji_line01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhanji_line01",
+  "path": "battle-assets/炮弹/item__zhanji_line01",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3108119,
+    3217041
+  ],
+  "has_preview": false,
+  "prefab": true
+}

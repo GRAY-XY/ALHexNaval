@@ -1,0 +1,27 @@
+
+yulei_weizaozhengjian.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diaodai
+  rotate: false
+  xy: 203, 29
+  size: 155, 80
+  orig: 155, 80
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 2
+  size: 199, 107
+  orig: 199, 107
+  offset: 0, 0
+  index: -1
+zhengjian
+  rotate: false
+  xy: 360, 13
+  size: 129, 96
+  orig: 129, 96
+  offset: 0, 0
+  index: -1

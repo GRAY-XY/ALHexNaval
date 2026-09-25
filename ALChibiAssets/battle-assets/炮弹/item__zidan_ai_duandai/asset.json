@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_ai_duandai",
+  "model": "zidan_ai_duandai",
+  "name": "领结子弹",
+  "names": [
+    "领结子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_ai_duandai",
+  "path": "battle-assets/炮弹/item__zidan_ai_duandai",
+  "images": [
+    {
+      "file": "zidan_ai_duandai_-6393232616618003372.png",
+      "name": "zidan_ai_duandai",
+      "width": 128,
+      "height": 116,
+      "role": "战斗贴图",
+      "path_id": -6393232616618003372,
+      "source": "CAB-202f1c897705b1c7edf111ef1ef451a5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_ai_duandai/zidan_ai_duandai_-6393232616618003372.png"
+}

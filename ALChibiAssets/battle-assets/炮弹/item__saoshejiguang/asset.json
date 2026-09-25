@@ -1,0 +1,30 @@
+{
+  "id": "item__saoshejiguang",
+  "model": "saoshejiguang",
+  "name": "saoshejiguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/saoshejiguang",
+  "path": "battle-assets/炮弹/item__saoshejiguang",
+  "images": [
+    {
+      "file": "line_10_-4650593957526287536.png",
+      "name": "line_10",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4650593957526287536,
+      "source": "CAB-0dfff9aea6331cd3fdce8a4183e05dae"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [
+    "banai02"
+  ],
+  "bullet_ids": [
+    20129401
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__saoshejiguang/line_10_-4650593957526287536.png"
+}

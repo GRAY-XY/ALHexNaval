@@ -1,0 +1,139 @@
+
+yulei_jingjimeigui.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hua
+  rotate: false
+  xy: 229, 61
+  size: 126, 65
+  orig: 126, 65
+  offset: 0, 0
+  index: -1
+huaban_1
+  rotate: true
+  xy: 61, 9
+  size: 30, 16
+  orig: 30, 16
+  offset: 0, 0
+  index: -1
+huaban_1_2
+  rotate: true
+  xy: 79, 9
+  size: 30, 16
+  orig: 30, 16
+  offset: 0, 0
+  index: -1
+huaban_1_3
+  rotate: true
+  xy: 97, 9
+  size: 30, 16
+  orig: 30, 16
+  offset: 0, 0
+  index: -1
+huaban_2
+  rotate: true
+  xy: 115, 17
+  size: 22, 13
+  orig: 22, 13
+  offset: 0, 0
+  index: -1
+huaban_2_2
+  rotate: false
+  xy: 115, 2
+  size: 22, 13
+  orig: 22, 13
+  offset: 0, 0
+  index: -1
+huaban_2_3
+  rotate: true
+  xy: 130, 17
+  size: 22, 13
+  orig: 22, 13
+  offset: 0, 0
+  index: -1
+huaban_3
+  rotate: false
+  xy: 161, 5
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+huaban_3_2
+  rotate: true
+  xy: 171, 21
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+huaban_3_3
+  rotate: false
+  xy: 181, 7
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+huaban_4
+  rotate: true
+  xy: 185, 21
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+huaban_4_2
+  rotate: true
+  xy: 199, 21
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+huaban_4_3
+  rotate: false
+  xy: 201, 7
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+huaban_5
+  rotate: false
+  xy: 139, 4
+  size: 20, 11
+  orig: 20, 11
+  offset: 0, 0
+  index: -1
+huaban_5_2
+  rotate: true
+  xy: 145, 19
+  size: 20, 11
+  orig: 20, 11
+  offset: 0, 0
+  index: -1
+huaban_5_3
+  rotate: true
+  xy: 158, 19
+  size: 20, 11
+  orig: 20, 11
+  offset: 0, 0
+  index: -1
+huajing_1
+  rotate: false
+  xy: 2, 8
+  size: 57, 31
+  orig: 57, 31
+  offset: 0, 0
+  index: -1
+huajing_2
+  rotate: true
+  xy: 357, 44
+  size: 82, 63
+  orig: 82, 63
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 41
+  size: 225, 85
+  orig: 225, 85
+  offset: 0, 0
+  index: -1

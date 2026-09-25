@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__chuizi__chuizi_material",
+  "model": "chuizi_material",
+  "name": "chuizi_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/chuizi/chuizi_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__chuizi__chuizi_material",
+  "images": [
+    {
+      "file": "chuizi_2756383026471532870.png",
+      "name": "chuizi",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2756383026471532870,
+      "source": "CAB-5420fdbc1b10f60840906af1b1bfefc1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

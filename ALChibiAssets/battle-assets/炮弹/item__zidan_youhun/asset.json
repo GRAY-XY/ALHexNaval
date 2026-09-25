@@ -1,0 +1,42 @@
+{
+  "id": "item__zidan_youhun",
+  "model": "zidan_youhun",
+  "name": "幽魂子弹",
+  "names": [
+    "幽魂子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_youhun",
+  "path": "battle-assets/炮弹/item__zidan_youhun",
+  "images": [
+    {
+      "file": "zidan_youhun_-2813480238295349307.png",
+      "name": "zidan_youhun",
+      "width": 128,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -2813480238295349307,
+      "source": "CAB-a4114719834e051820e927b05fb521ba"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3139009,
+    3139010,
+    3139107,
+    3156008,
+    3163010,
+    3212003,
+    3300006,
+    3300007,
+    3300008,
+    3300106,
+    3360202,
+    3385004,
+    3385104
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_youhun/zidan_youhun_-2813480238295349307.png"
+}

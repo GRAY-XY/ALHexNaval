@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_futejia",
+  "model": "yulei_futejia",
+  "name": "鱼雷「Водка」",
+  "names": [
+    "鱼雷「Водка」"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_futejia",
+  "path": "battle-assets/鱼雷/item__yulei_futejia",
+  "images": [
+    {
+      "file": "yulei_futejia_7263191535226303033.png",
+      "name": "yulei_futejia",
+      "width": 128,
+      "height": 61,
+      "role": "战斗贴图",
+      "path_id": 7263191535226303033,
+      "source": "CAB-85e0749952d0dc141b23263eb3743951"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_futejia/yulei_futejia_7263191535226303033.png"
+}

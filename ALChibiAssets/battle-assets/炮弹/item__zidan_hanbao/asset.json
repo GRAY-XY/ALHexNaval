@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_hanbao",
+  "model": "zidan_hanbao",
+  "name": "汉堡子弹",
+  "names": [
+    "汉堡子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hanbao",
+  "path": "battle-assets/炮弹/item__zidan_hanbao",
+  "images": [
+    {
+      "file": "zidan_hanbao_-3444173103080126802.png",
+      "name": "zidan_hanbao",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -3444173103080126802,
+      "source": "CAB-0d6b226220f329058556f47fa2014262"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hanbao/zidan_hanbao_-3444173103080126802.png"
+}

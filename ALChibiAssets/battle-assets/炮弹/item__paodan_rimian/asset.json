@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_rimian",
+  "model": "paodan_rimian",
+  "name": "螺旋日晷炮弹",
+  "names": [
+    "螺旋日晷炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_rimian",
+  "path": "battle-assets/炮弹/item__paodan_rimian",
+  "images": [
+    {
+      "file": "paodan_rimian_3819957967550601601.png",
+      "name": "paodan_rimian",
+      "width": 128,
+      "height": 122,
+      "role": "战斗贴图",
+      "path_id": 3819957967550601601,
+      "source": "CAB-5310d7d4a9bd22ac4ad4e0d7dd92dda9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_rimian/paodan_rimian_3819957967550601601.png"
+}

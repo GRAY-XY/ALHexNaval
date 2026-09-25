@@ -1,0 +1,314 @@
+
+chongying_m_boss05.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+T_BQ1
+  rotate: false
+  xy: 508, 228
+  size: 108, 42
+  orig: 108, 42
+  offset: 0, 0
+  index: -1
+T_BQ2
+  rotate: false
+  xy: 2, 8
+  size: 103, 33
+  orig: 103, 33
+  offset: 0, 0
+  index: -1
+T_BQ3
+  rotate: false
+  xy: 546, 19
+  size: 106, 42
+  orig: 106, 42
+  offset: 0, 0
+  index: -1
+T_body-1
+  rotate: false
+  xy: 498, 70
+  size: 44, 17
+  orig: 44, 17
+  offset: 0, 0
+  index: -1
+T_body-2
+  rotate: false
+  xy: 946, 23
+  size: 42, 45
+  orig: 42, 45
+  offset: 0, 0
+  index: -1
+T_body-3
+  rotate: true
+  xy: 852, 144
+  size: 78, 70
+  orig: 78, 70
+  offset: 0, 0
+  index: -1
+T_body-4
+  rotate: true
+  xy: 981, 70
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+T_ear
+  rotate: true
+  xy: 544, 63
+  size: 24, 30
+  orig: 24, 30
+  offset: 0, 0
+  index: -1
+T_erduo-1
+  rotate: true
+  xy: 618, 216
+  size: 62, 106
+  orig: 62, 106
+  offset: 0, 0
+  index: -1
+T_erduo-2
+  rotate: true
+  xy: 654, 5
+  size: 69, 98
+  orig: 69, 98
+  offset: 0, 0
+  index: -1
+T_face
+  rotate: false
+  xy: 638, 76
+  size: 133, 138
+  orig: 133, 138
+  offset: 0, 0
+  index: -1
+T_gebo1
+  rotate: false
+  xy: 649, 281
+  size: 99, 78
+  orig: 99, 78
+  offset: 0, 0
+  index: -1
+T_guang-1
+  rotate: true
+  xy: 2, 43
+  size: 169, 235
+  orig: 169, 235
+  offset: 0, 0
+  index: -1
+T_guangxia-1
+  rotate: false
+  xy: 677, 368
+  size: 139, 142
+  orig: 139, 142
+  offset: 0, 0
+  index: -1
+T_guangxian-2
+  rotate: false
+  xy: 818, 384
+  size: 101, 126
+  orig: 101, 126
+  offset: 0, 0
+  index: -1
+T_hair-L1
+  rotate: true
+  xy: 401, 19
+  size: 40, 143
+  orig: 40, 143
+  offset: 0, 0
+  index: -1
+T_hair-L2
+  rotate: false
+  xy: 773, 134
+  size: 77, 83
+  orig: 77, 83
+  offset: 0, 0
+  index: -1
+T_hair-L3
+  rotate: true
+  xy: 539, 280
+  size: 79, 108
+  orig: 79, 108
+  offset: 0, 0
+  index: -1
+T_hair-L4
+  rotate: true
+  xy: 463, 89
+  size: 125, 173
+  orig: 125, 173
+  offset: 0, 0
+  index: -1
+T_hair-L5
+  rotate: true
+  xy: 253, 7
+  size: 40, 146
+  orig: 40, 146
+  offset: 0, 0
+  index: -1
+T_houfa
+  rotate: false
+  xy: 239, 61
+  size: 222, 151
+  orig: 222, 151
+  offset: 0, 0
+  index: -1
+T_meimao
+  rotate: false
+  xy: 239, 49
+  size: 62, 10
+  orig: 62, 10
+  offset: 0, 0
+  index: -1
+T_shouzhang
+  rotate: true
+  xy: 463, 61
+  size: 26, 33
+  orig: 26, 33
+  offset: 0, 0
+  index: -1
+T_toushi-1
+  rotate: true
+  xy: 920, 79
+  size: 27, 59
+  orig: 27, 59
+  offset: 0, 0
+  index: -1
+T_weiba-1
+  rotate: true
+  xy: 830, 224
+  size: 74, 86
+  orig: 74, 86
+  offset: 0, 0
+  index: -1
+T_weiba-2
+  rotate: false
+  xy: 404, 216
+  size: 102, 54
+  orig: 102, 54
+  offset: 0, 0
+  index: -1
+T_weiba-3
+  rotate: true
+  xy: 754, 2
+  size: 72, 86
+  orig: 72, 86
+  offset: 0, 0
+  index: -1
+T_weiba-4
+  rotate: false
+  xy: 726, 219
+  size: 102, 60
+  orig: 102, 60
+  offset: 0, 0
+  index: -1
+T_weiba-5
+  rotate: true
+  xy: 860, 308
+  size: 74, 86
+  orig: 74, 86
+  offset: 0, 0
+  index: -1
+T_weiba-6
+  rotate: false
+  xy: 299, 216
+  size: 103, 54
+  orig: 103, 54
+  offset: 0, 0
+  index: -1
+T_weiba-7
+  rotate: true
+  xy: 921, 438
+  size: 72, 86
+  orig: 72, 86
+  offset: 0, 0
+  index: -1
+T_weiba-8
+  rotate: false
+  xy: 842, 17
+  size: 102, 60
+  orig: 102, 60
+  offset: 0, 0
+  index: -1
+T_xiuzi-R1
+  rotate: true
+  xy: 773, 79
+  size: 53, 74
+  orig: 53, 74
+  offset: 0, 0
+  index: -1
+T_yun-1
+  rotate: false
+  xy: 849, 98
+  size: 69, 34
+  orig: 69, 34
+  offset: 0, 0
+  index: -1
+T_yun-2
+  rotate: false
+  xy: 920, 108
+  size: 68, 34
+  orig: 68, 34
+  offset: 0, 0
+  index: -1
+T_yun-3
+  rotate: false
+  xy: 921, 393
+  size: 67, 43
+  orig: 67, 43
+  offset: 0, 0
+  index: -1
+T_yun-4
+  rotate: false
+  xy: 107, 3
+  size: 71, 38
+  orig: 71, 38
+  offset: 0, 0
+  index: -1
+T_yun-5
+  rotate: false
+  xy: 180, 3
+  size: 71, 38
+  orig: 71, 38
+  offset: 0, 0
+  index: -1
+eff_gl_l0001
+  rotate: true
+  xy: 2, 214
+  size: 296, 295
+  orig: 296, 295
+  offset: 0, 0
+  index: -1
+huo
+  rotate: true
+  xy: 750, 300
+  size: 66, 108
+  orig: 66, 108
+  offset: 0, 0
+  index: -1
+rainbow
+  rotate: true
+  xy: 539, 361
+  size: 149, 136
+  orig: 149, 136
+  offset: 0, 0
+  index: -1
+sakura
+  rotate: false
+  xy: 424, 3
+  size: 18, 14
+  orig: 18, 14
+  offset: 0, 0
+  index: -1
+sanmian
+  rotate: false
+  xy: 299, 272
+  size: 238, 238
+  orig: 238, 238
+  offset: 0, 0
+  index: -1
+tanqi
+  rotate: false
+  xy: 401, 3
+  size: 21, 14
+  orig: 21, 14
+  offset: 0, 0
+  index: -1

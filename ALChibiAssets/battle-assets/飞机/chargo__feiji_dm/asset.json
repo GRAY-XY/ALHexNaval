@@ -1,0 +1,37 @@
+{
+  "id": "chargo__feiji_dm",
+  "model": "feiji_dm",
+  "name": "死亡主宰技能剑鱼",
+  "names": [
+    "死亡主宰技能剑鱼",
+    "死亡主宰集束雷剑鱼",
+    "【2025黑岩联动SP2】BOSS 死亡主宰 战斗机",
+    "【2025黑岩联动SP2】BOSS 死亡主宰 轰炸机",
+    "【2025黑岩联动SP3】BOSS 死亡主宰 战斗机",
+    "【2025黑岩联动SP3】BOSS 死亡主宰 轰炸机",
+    "【2025黑岩联动 剧情战】死亡主宰空袭飞机",
+    "死亡的支配者（鱼雷）",
+    "死亡的支配者（战斗）",
+    "死亡的支配者（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_dm",
+  "path": "battle-assets/飞机/chargo__feiji_dm",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_dm/aircraft_shadow_2192772484218123160.png"
+}

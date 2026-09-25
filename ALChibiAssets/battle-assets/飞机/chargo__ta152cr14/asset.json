@@ -1,0 +1,38 @@
+{
+  "id": "chargo__ta152cr14",
+  "model": "ta152cr14",
+  "name": "试作舰载型Ta 152C-1/R14",
+  "names": [
+    "试作舰载型Ta 152C-1/R14",
+    "马克斯轰炸机Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/ta152cr14",
+  "path": "battle-assets/飞机/chargo__ta152cr14",
+  "images": [
+    {
+      "file": "ta152cr14_-8482234951262688955.png",
+      "name": "ta152cr14",
+      "width": 256,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": -8482234951262688955,
+      "source": "CAB-39924ed857a10c8f69fa4dae3bf0392a"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ta152cr14/ta152cr14_-8482234951262688955.png"
+}

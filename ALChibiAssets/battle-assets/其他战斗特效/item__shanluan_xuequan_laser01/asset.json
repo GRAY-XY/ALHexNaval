@@ -1,0 +1,15 @@
+{
+  "id": "item__shanluan_xuequan_laser01",
+  "model": "shanluan_xuequan_laser01",
+  "name": "shanluan_xuequan_laser01",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/shanluan_xuequan_laser01",
+  "path": "battle-assets/其他战斗特效/item__shanluan_xuequan_laser01",
+  "images": [],
+  "particle_systems": 31,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

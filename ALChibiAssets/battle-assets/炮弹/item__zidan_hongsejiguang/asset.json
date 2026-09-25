@@ -1,0 +1,34 @@
+{
+  "id": "item__zidan_hongsejiguang",
+  "model": "zidan_hongsejiguang",
+  "name": "红色激光子弹",
+  "names": [
+    "红色激光子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hongsejiguang",
+  "path": "battle-assets/炮弹/item__zidan_hongsejiguang",
+  "images": [
+    {
+      "file": "zidan_hongsejiguang_6253513694067205674.png",
+      "name": "zidan_hongsejiguang",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": 6253513694067205674,
+      "source": "CAB-2cd411ea001630d1a036dcc0d431df88"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19554,
+    855407,
+    855408,
+    855409,
+    855635
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hongsejiguang/zidan_hongsejiguang_6253513694067205674.png"
+}

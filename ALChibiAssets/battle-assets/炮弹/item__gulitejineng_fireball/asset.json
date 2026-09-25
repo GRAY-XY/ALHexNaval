@@ -1,0 +1,24 @@
+{
+  "id": "item__gulitejineng_fireball",
+  "model": "gulitejineng_fireball",
+  "name": "gulitejineng_fireball",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulitejineng_fireball",
+  "path": "battle-assets/炮弹/item__gulitejineng_fireball",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19539,
+    19546,
+    19547,
+    855120,
+    855589,
+    855617,
+    3065012,
+    3065022
+  ],
+  "has_preview": false,
+  "prefab": true
+}

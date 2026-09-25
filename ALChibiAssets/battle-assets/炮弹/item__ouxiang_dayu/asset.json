@@ -1,0 +1,29 @@
+{
+  "id": "item__ouxiang_dayu",
+  "model": "ouxiang_dayu",
+  "name": "ouxiang_dayu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_dayu",
+  "path": "battle-assets/炮弹/item__ouxiang_dayu",
+  "images": [
+    {
+      "file": "ball_-6356075201608443072.png",
+      "name": "ball",
+      "width": 226,
+      "height": 226,
+      "role": "战斗贴图",
+      "path_id": -6356075201608443072,
+      "source": "CAB-302522e4c115f2f9f0ea680248c43006"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    852611,
+    852612
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_dayu/ball_-6356075201608443072.png"
+}

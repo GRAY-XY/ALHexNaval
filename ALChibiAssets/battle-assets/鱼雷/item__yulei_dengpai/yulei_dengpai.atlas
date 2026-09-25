@@ -1,0 +1,62 @@
+
+yulei_dengpai.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beiban
+  rotate: false
+  xy: 2, 63
+  size: 212, 73
+  orig: 212, 73
+  offset: 0, 0
+  index: -1
+dengguan_1
+  rotate: false
+  xy: 2, 138
+  size: 240, 99
+  orig: 240, 99
+  offset: 0, 0
+  index: -1
+dengguan_2
+  rotate: false
+  xy: 244, 138
+  size: 240, 99
+  orig: 240, 99
+  offset: 0, 0
+  index: -1
+dengguan_3
+  rotate: false
+  xy: 216, 79
+  size: 227, 57
+  orig: 227, 57
+  offset: 0, 0
+  index: -1
+dengguan_3_mie
+  rotate: false
+  xy: 216, 20
+  size: 227, 57
+  orig: 227, 57
+  offset: 0, 0
+  index: -1
+maodeng
+  rotate: true
+  xy: 445, 73
+  size: 63, 62
+  orig: 63, 62
+  offset: 0, 0
+  index: -1
+maodeng_mie
+  rotate: true
+  xy: 445, 8
+  size: 63, 62
+  orig: 63, 62
+  offset: 0, 0
+  index: -1
+zi
+  rotate: false
+  xy: 2, 2
+  size: 200, 59
+  orig: 200, 59
+  offset: 0, 0
+  index: -1

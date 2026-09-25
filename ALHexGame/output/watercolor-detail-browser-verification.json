@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.1",
+  "passed": true,
+  "checks": [
+    {"name":"Compact harbour marker remains legible at strategic zoom","passed":true},
+    {"name":"Harbour unfolds into pier, warehouse, lighthouse and faction flag at tactical zoom","passed":true},
+    {"name":"Port and ship remain separately selectable from the map","passed":true},
+    {"name":"Island hills, forest clusters and rocks remain inside readable hex terrain","passed":true},
+    {"name":"Deep sea, open sea and shallow water use graded wave decoration","passed":true},
+    {"name":"All twelve ship asset types finish loading","passed":true},
+    {"name":"Original 256 by 256 four-faction battle remains intact","passed":true},
+    {"name":"No browser console errors","passed":true}
+  ],
+  "staticChecks": {"build":true,"coordinateChecks":344064,"portScenarios":26,"invalidPortSaveCases":15},
+  "screenshots": [
+    "output/screenshots/watercolor-port-detail.png",
+    "output/screenshots/watercolor-port-strategic.png"
+  ],
+  "backup":"output/backups/watercolor-detail-before-20260919-110538.zip",
+  "saveVersion":14
+}

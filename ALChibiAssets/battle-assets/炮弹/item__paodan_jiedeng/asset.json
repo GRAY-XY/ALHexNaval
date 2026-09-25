@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_jiedeng",
+  "model": "paodan_jiedeng",
+  "name": "灯笼炮弹",
+  "names": [
+    "灯笼炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jiedeng",
+  "path": "battle-assets/炮弹/item__paodan_jiedeng",
+  "images": [
+    {
+      "file": "paodan_jiedeng_315757492508100848.png",
+      "name": "paodan_jiedeng",
+      "width": 128,
+      "height": 78,
+      "role": "战斗贴图",
+      "path_id": 315757492508100848,
+      "source": "CAB-7c7b68f69f66ecdb5b97fea815102991"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jiedeng/paodan_jiedeng_315757492508100848.png"
+}

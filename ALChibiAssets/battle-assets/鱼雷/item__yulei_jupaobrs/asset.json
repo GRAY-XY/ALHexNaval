@@ -1,0 +1,19 @@
+{
+  "id": "item__yulei_jupaobrs",
+  "model": "yulei_jupaobrs",
+  "name": "巨臂鱼雷",
+  "names": [
+    "巨臂鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jupaobrs",
+  "path": "battle-assets/鱼雷/item__yulei_jupaobrs",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3279111
+  ],
+  "has_preview": false,
+  "prefab": true
+}

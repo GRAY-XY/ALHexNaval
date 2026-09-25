@@ -1,0 +1,55 @@
+
+diezhan_qianting.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 90, 78
+  size: 480, 172
+  orig: 480, 172
+  offset: 0, 0
+  index: -1
+low
+  rotate: false
+  xy: 572, 161
+  size: 289, 89
+  orig: 289, 89
+  offset: 0, 0
+  index: -1
+sheng
+  rotate: false
+  xy: 2, 2
+  size: 74, 68
+  orig: 74, 68
+  offset: 0, 0
+  index: -1
+tuijin_low
+  rotate: true
+  xy: 78, 15
+  size: 55, 101
+  orig: 55, 101
+  offset: 0, 0
+  index: -1
+tuijin_m
+  rotate: false
+  xy: 2, 72
+  size: 86, 178
+  orig: 86, 178
+  offset: 0, 0
+  index: -1
+tuijin_up
+  rotate: true
+  xy: 181, 21
+  size: 55, 101
+  orig: 55, 101
+  offset: 0, 0
+  index: -1
+up
+  rotate: false
+  xy: 572, 70
+  size: 289, 89
+  orig: 289, 89
+  offset: 0, 0
+  index: -1

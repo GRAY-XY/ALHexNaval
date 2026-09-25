@@ -1,0 +1,26 @@
+{
+  "id": "item__zidan_yuekecheng_huaduo",
+  "model": "zidan_yuekecheng_huaduo",
+  "name": "zidan_yuekecheng_huaduo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_yuekecheng_huaduo",
+  "path": "battle-assets/炮弹/item__zidan_yuekecheng_huaduo",
+  "images": [
+    {
+      "file": "zidan_yuekecheng_huaduo_-9140257325622808005.png",
+      "name": "zidan_yuekecheng_huaduo",
+      "width": 128,
+      "height": 102,
+      "role": "战斗贴图",
+      "path_id": -9140257325622808005,
+      "source": "CAB-bae7abc42c6c141d9b432fe9d64a5bd1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yuekecheng_huaduo/zidan_yuekecheng_huaduo_-9140257325622808005.png"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_shimubei",
+  "model": "paodan_shimubei",
+  "name": "炮弹:石墓碑",
+  "names": [
+    "炮弹:石墓碑"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shimubei",
+  "path": "battle-assets/炮弹/item__paodan_shimubei",
+  "images": [
+    {
+      "file": "paodan_shimubei_8919417450511095876.png",
+      "name": "paodan_shimubei",
+      "width": 128,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": 8919417450511095876,
+      "source": "CAB-f627af5ce5cc40aa8e7c12d3888e865f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3139109
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shimubei/paodan_shimubei_8919417450511095876.png"
+}

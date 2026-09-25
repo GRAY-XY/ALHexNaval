@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_nihongluobo",
+  "model": "yulei_nihongluobo",
+  "name": "电子胡萝卜鱼雷",
+  "names": [
+    "电子胡萝卜鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nihongluobo",
+  "path": "battle-assets/鱼雷/item__yulei_nihongluobo",
+  "images": [
+    {
+      "file": "yulei_nihongluobo_4539670135932394996.png",
+      "name": "yulei_nihongluobo",
+      "width": 127,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": 4539670135932394996,
+      "source": "CAB-aa065a345d50d1808064a6df6c88a9c4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3148004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nihongluobo/yulei_nihongluobo_4539670135932394996.png"
+}

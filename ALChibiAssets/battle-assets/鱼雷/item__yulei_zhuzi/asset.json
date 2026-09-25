@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhuzi",
+  "model": "yulei_zhuzi",
+  "name": "竹影破浪鱼雷",
+  "names": [
+    "竹影破浪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhuzi",
+  "path": "battle-assets/鱼雷/item__yulei_zhuzi",
+  "images": [
+    {
+      "file": "yulei_zhuzi_-4233441408482881300.png",
+      "name": "yulei_zhuzi",
+      "width": 128,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": -4233441408482881300,
+      "source": "CAB-b9044dca5f52fa4ec373b067b18c5264"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhuzi/yulei_zhuzi_-4233441408482881300.png"
+}

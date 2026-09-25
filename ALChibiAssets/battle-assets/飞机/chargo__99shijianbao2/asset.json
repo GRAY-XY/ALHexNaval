@@ -1,0 +1,47 @@
+{
+  "id": "chargo__99shijianbao2",
+  "model": "99shijianbao2",
+  "name": "空母·加贺-轰炸机",
+  "names": [
+    "空母·加贺-轰炸机",
+    "99式舰爆绿（第1章空袭）",
+    "99式舰爆绿（第2章空袭）",
+    "99式舰爆绿（第3章空袭）",
+    "99式舰爆绿（第4章空袭）",
+    "99式舰爆绿（第5章空袭）",
+    "99式舰爆绿（第6章空袭）",
+    "江阴空袭  99式舰爆绿",
+    "国庆活动空袭  99式舰爆绿",
+    "99式舰爆绿",
+    "七夕活动99式舰爆绿"
+  ],
+  "category": "飞机",
+  "source": "chargo/99shijianbao2",
+  "path": "battle-assets/飞机/chargo__99shijianbao2",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "99shijianbao2_1188565777490359228.png",
+      "name": "99shijianbao2",
+      "width": 254,
+      "height": 242,
+      "role": "战斗贴图",
+      "path_id": 1188565777490359228,
+      "source": "CAB-17602b5ea32f0c391b3d5fcd5c97e40a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__99shijianbao2/aircraft_shadow_2192772484218123160.png"
+}

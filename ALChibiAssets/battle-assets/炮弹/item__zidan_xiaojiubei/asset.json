@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xiaojiubei",
+  "model": "zidan_xiaojiubei",
+  "name": "小酒杯子弹",
+  "names": [
+    "小酒杯子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xiaojiubei",
+  "path": "battle-assets/炮弹/item__zidan_xiaojiubei",
+  "images": [
+    {
+      "file": "zidan_xiaojiubei_2372096533608303570.png",
+      "name": "zidan_xiaojiubei",
+      "width": 128,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": 2372096533608303570,
+      "source": "CAB-43f3084e08be1cf226d3488bb482c197"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xiaojiubei/zidan_xiaojiubei_2372096533608303570.png"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item__zidan_honglanqiu",
+  "model": "zidan_honglanqiu",
+  "name": "红蓝球子弹",
+  "names": [
+    "红蓝球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_honglanqiu",
+  "path": "battle-assets/炮弹/item__zidan_honglanqiu",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "zidan_honglanqiu.skel",
+    "atlas": "zidan_honglanqiu.atlas",
+    "pages": [
+      "zidan_honglanqiu.png"
+    ]
+  }
+}

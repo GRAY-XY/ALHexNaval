@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_zhenzhuxianglian",
+  "model": "paodan_zhenzhuxianglian",
+  "name": "月凝珠链炮弹",
+  "names": [
+    "月凝珠链炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhenzhuxianglian",
+  "path": "battle-assets/炮弹/item__paodan_zhenzhuxianglian",
+  "images": [
+    {
+      "file": "paodan_zhenzhuxianglian_9005446478055749177.png",
+      "name": "paodan_zhenzhuxianglian",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 9005446478055749177,
+      "source": "CAB-b90771e0b18c727f325001bcc42d37b4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhenzhuxianglian/paodan_zhenzhuxianglian_9005446478055749177.png",
+  "spine": {
+    "skel": "paodan_zhenzhuxianglian.skel",
+    "atlas": "paodan_zhenzhuxianglian.atlas",
+    "pages": [
+      "paodan_zhenzhuxianglian.png"
+    ]
+  }
+}

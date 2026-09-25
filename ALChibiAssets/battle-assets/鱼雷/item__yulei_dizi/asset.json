@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_dizi",
+  "model": "yulei_dizi",
+  "name": "玉笛鱼雷",
+  "names": [
+    "玉笛鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dizi",
+  "path": "battle-assets/鱼雷/item__yulei_dizi",
+  "images": [
+    {
+      "file": "yulei_dizi_-2355683807971249568.png",
+      "name": "yulei_dizi",
+      "width": 128,
+      "height": 42,
+      "role": "战斗贴图",
+      "path_id": -2355683807971249568,
+      "source": "CAB-8806704c1832fe9aa5f16464056f8621"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3359405
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dizi/yulei_dizi_-2355683807971249568.png"
+}

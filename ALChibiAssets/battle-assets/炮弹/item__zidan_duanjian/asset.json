@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_duanjian",
+  "model": "zidan_duanjian",
+  "name": "短剑子弹",
+  "names": [
+    "短剑子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_duanjian",
+  "path": "battle-assets/炮弹/item__zidan_duanjian",
+  "images": [
+    {
+      "file": "zidan_duanjian_-1109561594442712262.png",
+      "name": "zidan_duanjian",
+      "width": 128,
+      "height": 72,
+      "role": "战斗贴图",
+      "path_id": -1109561594442712262,
+      "source": "CAB-d79f505bd01989fa20af5ddf3cb6c487"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_duanjian/zidan_duanjian_-1109561594442712262.png"
+}

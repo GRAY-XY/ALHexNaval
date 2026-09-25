@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_nihongyinxiang",
+  "model": "yulei_nihongyinxiang",
+  "name": "电子音响鱼雷",
+  "names": [
+    "电子音响鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nihongyinxiang",
+  "path": "battle-assets/鱼雷/item__yulei_nihongyinxiang",
+  "images": [
+    {
+      "file": "yulei_nihongyinxiang_129126554890045566.png",
+      "name": "yulei_nihongyinxiang",
+      "width": 128,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": 129126554890045566,
+      "source": "CAB-10a99fed80fa1805a471d09358059dc4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3148007
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nihongyinxiang/yulei_nihongyinxiang_129126554890045566.png"
+}

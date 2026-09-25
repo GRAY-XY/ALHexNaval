@@ -1,0 +1,26 @@
+{
+  "id": "item__daodan0",
+  "model": "daodan0",
+  "name": "daodan0",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/daodan0",
+  "path": "battle-assets/其他战斗特效/item__daodan0",
+  "images": [
+    {
+      "file": "daodan_-59307757992001476.png",
+      "name": "daodan",
+      "width": 686,
+      "height": 309,
+      "role": "战斗贴图",
+      "path_id": -59307757992001476,
+      "source": "CAB-98b890a6ff3c39e3a97acd06fc4467ee"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__daodan0/daodan_-59307757992001476.png"
+}

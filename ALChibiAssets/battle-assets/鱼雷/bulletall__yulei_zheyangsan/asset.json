@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_zheyangsan",
+  "model": "yulei_zheyangsan",
+  "name": "假日遮阳伞鱼雷",
+  "names": [
+    "假日遮阳伞鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_zheyangsan",
+  "path": "battle-assets/鱼雷/bulletall__yulei_zheyangsan",
+  "images": [
+    {
+      "file": "yulei_zheyangsan_-5559493644667846173.png",
+      "name": "yulei_zheyangsan",
+      "width": 128,
+      "height": 93,
+      "role": "原始精灵",
+      "path_id": -5559493644667846173,
+      "source": "CAB-d4db6bf3d4b60b77228eb54475ff21d1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

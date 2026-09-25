@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_beike",
+  "model": "zidan_beike",
+  "name": "贝壳子弹",
+  "names": [
+    "贝壳子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_beike",
+  "path": "battle-assets/炮弹/item__zidan_beike",
+  "images": [
+    {
+      "file": "zidan_beike_1009305708206008340.png",
+      "name": "zidan_beike",
+      "width": 128,
+      "height": 157,
+      "role": "战斗贴图",
+      "path_id": 1009305708206008340,
+      "source": "CAB-e39e8510a1775b749f6decd767a36e6c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_beike/zidan_beike_1009305708206008340.png"
+}

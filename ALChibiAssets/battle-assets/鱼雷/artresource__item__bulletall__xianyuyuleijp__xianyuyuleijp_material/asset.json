@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__xianyuyuleijp__xianyuyuleijp_material",
+  "model": "xianyuyuleijp_material",
+  "name": "xianyuyuleijp_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/xianyuyuleijp/xianyuyuleijp_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__xianyuyuleijp__xianyuyuleijp_material",
+  "images": [
+    {
+      "file": "xianyuyuleiJP_-278725744450569570.png",
+      "name": "xianyuyuleiJP",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -278725744450569570,
+      "source": "CAB-43c7ff4382ca4ca7207512c5c495975c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

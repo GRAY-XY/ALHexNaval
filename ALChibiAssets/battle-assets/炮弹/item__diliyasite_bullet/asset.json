@@ -1,0 +1,28 @@
+{
+  "id": "item__diliyasite_bullet",
+  "model": "diliyasite_bullet",
+  "name": "diliyasite_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/diliyasite_bullet",
+  "path": "battle-assets/炮弹/item__diliyasite_bullet",
+  "images": [
+    {
+      "file": "jian02_-5245943966580641692.png",
+      "name": "jian02",
+      "width": 204,
+      "height": 126,
+      "role": "战斗贴图",
+      "path_id": -5245943966580641692,
+      "source": "CAB-d930e94e113638ab938dc83eefa13912"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    75212
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__diliyasite_bullet/jian02_-5245943966580641692.png"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "item__bomberbombblack",
+  "model": "bomberbombblack",
+  "name": "bomberbombblack",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/bomberbombblack",
+  "path": "battle-assets/鱼雷/item__bomberbombblack",
+  "images": [
+    {
+      "file": "BomberbombBlack_9060466511297447709.png",
+      "name": "BomberbombBlack",
+      "width": 128,
+      "height": 71,
+      "role": "战斗贴图",
+      "path_id": 9060466511297447709,
+      "source": "CAB-bef68a724a60e236de7ce910eaa8304f"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19863,
+    875032,
+    875036,
+    899049,
+    29663005,
+    3075022,
+    3180216,
+    3185033,
+    3185047,
+    3280602,
+    3299029,
+    3333002,
+    3361208
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__bomberbombblack/BomberbombBlack_9060466511297447709.png"
+}

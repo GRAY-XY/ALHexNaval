@@ -1,0 +1,28 @@
+{
+  "id": "item__xiaochaijun_maozhua",
+  "model": "xiaochaijun_maozhua",
+  "name": "xiaochaijun_maozhua",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiaochaijun_maozhua",
+  "path": "battle-assets/炮弹/item__xiaochaijun_maozhua",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19616,
+    79861,
+    79862,
+    3146001,
+    3146002,
+    3146003,
+    3146004,
+    3146005,
+    3146006,
+    3146007,
+    3146008,
+    3146009
+  ],
+  "has_preview": false,
+  "prefab": true
+}

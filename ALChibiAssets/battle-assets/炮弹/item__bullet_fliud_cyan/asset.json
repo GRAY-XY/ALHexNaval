@@ -1,0 +1,17 @@
+{
+  "id": "item__bullet_fliud_cyan",
+  "model": "bullet_fliud_cyan",
+  "name": "bullet_fliud_cyan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_fliud_cyan",
+  "path": "battle-assets/炮弹/item__bullet_fliud_cyan",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3029320
+  ],
+  "has_preview": false,
+  "prefab": true
+}

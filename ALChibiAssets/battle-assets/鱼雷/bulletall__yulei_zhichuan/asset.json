@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_zhichuan",
+  "model": "yulei_zhichuan",
+  "name": "星星纸船鱼雷",
+  "names": [
+    "星星纸船鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_zhichuan",
+  "path": "battle-assets/鱼雷/bulletall__yulei_zhichuan",
+  "images": [
+    {
+      "file": "yulei_zhichuan_-2426679839628991156.png",
+      "name": "yulei_zhichuan",
+      "width": 125,
+      "height": 72,
+      "role": "原始精灵",
+      "path_id": -2426679839628991156,
+      "source": "CAB-1fdcbdb84fbcd88b50e6a6f907c53dfd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

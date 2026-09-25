@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_weishiji",
+  "model": "zidan_weishiji",
+  "name": "威士忌子弹",
+  "names": [
+    "威士忌子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_weishiji",
+  "path": "battle-assets/炮弹/item__zidan_weishiji",
+  "images": [
+    {
+      "file": "zidan_weishiji_9011588378104950094.png",
+      "name": "zidan_weishiji",
+      "width": 99,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": 9011588378104950094,
+      "source": "CAB-33f353677a8c26b39fed109f0bea5586"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_weishiji/zidan_weishiji_9011588378104950094.png"
+}

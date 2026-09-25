@@ -1,0 +1,30 @@
+{
+  "id": "aircrafticon__fl-282",
+  "model": "fl-282",
+  "name": "科隆改直升机Lv1",
+  "names": [
+    "科隆改直升机Lv1",
+    "科隆M直升机Lv1",
+    "【2024斯特拉斯堡活动T2】BOSS 科隆 直升机（浮游炮逻辑）",
+    "【2024斯特拉斯堡活动HT2】BOSS 科隆 直升机（浮游炮逻辑）"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/fl-282",
+  "path": "battle-assets/飞机图标/aircrafticon__fl-282",
+  "images": [
+    {
+      "file": "FL-282_3322601954773333417.png",
+      "name": "FL-282",
+      "width": 45,
+      "height": 39,
+      "role": "原始精灵",
+      "path_id": 3322601954773333417,
+      "source": "CAB-8c9e21045e8ca2eff10d2f61174d27d3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

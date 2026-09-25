@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paozhang__paozhang_material",
+  "model": "paozhang_material",
+  "name": "paozhang_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paozhang/paozhang_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paozhang__paozhang_material",
+  "images": [
+    {
+      "file": "paozhang_-7563930647017396616.png",
+      "name": "paozhang",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7563930647017396616,
+      "source": "CAB-6b2e624304ef1e632754201c7a81c28a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

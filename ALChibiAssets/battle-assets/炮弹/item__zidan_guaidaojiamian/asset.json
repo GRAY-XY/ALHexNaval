@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guaidaojiamian",
+  "model": "zidan_guaidaojiamian",
+  "name": "怪盗假面子弹",
+  "names": [
+    "怪盗假面子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guaidaojiamian",
+  "path": "battle-assets/炮弹/item__zidan_guaidaojiamian",
+  "images": [
+    {
+      "file": "zidan_guaidaojiamian_-4486258015586094633.png",
+      "name": "zidan_guaidaojiamian",
+      "width": 128,
+      "height": 58,
+      "role": "战斗贴图",
+      "path_id": -4486258015586094633,
+      "source": "CAB-9c5110f7a5f651ecc0e525124bc7e27a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guaidaojiamian/zidan_guaidaojiamian_-4486258015586094633.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__torpedo_pencil",
+  "model": "torpedo_pencil",
+  "name": "铅笔鱼雷",
+  "names": [
+    "铅笔鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_pencil",
+  "path": "battle-assets/鱼雷/item__torpedo_pencil",
+  "images": [
+    {
+      "file": "torpedo_pencil_8163597907796449670.png",
+      "name": "torpedo_pencil",
+      "width": 256,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": 8163597907796449670,
+      "source": "CAB-2d14583a644567c8f07a6a9c3d8ce4f9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo_pencil/torpedo_pencil_8163597907796449670.png"
+}

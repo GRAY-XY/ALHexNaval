@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_guaidaozhuagou",
+  "model": "yulei_guaidaozhuagou",
+  "name": "暗夜飞索鱼雷",
+  "names": [
+    "暗夜飞索鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_guaidaozhuagou",
+  "path": "battle-assets/鱼雷/item__yulei_guaidaozhuagou",
+  "images": [
+    {
+      "file": "yulei_guaidaozhuagou_-7175732890949769731.png",
+      "name": "yulei_guaidaozhuagou",
+      "width": 128,
+      "height": 32,
+      "role": "战斗贴图",
+      "path_id": -7175732890949769731,
+      "source": "CAB-22294e62e3b33bc1da0254a1aaf7f6d2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_guaidaozhuagou/yulei_guaidaozhuagou_-7175732890949769731.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chargo__feiji_huiguangzhihe",
+  "model": "feiji_huiguangzhihe",
+  "name": "【2024阿尔萨斯活动B3】BOSS 旗风 第二波 辉光 辉光结晶飞机 冲底（血少）",
+  "names": [
+    "【2024阿尔萨斯活动B3】BOSS 旗风 第二波 辉光 辉光结晶飞机 冲底（血少）",
+    "【2024阿尔萨斯活动B3】BOSS 旗风 第二波 辉光 辉光结晶飞机 停留攻击（血多）",
+    "【2024阿尔萨斯活动B3】精英 辉光之核 辉光结晶飞机",
+    "【2024阿尔萨斯活动D3】BOSS 旗风 第二波 辉光 辉光结晶飞机 冲底（血少）",
+    "【2024阿尔萨斯活动D3】BOSS 旗风 第二波 辉光 辉光结晶飞机 停留攻击（血多）",
+    "【2024阿尔萨斯活动D3】精英 辉光之核 辉光结晶飞机",
+    "【2024阿尔萨斯活动EX 挑战】BOSS 辉光之核 第三波 辉光结晶飞机",
+    "【2024阿尔萨斯活动EX 普通】BOSS 辉光之核 第三波 辉光结晶飞机"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_huiguangzhihe",
+  "path": "battle-assets/飞机/chargo__feiji_huiguangzhihe",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_huiguangzhihe/aircraft_shadow_2192772484218123160.png"
+}

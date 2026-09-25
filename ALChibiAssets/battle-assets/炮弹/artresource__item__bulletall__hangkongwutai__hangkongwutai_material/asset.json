@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__hangkongwutai__hangkongwutai_material",
+  "model": "hangkongwutai_material",
+  "name": "hangkongwutai_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/hangkongwutai/hangkongwutai_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__hangkongwutai__hangkongwutai_material",
+  "images": [
+    {
+      "file": "hangkongwutai_7245459345187365186.png",
+      "name": "hangkongwutai",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7245459345187365186,
+      "source": "CAB-35166b5bbc8a70233cf8051e0b174b4a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

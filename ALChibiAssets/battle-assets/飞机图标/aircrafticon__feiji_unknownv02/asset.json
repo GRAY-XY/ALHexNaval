@@ -1,0 +1,38 @@
+{
+  "id": "aircrafticon__feiji_unknownv02",
+  "model": "feiji_unknownv02",
+  "name": "【量产型】未知X结晶-航母舰载机（随时间推移加快发射频率） Lv1",
+  "names": [
+    "【量产型】未知X结晶-航母舰载机（随时间推移加快发射频率） Lv1",
+    "【量产型】未知X结晶-航母舰载机（随时间推移加快发射频率） Lv2",
+    "【量产型】未知X结晶-航母舰载机（随时间推移加快发射频率） Lv3",
+    "【量产型】未知X结晶-航母舰载机（随时间推移加快发射频率） Lv4",
+    "【量产型】未知X结晶-航母舰载机（随时间推移加快发射频率） Lv5",
+    "【2024鲁梅活动B2】BOSS 未知X结晶 航母 舰载机（随时间推移加快发射频率）",
+    "【2024鲁梅活动B3】BOSS 星之兽 第三波 舰载机",
+    "【2024鲁梅活动D2】BOSS 未知X结晶 航母 舰载机（随时间推移加快发射频率）",
+    "【2024鲁梅活动D3】BOSS 星之兽 第三波 舰载机",
+    "【2024鲁梅活动SP】BOSS 星之兽 第三波 舰载机",
+    "【2025狮UR活动B1】BOSS 未知X结晶 航母 舰载机（随时间推移加快发射频率）",
+    "【2025狮UR活动D1】BOSS 未知X结晶 航母 舰载机（随时间推移加快发射频率）"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_unknownv02",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_unknownv02",
+  "images": [
+    {
+      "file": "feiji_unknownV02_-6983248855630750101.png",
+      "name": "feiji_unknownV02",
+      "width": 45,
+      "height": 34,
+      "role": "原始精灵",
+      "path_id": -6983248855630750101,
+      "source": "CAB-ff0c097fbce5eb45665dd21796ebf2c0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

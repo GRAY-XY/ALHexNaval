@@ -1,0 +1,37 @@
+{
+  "id": "chargo__i15",
+  "model": "i15",
+  "name": "I-15",
+  "names": [
+    "I-15"
+  ],
+  "category": "飞机",
+  "source": "chargo/i15",
+  "path": "battle-assets/飞机/chargo__i15",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "I15_8177500730565025878.png",
+      "name": "I15",
+      "width": 227,
+      "height": 242,
+      "role": "战斗贴图",
+      "path_id": 8177500730565025878,
+      "source": "CAB-92f221a1e6586ed02d55fcad35051741"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__i15/aircraft_shadow_2192772484218123160.png"
+}

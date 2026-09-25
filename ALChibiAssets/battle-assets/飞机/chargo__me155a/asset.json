@@ -1,0 +1,63 @@
+{
+  "id": "chargo__me155a",
+  "model": "me155a",
+  "name": "Me-155A舰载战斗机T1",
+  "names": [
+    "Me-155A舰载战斗机T1",
+    "Me-155A舰载战斗机T2",
+    "Me-155A舰载战斗机T3",
+    "【异色格A】【人型】齐柏林使用Me155A",
+    "【异色格B】【人型】齐柏林Me155A",
+    "【异色格B】【BOSS】齐柏林Me155A",
+    "【异色格C】【人型】齐柏林使用Me155A",
+    "【异色格D】【人型】齐柏林Me155A",
+    "【异色格D】【BOSS】齐柏林Me155A",
+    "七夕齐柏林使用Me155A (飞机*2",
+    "万圣节副本空袭Me155A",
+    "齐柏林使用Me155A (飞机",
+    "夏活普通空袭Me155A",
+    "夏活困难空袭Me155A",
+    "七夕活动夏活普通空袭Me155A",
+    "德系舰载战斗机I",
+    "德系舰载战斗机II",
+    "德系舰载战斗机III",
+    "德系舰载战斗机IV",
+    "德系舰载战斗机V",
+    "【大世界】德系舰载战斗机I",
+    "【大世界】德系舰载战斗机II",
+    "【大世界】德系舰载战斗机III",
+    "【大世界】德系舰载战斗机IV",
+    "【大世界】德系舰载战斗机V",
+    "【2022布吕歇尔活动SP2】BOSS 齐柏林 红色弹幕战斗机",
+    "【2022布吕歇尔活动SP3】BOSS 彼得史特拉塞 常规战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/me155a",
+  "path": "battle-assets/飞机/chargo__me155a",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "Me155A_6977258387824246023.png",
+      "name": "Me155A",
+      "width": 252,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": 6977258387824246023,
+      "source": "CAB-e679d9eb7111d4f17165e2cccbfff72d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__me155a/aircraft_shadow_2192772484218123160.png"
+}

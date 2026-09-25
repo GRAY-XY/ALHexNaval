@@ -1,0 +1,35 @@
+{
+  "id": "item__bulletger_cyan",
+  "model": "bulletger_cyan",
+  "name": "bulletger_cyan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletger_cyan",
+  "path": "battle-assets/炮弹/item__bulletger_cyan",
+  "images": [
+    {
+      "file": "bulletGER_cyan_7454195425920984007.png",
+      "name": "bulletGER_cyan",
+      "width": 92,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 7454195425920984007,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    79891,
+    164874,
+    830081,
+    3029322,
+    3036028,
+    3060315,
+    3151119,
+    3218023
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletger_cyan/bulletGER_cyan_7454195425920984007.png"
+}

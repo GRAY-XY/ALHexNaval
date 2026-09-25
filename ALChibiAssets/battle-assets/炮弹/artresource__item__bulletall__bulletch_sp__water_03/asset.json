@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__water_03",
+  "model": "water_03",
+  "name": "water_03",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/water_03",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__water_03",
+  "images": [
+    {
+      "file": "water_03_-5577151393445321876.png",
+      "name": "water_03",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -5577151393445321876,
+      "source": "CAB-56001ac93aa1a5d5e1a059a4d627a8be"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

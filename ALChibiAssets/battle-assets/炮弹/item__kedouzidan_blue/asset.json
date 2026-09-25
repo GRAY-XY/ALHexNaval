@@ -1,0 +1,36 @@
+{
+  "id": "item__kedouzidan_blue",
+  "model": "kedouzidan_blue",
+  "name": "kedouzidan_blue",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/kedouzidan_blue",
+  "path": "battle-assets/炮弹/item__kedouzidan_blue",
+  "images": [
+    {
+      "file": "kedouzidan_blue_-6333326312060311182.png",
+      "name": "kedouzidan_blue",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -6333326312060311182,
+      "source": "CAB-e259e2d19ae45dc352f1dbb2fa77848b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    29660044,
+    29660045,
+    29660046,
+    29660047,
+    29660048,
+    29660049,
+    29660050,
+    29660051,
+    3304010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__kedouzidan_blue/kedouzidan_blue_-6333326312060311182.png"
+}

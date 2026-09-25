@@ -1,0 +1,19 @@
+{
+  "id": "item__zhuixinghuojian",
+  "model": "zhuixinghuojian",
+  "name": "zhuixinghuojian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhuixinghuojian",
+  "path": "battle-assets/炮弹/item__zhuixinghuojian",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19222,
+    19279,
+    19290
+  ],
+  "has_preview": false,
+  "prefab": true
+}

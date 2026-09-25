@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_huashu",
+  "model": "paodan_huashu",
+  "name": "花束炮弹",
+  "names": [
+    "花束炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_huashu",
+  "path": "battle-assets/炮弹/item__paodan_huashu",
+  "images": [
+    {
+      "file": "paodan_huashu_6888118917970151593.png",
+      "name": "paodan_huashu",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": 6888118917970151593,
+      "source": "CAB-2437f3f71d619d566cbadcc41ea1ed97"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huashu/paodan_huashu_6888118917970151593.png"
+}

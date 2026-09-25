@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_emocha",
+  "model": "yulei_emocha",
+  "name": "恶魔之刺鱼雷",
+  "names": [
+    "恶魔之刺鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_emocha",
+  "path": "battle-assets/鱼雷/item__yulei_emocha",
+  "images": [
+    {
+      "file": "yulei_emocha_-3598859965741241754.png",
+      "name": "yulei_emocha",
+      "width": 128,
+      "height": 51,
+      "role": "战斗贴图",
+      "path_id": -3598859965741241754,
+      "source": "CAB-9e10ab6bdc1da3740003d149ec39b858"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3300211
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_emocha/yulei_emocha_-3598859965741241754.png"
+}

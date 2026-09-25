@@ -1,0 +1,35 @@
+{
+  "id": "item__banai02",
+  "model": "banai02",
+  "name": "banai02",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/banai02",
+  "path": "battle-assets/其他战斗特效/item__banai02",
+  "images": [
+    {
+      "file": "banai02_2628083375434152067.png",
+      "name": "banai02",
+      "width": 64,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 2628083375434152067,
+      "source": "CAB-13a4bcd9ad036710edd521bdda7d9684"
+    },
+    {
+      "file": "D_Glow_01A_-8905779048531165808.png",
+      "name": "D_Glow_01A",
+      "width": 512,
+      "height": 512,
+      "role": "战斗贴图",
+      "path_id": -8905779048531165808,
+      "source": "CAB-eb8af57e04c50cf3f958ccf44a2c22f5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__banai02/banai02_2628083375434152067.png"
+}

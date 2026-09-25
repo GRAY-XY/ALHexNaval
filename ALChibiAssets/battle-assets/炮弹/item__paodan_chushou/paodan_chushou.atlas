@@ -1,0 +1,55 @@
+
+paodan_chushou.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cengguang
+  rotate: true
+  xy: 150, 75
+  size: 179, 178
+  orig: 179, 178
+  offset: 0, 0
+  index: -1
+chu_1
+  rotate: true
+  xy: 330, 77
+  size: 177, 135
+  orig: 177, 135
+  offset: 0, 0
+  index: -1
+chu_2
+  rotate: true
+  xy: 150, 2
+  size: 71, 145
+  orig: 71, 145
+  offset: 0, 0
+  index: -1
+chu_3
+  rotate: false
+  xy: 297, 5
+  size: 99, 68
+  orig: 99, 68
+  offset: 0, 0
+  index: -1
+chu_4
+  rotate: false
+  xy: 467, 146
+  size: 100, 108
+  orig: 100, 108
+  offset: 0, 0
+  index: -1
+chu_5
+  rotate: true
+  xy: 398, 9
+  size: 66, 36
+  orig: 66, 36
+  offset: 0, 0
+  index: -1
+chu_b
+  rotate: true
+  xy: 2, 17
+  size: 237, 146
+  orig: 237, 146
+  offset: 0, 0
+  index: -1

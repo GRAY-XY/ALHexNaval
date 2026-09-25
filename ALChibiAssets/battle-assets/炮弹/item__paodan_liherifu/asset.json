@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_liherifu",
+  "model": "paodan_liherifu",
+  "name": "精选礼盒炮弹",
+  "names": [
+    "精选礼盒炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_liherifu",
+  "path": "battle-assets/炮弹/item__paodan_liherifu",
+  "images": [
+    {
+      "file": "paodan_liherifu_1019194715612702960.png",
+      "name": "paodan_liherifu",
+      "width": 128,
+      "height": 142,
+      "role": "战斗贴图",
+      "path_id": 1019194715612702960,
+      "source": "CAB-4830993da46114b088ec99ca6d423414"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_liherifu/paodan_liherifu_1019194715612702960.png"
+}

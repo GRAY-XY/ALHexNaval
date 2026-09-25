@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_hulizidan",
+  "model": "zidan_hulizidan",
+  "name": "狐笋子弹",
+  "names": [
+    "狐笋子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hulizidan",
+  "path": "battle-assets/炮弹/item__zidan_hulizidan",
+  "images": [
+    {
+      "file": "zidan_hulizidan_765869437696613609.png",
+      "name": "zidan_hulizidan",
+      "width": 128,
+      "height": 91,
+      "role": "战斗贴图",
+      "path_id": 765869437696613609,
+      "source": "CAB-ece2de848843e5c6adae3e8c93ab62aa"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    660016
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hulizidan/zidan_hulizidan_765869437696613609.png"
+}

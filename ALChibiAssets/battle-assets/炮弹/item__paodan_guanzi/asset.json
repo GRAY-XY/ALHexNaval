@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_guanzi",
+  "model": "paodan_guanzi",
+  "name": "封印圣罐炮弹",
+  "names": [
+    "封印圣罐炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_guanzi",
+  "path": "battle-assets/炮弹/item__paodan_guanzi",
+  "images": [
+    {
+      "file": "paodan_guanzi_521937637992099002.png",
+      "name": "paodan_guanzi",
+      "width": 128,
+      "height": 123,
+      "role": "战斗贴图",
+      "path_id": 521937637992099002,
+      "source": "CAB-393de0f2d50b480bd852c46f89336bc7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_guanzi/paodan_guanzi_521937637992099002.png"
+}

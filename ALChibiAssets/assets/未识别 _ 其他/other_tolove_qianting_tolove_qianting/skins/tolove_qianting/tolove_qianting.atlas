@@ -1,0 +1,104 @@
+
+tolove_qianting.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ao_1
+  rotate: true
+  xy: 2, 2
+  size: 321, 157
+  orig: 321, 157
+  offset: 0, 0
+  index: -1
+ao_1_swim
+  rotate: true
+  xy: 161, 2
+  size: 321, 157
+  orig: 321, 157
+  offset: 0, 0
+  index: -1
+ao_2
+  rotate: false
+  xy: 320, 25
+  size: 246, 157
+  orig: 246, 157
+  offset: 0, 0
+  index: -1
+ao_2_swim
+  rotate: false
+  xy: 568, 25
+  size: 246, 157
+  orig: 246, 157
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 547, 474
+  size: 447, 409
+  orig: 447, 409
+  offset: 0, 0
+  index: -1
+body_swim
+  rotate: true
+  xy: 2, 325
+  size: 447, 409
+  orig: 447, 409
+  offset: 0, 0
+  index: -1
+qt01
+  rotate: false
+  xy: 413, 331
+  size: 533, 141
+  orig: 533, 141
+  offset: 0, 0
+  index: -1
+qt02
+  rotate: false
+  xy: 2, 774
+  size: 543, 147
+  orig: 543, 147
+  offset: 0, 0
+  index: -1
+qt03
+  rotate: false
+  xy: 413, 184
+  size: 518, 145
+  orig: 518, 145
+  offset: 0, 0
+  index: -1
+shui_1
+  rotate: false
+  xy: 413, 487
+  size: 84, 15
+  orig: 84, 15
+  offset: 0, 0
+  index: -1
+shui_2
+  rotate: true
+  xy: 512, 540
+  size: 84, 15
+  orig: 84, 15
+  offset: 0, 0
+  index: -1
+shui_3
+  rotate: true
+  xy: 519, 688
+  size: 84, 15
+  orig: 84, 15
+  offset: 0, 0
+  index: -1
+zhua1
+  rotate: false
+  xy: 413, 626
+  size: 104, 146
+  orig: 104, 146
+  offset: 0, 0
+  index: -1
+zhua2
+  rotate: true
+  xy: 413, 504
+  size: 120, 97
+  orig: 120, 97
+  offset: 0, 0
+  index: -1

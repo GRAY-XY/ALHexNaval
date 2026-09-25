@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shilaimufeiji__shilaimuqiupaodan_material",
+  "model": "shilaimuqiupaodan_material",
+  "name": "shilaimuqiupaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/shilaimufeiji/shilaimuqiupaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__shilaimufeiji__shilaimuqiupaodan_material",
+  "images": [
+    {
+      "file": "shilaimuqiupaodan_-291810340887562594.png",
+      "name": "shilaimuqiupaodan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -291810340887562594,
+      "source": "CAB-922cf00c81dbe060a474e7085d9407db"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

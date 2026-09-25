@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_pisa",
+  "model": "paodan_pisa",
+  "name": "Pizza炮弹",
+  "names": [
+    "Pizza炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_pisa",
+  "path": "battle-assets/炮弹/item__paodan_pisa",
+  "images": [
+    {
+      "file": "paodan_pisa_6893153428230209648.png",
+      "name": "paodan_pisa",
+      "width": 128,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": 6893153428230209648,
+      "source": "CAB-ca7f29d66393bebb86f0ecaae7cae249"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_pisa/paodan_pisa_6893153428230209648.png"
+}

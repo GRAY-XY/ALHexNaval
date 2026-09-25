@@ -1,0 +1,83 @@
+
+yulei_kapaishan.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+danzhang
+  rotate: false
+  xy: 2, 2
+  size: 62, 44
+  orig: 62, 44
+  offset: 0, 0
+  index: -1
+danzhang_2
+  rotate: false
+  xy: 130, 4
+  size: 60, 42
+  orig: 60, 42
+  offset: 0, 0
+  index: -1
+danzhang_3
+  rotate: false
+  xy: 66, 2
+  size: 62, 44
+  orig: 62, 44
+  offset: 0, 0
+  index: -1
+puke_1
+  rotate: false
+  xy: 68, 48
+  size: 62, 71
+  orig: 62, 71
+  offset: 0, 0
+  index: -1
+puke_5
+  rotate: false
+  xy: 2, 48
+  size: 64, 71
+  orig: 64, 71
+  offset: 0, 0
+  index: -1
+tuoying
+  rotate: true
+  xy: 132, 49
+  size: 70, 54
+  orig: 70, 54
+  offset: 0, 0
+  index: -1
+tuoying_2
+  rotate: true
+  xy: 188, 49
+  size: 70, 54
+  orig: 70, 54
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: false
+  xy: 244, 99
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+tx_2
+  rotate: false
+  xy: 224, 26
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+tx_3
+  rotate: false
+  xy: 224, 3
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+tx_4
+  rotate: false
+  xy: 192, 14
+  size: 30, 33
+  orig: 30, 33
+  offset: 0, 0
+  index: -1

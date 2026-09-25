@@ -1,0 +1,153 @@
+
+unknownV_siren_boss01.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_l2
+  rotate: true
+  xy: 1103, 237
+  size: 268, 251
+  orig: 268, 251
+  offset: 0, 0
+  index: -1
+body_low
+  rotate: true
+  xy: 871, 612
+  size: 410, 297
+  orig: 410, 297
+  offset: 0, 0
+  index: -1
+body_low_swim
+  rotate: true
+  xy: 1170, 612
+  size: 410, 297
+  orig: 410, 297
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: true
+  xy: 650, 208
+  size: 146, 89
+  orig: 146, 89
+  offset: 0, 0
+  index: -1
+chushou_1_swim
+  rotate: false
+  xy: 1171, 521
+  size: 146, 89
+  orig: 146, 89
+  offset: 0, 0
+  index: -1
+chushou_d1
+  rotate: true
+  xy: 554, 356
+  size: 119, 176
+  orig: 119, 176
+  offset: 0, 0
+  index: -1
+chushou_l2
+  rotate: false
+  xy: 444, 6
+  size: 251, 190
+  orig: 251, 190
+  offset: 0, 0
+  index: -1
+chushou_l2_swim
+  rotate: false
+  xy: 925, 30
+  size: 251, 190
+  orig: 251, 190
+  offset: 0, 0
+  index: -1
+dadao
+  rotate: true
+  xy: 149, 176
+  size: 172, 216
+  orig: 172, 216
+  offset: 0, 0
+  index: -1
+feiji_1
+  rotate: true
+  xy: 272, 2
+  size: 172, 84
+  orig: 172, 84
+  offset: 0, 0
+  index: -1
+feiji_4
+  rotate: true
+  xy: 358, 2
+  size: 172, 84
+  orig: 172, 84
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 697, 2
+  size: 204, 226
+  orig: 204, 226
+  offset: 0, 0
+  index: -1
+pao_1
+  rotate: false
+  xy: 367, 198
+  size: 281, 150
+  orig: 281, 150
+  offset: 0, 0
+  index: -1
+pao_2
+  rotate: true
+  xy: 741, 222
+  size: 253, 360
+  orig: 253, 360
+  offset: 0, 0
+  index: -1
+pao_3
+  rotate: false
+  xy: 2, 6
+  size: 268, 166
+  orig: 268, 166
+  offset: 0, 0
+  index: -1
+pao_4
+  rotate: false
+  xy: 871, 507
+  size: 298, 103
+  orig: 298, 103
+  offset: 0, 0
+  index: -1
+pao_chushou
+  rotate: true
+  xy: 554, 477
+  size: 545, 315
+  orig: 545, 315
+  offset: 0, 0
+  index: -1
+shui
+  rotate: true
+  xy: 149, 350
+  size: 672, 133
+  orig: 672, 133
+  offset: 0, 0
+  index: -1
+shui_2
+  rotate: true
+  xy: 284, 350
+  size: 672, 133
+  orig: 672, 133
+  offset: 0, 0
+  index: -1
+shui_3
+  rotate: true
+  xy: 419, 350
+  size: 672, 133
+  orig: 672, 133
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 2, 174
+  size: 848, 145
+  orig: 848, 145
+  offset: 0, 0
+  index: -1

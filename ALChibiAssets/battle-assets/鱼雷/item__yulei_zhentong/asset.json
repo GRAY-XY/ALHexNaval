@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_zhentong",
+  "model": "yulei_zhentong",
+  "name": "针筒鱼雷",
+  "names": [
+    "针筒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhentong",
+  "path": "battle-assets/鱼雷/item__yulei_zhentong",
+  "images": [
+    {
+      "file": "yulei_zhentong_594554374234979873.png",
+      "name": "yulei_zhentong",
+      "width": 128,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": 594554374234979873,
+      "source": "CAB-65d551aa684b87da9d2aca958821a4c9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3250007,
+    3250008,
+    3252007,
+    3252008,
+    3252010,
+    3253012
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhentong/yulei_zhentong_594554374234979873.png"
+}

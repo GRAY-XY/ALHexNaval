@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__tutuhuoqiupaodan__tutuhuoqiupaodan_material",
+  "model": "tutuhuoqiupaodan_material",
+  "name": "tutuhuoqiupaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/tutuhuoqiupaodan/tutuhuoqiupaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__tutuhuoqiupaodan__tutuhuoqiupaodan_material",
+  "images": [
+    {
+      "file": "tutuhuoqiupaodan_-1342168599515800379.png",
+      "name": "tutuhuoqiupaodan",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1342168599515800379,
+      "source": "CAB-db10b974b085d18c32ccf56255c91830"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

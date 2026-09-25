@@ -1,0 +1,15 @@
+{
+  "id": "item__sairen03",
+  "model": "sairen03",
+  "name": "sairen03",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/sairen03",
+  "path": "battle-assets/其他战斗特效/item__sairen03",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

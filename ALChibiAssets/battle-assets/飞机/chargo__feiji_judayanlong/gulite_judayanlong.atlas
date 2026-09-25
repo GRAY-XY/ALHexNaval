@@ -1,0 +1,69 @@
+
+gulite_judayanlong.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cb_up
+  rotate: false
+  xy: 438, 37
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+chibang_low
+  rotate: false
+  xy: 136, 6
+  size: 85, 114
+  orig: 85, 114
+  offset: 0, 0
+  index: -1
+jiao_low
+  rotate: false
+  xy: 2, 2
+  size: 46, 39
+  orig: 46, 39
+  offset: 0, 0
+  index: -1
+jiao_up
+  rotate: false
+  xy: 50, 23
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 223, 25
+  size: 95, 80
+  orig: 95, 80
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 305, 27
+  size: 93, 70
+  orig: 93, 70
+  offset: 0, 0
+  index: -1
+weibao
+  rotate: false
+  xy: 2, 43
+  size: 132, 77
+  orig: 132, 77
+  offset: 0, 0
+  index: -1
+zuantou_low
+  rotate: true
+  xy: 377, 10
+  size: 110, 59
+  orig: 110, 59
+  offset: 0, 0
+  index: -1
+zuantou_up
+  rotate: true
+  xy: 516, 11
+  size: 109, 57
+  orig: 109, 57
+  offset: 0, 0
+  index: -1

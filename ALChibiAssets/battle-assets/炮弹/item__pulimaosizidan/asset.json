@@ -1,0 +1,38 @@
+{
+  "id": "item__pulimaosizidan",
+  "model": "pulimaosizidan",
+  "name": "pulimaosizidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/pulimaosizidan",
+  "path": "battle-assets/炮弹/item__pulimaosizidan",
+  "images": [
+    {
+      "file": "D_Glow_01A_-8905779048531165808.png",
+      "name": "D_Glow_01A",
+      "width": 512,
+      "height": 512,
+      "role": "战斗贴图",
+      "path_id": -8905779048531165808,
+      "source": "CAB-eb8af57e04c50cf3f958ccf44a2c22f5"
+    },
+    {
+      "file": "banai03_2665993064267698476.png",
+      "name": "banai03",
+      "width": 89,
+      "height": 32,
+      "role": "战斗贴图",
+      "path_id": 2665993064267698476,
+      "source": "CAB-aa5b18f8398e67c562b0b8ed4feef8da"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19424,
+    19425
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__pulimaosizidan/D_Glow_01A_-8905779048531165808.png"
+}

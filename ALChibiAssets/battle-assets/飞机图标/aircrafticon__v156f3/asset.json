@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__v156f3",
+  "model": "v156f3",
+  "name": "V-156-F",
+  "names": [
+    "V-156-F"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/v156f3",
+  "path": "battle-assets/飞机图标/aircrafticon__v156f3",
+  "images": [
+    {
+      "file": "v156f3_-7425484768173164976.png",
+      "name": "v156f3",
+      "width": 43,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -7425484768173164976,
+      "source": "CAB-8592962d28c0c948c0740f2fe0fba529"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

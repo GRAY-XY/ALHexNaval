@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_xiongying",
+  "model": "paodan_xiongying",
+  "name": "雄鹰炮弹",
+  "names": [
+    "雄鹰炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiongying",
+  "path": "battle-assets/炮弹/item__paodan_xiongying",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "xiongyingpaodan.skel",
+    "atlas": "xiongyingpaodan.atlas",
+    "pages": [
+      "xiongyingpaodan.png"
+    ]
+  }
+}

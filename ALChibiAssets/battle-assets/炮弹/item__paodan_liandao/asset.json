@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_liandao",
+  "model": "paodan_liandao",
+  "name": "镰刀炮弹",
+  "names": [
+    "镰刀炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_liandao",
+  "path": "battle-assets/炮弹/item__paodan_liandao",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "liandao.skel",
+    "atlas": "liandao.atlas",
+    "pages": [
+      "liandao.png"
+    ]
+  }
+}

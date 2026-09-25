@@ -1,0 +1,17 @@
+{
+  "id": "item__laisha_sixingjiguang",
+  "model": "laisha_sixingjiguang",
+  "name": "laisha_sixingjiguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_sixingjiguang",
+  "path": "battle-assets/炮弹/item__laisha_sixingjiguang",
+  "images": [],
+  "particle_systems": 32,
+  "animations": [],
+  "bullet_ids": [
+    19497
+  ],
+  "has_preview": false,
+  "prefab": true
+}

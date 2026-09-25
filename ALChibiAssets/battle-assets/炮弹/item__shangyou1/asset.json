@@ -1,0 +1,29 @@
+{
+  "id": "item__shangyou1",
+  "model": "shangyou1",
+  "name": "shangyou1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shangyou1",
+  "path": "battle-assets/炮弹/item__shangyou1",
+  "images": [
+    {
+      "file": "daodan01_5346767741132975183.png",
+      "name": "daodan01",
+      "width": 209,
+      "height": 98,
+      "role": "战斗贴图",
+      "path_id": 5346767741132975183,
+      "source": "CAB-89936a4c118672721a4515e428bdf23a"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    2400,
+    2401
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shangyou1/daodan01_5346767741132975183.png"
+}

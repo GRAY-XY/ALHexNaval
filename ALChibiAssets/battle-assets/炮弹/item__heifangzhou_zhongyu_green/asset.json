@@ -1,0 +1,32 @@
+{
+  "id": "item__heifangzhou_zhongyu_green",
+  "model": "heifangzhou_zhongyu_green",
+  "name": "heifangzhou_zhongyu_green",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_zhongyu_green",
+  "path": "battle-assets/炮弹/item__heifangzhou_zhongyu_green",
+  "images": [
+    {
+      "file": "zhongyu_green_-7947064690560099322.png",
+      "name": "zhongyu_green",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -7947064690560099322,
+      "source": "CAB-a8740a06b2f1afbd7524d48666efdacc"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3295010,
+    3296041,
+    3296141,
+    3299010,
+    3331514
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heifangzhou_zhongyu_green/zhongyu_green_-7947064690560099322.png"
+}

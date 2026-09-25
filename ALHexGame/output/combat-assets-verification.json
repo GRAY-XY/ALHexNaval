@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "originalTextures": 15,
+  "checks": [
+    {
+      "id": "shell",
+      "passed": true
+    },
+    {
+      "id": "torpedo",
+      "passed": true
+    },
+    {
+      "id": "bomb",
+      "passed": true
+    },
+    {
+      "id": "us-fighter",
+      "passed": true
+    },
+    {
+      "id": "us-bomber",
+      "passed": true
+    },
+    {
+      "id": "us-torpedo",
+      "passed": true
+    },
+    {
+      "id": "uk-fighter",
+      "passed": true
+    },
+    {
+      "id": "uk-bomber",
+      "passed": true
+    },
+    {
+      "id": "uk-torpedo",
+      "passed": true
+    },
+    {
+      "id": "jp-fighter",
+      "passed": true
+    },
+    {
+      "id": "jp-bomber",
+      "passed": true
+    },
+    {
+      "id": "jp-torpedo",
+      "passed": true
+    },
+    {
+      "id": "de-fighter",
+      "passed": true
+    },
+    {
+      "id": "de-bomber",
+      "passed": true
+    },
+    {
+      "id": "de-torpedo",
+      "passed": true
+    }
+  ]
+}

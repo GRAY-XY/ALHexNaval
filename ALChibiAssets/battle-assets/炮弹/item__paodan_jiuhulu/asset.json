@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_jiuhulu",
+  "model": "paodan_jiuhulu",
+  "name": "酒葫芦炮弹",
+  "names": [
+    "酒葫芦炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jiuhulu",
+  "path": "battle-assets/炮弹/item__paodan_jiuhulu",
+  "images": [
+    {
+      "file": "paodan_jiuhulu_-3587606973067824401.png",
+      "name": "paodan_jiuhulu",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3587606973067824401,
+      "source": "CAB-3d97a48a7ceb858cf3cd5f824d1f9222"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jiuhulu/paodan_jiuhulu_-3587606973067824401.png",
+  "spine": {
+    "skel": "paodan_jiuhulu.skel",
+    "atlas": "paodan_jiuhulu.atlas",
+    "pages": [
+      "paodan_jiuhulu.png"
+    ]
+  }
+}

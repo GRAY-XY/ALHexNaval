@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_hunianyanyuedao",
+  "model": "paodan_hunianyanyuedao",
+  "name": "兵器炮弹·冷艳锯",
+  "names": [
+    "兵器炮弹·冷艳锯"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hunianyanyuedao",
+  "path": "battle-assets/炮弹/item__paodan_hunianyanyuedao",
+  "images": [
+    {
+      "file": "paodan_hunianyanyuedao_-5876939855761102424.png",
+      "name": "paodan_hunianyanyuedao",
+      "width": 128,
+      "height": 23,
+      "role": "战斗贴图",
+      "path_id": -5876939855761102424,
+      "source": "CAB-1cfbf0cbb6bd5bf819bf5bf5c6741dc5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hunianyanyuedao/paodan_hunianyanyuedao_-5876939855761102424.png"
+}

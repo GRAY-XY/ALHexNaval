@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_shizhejiu",
+  "model": "feiji_shizhejiu",
+  "name": "蛋糕女仆啾飞机（鱼雷）",
+  "names": [
+    "蛋糕女仆啾飞机（鱼雷）",
+    "蛋糕女仆啾飞机（战斗）",
+    "蛋糕女仆啾飞机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_shizhejiu",
+  "path": "battle-assets/飞机/chargo__feiji_shizhejiu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_shizhejiu_-4035742201294600141.png",
+      "name": "feiji_shizhejiu",
+      "width": 253,
+      "height": 160,
+      "role": "战斗贴图",
+      "path_id": -4035742201294600141,
+      "source": "CAB-e7c74e5eeaaef800ac1bc9d26620288b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_shizhejiu/aircraft_shadow_2192772484218123160.png"
+}

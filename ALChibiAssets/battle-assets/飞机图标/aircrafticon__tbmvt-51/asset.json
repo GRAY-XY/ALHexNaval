@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__tbmvt-51",
+  "model": "tbmvt-51",
+  "name": "TBM复仇者(VT-51)",
+  "names": [
+    "TBM复仇者(VT-51)",
+    "圣哈辛托-VT-51鱼雷机Lv1",
+    "圣哈辛托-VT-51反潜机Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tbmvt-51",
+  "path": "battle-assets/飞机图标/aircrafticon__tbmvt-51",
+  "images": [
+    {
+      "file": "tbmvt-51_9018752521161477699.png",
+      "name": "tbmvt-51",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 9018752521161477699,
+      "source": "CAB-60288f01aabe21340c6ecfd07ff3f18f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

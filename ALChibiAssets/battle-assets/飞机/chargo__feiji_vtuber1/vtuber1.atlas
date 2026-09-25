@@ -1,0 +1,20 @@
+
+vtuber1.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 2, 2
+  size: 163, 159
+  orig: 163, 159
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 163, 56
+  size: 109, 101
+  orig: 109, 101
+  offset: 0, 0
+  index: -1

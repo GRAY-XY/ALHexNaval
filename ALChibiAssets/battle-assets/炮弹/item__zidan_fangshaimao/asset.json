@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_fangshaimao",
+  "model": "zidan_fangshaimao",
+  "name": "防晒帽子弹",
+  "names": [
+    "防晒帽子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fangshaimao",
+  "path": "battle-assets/炮弹/item__zidan_fangshaimao",
+  "images": [
+    {
+      "file": "maozi01_-3750403244860508147.png",
+      "name": "maozi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3750403244860508147,
+      "source": "CAB-3fd8448e987ea2ba8f7f3d6419de922e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fangshaimao/maozi01_-3750403244860508147.png"
+}

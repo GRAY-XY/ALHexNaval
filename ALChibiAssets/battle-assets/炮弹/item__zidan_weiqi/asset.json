@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_weiqi",
+  "model": "zidan_weiqi",
+  "name": "围棋子弹",
+  "names": [
+    "围棋子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_weiqi",
+  "path": "battle-assets/炮弹/item__zidan_weiqi",
+  "images": [
+    {
+      "file": "weiqi_-4399136664530126126.png",
+      "name": "weiqi",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4399136664530126126,
+      "source": "CAB-4a23ceec3bb27928e867444fde2b51d6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_weiqi/weiqi_-4399136664530126126.png"
+}

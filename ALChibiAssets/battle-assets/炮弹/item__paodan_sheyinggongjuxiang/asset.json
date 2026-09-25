@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_sheyinggongjuxiang",
+  "model": "paodan_sheyinggongjuxiang",
+  "name": "镜头收纳箱炮弹",
+  "names": [
+    "镜头收纳箱炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_sheyinggongjuxiang",
+  "path": "battle-assets/炮弹/item__paodan_sheyinggongjuxiang",
+  "images": [
+    {
+      "file": "paodan_sheyinggongjuxiang_2807515893762275419.png",
+      "name": "paodan_sheyinggongjuxiang",
+      "width": 127,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": 2807515893762275419,
+      "source": "CAB-aa396169681100404a3c724eb83814c7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_sheyinggongjuxiang/paodan_sheyinggongjuxiang_2807515893762275419.png"
+}

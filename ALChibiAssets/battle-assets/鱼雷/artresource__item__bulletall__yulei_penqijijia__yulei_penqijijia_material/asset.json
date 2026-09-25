@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yulei_penqijijia__yulei_penqijijia_material",
+  "model": "yulei_penqijijia_material",
+  "name": "yulei_penqijijia_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_penqijijia/yulei_penqijijia_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_penqijijia__yulei_penqijijia_material",
+  "images": [
+    {
+      "file": "yulei_penqijijia_-7908789616572174712.png",
+      "name": "yulei_penqijijia",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7908789616572174712,
+      "source": "CAB-66e076c6e684579834aaa167b29db0a7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

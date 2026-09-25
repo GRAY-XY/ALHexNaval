@@ -1,0 +1,40 @@
+{
+  "id": "item__paodan_chabeiyingxiang",
+  "model": "paodan_chabeiyingxiang",
+  "name": "陶瓷茶杯音响炮弹",
+  "names": [
+    "陶瓷茶杯音响炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chabeiyingxiang",
+  "path": "battle-assets/炮弹/item__paodan_chabeiyingxiang",
+  "images": [
+    {
+      "file": "paodan_chabeiyingxiang_4073376041375280775.png",
+      "name": "paodan_chabeiyingxiang",
+      "width": 128,
+      "height": 148,
+      "role": "战斗贴图",
+      "path_id": 4073376041375280775,
+      "source": "CAB-086e9594d3c8a65d3e6a80bef7ece216"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3146414,
+    3146415,
+    3146417,
+    3146418,
+    3146419,
+    3146420,
+    3146421,
+    3146422,
+    3146423,
+    3146424,
+    3146426
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chabeiyingxiang/paodan_chabeiyingxiang_4073376041375280775.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dal_xuanleijiangui",
+  "model": "yulei_dal_xuanleijiangui",
+  "name": "灼烂歼鬼·炮炎（鱼雷）",
+  "names": [
+    "灼烂歼鬼·炮炎（鱼雷）"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dal_xuanleijiangui",
+  "path": "battle-assets/鱼雷/item__yulei_dal_xuanleijiangui",
+  "images": [
+    {
+      "file": "yulei_dal_xuanleijiangui_-5491131416432227174.png",
+      "name": "yulei_dal_xuanleijiangui",
+      "width": 125,
+      "height": 121,
+      "role": "战斗贴图",
+      "path_id": -5491131416432227174,
+      "source": "CAB-7ccb6f717eef6f62c6b26bd126e626d4"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dal_xuanleijiangui/yulei_dal_xuanleijiangui_-5491131416432227174.png"
+}

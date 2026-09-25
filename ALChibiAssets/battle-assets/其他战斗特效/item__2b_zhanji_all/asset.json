@@ -1,0 +1,46 @@
+{
+  "id": "item__2b_zhanji_all",
+  "model": "2b_zhanji_all",
+  "name": "2b_zhanji_all",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/2b_zhanji_all",
+  "path": "battle-assets/其他战斗特效/item__2b_zhanji_all",
+  "images": [
+    {
+      "file": "zhanji02_-3638044827740878784.png",
+      "name": "zhanji02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3638044827740878784,
+      "source": "CAB-2d7e6cbf2fb855fe72a6fa43f1651dd5"
+    },
+    {
+      "file": "zhanji01_1447267230438896846.png",
+      "name": "zhanji01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1447267230438896846,
+      "source": "CAB-2d7e6cbf2fb855fe72a6fa43f1651dd5"
+    },
+    {
+      "file": "vfx_wave09_3389414431381521510.png",
+      "name": "vfx_wave09",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 3389414431381521510,
+      "source": "CAB-2d7e6cbf2fb855fe72a6fa43f1651dd5"
+    }
+  ],
+  "particle_systems": 49,
+  "animations": [
+    "zhuaji"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__2b_zhanji_all/zhanji02_-3638044827740878784.png"
+}

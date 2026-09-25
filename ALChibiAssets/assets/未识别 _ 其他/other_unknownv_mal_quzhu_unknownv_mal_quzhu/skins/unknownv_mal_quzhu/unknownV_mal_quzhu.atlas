@@ -1,0 +1,34 @@
+
+unknownV_mal_quzhu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1
+  rotate: false
+  xy: 386, 56
+  size: 351, 244
+  orig: 351, 244
+  offset: 0, 0
+  index: -1
+hei_2
+  rotate: false
+  xy: 2, 50
+  size: 382, 250
+  orig: 382, 250
+  offset: 0, 0
+  index: -1
+hong
+  rotate: true
+  xy: 739, 2
+  size: 298, 218
+  orig: 298, 218
+  offset: 0, 0
+  index: -1
+yan
+  rotate: false
+  xy: 386, 14
+  size: 45, 40
+  orig: 45, 40
+  offset: 0, 0
+  index: -1

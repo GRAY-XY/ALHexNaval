@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guaiwubinggan",
+  "model": "zidan_guaiwubinggan",
+  "name": "子弹:怪物饼干",
+  "names": [
+    "子弹:怪物饼干"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guaiwubinggan",
+  "path": "battle-assets/炮弹/item__zidan_guaiwubinggan",
+  "images": [
+    {
+      "file": "nanguazidan01_-35959504005134155.png",
+      "name": "nanguazidan01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -35959504005134155,
+      "source": "CAB-08f6812bb4970944a85518c73bb4cacb"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guaiwubinggan/nanguazidan01_-35959504005134155.png"
+}

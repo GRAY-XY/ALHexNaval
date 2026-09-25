@@ -1,0 +1,29 @@
+{
+  "id": "item__ouxiang_huang",
+  "model": "ouxiang_huang",
+  "name": "ouxiang_huang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_huang",
+  "path": "battle-assets/炮弹/item__ouxiang_huang",
+  "images": [
+    {
+      "file": "yellow_-1458285554873892082.png",
+      "name": "yellow",
+      "width": 95,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": -1458285554873892082,
+      "source": "CAB-3c2f7045f510881c4396da2c5b8d8724"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    852313,
+    852533
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_huang/yellow_-1458285554873892082.png"
+}

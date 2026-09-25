@@ -1,0 +1,28 @@
+{
+  "id": "item__aierjiliya_heishizi",
+  "model": "aierjiliya_heishizi",
+  "name": "aierjiliya_heishizi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/aierjiliya_heishizi",
+  "path": "battle-assets/炮弹/item__aierjiliya_heishizi",
+  "images": [
+    {
+      "file": "heishizi01_-8152234301825739548.png",
+      "name": "heishizi01",
+      "width": 109,
+      "height": 249,
+      "role": "战斗贴图",
+      "path_id": -8152234301825739548,
+      "source": "CAB-4d1c5cf2a813c307b95ec0a11e2c1a69"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161211
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__aierjiliya_heishizi/heishizi01_-8152234301825739548.png"
+}

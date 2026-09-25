@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_dongzhidengpai",
+  "model": "yulei_dongzhidengpai",
+  "name": "购物指示牌鱼雷",
+  "names": [
+    "购物指示牌鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dongzhidengpai",
+  "path": "battle-assets/鱼雷/item__yulei_dongzhidengpai",
+  "images": [
+    {
+      "file": "yulei_dongzhidengpai_1282637561045233244.png",
+      "name": "yulei_dongzhidengpai",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1282637561045233244,
+      "source": "CAB-2ad801e4a59f79c5a2bfa2d44f4d9f45"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dongzhidengpai/yulei_dongzhidengpai_1282637561045233244.png",
+  "spine": {
+    "skel": "yulei_dongzhidengpai.skel",
+    "atlas": "yulei_dongzhidengpai.atlas",
+    "pages": [
+      "yulei_dongzhidengpai.png"
+    ]
+  }
+}

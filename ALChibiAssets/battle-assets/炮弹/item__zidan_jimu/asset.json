@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jimu",
+  "model": "zidan_jimu",
+  "name": "童心积木子弹",
+  "names": [
+    "童心积木子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jimu",
+  "path": "battle-assets/炮弹/item__zidan_jimu",
+  "images": [
+    {
+      "file": "jimu_3181039438757224481.png",
+      "name": "jimu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3181039438757224481,
+      "source": "CAB-598c44ab1ffe794002768395981ce22e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jimu/jimu_3181039438757224481.png"
+}

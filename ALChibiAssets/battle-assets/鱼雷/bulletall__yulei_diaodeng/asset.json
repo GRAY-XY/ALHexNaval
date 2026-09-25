@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_diaodeng",
+  "model": "yulei_diaodeng",
+  "name": "幽巷路灯鱼雷",
+  "names": [
+    "幽巷路灯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_diaodeng",
+  "path": "battle-assets/鱼雷/bulletall__yulei_diaodeng",
+  "images": [
+    {
+      "file": "yulei_diaodeng_-7495431643595138271.png",
+      "name": "yulei_diaodeng",
+      "width": 127,
+      "height": 88,
+      "role": "原始精灵",
+      "path_id": -7495431643595138271,
+      "source": "CAB-b1c56d6d811983e08b65e607df6a3c1b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

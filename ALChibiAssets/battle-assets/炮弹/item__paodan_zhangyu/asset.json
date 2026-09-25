@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhangyu",
+  "model": "paodan_zhangyu",
+  "name": "章鱼气球炮弹",
+  "names": [
+    "章鱼气球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhangyu",
+  "path": "battle-assets/炮弹/item__paodan_zhangyu",
+  "images": [
+    {
+      "file": "paodan_zhangyu_-621783254193896838.png",
+      "name": "paodan_zhangyu",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": -621783254193896838,
+      "source": "CAB-1ce2cb1c83543a3c92ae09bde84b53e1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhangyu/paodan_zhangyu_-621783254193896838.png"
+}

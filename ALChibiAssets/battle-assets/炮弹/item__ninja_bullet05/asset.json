@@ -1,0 +1,29 @@
+{
+  "id": "item__ninja_bullet05",
+  "model": "ninja_bullet05",
+  "name": "ninja_bullet05",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ninja_bullet05",
+  "path": "battle-assets/炮弹/item__ninja_bullet05",
+  "images": [
+    {
+      "file": "ninja_bullet05_7177281834015839198.png",
+      "name": "ninja_bullet05",
+      "width": 96,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": 7177281834015839198,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3100001,
+    3109005
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ninja_bullet05/ninja_bullet05_7177281834015839198.png"
+}

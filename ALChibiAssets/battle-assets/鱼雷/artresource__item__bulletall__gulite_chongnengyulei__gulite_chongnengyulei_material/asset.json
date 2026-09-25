@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__gulite_chongnengyulei__gulite_chongnengyulei_material",
+  "model": "gulite_chongnengyulei_material",
+  "name": "gulite_chongnengyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/gulite_chongnengyulei/gulite_chongnengyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__gulite_chongnengyulei__gulite_chongnengyulei_material",
+  "images": [
+    {
+      "file": "gulite_chongnengyulei_-8474869206489579146.png",
+      "name": "gulite_chongnengyulei",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8474869206489579146,
+      "source": "CAB-e5bf30ee9a131cd6c72d62bb2a468b8b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

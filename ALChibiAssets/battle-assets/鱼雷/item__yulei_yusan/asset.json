@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yusan",
+  "model": "yulei_yusan",
+  "name": "雨伞鱼雷",
+  "names": [
+    "雨伞鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yusan",
+  "path": "battle-assets/鱼雷/item__yulei_yusan",
+  "images": [
+    {
+      "file": "yulei_yusan_3953969196551775708.png",
+      "name": "yulei_yusan",
+      "width": 128,
+      "height": 20,
+      "role": "战斗贴图",
+      "path_id": 3953969196551775708,
+      "source": "CAB-eef783d269a0dc03d9f8f70087646bb5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yusan/yulei_yusan_3953969196551775708.png"
+}

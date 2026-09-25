@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_baiyangtangguo",
+  "model": "zidan_baiyangtangguo",
+  "name": "白羊糖果子弹",
+  "names": [
+    "白羊糖果子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_baiyangtangguo",
+  "path": "battle-assets/炮弹/item__zidan_baiyangtangguo",
+  "images": [
+    {
+      "file": "zidan_baiyangtangguo_1477805883182839875.png",
+      "name": "zidan_baiyangtangguo",
+      "width": 106,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": 1477805883182839875,
+      "source": "CAB-63bdffd232b0abc5f90d3565bda30e11"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_baiyangtangguo/zidan_baiyangtangguo_1477805883182839875.png"
+}

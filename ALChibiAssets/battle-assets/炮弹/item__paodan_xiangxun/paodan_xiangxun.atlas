@@ -1,0 +1,90 @@
+
+paodan_xiangxun.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dinwei1
+  rotate: true
+  xy: 294, 34
+  size: 55, 42
+  orig: 55, 42
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 130, 53
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+gd_1_2
+  rotate: false
+  xy: 141, 53
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+gd_1_3
+  rotate: false
+  xy: 152, 53
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 94, 52
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+gd_2_2
+  rotate: false
+  xy: 106, 52
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+gd_2_3
+  rotate: false
+  xy: 118, 52
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+xiangqi_1
+  rotate: false
+  xy: 154, 8
+  size: 138, 43
+  orig: 138, 43
+  offset: 0, 0
+  index: -1
+xiangqi_2
+  rotate: false
+  xy: 2, 2
+  size: 150, 47
+  orig: 150, 47
+  offset: 0, 0
+  index: -1
+xiangqi_3
+  rotate: true
+  xy: 94, 64
+  size: 187, 57
+  orig: 187, 57
+  offset: 0, 0
+  index: -1
+xiangqi_4
+  rotate: true
+  xy: 2, 51
+  size: 200, 90
+  orig: 200, 90
+  offset: 0, 0
+  index: -1
+xiangxun
+  rotate: false
+  xy: 153, 91
+  size: 148, 160
+  orig: 148, 160
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+
+zidan_guangying.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+di_hei
+  rotate: true
+  xy: 2, 57
+  size: 452, 102
+  orig: 452, 102
+  offset: 0, 0
+  index: -1
+ding_bai
+  rotate: true
+  xy: 352, 184
+  size: 325, 131
+  orig: 325, 131
+  offset: 0, 0
+  index: -1
+fanguang_2
+  rotate: true
+  xy: 250, 155
+  size: 354, 100
+  orig: 354, 100
+  offset: 0, 0
+  index: -1
+fanguang_3
+  rotate: false
+  xy: 111, 15
+  size: 159, 84
+  orig: 159, 84
+  offset: 0, 0
+  index: -1
+heiqiu
+  rotate: false
+  xy: 63, 9
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+shandian_1
+  rotate: true
+  xy: 106, 101
+  size: 408, 70
+  orig: 408, 70
+  offset: 0, 0
+  index: -1
+shandian_2
+  rotate: true
+  xy: 178, 101
+  size: 408, 70
+  orig: 408, 70
+  offset: 0, 0
+  index: -1
+shandong_1
+  rotate: false
+  xy: 2, 2
+  size: 59, 53
+  orig: 59, 53
+  offset: 0, 0
+  index: -1
+waihuan_1
+  rotate: false
+  xy: 352, 39
+  size: 81, 143
+  orig: 81, 143
+  offset: 0, 0
+  index: -1
+waihuan_2
+  rotate: true
+  xy: 435, 47
+  size: 135, 201
+  orig: 135, 201
+  offset: 0, 0
+  index: -1
+waihuan_3
+  rotate: true
+  xy: 485, 238
+  size: 271, 248
+  orig: 271, 248
+  offset: 0, 0
+  index: -1
+waihuan_4
+  rotate: false
+  xy: 272, 6
+  size: 78, 147
+  orig: 78, 147
+  offset: 0, 0
+  index: -1

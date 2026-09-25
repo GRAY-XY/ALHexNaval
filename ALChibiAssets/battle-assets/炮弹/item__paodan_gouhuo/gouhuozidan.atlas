@@ -1,0 +1,34 @@
+
+gouhuozidan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gouhuodui
+  rotate: true
+  xy: 2, 49
+  size: 115, 142
+  orig: 115, 142
+  offset: 0, 0
+  index: -1
+huoyan_1
+  rotate: true
+  xy: 354, 3
+  size: 161, 207
+  orig: 161, 207
+  offset: 0, 0
+  index: -1
+huoyan_2
+  rotate: true
+  xy: 563, 2
+  size: 162, 206
+  orig: 162, 206
+  offset: 0, 0
+  index: -1
+huoyan_3
+  rotate: true
+  xy: 146, 3
+  size: 161, 206
+  orig: 161, 206
+  offset: 0, 0
+  index: -1

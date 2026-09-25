@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__tbmvt-18",
+  "model": "tbmvt-18",
+  "name": "TBM复仇者(VT-18中队)",
+  "names": [
+    "TBM复仇者(VT-18中队)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tbmvt-18",
+  "path": "battle-assets/飞机图标/aircrafticon__tbmvt-18",
+  "images": [
+    {
+      "file": "tbmvt-18_6708980784458861830.png",
+      "name": "tbmvt-18",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 6708980784458861830,
+      "source": "CAB-cea01634905e0804e0b1bd21501053a1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

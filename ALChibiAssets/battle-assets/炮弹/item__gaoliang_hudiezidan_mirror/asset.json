@@ -1,0 +1,26 @@
+{
+  "id": "item__gaoliang_hudiezidan_mirror",
+  "model": "gaoliang_hudiezidan_mirror",
+  "name": "gaoliang_hudiezidan_mirror",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gaoliang_hudiezidan_mirror",
+  "path": "battle-assets/炮弹/item__gaoliang_hudiezidan_mirror",
+  "images": [
+    {
+      "file": "hudie01_-679695897125346698.png",
+      "name": "hudie01",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -679695897125346698,
+      "source": "CAB-25f40ae3ba57205dedf28683f55a84a6"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gaoliang_hudiezidan_mirror/hudie01_-679695897125346698.png"
+}

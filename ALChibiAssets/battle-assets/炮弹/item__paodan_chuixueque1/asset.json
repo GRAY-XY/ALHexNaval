@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_chuixueque1",
+  "model": "paodan_chuixueque1",
+  "name": "paodan_chuixueque1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_chuixueque1",
+  "path": "battle-assets/炮弹/item__paodan_chuixueque1",
+  "images": [
+    {
+      "file": "paodan_chuixueque1_-5177877448748522439.png",
+      "name": "paodan_chuixueque1",
+      "width": 124,
+      "height": 123,
+      "role": "战斗贴图",
+      "path_id": -5177877448748522439,
+      "source": "CAB-6c2daa4d13aaea54d46c9976d3b8d182"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    660017
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chuixueque1/paodan_chuixueque1_-5177877448748522439.png"
+}

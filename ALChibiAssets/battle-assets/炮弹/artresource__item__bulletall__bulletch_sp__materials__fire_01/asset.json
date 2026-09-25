@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__materials__fire_01",
+  "model": "fire_01",
+  "name": "fire_01",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/materials/fire_01",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__materials__fire_01",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

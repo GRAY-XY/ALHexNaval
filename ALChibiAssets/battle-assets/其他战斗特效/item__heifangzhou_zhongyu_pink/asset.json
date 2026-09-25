@@ -1,0 +1,26 @@
+{
+  "id": "item__heifangzhou_zhongyu_pink",
+  "model": "heifangzhou_zhongyu_pink",
+  "name": "heifangzhou_zhongyu_pink",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/heifangzhou_zhongyu_pink",
+  "path": "battle-assets/其他战斗特效/item__heifangzhou_zhongyu_pink",
+  "images": [
+    {
+      "file": "zhongyu_pink_-5175188980198869297.png",
+      "name": "zhongyu_pink",
+      "width": 256,
+      "height": 384,
+      "role": "原始纹理",
+      "path_id": -5175188980198869297,
+      "source": "CAB-cf7e72890ecd0783d29baccf0552eae6"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__heifangzhou_zhongyu_pink/zhongyu_pink_-5175188980198869297.png"
+}

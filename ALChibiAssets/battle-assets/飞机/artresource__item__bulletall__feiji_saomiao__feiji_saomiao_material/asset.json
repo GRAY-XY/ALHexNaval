@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_saomiao__feiji_saomiao_material",
+  "model": "feiji_saomiao_material",
+  "name": "feiji_saomiao_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_saomiao/feiji_saomiao_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_saomiao__feiji_saomiao_material",
+  "images": [
+    {
+      "file": "feiji_saomiao_2122586245266313791.png",
+      "name": "feiji_saomiao",
+      "width": 1024,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": 2122586245266313791,
+      "source": "CAB-637946da5f25f54e3a4b6087767b1b8d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,90 @@
+
+lianjin_II_quzhu.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+quzhu_1
+  rotate: false
+  xy: 2, 213
+  size: 526, 369
+  orig: 526, 369
+  offset: 0, 0
+  index: -1
+quzhu_10
+  rotate: true
+  xy: 855, 339
+  size: 101, 149
+  orig: 101, 149
+  offset: 0, 0
+  index: -1
+quzhu_11
+  rotate: false
+  xy: 530, 198
+  size: 238, 119
+  orig: 238, 119
+  offset: 0, 0
+  index: -1
+quzhu_12
+  rotate: false
+  xy: 2, 18
+  size: 218, 193
+  orig: 218, 193
+  offset: 0, 0
+  index: -1
+quzhu_2
+  rotate: false
+  xy: 855, 442
+  size: 150, 140
+  orig: 150, 140
+  offset: 0, 0
+  index: -1
+quzhu_3
+  rotate: false
+  xy: 530, 409
+  size: 323, 173
+  orig: 323, 173
+  offset: 0, 0
+  index: -1
+quzhu_4
+  rotate: true
+  xy: 770, 214
+  size: 103, 82
+  orig: 103, 82
+  offset: 0, 0
+  index: -1
+quzhu_5
+  rotate: true
+  xy: 530, 319
+  size: 88, 322
+  orig: 88, 322
+  offset: 0, 0
+  index: -1
+quzhu_6
+  rotate: true
+  xy: 222, 2
+  size: 102, 212
+  orig: 102, 212
+  offset: 0, 0
+  index: -1
+quzhu_7
+  rotate: true
+  xy: 439, 96
+  size: 115, 87
+  orig: 115, 87
+  offset: 0, 0
+  index: -1
+quzhu_8
+  rotate: true
+  xy: 222, 106
+  size: 105, 215
+  orig: 105, 215
+  offset: 0, 0
+  index: -1
+quzhu_9
+  rotate: false
+  xy: 854, 117
+  size: 142, 220
+  orig: 142, 220
+  offset: 0, 0
+  index: -1

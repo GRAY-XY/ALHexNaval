@@ -1,0 +1,30 @@
+{
+  "id": "item__shangyou1a",
+  "model": "shangyou1a",
+  "name": "shangyou1a",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/shangyou1a",
+  "path": "battle-assets/鱼雷/item__shangyou1a",
+  "images": [
+    {
+      "file": "daodan01a_-4561017283678648195.png",
+      "name": "daodan01a",
+      "width": 212,
+      "height": 101,
+      "role": "战斗贴图",
+      "path_id": -4561017283678648195,
+      "source": "CAB-c595b2423b021510723da3884b9e38f5"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    2402,
+    2403,
+    3239202
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__shangyou1a/daodan01a_-4561017283678648195.png"
+}

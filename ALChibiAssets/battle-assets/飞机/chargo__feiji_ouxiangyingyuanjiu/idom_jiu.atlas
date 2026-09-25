@@ -1,0 +1,34 @@
+
+idom_jiu.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 68
+  size: 263, 261
+  orig: 263, 261
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: false
+  xy: 267, 53
+  size: 193, 136
+  orig: 193, 136
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: false
+  xy: 267, 191
+  size: 192, 138
+  orig: 192, 138
+  offset: 0, 0
+  index: -1
+mao
+  rotate: true
+  xy: 2, 2
+  size: 64, 57
+  orig: 64, 57
+  offset: 0, 0
+  index: -1

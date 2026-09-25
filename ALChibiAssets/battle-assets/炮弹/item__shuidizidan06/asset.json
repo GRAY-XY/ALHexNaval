@@ -1,0 +1,47 @@
+{
+  "id": "item__shuidizidan06",
+  "model": "shuidizidan06",
+  "name": "shuidizidan06",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shuidizidan06",
+  "path": "battle-assets/炮弹/item__shuidizidan06",
+  "images": [
+    {
+      "file": "shuidizidan06_6789609288870383738.png",
+      "name": "shuidizidan06",
+      "width": 97,
+      "height": 52,
+      "role": "战斗贴图",
+      "path_id": 6789609288870383738,
+      "source": "CAB-de576a46dd58c11175bbfe48fd4f10f6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3086048,
+    3086049,
+    3119406,
+    3119443,
+    3139003,
+    3146018,
+    3146019,
+    3146020,
+    3146021,
+    3146022,
+    3146416,
+    3162003,
+    3221012,
+    3228010,
+    3228020,
+    3246007,
+    3299022,
+    3299030,
+    3365006,
+    3365106
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shuidizidan06/shuidizidan06_6789609288870383738.png"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "item__anheinengliangqiu",
+  "model": "anheinengliangqiu",
+  "name": "anheinengliangqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/anheinengliangqiu",
+  "path": "battle-assets/炮弹/item__anheinengliangqiu",
+  "images": [
+    {
+      "file": "AL_Ui_Water01_1_-5066722974242135556.png",
+      "name": "AL_Ui_Water01_1",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5066722974242135556,
+      "source": "CAB-1e71b1c4e4e32c6b32e39d1fb23172c5"
+    },
+    {
+      "file": "Wave_19_-2774103145557942525.png",
+      "name": "Wave_19",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2774103145557942525,
+      "source": "CAB-1e71b1c4e4e32c6b32e39d1fb23172c5"
+    }
+  ],
+  "particle_systems": 17,
+  "animations": [],
+  "bullet_ids": [
+    29657038,
+    29657039,
+    3061302,
+    3065002,
+    3065011,
+    3065014,
+    3065018,
+    3065020,
+    3065024,
+    3065042,
+    3065045,
+    3300208
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__anheinengliangqiu/AL_Ui_Water01_1_-5066722974242135556.png"
+}

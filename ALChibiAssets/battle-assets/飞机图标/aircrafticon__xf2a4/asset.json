@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__xf2a4",
+  "model": "xf2a4",
+  "name": "试作型XF2A-4水牛",
+  "names": [
+    "试作型XF2A-4水牛"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/xf2a4",
+  "path": "battle-assets/飞机图标/aircrafticon__xf2a4",
+  "images": [
+    {
+      "file": "XF2A4_1822231101088915068.png",
+      "name": "XF2A4",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 1822231101088915068,
+      "source": "CAB-8b26da79023d152953af6899f5f79637"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

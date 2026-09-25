@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_dal_kekedi",
+  "model": "zidan_dal_kekedi",
+  "name": "刻刻帝之弹（子弹）",
+  "names": [
+    "刻刻帝之弹（子弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dal_kekedi",
+  "path": "battle-assets/炮弹/item__zidan_dal_kekedi",
+  "images": [
+    {
+      "file": "zidan_dal_kekedi_6774556437922217941.png",
+      "name": "zidan_dal_kekedi",
+      "width": 109,
+      "height": 101,
+      "role": "战斗贴图",
+      "path_id": 6774556437922217941,
+      "source": "CAB-d2453ca7d1163a72213b69228c42a7ad"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3335022
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dal_kekedi/zidan_dal_kekedi_6774556437922217941.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "aircrafticon__pt1",
+  "model": "pt1",
+  "name": "默认北联战斗机",
+  "names": [
+    "默认北联战斗机",
+    "默认北联鱼雷机",
+    "默认北联轰炸机",
+    "默认北联战斗机-自动防空",
+    "伏尔加技能鱼雷机Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/pt1",
+  "path": "battle-assets/飞机图标/aircrafticon__pt1",
+  "images": [
+    {
+      "file": "PT1_-6126628546546347504.png",
+      "name": "PT1",
+      "width": 45,
+      "height": 39,
+      "role": "原始精灵",
+      "path_id": -6126628546546347504,
+      "source": "CAB-cfbc6561fcc81c4fd2b85ce798dc3b2c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

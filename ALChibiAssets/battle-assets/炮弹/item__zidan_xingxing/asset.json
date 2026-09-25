@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_xingxing",
+  "model": "zidan_xingxing",
+  "name": "zidan_xingxing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_xingxing",
+  "path": "battle-assets/炮弹/item__zidan_xingxing",
+  "images": [
+    {
+      "file": "star01_8399278536358306838.png",
+      "name": "star01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8399278536358306838,
+      "source": "CAB-bea3f19039d0322e508047d48cb2c574"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19743,
+    19746
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xingxing/star01_8399278536358306838.png"
+}

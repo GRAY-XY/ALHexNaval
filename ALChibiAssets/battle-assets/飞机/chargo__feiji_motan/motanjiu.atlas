@@ -1,0 +1,27 @@
+
+motanjiu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiu
+  rotate: false
+  xy: 124, 76
+  size: 154, 175
+  orig: 154, 175
+  offset: 0, 0
+  index: -1
+tanqi_q
+  rotate: false
+  xy: 124, 2
+  size: 160, 72
+  orig: 160, 72
+  offset: 0, 0
+  index: -1
+tanzi
+  rotate: true
+  xy: 2, 24
+  size: 227, 120
+  orig: 227, 120
+  offset: 0, 0
+  index: -1

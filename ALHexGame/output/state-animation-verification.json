@@ -1,0 +1,436 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "All 12 copied Spine binaries load with finite timeline poses",
+      "passed": true
+    },
+    {
+      "name": "A fresh attack survives the first idle synchronization",
+      "passed": true
+    },
+    {
+      "name": "Repeated movement and idle transitions never restart or truncate an attack",
+      "passed": true
+    },
+    {
+      "name": "Completed attacks return to the current idle state",
+      "passed": true
+    },
+    {
+      "name": "Overlapping attack requests play each complete one-shot in order",
+      "passed": true
+    },
+    {
+      "name": "Paused state updates do not advance or replace the active attack",
+      "passed": true
+    },
+    {
+      "name": "Sinking preempts actions once and keeps the final dead pose through later movement states",
+      "passed": true
+    },
+    {
+      "name": "A restored sunken ship binds directly to dead and never returns to idle",
+      "passed": true
+    },
+    {
+      "name": "Actions requested during asynchronous loading are preserved when the rig binds",
+      "passed": true
+    },
+    {
+      "name": "Main guns select their native main-gun clip and fall back to normal attack where needed",
+      "passed": true
+    },
+    {
+      "name": "Carrier launches select the skill clip and complete before the ambient state resumes",
+      "passed": true
+    },
+    {
+      "name": "Absent native hurt clips do not cancel firing or invent a substitute skeleton animation",
+      "passed": true
+    },
+    {
+      "name": "Missing action mappings fail gracefully and main-gun fallback stays playable",
+      "passed": true
+    },
+    {
+      "name": "Replacement hulls reset the defeated lock and resume native idle animation",
+      "passed": true
+    },
+    {
+      "name": "Victory waits for the current shot, plays once and returns to idle",
+      "passed": true
+    }
+  ],
+  "ships": [
+    {
+      "id": "lafei",
+      "name": "拉菲",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 3
+        }
+      ]
+    },
+    {
+      "id": "biaoqiang",
+      "name": "标枪",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "id": "lingbo",
+      "name": "绫波",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "z23",
+      "name": "Z23",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "skill",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "hailunna",
+      "name": "海伦娜",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.9333333373069763
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "beierfasite",
+      "name": "贝尔法斯特",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "gaoxiong",
+      "name": "高雄",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "ougen",
+      "name": "欧根亲王",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 6.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "yanzhan",
+      "name": "厌战",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1.0333333015441895
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8.833333015441895
+        },
+        {
+          "name": "victory",
+          "duration": 4.166666507720947
+        }
+      ]
+    },
+    {
+      "id": "bisimai",
+      "name": "俾斯麦",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1.3333333730697632
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "qiye",
+      "name": "企业",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 11.366666793823242
+        },
+        {
+          "name": "victory",
+          "duration": 6.666666507720947
+        }
+      ]
+    },
+    {
+      "id": "dujiaoshou",
+      "name": "独角兽",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1.3333333730697632
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 9.333333015441895
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    }
+  ],
+  "scope": "Actual copied Spine 3.8 binary timelines and animation-state transitions, without GPU textures; visual browser validation is separate."
+}

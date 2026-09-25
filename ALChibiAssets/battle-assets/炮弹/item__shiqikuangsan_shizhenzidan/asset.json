@@ -1,0 +1,37 @@
+{
+  "id": "item__shiqikuangsan_shizhenzidan",
+  "model": "shiqikuangsan_shizhenzidan",
+  "name": "shiqikuangsan_shizhenzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shiqikuangsan_shizhenzidan",
+  "path": "battle-assets/炮弹/item__shiqikuangsan_shizhenzidan",
+  "images": [
+    {
+      "file": "particles01_-7072846226501635842.png",
+      "name": "particles01",
+      "width": 128,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -7072846226501635842,
+      "source": "CAB-084d2589c9aa3da656d95d91e0a56260"
+    },
+    {
+      "file": "zidan04_-4583569937567121438.png",
+      "name": "zidan04",
+      "width": 256,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -4583569937567121438,
+      "source": "CAB-084d2589c9aa3da656d95d91e0a56260"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    180017
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shiqikuangsan_shizhenzidan/particles01_-7072846226501635842.png"
+}

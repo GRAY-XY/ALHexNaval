@@ -1,0 +1,42 @@
+{
+  "id": "chargo__feiji_haigushou02",
+  "model": "feiji_haigushou02",
+  "name": "【2024风帆二期】（换皮）灵体骸骨兽航母 飞鱼舰载机（快速冲底） Lv1",
+  "names": [
+    "【2024风帆二期】（换皮）灵体骸骨兽航母 飞鱼舰载机（快速冲底） Lv1",
+    "【2024风帆二期】（换皮）灵体骸骨兽航母 飞鱼舰载机（快速冲底） Lv2",
+    "【2024风帆二期】（换皮）灵体骸骨兽航母 飞鱼舰载机（快速冲底） Lv3",
+    "【2024风帆二期】（换皮）灵体骸骨兽航母 飞鱼舰载机（快速冲底） Lv4",
+    "【2024风帆二期】（换皮）灵体骸骨兽航母 飞鱼舰载机（快速冲底） Lv5",
+    "【2025风帆三期T4】BOSS 寂静之灵航母 飞鱼舰载机（快速冲底）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_haigushou02",
+  "path": "battle-assets/飞机/chargo__feiji_haigushou02",
+  "images": [
+    {
+      "file": "feiji_haigushou02_4144241823656527548.png",
+      "name": "feiji_haigushou02",
+      "width": 256,
+      "height": 219,
+      "role": "战斗贴图",
+      "path_id": 4144241823656527548,
+      "source": "CAB-fc94a29517466351649ce482c021e5b4"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_haigushou02/feiji_haigushou02_4144241823656527548.png"
+}

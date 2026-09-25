@@ -1,0 +1,31 @@
+{
+  "id": "item__yulei_fazhang",
+  "model": "yulei_fazhang",
+  "name": "法杖鱼雷",
+  "names": [
+    "法杖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fazhang",
+  "path": "battle-assets/鱼雷/item__yulei_fazhang",
+  "images": [
+    {
+      "file": "yulei_fazhang_4469863019374810088.png",
+      "name": "yulei_fazhang",
+      "width": 128,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": 4469863019374810088,
+      "source": "CAB-8e92caf405f28fc10fb8814f0eea697d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3246003,
+    3382002
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_fazhang/yulei_fazhang_4469863019374810088.png"
+}

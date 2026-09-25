@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_baodanshilaimu",
+  "model": "paodan_baodanshilaimu",
+  "name": "啾莱姆炮弹（爆弹）",
+  "names": [
+    "啾莱姆炮弹（爆弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_baodanshilaimu",
+  "path": "battle-assets/炮弹/item__paodan_baodanshilaimu",
+  "images": [
+    {
+      "file": "paodan_baodanshilaimu_1729132789738450559.png",
+      "name": "paodan_baodanshilaimu",
+      "width": 128,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": 1729132789738450559,
+      "source": "CAB-dd3b2038632ba114b3aa411142cefda9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_baodanshilaimu/paodan_baodanshilaimu_1729132789738450559.png"
+}

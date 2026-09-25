@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_pihuating",
+  "model": "feiji_pihuating",
+  "name": "皮划艇啾（鱼雷）",
+  "names": [
+    "皮划艇啾（鱼雷）",
+    "皮划艇啾（战斗）",
+    "皮划艇啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_pihuating",
+  "path": "battle-assets/飞机/chargo__feiji_pihuating",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_pihuating_2256960021466446820.png",
+      "name": "feiji_pihuating",
+      "width": 256,
+      "height": 132,
+      "role": "战斗贴图",
+      "path_id": 2256960021466446820,
+      "source": "CAB-6721cb2d5d350272a166687135018484"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_pihuating/aircraft_shadow_2192772484218123160.png"
+}

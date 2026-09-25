@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__jianyuasv",
+  "model": "jianyuasv",
+  "name": "剑鱼Mark.II-ASV",
+  "names": [
+    "剑鱼Mark.II-ASV"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/jianyuasv",
+  "path": "battle-assets/飞机图标/aircrafticon__jianyuasv",
+  "images": [
+    {
+      "file": "jianyuasv_-6495554067196413289.png",
+      "name": "jianyuasv",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6495554067196413289,
+      "source": "CAB-65623e68ff5dce073546b9769db2d592"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

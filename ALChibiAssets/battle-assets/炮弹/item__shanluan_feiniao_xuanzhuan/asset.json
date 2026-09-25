@@ -1,0 +1,17 @@
+{
+  "id": "item__shanluan_feiniao_xuanzhuan",
+  "model": "shanluan_feiniao_xuanzhuan",
+  "name": "shanluan_feiniao_xuanzhuan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_feiniao_xuanzhuan",
+  "path": "battle-assets/炮弹/item__shanluan_feiniao_xuanzhuan",
+  "images": [],
+  "particle_systems": 75,
+  "animations": [],
+  "bullet_ids": [
+    163672
+  ],
+  "has_preview": false,
+  "prefab": true
+}

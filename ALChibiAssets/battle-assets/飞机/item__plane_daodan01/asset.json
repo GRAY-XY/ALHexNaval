@@ -1,0 +1,29 @@
+{
+  "id": "item__plane_daodan01",
+  "model": "plane_daodan01",
+  "name": "plane_daodan01",
+  "names": [],
+  "category": "飞机",
+  "source": "item/plane_daodan01",
+  "path": "battle-assets/飞机/item__plane_daodan01",
+  "images": [
+    {
+      "file": "plane_daodan01_-2876051931376310542.png",
+      "name": "plane_daodan01",
+      "width": 222,
+      "height": 100,
+      "role": "战斗贴图",
+      "path_id": -2876051931376310542,
+      "source": "CAB-abb75953a588c7f4549fc5245492d2d4"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    704,
+    705
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/item__plane_daodan01/plane_daodan01_-2876051931376310542.png"
+}

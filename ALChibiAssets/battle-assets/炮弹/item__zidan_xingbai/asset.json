@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_xingbai",
+  "model": "zidan_xingbai",
+  "name": "星子弹(白)",
+  "names": [
+    "星子弹(白)"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xingbai",
+  "path": "battle-assets/炮弹/item__zidan_xingbai",
+  "images": [
+    {
+      "file": "zidan_xingbai_2985350433663430048.png",
+      "name": "zidan_xingbai",
+      "width": 128,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": 2985350433663430048,
+      "source": "CAB-daaf2e89962eda525ad8fb4dd4570980"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19323,
+    79621,
+    160920,
+    160921,
+    165509,
+    170752
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xingbai/zidan_xingbai_2985350433663430048.png"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "item__shanluan_xuequan_longjuanfeng_big",
+  "model": "shanluan_xuequan_longjuanfeng_big",
+  "name": "shanluan_xuequan_longjuanfeng_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_xuequan_longjuanfeng_big",
+  "path": "battle-assets/炮弹/item__shanluan_xuequan_longjuanfeng_big",
+  "images": [],
+  "particle_systems": 71,
+  "animations": [],
+  "bullet_ids": [
+    19788
+  ],
+  "has_preview": false,
+  "prefab": true
+}

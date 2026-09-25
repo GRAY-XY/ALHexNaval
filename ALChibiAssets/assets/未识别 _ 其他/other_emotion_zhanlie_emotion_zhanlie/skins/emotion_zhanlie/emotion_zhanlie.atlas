@@ -1,0 +1,97 @@
+
+emotion_zhanlie.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bq1
+  rotate: true
+  xy: 772, 456
+  size: 64, 45
+  orig: 64, 45
+  offset: 0, 0
+  index: -1
+bq2
+  rotate: true
+  xy: 720, 457
+  size: 63, 50
+  orig: 63, 50
+  offset: 0, 0
+  index: -1
+bq3
+  rotate: true
+  xy: 823, 692
+  size: 73, 57
+  orig: 73, 57
+  offset: 0, 0
+  index: -1
+bq4
+  rotate: false
+  xy: 720, 688
+  size: 101, 57
+  orig: 101, 57
+  offset: 0, 0
+  index: -1
+bq5
+  rotate: true
+  xy: 886, 481
+  size: 106, 78
+  orig: 106, 78
+  offset: 0, 0
+  index: -1
+bq6
+  rotate: false
+  xy: 720, 747
+  size: 93, 126
+  orig: 93, 126
+  offset: 0, 0
+  index: -1
+bq7
+  rotate: true
+  xy: 886, 589
+  size: 85, 125
+  orig: 85, 125
+  offset: 0, 0
+  index: -1
+huo_b1
+  rotate: true
+  xy: 909, 676
+  size: 896, 803
+  orig: 896, 803
+  offset: 0, 0
+  index: -1
+huo_b2
+  rotate: false
+  xy: 2, 875
+  size: 905, 697
+  orig: 905, 697
+  offset: 0, 0
+  index: -1
+huo_b3
+  rotate: true
+  xy: 2, 2
+  size: 871, 716
+  orig: 871, 716
+  offset: 0, 0
+  index: -1
+huo_x1
+  rotate: false
+  xy: 815, 767
+  size: 92, 106
+  orig: 92, 106
+  offset: 0, 0
+  index: -1
+huo_x2
+  rotate: false
+  xy: 1013, 571
+  size: 89, 103
+  orig: 89, 103
+  offset: 0, 0
+  index: -1
+huo_x3
+  rotate: false
+  xy: 720, 522
+  size: 164, 152
+  orig: 164, 152
+  offset: 0, 0
+  index: -1

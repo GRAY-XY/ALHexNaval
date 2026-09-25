@@ -1,0 +1,59 @@
+{
+  "id": "chargo__chongying_m_feiji",
+  "model": "chongying_m_feiji",
+  "name": "【2024瑞凤活动T2】BOSS 幻形之息航母 战斗机",
+  "names": [
+    "【2024瑞凤活动T2】BOSS 幻形之息航母 战斗机",
+    "【2024瑞凤活动T2】BOSS 幻形之息航母 轰炸机",
+    "【2024瑞凤活动T2】BOSS 幻形之息航母 浮游炮",
+    "【2024瑞凤活动】幻形之息 航母战斗机 Lv1",
+    "【2024瑞凤活动】幻形之息 航母战斗机 Lv2",
+    "【2024瑞凤活动】幻形之息 航母战斗机 Lv3",
+    "【2024瑞凤活动】幻形之息 航母战斗机 Lv4",
+    "【2024瑞凤活动】幻形之息 航母战斗机 Lv5",
+    "【2024瑞凤活动】幻形之息 航母轰炸机 Lv1",
+    "【2024瑞凤活动】幻形之息 航母轰炸机 Lv2",
+    "【2024瑞凤活动】幻形之息 航母轰炸机 Lv3",
+    "【2024瑞凤活动】幻形之息 航母轰炸机 Lv4",
+    "【2024瑞凤活动】幻形之息 航母轰炸机 Lv5",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 战斗机 Lv1",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 战斗机 Lv2",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 战斗机 Lv3",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 战斗机 Lv4",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 战斗机 Lv5",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 轰炸机 Lv1",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 轰炸机 Lv2",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 轰炸机 Lv3",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 轰炸机 Lv4",
+    "【2024瑞凤活动】精英蛋船 幻形之息航母 轰炸机 Lv5"
+  ],
+  "category": "飞机",
+  "source": "chargo/chongying_m_feiji",
+  "path": "battle-assets/飞机/chargo__chongying_m_feiji",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "chongying_m_feiji_7586782554559297965.png",
+      "name": "chongying_m_feiji",
+      "width": 349,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": 7586782554559297965,
+      "source": "CAB-b4c538a5069cab3ff9ad546a03c4af10"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__chongying_m_feiji/aircraft_shadow_2192772484218123160.png"
+}

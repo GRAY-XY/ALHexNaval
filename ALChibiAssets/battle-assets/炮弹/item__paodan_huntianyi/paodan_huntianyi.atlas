@@ -1,0 +1,55 @@
+
+paodan_huntianyi.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diguang
+  rotate: true
+  xy: 2, 49
+  size: 201, 188
+  orig: 201, 188
+  offset: 0, 0
+  index: -1
+qiu_b
+  rotate: false
+  xy: 421, 114
+  size: 116, 136
+  orig: 116, 136
+  offset: 0, 0
+  index: -1
+quan_1
+  rotate: false
+  xy: 320, 82
+  size: 99, 168
+  orig: 99, 168
+  offset: 0, 0
+  index: -1
+quan_2
+  rotate: false
+  xy: 192, 8
+  size: 178, 72
+  orig: 178, 72
+  offset: 0, 0
+  index: -1
+shan_1
+  rotate: true
+  xy: 451, 15
+  size: 97, 95
+  orig: 97, 95
+  offset: 0, 0
+  index: -1
+shan_2
+  rotate: true
+  xy: 372, 2
+  size: 78, 77
+  orig: 78, 77
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: true
+  xy: 192, 82
+  size: 168, 126
+  orig: 168, 126
+  offset: 0, 0
+  index: -1

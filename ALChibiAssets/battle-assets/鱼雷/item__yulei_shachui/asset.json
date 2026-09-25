@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shachui",
+  "model": "yulei_shachui",
+  "name": "沙锤鱼雷",
+  "names": [
+    "沙锤鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shachui",
+  "path": "battle-assets/鱼雷/item__yulei_shachui",
+  "images": [
+    {
+      "file": "yulei_shachui_1732502060983817898.png",
+      "name": "yulei_shachui",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 1732502060983817898,
+      "source": "CAB-5af54fafd1f25bf9d5cc38f870a9bc3f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shachui/yulei_shachui_1732502060983817898.png"
+}

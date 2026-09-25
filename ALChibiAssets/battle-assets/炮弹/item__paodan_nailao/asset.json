@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_nailao",
+  "model": "paodan_nailao",
+  "name": "奶酪炮弹",
+  "names": [
+    "奶酪炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nailao",
+  "path": "battle-assets/炮弹/item__paodan_nailao",
+  "images": [
+    {
+      "file": "paodan_nailao_-1476791224374840763.png",
+      "name": "paodan_nailao",
+      "width": 128,
+      "height": 75,
+      "role": "战斗贴图",
+      "path_id": -1476791224374840763,
+      "source": "CAB-66013a45d228c7711a6c38648023b191"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_nailao/paodan_nailao_-1476791224374840763.png"
+}

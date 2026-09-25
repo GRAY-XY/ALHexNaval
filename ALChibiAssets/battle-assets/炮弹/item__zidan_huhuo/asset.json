@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_huhuo",
+  "model": "zidan_huhuo",
+  "name": "狐火子弹",
+  "names": [
+    "狐火子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huhuo",
+  "path": "battle-assets/炮弹/item__zidan_huhuo",
+  "images": [
+    {
+      "file": "zidan_huhuo_-6044320990046917395.png",
+      "name": "zidan_huhuo",
+      "width": 128,
+      "height": 61,
+      "role": "战斗贴图",
+      "path_id": -6044320990046917395,
+      "source": "CAB-7ef733029c1b171575c8666ec4cb2d1a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huhuo/zidan_huhuo_-6044320990046917395.png"
+}

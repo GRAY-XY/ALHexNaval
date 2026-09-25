@@ -1,0 +1,33 @@
+{
+  "id": "item__xiafei_hunheyumao",
+  "model": "xiafei_hunheyumao",
+  "name": "xiafei_hunheyumao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiafei_hunheyumao",
+  "path": "battle-assets/炮弹/item__xiafei_hunheyumao",
+  "images": [
+    {
+      "file": "yumao_hunhe_7489611576329346594.png",
+      "name": "yumao_hunhe",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7489611576329346594,
+      "source": "CAB-eefd6995332605cf8b1417f1ec0320ad"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3139722,
+    3139723,
+    3139724,
+    3139725,
+    3139726,
+    3139727
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xiafei_hunheyumao/yumao_hunhe_7489611576329346594.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_jinwu",
+  "model": "paodan_jinwu",
+  "name": "鹤鸣炮弹",
+  "names": [
+    "鹤鸣炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jinwu",
+  "path": "battle-assets/炮弹/item__paodan_jinwu",
+  "images": [
+    {
+      "file": "paodan_jinwu_-4329960406576173150.png",
+      "name": "paodan_jinwu",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4329960406576173150,
+      "source": "CAB-858199e3a945fd632d859274d38255e3"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jinwu/paodan_jinwu_-4329960406576173150.png",
+  "spine": {
+    "skel": "paodan_jinwu.skel",
+    "atlas": "paodan_jinwu.atlas",
+    "pages": [
+      "paodan_jinwu.png"
+    ]
+  }
+}

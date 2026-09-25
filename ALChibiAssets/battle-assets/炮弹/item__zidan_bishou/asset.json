@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_bishou",
+  "model": "zidan_bishou",
+  "name": "求生匕首（？)子弹",
+  "names": [
+    "求生匕首（？)子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bishou",
+  "path": "battle-assets/炮弹/item__zidan_bishou",
+  "images": [
+    {
+      "file": "xiaodao01_1173444748779076608.png",
+      "name": "xiaodao01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1173444748779076608,
+      "source": "CAB-9f1a18f8e8a3b50f1f230f7a4937fcf4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bishou/xiaodao01_1173444748779076608.png"
+}

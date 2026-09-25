@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_niunaiping",
+  "model": "zidan_niunaiping",
+  "name": "牛奶瓶子弹",
+  "names": [
+    "牛奶瓶子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_niunaiping",
+  "path": "battle-assets/炮弹/item__zidan_niunaiping",
+  "images": [
+    {
+      "file": "zidan_niunaiping_1456763366901113779.png",
+      "name": "zidan_niunaiping",
+      "width": 128,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": 1456763366901113779,
+      "source": "CAB-b8d56e5dd217df1777284aa623a5353f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_niunaiping/zidan_niunaiping_1456763366901113779.png"
+}

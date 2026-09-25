@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-25T02:34:18.215Z",
+  "passed": 9,
+  "checks": [
+    {
+      "name": "AI and player seat controllers persist in v15 saves",
+      "passed": true
+    },
+    {
+      "name": "v14 saves migrate to human seats so old local games are never taken over",
+      "passed": true
+    },
+    {
+      "name": "invalid v15 seat controllers reject without mutating input",
+      "passed": true
+    },
+    {
+      "name": "AI attacks only a visible enemy through the normal combat rules",
+      "passed": true
+    },
+    {
+      "name": "AI cannot target ships that remain behind the fog of war",
+      "passed": true
+    },
+    {
+      "name": "AI captures a visible neutral coastal port with a legal combat action",
+      "passed": true
+    },
+    {
+      "name": "AI repairs critically damaged ships at an owned port before sailing",
+      "passed": true
+    },
+    {
+      "name": "AI spends port production on an affordable replacement hull",
+      "passed": true
+    },
+    {
+      "name": "AI scout movement obeys the shared oil budget and uses visible sea cells",
+      "passed": true
+    }
+  ]
+}

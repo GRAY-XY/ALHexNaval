@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_kongjianzhan",
+  "model": "paodan_kongjianzhan",
+  "name": "空间站炮弹",
+  "names": [
+    "空间站炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_kongjianzhan",
+  "path": "battle-assets/炮弹/item__paodan_kongjianzhan",
+  "images": [
+    {
+      "file": "paodan_kongjianzhan_2642883727100989575.png",
+      "name": "paodan_kongjianzhan",
+      "width": 128,
+      "height": 74,
+      "role": "战斗贴图",
+      "path_id": 2642883727100989575,
+      "source": "CAB-d1541d2fcc497e77a30e293f97541ae3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_kongjianzhan/paodan_kongjianzhan_2642883727100989575.png"
+}

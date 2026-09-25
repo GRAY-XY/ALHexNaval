@@ -1,0 +1,15 @@
+{
+  "id": "item__wuzang_luolei_beiji",
+  "model": "wuzang_luolei_beiji",
+  "name": "wuzang_luolei_beiji",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/wuzang_luolei_beiji",
+  "path": "battle-assets/其他战斗特效/item__wuzang_luolei_beiji",
+  "images": [],
+  "particle_systems": 6,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

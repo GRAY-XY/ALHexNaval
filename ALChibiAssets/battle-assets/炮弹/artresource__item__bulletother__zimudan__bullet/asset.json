@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletother__zimudan__bullet",
+  "model": "bullet",
+  "name": "bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/zimudan/bullet",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__zimudan__bullet",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

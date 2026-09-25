@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_hulu",
+  "model": "yulei_hulu",
+  "name": "葫芦鱼雷",
+  "names": [
+    "葫芦鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hulu",
+  "path": "battle-assets/鱼雷/item__yulei_hulu",
+  "images": [
+    {
+      "file": "yulei_hulu_4827423512884415661.png",
+      "name": "yulei_hulu",
+      "width": 128,
+      "height": 72,
+      "role": "战斗贴图",
+      "path_id": 4827423512884415661,
+      "source": "CAB-bdae62c4222d351a498a15e29da85ce2"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hulu/yulei_hulu_4827423512884415661.png"
+}

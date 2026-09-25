@@ -1,0 +1,83 @@
+
+yulei_xiangyunshanzi.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diguang
+  rotate: true
+  xy: 2, 11
+  size: 236, 168
+  orig: 236, 168
+  offset: 0, 0
+  index: -1
+shanzi
+  rotate: true
+  xy: 172, 74
+  size: 173, 107
+  orig: 173, 107
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: false
+  xy: 281, 88
+  size: 55, 27
+  orig: 55, 27
+  offset: 0, 0
+  index: -1
+yun_1_2
+  rotate: true
+  xy: 309, 31
+  size: 55, 27
+  orig: 55, 27
+  offset: 0, 0
+  index: -1
+yun_1_3
+  rotate: false
+  xy: 309, 2
+  size: 55, 27
+  orig: 55, 27
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: true
+  xy: 172, 3
+  size: 69, 33
+  orig: 69, 33
+  offset: 0, 0
+  index: -1
+yun_2_2
+  rotate: true
+  xy: 207, 3
+  size: 69, 33
+  orig: 69, 33
+  offset: 0, 0
+  index: -1
+yun_2_3
+  rotate: true
+  xy: 242, 3
+  size: 69, 33
+  orig: 69, 33
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: true
+  xy: 277, 8
+  size: 64, 30
+  orig: 64, 30
+  offset: 0, 0
+  index: -1
+yun_3_2
+  rotate: true
+  xy: 281, 183
+  size: 64, 30
+  orig: 64, 30
+  offset: 0, 0
+  index: -1
+yun_3_3
+  rotate: true
+  xy: 281, 117
+  size: 64, 30
+  orig: 64, 30
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_tuer",
+  "model": "zidan_tuer",
+  "name": "兔耳子弹",
+  "names": [
+    "兔耳子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tuer",
+  "path": "battle-assets/炮弹/item__zidan_tuer",
+  "images": [
+    {
+      "file": "zidan_tuer_-6984071896164826352.png",
+      "name": "zidan_tuer",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": -6984071896164826352,
+      "source": "CAB-58a7e4309bf63949da6dcb4c243cd15e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tuer/zidan_tuer_-6984071896164826352.png"
+}

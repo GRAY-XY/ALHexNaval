@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_lvsejiguang",
+  "model": "zidan_lvsejiguang",
+  "name": "绿色激光子弹",
+  "names": [
+    "绿色激光子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_lvsejiguang",
+  "path": "battle-assets/炮弹/item__zidan_lvsejiguang",
+  "images": [
+    {
+      "file": "zidan_lvsejiguang_-3213864499123330813.png",
+      "name": "zidan_lvsejiguang",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -3213864499123330813,
+      "source": "CAB-ce5ea51cc9f523b557a7b587edcbb68f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    855410
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lvsejiguang/zidan_lvsejiguang_-3213864499123330813.png"
+}

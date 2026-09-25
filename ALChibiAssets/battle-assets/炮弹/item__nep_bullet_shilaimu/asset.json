@@ -1,0 +1,24 @@
+{
+  "id": "item__nep_bullet_shilaimu",
+  "model": "nep_bullet_shilaimu",
+  "name": "史莱努炮弹",
+  "names": [
+    "史莱努炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/nep_bullet_shilaimu",
+  "path": "battle-assets/炮弹/item__nep_bullet_shilaimu",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "shilaimupaodan.skel",
+    "atlas": "shilaimupaodan.atlas",
+    "pages": [
+      "shilaimupaodan.png"
+    ]
+  }
+}

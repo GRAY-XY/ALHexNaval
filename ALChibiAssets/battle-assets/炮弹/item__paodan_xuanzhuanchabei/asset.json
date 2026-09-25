@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xuanzhuanchabei",
+  "model": "paodan_xuanzhuanchabei",
+  "name": "旋转茶杯炮弹",
+  "names": [
+    "旋转茶杯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xuanzhuanchabei",
+  "path": "battle-assets/炮弹/item__paodan_xuanzhuanchabei",
+  "images": [
+    {
+      "file": "chabei01_-2163608867005888231.png",
+      "name": "chabei01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2163608867005888231,
+      "source": "CAB-b13477e84571629cdae833105e56ce02"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xuanzhuanchabei/chabei01_-2163608867005888231.png"
+}

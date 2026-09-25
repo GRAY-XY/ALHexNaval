@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_huluobo",
+  "model": "yulei_huluobo",
+  "name": "鱼雷·胡萝卜",
+  "names": [
+    "鱼雷·胡萝卜"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huluobo",
+  "path": "battle-assets/鱼雷/item__yulei_huluobo",
+  "images": [
+    {
+      "file": "yulei_huluobo_8512977114329904140.png",
+      "name": "yulei_huluobo",
+      "width": 127,
+      "height": 86,
+      "role": "战斗贴图",
+      "path_id": 8512977114329904140,
+      "source": "CAB-6a5ce171366589deef70f0e6dc34a399"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_huluobo/yulei_huluobo_8512977114329904140.png"
+}

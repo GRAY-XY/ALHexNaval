@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_dongqing",
+  "model": "yulei_dongqing",
+  "name": "袪厄冬青鱼雷",
+  "names": [
+    "袪厄冬青鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dongqing",
+  "path": "battle-assets/鱼雷/item__yulei_dongqing",
+  "images": [
+    {
+      "file": "yulei_dongqing_-6158014879742382671.png",
+      "name": "yulei_dongqing",
+      "width": 128,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -6158014879742382671,
+      "source": "CAB-0c85a1dcc322ae20a288ac44a58ad66d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3139004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dongqing/yulei_dongqing_-6158014879742382671.png"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "chargo__fuyoupao3",
+  "model": "fuyoupao3",
+  "name": "貉-实例化-塞壬浮游炮-LV1",
+  "names": [
+    "貉-实例化-塞壬浮游炮-LV1",
+    "【2022毛系活动B3】BOSS 噩梦结晶-「执棋者」 浮游炮1",
+    "【2022毛系活动B3】BOSS 噩梦结晶-「执棋者」 浮游炮2",
+    "【2022毛系活动D3】BOSS 噩梦结晶-「执棋者」 浮游炮1",
+    "【2022毛系活动D3】BOSS 噩梦结晶-「执棋者」 浮游炮2",
+    "【2022英系活动A2】BOSS 梦境塞壬执棋者 浮游炮",
+    "【2022英系活动C2】BOSS 梦境塞壬执棋者 浮游炮",
+    "【2023关岛活动A2】BOSS 梦境塞壬执棋者 浮游炮1",
+    "【2023关岛活动A2】BOSS 梦境塞壬执棋者 浮游炮2",
+    "【2023关岛活动C2】BOSS 梦境塞壬执棋者 浮游炮1",
+    "【2023关岛活动C2】BOSS 梦境塞壬执棋者 浮游炮2",
+    "【2024同盟活动A3】BOSS 执棋者III型 浮游炮1",
+    "【2024同盟活动A3】BOSS 执棋者III型 浮游炮2",
+    "【2024同盟活动C3】BOSS 执棋者III型 浮游炮1",
+    "【2024同盟活动C3】BOSS 执棋者III型 浮游炮2"
+  ],
+  "category": "飞机",
+  "source": "chargo/fuyoupao3",
+  "path": "battle-assets/飞机/chargo__fuyoupao3",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "fuyoupao_-6103363644724731745.png",
+      "name": "fuyoupao",
+      "width": 256,
+      "height": 176,
+      "role": "战斗贴图",
+      "path_id": -6103363644724731745,
+      "source": "CAB-c20a213e9a9eff651177121a53e193af"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fuyoupao3/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item__zidan_moshukapai1",
+  "model": "zidan_moshukapai1",
+  "name": "子弹：魔术牌(红)",
+  "names": [
+    "子弹：魔术牌(红)"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_moshukapai1",
+  "path": "battle-assets/炮弹/item__zidan_moshukapai1",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "kapaizidan_1.skel",
+    "atlas": "kapaizidan_1.atlas",
+    "pages": [
+      "kapaizidan_1.png"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bullet5",
+  "model": "bullet5",
+  "name": "bullet5",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bullet5",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bullet5",
+  "images": [
+    {
+      "file": "bullet5_3148460722299472671.png",
+      "name": "bullet5",
+      "width": 227,
+      "height": 93,
+      "role": "原始精灵",
+      "path_id": 3148460722299472671,
+      "source": "CAB-47b9ce7d856eea800650d7152c0919b3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

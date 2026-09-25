@@ -1,0 +1,48 @@
+
+paodan_tiandeng.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+deng
+  rotate: true
+  xy: 159, 20
+  size: 133, 196
+  orig: 133, 196
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 357, 2
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+gd_1_2
+  rotate: false
+  xy: 385, 2
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+gd_1_3
+  rotate: false
+  xy: 413, 2
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+liuguang
+  rotate: false
+  xy: 2, 12
+  size: 155, 141
+  orig: 155, 141
+  offset: 0, 0
+  index: -1
+liusu
+  rotate: true
+  xy: 357, 30
+  size: 123, 62
+  orig: 123, 62
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dengshanxue",
+  "model": "paodan_dengshanxue",
+  "name": "登山靴(？)炮弹",
+  "names": [
+    "登山靴(？)炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dengshanxue",
+  "path": "battle-assets/炮弹/item__paodan_dengshanxue",
+  "images": [
+    {
+      "file": "paodan_dengshanxue_3921033956069661116.png",
+      "name": "paodan_dengshanxue",
+      "width": 128,
+      "height": 75,
+      "role": "战斗贴图",
+      "path_id": 3921033956069661116,
+      "source": "CAB-fd80ec581182facbfb6171cb61d24e2e"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dengshanxue/paodan_dengshanxue_3921033956069661116.png"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_zhuqingting__feiji_zhuqingting_material",
+  "model": "feiji_zhuqingting_material",
+  "name": "feiji_zhuqingting_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_zhuqingting/feiji_zhuqingting_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_zhuqingting__feiji_zhuqingting_material",
+  "images": [
+    {
+      "file": "feiji_zhuqingting_-2273541114200418450.png",
+      "name": "feiji_zhuqingting",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2273541114200418450,
+      "source": "CAB-26b57c23a1280b0eb02fabf91d143d0f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

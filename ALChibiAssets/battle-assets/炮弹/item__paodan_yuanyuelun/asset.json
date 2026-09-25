@@ -1,0 +1,20 @@
+{
+  "id": "item__paodan_yuanyuelun",
+  "model": "paodan_yuanyuelun",
+  "name": "圆月轮炮弹",
+  "names": [
+    "圆月轮炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yuanyuelun",
+  "path": "battle-assets/炮弹/item__paodan_yuanyuelun",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19726,
+    19729
+  ],
+  "has_preview": false,
+  "prefab": true
+}

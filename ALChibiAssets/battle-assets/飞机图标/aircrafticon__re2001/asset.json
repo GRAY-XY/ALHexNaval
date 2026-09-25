@@ -1,0 +1,40 @@
+{
+  "id": "aircrafticon__re2001",
+  "model": "re2001",
+  "name": "默认撒丁鱼雷机",
+  "names": [
+    "默认撒丁鱼雷机",
+    "默认撒丁轰炸机",
+    "帝国战斗机弹幕Re2001鱼雷机Lv1",
+    "帝国轰炸机弹幕Re2001-Lv1",
+    "天鹰技能Re.2001舰载鱼雷机Lv1",
+    "Re.2001公羊T1",
+    "Re.2001公羊T2",
+    "Re.2001公羊T3",
+    "撒丁舰载战斗机I",
+    "撒丁舰载战斗机II",
+    "撒丁舰载战斗机III",
+    "撒丁舰载战斗机IV",
+    "撒丁舰载战斗机V",
+    "【2025曾克SP活动】BOSS 帝国警视长 轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/re2001",
+  "path": "battle-assets/飞机图标/aircrafticon__re2001",
+  "images": [
+    {
+      "file": "re2001_8643199758023046407.png",
+      "name": "re2001",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 8643199758023046407,
+      "source": "CAB-014fc249c45cd51255e1a8aeb27edbd0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

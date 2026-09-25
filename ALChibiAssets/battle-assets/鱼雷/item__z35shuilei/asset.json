@@ -1,0 +1,30 @@
+{
+  "id": "item__z35shuilei",
+  "model": "z35shuilei",
+  "name": "z35shuilei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/z35shuilei",
+  "path": "battle-assets/鱼雷/item__z35shuilei",
+  "images": [
+    {
+      "file": "shuilei01_-6354163383854536097.png",
+      "name": "shuilei01",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6354163383854536097,
+      "source": "CAB-f5f3376ee772a0abcca4d12045c91c0a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [
+    "shuileiAnimation"
+  ],
+  "bullet_ids": [
+    170827
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__z35shuilei/shuilei01_-6354163383854536097.png"
+}

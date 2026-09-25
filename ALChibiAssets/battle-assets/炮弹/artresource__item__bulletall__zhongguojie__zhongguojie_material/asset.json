@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zhongguojie__zhongguojie_material",
+  "model": "zhongguojie_material",
+  "name": "zhongguojie_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zhongguojie/zhongguojie_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zhongguojie__zhongguojie_material",
+  "images": [
+    {
+      "file": "zhongguojie_4693700030696139701.png",
+      "name": "zhongguojie",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4693700030696139701,
+      "source": "CAB-25f41f2961a2d405bbda6a75fb8a9a22"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

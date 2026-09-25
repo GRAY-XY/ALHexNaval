@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dongtudou",
+  "model": "yulei_dongtudou",
+  "name": "冻土豆鱼雷",
+  "names": [
+    "冻土豆鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dongtudou",
+  "path": "battle-assets/鱼雷/item__yulei_dongtudou",
+  "images": [
+    {
+      "file": "yulei_dongtudou_4382425127584537754.png",
+      "name": "yulei_dongtudou",
+      "width": 128,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": 4382425127584537754,
+      "source": "CAB-157c4e66545eec54829e41875c84e2cb"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dongtudou/yulei_dongtudou_4382425127584537754.png"
+}

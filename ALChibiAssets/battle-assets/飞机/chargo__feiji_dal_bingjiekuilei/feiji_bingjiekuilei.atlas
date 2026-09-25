@@ -1,0 +1,27 @@
+
+feiji_bingjiekuilei.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tuowei_1
+  rotate: false
+  xy: 469, 56
+  size: 386, 295
+  orig: 386, 295
+  offset: 0, 0
+  index: -1
+tuzi
+  rotate: false
+  xy: 2, 2
+  size: 465, 349
+  orig: 465, 349
+  offset: 0, 0
+  index: -1
+tuzi_tui1
+  rotate: true
+  xy: 857, 159
+  size: 192, 145
+  orig: 192, 145
+  offset: 0, 0
+  index: -1

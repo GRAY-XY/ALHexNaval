@@ -1,0 +1,160 @@
+
+lianjin_II_zhanlie.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhanlie_1
+  rotate: false
+  xy: 2, 473
+  size: 265, 355
+  orig: 265, 355
+  offset: 0, 0
+  index: -1
+zhanlie_10
+  rotate: false
+  xy: 312, 95
+  size: 67, 110
+  orig: 67, 110
+  offset: 0, 0
+  index: -1
+zhanlie_11
+  rotate: false
+  xy: 887, 565
+  size: 90, 137
+  orig: 90, 137
+  offset: 0, 0
+  index: -1
+zhanlie_12
+  rotate: true
+  xy: 269, 485
+  size: 100, 131
+  orig: 100, 131
+  offset: 0, 0
+  index: -1
+zhanlie_13
+  rotate: true
+  xy: 614, 640
+  size: 188, 201
+  orig: 188, 201
+  offset: 0, 0
+  index: -1
+zhanlie_14
+  rotate: true
+  xy: 623, 52
+  size: 204, 187
+  orig: 204, 187
+  offset: 0, 0
+  index: -1
+zhanlie_15
+  rotate: false
+  xy: 761, 375
+  size: 132, 119
+  orig: 132, 119
+  offset: 0, 0
+  index: -1
+zhanlie_16
+  rotate: true
+  xy: 761, 496
+  size: 142, 124
+  orig: 142, 124
+  offset: 0, 0
+  index: -1
+zhanlie_17
+  rotate: true
+  xy: 495, 258
+  size: 125, 136
+  orig: 125, 136
+  offset: 0, 0
+  index: -1
+zhanlie_18
+  rotate: false
+  xy: 817, 704
+  size: 124, 124
+  orig: 124, 124
+  offset: 0, 0
+  index: -1
+zhanlie_19
+  rotate: true
+  xy: 495, 385
+  size: 200, 264
+  orig: 200, 264
+  offset: 0, 0
+  index: -1
+zhanlie_2
+  rotate: false
+  xy: 312, 207
+  size: 76, 101
+  orig: 76, 101
+  offset: 0, 0
+  index: -1
+zhanlie_20
+  rotate: true
+  xy: 2, 166
+  size: 305, 308
+  orig: 305, 308
+  offset: 0, 0
+  index: -1
+zhanlie_21
+  rotate: true
+  xy: 402, 249
+  size: 336, 91
+  orig: 336, 91
+  offset: 0, 0
+  index: -1
+zhanlie_22
+  rotate: false
+  xy: 2, 2
+  size: 336, 91
+  orig: 336, 91
+  offset: 0, 0
+  index: -1
+zhanlie_3
+  rotate: true
+  xy: 269, 587
+  size: 241, 343
+  orig: 241, 343
+  offset: 0, 0
+  index: -1
+zhanlie_4
+  rotate: true
+  xy: 390, 25
+  size: 222, 231
+  orig: 222, 231
+  offset: 0, 0
+  index: -1
+zhanlie_5
+  rotate: true
+  xy: 633, 294
+  size: 89, 91
+  orig: 89, 91
+  offset: 0, 0
+  index: -1
+zhanlie_6
+  rotate: false
+  xy: 2, 109
+  size: 98, 55
+  orig: 98, 55
+  offset: 0, 0
+  index: -1
+zhanlie_7
+  rotate: false
+  xy: 312, 397
+  size: 78, 86
+  orig: 78, 86
+  offset: 0, 0
+  index: -1
+zhanlie_8
+  rotate: false
+  xy: 312, 310
+  size: 77, 85
+  orig: 77, 85
+  offset: 0, 0
+  index: -1
+zhanlie_9
+  rotate: true
+  xy: 340, 16
+  size: 77, 39
+  orig: 77, 39
+  offset: 0, 0
+  index: -1

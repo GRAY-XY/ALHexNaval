@@ -1,0 +1,34 @@
+
+anniupaodan.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
++
+  rotate: true
+  xy: 2, 2
+  size: 119, 137
+  orig: 119, 137
+  offset: 0, 0
+  index: -1
+-
+  rotate: true
+  xy: 141, 8
+  size: 113, 103
+  orig: 113, 103
+  offset: 0, 0
+  index: -1
+X
+  rotate: true
+  xy: 246, 14
+  size: 107, 103
+  orig: 107, 103
+  offset: 0, 0
+  index: -1
+q
+  rotate: true
+  xy: 351, 14
+  size: 107, 103
+  orig: 107, 103
+  offset: 0, 0
+  index: -1

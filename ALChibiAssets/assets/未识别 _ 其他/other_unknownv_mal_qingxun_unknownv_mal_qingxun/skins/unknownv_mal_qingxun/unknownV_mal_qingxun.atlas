@@ -1,0 +1,41 @@
+
+unknownV_mal_qingxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1
+  rotate: true
+  xy: 640, 119
+  size: 607, 253
+  orig: 607, 253
+  offset: 0, 0
+  index: -1
+hei_2
+  rotate: false
+  xy: 2, 462
+  size: 636, 264
+  orig: 636, 264
+  offset: 0, 0
+  index: -1
+hong_1
+  rotate: true
+  xy: 2, 2
+  size: 458, 202
+  orig: 458, 202
+  offset: 0, 0
+  index: -1
+quan_1
+  rotate: true
+  xy: 206, 177
+  size: 283, 207
+  orig: 283, 207
+  offset: 0, 0
+  index: -1
+yan
+  rotate: true
+  xy: 206, 17
+  size: 158, 104
+  orig: 158, 104
+  offset: 0, 0
+  index: -1

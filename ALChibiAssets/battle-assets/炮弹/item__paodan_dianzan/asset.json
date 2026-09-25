@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_dianzan",
+  "model": "paodan_dianzan",
+  "name": "点赞炮弹",
+  "names": [
+    "点赞炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dianzan",
+  "path": "battle-assets/炮弹/item__paodan_dianzan",
+  "images": [
+    {
+      "file": "particles01_-5909804393541884522.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5909804393541884522,
+      "source": "CAB-46cdbeac58905f4d1caf53667fb0073a"
+    },
+    {
+      "file": "paodan_dianzan_7932418242181299455.png",
+      "name": "paodan_dianzan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7932418242181299455,
+      "source": "CAB-46cdbeac58905f4d1caf53667fb0073a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dianzan/particles01_-5909804393541884522.png",
+  "spine": {
+    "skel": "paodan_dianzan.skel",
+    "atlas": "paodan_dianzan.atlas",
+    "pages": [
+      "paodan_dianzan.png"
+    ]
+  }
+}

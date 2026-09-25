@@ -1,0 +1,53 @@
+{
+  "id": "item__yulei_hongzhu",
+  "model": "yulei_hongzhu",
+  "name": "猩红夜烛鱼雷",
+  "names": [
+    "猩红夜烛鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hongzhu",
+  "path": "battle-assets/鱼雷/item__yulei_hongzhu",
+  "images": [
+    {
+      "file": "yulei_hongzhu_-4272218366902280537.png",
+      "name": "yulei_hongzhu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4272218366902280537,
+      "source": "CAB-78e70ec657a78ba1deee3650929c6443"
+    },
+    {
+      "file": "mask05_1940560597202797219.png",
+      "name": "mask05",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1940560597202797219,
+      "source": "CAB-78e70ec657a78ba1deee3650929c6443"
+    },
+    {
+      "file": "line02_9155181050420102590.png",
+      "name": "line02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 9155181050420102590,
+      "source": "CAB-78e70ec657a78ba1deee3650929c6443"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hongzhu/yulei_hongzhu_-4272218366902280537.png",
+  "spine": {
+    "skel": "yulei_hongzhu.skel",
+    "atlas": "yulei_hongzhu.atlas",
+    "pages": [
+      "yulei_hongzhu.png"
+    ]
+  }
+}

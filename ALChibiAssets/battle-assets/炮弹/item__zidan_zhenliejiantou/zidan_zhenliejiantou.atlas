@@ -1,0 +1,90 @@
+
+zidan_zhenliejiantou.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guntiao_1
+  rotate: false
+  xy: 256, 19
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+guntiao_2
+  rotate: true
+  xy: 378, 2
+  size: 26, 28
+  orig: 26, 28
+  offset: 0, 0
+  index: -1
+guntiao_3
+  rotate: false
+  xy: 285, 19
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+guntiao_4
+  rotate: false
+  xy: 407, 30
+  size: 26, 28
+  orig: 26, 28
+  offset: 0, 0
+  index: -1
+guntiao_5
+  rotate: false
+  xy: 378, 30
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+guntiao_6
+  rotate: false
+  xy: 226, 19
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+guntiao_7
+  rotate: false
+  xy: 300, 60
+  size: 125, 65
+  orig: 125, 65
+  offset: 0, 0
+  index: -1
+jiantou_k1
+  rotate: true
+  xy: 226, 49
+  size: 76, 72
+  orig: 76, 72
+  offset: 0, 0
+  index: -1
+jiantou_k2
+  rotate: true
+  xy: 2, 9
+  size: 116, 80
+  orig: 116, 80
+  offset: 0, 0
+  index: -1
+jiantou_k3
+  rotate: false
+  xy: 314, 5
+  size: 62, 53
+  orig: 62, 53
+  offset: 0, 0
+  index: -1
+jiantou_k4
+  rotate: true
+  xy: 164, 23
+  size: 102, 60
+  orig: 102, 60
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 84, 16
+  size: 109, 78
+  orig: 109, 78
+  offset: 0, 0
+  index: -1

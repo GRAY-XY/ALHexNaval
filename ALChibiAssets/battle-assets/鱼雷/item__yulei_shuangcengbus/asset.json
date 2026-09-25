@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shuangcengbus",
+  "model": "yulei_shuangcengbus",
+  "name": "雾之都巴士鱼雷",
+  "names": [
+    "雾之都巴士鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shuangcengbus",
+  "path": "battle-assets/鱼雷/item__yulei_shuangcengbus",
+  "images": [
+    {
+      "file": "yulei_shuangcengbus_8551476616961505363.png",
+      "name": "yulei_shuangcengbus",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": 8551476616961505363,
+      "source": "CAB-d286d86ff08de4c4b588baba0bfb0f12"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shuangcengbus/yulei_shuangcengbus_8551476616961505363.png"
+}

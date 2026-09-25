@@ -1,0 +1,146 @@
+
+chess_luoma.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1-1
+  rotate: true
+  xy: 823, 9
+  size: 440, 343
+  orig: 440, 343
+  offset: 0, 0
+  index: -1
+1-2
+  rotate: true
+  xy: 445, 23
+  size: 404, 376
+  orig: 404, 376
+  offset: 0, 0
+  index: -1
+1-3
+  rotate: true
+  xy: 454, 533
+  size: 488, 381
+  orig: 488, 381
+  offset: 0, 0
+  index: -1
+1-4
+  rotate: false
+  xy: 2, 2
+  size: 441, 425
+  orig: 441, 425
+  offset: 0, 0
+  index: -1
+1-5
+  rotate: true
+  xy: 837, 617
+  size: 404, 376
+  orig: 404, 376
+  offset: 0, 0
+  index: -1
+2-1
+  rotate: true
+  xy: 1168, 78
+  size: 372, 275
+  orig: 372, 275
+  offset: 0, 0
+  index: -1
+2-2
+  rotate: false
+  xy: 1557, 489
+  size: 372, 255
+  orig: 372, 255
+  offset: 0, 0
+  index: -1
+2-3
+  rotate: true
+  xy: 1215, 634
+  size: 387, 340
+  orig: 387, 340
+  offset: 0, 0
+  index: -1
+2-4
+  rotate: false
+  xy: 1557, 746
+  size: 372, 275
+  orig: 372, 275
+  offset: 0, 0
+  index: -1
+2-5
+  rotate: true
+  xy: 1445, 115
+  size: 372, 255
+  orig: 372, 255
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 1229, 463
+  size: 169, 127
+  orig: 169, 127
+  offset: 0, 0
+  index: -1
+chuan
+  rotate: true
+  xy: 2, 429
+  size: 592, 450
+  orig: 592, 450
+  offset: 0, 0
+  index: -1
+chuan_t
+  rotate: false
+  xy: 998, 478
+  size: 229, 137
+  orig: 229, 137
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 800, 451
+  size: 165, 80
+  orig: 165, 80
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: false
+  xy: 837, 535
+  size: 159, 80
+  orig: 159, 80
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 1702, 175
+  size: 312, 316
+  orig: 312, 316
+  offset: 0, 0
+  index: -1
+hair_b
+  rotate: false
+  xy: 1168, 37
+  size: 114, 39
+  orig: 114, 39
+  offset: 0, 0
+  index: -1
+qi1
+  rotate: true
+  xy: 454, 437
+  size: 94, 177
+  orig: 94, 177
+  offset: 0, 0
+  index: -1
+qi2
+  rotate: true
+  xy: 633, 440
+  size: 91, 165
+  orig: 91, 165
+  offset: 0, 0
+  index: -1
+zhuzi
+  rotate: true
+  xy: 967, 452
+  size: 24, 206
+  orig: 24, 206
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__bullet_xuanwu",
+  "model": "bullet_xuanwu",
+  "name": "bullet_xuanwu",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/bullet_xuanwu",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__bullet_xuanwu",
+  "images": [
+    {
+      "file": "bullet_xuanwu_6643621080096833969.png",
+      "name": "bullet_xuanwu",
+      "width": 97,
+      "height": 22,
+      "role": "原始精灵",
+      "path_id": 6643621080096833969,
+      "source": "CAB-a64c38fbe707a76e21c70c078ec18eaf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_juque",
+  "model": "feiji_juque",
+  "name": "巨阙飞剑飞机(鱼雷)",
+  "names": [
+    "巨阙飞剑飞机(鱼雷)",
+    "巨阙飞剑飞机(战斗)",
+    "巨阙飞剑飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_juque",
+  "path": "battle-assets/飞机/chargo__feiji_juque",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_juque_-8786650696438856288.png",
+      "name": "feiji_juque",
+      "width": 255,
+      "height": 57,
+      "role": "战斗贴图",
+      "path_id": -8786650696438856288,
+      "source": "CAB-1a689b80016e40d255f85ca3de3ab2ad"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_juque/aircraft_shadow_2192772484218123160.png"
+}

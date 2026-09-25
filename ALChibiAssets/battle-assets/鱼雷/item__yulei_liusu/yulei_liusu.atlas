@@ -1,0 +1,20 @@
+
+yulei_liusu.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+liusu
+  rotate: true
+  xy: 2, 85
+  size: 284, 114
+  orig: 284, 114
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 2
+  size: 129, 81
+  orig: 129, 81
+  offset: 0, 0
+  index: -1

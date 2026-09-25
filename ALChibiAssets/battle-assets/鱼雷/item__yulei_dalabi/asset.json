@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dalabi",
+  "model": "yulei_dalabi",
+  "name": "大蜡笔鱼雷",
+  "names": [
+    "大蜡笔鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dalabi",
+  "path": "battle-assets/鱼雷/item__yulei_dalabi",
+  "images": [
+    {
+      "file": "labi_7149494688497096253.png",
+      "name": "labi",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7149494688497096253,
+      "source": "CAB-4ccfc2264df73d59dc05962dd3bf1f5e"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dalabi/labi_7149494688497096253.png"
+}

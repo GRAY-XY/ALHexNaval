@@ -1,0 +1,35 @@
+{
+  "id": "item__tuowei_daodan",
+  "model": "tuowei_daodan",
+  "name": "tuowei_daodan",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/tuowei_daodan",
+  "path": "battle-assets/鱼雷/item__tuowei_daodan",
+  "images": [
+    {
+      "file": "daodan_-59307757992001476.png",
+      "name": "daodan",
+      "width": 686,
+      "height": 309,
+      "role": "战斗贴图",
+      "path_id": -59307757992001476,
+      "source": "CAB-98b890a6ff3c39e3a97acd06fc4467ee"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    29660030,
+    3114003,
+    3119003,
+    3119007,
+    3221018,
+    3222004,
+    3226033,
+    3226133
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__tuowei_daodan/daodan_-59307757992001476.png"
+}

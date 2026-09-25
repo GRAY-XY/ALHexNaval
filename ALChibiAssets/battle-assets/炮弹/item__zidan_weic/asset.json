@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_weic",
+  "model": "zidan_weic",
+  "name": "维C子弹",
+  "names": [
+    "维C子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_weic",
+  "path": "battle-assets/炮弹/item__zidan_weic",
+  "images": [
+    {
+      "file": "zidan_weic_-6712312168384213430.png",
+      "name": "zidan_weic",
+      "width": 128,
+      "height": 85,
+      "role": "战斗贴图",
+      "path_id": -6712312168384213430,
+      "source": "CAB-08af84897fa4a81dac07b8b788ea9fa6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_weic/zidan_weic_-6712312168384213430.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__pangpei_bullet01",
+  "model": "pangpei_bullet01",
+  "name": "pangpei_bullet01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/pangpei_bullet01",
+  "path": "battle-assets/炮弹/item__pangpei_bullet01",
+  "images": [
+    {
+      "file": "jian01_-1995763303128477608.png",
+      "name": "jian01",
+      "width": 241,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": -1995763303128477608,
+      "source": "CAB-cadb6872b7a92107f404abb6269694bd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    79831
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__pangpei_bullet01/jian01_-1995763303128477608.png"
+}

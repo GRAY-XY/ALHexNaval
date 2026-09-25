@@ -1,0 +1,53 @@
+{
+  "id": "item__paodan_bingzhui",
+  "model": "paodan_bingzhui",
+  "name": "冰棱炮弹",
+  "names": [
+    "冰棱炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_bingzhui",
+  "path": "battle-assets/炮弹/item__paodan_bingzhui",
+  "images": [
+    {
+      "file": "paodan_bingzhui_-5032338902534510106.png",
+      "name": "paodan_bingzhui",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5032338902534510106,
+      "source": "CAB-9ade16e87261c4eca30d08739a83ff16"
+    },
+    {
+      "file": "yuanquan01_5387280426798593137.png",
+      "name": "yuanquan01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5387280426798593137,
+      "source": "CAB-9ade16e87261c4eca30d08739a83ff16"
+    },
+    {
+      "file": "mask01_9183495544887895749.png",
+      "name": "mask01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 9183495544887895749,
+      "source": "CAB-9ade16e87261c4eca30d08739a83ff16"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_bingzhui/paodan_bingzhui_-5032338902534510106.png",
+  "spine": {
+    "skel": "paodan_bingzhui.skel",
+    "atlas": "paodan_bingzhui.atlas",
+    "pages": [
+      "paodan_bingzhui.png"
+    ]
+  }
+}

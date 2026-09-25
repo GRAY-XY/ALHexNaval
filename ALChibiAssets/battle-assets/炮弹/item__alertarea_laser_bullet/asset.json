@@ -1,0 +1,35 @@
+{
+  "id": "item__alertarea_laser_bullet",
+  "model": "alertarea_laser_bullet",
+  "name": "alertarea_laser_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/alertarea_laser_bullet",
+  "path": "battle-assets/炮弹/item__alertarea_laser_bullet",
+  "images": [
+    {
+      "file": "fangkuai02_-5835111781922290437.png",
+      "name": "fangkuai02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5835111781922290437,
+      "source": "CAB-163d46b6dab54f95efb1077ae9eeeddd"
+    },
+    {
+      "file": "fangkuai01_-879425286386927284.png",
+      "name": "fangkuai01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -879425286386927284,
+      "source": "CAB-163d46b6dab54f95efb1077ae9eeeddd"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__alertarea_laser_bullet/fangkuai02_-5835111781922290437.png"
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-18",
+  "version": "0.6.0",
+  "saveVersion": 8,
+  "passed": true,
+  "method": "CUA actual browser UI flows; manually observed, not an unattended regression script",
+  "checks": [
+    "Original version-7 battle loads with no formation controls",
+    "Left-drag selects four friendly destroyers without moving the camera",
+    "Shift click adds Helena to selection then removes her on a second click",
+    "Box containing both sides selects all twelve own ships and excludes enemies",
+    "Right-click assigns independent movement to twelve own ships; oil changes from 50 to 20 and combat actions remain unchanged",
+    "Completed ship berths are separate; selected names and health bars remain attached",
+    "Handover clears multi-selection and lists only the incoming players ships",
+    "Box selects only three airborne squadrons",
+    "Right-click sends all three squadrons to a common region with separate destinations; oil stays 41 and endurance stays four turns",
+    "Shift click adds Enterprise to the three selected squadrons",
+    "Mixed selection receives one common movement order; one ship spends four oil, all three squadrons move in realtime",
+    "Escape clears both ship and aircraft selections",
+    "No browser console errors observed",
+    "Original 256x256 four-player battle restored after all tests; round one, 50 oil, no airborne squadrons"
+  ],
+  "screenshots": [
+    "screenshots/box-selected-ships.png",
+    "screenshots/box-selected-mixed-units.png"
+  ],
+  "rules": {
+    "passed": true,
+    "scenarios": 53,
+    "weightedPathfindingMaps": 80,
+    "invalidSaveCases": 53
+  },
+  "buildAndTypecheck": "passed",
+  "limits": [
+    "Middle-button camera drag was implemented but not exercised by the available browser drag API.",
+    "Large unit counts, full-match balance and networking were not tested."
+  ]
+}

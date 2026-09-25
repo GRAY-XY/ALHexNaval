@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_zhiyu",
+  "model": "yulei_zhiyu",
+  "name": "折纸小鱼鱼雷",
+  "names": [
+    "折纸小鱼鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_zhiyu",
+  "path": "battle-assets/鱼雷/bulletall__yulei_zhiyu",
+  "images": [
+    {
+      "file": "yulei_zhiyu_3466628460861633668.png",
+      "name": "yulei_zhiyu",
+      "width": 119,
+      "height": 171,
+      "role": "原始精灵",
+      "path_id": 3466628460861633668,
+      "source": "CAB-4dbc1f146e8e6ccf2b43a5bc9f1fafc8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

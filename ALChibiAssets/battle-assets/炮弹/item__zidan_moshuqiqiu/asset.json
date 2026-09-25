@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_moshuqiqiu",
+  "model": "zidan_moshuqiqiu",
+  "name": "气球子弹",
+  "names": [
+    "气球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_moshuqiqiu",
+  "path": "battle-assets/炮弹/item__zidan_moshuqiqiu",
+  "images": [
+    {
+      "file": "qiqiu01_-1759174414032074084.png",
+      "name": "qiqiu01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1759174414032074084,
+      "source": "CAB-daa420965e30b8ebc603adaeb2569910"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3169006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_moshuqiqiu/qiqiu01_-1759174414032074084.png"
+}

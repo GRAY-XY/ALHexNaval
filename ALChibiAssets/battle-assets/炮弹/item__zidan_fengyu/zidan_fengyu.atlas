@@ -1,0 +1,125 @@
+
+zidan_fengyu.png
+size: 1024,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tuowei_1
+  rotate: false
+  xy: 124, 9
+  size: 95, 10
+  orig: 95, 10
+  offset: 0, 0
+  index: -1
+tuowei_1_2
+  rotate: false
+  xy: 171, 23
+  size: 95, 10
+  orig: 95, 10
+  offset: 0, 0
+  index: -1
+tuowei_1_3
+  rotate: false
+  xy: 268, 23
+  size: 95, 10
+  orig: 95, 10
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 2, 8
+  size: 120, 11
+  orig: 120, 11
+  offset: 0, 0
+  index: -1
+yumao
+  rotate: false
+  xy: 2, 21
+  size: 167, 41
+  orig: 167, 41
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: false
+  xy: 531, 43
+  size: 66, 19
+  orig: 66, 19
+  offset: 0, 0
+  index: -1
+yun_1_2
+  rotate: false
+  xy: 566, 22
+  size: 66, 19
+  orig: 66, 19
+  offset: 0, 0
+  index: -1
+yun_1_3
+  rotate: false
+  xy: 599, 43
+  size: 66, 19
+  orig: 66, 19
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: false
+  xy: 171, 35
+  size: 95, 27
+  orig: 95, 27
+  offset: 0, 0
+  index: -1
+yun_2_2
+  rotate: false
+  xy: 268, 35
+  size: 95, 27
+  orig: 95, 27
+  offset: 0, 0
+  index: -1
+yun_2_3
+  rotate: false
+  xy: 365, 35
+  size: 95, 27
+  orig: 95, 27
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: false
+  xy: 221, 2
+  size: 67, 19
+  orig: 67, 19
+  offset: 0, 0
+  index: -1
+yun_3_2
+  rotate: false
+  xy: 290, 2
+  size: 67, 19
+  orig: 67, 19
+  offset: 0, 0
+  index: -1
+yun_3_3
+  rotate: false
+  xy: 359, 2
+  size: 67, 19
+  orig: 67, 19
+  offset: 0, 0
+  index: -1
+yun_4
+  rotate: false
+  xy: 428, 13
+  size: 67, 20
+  orig: 67, 20
+  offset: 0, 0
+  index: -1
+yun_4_2
+  rotate: false
+  xy: 462, 42
+  size: 67, 20
+  orig: 67, 20
+  offset: 0, 0
+  index: -1
+yun_4_3
+  rotate: false
+  xy: 497, 20
+  size: 67, 20
+  orig: 67, 20
+  offset: 0, 0
+  index: -1

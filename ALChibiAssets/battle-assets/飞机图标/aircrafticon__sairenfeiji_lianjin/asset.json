@@ -1,0 +1,52 @@
+{
+  "id": "aircrafticon__sairenfeiji_lianjin",
+  "model": "sairenfeiji_lianjin",
+  "name": "【2022莱莎联动T1】航母蛋船轰炸机",
+  "names": [
+    "【2022莱莎联动T1】航母蛋船轰炸机",
+    "【2022莱莎联动T1】航母蛋船战斗机",
+    "【2022莱莎联动T1】航母人形轰炸机",
+    "【2022莱莎联动T1】航母人形鱼雷机",
+    "【2022莱莎联动T2】航母蛋船轰炸机",
+    "【2022莱莎联动T2】航母蛋船战斗机",
+    "【2022莱莎联动T2】航母人形轰炸机",
+    "【2022莱莎联动T2】航母人形鱼雷机",
+    "【2022莱莎联动T3】航母蛋船轰炸机",
+    "【2022莱莎联动T3】航母蛋船战斗机",
+    "【2022莱莎联动T3】航母人形轰炸机",
+    "【2022莱莎联动T3】航母人形鱼雷机",
+    "【2022莱莎联动T4】航母蛋船轰炸机",
+    "【2022莱莎联动T4】航母蛋船战斗机",
+    "【2022莱莎联动T4】航母人形轰炸机",
+    "【2022莱莎联动T4】航母人形鱼雷机",
+    "【2022莱莎联动T4】BOSS 古代遗迹执棋者 战斗机",
+    "【2022莱莎联动T4】BOSS 古代遗迹执棋者 轰炸机",
+    "【2022莱莎联动T4】BOSS 古代遗迹执棋者 鱼雷机",
+    "【2022莱莎联动T5/ESP/TH1~5】航母蛋船轰炸机",
+    "【2022莱莎联动T5/ESP/TH1~5】航母蛋船战斗机",
+    "【2022莱莎联动T5/ESP/TH1~5】航母人形轰炸机",
+    "【2022莱莎联动T5/ESP/TH1~5】航母人形鱼雷机",
+    "【2022莱莎联动TH4】BOSS 古代遗迹执棋者 战斗机",
+    "【2022莱莎联动TH4】BOSS 古代遗迹执棋者 轰炸机",
+    "【2022莱莎联动TH4】BOSS 古代遗迹执棋者 鱼雷机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/sairenfeiji_lianjin",
+  "path": "battle-assets/飞机图标/aircrafticon__sairenfeiji_lianjin",
+  "images": [
+    {
+      "file": "sairenfeiji_lianjin_-5024705030941043670.png",
+      "name": "sairenfeiji_lianjin",
+      "width": 45,
+      "height": 35,
+      "role": "原始精灵",
+      "path_id": -5024705030941043670,
+      "source": "CAB-1b342549d00f1d34a331446fe28103dd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

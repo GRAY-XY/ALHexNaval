@@ -1,0 +1,27 @@
+
+feiji_sheyingdaping.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daping
+  rotate: false
+  xy: 2, 2
+  size: 337, 324
+  orig: 337, 324
+  offset: 0, 0
+  index: -1
+kuang_1
+  rotate: true
+  xy: 546, 191
+  size: 135, 120
+  orig: 135, 120
+  offset: 0, 0
+  index: -1
+kuang_2
+  rotate: false
+  xy: 341, 141
+  size: 203, 185
+  orig: 203, 185
+  offset: 0, 0
+  index: -1

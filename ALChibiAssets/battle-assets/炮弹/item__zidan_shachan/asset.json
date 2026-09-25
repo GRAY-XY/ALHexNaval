@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shachan",
+  "model": "zidan_shachan",
+  "name": "沙铲子弹",
+  "names": [
+    "沙铲子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shachan",
+  "path": "battle-assets/炮弹/item__zidan_shachan",
+  "images": [
+    {
+      "file": "zidan_shachan_-4315254412278404619.png",
+      "name": "zidan_shachan",
+      "width": 123,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": -4315254412278404619,
+      "source": "CAB-9c847cbc4d2a9ba09c984a700422227a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shachan/zidan_shachan_-4315254412278404619.png"
+}

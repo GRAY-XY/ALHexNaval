@@ -1,0 +1,64 @@
+{
+  "id": "item__paodan_shaizi",
+  "model": "paodan_shaizi",
+  "name": "魔术骰子炮弹",
+  "names": [
+    "魔术骰子炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shaizi",
+  "path": "battle-assets/炮弹/item__paodan_shaizi",
+  "images": [
+    {
+      "file": "line03_-5014603828098183097.png",
+      "name": "line03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5014603828098183097,
+      "source": "CAB-250edf35b6854599fa93fbdf79b2eb15"
+    },
+    {
+      "file": "shuaizi01_-1667944291133302533.png",
+      "name": "shuaizi01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1667944291133302533,
+      "source": "CAB-250edf35b6854599fa93fbdf79b2eb15"
+    },
+    {
+      "file": "line05_798556382901622714.png",
+      "name": "line05",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 798556382901622714,
+      "source": "CAB-250edf35b6854599fa93fbdf79b2eb15"
+    },
+    {
+      "file": "mask01_1201948778789773326.png",
+      "name": "mask01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1201948778789773326,
+      "source": "CAB-250edf35b6854599fa93fbdf79b2eb15"
+    },
+    {
+      "file": "line04_7897978425942408711.png",
+      "name": "line04",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7897978425942408711,
+      "source": "CAB-250edf35b6854599fa93fbdf79b2eb15"
+    }
+  ],
+  "particle_systems": 8,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shaizi/line03_-5014603828098183097.png"
+}

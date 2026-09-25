@@ -1,0 +1,55 @@
+
+jiaotang_white_qingxun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 710, 103
+  size: 70, 97
+  orig: 70, 97
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 175
+  size: 487, 309
+  orig: 487, 309
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: false
+  xy: 491, 175
+  size: 487, 309
+  orig: 487, 309
+  offset: 0, 0
+  index: -1
+guanhuan
+  rotate: false
+  xy: 356, 2
+  size: 309, 86
+  orig: 309, 86
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: false
+  xy: 2, 90
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: false
+  xy: 2, 5
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: false
+  xy: 356, 90
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1

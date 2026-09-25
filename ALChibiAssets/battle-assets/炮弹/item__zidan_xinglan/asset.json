@@ -1,0 +1,32 @@
+{
+  "id": "item__zidan_xinglan",
+  "model": "zidan_xinglan",
+  "name": "星子弹(蓝)",
+  "names": [
+    "星子弹(蓝)"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xinglan",
+  "path": "battle-assets/炮弹/item__zidan_xinglan",
+  "images": [
+    {
+      "file": "zidan_xinglan_4636337085928364975.png",
+      "name": "zidan_xinglan",
+      "width": 128,
+      "height": 112,
+      "role": "战斗贴图",
+      "path_id": 4636337085928364975,
+      "source": "CAB-a98720d3b5e7760fa8d32cda9540795e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19199,
+    79751,
+    170751
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xinglan/zidan_xinglan_4636337085928364975.png"
+}

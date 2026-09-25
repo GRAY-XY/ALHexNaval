@@ -1,0 +1,140 @@
+{
+  "source_library": "ALChibiAssets/library.json",
+  "source_library_sha256": "8474e0599005ae0f7a59bce38d32bb698b305ca92fea1b5e040e1c4927c83c8f",
+  "source_statistics": "ALChibiAssets/metadata/ships.json",
+  "source_statistics_sha256": "6203bb1e27d91059009193acfbfa047ffa8fa9a5cd4df69b1205ce6c3f202cd5",
+  "units": [
+    {
+      "unit_id": "lafei",
+      "ship_group": 10117,
+      "statistics_id": 101171,
+      "type": 1,
+      "nationality": 1,
+      "armor_type": 1,
+      "skin_id": 101170,
+      "source_directory": "assets/白鹰/10117_拉菲/skins/lafei",
+      "source_bundle_sha256": "43c3ec97fb12e54cfafc3b43f19755bd68b0c5baf329ea452e033037cb96c3bf"
+    },
+    {
+      "unit_id": "biaoqiang",
+      "ship_group": 20121,
+      "statistics_id": 201211,
+      "type": 1,
+      "nationality": 2,
+      "armor_type": 1,
+      "skin_id": 201210,
+      "source_directory": "assets/皇家/20121_标枪/skins/biaoqiang",
+      "source_bundle_sha256": "af994255afa52299e9772f339b1d81e2b5acb62a50a04bca44b761dc6ecbcf93"
+    },
+    {
+      "unit_id": "lingbo",
+      "ship_group": 30105,
+      "statistics_id": 301051,
+      "type": 1,
+      "nationality": 3,
+      "armor_type": 1,
+      "skin_id": 301050,
+      "source_directory": "assets/重樱/30105_绫波/skins/lingbo",
+      "source_bundle_sha256": "8da454d2c6ed557b128f166f3ecb0ad8c0b1ba652c38271efa236da4fe1f12ac"
+    },
+    {
+      "unit_id": "z23",
+      "ship_group": 40123,
+      "statistics_id": 401231,
+      "type": 1,
+      "nationality": 4,
+      "armor_type": 1,
+      "skin_id": 401230,
+      "source_directory": "assets/铁血/40123_Z23/skins/z23",
+      "source_bundle_sha256": "01468677cfc3854601b56c470f57b01dec2585b26e49d84d3b1be51286948d03"
+    },
+    {
+      "unit_id": "hailunna",
+      "ship_group": 10205,
+      "statistics_id": 102051,
+      "type": 2,
+      "nationality": 1,
+      "armor_type": 1,
+      "skin_id": 102050,
+      "source_directory": "assets/白鹰/10205_海伦娜/skins/hailunna",
+      "source_bundle_sha256": "076280fab9f565e1ed144530b81624d6a9cd2cdd74b92c58b956b7554d4a3ab9"
+    },
+    {
+      "unit_id": "beierfasite",
+      "ship_group": 20212,
+      "statistics_id": 202121,
+      "type": 2,
+      "nationality": 2,
+      "armor_type": 1,
+      "skin_id": 202120,
+      "source_directory": "assets/皇家/20212_贝尔法斯特/skins/beierfasite",
+      "source_bundle_sha256": "59891aaeed99fbffc57ddf3e21383f0509c0e3ab62d015beaa8114ec048fa76d"
+    },
+    {
+      "unit_id": "gaoxiong",
+      "ship_group": 30311,
+      "statistics_id": 303111,
+      "type": 3,
+      "nationality": 3,
+      "armor_type": 2,
+      "skin_id": 303110,
+      "source_directory": "assets/重樱/30311_高雄/skins/gaoxiong",
+      "source_bundle_sha256": "c6d838e1bdf4f7bc61cb44e5dc5a96ccde759599aae7231a1c88e927f2ee35ff"
+    },
+    {
+      "unit_id": "ougen",
+      "ship_group": 40303,
+      "statistics_id": 403031,
+      "type": 3,
+      "nationality": 4,
+      "armor_type": 2,
+      "skin_id": 403030,
+      "source_directory": "assets/铁血/40303_欧根亲王/skins/ougen",
+      "source_bundle_sha256": "4716a7e45b40fe7bf92a952807818c7762c9c74b0d3a85a102671ec66463bf12"
+    },
+    {
+      "unit_id": "yanzhan",
+      "ship_group": 20502,
+      "statistics_id": 205021,
+      "type": 5,
+      "nationality": 2,
+      "armor_type": 3,
+      "skin_id": 205020,
+      "source_directory": "assets/皇家/20502_厌战/skins/yanzhan",
+      "source_bundle_sha256": "d6512064dfdb1ee6a724588c4c328cf90623e84d86ba4bca2881633c58e66ffa"
+    },
+    {
+      "unit_id": "bisimai",
+      "ship_group": 40501,
+      "statistics_id": 405011,
+      "type": 5,
+      "nationality": 4,
+      "armor_type": 3,
+      "skin_id": 405010,
+      "source_directory": "assets/铁血/40501_俾斯麦/skins/bisimai",
+      "source_bundle_sha256": "bd5c02b1d59c54c9157f3e63e9af030542c3e0ce5d959126647a824e3eaa1a38"
+    },
+    {
+      "unit_id": "qiye",
+      "ship_group": 10706,
+      "statistics_id": 107061,
+      "type": 7,
+      "nationality": 1,
+      "armor_type": 2,
+      "skin_id": 107060,
+      "source_directory": "assets/白鹰/10706_企业/skins/qiye",
+      "source_bundle_sha256": "60427733814cf258a17873a8e1d4a383e83a72c79ad5f357891bf60d2e195ecc"
+    },
+    {
+      "unit_id": "dujiaoshou",
+      "ship_group": 20603,
+      "statistics_id": 206031,
+      "type": 6,
+      "nationality": 2,
+      "armor_type": 2,
+      "skin_id": 206030,
+      "source_directory": "assets/皇家/20603_独角兽/skins/dujiaoshou",
+      "source_bundle_sha256": "570d98002744befb3296b453ca39e03c157fff9ce1ff6301e4560d72cb861c01"
+    }
+  ]
+}

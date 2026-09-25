@@ -1,0 +1,45 @@
+{
+  "id": "item__bulletch_sp4_nt",
+  "model": "bulletch_sp4_nt",
+  "name": "bulletch_sp4_nt",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletch_sp4_nt",
+  "path": "battle-assets/炮弹/item__bulletch_sp4_nt",
+  "images": [
+    {
+      "file": "bullet_xuanwu_6643621080096833969.png",
+      "name": "bullet_xuanwu",
+      "width": 97,
+      "height": 22,
+      "role": "战斗贴图",
+      "path_id": 6643621080096833969,
+      "source": "CAB-a64c38fbe707a76e21c70c078ec18eaf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    165351,
+    165352,
+    165353,
+    165354,
+    165355,
+    165356,
+    165357,
+    165358,
+    165359,
+    165360,
+    710051,
+    3148005,
+    3159052,
+    3185032,
+    3185046,
+    3214006,
+    3218007,
+    3300001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletch_sp4_nt/bullet_xuanwu_6643621080096833969.png"
+}

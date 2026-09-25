@@ -1,0 +1,38 @@
+{
+  "id": "aircrafticon__tianshan",
+  "model": "tianshan",
+  "name": "天山",
+  "names": [
+    "天山",
+    "第13章通用鱼雷机",
+    "第13章空袭 鱼雷机",
+    "第14章通用鱼雷机",
+    "第14章空袭 鱼雷机",
+    "【困难13章】通用鱼雷机",
+    "【困难13章】空袭 鱼雷机",
+    "【困难14章】通用鱼雷机",
+    "【困难14章】空袭 鱼雷机",
+    "【主线15章】通用鱼雷机",
+    "【主线16章前半】空袭 鱼雷机",
+    "【主线16章后半】通用鱼雷机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tianshan",
+  "path": "battle-assets/飞机图标/aircrafticon__tianshan",
+  "images": [
+    {
+      "file": "tianshan_-7938930336780253713.png",
+      "name": "tianshan",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -7938930336780253713,
+      "source": "CAB-8b8fefa489a68c9777e982426bbd4a03"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

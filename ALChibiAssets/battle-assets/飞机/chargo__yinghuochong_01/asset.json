@@ -1,0 +1,37 @@
+{
+  "id": "chargo__yinghuochong_01",
+  "model": "yinghuochong_01",
+  "name": "怨仇技能萤火虫Lv1",
+  "names": [
+    "怨仇技能萤火虫Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/yinghuochong_01",
+  "path": "battle-assets/飞机/chargo__yinghuochong_01",
+  "images": [
+    {
+      "file": "yinghuochong_3374323076087971303.png",
+      "name": "yinghuochong",
+      "width": 253,
+      "height": 231,
+      "role": "战斗贴图",
+      "path_id": 3374323076087971303,
+      "source": "CAB-664ca632c4be256723aea6ec2facfe73"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__yinghuochong_01/yinghuochong_3374323076087971303.png"
+}

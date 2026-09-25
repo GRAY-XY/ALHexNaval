@@ -1,0 +1,32 @@
+{
+  "id": "item__yulei_ai_faku2",
+  "model": "yulei_ai_faku2",
+  "name": "yulei_ai_faku2",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_ai_faku2",
+  "path": "battle-assets/鱼雷/item__yulei_ai_faku2",
+  "images": [
+    {
+      "file": "yulei_ai_faku_2257830684872471048.png",
+      "name": "yulei_ai_faku",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2257830684872471048,
+      "source": "CAB-01c0ecea0d3354d56737e085830dfc1c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    600914,
+    600915,
+    600917,
+    600918,
+    600919
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_ai_faku2/yulei_ai_faku_2257830684872471048.png"
+}

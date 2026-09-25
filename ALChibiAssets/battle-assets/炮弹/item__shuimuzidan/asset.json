@@ -1,0 +1,26 @@
+{
+  "id": "item__shuimuzidan",
+  "model": "shuimuzidan",
+  "name": "shuimuzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shuimuzidan",
+  "path": "battle-assets/炮弹/item__shuimuzidan",
+  "images": [],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    20121111,
+    20121113,
+    20121115,
+    20121117,
+    20121120,
+    20121122,
+    20121124,
+    20121126,
+    20121128,
+    29653043
+  ],
+  "has_preview": false,
+  "prefab": true
+}

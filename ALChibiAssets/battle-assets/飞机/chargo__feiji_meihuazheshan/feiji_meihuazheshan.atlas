@@ -1,0 +1,41 @@
+
+feiji_meihuazheshan.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hua_2
+  rotate: true
+  xy: 456, 168
+  size: 40, 39
+  orig: 40, 39
+  offset: 0, 0
+  index: -1
+hua_2_2
+  rotate: true
+  xy: 456, 126
+  size: 40, 39
+  orig: 40, 39
+  offset: 0, 0
+  index: -1
+hua_2_3
+  rotate: true
+  xy: 456, 84
+  size: 40, 39
+  orig: 40, 39
+  offset: 0, 0
+  index: -1
+meihuazhi
+  rotate: false
+  xy: 2, 2
+  size: 215, 206
+  orig: 215, 206
+  offset: 0, 0
+  index: -1
+zheshan
+  rotate: false
+  xy: 219, 32
+  size: 235, 176
+  orig: 235, 176
+  offset: 0, 0
+  index: -1

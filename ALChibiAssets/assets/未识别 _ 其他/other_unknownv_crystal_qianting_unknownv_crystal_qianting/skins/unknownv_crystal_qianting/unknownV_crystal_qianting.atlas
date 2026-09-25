@@ -1,0 +1,111 @@
+
+unknownV_crystal_qianting.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 572, 218
+  size: 493, 394
+  orig: 493, 394
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: false
+  xy: 568, 135
+  size: 228, 81
+  orig: 228, 81
+  offset: 0, 0
+  index: -1
+chushou_10
+  rotate: false
+  xy: 759, 60
+  size: 100, 58
+  orig: 100, 58
+  offset: 0, 0
+  index: -1
+chushou_11
+  rotate: false
+  xy: 798, 120
+  size: 112, 48
+  orig: 112, 48
+  offset: 0, 0
+  index: -1
+chushou_12
+  rotate: false
+  xy: 912, 137
+  size: 47, 31
+  orig: 47, 31
+  offset: 0, 0
+  index: -1
+chushou_2
+  rotate: true
+  xy: 968, 114
+  size: 174, 48
+  orig: 174, 48
+  offset: 0, 0
+  index: -1
+chushou_3
+  rotate: false
+  xy: 568, 73
+  size: 189, 60
+  orig: 189, 60
+  offset: 0, 0
+  index: -1
+chushou_4
+  rotate: true
+  xy: 968, 577
+  size: 134, 52
+  orig: 134, 52
+  offset: 0, 0
+  index: -1
+chushou_5
+  rotate: true
+  xy: 968, 290
+  size: 103, 49
+  orig: 103, 49
+  offset: 0, 0
+  index: -1
+chushou_6
+  rotate: false
+  xy: 798, 170
+  size: 143, 46
+  orig: 143, 46
+  offset: 0, 0
+  index: -1
+chushou_7
+  rotate: true
+  xy: 968, 395
+  size: 180, 49
+  orig: 180, 49
+  offset: 0, 0
+  index: -1
+chushou_8
+  rotate: true
+  xy: 940, 2
+  size: 110, 66
+  orig: 110, 66
+  offset: 0, 0
+  index: -1
+chushou_9
+  rotate: true
+  xy: 912, 80
+  size: 55, 26
+  orig: 55, 26
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 96
+  size: 564, 307
+  orig: 564, 307
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 405
+  size: 568, 306
+  orig: 568, 306
+  offset: 0, 0
+  index: -1

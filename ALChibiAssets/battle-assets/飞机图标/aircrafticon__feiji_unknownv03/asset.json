@@ -1,0 +1,37 @@
+{
+  "id": "aircrafticon__feiji_unknownv03",
+  "model": "feiji_unknownv03",
+  "name": "【量产型】未知X拟态II类-航母舰载机 Lv1",
+  "names": [
+    "【量产型】未知X拟态II类-航母舰载机 Lv1",
+    "【量产型】未知X拟态II类-航母舰载机 Lv2",
+    "【量产型】未知X拟态II类-航母舰载机 Lv3",
+    "【量产型】未知X拟态II类-航母舰载机 Lv4",
+    "【量产型】未知X拟态II类-航母舰载机 Lv5",
+    "【2025狮UR活动B2】BOSS 未知X拟态II类 航母 舰载机",
+    "【2025狮UR活动B3】BOSS 拟态兽-嘶鸣尖啸大海怪 第三波 舰载机",
+    "【2025狮UR活动D2】BOSS 未知X拟态II类 航母 舰载机",
+    "【2025狮UR活动D3】BOSS 拟态兽-嘶鸣尖啸大海怪 第三波 舰载机",
+    "【2025列克星敦II活动B1】BOSS 拟态兽-女皇 第二波 大批量舰载机",
+    "【2025列克星敦II活动D1】BOSS 拟态兽-女皇 第二波 大批量舰载机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_unknownv03",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_unknownv03",
+  "images": [
+    {
+      "file": "feiji_unknownV03_-6546616713945547155.png",
+      "name": "feiji_unknownV03",
+      "width": 45,
+      "height": 31,
+      "role": "原始精灵",
+      "path_id": -6546616713945547155,
+      "source": "CAB-9beb79f1ee90b4b803ef8d7c45707ec6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

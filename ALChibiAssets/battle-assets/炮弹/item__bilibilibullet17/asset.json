@@ -1,0 +1,28 @@
+{
+  "id": "item__bilibilibullet17",
+  "model": "bilibilibullet17",
+  "name": "bilibilibullet17",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bilibilibullet17",
+  "path": "battle-assets/炮弹/item__bilibilibullet17",
+  "images": [
+    {
+      "file": "bilibilibullet08_-3849477195434940337.png",
+      "name": "bilibilibullet08",
+      "width": 28,
+      "height": 20,
+      "role": "战斗贴图",
+      "path_id": -3849477195434940337,
+      "source": "CAB-4c77ea9ade3ed0c98837195430d95e07"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19827
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bilibilibullet17/bilibilibullet08_-3849477195434940337.png"
+}

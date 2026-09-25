@@ -1,0 +1,32 @@
+{
+  "id": "item__bullet_elf_ice_low",
+  "model": "bullet_elf_ice_low",
+  "name": "bullet_elf_ice_low",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_elf_ice_low",
+  "path": "battle-assets/炮弹/item__bullet_elf_ice_low",
+  "images": [
+    {
+      "file": "Bullet_elf_ice_-8125977719504563554.png",
+      "name": "Bullet_elf_ice",
+      "width": 129,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": -8125977719504563554,
+      "source": "CAB-588156e72be6ebbe43967b43109f2466"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    29655016,
+    29655025,
+    3123224,
+    3123225,
+    3218055
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_elf_ice_low/Bullet_elf_ice_-8125977719504563554.png"
+}

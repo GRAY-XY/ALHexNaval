@@ -1,0 +1,24 @@
+{
+  "id": "item__torpedo_shengdanshu",
+  "model": "torpedo_shengdanshu",
+  "name": "圣诞树鱼雷",
+  "names": [
+    "圣诞树鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_shengdanshu",
+  "path": "battle-assets/鱼雷/item__torpedo_shengdanshu",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "shengdanshuyulei.skel",
+    "atlas": "shengdanshuyulei.atlas",
+    "pages": [
+      "shengdanshuyulei.png"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+
+fuerjiadanchuan.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 531, 420
+  orig: 531, 420
+  offset: 0, 0
+  index: -1
+hm01
+  rotate: false
+  xy: 535, 246
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+hm02
+  rotate: false
+  xy: 535, 157
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+hm03
+  rotate: false
+  xy: 535, 335
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1

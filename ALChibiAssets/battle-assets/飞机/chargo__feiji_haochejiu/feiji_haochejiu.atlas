@@ -1,0 +1,48 @@
+
+feiji_haochejiu.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+haoche
+  rotate: false
+  xy: 2, 18
+  size: 161, 99
+  orig: 161, 99
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 165, 34
+  size: 61, 83
+  orig: 61, 83
+  offset: 0, 0
+  index: -1
+weiqi_1
+  rotate: false
+  xy: 97, 2
+  size: 60, 14
+  orig: 60, 14
+  offset: 0, 0
+  index: -1
+weiqi_2
+  rotate: false
+  xy: 165, 18
+  size: 60, 14
+  orig: 60, 14
+  offset: 0, 0
+  index: -1
+weiqi_3
+  rotate: false
+  xy: 2, 2
+  size: 93, 14
+  orig: 93, 14
+  offset: 0, 0
+  index: -1
+weiqi_4
+  rotate: true
+  xy: 228, 24
+  size: 93, 14
+  orig: 93, 14
+  offset: 0, 0
+  index: -1

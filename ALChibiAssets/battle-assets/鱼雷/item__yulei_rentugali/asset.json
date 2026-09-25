@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_rentugali",
+  "model": "yulei_rentugali",
+  "name": "忍兔咖喱鱼雷",
+  "names": [
+    "忍兔咖喱鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_rentugali",
+  "path": "battle-assets/鱼雷/item__yulei_rentugali",
+  "images": [
+    {
+      "file": "yulei_rentugali_5561939366960171706.png",
+      "name": "yulei_rentugali",
+      "width": 421,
+      "height": 212,
+      "role": "战斗贴图",
+      "path_id": 5561939366960171706,
+      "source": "CAB-7dbdcb54726f62c0f2f8fb259c90a930"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_rentugali/yulei_rentugali_5561939366960171706.png"
+}

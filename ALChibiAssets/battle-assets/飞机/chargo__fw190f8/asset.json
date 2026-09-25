@@ -1,0 +1,37 @@
+{
+  "id": "chargo__fw190f8",
+  "model": "fw190f8",
+  "name": "FW-190 F-8/U2",
+  "names": [
+    "FW-190 F-8/U2"
+  ],
+  "category": "飞机",
+  "source": "chargo/fw190f8",
+  "path": "battle-assets/飞机/chargo__fw190f8",
+  "images": [
+    {
+      "file": "Fw190f8_3523117886848312776.png",
+      "name": "Fw190f8",
+      "width": 233,
+      "height": 242,
+      "role": "战斗贴图",
+      "path_id": 3523117886848312776,
+      "source": "CAB-c4930785b74efd5042a277253f281aa6"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fw190f8/Fw190f8_3523117886848312776.png"
+}

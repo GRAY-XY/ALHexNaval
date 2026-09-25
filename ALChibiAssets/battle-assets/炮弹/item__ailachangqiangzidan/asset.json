@@ -1,0 +1,28 @@
+{
+  "id": "item__ailachangqiangzidan",
+  "model": "ailachangqiangzidan",
+  "name": "ailachangqiangzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ailachangqiangzidan",
+  "path": "battle-assets/炮弹/item__ailachangqiangzidan",
+  "images": [
+    {
+      "file": "ailachangqiangzidan_3662370922992939186.png",
+      "name": "ailachangqiangzidan",
+      "width": 459,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": 3662370922992939186,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161156
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ailachangqiangzidan/ailachangqiangzidan_3662370922992939186.png"
+}

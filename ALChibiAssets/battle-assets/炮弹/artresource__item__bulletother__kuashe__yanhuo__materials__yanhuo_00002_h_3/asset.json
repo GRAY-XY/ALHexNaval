@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletother__kuashe__yanhuo__materials__yanhuo_00002_h_3",
+  "model": "yanhuo_00002_h_3",
+  "name": "yanhuo_00002_h_3",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/kuashe/yanhuo/materials/yanhuo_00002_h_3",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__kuashe__yanhuo__materials__yanhuo_00002_h_3",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

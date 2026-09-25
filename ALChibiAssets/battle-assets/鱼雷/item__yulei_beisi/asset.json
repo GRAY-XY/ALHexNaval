@@ -1,0 +1,31 @@
+{
+  "id": "item__yulei_beisi",
+  "model": "yulei_beisi",
+  "name": "贝斯鱼雷",
+  "names": [
+    "贝斯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_beisi",
+  "path": "battle-assets/鱼雷/item__yulei_beisi",
+  "images": [
+    {
+      "file": "yulei_beisi_8627191681439203921.png",
+      "name": "yulei_beisi",
+      "width": 128,
+      "height": 42,
+      "role": "战斗贴图",
+      "path_id": 8627191681439203921,
+      "source": "CAB-7888a98e0366d2cf1ec266dfcd3d4b30"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3146528,
+    3146529
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_beisi/yulei_beisi_8627191681439203921.png"
+}

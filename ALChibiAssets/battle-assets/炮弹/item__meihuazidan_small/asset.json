@@ -1,0 +1,29 @@
+{
+  "id": "item__meihuazidan_small",
+  "model": "meihuazidan_small",
+  "name": "meihuazidan_small",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/meihuazidan_small",
+  "path": "battle-assets/炮弹/item__meihuazidan_small",
+  "images": [
+    {
+      "file": "zidan_hunianmeihua_-4603206855781559225.png",
+      "name": "zidan_hunianmeihua",
+      "width": 128,
+      "height": 109,
+      "role": "战斗贴图",
+      "path_id": -4603206855781559225,
+      "source": "CAB-6bbf47b120282fe4173810a300acf6b4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19687,
+    19688
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__meihuazidan_small/zidan_hunianmeihua_-4603206855781559225.png"
+}

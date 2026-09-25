@@ -1,0 +1,26 @@
+{
+  "id": "item__jianqi_fire_pink",
+  "model": "jianqi_fire_pink",
+  "name": "jianqi_fire_pink",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/jianqi_fire_pink",
+  "path": "battle-assets/其他战斗特效/item__jianqi_fire_pink",
+  "images": [
+    {
+      "file": "daoguang03_pink_8649899884792179410.png",
+      "name": "daoguang03_pink",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 8649899884792179410,
+      "source": "CAB-662dc27deb6ea2f93d0f5a40afce6313"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__jianqi_fire_pink/daoguang03_pink_8649899884792179410.png"
+}

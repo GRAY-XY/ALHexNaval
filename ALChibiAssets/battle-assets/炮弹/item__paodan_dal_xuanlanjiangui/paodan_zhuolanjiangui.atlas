@@ -1,0 +1,20 @@
+
+paodan_zhuolanjiangui.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fuzi
+  rotate: true
+  xy: 2, 13
+  size: 225, 186
+  orig: 225, 186
+  offset: 0, 0
+  index: -1
+texiao
+  rotate: true
+  xy: 190, 2
+  size: 236, 155
+  orig: 236, 155
+  offset: 0, 0
+  index: -1

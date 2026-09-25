@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_qidianjiu_doa",
+  "model": "feiji_qidianjiu_doa",
+  "name": "沙滩气垫啾（鱼雷）",
+  "names": [
+    "沙滩气垫啾（鱼雷）",
+    "沙滩气垫啾（战斗）",
+    "沙滩气垫啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_qidianjiu_doa",
+  "path": "battle-assets/飞机/chargo__feiji_qidianjiu_doa",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_qidianjiu_doa_-8407122212073182701.png",
+      "name": "feiji_qidianjiu_doa",
+      "width": 256,
+      "height": 119,
+      "role": "战斗贴图",
+      "path_id": -8407122212073182701,
+      "source": "CAB-0e5b2275ee3cfdade272e5aed40f0383"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_qidianjiu_doa/aircraft_shadow_2192772484218123160.png"
+}

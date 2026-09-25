@@ -1,0 +1,48 @@
+
+idom_zi.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 231, 40
+  size: 94, 182
+  orig: 94, 182
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 403, 75
+  size: 83, 65
+  orig: 83, 65
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 327, 88
+  size: 74, 134
+  orig: 74, 134
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 231, 5
+  size: 33, 135
+  orig: 33, 135
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 2
+  size: 227, 220
+  orig: 227, 220
+  offset: 0, 0
+  index: -1
+daimao
+  rotate: false
+  xy: 403, 142
+  size: 88, 80
+  orig: 88, 80
+  offset: 0, 0
+  index: -1

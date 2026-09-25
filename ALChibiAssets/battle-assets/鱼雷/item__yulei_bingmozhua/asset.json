@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_bingmozhua",
+  "model": "yulei_bingmozhua",
+  "name": "冰霜魔爪鱼雷",
+  "names": [
+    "冰霜魔爪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_bingmozhua",
+  "path": "battle-assets/鱼雷/item__yulei_bingmozhua",
+  "images": [
+    {
+      "file": "bingzhua01_4192767939711806568.png",
+      "name": "bingzhua01",
+      "width": 236,
+      "height": 120,
+      "role": "战斗贴图",
+      "path_id": 4192767939711806568,
+      "source": "CAB-a57c01a55cc3193ed3c0e86b1ee46335"
+    }
+  ],
+  "particle_systems": 6,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_bingmozhua/bingzhua01_4192767939711806568.png"
+}

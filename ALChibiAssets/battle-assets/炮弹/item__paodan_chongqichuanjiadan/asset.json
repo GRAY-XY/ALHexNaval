@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_chongqichuanjiadan",
+  "model": "paodan_chongqichuanjiadan",
+  "name": "充气穿甲弹（炮弹）",
+  "names": [
+    "充气穿甲弹（炮弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chongqichuanjiadan",
+  "path": "battle-assets/炮弹/item__paodan_chongqichuanjiadan",
+  "images": [
+    {
+      "file": "paodan_chongqichuanjiadan_2396177917564959033.png",
+      "name": "paodan_chongqichuanjiadan",
+      "width": 128,
+      "height": 59,
+      "role": "战斗贴图",
+      "path_id": 2396177917564959033,
+      "source": "CAB-4a5fd38688ac46dfba1507d8a82105c7"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chongqichuanjiadan/paodan_chongqichuanjiadan_2396177917564959033.png"
+}

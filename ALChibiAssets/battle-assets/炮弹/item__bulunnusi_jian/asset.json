@@ -1,0 +1,28 @@
+{
+  "id": "item__bulunnusi_jian",
+  "model": "bulunnusi_jian",
+  "name": "bulunnusi_jian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulunnusi_jian",
+  "path": "battle-assets/炮弹/item__bulunnusi_jian",
+  "images": [
+    {
+      "file": "jian02_-1196542076992581298.png",
+      "name": "jian02",
+      "width": 465,
+      "height": 152,
+      "role": "战斗贴图",
+      "path_id": -1196542076992581298,
+      "source": "CAB-37638e2deeb85d79fca3e4723b018043"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    79977
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulunnusi_jian/jian02_-1196542076992581298.png"
+}

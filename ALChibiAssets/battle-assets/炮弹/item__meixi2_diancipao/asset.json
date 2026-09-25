@@ -1,0 +1,38 @@
+{
+  "id": "item__meixi2_diancipao",
+  "model": "meixi2_diancipao",
+  "name": "meixi2_diancipao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/meixi2_diancipao",
+  "path": "battle-assets/炮弹/item__meixi2_diancipao",
+  "images": [
+    {
+      "file": "bullet_UK4_7455443727048939557.png",
+      "name": "bullet_UK4",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 7455443727048939557,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    },
+    {
+      "file": "changqiang01_-6174810076560519386.png",
+      "name": "changqiang01",
+      "width": 204,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -6174810076560519386,
+      "source": "CAB-64e035183bff463bb47e37623c18da80"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    3049014,
+    3109012
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__meixi2_diancipao/bullet_UK4_7455443727048939557.png"
+}

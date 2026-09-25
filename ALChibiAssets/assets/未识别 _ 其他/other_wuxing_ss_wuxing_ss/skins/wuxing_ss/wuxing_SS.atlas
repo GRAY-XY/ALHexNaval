@@ -1,0 +1,69 @@
+
+wuxing_SS.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 6
+  size: 520, 351
+  orig: 520, 351
+  offset: 0, 0
+  index: -1
+body_n
+  rotate: false
+  xy: 524, 2
+  size: 520, 351
+  orig: 520, 351
+  offset: 0, 0
+  index: -1
+heiwu
+  rotate: false
+  xy: 2, 359
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu2
+  rotate: false
+  xy: 592, 355
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu3
+  rotate: false
+  xy: 1182, 355
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+piaowu
+  rotate: false
+  xy: 2, 750
+  size: 62, 53
+  orig: 62, 53
+  offset: 0, 0
+  index: -1
+qt01
+  rotate: false
+  xy: 592, 697
+  size: 510, 106
+  orig: 510, 106
+  offset: 0, 0
+  index: -1
+qt02
+  rotate: false
+  xy: 66, 699
+  size: 524, 104
+  orig: 524, 104
+  offset: 0, 0
+  index: -1
+qt03
+  rotate: false
+  xy: 1104, 695
+  size: 535, 108
+  orig: 535, 108
+  offset: 0, 0
+  index: -1

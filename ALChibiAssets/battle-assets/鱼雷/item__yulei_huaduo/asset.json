@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_huaduo",
+  "model": "yulei_huaduo",
+  "name": "花束鱼雷",
+  "names": [
+    "花束鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huaduo",
+  "path": "battle-assets/鱼雷/item__yulei_huaduo",
+  "images": [
+    {
+      "file": "yulei_huaduo_-1944996935050364573.png",
+      "name": "yulei_huaduo",
+      "width": 128,
+      "height": 61,
+      "role": "战斗贴图",
+      "path_id": -1944996935050364573,
+      "source": "CAB-56951717fc98052c2dff2caa820d8f36"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19333
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_huaduo/yulei_huaduo_-1944996935050364573.png"
+}

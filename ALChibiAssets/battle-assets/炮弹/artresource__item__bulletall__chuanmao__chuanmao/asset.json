@@ -1,0 +1,32 @@
+{
+  "id": "artresource__item__bulletall__chuanmao__chuanmao",
+  "model": "chuanmao",
+  "name": "chuanmao",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/chuanmao/chuanmao",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__chuanmao__chuanmao",
+  "images": [
+    {
+      "file": "chuanmao_-3649291877458832680.png",
+      "name": "chuanmao",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3649291877458832680,
+      "source": "CAB-a1c7a6ba1e3fb4d3e16fb7348fed5fad"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    29651045,
+    29651047,
+    29651052,
+    29651054,
+    3094004,
+    3094021
+  ],
+  "has_preview": true,
+  "prefab": false
+}

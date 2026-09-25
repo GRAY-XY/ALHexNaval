@@ -1,0 +1,31 @@
+{
+  "id": "item__hwxcl_1",
+  "model": "hwxcl_1",
+  "name": "hwxcl_1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hwxcl_1",
+  "path": "battle-assets/炮弹/item__hwxcl_1",
+  "images": [
+    {
+      "file": "hwxcl_1_-753726247645641925.png",
+      "name": "hwxcl_1",
+      "width": 56,
+      "height": 112,
+      "role": "战斗贴图",
+      "path_id": -753726247645641925,
+      "source": "CAB-66f4561e6442302166a20e12b572c01c"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [
+    "zidan_4_mod"
+  ],
+  "bullet_ids": [
+    7109,
+    19915
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hwxcl_1/hwxcl_1_-753726247645641925.png"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__pugongyingfeiji__pugongyingfeiji_material",
+  "model": "pugongyingfeiji_material",
+  "name": "pugongyingfeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/pugongyingfeiji/pugongyingfeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__pugongyingfeiji__pugongyingfeiji_material",
+  "images": [
+    {
+      "file": "pugongyingfeiji_2992645327539116771.png",
+      "name": "pugongyingfeiji",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2992645327539116771,
+      "source": "CAB-7e364d27874c12320a7c3ddb9febcc44"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

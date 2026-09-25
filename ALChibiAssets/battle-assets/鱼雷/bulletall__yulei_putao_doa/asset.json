@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_putao_doa",
+  "model": "yulei_putao_doa",
+  "name": "清凉葡萄鱼雷",
+  "names": [
+    "清凉葡萄鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_putao_doa",
+  "path": "battle-assets/鱼雷/bulletall__yulei_putao_doa",
+  "images": [
+    {
+      "file": "yulei_putao_doa_8945058694886708835.png",
+      "name": "yulei_putao_doa",
+      "width": 122,
+      "height": 55,
+      "role": "原始精灵",
+      "path_id": 8945058694886708835,
+      "source": "CAB-8f67cf0230128e2eaf4c18ff9989e0ee"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

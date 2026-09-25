@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jiabindianshu_doa",
+  "model": "zidan_jiabindianshu_doa",
+  "name": "嘉宾点数子弹",
+  "names": [
+    "嘉宾点数子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jiabindianshu_doa",
+  "path": "battle-assets/炮弹/item__zidan_jiabindianshu_doa",
+  "images": [
+    {
+      "file": "zidan_jiabindianshu_doa_-2323760655932831064.png",
+      "name": "zidan_jiabindianshu_doa",
+      "width": 128,
+      "height": 69,
+      "role": "战斗贴图",
+      "path_id": -2323760655932831064,
+      "source": "CAB-bdc2073eaab83b1587c972aa8b85a65e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jiabindianshu_doa/zidan_jiabindianshu_doa_-2323760655932831064.png"
+}

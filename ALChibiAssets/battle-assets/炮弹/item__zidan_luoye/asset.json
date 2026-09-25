@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_luoye",
+  "model": "zidan_luoye",
+  "name": "落叶子弹",
+  "names": [
+    "落叶子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_luoye",
+  "path": "battle-assets/炮弹/item__zidan_luoye",
+  "images": [
+    {
+      "file": "zidan_luoye_-404492209132431933.png",
+      "name": "zidan_luoye",
+      "width": 128,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": -404492209132431933,
+      "source": "CAB-313db99dbbbdccf1ee54debb9d28a830"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_luoye/zidan_luoye_-404492209132431933.png"
+}

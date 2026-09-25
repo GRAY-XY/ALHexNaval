@@ -1,0 +1,38 @@
+{
+  "id": "aircrafticon__liuxing",
+  "model": "liuxing",
+  "name": "流星",
+  "names": [
+    "流星",
+    "葛城技能流星 LV1",
+    "大凤μ技能鱼雷机Lv1",
+    "大凤技能鱼雷机Lv0",
+    "信浓技能流星 LV1",
+    "小大凤技能鱼雷机Lv1",
+    "云龙技能流星 LV1",
+    "【战术研修II】【BOSS】飞龙-鱼雷机",
+    "翔鹤鱼雷机",
+    "瑞鹤鱼雷机",
+    "【2020偶像活动二期SP5】BOSS 大凤 第四波 音符鱼雷机",
+    "【2021岛风活动剧情】流星（极速装填）"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/liuxing",
+  "path": "battle-assets/飞机图标/aircrafticon__liuxing",
+  "images": [
+    {
+      "file": "liuxing_-8377765625574277097.png",
+      "name": "liuxing",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -8377765625574277097,
+      "source": "CAB-7d2dcb0ee19c82fe3a9e18987f9b4f99"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__laisha_gongjian",
+  "model": "laisha_gongjian",
+  "name": "laisha_gongjian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_gongjian",
+  "path": "battle-assets/炮弹/item__laisha_gongjian",
+  "images": [
+    {
+      "file": "gongjian_3312779673622055387.png",
+      "name": "gongjian",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3312779673622055387,
+      "source": "CAB-731e319c080fca9726e7b44d65aa534a"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19498
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laisha_gongjian/gongjian_3312779673622055387.png"
+}

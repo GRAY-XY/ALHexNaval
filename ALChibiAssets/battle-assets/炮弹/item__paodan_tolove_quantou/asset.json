@@ -1,0 +1,32 @@
+{
+  "id": "item__paodan_tolove_quantou",
+  "model": "paodan_tolove_quantou",
+  "name": "变身重拳炮弹",
+  "names": [
+    "变身重拳炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tolove_quantou",
+  "path": "battle-assets/炮弹/item__paodan_tolove_quantou",
+  "images": [
+    {
+      "file": "paodan_tolove_quantou_6717673989876324632.png",
+      "name": "paodan_tolove_quantou",
+      "width": 496,
+      "height": 304,
+      "role": "战斗贴图",
+      "path_id": 6717673989876324632,
+      "source": "CAB-70408f1896c6cde793b30f27e945b485"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    160969,
+    160975,
+    3227207
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tolove_quantou/paodan_tolove_quantou_6717673989876324632.png"
+}

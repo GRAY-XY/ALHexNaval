@@ -1,0 +1,76 @@
+
+wuxing_DD.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4
+  rotate: true
+  xy: 701, 263
+  size: 77, 76
+  orig: 77, 76
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 342, 57
+  size: 357, 283
+  orig: 357, 283
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: true
+  xy: 701, 153
+  size: 44, 62
+  orig: 44, 62
+  offset: 0, 0
+  index: -1
+heiwu
+  rotate: false
+  xy: 2, 592
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu2
+  rotate: true
+  xy: 592, 342
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu3
+  rotate: true
+  xy: 2, 2
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+piaowu
+  rotate: true
+  xy: 701, 199
+  size: 62, 53
+  orig: 62, 53
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: false
+  xy: 342, 523
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: false
+  xy: 342, 454
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: false
+  xy: 342, 385
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1

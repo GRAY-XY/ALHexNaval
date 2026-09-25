@@ -1,0 +1,28 @@
+{
+  "id": "item__xiliansi_miehuoqi",
+  "model": "xiliansi_miehuoqi",
+  "name": "xiliansi_miehuoqi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiliansi_miehuoqi",
+  "path": "battle-assets/炮弹/item__xiliansi_miehuoqi",
+  "images": [
+    {
+      "file": "xiliansi_miehuoqi_-1885801592453114040.png",
+      "name": "xiliansi_miehuoqi",
+      "width": 99,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": -1885801592453114040,
+      "source": "CAB-9cdbb577dd3477020f2ed984201aea81"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160965
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xiliansi_miehuoqi/xiliansi_miehuoqi_-1885801592453114040.png"
+}

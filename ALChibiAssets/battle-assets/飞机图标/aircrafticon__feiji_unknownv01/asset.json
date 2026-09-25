@@ -1,0 +1,31 @@
+{
+  "id": "aircrafticon__feiji_unknownv01",
+  "model": "feiji_unknownv01",
+  "name": "【量产型】未知X拟态-航母舰载机（飞机弹幕很弱但高频率冲底） Lv1",
+  "names": [
+    "【量产型】未知X拟态-航母舰载机（飞机弹幕很弱但高频率冲底） Lv1",
+    "【量产型】未知X拟态-航母舰载机（飞机弹幕很弱但高频率冲底） Lv2",
+    "【量产型】未知X拟态-航母舰载机（飞机弹幕很弱但高频率冲底） Lv3",
+    "【量产型】未知X拟态-航母舰载机（飞机弹幕很弱但高频率冲底） Lv4",
+    "【量产型】未知X拟态-航母舰载机（飞机弹幕很弱但高频率冲底） Lv5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_unknownv01",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_unknownv01",
+  "images": [
+    {
+      "file": "feiji_unknownV01_6729470098770982196.png",
+      "name": "feiji_unknownV01",
+      "width": 45,
+      "height": 29,
+      "role": "原始精灵",
+      "path_id": 6729470098770982196,
+      "source": "CAB-659e7af23c54c7f9018a62acd1328f4c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

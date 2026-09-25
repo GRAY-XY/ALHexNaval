@@ -1,0 +1,29 @@
+{
+  "id": "item__yulei_juanzhou_big",
+  "model": "yulei_juanzhou_big",
+  "name": "yulei_juanzhou_big",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_juanzhou_big",
+  "path": "battle-assets/鱼雷/item__yulei_juanzhou_big",
+  "images": [
+    {
+      "file": "yulei_juanzhou_4786053754118806699.png",
+      "name": "yulei_juanzhou",
+      "width": 128,
+      "height": 28,
+      "role": "战斗贴图",
+      "path_id": 4786053754118806699,
+      "source": "CAB-2f15a9c764b5277c7338b6b19da72230"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3108113,
+    3109006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_juanzhou_big/yulei_juanzhou_4786053754118806699.png"
+}

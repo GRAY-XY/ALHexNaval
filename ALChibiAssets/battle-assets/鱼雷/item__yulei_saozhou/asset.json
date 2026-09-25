@@ -1,0 +1,46 @@
+{
+  "id": "item__yulei_saozhou",
+  "model": "yulei_saozhou",
+  "name": "魔法扫帚鱼雷",
+  "names": [
+    "魔法扫帚鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_saozhou",
+  "path": "battle-assets/鱼雷/item__yulei_saozhou",
+  "images": [
+    {
+      "file": "saozhou_trail01_-528800917025178396.png",
+      "name": "saozhou_trail01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -528800917025178396,
+      "source": "CAB-cd2b84dee8069bc4e7d29ccc56d8f1af"
+    },
+    {
+      "file": "saozhou01_82837056723747198.png",
+      "name": "saozhou01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 82837056723747198,
+      "source": "CAB-cd2b84dee8069bc4e7d29ccc56d8f1af"
+    },
+    {
+      "file": "AL_Star01_1_5688416662968226083.png",
+      "name": "AL_Star01_1",
+      "width": 64,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": 5688416662968226083,
+      "source": "CAB-cd2b84dee8069bc4e7d29ccc56d8f1af"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_saozhou/saozhou_trail01_-528800917025178396.png"
+}

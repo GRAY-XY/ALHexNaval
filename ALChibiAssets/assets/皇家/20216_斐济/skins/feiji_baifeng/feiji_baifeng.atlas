@@ -1,0 +1,111 @@
+
+feiji_baifeng.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 7
+  size: 280, 61
+  orig: 280, 61
+  offset: 0, 0
+  index: -1
+chibang_b
+  rotate: false
+  xy: 457, 112
+  size: 296, 128
+  orig: 296, 128
+  offset: 0, 0
+  index: -1
+chibang_f
+  rotate: false
+  xy: 2, 70
+  size: 296, 170
+  orig: 296, 170
+  offset: 0, 0
+  index: -1
+eff_glowb0001
+  rotate: false
+  xy: 300, 86
+  size: 155, 154
+  orig: 155, 154
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 994, 203
+  size: 28, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: -1
+gd_1_2
+  rotate: false
+  xy: 864, 95
+  size: 28, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: -1
+gd_1_3
+  rotate: true
+  xy: 864, 65
+  size: 28, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 755, 54
+  size: 107, 78
+  orig: 107, 78
+  offset: 0, 0
+  index: -1
+weiba_1
+  rotate: false
+  xy: 631, 8
+  size: 316, 37
+  orig: 316, 37
+  offset: 0, 0
+  index: -1
+weiba_2
+  rotate: false
+  xy: 300, 65
+  size: 145, 19
+  orig: 145, 19
+  offset: 0, 0
+  index: -1
+weiba_3
+  rotate: false
+  xy: 457, 47
+  size: 285, 63
+  orig: 285, 63
+  offset: 0, 0
+  index: -1
+weiba_4
+  rotate: false
+  xy: 755, 213
+  size: 237, 27
+  orig: 237, 27
+  offset: 0, 0
+  index: -1
+weiba_5
+  rotate: true
+  xy: 949, 11
+  size: 200, 34
+  orig: 200, 34
+  offset: 0, 0
+  index: -1
+weiba_6
+  rotate: false
+  xy: 284, 2
+  size: 345, 43
+  orig: 345, 43
+  offset: 0, 0
+  index: -1
+weiba_7
+  rotate: false
+  xy: 755, 134
+  size: 188, 77
+  orig: 188, 77
+  offset: 0, 0
+  index: -1

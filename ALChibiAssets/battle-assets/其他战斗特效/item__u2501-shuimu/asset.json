@@ -1,0 +1,44 @@
+{
+  "id": "item__u2501-shuimu",
+  "model": "u2501-shuimu",
+  "name": "u2501-shuimu",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/u2501-shuimu",
+  "path": "battle-assets/其他战斗特效/item__u2501-shuimu",
+  "images": [
+    {
+      "file": "shuimu02_-2270572419059259764.png",
+      "name": "shuimu02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2270572419059259764,
+      "source": "CAB-b828b3ee9b23a36f2449032e4c70614b"
+    },
+    {
+      "file": "shuimu01_-2174868834895031628.png",
+      "name": "shuimu01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2174868834895031628,
+      "source": "CAB-b828b3ee9b23a36f2449032e4c70614b"
+    },
+    {
+      "file": "line01_3764661461819697333.png",
+      "name": "line01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3764661461819697333,
+      "source": "CAB-b828b3ee9b23a36f2449032e4c70614b"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__u2501-shuimu/shuimu02_-2270572419059259764.png"
+}

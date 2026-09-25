@@ -1,0 +1,19 @@
+{
+  "id": "item__maozhua",
+  "model": "maozhua",
+  "name": "maozhua",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/maozhua",
+  "path": "battle-assets/炮弹/item__maozhua",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19588,
+    79551,
+    79552
+  ],
+  "has_preview": false,
+  "prefab": true
+}

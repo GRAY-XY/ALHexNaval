@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_nvpumaozhua",
+  "model": "zidan_nvpumaozhua",
+  "name": "喵爪子弹",
+  "names": [
+    "喵爪子弹"
+  ],
+  "category": "鱼雷",
+  "source": "item/zidan_nvpumaozhua",
+  "path": "battle-assets/鱼雷/item__zidan_nvpumaozhua",
+  "images": [
+    {
+      "file": "caihong01_-7064775341021532193.png",
+      "name": "caihong01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7064775341021532193,
+      "source": "CAB-faad0f52b1785e9c2ced1edf307bf3b4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19587,
+    3146048
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__zidan_nvpumaozhua/caihong01_-7064775341021532193.png"
+}

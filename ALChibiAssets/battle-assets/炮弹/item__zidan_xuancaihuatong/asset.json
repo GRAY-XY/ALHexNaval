@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_xuancaihuatong",
+  "model": "zidan_xuancaihuatong",
+  "name": "彩话筒子弹",
+  "names": [
+    "彩话筒子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xuancaihuatong",
+  "path": "battle-assets/炮弹/item__zidan_xuancaihuatong",
+  "images": [
+    {
+      "file": "zidan_xuancaihuatong_8495719330557914556.png",
+      "name": "zidan_xuancaihuatong",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8495719330557914556,
+      "source": "CAB-08f7f797bf6aad1d2dbd05c81c122fa5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xuancaihuatong/zidan_xuancaihuatong_8495719330557914556.png",
+  "spine": {
+    "skel": "zidan_xuancaihuatong.skel",
+    "atlas": "zidan_xuancaihuatong.atlas",
+    "pages": [
+      "zidan_xuancaihuatong.png"
+    ]
+  }
+}

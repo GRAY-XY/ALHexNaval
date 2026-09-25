@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_hunianlanhua",
+  "model": "zidan_hunianlanhua",
+  "name": "兰花子弹",
+  "names": [
+    "兰花子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hunianlanhua",
+  "path": "battle-assets/炮弹/item__zidan_hunianlanhua",
+  "images": [
+    {
+      "file": "zidan_hunianlanhua_7939501634392711891.png",
+      "name": "zidan_hunianlanhua",
+      "width": 128,
+      "height": 123,
+      "role": "战斗贴图",
+      "path_id": 7939501634392711891,
+      "source": "CAB-01dd34a4b5bc848c28696d2d4b3278e6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3119109,
+    3119483,
+    3119484,
+    3359302,
+    3359303,
+    3359421
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hunianlanhua/zidan_hunianlanhua_7939501634392711891.png"
+}

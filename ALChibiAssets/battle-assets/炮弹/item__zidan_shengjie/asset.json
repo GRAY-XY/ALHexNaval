@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_shengjie",
+  "model": "zidan_shengjie",
+  "name": "绳结子弹",
+  "names": [
+    "绳结子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shengjie",
+  "path": "battle-assets/炮弹/item__zidan_shengjie",
+  "images": [
+    {
+      "file": "zidan_shengjie_3287285065887573126.png",
+      "name": "zidan_shengjie",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3287285065887573126,
+      "source": "CAB-6dd37c21c4306620090b6496c676003d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shengjie/zidan_shengjie_3287285065887573126.png",
+  "spine": {
+    "skel": "zidan_shengjie.skel",
+    "atlas": "zidan_shengjie.atlas",
+    "pages": [
+      "zidan_shengjie.png"
+    ]
+  }
+}

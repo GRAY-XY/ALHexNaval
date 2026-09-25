@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jiangqi",
+  "model": "zidan_jiangqi",
+  "name": "将棋子弹",
+  "names": [
+    "将棋子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jiangqi",
+  "path": "battle-assets/炮弹/item__zidan_jiangqi",
+  "images": [
+    {
+      "file": "zidan_jiangqi_998422384354572385.png",
+      "name": "zidan_jiangqi",
+      "width": 128,
+      "height": 87,
+      "role": "战斗贴图",
+      "path_id": 998422384354572385,
+      "source": "CAB-10cdad36184dc90b0e411c865cf915d0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jiangqi/zidan_jiangqi_998422384354572385.png"
+}

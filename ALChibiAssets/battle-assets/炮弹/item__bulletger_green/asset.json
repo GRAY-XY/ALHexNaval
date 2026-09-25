@@ -1,0 +1,45 @@
+{
+  "id": "item__bulletger_green",
+  "model": "bulletger_green",
+  "name": "bulletger_green",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletger_green",
+  "path": "battle-assets/炮弹/item__bulletger_green",
+  "images": [
+    {
+      "file": "bulletGER_green_-6005591768475271041.png",
+      "name": "bulletGER_green",
+      "width": 92,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": -6005591768475271041,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170715,
+    700028,
+    830063,
+    830064,
+    840103,
+    840120,
+    853123,
+    3002305,
+    3002310,
+    3002311,
+    3005403,
+    3029305,
+    3029306,
+    3059008,
+    3292007,
+    3292008,
+    3292009,
+    3292010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletger_green/bulletGER_green_-6005591768475271041.png"
+}

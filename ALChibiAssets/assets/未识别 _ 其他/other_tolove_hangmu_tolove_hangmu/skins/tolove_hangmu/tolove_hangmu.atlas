@@ -1,0 +1,41 @@
+
+tolove_hangmu.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 802, 425
+  orig: 802, 425
+  offset: 0, 0
+  index: -1
+hm01
+  rotate: false
+  xy: 2, 559
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+hm02
+  rotate: false
+  xy: 414, 559
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+hm03
+  rotate: false
+  xy: 2, 470
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+qi
+  rotate: true
+  xy: 414, 429
+  size: 128, 247
+  orig: 128, 247
+  offset: 0, 0
+  index: -1

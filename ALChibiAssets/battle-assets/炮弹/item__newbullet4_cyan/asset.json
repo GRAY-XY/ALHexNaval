@@ -1,0 +1,30 @@
+{
+  "id": "item__newbullet4_cyan",
+  "model": "newbullet4_cyan",
+  "name": "newbullet4_cyan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/newbullet4_cyan",
+  "path": "battle-assets/炮弹/item__newbullet4_cyan",
+  "images": [
+    {
+      "file": "bulletUSA_cyan_7501301589936091298.png",
+      "name": "bulletUSA_cyan",
+      "width": 162,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": 7501301589936091298,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3039025,
+    3258008,
+    3258009
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__newbullet4_cyan/bulletUSA_cyan_7501301589936091298.png"
+}

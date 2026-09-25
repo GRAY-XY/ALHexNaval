@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__xf5f",
+  "model": "xf5f",
+  "name": "XF5F天箭",
+  "names": [
+    "XF5F天箭"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/xf5f",
+  "path": "battle-assets/飞机图标/aircrafticon__xf5f",
+  "images": [
+    {
+      "file": "XF5F_4080623094109140472.png",
+      "name": "XF5F",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 4080623094109140472,
+      "source": "CAB-edab9b5be489fe8093e174f086900ead"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

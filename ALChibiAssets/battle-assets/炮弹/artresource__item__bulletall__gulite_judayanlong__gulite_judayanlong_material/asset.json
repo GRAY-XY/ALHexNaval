@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__gulite_judayanlong__gulite_judayanlong_material",
+  "model": "gulite_judayanlong_material",
+  "name": "gulite_judayanlong_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/gulite_judayanlong/gulite_judayanlong_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__gulite_judayanlong__gulite_judayanlong_material",
+  "images": [
+    {
+      "file": "gulite_judayanlong_8550592582895908632.png",
+      "name": "gulite_judayanlong",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8550592582895908632,
+      "source": "CAB-3226490a7c68081f7d0f82b47cd84972"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

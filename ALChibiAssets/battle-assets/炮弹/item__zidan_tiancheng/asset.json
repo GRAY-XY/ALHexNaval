@@ -1,0 +1,38 @@
+{
+  "id": "item__zidan_tiancheng",
+  "model": "zidan_tiancheng",
+  "name": "zidan_tiancheng",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_tiancheng",
+  "path": "battle-assets/炮弹/item__zidan_tiancheng",
+  "images": [
+    {
+      "file": "tianchengzidan_1016603855255447588.png",
+      "name": "tianchengzidan",
+      "width": 256,
+      "height": 81,
+      "role": "战斗贴图",
+      "path_id": 1016603855255447588,
+      "source": "CAB-0314050a091fa7b7ad878cd8ffe255cb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161133,
+    165271,
+    165272,
+    165273,
+    165274,
+    165275,
+    165276,
+    165277,
+    165278,
+    165279,
+    165280
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tiancheng/tianchengzidan_1016603855255447588.png"
+}

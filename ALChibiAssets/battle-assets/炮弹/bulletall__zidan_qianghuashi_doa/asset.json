@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_qianghuashi_doa",
+  "model": "zidan_qianghuashi_doa",
+  "name": "特大强化石子弹",
+  "names": [
+    "特大强化石子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_qianghuashi_doa",
+  "path": "battle-assets/炮弹/bulletall__zidan_qianghuashi_doa",
+  "images": [
+    {
+      "file": "zidan_qianghuashi_doa_-7830866443737656624.png",
+      "name": "zidan_qianghuashi_doa",
+      "width": 127,
+      "height": 65,
+      "role": "原始精灵",
+      "path_id": -7830866443737656624,
+      "source": "CAB-5eac61e69f5c49803706eb40681880a2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

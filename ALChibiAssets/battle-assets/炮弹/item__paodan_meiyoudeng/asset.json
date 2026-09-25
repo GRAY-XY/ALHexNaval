@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_meiyoudeng",
+  "model": "paodan_meiyoudeng",
+  "name": "煤油灯炮弹",
+  "names": [
+    "煤油灯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_meiyoudeng",
+  "path": "battle-assets/炮弹/item__paodan_meiyoudeng",
+  "images": [
+    {
+      "file": "paodan_meiyoudeng_6841652544342606107.png",
+      "name": "paodan_meiyoudeng",
+      "width": 95,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": 6841652544342606107,
+      "source": "CAB-872f84f2e4f9b43d4d50ae070da19dc3"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_meiyoudeng/paodan_meiyoudeng_6841652544342606107.png"
+}

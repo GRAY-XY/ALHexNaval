@@ -1,0 +1,41 @@
+{
+  "id": "item__bulletusa2_low",
+  "model": "bulletusa2_low",
+  "name": "bulletusa2_low",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletusa2_low",
+  "path": "battle-assets/炮弹/item__bulletusa2_low",
+  "images": [
+    {
+      "file": "bullet_UK2_-7395523732423302044.png",
+      "name": "bullet_UK2",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -7395523732423302044,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170902,
+    29657035,
+    3185030,
+    3185044,
+    3223016,
+    3223017,
+    3223018,
+    3223019,
+    3223020,
+    3274007,
+    3280304,
+    3280412,
+    3289004,
+    3289011
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletusa2_low/bullet_UK2_-7395523732423302044.png"
+}

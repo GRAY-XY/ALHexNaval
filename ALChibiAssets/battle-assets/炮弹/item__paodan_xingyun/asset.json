@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xingyun",
+  "model": "paodan_xingyun",
+  "name": "星云炮弹",
+  "names": [
+    "星云炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xingyun",
+  "path": "battle-assets/炮弹/item__paodan_xingyun",
+  "images": [
+    {
+      "file": "paodan_xingyun_-1638490923530296455.png",
+      "name": "paodan_xingyun",
+      "width": 128,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": -1638490923530296455,
+      "source": "CAB-7c730c562692e3581db3d536d0859a39"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xingyun/paodan_xingyun_-1638490923530296455.png"
+}

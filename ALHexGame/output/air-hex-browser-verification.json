@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-18",
+  "version": "0.6.3",
+  "saveVersion": 10,
+  "url": "http://127.0.0.1:18768/",
+  "method": "Real browser interactions through CUA and visible DOM, accessibility and screenshot observations",
+  "passed": true,
+  "checks": [
+    {"name":"Destination snaps to a hex","passed":true,"observed":"Right-clicking an off-center point inside the adjacent hex assigns the hex coordinate as the destination."},
+    {"name":"One hex costs one point","passed":true,"observed":"In the quiet demo, the fighter moves from 27,18 to 28,18 and enters patrol with 19 / 20 action points. Bomber and torpedo squadrons remain at 20; oil remains 41."},
+    {"name":"Refresh does not restore points","passed":true,"observed":"After refreshing the saved battle, the fighter list still displays 19 / 20 and the other squadrons display 20 / 20."},
+    {"name":"Three-squadron grid formation","passed":true,"start":[{"role":"fighter","col":28,"row":18,"actionPoints":19},{"role":"bomber","col":29,"row":18,"actionPoints":20},{"role":"torpedo","col":27,"row":20,"actionPoints":20}],"anchor":{"col":28,"row":19},"clickedHex":{"col":30,"row":20},"arrival":[{"role":"fighter","col":29,"row":19,"actionPoints":17},{"role":"bomber","col":30,"row":19,"actionPoints":18},{"role":"torpedo","col":28,"row":21,"actionPoints":18}],"observed":"All three squadrons enter patrol at the expected translated hex coordinates. Each spends two points; the asymmetric formation is retained across row parity. Oil remains 41 and endurance remains four turns."},
+    {"name":"Grid movement display","passed":true,"observed":"Selected squadron details explain adjacent-hex movement and display target/next-hex coordinates. Map outlines show selected squadron cells and a target cell while moving. Inter-hex animation remains smooth."},
+    {"name":"Exhausted return follows adjacent hexes","passed":true,"observed":"A fighter starting with one point moves toward the adjacent hex, exhausts its resource and returns. During return, the paused UI displays position 35,20 and next hex 34,20, with zero action points, four-turn endurance and unchanged oil 41."},
+    {"name":"Exhausted return rejects new orders","passed":true,"observed":"Another right-click displays 该中队行动力已耗尽，正在返航；本次出动不会自动恢复行动力. Its zero budget and return order remain unchanged."},
+    {"name":"Browser console","passed":true,"observed":"Browser error log query returns no errors."},
+    {"name":"Original battle restored","passed":true,"observed":"The previous 256 by 256, four-player battle is restored at round one, active player one, oil 50, zero airborne squadrons, and flight simulation unpaused."}
+  ],
+  "screenshots": ["output/screenshots/air-hex-one-cell.png","output/screenshots/air-hex-group-before.png","output/screenshots/air-hex-group-after.png","output/screenshots/air-hex-depleted.png"],
+  "ruleVerification": "output/rules-verification.json",
+  "ruleScenarios": 76,
+  "invalidSaveCases": 66,
+  "coordinateCellsVerified": 344064,
+  "scope": "Grid movement, integer action cost, save persistence, formation arrivals and depleted grid return. This check does not assess networking or whole-game balance."
+}

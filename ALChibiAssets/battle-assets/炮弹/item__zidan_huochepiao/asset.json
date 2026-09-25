@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_huochepiao",
+  "model": "zidan_huochepiao",
+  "name": "列车票根子弹",
+  "names": [
+    "列车票根子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huochepiao",
+  "path": "battle-assets/炮弹/item__zidan_huochepiao",
+  "images": [
+    {
+      "file": "zidan_huochepiao_-3013065999455837615.png",
+      "name": "zidan_huochepiao",
+      "width": 128,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -3013065999455837615,
+      "source": "CAB-f907a006e92a5a2d47448b79efe696b9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huochepiao/zidan_huochepiao_-3013065999455837615.png"
+}

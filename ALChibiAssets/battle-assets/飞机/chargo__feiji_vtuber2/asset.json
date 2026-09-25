@@ -1,0 +1,42 @@
+{
+  "id": "chargo__feiji_vtuber2",
+  "model": "feiji_vtuber2",
+  "name": "大神澪技能鱼雷机Lv1",
+  "names": [
+    "大神澪技能鱼雷机Lv1",
+    "大神澪技能轰炸机Lv1",
+    "【hololive联动T3】BOSS-大神澪 特殊鱼雷封锁",
+    "【hololive联动T3】BOSS-大神澪 战斗机",
+    "【hololive联动T3】BOSS-大神澪 鱼雷机",
+    "三才雀(鱼雷)",
+    "三才雀(战斗)",
+    "三才雀(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_vtuber2",
+  "path": "battle-assets/飞机/chargo__feiji_vtuber2",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_vtuber2/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "vtuber2.skel",
+    "atlas": "vtuber2.atlas",
+    "pages": [
+      "vtuber2.png"
+    ]
+  }
+}

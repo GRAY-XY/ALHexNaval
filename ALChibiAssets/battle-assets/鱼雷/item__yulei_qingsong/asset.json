@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_qingsong",
+  "model": "yulei_qingsong",
+  "name": "一枝青松鱼雷",
+  "names": [
+    "一枝青松鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qingsong",
+  "path": "battle-assets/鱼雷/item__yulei_qingsong",
+  "images": [
+    {
+      "file": "yulei_qingsong_475923563441649115.png",
+      "name": "yulei_qingsong",
+      "width": 128,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": 475923563441649115,
+      "source": "CAB-5d84dfc446a9c4a0c0e45fb2d8699395"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qingsong/yulei_qingsong_475923563441649115.png"
+}

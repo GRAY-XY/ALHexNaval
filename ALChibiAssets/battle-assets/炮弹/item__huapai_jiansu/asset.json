@@ -1,0 +1,53 @@
+{
+  "id": "item__huapai_jiansu",
+  "model": "huapai_jiansu",
+  "name": "huapai_jiansu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/huapai_jiansu",
+  "path": "battle-assets/炮弹/item__huapai_jiansu",
+  "images": [
+    {
+      "file": "huapai02_-7849316804606907242.png",
+      "name": "huapai02",
+      "width": 99,
+      "height": 143,
+      "role": "战斗贴图",
+      "path_id": -7849316804606907242,
+      "source": "CAB-58690bb1c479ff70d1f31212a59984df"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19244,
+    840028,
+    840029,
+    840077,
+    840080,
+    840147,
+    20322020,
+    29600101,
+    29610000,
+    29610001,
+    29621110,
+    29621111,
+    29641100,
+    29645021,
+    29645070,
+    29645071,
+    29645072,
+    29645073,
+    29645074,
+    29645121,
+    29645122,
+    3002202,
+    3002204,
+    3002214,
+    3002216,
+    3002218
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__huapai_jiansu/huapai02_-7849316804606907242.png"
+}

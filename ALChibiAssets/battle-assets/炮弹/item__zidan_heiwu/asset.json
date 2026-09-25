@@ -1,0 +1,26 @@
+{
+  "id": "item__zidan_heiwu",
+  "model": "zidan_heiwu",
+  "name": "zidan_heiwu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_heiwu",
+  "path": "battle-assets/炮弹/item__zidan_heiwu",
+  "images": [
+    {
+      "file": "zidan_heiwu_-6060523401140688280.png",
+      "name": "zidan_heiwu",
+      "width": 128,
+      "height": 107,
+      "role": "战斗贴图",
+      "path_id": -6060523401140688280,
+      "source": "CAB-f5f66e2b2713dab552c228c0337fe7f6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_heiwu/zidan_heiwu_-6060523401140688280.png"
+}

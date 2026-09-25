@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_tuzimoshumao",
+  "model": "paodan_tuzimoshumao",
+  "name": "奇妙魔术帽炮弹",
+  "names": [
+    "奇妙魔术帽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tuzimoshumao",
+  "path": "battle-assets/炮弹/item__paodan_tuzimoshumao",
+  "images": [
+    {
+      "file": "paodan_tuzimoshumao_2344720299393500887.png",
+      "name": "paodan_tuzimoshumao",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2344720299393500887,
+      "source": "CAB-7e07c063c579afbaed57597069d68038"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tuzimoshumao/paodan_tuzimoshumao_2344720299393500887.png",
+  "spine": {
+    "skel": "paodan_tuzimoshumao.skel",
+    "atlas": "paodan_tuzimoshumao.atlas",
+    "pages": [
+      "paodan_tuzimoshumao.png"
+    ]
+  }
+}

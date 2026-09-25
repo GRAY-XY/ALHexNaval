@@ -1,0 +1,31 @@
+{
+  "id": "item__torpedoairjp_tantiao",
+  "model": "torpedoairjp_tantiao",
+  "name": "torpedoairjp_tantiao",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/torpedoairjp_tantiao",
+  "path": "battle-assets/鱼雷/item__torpedoairjp_tantiao",
+  "images": [
+    {
+      "file": "Bomberbomb500lb_8085823269917185842.png",
+      "name": "Bomberbomb500lb",
+      "width": 100,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": 8085823269917185842,
+      "source": "CAB-ef1ccca667db1bc1d83be85135fbd833"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [
+    "tiaodong"
+  ],
+  "bullet_ids": [
+    2147,
+    164771
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedoairjp_tantiao/Bomberbomb500lb_8085823269917185842.png"
+}

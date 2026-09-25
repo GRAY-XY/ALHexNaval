@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xiaochoumao",
+  "model": "paodan_xiaochoumao",
+  "name": "快乐小丑帽炮弹",
+  "names": [
+    "快乐小丑帽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiaochoumao",
+  "path": "battle-assets/炮弹/item__paodan_xiaochoumao",
+  "images": [
+    {
+      "file": "paodan_xiaochoumao_768283238768117758.png",
+      "name": "paodan_xiaochoumao",
+      "width": 128,
+      "height": 89,
+      "role": "战斗贴图",
+      "path_id": 768283238768117758,
+      "source": "CAB-fda1dc4915a3b6a1c2661f137dee522e"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xiaochoumao/paodan_xiaochoumao_768283238768117758.png"
+}

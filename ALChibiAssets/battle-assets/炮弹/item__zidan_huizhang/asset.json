@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_huizhang",
+  "model": "zidan_huizhang",
+  "name": "纪念徽章子弹",
+  "names": [
+    "纪念徽章子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huizhang",
+  "path": "battle-assets/炮弹/item__zidan_huizhang",
+  "images": [
+    {
+      "file": "zidan_huizhang_-3141550110425000168.png",
+      "name": "zidan_huizhang",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -3141550110425000168,
+      "source": "CAB-463cf9db4c9d06072f09e1a226a84558"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19328
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huizhang/zidan_huizhang_-3141550110425000168.png"
+}

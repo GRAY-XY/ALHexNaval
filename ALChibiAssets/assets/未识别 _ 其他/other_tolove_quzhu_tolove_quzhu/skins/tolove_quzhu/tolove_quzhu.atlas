@@ -1,0 +1,62 @@
+
+tolove_quzhu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4
+  rotate: false
+  xy: 2, 2
+  size: 95, 54
+  orig: 95, 54
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 58
+  size: 436, 318
+  orig: 436, 318
+  offset: 0, 0
+  index: -1
+lh_1
+  rotate: false
+  xy: 99, 34
+  size: 92, 22
+  orig: 92, 22
+  offset: 0, 0
+  index: -1
+lh_2
+  rotate: false
+  xy: 99, 14
+  size: 94, 18
+  orig: 94, 18
+  offset: 0, 0
+  index: -1
+lh_3
+  rotate: false
+  xy: 193, 40
+  size: 88, 16
+  orig: 88, 16
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: true
+  xy: 322, 142
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: false
+  xy: 322, 57
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: true
+  xy: 407, 142
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1

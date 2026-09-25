@@ -1,0 +1,20 @@
+
+yulei_fengche.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fengche
+  rotate: false
+  xy: 2, 15
+  size: 106, 109
+  orig: 106, 109
+  offset: 0, 0
+  index: -1
+ganzi
+  rotate: true
+  xy: 110, 2
+  size: 122, 19
+  orig: 122, 19
+  offset: 0, 0
+  index: -1

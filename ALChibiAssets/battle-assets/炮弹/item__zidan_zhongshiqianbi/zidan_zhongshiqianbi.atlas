@@ -1,0 +1,48 @@
+
+zidan_zhongshiqianbi.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gd_1
+  rotate: true
+  xy: 370, 327
+  size: 35, 31
+  orig: 35, 31
+  offset: 0, 0
+  index: -1
+gd_1_2
+  rotate: true
+  xy: 370, 290
+  size: 35, 31
+  orig: 35, 31
+  offset: 0, 0
+  index: -1
+gd_1_3
+  rotate: true
+  xy: 370, 253
+  size: 35, 31
+  orig: 35, 31
+  offset: 0, 0
+  index: -1
+guangyun
+  rotate: true
+  xy: 245, 40
+  size: 197, 188
+  orig: 197, 188
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 239
+  size: 366, 123
+  orig: 366, 123
+  offset: 0, 0
+  index: -1
+zidan
+  rotate: true
+  xy: 2, 2
+  size: 235, 241
+  orig: 235, 241
+  offset: 0, 0
+  index: -1

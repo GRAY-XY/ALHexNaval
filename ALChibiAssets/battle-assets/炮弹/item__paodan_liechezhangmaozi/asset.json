@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_liechezhangmaozi",
+  "model": "paodan_liechezhangmaozi",
+  "name": "车长帽炮弹",
+  "names": [
+    "车长帽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_liechezhangmaozi",
+  "path": "battle-assets/炮弹/item__paodan_liechezhangmaozi",
+  "images": [
+    {
+      "file": "paodan_liechezhangmaozi_1967809966639377064.png",
+      "name": "paodan_liechezhangmaozi",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": 1967809966639377064,
+      "source": "CAB-788c4c3bfccfb76ba5c2044a9c4ed920"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_liechezhangmaozi/paodan_liechezhangmaozi_1967809966639377064.png"
+}

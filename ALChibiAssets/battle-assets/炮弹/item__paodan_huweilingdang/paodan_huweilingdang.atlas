@@ -1,0 +1,41 @@
+
+paodan_huweilingdang.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lingdang_1
+  rotate: true
+  xy: 140, 109
+  size: 138, 107
+  orig: 138, 107
+  offset: 0, 0
+  index: -1
+shan_1
+  rotate: true
+  xy: 230, 40
+  size: 67, 61
+  orig: 67, 61
+  offset: 0, 0
+  index: -1
+shan_2
+  rotate: true
+  xy: 230, 2
+  size: 36, 33
+  orig: 36, 33
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 2, 13
+  size: 234, 136
+  orig: 234, 136
+  offset: 0, 0
+  index: -1
+wei
+  rotate: true
+  xy: 140, 9
+  size: 98, 88
+  orig: 98, 88
+  offset: 0, 0
+  index: -1

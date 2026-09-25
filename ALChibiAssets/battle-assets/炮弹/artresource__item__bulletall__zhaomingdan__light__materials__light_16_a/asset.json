@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zhaomingdan__light__materials__light_16_a",
+  "model": "light_16_a",
+  "name": "light_16_a",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zhaomingdan/light/materials/light_16_a",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zhaomingdan__light__materials__light_16_a",
+  "images": [
+    {
+      "file": "light_16_1981254351732145986.png",
+      "name": "light_16",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 1981254351732145986,
+      "source": "CAB-0333d70d02e92fbd5557e086d9a8a72d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

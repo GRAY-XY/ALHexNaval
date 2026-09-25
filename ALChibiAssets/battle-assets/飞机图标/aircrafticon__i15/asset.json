@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__i15",
+  "model": "i15",
+  "name": "I-15",
+  "names": [
+    "I-15"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/i15",
+  "path": "battle-assets/飞机图标/aircrafticon__i15",
+  "images": [
+    {
+      "file": "I15_-3736096296829501740.png",
+      "name": "I15",
+      "width": 43,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -3736096296829501740,
+      "source": "CAB-acd5c7ca3bc46d775fb65eebfd6ca8ab"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

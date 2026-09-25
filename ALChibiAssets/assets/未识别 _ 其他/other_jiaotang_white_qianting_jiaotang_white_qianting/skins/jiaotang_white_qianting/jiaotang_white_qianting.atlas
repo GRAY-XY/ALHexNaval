@@ -1,0 +1,48 @@
+
+jiaotang_white_qianting.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 547, 292
+  size: 536, 427
+  orig: 536, 427
+  offset: 0, 0
+  index: -1
+body_2
+  rotate: true
+  xy: 2, 143
+  size: 536, 427
+  orig: 536, 427
+  offset: 0, 0
+  index: -1
+guanghuan
+  rotate: true
+  xy: 431, 387
+  size: 292, 105
+  orig: 292, 105
+  offset: 0, 0
+  index: -1
+qt01
+  rotate: false
+  xy: 431, 149
+  size: 533, 141
+  orig: 533, 141
+  offset: 0, 0
+  index: -1
+qt02
+  rotate: false
+  xy: 2, 681
+  size: 543, 147
+  orig: 543, 147
+  offset: 0, 0
+  index: -1
+qt03
+  rotate: false
+  xy: 431, 2
+  size: 518, 145
+  orig: 518, 145
+  offset: 0, 0
+  index: -1

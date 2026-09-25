@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_bingshimo",
+  "model": "zidan_bingshimo",
+  "name": "冰使魔子弹",
+  "names": [
+    "冰使魔子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bingshimo",
+  "path": "battle-assets/炮弹/item__zidan_bingshimo",
+  "images": [
+    {
+      "file": "bingqiu01_-6302054683017540086.png",
+      "name": "bingqiu01",
+      "width": 155,
+      "height": 125,
+      "role": "战斗贴图",
+      "path_id": -6302054683017540086,
+      "source": "CAB-5ee2f69c369c3c438ad9d506b8315e7a"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bingshimo/bingqiu01_-6302054683017540086.png"
+}

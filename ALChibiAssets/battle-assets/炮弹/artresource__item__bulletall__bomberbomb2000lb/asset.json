@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bomberbomb2000lb",
+  "model": "bomberbomb2000lb",
+  "name": "bomberbomb2000lb",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bomberbomb2000lb",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bomberbomb2000lb",
+  "images": [
+    {
+      "file": "Bomberbomb2000lb_-6698023320320725254.png",
+      "name": "Bomberbomb2000lb",
+      "width": 126,
+      "height": 68,
+      "role": "原始精灵",
+      "path_id": -6698023320320725254,
+      "source": "CAB-563a32b473eb0f8a893fa65823ef5b33"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__haibaoyulei__haibaoyulei_material",
+  "model": "haibaoyulei_material",
+  "name": "haibaoyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/haibaoyulei/haibaoyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__haibaoyulei__haibaoyulei_material",
+  "images": [
+    {
+      "file": "haibaoyulei_3462667929818607452.png",
+      "name": "haibaoyulei",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3462667929818607452,
+      "source": "CAB-fed1237d839cd8e2161c723cb0a5a12f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

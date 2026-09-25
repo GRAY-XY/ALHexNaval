@@ -1,0 +1,55 @@
+
+zidan_cheyaoshi.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huan
+  rotate: false
+  xy: 63, 53
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+huan_t
+  rotate: false
+  xy: 2, 69
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 234, 2
+  size: 509, 75
+  orig: 509, 75
+  offset: 0, 0
+  index: -1
+yaoshi_1
+  rotate: false
+  xy: 89, 47
+  size: 66, 30
+  orig: 66, 30
+  offset: 0, 0
+  index: -1
+yaoshi_2
+  rotate: true
+  xy: 29, 54
+  size: 23, 32
+  orig: 23, 32
+  offset: 0, 0
+  index: -1
+yaoshi_3
+  rotate: false
+  xy: 157, 33
+  size: 75, 44
+  orig: 75, 44
+  offset: 0, 0
+  index: -1
+yaoshi_3_b
+  rotate: false
+  xy: 13, 68
+  size: 14, 9
+  orig: 14, 9
+  offset: 0, 0
+  index: -1

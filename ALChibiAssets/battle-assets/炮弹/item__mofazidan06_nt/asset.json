@@ -1,0 +1,38 @@
+{
+  "id": "item__mofazidan06_nt",
+  "model": "mofazidan06_nt",
+  "name": "mofazidan06_nt",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/mofazidan06_nt",
+  "path": "battle-assets/炮弹/item__mofazidan06_nt",
+  "images": [
+    {
+      "file": "green_6570749913809116745.png",
+      "name": "green",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 6570749913809116745,
+      "source": "CAB-175d25b39bc1787c85f28215f1438384"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3002315,
+    3005407,
+    3005408,
+    3056016,
+    3108105,
+    3108130,
+    3175017,
+    3175117,
+    3331220,
+    3331407,
+    3333012
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__mofazidan06_nt/green_6570749913809116745.png"
+}

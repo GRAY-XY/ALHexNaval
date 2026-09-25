@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guashi",
+  "model": "zidan_guashi",
+  "name": "钥匙扣子弹",
+  "names": [
+    "钥匙扣子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guashi",
+  "path": "battle-assets/炮弹/item__zidan_guashi",
+  "images": [
+    {
+      "file": "zidan_guashi_-9084689597958745717.png",
+      "name": "zidan_guashi",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -9084689597958745717,
+      "source": "CAB-cb93bfa3dce82f00533199b2c281cd83"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guashi/zidan_guashi_-9084689597958745717.png"
+}

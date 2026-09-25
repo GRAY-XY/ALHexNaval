@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__biandangpaodan__biandangpaodan_material",
+  "model": "biandangpaodan_material",
+  "name": "biandangpaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/biandangpaodan/biandangpaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__biandangpaodan__biandangpaodan_material",
+  "images": [
+    {
+      "file": "biandangpaodan_-7957809050607998190.png",
+      "name": "biandangpaodan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7957809050607998190,
+      "source": "CAB-de299e71aa3cc6e19ce60fd36813b315"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

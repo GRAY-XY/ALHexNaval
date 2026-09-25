@@ -1,0 +1,28 @@
+{
+  "id": "item__torpedo_guaizhangtang",
+  "model": "torpedo_guaizhangtang",
+  "name": "拐杖糖鱼雷",
+  "names": [
+    "拐杖糖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_guaizhangtang",
+  "path": "battle-assets/鱼雷/item__torpedo_guaizhangtang",
+  "images": [
+    {
+      "file": "90520_-2855142604784952906.png",
+      "name": "90520",
+      "width": 228,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": -2855142604784952906,
+      "source": "CAB-4f44a011ffcc751334be96444e174b0f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo_guaizhangtang/90520_-2855142604784952906.png"
+}

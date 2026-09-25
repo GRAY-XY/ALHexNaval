@@ -1,0 +1,44 @@
+{
+  "id": "item__yulei_jinli",
+  "model": "yulei_jinli",
+  "name": "墨鳞鱼雷",
+  "names": [
+    "墨鳞鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jinli",
+  "path": "battle-assets/鱼雷/item__yulei_jinli",
+  "images": [
+    {
+      "file": "yulei_jinli_-2968995294886757815.png",
+      "name": "yulei_jinli",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2968995294886757815,
+      "source": "CAB-13a933e8a6060469e09793a1cc21f1d8"
+    },
+    {
+      "file": "moshui01_6114433682099030050.png",
+      "name": "moshui01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6114433682099030050,
+      "source": "CAB-13a933e8a6060469e09793a1cc21f1d8"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jinli/yulei_jinli_-2968995294886757815.png",
+  "spine": {
+    "skel": "yulei_jinli.skel",
+    "atlas": "yulei_jinli.atlas",
+    "pages": [
+      "yulei_jinli.png"
+    ]
+  }
+}

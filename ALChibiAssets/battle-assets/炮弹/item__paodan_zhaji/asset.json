@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhaji",
+  "model": "paodan_zhaji",
+  "name": "炸鸡炮弹",
+  "names": [
+    "炸鸡炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhaji",
+  "path": "battle-assets/炮弹/item__paodan_zhaji",
+  "images": [
+    {
+      "file": "paodan_zhaji_-749567410970227708.png",
+      "name": "paodan_zhaji",
+      "width": 128,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": -749567410970227708,
+      "source": "CAB-666792a287b02fe8e0798fc0314cd21b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhaji/paodan_zhaji_-749567410970227708.png"
+}

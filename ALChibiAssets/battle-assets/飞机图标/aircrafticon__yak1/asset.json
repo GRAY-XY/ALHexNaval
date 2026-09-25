@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__yak1",
+  "model": "yak1",
+  "name": "Yak-1",
+  "names": [
+    "Yak-1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/yak1",
+  "path": "battle-assets/飞机图标/aircrafticon__yak1",
+  "images": [
+    {
+      "file": "yak1_-5802553970999790134.png",
+      "name": "yak1",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -5802553970999790134,
+      "source": "CAB-0f9dce24f174fae62f8702e894dcd207"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

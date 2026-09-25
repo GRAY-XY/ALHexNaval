@@ -1,0 +1,46 @@
+{
+  "id": "item__hwxgz_3",
+  "model": "hwxgz_3",
+  "name": "hwxgz_3",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hwxgz_3",
+  "path": "battle-assets/炮弹/item__hwxgz_3",
+  "images": [
+    {
+      "file": "hwxgz_3_8848418677977299091.png",
+      "name": "hwxgz_3",
+      "width": 44,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 8848418677977299091,
+      "source": "CAB-c952ace2ed871e4329649c98dfe9e754"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    891651,
+    891652,
+    891658,
+    891659,
+    891663,
+    892806,
+    892807,
+    892813,
+    892814,
+    892815,
+    892816,
+    892817,
+    892818,
+    892819,
+    892820,
+    892821,
+    892822,
+    892823,
+    892824
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hwxgz_3/hwxgz_3_8848418677977299091.png"
+}

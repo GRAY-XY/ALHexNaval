@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-09-19T17:05:59.9317000+08:00",
+  "url": "http://127.0.0.1:18769/",
+  "version": "0.10.0",
+  "scenario": "128x128, 2 seats, team 1 human, team 2 AI",
+  "checks": [
+    {
+      "name": "Single-player menu opens seat setup",
+      "passed": true,
+      "evidence": "Seat list displayed 1 player, 1 AI, 6 empty"
+    },
+    {
+      "name": "AI controller shown during its turn",
+      "passed": true,
+      "evidence": "Turn label: 第 1 轮 · 翠绿舰队 · AI; AI COMMAND banner visible"
+    },
+    {
+      "name": "Player controls locked during AI turn",
+      "passed": true,
+      "evidence": "Move, weapon, defend, wait, hold and end-turn controls disabled"
+    },
+    {
+      "name": "AI turn ends automatically",
+      "passed": true,
+      "evidence": "Returned to 第 2 轮 · 湛蓝舰队 without player input"
+    },
+    {
+      "name": "Shared oil refills for returning player",
+      "passed": true,
+      "evidence": "Bottom turn panel displayed 50 / 50"
+    },
+    {
+      "name": "AI banner clears after handoff",
+      "passed": true,
+      "evidence": "aiBannerHidden=true"
+    },
+    {
+      "name": "Browser console remains clean",
+      "passed": true,
+      "evidence": "0 errors and 0 warnings"
+    },
+    {
+      "name": "AI turn fully covers battlefield and HUD",
+      "passed": true,
+      "evidence": "Opaque full-screen AI COMMAND curtain covered map, minimap, unit details, oil and action results"
+    },
+    {
+      "name": "Pausing during AI turn does not reveal AI vision",
+      "passed": true,
+      "evidence": "Pause dialog opened over the opaque curtain; battlefield remained hidden"
+    },
+    {
+      "name": "Battlefield returns only after player handoff",
+      "passed": true,
+      "evidence": "Curtain hidden after automatic handoff to 第 4 轮 · 湛蓝舰队"
+    },
+    {
+      "name": "Hidden AI state is removed from accessibility and keyboard access",
+      "passed": true,
+      "evidence": "During AI turn the accessible tree contained only the top bar, pause command and AI curtain; workspace/status content was aria-hidden and inert"
+    },
+    {
+      "name": "Privacy attributes clear after player handoff",
+      "passed": true,
+      "evidence": "After returning to 第 5 轮 · 湛蓝舰队 the curtain was hidden and workspace aria-hidden was removed"
+    }
+  ]
+}

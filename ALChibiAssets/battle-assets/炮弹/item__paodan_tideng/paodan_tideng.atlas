@@ -1,0 +1,55 @@
+
+paodan_tideng.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huo
+  rotate: true
+  xy: 153, 233
+  size: 30, 54
+  orig: 30, 54
+  offset: 0, 0
+  index: -1
+tideng_1
+  rotate: false
+  xy: 2, 56
+  size: 91, 144
+  orig: 91, 144
+  offset: 0, 0
+  index: -1
+tideng_2
+  rotate: true
+  xy: 97, 142
+  size: 89, 143
+  orig: 89, 143
+  offset: 0, 0
+  index: -1
+yl_1
+  rotate: false
+  xy: 2, 236
+  size: 90, 27
+  orig: 90, 27
+  offset: 0, 0
+  index: -1
+yl_3
+  rotate: false
+  xy: 94, 235
+  size: 57, 28
+  orig: 57, 28
+  offset: 0, 0
+  index: -1
+yl_4
+  rotate: false
+  xy: 2, 202
+  size: 93, 31
+  orig: 93, 31
+  offset: 0, 0
+  index: -1
+yl_5
+  rotate: false
+  xy: 95, 2
+  size: 140, 138
+  orig: 140, 138
+  offset: 0, 0
+  index: -1

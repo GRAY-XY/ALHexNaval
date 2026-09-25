@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_buou",
+  "model": "feiji_buou",
+  "name": "迷之布偶(鱼雷)",
+  "names": [
+    "迷之布偶(鱼雷)",
+    "迷之布偶(战斗)",
+    "迷之布偶(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_buou",
+  "path": "battle-assets/飞机/chargo__feiji_buou",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_buou_-7675667639543194647.png",
+      "name": "feiji_buou",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": -7675667639543194647,
+      "source": "CAB-c9105ce8f08f8fcd6f20a12af6bdc13f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_buou/aircraft_shadow_2192772484218123160.png"
+}

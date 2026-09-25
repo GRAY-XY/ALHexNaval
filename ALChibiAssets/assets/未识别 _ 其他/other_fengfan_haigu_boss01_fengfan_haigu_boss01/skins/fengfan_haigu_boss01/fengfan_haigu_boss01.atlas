@@ -1,0 +1,181 @@
+
+fengfan_haigu_boss01.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 911, 593
+  size: 208, 428
+  orig: 208, 428
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: false
+  xy: 492, 2
+  size: 173, 158
+  orig: 173, 158
+  offset: 0, 0
+  index: -1
+chushou_10
+  rotate: false
+  xy: 1305, 815
+  size: 205, 206
+  orig: 205, 206
+  offset: 0, 0
+  index: -1
+chushou_11
+  rotate: false
+  xy: 226, 36
+  size: 264, 113
+  orig: 264, 113
+  offset: 0, 0
+  index: -1
+chushou_12
+  rotate: false
+  xy: 911, 225
+  size: 265, 98
+  orig: 265, 98
+  offset: 0, 0
+  index: -1
+chushou_13
+  rotate: true
+  xy: 911, 325
+  size: 266, 97
+  orig: 266, 97
+  offset: 0, 0
+  index: -1
+chushou_14
+  rotate: true
+  xy: 880, 15
+  size: 155, 181
+  orig: 155, 181
+  offset: 0, 0
+  index: -1
+chushou_2
+  rotate: false
+  xy: 2, 10
+  size: 222, 139
+  orig: 222, 139
+  offset: 0, 0
+  index: -1
+chushou_3
+  rotate: true
+  xy: 1121, 813
+  size: 208, 182
+  orig: 208, 182
+  offset: 0, 0
+  index: -1
+chushou_4
+  rotate: true
+  xy: 1010, 361
+  size: 230, 173
+  orig: 230, 173
+  offset: 0, 0
+  index: -1
+chushou_5
+  rotate: true
+  xy: 1217, 13
+  size: 229, 174
+  orig: 229, 174
+  offset: 0, 0
+  index: -1
+chushou_6
+  rotate: false
+  xy: 667, 15
+  size: 211, 155
+  orig: 211, 155
+  offset: 0, 0
+  index: -1
+chushou_7
+  rotate: false
+  xy: 1063, 9
+  size: 152, 214
+  orig: 152, 214
+  offset: 0, 0
+  index: -1
+chushou_8
+  rotate: false
+  xy: 1185, 402
+  size: 180, 201
+  orig: 180, 201
+  offset: 0, 0
+  index: -1
+chushou_9
+  rotate: false
+  xy: 1121, 605
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 1025, 184
+  size: 35, 39
+  orig: 35, 39
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: true
+  xy: 226, 3
+  size: 31, 37
+  orig: 31, 37
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: false
+  xy: 1221, 258
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: true
+  xy: 911, 176
+  size: 47, 43
+  orig: 47, 43
+  offset: 0, 0
+  index: -1
+gd_7
+  rotate: false
+  xy: 956, 181
+  size: 67, 42
+  orig: 67, 42
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: true
+  xy: 2, 151
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: true
+  xy: 305, 162
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: true
+  xy: 608, 172
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+youyan
+  rotate: false
+  xy: 1178, 302
+  size: 42, 57
+  orig: 42, 57
+  offset: 0, 0
+  index: -1
+zuoyan
+  rotate: false
+  xy: 1178, 244
+  size: 41, 56
+  orig: 41, 56
+  offset: 0, 0
+  index: -1

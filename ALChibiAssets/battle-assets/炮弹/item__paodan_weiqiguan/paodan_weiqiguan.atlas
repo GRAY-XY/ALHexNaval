@@ -1,0 +1,55 @@
+
+paodan_weiqiguan.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guangai
+  rotate: false
+  xy: 158, 125
+  size: 62, 119
+  orig: 62, 119
+  offset: 0, 0
+  index: -1
+guanti
+  rotate: false
+  xy: 2, 46
+  size: 154, 198
+  orig: 154, 198
+  offset: 0, 0
+  index: -1
+qiz_1
+  rotate: true
+  xy: 68, 13
+  size: 31, 113
+  orig: 31, 113
+  offset: 0, 0
+  index: -1
+qiz_2
+  rotate: false
+  xy: 183, 15
+  size: 30, 108
+  orig: 30, 108
+  offset: 0, 0
+  index: -1
+qizi_1
+  rotate: true
+  xy: 2, 2
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+qizi_1_2
+  rotate: true
+  xy: 24, 2
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+qizi_1_3
+  rotate: true
+  xy: 46, 2
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1

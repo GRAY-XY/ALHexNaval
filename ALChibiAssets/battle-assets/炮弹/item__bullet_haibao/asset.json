@@ -1,0 +1,24 @@
+{
+  "id": "item__bullet_haibao",
+  "model": "bullet_haibao",
+  "name": "海豹炮弹",
+  "names": [
+    "海豹炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/bullet_haibao",
+  "path": "battle-assets/炮弹/item__bullet_haibao",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "haibaopaodan.skel",
+    "atlas": "haibaopaodan.atlas",
+    "pages": [
+      "haibaopaodan.png"
+    ]
+  }
+}

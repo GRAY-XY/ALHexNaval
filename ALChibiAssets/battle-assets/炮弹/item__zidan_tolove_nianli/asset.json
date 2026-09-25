@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_tolove_nianli",
+  "model": "zidan_tolove_nianli",
+  "name": "念力子弹 ",
+  "names": [
+    "念力子弹 "
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tolove_nianli",
+  "path": "battle-assets/炮弹/item__zidan_tolove_nianli",
+  "images": [
+    {
+      "file": "zidan_tolove_nianli_-2343499934318384320.png",
+      "name": "zidan_tolove_nianli",
+      "width": 210,
+      "height": 217,
+      "role": "战斗贴图",
+      "path_id": -2343499934318384320,
+      "source": "CAB-fd0ea6b1f2868ad60c47ca23ef0711e3"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3227203
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tolove_nianli/zidan_tolove_nianli_-2343499934318384320.png"
+}

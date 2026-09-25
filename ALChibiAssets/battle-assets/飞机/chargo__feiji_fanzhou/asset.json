@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_fanzhou",
+  "model": "feiji_fanzhou",
+  "name": "泛舟啾(鱼雷)",
+  "names": [
+    "泛舟啾(鱼雷)",
+    "泛舟啾(战斗)",
+    "泛舟啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_fanzhou",
+  "path": "battle-assets/飞机/chargo__feiji_fanzhou",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_fanzhou_-8390461837001777113.png",
+      "name": "feiji_fanzhou",
+      "width": 256,
+      "height": 181,
+      "role": "战斗贴图",
+      "path_id": -8390461837001777113,
+      "source": "CAB-1178623418416ffc991a4b09f951eab7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_fanzhou/aircraft_shadow_2192772484218123160.png"
+}

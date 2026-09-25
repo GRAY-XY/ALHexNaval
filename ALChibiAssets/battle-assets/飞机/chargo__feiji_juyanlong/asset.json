@@ -1,0 +1,35 @@
+{
+  "id": "chargo__feiji_juyanlong",
+  "model": "feiji_juyanlong",
+  "name": "火焰巨龙飞机(鱼雷)",
+  "names": [
+    "火焰巨龙飞机(鱼雷)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_juyanlong",
+  "path": "battle-assets/飞机/chargo__feiji_juyanlong",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_juyanlong/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "feiji_juyanlong.skel",
+    "atlas": "feiji_juyanlong.atlas",
+    "pages": [
+      "feiji_juyanlong.png"
+    ]
+  }
+}

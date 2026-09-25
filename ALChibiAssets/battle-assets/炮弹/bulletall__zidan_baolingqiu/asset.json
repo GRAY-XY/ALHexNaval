@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_baolingqiu",
+  "model": "zidan_baolingqiu",
+  "name": "惊喜礼花瓶子弹",
+  "names": [
+    "惊喜礼花瓶子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_baolingqiu",
+  "path": "battle-assets/炮弹/bulletall__zidan_baolingqiu",
+  "images": [
+    {
+      "file": "zidan_baolingqiu_-3661366754297937232.png",
+      "name": "zidan_baolingqiu",
+      "width": 125,
+      "height": 50,
+      "role": "原始精灵",
+      "path_id": -3661366754297937232,
+      "source": "CAB-2d278926bc69bc44ccabc2f268eb882a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

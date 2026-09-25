@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__huoba",
+  "model": "huoba",
+  "name": "火把",
+  "names": [
+    "火把"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/huoba",
+  "path": "battle-assets/飞机图标/aircrafticon__huoba",
+  "images": [
+    {
+      "file": "huoba_-6954102123070529152.png",
+      "name": "huoba",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6954102123070529152,
+      "source": "CAB-75b32481dac6e5eb17ac3e2e2e6c722a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

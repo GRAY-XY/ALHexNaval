@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_pingguotang",
+  "model": "yulei_pingguotang",
+  "name": "苹果糖鱼雷",
+  "names": [
+    "苹果糖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_pingguotang",
+  "path": "battle-assets/鱼雷/item__yulei_pingguotang",
+  "images": [
+    {
+      "file": "yulei_pingguotang_-512877949988506864.png",
+      "name": "yulei_pingguotang",
+      "width": 128,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": -512877949988506864,
+      "source": "CAB-31c484ec6a8a3997bceb87e9bda652aa"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_pingguotang/yulei_pingguotang_-512877949988506864.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "item__yulei_meigui",
+  "model": "yulei_meigui",
+  "name": "玫瑰鱼雷",
+  "names": [
+    "玫瑰鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_meigui",
+  "path": "battle-assets/鱼雷/item__yulei_meigui",
+  "images": [
+    {
+      "file": "yulei_meigui_4089442483751174332.png",
+      "name": "yulei_meigui",
+      "width": 128,
+      "height": 116,
+      "role": "战斗贴图",
+      "path_id": 4089442483751174332,
+      "source": "CAB-b8a5d9c3ddbdffe65e8d4836791b6d2b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3139206,
+    3253020
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_meigui/yulei_meigui_4089442483751174332.png"
+}

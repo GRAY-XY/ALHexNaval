@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhushou",
+  "model": "yulei_zhushou",
+  "name": "猪手鱼雷",
+  "names": [
+    "猪手鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhushou",
+  "path": "battle-assets/鱼雷/item__yulei_zhushou",
+  "images": [
+    {
+      "file": "yulei_zhushou_4989900613853596610.png",
+      "name": "yulei_zhushou",
+      "width": 128,
+      "height": 73,
+      "role": "战斗贴图",
+      "path_id": 4989900613853596610,
+      "source": "CAB-12e649fe4c3ce50597c99e786c5fbc5a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhushou/yulei_zhushou_4989900613853596610.png"
+}

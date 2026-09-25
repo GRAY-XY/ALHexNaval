@@ -1,0 +1,28 @@
+{
+  "id": "item__nep_bullet_guangpan",
+  "model": "nep_bullet_guangpan",
+  "name": "光盘炮弹",
+  "names": [
+    "光盘炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/nep_bullet_guangpan",
+  "path": "battle-assets/炮弹/item__nep_bullet_guangpan",
+  "images": [
+    {
+      "file": "90643_-5366579106400847164.png",
+      "name": "90643",
+      "width": 256,
+      "height": 228,
+      "role": "战斗贴图",
+      "path_id": -5366579106400847164,
+      "source": "CAB-0b069dc47a85fd08d099530b84316271"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__nep_bullet_guangpan/90643_-5366579106400847164.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__bulletger_white",
+  "model": "bulletger_white",
+  "name": "bulletger_white",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletger_white",
+  "path": "battle-assets/炮弹/item__bulletger_white",
+  "images": [
+    {
+      "file": "bulletGER_white_4935439781751450812.png",
+      "name": "bulletGER_white",
+      "width": 92,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 4935439781751450812,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160937,
+    3071001,
+    3071002,
+    3071105,
+    3071106,
+    3074006,
+    3076104,
+    3076106
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletger_white/bulletGER_white_4935439781751450812.png"
+}

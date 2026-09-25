@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xinglixiang",
+  "model": "paodan_xinglixiang",
+  "name": "行李箱炮弹",
+  "names": [
+    "行李箱炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xinglixiang",
+  "path": "battle-assets/炮弹/item__paodan_xinglixiang",
+  "images": [
+    {
+      "file": "paodan_xinglixiang_-9214299484670314978.png",
+      "name": "paodan_xinglixiang",
+      "width": 128,
+      "height": 122,
+      "role": "战斗贴图",
+      "path_id": -9214299484670314978,
+      "source": "CAB-2dce9a0c2d622b473e74abd1236dd269"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xinglixiang/paodan_xinglixiang_-9214299484670314978.png"
+}

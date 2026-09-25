@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.4",
+  "url": "http://127.0.0.1:18768/",
+  "reference": "output/art-concepts/watercolor-maritime-fullscreen-v1.png",
+  "visualChecks": [
+    "The island silhouette is continuous and follows softened six-direction turns without cell-sized staircase edges",
+    "Land cells have no white seams or gaps at shared corners",
+    "The coastline reads from land to sea as paper-white beach, narrow warm sand and bright turquoise shallows",
+    "Six separately painted directional coast variants remain in use as sparse low-opacity surf and rock accents",
+    "The harbor town remains upright on land and its pier extends into the adjacent sea",
+    "The coastline remains readable in both strategic and harbor tactical views"
+  ],
+  "screenshots": [
+    "output/screenshots/coast-refine-final.png",
+    "output/screenshots/coast-refine-port-final.png"
+  ],
+  "consoleErrors": [],
+  "staticChecks": {
+    "build": "passed",
+    "directionalAssets": 18,
+    "allSixDirectionsCovered": true,
+    "coordinateChecks": 344064,
+    "portChecks": 26,
+    "invalidPortSaveCases": 15,
+    "ruleChecks": 78,
+    "weightedPathCases": 80,
+    "invalidRuleSaveCases": 67,
+    "fogChecks": 16,
+    "invalidFogSaveCases": 7
+  }
+}

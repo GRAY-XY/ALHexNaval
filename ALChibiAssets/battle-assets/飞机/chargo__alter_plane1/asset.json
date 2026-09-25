@@ -1,0 +1,46 @@
+{
+  "id": "chargo__alter_plane1",
+  "model": "alter_plane1",
+  "name": "【大世界】黑飞龙通用飞机战斗机lv1",
+  "names": [
+    "【大世界】黑飞龙通用飞机战斗机lv1",
+    "【大世界】黑飞龙通用飞机战斗机lv2",
+    "【大世界】黑飞龙通用飞机战斗机lv3",
+    "【大世界】黑飞龙通用飞机战斗机lv4",
+    "【大世界】黑飞龙通用飞机战斗机lv5",
+    "【大世界】黑飞龙通用飞机鱼雷机lv1",
+    "【大世界】黑飞龙通用飞机鱼雷机lv2",
+    "【大世界】黑飞龙通用飞机鱼雷机lv3",
+    "【大世界】黑飞龙通用飞机鱼雷机lv4",
+    "【大世界】黑飞龙通用飞机鱼雷机lv5"
+  ],
+  "category": "飞机",
+  "source": "chargo/alter_plane1",
+  "path": "battle-assets/飞机/chargo__alter_plane1",
+  "images": [
+    {
+      "file": "alter_plane1_-2422287520434316561.png",
+      "name": "alter_plane1",
+      "width": 256,
+      "height": 170,
+      "role": "战斗贴图",
+      "path_id": -2422287520434316561,
+      "source": "CAB-88eb0b354e8d55d4ca8f1de24c8686db"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__alter_plane1/alter_plane1_-2422287520434316561.png"
+}

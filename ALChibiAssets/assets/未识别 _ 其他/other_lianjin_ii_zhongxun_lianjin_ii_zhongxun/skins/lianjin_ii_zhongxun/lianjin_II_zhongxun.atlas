@@ -1,0 +1,125 @@
+
+lianjin_II_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 529, 449
+  orig: 529, 449
+  offset: 0, 0
+  index: -1
+pao_1
+  rotate: false
+  xy: 156, 631
+  size: 287, 128
+  orig: 287, 128
+  offset: 0, 0
+  index: -1
+pao_2
+  rotate: false
+  xy: 737, 544
+  size: 272, 162
+  orig: 272, 162
+  offset: 0, 0
+  index: -1
+pao_3
+  rotate: false
+  xy: 2, 706
+  size: 152, 98
+  orig: 152, 98
+  offset: 0, 0
+  index: -1
+pao_4
+  rotate: false
+  xy: 871, 708
+  size: 135, 126
+  orig: 135, 126
+  offset: 0, 0
+  index: -1
+pao_5
+  rotate: false
+  xy: 374, 453
+  size: 192, 167
+  orig: 192, 167
+  offset: 0, 0
+  index: -1
+pao_6
+  rotate: false
+  xy: 445, 622
+  size: 290, 137
+  orig: 290, 137
+  offset: 0, 0
+  index: -1
+qianzi_1
+  rotate: false
+  xy: 568, 360
+  size: 322, 182
+  orig: 322, 182
+  offset: 0, 0
+  index: -1
+qianzi_2
+  rotate: false
+  xy: 2, 487
+  size: 370, 142
+  orig: 370, 142
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 237, 804
+  size: 108, 30
+  orig: 108, 30
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 147, 806
+  size: 88, 28
+  orig: 88, 28
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 347, 799
+  size: 76, 35
+  orig: 76, 35
+  offset: 0, 0
+  index: -1
+shuihua_4
+  rotate: false
+  xy: 2, 808
+  size: 71, 26
+  orig: 71, 26
+  offset: 0, 0
+  index: -1
+shuihua_5
+  rotate: false
+  xy: 75, 808
+  size: 70, 26
+  orig: 70, 26
+  offset: 0, 0
+  index: -1
+zu_1
+  rotate: true
+  xy: 425, 761
+  size: 73, 173
+  orig: 73, 173
+  offset: 0, 0
+  index: -1
+zu_2
+  rotate: true
+  xy: 600, 761
+  size: 73, 144
+  orig: 73, 144
+  offset: 0, 0
+  index: -1
+zu_3
+  rotate: true
+  xy: 746, 759
+  size: 75, 123
+  orig: 75, 123
+  offset: 0, 0
+  index: -1

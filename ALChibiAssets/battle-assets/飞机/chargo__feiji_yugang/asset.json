@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_yugang",
+  "model": "feiji_yugang",
+  "name": "浴缸飞机(鱼雷)",
+  "names": [
+    "浴缸飞机(鱼雷)",
+    "浴缸飞机(战斗)",
+    "浴缸飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_yugang",
+  "path": "battle-assets/飞机/chargo__feiji_yugang",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_yugang_-7642879110232444866.png",
+      "name": "feiji_yugang",
+      "width": 256,
+      "height": 192,
+      "role": "战斗贴图",
+      "path_id": -7642879110232444866,
+      "source": "CAB-03aaed446aa938ba75d86d6f5723e42d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_yugang/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__d790",
+  "model": "d790",
+  "name": "霞飞战斗机弹幕Lv1",
+  "names": [
+    "霞飞战斗机弹幕Lv1",
+    "D.790"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/d790",
+  "path": "battle-assets/飞机图标/aircrafticon__d790",
+  "images": [
+    {
+      "file": "D790_-6614223632735240668.png",
+      "name": "D790",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6614223632735240668,
+      "source": "CAB-6962b8735a6c38f7704394709de9af03"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

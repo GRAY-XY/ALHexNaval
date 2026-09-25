@@ -1,0 +1,41 @@
+{
+  "id": "item__paodan_huoqiu_purple_middle",
+  "model": "paodan_huoqiu_purple_middle",
+  "name": "paodan_huoqiu_purple_middle",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/paodan_huoqiu_purple_middle",
+  "path": "battle-assets/鱼雷/item__paodan_huoqiu_purple_middle",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29659022,
+    3086033,
+    3086045,
+    3191001,
+    3191002,
+    3191003,
+    3191004,
+    3193001,
+    3193004,
+    3193005,
+    3193006,
+    3193007,
+    3193008,
+    3193009,
+    3201128,
+    3218057,
+    3314001,
+    3320319
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "huoqiupaodan_purple.skel",
+    "atlas": "huoqiupaodan_purple.atlas",
+    "pages": [
+      "huoqiupaodan_purple.png"
+    ]
+  }
+}

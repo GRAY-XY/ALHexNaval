@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_baiguan",
+  "model": "paodan_baiguan",
+  "name": "白鹳(雕像)炮弹",
+  "names": [
+    "白鹳(雕像)炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_baiguan",
+  "path": "battle-assets/炮弹/item__paodan_baiguan",
+  "images": [
+    {
+      "file": "paodan_baiguan_-2278768968336307801.png",
+      "name": "paodan_baiguan",
+      "width": 128,
+      "height": 116,
+      "role": "战斗贴图",
+      "path_id": -2278768968336307801,
+      "source": "CAB-f65cdd3da91f4c3d3689d69f0a2a7a7f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_baiguan/paodan_baiguan_-2278768968336307801.png"
+}

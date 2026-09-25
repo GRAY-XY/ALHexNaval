@@ -1,0 +1,48 @@
+
+feiji_juyanlong.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 2
+  size: 251, 156
+  orig: 251, 156
+  offset: 0, 0
+  index: -1
+chibang_b1
+  rotate: false
+  xy: 160, 146
+  size: 87, 107
+  orig: 87, 107
+  offset: 0, 0
+  index: -1
+chibang_b2
+  rotate: false
+  xy: 249, 5
+  size: 79, 51
+  orig: 79, 51
+  offset: 0, 0
+  index: -1
+chibang_b3
+  rotate: false
+  xy: 249, 138
+  size: 67, 115
+  orig: 67, 115
+  offset: 0, 0
+  index: -1
+chibang_s1
+  rotate: false
+  xy: 160, 37
+  size: 87, 107
+  orig: 87, 107
+  offset: 0, 0
+  index: -1
+chibang_xs1
+  rotate: false
+  xy: 249, 58
+  size: 75, 78
+  orig: 75, 78
+  offset: 0, 0
+  index: -1

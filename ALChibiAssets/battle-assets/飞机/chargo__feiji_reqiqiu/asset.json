@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_reqiqiu",
+  "model": "feiji_reqiqiu",
+  "name": "皇家热气球(鱼雷)",
+  "names": [
+    "皇家热气球(鱼雷)",
+    "皇家热气球(战斗)",
+    "皇家热气球(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_reqiqiu",
+  "path": "battle-assets/飞机/chargo__feiji_reqiqiu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_reqiqiu_-3071368217915175276.png",
+      "name": "feiji_reqiqiu",
+      "width": 159,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": -3071368217915175276,
+      "source": "CAB-7a56243001b45fa28c98760e47d7ddee"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_reqiqiu/aircraft_shadow_2192772484218123160.png"
+}

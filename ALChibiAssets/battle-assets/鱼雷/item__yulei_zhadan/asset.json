@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhadan",
+  "model": "yulei_zhadan",
+  "name": "定时炸弹鱼雷",
+  "names": [
+    "定时炸弹鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhadan",
+  "path": "battle-assets/鱼雷/item__yulei_zhadan",
+  "images": [
+    {
+      "file": "yulei_zhadan_-6263581686205825625.png",
+      "name": "yulei_zhadan",
+      "width": 128,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -6263581686205825625,
+      "source": "CAB-f7d30d8b8c6b2b98df0500b47b9060d7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhadan/yulei_zhadan_-6263581686205825625.png"
+}

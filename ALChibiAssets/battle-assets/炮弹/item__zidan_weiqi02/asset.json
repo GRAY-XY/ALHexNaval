@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_weiqi02",
+  "model": "zidan_weiqi02",
+  "name": "zidan_weiqi02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_weiqi02",
+  "path": "battle-assets/炮弹/item__zidan_weiqi02",
+  "images": [
+    {
+      "file": "zidan_weiqi02_-3978376397721327062.png",
+      "name": "zidan_weiqi02",
+      "width": 120,
+      "height": 120,
+      "role": "战斗贴图",
+      "path_id": -3978376397721327062,
+      "source": "CAB-40a2ed0bc8a80a7397fd4ca3d29160a4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3365008,
+    3365010,
+    3365012,
+    3365018,
+    3365108,
+    3365110,
+    3365112,
+    3365118
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_weiqi02/zidan_weiqi02_-3978376397721327062.png"
+}

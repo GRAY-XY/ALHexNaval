@@ -1,0 +1,21 @@
+{
+  "id": "artresource__item__bulletall__feiji_reqiqiu",
+  "model": "feiji_reqiqiu",
+  "name": "皇家热气球(鱼雷)",
+  "names": [
+    "皇家热气球(鱼雷)",
+    "皇家热气球(战斗)",
+    "皇家热气球(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_reqiqiu",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_reqiqiu",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [
+    "feiji_reqiqiu_anim"
+  ],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

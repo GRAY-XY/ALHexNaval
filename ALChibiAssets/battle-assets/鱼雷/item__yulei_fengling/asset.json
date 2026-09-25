@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_fengling",
+  "model": "yulei_fengling",
+  "name": "风铃鱼雷",
+  "names": [
+    "风铃鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fengling",
+  "path": "battle-assets/鱼雷/item__yulei_fengling",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "fenglingyulei.skel",
+    "atlas": "fenglingyulei.atlas",
+    "pages": [
+      "fenglingyulei.png"
+    ]
+  }
+}

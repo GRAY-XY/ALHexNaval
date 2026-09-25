@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__huabanzidan",
+  "model": "huabanzidan",
+  "name": "huabanzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/huabanzidan",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__huabanzidan",
+  "images": [
+    {
+      "file": "huabanzidan_-99407913124283724.png",
+      "name": "huabanzidan",
+      "width": 154,
+      "height": 185,
+      "role": "原始精灵",
+      "path_id": -99407913124283724,
+      "source": "CAB-2171eb1b88b1d47e1c0a69c2dabed1dc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

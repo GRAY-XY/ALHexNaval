@@ -1,0 +1,40 @@
+{
+  "id": "item__zidan_yumao_black",
+  "model": "zidan_yumao_black",
+  "name": "zidan_yumao_black",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_yumao_black",
+  "path": "battle-assets/炮弹/item__zidan_yumao_black",
+  "images": [
+    {
+      "file": "zidan_yumao_black_5684745612193270487.png",
+      "name": "zidan_yumao_black",
+      "width": 128,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 5684745612193270487,
+      "source": "CAB-cfde90b23c5e988f0a6a4a5a937b0f5e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    800042,
+    800043,
+    800044,
+    800045,
+    800046,
+    800047,
+    800048,
+    800072,
+    899041,
+    899044,
+    29653018,
+    29656082,
+    3049205
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yumao_black/zidan_yumao_black_5684745612193270487.png"
+}

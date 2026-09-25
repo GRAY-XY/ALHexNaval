@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_changjiaojingtou",
+  "model": "yulei_changjiaojingtou",
+  "name": "长焦镜头鱼雷",
+  "names": [
+    "长焦镜头鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_changjiaojingtou",
+  "path": "battle-assets/鱼雷/bulletall__yulei_changjiaojingtou",
+  "images": [
+    {
+      "file": "yulei_changjiaojingtou_-1203075008404008591.png",
+      "name": "yulei_changjiaojingtou",
+      "width": 128,
+      "height": 53,
+      "role": "原始精灵",
+      "path_id": -1203075008404008591,
+      "source": "CAB-1ae2577aae6c13c0de704b2b5be5f164"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

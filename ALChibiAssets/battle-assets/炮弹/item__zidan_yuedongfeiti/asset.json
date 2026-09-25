@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_yuedongfeiti",
+  "model": "zidan_yuedongfeiti",
+  "name": "子弹:跃动飞踢",
+  "names": [
+    "子弹:跃动飞踢"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yuedongfeiti",
+  "path": "battle-assets/炮弹/item__zidan_yuedongfeiti",
+  "images": [
+    {
+      "file": "mask_01_-5055041263458255627.png",
+      "name": "mask_01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5055041263458255627,
+      "source": "CAB-c1e5da1186caadd5bdd43bd45a16f91a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yuedongfeiti/mask_01_-5055041263458255627.png",
+  "spine": {
+    "skel": "qigongpaozidan.skel",
+    "atlas": "qigongpaozidan.atlas",
+    "pages": [
+      "qigongpaozidan.png"
+    ]
+  }
+}

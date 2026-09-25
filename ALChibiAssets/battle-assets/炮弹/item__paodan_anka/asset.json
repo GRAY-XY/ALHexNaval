@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_anka",
+  "model": "paodan_anka",
+  "name": "生命之钥炮弹",
+  "names": [
+    "生命之钥炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_anka",
+  "path": "battle-assets/炮弹/item__paodan_anka",
+  "images": [
+    {
+      "file": "paodan_anka_-441373480162954692.png",
+      "name": "paodan_anka",
+      "width": 128,
+      "height": 91,
+      "role": "战斗贴图",
+      "path_id": -441373480162954692,
+      "source": "CAB-a885993dea2e8ef1b45698926c70eb38"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_anka/paodan_anka_-441373480162954692.png"
+}

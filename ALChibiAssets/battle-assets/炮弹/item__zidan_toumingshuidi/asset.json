@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_toumingshuidi",
+  "model": "zidan_toumingshuidi",
+  "name": "透明水滴子弹",
+  "names": [
+    "透明水滴子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_toumingshuidi",
+  "path": "battle-assets/炮弹/item__zidan_toumingshuidi",
+  "images": [
+    {
+      "file": "zidan_toumingshuidi_1124861264666991709.png",
+      "name": "zidan_toumingshuidi",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1124861264666991709,
+      "source": "CAB-aff9f8c09d3fdcd971111f4e3612c58f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_toumingshuidi/zidan_toumingshuidi_1124861264666991709.png",
+  "spine": {
+    "skel": "zidan_toumingshuidi.skel",
+    "atlas": "zidan_toumingshuidi.atlas",
+    "pages": [
+      "zidan_toumingshuidi.png"
+    ]
+  }
+}

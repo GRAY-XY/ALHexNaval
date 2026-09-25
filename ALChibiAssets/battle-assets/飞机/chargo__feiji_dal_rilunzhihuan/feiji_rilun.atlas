@@ -1,0 +1,118 @@
+
+feiji_rilun.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rl_1
+  rotate: false
+  xy: 317, 19
+  size: 62, 35
+  orig: 62, 35
+  offset: 0, 0
+  index: -1
+rl_10
+  rotate: true
+  xy: 249, 56
+  size: 70, 65
+  orig: 70, 65
+  offset: 0, 0
+  index: -1
+rl_11
+  rotate: true
+  xy: 122, 54
+  size: 72, 61
+  orig: 72, 61
+  offset: 0, 0
+  index: -1
+rl_12
+  rotate: false
+  xy: 316, 56
+  size: 63, 70
+  orig: 63, 70
+  offset: 0, 0
+  index: -1
+rl_13
+  rotate: false
+  xy: 2, 37
+  size: 28, 89
+  orig: 28, 89
+  offset: 0, 0
+  index: -1
+rl_14
+  rotate: true
+  xy: 32, 37
+  size: 89, 28
+  orig: 89, 28
+  offset: 0, 0
+  index: -1
+rl_15
+  rotate: true
+  xy: 62, 37
+  size: 89, 28
+  orig: 89, 28
+  offset: 0, 0
+  index: -1
+rl_16
+  rotate: false
+  xy: 92, 37
+  size: 28, 89
+  orig: 28, 89
+  offset: 0, 0
+  index: -1
+rl_2
+  rotate: true
+  xy: 193, 13
+  size: 40, 60
+  orig: 40, 60
+  offset: 0, 0
+  index: -1
+rl_3
+  rotate: true
+  xy: 381, 31
+  size: 29, 63
+  orig: 29, 63
+  offset: 0, 0
+  index: -1
+rl_4
+  rotate: false
+  xy: 2, 2
+  size: 63, 33
+  orig: 63, 33
+  offset: 0, 0
+  index: -1
+rl_5
+  rotate: false
+  xy: 67, 3
+  size: 63, 32
+  orig: 63, 32
+  offset: 0, 0
+  index: -1
+rl_6
+  rotate: true
+  xy: 132, 10
+  size: 42, 59
+  orig: 42, 59
+  offset: 0, 0
+  index: -1
+rl_7
+  rotate: true
+  xy: 255, 16
+  size: 38, 60
+  orig: 38, 60
+  offset: 0, 0
+  index: -1
+rl_8
+  rotate: true
+  xy: 381, 62
+  size: 64, 29
+  orig: 64, 29
+  offset: 0, 0
+  index: -1
+rl_9
+  rotate: true
+  xy: 185, 55
+  size: 71, 62
+  orig: 71, 62
+  offset: 0, 0
+  index: -1

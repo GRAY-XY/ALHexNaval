@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_fanshao",
+  "model": "yulei_fanshao",
+  "name": "饭勺？鱼雷",
+  "names": [
+    "饭勺？鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fanshao",
+  "path": "battle-assets/鱼雷/item__yulei_fanshao",
+  "images": [
+    {
+      "file": "yulei_fanshao_7064905041844696604.png",
+      "name": "yulei_fanshao",
+      "width": 128,
+      "height": 52,
+      "role": "战斗贴图",
+      "path_id": 7064905041844696604,
+      "source": "CAB-904e69422acd175dd417572c73a1a7ec"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_fanshao/yulei_fanshao_7064905041844696604.png"
+}

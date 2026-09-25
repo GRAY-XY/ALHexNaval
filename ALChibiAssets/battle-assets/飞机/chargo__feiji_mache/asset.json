@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_mache",
+  "model": "feiji_mache",
+  "name": "马车飞机(鱼雷)",
+  "names": [
+    "马车飞机(鱼雷)",
+    "马车飞机(战斗)",
+    "马车飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_mache",
+  "path": "battle-assets/飞机/chargo__feiji_mache",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_mache_4943570066252196807.png",
+      "name": "feiji_mache",
+      "width": 256,
+      "height": 224,
+      "role": "战斗贴图",
+      "path_id": 4943570066252196807,
+      "source": "CAB-ef54d4e62ac1aedbf866fa2004d60ced"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_mache/aircraft_shadow_2192772484218123160.png"
+}

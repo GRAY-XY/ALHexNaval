@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhuti",
+  "model": "paodan_zhuti",
+  "name": "猪蹄炮弹",
+  "names": [
+    "猪蹄炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhuti",
+  "path": "battle-assets/炮弹/item__paodan_zhuti",
+  "images": [
+    {
+      "file": "paodan_zhuti_2440558018876831554.png",
+      "name": "paodan_zhuti",
+      "width": 116,
+      "height": 132,
+      "role": "战斗贴图",
+      "path_id": 2440558018876831554,
+      "source": "CAB-b409b97fbd06477bd52c82218d72dce5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhuti/paodan_zhuti_2440558018876831554.png"
+}

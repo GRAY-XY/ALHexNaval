@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__ar197",
+  "model": "ar197",
+  "name": "Ar-197舰载战斗机",
+  "names": [
+    "Ar-197舰载战斗机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ar197",
+  "path": "battle-assets/飞机图标/aircrafticon__ar197",
+  "images": [
+    {
+      "file": "Ar197_-4987596381042236257.png",
+      "name": "Ar197",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -4987596381042236257,
+      "source": "CAB-f66604f824b27426790e4b379afc2818"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

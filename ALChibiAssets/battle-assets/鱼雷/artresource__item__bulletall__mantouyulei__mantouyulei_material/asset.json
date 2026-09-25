@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__mantouyulei__mantouyulei_material",
+  "model": "mantouyulei_material",
+  "name": "mantouyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/mantouyulei/mantouyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__mantouyulei__mantouyulei_material",
+  "images": [
+    {
+      "file": "mantouyulei_-3422173408076265210.png",
+      "name": "mantouyulei",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3422173408076265210,
+      "source": "CAB-36c31b06dc29b6c55eee14eb2dcba5e6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_tanghulu",
+  "model": "yulei_tanghulu",
+  "name": "糖葫芦鱼雷",
+  "names": [
+    "糖葫芦鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tanghulu",
+  "path": "battle-assets/鱼雷/item__yulei_tanghulu",
+  "images": [
+    {
+      "file": "yulei_tanghulu_-1880768519990394023.png",
+      "name": "yulei_tanghulu",
+      "width": 128,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": -1880768519990394023,
+      "source": "CAB-0ec093d40e3bc6b31f9400e5c15d50d8"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tanghulu/yulei_tanghulu_-1880768519990394023.png"
+}

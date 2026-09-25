@@ -1,0 +1,125 @@
+
+feiji_madengsuanpan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 216, 87
+  size: 146, 166
+  orig: 146, 166
+  offset: 0, 0
+  index: -1
+liusu_1
+  rotate: true
+  xy: 30, 3
+  size: 9, 25
+  orig: 9, 25
+  offset: 0, 0
+  index: -1
+liusu_2
+  rotate: true
+  xy: 2, 2
+  size: 9, 26
+  orig: 9, 26
+  offset: 0, 0
+  index: -1
+liusu_3
+  rotate: false
+  xy: 15, 13
+  size: 9, 26
+  orig: 9, 26
+  offset: 0, 0
+  index: -1
+liusu_4
+  rotate: false
+  xy: 2, 13
+  size: 11, 26
+  orig: 11, 26
+  offset: 0, 0
+  index: -1
+piaodai_1
+  rotate: true
+  xy: 172, 79
+  size: 174, 42
+  orig: 174, 42
+  offset: 0, 0
+  index: -1
+piaodai_2
+  rotate: false
+  xy: 172, 17
+  size: 169, 60
+  orig: 169, 60
+  offset: 0, 0
+  index: -1
+qianbi_1
+  rotate: true
+  xy: 26, 14
+  size: 25, 14
+  orig: 25, 14
+  offset: 0, 0
+  index: -1
+qianbi_1_2
+  rotate: true
+  xy: 42, 14
+  size: 25, 14
+  orig: 25, 14
+  offset: 0, 0
+  index: -1
+qianbi_1_3
+  rotate: true
+  xy: 58, 14
+  size: 25, 14
+  orig: 25, 14
+  offset: 0, 0
+  index: -1
+shanguang_1
+  rotate: true
+  xy: 2, 41
+  size: 212, 83
+  orig: 212, 83
+  offset: 0, 0
+  index: -1
+shanguang_2
+  rotate: true
+  xy: 87, 41
+  size: 212, 83
+  orig: 212, 83
+  offset: 0, 0
+  index: -1
+tideng_1
+  rotate: true
+  xy: 364, 117
+  size: 136, 128
+  orig: 136, 128
+  offset: 0, 0
+  index: -1
+tideng_2
+  rotate: false
+  xy: 390, 3
+  size: 48, 112
+  orig: 48, 112
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: true
+  xy: 343, 8
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: true
+  xy: 487, 38
+  size: 77, 44
+  orig: 77, 44
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: true
+  xy: 440, 38
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1

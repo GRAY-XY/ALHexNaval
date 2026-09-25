@@ -1,0 +1,26 @@
+{
+  "id": "item__aluomangshi_zidan",
+  "model": "aluomangshi_zidan",
+  "name": "aluomangshi_zidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/aluomangshi_zidan",
+  "path": "battle-assets/炮弹/item__aluomangshi_zidan",
+  "images": [
+    {
+      "file": "chuizi01_-5002350163643324337.png",
+      "name": "chuizi01",
+      "width": 255,
+      "height": 108,
+      "role": "战斗贴图",
+      "path_id": -5002350163643324337,
+      "source": "CAB-aa9fde5401dd93225dfa9bd2792fe8b6"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__aluomangshi_zidan/chuizi01_-5002350163643324337.png"
+}

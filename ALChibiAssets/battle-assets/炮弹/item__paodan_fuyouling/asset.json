@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_fuyouling",
+  "model": "paodan_fuyouling",
+  "name": "浮游灵炮弹",
+  "names": [
+    "浮游灵炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_fuyouling",
+  "path": "battle-assets/炮弹/item__paodan_fuyouling",
+  "images": [
+    {
+      "file": "paodan_fuyouling_3358080819259621899.png",
+      "name": "paodan_fuyouling",
+      "width": 128,
+      "height": 101,
+      "role": "战斗贴图",
+      "path_id": 3358080819259621899,
+      "source": "CAB-a0806a92389420c5804940d6fa75f2ff"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_fuyouling/paodan_fuyouling_3358080819259621899.png"
+}

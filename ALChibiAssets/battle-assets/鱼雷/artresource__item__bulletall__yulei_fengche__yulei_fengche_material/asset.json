@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yulei_fengche__yulei_fengche_material",
+  "model": "yulei_fengche_material",
+  "name": "yulei_fengche_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_fengche/yulei_fengche_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_fengche__yulei_fengche_material",
+  "images": [
+    {
+      "file": "yulei_fengche_-3898471427921616607.png",
+      "name": "yulei_fengche",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3898471427921616607,
+      "source": "CAB-4c954ad206f35943774969e21048161e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

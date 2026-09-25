@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_duijiangji",
+  "model": "yulei_duijiangji",
+  "name": "对讲机鱼雷",
+  "names": [
+    "对讲机鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_duijiangji",
+  "path": "battle-assets/鱼雷/item__yulei_duijiangji",
+  "images": [
+    {
+      "file": "yulei_duijiangji_5878551225157917675.png",
+      "name": "yulei_duijiangji",
+      "width": 128,
+      "height": 37,
+      "role": "战斗贴图",
+      "path_id": 5878551225157917675,
+      "source": "CAB-ae123459702f727a03ac135f1708fc98"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_duijiangji/yulei_duijiangji_5878551225157917675.png"
+}

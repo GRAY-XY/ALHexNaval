@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__vbwa",
+  "model": "vbwa",
+  "name": "埃佛森技能侦察机",
+  "names": [
+    "埃佛森技能侦察机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/vbwa",
+  "path": "battle-assets/飞机图标/aircrafticon__vbwa",
+  "images": [
+    {
+      "file": "vbwa_-4153242883426759729.png",
+      "name": "vbwa",
+      "width": 35,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -4153242883426759729,
+      "source": "CAB-76e53d957b95153c7cf75cf0d5ccbcca"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

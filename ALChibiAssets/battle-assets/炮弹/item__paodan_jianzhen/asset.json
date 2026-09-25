@@ -1,0 +1,26 @@
+{
+  "id": "item__paodan_jianzhen",
+  "model": "paodan_jianzhen",
+  "name": "剑阵炮弹",
+  "names": [
+    "剑阵炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jianzhen",
+  "path": "battle-assets/炮弹/item__paodan_jianzhen",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3359410
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "paodan_jianzhen.skel",
+    "atlas": "paodan_jianzhen.atlas",
+    "pages": [
+      "paodan_jianzhen.png"
+    ]
+  }
+}

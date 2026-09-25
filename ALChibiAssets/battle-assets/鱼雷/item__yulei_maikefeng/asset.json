@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_maikefeng",
+  "model": "yulei_maikefeng",
+  "name": "鱼雷麦克风",
+  "names": [
+    "鱼雷麦克风"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_maikefeng",
+  "path": "battle-assets/鱼雷/item__yulei_maikefeng",
+  "images": [
+    {
+      "file": "yulei_maikefeng_-1845014209181466328.png",
+      "name": "yulei_maikefeng",
+      "width": 128,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": -1845014209181466328,
+      "source": "CAB-c8acaf55b6307f97b301ad049aa8478f"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_maikefeng/yulei_maikefeng_-1845014209181466328.png"
+}

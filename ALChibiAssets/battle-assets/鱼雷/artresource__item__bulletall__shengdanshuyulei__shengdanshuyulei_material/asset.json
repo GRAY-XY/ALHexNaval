@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shengdanshuyulei__shengdanshuyulei_material",
+  "model": "shengdanshuyulei_material",
+  "name": "shengdanshuyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/shengdanshuyulei/shengdanshuyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__shengdanshuyulei__shengdanshuyulei_material",
+  "images": [
+    {
+      "file": "shengdanshuyulei_-4520414313313113656.png",
+      "name": "shengdanshuyulei",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4520414313313113656,
+      "source": "CAB-eceb4f85dacb6aa303a4fb16a41f7342"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

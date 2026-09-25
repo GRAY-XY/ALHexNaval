@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_yunshi",
+  "model": "yulei_yunshi",
+  "name": "像素陨石鱼雷",
+  "names": [
+    "像素陨石鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yunshi",
+  "path": "battle-assets/鱼雷/item__yulei_yunshi",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "yulei_yunshi.skel",
+    "atlas": "yulei_yunshi.atlas",
+    "pages": [
+      "yulei_yunshi.png"
+    ]
+  }
+}

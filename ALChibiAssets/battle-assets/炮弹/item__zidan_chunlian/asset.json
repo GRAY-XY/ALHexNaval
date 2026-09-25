@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_chunlian",
+  "model": "zidan_chunlian",
+  "name": "福运子弹",
+  "names": [
+    "福运子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_chunlian",
+  "path": "battle-assets/炮弹/item__zidan_chunlian",
+  "images": [
+    {
+      "file": "zidan_chunlian_9066729882892805713.png",
+      "name": "zidan_chunlian",
+      "width": 128,
+      "height": 120,
+      "role": "战斗贴图",
+      "path_id": 9066729882892805713,
+      "source": "CAB-e614dc1e194a1c895d50b7bd2e0f69cc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_chunlian/zidan_chunlian_9066729882892805713.png"
+}

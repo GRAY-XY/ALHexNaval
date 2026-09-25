@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zidan_honglanqiu__zidan_honglanqiu_material",
+  "model": "zidan_honglanqiu_material",
+  "name": "zidan_honglanqiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_honglanqiu/zidan_honglanqiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_honglanqiu__zidan_honglanqiu_material",
+  "images": [
+    {
+      "file": "zidan_honglanqiu_-435250698300587263.png",
+      "name": "zidan_honglanqiu",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -435250698300587263,
+      "source": "CAB-4b8f87d8039ac53048194e26cac5e2f9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

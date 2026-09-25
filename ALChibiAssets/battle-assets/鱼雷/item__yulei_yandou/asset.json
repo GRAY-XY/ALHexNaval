@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yandou",
+  "model": "yulei_yandou",
+  "name": "烟斗鱼雷",
+  "names": [
+    "烟斗鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yandou",
+  "path": "battle-assets/鱼雷/item__yulei_yandou",
+  "images": [
+    {
+      "file": "yulei_yandou_6985682050467262700.png",
+      "name": "yulei_yandou",
+      "width": 128,
+      "height": 72,
+      "role": "战斗贴图",
+      "path_id": 6985682050467262700,
+      "source": "CAB-a64f50d64f95be51fd809657b543e9ee"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yandou/yulei_yandou_6985682050467262700.png"
+}

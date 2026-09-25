@@ -1,0 +1,36 @@
+{
+  "id": "item__qinli_slash",
+  "model": "qinli_slash",
+  "name": "qinli_slash",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/qinli_slash",
+  "path": "battle-assets/炮弹/item__qinli_slash",
+  "images": [
+    {
+      "file": "qinli_slash_6039381736364840812.png",
+      "name": "qinli_slash",
+      "width": 2048,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": 6039381736364840812,
+      "source": "CAB-d5a529b4b8388621f82388c5b876e279"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    168260,
+    3335003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__qinli_slash/qinli_slash_6039381736364840812.png",
+  "spine": {
+    "skel": "qinli_slash.skel",
+    "atlas": "qinli_slash.atlas",
+    "pages": [
+      "qinli_slash.png"
+    ]
+  }
+}

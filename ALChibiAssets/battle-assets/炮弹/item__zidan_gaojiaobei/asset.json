@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_gaojiaobei",
+  "model": "zidan_gaojiaobei",
+  "name": "高脚杯子弹",
+  "names": [
+    "高脚杯子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gaojiaobei",
+  "path": "battle-assets/炮弹/item__zidan_gaojiaobei",
+  "images": [
+    {
+      "file": "zidan_gaojiaobei_-4424916633542061270.png",
+      "name": "zidan_gaojiaobei",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4424916633542061270,
+      "source": "CAB-29df6d44eaf4c654e7c28dc24939e370"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gaojiaobei/zidan_gaojiaobei_-4424916633542061270.png",
+  "spine": {
+    "skel": "zidan_gaojiaobei.skel",
+    "atlas": "zidan_gaojiaobei.atlas",
+    "pages": [
+      "zidan_gaojiaobei.png"
+    ]
+  }
+}

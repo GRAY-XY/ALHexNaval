@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_luteqin",
+  "model": "yulei_luteqin",
+  "name": "鲁特琴鱼雷",
+  "names": [
+    "鲁特琴鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_luteqin",
+  "path": "battle-assets/鱼雷/item__yulei_luteqin",
+  "images": [
+    {
+      "file": "yulei_luteqin_-8436924186891680572.png",
+      "name": "yulei_luteqin",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -8436924186891680572,
+      "source": "CAB-c5b087a2101f5d42c3bcf943de604c61"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_luteqin/yulei_luteqin_-8436924186891680572.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dengshanshouzhang",
+  "model": "yulei_dengshanshouzhang",
+  "name": "登山手杖(？)鱼雷",
+  "names": [
+    "登山手杖(？)鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dengshanshouzhang",
+  "path": "battle-assets/鱼雷/item__yulei_dengshanshouzhang",
+  "images": [
+    {
+      "file": "yulei_dengshanshouzhang_592848529756479914.png",
+      "name": "yulei_dengshanshouzhang",
+      "width": 128,
+      "height": 28,
+      "role": "战斗贴图",
+      "path_id": 592848529756479914,
+      "source": "CAB-ee2c64112edc7d2b1b7a644fb530198b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dengshanshouzhang/yulei_dengshanshouzhang_592848529756479914.png"
+}

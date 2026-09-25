@@ -1,0 +1,39 @@
+{
+  "id": "chargo__qinglan",
+  "model": "qinglan",
+  "name": "晴岚",
+  "names": [
+    "晴岚",
+    "伊404晴岚-跨队弹幕用",
+    "伊404雷击晴岚-专属弹幕用"
+  ],
+  "category": "飞机",
+  "source": "chargo/qinglan",
+  "path": "battle-assets/飞机/chargo__qinglan",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "qinglan_4918097793486765381.png",
+      "name": "qinglan",
+      "width": 253,
+      "height": 230,
+      "role": "战斗贴图",
+      "path_id": 4918097793486765381,
+      "source": "CAB-9de7d284edcf62f72d134f06f0dc060b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__qinglan/aircraft_shadow_2192772484218123160.png"
+}

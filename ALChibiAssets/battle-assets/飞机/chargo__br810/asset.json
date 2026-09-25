@@ -1,0 +1,37 @@
+{
+  "id": "chargo__br810",
+  "model": "br810",
+  "name": "BR.810",
+  "names": [
+    "BR.810"
+  ],
+  "category": "飞机",
+  "source": "chargo/br810",
+  "path": "battle-assets/飞机/chargo__br810",
+  "images": [
+    {
+      "file": "BR810_383795760432846608.png",
+      "name": "BR810",
+      "width": 241,
+      "height": 237,
+      "role": "战斗贴图",
+      "path_id": 383795760432846608,
+      "source": "CAB-3da2d00fe4b2dde97e2c006d43b5159d"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__br810/BR810_383795760432846608.png"
+}

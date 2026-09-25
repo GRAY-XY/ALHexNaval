@@ -1,0 +1,27 @@
+
+super.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+super
+  rotate: false
+  xy: 269, 21
+  size: 100, 101
+  orig: 100, 101
+  offset: 0, 0
+  index: -1
+super2
+  rotate: false
+  xy: 2, 9
+  size: 142, 113
+  orig: 142, 113
+  offset: 0, 0
+  index: -1
+super3
+  rotate: true
+  xy: 146, 2
+  size: 120, 121
+  orig: 120, 121
+  offset: 0, 0
+  index: -1

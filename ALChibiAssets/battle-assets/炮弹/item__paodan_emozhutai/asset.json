@@ -1,0 +1,71 @@
+{
+  "id": "item__paodan_emozhutai",
+  "model": "paodan_emozhutai",
+  "name": "烛台炮弹",
+  "names": [
+    "烛台炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_emozhutai",
+  "path": "battle-assets/炮弹/item__paodan_emozhutai",
+  "images": [
+    {
+      "file": "line04_-8352160835661841220.png",
+      "name": "line04",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8352160835661841220,
+      "source": "CAB-8f806b91f59e778afc192738400fd5e7"
+    },
+    {
+      "file": "line02_-7119680387871705191.png",
+      "name": "line02",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7119680387871705191,
+      "source": "CAB-8f806b91f59e778afc192738400fd5e7"
+    },
+    {
+      "file": "paodan_zhutai_-2770897917706317036.png",
+      "name": "paodan_zhutai",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2770897917706317036,
+      "source": "CAB-8f806b91f59e778afc192738400fd5e7"
+    },
+    {
+      "file": "line03_-1308468022008906639.png",
+      "name": "line03",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1308468022008906639,
+      "source": "CAB-8f806b91f59e778afc192738400fd5e7"
+    },
+    {
+      "file": "particles01_5949931410896030115.png",
+      "name": "particles01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5949931410896030115,
+      "source": "CAB-8f806b91f59e778afc192738400fd5e7"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_emozhutai/line04_-8352160835661841220.png",
+  "spine": {
+    "skel": "paodan_zhutai.skel",
+    "atlas": "paodan_zhutai.atlas",
+    "pages": [
+      "paodan_zhutai.png"
+    ]
+  }
+}

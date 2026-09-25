@@ -1,0 +1,48 @@
+
+unknownV_crystal_qingxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beibu
+  rotate: true
+  xy: 822, 461
+  size: 81, 116
+  orig: 81, 116
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 22
+  size: 504, 260
+  orig: 504, 260
+  offset: 0, 0
+  index: -1
+paoguan_1
+  rotate: true
+  xy: 508, 196
+  size: 86, 39
+  orig: 86, 39
+  offset: 0, 0
+  index: -1
+paoguan_2
+  rotate: true
+  xy: 508, 108
+  size: 86, 39
+  orig: 86, 39
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: true
+  xy: 549, 2
+  size: 540, 271
+  orig: 540, 271
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 284
+  size: 545, 258
+  orig: 545, 258
+  offset: 0, 0
+  index: -1

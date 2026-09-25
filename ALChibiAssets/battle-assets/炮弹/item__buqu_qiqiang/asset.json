@@ -1,0 +1,38 @@
+{
+  "id": "item__buqu_qiqiang",
+  "model": "buqu_qiqiang",
+  "name": "buqu_qiqiang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/buqu_qiqiang",
+  "path": "battle-assets/炮弹/item__buqu_qiqiang",
+  "images": [
+    {
+      "file": "changqiang_-71942082697741632.png",
+      "name": "changqiang",
+      "width": 246,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": -71942082697741632,
+      "source": "CAB-581d1ce491e4ed14a3a702f09637e2ed"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19630,
+    19631,
+    19632,
+    19633,
+    19634,
+    19635,
+    19636,
+    19637,
+    19638,
+    19639,
+    3139718
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__buqu_qiqiang/changqiang_-71942082697741632.png"
+}

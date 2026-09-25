@@ -1,0 +1,22 @@
+{
+  "id": "item__jialisuoniai_jianqi",
+  "model": "jialisuoniai_jianqi",
+  "name": "jialisuoniai_jianqi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jialisuoniai_jianqi",
+  "path": "battle-assets/炮弹/item__jialisuoniai_jianqi",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19698,
+    160942,
+    168201,
+    3314010,
+    3314011,
+    3314012
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_saozhao",
+  "model": "yulei_saozhao",
+  "name": "魔法扫帚鱼雷",
+  "names": [
+    "魔法扫帚鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_saozhao",
+  "path": "battle-assets/鱼雷/item__yulei_saozhao",
+  "images": [
+    {
+      "file": "yulei_saozhao_8355789337960517653.png",
+      "name": "yulei_saozhao",
+      "width": 112,
+      "height": 114,
+      "role": "战斗贴图",
+      "path_id": 8355789337960517653,
+      "source": "CAB-c15e1e0a06803215f934ba2b3da8a608"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_saozhao/yulei_saozhao_8355789337960517653.png"
+}

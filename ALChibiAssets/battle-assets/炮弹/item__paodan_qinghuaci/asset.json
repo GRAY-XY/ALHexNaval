@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_qinghuaci",
+  "model": "paodan_qinghuaci",
+  "name": "青花瓷炮弹",
+  "names": [
+    "青花瓷炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_qinghuaci",
+  "path": "battle-assets/炮弹/item__paodan_qinghuaci",
+  "images": [
+    {
+      "file": "paodan_qinghuaci_-5898929980434500429.png",
+      "name": "paodan_qinghuaci",
+      "width": 126,
+      "height": 133,
+      "role": "战斗贴图",
+      "path_id": -5898929980434500429,
+      "source": "CAB-36491d07a92484836c93b48004a80414"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_qinghuaci/paodan_qinghuaci_-5898929980434500429.png"
+}

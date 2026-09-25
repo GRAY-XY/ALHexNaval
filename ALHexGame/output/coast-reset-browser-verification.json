@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.2",
+  "url": "http://127.0.0.1:18768/",
+  "map": {
+    "size": 256,
+    "cells": 65536,
+    "players": 4,
+    "round": 1,
+    "activeTeam": "湛蓝舰队",
+    "oil": "50 / 50",
+    "survivingShips": "12 / 12"
+  },
+  "visualChecks": [
+    "Large islands use deterministic multi-lobe terrain generation instead of small single ellipses",
+    "The visible coast is a continuous cross-hex land mass with shallow-water, sand and paper-white bands",
+    "Mountain artwork is a connected range spanning several hex cells and uses wide spacing between placements",
+    "The tactical harbor places its town on land and rotates its long pier toward the adjacent sea cell",
+    "Strategic zoom retains the compact team-colored anchor marker",
+    "The current Pixi sea chart can be exported through the in-game PNG capture dialog"
+  ],
+  "screenshots": [
+    "output/screenshots/coast-reset-map-final.png",
+    "output/screenshots/coast-reset-port-final.png"
+  ],
+  "generatedAssets": [
+    "assets/terrain/watercolor-mountain-range.png",
+    "assets/terrain/watercolor-harbor.png"
+  ],
+  "consoleErrors": [],
+  "staticChecks": {
+    "build": "passed",
+    "coordinateChecks": 344064,
+    "portChecks": 26,
+    "invalidPortSaveCases": 15,
+    "ruleChecks": 78,
+    "weightedPathCases": 80,
+    "invalidRuleSaveCases": 67,
+    "fogChecks": 16,
+    "invalidFogSaveCases": 7,
+    "allPortsCoastal": true
+  },
+  "limitations": [
+    "The coast is visually smoothed across hexes while movement and combat still use discrete land cells",
+    "Changing deterministic terrain generation invalidates old map hashes and starts a fresh battle"
+  ]
+}

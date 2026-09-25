@@ -1,0 +1,104 @@
+
+lalazhaohuanwu_tolove.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fx_1
+  rotate: false
+  xy: 2, 315
+  size: 171, 191
+  orig: 171, 191
+  offset: 0, 0
+  index: -1
+fx_2
+  rotate: false
+  xy: 2, 124
+  size: 169, 189
+  orig: 169, 189
+  offset: 0, 0
+  index: -1
+fx_3
+  rotate: false
+  xy: 173, 126
+  size: 168, 187
+  orig: 168, 187
+  offset: 0, 0
+  index: -1
+fx_4
+  rotate: false
+  xy: 175, 332
+  size: 156, 174
+  orig: 156, 174
+  offset: 0, 0
+  index: -1
+fx_5
+  rotate: true
+  xy: 493, 359
+  size: 147, 144
+  orig: 147, 144
+  offset: 0, 0
+  index: -1
+fx_6
+  rotate: false
+  xy: 107, 10
+  size: 106, 112
+  orig: 106, 112
+  offset: 0, 0
+  index: -1
+fx_7
+  rotate: false
+  xy: 344, 38
+  size: 134, 142
+  orig: 134, 142
+  offset: 0, 0
+  index: -1
+wep_tako_head
+  rotate: true
+  xy: 343, 182
+  size: 158, 156
+  orig: 158, 156
+  offset: 0, 0
+  index: -1
+wep_tako_leg1
+  rotate: false
+  xy: 2, 2
+  size: 103, 120
+  orig: 103, 120
+  offset: 0, 0
+  index: -1
+wep_tako_leg2
+  rotate: true
+  xy: 215, 21
+  size: 103, 127
+  orig: 103, 127
+  offset: 0, 0
+  index: -1
+wep_tako_leg3
+  rotate: true
+  xy: 501, 219
+  size: 138, 131
+  orig: 138, 131
+  offset: 0, 0
+  index: -1
+wep_tako_leg4
+  rotate: false
+  xy: 480, 41
+  size: 77, 139
+  orig: 77, 139
+  offset: 0, 0
+  index: -1
+wep_tako_leg5
+  rotate: true
+  xy: 559, 82
+  size: 135, 83
+  orig: 135, 83
+  offset: 0, 0
+  index: -1
+wep_tako_leg_B
+  rotate: true
+  xy: 333, 342
+  size: 164, 158
+  orig: 164, 158
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,19 @@
+{
+  "id": "item__al_flower01_1",
+  "model": "al_flower01_1",
+  "name": "al_flower01_1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/al_flower01_1",
+  "path": "battle-assets/炮弹/item__al_flower01_1",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    893144,
+    893147,
+    893153
+  ],
+  "has_preview": false,
+  "prefab": true
+}

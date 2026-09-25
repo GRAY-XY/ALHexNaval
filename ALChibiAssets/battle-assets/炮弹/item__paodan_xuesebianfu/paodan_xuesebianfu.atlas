@@ -1,0 +1,41 @@
+
+paodan_xuesebianfu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diceng
+  rotate: false
+  xy: 203, 94
+  size: 152, 151
+  orig: 152, 151
+  offset: 0, 0
+  index: -1
+guangxiao_1
+  rotate: false
+  xy: 203, 2
+  size: 97, 90
+  orig: 97, 90
+  offset: 0, 0
+  index: -1
+guangxiao_2
+  rotate: false
+  xy: 357, 125
+  size: 116, 120
+  orig: 116, 120
+  offset: 0, 0
+  index: -1
+guangxiao_3
+  rotate: false
+  xy: 357, 26
+  size: 112, 97
+  orig: 112, 97
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 47
+  size: 199, 198
+  orig: 199, 198
+  offset: 0, 0
+  index: -1

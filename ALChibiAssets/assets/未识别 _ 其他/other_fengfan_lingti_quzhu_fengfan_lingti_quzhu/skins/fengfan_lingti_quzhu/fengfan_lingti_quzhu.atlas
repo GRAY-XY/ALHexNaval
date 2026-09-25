@@ -1,0 +1,195 @@
+
+fengfan_lingti_quzhu.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 874, 666
+  size: 243, 138
+  orig: 243, 138
+  offset: 0, 0
+  index: -1
+diaodeng
+  rotate: false
+  xy: 1014, 860
+  size: 8, 49
+  orig: 8, 49
+  offset: 0, 0
+  index: -1
+diaodeng_guang
+  rotate: false
+  xy: 997, 591
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 1005, 632
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 1005, 619
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: true
+  xy: 1012, 576
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: false
+  xy: 997, 606
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: true
+  xy: 1010, 645
+  size: 19, 12
+  orig: 19, 12
+  offset: 0, 0
+  index: -1
+gd_6
+  rotate: true
+  xy: 1014, 847
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+gd_7
+  rotate: true
+  xy: 992, 629
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+linghuo
+  rotate: true
+  xy: 853, 45
+  size: 258, 164
+  orig: 258, 164
+  offset: 0, 0
+  index: -1
+linghuo_qi
+  rotate: false
+  xy: 874, 629
+  size: 116, 35
+  orig: 116, 35
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 608
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 305
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+yanguang
+  rotate: false
+  xy: 950, 535
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+yuqi_b
+  rotate: false
+  xy: 863, 538
+  size: 85, 43
+  orig: 85, 43
+  offset: 0, 0
+  index: -1
+yuqi_f
+  rotate: false
+  xy: 874, 583
+  size: 86, 44
+  orig: 86, 44
+  offset: 0, 0
+  index: -1
+zg_1
+  rotate: false
+  xy: 1012, 591
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+zg_2
+  rotate: true
+  xy: 997, 563
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+zg_3
+  rotate: false
+  xy: 997, 576
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+zg_4
+  rotate: true
+  xy: 1014, 831
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+zg_5
+  rotate: false
+  xy: 993, 550
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+zg_6
+  rotate: true
+  xy: 1014, 838
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+zg_7
+  rotate: false
+  xy: 992, 649
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+zg_8
+  rotate: false
+  xy: 1007, 550
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+zg_9
+  rotate: true
+  xy: 962, 574
+  size: 53, 33
+  orig: 53, 33
+  offset: 0, 0
+  index: -1

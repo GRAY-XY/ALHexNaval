@@ -1,0 +1,42 @@
+{
+  "id": "chargo__sairenfeiji_r",
+  "model": "sairenfeiji_r",
+  "name": "【2021意大利活动B】塞壬航母R型轰炸机",
+  "names": [
+    "【2021意大利活动B】塞壬航母R型轰炸机",
+    "【2021意大利活动B】塞壬航母R型战斗机",
+    "【2021意大利活动D】塞壬航母R型轰炸机",
+    "【2021意大利活动D】塞壬航母R型战斗机",
+    "【2021意大利活动SP】塞壬航母R型轰炸机",
+    "【2021意大利活动SP】塞壬航母R型战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/sairenfeiji_r",
+  "path": "battle-assets/飞机/chargo__sairenfeiji_r",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "sairenfeiji_R_-3529453566329354871.png",
+      "name": "sairenfeiji_R",
+      "width": 242,
+      "height": 170,
+      "role": "战斗贴图",
+      "path_id": -3529453566329354871,
+      "source": "CAB-d3645526cbaf9c62db0648914d670858"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sairenfeiji_r/aircraft_shadow_2192772484218123160.png"
+}

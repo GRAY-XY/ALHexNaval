@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_yingyuanreqiqiu",
+  "model": "feiji_yingyuanreqiqiu",
+  "name": "激奏热气球(鱼雷)",
+  "names": [
+    "激奏热气球(鱼雷)",
+    "激奏热气球(战斗)",
+    "激奏热气球(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_yingyuanreqiqiu",
+  "path": "battle-assets/飞机/chargo__feiji_yingyuanreqiqiu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_yingyuanreqiqiu_-9187759863707204460.png",
+      "name": "feiji_yingyuanreqiqiu",
+      "width": 175,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": -9187759863707204460,
+      "source": "CAB-ed22cc7eae8a22336ef73a3b9b2a590f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_yingyuanreqiqiu/aircraft_shadow_2192772484218123160.png"
+}

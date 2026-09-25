@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jingzi",
+  "model": "yulei_jingzi",
+  "name": "虚影华镜鱼雷",
+  "names": [
+    "虚影华镜鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jingzi",
+  "path": "battle-assets/鱼雷/item__yulei_jingzi",
+  "images": [
+    {
+      "file": "yulei_jingzi_2710657575276086938.png",
+      "name": "yulei_jingzi",
+      "width": 128,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": 2710657575276086938,
+      "source": "CAB-83499ce9dd1ed3d9942d62df0a293f25"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jingzi/yulei_jingzi_2710657575276086938.png"
+}

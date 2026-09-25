@@ -1,0 +1,32 @@
+{
+  "id": "item__zidan_taohua",
+  "model": "zidan_taohua",
+  "name": "桃花子弹",
+  "names": [
+    "桃花子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_taohua",
+  "path": "battle-assets/炮弹/item__zidan_taohua",
+  "images": [
+    {
+      "file": "zidan_taohua_-6526035236430123947.png",
+      "name": "zidan_taohua",
+      "width": 128,
+      "height": 119,
+      "role": "战斗贴图",
+      "path_id": -6526035236430123947,
+      "source": "CAB-75d65baa7db43511c9535be108caa513"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3119106,
+    3227205,
+    3359201
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_taohua/zidan_taohua_-6526035236430123947.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yumia_yangguangshi",
+  "model": "yulei_yumia_yangguangshi",
+  "name": "黯淡阳光石鱼雷",
+  "names": [
+    "黯淡阳光石鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yumia_yangguangshi",
+  "path": "battle-assets/鱼雷/item__yulei_yumia_yangguangshi",
+  "images": [
+    {
+      "file": "yulei_yangguangshi_8990268112266276934.png",
+      "name": "yulei_yangguangshi",
+      "width": 78,
+      "height": 51,
+      "role": "战斗贴图",
+      "path_id": 8990268112266276934,
+      "source": "CAB-6fb2c36cf3afa1e2beff08bd4d7210bf"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yumia_yangguangshi/yulei_yangguangshi_8990268112266276934.png"
+}

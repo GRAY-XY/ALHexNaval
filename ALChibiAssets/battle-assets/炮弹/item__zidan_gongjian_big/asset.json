@@ -1,0 +1,34 @@
+{
+  "id": "item__zidan_gongjian_big",
+  "model": "zidan_gongjian_big",
+  "name": "zidan_gongjian_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_gongjian_big",
+  "path": "battle-assets/炮弹/item__zidan_gongjian_big",
+  "images": [
+    {
+      "file": "zidan_gongjian_-7199454158806713087.png",
+      "name": "zidan_gongjian",
+      "width": 128,
+      "height": 20,
+      "role": "战斗贴图",
+      "path_id": -7199454158806713087,
+      "source": "CAB-dc456440d7a960f8fa353f6c618d66a6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    861,
+    862,
+    161034,
+    3090007,
+    3091007,
+    3212001,
+    3217032
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gongjian_big/zidan_gongjian_-7199454158806713087.png"
+}

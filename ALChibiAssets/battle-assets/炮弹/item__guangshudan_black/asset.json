@@ -1,0 +1,29 @@
+{
+  "id": "item__guangshudan_black",
+  "model": "guangshudan_black",
+  "name": "guangshudan_black",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/guangshudan_black",
+  "path": "battle-assets/炮弹/item__guangshudan_black",
+  "images": [
+    {
+      "file": "guangshudan_black_2007187538014378920.png",
+      "name": "guangshudan_black",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2007187538014378920,
+      "source": "CAB-6a4ba77a7fb8f25fbe87f38ccbe4bbdd"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3049027,
+    3049028
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__guangshudan_black/guangshudan_black_2007187538014378920.png"
+}

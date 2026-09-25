@@ -1,0 +1,28 @@
+{
+  "id": "item__laisha_yunshi",
+  "model": "laisha_yunshi",
+  "name": "laisha_yunshi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_yunshi",
+  "path": "battle-assets/炮弹/item__laisha_yunshi",
+  "images": [
+    {
+      "file": "yunshi_1700603210730616479.png",
+      "name": "yunshi",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1700603210730616479,
+      "source": "CAB-5f70db2969c0ddf81af010f6f159f3e6"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19494
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laisha_yunshi/yunshi_1700603210730616479.png"
+}

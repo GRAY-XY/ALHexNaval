@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tuanshan",
+  "model": "paodan_tuanshan",
+  "name": "锦绣团扇炮弹",
+  "names": [
+    "锦绣团扇炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tuanshan",
+  "path": "battle-assets/炮弹/item__paodan_tuanshan",
+  "images": [
+    {
+      "file": "paodan_tuanshan_-3189485013088508317.png",
+      "name": "paodan_tuanshan",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -3189485013088508317,
+      "source": "CAB-ff60c12e150a1dc84e955a75f7795870"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tuanshan/paodan_tuanshan_-3189485013088508317.png"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item__nep_bullet_green2",
+  "model": "nep_bullet_green2",
+  "name": "nep_bullet_green2",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/nep_bullet_green2",
+  "path": "battle-assets/炮弹/item__nep_bullet_green2",
+  "images": [
+    {
+      "file": "nep_green_bomb_-2177549946866371407.png",
+      "name": "nep_green_bomb",
+      "width": 258,
+      "height": 108,
+      "role": "战斗贴图",
+      "path_id": -2177549946866371407,
+      "source": "CAB-1ff4210e171b84e31def7ea7d4303f36"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__nep_bullet_green2/nep_green_bomb_-2177549946866371407.png"
+}

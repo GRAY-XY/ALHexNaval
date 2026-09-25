@@ -1,0 +1,29 @@
+{
+  "id": "item__weixu_baojian_jianqi_ban",
+  "model": "weixu_baojian_jianqi_ban",
+  "name": "weixu_baojian_jianqi_ban",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/weixu_baojian_jianqi_ban",
+  "path": "battle-assets/炮弹/item__weixu_baojian_jianqi_ban",
+  "images": [
+    {
+      "file": "weixu_baojian_jianqi_ban_-7719258630724879696.png",
+      "name": "weixu_baojian_jianqi_ban",
+      "width": 223,
+      "height": 138,
+      "role": "战斗贴图",
+      "path_id": -7719258630724879696,
+      "source": "CAB-e9f4b1f14709d050dadb90f43ee5a7ce"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3331408,
+    3331415
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__weixu_baojian_jianqi_ban/weixu_baojian_jianqi_ban_-7719258630724879696.png"
+}

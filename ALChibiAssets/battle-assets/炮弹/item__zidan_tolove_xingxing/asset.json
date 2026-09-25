@@ -1,0 +1,37 @@
+{
+  "id": "item__zidan_tolove_xingxing",
+  "model": "zidan_tolove_xingxing",
+  "name": "金色星星子弹",
+  "names": [
+    "金色星星子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tolove_xingxing",
+  "path": "battle-assets/炮弹/item__zidan_tolove_xingxing",
+  "images": [
+    {
+      "file": "zidan01_3419635991131335662.png",
+      "name": "zidan01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3419635991131335662,
+      "source": "CAB-c8e7a13ca06fb8b5c0ebf0280a6e3773"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3227208
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tolove_xingxing/zidan01_3419635991131335662.png",
+  "spine": {
+    "skel": "zidan_tolove_xingxing.skel",
+    "atlas": "zidan_tolove_xingxing.atlas",
+    "pages": [
+      "zidan_tolove_xingxing.png"
+    ]
+  }
+}

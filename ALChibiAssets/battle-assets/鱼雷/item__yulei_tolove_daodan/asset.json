@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_tolove_daodan",
+  "model": "yulei_tolove_daodan",
+  "name": "上学飞弹鱼雷",
+  "names": [
+    "上学飞弹鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tolove_daodan",
+  "path": "battle-assets/鱼雷/item__yulei_tolove_daodan",
+  "images": [
+    {
+      "file": "yulei_tolove_daodan_-6085011081069067308.png",
+      "name": "yulei_tolove_daodan",
+      "width": 477,
+      "height": 254,
+      "role": "战斗贴图",
+      "path_id": -6085011081069067308,
+      "source": "CAB-e84a67695001337f43a966c90cec6e26"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3227201
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tolove_daodan/yulei_tolove_daodan_-6085011081069067308.png"
+}

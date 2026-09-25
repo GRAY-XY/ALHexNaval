@@ -1,0 +1,32 @@
+{
+  "id": "aircrafticon__qinghuayu",
+  "model": "qinghuayu",
+  "name": "青花鱼",
+  "names": [
+    "青花鱼",
+    "可畏技能鱼雷机Lv1",
+    "Late.299",
+    "小可畏技能平行青花鱼Lv1",
+    "小可畏技能集束青花鱼Lv1",
+    "可畏μ技能鱼雷机Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/qinghuayu",
+  "path": "battle-assets/飞机图标/aircrafticon__qinghuayu",
+  "images": [
+    {
+      "file": "qinghuayu_2984285673253846653.png",
+      "name": "qinghuayu",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 2984285673253846653,
+      "source": "CAB-4f55f6aa66a73c23b5b8220fe0a6c8be"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

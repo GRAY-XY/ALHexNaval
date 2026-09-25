@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_makebei",
+  "model": "zidan_makebei",
+  "name": "纪念马克杯子弹",
+  "names": [
+    "纪念马克杯子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_makebei",
+  "path": "battle-assets/炮弹/item__zidan_makebei",
+  "images": [
+    {
+      "file": "zidan_makebei_-6503263626210613975.png",
+      "name": "zidan_makebei",
+      "width": 128,
+      "height": 115,
+      "role": "战斗贴图",
+      "path_id": -6503263626210613975,
+      "source": "CAB-808247601dad1ec914b689ac9c7500c3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_makebei/zidan_makebei_-6503263626210613975.png"
+}

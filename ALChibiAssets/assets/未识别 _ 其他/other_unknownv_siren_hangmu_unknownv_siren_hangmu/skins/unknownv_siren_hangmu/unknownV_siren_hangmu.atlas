@@ -1,0 +1,55 @@
+
+unknownV_siren_hangmu.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 983, 189
+  size: 902, 500
+  orig: 902, 500
+  offset: 0, 0
+  index: -1
+body_swim
+  rotate: false
+  xy: 2, 2
+  size: 902, 500
+  orig: 902, 500
+  offset: 0, 0
+  index: -1
+feiji1
+  rotate: false
+  xy: 994, 836
+  size: 284, 138
+  orig: 284, 138
+  offset: 0, 0
+  index: -1
+shui_1
+  rotate: false
+  xy: 2, 695
+  size: 930, 143
+  orig: 930, 143
+  offset: 0, 0
+  index: -1
+shui_2
+  rotate: false
+  xy: 934, 691
+  size: 930, 143
+  orig: 930, 143
+  offset: 0, 0
+  index: -1
+shui_3
+  rotate: false
+  xy: 2, 840
+  size: 990, 134
+  orig: 990, 134
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 504
+  size: 979, 185
+  orig: 979, 185
+  offset: 0, 0
+  index: -1

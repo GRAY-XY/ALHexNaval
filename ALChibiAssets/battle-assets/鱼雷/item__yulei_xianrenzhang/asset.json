@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xianrenzhang",
+  "model": "yulei_xianrenzhang",
+  "name": "仙人掌鱼雷",
+  "names": [
+    "仙人掌鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xianrenzhang",
+  "path": "battle-assets/鱼雷/item__yulei_xianrenzhang",
+  "images": [
+    {
+      "file": "yulei_xianrenzhang_-5734293561099019001.png",
+      "name": "yulei_xianrenzhang",
+      "width": 128,
+      "height": 87,
+      "role": "战斗贴图",
+      "path_id": -5734293561099019001,
+      "source": "CAB-e5f3d47ed17b062d0ce3dc989c917cec"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xianrenzhang/yulei_xianrenzhang_-5734293561099019001.png"
+}

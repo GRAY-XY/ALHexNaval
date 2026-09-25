@@ -1,0 +1,61 @@
+{
+  "id": "chargo__qibolin",
+  "model": "qibolin",
+  "name": "【战术研修】【关卡飞机】空袭鱼雷机",
+  "names": [
+    "【战术研修】【关卡飞机】空袭鱼雷机",
+    "【异色格A】【人型】齐柏林鱼雷机T1",
+    "【异色格A】【空袭】鱼雷机",
+    "【异色格B】【人型】齐柏林鱼雷机T1",
+    "【异色格B】【空袭】鱼雷机",
+    "【异色格C】【人型】齐柏林鱼雷机T1",
+    "【异色格C】【空袭】鱼雷机",
+    "【异色格D】【人型】齐柏林鱼雷机T1",
+    "【异色格D】【空袭】鱼雷机",
+    "七夕齐柏林鱼雷机T1 (飞机*2",
+    "万圣节副本空袭qibolin",
+    "夏活普通空袭qibolin",
+    "夏活困难空袭qibolin",
+    "七夕活动夏活普通空袭qibolin",
+    "德系舰载鱼雷机I",
+    "德系舰载鱼雷机II",
+    "德系舰载鱼雷机III",
+    "德系舰载鱼雷机IV",
+    "德系舰载鱼雷机V",
+    "【大世界】德系舰载鱼雷机I",
+    "【大世界】德系舰载鱼雷机II",
+    "【大世界】德系舰载鱼雷机III",
+    "【大世界】德系舰载鱼雷机IV",
+    "【大世界】德系舰载鱼雷机V",
+    "【2022布吕歇尔活动SP3】BOSS 彼得史特拉塞 特殊鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/qibolin",
+  "path": "battle-assets/飞机/chargo__qibolin",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "qibolin_7108464359053948268.png",
+      "name": "qibolin",
+      "width": 256,
+      "height": 233,
+      "role": "战斗贴图",
+      "path_id": 7108464359053948268,
+      "source": "CAB-0d0a6ca21587f633ecdf9135185adc05"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__qibolin/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "aircrafticon__bf109g",
+  "model": "bf109g",
+  "name": "BF-109G",
+  "names": [
+    "BF-109G",
+    "奥古斯特技能版BF-109G",
+    "弗里茨鲁梅一技能",
+    "弗里茨鲁梅跨队",
+    "易北META技能战斗机Lv10"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/bf109g",
+  "path": "battle-assets/飞机图标/aircrafticon__bf109g",
+  "images": [
+    {
+      "file": "BF109G_-1298900277839010802.png",
+      "name": "BF109G",
+      "width": 45,
+      "height": 37,
+      "role": "原始精灵",
+      "path_id": -1298900277839010802,
+      "source": "CAB-d14d90435748061bf71da04596d8466e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

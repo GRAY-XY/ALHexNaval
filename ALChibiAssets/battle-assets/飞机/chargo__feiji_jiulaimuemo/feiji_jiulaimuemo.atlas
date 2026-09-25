@@ -1,0 +1,48 @@
+
+feiji_jiulaimuemo.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 197
+  size: 275, 297
+  orig: 275, 297
+  offset: 0, 0
+  index: -1
+chazi
+  rotate: true
+  xy: 407, 217
+  size: 277, 157
+  orig: 277, 157
+  offset: 0, 0
+  index: -1
+chibang
+  rotate: true
+  xy: 283, 45
+  size: 160, 141
+  orig: 160, 141
+  offset: 0, 0
+  index: -1
+chibang_2
+  rotate: true
+  xy: 426, 76
+  size: 139, 70
+  orig: 139, 70
+  offset: 0, 0
+  index: -1
+heiyan
+  rotate: false
+  xy: 2, 2
+  size: 279, 193
+  orig: 279, 193
+  offset: 0, 0
+  index: -1
+huoyan
+  rotate: true
+  xy: 279, 207
+  size: 287, 126
+  orig: 287, 126
+  offset: 0, 0
+  index: -1

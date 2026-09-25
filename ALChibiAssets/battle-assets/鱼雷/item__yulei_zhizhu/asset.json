@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhizhu",
+  "model": "yulei_zhizhu",
+  "name": "蜘蛛鱼雷",
+  "names": [
+    "蜘蛛鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhizhu",
+  "path": "battle-assets/鱼雷/item__yulei_zhizhu",
+  "images": [
+    {
+      "file": "yulei_zhizhu_-5141103447443428057.png",
+      "name": "yulei_zhizhu",
+      "width": 128,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": -5141103447443428057,
+      "source": "CAB-d13037ddd54206ff67b15b51e5b692d7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhizhu/yulei_zhizhu_-5141103447443428057.png"
+}

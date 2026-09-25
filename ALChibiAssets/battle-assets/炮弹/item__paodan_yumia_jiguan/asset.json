@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_yumia_jiguan",
+  "model": "paodan_yumia_jiguan",
+  "name": "永久机关炮弹",
+  "names": [
+    "永久机关炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yumia_jiguan",
+  "path": "battle-assets/炮弹/item__paodan_yumia_jiguan",
+  "images": [
+    {
+      "file": "paodan_jiguan_-950485159165976362.png",
+      "name": "paodan_jiguan",
+      "width": 81,
+      "height": 83,
+      "role": "战斗贴图",
+      "path_id": -950485159165976362,
+      "source": "CAB-4d53e2a073ec6a88b4b3fc4ebd9e4d5c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    168217
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yumia_jiguan/paodan_jiguan_-950485159165976362.png"
+}

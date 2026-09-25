@@ -1,0 +1,28 @@
+{
+  "id": "item__tashigan_elf",
+  "model": "tashigan_elf",
+  "name": "tashigan_elf",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/tashigan_elf",
+  "path": "battle-assets/炮弹/item__tashigan_elf",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    780082,
+    780083,
+    780085,
+    780086,
+    780089,
+    780091,
+    780092,
+    780094,
+    3059103,
+    3059211,
+    3059313,
+    3253008
+  ],
+  "has_preview": false,
+  "prefab": true
+}

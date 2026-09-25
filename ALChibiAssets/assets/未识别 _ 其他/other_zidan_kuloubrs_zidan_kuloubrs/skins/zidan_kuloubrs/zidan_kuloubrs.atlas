@@ -1,0 +1,286 @@
+
+zidan_kuloubrs.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huoyan1_1
+  rotate: true
+  xy: 652, 100
+  size: 218, 136
+  orig: 218, 136
+  offset: 0, 0
+  index: -1
+huoyan1_2
+  rotate: false
+  xy: 416, 205
+  size: 234, 113
+  orig: 234, 113
+  offset: 0, 0
+  index: -1
+huoyan1_3
+  rotate: true
+  xy: 258, 70
+  size: 214, 152
+  orig: 214, 152
+  offset: 0, 0
+  index: -1
+huoyan2_1
+  rotate: true
+  xy: 412, 72
+  size: 131, 119
+  orig: 131, 119
+  offset: 0, 0
+  index: -1
+huoyan2_2
+  rotate: true
+  xy: 746, 605
+  size: 137, 132
+  orig: 137, 132
+  offset: 0, 0
+  index: -1
+huoyan2_3
+  rotate: true
+  xy: 746, 435
+  size: 168, 129
+  orig: 168, 129
+  offset: 0, 0
+  index: -1
+huoyan3_1
+  rotate: true
+  xy: 486, 320
+  size: 422, 258
+  orig: 422, 258
+  offset: 0, 0
+  index: -1
+huoyan3_2
+  rotate: false
+  xy: 2, 472
+  size: 482, 270
+  orig: 482, 270
+  offset: 0, 0
+  index: -1
+huoyan3_3
+  rotate: true
+  xy: 2, 2
+  size: 468, 254
+  orig: 468, 254
+  offset: 0, 0
+  index: -1
+kulou
+  rotate: false
+  xy: 258, 286
+  size: 156, 184
+  orig: 156, 184
+  offset: 0, 0
+  index: -1
+lizi_1
+  rotate: true
+  xy: 467, 372
+  size: 8, 6
+  orig: 8, 6
+  offset: 0, 0
+  index: -1
+lizi_10
+  rotate: false
+  xy: 449, 358
+  size: 5, 4
+  orig: 5, 4
+  offset: 0, 0
+  index: -1
+lizi_11
+  rotate: false
+  xy: 425, 341
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+lizi_12
+  rotate: false
+  xy: 746, 402
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+lizi_13
+  rotate: false
+  xy: 476, 358
+  size: 6, 5
+  orig: 6, 5
+  offset: 0, 0
+  index: -1
+lizi_2
+  rotate: false
+  xy: 436, 342
+  size: 8, 7
+  orig: 8, 7
+  offset: 0, 0
+  index: -1
+lizi_3
+  rotate: false
+  xy: 416, 320
+  size: 11, 9
+  orig: 11, 9
+  offset: 0, 0
+  index: -1
+lizi_4
+  rotate: false
+  xy: 467, 364
+  size: 7, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+lizi_5
+  rotate: true
+  xy: 436, 358
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+lizi_6
+  rotate: false
+  xy: 449, 364
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+lizi_7
+  rotate: true
+  xy: 476, 365
+  size: 7, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+lizi_8
+  rotate: false
+  xy: 458, 364
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+lizi_9
+  rotate: true
+  xy: 475, 374
+  size: 8, 5
+  orig: 8, 5
+  offset: 0, 0
+  index: -1
+penshe_1
+  rotate: false
+  xy: 754, 403
+  size: 62, 5
+  orig: 62, 5
+  offset: 0, 0
+  index: -1
+penshe_10
+  rotate: false
+  xy: 746, 410
+  size: 43, 6
+  orig: 43, 6
+  offset: 0, 0
+  index: -1
+penshe_11
+  rotate: true
+  xy: 449, 373
+  size: 97, 10
+  orig: 97, 10
+  offset: 0, 0
+  index: -1
+penshe_12
+  rotate: true
+  xy: 436, 370
+  size: 100, 7
+  orig: 100, 7
+  offset: 0, 0
+  index: -1
+penshe_13
+  rotate: false
+  xy: 416, 331
+  size: 66, 8
+  orig: 66, 8
+  offset: 0, 0
+  index: -1
+penshe_14
+  rotate: true
+  xy: 472, 384
+  size: 86, 11
+  orig: 86, 11
+  offset: 0, 0
+  index: -1
+penshe_15
+  rotate: false
+  xy: 746, 418
+  size: 64, 6
+  orig: 64, 6
+  offset: 0, 0
+  index: -1
+penshe_16
+  rotate: false
+  xy: 812, 420
+  size: 43, 5
+  orig: 43, 5
+  offset: 0, 0
+  index: -1
+penshe_17
+  rotate: false
+  xy: 812, 414
+  size: 45, 4
+  orig: 45, 4
+  offset: 0, 0
+  index: -1
+penshe_2
+  rotate: false
+  xy: 446, 345
+  size: 37, 4
+  orig: 37, 4
+  offset: 0, 0
+  index: -1
+penshe_3
+  rotate: false
+  xy: 808, 427
+  size: 61, 6
+  orig: 61, 6
+  offset: 0, 0
+  index: -1
+penshe_4
+  rotate: true
+  xy: 461, 382
+  size: 88, 9
+  orig: 88, 9
+  offset: 0, 0
+  index: -1
+penshe_5
+  rotate: true
+  xy: 416, 341
+  size: 129, 7
+  orig: 129, 7
+  offset: 0, 0
+  index: -1
+penshe_6
+  rotate: false
+  xy: 425, 351
+  size: 59, 5
+  orig: 59, 5
+  offset: 0, 0
+  index: -1
+penshe_7
+  rotate: false
+  xy: 746, 426
+  size: 60, 7
+  orig: 60, 7
+  offset: 0, 0
+  index: -1
+penshe_8
+  rotate: true
+  xy: 425, 358
+  size: 112, 9
+  orig: 112, 9
+  offset: 0, 0
+  index: -1
+penshe_9
+  rotate: false
+  xy: 429, 322
+  size: 55, 7
+  orig: 55, 7
+  offset: 0, 0
+  index: -1

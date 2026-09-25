@@ -1,0 +1,33 @@
+{
+  "id": "item__yulei_jita",
+  "model": "yulei_jita",
+  "name": "吉他鱼雷",
+  "names": [
+    "吉他鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jita",
+  "path": "battle-assets/鱼雷/item__yulei_jita",
+  "images": [
+    {
+      "file": "yulei_jita_-7495035076301212549.png",
+      "name": "yulei_jita",
+      "width": 128,
+      "height": 52,
+      "role": "战斗贴图",
+      "path_id": -7495035076301212549,
+      "source": "CAB-3caab4f04b5600a4171a287d3af92be9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3146513,
+    3146514,
+    3146515,
+    3146531
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jita/yulei_jita_-7495035076301212549.png"
+}

@@ -1,0 +1,20 @@
+
+zhisanjiufeiji.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiu
+  rotate: false
+  xy: 221, 47
+  size: 138, 148
+  orig: 138, 148
+  offset: 0, 0
+  index: -1
+san
+  rotate: false
+  xy: 2, 2
+  size: 217, 193
+  orig: 217, 193
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "item__boerzhanuo_jianqi_da",
+  "model": "boerzhanuo_jianqi_da",
+  "name": "boerzhanuo_jianqi_da",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/boerzhanuo_jianqi_da",
+  "path": "battle-assets/炮弹/item__boerzhanuo_jianqi_da",
+  "images": [
+    {
+      "file": "daoguang03_1_-6944468353680594677.png",
+      "name": "daoguang03 1",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -6944468353680594677,
+      "source": "CAB-90316f24eb62a0eebc6c8844a6588e62"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161032
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__boerzhanuo_jianqi_da/daoguang03_1_-6944468353680594677.png"
+}

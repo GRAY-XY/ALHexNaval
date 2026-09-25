@@ -1,0 +1,29 @@
+{
+  "id": "item__nanaqie",
+  "model": "nanaqie",
+  "name": "nanaqie",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/nanaqie",
+  "path": "battle-assets/炮弹/item__nanaqie",
+  "images": [
+    {
+      "file": "nana_qie_3842821890364220591.png",
+      "name": "nana_qie",
+      "width": 498,
+      "height": 317,
+      "role": "战斗贴图",
+      "path_id": 3842821890364220591,
+      "source": "CAB-b5c08f13b538d1d4a953643e3037ef0d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    166721,
+    166722
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__nanaqie/nana_qie_3842821890364220591.png"
+}

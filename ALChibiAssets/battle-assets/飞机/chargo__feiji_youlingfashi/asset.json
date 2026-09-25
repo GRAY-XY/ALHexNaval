@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_youlingfashi",
+  "model": "feiji_youlingfashi",
+  "name": "【2024异世界冒险P1】BOSS 亚德（异世界） 幽灵法师飞机",
+  "names": [
+    "【2024异世界冒险P1】BOSS 亚德（异世界） 幽灵法师飞机",
+    "【2026虎UR活动B2】BOSS 光辉 第二波 战斗机",
+    "幽灵法师(鱼雷)",
+    "幽灵法师(战斗)",
+    "幽灵法师(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_youlingfashi",
+  "path": "battle-assets/飞机/chargo__feiji_youlingfashi",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_youlingfashi/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "youlingfeiji.skel",
+    "atlas": "youlingfeiji.atlas",
+    "pages": [
+      "youlingfeiji.png"
+    ]
+  }
+}

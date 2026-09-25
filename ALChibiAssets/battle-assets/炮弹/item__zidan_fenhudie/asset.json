@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_fenhudie",
+  "model": "zidan_fenhudie",
+  "name": "幻梦灵蝶子弹",
+  "names": [
+    "幻梦灵蝶子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fenhudie",
+  "path": "battle-assets/炮弹/item__zidan_fenhudie",
+  "images": [
+    {
+      "file": "zidan_fenhudie_3513286071479619745.png",
+      "name": "zidan_fenhudie",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3513286071479619745,
+      "source": "CAB-baf7f5e97767a6747355985bb3c0c7ac"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fenhudie/zidan_fenhudie_3513286071479619745.png",
+  "spine": {
+    "skel": "zidan_fenhudie.skel",
+    "atlas": "zidan_fenhudie.atlas",
+    "pages": [
+      "zidan_fenhudie.png"
+    ]
+  }
+}

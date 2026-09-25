@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__huoyanfenghuang__huofenghuang_material",
+  "model": "huofenghuang_material",
+  "name": "huofenghuang_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/huoyanfenghuang/huofenghuang_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__huoyanfenghuang__huofenghuang_material",
+  "images": [
+    {
+      "file": "huofenghuang_7282674599406946625.png",
+      "name": "huofenghuang",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 7282674599406946625,
+      "source": "CAB-388355a53749953adba579995448c9f5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

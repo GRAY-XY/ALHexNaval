@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yaoyufeiji__yaoyufeiji_material",
+  "model": "yaoyufeiji_material",
+  "name": "yaoyufeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/yaoyufeiji/yaoyufeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__yaoyufeiji__yaoyufeiji_material",
+  "images": [
+    {
+      "file": "yaoyufeiji_-7763230436345407567.png",
+      "name": "yaoyufeiji",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7763230436345407567,
+      "source": "CAB-be88b607b70ba03ff510b1baadcf43f7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gangtie",
+  "model": "zidan_gangtie",
+  "name": "钢铁子弹",
+  "names": [
+    "钢铁子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gangtie",
+  "path": "battle-assets/炮弹/item__zidan_gangtie",
+  "images": [
+    {
+      "file": "zidan_gangtie_2642885564779476084.png",
+      "name": "zidan_gangtie",
+      "width": 126,
+      "height": 86,
+      "role": "战斗贴图",
+      "path_id": 2642885564779476084,
+      "source": "CAB-1886445c77cd7bdd46c7fc06e4845fcf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gangtie/zidan_gangtie_2642885564779476084.png"
+}

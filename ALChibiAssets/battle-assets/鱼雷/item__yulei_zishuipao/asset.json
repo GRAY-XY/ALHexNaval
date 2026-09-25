@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zishuipao",
+  "model": "yulei_zishuipao",
+  "name": "水枪鱼雷",
+  "names": [
+    "水枪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zishuipao",
+  "path": "battle-assets/鱼雷/item__yulei_zishuipao",
+  "images": [
+    {
+      "file": "yulei_zishuipao_-1315218754431619051.png",
+      "name": "yulei_zishuipao",
+      "width": 128,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -1315218754431619051,
+      "source": "CAB-7ea7b5cad9498134064116659808d9ce"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zishuipao/yulei_zishuipao_-1315218754431619051.png"
+}

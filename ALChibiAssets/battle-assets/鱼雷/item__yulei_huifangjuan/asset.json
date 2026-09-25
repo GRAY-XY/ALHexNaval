@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_huifangjuan",
+  "model": "yulei_huifangjuan",
+  "name": "惠方卷鱼雷",
+  "names": [
+    "惠方卷鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huifangjuan",
+  "path": "battle-assets/鱼雷/item__yulei_huifangjuan",
+  "images": [
+    {
+      "file": "yulei_huifangjuan_-494289907362807420.png",
+      "name": "yulei_huifangjuan",
+      "width": 128,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -494289907362807420,
+      "source": "CAB-dbd2918550c3155c5a048e71a34c14c9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_huifangjuan/yulei_huifangjuan_-494289907362807420.png"
+}

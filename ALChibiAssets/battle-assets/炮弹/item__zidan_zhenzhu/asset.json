@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_zhenzhu",
+  "model": "zidan_zhenzhu",
+  "name": "珍珠子弹",
+  "names": [
+    "珍珠子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhenzhu",
+  "path": "battle-assets/炮弹/item__zidan_zhenzhu",
+  "images": [
+    {
+      "file": "zidan_zhenzhu_-4234340248594604978.png",
+      "name": "zidan_zhenzhu",
+      "width": 128,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": -4234340248594604978,
+      "source": "CAB-e30396cbab30268ac6c0e1351743a7c1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161189
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zhenzhu/zidan_zhenzhu_-4234340248594604978.png"
+}

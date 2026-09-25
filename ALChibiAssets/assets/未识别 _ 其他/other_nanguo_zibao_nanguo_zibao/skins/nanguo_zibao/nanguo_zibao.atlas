@@ -1,0 +1,27 @@
+
+nanguo_zibao.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ji
+  rotate: false
+  xy: 2, 81
+  size: 266, 145
+  orig: 266, 145
+  offset: 0, 0
+  index: -1
+zhadan_1
+  rotate: false
+  xy: 2, 2
+  size: 114, 77
+  orig: 114, 77
+  offset: 0, 0
+  index: -1
+zhadan_2
+  rotate: false
+  xy: 118, 2
+  size: 114, 77
+  orig: 114, 77
+  offset: 0, 0
+  index: -1

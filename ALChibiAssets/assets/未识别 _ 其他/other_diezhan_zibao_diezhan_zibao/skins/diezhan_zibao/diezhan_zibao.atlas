@@ -1,0 +1,62 @@
+
+diezhan_zibao.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huoyan_1
+  rotate: true
+  xy: 613, 63
+  size: 63, 57
+  orig: 63, 57
+  offset: 0, 0
+  index: -1
+huoyan_2
+  rotate: true
+  xy: 613, 2
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+ji
+  rotate: false
+  xy: 2, 4
+  size: 222, 122
+  orig: 222, 122
+  offset: 0, 0
+  index: -1
+zd01
+  rotate: false
+  xy: 226, 48
+  size: 208, 38
+  orig: 208, 38
+  offset: 0, 0
+  index: -1
+zd02
+  rotate: false
+  xy: 226, 21
+  size: 203, 25
+  orig: 203, 25
+  offset: 0, 0
+  index: -1
+zd03
+  rotate: false
+  xy: 226, 88
+  size: 214, 38
+  orig: 214, 38
+  offset: 0, 0
+  index: -1
+zhadan_1
+  rotate: false
+  xy: 436, 28
+  size: 117, 58
+  orig: 117, 58
+  offset: 0, 0
+  index: -1
+zhadan_2
+  rotate: true
+  xy: 555, 9
+  size: 117, 56
+  orig: 117, 56
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_diqiuyi",
+  "model": "paodan_diqiuyi",
+  "name": "地球仪炮弹",
+  "names": [
+    "地球仪炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_diqiuyi",
+  "path": "battle-assets/炮弹/item__paodan_diqiuyi",
+  "images": [
+    {
+      "file": "paodan_diqiuyi_-3562994860357174542.png",
+      "name": "paodan_diqiuyi",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -3562994860357174542,
+      "source": "CAB-0598694a37e346f4c3c4a75b7b90a4ce"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_diqiuyi/paodan_diqiuyi_-3562994860357174542.png"
+}

@@ -1,0 +1,55 @@
+
+paodan_youling.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+paoshen
+  rotate: true
+  xy: 448, 134
+  size: 369, 255
+  orig: 369, 255
+  offset: 0, 0
+  index: -1
+paoshen_2
+  rotate: true
+  xy: 705, 138
+  size: 365, 251
+  orig: 365, 251
+  offset: 0, 0
+  index: -1
+paoshen_di
+  rotate: true
+  xy: 173, 118
+  size: 385, 273
+  orig: 385, 273
+  offset: 0, 0
+  index: -1
+weiguang
+  rotate: true
+  xy: 2, 22
+  size: 481, 169
+  orig: 481, 169
+  offset: 0, 0
+  index: -1
+yanchang_1
+  rotate: true
+  xy: 19, 2
+  size: 18, 14
+  orig: 18, 14
+  offset: 0, 0
+  index: -1
+yanchang_2
+  rotate: true
+  xy: 2, 2
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+zui
+  rotate: true
+  xy: 173, 27
+  size: 89, 52
+  orig: 89, 52
+  offset: 0, 0
+  index: -1

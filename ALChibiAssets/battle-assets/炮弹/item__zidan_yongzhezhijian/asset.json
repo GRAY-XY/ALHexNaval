@@ -1,0 +1,26 @@
+{
+  "id": "item__zidan_yongzhezhijian",
+  "model": "zidan_yongzhezhijian",
+  "name": "zidan_yongzhezhijian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_yongzhezhijian",
+  "path": "battle-assets/炮弹/item__zidan_yongzhezhijian",
+  "images": [
+    {
+      "file": "yulei_yongzhezhijian_-3130178956749477687.png",
+      "name": "yulei_yongzhezhijian",
+      "width": 128,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": -3130178956749477687,
+      "source": "CAB-4176f4888af5dc5093e9950553f3aeab"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yongzhezhijian/yulei_yongzhezhijian_-3130178956749477687.png"
+}

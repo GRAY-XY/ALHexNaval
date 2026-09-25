@@ -1,0 +1,50 @@
+{
+  "id": "chargo__pl7",
+  "model": "pl7",
+  "name": "默认鸢尾鱼雷机",
+  "names": [
+    "默认鸢尾鱼雷机",
+    "PL.7舰载鱼雷机T0",
+    "PL.10",
+    "贝亚恩meta鱼雷机 Lv1",
+    "【2020法系活动A2】精英贝亚恩级量产型 鱼雷机",
+    "【2020法系活动C2】精英贝亚恩级量产型 鱼雷机",
+    "【2022法系共斗H】BOSS 霞飞二形态 鱼雷机",
+    "【2022法系共斗EX】BOSS 霞飞二形态 鱼雷机",
+    "【翻格子活动】鸢尾鱼雷机",
+    "法系舰载-鱼雷机I",
+    "法系舰载-鱼雷机II",
+    "法系舰载-鱼雷机III",
+    "法系舰载-鱼雷机IV",
+    "法系舰载-鱼雷机V"
+  ],
+  "category": "飞机",
+  "source": "chargo/pl7",
+  "path": "battle-assets/飞机/chargo__pl7",
+  "images": [
+    {
+      "file": "PL7_-7700744446944886931.png",
+      "name": "PL7",
+      "width": 241,
+      "height": 248,
+      "role": "战斗贴图",
+      "path_id": -7700744446944886931,
+      "source": "CAB-8f9c66e729cadfaa9fbd60b240979325"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__pl7/PL7_-7700744446944886931.png"
+}

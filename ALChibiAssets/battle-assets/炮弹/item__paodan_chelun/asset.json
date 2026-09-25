@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_chelun",
+  "model": "paodan_chelun",
+  "name": "巨轮碾压炮弹",
+  "names": [
+    "巨轮碾压炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chelun",
+  "path": "battle-assets/炮弹/item__paodan_chelun",
+  "images": [
+    {
+      "file": "paodan_chelun_1380308001105969988.png",
+      "name": "paodan_chelun",
+      "width": 128,
+      "height": 83,
+      "role": "战斗贴图",
+      "path_id": 1380308001105969988,
+      "source": "CAB-6286851c8e33e9bd0a19da1dc7ed6f69"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chelun/paodan_chelun_1380308001105969988.png"
+}

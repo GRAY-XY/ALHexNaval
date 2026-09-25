@@ -1,0 +1,13 @@
+
+xuezipaodan.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+靴
+  rotate: false
+  xy: 2, 2
+  size: 191, 225
+  orig: 191, 225
+  offset: 0, 0
+  index: -1

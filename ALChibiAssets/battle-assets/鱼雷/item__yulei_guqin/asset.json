@@ -1,0 +1,32 @@
+{
+  "id": "item__yulei_guqin",
+  "model": "yulei_guqin",
+  "name": "逍遥琴鱼雷",
+  "names": [
+    "逍遥琴鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_guqin",
+  "path": "battle-assets/鱼雷/item__yulei_guqin",
+  "images": [
+    {
+      "file": "yulei_guqin_6964962594932978617.png",
+      "name": "yulei_guqin",
+      "width": 128,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": 6964962594932978617,
+      "source": "CAB-00603d469ff4a1a33942e1f642ec296a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3239301,
+    3239522,
+    3359304
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_guqin/yulei_guqin_6964962594932978617.png"
+}

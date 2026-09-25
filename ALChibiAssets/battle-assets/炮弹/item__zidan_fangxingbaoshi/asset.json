@@ -1,0 +1,37 @@
+{
+  "id": "item__zidan_fangxingbaoshi",
+  "model": "zidan_fangxingbaoshi",
+  "name": "糖果宝石子弹",
+  "names": [
+    "糖果宝石子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fangxingbaoshi",
+  "path": "battle-assets/炮弹/item__zidan_fangxingbaoshi",
+  "images": [
+    {
+      "file": "particles01_-5643651250004905412.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5643651250004905412,
+      "source": "CAB-d142d1577418f10433520cddab1637da"
+    },
+    {
+      "file": "sansebaoshi01_1356112940479854258.png",
+      "name": "sansebaoshi01",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 1356112940479854258,
+      "source": "CAB-d142d1577418f10433520cddab1637da"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fangxingbaoshi/particles01_-5643651250004905412.png"
+}

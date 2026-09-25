@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_shaguaxiangji",
+  "model": "paodan_shaguaxiangji",
+  "name": "数码相机炮弹",
+  "names": [
+    "数码相机炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_shaguaxiangji",
+  "path": "battle-assets/炮弹/bulletall__paodan_shaguaxiangji",
+  "images": [
+    {
+      "file": "paodan_shaguaxiangji_-612786494957555533.png",
+      "name": "paodan_shaguaxiangji",
+      "width": 128,
+      "height": 102,
+      "role": "原始精灵",
+      "path_id": -612786494957555533,
+      "source": "CAB-aa658008839703688dce64c4ff02810e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

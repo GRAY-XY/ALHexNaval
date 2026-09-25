@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_nengliangdao2",
+  "model": "yulei_nengliangdao2",
+  "name": "紫电能量鱼雷",
+  "names": [
+    "紫电能量鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nengliangdao2",
+  "path": "battle-assets/鱼雷/item__yulei_nengliangdao2",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "yulei_nengliangdao2.skel",
+    "atlas": "yulei_nengliangdao2.atlas",
+    "pages": [
+      "yulei_nengliangdao2.png"
+    ]
+  }
+}

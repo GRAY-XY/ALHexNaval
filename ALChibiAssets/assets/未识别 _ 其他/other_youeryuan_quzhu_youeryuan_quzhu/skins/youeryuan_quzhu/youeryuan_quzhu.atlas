@@ -1,0 +1,34 @@
+
+youeryuan_quzhu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 9
+  size: 430, 257
+  orig: 430, 257
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: false
+  xy: 261, 2
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: true
+  xy: 346, 87
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: true
+  xy: 261, 87
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1

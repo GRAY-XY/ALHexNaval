@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_shubingshan",
+  "model": "paodan_shubingshan",
+  "name": "树冰扇炮弹",
+  "names": [
+    "树冰扇炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shubingshan",
+  "path": "battle-assets/炮弹/item__paodan_shubingshan",
+  "images": [
+    {
+      "file": "paodan_shanzi01_-1370926945187963071.png",
+      "name": "paodan_shanzi01",
+      "width": 128,
+      "height": 210,
+      "role": "战斗贴图",
+      "path_id": -1370926945187963071,
+      "source": "CAB-4a67fe734d397ea97b13e014f6f6aee4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3108322
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shubingshan/paodan_shanzi01_-1370926945187963071.png"
+}

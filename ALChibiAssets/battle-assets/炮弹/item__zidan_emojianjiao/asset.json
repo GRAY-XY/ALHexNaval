@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_emojianjiao",
+  "model": "zidan_emojianjiao",
+  "name": "螺旋尖角子弹",
+  "names": [
+    "螺旋尖角子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_emojianjiao",
+  "path": "battle-assets/炮弹/item__zidan_emojianjiao",
+  "images": [
+    {
+      "file": "zidan_emojianjiao_-4645802366140603947.png",
+      "name": "zidan_emojianjiao",
+      "width": 127,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": -4645802366140603947,
+      "source": "CAB-468ba8c2f7e814c08480755d7918a9f7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_emojianjiao/zidan_emojianjiao_-4645802366140603947.png"
+}

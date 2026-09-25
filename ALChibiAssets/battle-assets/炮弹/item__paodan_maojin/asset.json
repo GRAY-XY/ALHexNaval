@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_maojin",
+  "model": "paodan_maojin",
+  "name": "毛巾炮弹",
+  "names": [
+    "毛巾炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_maojin",
+  "path": "battle-assets/炮弹/item__paodan_maojin",
+  "images": [
+    {
+      "file": "paodan_maojin_-1955605023282978834.png",
+      "name": "paodan_maojin",
+      "width": 128,
+      "height": 52,
+      "role": "战斗贴图",
+      "path_id": -1955605023282978834,
+      "source": "CAB-e6b52a0cdaf9f19dd5c6d3e429d64ff3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_maojin/paodan_maojin_-1955605023282978834.png"
+}

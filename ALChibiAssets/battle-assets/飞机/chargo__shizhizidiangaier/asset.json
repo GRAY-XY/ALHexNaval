@@ -1,0 +1,37 @@
+{
+  "id": "chargo__shizhizidiangaier",
+  "model": "shizhizidiangaier",
+  "name": "信浓技能试制紫电改二 LV1",
+  "names": [
+    "信浓技能试制紫电改二 LV1"
+  ],
+  "category": "飞机",
+  "source": "chargo/shizhizidiangaier",
+  "path": "battle-assets/飞机/chargo__shizhizidiangaier",
+  "images": [
+    {
+      "file": "shizhizidiangaier_-4655654666922311015.png",
+      "name": "shizhizidiangaier",
+      "width": 254,
+      "height": 241,
+      "role": "战斗贴图",
+      "path_id": -4655654666922311015,
+      "source": "CAB-8b570a3988743a9d35903cd0d5ff4730"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__shizhizidiangaier/shizhizidiangaier_-4655654666922311015.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_taocipijiubei",
+  "model": "paodan_taocipijiubei",
+  "name": "酒杯炮弹",
+  "names": [
+    "酒杯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_taocipijiubei",
+  "path": "battle-assets/炮弹/item__paodan_taocipijiubei",
+  "images": [
+    {
+      "file": "paodan_taocijiubei_-4341869030679967880.png",
+      "name": "paodan_taocijiubei",
+      "width": 128,
+      "height": 198,
+      "role": "战斗贴图",
+      "path_id": -4341869030679967880,
+      "source": "CAB-186f1ca6be775bf06bbe1230be6c716c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_taocipijiubei/paodan_taocijiubei_-4341869030679967880.png"
+}

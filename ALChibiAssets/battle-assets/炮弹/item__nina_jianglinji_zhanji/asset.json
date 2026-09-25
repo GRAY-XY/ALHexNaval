@@ -1,0 +1,17 @@
+{
+  "id": "item__nina_jianglinji_zhanji",
+  "model": "nina_jianglinji_zhanji",
+  "name": "nina_jianglinji_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/nina_jianglinji_zhanji",
+  "path": "battle-assets/炮弹/item__nina_jianglinji_zhanji",
+  "images": [],
+  "particle_systems": 15,
+  "animations": [],
+  "bullet_ids": [
+    168238
+  ],
+  "has_preview": false,
+  "prefab": true
+}

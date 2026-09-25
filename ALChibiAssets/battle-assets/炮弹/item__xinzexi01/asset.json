@@ -1,0 +1,39 @@
+{
+  "id": "item__xinzexi01",
+  "model": "xinzexi01",
+  "name": "xinzexi01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xinzexi01",
+  "path": "battle-assets/炮弹/item__xinzexi01",
+  "images": [
+    {
+      "file": "bullet7_3845168400393278527.png",
+      "name": "bullet7",
+      "width": 119,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": 3845168400393278527,
+      "source": "CAB-768d538eb3fa74421b4b30ba91ef6b00"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19293,
+    19603,
+    3041200,
+    3041214,
+    3041215,
+    3041216,
+    3041217,
+    3041218,
+    3041219,
+    3041220,
+    3041221,
+    3061435
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xinzexi01/bullet7_3845168400393278527.png"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "item__chuanmao_end",
+  "model": "chuanmao_end",
+  "name": "chuanmao_end",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/chuanmao_end",
+  "path": "battle-assets/炮弹/item__chuanmao_end",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    29651053,
+    3094005
+  ],
+  "has_preview": false,
+  "prefab": true
+}

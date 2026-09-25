@@ -1,0 +1,34 @@
+
+gulite_yuanhuanguangren.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bianguang
+  rotate: true
+  xy: 2, 26
+  size: 223, 226
+  orig: 223, 226
+  offset: 0, 0
+  index: -1
+guangquanceng_1
+  rotate: false
+  xy: 2, 251
+  size: 213, 205
+  orig: 213, 205
+  offset: 0, 0
+  index: -1
+guangquanceng_2
+  rotate: false
+  xy: 217, 251
+  size: 216, 205
+  orig: 216, 205
+  offset: 0, 0
+  index: -1
+guangquanceng_dise
+  rotate: false
+  xy: 230, 2
+  size: 257, 247
+  orig: 257, 247
+  offset: 0, 0
+  index: -1

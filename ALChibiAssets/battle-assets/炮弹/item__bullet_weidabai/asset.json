@@ -1,0 +1,29 @@
+{
+  "id": "item__bullet_weidabai",
+  "model": "bullet_weidabai",
+  "name": "bullet_weidabai",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_weidabai",
+  "path": "battle-assets/炮弹/item__bullet_weidabai",
+  "images": [
+    {
+      "file": "weida_white_-1806499871220721762.png",
+      "name": "weida_white",
+      "width": 265,
+      "height": 360,
+      "role": "战斗贴图",
+      "path_id": -1806499871220721762,
+      "source": "CAB-2481334b72377e669ab73c3fe82c99db"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    163422,
+    170199
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_weidabai/weida_white_-1806499871220721762.png"
+}

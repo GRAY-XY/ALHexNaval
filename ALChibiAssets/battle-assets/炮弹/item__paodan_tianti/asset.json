@@ -1,0 +1,40 @@
+{
+  "id": "item__paodan_tianti",
+  "model": "paodan_tianti",
+  "name": "黑洞炮弹",
+  "names": [
+    "黑洞炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tianti",
+  "path": "battle-assets/炮弹/item__paodan_tianti",
+  "images": [
+    {
+      "file": "qiu02_-7566872258764292939.png",
+      "name": "qiu02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7566872258764292939,
+      "source": "CAB-7dce839c8152a54cb97543c127358f7f"
+    },
+    {
+      "file": "trail10_5190785050376541674.png",
+      "name": "trail10",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5190785050376541674,
+      "source": "CAB-7dce839c8152a54cb97543c127358f7f"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    710214,
+    3162007
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tianti/qiu02_-7566872258764292939.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_mogu",
+  "model": "zidan_mogu",
+  "name": "蘑菇子弹",
+  "names": [
+    "蘑菇子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_mogu",
+  "path": "battle-assets/炮弹/item__zidan_mogu",
+  "images": [
+    {
+      "file": "mogu_8197381875745704856.png",
+      "name": "mogu",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8197381875745704856,
+      "source": "CAB-53f55e46a491c6c33e82a073d9a4aec9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_mogu/mogu_8197381875745704856.png"
+}

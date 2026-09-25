@@ -1,0 +1,24 @@
+{
+  "id": "item__zidan_qigongbo",
+  "model": "zidan_qigongbo",
+  "name": "zidan_qigongbo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_qigongbo",
+  "path": "battle-assets/炮弹/item__zidan_qigongbo",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710223
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "qigongpaozidan.skel",
+    "atlas": "qigongpaozidan.atlas",
+    "pages": [
+      "qigongpaozidan.png"
+    ]
+  }
+}

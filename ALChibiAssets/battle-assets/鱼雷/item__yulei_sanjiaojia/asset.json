@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_sanjiaojia",
+  "model": "yulei_sanjiaojia",
+  "name": "三角架鱼雷",
+  "names": [
+    "三角架鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_sanjiaojia",
+  "path": "battle-assets/鱼雷/item__yulei_sanjiaojia",
+  "images": [
+    {
+      "file": "yulei_sanjiaojia_-4051476951297657571.png",
+      "name": "yulei_sanjiaojia",
+      "width": 128,
+      "height": 57,
+      "role": "战斗贴图",
+      "path_id": -4051476951297657571,
+      "source": "CAB-147ec87eea2d8515e56a6760de930b23"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_sanjiaojia/yulei_sanjiaojia_-4051476951297657571.png"
+}

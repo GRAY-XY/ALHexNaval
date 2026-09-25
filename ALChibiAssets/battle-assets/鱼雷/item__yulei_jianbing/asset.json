@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jianbing",
+  "model": "yulei_jianbing",
+  "name": "Piadina鱼雷",
+  "names": [
+    "Piadina鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jianbing",
+  "path": "battle-assets/鱼雷/item__yulei_jianbing",
+  "images": [
+    {
+      "file": "yulei_jianbing_2400522950231239891.png",
+      "name": "yulei_jianbing",
+      "width": 128,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": 2400522950231239891,
+      "source": "CAB-30916366cebf34558c2f25e639704b99"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jianbing/yulei_jianbing_2400522950231239891.png"
+}

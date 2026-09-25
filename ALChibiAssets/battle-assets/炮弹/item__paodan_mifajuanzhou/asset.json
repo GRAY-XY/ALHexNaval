@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_mifajuanzhou",
+  "model": "paodan_mifajuanzhou",
+  "name": "炮弹·秘法卷轴",
+  "names": [
+    "炮弹·秘法卷轴"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mifajuanzhou",
+  "path": "battle-assets/炮弹/item__paodan_mifajuanzhou",
+  "images": [
+    {
+      "file": "paodan_juanzhou01_-6287579286038697081.png",
+      "name": "paodan_juanzhou01",
+      "width": 48,
+      "height": 156,
+      "role": "战斗贴图",
+      "path_id": -6287579286038697081,
+      "source": "CAB-4cff2574ac989f4b47a1b1eb6d6d1d18"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mifajuanzhou/paodan_juanzhou01_-6287579286038697081.png"
+}

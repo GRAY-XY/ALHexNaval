@@ -1,0 +1,17 @@
+{
+  "id": "item__zidan_puke",
+  "model": "zidan_puke",
+  "name": "扑克牌子弹",
+  "names": [
+    "扑克牌子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_puke",
+  "path": "battle-assets/炮弹/item__zidan_puke",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,37 @@
+{
+  "id": "item__yulei_yanhua",
+  "model": "yulei_yanhua",
+  "name": "烟花鱼雷",
+  "names": [
+    "烟花鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yanhua",
+  "path": "battle-assets/鱼雷/item__yulei_yanhua",
+  "images": [
+    {
+      "file": "yanhua02_2683496116634517502.png",
+      "name": "yanhua02",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2683496116634517502,
+      "source": "CAB-95efcb1109d7eee82aadd548edf953b3"
+    },
+    {
+      "file": "yanhua01_2932576431973310836.png",
+      "name": "yanhua01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2932576431973310836,
+      "source": "CAB-95efcb1109d7eee82aadd548edf953b3"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yanhua/yanhua02_2683496116634517502.png"
+}

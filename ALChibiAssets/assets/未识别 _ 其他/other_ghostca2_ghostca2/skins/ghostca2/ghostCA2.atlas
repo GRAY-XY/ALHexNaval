@@ -1,0 +1,41 @@
+
+ghostCA2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 604, 284
+  size: 84, 65
+  orig: 84, 65
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 671, 311
+  size: 75, 57
+  orig: 75, 57
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 604, 206
+  size: 76, 57
+  orig: 76, 57
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 604, 147
+  size: 76, 57
+  orig: 76, 57
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 2
+  size: 600, 366
+  orig: 600, 366
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,35 @@
+{
+  "id": "item__jianqi_1shizizhan",
+  "model": "jianqi_1shizizhan",
+  "name": "jianqi_1shizizhan",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/jianqi_1shizizhan",
+  "path": "battle-assets/其他战斗特效/item__jianqi_1shizizhan",
+  "images": [
+    {
+      "file": "daoguang05_00_-5678089530731732206.png",
+      "name": "daoguang05_00",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -5678089530731732206,
+      "source": "CAB-41c79d8fbe0bf0ed9200651d41098f50"
+    },
+    {
+      "file": "daoguang07_-2556470391494397209.png",
+      "name": "daoguang07",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -2556470391494397209,
+      "source": "CAB-41c79d8fbe0bf0ed9200651d41098f50"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__jianqi_1shizizhan/daoguang05_00_-5678089530731732206.png"
+}

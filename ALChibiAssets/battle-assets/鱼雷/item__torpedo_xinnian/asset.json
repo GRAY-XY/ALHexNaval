@@ -1,0 +1,28 @@
+{
+  "id": "item__torpedo_xinnian",
+  "model": "torpedo_xinnian",
+  "name": "竹片鱼雷",
+  "names": [
+    "竹片鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_xinnian",
+  "path": "battle-assets/鱼雷/item__torpedo_xinnian",
+  "images": [
+    {
+      "file": "90420_2549008888010816021.png",
+      "name": "90420",
+      "width": 237,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": 2549008888010816021,
+      "source": "CAB-24f5a7b179c46bb9d80dfd599640c408"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo_xinnian/90420_2549008888010816021.png"
+}

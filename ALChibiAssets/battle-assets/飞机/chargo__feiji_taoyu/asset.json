@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_taoyu",
+  "model": "feiji_taoyu",
+  "name": "脱逃啾(鱼雷)",
+  "names": [
+    "脱逃啾(鱼雷)",
+    "脱逃啾(战斗)",
+    "脱逃啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_taoyu",
+  "path": "battle-assets/飞机/chargo__feiji_taoyu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_taoyu_2218623219415706855.png",
+      "name": "feiji_taoyu",
+      "width": 256,
+      "height": 199,
+      "role": "战斗贴图",
+      "path_id": 2218623219415706855,
+      "source": "CAB-60730707261f0a75295b6bc33ca93255"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_taoyu/aircraft_shadow_2192772484218123160.png"
+}

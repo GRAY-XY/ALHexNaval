@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_youlin",
+  "model": "zidan_youlin",
+  "name": "鬼火子弹",
+  "names": [
+    "鬼火子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_youlin",
+  "path": "battle-assets/炮弹/item__zidan_youlin",
+  "images": [
+    {
+      "file": "zidan_youlin_-9075158024714148988.png",
+      "name": "zidan_youlin",
+      "width": 120,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -9075158024714148988,
+      "source": "CAB-bb627bbeee4fda3464c149fde1b769f2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3300004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_youlin/zidan_youlin_-9075158024714148988.png"
+}

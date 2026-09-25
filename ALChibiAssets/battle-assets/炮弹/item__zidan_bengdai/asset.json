@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_bengdai",
+  "model": "zidan_bengdai",
+  "name": "绷带子弹",
+  "names": [
+    "绷带子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bengdai",
+  "path": "battle-assets/炮弹/item__zidan_bengdai",
+  "images": [
+    {
+      "file": "zidan_bengdai_-6076932648723600311.png",
+      "name": "zidan_bengdai",
+      "width": 128,
+      "height": 36,
+      "role": "战斗贴图",
+      "path_id": -6076932648723600311,
+      "source": "CAB-a555d3b3ecfdb8e99cb2cb4e0cb04771"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3250005,
+    3250006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bengdai/zidan_bengdai_-6076932648723600311.png"
+}

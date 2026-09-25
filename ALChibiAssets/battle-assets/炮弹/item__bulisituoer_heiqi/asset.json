@@ -1,0 +1,28 @@
+{
+  "id": "item__bulisituoer_heiqi",
+  "model": "bulisituoer_heiqi",
+  "name": "bulisituoer_heiqi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulisituoer_heiqi",
+  "path": "battle-assets/炮弹/item__bulisituoer_heiqi",
+  "images": [
+    {
+      "file": "heiqi_-3113547729718166670.png",
+      "name": "heiqi",
+      "width": 76,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": -3113547729718166670,
+      "source": "CAB-62cd9da831d963d97112d1919213669f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19581
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulisituoer_heiqi/heiqi_-3113547729718166670.png"
+}

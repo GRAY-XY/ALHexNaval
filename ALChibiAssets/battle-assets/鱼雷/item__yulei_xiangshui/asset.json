@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiangshui",
+  "model": "yulei_xiangshui",
+  "name": "鱼雷「Parfum」",
+  "names": [
+    "鱼雷「Parfum」"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangshui",
+  "path": "battle-assets/鱼雷/item__yulei_xiangshui",
+  "images": [
+    {
+      "file": "yulei_xiangshui_-6774507519507641683.png",
+      "name": "yulei_xiangshui",
+      "width": 128,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": -6774507519507641683,
+      "source": "CAB-e1f74b90c78b379dc8c4ded9716485b6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiangshui/yulei_xiangshui_-6774507519507641683.png"
+}

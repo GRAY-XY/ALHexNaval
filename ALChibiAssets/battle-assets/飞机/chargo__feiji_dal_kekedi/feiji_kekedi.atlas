@@ -1,0 +1,146 @@
+
+feiji_kekedi.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biaopan_d3
+  rotate: true
+  xy: 827, 14
+  size: 66, 65
+  orig: 66, 65
+  offset: 0, 0
+  index: -1
+biaopan_di
+  rotate: false
+  xy: 384, 69
+  size: 142, 143
+  orig: 142, 143
+  offset: 0, 0
+  index: -1
+biaopan_dt
+  rotate: false
+  xy: 528, 70
+  size: 141, 142
+  orig: 141, 142
+  offset: 0, 0
+  index: -1
+biaopan_dt2
+  rotate: true
+  xy: 894, 17
+  size: 66, 64
+  orig: 66, 64
+  offset: 0, 0
+  index: -1
+biaopan_t
+  rotate: false
+  xy: 644, 252
+  size: 247, 247
+  orig: 247, 247
+  offset: 0, 0
+  index: -1
+chilun_1
+  rotate: false
+  xy: 882, 149
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+chilun_2
+  rotate: false
+  xy: 913, 93
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+chilun_3
+  rotate: false
+  xy: 755, 6
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+chilun_4
+  rotate: true
+  xy: 857, 85
+  size: 55, 54
+  orig: 55, 54
+  offset: 0, 0
+  index: -1
+chilun_5
+  rotate: true
+  xy: 960, 38
+  size: 53, 54
+  orig: 53, 54
+  offset: 0, 0
+  index: -1
+chilun_6
+  rotate: false
+  xy: 882, 195
+  size: 54, 55
+  orig: 54, 55
+  offset: 0, 0
+  index: -1
+chilun_7
+  rotate: true
+  xy: 798, 82
+  size: 58, 57
+  orig: 58, 57
+  offset: 0, 0
+  index: -1
+chilun_8
+  rotate: false
+  xy: 679, 2
+  size: 74, 74
+  orig: 74, 74
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 2, 30
+  size: 469, 380
+  orig: 469, 380
+  offset: 0, 0
+  index: -1
+waikuang_1
+  rotate: true
+  xy: 671, 78
+  size: 44, 125
+  orig: 44, 125
+  offset: 0, 0
+  index: -1
+waikuang_2
+  rotate: true
+  xy: 671, 124
+  size: 126, 114
+  orig: 126, 114
+  offset: 0, 0
+  index: -1
+waikuang_3
+  rotate: true
+  xy: 566, 3
+  size: 65, 111
+  orig: 65, 111
+  offset: 0, 0
+  index: -1
+waikuang_4
+  rotate: false
+  xy: 787, 142
+  size: 93, 108
+  orig: 93, 108
+  offset: 0, 0
+  index: -1
+waikuang_5
+  rotate: false
+  xy: 384, 26
+  size: 180, 41
+  orig: 180, 41
+  offset: 0, 0
+  index: -1
+waikuang_6
+  rotate: true
+  xy: 384, 214
+  size: 285, 258
+  orig: 285, 258
+  offset: 0, 0
+  index: -1

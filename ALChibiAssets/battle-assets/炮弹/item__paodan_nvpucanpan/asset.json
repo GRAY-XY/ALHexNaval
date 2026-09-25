@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_nvpucanpan",
+  "model": "paodan_nvpucanpan",
+  "name": "托盘炮弹",
+  "names": [
+    "托盘炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nvpucanpan",
+  "path": "battle-assets/炮弹/item__paodan_nvpucanpan",
+  "images": [
+    {
+      "file": "paodan_nvpucanpan_6824203994793467606.png",
+      "name": "paodan_nvpucanpan",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 6824203994793467606,
+      "source": "CAB-1d9eac5162b7cf6a0ea9f2f87303e215"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_nvpucanpan/paodan_nvpucanpan_6824203994793467606.png"
+}

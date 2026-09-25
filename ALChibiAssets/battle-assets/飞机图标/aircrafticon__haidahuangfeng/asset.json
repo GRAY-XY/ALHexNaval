@@ -1,0 +1,35 @@
+{
+  "id": "aircrafticon__haidahuangfeng",
+  "model": "haidahuangfeng",
+  "name": "海大黄蜂",
+  "names": [
+    "海大黄蜂",
+    "不挠一技能海大黄蜂",
+    "不挠二技能海大黄蜂",
+    "英仙座技能海黄蜂Lv1",
+    "阿尔比恩一技能海大黄蜂",
+    "胜利meta海大黄蜂",
+    "【2024同盟活动B】地图机制-跨队支援 无法回避的命运（战斗机）",
+    "【2024同盟活动D】地图机制-跨队支援 无法回避的命运（战斗机）",
+    "【2025狮UR活动SP】BOSS 光荣META 战斗机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/haidahuangfeng",
+  "path": "battle-assets/飞机图标/aircrafticon__haidahuangfeng",
+  "images": [
+    {
+      "file": "haidahuangfeng_209922136765318855.png",
+      "name": "haidahuangfeng",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 209922136765318855,
+      "source": "CAB-8daa5657a1330e02d1e9c69d370f4de0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

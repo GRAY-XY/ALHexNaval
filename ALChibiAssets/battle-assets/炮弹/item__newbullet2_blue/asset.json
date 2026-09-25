@@ -1,0 +1,39 @@
+{
+  "id": "item__newbullet2_blue",
+  "model": "newbullet2_blue",
+  "name": "newbullet2_blue",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/newbullet2_blue",
+  "path": "battle-assets/炮弹/item__newbullet2_blue",
+  "images": [
+    {
+      "file": "newbullet2blue_-253248460710273840.png",
+      "name": "newbullet2blue",
+      "width": 94,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -253248460710273840,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    780084,
+    780087,
+    897014,
+    3033003,
+    3039003,
+    3039004,
+    3039006,
+    3159002,
+    3159029,
+    3159030,
+    3159031,
+    3218010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__newbullet2_blue/newbullet2blue_-253248460710273840.png"
+}

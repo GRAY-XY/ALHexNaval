@@ -1,0 +1,37 @@
+{
+  "id": "item__makesi_huoyanjiguang",
+  "model": "makesi_huoyanjiguang",
+  "name": "makesi_huoyanjiguang",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/makesi_huoyanjiguang",
+  "path": "battle-assets/其他战斗特效/item__makesi_huoyanjiguang",
+  "images": [
+    {
+      "file": "line04_1_-1365032858631316744.png",
+      "name": "line04 1",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1365032858631316744,
+      "source": "CAB-7bb45b0db528adf6c73596f0da06bee2"
+    },
+    {
+      "file": "AL_Smoke07_2568558077492797202.png",
+      "name": "AL_Smoke07",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2568558077492797202,
+      "source": "CAB-7bb45b0db528adf6c73596f0da06bee2"
+    }
+  ],
+  "particle_systems": 7,
+  "animations": [
+    "fumilulu1"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__makesi_huoyanjiguang/line04_1_-1365032858631316744.png"
+}

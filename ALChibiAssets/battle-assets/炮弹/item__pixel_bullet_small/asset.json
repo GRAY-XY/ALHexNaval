@@ -1,0 +1,28 @@
+{
+  "id": "item__pixel_bullet_small",
+  "model": "pixel_bullet_small",
+  "name": "像素炮弹(小)",
+  "names": [
+    "像素炮弹(小)"
+  ],
+  "category": "炮弹",
+  "source": "item/pixel_bullet_small",
+  "path": "battle-assets/炮弹/item__pixel_bullet_small",
+  "images": [
+    {
+      "file": "pixelbulletsmall_-1708647876421706906.png",
+      "name": "pixelbulletsmall",
+      "width": 324,
+      "height": 115,
+      "role": "战斗贴图",
+      "path_id": -1708647876421706906,
+      "source": "CAB-7f68f32be560b0202e87a33e19cba67d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__pixel_bullet_small/pixelbulletsmall_-1708647876421706906.png"
+}

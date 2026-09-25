@@ -1,0 +1,24 @@
+{
+  "id": "item__torpedo_xianyu",
+  "model": "torpedo_xianyu",
+  "name": "咸鱼鱼雷",
+  "names": [
+    "咸鱼鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_xianyu",
+  "path": "battle-assets/鱼雷/item__torpedo_xianyu",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "xianyuyuleiJP.skel",
+    "atlas": "xianyuyuleiJP.atlas",
+    "pages": [
+      "xianyuyuleiJP.png"
+    ]
+  }
+}

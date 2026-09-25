@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_shatanpaiqiu",
+  "model": "paodan_shatanpaiqiu",
+  "name": "沙滩排球炮弹",
+  "names": [
+    "沙滩排球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shatanpaiqiu",
+  "path": "battle-assets/炮弹/item__paodan_shatanpaiqiu",
+  "images": [
+    {
+      "file": "paodan_shatanpaiqiu_-1997671783078843683.png",
+      "name": "paodan_shatanpaiqiu",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -1997671783078843683,
+      "source": "CAB-1a8510f92c4e536f95b432fb802f2ff7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shatanpaiqiu/paodan_shatanpaiqiu_-1997671783078843683.png"
+}

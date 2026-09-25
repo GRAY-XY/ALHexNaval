@@ -1,0 +1,37 @@
+{
+  "id": "chargo__tbm-3",
+  "model": "tbm-3",
+  "name": "TBM-3复仇者",
+  "names": [
+    "TBM-3复仇者"
+  ],
+  "category": "飞机",
+  "source": "chargo/tbm-3",
+  "path": "battle-assets/飞机/chargo__tbm-3",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "tbm-3_-4372108391346960414.png",
+      "name": "tbm-3",
+      "width": 242,
+      "height": 240,
+      "role": "战斗贴图",
+      "path_id": -4372108391346960414,
+      "source": "CAB-254554039bb355fc0a7caabe46449226"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__tbm-3/aircraft_shadow_2192772484218123160.png"
+}

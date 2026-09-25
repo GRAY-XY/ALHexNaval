@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_xueqia",
+  "model": "yulei_xueqia",
+  "name": "雪茄鱼雷",
+  "names": [
+    "雪茄鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xueqia",
+  "path": "battle-assets/鱼雷/item__yulei_xueqia",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "nz_xuejia.skel",
+    "atlas": "nz_xuejia.atlas",
+    "pages": [
+      "nz_xuejia.png"
+    ]
+  }
+}

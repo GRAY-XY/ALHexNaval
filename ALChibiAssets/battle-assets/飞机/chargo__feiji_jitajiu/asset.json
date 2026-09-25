@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_jitajiu",
+  "model": "feiji_jitajiu",
+  "name": "飞天吉他啾(鱼雷)",
+  "names": [
+    "飞天吉他啾(鱼雷)",
+    "飞天吉他啾(战斗)",
+    "飞天吉他啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_jitajiu",
+  "path": "battle-assets/飞机/chargo__feiji_jitajiu",
+  "images": [
+    {
+      "file": "feiji_jitajiu_6844616109269385199.png",
+      "name": "feiji_jitajiu",
+      "width": 256,
+      "height": 191,
+      "role": "战斗贴图",
+      "path_id": 6844616109269385199,
+      "source": "CAB-8dd2fcc5c298030baaea5007f4be583f"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_jitajiu/feiji_jitajiu_6844616109269385199.png"
+}

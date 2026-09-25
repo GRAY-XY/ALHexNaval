@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__f8f",
+  "model": "f8f",
+  "name": "F8F熊猫",
+  "names": [
+    "F8F熊猫",
+    "F8F熊猫定点轰炸测试",
+    "奇尔沙治熊猫战斗机Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/f8f",
+  "path": "battle-assets/飞机图标/aircrafticon__f8f",
+  "images": [
+    {
+      "file": "f8f_-8510786537898576131.png",
+      "name": "f8f",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -8510786537898576131,
+      "source": "CAB-2c206a2a5e1a059c627131fcd626e2a8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

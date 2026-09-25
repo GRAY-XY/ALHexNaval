@@ -1,0 +1,41 @@
+
+makenidanchuan.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 390
+  size: 489, 386
+  orig: 489, 386
+  offset: 0, 0
+  index: -1
+body_move
+  rotate: false
+  xy: 2, 2
+  size: 489, 386
+  orig: 489, 386
+  offset: 0, 0
+  index: -1
+qt01
+  rotate: true
+  xy: 642, 243
+  size: 533, 141
+  orig: 533, 141
+  offset: 0, 0
+  index: -1
+qt02
+  rotate: true
+  xy: 493, 233
+  size: 543, 147
+  orig: 543, 147
+  offset: 0, 0
+  index: -1
+qt03
+  rotate: true
+  xy: 785, 258
+  size: 518, 145
+  orig: 518, 145
+  offset: 0, 0
+  index: -1

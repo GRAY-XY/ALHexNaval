@@ -1,0 +1,41 @@
+
+yulei_zuanshishoubiao.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shan_1
+  rotate: false
+  xy: 419, 67
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+shan_2
+  rotate: false
+  xy: 373, 57
+  size: 44, 43
+  orig: 44, 43
+  offset: 0, 0
+  index: -1
+shan_3
+  rotate: false
+  xy: 373, 16
+  size: 40, 39
+  orig: 40, 39
+  offset: 0, 0
+  index: -1
+shoubiao
+  rotate: false
+  xy: 218, 6
+  size: 153, 94
+  orig: 153, 94
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 2
+  size: 214, 98
+  orig: 214, 98
+  offset: 0, 0
+  index: -1

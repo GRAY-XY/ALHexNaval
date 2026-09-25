@@ -1,0 +1,27 @@
+
+tianejiu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cb_l
+  rotate: true
+  xy: 232, 160
+  size: 86, 85
+  orig: 86, 85
+  offset: 0, 0
+  index: -1
+cb_r
+  rotate: false
+  xy: 232, 95
+  size: 52, 63
+  orig: 52, 63
+  offset: 0, 0
+  index: -1
+jiu
+  rotate: false
+  xy: 2, 2
+  size: 228, 244
+  orig: 228, 244
+  offset: 0, 0
+  index: -1

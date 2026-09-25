@@ -1,0 +1,30 @@
+{
+  "id": "item__bomberbomb100_tantiao",
+  "model": "bomberbomb100_tantiao",
+  "name": "bomberbomb100_tantiao",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/bomberbomb100_tantiao",
+  "path": "battle-assets/鱼雷/item__bomberbomb100_tantiao",
+  "images": [
+    {
+      "file": "Bomberbomb100lb_799600918578832155.png",
+      "name": "Bomberbomb100lb",
+      "width": 105,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": 799600918578832155,
+      "source": "CAB-05a46e8df9f142112920b677e560d342"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [
+    "tiaodong"
+  ],
+  "bullet_ids": [
+    2143
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__bomberbomb100_tantiao/Bomberbomb100lb_799600918578832155.png"
+}

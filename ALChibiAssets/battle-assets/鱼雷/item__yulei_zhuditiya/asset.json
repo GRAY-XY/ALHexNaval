@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhuditiya",
+  "model": "yulei_zhuditiya",
+  "name": "红花繁缕鱼雷",
+  "names": [
+    "红花繁缕鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhuditiya",
+  "path": "battle-assets/鱼雷/item__yulei_zhuditiya",
+  "images": [
+    {
+      "file": "yulei_zhuditiya_738223547132924114.png",
+      "name": "yulei_zhuditiya",
+      "width": 113,
+      "height": 110,
+      "role": "战斗贴图",
+      "path_id": 738223547132924114,
+      "source": "CAB-0835deac821c6dd8f6658b5f922e6d9c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhuditiya/yulei_zhuditiya_738223547132924114.png"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__ln401e",
+  "model": "ln401e",
+  "name": "LN.401",
+  "names": [
+    "LN.401"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ln401e",
+  "path": "battle-assets/飞机图标/aircrafticon__ln401e",
+  "images": [
+    {
+      "file": "ln401e_-2596726954303922142.png",
+      "name": "ln401e",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -2596726954303922142,
+      "source": "CAB-fd2a05058782cb92a1925595067e91f1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

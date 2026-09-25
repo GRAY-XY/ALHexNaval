@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gongjian",
+  "model": "zidan_gongjian",
+  "name": "弓箭子弹",
+  "names": [
+    "弓箭子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gongjian",
+  "path": "battle-assets/炮弹/item__zidan_gongjian",
+  "images": [
+    {
+      "file": "zidan_gongjian_-7199454158806713087.png",
+      "name": "zidan_gongjian",
+      "width": 128,
+      "height": 20,
+      "role": "战斗贴图",
+      "path_id": -7199454158806713087,
+      "source": "CAB-dc456440d7a960f8fa353f6c618d66a6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gongjian/zidan_gongjian_-7199454158806713087.png"
+}

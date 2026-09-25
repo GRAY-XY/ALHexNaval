@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_pijiu",
+  "model": "yulei_pijiu",
+  "name": "啤酒鱼雷",
+  "names": [
+    "啤酒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_pijiu",
+  "path": "battle-assets/鱼雷/item__yulei_pijiu",
+  "images": [
+    {
+      "file": "yulei_pijiu_8480369473680805967.png",
+      "name": "yulei_pijiu",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": 8480369473680805967,
+      "source": "CAB-9756167ceade09d404e6842b6f6baa32"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_pijiu/yulei_pijiu_8480369473680805967.png"
+}

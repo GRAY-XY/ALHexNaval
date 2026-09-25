@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_bianhua",
+  "model": "zidan_bianhua",
+  "name": "彼岸花影子弹",
+  "names": [
+    "彼岸花影子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_bianhua",
+  "path": "battle-assets/炮弹/bulletall__zidan_bianhua",
+  "images": [
+    {
+      "file": "zidan_bianhua_2263976791809738181.png",
+      "name": "zidan_bianhua",
+      "width": 128,
+      "height": 73,
+      "role": "原始精灵",
+      "path_id": 2263976791809738181,
+      "source": "CAB-3b128cd65a616e377a373b92a32ab71c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

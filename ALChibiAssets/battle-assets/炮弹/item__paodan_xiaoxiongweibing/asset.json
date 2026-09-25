@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xiaoxiongweibing",
+  "model": "paodan_xiaoxiongweibing",
+  "name": "小熊卫兵炮弹",
+  "names": [
+    "小熊卫兵炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiaoxiongweibing",
+  "path": "battle-assets/炮弹/item__paodan_xiaoxiongweibing",
+  "images": [
+    {
+      "file": "paodan_xiaoxiongweibing_3296540514217009783.png",
+      "name": "paodan_xiaoxiongweibing",
+      "width": 128,
+      "height": 102,
+      "role": "战斗贴图",
+      "path_id": 3296540514217009783,
+      "source": "CAB-9259b0ee6440b3d20a695fffc10ed8cd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xiaoxiongweibing/paodan_xiaoxiongweibing_3296540514217009783.png"
+}

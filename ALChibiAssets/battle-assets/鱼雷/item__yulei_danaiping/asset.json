@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_danaiping",
+  "model": "yulei_danaiping",
+  "name": "大奶瓶鱼雷",
+  "names": [
+    "大奶瓶鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_danaiping",
+  "path": "battle-assets/鱼雷/item__yulei_danaiping",
+  "images": [
+    {
+      "file": "yulei_danaiping_-1576318069367052079.png",
+      "name": "yulei_danaiping",
+      "width": 123,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": -1576318069367052079,
+      "source": "CAB-88965ea9c46f6f76e3bc2843778cfb6a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_danaiping/yulei_danaiping_-1576318069367052079.png"
+}

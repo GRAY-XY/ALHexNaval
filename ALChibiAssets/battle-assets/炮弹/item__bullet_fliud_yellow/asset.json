@@ -1,0 +1,17 @@
+{
+  "id": "item__bullet_fliud_yellow",
+  "model": "bullet_fliud_yellow",
+  "name": "bullet_fliud_yellow",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_fliud_yellow",
+  "path": "battle-assets/炮弹/item__bullet_fliud_yellow",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3029325
+  ],
+  "has_preview": false,
+  "prefab": true
+}

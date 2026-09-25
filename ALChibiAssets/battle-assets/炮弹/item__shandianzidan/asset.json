@@ -1,0 +1,15 @@
+{
+  "id": "item__shandianzidan",
+  "model": "shandianzidan",
+  "name": "shandianzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shandianzidan",
+  "path": "battle-assets/炮弹/item__shandianzidan",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zidan_zhenliejiantou__zidan_zhenliejiantou_material",
+  "model": "zidan_zhenliejiantou_material",
+  "name": "zidan_zhenliejiantou_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_zhenliejiantou/zidan_zhenliejiantou_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_zhenliejiantou__zidan_zhenliejiantou_material",
+  "images": [
+    {
+      "file": "zidan_zhenliejiantou_-5797190616652995498.png",
+      "name": "zidan_zhenliejiantou",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5797190616652995498,
+      "source": "CAB-f937cbdfe024f1b18b25789d5309571b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

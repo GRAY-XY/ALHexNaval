@@ -1,0 +1,44 @@
+{
+  "id": "item__zidan_wanyueyushi",
+  "model": "zidan_wanyueyushi",
+  "name": "寒月之辉子弹",
+  "names": [
+    "寒月之辉子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_wanyueyushi",
+  "path": "battle-assets/炮弹/item__zidan_wanyueyushi",
+  "images": [
+    {
+      "file": "zidan_wanyueyushi_-6783259435070491884.png",
+      "name": "zidan_wanyueyushi",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6783259435070491884,
+      "source": "CAB-f4195c57f27d9bf498e4555705cb7bf3"
+    },
+    {
+      "file": "particles01_-3310787673558051681.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3310787673558051681,
+      "source": "CAB-f4195c57f27d9bf498e4555705cb7bf3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_wanyueyushi/zidan_wanyueyushi_-6783259435070491884.png",
+  "spine": {
+    "skel": "zidan_wanyueyushi.skel",
+    "atlas": "zidan_wanyueyushi.atlas",
+    "pages": [
+      "zidan_wanyueyushi.png"
+    ]
+  }
+}

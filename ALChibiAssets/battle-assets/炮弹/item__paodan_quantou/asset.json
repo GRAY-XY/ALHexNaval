@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_quantou",
+  "model": "paodan_quantou",
+  "name": "机甲铁拳炮弹",
+  "names": [
+    "机甲铁拳炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_quantou",
+  "path": "battle-assets/炮弹/item__paodan_quantou",
+  "images": [
+    {
+      "file": "paodan_quantou_-754190790486111744.png",
+      "name": "paodan_quantou",
+      "width": 128,
+      "height": 83,
+      "role": "战斗贴图",
+      "path_id": -754190790486111744,
+      "source": "CAB-1f4961fe28d4c7f6c3580e3b863a1f28"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_quantou/paodan_quantou_-754190790486111744.png"
+}

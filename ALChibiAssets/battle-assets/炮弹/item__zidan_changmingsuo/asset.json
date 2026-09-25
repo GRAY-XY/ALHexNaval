@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_changmingsuo",
+  "model": "zidan_changmingsuo",
+  "name": "福寿平安子弹",
+  "names": [
+    "福寿平安子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_changmingsuo",
+  "path": "battle-assets/炮弹/item__zidan_changmingsuo",
+  "images": [
+    {
+      "file": "zidan_changmingsuo_667728466170088212.png",
+      "name": "zidan_changmingsuo",
+      "width": 128,
+      "height": 34,
+      "role": "战斗贴图",
+      "path_id": 667728466170088212,
+      "source": "CAB-8f8f9c7a33644e8c74aaf00a7b25ea0c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_changmingsuo/zidan_changmingsuo_667728466170088212.png"
+}

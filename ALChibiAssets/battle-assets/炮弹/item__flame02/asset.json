@@ -1,0 +1,19 @@
+{
+  "id": "item__flame02",
+  "model": "flame02",
+  "name": "flame02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/flame02",
+  "path": "battle-assets/炮弹/item__flame02",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    840076,
+    29645042,
+    3139527
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__haibao_hongzha",
+  "model": "haibao_hongzha",
+  "name": "海豹轰炸机",
+  "names": [
+    "海豹轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/haibao_hongzha",
+  "path": "battle-assets/飞机图标/aircrafticon__haibao_hongzha",
+  "images": [
+    {
+      "file": "haibao_hongzha_6278163480777904103.png",
+      "name": "haibao_hongzha",
+      "width": 239,
+      "height": 214,
+      "role": "原始精灵",
+      "path_id": 6278163480777904103,
+      "source": "CAB-dabd3acde329d5691706b154e4cb516a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

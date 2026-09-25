@@ -1,0 +1,19 @@
+{
+  "id": "item__ruoyue_zhanji",
+  "model": "ruoyue_zhanji",
+  "name": "ruoyue_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ruoyue_zhanji",
+  "path": "battle-assets/炮弹/item__ruoyue_zhanji",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19451,
+    364010,
+    3217035
+  ],
+  "has_preview": false,
+  "prefab": true
+}

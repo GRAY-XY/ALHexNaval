@@ -1,0 +1,37 @@
+{
+  "id": "chargo__feiji_heisenlinzhon",
+  "model": "feiji_heisenlinzhon",
+  "name": "黑森林之钟(鱼雷)",
+  "names": [
+    "黑森林之钟(鱼雷)",
+    "黑森林之钟(战斗)",
+    "黑森林之钟(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_heisenlinzhon",
+  "path": "battle-assets/飞机/chargo__feiji_heisenlinzhon",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_heisenlinzhon/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "zhongfeiji.skel",
+    "atlas": "zhongfeiji.atlas",
+    "pages": [
+      "zhongfeiji.png"
+    ]
+  }
+}

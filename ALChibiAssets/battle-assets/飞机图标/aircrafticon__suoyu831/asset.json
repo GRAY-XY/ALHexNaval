@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__suoyu831",
+  "model": "suoyu831",
+  "name": "梭鱼(831中队)",
+  "names": [
+    "梭鱼(831中队)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/suoyu831",
+  "path": "battle-assets/飞机图标/aircrafticon__suoyu831",
+  "images": [
+    {
+      "file": "suoyu831_-6720405670367332436.png",
+      "name": "suoyu831",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6720405670367332436,
+      "source": "CAB-341ccbd2c9952368dbe9d3a24d291d97"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

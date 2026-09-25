@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_lingjie",
+  "model": "zidan_lingjie",
+  "name": "粉领结子弹",
+  "names": [
+    "粉领结子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_lingjie",
+  "path": "battle-assets/炮弹/bulletall__zidan_lingjie",
+  "images": [
+    {
+      "file": "zidan_lingjie_-1880684095232223662.png",
+      "name": "zidan_lingjie",
+      "width": 128,
+      "height": 56,
+      "role": "原始精灵",
+      "path_id": -1880684095232223662,
+      "source": "CAB-0ad168f4749cdfd30bfe30440b60810d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

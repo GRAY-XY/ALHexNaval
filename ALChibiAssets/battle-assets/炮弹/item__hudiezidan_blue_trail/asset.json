@@ -1,0 +1,26 @@
+{
+  "id": "item__hudiezidan_blue_trail",
+  "model": "hudiezidan_blue_trail",
+  "name": "hudiezidan_blue_trail",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hudiezidan_blue_trail",
+  "path": "battle-assets/炮弹/item__hudiezidan_blue_trail",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19185,
+    19186,
+    19515,
+    19516,
+    160894,
+    160895,
+    160896,
+    160897,
+    3195005,
+    3195006
+  ],
+  "has_preview": false,
+  "prefab": true
+}

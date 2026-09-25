@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_aijifazhang",
+  "model": "yulei_aijifazhang",
+  "name": "法老权杖鱼雷",
+  "names": [
+    "法老权杖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_aijifazhang",
+  "path": "battle-assets/鱼雷/item__yulei_aijifazhang",
+  "images": [
+    {
+      "file": "yulei_aijifazhang_8095037755509574615.png",
+      "name": "yulei_aijifazhang",
+      "width": 128,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 8095037755509574615,
+      "source": "CAB-2de4e638c676a218448d1889e2cdea41"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_aijifazhang/yulei_aijifazhang_8095037755509574615.png"
+}

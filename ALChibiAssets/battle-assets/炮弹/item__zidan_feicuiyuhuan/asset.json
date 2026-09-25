@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_feicuiyuhuan",
+  "model": "zidan_feicuiyuhuan",
+  "name": "玲珑翠环子弹",
+  "names": [
+    "玲珑翠环子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_feicuiyuhuan",
+  "path": "battle-assets/炮弹/item__zidan_feicuiyuhuan",
+  "images": [
+    {
+      "file": "zidan_feicuiyuhuan_-5023154309169890085.png",
+      "name": "zidan_feicuiyuhuan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5023154309169890085,
+      "source": "CAB-f6158b38f1d96b87149630458539fdd3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_feicuiyuhuan/zidan_feicuiyuhuan_-5023154309169890085.png",
+  "spine": {
+    "skel": "zidan_feicuiyuhuan.skel",
+    "atlas": "zidan_feicuiyuhuan.atlas",
+    "pages": [
+      "zidan_feicuiyuhuan.png"
+    ]
+  }
+}

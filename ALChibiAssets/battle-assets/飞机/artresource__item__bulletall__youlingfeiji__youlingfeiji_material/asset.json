@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__youlingfeiji__youlingfeiji_material",
+  "model": "youlingfeiji_material",
+  "name": "youlingfeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/youlingfeiji/youlingfeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__youlingfeiji__youlingfeiji_material",
+  "images": [
+    {
+      "file": "youlingfeiji_5209772260966723376.png",
+      "name": "youlingfeiji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 5209772260966723376,
+      "source": "CAB-78cac5fa96f9ea73474c23cb9a624e51"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

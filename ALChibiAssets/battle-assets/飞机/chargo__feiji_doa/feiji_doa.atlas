@@ -1,0 +1,13 @@
+
+feiji_doa.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+feiji_doa
+  rotate: false
+  xy: 2, 2
+  size: 150, 92
+  orig: 150, 92
+  offset: 0, 0
+  index: -1

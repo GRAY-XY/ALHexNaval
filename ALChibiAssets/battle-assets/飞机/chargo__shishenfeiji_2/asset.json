@@ -1,0 +1,47 @@
+{
+  "id": "chargo__shishenfeiji_2",
+  "model": "shishenfeiji_2",
+  "name": "【2024天城航母活动B1】BOSS 加贺灵狐 第三波 零散慢速战斗机",
+  "names": [
+    "【2024天城航母活动B1】BOSS 加贺灵狐 第三波 零散慢速战斗机",
+    "【2024天城航母活动B3】BOSS 赤城meta 第二波 加贺灵体 轰炸机",
+    "【2024天城航母活动B3】BOSS 赤城meta 第二波 加贺灵体 鱼雷机",
+    "【2024天城航母活动D1】BOSS 加贺灵狐 第三波 零散慢速战斗机",
+    "【2024天城航母活动D3】BOSS 赤城meta 第二波 加贺灵体 轰炸机",
+    "【2024天城航母活动D3】BOSS 赤城meta 第二波 加贺灵体 鱼雷机",
+    "【2024天城航母活动EX 普通】BOSS 赤城meta 二阶段 加贺灵体 轰炸机",
+    "【2024天城航母活动EX 困难】BOSS 赤城meta 二阶段 加贺灵体 轰炸机",
+    "【2024天城航母活动B】精英 加贺灵狐 零散慢速战斗机",
+    "【2024天城航母活动D】精英 加贺灵狐 零散慢速战斗机",
+    "【2024天城航母活动SP】精英 加贺灵狐 零散慢速战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/shishenfeiji_2",
+  "path": "battle-assets/飞机/chargo__shishenfeiji_2",
+  "images": [
+    {
+      "file": "feilong_02_-4213765730753455310.png",
+      "name": "feilong_02",
+      "width": 240,
+      "height": 244,
+      "role": "战斗贴图",
+      "path_id": -4213765730753455310,
+      "source": "CAB-4df787654938ae5979abf98bcf5d2ea2"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__shishenfeiji_2/feilong_02_-4213765730753455310.png"
+}

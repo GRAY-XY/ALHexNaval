@@ -1,0 +1,13 @@
+
+yulei_heibaiqi.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+base
+  rotate: false
+  xy: 2, 2
+  size: 129, 117
+  orig: 129, 117
+  offset: 0, 0
+  index: -1

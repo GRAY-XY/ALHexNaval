@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.5",
+  "url": "http://127.0.0.1:18768/",
+  "reference": "output/art-concepts/watercolor-maritime-fullscreen-v1.png",
+  "assets": {
+    "sourceSheets": 1,
+    "runtimeSprites": 6,
+    "manifest": "data/land-detail-art.json",
+    "prompts": "data/land-detail-art-prompts.md",
+    "slicer": "tools/slice_land_details.py"
+  },
+  "visualChecks": [
+    "The land base uses visible muted olive and parchment watercolor variation instead of a flat bright green field",
+    "Repeated geometric pine icons and circular broadleaf crowns are absent from the runtime map",
+    "Forests, rocky grassland, meadow trails and boulder edges form multi-hex terrain regions",
+    "Land-detail sprites render above chunk canvases and have no rectangular chunk-edge clipping",
+    "Harbor buildings remain readable against open textured ground",
+    "The island remains readable in strategic view and the 104 percent harbor tactical view"
+  ],
+  "screenshots": [
+    "output/screenshots/land-refine-final.png",
+    "output/screenshots/land-refine-port-final.png"
+  ],
+  "consoleErrors": [],
+  "staticChecks": {
+    "build": "passed",
+    "landDetailSprites": 6,
+    "directionalAssets": 18,
+    "coordinateChecks": 344064,
+    "portChecks": 26,
+    "invalidPortSaveCases": 15,
+    "ruleChecks": 78,
+    "weightedPathCases": 80,
+    "invalidRuleSaveCases": 67,
+    "fogChecks": 16,
+    "invalidFogSaveCases": 7
+  },
+  "backup": "output/backups/land-before-20260919-124903.zip"
+}

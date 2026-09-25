@@ -1,0 +1,32 @@
+{
+  "id": "item__zidan_tiaowujijiantou",
+  "model": "zidan_tiaowujijiantou",
+  "name": "跳舞机箭头",
+  "names": [
+    "跳舞机箭头"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tiaowujijiantou",
+  "path": "battle-assets/炮弹/item__zidan_tiaowujijiantou",
+  "images": [
+    {
+      "file": "jiantou03_83358994432302263.png",
+      "name": "jiantou03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 83358994432302263,
+      "source": "CAB-7d29ba2ca30875480babdc482c2d28e5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3140002,
+    3146037,
+    3146519
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tiaowujijiantou/jiantou03_83358994432302263.png"
+}

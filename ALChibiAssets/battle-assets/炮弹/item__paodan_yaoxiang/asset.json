@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yaoxiang",
+  "model": "paodan_yaoxiang",
+  "name": "药箱炮弹",
+  "names": [
+    "药箱炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yaoxiang",
+  "path": "battle-assets/炮弹/item__paodan_yaoxiang",
+  "images": [
+    {
+      "file": "paodan_yaoxiang_705782502331504872.png",
+      "name": "paodan_yaoxiang",
+      "width": 127,
+      "height": 126,
+      "role": "战斗贴图",
+      "path_id": 705782502331504872,
+      "source": "CAB-4e78d6e5193a12f2bfb2ba1523667d73"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yaoxiang/paodan_yaoxiang_705782502331504872.png"
+}

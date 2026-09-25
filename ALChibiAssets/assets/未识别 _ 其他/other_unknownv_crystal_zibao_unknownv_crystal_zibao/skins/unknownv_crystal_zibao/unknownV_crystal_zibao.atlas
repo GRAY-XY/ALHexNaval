@@ -1,0 +1,111 @@
+
+unknownV_crystal_zibao.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 305, 32
+  size: 232, 125
+  orig: 232, 125
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: true
+  xy: 430, 379
+  size: 130, 63
+  orig: 130, 63
+  offset: 0, 0
+  index: -1
+chushou_10
+  rotate: false
+  xy: 305, 2
+  size: 26, 28
+  orig: 26, 28
+  offset: 0, 0
+  index: -1
+chushou_2
+  rotate: false
+  xy: 305, 351
+  size: 116, 59
+  orig: 116, 59
+  offset: 0, 0
+  index: -1
+chushou_3
+  rotate: true
+  xy: 465, 171
+  size: 109, 33
+  orig: 109, 33
+  offset: 0, 0
+  index: -1
+chushou_4
+  rotate: true
+  xy: 432, 21
+  size: 86, 34
+  orig: 86, 34
+  offset: 0, 0
+  index: -1
+chushou_5
+  rotate: false
+  xy: 432, 109
+  size: 67, 60
+  orig: 67, 60
+  offset: 0, 0
+  index: -1
+chushou_6
+  rotate: true
+  xy: 423, 266
+  size: 111, 40
+  orig: 111, 40
+  offset: 0, 0
+  index: -1
+chushou_7
+  rotate: false
+  xy: 305, 300
+  size: 85, 49
+  orig: 85, 49
+  offset: 0, 0
+  index: -1
+chushou_8
+  rotate: true
+  xy: 465, 282
+  size: 95, 42
+  orig: 95, 42
+  offset: 0, 0
+  index: -1
+chushou_9
+  rotate: true
+  xy: 468, 40
+  size: 67, 36
+  orig: 67, 36
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: true
+  xy: 112, 18
+  size: 392, 102
+  orig: 392, 102
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: true
+  xy: 2, 27
+  size: 383, 108
+  orig: 383, 108
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: true
+  xy: 216, 7
+  size: 403, 87
+  orig: 403, 87
+  offset: 0, 0
+  index: -1
+shuihua_4
+  rotate: false
+  xy: 2, 412
+  size: 426, 97
+  orig: 426, 97
+  offset: 0, 0
+  index: -1

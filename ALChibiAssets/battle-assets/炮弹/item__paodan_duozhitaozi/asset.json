@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_duozhitaozi",
+  "model": "paodan_duozhitaozi",
+  "name": "多汁桃子炮弹",
+  "names": [
+    "多汁桃子炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_duozhitaozi",
+  "path": "battle-assets/炮弹/item__paodan_duozhitaozi",
+  "images": [
+    {
+      "file": "paodan_duozhitaozi_-4770777771032685284.png",
+      "name": "paodan_duozhitaozi",
+      "width": 128,
+      "height": 120,
+      "role": "战斗贴图",
+      "path_id": -4770777771032685284,
+      "source": "CAB-92fa84eea33bcb7b8b6a39e05e5c53fc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_duozhitaozi/paodan_duozhitaozi_-4770777771032685284.png"
+}

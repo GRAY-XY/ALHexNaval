@@ -1,0 +1,69 @@
+
+lianjin_II_hangmu.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 619, 117
+  size: 155, 284
+  orig: 155, 284
+  offset: 0, 0
+  index: -1
+chibang_L
+  rotate: false
+  xy: 2, 395
+  size: 439, 595
+  orig: 439, 595
+  offset: 0, 0
+  index: -1
+chibang_R
+  rotate: false
+  xy: 2, 123
+  size: 235, 270
+  orig: 235, 270
+  offset: 0, 0
+  index: -1
+chibang_R2
+  rotate: false
+  xy: 728, 433
+  size: 277, 557
+  orig: 277, 557
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 239, 113
+  size: 221, 280
+  orig: 221, 280
+  offset: 0, 0
+  index: -1
+tui_L
+  rotate: true
+  xy: 462, 90
+  size: 311, 155
+  orig: 311, 155
+  offset: 0, 0
+  index: -1
+tui_R1
+  rotate: false
+  xy: 776, 302
+  size: 105, 129
+  orig: 105, 129
+  offset: 0, 0
+  index: -1
+tui_R2
+  rotate: false
+  xy: 2, 2
+  size: 129, 119
+  orig: 129, 119
+  offset: 0, 0
+  index: -1
+weiba
+  rotate: true
+  xy: 443, 403
+  size: 587, 283
+  orig: 587, 283
+  offset: 0, 0
+  index: -1

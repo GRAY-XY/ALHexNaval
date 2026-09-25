@@ -1,0 +1,41 @@
+
+zidan_gudianbishou.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bishou
+  rotate: false
+  xy: 435, 2
+  size: 184, 77
+  orig: 184, 77
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 47, 8
+  size: 386, 71
+  orig: 386, 71
+  offset: 0, 0
+  index: -1
+xx_1
+  rotate: true
+  xy: 2, 67
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+xx_1_2
+  rotate: true
+  xy: 17, 67
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+xx_1_3
+  rotate: true
+  xy: 32, 67
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1

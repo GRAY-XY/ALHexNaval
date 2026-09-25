@@ -1,0 +1,26 @@
+{
+  "id": "item__unknownv_mal_bullet",
+  "model": "unknownv_mal_bullet",
+  "name": "unknownv_mal_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/unknownv_mal_bullet",
+  "path": "battle-assets/炮弹/item__unknownv_mal_bullet",
+  "images": [
+    {
+      "file": "unknownV_mal_bullet_665925854355325589.png",
+      "name": "unknownV_mal_bullet",
+      "width": 134,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 665925854355325589,
+      "source": "CAB-934d2fd13df6f4062b929dcd0a976b04"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__unknownv_mal_bullet/unknownV_mal_bullet_665925854355325589.png"
+}

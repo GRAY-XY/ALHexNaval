@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__mantoufeiji__mantoufeiji_material",
+  "model": "mantoufeiji_material",
+  "name": "mantoufeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/mantoufeiji/mantoufeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__mantoufeiji__mantoufeiji_material",
+  "images": [
+    {
+      "file": "mantoufeiji_-1645866324145778220.png",
+      "name": "mantoufeiji",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1645866324145778220,
+      "source": "CAB-4b6d5c46dad83345656d929ba2e6f491"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

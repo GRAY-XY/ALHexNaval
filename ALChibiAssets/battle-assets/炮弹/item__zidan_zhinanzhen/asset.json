@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_zhinanzhen",
+  "model": "zidan_zhinanzhen",
+  "name": "指南针子弹",
+  "names": [
+    "指南针子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhinanzhen",
+  "path": "battle-assets/炮弹/item__zidan_zhinanzhen",
+  "images": [
+    {
+      "file": "zidan_zhinanzhen_6640930673260444778.png",
+      "name": "zidan_zhinanzhen",
+      "width": 128,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": 6640930673260444778,
+      "source": "CAB-cada3d1c4a9bfb26a1db1954299cd93e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zhinanzhen/zidan_zhinanzhen_6640930673260444778.png"
+}

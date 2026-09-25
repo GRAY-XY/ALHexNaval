@@ -1,0 +1,48 @@
+
+feiji_xiangsutianlei.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+benti
+  rotate: true
+  xy: 267, 2
+  size: 180, 207
+  orig: 180, 207
+  offset: 0, 0
+  index: -1
+penshe_1
+  rotate: false
+  xy: 2, 32
+  size: 263, 197
+  orig: 263, 197
+  offset: 0, 0
+  index: -1
+penshe_4
+  rotate: false
+  xy: 2, 32
+  size: 263, 197
+  orig: 263, 197
+  offset: 0, 0
+  index: -1
+penshe_2
+  rotate: false
+  xy: 2, 231
+  size: 283, 222
+  orig: 283, 222
+  offset: 0, 0
+  index: -1
+penshe_5
+  rotate: false
+  xy: 2, 231
+  size: 283, 222
+  orig: 283, 222
+  offset: 0, 0
+  index: -1
+penshe_3
+  rotate: true
+  xy: 287, 184
+  size: 269, 176
+  orig: 269, 176
+  offset: 0, 0
+  index: -1

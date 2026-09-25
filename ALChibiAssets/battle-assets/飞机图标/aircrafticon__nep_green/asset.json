@@ -1,0 +1,33 @@
+{
+  "id": "aircrafticon__nep_green",
+  "model": "nep_green",
+  "name": "宝石枪雨LV0",
+  "names": [
+    "宝石枪雨LV0",
+    "翡绿之心轰炸机",
+    "翡绿之心鱼雷机",
+    "翡绿之心战斗机",
+    "绿心轰炸机",
+    "绿心战斗机",
+    "绿心鱼雷机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/nep_green",
+  "path": "battle-assets/飞机图标/aircrafticon__nep_green",
+  "images": [
+    {
+      "file": "Nep_green_3200799730512202833.png",
+      "name": "Nep_green",
+      "width": 43,
+      "height": 42,
+      "role": "原始精灵",
+      "path_id": 3200799730512202833,
+      "source": "CAB-46505d9238e4a742de1644c1a14c8d47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,47 @@
+{
+  "id": "item__gulite_jianzhui",
+  "model": "gulite_jianzhui",
+  "name": "gulite_jianzhui",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulite_jianzhui",
+  "path": "battle-assets/炮弹/item__gulite_jianzhui",
+  "images": [
+    {
+      "file": "jianzhui01_-434827353792765628.png",
+      "name": "jianzhui01",
+      "width": 188,
+      "height": 86,
+      "role": "战斗贴图",
+      "path_id": -434827353792765628,
+      "source": "CAB-b4bd8757ca620e01c8d2d38ff52a8c61"
+    },
+    {
+      "file": "jianzhui03_5784292631434937153.png",
+      "name": "jianzhui03",
+      "width": 186,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": 5784292631434937153,
+      "source": "CAB-b4bd8757ca620e01c8d2d38ff52a8c61"
+    },
+    {
+      "file": "jian02zhui_-1077175268646295070.png",
+      "name": "jian02zhui",
+      "width": 186,
+      "height": 82,
+      "role": "战斗贴图",
+      "path_id": -1077175268646295070,
+      "source": "CAB-b4bd8757ca620e01c8d2d38ff52a8c61"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    855440,
+    855450
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulite_jianzhui/jianzhui01_-434827353792765628.png"
+}

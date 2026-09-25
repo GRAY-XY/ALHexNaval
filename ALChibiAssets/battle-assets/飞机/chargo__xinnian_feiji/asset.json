@@ -1,0 +1,39 @@
+{
+  "id": "chargo__xinnian_feiji",
+  "model": "xinnian_feiji",
+  "name": "纸鹤轰炸机",
+  "names": [
+    "纸鹤轰炸机",
+    "纸鹤鱼雷机",
+    "纸鹤战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/xinnian_feiji",
+  "path": "battle-assets/飞机/chargo__xinnian_feiji",
+  "images": [
+    {
+      "file": "xinnian_feiji_-6736037383679030909.png",
+      "name": "xinnian_feiji",
+      "width": 246,
+      "height": 201,
+      "role": "战斗贴图",
+      "path_id": -6736037383679030909,
+      "source": "CAB-52a1ab0fa8fa3c96945c725882415676"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__xinnian_feiji/xinnian_feiji_-6736037383679030909.png"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "item__paodan_huoqiu_blue",
+  "model": "paodan_huoqiu_blue",
+  "name": "paodan_huoqiu_blue",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_huoqiu_blue",
+  "path": "battle-assets/炮弹/item__paodan_huoqiu_blue",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3311011,
+    3311109,
+    3311111,
+    3311112,
+    3311113,
+    3311114,
+    3311115,
+    3311116,
+    3316006,
+    3316011,
+    3316012,
+    3316013,
+    3316014,
+    3316015,
+    3316016,
+    3316017,
+    3316018
+  ],
+  "has_preview": false,
+  "prefab": true
+}

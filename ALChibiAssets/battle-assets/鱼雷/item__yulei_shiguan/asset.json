@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shiguan",
+  "model": "yulei_shiguan",
+  "name": "试管鱼雷",
+  "names": [
+    "试管鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shiguan",
+  "path": "battle-assets/鱼雷/item__yulei_shiguan",
+  "images": [
+    {
+      "file": "yulei_shiguan_-4489789079991733734.png",
+      "name": "yulei_shiguan",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -4489789079991733734,
+      "source": "CAB-077b7c94eea57cec4d29c094feb9992d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shiguan/yulei_shiguan_-4489789079991733734.png"
+}

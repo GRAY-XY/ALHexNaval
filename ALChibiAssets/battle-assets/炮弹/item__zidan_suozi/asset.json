@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_suozi",
+  "model": "zidan_suozi",
+  "name": "织梦穿梭子弹",
+  "names": [
+    "织梦穿梭子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_suozi",
+  "path": "battle-assets/炮弹/item__zidan_suozi",
+  "images": [
+    {
+      "file": "zidan_suozi_-8723277140799995353.png",
+      "name": "zidan_suozi",
+      "width": 128,
+      "height": 52,
+      "role": "战斗贴图",
+      "path_id": -8723277140799995353,
+      "source": "CAB-5f6c33f0f83f777c7f200283286a7a85"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_suozi/zidan_suozi_-8723277140799995353.png"
+}

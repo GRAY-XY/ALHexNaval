@@ -1,0 +1,28 @@
+{
+  "id": "item__torpedo_pixel",
+  "model": "torpedo_pixel",
+  "name": "像素鱼雷",
+  "names": [
+    "像素鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_pixel",
+  "path": "battle-assets/鱼雷/item__torpedo_pixel",
+  "images": [
+    {
+      "file": "pixeltorpedo_3857685496951203744.png",
+      "name": "pixeltorpedo",
+      "width": 237,
+      "height": 81,
+      "role": "战斗贴图",
+      "path_id": 3857685496951203744,
+      "source": "CAB-12ec904116b93ec96ab0271057dcb525"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo_pixel/pixeltorpedo_3857685496951203744.png"
+}

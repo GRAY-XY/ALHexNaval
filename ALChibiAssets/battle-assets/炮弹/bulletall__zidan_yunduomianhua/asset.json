@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_yunduomianhua",
+  "model": "zidan_yunduomianhua",
+  "name": "装饰棉花糖子弹",
+  "names": [
+    "装饰棉花糖子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_yunduomianhua",
+  "path": "battle-assets/炮弹/bulletall__zidan_yunduomianhua",
+  "images": [
+    {
+      "file": "zidan_yunduomianhua_-1667439855639527208.png",
+      "name": "zidan_yunduomianhua",
+      "width": 128,
+      "height": 92,
+      "role": "原始精灵",
+      "path_id": -1667439855639527208,
+      "source": "CAB-5e41fe15623bea78e9abf75379bb7afe"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,37 @@
+{
+  "id": "item__shanluan_xuebugui_bingqiang",
+  "model": "shanluan_xuebugui_bingqiang",
+  "name": "shanluan_xuebugui_bingqiang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_xuebugui_bingqiang",
+  "path": "battle-assets/炮弹/item__shanluan_xuebugui_bingqiang",
+  "images": [
+    {
+      "file": "bingzhui03_-8411265244358246916.png",
+      "name": "bingzhui03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8411265244358246916,
+      "source": "CAB-aec0789aa710727f18cf6dce1452d8f8"
+    },
+    {
+      "file": "bingzhui02_-2593441191900130304.png",
+      "name": "bingzhui02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2593441191900130304,
+      "source": "CAB-aec0789aa710727f18cf6dce1452d8f8"
+    }
+  ],
+  "particle_systems": 64,
+  "animations": [],
+  "bullet_ids": [
+    19791
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shanluan_xuebugui_bingqiang/bingzhui03_-8411265244358246916.png"
+}

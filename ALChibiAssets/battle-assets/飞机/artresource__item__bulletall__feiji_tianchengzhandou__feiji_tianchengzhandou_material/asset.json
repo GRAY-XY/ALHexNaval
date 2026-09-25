@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_tianchengzhandou__feiji_tianchengzhandou_material",
+  "model": "feiji_tianchengzhandou_material",
+  "name": "feiji_tianchengzhandou_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_tianchengzhandou/feiji_tianchengzhandou_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_tianchengzhandou__feiji_tianchengzhandou_material",
+  "images": [
+    {
+      "file": "feiji_tianchengzhandou_1960067757637635017.png",
+      "name": "feiji_tianchengzhandou",
+      "width": 2048,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": 1960067757637635017,
+      "source": "CAB-87e6626aaa19dde9121429fdbda6ce35"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

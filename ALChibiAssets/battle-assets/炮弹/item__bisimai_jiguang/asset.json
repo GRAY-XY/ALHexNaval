@@ -1,0 +1,20 @@
+{
+  "id": "item__bisimai_jiguang",
+  "model": "bisimai_jiguang",
+  "name": "bisimai_jiguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bisimai_jiguang",
+  "path": "battle-assets/炮弹/item__bisimai_jiguang",
+  "images": [],
+  "particle_systems": 14,
+  "animations": [],
+  "bullet_ids": [
+    19712,
+    29659048,
+    3107032,
+    3275508
+  ],
+  "has_preview": false,
+  "prefab": true
+}

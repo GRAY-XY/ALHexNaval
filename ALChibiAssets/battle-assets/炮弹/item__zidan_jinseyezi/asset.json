@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jinseyezi",
+  "model": "zidan_jinseyezi",
+  "name": "zidan_jinseyezi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_jinseyezi",
+  "path": "battle-assets/炮弹/item__zidan_jinseyezi",
+  "images": [
+    {
+      "file": "yezi01_-5238032346537050651.png",
+      "name": "yezi01",
+      "width": 122,
+      "height": 38,
+      "role": "战斗贴图",
+      "path_id": -5238032346537050651,
+      "source": "CAB-c265253d7f41aefc432bd7bbd272c675"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19693
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jinseyezi/yezi01_-5238032346537050651.png"
+}

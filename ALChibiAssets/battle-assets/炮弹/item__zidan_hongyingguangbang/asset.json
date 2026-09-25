@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_hongyingguangbang",
+  "model": "zidan_hongyingguangbang",
+  "name": "荧光应援棒子弹（红）",
+  "names": [
+    "荧光应援棒子弹（红）"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hongyingguangbang",
+  "path": "battle-assets/炮弹/item__zidan_hongyingguangbang",
+  "images": [
+    {
+      "file": "zidan_hongyingguangbang_8918278056453531111.png",
+      "name": "zidan_hongyingguangbang",
+      "width": 122,
+      "height": 31,
+      "role": "战斗贴图",
+      "path_id": 8918278056453531111,
+      "source": "CAB-6b9056c47e75beb51065fdbacf678b02"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hongyingguangbang/zidan_hongyingguangbang_8918278056453531111.png"
+}

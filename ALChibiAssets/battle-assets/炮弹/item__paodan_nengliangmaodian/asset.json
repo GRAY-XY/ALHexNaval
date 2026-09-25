@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_nengliangmaodian",
+  "model": "paodan_nengliangmaodian",
+  "name": "流翠能量炮弹",
+  "names": [
+    "流翠能量炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nengliangmaodian",
+  "path": "battle-assets/炮弹/item__paodan_nengliangmaodian",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "paodan_nengliangmaodian.skel",
+    "atlas": "paodan_nengliangmaodian.atlas",
+    "pages": [
+      "paodan_nengliangmaodian.png"
+    ]
+  }
+}

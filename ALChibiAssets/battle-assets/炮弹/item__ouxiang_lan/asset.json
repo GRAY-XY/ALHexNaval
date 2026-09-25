@@ -1,0 +1,41 @@
+{
+  "id": "item__ouxiang_lan",
+  "model": "ouxiang_lan",
+  "name": "ouxiang_lan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_lan",
+  "path": "battle-assets/炮弹/item__ouxiang_lan",
+  "images": [
+    {
+      "file": "blue_-55011408381159872.png",
+      "name": "blue",
+      "width": 95,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": -55011408381159872,
+      "source": "CAB-58bd14ba7beef3c179782821f247362e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    852314,
+    852534,
+    852652,
+    852653,
+    852654,
+    852655,
+    852656,
+    852657,
+    852691,
+    852692,
+    852693,
+    852694,
+    852695,
+    852696
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_lan/blue_-55011408381159872.png"
+}

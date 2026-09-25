@@ -1,0 +1,26 @@
+{
+  "id": "item__gezi_bianfuzidan",
+  "model": "gezi_bianfuzidan",
+  "name": "gezi_bianfuzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gezi_bianfuzidan",
+  "path": "battle-assets/炮弹/item__gezi_bianfuzidan",
+  "images": [
+    {
+      "file": "bianfu01_-6242585549292935114.png",
+      "name": "bianfu01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6242585549292935114,
+      "source": "CAB-99d095441c847c1582c2e33ead43a498"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gezi_bianfuzidan/bianfu01_-6242585549292935114.png"
+}

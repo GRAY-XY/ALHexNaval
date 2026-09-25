@@ -1,0 +1,37 @@
+{
+  "id": "chargo__yinghuochong1771",
+  "model": "yinghuochong1771",
+  "name": "萤火虫(1771中队)",
+  "names": [
+    "萤火虫(1771中队)"
+  ],
+  "category": "飞机",
+  "source": "chargo/yinghuochong1771",
+  "path": "battle-assets/飞机/chargo__yinghuochong1771",
+  "images": [
+    {
+      "file": "yinghuochong1771_-2830019133477983611.png",
+      "name": "yinghuochong1771",
+      "width": 256,
+      "height": 228,
+      "role": "战斗贴图",
+      "path_id": -2830019133477983611,
+      "source": "CAB-88104be0705ac39cbae77efa7566d921"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__yinghuochong1771/yinghuochong1771_-2830019133477983611.png"
+}

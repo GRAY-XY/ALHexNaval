@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_pingguo",
+  "model": "zidan_pingguo",
+  "name": "苹果子弹",
+  "names": [
+    "苹果子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_pingguo",
+  "path": "battle-assets/炮弹/item__zidan_pingguo",
+  "images": [
+    {
+      "file": "zidan_pingguo_-6777494954383092408.png",
+      "name": "zidan_pingguo",
+      "width": 128,
+      "height": 116,
+      "role": "战斗贴图",
+      "path_id": -6777494954383092408,
+      "source": "CAB-95becb1d04a59b58e7d268825a74a89e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_pingguo/zidan_pingguo_-6777494954383092408.png"
+}

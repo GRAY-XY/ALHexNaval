@@ -1,0 +1,62 @@
+
+yulei_dazhentong.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tuowei_1
+  rotate: false
+  xy: 2, 9
+  size: 273, 94
+  orig: 273, 94
+  offset: 0, 0
+  index: -1
+yedi_1
+  rotate: false
+  xy: 418, 4
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+yedi_1_2
+  rotate: false
+  xy: 437, 4
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+yedi_1_3
+  rotate: false
+  xy: 456, 4
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+yedi_2
+  rotate: false
+  xy: 277, 2
+  size: 45, 14
+  orig: 45, 14
+  offset: 0, 0
+  index: -1
+yedi_2_2
+  rotate: false
+  xy: 324, 2
+  size: 45, 14
+  orig: 45, 14
+  offset: 0, 0
+  index: -1
+yedi_2_3
+  rotate: false
+  xy: 371, 2
+  size: 45, 14
+  orig: 45, 14
+  offset: 0, 0
+  index: -1
+zhen
+  rotate: false
+  xy: 277, 18
+  size: 223, 85
+  orig: 223, 85
+  offset: 0, 0
+  index: -1

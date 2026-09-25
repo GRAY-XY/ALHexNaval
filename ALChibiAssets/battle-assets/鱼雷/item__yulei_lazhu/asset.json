@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_lazhu",
+  "model": "yulei_lazhu",
+  "name": "蜡烛鱼雷",
+  "names": [
+    "蜡烛鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_lazhu",
+  "path": "battle-assets/鱼雷/item__yulei_lazhu",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "lazhuyulei.skel",
+    "atlas": "lazhuyulei.atlas",
+    "pages": [
+      "lazhuyulei.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_wangqiupai",
+  "model": "paodan_wangqiupai",
+  "name": "网球拍炮弹",
+  "names": [
+    "网球拍炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_wangqiupai",
+  "path": "battle-assets/炮弹/item__paodan_wangqiupai",
+  "images": [
+    {
+      "file": "paodan_wangqiupai_1582608695729238886.png",
+      "name": "paodan_wangqiupai",
+      "width": 128,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": 1582608695729238886,
+      "source": "CAB-94c10ee8a6f851327ed620ba268c0509"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_wangqiupai/paodan_wangqiupai_1582608695729238886.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_jingxihezi",
+  "model": "paodan_jingxihezi",
+  "name": "惊吓盒子炮弹",
+  "names": [
+    "惊吓盒子炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jingxihezi",
+  "path": "battle-assets/炮弹/item__paodan_jingxihezi",
+  "images": [
+    {
+      "file": "paodan_jingxihezi_7658531650137851453.png",
+      "name": "paodan_jingxihezi",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 7658531650137851453,
+      "source": "CAB-66b2fbdb503f9c8024e1bafc9b07248d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jingxihezi/paodan_jingxihezi_7658531650137851453.png",
+  "spine": {
+    "skel": "paodan_jingxihezi.skel",
+    "atlas": "paodan_jingxihezi.atlas",
+    "pages": [
+      "paodan_jingxihezi.png"
+    ]
+  }
+}

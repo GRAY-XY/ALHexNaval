@@ -1,0 +1,17 @@
+{
+  "id": "item__hololive_laser02",
+  "model": "hololive_laser02",
+  "name": "hololive_laser02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hololive_laser02",
+  "path": "battle-assets/炮弹/item__hololive_laser02",
+  "images": [],
+  "particle_systems": 28,
+  "animations": [],
+  "bullet_ids": [
+    660001
+  ],
+  "has_preview": false,
+  "prefab": true
+}

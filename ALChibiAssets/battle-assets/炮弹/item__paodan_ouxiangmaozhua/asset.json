@@ -1,0 +1,38 @@
+{
+  "id": "item__paodan_ouxiangmaozhua",
+  "model": "paodan_ouxiangmaozhua",
+  "name": "偶像猫爪炮弹",
+  "names": [
+    "偶像猫爪炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_ouxiangmaozhua",
+  "path": "battle-assets/炮弹/item__paodan_ouxiangmaozhua",
+  "images": [
+    {
+      "file": "paodan_ouxiangmaozhua_4450499352220000818.png",
+      "name": "paodan_ouxiangmaozhua",
+      "width": 128,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 4450499352220000818,
+      "source": "CAB-60d1ffcdcda6013b1c036c85c01b585f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160890,
+    3146010,
+    3146023,
+    3146025,
+    3146026,
+    3146027,
+    3146028,
+    3146029,
+    3146030
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_ouxiangmaozhua/paodan_ouxiangmaozhua_4450499352220000818.png"
+}

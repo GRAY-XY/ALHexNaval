@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__zidan_bianfushimo",
+  "model": "zidan_bianfushimo",
+  "name": "子弹：蝙蝠使魔",
+  "names": [
+    "子弹：蝙蝠使魔"
+  ],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_bianfushimo",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_bianfushimo",
+  "images": [
+    {
+      "file": "zidan_bianfushimo_6855473352644861052.png",
+      "name": "zidan_bianfushimo",
+      "width": 128,
+      "height": 76,
+      "role": "原始精灵",
+      "path_id": 6855473352644861052,
+      "source": "CAB-ea7a0b01b2319cd97d7d9592381dfae2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

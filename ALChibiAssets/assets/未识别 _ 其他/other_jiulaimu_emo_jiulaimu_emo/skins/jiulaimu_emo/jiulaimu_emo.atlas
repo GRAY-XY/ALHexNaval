@@ -1,0 +1,55 @@
+
+jiulaimu_emo.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 403
+  size: 547, 600
+  orig: 547, 600
+  offset: 0, 0
+  index: -1
+chazi
+  rotate: false
+  xy: 562, 95
+  size: 554, 313
+  orig: 554, 313
+  offset: 0, 0
+  index: -1
+chibang
+  rotate: true
+  xy: 1072, 454
+  size: 549, 459
+  orig: 549, 459
+  offset: 0, 0
+  index: -1
+chibang_2
+  rotate: true
+  xy: 551, 410
+  size: 593, 266
+  orig: 593, 266
+  offset: 0, 0
+  index: -1
+heiyan
+  rotate: false
+  xy: 2, 16
+  size: 558, 385
+  orig: 558, 385
+  offset: 0, 0
+  index: -1
+huoyan
+  rotate: true
+  xy: 819, 430
+  size: 573, 251
+  orig: 573, 251
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 562, 2
+  size: 501, 91
+  orig: 501, 91
+  offset: 0, 0
+  index: -1

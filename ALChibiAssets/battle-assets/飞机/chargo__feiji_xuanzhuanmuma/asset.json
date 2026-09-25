@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_xuanzhuanmuma",
+  "model": "feiji_xuanzhuanmuma",
+  "name": "旋转木马飞机(鱼雷)",
+  "names": [
+    "旋转木马飞机(鱼雷)",
+    "旋转木马飞机(战斗)",
+    "旋转木马飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_xuanzhuanmuma",
+  "path": "battle-assets/飞机/chargo__feiji_xuanzhuanmuma",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_xuanzhuanmuma_-5845234007614195475.png",
+      "name": "feiji_xuanzhuanmuma",
+      "width": 256,
+      "height": 190,
+      "role": "战斗贴图",
+      "path_id": -5845234007614195475,
+      "source": "CAB-ac7e003f9738ad88b262f1a02c51209e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_xuanzhuanmuma/aircraft_shadow_2192772484218123160.png"
+}

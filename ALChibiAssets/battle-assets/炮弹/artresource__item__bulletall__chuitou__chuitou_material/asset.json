@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__chuitou__chuitou_material",
+  "model": "chuitou_material",
+  "name": "chuitou_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/chuitou/chuitou_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__chuitou__chuitou_material",
+  "images": [
+    {
+      "file": "chuitou_1743669907456978588.png",
+      "name": "chuitou",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1743669907456978588,
+      "source": "CAB-3d924a03607a5e97c6cd61f8b01c5d2c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

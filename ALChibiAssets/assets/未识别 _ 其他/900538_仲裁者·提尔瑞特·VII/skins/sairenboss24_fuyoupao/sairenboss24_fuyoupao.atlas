@@ -1,0 +1,13 @@
+
+sairenboss24_fuyoupao.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fuyoupao_1
+  rotate: false
+  xy: 2, 2
+  size: 143, 105
+  orig: 143, 105
+  offset: 0, 0
+  index: -1

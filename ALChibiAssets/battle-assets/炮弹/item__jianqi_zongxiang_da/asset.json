@@ -1,0 +1,19 @@
+{
+  "id": "item__jianqi_zongxiang_da",
+  "model": "jianqi_zongxiang_da",
+  "name": "jianqi_zongxiang_da",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jianqi_zongxiang_da",
+  "path": "battle-assets/炮弹/item__jianqi_zongxiang_da",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29600000,
+    29610500,
+    29661003
+  ],
+  "has_preview": false,
+  "prefab": true
+}

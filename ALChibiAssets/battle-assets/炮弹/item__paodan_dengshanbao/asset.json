@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dengshanbao",
+  "model": "paodan_dengshanbao",
+  "name": "登山包(？)炮弹",
+  "names": [
+    "登山包(？)炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dengshanbao",
+  "path": "battle-assets/炮弹/item__paodan_dengshanbao",
+  "images": [
+    {
+      "file": "paodan_dengshanbao_3825373154553548464.png",
+      "name": "paodan_dengshanbao",
+      "width": 128,
+      "height": 150,
+      "role": "战斗贴图",
+      "path_id": 3825373154553548464,
+      "source": "CAB-39f0a582511e80600fa2efb2d20ffd85"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dengshanbao/paodan_dengshanbao_3825373154553548464.png"
+}

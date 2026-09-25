@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_zhuzhuwenxiang",
+  "model": "feiji_zhuzhuwenxiang",
+  "name": "猪猪蚊香(鱼雷)",
+  "names": [
+    "猪猪蚊香(鱼雷)",
+    "猪猪蚊香(战斗)",
+    "猪猪蚊香(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_zhuzhuwenxiang",
+  "path": "battle-assets/飞机/chargo__feiji_zhuzhuwenxiang",
+  "images": [
+    {
+      "file": "feiji_zhuzhuwenxiang_5385814546830627684.png",
+      "name": "feiji_zhuzhuwenxiang",
+      "width": 128,
+      "height": 121,
+      "role": "战斗贴图",
+      "path_id": 5385814546830627684,
+      "source": "CAB-4e6f31c3f0c0573b2613bff7499c1ba5"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_zhuzhuwenxiang/feiji_zhuzhuwenxiang_5385814546830627684.png"
+}

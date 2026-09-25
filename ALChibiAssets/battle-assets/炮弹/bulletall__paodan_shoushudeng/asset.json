@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_shoushudeng",
+  "model": "paodan_shoushudeng",
+  "name": "诊疗灯炮弹",
+  "names": [
+    "诊疗灯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_shoushudeng",
+  "path": "battle-assets/炮弹/bulletall__paodan_shoushudeng",
+  "images": [
+    {
+      "file": "paodan_shoushudeng_-60634770445001472.png",
+      "name": "paodan_shoushudeng",
+      "width": 128,
+      "height": 129,
+      "role": "原始精灵",
+      "path_id": -60634770445001472,
+      "source": "CAB-a69572ea24e3099b1d0c89f17bf1a79f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

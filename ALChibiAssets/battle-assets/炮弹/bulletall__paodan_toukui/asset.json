@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_toukui",
+  "model": "paodan_toukui",
+  "name": "安全头盔炮弹",
+  "names": [
+    "安全头盔炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_toukui",
+  "path": "battle-assets/炮弹/bulletall__paodan_toukui",
+  "images": [
+    {
+      "file": "paodan_toukui_5946028147751337507.png",
+      "name": "paodan_toukui",
+      "width": 128,
+      "height": 148,
+      "role": "原始精灵",
+      "path_id": 5946028147751337507,
+      "source": "CAB-f74b58f7aa574efb44e9778e81268859"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

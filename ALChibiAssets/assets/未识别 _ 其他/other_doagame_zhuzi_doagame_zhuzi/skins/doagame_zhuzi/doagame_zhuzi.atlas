@@ -1,0 +1,237 @@
+
+doagame_zhuzi.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 292, 4
+  size: 66, 95
+  orig: 66, 95
+  offset: 0, 0
+  index: -1
+ear
+  rotate: true
+  xy: 764, 158
+  size: 28, 40
+  orig: 28, 40
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 572, 10
+  size: 92, 39
+  orig: 92, 39
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 494, 104
+  size: 147, 150
+  orig: 147, 150
+  offset: 0, 0
+  index: -1
+fx_pi
+  rotate: true
+  xy: 2, 54
+  size: 200, 62
+  orig: 200, 62
+  offset: 0, 0
+  index: -1
+fx_talk
+  rotate: false
+  xy: 781, 42
+  size: 39, 62
+  orig: 39, 62
+  offset: 0, 0
+  index: -1
+hair_F
+  rotate: true
+  xy: 121, 9
+  size: 71, 98
+  orig: 71, 98
+  offset: 0, 0
+  index: -1
+hair_L
+  rotate: true
+  xy: 613, 16
+  size: 86, 127
+  orig: 86, 127
+  offset: 0, 0
+  index: -1
+hair_Ls
+  rotate: true
+  xy: 822, 51
+  size: 60, 40
+  orig: 60, 40
+  offset: 0, 0
+  index: -1
+hair_R
+  rotate: false
+  xy: 643, 126
+  size: 59, 128
+  orig: 59, 128
+  offset: 0, 0
+  index: -1
+hair_b
+  rotate: true
+  xy: 66, 82
+  size: 172, 156
+  orig: 172, 156
+  offset: 0, 0
+  index: -1
+hair_bm
+  rotate: true
+  xy: 372, 103
+  size: 151, 120
+  orig: 151, 120
+  offset: 0, 0
+  index: -1
+hand_L1
+  rotate: false
+  xy: 844, 200
+  size: 41, 54
+  orig: 41, 54
+  offset: 0, 0
+  index: -1
+hand_L2
+  rotate: false
+  xy: 795, 113
+  size: 55, 43
+  orig: 55, 43
+  offset: 0, 0
+  index: -1
+hand_R1
+  rotate: true
+  xy: 837, 7
+  size: 42, 52
+  orig: 42, 52
+  offset: 0, 0
+  index: -1
+hand_R2
+  rotate: true
+  xy: 704, 104
+  size: 47, 48
+  orig: 47, 48
+  offset: 0, 0
+  index: -1
+handi_1
+  rotate: true
+  xy: 264, 40
+  size: 40, 18
+  orig: 40, 18
+  offset: 0, 0
+  index: -1
+handi_2
+  rotate: false
+  xy: 66, 55
+  size: 36, 25
+  orig: 36, 25
+  offset: 0, 0
+  index: -1
+handi_3
+  rotate: false
+  xy: 643, 106
+  size: 38, 18
+  orig: 38, 18
+  offset: 0, 0
+  index: -1
+leg_L1
+  rotate: false
+  xy: 800, 191
+  size: 42, 63
+  orig: 42, 63
+  offset: 0, 0
+  index: -1
+leg_L2
+  rotate: true
+  xy: 844, 158
+  size: 40, 54
+  orig: 40, 54
+  offset: 0, 0
+  index: -1
+leg_R1
+  rotate: false
+  xy: 221, 9
+  size: 41, 71
+  orig: 41, 71
+  offset: 0, 0
+  index: -1
+leg_R2
+  rotate: true
+  xy: 781, 2
+  size: 38, 54
+  orig: 38, 54
+  offset: 0, 0
+  index: -1
+meimao_1
+  rotate: true
+  xy: 431, 7
+  size: 94, 67
+  orig: 94, 67
+  offset: 0, 0
+  index: -1
+meimao_2
+  rotate: true
+  xy: 500, 10
+  size: 92, 70
+  orig: 92, 70
+  offset: 0, 0
+  index: -1
+meimao_3
+  rotate: true
+  xy: 360, 5
+  size: 94, 69
+  orig: 94, 69
+  offset: 0, 0
+  index: -1
+mudao
+  rotate: false
+  xy: 224, 101
+  size: 146, 153
+  orig: 146, 153
+  offset: 0, 0
+  index: -1
+saihong
+  rotate: false
+  xy: 224, 82
+  size: 66, 17
+  orig: 66, 17
+  offset: 0, 0
+  index: -1
+weijin_b
+  rotate: true
+  xy: 2, 2
+  size: 50, 117
+  orig: 50, 117
+  offset: 0, 0
+  index: -1
+weijin_f
+  rotate: true
+  xy: 764, 188
+  size: 66, 34
+  orig: 66, 34
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: true
+  xy: 754, 106
+  size: 45, 39
+  orig: 45, 39
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: true
+  xy: 742, 16
+  size: 86, 37
+  orig: 86, 37
+  offset: 0, 0
+  index: -1
+yanzhao
+  rotate: true
+  xy: 704, 153
+  size: 101, 58
+  orig: 101, 58
+  offset: 0, 0
+  index: -1

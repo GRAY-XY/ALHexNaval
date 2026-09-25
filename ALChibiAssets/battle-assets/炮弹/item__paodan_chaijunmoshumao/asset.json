@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_chaijunmoshumao",
+  "model": "paodan_chaijunmoshumao",
+  "name": "魔术帽炮弹",
+  "names": [
+    "魔术帽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chaijunmoshumao",
+  "path": "battle-assets/炮弹/item__paodan_chaijunmoshumao",
+  "images": [
+    {
+      "file": "paodan_chaijunmoshumao_-5612307210256955380.png",
+      "name": "paodan_chaijunmoshumao",
+      "width": 128,
+      "height": 71,
+      "role": "战斗贴图",
+      "path_id": -5612307210256955380,
+      "source": "CAB-7996ea485c6b96d18a97313d9525f376"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chaijunmoshumao/paodan_chaijunmoshumao_-5612307210256955380.png"
+}

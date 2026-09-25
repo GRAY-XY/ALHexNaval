@@ -1,0 +1,32 @@
+{
+  "id": "aircrafticon__fi167",
+  "model": "fi167",
+  "name": "Fi-167舰载鱼雷机",
+  "names": [
+    "Fi-167舰载鱼雷机",
+    "德系舰载-鱼雷机I",
+    "德系舰载-鱼雷机II",
+    "德系舰载-鱼雷机III",
+    "德系舰载-鱼雷机IV",
+    "德系舰载-鱼雷机V"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/fi167",
+  "path": "battle-assets/飞机图标/aircrafticon__fi167",
+  "images": [
+    {
+      "file": "FI167_3037165156405234397.png",
+      "name": "FI167",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 3037165156405234397,
+      "source": "CAB-37f438380ba58cb8208a1044435a8a02"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

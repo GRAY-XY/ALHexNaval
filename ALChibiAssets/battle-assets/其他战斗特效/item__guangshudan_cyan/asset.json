@@ -1,0 +1,26 @@
+{
+  "id": "item__guangshudan_cyan",
+  "model": "guangshudan_cyan",
+  "name": "guangshudan_cyan",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/guangshudan_cyan",
+  "path": "battle-assets/其他战斗特效/item__guangshudan_cyan",
+  "images": [
+    {
+      "file": "guangshudan_cyan_-4781474770833815320.png",
+      "name": "guangshudan_cyan",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4781474770833815320,
+      "source": "CAB-c1727091db158a558909923a78e852d0"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__guangshudan_cyan/guangshudan_cyan_-4781474770833815320.png"
+}

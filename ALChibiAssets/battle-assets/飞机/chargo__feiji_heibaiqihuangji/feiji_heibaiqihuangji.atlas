@@ -1,0 +1,20 @@
+
+feiji_heibaiqihuangji.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+heibaiqi
+  rotate: false
+  xy: 2, 174
+  size: 202, 246
+  orig: 202, 246
+  offset: 0, 0
+  index: -1
+jiu
+  rotate: true
+  xy: 2, 2
+  size: 170, 179
+  orig: 170, 179
+  offset: 0, 0
+  index: -1

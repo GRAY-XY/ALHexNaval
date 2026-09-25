@@ -1,0 +1,59 @@
+{
+  "id": "chargo__tbd",
+  "model": "tbd",
+  "name": "默认白鹰鱼雷机",
+  "names": [
+    "默认白鹰鱼雷机",
+    "TBD蹂躏者",
+    "美系舰载-鱼雷机I",
+    "美系舰载-鱼雷机II",
+    "美系舰载-鱼雷机III",
+    "美系舰载-鱼雷机IV",
+    "美系舰载-鱼雷机V",
+    "【战术研修】【BOSS】萨拉托加-鱼雷机",
+    "大黄蜂-鱼雷机",
+    "第一章第一关大黄蜂boss专用轰炸机T1",
+    "世界boss专用轰炸机T1",
+    "【新美系活动B2】BOSS –大黄蜂 鱼雷机",
+    "【新美系活动D2】BOSS –大黄蜂 鱼雷机",
+    "【2022公海舰队活动】剧情战 美系支援飞机 鱼雷机",
+    "挑战关卡8地毯轰炸机T1",
+    "天秤座地毯轰炸机",
+    "【翻格子活动】白鹰鱼雷机",
+    "【大世界】美系舰载-鱼雷机I",
+    "【大世界】美系舰载-鱼雷机II",
+    "【大世界】美系舰载-鱼雷机III",
+    "【大世界】美系舰载-鱼雷机IV",
+    "【大世界】美系舰载-鱼雷机V",
+    "【2023克莱蒙梭活动】剧情战 美系支援飞机 鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/tbd",
+  "path": "battle-assets/飞机/chargo__tbd",
+  "images": [
+    {
+      "file": "tbd_6797871824073537158.png",
+      "name": "tbd",
+      "width": 253,
+      "height": 239,
+      "role": "战斗贴图",
+      "path_id": 6797871824073537158,
+      "source": "CAB-6147b8ee178a92f3c2870336e97e5f06"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__tbd/tbd_6797871824073537158.png"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "item__weixu_baojian_jianqi",
+  "model": "weixu_baojian_jianqi",
+  "name": "weixu_baojian_jianqi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/weixu_baojian_jianqi",
+  "path": "battle-assets/炮弹/item__weixu_baojian_jianqi",
+  "images": [
+    {
+      "file": "weixu_baojian_jianqi01_-2995239110413599108.png",
+      "name": "weixu_baojian_jianqi01",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -2995239110413599108,
+      "source": "CAB-1fd11bfc576fcadb60042842ecf8ea77"
+    },
+    {
+      "file": "weixu_baojian_jianqi02_6086100007312654472.png",
+      "name": "weixu_baojian_jianqi02",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 6086100007312654472,
+      "source": "CAB-1fd11bfc576fcadb60042842ecf8ea77"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3331206,
+    3331218,
+    3331403,
+    3331404
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__weixu_baojian_jianqi/weixu_baojian_jianqi01_-2995239110413599108.png"
+}

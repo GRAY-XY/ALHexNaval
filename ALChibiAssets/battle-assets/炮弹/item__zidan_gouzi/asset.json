@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gouzi",
+  "model": "zidan_gouzi",
+  "name": "船钩子弹",
+  "names": [
+    "船钩子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gouzi",
+  "path": "battle-assets/炮弹/item__zidan_gouzi",
+  "images": [
+    {
+      "file": "zidan_gouzi_2734662639687285104.png",
+      "name": "zidan_gouzi",
+      "width": 128,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 2734662639687285104,
+      "source": "CAB-39d542f2e193310b89b4eff811364969"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gouzi/zidan_gouzi_2734662639687285104.png"
+}

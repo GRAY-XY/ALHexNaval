@@ -1,0 +1,39 @@
+{
+  "id": "item__doublebulletusa_green",
+  "model": "doublebulletusa_green",
+  "name": "doublebulletusa_green",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/doublebulletusa_green",
+  "path": "battle-assets/炮弹/item__doublebulletusa_green",
+  "images": [
+    {
+      "file": "bullet_UK3_-8867676788208001938.png",
+      "name": "bullet_UK3",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -8867676788208001938,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3220004,
+    3220008,
+    3279204,
+    3291003,
+    3291004,
+    3291005,
+    3291006,
+    3291007,
+    3291008,
+    3291009,
+    3299006,
+    3331411
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__doublebulletusa_green/bullet_UK3_-8867676788208001938.png"
+}

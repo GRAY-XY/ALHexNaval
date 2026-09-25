@@ -1,0 +1,30 @@
+{
+  "id": "item__bulletch_sp3_nt",
+  "model": "bulletch_sp3_nt",
+  "name": "bulletch_sp3_nt",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletch_sp3_nt",
+  "path": "battle-assets/炮弹/item__bulletch_sp3_nt",
+  "images": [
+    {
+      "file": "bullet_baihu_-4769879364325397423.png",
+      "name": "bullet_baihu",
+      "width": 97,
+      "height": 22,
+      "role": "战斗贴图",
+      "path_id": -4769879364325397423,
+      "source": "CAB-685f87ce11c9b00aef17c11cdaa99261"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3148001,
+    3223005,
+    3223015
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletch_sp3_nt/bullet_baihu_-4769879364325397423.png"
+}

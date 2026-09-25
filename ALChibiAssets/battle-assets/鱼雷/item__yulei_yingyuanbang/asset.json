@@ -1,0 +1,32 @@
+{
+  "id": "item__yulei_yingyuanbang",
+  "model": "yulei_yingyuanbang",
+  "name": "应援棒鱼雷",
+  "names": [
+    "应援棒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yingyuanbang",
+  "path": "battle-assets/鱼雷/item__yulei_yingyuanbang",
+  "images": [
+    {
+      "file": "yulei_yingyuanbang_7670445325323960795.png",
+      "name": "yulei_yingyuanbang",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": 7670445325323960795,
+      "source": "CAB-5aac7d9cd9fbb9d04b92a998a5301655"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19329,
+    852431,
+    852442
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yingyuanbang/yulei_yingyuanbang_7670445325323960795.png"
+}

@@ -1,0 +1,34 @@
+
+paodan_wanzhengyushi.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diguang
+  rotate: false
+  xy: 2, 2
+  size: 252, 243
+  orig: 252, 243
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 500, 32
+  size: 213, 213
+  orig: 213, 213
+  offset: 0, 0
+  index: -1
+waiguang1
+  rotate: false
+  xy: 256, 2
+  size: 242, 243
+  orig: 242, 243
+  offset: 0, 0
+  index: -1
+yushi
+  rotate: false
+  xy: 715, 92
+  size: 162, 153
+  orig: 162, 153
+  offset: 0, 0
+  index: -1

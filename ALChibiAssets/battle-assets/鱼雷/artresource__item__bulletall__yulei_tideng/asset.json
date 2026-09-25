@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__yulei_tideng",
+  "model": "yulei_tideng",
+  "name": "提灯鱼雷",
+  "names": [
+    "提灯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_tideng",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_tideng",
+  "images": [
+    {
+      "file": "yulei_tideng_1215402574982630353.png",
+      "name": "yulei_tideng",
+      "width": 128,
+      "height": 81,
+      "role": "原始精灵",
+      "path_id": 1215402574982630353,
+      "source": "CAB-f1f8ba61747130978998305dacd2d38b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

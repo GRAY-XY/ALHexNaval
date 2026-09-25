@@ -1,0 +1,32 @@
+{
+  "id": "item__yulei_holoyulei",
+  "model": "yulei_holoyulei",
+  "name": "深海鱼雷",
+  "names": [
+    "深海鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_holoyulei",
+  "path": "battle-assets/鱼雷/item__yulei_holoyulei",
+  "images": [
+    {
+      "file": "yulei_holoyulei_-6732879752646719182.png",
+      "name": "yulei_holoyulei",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": -6732879752646719182,
+      "source": "CAB-7315a6e9b03551a472df5b8470a110a3"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    660021,
+    660022,
+    660023
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_holoyulei/yulei_holoyulei_-6732879752646719182.png"
+}

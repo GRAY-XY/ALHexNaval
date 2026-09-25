@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_dengguangwurenji",
+  "model": "paodan_dengguangwurenji",
+  "name": "久啾灯光炮弹",
+  "names": [
+    "久啾灯光炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dengguangwurenji",
+  "path": "battle-assets/炮弹/item__paodan_dengguangwurenji",
+  "images": [
+    {
+      "file": "paodan_dengguangwurenji_-2854369920633712104.png",
+      "name": "paodan_dengguangwurenji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2854369920633712104,
+      "source": "CAB-d2687742592affa830fb102ca3f94cac"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dengguangwurenji/paodan_dengguangwurenji_-2854369920633712104.png",
+  "spine": {
+    "skel": "paodan_dengguangwurenji.skel",
+    "atlas": "paodan_dengguangwurenji.atlas",
+    "pages": [
+      "paodan_dengguangwurenji.png"
+    ]
+  }
+}

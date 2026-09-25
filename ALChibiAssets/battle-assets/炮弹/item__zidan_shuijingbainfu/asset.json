@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shuijingbainfu",
+  "model": "zidan_shuijingbainfu",
+  "name": "子弹:水晶蝙蝠",
+  "names": [
+    "子弹:水晶蝙蝠"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shuijingbainfu",
+  "path": "battle-assets/炮弹/item__zidan_shuijingbainfu",
+  "images": [
+    {
+      "file": "zidan_shuijingbainfu_5406493091987052994.png",
+      "name": "zidan_shuijingbainfu",
+      "width": 128,
+      "height": 114,
+      "role": "战斗贴图",
+      "path_id": 5406493091987052994,
+      "source": "CAB-1ec4bb9fb80a56bb4ae4df183045d176"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shuijingbainfu/zidan_shuijingbainfu_5406493091987052994.png"
+}

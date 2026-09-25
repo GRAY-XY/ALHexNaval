@@ -1,0 +1,34 @@
+
+yulei_ceshizhe.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tuowei_1
+  rotate: false
+  xy: 2, 668
+  size: 624, 172
+  orig: 624, 172
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 254
+  size: 508, 219
+  orig: 508, 219
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 2, 2
+  size: 269, 250
+  orig: 269, 250
+  offset: 0, 0
+  index: -1
+yulei
+  rotate: false
+  xy: 2, 475
+  size: 568, 191
+  orig: 568, 191
+  offset: 0, 0
+  index: -1

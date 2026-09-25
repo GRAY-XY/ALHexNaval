@@ -1,0 +1,29 @@
+{
+  "id": "item__xingxingzidan05",
+  "model": "xingxingzidan05",
+  "name": "xingxingzidan05",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xingxingzidan05",
+  "path": "battle-assets/炮弹/item__xingxingzidan05",
+  "images": [
+    {
+      "file": "AL_Line20_5_-7775907475912542074.png",
+      "name": "AL_Line20_5",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7775907475912542074,
+      "source": "CAB-3890a04c6697176ec6efb1beaeb16e2e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    750101,
+    3059503
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xingxingzidan05/AL_Line20_5_-7775907475912542074.png"
+}

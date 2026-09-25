@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zixingche",
+  "model": "yulei_zixingche",
+  "name": "疾速单车鱼雷",
+  "names": [
+    "疾速单车鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zixingche",
+  "path": "battle-assets/鱼雷/item__yulei_zixingche",
+  "images": [
+    {
+      "file": "yulei_zixingche_-2740372305575536564.png",
+      "name": "yulei_zixingche",
+      "width": 128,
+      "height": 73,
+      "role": "战斗贴图",
+      "path_id": -2740372305575536564,
+      "source": "CAB-7fe535595334246ad467205ab844d9aa"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zixingche/yulei_zixingche_-2740372305575536564.png"
+}

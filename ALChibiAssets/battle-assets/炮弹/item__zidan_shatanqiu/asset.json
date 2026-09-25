@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shatanqiu",
+  "model": "zidan_shatanqiu",
+  "name": "浮球子弹",
+  "names": [
+    "浮球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shatanqiu",
+  "path": "battle-assets/炮弹/item__zidan_shatanqiu",
+  "images": [
+    {
+      "file": "zidan_shatanqiu_1240706962079103736.png",
+      "name": "zidan_shatanqiu",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 1240706962079103736,
+      "source": "CAB-7938ac74af37e306a4613d76d2509499"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shatanqiu/zidan_shatanqiu_1240706962079103736.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dal_sisinai",
+  "model": "paodan_dal_sisinai",
+  "name": "飞翔的四糸奈（炮弹）",
+  "names": [
+    "飞翔的四糸奈（炮弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dal_sisinai",
+  "path": "battle-assets/炮弹/item__paodan_dal_sisinai",
+  "images": [
+    {
+      "file": "paodan_dal_sisinai_-7328584185352320283.png",
+      "name": "paodan_dal_sisinai",
+      "width": 111,
+      "height": 105,
+      "role": "战斗贴图",
+      "path_id": -7328584185352320283,
+      "source": "CAB-64ee5e38bc1a43b10844883014bdb819"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dal_sisinai/paodan_dal_sisinai_-7328584185352320283.png"
+}

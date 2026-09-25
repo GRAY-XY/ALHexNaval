@@ -1,0 +1,46 @@
+{
+  "id": "item__paodan_aerbi",
+  "model": "paodan_aerbi",
+  "name": "paodan_aerbi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_aerbi",
+  "path": "battle-assets/炮弹/item__paodan_aerbi",
+  "images": [
+    {
+      "file": "line03_-1308468022008906639.png",
+      "name": "line03",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1308468022008906639,
+      "source": "CAB-57c6071dbabf924e93c2b4f1c6961cbb"
+    },
+    {
+      "file": "line06_3610874058445019612.png",
+      "name": "line06",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3610874058445019612,
+      "source": "CAB-57c6071dbabf924e93c2b4f1c6961cbb"
+    },
+    {
+      "file": "jingling01_7168045351994523620.png",
+      "name": "jingling01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7168045351994523620,
+      "source": "CAB-57c6071dbabf924e93c2b4f1c6961cbb"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    161157
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_aerbi/line03_-1308468022008906639.png"
+}

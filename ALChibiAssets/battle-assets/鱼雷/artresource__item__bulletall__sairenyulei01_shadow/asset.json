@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__sairenyulei01_shadow",
+  "model": "sairenyulei01_shadow",
+  "name": "sairenyulei01_shadow",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/sairenyulei01_shadow",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__sairenyulei01_shadow",
+  "images": [
+    {
+      "file": "sairenyulei01_shadow_-8049092025067373697.png",
+      "name": "sairenyulei01_shadow",
+      "width": 232,
+      "height": 75,
+      "role": "原始精灵",
+      "path_id": -8049092025067373697,
+      "source": "CAB-844fa0c27863481d8bcd089503c5e01d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

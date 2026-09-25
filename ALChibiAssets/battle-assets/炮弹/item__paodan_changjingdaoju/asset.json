@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_changjingdaoju",
+  "model": "paodan_changjingdaoju",
+  "name": "场景道具",
+  "names": [
+    "场景道具"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_changjingdaoju",
+  "path": "battle-assets/炮弹/item__paodan_changjingdaoju",
+  "images": [
+    {
+      "file": "paodan_changjingdaoju_8380688854425144630.png",
+      "name": "paodan_changjingdaoju",
+      "width": 127,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": 8380688854425144630,
+      "source": "CAB-eaefae168b4b1ae04d6a3cde4ac2959e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_changjingdaoju/paodan_changjingdaoju_8380688854425144630.png"
+}

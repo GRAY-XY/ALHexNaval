@@ -1,0 +1,153 @@
+
+yulei_jupaobrs.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 20
+  size: 322, 106
+  orig: 322, 106
+  offset: 0, 0
+  index: -1
+jiange_c1
+  rotate: false
+  xy: 674, 10
+  size: 61, 45
+  orig: 61, 45
+  offset: 0, 0
+  index: -1
+lizi_1
+  rotate: false
+  xy: 296, 3
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+lizi_2
+  rotate: true
+  xy: 287, 2
+  size: 8, 7
+  orig: 8, 7
+  offset: 0, 0
+  index: -1
+lizi_3
+  rotate: false
+  xy: 305, 3
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+lizi_4
+  rotate: false
+  xy: 302, 12
+  size: 7, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+lizi_5
+  rotate: false
+  xy: 142, 2
+  size: 6, 5
+  orig: 6, 5
+  offset: 0, 0
+  index: -1
+penshe_1
+  rotate: false
+  xy: 164, 4
+  size: 68, 6
+  orig: 68, 6
+  offset: 0, 0
+  index: -1
+penshe_2
+  rotate: false
+  xy: 90, 9
+  size: 72, 9
+  orig: 72, 9
+  offset: 0, 0
+  index: -1
+penshe_3
+  rotate: false
+  xy: 2, 9
+  size: 86, 9
+  orig: 86, 9
+  offset: 0, 0
+  index: -1
+penshe_4
+  rotate: false
+  xy: 85, 2
+  size: 55, 5
+  orig: 55, 5
+  offset: 0, 0
+  index: -1
+penshe_5
+  rotate: false
+  xy: 2, 2
+  size: 81, 5
+  orig: 81, 5
+  offset: 0, 0
+  index: -1
+penshe_6
+  rotate: false
+  xy: 237, 12
+  size: 63, 6
+  orig: 63, 6
+  offset: 0, 0
+  index: -1
+penshe_7
+  rotate: false
+  xy: 234, 2
+  size: 51, 8
+  orig: 51, 8
+  offset: 0, 0
+  index: -1
+penshe_8
+  rotate: false
+  xy: 164, 12
+  size: 71, 6
+  orig: 71, 6
+  offset: 0, 0
+  index: -1
+qian_jt
+  rotate: true
+  xy: 742, 57
+  size: 69, 55
+  orig: 69, 55
+  offset: 0, 0
+  index: -1
+qianfaguang
+  rotate: false
+  xy: 546, 33
+  size: 126, 93
+  orig: 126, 93
+  offset: 0, 0
+  index: -1
+weiyan
+  rotate: false
+  xy: 326, 33
+  size: 218, 93
+  orig: 218, 93
+  offset: 0, 0
+  index: -1
+xian_t
+  rotate: true
+  xy: 674, 57
+  size: 69, 66
+  orig: 69, 66
+  offset: 0, 0
+  index: -1
+zhuan_b1
+  rotate: false
+  xy: 341, 12
+  size: 48, 19
+  orig: 48, 19
+  offset: 0, 0
+  index: -1
+zhuan_b2
+  rotate: false
+  xy: 314, 8
+  size: 25, 10
+  orig: 25, 10
+  offset: 0, 0
+  index: -1

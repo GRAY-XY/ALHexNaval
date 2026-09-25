@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_hanbao",
+  "model": "paodan_hanbao",
+  "name": "汉堡炮弹",
+  "names": [
+    "汉堡炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hanbao",
+  "path": "battle-assets/炮弹/item__paodan_hanbao",
+  "images": [
+    {
+      "file": "paodan_hanbao_3334607206335140125.png",
+      "name": "paodan_hanbao",
+      "width": 128,
+      "height": 119,
+      "role": "战斗贴图",
+      "path_id": 3334607206335140125,
+      "source": "CAB-cb74183c8632bf9ea143fd9f17d6661b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hanbao/paodan_hanbao_3334607206335140125.png"
+}

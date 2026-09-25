@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_niuzaixue",
+  "model": "paodan_niuzaixue",
+  "name": "牛仔靴炮弹",
+  "names": [
+    "牛仔靴炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_niuzaixue",
+  "path": "battle-assets/炮弹/item__paodan_niuzaixue",
+  "images": [
+    {
+      "file": "paodan_niuzaixue_3213972466371587924.png",
+      "name": "paodan_niuzaixue",
+      "width": 124,
+      "height": 125,
+      "role": "战斗贴图",
+      "path_id": 3213972466371587924,
+      "source": "CAB-e45dbe38095e8702014665f0f0111e38"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_niuzaixue/paodan_niuzaixue_3213972466371587924.png"
+}

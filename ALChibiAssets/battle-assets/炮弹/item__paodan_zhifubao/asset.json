@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhifubao",
+  "model": "paodan_zhifubao",
+  "name": "制服包炮弹",
+  "names": [
+    "制服包炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhifubao",
+  "path": "battle-assets/炮弹/item__paodan_zhifubao",
+  "images": [
+    {
+      "file": "paodan_zhifubao_-6433010931865560853.png",
+      "name": "paodan_zhifubao",
+      "width": 256,
+      "height": 183,
+      "role": "战斗贴图",
+      "path_id": -6433010931865560853,
+      "source": "CAB-d0452687e559d9f261b2f369938ee317"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhifubao/paodan_zhifubao_-6433010931865560853.png"
+}

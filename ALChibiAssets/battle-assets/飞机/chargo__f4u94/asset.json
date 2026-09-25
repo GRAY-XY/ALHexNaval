@@ -1,0 +1,37 @@
+{
+  "id": "chargo__f4u94",
+  "model": "f4u94",
+  "name": "F4U海盗（VBF-94中队）",
+  "names": [
+    "F4U海盗（VBF-94中队）"
+  ],
+  "category": "飞机",
+  "source": "chargo/f4u94",
+  "path": "battle-assets/飞机/chargo__f4u94",
+  "images": [
+    {
+      "file": "F4U94_1416062602256640860.png",
+      "name": "F4U94",
+      "width": 253,
+      "height": 246,
+      "role": "战斗贴图",
+      "path_id": 1416062602256640860,
+      "source": "CAB-22fe1e87b576ebe7befac3aaaedbba0c"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__f4u94/F4U94_1416062602256640860.png"
+}

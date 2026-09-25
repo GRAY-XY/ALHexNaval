@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__chonglangjiu__chonglangjiu_material",
+  "model": "chonglangjiu_material",
+  "name": "chonglangjiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/chonglangjiu/chonglangjiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__chonglangjiu__chonglangjiu_material",
+  "images": [
+    {
+      "file": "chonglangjiu_7444725484666461631.png",
+      "name": "chonglangjiu",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7444725484666461631,
+      "source": "CAB-0cccf8c487fd3c83003dc33fd5978987"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

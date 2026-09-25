@@ -1,0 +1,29 @@
+{
+  "id": "item__bullet_brs",
+  "model": "bullet_brs",
+  "name": "bullet_brs",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_brs",
+  "path": "battle-assets/炮弹/item__bullet_brs",
+  "images": [
+    {
+      "file": "bullet_BRS_1468319963604871259.png",
+      "name": "bullet_BRS",
+      "width": 836,
+      "height": 311,
+      "role": "战斗贴图",
+      "path_id": 1468319963604871259,
+      "source": "CAB-ab232806ae41e5abc57cd1fe8bd42b99"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    167931,
+    3279101
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_brs/bullet_BRS_1468319963604871259.png"
+}

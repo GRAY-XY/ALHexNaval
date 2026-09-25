@@ -1,0 +1,34 @@
+
+fage_huoxiang.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 180, 95
+  size: 181, 81
+  orig: 181, 81
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 180, 18
+  size: 169, 75
+  orig: 169, 75
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 363, 2
+  size: 174, 82
+  orig: 174, 82
+  offset: 0, 0
+  index: -1
+fage_huoxiang
+  rotate: false
+  xy: 2, 4
+  size: 176, 172
+  orig: 176, 172
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,132 @@
+
+fengfan_lingti_zibao.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_s
+  rotate: false
+  xy: 369, 919
+  size: 105, 77
+  orig: 105, 77
+  offset: 0, 0
+  index: -1
+chujiao_1_s
+  rotate: false
+  xy: 165, 977
+  size: 44, 19
+  orig: 44, 19
+  offset: 0, 0
+  index: -1
+chujiao_2_s
+  rotate: false
+  xy: 254, 972
+  size: 35, 24
+  orig: 35, 24
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 30, 985
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 49, 985
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: false
+  xy: 15, 987
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: false
+  xy: 68, 985
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: false
+  xy: 107, 984
+  size: 19, 12
+  orig: 19, 12
+  offset: 0, 0
+  index: -1
+gd_6
+  rotate: false
+  xy: 2, 988
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+gd_7
+  rotate: false
+  xy: 87, 985
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+huo_s
+  rotate: false
+  xy: 476, 911
+  size: 128, 85
+  orig: 128, 85
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 608
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 305
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+tui1_s
+  rotate: false
+  xy: 330, 960
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+tui2_s
+  rotate: true
+  xy: 211, 974
+  size: 22, 41
+  orig: 22, 41
+  offset: 0, 0
+  index: -1
+tui3_s
+  rotate: true
+  xy: 291, 965
+  size: 31, 37
+  orig: 31, 37
+  offset: 0, 0
+  index: -1
+tui4_s
+  rotate: true
+  xy: 128, 980
+  size: 16, 35
+  orig: 16, 35
+  offset: 0, 0
+  index: -1

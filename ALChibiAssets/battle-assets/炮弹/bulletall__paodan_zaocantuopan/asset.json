@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_zaocantuopan",
+  "model": "paodan_zaocantuopan",
+  "name": "海滨早餐炮弹",
+  "names": [
+    "海滨早餐炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_zaocantuopan",
+  "path": "battle-assets/炮弹/bulletall__paodan_zaocantuopan",
+  "images": [
+    {
+      "file": "paodan_zaocantuopan_-6910112521873189256.png",
+      "name": "paodan_zaocantuopan",
+      "width": 128,
+      "height": 74,
+      "role": "原始精灵",
+      "path_id": -6910112521873189256,
+      "source": "CAB-9c49187b7f6c52c958efa69a6874de9a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

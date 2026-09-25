@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhisan",
+  "model": "yulei_zhisan",
+  "name": "千机伞影鱼雷",
+  "names": [
+    "千机伞影鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhisan",
+  "path": "battle-assets/鱼雷/item__yulei_zhisan",
+  "images": [
+    {
+      "file": "yulei_zhisan_-8921703867866406035.png",
+      "name": "yulei_zhisan",
+      "width": 128,
+      "height": 25,
+      "role": "战斗贴图",
+      "path_id": -8921703867866406035,
+      "source": "CAB-b05b36e18560d9e4952b2c208f35a5a9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhisan/yulei_zhisan_-8921703867866406035.png"
+}

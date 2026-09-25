@@ -1,0 +1,33 @@
+{
+  "id": "item__zhuoshaozidan",
+  "model": "zhuoshaozidan",
+  "name": "zhuoshaozidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhuoshaozidan",
+  "path": "battle-assets/炮弹/item__zhuoshaozidan",
+  "images": [
+    {
+      "file": "hwxqb_1_-1160730454591545268.png",
+      "name": "hwxqb_1",
+      "width": 48,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -1160730454591545268,
+      "source": "CAB-9b35c3ecb415ce644dfeff567c6ebee3"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    853104,
+    853105,
+    853106,
+    855626,
+    29610020,
+    29621131
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zhuoshaozidan/hwxqb_1_-1160730454591545268.png"
+}

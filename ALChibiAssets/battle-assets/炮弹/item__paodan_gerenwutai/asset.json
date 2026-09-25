@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_gerenwutai",
+  "model": "paodan_gerenwutai",
+  "name": "个人舞台",
+  "names": [
+    "个人舞台"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_gerenwutai",
+  "path": "battle-assets/炮弹/item__paodan_gerenwutai",
+  "images": [
+    {
+      "file": "paodan_gerenwutai_-7941604031944268546.png",
+      "name": "paodan_gerenwutai",
+      "width": 128,
+      "height": 117,
+      "role": "战斗贴图",
+      "path_id": -7941604031944268546,
+      "source": "CAB-991de6e4e97880812ff1d5cb2d71fb14"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_gerenwutai/paodan_gerenwutai_-7941604031944268546.png"
+}

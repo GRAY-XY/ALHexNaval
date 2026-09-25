@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shengdanfeijiu__shengdanfeijiu_material",
+  "model": "shengdanfeijiu_material",
+  "name": "shengdanfeijiu_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/shengdanfeijiu/shengdanfeijiu_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__shengdanfeijiu__shengdanfeijiu_material",
+  "images": [
+    {
+      "file": "shengdanfeijiu_6802265442981321675.png",
+      "name": "shengdanfeijiu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6802265442981321675,
+      "source": "CAB-4949e13e0b3a0dd934dbd9b02adff47c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

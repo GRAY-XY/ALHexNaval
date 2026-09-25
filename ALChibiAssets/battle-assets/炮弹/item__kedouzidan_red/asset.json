@@ -1,0 +1,48 @@
+{
+  "id": "item__kedouzidan_red",
+  "model": "kedouzidan_red",
+  "name": "kedouzidan_red",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/kedouzidan_red",
+  "path": "battle-assets/炮弹/item__kedouzidan_red",
+  "images": [
+    {
+      "file": "kedouzidan_red_-7960610181715748890.png",
+      "name": "kedouzidan_red",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -7960610181715748890,
+      "source": "CAB-3a85f094d226e8323c2ba9c8f4e17032"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    167017,
+    170651,
+    170652,
+    3125013,
+    3125014,
+    3125015,
+    3125016,
+    3125017,
+    3125018,
+    3125019,
+    3125020,
+    3125029,
+    3139201,
+    3139202,
+    3154013,
+    3154014,
+    3154015,
+    3154016,
+    3154017,
+    3205003,
+    3205103
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__kedouzidan_red/kedouzidan_red_-7960610181715748890.png"
+}

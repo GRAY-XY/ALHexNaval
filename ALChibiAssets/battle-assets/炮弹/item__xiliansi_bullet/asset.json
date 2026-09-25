@@ -1,0 +1,38 @@
+{
+  "id": "item__xiliansi_bullet",
+  "model": "xiliansi_bullet",
+  "name": "xiliansi_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiliansi_bullet",
+  "path": "battle-assets/炮弹/item__xiliansi_bullet",
+  "images": [
+    {
+      "file": "xiliansi_bullet_-3651196905819353394.png",
+      "name": "xiliansi_bullet",
+      "width": 89,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -3651196905819353394,
+      "source": "CAB-e17c2fb78b1ea68a22f8269708991146"
+    },
+    {
+      "file": "D_Glow_01A_-8905779048531165808.png",
+      "name": "D_Glow_01A",
+      "width": 512,
+      "height": 512,
+      "role": "战斗贴图",
+      "path_id": -8905779048531165808,
+      "source": "CAB-eb8af57e04c50cf3f958ccf44a2c22f5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160963,
+    160964
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xiliansi_bullet/xiliansi_bullet_-3651196905819353394.png"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "item__z23_zhanfu",
+  "model": "z23_zhanfu",
+  "name": "z23_zhanfu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/z23_zhanfu",
+  "path": "battle-assets/炮弹/item__z23_zhanfu",
+  "images": [
+    {
+      "file": "dao01_mask_1812748664631309354.png",
+      "name": "dao01_mask",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1812748664631309354,
+      "source": "CAB-52966837ba2bada19e6aabec3411e551"
+    },
+    {
+      "file": "new01_4312457478050314322.png",
+      "name": "new01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4312457478050314322,
+      "source": "CAB-52966837ba2bada19e6aabec3411e551"
+    },
+    {
+      "file": "new04_7329608507428382711.png",
+      "name": "new04",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7329608507428382711,
+      "source": "CAB-52966837ba2bada19e6aabec3411e551"
+    }
+  ],
+  "particle_systems": 98,
+  "animations": [],
+  "bullet_ids": [
+    710227
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__z23_zhanfu/dao01_mask_1812748664631309354.png"
+}

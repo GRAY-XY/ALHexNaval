@@ -1,0 +1,51 @@
+{
+  "id": "artresource__item__bulletall__bullet_sailship",
+  "model": "bullet_sailship",
+  "name": "bullet_sailship",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bullet_sailship",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bullet_sailship",
+  "images": [
+    {
+      "file": "bullet_sailship_3718299048147809143.png",
+      "name": "bullet_sailship",
+      "width": 65,
+      "height": 65,
+      "role": "原始精灵",
+      "path_id": 3718299048147809143,
+      "source": "CAB-e6f3c8ff852057b2ac9eeb9c51830387"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    1350,
+    1351,
+    19407,
+    19408,
+    19409,
+    19770,
+    160943,
+    160950,
+    160951,
+    160955,
+    160954,
+    163321,
+    163322,
+    163323,
+    163324,
+    163391,
+    163392,
+    163393,
+    163394,
+    165501,
+    170197,
+    170202,
+    170601,
+    170838,
+    170881
+  ],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,22 @@
+{
+  "id": "item__bullet_dayu09",
+  "model": "bullet_dayu09",
+  "name": "bullet_dayu09",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_dayu09",
+  "path": "battle-assets/炮弹/item__bullet_dayu09",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    3345198,
+    3345298,
+    3355004,
+    3355111,
+    3355114,
+    3384011
+  ],
+  "has_preview": false,
+  "prefab": true
+}

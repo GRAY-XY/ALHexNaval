@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_mingjiu",
+  "model": "yulei_mingjiu",
+  "name": "名酒鱼雷",
+  "names": [
+    "名酒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_mingjiu",
+  "path": "battle-assets/鱼雷/item__yulei_mingjiu",
+  "images": [
+    {
+      "file": "yulei_mingjiu_9036840576373950155.png",
+      "name": "yulei_mingjiu",
+      "width": 123,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 9036840576373950155,
+      "source": "CAB-13cd30730897d8ea001f773bfaba4ae1"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3384004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_mingjiu/yulei_mingjiu_9036840576373950155.png"
+}

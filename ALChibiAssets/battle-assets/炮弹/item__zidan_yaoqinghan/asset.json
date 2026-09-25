@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yaoqinghan",
+  "model": "zidan_yaoqinghan",
+  "name": "邀请函子弹",
+  "names": [
+    "邀请函子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yaoqinghan",
+  "path": "battle-assets/炮弹/item__zidan_yaoqinghan",
+  "images": [
+    {
+      "file": "kapai01_-669028598201664999.png",
+      "name": "kapai01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -669028598201664999,
+      "source": "CAB-344edfae926e158e2745c176b0cc5ff7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yaoqinghan/kapai01_-669028598201664999.png"
+}

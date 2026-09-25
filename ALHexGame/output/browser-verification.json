@@ -1,0 +1,7718 @@
+{
+  "verified_at": "2026-09-17T13:22:18.334Z",
+  "renderer": "WebGL",
+  "runtime": {
+    "pixi": "7.4.3",
+    "pixi_spine": "4.0.6",
+    "spine": "3.8"
+  },
+  "units": [
+    {
+      "id": "lafei",
+      "name": "拉菲",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 363.6,
+              "height": 345.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 370.28,
+              "height": 337.29
+            },
+            {
+              "fraction": 0.5,
+              "width": 378.89,
+              "height": 337.45
+            },
+            {
+              "fraction": 0.75,
+              "width": 366.25,
+              "height": 340.88
+            },
+            {
+              "fraction": 0.99,
+              "width": 363.28,
+              "height": 344.96
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 372.64,
+              "height": 343.82
+            },
+            {
+              "fraction": 0.25,
+              "width": 378.15,
+              "height": 355.31
+            },
+            {
+              "fraction": 0.5,
+              "width": 384.11,
+              "height": 345.28
+            },
+            {
+              "fraction": 0.75,
+              "width": 378.81,
+              "height": 344.37
+            },
+            {
+              "fraction": 0.99,
+              "width": 372.75,
+              "height": 343.84
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 364.37,
+              "height": 340.68
+            },
+            {
+              "fraction": 0.25,
+              "width": 364.07,
+              "height": 340.65
+            },
+            {
+              "fraction": 0.5,
+              "width": 361.11,
+              "height": 348.29
+            },
+            {
+              "fraction": 0.75,
+              "width": 364.07,
+              "height": 340.46
+            },
+            {
+              "fraction": 0.99,
+              "width": 364.38,
+              "height": 340.6
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 358.19,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.25,
+              "width": 375.63,
+              "height": 346.08
+            },
+            {
+              "fraction": 0.5,
+              "width": 359.96,
+              "height": 342.56
+            },
+            {
+              "fraction": 0.75,
+              "width": 339.14,
+              "height": 390.13
+            },
+            {
+              "fraction": 0.99,
+              "width": 340.39,
+              "height": 359.07
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 1.6666666269302368,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 358.19,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.25,
+              "width": 411.47,
+              "height": 338.07
+            },
+            {
+              "fraction": 0.5,
+              "width": 374.91,
+              "height": 377.08
+            },
+            {
+              "fraction": 0.75,
+              "width": 417.88,
+              "height": 338.25
+            },
+            {
+              "fraction": 0.99,
+              "width": 359.23,
+              "height": 337.39
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 365.14,
+              "height": 345.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 387.53,
+              "height": 345.01
+            },
+            {
+              "fraction": 0.5,
+              "width": 365.14,
+              "height": 334.76
+            },
+            {
+              "fraction": 0.75,
+              "width": 387.53,
+              "height": 345.01
+            },
+            {
+              "fraction": 0.99,
+              "width": 366.11,
+              "height": 345.21
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 373.96,
+              "height": 343.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 391.31,
+              "height": 342.21
+            },
+            {
+              "fraction": 0.5,
+              "width": 373.96,
+              "height": 343.89
+            },
+            {
+              "fraction": 0.75,
+              "width": 391.31,
+              "height": 342.21
+            },
+            {
+              "fraction": 0.99,
+              "width": 374.78,
+              "height": 343.83
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 364.33,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.25,
+              "width": 425.55,
+              "height": 338.76
+            },
+            {
+              "fraction": 0.5,
+              "width": 364.33,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.75,
+              "width": 425.55,
+              "height": 338.76
+            },
+            {
+              "fraction": 0.99,
+              "width": 367.29,
+              "height": 337.54
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 364.33,
+              "height": 333.21
+            },
+            {
+              "fraction": 0.25,
+              "width": 367.17,
+              "height": 327.9
+            },
+            {
+              "fraction": 0.5,
+              "width": 371.66,
+              "height": 328.02
+            },
+            {
+              "fraction": 0.75,
+              "width": 367.17,
+              "height": 327.9
+            },
+            {
+              "fraction": 0.99,
+              "width": 364.33,
+              "height": 333.15
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 365.14,
+              "height": 345.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 387.53,
+              "height": 345.01
+            },
+            {
+              "fraction": 0.5,
+              "width": 365.14,
+              "height": 334.76
+            },
+            {
+              "fraction": 0.75,
+              "width": 387.53,
+              "height": 345.01
+            },
+            {
+              "fraction": 0.99,
+              "width": 366.11,
+              "height": 345.21
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 326.62,
+              "height": 305.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 327.1,
+              "height": 304.35
+            },
+            {
+              "fraction": 0.5,
+              "width": 326.36,
+              "height": 307.26
+            },
+            {
+              "fraction": 0.75,
+              "width": 327.1,
+              "height": 304.35
+            },
+            {
+              "fraction": 0.99,
+              "width": 326.63,
+              "height": 305.81
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 364.33,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.25,
+              "width": 425.55,
+              "height": 339.5
+            },
+            {
+              "fraction": 0.5,
+              "width": 371.58,
+              "height": 344.53
+            },
+            {
+              "fraction": 0.75,
+              "width": 423.44,
+              "height": 348.56
+            },
+            {
+              "fraction": 0.99,
+              "width": 367.29,
+              "height": 337.55
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 364.33,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.25,
+              "width": 425.55,
+              "height": 339.5
+            },
+            {
+              "fraction": 0.5,
+              "width": 371.58,
+              "height": 344.53
+            },
+            {
+              "fraction": 0.75,
+              "width": 423.44,
+              "height": 348.56
+            },
+            {
+              "fraction": 0.99,
+              "width": 367.29,
+              "height": 337.55
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 358.19,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.25,
+              "width": 444.67,
+              "height": 322.05
+            },
+            {
+              "fraction": 0.5,
+              "width": 336.46,
+              "height": 352.28
+            },
+            {
+              "fraction": 0.75,
+              "width": 423.79,
+              "height": 326.87
+            },
+            {
+              "fraction": 0.99,
+              "width": 357.4,
+              "height": 338.04
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 356.08,
+              "height": 374.98
+            },
+            {
+              "fraction": 0.25,
+              "width": 360.17,
+              "height": 378.59
+            },
+            {
+              "fraction": 0.5,
+              "width": 362.12,
+              "height": 379.43
+            },
+            {
+              "fraction": 0.75,
+              "width": 358.96,
+              "height": 377.31
+            },
+            {
+              "fraction": 0.99,
+              "width": 356.12,
+              "height": 375.02
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 358.81,
+              "height": 347.36
+            },
+            {
+              "fraction": 0.25,
+              "width": 350.12,
+              "height": 354.97
+            },
+            {
+              "fraction": 0.5,
+              "width": 336.99,
+              "height": 368.24
+            },
+            {
+              "fraction": 0.75,
+              "width": 350.12,
+              "height": 354.97
+            },
+            {
+              "fraction": 0.99,
+              "width": 358.72,
+              "height": 347.44
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 3,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 358.19,
+              "height": 337.52
+            },
+            {
+              "fraction": 0.25,
+              "width": 396.5,
+              "height": 343.68
+            },
+            {
+              "fraction": 0.5,
+              "width": 430.41,
+              "height": 339.5
+            },
+            {
+              "fraction": 0.75,
+              "width": 396.5,
+              "height": 343.68
+            },
+            {
+              "fraction": 0.99,
+              "width": 359.76,
+              "height": 337.56
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 2.6666667461395264,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 363.29,
+              "height": 340.45
+            },
+            {
+              "fraction": 0.25,
+              "width": 369.39,
+              "height": 336.99
+            },
+            {
+              "fraction": 0.5,
+              "width": 362.07,
+              "height": 340.41
+            },
+            {
+              "fraction": 0.75,
+              "width": 369.39,
+              "height": 336.99
+            },
+            {
+              "fraction": 0.99,
+              "width": 363,
+              "height": 340.19
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 205.65,
+              "height": 247.31
+            },
+            {
+              "fraction": 0.25,
+              "width": 206.56,
+              "height": 250.29
+            },
+            {
+              "fraction": 0.5,
+              "width": 207.21,
+              "height": 252.91
+            },
+            {
+              "fraction": 0.75,
+              "width": 206.56,
+              "height": 250.29
+            },
+            {
+              "fraction": 0.99,
+              "width": 205.68,
+              "height": 247.43
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 364.37,
+              "height": 340.68
+            },
+            {
+              "fraction": 0.25,
+              "width": 364.07,
+              "height": 340.65
+            },
+            {
+              "fraction": 0.5,
+              "width": 361.11,
+              "height": 348.29
+            },
+            {
+              "fraction": 0.75,
+              "width": 364.07,
+              "height": 340.65
+            },
+            {
+              "fraction": 0.99,
+              "width": 364.38,
+              "height": 340.6
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 189510
+    },
+    {
+      "id": "biaoqiang",
+      "name": "标枪",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 277.84,
+              "height": 384.48
+            },
+            {
+              "fraction": 0.25,
+              "width": 285.47,
+              "height": 338.87
+            },
+            {
+              "fraction": 0.5,
+              "width": 337.54,
+              "height": 359.11
+            },
+            {
+              "fraction": 0.75,
+              "width": 271.83,
+              "height": 363.81
+            },
+            {
+              "fraction": 0.99,
+              "width": 277.64,
+              "height": 384.81
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 272.37,
+              "height": 348.77
+            },
+            {
+              "fraction": 0.25,
+              "width": 322.51,
+              "height": 345.4
+            },
+            {
+              "fraction": 0.5,
+              "width": 333,
+              "height": 360.52
+            },
+            {
+              "fraction": 0.75,
+              "width": 337.31,
+              "height": 358.19
+            },
+            {
+              "fraction": 0.99,
+              "width": 272.48,
+              "height": 348.43
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 257.4,
+              "height": 354.92
+            },
+            {
+              "fraction": 0.25,
+              "width": 251.61,
+              "height": 336.66
+            },
+            {
+              "fraction": 0.5,
+              "width": 259.17,
+              "height": 340.35
+            },
+            {
+              "fraction": 0.75,
+              "width": 251.61,
+              "height": 337.47
+            },
+            {
+              "fraction": 0.99,
+              "width": 257.52,
+              "height": 354.76
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 260.58,
+              "height": 334.83
+            },
+            {
+              "fraction": 0.25,
+              "width": 256.32,
+              "height": 340.72
+            },
+            {
+              "fraction": 0.5,
+              "width": 341.88,
+              "height": 348.94
+            },
+            {
+              "fraction": 0.75,
+              "width": 366.47,
+              "height": 269.07
+            },
+            {
+              "fraction": 0.99,
+              "width": 350.19,
+              "height": 246.54
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 1.6666666269302368,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 260.58,
+              "height": 334.83
+            },
+            {
+              "fraction": 0.25,
+              "width": 292.32,
+              "height": 361.1
+            },
+            {
+              "fraction": 0.5,
+              "width": 292.06,
+              "height": 360.04
+            },
+            {
+              "fraction": 0.75,
+              "width": 270.28,
+              "height": 365.52
+            },
+            {
+              "fraction": 0.99,
+              "width": 259.89,
+              "height": 334.94
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 277.81,
+              "height": 383.67
+            },
+            {
+              "fraction": 0.25,
+              "width": 270.26,
+              "height": 395.89
+            },
+            {
+              "fraction": 0.5,
+              "width": 253.05,
+              "height": 361.98
+            },
+            {
+              "fraction": 0.75,
+              "width": 309.9,
+              "height": 354.51
+            },
+            {
+              "fraction": 0.99,
+              "width": 277.41,
+              "height": 383.06
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 346.55,
+              "height": 349.96
+            },
+            {
+              "fraction": 0.25,
+              "width": 343.27,
+              "height": 355.42
+            },
+            {
+              "fraction": 0.5,
+              "width": 346.55,
+              "height": 349.96
+            },
+            {
+              "fraction": 0.75,
+              "width": 343,
+              "height": 356.09
+            },
+            {
+              "fraction": 0.99,
+              "width": 346.49,
+              "height": 349.36
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 261,
+              "height": 335.96
+            },
+            {
+              "fraction": 0.25,
+              "width": 261.05,
+              "height": 356.22
+            },
+            {
+              "fraction": 0.5,
+              "width": 261,
+              "height": 335.96
+            },
+            {
+              "fraction": 0.75,
+              "width": 261.74,
+              "height": 357.02
+            },
+            {
+              "fraction": 0.99,
+              "width": 260.99,
+              "height": 336.6
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 298.21,
+              "height": 348.64
+            },
+            {
+              "fraction": 0.25,
+              "width": 310.79,
+              "height": 350.95
+            },
+            {
+              "fraction": 0.5,
+              "width": 322.53,
+              "height": 353.86
+            },
+            {
+              "fraction": 0.75,
+              "width": 310.79,
+              "height": 350.95
+            },
+            {
+              "fraction": 0.99,
+              "width": 298.34,
+              "height": 348.6
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 277.81,
+              "height": 383.67
+            },
+            {
+              "fraction": 0.25,
+              "width": 270.26,
+              "height": 395.89
+            },
+            {
+              "fraction": 0.5,
+              "width": 253.05,
+              "height": 361.98
+            },
+            {
+              "fraction": 0.75,
+              "width": 309.9,
+              "height": 354.51
+            },
+            {
+              "fraction": 0.99,
+              "width": 277.41,
+              "height": 383.06
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 312.86,
+              "height": 303.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 313,
+              "height": 299.76
+            },
+            {
+              "fraction": 0.5,
+              "width": 314.12,
+              "height": 295.7
+            },
+            {
+              "fraction": 0.75,
+              "width": 313,
+              "height": 299.76
+            },
+            {
+              "fraction": 0.99,
+              "width": 312.87,
+              "height": 303.15
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 261,
+              "height": 335.96
+            },
+            {
+              "fraction": 0.25,
+              "width": 276.95,
+              "height": 349.08
+            },
+            {
+              "fraction": 0.5,
+              "width": 268.33,
+              "height": 335.79
+            },
+            {
+              "fraction": 0.75,
+              "width": 277.35,
+              "height": 349.88
+            },
+            {
+              "fraction": 0.99,
+              "width": 261.41,
+              "height": 336.63
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 261,
+              "height": 335.96
+            },
+            {
+              "fraction": 0.25,
+              "width": 276.95,
+              "height": 349.08
+            },
+            {
+              "fraction": 0.5,
+              "width": 268.33,
+              "height": 335.79
+            },
+            {
+              "fraction": 0.75,
+              "width": 277.35,
+              "height": 349.88
+            },
+            {
+              "fraction": 0.99,
+              "width": 261.41,
+              "height": 336.63
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 260.58,
+              "height": 334.83
+            },
+            {
+              "fraction": 0.25,
+              "width": 270.63,
+              "height": 333.49
+            },
+            {
+              "fraction": 0.5,
+              "width": 252.75,
+              "height": 354.83
+            },
+            {
+              "fraction": 0.75,
+              "width": 267.57,
+              "height": 336.46
+            },
+            {
+              "fraction": 0.99,
+              "width": 260.33,
+              "height": 335.54
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 0.3333333432674408,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 331.64,
+              "height": 342.24
+            },
+            {
+              "fraction": 0.25,
+              "width": 328.41,
+              "height": 341.6
+            },
+            {
+              "fraction": 0.5,
+              "width": 328.42,
+              "height": 340.26
+            },
+            {
+              "fraction": 0.75,
+              "width": 328.41,
+              "height": 341.6
+            },
+            {
+              "fraction": 0.99,
+              "width": 331.59,
+              "height": 342.22
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 0.3333333432674408,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 308.22,
+              "height": 337.25
+            },
+            {
+              "fraction": 0.25,
+              "width": 297.7,
+              "height": 341.6
+            },
+            {
+              "fraction": 0.5,
+              "width": 291.86,
+              "height": 340.26
+            },
+            {
+              "fraction": 0.75,
+              "width": 297.7,
+              "height": 341.6
+            },
+            {
+              "fraction": 0.99,
+              "width": 308.11,
+              "height": 337.38
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 260.58,
+              "height": 334.83
+            },
+            {
+              "fraction": 0.25,
+              "width": 289.23,
+              "height": 335.58
+            },
+            {
+              "fraction": 0.5,
+              "width": 353.17,
+              "height": 346.63
+            },
+            {
+              "fraction": 0.75,
+              "width": 333.78,
+              "height": 342.25
+            },
+            {
+              "fraction": 0.99,
+              "width": 261.57,
+              "height": 334.94
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1.7999999523162842,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 250.46,
+              "height": 337.31
+            },
+            {
+              "fraction": 0.25,
+              "width": 274.42,
+              "height": 347.15
+            },
+            {
+              "fraction": 0.5,
+              "width": 251.01,
+              "height": 337.95
+            },
+            {
+              "fraction": 0.75,
+              "width": 272.11,
+              "height": 345.12
+            },
+            {
+              "fraction": 0.99,
+              "width": 250.56,
+              "height": 337.31
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.01,
+              "height": 267.71
+            },
+            {
+              "fraction": 0.25,
+              "width": 251.61,
+              "height": 269.5
+            },
+            {
+              "fraction": 0.5,
+              "width": 253.99,
+              "height": 270.83
+            },
+            {
+              "fraction": 0.75,
+              "width": 251.61,
+              "height": 269.5
+            },
+            {
+              "fraction": 0.99,
+              "width": 249.1,
+              "height": 267.77
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.73,
+              "height": 340.19
+            },
+            {
+              "fraction": 0.25,
+              "width": 250.4,
+              "height": 337.45
+            },
+            {
+              "fraction": 0.5,
+              "width": 251.5,
+              "height": 344.2
+            },
+            {
+              "fraction": 0.75,
+              "width": 250.4,
+              "height": 337.45
+            },
+            {
+              "fraction": 0.99,
+              "width": 249.73,
+              "height": 340.16
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 150985
+    },
+    {
+      "id": "lingbo",
+      "name": "绫波",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 288.26,
+              "height": 354.78
+            },
+            {
+              "fraction": 0.25,
+              "width": 253.44,
+              "height": 383.18
+            },
+            {
+              "fraction": 0.5,
+              "width": 250.34,
+              "height": 382.83
+            },
+            {
+              "fraction": 0.75,
+              "width": 249.55,
+              "height": 353.54
+            },
+            {
+              "fraction": 0.99,
+              "width": 287.97,
+              "height": 355.06
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 277.48,
+              "height": 370.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 262.94,
+              "height": 367.23
+            },
+            {
+              "fraction": 0.5,
+              "width": 262.13,
+              "height": 367.36
+            },
+            {
+              "fraction": 0.75,
+              "width": 270.41,
+              "height": 369.86
+            },
+            {
+              "fraction": 0.99,
+              "width": 277.39,
+              "height": 370.88
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 247.54,
+              "height": 348.47
+            },
+            {
+              "fraction": 0.25,
+              "width": 242.85,
+              "height": 343.47
+            },
+            {
+              "fraction": 0.5,
+              "width": 238.48,
+              "height": 344.91
+            },
+            {
+              "fraction": 0.75,
+              "width": 242.85,
+              "height": 343.47
+            },
+            {
+              "fraction": 0.99,
+              "width": 247.5,
+              "height": 348.44
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 239.36,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.25,
+              "width": 281.57,
+              "height": 397.61
+            },
+            {
+              "fraction": 0.5,
+              "width": 336.54,
+              "height": 370.88
+            },
+            {
+              "fraction": 0.75,
+              "width": 418.76,
+              "height": 294.31
+            },
+            {
+              "fraction": 0.99,
+              "width": 422.55,
+              "height": 268.68
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 239.36,
+              "height": 338.18
+            },
+            {
+              "fraction": 0.25,
+              "width": 260.14,
+              "height": 341.57
+            },
+            {
+              "fraction": 0.5,
+              "width": 239.36,
+              "height": 338.18
+            },
+            {
+              "fraction": 0.75,
+              "width": 269.41,
+              "height": 339.89
+            },
+            {
+              "fraction": 0.99,
+              "width": 240.54,
+              "height": 338.55
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 288.26,
+              "height": 354.76
+            },
+            {
+              "fraction": 0.25,
+              "width": 306.17,
+              "height": 355.64
+            },
+            {
+              "fraction": 0.5,
+              "width": 251.79,
+              "height": 353.16
+            },
+            {
+              "fraction": 0.75,
+              "width": 272.35,
+              "height": 384.6
+            },
+            {
+              "fraction": 0.99,
+              "width": 286.89,
+              "height": 356.06
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 277.49,
+              "height": 370.95
+            },
+            {
+              "fraction": 0.25,
+              "width": 269.66,
+              "height": 365.85
+            },
+            {
+              "fraction": 0.5,
+              "width": 277.49,
+              "height": 370.95
+            },
+            {
+              "fraction": 0.75,
+              "width": 269.66,
+              "height": 365.85
+            },
+            {
+              "fraction": 0.99,
+              "width": 277.08,
+              "height": 370.93
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 239.36,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.25,
+              "width": 267.99,
+              "height": 371.31
+            },
+            {
+              "fraction": 0.5,
+              "width": 239.36,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.75,
+              "width": 267.99,
+              "height": 371.31
+            },
+            {
+              "fraction": 0.99,
+              "width": 239.75,
+              "height": 350.41
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 240.94,
+              "height": 329.99
+            },
+            {
+              "fraction": 0.25,
+              "width": 243.21,
+              "height": 332.31
+            },
+            {
+              "fraction": 0.5,
+              "width": 247.98,
+              "height": 334.35
+            },
+            {
+              "fraction": 0.75,
+              "width": 243.21,
+              "height": 332.31
+            },
+            {
+              "fraction": 0.99,
+              "width": 240.9,
+              "height": 330.02
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 288.26,
+              "height": 354.76
+            },
+            {
+              "fraction": 0.25,
+              "width": 306.17,
+              "height": 355.64
+            },
+            {
+              "fraction": 0.5,
+              "width": 251.79,
+              "height": 353.16
+            },
+            {
+              "fraction": 0.75,
+              "width": 272.35,
+              "height": 384.6
+            },
+            {
+              "fraction": 0.99,
+              "width": 286.89,
+              "height": 356.06
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 325.47,
+              "height": 271.71
+            },
+            {
+              "fraction": 0.25,
+              "width": 324.98,
+              "height": 268.63
+            },
+            {
+              "fraction": 0.5,
+              "width": 323.93,
+              "height": 266.53
+            },
+            {
+              "fraction": 0.75,
+              "width": 324.98,
+              "height": 268.63
+            },
+            {
+              "fraction": 0.99,
+              "width": 325.46,
+              "height": 271.68
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 240.94,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.25,
+              "width": 266.48,
+              "height": 349.82
+            },
+            {
+              "fraction": 0.5,
+              "width": 240.94,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.75,
+              "width": 321.53,
+              "height": 345.32
+            },
+            {
+              "fraction": 0.99,
+              "width": 241.99,
+              "height": 355.13
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 240.94,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.25,
+              "width": 266.48,
+              "height": 349.82
+            },
+            {
+              "fraction": 0.5,
+              "width": 240.94,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.75,
+              "width": 321.53,
+              "height": 345.32
+            },
+            {
+              "fraction": 0.99,
+              "width": 241.99,
+              "height": 355.13
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 239.36,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.25,
+              "width": 237.37,
+              "height": 349.38
+            },
+            {
+              "fraction": 0.5,
+              "width": 246.48,
+              "height": 335.21
+            },
+            {
+              "fraction": 0.75,
+              "width": 231.1,
+              "height": 358.51
+            },
+            {
+              "fraction": 0.99,
+              "width": 240.38,
+              "height": 349.08
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 288.65,
+              "height": 358.55
+            },
+            {
+              "fraction": 0.25,
+              "width": 283.53,
+              "height": 358.59
+            },
+            {
+              "fraction": 0.5,
+              "width": 284.6,
+              "height": 354.83
+            },
+            {
+              "fraction": 0.75,
+              "width": 283.53,
+              "height": 358.59
+            },
+            {
+              "fraction": 0.99,
+              "width": 288.5,
+              "height": 358.63
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 287.11,
+              "height": 358.55
+            },
+            {
+              "fraction": 0.25,
+              "width": 273.25,
+              "height": 358.59
+            },
+            {
+              "fraction": 0.5,
+              "width": 267.41,
+              "height": 354.83
+            },
+            {
+              "fraction": 0.75,
+              "width": 273.25,
+              "height": 358.59
+            },
+            {
+              "fraction": 0.99,
+              "width": 286.57,
+              "height": 358.63
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 239.36,
+              "height": 350.57
+            },
+            {
+              "fraction": 0.25,
+              "width": 275.97,
+              "height": 339.7
+            },
+            {
+              "fraction": 0.5,
+              "width": 255.73,
+              "height": 338.18
+            },
+            {
+              "fraction": 0.75,
+              "width": 273.42,
+              "height": 339.7
+            },
+            {
+              "fraction": 0.99,
+              "width": 239.75,
+              "height": 351.69
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 252.84,
+              "height": 342.45
+            },
+            {
+              "fraction": 0.25,
+              "width": 271.53,
+              "height": 358.03
+            },
+            {
+              "fraction": 0.5,
+              "width": 236.91,
+              "height": 351.86
+            },
+            {
+              "fraction": 0.75,
+              "width": 280.24,
+              "height": 358.33
+            },
+            {
+              "fraction": 0.99,
+              "width": 253.62,
+              "height": 342.43
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 239.36,
+              "height": 268.48
+            },
+            {
+              "fraction": 0.25,
+              "width": 242.26,
+              "height": 275.61
+            },
+            {
+              "fraction": 0.5,
+              "width": 244.74,
+              "height": 282.48
+            },
+            {
+              "fraction": 0.75,
+              "width": 242.26,
+              "height": 275.61
+            },
+            {
+              "fraction": 0.99,
+              "width": 239.48,
+              "height": 268.77
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 247.54,
+              "height": 348.47
+            },
+            {
+              "fraction": 0.25,
+              "width": 242.85,
+              "height": 343.47
+            },
+            {
+              "fraction": 0.5,
+              "width": 238.48,
+              "height": 344.91
+            },
+            {
+              "fraction": 0.75,
+              "width": 242.85,
+              "height": 343.47
+            },
+            {
+              "fraction": 0.99,
+              "width": 247.5,
+              "height": 348.44
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 148067
+    },
+    {
+      "id": "z23",
+      "name": "Z23",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 234.89,
+              "height": 347.53
+            },
+            {
+              "fraction": 0.25,
+              "width": 246.79,
+              "height": 352.32
+            },
+            {
+              "fraction": 0.5,
+              "width": 253.13,
+              "height": 353.81
+            },
+            {
+              "fraction": 0.75,
+              "width": 241.31,
+              "height": 351.04
+            },
+            {
+              "fraction": 0.99,
+              "width": 234.86,
+              "height": 347.53
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 256.52,
+              "height": 360.67
+            },
+            {
+              "fraction": 0.25,
+              "width": 270.64,
+              "height": 375.68
+            },
+            {
+              "fraction": 0.5,
+              "width": 253.1,
+              "height": 359.2
+            },
+            {
+              "fraction": 0.75,
+              "width": 250.64,
+              "height": 359.98
+            },
+            {
+              "fraction": 0.99,
+              "width": 256.45,
+              "height": 360.66
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 225.98,
+              "height": 349.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 226.41,
+              "height": 345.26
+            },
+            {
+              "fraction": 0.5,
+              "width": 231.01,
+              "height": 352.49
+            },
+            {
+              "fraction": 0.75,
+              "width": 226.41,
+              "height": 345.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 225.9,
+              "height": 349.29
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 224.97,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 245.8,
+              "height": 361.64
+            },
+            {
+              "fraction": 0.5,
+              "width": 352.38,
+              "height": 337.37
+            },
+            {
+              "fraction": 0.75,
+              "width": 374.74,
+              "height": 223.13
+            },
+            {
+              "fraction": 0.99,
+              "width": 370.06,
+              "height": 225.89
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 1.6666666269302368,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 224.97,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 239.93,
+              "height": 344.72
+            },
+            {
+              "fraction": 0.5,
+              "width": 224.72,
+              "height": 340.82
+            },
+            {
+              "fraction": 0.75,
+              "width": 224.8,
+              "height": 349.51
+            },
+            {
+              "fraction": 0.99,
+              "width": 224.93,
+              "height": 341.01
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 234.15,
+              "height": 347.53
+            },
+            {
+              "fraction": 0.25,
+              "width": 228.15,
+              "height": 345.18
+            },
+            {
+              "fraction": 0.5,
+              "width": 234.15,
+              "height": 340.62
+            },
+            {
+              "fraction": 0.75,
+              "width": 227.81,
+              "height": 345.18
+            },
+            {
+              "fraction": 0.99,
+              "width": 233.68,
+              "height": 348.98
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 256.52,
+              "height": 360.67
+            },
+            {
+              "fraction": 0.25,
+              "width": 250.35,
+              "height": 355.86
+            },
+            {
+              "fraction": 0.5,
+              "width": 256.52,
+              "height": 360.67
+            },
+            {
+              "fraction": 0.75,
+              "width": 250.35,
+              "height": 355.86
+            },
+            {
+              "fraction": 0.99,
+              "width": 256.31,
+              "height": 360.62
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 226.03,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 241.21,
+              "height": 342.34
+            },
+            {
+              "fraction": 0.5,
+              "width": 226.03,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.75,
+              "width": 242.46,
+              "height": 342.34
+            },
+            {
+              "fraction": 0.99,
+              "width": 226.54,
+              "height": 340.06
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 226.03,
+              "height": 337.92
+            },
+            {
+              "fraction": 0.25,
+              "width": 232.33,
+              "height": 339.26
+            },
+            {
+              "fraction": 0.5,
+              "width": 238.91,
+              "height": 341.45
+            },
+            {
+              "fraction": 0.75,
+              "width": 232.33,
+              "height": 339.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 226.1,
+              "height": 337.9
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 234.15,
+              "height": 347.53
+            },
+            {
+              "fraction": 0.25,
+              "width": 228.15,
+              "height": 345.18
+            },
+            {
+              "fraction": 0.5,
+              "width": 234.15,
+              "height": 340.62
+            },
+            {
+              "fraction": 0.75,
+              "width": 227.81,
+              "height": 345.18
+            },
+            {
+              "fraction": 0.99,
+              "width": 233.68,
+              "height": 348.98
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 268.26,
+              "height": 368.42
+            },
+            {
+              "fraction": 0.25,
+              "width": 274.42,
+              "height": 368.17
+            },
+            {
+              "fraction": 0.5,
+              "width": 280.62,
+              "height": 367.38
+            },
+            {
+              "fraction": 0.75,
+              "width": 274.42,
+              "height": 368.17
+            },
+            {
+              "fraction": 0.99,
+              "width": 268.33,
+              "height": 368.42
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 226.03,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 241.21,
+              "height": 342
+            },
+            {
+              "fraction": 0.5,
+              "width": 226.03,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.75,
+              "width": 235.18,
+              "height": 352.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 226.54,
+              "height": 340.03
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 226.03,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 241.21,
+              "height": 342
+            },
+            {
+              "fraction": 0.5,
+              "width": 226.03,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.75,
+              "width": 235.18,
+              "height": 352.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 226.54,
+              "height": 340.03
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 224.97,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 253.46,
+              "height": 324.42
+            },
+            {
+              "fraction": 0.5,
+              "width": 210.69,
+              "height": 352.76
+            },
+            {
+              "fraction": 0.75,
+              "width": 241.89,
+              "height": 331.51
+            },
+            {
+              "fraction": 0.99,
+              "width": 223.82,
+              "height": 341.45
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 356.19,
+              "height": 347.73
+            },
+            {
+              "fraction": 0.25,
+              "width": 364.11,
+              "height": 333.49
+            },
+            {
+              "fraction": 0.5,
+              "width": 368.78,
+              "height": 316.16
+            },
+            {
+              "fraction": 0.75,
+              "width": 364.11,
+              "height": 333.49
+            },
+            {
+              "fraction": 0.99,
+              "width": 356.32,
+              "height": 347.56
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 326.89,
+              "height": 335.47
+            },
+            {
+              "fraction": 0.25,
+              "width": 337.72,
+              "height": 323.9
+            },
+            {
+              "fraction": 0.5,
+              "width": 345.17,
+              "height": 308.82
+            },
+            {
+              "fraction": 0.75,
+              "width": 337.72,
+              "height": 323.9
+            },
+            {
+              "fraction": 0.99,
+              "width": 327.06,
+              "height": 335.34
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 224.97,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 224.97,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.5,
+              "width": 224.97,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.75,
+              "width": 224.97,
+              "height": 340.01
+            },
+            {
+              "fraction": 0.99,
+              "width": 224.97,
+              "height": 340.01
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 2.6666667461395264,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 224.4,
+              "height": 341.71
+            },
+            {
+              "fraction": 0.25,
+              "width": 223.16,
+              "height": 346.43
+            },
+            {
+              "fraction": 0.5,
+              "width": 224.4,
+              "height": 341.71
+            },
+            {
+              "fraction": 0.75,
+              "width": 223.16,
+              "height": 346.43
+            },
+            {
+              "fraction": 0.99,
+              "width": 224.48,
+              "height": 341.44
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 234.19,
+              "height": 298.3
+            },
+            {
+              "fraction": 0.25,
+              "width": 224.26,
+              "height": 293.26
+            },
+            {
+              "fraction": 0.5,
+              "width": 226.9,
+              "height": 300.09
+            },
+            {
+              "fraction": 0.75,
+              "width": 224.26,
+              "height": 293.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 233.9,
+              "height": 298.24
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 225.98,
+              "height": 349.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 226.41,
+              "height": 345.26
+            },
+            {
+              "fraction": 0.5,
+              "width": 231.01,
+              "height": 352.49
+            },
+            {
+              "fraction": 0.75,
+              "width": 226.41,
+              "height": 345.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 225.9,
+              "height": 349.29
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 157774
+    },
+    {
+      "id": "hailunna",
+      "name": "海伦娜",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.77,
+              "height": 345.09
+            },
+            {
+              "fraction": 0.25,
+              "width": 308.04,
+              "height": 345.15
+            },
+            {
+              "fraction": 0.5,
+              "width": 292.69,
+              "height": 364
+            },
+            {
+              "fraction": 0.75,
+              "width": 272.71,
+              "height": 358.08
+            },
+            {
+              "fraction": 0.99,
+              "width": 250.1,
+              "height": 345.34
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 265.96,
+              "height": 346.05
+            },
+            {
+              "fraction": 0.25,
+              "width": 320.86,
+              "height": 342.87
+            },
+            {
+              "fraction": 0.5,
+              "width": 305.08,
+              "height": 361.93
+            },
+            {
+              "fraction": 0.75,
+              "width": 292.46,
+              "height": 354.98
+            },
+            {
+              "fraction": 0.99,
+              "width": 266.36,
+              "height": 346.16
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 264.24,
+              "height": 338.46
+            },
+            {
+              "fraction": 0.25,
+              "width": 245.8,
+              "height": 334.06
+            },
+            {
+              "fraction": 0.5,
+              "width": 246.46,
+              "height": 328.56
+            },
+            {
+              "fraction": 0.75,
+              "width": 245.8,
+              "height": 334.06
+            },
+            {
+              "fraction": 0.99,
+              "width": 263.99,
+              "height": 338.41
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.9333333373069763,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.77,
+              "height": 347.8
+            },
+            {
+              "fraction": 0.25,
+              "width": 272.64,
+              "height": 356.66
+            },
+            {
+              "fraction": 0.5,
+              "width": 329.79,
+              "height": 334.11
+            },
+            {
+              "fraction": 0.75,
+              "width": 348.64,
+              "height": 312.92
+            },
+            {
+              "fraction": 0.99,
+              "width": 350.62,
+              "height": 282.09
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 1.7333333492279053,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.77,
+              "height": 342.37
+            },
+            {
+              "fraction": 0.25,
+              "width": 251.17,
+              "height": 334.74
+            },
+            {
+              "fraction": 0.5,
+              "width": 248.48,
+              "height": 338.31
+            },
+            {
+              "fraction": 0.75,
+              "width": 248.17,
+              "height": 355.76
+            },
+            {
+              "fraction": 0.99,
+              "width": 249.66,
+              "height": 342.64
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.28,
+              "height": 344.96
+            },
+            {
+              "fraction": 0.25,
+              "width": 247.45,
+              "height": 340.96
+            },
+            {
+              "fraction": 0.5,
+              "width": 249.28,
+              "height": 361.96
+            },
+            {
+              "fraction": 0.75,
+              "width": 247.45,
+              "height": 346.39
+            },
+            {
+              "fraction": 0.99,
+              "width": 248.84,
+              "height": 346.22
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 265.96,
+              "height": 346.5
+            },
+            {
+              "fraction": 0.25,
+              "width": 282.28,
+              "height": 356.78
+            },
+            {
+              "fraction": 0.5,
+              "width": 265.96,
+              "height": 346.5
+            },
+            {
+              "fraction": 0.75,
+              "width": 282.28,
+              "height": 356.78
+            },
+            {
+              "fraction": 0.99,
+              "width": 266.09,
+              "height": 346.89
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 251.37,
+              "height": 348.24
+            },
+            {
+              "fraction": 0.25,
+              "width": 296.63,
+              "height": 351.55
+            },
+            {
+              "fraction": 0.5,
+              "width": 251.37,
+              "height": 348.24
+            },
+            {
+              "fraction": 0.75,
+              "width": 296.63,
+              "height": 351.55
+            },
+            {
+              "fraction": 0.99,
+              "width": 252.36,
+              "height": 348.46
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 274.39,
+              "height": 332.46
+            },
+            {
+              "fraction": 0.25,
+              "width": 256.13,
+              "height": 335.52
+            },
+            {
+              "fraction": 0.5,
+              "width": 245.96,
+              "height": 338.19
+            },
+            {
+              "fraction": 0.75,
+              "width": 256.13,
+              "height": 335.52
+            },
+            {
+              "fraction": 0.99,
+              "width": 274.16,
+              "height": 332.52
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.28,
+              "height": 344.96
+            },
+            {
+              "fraction": 0.25,
+              "width": 247.45,
+              "height": 340.96
+            },
+            {
+              "fraction": 0.5,
+              "width": 249.28,
+              "height": 361.96
+            },
+            {
+              "fraction": 0.75,
+              "width": 247.45,
+              "height": 346.39
+            },
+            {
+              "fraction": 0.99,
+              "width": 248.84,
+              "height": 346.22
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 330.47,
+              "height": 320.92
+            },
+            {
+              "fraction": 0.25,
+              "width": 327.84,
+              "height": 323.93
+            },
+            {
+              "fraction": 0.5,
+              "width": 325.63,
+              "height": 326.13
+            },
+            {
+              "fraction": 0.75,
+              "width": 327.84,
+              "height": 323.93
+            },
+            {
+              "fraction": 0.99,
+              "width": 330.44,
+              "height": 320.97
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 251.37,
+              "height": 348.24
+            },
+            {
+              "fraction": 0.25,
+              "width": 312.26,
+              "height": 351.57
+            },
+            {
+              "fraction": 0.5,
+              "width": 251.37,
+              "height": 342.81
+            },
+            {
+              "fraction": 0.75,
+              "width": 296.63,
+              "height": 354
+            },
+            {
+              "fraction": 0.99,
+              "width": 252.36,
+              "height": 348.5
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 6.800000190734863,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 251.37,
+              "height": 342.81
+            },
+            {
+              "fraction": 0.25,
+              "width": 283.34,
+              "height": 348.95
+            },
+            {
+              "fraction": 0.5,
+              "width": 292.54,
+              "height": 350.97
+            },
+            {
+              "fraction": 0.75,
+              "width": 281.34,
+              "height": 336.2
+            },
+            {
+              "fraction": 0.99,
+              "width": 251.56,
+              "height": 343.05
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.77,
+              "height": 342.37
+            },
+            {
+              "fraction": 0.25,
+              "width": 243.94,
+              "height": 338.61
+            },
+            {
+              "fraction": 0.5,
+              "width": 262.26,
+              "height": 325.25
+            },
+            {
+              "fraction": 0.75,
+              "width": 262.26,
+              "height": 325.25
+            },
+            {
+              "fraction": 0.99,
+              "width": 248.87,
+              "height": 342.88
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 334.31,
+              "height": 342.77
+            },
+            {
+              "fraction": 0.25,
+              "width": 342.14,
+              "height": 343.26
+            },
+            {
+              "fraction": 0.5,
+              "width": 352.11,
+              "height": 344.98
+            },
+            {
+              "fraction": 0.75,
+              "width": 342.14,
+              "height": 343.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 334.44,
+              "height": 342.77
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 321.07,
+              "height": 341.02
+            },
+            {
+              "fraction": 0.25,
+              "width": 324.26,
+              "height": 343.26
+            },
+            {
+              "fraction": 0.5,
+              "width": 329.69,
+              "height": 344.98
+            },
+            {
+              "fraction": 0.75,
+              "width": 324.26,
+              "height": 343.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 321.13,
+              "height": 341.05
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.77,
+              "height": 347.8
+            },
+            {
+              "fraction": 0.25,
+              "width": 299.48,
+              "height": 350.02
+            },
+            {
+              "fraction": 0.5,
+              "width": 274.77,
+              "height": 341.71
+            },
+            {
+              "fraction": 0.75,
+              "width": 299.48,
+              "height": 355.45
+            },
+            {
+              "fraction": 0.99,
+              "width": 250.18,
+              "height": 347.91
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 2.6666667461395264,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 247.31,
+              "height": 344.14
+            },
+            {
+              "fraction": 0.25,
+              "width": 273.56,
+              "height": 338.75
+            },
+            {
+              "fraction": 0.5,
+              "width": 260.16,
+              "height": 343.19
+            },
+            {
+              "fraction": 0.75,
+              "width": 256.91,
+              "height": 338.79
+            },
+            {
+              "fraction": 0.99,
+              "width": 246.42,
+              "height": 344.03
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 214.02,
+              "height": 323.06
+            },
+            {
+              "fraction": 0.25,
+              "width": 219.47,
+              "height": 331.27
+            },
+            {
+              "fraction": 0.5,
+              "width": 224.74,
+              "height": 338.51
+            },
+            {
+              "fraction": 0.75,
+              "width": 219.47,
+              "height": 331.27
+            },
+            {
+              "fraction": 0.99,
+              "width": 214.23,
+              "height": 323.41
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 264.24,
+              "height": 338.46
+            },
+            {
+              "fraction": 0.25,
+              "width": 245.8,
+              "height": 334.06
+            },
+            {
+              "fraction": 0.5,
+              "width": 246.46,
+              "height": 328.56
+            },
+            {
+              "fraction": 0.75,
+              "width": 245.8,
+              "height": 334.06
+            },
+            {
+              "fraction": 0.99,
+              "width": 263.99,
+              "height": 338.41
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 156424
+    },
+    {
+      "id": "beierfasite",
+      "name": "贝尔法斯特",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 275.85,
+              "height": 326.46
+            },
+            {
+              "fraction": 0.25,
+              "width": 283.34,
+              "height": 323.29
+            },
+            {
+              "fraction": 0.5,
+              "width": 263.19,
+              "height": 316.96
+            },
+            {
+              "fraction": 0.75,
+              "width": 271.43,
+              "height": 321.58
+            },
+            {
+              "fraction": 0.99,
+              "width": 275.8,
+              "height": 326.4
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 297.48,
+              "height": 333.5
+            },
+            {
+              "fraction": 0.25,
+              "width": 306.51,
+              "height": 336.03
+            },
+            {
+              "fraction": 0.5,
+              "width": 286.66,
+              "height": 335.34
+            },
+            {
+              "fraction": 0.75,
+              "width": 293.34,
+              "height": 334.15
+            },
+            {
+              "fraction": 0.99,
+              "width": 297.43,
+              "height": 333.52
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 207,
+              "height": 326.64
+            },
+            {
+              "fraction": 0.25,
+              "width": 202.61,
+              "height": 319.35
+            },
+            {
+              "fraction": 0.5,
+              "width": 208.94,
+              "height": 321.1
+            },
+            {
+              "fraction": 0.75,
+              "width": 202.61,
+              "height": 319.35
+            },
+            {
+              "fraction": 0.99,
+              "width": 206.81,
+              "height": 326.57
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 279,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 272.76,
+              "height": 335.28
+            },
+            {
+              "fraction": 0.5,
+              "width": 346.62,
+              "height": 339.17
+            },
+            {
+              "fraction": 0.75,
+              "width": 327.13,
+              "height": 307.76
+            },
+            {
+              "fraction": 0.99,
+              "width": 322.47,
+              "height": 306.64
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 1.6666666269302368,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 199.97,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 230.35,
+              "height": 324.59
+            },
+            {
+              "fraction": 0.5,
+              "width": 252.46,
+              "height": 328.21
+            },
+            {
+              "fraction": 0.75,
+              "width": 230.35,
+              "height": 324.59
+            },
+            {
+              "fraction": 0.99,
+              "width": 200.15,
+              "height": 312.68
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 275.85,
+              "height": 326.73
+            },
+            {
+              "fraction": 0.25,
+              "width": 269.18,
+              "height": 326.78
+            },
+            {
+              "fraction": 0.5,
+              "width": 275.85,
+              "height": 326.73
+            },
+            {
+              "fraction": 0.75,
+              "width": 269.18,
+              "height": 326.87
+            },
+            {
+              "fraction": 0.99,
+              "width": 275.78,
+              "height": 326.86
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 297.48,
+              "height": 333.5
+            },
+            {
+              "fraction": 0.25,
+              "width": 289.25,
+              "height": 335.87
+            },
+            {
+              "fraction": 0.5,
+              "width": 297.48,
+              "height": 333.5
+            },
+            {
+              "fraction": 0.75,
+              "width": 289.25,
+              "height": 335.87
+            },
+            {
+              "fraction": 0.99,
+              "width": 297.36,
+              "height": 333.53
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 279,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 287.8,
+              "height": 313.93
+            },
+            {
+              "fraction": 0.5,
+              "width": 279,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.75,
+              "width": 287.8,
+              "height": 313.93
+            },
+            {
+              "fraction": 0.99,
+              "width": 279.13,
+              "height": 312.38
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 200.46,
+              "height": 307.65
+            },
+            {
+              "fraction": 0.25,
+              "width": 206.4,
+              "height": 311.77
+            },
+            {
+              "fraction": 0.5,
+              "width": 215.54,
+              "height": 315.7
+            },
+            {
+              "fraction": 0.75,
+              "width": 206.4,
+              "height": 311.77
+            },
+            {
+              "fraction": 0.99,
+              "width": 200.5,
+              "height": 307.71
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 275.85,
+              "height": 326.73
+            },
+            {
+              "fraction": 0.25,
+              "width": 269.18,
+              "height": 326.78
+            },
+            {
+              "fraction": 0.5,
+              "width": 275.85,
+              "height": 326.73
+            },
+            {
+              "fraction": 0.75,
+              "width": 269.18,
+              "height": 326.87
+            },
+            {
+              "fraction": 0.99,
+              "width": 275.78,
+              "height": 326.86
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 335.61,
+              "height": 313.68
+            },
+            {
+              "fraction": 0.25,
+              "width": 337.06,
+              "height": 309.22
+            },
+            {
+              "fraction": 0.5,
+              "width": 338.05,
+              "height": 304.36
+            },
+            {
+              "fraction": 0.75,
+              "width": 337.06,
+              "height": 309.22
+            },
+            {
+              "fraction": 0.99,
+              "width": 335.63,
+              "height": 313.62
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 279,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 287.8,
+              "height": 314.39
+            },
+            {
+              "fraction": 0.5,
+              "width": 279,
+              "height": 312.88
+            },
+            {
+              "fraction": 0.75,
+              "width": 287.8,
+              "height": 316.02
+            },
+            {
+              "fraction": 0.99,
+              "width": 279.13,
+              "height": 312.36
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 200.46,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 215.69,
+              "height": 314.39
+            },
+            {
+              "fraction": 0.5,
+              "width": 200.46,
+              "height": 312.88
+            },
+            {
+              "fraction": 0.75,
+              "width": 217.23,
+              "height": 316.02
+            },
+            {
+              "fraction": 0.99,
+              "width": 200.72,
+              "height": 312.36
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 199.97,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 227.04,
+              "height": 298.01
+            },
+            {
+              "fraction": 0.5,
+              "width": 189.46,
+              "height": 329.51
+            },
+            {
+              "fraction": 0.75,
+              "width": 218.17,
+              "height": 302.48
+            },
+            {
+              "fraction": 0.99,
+              "width": 199.61,
+              "height": 312.81
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 288.48,
+              "height": 371.72
+            },
+            {
+              "fraction": 0.25,
+              "width": 299.91,
+              "height": 369.41
+            },
+            {
+              "fraction": 0.5,
+              "width": 309.97,
+              "height": 365.18
+            },
+            {
+              "fraction": 0.75,
+              "width": 299.91,
+              "height": 369.41
+            },
+            {
+              "fraction": 0.99,
+              "width": 288.65,
+              "height": 371.7
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 267.82,
+              "height": 335.47
+            },
+            {
+              "fraction": 0.25,
+              "width": 287.67,
+              "height": 333.15
+            },
+            {
+              "fraction": 0.5,
+              "width": 299.78,
+              "height": 327.86
+            },
+            {
+              "fraction": 0.75,
+              "width": 287.67,
+              "height": 333.15
+            },
+            {
+              "fraction": 0.99,
+              "width": 268.14,
+              "height": 335.5
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 279,
+              "height": 312.33
+            },
+            {
+              "fraction": 0.25,
+              "width": 287.79,
+              "height": 324.62
+            },
+            {
+              "fraction": 0.5,
+              "width": 280.5,
+              "height": 328.21
+            },
+            {
+              "fraction": 0.75,
+              "width": 287.79,
+              "height": 324.62
+            },
+            {
+              "fraction": 0.99,
+              "width": 279.14,
+              "height": 312.61
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 202.56,
+              "height": 318.1
+            },
+            {
+              "fraction": 0.25,
+              "width": 205.81,
+              "height": 321.74
+            },
+            {
+              "fraction": 0.5,
+              "width": 216.48,
+              "height": 321.19
+            },
+            {
+              "fraction": 0.75,
+              "width": 205.81,
+              "height": 319.58
+            },
+            {
+              "fraction": 0.99,
+              "width": 202.57,
+              "height": 318.04
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 199.97,
+              "height": 288.73
+            },
+            {
+              "fraction": 0.25,
+              "width": 201.35,
+              "height": 293.53
+            },
+            {
+              "fraction": 0.5,
+              "width": 202.42,
+              "height": 297.81
+            },
+            {
+              "fraction": 0.75,
+              "width": 201.35,
+              "height": 293.53
+            },
+            {
+              "fraction": 0.99,
+              "width": 200.03,
+              "height": 288.91
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 207,
+              "height": 326.64
+            },
+            {
+              "fraction": 0.25,
+              "width": 202.61,
+              "height": 319.35
+            },
+            {
+              "fraction": 0.5,
+              "width": 208.94,
+              "height": 321.1
+            },
+            {
+              "fraction": 0.75,
+              "width": 202.61,
+              "height": 319.35
+            },
+            {
+              "fraction": 0.99,
+              "width": 206.81,
+              "height": 326.57
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 179721
+    },
+    {
+      "id": "gaoxiong",
+      "name": "高雄",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 314.27,
+              "height": 318.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 349.26,
+              "height": 307.37
+            },
+            {
+              "fraction": 0.5,
+              "width": 320.11,
+              "height": 320.46
+            },
+            {
+              "fraction": 0.75,
+              "width": 315.58,
+              "height": 332.5
+            },
+            {
+              "fraction": 0.99,
+              "width": 314.24,
+              "height": 319.28
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 320.73,
+              "height": 337.86
+            },
+            {
+              "fraction": 0.25,
+              "width": 342.31,
+              "height": 315.8
+            },
+            {
+              "fraction": 0.5,
+              "width": 317.79,
+              "height": 315.8
+            },
+            {
+              "fraction": 0.75,
+              "width": 315.94,
+              "height": 327.34
+            },
+            {
+              "fraction": 0.99,
+              "width": 320.7,
+              "height": 337.73
+            }
+          ]
+        },
+        {
+          "name": "break",
+          "duration": 1.1666666269302368,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 314.27,
+              "height": 318.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 314.55,
+              "height": 331.45
+            },
+            {
+              "fraction": 0.5,
+              "width": 322.42,
+              "height": 332.89
+            },
+            {
+              "fraction": 0.75,
+              "width": 314.94,
+              "height": 329.95
+            },
+            {
+              "fraction": 0.99,
+              "width": 314.29,
+              "height": 319.12
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 253.88,
+              "height": 318
+            },
+            {
+              "fraction": 0.25,
+              "width": 246.15,
+              "height": 304.73
+            },
+            {
+              "fraction": 0.5,
+              "width": 254.06,
+              "height": 307.98
+            },
+            {
+              "fraction": 0.75,
+              "width": 246.15,
+              "height": 304.56
+            },
+            {
+              "fraction": 0.99,
+              "width": 253.9,
+              "height": 317.76
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 312.28,
+              "height": 303.03
+            },
+            {
+              "fraction": 0.25,
+              "width": 321.14,
+              "height": 340.37
+            },
+            {
+              "fraction": 0.5,
+              "width": 342.59,
+              "height": 358.91
+            },
+            {
+              "fraction": 0.75,
+              "width": 390.86,
+              "height": 325.07
+            },
+            {
+              "fraction": 0.99,
+              "width": 387.85,
+              "height": 291.43
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 244.31,
+              "height": 302.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 275.35,
+              "height": 306.55
+            },
+            {
+              "fraction": 0.5,
+              "width": 249.58,
+              "height": 306.55
+            },
+            {
+              "fraction": 0.75,
+              "width": 275.35,
+              "height": 306.55
+            },
+            {
+              "fraction": 0.99,
+              "width": 244.64,
+              "height": 302.08
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 314.27,
+              "height": 318.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 315.24,
+              "height": 318.89
+            },
+            {
+              "fraction": 0.5,
+              "width": 314.27,
+              "height": 323.6
+            },
+            {
+              "fraction": 0.75,
+              "width": 321.7,
+              "height": 325.74
+            },
+            {
+              "fraction": 0.99,
+              "width": 314.22,
+              "height": 320.98
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 320.73,
+              "height": 337.86
+            },
+            {
+              "fraction": 0.25,
+              "width": 337.31,
+              "height": 341.68
+            },
+            {
+              "fraction": 0.5,
+              "width": 320.73,
+              "height": 337.86
+            },
+            {
+              "fraction": 0.75,
+              "width": 337.31,
+              "height": 341.68
+            },
+            {
+              "fraction": 0.99,
+              "width": 320.69,
+              "height": 337.7
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 312.28,
+              "height": 303.03
+            },
+            {
+              "fraction": 0.25,
+              "width": 318.55,
+              "height": 318.65
+            },
+            {
+              "fraction": 0.5,
+              "width": 312.28,
+              "height": 303.03
+            },
+            {
+              "fraction": 0.75,
+              "width": 318.55,
+              "height": 318.65
+            },
+            {
+              "fraction": 0.99,
+              "width": 312.37,
+              "height": 302.76
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 251.53,
+              "height": 304.4
+            },
+            {
+              "fraction": 0.25,
+              "width": 255.83,
+              "height": 304.51
+            },
+            {
+              "fraction": 0.5,
+              "width": 274.75,
+              "height": 304.32
+            },
+            {
+              "fraction": 0.75,
+              "width": 255.83,
+              "height": 304.51
+            },
+            {
+              "fraction": 0.99,
+              "width": 251.58,
+              "height": 304.38
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 314.27,
+              "height": 318.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 315.24,
+              "height": 318.89
+            },
+            {
+              "fraction": 0.5,
+              "width": 314.27,
+              "height": 323.6
+            },
+            {
+              "fraction": 0.75,
+              "width": 321.7,
+              "height": 325.74
+            },
+            {
+              "fraction": 0.99,
+              "width": 314.22,
+              "height": 320.98
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 321.19,
+              "height": 289.6
+            },
+            {
+              "fraction": 0.25,
+              "width": 312.39,
+              "height": 287.46
+            },
+            {
+              "fraction": 0.5,
+              "width": 302.22,
+              "height": 285.11
+            },
+            {
+              "fraction": 0.75,
+              "width": 312.39,
+              "height": 287.46
+            },
+            {
+              "fraction": 0.99,
+              "width": 321.08,
+              "height": 289.57
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 312.28,
+              "height": 303.03
+            },
+            {
+              "fraction": 0.25,
+              "width": 318.55,
+              "height": 308.4
+            },
+            {
+              "fraction": 0.5,
+              "width": 314.85,
+              "height": 336.8
+            },
+            {
+              "fraction": 0.75,
+              "width": 318.55,
+              "height": 304.01
+            },
+            {
+              "fraction": 0.99,
+              "width": 312.37,
+              "height": 302.95
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 244.31,
+              "height": 302.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 252.45,
+              "height": 304.01
+            },
+            {
+              "fraction": 0.5,
+              "width": 244.31,
+              "height": 302.01
+            },
+            {
+              "fraction": 0.75,
+              "width": 255.61,
+              "height": 304.01
+            },
+            {
+              "fraction": 0.99,
+              "width": 244.52,
+              "height": 302.04
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 244.31,
+              "height": 302.01
+            },
+            {
+              "fraction": 0.25,
+              "width": 261.9,
+              "height": 288.16
+            },
+            {
+              "fraction": 0.5,
+              "width": 235.15,
+              "height": 313.34
+            },
+            {
+              "fraction": 0.75,
+              "width": 251.65,
+              "height": 294.46
+            },
+            {
+              "fraction": 0.99,
+              "width": 243.28,
+              "height": 303.29
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 378.82,
+              "height": 358.25
+            },
+            {
+              "fraction": 0.25,
+              "width": 383.15,
+              "height": 348.93
+            },
+            {
+              "fraction": 0.5,
+              "width": 385.83,
+              "height": 346.03
+            },
+            {
+              "fraction": 0.75,
+              "width": 383.15,
+              "height": 348.93
+            },
+            {
+              "fraction": 0.99,
+              "width": 379.03,
+              "height": 357.9
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 318.93,
+              "height": 316.67
+            },
+            {
+              "fraction": 0.25,
+              "width": 314.21,
+              "height": 311.62
+            },
+            {
+              "fraction": 0.5,
+              "width": 308.63,
+              "height": 305.26
+            },
+            {
+              "fraction": 0.75,
+              "width": 314.21,
+              "height": 311.62
+            },
+            {
+              "fraction": 0.99,
+              "width": 318.75,
+              "height": 316.49
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 312.28,
+              "height": 303.03
+            },
+            {
+              "fraction": 0.25,
+              "width": 318.55,
+              "height": 326.61
+            },
+            {
+              "fraction": 0.5,
+              "width": 312.28,
+              "height": 326.61
+            },
+            {
+              "fraction": 0.75,
+              "width": 318.55,
+              "height": 326.61
+            },
+            {
+              "fraction": 0.99,
+              "width": 312.37,
+              "height": 303.69
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 2.6666667461395264,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 244.31,
+              "height": 300.86
+            },
+            {
+              "fraction": 0.25,
+              "width": 246.02,
+              "height": 302.98
+            },
+            {
+              "fraction": 0.5,
+              "width": 244.31,
+              "height": 300.86
+            },
+            {
+              "fraction": 0.75,
+              "width": 246.02,
+              "height": 302.98
+            },
+            {
+              "fraction": 0.99,
+              "width": 244.17,
+              "height": 301.31
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 244.31,
+              "height": 284.64
+            },
+            {
+              "fraction": 0.25,
+              "width": 248,
+              "height": 288
+            },
+            {
+              "fraction": 0.5,
+              "width": 250.86,
+              "height": 293.62
+            },
+            {
+              "fraction": 0.75,
+              "width": 248,
+              "height": 288
+            },
+            {
+              "fraction": 0.99,
+              "width": 244.48,
+              "height": 284.79
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 249.57,
+              "height": 304.06
+            },
+            {
+              "fraction": 0.25,
+              "width": 244.81,
+              "height": 304.89
+            },
+            {
+              "fraction": 0.5,
+              "width": 250.29,
+              "height": 308.77
+            },
+            {
+              "fraction": 0.75,
+              "width": 244.81,
+              "height": 304.89
+            },
+            {
+              "fraction": 0.99,
+              "width": 249.51,
+              "height": 304.07
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 181053
+    },
+    {
+      "id": "ougen",
+      "name": "欧根亲王",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 310,
+              "height": 367.58
+            },
+            {
+              "fraction": 0.25,
+              "width": 301.19,
+              "height": 358.7
+            },
+            {
+              "fraction": 0.5,
+              "width": 319.52,
+              "height": 343.45
+            },
+            {
+              "fraction": 0.75,
+              "width": 303.69,
+              "height": 361.2
+            },
+            {
+              "fraction": 0.99,
+              "width": 310.18,
+              "height": 367.65
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 308.84,
+              "height": 364.72
+            },
+            {
+              "fraction": 0.25,
+              "width": 303.77,
+              "height": 366.11
+            },
+            {
+              "fraction": 0.5,
+              "width": 323.16,
+              "height": 349.08
+            },
+            {
+              "fraction": 0.75,
+              "width": 305.21,
+              "height": 360.92
+            },
+            {
+              "fraction": 0.99,
+              "width": 308.77,
+              "height": 364.9
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 300.47,
+              "height": 343.96
+            },
+            {
+              "fraction": 0.25,
+              "width": 302.36,
+              "height": 345.58
+            },
+            {
+              "fraction": 0.5,
+              "width": 299.01,
+              "height": 364.9
+            },
+            {
+              "fraction": 0.75,
+              "width": 302.7,
+              "height": 360.22
+            },
+            {
+              "fraction": 0.99,
+              "width": 300.01,
+              "height": 344.3
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 310.99,
+              "height": 348.38
+            },
+            {
+              "fraction": 0.25,
+              "width": 307.57,
+              "height": 363.88
+            },
+            {
+              "fraction": 0.5,
+              "width": 353.52,
+              "height": 381.47
+            },
+            {
+              "fraction": 0.75,
+              "width": 381.36,
+              "height": 311.48
+            },
+            {
+              "fraction": 0.99,
+              "width": 361.09,
+              "height": 330.97
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 310,
+              "height": 348.38
+            },
+            {
+              "fraction": 0.25,
+              "width": 327.34,
+              "height": 348.12
+            },
+            {
+              "fraction": 0.5,
+              "width": 316.97,
+              "height": 342.1
+            },
+            {
+              "fraction": 0.75,
+              "width": 299.34,
+              "height": 348.97
+            },
+            {
+              "fraction": 0.99,
+              "width": 309.81,
+              "height": 348.36
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 307.87,
+              "height": 355.65
+            },
+            {
+              "fraction": 0.25,
+              "width": 305.12,
+              "height": 354.74
+            },
+            {
+              "fraction": 0.5,
+              "width": 307.87,
+              "height": 355.65
+            },
+            {
+              "fraction": 0.75,
+              "width": 305.12,
+              "height": 354.74
+            },
+            {
+              "fraction": 0.99,
+              "width": 308.07,
+              "height": 356.62
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 307.9,
+              "height": 353.89
+            },
+            {
+              "fraction": 0.25,
+              "width": 307.07,
+              "height": 363.65
+            },
+            {
+              "fraction": 0.5,
+              "width": 307.9,
+              "height": 353.89
+            },
+            {
+              "fraction": 0.75,
+              "width": 307.07,
+              "height": 363.65
+            },
+            {
+              "fraction": 0.99,
+              "width": 309.27,
+              "height": 355.01
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 331.71,
+              "height": 350.07
+            },
+            {
+              "fraction": 0.25,
+              "width": 361.87,
+              "height": 363.1
+            },
+            {
+              "fraction": 0.5,
+              "width": 331.71,
+              "height": 350.07
+            },
+            {
+              "fraction": 0.75,
+              "width": 362.83,
+              "height": 363.1
+            },
+            {
+              "fraction": 0.99,
+              "width": 335.07,
+              "height": 350.67
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 5.333333492279053,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 311.96,
+              "height": 342.77
+            },
+            {
+              "fraction": 0.25,
+              "width": 313.2,
+              "height": 349.31
+            },
+            {
+              "fraction": 0.5,
+              "width": 311.96,
+              "height": 342.77
+            },
+            {
+              "fraction": 0.75,
+              "width": 312.05,
+              "height": 349.18
+            },
+            {
+              "fraction": 0.99,
+              "width": 312.21,
+              "height": 342.84
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 307.87,
+              "height": 355.65
+            },
+            {
+              "fraction": 0.25,
+              "width": 305.12,
+              "height": 354.74
+            },
+            {
+              "fraction": 0.5,
+              "width": 307.87,
+              "height": 355.65
+            },
+            {
+              "fraction": 0.75,
+              "width": 305.12,
+              "height": 354.74
+            },
+            {
+              "fraction": 0.99,
+              "width": 308.07,
+              "height": 356.62
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 352.22,
+              "height": 332.46
+            },
+            {
+              "fraction": 0.25,
+              "width": 351.29,
+              "height": 336.05
+            },
+            {
+              "fraction": 0.5,
+              "width": 342.97,
+              "height": 345.95
+            },
+            {
+              "fraction": 0.75,
+              "width": 345.36,
+              "height": 342.4
+            },
+            {
+              "fraction": 0.99,
+              "width": 352.01,
+              "height": 332.76
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 6.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 331.71,
+              "height": 350.07
+            },
+            {
+              "fraction": 0.25,
+              "width": 375.62,
+              "height": 362.07
+            },
+            {
+              "fraction": 0.5,
+              "width": 351.24,
+              "height": 361.78
+            },
+            {
+              "fraction": 0.75,
+              "width": 309.05,
+              "height": 361.33
+            },
+            {
+              "fraction": 0.99,
+              "width": 328.59,
+              "height": 350.35
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 6.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 331.71,
+              "height": 350.07
+            },
+            {
+              "fraction": 0.25,
+              "width": 375.62,
+              "height": 362.07
+            },
+            {
+              "fraction": 0.5,
+              "width": 351.24,
+              "height": 361.78
+            },
+            {
+              "fraction": 0.75,
+              "width": 309.05,
+              "height": 350.73
+            },
+            {
+              "fraction": 0.99,
+              "width": 328.59,
+              "height": 350.23
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 307.72,
+              "height": 345.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 383.4,
+              "height": 339.43
+            },
+            {
+              "fraction": 0.5,
+              "width": 287.17,
+              "height": 342.57
+            },
+            {
+              "fraction": 0.75,
+              "width": 288.45,
+              "height": 364.3
+            },
+            {
+              "fraction": 0.99,
+              "width": 306.29,
+              "height": 345.36
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 342.26,
+              "height": 394.36
+            },
+            {
+              "fraction": 0.25,
+              "width": 354.5,
+              "height": 392.8
+            },
+            {
+              "fraction": 0.5,
+              "width": 362.93,
+              "height": 388.39
+            },
+            {
+              "fraction": 0.75,
+              "width": 353.45,
+              "height": 393.1
+            },
+            {
+              "fraction": 0.99,
+              "width": 342.46,
+              "height": 394.36
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 333.45,
+              "height": 352.41
+            },
+            {
+              "fraction": 0.25,
+              "width": 339.98,
+              "height": 352.28
+            },
+            {
+              "fraction": 0.5,
+              "width": 328.38,
+              "height": 348.68
+            },
+            {
+              "fraction": 0.75,
+              "width": 325.46,
+              "height": 352.47
+            },
+            {
+              "fraction": 0.99,
+              "width": 333.06,
+              "height": 352.43
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 310,
+              "height": 348.38
+            },
+            {
+              "fraction": 0.25,
+              "width": 313.14,
+              "height": 348.91
+            },
+            {
+              "fraction": 0.5,
+              "width": 321.83,
+              "height": 344.39
+            },
+            {
+              "fraction": 0.75,
+              "width": 339.11,
+              "height": 349.75
+            },
+            {
+              "fraction": 0.99,
+              "width": 310.02,
+              "height": 348.36
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 311.61,
+              "height": 351.93
+            },
+            {
+              "fraction": 0.25,
+              "width": 312.36,
+              "height": 356.02
+            },
+            {
+              "fraction": 0.5,
+              "width": 314.04,
+              "height": 361.06
+            },
+            {
+              "fraction": 0.75,
+              "width": 315,
+              "height": 359.49
+            },
+            {
+              "fraction": 0.99,
+              "width": 311.77,
+              "height": 352.09
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 297.02,
+              "height": 334.98
+            },
+            {
+              "fraction": 0.25,
+              "width": 293.18,
+              "height": 308.27
+            },
+            {
+              "fraction": 0.5,
+              "width": 295.28,
+              "height": 305.63
+            },
+            {
+              "fraction": 0.75,
+              "width": 303.43,
+              "height": 307.7
+            },
+            {
+              "fraction": 0.99,
+              "width": 297.54,
+              "height": 334.5
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 293.84,
+              "height": 341.4
+            },
+            {
+              "fraction": 0.25,
+              "width": 284.54,
+              "height": 349.7
+            },
+            {
+              "fraction": 0.5,
+              "width": 305.37,
+              "height": 361.07
+            },
+            {
+              "fraction": 0.75,
+              "width": 299.93,
+              "height": 354.89
+            },
+            {
+              "fraction": 0.99,
+              "width": 293.82,
+              "height": 340.49
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 184361
+    },
+    {
+      "id": "yanzhan",
+      "name": "厌战",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 328.68,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.25,
+              "width": 343.92,
+              "height": 374.14
+            },
+            {
+              "fraction": 0.5,
+              "width": 349.05,
+              "height": 384.22
+            },
+            {
+              "fraction": 0.75,
+              "width": 324.72,
+              "height": 387.4
+            },
+            {
+              "fraction": 0.99,
+              "width": 328.4,
+              "height": 406.2
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 347.5,
+              "height": 382.47
+            },
+            {
+              "fraction": 0.25,
+              "width": 342.31,
+              "height": 368.8
+            },
+            {
+              "fraction": 0.5,
+              "width": 319.96,
+              "height": 383.32
+            },
+            {
+              "fraction": 0.75,
+              "width": 329.15,
+              "height": 382.02
+            },
+            {
+              "fraction": 0.99,
+              "width": 347.29,
+              "height": 382.36
+            }
+          ]
+        },
+        {
+          "name": "attack_main",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 328.68,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.25,
+              "width": 343.92,
+              "height": 374.14
+            },
+            {
+              "fraction": 0.5,
+              "width": 349.05,
+              "height": 384.22
+            },
+            {
+              "fraction": 0.75,
+              "width": 324.72,
+              "height": 387.4
+            },
+            {
+              "fraction": 0.99,
+              "width": 328.4,
+              "height": 406.2
+            }
+          ]
+        },
+        {
+          "name": "break",
+          "duration": 1.1666666269302368,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 328.68,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.25,
+              "width": 381.27,
+              "height": 382.99
+            },
+            {
+              "fraction": 0.5,
+              "width": 330.21,
+              "height": 372.99
+            },
+            {
+              "fraction": 0.75,
+              "width": 326.79,
+              "height": 381.71
+            },
+            {
+              "fraction": 0.99,
+              "width": 328.47,
+              "height": 406.07
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 231.44,
+              "height": 351.65
+            },
+            {
+              "fraction": 0.25,
+              "width": 222.79,
+              "height": 340.16
+            },
+            {
+              "fraction": 0.5,
+              "width": 220.73,
+              "height": 365.75
+            },
+            {
+              "fraction": 0.75,
+              "width": 217.49,
+              "height": 373.27
+            },
+            {
+              "fraction": 0.99,
+              "width": 230.48,
+              "height": 352.71
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 1.0333333015441895,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 319,
+              "height": 375.23
+            },
+            {
+              "fraction": 0.25,
+              "width": 356.49,
+              "height": 386.2
+            },
+            {
+              "fraction": 0.5,
+              "width": 342.02,
+              "height": 382.87
+            },
+            {
+              "fraction": 0.75,
+              "width": 437.37,
+              "height": 418.63
+            },
+            {
+              "fraction": 0.99,
+              "width": 487.04,
+              "height": 340.63
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 5.166666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 287.52,
+              "height": 353.72
+            },
+            {
+              "fraction": 0.25,
+              "width": 256.29,
+              "height": 341.51
+            },
+            {
+              "fraction": 0.5,
+              "width": 244.09,
+              "height": 340.32
+            },
+            {
+              "fraction": 0.75,
+              "width": 281.08,
+              "height": 330.71
+            },
+            {
+              "fraction": 0.99,
+              "width": 276.73,
+              "height": 363.83
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 328.68,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.25,
+              "width": 338.5,
+              "height": 411.29
+            },
+            {
+              "fraction": 0.5,
+              "width": 328.68,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.75,
+              "width": 338.5,
+              "height": 411.29
+            },
+            {
+              "fraction": 0.99,
+              "width": 328.82,
+              "height": 406.46
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 347.5,
+              "height": 382.47
+            },
+            {
+              "fraction": 0.25,
+              "width": 349.78,
+              "height": 377.89
+            },
+            {
+              "fraction": 0.5,
+              "width": 347.5,
+              "height": 382.47
+            },
+            {
+              "fraction": 0.75,
+              "width": 349.78,
+              "height": 377.89
+            },
+            {
+              "fraction": 0.99,
+              "width": 347.54,
+              "height": 382.42
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 319,
+              "height": 375.23
+            },
+            {
+              "fraction": 0.25,
+              "width": 327.5,
+              "height": 384.89
+            },
+            {
+              "fraction": 0.5,
+              "width": 319,
+              "height": 375.23
+            },
+            {
+              "fraction": 0.75,
+              "width": 327.5,
+              "height": 384.89
+            },
+            {
+              "fraction": 0.99,
+              "width": 319.12,
+              "height": 376.16
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 220.4,
+              "height": 327.69
+            },
+            {
+              "fraction": 0.25,
+              "width": 219.49,
+              "height": 328.32
+            },
+            {
+              "fraction": 0.5,
+              "width": 214.82,
+              "height": 330.62
+            },
+            {
+              "fraction": 0.75,
+              "width": 212.82,
+              "height": 328.92
+            },
+            {
+              "fraction": 0.99,
+              "width": 220.19,
+              "height": 327.69
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 328.68,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.25,
+              "width": 338.5,
+              "height": 411.29
+            },
+            {
+              "fraction": 0.5,
+              "width": 328.68,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.75,
+              "width": 338.5,
+              "height": 411.29
+            },
+            {
+              "fraction": 0.99,
+              "width": 328.82,
+              "height": 406.46
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 345.63,
+              "height": 306.48
+            },
+            {
+              "fraction": 0.25,
+              "width": 346.33,
+              "height": 312.52
+            },
+            {
+              "fraction": 0.5,
+              "width": 350.24,
+              "height": 300.19
+            },
+            {
+              "fraction": 0.75,
+              "width": 349.61,
+              "height": 303.06
+            },
+            {
+              "fraction": 0.99,
+              "width": 345.78,
+              "height": 306.42
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 8.833333015441895,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 319,
+              "height": 375.23
+            },
+            {
+              "fraction": 0.25,
+              "width": 319.41,
+              "height": 377.74
+            },
+            {
+              "fraction": 0.5,
+              "width": 320.25,
+              "height": 380.26
+            },
+            {
+              "fraction": 0.75,
+              "width": 335.69,
+              "height": 375.83
+            },
+            {
+              "fraction": 0.99,
+              "width": 320.5,
+              "height": 365.77
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 9.833333015441895,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 203.32,
+              "height": 357.76
+            },
+            {
+              "fraction": 0.25,
+              "width": 202.36,
+              "height": 355.86
+            },
+            {
+              "fraction": 0.5,
+              "width": 248.87,
+              "height": 355.63
+            },
+            {
+              "fraction": 0.75,
+              "width": 264.32,
+              "height": 341.51
+            },
+            {
+              "fraction": 0.99,
+              "width": 278.19,
+              "height": 384.64
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 207.01,
+              "height": 353.72
+            },
+            {
+              "fraction": 0.25,
+              "width": 365.68,
+              "height": 314.55
+            },
+            {
+              "fraction": 0.5,
+              "width": 191.84,
+              "height": 382.53
+            },
+            {
+              "fraction": 0.75,
+              "width": 208.32,
+              "height": 366.62
+            },
+            {
+              "fraction": 0.99,
+              "width": 206.93,
+              "height": 353.74
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 398.11,
+              "height": 454.3
+            },
+            {
+              "fraction": 0.25,
+              "width": 379.21,
+              "height": 438.37
+            },
+            {
+              "fraction": 0.5,
+              "width": 392.56,
+              "height": 454.51
+            },
+            {
+              "fraction": 0.75,
+              "width": 410.8,
+              "height": 437.11
+            },
+            {
+              "fraction": 0.99,
+              "width": 400.27,
+              "height": 453.92
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 332.91,
+              "height": 343.27
+            },
+            {
+              "fraction": 0.25,
+              "width": 297.34,
+              "height": 338.61
+            },
+            {
+              "fraction": 0.5,
+              "width": 344.34,
+              "height": 330.97
+            },
+            {
+              "fraction": 0.75,
+              "width": 349.96,
+              "height": 317.38
+            },
+            {
+              "fraction": 0.99,
+              "width": 335.31,
+              "height": 341.28
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 4.166666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 319,
+              "height": 375.23
+            },
+            {
+              "fraction": 0.25,
+              "width": 333.31,
+              "height": 374.7
+            },
+            {
+              "fraction": 0.5,
+              "width": 331.48,
+              "height": 373.14
+            },
+            {
+              "fraction": 0.75,
+              "width": 336.23,
+              "height": 376.11
+            },
+            {
+              "fraction": 0.99,
+              "width": 319.51,
+              "height": 368.89
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1.0666667222976685,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 239.22,
+              "height": 334.29
+            },
+            {
+              "fraction": 0.25,
+              "width": 243.71,
+              "height": 335.65
+            },
+            {
+              "fraction": 0.5,
+              "width": 239.47,
+              "height": 345.39
+            },
+            {
+              "fraction": 0.75,
+              "width": 242.03,
+              "height": 336.79
+            },
+            {
+              "fraction": 0.99,
+              "width": 240.02,
+              "height": 334.35
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 228,
+              "height": 333.92
+            },
+            {
+              "fraction": 0.25,
+              "width": 221.89,
+              "height": 327.39
+            },
+            {
+              "fraction": 0.5,
+              "width": 214.81,
+              "height": 329.03
+            },
+            {
+              "fraction": 0.75,
+              "width": 215.92,
+              "height": 327.32
+            },
+            {
+              "fraction": 0.99,
+              "width": 227.62,
+              "height": 333.77
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 278.31,
+              "height": 360.32
+            },
+            {
+              "fraction": 0.25,
+              "width": 310.67,
+              "height": 352.28
+            },
+            {
+              "fraction": 0.5,
+              "width": 220.38,
+              "height": 383.76
+            },
+            {
+              "fraction": 0.75,
+              "width": 327.91,
+              "height": 330.68
+            },
+            {
+              "fraction": 0.99,
+              "width": 281.66,
+              "height": 359.03
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 172693
+    },
+    {
+      "id": "bisimai",
+      "name": "俾斯麦",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "BSMjiangtai",
+          "duration": 7,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 267.39,
+              "height": 341.75
+            },
+            {
+              "fraction": 0.25,
+              "width": 292.75,
+              "height": 343.69
+            },
+            {
+              "fraction": 0.5,
+              "width": 330.45,
+              "height": 367.83
+            },
+            {
+              "fraction": 0.75,
+              "width": 262.43,
+              "height": 364.1
+            },
+            {
+              "fraction": 0.99,
+              "width": 267.09,
+              "height": 344.53
+            }
+          ]
+        },
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 356.07,
+              "height": 394.76
+            },
+            {
+              "fraction": 0.25,
+              "width": 408.68,
+              "height": 382.83
+            },
+            {
+              "fraction": 0.5,
+              "width": 351.88,
+              "height": 369.41
+            },
+            {
+              "fraction": 0.75,
+              "width": 352.99,
+              "height": 373.22
+            },
+            {
+              "fraction": 0.99,
+              "width": 356.04,
+              "height": 394.31
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 350.85,
+              "height": 393.43
+            },
+            {
+              "fraction": 0.25,
+              "width": 349.75,
+              "height": 393.44
+            },
+            {
+              "fraction": 0.5,
+              "width": 375.11,
+              "height": 393.37
+            },
+            {
+              "fraction": 0.75,
+              "width": 349.75,
+              "height": 393.44
+            },
+            {
+              "fraction": 0.99,
+              "width": 350.86,
+              "height": 393.43
+            }
+          ]
+        },
+        {
+          "name": "attack_main",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 356.07,
+              "height": 394.76
+            },
+            {
+              "fraction": 0.25,
+              "width": 347.1,
+              "height": 370.02
+            },
+            {
+              "fraction": 0.5,
+              "width": 405.41,
+              "height": 383.8
+            },
+            {
+              "fraction": 0.75,
+              "width": 351.14,
+              "height": 372.6
+            },
+            {
+              "fraction": 0.99,
+              "width": 356.04,
+              "height": 394.16
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 237.26,
+              "height": 352.91
+            },
+            {
+              "fraction": 0.25,
+              "width": 226,
+              "height": 343.87
+            },
+            {
+              "fraction": 0.5,
+              "width": 238.81,
+              "height": 357.77
+            },
+            {
+              "fraction": 0.75,
+              "width": 226,
+              "height": 343.87
+            },
+            {
+              "fraction": 0.99,
+              "width": 237.1,
+              "height": 352.79
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 338.04,
+              "height": 356.34
+            },
+            {
+              "fraction": 0.25,
+              "width": 343.46,
+              "height": 373.15
+            },
+            {
+              "fraction": 0.5,
+              "width": 416.28,
+              "height": 453.19
+            },
+            {
+              "fraction": 0.75,
+              "width": 417.23,
+              "height": 311.13
+            },
+            {
+              "fraction": 0.99,
+              "width": 416.41,
+              "height": 319.84
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 267.39,
+              "height": 341.75
+            },
+            {
+              "fraction": 0.25,
+              "width": 327.24,
+              "height": 354.36
+            },
+            {
+              "fraction": 0.5,
+              "width": 320.47,
+              "height": 362.4
+            },
+            {
+              "fraction": 0.75,
+              "width": 319.28,
+              "height": 361.04
+            },
+            {
+              "fraction": 0.99,
+              "width": 268.21,
+              "height": 341.98
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 349.19,
+              "height": 394.76
+            },
+            {
+              "fraction": 0.25,
+              "width": 349.51,
+              "height": 363.16
+            },
+            {
+              "fraction": 0.5,
+              "width": 349.19,
+              "height": 394.76
+            },
+            {
+              "fraction": 0.75,
+              "width": 349.51,
+              "height": 363.16
+            },
+            {
+              "fraction": 0.99,
+              "width": 349.02,
+              "height": 394.37
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 350.85,
+              "height": 393.43
+            },
+            {
+              "fraction": 0.25,
+              "width": 335.22,
+              "height": 389.24
+            },
+            {
+              "fraction": 0.5,
+              "width": 350.85,
+              "height": 393.43
+            },
+            {
+              "fraction": 0.75,
+              "width": 335.22,
+              "height": 389.24
+            },
+            {
+              "fraction": 0.99,
+              "width": 350.65,
+              "height": 393.39
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 338.04,
+              "height": 356.34
+            },
+            {
+              "fraction": 0.25,
+              "width": 351.61,
+              "height": 365.17
+            },
+            {
+              "fraction": 0.5,
+              "width": 338.04,
+              "height": 356.34
+            },
+            {
+              "fraction": 0.75,
+              "width": 351.61,
+              "height": 365.17
+            },
+            {
+              "fraction": 0.99,
+              "width": 338.31,
+              "height": 356.49
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 277.29,
+              "height": 359.82
+            },
+            {
+              "fraction": 0.25,
+              "width": 273.53,
+              "height": 364.55
+            },
+            {
+              "fraction": 0.5,
+              "width": 269.58,
+              "height": 368.96
+            },
+            {
+              "fraction": 0.75,
+              "width": 273.53,
+              "height": 364.55
+            },
+            {
+              "fraction": 0.99,
+              "width": 277.24,
+              "height": 359.89
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 349.19,
+              "height": 394.76
+            },
+            {
+              "fraction": 0.25,
+              "width": 349.51,
+              "height": 363.16
+            },
+            {
+              "fraction": 0.5,
+              "width": 349.19,
+              "height": 394.76
+            },
+            {
+              "fraction": 0.75,
+              "width": 349.51,
+              "height": 363.16
+            },
+            {
+              "fraction": 0.99,
+              "width": 349.02,
+              "height": 394.37
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 368.3,
+              "height": 359.38
+            },
+            {
+              "fraction": 0.25,
+              "width": 369.86,
+              "height": 353.54
+            },
+            {
+              "fraction": 0.5,
+              "width": 370.85,
+              "height": 347.16
+            },
+            {
+              "fraction": 0.75,
+              "width": 369.86,
+              "height": 353.54
+            },
+            {
+              "fraction": 0.99,
+              "width": 368.33,
+              "height": 359.31
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 338.04,
+              "height": 356.34
+            },
+            {
+              "fraction": 0.25,
+              "width": 351.61,
+              "height": 364.17
+            },
+            {
+              "fraction": 0.5,
+              "width": 338.04,
+              "height": 356.34
+            },
+            {
+              "fraction": 0.75,
+              "width": 351.61,
+              "height": 364.17
+            },
+            {
+              "fraction": 0.99,
+              "width": 338.31,
+              "height": 356.47
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 267.39,
+              "height": 341.75
+            },
+            {
+              "fraction": 0.25,
+              "width": 285.99,
+              "height": 349.97
+            },
+            {
+              "fraction": 0.5,
+              "width": 267.39,
+              "height": 341.75
+            },
+            {
+              "fraction": 0.75,
+              "width": 316.35,
+              "height": 349.97
+            },
+            {
+              "fraction": 0.99,
+              "width": 268.82,
+              "height": 341.87
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 267.39,
+              "height": 341.75
+            },
+            {
+              "fraction": 0.25,
+              "width": 279.65,
+              "height": 326.08
+            },
+            {
+              "fraction": 0.5,
+              "width": 255.7,
+              "height": 356.69
+            },
+            {
+              "fraction": 0.75,
+              "width": 275.83,
+              "height": 330.97
+            },
+            {
+              "fraction": 0.99,
+              "width": 266.99,
+              "height": 342.27
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 396.81,
+              "height": 465.77
+            },
+            {
+              "fraction": 0.25,
+              "width": 398.25,
+              "height": 462.96
+            },
+            {
+              "fraction": 0.5,
+              "width": 400.63,
+              "height": 459.11
+            },
+            {
+              "fraction": 0.75,
+              "width": 398.25,
+              "height": 462.96
+            },
+            {
+              "fraction": 0.99,
+              "width": 396.83,
+              "height": 465.74
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 349.04,
+              "height": 388.91
+            },
+            {
+              "fraction": 0.25,
+              "width": 354.13,
+              "height": 377.02
+            },
+            {
+              "fraction": 0.5,
+              "width": 358.24,
+              "height": 371.43
+            },
+            {
+              "fraction": 0.75,
+              "width": 354.13,
+              "height": 377.02
+            },
+            {
+              "fraction": 0.99,
+              "width": 349.11,
+              "height": 388.76
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 338.04,
+              "height": 356.34
+            },
+            {
+              "fraction": 0.25,
+              "width": 346.71,
+              "height": 459.3
+            },
+            {
+              "fraction": 0.5,
+              "width": 351.61,
+              "height": 364.17
+            },
+            {
+              "fraction": 0.75,
+              "width": 346.71,
+              "height": 360.75
+            },
+            {
+              "fraction": 0.99,
+              "width": 338.16,
+              "height": 356.4
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 289.61,
+              "height": 346.16
+            },
+            {
+              "fraction": 0.25,
+              "width": 284.01,
+              "height": 345.09
+            },
+            {
+              "fraction": 0.5,
+              "width": 279.11,
+              "height": 344.47
+            },
+            {
+              "fraction": 0.75,
+              "width": 284.01,
+              "height": 345.26
+            },
+            {
+              "fraction": 0.99,
+              "width": 289.54,
+              "height": 346.13
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 193.02,
+              "height": 253.31
+            },
+            {
+              "fraction": 0.25,
+              "width": 196.88,
+              "height": 259.48
+            },
+            {
+              "fraction": 0.5,
+              "width": 200.3,
+              "height": 265.42
+            },
+            {
+              "fraction": 0.75,
+              "width": 196.88,
+              "height": 259.48
+            },
+            {
+              "fraction": 0.99,
+              "width": 193.18,
+              "height": 253.55
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 237.26,
+              "height": 352.91
+            },
+            {
+              "fraction": 0.25,
+              "width": 226,
+              "height": 343.87
+            },
+            {
+              "fraction": 0.5,
+              "width": 238.81,
+              "height": 357.77
+            },
+            {
+              "fraction": 0.75,
+              "width": 226,
+              "height": 343.87
+            },
+            {
+              "fraction": 0.99,
+              "width": 237.1,
+              "height": 352.79
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 176533
+    },
+    {
+      "id": "qiye",
+      "name": "企业",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 409.93,
+              "height": 382.38
+            },
+            {
+              "fraction": 0.25,
+              "width": 427.15,
+              "height": 339.17
+            },
+            {
+              "fraction": 0.5,
+              "width": 346.22,
+              "height": 398.32
+            },
+            {
+              "fraction": 0.75,
+              "width": 340.13,
+              "height": 415.24
+            },
+            {
+              "fraction": 0.99,
+              "width": 413.85,
+              "height": 382.58
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 415.63,
+              "height": 387.43
+            },
+            {
+              "fraction": 0.25,
+              "width": 456.99,
+              "height": 353.99
+            },
+            {
+              "fraction": 0.5,
+              "width": 378.69,
+              "height": 398.66
+            },
+            {
+              "fraction": 0.75,
+              "width": 380.5,
+              "height": 373.77
+            },
+            {
+              "fraction": 0.99,
+              "width": 453.75,
+              "height": 386.76
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 412.41,
+              "height": 364.78
+            },
+            {
+              "fraction": 0.25,
+              "width": 328.99,
+              "height": 386.53
+            },
+            {
+              "fraction": 0.5,
+              "width": 414.88,
+              "height": 371.16
+            },
+            {
+              "fraction": 0.75,
+              "width": 387.35,
+              "height": 356.55
+            },
+            {
+              "fraction": 0.99,
+              "width": 432.05,
+              "height": 365.49
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 366.29,
+              "height": 398.31
+            },
+            {
+              "fraction": 0.25,
+              "width": 585.27,
+              "height": 367.41
+            },
+            {
+              "fraction": 0.5,
+              "width": 653.86,
+              "height": 408.55
+            },
+            {
+              "fraction": 0.75,
+              "width": 664.36,
+              "height": 339.82
+            },
+            {
+              "fraction": 0.99,
+              "width": 706.12,
+              "height": 264.33
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 9.333333015441895,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 378.75,
+              "height": 399.13
+            },
+            {
+              "fraction": 0.25,
+              "width": 568.37,
+              "height": 636.3
+            },
+            {
+              "fraction": 0.5,
+              "width": 379.69,
+              "height": 838.46
+            },
+            {
+              "fraction": 0.75,
+              "width": 456.36,
+              "height": 635.41
+            },
+            {
+              "fraction": 0.99,
+              "width": 406.01,
+              "height": 399.14
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 413.63,
+              "height": 382.38
+            },
+            {
+              "fraction": 0.25,
+              "width": 435.42,
+              "height": 396.32
+            },
+            {
+              "fraction": 0.5,
+              "width": 413.63,
+              "height": 382.38
+            },
+            {
+              "fraction": 0.75,
+              "width": 435.42,
+              "height": 396.32
+            },
+            {
+              "fraction": 0.99,
+              "width": 411.99,
+              "height": 382.48
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 415.63,
+              "height": 387.43
+            },
+            {
+              "fraction": 0.25,
+              "width": 380.15,
+              "height": 389.94
+            },
+            {
+              "fraction": 0.5,
+              "width": 415.63,
+              "height": 387.43
+            },
+            {
+              "fraction": 0.75,
+              "width": 380.15,
+              "height": 389.94
+            },
+            {
+              "fraction": 0.99,
+              "width": 456.44,
+              "height": 388.43
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 378.79,
+              "height": 398.31
+            },
+            {
+              "fraction": 0.25,
+              "width": 374.65,
+              "height": 387.28
+            },
+            {
+              "fraction": 0.5,
+              "width": 397.41,
+              "height": 398.31
+            },
+            {
+              "fraction": 0.75,
+              "width": 374.65,
+              "height": 387.28
+            },
+            {
+              "fraction": 0.99,
+              "width": 399.04,
+              "height": 397.92
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 311.72,
+              "height": 433.88
+            },
+            {
+              "fraction": 0.25,
+              "width": 298.92,
+              "height": 437.45
+            },
+            {
+              "fraction": 0.5,
+              "width": 312.48,
+              "height": 439.84
+            },
+            {
+              "fraction": 0.75,
+              "width": 325.11,
+              "height": 435.43
+            },
+            {
+              "fraction": 0.99,
+              "width": 312.42,
+              "height": 433.88
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 413.63,
+              "height": 382.38
+            },
+            {
+              "fraction": 0.25,
+              "width": 435.42,
+              "height": 396.32
+            },
+            {
+              "fraction": 0.5,
+              "width": 413.63,
+              "height": 382.38
+            },
+            {
+              "fraction": 0.75,
+              "width": 435.42,
+              "height": 396.32
+            },
+            {
+              "fraction": 0.99,
+              "width": 411.99,
+              "height": 382.48
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 368.61,
+              "height": 403.59
+            },
+            {
+              "fraction": 0.25,
+              "width": 358.05,
+              "height": 402.01
+            },
+            {
+              "fraction": 0.5,
+              "width": 373.07,
+              "height": 406.32
+            },
+            {
+              "fraction": 0.75,
+              "width": 385.39,
+              "height": 429.12
+            },
+            {
+              "fraction": 0.99,
+              "width": 369.66,
+              "height": 403.58
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 11.366666793823242,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 378.75,
+              "height": 399.13
+            },
+            {
+              "fraction": 0.25,
+              "width": 393.41,
+              "height": 400.01
+            },
+            {
+              "fraction": 0.5,
+              "width": 356.06,
+              "height": 406.39
+            },
+            {
+              "fraction": 0.75,
+              "width": 403.03,
+              "height": 386.3
+            },
+            {
+              "fraction": 0.99,
+              "width": 378.5,
+              "height": 402.62
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 14.033333778381348,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 378.75,
+              "height": 399.13
+            },
+            {
+              "fraction": 0.25,
+              "width": 377.73,
+              "height": 390.75
+            },
+            {
+              "fraction": 0.5,
+              "width": 570.25,
+              "height": 635.01
+            },
+            {
+              "fraction": 0.75,
+              "width": 487.2,
+              "height": 729.56
+            },
+            {
+              "fraction": 0.99,
+              "width": 403.74,
+              "height": 398.63
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.6666666865348816,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 378.75,
+              "height": 399.13
+            },
+            {
+              "fraction": 0.25,
+              "width": 367.67,
+              "height": 336.17
+            },
+            {
+              "fraction": 0.5,
+              "width": 335.13,
+              "height": 451.94
+            },
+            {
+              "fraction": 0.75,
+              "width": 334.15,
+              "height": 393.48
+            },
+            {
+              "fraction": 0.99,
+              "width": 398.71,
+              "height": 398.59
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 412.48,
+              "height": 459.44
+            },
+            {
+              "fraction": 0.25,
+              "width": 429.05,
+              "height": 418.49
+            },
+            {
+              "fraction": 0.5,
+              "width": 421.23,
+              "height": 444.42
+            },
+            {
+              "fraction": 0.75,
+              "width": 394.33,
+              "height": 485.12
+            },
+            {
+              "fraction": 0.99,
+              "width": 410.96,
+              "height": 498.1
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 369.48,
+              "height": 459.44
+            },
+            {
+              "fraction": 0.25,
+              "width": 388.55,
+              "height": 418.49
+            },
+            {
+              "fraction": 0.5,
+              "width": 389.72,
+              "height": 444.42
+            },
+            {
+              "fraction": 0.75,
+              "width": 364.4,
+              "height": 485.12
+            },
+            {
+              "fraction": 0.99,
+              "width": 368,
+              "height": 498.1
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 6.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 378.75,
+              "height": 399.13
+            },
+            {
+              "fraction": 0.25,
+              "width": 332.24,
+              "height": 415.68
+            },
+            {
+              "fraction": 0.5,
+              "width": 393.9,
+              "height": 422.71
+            },
+            {
+              "fraction": 0.75,
+              "width": 415.11,
+              "height": 381.41
+            },
+            {
+              "fraction": 0.99,
+              "width": 379.16,
+              "height": 400.34
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 339.47,
+              "height": 354.31
+            },
+            {
+              "fraction": 0.25,
+              "width": 359.05,
+              "height": 365.41
+            },
+            {
+              "fraction": 0.5,
+              "width": 366.84,
+              "height": 373.33
+            },
+            {
+              "fraction": 0.75,
+              "width": 370.99,
+              "height": 384.34
+            },
+            {
+              "fraction": 0.99,
+              "width": 350.66,
+              "height": 355.9
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 271.5,
+              "height": 355.46
+            },
+            {
+              "fraction": 0.25,
+              "width": 237.57,
+              "height": 338.94
+            },
+            {
+              "fraction": 0.5,
+              "width": 252.56,
+              "height": 342.53
+            },
+            {
+              "fraction": 0.75,
+              "width": 274.93,
+              "height": 329.27
+            },
+            {
+              "fraction": 0.99,
+              "width": 271.41,
+              "height": 354.77
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 391.1,
+              "height": 409.04
+            },
+            {
+              "fraction": 0.25,
+              "width": 367.52,
+              "height": 399.85
+            },
+            {
+              "fraction": 0.5,
+              "width": 451.73,
+              "height": 418.11
+            },
+            {
+              "fraction": 0.75,
+              "width": 436.1,
+              "height": 411.73
+            },
+            {
+              "fraction": 0.99,
+              "width": 366.86,
+              "height": 409.39
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 154942
+    },
+    {
+      "id": "dujiaoshou",
+      "name": "独角兽",
+      "status": "passed",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 285.23,
+              "height": 338.54
+            },
+            {
+              "fraction": 0.25,
+              "width": 302.59,
+              "height": 325.28
+            },
+            {
+              "fraction": 0.5,
+              "width": 318.36,
+              "height": 323.93
+            },
+            {
+              "fraction": 0.75,
+              "width": 297.46,
+              "height": 332.71
+            },
+            {
+              "fraction": 0.99,
+              "width": 285.07,
+              "height": 338.48
+            }
+          ]
+        },
+        {
+          "name": "attack_left",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 285.23,
+              "height": 338.54
+            },
+            {
+              "fraction": 0.25,
+              "width": 302.59,
+              "height": 325.28
+            },
+            {
+              "fraction": 0.5,
+              "width": 318.36,
+              "height": 323.93
+            },
+            {
+              "fraction": 0.75,
+              "width": 297.46,
+              "height": 332.71
+            },
+            {
+              "fraction": 0.99,
+              "width": 285.07,
+              "height": 338.48
+            }
+          ]
+        },
+        {
+          "name": "dance",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 250.02,
+              "height": 327.43
+            },
+            {
+              "fraction": 0.25,
+              "width": 245.73,
+              "height": 319.55
+            },
+            {
+              "fraction": 0.5,
+              "width": 245.21,
+              "height": 315.62
+            },
+            {
+              "fraction": 0.75,
+              "width": 245.73,
+              "height": 319.55
+            },
+            {
+              "fraction": 0.99,
+              "width": 249.98,
+              "height": 327.33
+            }
+          ]
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 242.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 296.67,
+              "height": 381.06
+            },
+            {
+              "fraction": 0.5,
+              "width": 384.63,
+              "height": 367.63
+            },
+            {
+              "fraction": 0.75,
+              "width": 361.98,
+              "height": 306.22
+            },
+            {
+              "fraction": 0.99,
+              "width": 343.36,
+              "height": 276.36
+            }
+          ]
+        },
+        {
+          "name": "motou",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 242.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 257.64,
+              "height": 313.9
+            },
+            {
+              "fraction": 0.5,
+              "width": 242.09,
+              "height": 313.9
+            },
+            {
+              "fraction": 0.75,
+              "width": 257.64,
+              "height": 313.9
+            },
+            {
+              "fraction": 0.99,
+              "width": 242.14,
+              "height": 366.95
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 285.23,
+              "height": 338.54
+            },
+            {
+              "fraction": 0.25,
+              "width": 290.23,
+              "height": 338.54
+            },
+            {
+              "fraction": 0.5,
+              "width": 260.54,
+              "height": 373.4
+            },
+            {
+              "fraction": 0.75,
+              "width": 263.48,
+              "height": 391.08
+            },
+            {
+              "fraction": 0.99,
+              "width": 282.75,
+              "height": 339.54
+            }
+          ]
+        },
+        {
+          "name": "move_left",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 284.94,
+              "height": 415.43
+            },
+            {
+              "fraction": 0.25,
+              "width": 303.45,
+              "height": 399.19
+            },
+            {
+              "fraction": 0.5,
+              "width": 284.94,
+              "height": 415.43
+            },
+            {
+              "fraction": 0.75,
+              "width": 303.45,
+              "height": 399.19
+            },
+            {
+              "fraction": 0.99,
+              "width": 285.18,
+              "height": 415.32
+            }
+          ]
+        },
+        {
+          "name": "normal",
+          "duration": 4.666666507720947,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 308.08,
+              "height": 340.52
+            },
+            {
+              "fraction": 0.5,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.75,
+              "width": 308.08,
+              "height": 340.52
+            },
+            {
+              "fraction": 0.99,
+              "width": 243.72,
+              "height": 357.9
+            }
+          ]
+        },
+        {
+          "name": "sit",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 243.09,
+              "height": 313.05
+            },
+            {
+              "fraction": 0.25,
+              "width": 241.1,
+              "height": 309.29
+            },
+            {
+              "fraction": 0.5,
+              "width": 248.22,
+              "height": 315.69
+            },
+            {
+              "fraction": 0.75,
+              "width": 241.1,
+              "height": 309.29
+            },
+            {
+              "fraction": 0.99,
+              "width": 243.06,
+              "height": 313.02
+            }
+          ]
+        },
+        {
+          "name": "skill",
+          "duration": 6,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 288.16,
+              "height": 333.54
+            },
+            {
+              "fraction": 0.25,
+              "width": 293.16,
+              "height": 333.54
+            },
+            {
+              "fraction": 0.5,
+              "width": 260.54,
+              "height": 351.73
+            },
+            {
+              "fraction": 0.75,
+              "width": 263.48,
+              "height": 372.53
+            },
+            {
+              "fraction": 0.99,
+              "width": 286.44,
+              "height": 334.91
+            }
+          ]
+        },
+        {
+          "name": "sleep",
+          "duration": 3.3333332538604736,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 356.04,
+              "height": 347.02
+            },
+            {
+              "fraction": 0.25,
+              "width": 360.31,
+              "height": 346.2
+            },
+            {
+              "fraction": 0.5,
+              "width": 363.81,
+              "height": 344.64
+            },
+            {
+              "fraction": 0.75,
+              "width": 360.31,
+              "height": 346.2
+            },
+            {
+              "fraction": 0.99,
+              "width": 356.1,
+              "height": 347.02
+            }
+          ]
+        },
+        {
+          "name": "stand",
+          "duration": 9.333333015441895,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 244.47,
+              "height": 315.22
+            },
+            {
+              "fraction": 0.5,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.75,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.99,
+              "width": 242.94,
+              "height": 358.01
+            }
+          ]
+        },
+        {
+          "name": "stand2",
+          "duration": 9.333333015441895,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 244.47,
+              "height": 315.22
+            },
+            {
+              "fraction": 0.5,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.75,
+              "width": 243.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.99,
+              "width": 242.94,
+              "height": 358.01
+            }
+          ]
+        },
+        {
+          "name": "touch",
+          "duration": 0.5666666626930237,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 242.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 268.18,
+              "height": 341.77
+            },
+            {
+              "fraction": 0.5,
+              "width": 226.64,
+              "height": 373.86
+            },
+            {
+              "fraction": 0.75,
+              "width": 259.15,
+              "height": 346.9
+            },
+            {
+              "fraction": 0.99,
+              "width": 241.6,
+              "height": 358.74
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 354.61,
+              "height": 390.14
+            },
+            {
+              "fraction": 0.25,
+              "width": 362.02,
+              "height": 389.36
+            },
+            {
+              "fraction": 0.5,
+              "width": 366.26,
+              "height": 385.52
+            },
+            {
+              "fraction": 0.75,
+              "width": 362.02,
+              "height": 389.36
+            },
+            {
+              "fraction": 0.99,
+              "width": 354.73,
+              "height": 390.13
+            }
+          ]
+        },
+        {
+          "name": "tuozhuai2",
+          "duration": 1,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 343.62,
+              "height": 390.14
+            },
+            {
+              "fraction": 0.25,
+              "width": 352.66,
+              "height": 377.98
+            },
+            {
+              "fraction": 0.5,
+              "width": 356.78,
+              "height": 359.21
+            },
+            {
+              "fraction": 0.75,
+              "width": 352.66,
+              "height": 377.98
+            },
+            {
+              "fraction": 0.99,
+              "width": 343.77,
+              "height": 389.98
+            }
+          ]
+        },
+        {
+          "name": "victory",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 242.09,
+              "height": 358.2
+            },
+            {
+              "fraction": 0.25,
+              "width": 264.88,
+              "height": 313.9
+            },
+            {
+              "fraction": 0.5,
+              "width": 242.09,
+              "height": 313.9
+            },
+            {
+              "fraction": 0.75,
+              "width": 264.88,
+              "height": 313.9
+            },
+            {
+              "fraction": 0.99,
+              "width": 242.14,
+              "height": 366.95
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "duration": 1.3333333730697632,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 240.92,
+              "height": 352.3
+            },
+            {
+              "fraction": 0.25,
+              "width": 247.06,
+              "height": 351.21
+            },
+            {
+              "fraction": 0.5,
+              "width": 280.45,
+              "height": 317.75
+            },
+            {
+              "fraction": 0.75,
+              "width": 243.72,
+              "height": 351.21
+            },
+            {
+              "fraction": 0.99,
+              "width": 240.78,
+              "height": 352.38
+            }
+          ]
+        },
+        {
+          "name": "wash",
+          "duration": 4,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 248.09,
+              "height": 299.19
+            },
+            {
+              "fraction": 0.25,
+              "width": 243.54,
+              "height": 308.29
+            },
+            {
+              "fraction": 0.5,
+              "width": 244.42,
+              "height": 315.05
+            },
+            {
+              "fraction": 0.75,
+              "width": 243.54,
+              "height": 308.29
+            },
+            {
+              "fraction": 0.99,
+              "width": 247.68,
+              "height": 299.58
+            }
+          ]
+        },
+        {
+          "name": "yun",
+          "duration": 2,
+          "samples": [
+            {
+              "fraction": 0,
+              "width": 250.02,
+              "height": 327.43
+            },
+            {
+              "fraction": 0.25,
+              "width": 245.73,
+              "height": 319.55
+            },
+            {
+              "fraction": 0.5,
+              "width": 245.21,
+              "height": 315.62
+            },
+            {
+              "fraction": 0.75,
+              "width": 245.73,
+              "height": 319.55
+            },
+            {
+              "fraction": 0.99,
+              "width": 249.98,
+              "height": 327.33
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "idle_visible_pixels": 144858
+    }
+  ],
+  "issues": [],
+  "scope": "Loads every copied skeleton/atlas and samples every animation through the renderer. No game performance or combat validation.",
+  "status": "passed",
+  "animations_checked": 245
+}

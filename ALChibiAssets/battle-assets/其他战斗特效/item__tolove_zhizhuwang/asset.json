@@ -1,0 +1,15 @@
+{
+  "id": "item__tolove_zhizhuwang",
+  "model": "tolove_zhizhuwang",
+  "name": "tolove_zhizhuwang",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/tolove_zhizhuwang",
+  "path": "battle-assets/其他战斗特效/item__tolove_zhizhuwang",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

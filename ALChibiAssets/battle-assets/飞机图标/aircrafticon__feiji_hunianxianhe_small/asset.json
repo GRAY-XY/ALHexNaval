@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__feiji_hunianxianhe_small",
+  "model": "feiji_hunianxianhe_small",
+  "name": "【2024春节共斗 EX难度】关卡仙鹤飞机空袭 战斗机",
+  "names": [
+    "【2024春节共斗 EX难度】关卡仙鹤飞机空袭 战斗机",
+    "【2024春节共斗 EX难度】关卡仙鹤飞机空袭 轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_hunianxianhe_small",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_hunianxianhe_small",
+  "images": [
+    {
+      "file": "feiji_hunianxianhe_small_-29396329039665181.png",
+      "name": "feiji_hunianxianhe_small",
+      "width": 45,
+      "height": 31,
+      "role": "原始精灵",
+      "path_id": -29396329039665181,
+      "source": "CAB-e520e200720056dade83e1a2fffc2f45"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

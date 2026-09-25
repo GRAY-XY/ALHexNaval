@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_bishua",
+  "model": "yulei_bishua",
+  "name": "彩画笔刷鱼雷",
+  "names": [
+    "彩画笔刷鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_bishua",
+  "path": "battle-assets/鱼雷/item__yulei_bishua",
+  "images": [
+    {
+      "file": "yulei_bishua_4878113205008782878.png",
+      "name": "yulei_bishua",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 4878113205008782878,
+      "source": "CAB-8a92de222dc5cbab95ffae79d403d7b1"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_bishua/yulei_bishua_4878113205008782878.png"
+}

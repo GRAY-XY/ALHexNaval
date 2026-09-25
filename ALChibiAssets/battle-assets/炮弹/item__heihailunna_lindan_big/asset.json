@@ -1,0 +1,17 @@
+{
+  "id": "item__heihailunna_lindan_big",
+  "model": "heihailunna_lindan_big",
+  "name": "heihailunna_lindan_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heihailunna_lindan_big",
+  "path": "battle-assets/炮弹/item__heihailunna_lindan_big",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3115001
+  ],
+  "has_preview": false,
+  "prefab": true
+}

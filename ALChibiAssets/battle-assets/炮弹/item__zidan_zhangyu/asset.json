@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_zhangyu",
+  "model": "zidan_zhangyu",
+  "name": "深海之触子弹",
+  "names": [
+    "深海之触子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhangyu",
+  "path": "battle-assets/炮弹/item__zidan_zhangyu",
+  "images": [
+    {
+      "file": "zidan_zhangyu_470997278118769183.png",
+      "name": "zidan_zhangyu",
+      "width": 127,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 470997278118769183,
+      "source": "CAB-845f5af3428a2116aa4b15ac291454be"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zhangyu/zidan_zhangyu_470997278118769183.png"
+}

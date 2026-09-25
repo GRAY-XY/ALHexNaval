@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_tiane__tianejiu_material",
+  "model": "tianejiu_material",
+  "name": "tianejiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/feiji_tiane/tianejiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__feiji_tiane__tianejiu_material",
+  "images": [
+    {
+      "file": "tianejiu_680637643507310123.png",
+      "name": "tianejiu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 680637643507310123,
+      "source": "CAB-1bc0260bfd51159121ba062e639b270b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

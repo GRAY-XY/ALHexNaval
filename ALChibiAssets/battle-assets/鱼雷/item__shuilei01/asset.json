@@ -1,0 +1,38 @@
+{
+  "id": "item__shuilei01",
+  "model": "shuilei01",
+  "name": "shuilei01",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/shuilei01",
+  "path": "battle-assets/鱼雷/item__shuilei01",
+  "images": [
+    {
+      "file": "shuilei01_-6354163383854536097.png",
+      "name": "shuilei01",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6354163383854536097,
+      "source": "CAB-03f2686aff0a4ef944aed283583ca5da"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [
+    "shuileiAnimation"
+  ],
+  "bullet_ids": [
+    19643,
+    19645,
+    19646,
+    19654,
+    160992,
+    161005,
+    161011,
+    164681,
+    165163
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__shuilei01/shuilei01_-6354163383854536097.png"
+}

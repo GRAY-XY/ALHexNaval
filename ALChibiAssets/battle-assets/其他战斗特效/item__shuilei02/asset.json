@@ -1,0 +1,26 @@
+{
+  "id": "item__shuilei02",
+  "model": "shuilei02",
+  "name": "shuilei02",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/shuilei02",
+  "path": "battle-assets/其他战斗特效/item__shuilei02",
+  "images": [
+    {
+      "file": "shuilei02_-365339444465012636.png",
+      "name": "shuilei02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -365339444465012636,
+      "source": "CAB-4dfb6fd64d723c63e7f498ed2767efd7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__shuilei02/shuilei02_-365339444465012636.png"
+}

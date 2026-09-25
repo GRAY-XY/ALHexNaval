@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_gouwudairifu",
+  "model": "yulei_gouwudairifu",
+  "name": "赠品购物袋鱼雷",
+  "names": [
+    "赠品购物袋鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_gouwudairifu",
+  "path": "battle-assets/鱼雷/item__yulei_gouwudairifu",
+  "images": [
+    {
+      "file": "yulei_gouwudairifu_3178030913616140716.png",
+      "name": "yulei_gouwudairifu",
+      "width": 128,
+      "height": 81,
+      "role": "战斗贴图",
+      "path_id": 3178030913616140716,
+      "source": "CAB-6a9c788fb1efccb7dcb7fd3cf6fc8e71"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_gouwudairifu/yulei_gouwudairifu_3178030913616140716.png"
+}

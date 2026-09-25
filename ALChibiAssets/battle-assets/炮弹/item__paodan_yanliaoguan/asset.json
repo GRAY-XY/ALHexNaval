@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_yanliaoguan",
+  "model": "paodan_yanliaoguan",
+  "name": "颜料罐炮弹",
+  "names": [
+    "颜料罐炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yanliaoguan",
+  "path": "battle-assets/炮弹/item__paodan_yanliaoguan",
+  "images": [
+    {
+      "file": "paodan_yanliaoguan_6434695259687618714.png",
+      "name": "paodan_yanliaoguan",
+      "width": 128,
+      "height": 69,
+      "role": "战斗贴图",
+      "path_id": 6434695259687618714,
+      "source": "CAB-b5a2e5a1ccf95dd22d68bb80953bca5c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3169008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yanliaoguan/paodan_yanliaoguan_6434695259687618714.png"
+}

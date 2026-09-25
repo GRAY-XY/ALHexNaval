@@ -1,0 +1,55 @@
+
+tutuhuoqiupaodan.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+base
+  rotate: false
+  xy: 562, 6
+  size: 121, 91
+  orig: 121, 91
+  offset: 0, 0
+  index: -1
+base_a
+  rotate: false
+  xy: 685, 11
+  size: 87, 86
+  orig: 87, 86
+  offset: 0, 0
+  index: -1
+base_b
+  rotate: true
+  xy: 774, 29
+  size: 68, 88
+  orig: 68, 88
+  offset: 0, 0
+  index: -1
+low_1
+  rotate: false
+  xy: 2, 2
+  size: 209, 95
+  orig: 209, 95
+  offset: 0, 0
+  index: -1
+low_2
+  rotate: false
+  xy: 213, 5
+  size: 193, 38
+  orig: 193, 38
+  offset: 0, 0
+  index: -1
+up_1
+  rotate: false
+  xy: 213, 45
+  size: 197, 52
+  orig: 197, 52
+  offset: 0, 0
+  index: -1
+up_2
+  rotate: false
+  xy: 412, 58
+  size: 148, 39
+  orig: 148, 39
+  offset: 0, 0
+  index: -1

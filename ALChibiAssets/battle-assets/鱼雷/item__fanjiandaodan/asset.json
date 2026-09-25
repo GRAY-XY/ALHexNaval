@@ -1,0 +1,37 @@
+{
+  "id": "item__fanjiandaodan",
+  "model": "fanjiandaodan",
+  "name": "fanjiandaodan",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/fanjiandaodan",
+  "path": "battle-assets/鱼雷/item__fanjiandaodan",
+  "images": [
+    {
+      "file": "daodan02_2811249870451170577.png",
+      "name": "daodan02",
+      "width": 285,
+      "height": 178,
+      "role": "战斗贴图",
+      "path_id": 2811249870451170577,
+      "source": "CAB-9570a1de51305b29c9d97550ab014095"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3040002,
+    3040003,
+    3040009,
+    3049002,
+    3049006,
+    3049021,
+    3114008,
+    3119012,
+    3119015,
+    3119028
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__fanjiandaodan/daodan02_2811249870451170577.png"
+}

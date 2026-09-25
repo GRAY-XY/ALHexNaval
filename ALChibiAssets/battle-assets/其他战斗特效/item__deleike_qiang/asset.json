@@ -1,0 +1,26 @@
+{
+  "id": "item__deleike_qiang",
+  "model": "deleike_qiang",
+  "name": "deleike_qiang",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/deleike_qiang",
+  "path": "battle-assets/其他战斗特效/item__deleike_qiang",
+  "images": [
+    {
+      "file": "line01_-6292694613864540296.png",
+      "name": "line01",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6292694613864540296,
+      "source": "CAB-a13e02d3373eca77c25d2b745ac877ed"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__deleike_qiang/line01_-6292694613864540296.png"
+}

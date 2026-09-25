@@ -1,0 +1,41 @@
+
+zidan_jiancifeiye.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shanguang_1
+  rotate: true
+  xy: 303, 12
+  size: 48, 40
+  orig: 48, 40
+  offset: 0, 0
+  index: -1
+shanguang_2
+  rotate: true
+  xy: 345, 30
+  size: 30, 24
+  orig: 30, 24
+  offset: 0, 0
+  index: -1
+shanguang_3
+  rotate: false
+  xy: 345, 2
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+shuye
+  rotate: false
+  xy: 199, 15
+  size: 102, 45
+  orig: 102, 45
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 2
+  size: 195, 58
+  orig: 195, 58
+  offset: 0, 0
+  index: -1

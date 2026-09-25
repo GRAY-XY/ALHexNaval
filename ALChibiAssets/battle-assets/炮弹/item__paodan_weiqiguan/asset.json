@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_weiqiguan",
+  "model": "paodan_weiqiguan",
+  "name": "棋子罐炮弹",
+  "names": [
+    "棋子罐炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_weiqiguan",
+  "path": "battle-assets/炮弹/item__paodan_weiqiguan",
+  "images": [
+    {
+      "file": "paodan_weiqiguan_8516128786173862751.png",
+      "name": "paodan_weiqiguan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8516128786173862751,
+      "source": "CAB-061e9535c75ce3e3dbdd838132a2e548"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_weiqiguan/paodan_weiqiguan_8516128786173862751.png",
+  "spine": {
+    "skel": "paodan_weiqiguan.skel",
+    "atlas": "paodan_weiqiguan.atlas",
+    "pages": [
+      "paodan_weiqiguan.png"
+    ]
+  }
+}

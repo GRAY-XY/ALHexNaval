@@ -1,0 +1,25 @@
+{
+  "id": "item__paodan_chuitou1",
+  "model": "paodan_chuitou1",
+  "name": "paodan_chuitou1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_chuitou1",
+  "path": "battle-assets/炮弹/item__paodan_chuitou1",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710031,
+    710032
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "chuitou.skel",
+    "atlas": "chuitou.atlas",
+    "pages": [
+      "chuitou.png"
+    ]
+  }
+}

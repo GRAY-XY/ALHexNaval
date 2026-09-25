@@ -1,0 +1,45 @@
+{
+  "id": "item__lanhuozidan",
+  "model": "lanhuozidan",
+  "name": "lanhuozidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/lanhuozidan",
+  "path": "battle-assets/炮弹/item__lanhuozidan",
+  "images": [
+    {
+      "file": "lanhuopaodan01_-6759010573789178423.png",
+      "name": "lanhuopaodan01",
+      "width": 115,
+      "height": 38,
+      "role": "战斗贴图",
+      "path_id": -6759010573789178423,
+      "source": "CAB-ea7f2292890fb3b33939bdf6c603be7f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    20115000,
+    20115002,
+    20115004,
+    20115006,
+    20115008,
+    20115610,
+    20115611,
+    20115612,
+    20115613,
+    20115614,
+    20410200,
+    20412000,
+    20412001,
+    20412002,
+    20412003,
+    20430010,
+    20430011,
+    20431110
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__lanhuozidan/lanhuopaodan01_-6759010573789178423.png"
+}

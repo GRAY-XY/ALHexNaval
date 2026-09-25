@@ -1,0 +1,45 @@
+{
+  "id": "chargo__alter_plane2_blue",
+  "model": "alter_plane2_blue",
+  "name": "萨拉托加metaSBDLv1",
+  "names": [
+    "萨拉托加metaSBDLv1",
+    "萨拉托加metaHVARLv1",
+    "约克城metaSBDLv1",
+    "约克城metaHVARLv1",
+    "【大世界】黑海伦娜 约克城支援 飞机 LV1",
+    "【大世界】黑海伦娜 约克城支援 飞机 LV2",
+    "【大世界】黑海伦娜 约克城支援 飞机 LV3",
+    "【大世界】黑海伦娜 约克城支援 飞机 LV4",
+    "【大世界】黑海伦娜 约克城支援 飞机 LV5"
+  ],
+  "category": "飞机",
+  "source": "chargo/alter_plane2_blue",
+  "path": "battle-assets/飞机/chargo__alter_plane2_blue",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "heiyuekecheng_plane_1710525688232951720.png",
+      "name": "heiyuekecheng_plane",
+      "width": 256,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": 1710525688232951720,
+      "source": "CAB-944a0fb6788ed0c92d4042d160e783e2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__alter_plane2_blue/aircraft_shadow_2192772484218123160.png"
+}

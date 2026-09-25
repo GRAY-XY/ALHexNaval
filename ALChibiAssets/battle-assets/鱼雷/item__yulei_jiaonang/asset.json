@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jiaonang",
+  "model": "yulei_jiaonang",
+  "name": "胶囊鱼雷",
+  "names": [
+    "胶囊鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jiaonang",
+  "path": "battle-assets/鱼雷/item__yulei_jiaonang",
+  "images": [
+    {
+      "file": "yulei_jiaonang_2342210913420968286.png",
+      "name": "yulei_jiaonang",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 2342210913420968286,
+      "source": "CAB-b3630b48ca3ca2559e1bd65443b94b88"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jiaonang/yulei_jiaonang_2342210913420968286.png"
+}

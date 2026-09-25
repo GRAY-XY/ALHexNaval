@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_bianxiebingxiang",
+  "model": "paodan_bianxiebingxiang",
+  "name": "便携冰箱炮弹",
+  "names": [
+    "便携冰箱炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_bianxiebingxiang",
+  "path": "battle-assets/炮弹/item__paodan_bianxiebingxiang",
+  "images": [
+    {
+      "file": "paodan_bianxiebingxiang_-3244609774503011669.png",
+      "name": "paodan_bianxiebingxiang",
+      "width": 128,
+      "height": 117,
+      "role": "战斗贴图",
+      "path_id": -3244609774503011669,
+      "source": "CAB-2e9a766056d9ba7283a74eeec9ce9712"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_bianxiebingxiang/paodan_bianxiebingxiang_-3244609774503011669.png"
+}

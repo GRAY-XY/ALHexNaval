@@ -1,0 +1,34 @@
+
+unknownV_mal_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1
+  rotate: false
+  xy: 2, 370
+  size: 775, 368
+  orig: 775, 368
+  offset: 0, 0
+  index: -1
+hong_1
+  rotate: true
+  xy: 779, 332
+  size: 406, 204
+  orig: 406, 204
+  offset: 0, 0
+  index: -1
+hong_2
+  rotate: false
+  xy: 2, 2
+  size: 725, 366
+  orig: 725, 366
+  offset: 0, 0
+  index: -1
+yan
+  rotate: false
+  xy: 729, 272
+  size: 101, 58
+  orig: 101, 58
+  offset: 0, 0
+  index: -1

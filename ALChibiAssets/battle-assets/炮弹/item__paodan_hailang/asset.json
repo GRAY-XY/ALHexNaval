@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_hailang",
+  "model": "paodan_hailang",
+  "name": "随波逐流炮弹 ",
+  "names": [
+    "随波逐流炮弹 "
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hailang",
+  "path": "battle-assets/炮弹/item__paodan_hailang",
+  "images": [
+    {
+      "file": "paodan_hailang_3193513159181765971.png",
+      "name": "paodan_hailang",
+      "width": 1024,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": 3193513159181765971,
+      "source": "CAB-7e1cbf8a430cc7b5a5f3a865caf2edd1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hailang/paodan_hailang_3193513159181765971.png",
+  "spine": {
+    "skel": "paodan_hailang.skel",
+    "atlas": "paodan_hailang.atlas",
+    "pages": [
+      "paodan_hailang.png"
+    ]
+  }
+}

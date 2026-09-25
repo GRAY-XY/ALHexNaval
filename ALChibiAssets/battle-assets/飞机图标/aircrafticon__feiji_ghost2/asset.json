@@ -1,0 +1,37 @@
+{
+  "id": "aircrafticon__feiji_ghost2",
+  "model": "feiji_ghost2",
+  "name": "【2025医院活动ESP】BOSS 哈尔福德 战斗机",
+  "names": [
+    "【2025医院活动ESP】BOSS 哈尔福德 战斗机",
+    "【2025医院活动】航母蛋船轰炸机 Lv1",
+    "【2025医院活动】航母蛋船轰炸机 Lv2",
+    "【2025医院活动】航母蛋船轰炸机 Lv3",
+    "【2025医院活动】航母蛋船轰炸机 Lv4",
+    "【2025医院活动】航母蛋船轰炸机 Lv5",
+    "【2025医院活动】航母蛋船战斗机 Lv1",
+    "【2025医院活动】航母蛋船战斗机 Lv2",
+    "【2025医院活动】航母蛋船战斗机 Lv3",
+    "【2025医院活动】航母蛋船战斗机 Lv4",
+    "【2025医院活动】航母蛋船战斗机 Lv5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_ghost2",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_ghost2",
+  "images": [
+    {
+      "file": "feiji_ghost2_-6380638078237439692.png",
+      "name": "feiji_ghost2",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6380638078237439692,
+      "source": "CAB-084b3064086200bf4ae6078768086f2f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

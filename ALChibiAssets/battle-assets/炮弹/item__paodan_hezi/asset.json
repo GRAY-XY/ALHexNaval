@@ -1,0 +1,64 @@
+{
+  "id": "item__paodan_hezi",
+  "model": "paodan_hezi",
+  "name": "巧克力礼盒炮弹",
+  "names": [
+    "巧克力礼盒炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hezi",
+  "path": "battle-assets/炮弹/item__paodan_hezi",
+  "images": [
+    {
+      "file": "line01_-8740795488208344196.png",
+      "name": "line01",
+      "width": 64,
+      "height": 32,
+      "role": "原始纹理",
+      "path_id": -8740795488208344196,
+      "source": "CAB-7fe87a89c5bce8c8ae3ae4bd611f1719"
+    },
+    {
+      "file": "wave01_-6159202154718018332.png",
+      "name": "wave01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6159202154718018332,
+      "source": "CAB-7fe87a89c5bce8c8ae3ae4bd611f1719"
+    },
+    {
+      "file": "qipao01_1587640118263911131.png",
+      "name": "qipao01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1587640118263911131,
+      "source": "CAB-7fe87a89c5bce8c8ae3ae4bd611f1719"
+    },
+    {
+      "file": "qiaokelihezi01_2945179801544104918.png",
+      "name": "qiaokelihezi01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2945179801544104918,
+      "source": "CAB-7fe87a89c5bce8c8ae3ae4bd611f1719"
+    },
+    {
+      "file": "qipao02_7875780118207765502.png",
+      "name": "qipao02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7875780118207765502,
+      "source": "CAB-7fe87a89c5bce8c8ae3ae4bd611f1719"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hezi/line01_-8740795488208344196.png"
+}

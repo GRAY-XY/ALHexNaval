@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_hunianlingpai",
+  "model": "yulei_hunianlingpai",
+  "name": "令牌鱼雷",
+  "names": [
+    "令牌鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hunianlingpai",
+  "path": "battle-assets/鱼雷/item__yulei_hunianlingpai",
+  "images": [
+    {
+      "file": "yulei_hunianlingpai_-5529978693397839787.png",
+      "name": "yulei_hunianlingpai",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -5529978693397839787,
+      "source": "CAB-d3b64b18416f94af405bfe68bdb050ef"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hunianlingpai/yulei_hunianlingpai_-5529978693397839787.png"
+}

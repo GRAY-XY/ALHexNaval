@@ -1,0 +1,17 @@
+{
+  "id": "item__laisha_zidan_na",
+  "model": "laisha_zidan_na",
+  "name": "laisha_zidan_na",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_zidan_na",
+  "path": "battle-assets/炮弹/item__laisha_zidan_na",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19490
+  ],
+  "has_preview": false,
+  "prefab": true
+}

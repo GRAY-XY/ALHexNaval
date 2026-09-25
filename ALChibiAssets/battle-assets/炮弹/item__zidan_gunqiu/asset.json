@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gunqiu",
+  "model": "zidan_gunqiu",
+  "name": "滚球子弹",
+  "names": [
+    "滚球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gunqiu",
+  "path": "battle-assets/炮弹/item__zidan_gunqiu",
+  "images": [
+    {
+      "file": "zidan_gunqiu_4862822271877951320.png",
+      "name": "zidan_gunqiu",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 4862822271877951320,
+      "source": "CAB-46047b21555fbd5ce4ed1022bb63d933"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gunqiu/zidan_gunqiu_4862822271877951320.png"
+}

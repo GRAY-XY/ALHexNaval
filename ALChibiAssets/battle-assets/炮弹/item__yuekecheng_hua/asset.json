@@ -1,0 +1,29 @@
+{
+  "id": "item__yuekecheng_hua",
+  "model": "yuekecheng_hua",
+  "name": "yuekecheng_hua",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yuekecheng_hua",
+  "path": "battle-assets/炮弹/item__yuekecheng_hua",
+  "images": [
+    {
+      "file": "huaban02_3059474195153713839.png",
+      "name": "huaban02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3059474195153713839,
+      "source": "CAB-993325eeebd1c91902f6caed9174f2b1"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19668,
+    170822
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yuekecheng_hua/huaban02_3059474195153713839.png"
+}

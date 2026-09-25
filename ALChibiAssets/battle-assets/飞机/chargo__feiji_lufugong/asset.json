@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_lufugong",
+  "model": "feiji_lufugong",
+  "name": "飞行博物馆(鱼雷)",
+  "names": [
+    "飞行博物馆(鱼雷)",
+    "飞行博物馆(战斗)",
+    "飞行博物馆(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_lufugong",
+  "path": "battle-assets/飞机/chargo__feiji_lufugong",
+  "images": [
+    {
+      "file": "feiji_lufugong_-6688728103239517405.png",
+      "name": "feiji_lufugong",
+      "width": 256,
+      "height": 229,
+      "role": "战斗贴图",
+      "path_id": -6688728103239517405,
+      "source": "CAB-c56488e4a06cf6ee4be5080e5fab1e49"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_lufugong/feiji_lufugong_-6688728103239517405.png"
+}

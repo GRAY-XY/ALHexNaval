@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__idom_qianzao__idom_qianzao_material",
+  "model": "idom_qianzao_material",
+  "name": "idom_qianzao_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/idom_qianzao/idom_qianzao_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__idom_qianzao__idom_qianzao_material",
+  "images": [
+    {
+      "file": "idom_qianzao_8173650038359724598.png",
+      "name": "idom_qianzao",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8173650038359724598,
+      "source": "CAB-f1d8fa0311acb4036f1416543d392b7d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

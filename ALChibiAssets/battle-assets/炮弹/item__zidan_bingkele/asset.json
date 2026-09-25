@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_bingkele",
+  "model": "zidan_bingkele",
+  "name": "冰可乐子弹",
+  "names": [
+    "冰可乐子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bingkele",
+  "path": "battle-assets/炮弹/item__zidan_bingkele",
+  "images": [
+    {
+      "file": "zidan_bingkele_-3448956012454630824.png",
+      "name": "zidan_bingkele",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -3448956012454630824,
+      "source": "CAB-077b9fac37aeec3045f4b07774bbbc56"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bingkele/zidan_bingkele_-3448956012454630824.png"
+}

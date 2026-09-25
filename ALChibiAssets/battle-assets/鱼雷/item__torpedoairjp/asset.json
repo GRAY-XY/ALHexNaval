@@ -1,0 +1,37 @@
+{
+  "id": "item__torpedoairjp",
+  "model": "torpedoairjp",
+  "name": "torpedoairjp",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/torpedoairjp",
+  "path": "battle-assets/鱼雷/item__torpedoairjp",
+  "images": [
+    {
+      "file": "Torpedoairjp_2470736678476569397.png",
+      "name": "Torpedoairjp",
+      "width": 232,
+      "height": 74,
+      "role": "战斗贴图",
+      "path_id": 2470736678476569397,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    2112,
+    2117,
+    10030,
+    19082,
+    19144,
+    19184,
+    19246,
+    19277,
+    19927,
+    168971
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedoairjp/Torpedoairjp_2470736678476569397.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yinxiang",
+  "model": "paodan_yinxiang",
+  "name": "音响炮弹",
+  "names": [
+    "音响炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yinxiang",
+  "path": "battle-assets/炮弹/item__paodan_yinxiang",
+  "images": [
+    {
+      "file": "paodan_yinxiang_2478869534559233048.png",
+      "name": "paodan_yinxiang",
+      "width": 128,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": 2478869534559233048,
+      "source": "CAB-2e6b86a52513a3ee9c5e0c43185f81f8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yinxiang/paodan_yinxiang_2478869534559233048.png"
+}

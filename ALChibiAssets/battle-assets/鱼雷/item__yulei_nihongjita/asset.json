@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_nihongjita",
+  "model": "yulei_nihongjita",
+  "name": "电子吉他鱼雷",
+  "names": [
+    "电子吉他鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nihongjita",
+  "path": "battle-assets/鱼雷/item__yulei_nihongjita",
+  "images": [
+    {
+      "file": "yulei_nihongjita_-3363976637498831835.png",
+      "name": "yulei_nihongjita",
+      "width": 127,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": -3363976637498831835,
+      "source": "CAB-954387045bc952f845aa1f32ece1810e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3148002
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nihongjita/yulei_nihongjita_-3363976637498831835.png"
+}

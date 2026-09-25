@@ -1,0 +1,28 @@
+{
+  "id": "item__shiqikuangsan_fenzhenzidan",
+  "model": "shiqikuangsan_fenzhenzidan",
+  "name": "shiqikuangsan_fenzhenzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shiqikuangsan_fenzhenzidan",
+  "path": "battle-assets/炮弹/item__shiqikuangsan_fenzhenzidan",
+  "images": [
+    {
+      "file": "zidan01_-5025775343205304289.png",
+      "name": "zidan01",
+      "width": 256,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -5025775343205304289,
+      "source": "CAB-94f6b2083907df0313472d37e25e6317"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    180016
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shiqikuangsan_fenzhenzidan/zidan01_-5025775343205304289.png"
+}

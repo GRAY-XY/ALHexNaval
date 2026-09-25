@@ -1,0 +1,31 @@
+{
+  "id": "item__yulei_yaoguaiyoulin",
+  "model": "yulei_yaoguaiyoulin",
+  "name": "恶灵缠绕鱼雷",
+  "names": [
+    "恶灵缠绕鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yaoguaiyoulin",
+  "path": "battle-assets/鱼雷/item__yulei_yaoguaiyoulin",
+  "images": [
+    {
+      "file": "yulei_yaoguaiyoulin_-9048301808301383882.png",
+      "name": "yulei_yaoguaiyoulin",
+      "width": 128,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -9048301808301383882,
+      "source": "CAB-3a9ca22b63a1fa399c088d43c4e7f71c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3300002,
+    3301104
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yaoguaiyoulin/yulei_yaoguaiyoulin_-9048301808301383882.png"
+}

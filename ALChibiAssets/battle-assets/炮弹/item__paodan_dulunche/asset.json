@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dulunche",
+  "model": "paodan_dulunche",
+  "name": "杂技车炮弹",
+  "names": [
+    "杂技车炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dulunche",
+  "path": "battle-assets/炮弹/item__paodan_dulunche",
+  "images": [
+    {
+      "file": "paodan_dulunche_1324898639406450550.png",
+      "name": "paodan_dulunche",
+      "width": 128,
+      "height": 164,
+      "role": "战斗贴图",
+      "path_id": 1324898639406450550,
+      "source": "CAB-4f7114c55660ed0778aaa3ae6dcefa53"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dulunche/paodan_dulunche_1324898639406450550.png"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_shujingfazhang",
+  "model": "yulei_shujingfazhang",
+  "name": "古藤手杖鱼雷",
+  "names": [
+    "古藤手杖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_shujingfazhang",
+  "path": "battle-assets/鱼雷/bulletall__yulei_shujingfazhang",
+  "images": [
+    {
+      "file": "yulei_shujingfazhang_1554110999000335185.png",
+      "name": "yulei_shujingfazhang",
+      "width": 128,
+      "height": 41,
+      "role": "原始精灵",
+      "path_id": 1554110999000335185,
+      "source": "CAB-25d92681af12f009a388be1f3121dc58"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

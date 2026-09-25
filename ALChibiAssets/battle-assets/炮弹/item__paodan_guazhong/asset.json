@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_guazhong",
+  "model": "paodan_guazhong",
+  "name": "挂钟炮弹",
+  "names": [
+    "挂钟炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_guazhong",
+  "path": "battle-assets/炮弹/item__paodan_guazhong",
+  "images": [
+    {
+      "file": "paodan_guazhong_-6702156844842880566.png",
+      "name": "paodan_guazhong",
+      "width": 128,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": -6702156844842880566,
+      "source": "CAB-0a619fd6afb3629603dfcb34804414ad"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_guazhong/paodan_guazhong_-6702156844842880566.png"
+}

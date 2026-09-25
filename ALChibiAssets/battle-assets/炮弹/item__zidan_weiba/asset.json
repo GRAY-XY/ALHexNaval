@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_weiba",
+  "model": "zidan_weiba",
+  "name": "小猪尾巴",
+  "names": [
+    "小猪尾巴"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_weiba",
+  "path": "battle-assets/炮弹/item__zidan_weiba",
+  "images": [
+    {
+      "file": "zidan_weiba_-4488999815222766456.png",
+      "name": "zidan_weiba",
+      "width": 96,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -4488999815222766456,
+      "source": "CAB-532f3d2d403d8846230c0ce4be6c89e0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_weiba/zidan_weiba_-4488999815222766456.png"
+}

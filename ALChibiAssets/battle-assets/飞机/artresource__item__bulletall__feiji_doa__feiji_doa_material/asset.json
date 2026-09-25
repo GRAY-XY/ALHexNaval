@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_doa__feiji_doa_material",
+  "model": "feiji_doa_material",
+  "name": "feiji_doa_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_doa/feiji_doa_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_doa__feiji_doa_material",
+  "images": [
+    {
+      "file": "feiji_doa_4360832573901127948.png",
+      "name": "feiji_doa",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4360832573901127948,
+      "source": "CAB-67dc5173e907671504f07f58ccf901d6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_dafu",
+  "model": "zidan_dafu",
+  "name": "大福子弹",
+  "names": [
+    "大福子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dafu",
+  "path": "battle-assets/炮弹/item__zidan_dafu",
+  "images": [
+    {
+      "file": "zidan_dafu01_-7316150441527081338.png",
+      "name": "zidan_dafu01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7316150441527081338,
+      "source": "CAB-634eae658a9095ba99830a93592ffec9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dafu/zidan_dafu01_-7316150441527081338.png"
+}

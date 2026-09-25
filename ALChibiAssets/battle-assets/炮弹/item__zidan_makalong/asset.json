@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_makalong",
+  "model": "zidan_makalong",
+  "name": "马卡龙子弹",
+  "names": [
+    "马卡龙子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_makalong",
+  "path": "battle-assets/炮弹/item__zidan_makalong",
+  "images": [
+    {
+      "file": "zidan_makalong01_2385439997513395950.png",
+      "name": "zidan_makalong01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2385439997513395950,
+      "source": "CAB-bc6f6f8cd9b2f13432177aec8de40a34"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    710103,
+    710112
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_makalong/zidan_makalong01_2385439997513395950.png"
+}

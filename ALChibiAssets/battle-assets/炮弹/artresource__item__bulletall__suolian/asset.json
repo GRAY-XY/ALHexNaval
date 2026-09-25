@@ -1,0 +1,32 @@
+{
+  "id": "artresource__item__bulletall__suolian",
+  "model": "suolian",
+  "name": "suolian",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/suolian",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__suolian",
+  "images": [
+    {
+      "file": "suolian_7115331638111776693.png",
+      "name": "suolian",
+      "width": 110,
+      "height": 64,
+      "role": "原始精灵",
+      "path_id": 7115331638111776693,
+      "source": "CAB-14b3abf7108fe2de4c8075480207d514"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19558,
+    856017,
+    29646001,
+    29657024,
+    3036032,
+    3045005
+  ],
+  "has_preview": true,
+  "prefab": false
+}

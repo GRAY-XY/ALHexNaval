@@ -1,0 +1,118 @@
+
+fengfan_haigu_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 853, 19
+  size: 284, 167
+  orig: 284, 167
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: true
+  xy: 1010, 834
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 1001, 846
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: true
+  xy: 1010, 823
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: true
+  xy: 982, 835
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: false
+  xy: 996, 833
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+gd_6
+  rotate: true
+  xy: 982, 823
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+gd_7
+  rotate: false
+  xy: 982, 848
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 874, 611
+  size: 134, 124
+  orig: 134, 124
+  offset: 0, 0
+  index: -1
+qianchi
+  rotate: true
+  xy: 874, 737
+  size: 172, 106
+  orig: 172, 106
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 608
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 305
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+weiqi_1
+  rotate: false
+  xy: 922, 565
+  size: 48, 44
+  orig: 48, 44
+  offset: 0, 0
+  index: -1
+weiqi_2
+  rotate: true
+  xy: 982, 861
+  size: 48, 30
+  orig: 48, 30
+  offset: 0, 0
+  index: -1
+yanguang
+  rotate: false
+  xy: 874, 563
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1

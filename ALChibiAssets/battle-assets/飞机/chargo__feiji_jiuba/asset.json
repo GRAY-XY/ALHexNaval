@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_jiuba",
+  "model": "feiji_jiuba",
+  "name": "飞行酒吧啾(鱼雷)",
+  "names": [
+    "飞行酒吧啾(鱼雷)",
+    "飞行酒吧啾(战斗)",
+    "飞行酒吧啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_jiuba",
+  "path": "battle-assets/飞机/chargo__feiji_jiuba",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_jiuba_9117784202945107802.png",
+      "name": "feiji_jiuba",
+      "width": 256,
+      "height": 214,
+      "role": "战斗贴图",
+      "path_id": 9117784202945107802,
+      "source": "CAB-f41c721947825fa6ad55b2259d22d82c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_jiuba/aircraft_shadow_2192772484218123160.png"
+}

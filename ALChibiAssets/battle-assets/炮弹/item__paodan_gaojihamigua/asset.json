@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_gaojihamigua",
+  "model": "paodan_gaojihamigua",
+  "name": "高级哈密瓜炮弹",
+  "names": [
+    "高级哈密瓜炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_gaojihamigua",
+  "path": "battle-assets/炮弹/item__paodan_gaojihamigua",
+  "images": [
+    {
+      "file": "paodan_gaojihamigua_4460340814566646861.png",
+      "name": "paodan_gaojihamigua",
+      "width": 127,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": 4460340814566646861,
+      "source": "CAB-94f17e5f901b39fd6b16f28f93f8872b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_gaojihamigua/paodan_gaojihamigua_4460340814566646861.png"
+}

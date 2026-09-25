@@ -1,0 +1,31 @@
+{
+  "id": "item__paodan_dengqiu",
+  "model": "paodan_dengqiu",
+  "name": "迪斯科炮弹",
+  "names": [
+    "迪斯科炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dengqiu",
+  "path": "battle-assets/炮弹/item__paodan_dengqiu",
+  "images": [
+    {
+      "file": "dengqiu01_3117867793975936183.png",
+      "name": "dengqiu01",
+      "width": 202,
+      "height": 201,
+      "role": "战斗贴图",
+      "path_id": 3117867793975936183,
+      "source": "CAB-676345ee369db129e4e3a28eaa455591"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    3146101,
+    3148011
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dengqiu/dengqiu01_3117867793975936183.png"
+}

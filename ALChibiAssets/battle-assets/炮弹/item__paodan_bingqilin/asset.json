@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_bingqilin",
+  "model": "paodan_bingqilin",
+  "name": "paodan_bingqilin",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_bingqilin",
+  "path": "battle-assets/炮弹/item__paodan_bingqilin",
+  "images": [
+    {
+      "file": "yulei_bingqilin_3090357053900779551.png",
+      "name": "yulei_bingqilin",
+      "width": 128,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 3090357053900779551,
+      "source": "CAB-b9aafa700aa9e290e8c4bc0fca8b9075"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710109
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_bingqilin/yulei_bingqilin_3090357053900779551.png"
+}

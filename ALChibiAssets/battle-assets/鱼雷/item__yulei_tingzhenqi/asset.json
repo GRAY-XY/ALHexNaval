@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_tingzhenqi",
+  "model": "yulei_tingzhenqi",
+  "name": "听诊器鱼雷",
+  "names": [
+    "听诊器鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tingzhenqi",
+  "path": "battle-assets/鱼雷/item__yulei_tingzhenqi",
+  "images": [
+    {
+      "file": "yulei_tingzhenqi_-8487835061864370665.png",
+      "name": "yulei_tingzhenqi",
+      "width": 126,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": -8487835061864370665,
+      "source": "CAB-66a83db7ea462821027c4619b71f657d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tingzhenqi/yulei_tingzhenqi_-8487835061864370665.png"
+}

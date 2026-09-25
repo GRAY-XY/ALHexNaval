@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_mofashilaimu",
+  "model": "paodan_mofashilaimu",
+  "name": "啾莱姆炮弹（魔法）",
+  "names": [
+    "啾莱姆炮弹（魔法）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mofashilaimu",
+  "path": "battle-assets/炮弹/item__paodan_mofashilaimu",
+  "images": [
+    {
+      "file": "paodan_mofashilaimu_-588763286976338787.png",
+      "name": "paodan_mofashilaimu",
+      "width": 128,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": -588763286976338787,
+      "source": "CAB-3205fa77aa30f87212b9b652771d0679"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mofashilaimu/paodan_mofashilaimu_-588763286976338787.png"
+}

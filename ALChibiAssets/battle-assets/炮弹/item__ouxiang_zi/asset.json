@@ -1,0 +1,34 @@
+{
+  "id": "item__ouxiang_zi",
+  "model": "ouxiang_zi",
+  "name": "ouxiang_zi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_zi",
+  "path": "battle-assets/炮弹/item__ouxiang_zi",
+  "images": [
+    {
+      "file": "purple_-8118502138041842991.png",
+      "name": "purple",
+      "width": 95,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": -8118502138041842991,
+      "source": "CAB-7a0c445bc8b296897a30f0d56207ef04"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    852103,
+    852316,
+    852331,
+    852332,
+    852333,
+    852334,
+    852536
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_zi/purple_-8118502138041842991.png"
+}

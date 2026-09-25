@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shanhu",
+  "model": "zidan_shanhu",
+  "name": "假日珊瑚子弹",
+  "names": [
+    "假日珊瑚子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shanhu",
+  "path": "battle-assets/炮弹/item__zidan_shanhu",
+  "images": [
+    {
+      "file": "zidan_shanhu_-7211896005782428643.png",
+      "name": "zidan_shanhu",
+      "width": 128,
+      "height": 94,
+      "role": "战斗贴图",
+      "path_id": -7211896005782428643,
+      "source": "CAB-fb69cd861d3bd552cb82ddb4b87be9e1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shanhu/zidan_shanhu_-7211896005782428643.png"
+}

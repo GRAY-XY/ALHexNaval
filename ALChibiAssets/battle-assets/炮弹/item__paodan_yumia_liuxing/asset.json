@@ -1,0 +1,31 @@
+{
+  "id": "item__paodan_yumia_liuxing",
+  "model": "paodan_yumia_liuxing",
+  "name": "流星的碎片炮弹",
+  "names": [
+    "流星的碎片炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yumia_liuxing",
+  "path": "battle-assets/炮弹/item__paodan_yumia_liuxing",
+  "images": [
+    {
+      "file": "paodan_liuxingsuipian_-6777394044367483052.png",
+      "name": "paodan_liuxingsuipian",
+      "width": 60,
+      "height": 91,
+      "role": "战斗贴图",
+      "path_id": -6777394044367483052,
+      "source": "CAB-4f8cfded7922a60e5935bfbb58bdb060"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    168218,
+    168231
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yumia_liuxing/paodan_liuxingsuipian_-6777394044367483052.png"
+}

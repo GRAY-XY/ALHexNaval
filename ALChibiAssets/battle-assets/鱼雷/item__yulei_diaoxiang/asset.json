@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_diaoxiang",
+  "model": "yulei_diaoxiang",
+  "name": "曙光雷霆鱼雷",
+  "names": [
+    "曙光雷霆鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_diaoxiang",
+  "path": "battle-assets/鱼雷/item__yulei_diaoxiang",
+  "images": [
+    {
+      "file": "yulei_diaoxiang_172853044781196270.png",
+      "name": "yulei_diaoxiang",
+      "width": 128,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": 172853044781196270,
+      "source": "CAB-c3f656a5f155f41d5c1b1edf56eccc9c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_diaoxiang/yulei_diaoxiang_172853044781196270.png"
+}

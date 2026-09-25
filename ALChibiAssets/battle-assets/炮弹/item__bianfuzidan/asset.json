@@ -1,0 +1,20 @@
+{
+  "id": "item__bianfuzidan",
+  "model": "bianfuzidan",
+  "name": "bianfuzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bianfuzidan",
+  "path": "battle-assets/炮弹/item__bianfuzidan",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    861035,
+    862035,
+    863035,
+    3059332
+  ],
+  "has_preview": false,
+  "prefab": true
+}

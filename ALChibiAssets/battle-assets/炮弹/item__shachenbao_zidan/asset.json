@@ -1,0 +1,20 @@
+{
+  "id": "item__shachenbao_zidan",
+  "model": "shachenbao_zidan",
+  "name": "shachenbao_zidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shachenbao_zidan",
+  "path": "battle-assets/炮弹/item__shachenbao_zidan",
+  "images": [],
+  "particle_systems": 11,
+  "animations": [],
+  "bullet_ids": [
+    3069401,
+    3069402,
+    3069417,
+    3069429
+  ],
+  "has_preview": false,
+  "prefab": true
+}

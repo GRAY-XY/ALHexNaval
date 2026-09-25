@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhayao",
+  "model": "yulei_zhayao",
+  "name": "炸药鱼雷",
+  "names": [
+    "炸药鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhayao",
+  "path": "battle-assets/鱼雷/item__yulei_zhayao",
+  "images": [
+    {
+      "file": "yulei_zhayao_-8164538809591540037.png",
+      "name": "yulei_zhayao",
+      "width": 163,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -8164538809591540037,
+      "source": "CAB-978baf120de7dc7643805e108783f1ce"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhayao/yulei_zhayao_-8164538809591540037.png"
+}

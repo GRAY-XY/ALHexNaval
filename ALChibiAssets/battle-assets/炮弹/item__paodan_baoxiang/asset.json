@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_baoxiang",
+  "model": "paodan_baoxiang",
+  "name": "深渊宝箱弹",
+  "names": [
+    "深渊宝箱弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_baoxiang",
+  "path": "battle-assets/炮弹/item__paodan_baoxiang",
+  "images": [
+    {
+      "file": "paodan_baoxiang_-3987317632554154976.png",
+      "name": "paodan_baoxiang",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": -3987317632554154976,
+      "source": "CAB-fbf29aa1e7dc2ecce03adfcd3b2ed5f2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_baoxiang/paodan_baoxiang_-3987317632554154976.png"
+}

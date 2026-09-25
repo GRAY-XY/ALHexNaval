@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_jianpanmao",
+  "model": "paodan_jianpanmao",
+  "name": "琴键猫猫头炮弹",
+  "names": [
+    "琴键猫猫头炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jianpanmao",
+  "path": "battle-assets/炮弹/item__paodan_jianpanmao",
+  "images": [
+    {
+      "file": "paodan_jianpanmao_7260930518481745647.png",
+      "name": "paodan_jianpanmao",
+      "width": 128,
+      "height": 150,
+      "role": "战斗贴图",
+      "path_id": 7260930518481745647,
+      "source": "CAB-16985fc2fffda448e8e1cefd9125c944"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jianpanmao/paodan_jianpanmao_7260930518481745647.png"
+}

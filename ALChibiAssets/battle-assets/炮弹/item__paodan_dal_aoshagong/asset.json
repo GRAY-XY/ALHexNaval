@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dal_aoshagong",
+  "model": "paodan_dal_aoshagong",
+  "name": "鏖杀公召唤（炮弹）",
+  "names": [
+    "鏖杀公召唤（炮弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dal_aoshagong",
+  "path": "battle-assets/炮弹/item__paodan_dal_aoshagong",
+  "images": [
+    {
+      "file": "paodan_dal_aoshagong_-7908004464332319739.png",
+      "name": "paodan_dal_aoshagong",
+      "width": 105,
+      "height": 114,
+      "role": "战斗贴图",
+      "path_id": -7908004464332319739,
+      "source": "CAB-133489057adb33b2f69f19ebc2da0ae2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dal_aoshagong/paodan_dal_aoshagong_-7908004464332319739.png"
+}

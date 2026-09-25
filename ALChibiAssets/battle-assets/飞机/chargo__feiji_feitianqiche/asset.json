@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_feitianqiche",
+  "model": "feiji_feitianqiche",
+  "name": "飞天汽车啾(鱼雷)",
+  "names": [
+    "飞天汽车啾(鱼雷)",
+    "飞天汽车啾(战斗)",
+    "飞天汽车啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_feitianqiche",
+  "path": "battle-assets/飞机/chargo__feiji_feitianqiche",
+  "images": [
+    {
+      "file": "feiji_feitianqiche_-4012859474451506501.png",
+      "name": "feiji_feitianqiche",
+      "width": 255,
+      "height": 139,
+      "role": "战斗贴图",
+      "path_id": -4012859474451506501,
+      "source": "CAB-a11357415c6353cbe6acffeb45d87260"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_feitianqiche/feiji_feitianqiche_-4012859474451506501.png"
+}

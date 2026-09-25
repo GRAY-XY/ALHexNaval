@@ -1,0 +1,34 @@
+
+weixingbanwu.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: false
+  xy: 175, 4
+  size: 154, 114
+  orig: 154, 114
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 331, 2
+  size: 149, 116
+  orig: 149, 116
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 2, 16
+  size: 171, 102
+  orig: 171, 102
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 482, 4
+  size: 110, 114
+  orig: 110, 114
+  offset: 0, 0
+  index: -1

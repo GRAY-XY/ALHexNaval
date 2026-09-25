@@ -1,0 +1,27 @@
+{
+  "version": "0.6.5",
+  "saveVersion": 11,
+  "date": "2026-09-18",
+  "url": "http://127.0.0.1:18768/",
+  "method": "Actual in-app browser controls, visible status and screenshots",
+  "passed": true,
+  "checks": [
+    { "name": "Importing a v10 ship with a pending automatic route retains position 20,20 and 2 oil without showing a future destination", "passed": true },
+    { "name": "Single-ship and group panels have no cancel-route controls; turn panel has no automatic-movement count", "passed": true },
+    { "name": "Unaffordable single move to 24,20 reports need 5 oil, leaves position 20,20 and oil 2 unchanged, and shows no future path", "passed": true },
+    { "name": "Box selection includes Laffey and Bismarck; group move to 22,22 reports need 4 oil and leaves both ships and oil 2 unchanged", "passed": true },
+    { "name": "Laffey moves one hex to 21,20, oil decreases 2 to 1, combat action remains 1", "passed": true },
+    { "name": "Browser refresh restores position 21,20 and remaining oil 1 with no automatic route", "passed": true },
+    { "name": "Two end-turn commands return to the player in round 2, refill oil to 50 and leave Laffey at 21,20", "passed": true },
+    { "name": "No captured browser console errors", "passed": true },
+    { "name": "Original 256-by-256 four-faction round-1 battle restored: 50 oil, 12 live friendly ships, Laffey at 26,30 and no airborne squadrons", "passed": true }
+  ],
+  "screenshots": [
+    "output/screenshots/instant-movement-unaffordable.png",
+    "output/screenshots/instant-movement-group-rejected.png",
+    "output/screenshots/instant-movement-next-round.png"
+  ],
+  "rules": { "report": "output/rules-verification.json", "checks": 78, "weightedOracleCases": 80, "invalidSaveCases": 67 },
+  "animationRegression": "output/state-animation-verification.json",
+  "limits": [ "Aircraft retain their existing real-time commands and mandatory return behavior.", "Large-scale AI and complete-match performance remain outside this check." ]
+}

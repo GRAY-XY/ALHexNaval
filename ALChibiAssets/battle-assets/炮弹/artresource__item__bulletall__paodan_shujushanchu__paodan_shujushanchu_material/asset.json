@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paodan_shujushanchu__paodan_shujushanchu_material",
+  "model": "paodan_shujushanchu_material",
+  "name": "paodan_shujushanchu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_shujushanchu/paodan_shujushanchu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_shujushanchu__paodan_shujushanchu_material",
+  "images": [
+    {
+      "file": "paodan_shujushanchu_-7269050183267200426.png",
+      "name": "paodan_shujushanchu",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7269050183267200426,
+      "source": "CAB-f61a95773434c3f84f8a59696ae8283f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

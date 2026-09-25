@@ -1,0 +1,37 @@
+{
+  "id": "chargo__suoyu831",
+  "model": "suoyu831",
+  "name": "梭鱼(831中队)",
+  "names": [
+    "梭鱼(831中队)"
+  ],
+  "category": "飞机",
+  "source": "chargo/suoyu831",
+  "path": "battle-assets/飞机/chargo__suoyu831",
+  "images": [
+    {
+      "file": "suoyu831_5626888898673522535.png",
+      "name": "suoyu831",
+      "width": 247,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": 5626888898673522535,
+      "source": "CAB-4ae24e743bea22c9976ac2e3434dd1ea"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__suoyu831/suoyu831_5626888898673522535.png"
+}

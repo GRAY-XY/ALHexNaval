@@ -1,0 +1,53 @@
+{
+  "id": "item__yilisi_jiguang",
+  "model": "yilisi_jiguang",
+  "name": "yilisi_jiguang",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/yilisi_jiguang",
+  "path": "battle-assets/其他战斗特效/item__yilisi_jiguang",
+  "images": [
+    {
+      "file": "AL_Line06_12_-8388616965753728852.png",
+      "name": "AL_Line06_12",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8388616965753728852,
+      "source": "CAB-617d9f9777f6a02411b23030b5d1f30d"
+    },
+    {
+      "file": "fanzhne03_-5207277055119422643.png",
+      "name": "fanzhne03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5207277055119422643,
+      "source": "CAB-617d9f9777f6a02411b23030b5d1f30d"
+    },
+    {
+      "file": "fanzhne01_5350702488704912404.png",
+      "name": "fanzhne01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 5350702488704912404,
+      "source": "CAB-617d9f9777f6a02411b23030b5d1f30d"
+    },
+    {
+      "file": "fanzhne02_8552575094980897598.png",
+      "name": "fanzhne02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8552575094980897598,
+      "source": "CAB-617d9f9777f6a02411b23030b5d1f30d"
+    }
+  ],
+  "particle_systems": 14,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__yilisi_jiguang/AL_Line06_12_-8388616965753728852.png"
+}

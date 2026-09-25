@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_muxie",
+  "model": "paodan_muxie",
+  "name": "木鞋炮弹",
+  "names": [
+    "木鞋炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_muxie",
+  "path": "battle-assets/炮弹/item__paodan_muxie",
+  "images": [
+    {
+      "file": "paodan_muxie_-6234484086561668507.png",
+      "name": "paodan_muxie",
+      "width": 128,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -6234484086561668507,
+      "source": "CAB-92ac4b2f52a62b6c42a6607ec9af007d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_muxie/paodan_muxie_-6234484086561668507.png"
+}

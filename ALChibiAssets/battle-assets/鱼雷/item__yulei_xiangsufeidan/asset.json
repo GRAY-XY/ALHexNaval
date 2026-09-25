@@ -1,0 +1,29 @@
+{
+  "id": "item__yulei_xiangsufeidan",
+  "model": "yulei_xiangsufeidan",
+  "name": "飞弹鱼雷",
+  "names": [
+    "飞弹鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangsufeidan",
+  "path": "battle-assets/鱼雷/item__yulei_xiangsufeidan",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3098001,
+    3139108,
+    3280102,
+    3289002
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "yulei_xiangsufeidan.skel",
+    "atlas": "yulei_xiangsufeidan.atlas",
+    "pages": [
+      "yulei_xiangsufeidan.png"
+    ]
+  }
+}

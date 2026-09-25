@@ -1,0 +1,17 @@
+{
+  "id": "item__bullet_yezi",
+  "model": "bullet_yezi",
+  "name": "bullet_yezi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_yezi",
+  "path": "battle-assets/炮弹/item__bullet_yezi",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    161064
+  ],
+  "has_preview": false,
+  "prefab": true
+}

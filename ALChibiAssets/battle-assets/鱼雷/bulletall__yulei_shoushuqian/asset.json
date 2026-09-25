@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_shoushuqian",
+  "model": "yulei_shoushuqian",
+  "name": "生锈剪刀鱼雷",
+  "names": [
+    "生锈剪刀鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_shoushuqian",
+  "path": "battle-assets/鱼雷/bulletall__yulei_shoushuqian",
+  "images": [
+    {
+      "file": "yulei_shoushuqian_-8586683879820651600.png",
+      "name": "yulei_shoushuqian",
+      "width": 128,
+      "height": 62,
+      "role": "原始精灵",
+      "path_id": -8586683879820651600,
+      "source": "CAB-64749ca03d0c486fbc93cfb2525d3507"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

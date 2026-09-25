@@ -1,0 +1,38 @@
+{
+  "id": "chargo__huoyanshishen",
+  "model": "huoyanshishen",
+  "name": "【2021岛风活动剧情】BOSS 白龙 特殊航空弹幕 天雷轰炸机",
+  "names": [
+    "【2021岛风活动剧情】BOSS 白龙 特殊航空弹幕 天雷轰炸机",
+    "【2021岛风活动剧情】BOSS 白龙 特殊航空弹幕 鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/huoyanshishen",
+  "path": "battle-assets/飞机/chargo__huoyanshishen",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feilong_01_-5718053382406644387.png",
+      "name": "feilong_01",
+      "width": 240,
+      "height": 244,
+      "role": "战斗贴图",
+      "path_id": -5718053382406644387,
+      "source": "CAB-0503344e7855f364232158276fa8bf49"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__huoyanshishen/aircraft_shadow_2192772484218123160.png"
+}

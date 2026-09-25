@@ -1,0 +1,27 @@
+
+qigongpaozidan.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zidan_1
+  rotate: false
+  xy: 2, 138
+  size: 253, 68
+  orig: 253, 68
+  offset: 0, 0
+  index: -1
+zidan_2
+  rotate: false
+  xy: 2, 70
+  size: 254, 66
+  orig: 254, 66
+  offset: 0, 0
+  index: -1
+zidan_3
+  rotate: false
+  xy: 2, 2
+  size: 254, 66
+  orig: 254, 66
+  offset: 0, 0
+  index: -1

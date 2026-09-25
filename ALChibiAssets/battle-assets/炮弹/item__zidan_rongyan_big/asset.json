@@ -1,0 +1,33 @@
+{
+  "id": "item__zidan_rongyan_big",
+  "model": "zidan_rongyan_big",
+  "name": "zidan_rongyan_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_rongyan_big",
+  "path": "battle-assets/炮弹/item__zidan_rongyan_big",
+  "images": [
+    {
+      "file": "zidan_rongyan_452067990497952808.png",
+      "name": "zidan_rongyan",
+      "width": 128,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": 452067990497952808,
+      "source": "CAB-eda2608e91405c5c374fd22cd1be6d61"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710202,
+    29664015,
+    3139019,
+    3139312,
+    3139551,
+    3309003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_rongyan_big/zidan_rongyan_452067990497952808.png"
+}

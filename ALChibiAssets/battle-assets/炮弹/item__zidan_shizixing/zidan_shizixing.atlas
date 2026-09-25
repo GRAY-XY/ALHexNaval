@@ -1,0 +1,55 @@
+
+zidan_shizixing.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+benti
+  rotate: false
+  xy: 247, 172
+  size: 72, 80
+  orig: 72, 80
+  offset: 0, 0
+  index: -1
+lizi_1
+  rotate: false
+  xy: 190, 7
+  size: 141, 43
+  orig: 141, 43
+  offset: 0, 0
+  index: -1
+lizi_2
+  rotate: true
+  xy: 190, 106
+  size: 146, 55
+  orig: 146, 55
+  offset: 0, 0
+  index: -1
+lizi_3
+  rotate: false
+  xy: 190, 52
+  size: 144, 52
+  orig: 144, 52
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: true
+  xy: 100, 2
+  size: 250, 88
+  orig: 250, 88
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: true
+  xy: 100, 2
+  size: 250, 88
+  orig: 250, 88
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: true
+  xy: 2, 2
+  size: 250, 96
+  orig: 250, 96
+  offset: 0, 0
+  index: -1

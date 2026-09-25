@@ -1,0 +1,45 @@
+{
+  "createdAt": "2026-09-25T10:37:28.7106136+08:00",
+  "workspace": "D:\\ALHexNaval",
+  "git": {
+    "initialized": true,
+    "branch": "main",
+    "lfsLocalInstalled": true,
+    "committed": true,
+    "remoteConfigured": true,
+    "origin": "https://github.com/GRAY-XY/ALHexNaval.git"
+  },
+  "moved": [
+    {
+      "from": "D:\\ALh\\ALHexGame",
+      "to": "D:\\ALHexNaval\\ALHexGame",
+      "sourceExists": false,
+      "destinationExists": true,
+      "files": 4153,
+      "bytes": 257735390
+    },
+    {
+      "from": "D:\\ALh\\AL小人素材库",
+      "to": "D:\\ALHexNaval\\ALChibiAssets",
+      "sourceExists": false,
+      "destinationExists": true,
+      "files": 29008,
+      "bytes": 3263525018
+    }
+  ],
+  "rawExtraction": {
+    "path": "D:\\ALh\\ChibiAssets_20260917",
+    "included": false,
+    "reason": "Large extraction workspace and duplicate intermediates; final reusable assets are in ALChibiAssets."
+  },
+  "validation": {
+    "build": "passed",
+    "assetVerification": "passed",
+    "aiScenarios": 9,
+    "pythonSyntax": "passed",
+    "httpStatus": 200,
+    "title": "AL HEX NAVAL",
+    "oldAbsolutePathReferences": 0,
+    "gitLfsAttributes": "passed"
+  }
+}

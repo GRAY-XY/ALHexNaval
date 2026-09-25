@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_nvshenli_doa",
+  "model": "paodan_nvshenli_doa",
+  "name": "晶莹护甲油炮弹",
+  "names": [
+    "晶莹护甲油炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_nvshenli_doa",
+  "path": "battle-assets/炮弹/bulletall__paodan_nvshenli_doa",
+  "images": [
+    {
+      "file": "paodan_nvshenli_doa_-178925743742497073.png",
+      "name": "paodan_nvshenli_doa",
+      "width": 128,
+      "height": 113,
+      "role": "原始精灵",
+      "path_id": -178925743742497073,
+      "source": "CAB-7790a8d965c6f5ccb98a58c7ff0e6b08"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

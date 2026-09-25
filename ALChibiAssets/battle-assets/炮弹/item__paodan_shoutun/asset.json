@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_shoutun",
+  "model": "paodan_shoutun",
+  "name": "赤目铁兽炮弹",
+  "names": [
+    "赤目铁兽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shoutun",
+  "path": "battle-assets/炮弹/item__paodan_shoutun",
+  "images": [
+    {
+      "file": "particles02_-4274795717075145238.png",
+      "name": "particles02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4274795717075145238,
+      "source": "CAB-3f08aee2396b6091692e976c8befb83f"
+    },
+    {
+      "file": "paodan_shoutun_8360358137593453693.png",
+      "name": "paodan_shoutun",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8360358137593453693,
+      "source": "CAB-3f08aee2396b6091692e976c8befb83f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shoutun/particles02_-4274795717075145238.png",
+  "spine": {
+    "skel": "paodan_shoutun.skel",
+    "atlas": "paodan_shoutun.atlas",
+    "pages": [
+      "paodan_shoutun.png"
+    ]
+  }
+}

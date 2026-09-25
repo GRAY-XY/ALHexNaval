@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_juguangdeng",
+  "model": "paodan_juguangdeng",
+  "name": "聚光灯",
+  "names": [
+    "聚光灯"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_juguangdeng",
+  "path": "battle-assets/炮弹/item__paodan_juguangdeng",
+  "images": [
+    {
+      "file": "paodan_juguangdeng_103472801560853646.png",
+      "name": "paodan_juguangdeng",
+      "width": 128,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": 103472801560853646,
+      "source": "CAB-16536b7587fdd9341027d861a7a0e626"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_juguangdeng/paodan_juguangdeng_103472801560853646.png"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "item__heihailunna_guangshudan",
+  "model": "heihailunna_guangshudan",
+  "name": "heihailunna_guangshudan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heihailunna_guangshudan",
+  "path": "battle-assets/炮弹/item__heihailunna_guangshudan",
+  "images": [
+    {
+      "file": "guangshudan_-844308167433314511.png",
+      "name": "guangshudan",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -844308167433314511,
+      "source": "CAB-7b7fd8b1c15f0183f6e852bceec35013"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    710042,
+    879028,
+    29644013,
+    29655012,
+    3119006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heihailunna_guangshudan/guangshudan_-844308167433314511.png"
+}

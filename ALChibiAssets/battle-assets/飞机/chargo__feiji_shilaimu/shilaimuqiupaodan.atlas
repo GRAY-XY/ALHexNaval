@@ -1,0 +1,48 @@
+
+shilaimuqiupaodan.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+benti
+  rotate: true
+  xy: 2, 50
+  size: 193, 151
+  orig: 193, 151
+  offset: 0, 0
+  index: -1
+chibang_1
+  rotate: false
+  xy: 25, 3
+  size: 63, 45
+  orig: 63, 45
+  offset: 0, 0
+  index: -1
+chibang_2
+  rotate: false
+  xy: 90, 3
+  size: 63, 45
+  orig: 63, 45
+  offset: 0, 0
+  index: -1
+di
+  rotate: true
+  xy: 155, 96
+  size: 68, 33
+  orig: 68, 33
+  offset: 0, 0
+  index: -1
+di_2
+  rotate: true
+  xy: 2, 2
+  size: 46, 21
+  orig: 46, 21
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 155, 166
+  size: 30, 77
+  orig: 30, 77
+  offset: 0, 0
+  index: -1

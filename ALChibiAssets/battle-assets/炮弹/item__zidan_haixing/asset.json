@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_haixing",
+  "model": "zidan_haixing",
+  "name": "海星子弹",
+  "names": [
+    "海星子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_haixing",
+  "path": "battle-assets/炮弹/item__zidan_haixing",
+  "images": [
+    {
+      "file": "zidan_haixing_220846341961398797.png",
+      "name": "zidan_haixing",
+      "width": 128,
+      "height": 121,
+      "role": "战斗贴图",
+      "path_id": 220846341961398797,
+      "source": "CAB-2ef295b8e5b955efbbdde98aeb5c898a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_haixing/zidan_haixing_220846341961398797.png"
+}

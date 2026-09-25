@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_dabingbang",
+  "model": "zidan_dabingbang",
+  "name": "大冰棒子弹",
+  "names": [
+    "大冰棒子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dabingbang",
+  "path": "battle-assets/炮弹/item__zidan_dabingbang",
+  "images": [
+    {
+      "file": "zidan_dabingbang_-3040736563020562764.png",
+      "name": "zidan_dabingbang",
+      "width": 128,
+      "height": 38,
+      "role": "战斗贴图",
+      "path_id": -3040736563020562764,
+      "source": "CAB-865f094a0db9c170f7fc3ce296a28c64"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3169005
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dabingbang/zidan_dabingbang_-3040736563020562764.png"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__gaomidugr01",
+  "model": "gaomidugr01",
+  "name": "gaomidugr01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gaomidugr01",
+  "path": "battle-assets/炮弹/item__gaomidugr01",
+  "images": [
+    {
+      "file": "gaomiduzhongxun02_-2060156489962916693.png",
+      "name": "gaomiduzhongxun02",
+      "width": 223,
+      "height": 86,
+      "role": "战斗贴图",
+      "path_id": -2060156489962916693,
+      "source": "CAB-d338a4bc3d4affcd732cc9c203a88f9a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3279202,
+    3279401,
+    3331418
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gaomidugr01/gaomiduzhongxun02_-2060156489962916693.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhaxiashi1",
+  "model": "paodan_zhaxiashi1",
+  "name": "paodan_zhaxiashi1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_zhaxiashi1",
+  "path": "battle-assets/炮弹/item__paodan_zhaxiashi1",
+  "images": [
+    {
+      "file": "paodan_zhaxiashi1_-4165121635493746652.png",
+      "name": "paodan_zhaxiashi1",
+      "width": 126,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": -4165121635493746652,
+      "source": "CAB-f43b126a22467dfecba7c369a1d243dc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    660045
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhaxiashi1/paodan_zhaxiashi1_-4165121635493746652.png"
+}

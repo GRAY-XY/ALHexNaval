@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_benzhong",
+  "model": "paodan_benzhong",
+  "name": "大钟楼炮弹",
+  "names": [
+    "大钟楼炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_benzhong",
+  "path": "battle-assets/炮弹/item__paodan_benzhong",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "dabenzhongpaodan.skel",
+    "atlas": "dabenzhongpaodan.atlas",
+    "pages": [
+      "dabenzhongpaodan.png"
+    ]
+  }
+}

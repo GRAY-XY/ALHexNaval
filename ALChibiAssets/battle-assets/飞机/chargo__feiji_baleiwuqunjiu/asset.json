@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_baleiwuqunjiu",
+  "model": "feiji_baleiwuqunjiu",
+  "name": "芭蕾舞裙啾(鱼雷)",
+  "names": [
+    "芭蕾舞裙啾(鱼雷)",
+    "芭蕾舞裙啾(战斗)",
+    "芭蕾舞裙啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_baleiwuqunjiu",
+  "path": "battle-assets/飞机/chargo__feiji_baleiwuqunjiu",
+  "images": [
+    {
+      "file": "feiji_baleiwuqunjiu_2586293218185651108.png",
+      "name": "feiji_baleiwuqunjiu",
+      "width": 256,
+      "height": 275,
+      "role": "战斗贴图",
+      "path_id": 2586293218185651108,
+      "source": "CAB-fd2ade4e7cef096e6cd6c150a7430b4d"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_baleiwuqunjiu/feiji_baleiwuqunjiu_2586293218185651108.png"
+}

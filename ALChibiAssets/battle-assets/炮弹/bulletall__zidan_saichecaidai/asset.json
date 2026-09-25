@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_saichecaidai",
+  "model": "zidan_saichecaidai",
+  "name": "三色彩带子弹",
+  "names": [
+    "三色彩带子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_saichecaidai",
+  "path": "battle-assets/炮弹/bulletall__zidan_saichecaidai",
+  "images": [
+    {
+      "file": "zidan_saichecaidai_2795104491652248558.png",
+      "name": "zidan_saichecaidai",
+      "width": 117,
+      "height": 81,
+      "role": "原始精灵",
+      "path_id": 2795104491652248558,
+      "source": "CAB-3930a872cd1c4799f09ed8f98e690b35"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

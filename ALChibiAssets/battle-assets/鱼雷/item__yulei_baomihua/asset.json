@@ -1,0 +1,44 @@
+{
+  "id": "item__yulei_baomihua",
+  "model": "yulei_baomihua",
+  "name": "嘭嘭爆米花鱼雷",
+  "names": [
+    "嘭嘭爆米花鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_baomihua",
+  "path": "battle-assets/鱼雷/item__yulei_baomihua",
+  "images": [
+    {
+      "file": "yulei_baomihua_7067710797223334273.png",
+      "name": "yulei_baomihua",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7067710797223334273,
+      "source": "CAB-9bebfff06a5447c1a3e4ed081f71857e"
+    },
+    {
+      "file": "line08_9188389748835614456.png",
+      "name": "line08",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 9188389748835614456,
+      "source": "CAB-9bebfff06a5447c1a3e4ed081f71857e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_baomihua/yulei_baomihua_7067710797223334273.png",
+  "spine": {
+    "skel": "yulei_baomihua.skel",
+    "atlas": "yulei_baomihua.atlas",
+    "pages": [
+      "yulei_baomihua.png"
+    ]
+  }
+}

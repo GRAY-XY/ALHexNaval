@@ -1,0 +1,45 @@
+{
+  "id": "item__yulei_hailang",
+  "model": "yulei_hailang",
+  "name": "浪花鱼雷",
+  "names": [
+    "浪花鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hailang",
+  "path": "battle-assets/鱼雷/item__yulei_hailang",
+  "images": [
+    {
+      "file": "hailang01_-5218979563376418051.png",
+      "name": "hailang01",
+      "width": 256,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": -5218979563376418051,
+      "source": "CAB-8d5a8bdddce0d26b0643571ef27b6b35"
+    }
+  ],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    865,
+    19869,
+    170824,
+    3090001,
+    3094020,
+    3109010,
+    3160015,
+    3169002,
+    3195004,
+    3218006,
+    3218024,
+    3320003,
+    3320004,
+    3381003,
+    3381004,
+    3381005
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hailang/hailang01_-5218979563376418051.png"
+}

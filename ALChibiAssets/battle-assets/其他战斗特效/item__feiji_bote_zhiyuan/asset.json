@@ -1,0 +1,33 @@
+{
+  "id": "item__feiji_bote_zhiyuan",
+  "model": "feiji_bote_zhiyuan",
+  "name": "feiji_bote_zhiyuan",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/feiji_bote_zhiyuan",
+  "path": "battle-assets/其他战斗特效/item__feiji_bote_zhiyuan",
+  "images": [
+    {
+      "file": "feiji_bote_zhiyuan_7483600480316821804.png",
+      "name": "feiji_bote_zhiyuan",
+      "width": 2048,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 7483600480316821804,
+      "source": "CAB-64ac07f5a820881b2e25b6e941b4886e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__feiji_bote_zhiyuan/feiji_bote_zhiyuan_7483600480316821804.png",
+  "spine": {
+    "skel": "feiji_bote_zhiyuan.skel",
+    "atlas": "feiji_bote_zhiyuan.atlas",
+    "pages": [
+      "feiji_bote_zhiyuan.png"
+    ]
+  }
+}

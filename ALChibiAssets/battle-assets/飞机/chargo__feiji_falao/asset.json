@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_falao",
+  "model": "feiji_falao",
+  "name": "拉神之子啾（鱼雷）",
+  "names": [
+    "拉神之子啾（鱼雷）",
+    "拉神之子啾（战斗）",
+    "拉神之子啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_falao",
+  "path": "battle-assets/飞机/chargo__feiji_falao",
+  "images": [
+    {
+      "file": "feiji_falao_-3677356442954689458.png",
+      "name": "feiji_falao",
+      "width": 256,
+      "height": 141,
+      "role": "战斗贴图",
+      "path_id": -3677356442954689458,
+      "source": "CAB-2939df535fc89aa48b395012ae3f79c3"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_falao/feiji_falao_-3677356442954689458.png"
+}

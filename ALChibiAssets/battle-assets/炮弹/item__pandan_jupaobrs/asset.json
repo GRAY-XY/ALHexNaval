@@ -1,0 +1,24 @@
+{
+  "id": "item__pandan_jupaobrs",
+  "model": "pandan_jupaobrs",
+  "name": "Rock Cannon炮弹",
+  "names": [
+    "Rock Cannon炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/pandan_jupaobrs",
+  "path": "battle-assets/炮弹/item__pandan_jupaobrs",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3279102,
+    3279103,
+    3279104,
+    3279105,
+    3279106,
+    3279107
+  ],
+  "has_preview": false,
+  "prefab": true
+}

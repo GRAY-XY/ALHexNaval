@@ -1,0 +1,26 @@
+{
+  "id": "item__bullet_shi_tail",
+  "model": "bullet_shi_tail",
+  "name": "bullet_shi_tail",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_shi_tail",
+  "path": "battle-assets/炮弹/item__bullet_shi_tail",
+  "images": [
+    {
+      "file": "shi_bullet_1669599053787232010.png",
+      "name": "shi_bullet",
+      "width": 225,
+      "height": 182,
+      "role": "战斗贴图",
+      "path_id": 1669599053787232010,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_shi_tail/shi_bullet_1669599053787232010.png"
+}

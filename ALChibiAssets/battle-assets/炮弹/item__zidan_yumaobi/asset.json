@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_yumaobi",
+  "model": "zidan_yumaobi",
+  "name": "羽毛笔子弹",
+  "names": [
+    "羽毛笔子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yumaobi",
+  "path": "battle-assets/炮弹/item__zidan_yumaobi",
+  "images": [
+    {
+      "file": "zidan_yumaobi_-1820662825042913593.png",
+      "name": "zidan_yumaobi",
+      "width": 128,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": -1820662825042913593,
+      "source": "CAB-3d51053e52239ba1de34d0eeb98cfc8e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161036
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yumaobi/zidan_yumaobi_-1820662825042913593.png"
+}

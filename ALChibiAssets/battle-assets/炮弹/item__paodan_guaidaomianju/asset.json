@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_guaidaomianju",
+  "model": "paodan_guaidaomianju",
+  "name": "夜行假面炮弹",
+  "names": [
+    "夜行假面炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_guaidaomianju",
+  "path": "battle-assets/炮弹/item__paodan_guaidaomianju",
+  "images": [
+    {
+      "file": "paodan_guaidaomianju_-2482816599831858731.png",
+      "name": "paodan_guaidaomianju",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2482816599831858731,
+      "source": "CAB-ceead040ea67286dc029b94f1d704d78"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_guaidaomianju/paodan_guaidaomianju_-2482816599831858731.png",
+  "spine": {
+    "skel": "paodan_guaidaomianju.skel",
+    "atlas": "paodan_guaidaomianju.atlas",
+    "pages": [
+      "paodan_guaidaomianju.png"
+    ]
+  }
+}

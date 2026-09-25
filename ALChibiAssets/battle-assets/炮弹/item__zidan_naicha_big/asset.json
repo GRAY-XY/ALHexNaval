@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_naicha_big",
+  "model": "zidan_naicha_big",
+  "name": "zidan_naicha_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_naicha_big",
+  "path": "battle-assets/炮弹/item__zidan_naicha_big",
+  "images": [
+    {
+      "file": "zidan_naicha_3941906569106348935.png",
+      "name": "zidan_naicha",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 3941906569106348935,
+      "source": "CAB-531941666516462cfa097aa541daad9b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710111
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_naicha_big/zidan_naicha_3941906569106348935.png"
+}

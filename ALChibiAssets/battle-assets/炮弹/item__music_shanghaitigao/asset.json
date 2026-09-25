@@ -1,0 +1,48 @@
+{
+  "id": "item__music_shanghaitigao",
+  "model": "music_shanghaitigao",
+  "name": "music_shanghaitigao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/music_shanghaitigao",
+  "path": "battle-assets/炮弹/item__music_shanghaitigao",
+  "images": [
+    {
+      "file": "yinfu_07_-8965551638000809776.png",
+      "name": "yinfu_07",
+      "width": 141,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": -8965551638000809776,
+      "source": "CAB-5a188166f9e050fc86073f05cd1d4a3d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19069,
+    19070,
+    19071,
+    19072,
+    19073,
+    19074,
+    19075,
+    19076,
+    19077,
+    19078,
+    19212,
+    170441,
+    650032,
+    650035,
+    780002,
+    780009,
+    780020,
+    780029,
+    780030,
+    3148017,
+    3148029
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__music_shanghaitigao/yinfu_07_-8965551638000809776.png"
+}

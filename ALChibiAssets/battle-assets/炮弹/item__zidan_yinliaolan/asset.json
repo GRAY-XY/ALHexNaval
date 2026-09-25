@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yinliaolan",
+  "model": "zidan_yinliaolan",
+  "name": "假日饮料子弹",
+  "names": [
+    "假日饮料子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yinliaolan",
+  "path": "battle-assets/炮弹/item__zidan_yinliaolan",
+  "images": [
+    {
+      "file": "yinliao01_2654919923661927983.png",
+      "name": "yinliao01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2654919923661927983,
+      "source": "CAB-31f7dcfa6c2ca1f34f80bf5784a20307"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yinliaolan/yinliao01_2654919923661927983.png"
+}

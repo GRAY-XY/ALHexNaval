@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_fangxiangpan",
+  "model": "paodan_fangxiangpan",
+  "name": "赛车方向盘炮弹",
+  "names": [
+    "赛车方向盘炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_fangxiangpan",
+  "path": "battle-assets/炮弹/item__paodan_fangxiangpan",
+  "images": [
+    {
+      "file": "paodan_fangxiangpan_-4768365534404346195.png",
+      "name": "paodan_fangxiangpan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4768365534404346195,
+      "source": "CAB-2f0731d138c6b02d94422cbc4f0c72b8"
+    },
+    {
+      "file": "particles02_7588584155182929762.png",
+      "name": "particles02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7588584155182929762,
+      "source": "CAB-2f0731d138c6b02d94422cbc4f0c72b8"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_fangxiangpan/paodan_fangxiangpan_-4768365534404346195.png",
+  "spine": {
+    "skel": "paodan_fangxiangpan.skel",
+    "atlas": "paodan_fangxiangpan.atlas",
+    "pages": [
+      "paodan_fangxiangpan.png"
+    ]
+  }
+}

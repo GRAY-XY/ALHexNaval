@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_weigan",
+  "model": "yulei_weigan",
+  "name": "桅杆鱼雷",
+  "names": [
+    "桅杆鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_weigan",
+  "path": "battle-assets/鱼雷/item__yulei_weigan",
+  "images": [
+    {
+      "file": "yulei_weigan_1871363456374087559.png",
+      "name": "yulei_weigan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1871363456374087559,
+      "source": "CAB-6e6617e008e4503d7038f8c0f6ec6720"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_weigan/yulei_weigan_1871363456374087559.png",
+  "spine": {
+    "skel": "yulei_weigan.skel",
+    "atlas": "yulei_weigan.atlas",
+    "pages": [
+      "yulei_weigan.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_boluo_doa",
+  "model": "yulei_boluo_doa",
+  "name": "热情菠萝鱼雷",
+  "names": [
+    "热情菠萝鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_boluo_doa",
+  "path": "battle-assets/鱼雷/item__yulei_boluo_doa",
+  "images": [
+    {
+      "file": "yulei_boluo_doa_-7965928132116253732.png",
+      "name": "yulei_boluo_doa",
+      "width": 128,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": -7965928132116253732,
+      "source": "CAB-f22be584764aa2f11ade38849aa7b338"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_boluo_doa/yulei_boluo_doa_-7965928132116253732.png"
+}

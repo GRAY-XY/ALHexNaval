@@ -1,0 +1,27 @@
+{
+  "id": "item__paodan_tutuhuoqiu",
+  "model": "paodan_tutuhuoqiu",
+  "name": "炮弹:兔兔火球",
+  "names": [
+    "炮弹:兔兔火球"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tutuhuoqiu",
+  "path": "battle-assets/炮弹/item__paodan_tutuhuoqiu",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    710221,
+    710230
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "tutuhuoqiupaodan.skel",
+    "atlas": "tutuhuoqiupaodan.atlas",
+    "pages": [
+      "tutuhuoqiupaodan.png"
+    ]
+  }
+}

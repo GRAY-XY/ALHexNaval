@@ -1,0 +1,33 @@
+{
+  "id": "item__zidan_yinbo",
+  "model": "zidan_yinbo",
+  "name": "zidan_yinbo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_yinbo",
+  "path": "battle-assets/炮弹/item__zidan_yinbo",
+  "images": [
+    {
+      "file": "zidan_yinbo_-1499991804246180012.png",
+      "name": "zidan_yinbo",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1499991804246180012,
+      "source": "CAB-29c6f271f8fee89be5e5b286287422fc"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3151104,
+    3151111,
+    3159045,
+    3235018,
+    3235218,
+    3239034
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yinbo/zidan_yinbo_-1499991804246180012.png"
+}

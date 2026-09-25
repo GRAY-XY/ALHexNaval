@@ -1,0 +1,48 @@
+
+feiji_saomiao.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+feiji_body
+  rotate: false
+  xy: 2, 214
+  size: 397, 307
+  orig: 397, 307
+  offset: 0, 0
+  index: -1
+saomiao
+  rotate: true
+  xy: 401, 2
+  size: 505, 583
+  orig: 505, 583
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 557
+  size: 148, 82
+  orig: 148, 82
+  offset: 0, 0
+  index: -1
+tuowei_1_1
+  rotate: false
+  xy: 152, 557
+  size: 148, 82
+  orig: 148, 82
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 622, 509
+  size: 377, 130
+  orig: 377, 130
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 302, 523
+  size: 318, 116
+  orig: 318, 116
+  offset: 0, 0
+  index: -1

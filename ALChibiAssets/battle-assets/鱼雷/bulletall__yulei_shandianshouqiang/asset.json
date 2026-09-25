@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_shandianshouqiang",
+  "model": "yulei_shandianshouqiang",
+  "name": "脉冲电击枪鱼雷",
+  "names": [
+    "脉冲电击枪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_shandianshouqiang",
+  "path": "battle-assets/鱼雷/bulletall__yulei_shandianshouqiang",
+  "images": [
+    {
+      "file": "yulei_shandianshouqiang_4825161765539524302.png",
+      "name": "yulei_shandianshouqiang",
+      "width": 127,
+      "height": 42,
+      "role": "原始精灵",
+      "path_id": 4825161765539524302,
+      "source": "CAB-65b1deaf03daab5806c555a6407e9973"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

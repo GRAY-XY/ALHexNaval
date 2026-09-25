@@ -1,0 +1,31 @@
+{
+  "id": "item__leihuo_redtail",
+  "model": "leihuo_redtail",
+  "name": "leihuo_redtail",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/leihuo_redtail",
+  "path": "battle-assets/炮弹/item__leihuo_redtail",
+  "images": [
+    {
+      "file": "kedouzidan_red_-7960610181715748890.png",
+      "name": "kedouzidan_red",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -7960610181715748890,
+      "source": "CAB-3a85f094d226e8323c2ba9c8f4e17032"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    161007,
+    161008,
+    161009,
+    161010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__leihuo_redtail/kedouzidan_red_-7960610181715748890.png"
+}

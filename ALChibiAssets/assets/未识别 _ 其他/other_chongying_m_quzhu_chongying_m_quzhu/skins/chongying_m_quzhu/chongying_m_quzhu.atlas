@@ -1,0 +1,55 @@
+
+chongying_m_quzhu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 389, 74
+  size: 275, 180
+  orig: 275, 180
+  offset: 0, 0
+  index: -1
+guihuo
+  rotate: false
+  xy: 2, 36
+  size: 385, 218
+  orig: 385, 218
+  offset: 0, 0
+  index: -1
+houtui_1
+  rotate: true
+  xy: 470, 8
+  size: 64, 37
+  orig: 64, 37
+  offset: 0, 0
+  index: -1
+qiantui_1
+  rotate: false
+  xy: 128, 5
+  size: 21, 29
+  orig: 21, 29
+  offset: 0, 0
+  index: -1
+yanwu_1
+  rotate: false
+  xy: 389, 33
+  size: 79, 39
+  orig: 79, 39
+  offset: 0, 0
+  index: -1
+yanwu_2
+  rotate: false
+  xy: 2, 2
+  size: 62, 32
+  orig: 62, 32
+  offset: 0, 0
+  index: -1
+yanwu_3
+  rotate: false
+  xy: 66, 5
+  size: 60, 29
+  orig: 60, 29
+  offset: 0, 0
+  index: -1

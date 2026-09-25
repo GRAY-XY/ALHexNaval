@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_masaikexiwang",
+  "model": "paodan_masaikexiwang",
+  "name": "马赛克希望炮弹",
+  "names": [
+    "马赛克希望炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_masaikexiwang",
+  "path": "battle-assets/炮弹/item__paodan_masaikexiwang",
+  "images": [
+    {
+      "file": "paodan_masaikexiwang_-1237565396547379019.png",
+      "name": "paodan_masaikexiwang",
+      "width": 128,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": -1237565396547379019,
+      "source": "CAB-f240dc6789d12df7be2afea9a5a83e5c"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_masaikexiwang/paodan_masaikexiwang_-1237565396547379019.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_daliyaofengmishui",
+  "model": "yulei_daliyaofengmishui",
+  "name": "达力摇饮料鱼雷",
+  "names": [
+    "达力摇饮料鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_daliyaofengmishui",
+  "path": "battle-assets/鱼雷/item__yulei_daliyaofengmishui",
+  "images": [
+    {
+      "file": "yulei_daliyaofengmishui_-8947415563117164214.png",
+      "name": "yulei_daliyaofengmishui",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8947415563117164214,
+      "source": "CAB-a313ed009dcd26848a6708a61f3628e1"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_daliyaofengmishui/yulei_daliyaofengmishui_-8947415563117164214.png",
+  "spine": {
+    "skel": "yulei_daliyaofengmishui.skel",
+    "atlas": "yulei_daliyaofengmishui.atlas",
+    "pages": [
+      "yulei_daliyaofengmishui.png"
+    ]
+  }
+}

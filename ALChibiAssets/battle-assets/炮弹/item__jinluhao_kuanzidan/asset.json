@@ -1,0 +1,74 @@
+{
+  "id": "item__jinluhao_kuanzidan",
+  "model": "jinluhao_kuanzidan",
+  "name": "jinluhao_kuanzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jinluhao_kuanzidan",
+  "path": "battle-assets/炮弹/item__jinluhao_kuanzidan",
+  "images": [
+    {
+      "file": "chushou04_9111035190795364226.png",
+      "name": "chushou04",
+      "width": 112,
+      "height": 107,
+      "role": "战斗贴图",
+      "path_id": 9111035190795364226,
+      "source": "CAB-b13dfcbb34f23fe8f8976a6555d4600f"
+    },
+    {
+      "file": "chushou02_-7281949694245455374.png",
+      "name": "chushou02",
+      "width": 106,
+      "height": 115,
+      "role": "战斗贴图",
+      "path_id": -7281949694245455374,
+      "source": "CAB-b13dfcbb34f23fe8f8976a6555d4600f"
+    },
+    {
+      "file": "chushou01_8279794338575605635.png",
+      "name": "chushou01",
+      "width": 106,
+      "height": 111,
+      "role": "战斗贴图",
+      "path_id": 8279794338575605635,
+      "source": "CAB-b13dfcbb34f23fe8f8976a6555d4600f"
+    },
+    {
+      "file": "chushou07_-6994458667355695072.png",
+      "name": "chushou07",
+      "width": 103,
+      "height": 126,
+      "role": "战斗贴图",
+      "path_id": -6994458667355695072,
+      "source": "CAB-b13dfcbb34f23fe8f8976a6555d4600f"
+    },
+    {
+      "file": "chushou06_-4676144130212734282.png",
+      "name": "chushou06",
+      "width": 58,
+      "height": 122,
+      "role": "战斗贴图",
+      "path_id": -4676144130212734282,
+      "source": "CAB-b13dfcbb34f23fe8f8976a6555d4600f"
+    },
+    {
+      "file": "chushou03_-1381525296174954097.png",
+      "name": "chushou03",
+      "width": 115,
+      "height": 104,
+      "role": "战斗贴图",
+      "path_id": -1381525296174954097,
+      "source": "CAB-b13dfcbb34f23fe8f8976a6555d4600f"
+    }
+  ],
+  "particle_systems": 35,
+  "animations": [],
+  "bullet_ids": [
+    19772,
+    163411
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__jinluhao_kuanzidan/chushou04_9111035190795364226.png"
+}

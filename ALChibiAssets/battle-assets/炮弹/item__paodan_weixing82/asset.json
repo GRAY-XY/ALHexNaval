@@ -1,0 +1,37 @@
+{
+  "id": "item__paodan_weixing82",
+  "model": "paodan_weixing82",
+  "name": "paodan_weixing82",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_weixing82",
+  "path": "battle-assets/炮弹/item__paodan_weixing82",
+  "images": [
+    {
+      "file": "yulei_weixing_-3079242424444761674.png",
+      "name": "yulei_weixing",
+      "width": 128,
+      "height": 101,
+      "role": "战斗贴图",
+      "path_id": -3079242424444761674,
+      "source": "CAB-bb032b97d941d1f8765e9518cf8ce56d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19201,
+    19202,
+    19203,
+    19204,
+    19205,
+    19206,
+    19207,
+    19208,
+    19209,
+    19210
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_weixing82/yulei_weixing_-3079242424444761674.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_lvyingguangbang",
+  "model": "zidan_lvyingguangbang",
+  "name": "荧光应援棒子弹（绿）",
+  "names": [
+    "荧光应援棒子弹（绿）"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_lvyingguangbang",
+  "path": "battle-assets/炮弹/item__zidan_lvyingguangbang",
+  "images": [
+    {
+      "file": "zidan_lvyingguangbang_2391429511763177408.png",
+      "name": "zidan_lvyingguangbang",
+      "width": 122,
+      "height": 31,
+      "role": "战斗贴图",
+      "path_id": 2391429511763177408,
+      "source": "CAB-cb58b078f4ee4c243d6a4cf0ac87536a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lvyingguangbang/zidan_lvyingguangbang_2391429511763177408.png"
+}

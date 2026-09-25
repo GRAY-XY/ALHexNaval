@@ -1,0 +1,49 @@
+{
+  "id": "chargo__sairenfeiji_unknown3",
+  "model": "sairenfeiji_unknown3",
+  "name": "【2025荷兰SP活动T3】BOSS 「福尔尼德」 舰载机",
+  "names": [
+    "【2025荷兰SP活动T3】BOSS 「福尔尼德」 舰载机",
+    "【2025荷兰SP活动HT3】BOSS 「福尔尼德」 舰载机",
+    "【2025荷兰SP活动SP】BOSS 「福尔尼德」 舰载机"
+  ],
+  "category": "飞机",
+  "source": "chargo/sairenfeiji_unknown3",
+  "path": "battle-assets/飞机/chargo__sairenfeiji_unknown3",
+  "images": [
+    {
+      "file": "sairenfeiji_unknown3_-1100603482620724452.png",
+      "name": "sairenfeiji_unknown3",
+      "width": 256,
+      "height": 237,
+      "role": "战斗贴图",
+      "path_id": -1100603482620724452,
+      "source": "CAB-565b938dd0865b7514b18ed02be717ac"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3264015,
+    3264016,
+    3264017,
+    3264018,
+    3264019,
+    3264020,
+    3264021,
+    3264022,
+    3264024
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sairenfeiji_unknown3/sairenfeiji_unknown3_-1100603482620724452.png"
+}

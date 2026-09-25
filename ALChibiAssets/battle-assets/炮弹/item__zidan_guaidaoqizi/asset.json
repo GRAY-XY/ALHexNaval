@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guaidaoqizi",
+  "model": "zidan_guaidaoqizi",
+  "name": "怪盗棋子子弹",
+  "names": [
+    "怪盗棋子子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guaidaoqizi",
+  "path": "battle-assets/炮弹/item__zidan_guaidaoqizi",
+  "images": [
+    {
+      "file": "qizi_-6920593957524183629.png",
+      "name": "qizi",
+      "width": 256,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -6920593957524183629,
+      "source": "CAB-cb45e9d60ab16ddcc060ff3143781679"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guaidaoqizi/qizi_-6920593957524183629.png"
+}

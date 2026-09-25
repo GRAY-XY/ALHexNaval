@@ -1,0 +1,29 @@
+{
+  "id": "item__yulei_hailang_low",
+  "model": "yulei_hailang_low",
+  "name": "yulei_hailang_low",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_hailang_low",
+  "path": "battle-assets/鱼雷/item__yulei_hailang_low",
+  "images": [
+    {
+      "file": "hailang01_-5218979563376418051.png",
+      "name": "hailang01",
+      "width": 256,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": -5218979563376418051,
+      "source": "CAB-8d5a8bdddce0d26b0643571ef27b6b35"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170291,
+    3097012
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hailang_low/hailang01_-5218979563376418051.png"
+}

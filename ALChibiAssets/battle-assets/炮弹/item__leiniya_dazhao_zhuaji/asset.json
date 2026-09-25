@@ -1,0 +1,66 @@
+{
+  "id": "item__leiniya_dazhao_zhuaji",
+  "model": "leiniya_dazhao_zhuaji",
+  "name": "leiniya_dazhao_zhuaji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/leiniya_dazhao_zhuaji",
+  "path": "battle-assets/炮弹/item__leiniya_dazhao_zhuaji",
+  "images": [
+    {
+      "file": "zhuahen02_-2806449567487840610.png",
+      "name": "zhuahen02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2806449567487840610,
+      "source": "CAB-5d28ba5582b4afa7476f1f4f5b6113ef"
+    },
+    {
+      "file": "zhuahen01_671902923888732796.png",
+      "name": "zhuahen01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 671902923888732796,
+      "source": "CAB-5d28ba5582b4afa7476f1f4f5b6113ef"
+    },
+    {
+      "file": "zhuahen02_glow_1762313352592229068.png",
+      "name": "zhuahen02_glow",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1762313352592229068,
+      "source": "CAB-5d28ba5582b4afa7476f1f4f5b6113ef"
+    },
+    {
+      "file": "zhuahen01_3560570761739670546.png",
+      "name": "zhuahen01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3560570761739670546,
+      "source": "CAB-5d28ba5582b4afa7476f1f4f5b6113ef"
+    },
+    {
+      "file": "center01_4121501426909415629.png",
+      "name": "center01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4121501426909415629,
+      "source": "CAB-5d28ba5582b4afa7476f1f4f5b6113ef"
+    }
+  ],
+  "particle_systems": 70,
+  "animations": [
+    "zhuaji"
+  ],
+  "bullet_ids": [
+    161153
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__leiniya_dazhao_zhuaji/zhuahen02_-2806449567487840610.png"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "item__xiaochaijun_aixing",
+  "model": "xiaochaijun_aixing",
+  "name": "xiaochaijun_aixing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiaochaijun_aixing",
+  "path": "battle-assets/炮弹/item__xiaochaijun_aixing",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19614
+  ],
+  "has_preview": false,
+  "prefab": true
+}

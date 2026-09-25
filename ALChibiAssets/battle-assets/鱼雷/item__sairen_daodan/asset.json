@@ -1,0 +1,32 @@
+{
+  "id": "item__sairen_daodan",
+  "model": "sairen_daodan",
+  "name": "sairen_daodan",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/sairen_daodan",
+  "path": "battle-assets/鱼雷/item__sairen_daodan",
+  "images": [
+    {
+      "file": "daodan_01_-3716897591293255919.png",
+      "name": "daodan_01",
+      "width": 233,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -3716897591293255919,
+      "source": "CAB-ab4c88d749b473895ad83c1afccdde3a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3180214,
+    3180217,
+    3185016,
+    3185025,
+    3185039
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__sairen_daodan/daodan_01_-3716897591293255919.png"
+}

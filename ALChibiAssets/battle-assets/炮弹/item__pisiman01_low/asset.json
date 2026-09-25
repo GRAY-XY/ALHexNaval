@@ -1,0 +1,36 @@
+{
+  "id": "item__pisiman01_low",
+  "model": "pisiman01_low",
+  "name": "pisiman01_low",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/pisiman01_low",
+  "path": "battle-assets/炮弹/item__pisiman01_low",
+  "images": [
+    {
+      "file": "hwxgz_3_8848418677977299091.png",
+      "name": "hwxgz_3",
+      "width": 44,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 8848418677977299091,
+      "source": "CAB-c952ace2ed871e4329649c98dfe9e754"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161002,
+    362003,
+    29659003,
+    3065029,
+    3070002,
+    3076005,
+    3076007,
+    3123415,
+    3246055
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__pisiman01_low/hwxgz_3_8848418677977299091.png"
+}

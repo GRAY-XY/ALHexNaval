@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletother__kuashe__yanhuo__yanhuo_00002",
+  "model": "yanhuo_00002",
+  "name": "yanhuo_00002",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/kuashe/yanhuo/yanhuo_00002",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__kuashe__yanhuo__yanhuo_00002",
+  "images": [
+    {
+      "file": "yanhuo_00002_-2586142772070866003.png",
+      "name": "yanhuo_00002",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2586142772070866003,
+      "source": "CAB-650ad9823e5cedc888850f5c41dcb69f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

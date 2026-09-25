@@ -1,0 +1,38 @@
+{
+  "id": "aircrafticon__feiji_diezhan",
+  "model": "feiji_diezhan",
+  "name": "【2025曾克SP活动】航母轰炸机 Lv1",
+  "names": [
+    "【2025曾克SP活动】航母轰炸机 Lv1",
+    "【2025曾克SP活动】航母轰炸机 Lv2",
+    "【2025曾克SP活动】航母轰炸机 Lv3",
+    "【2025曾克SP活动】航母轰炸机 Lv4",
+    "【2025曾克SP活动】航母轰炸机 Lv5",
+    "【2025曾克SP活动】航母战斗机 Lv1",
+    "【2025曾克SP活动】航母战斗机 Lv2",
+    "【2025曾克SP活动】航母战斗机 Lv3",
+    "【2025曾克SP活动】航母战斗机 Lv4",
+    "【2025曾克SP活动】航母战斗机 Lv5",
+    "【2026天津风共斗 EX难度】词条飞机空袭 战斗机",
+    "【2026天津风共斗 EX难度】词条飞机空袭 轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_diezhan",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_diezhan",
+  "images": [
+    {
+      "file": "feiji_diezhan_4688673611794910538.png",
+      "name": "feiji_diezhan",
+      "width": 45,
+      "height": 41,
+      "role": "原始精灵",
+      "path_id": 4688673611794910538,
+      "source": "CAB-ba90513ff4ee6b3e7fa6d82d5616431e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

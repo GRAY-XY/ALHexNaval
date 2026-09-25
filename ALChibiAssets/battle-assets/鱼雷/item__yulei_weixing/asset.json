@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_weixing",
+  "model": "yulei_weixing",
+  "name": "卫星鱼雷",
+  "names": [
+    "卫星鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_weixing",
+  "path": "battle-assets/鱼雷/item__yulei_weixing",
+  "images": [
+    {
+      "file": "yulei_weixing_-3079242424444761674.png",
+      "name": "yulei_weixing",
+      "width": 128,
+      "height": 101,
+      "role": "战斗贴图",
+      "path_id": -3079242424444761674,
+      "source": "CAB-bb032b97d941d1f8765e9518cf8ce56d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    79661
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_weixing/yulei_weixing_-3079242424444761674.png"
+}

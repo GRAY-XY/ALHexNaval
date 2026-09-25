@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_feitianhaidaochuan",
+  "model": "feiji_feitianhaidaochuan",
+  "name": "飞天海盗船(鱼雷)",
+  "names": [
+    "飞天海盗船(鱼雷)",
+    "飞天海盗船(战斗)",
+    "飞天海盗船(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_feitianhaidaochuan",
+  "path": "battle-assets/飞机/chargo__feiji_feitianhaidaochuan",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_feitianhaidaochuan_1808022116196029453.png",
+      "name": "feiji_feitianhaidaochuan",
+      "width": 256,
+      "height": 196,
+      "role": "战斗贴图",
+      "path_id": 1808022116196029453,
+      "source": "CAB-5287e7f064d30cf0818222f85113552d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_feitianhaidaochuan/aircraft_shadow_2192772484218123160.png"
+}

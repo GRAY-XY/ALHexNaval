@@ -1,0 +1,83 @@
+
+youlingyulei.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+benti_1
+  rotate: false
+  xy: 2, 30
+  size: 236, 94
+  orig: 236, 94
+  offset: 0, 0
+  index: -1
+guihuo_1
+  rotate: true
+  xy: 306, 55
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+guihuo_2
+  rotate: true
+  xy: 342, 6
+  size: 57, 30
+  orig: 57, 30
+  offset: 0, 0
+  index: -1
+guihuo_3
+  rotate: false
+  xy: 188, 7
+  size: 72, 21
+  orig: 72, 21
+  offset: 0, 0
+  index: -1
+guihuo_4
+  rotate: true
+  xy: 273, 45
+  size: 79, 31
+  orig: 79, 31
+  offset: 0, 0
+  index: -1
+guihuo_5
+  rotate: true
+  xy: 340, 65
+  size: 59, 31
+  orig: 59, 31
+  offset: 0, 0
+  index: -1
+guihuo_6
+  rotate: false
+  xy: 2, 2
+  size: 93, 26
+  orig: 93, 26
+  offset: 0, 0
+  index: -1
+guihuo_7
+  rotate: true
+  xy: 240, 44
+  size: 80, 31
+  orig: 80, 31
+  offset: 0, 0
+  index: -1
+guihuo_8
+  rotate: false
+  xy: 262, 5
+  size: 57, 37
+  orig: 57, 37
+  offset: 0, 0
+  index: -1
+guihuo_9
+  rotate: false
+  xy: 97, 2
+  size: 89, 26
+  orig: 89, 26
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 321, 17
+  size: 36, 19
+  orig: 36, 19
+  offset: 0, 0
+  index: -1

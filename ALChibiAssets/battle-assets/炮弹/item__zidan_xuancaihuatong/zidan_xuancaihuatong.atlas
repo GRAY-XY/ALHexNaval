@@ -1,0 +1,48 @@
+
+zidan_xuancaihuatong.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huatong
+  rotate: false
+  xy: 529, 5
+  size: 203, 104
+  orig: 203, 104
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 9
+  size: 262, 100
+  orig: 262, 100
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 266, 9
+  size: 261, 100
+  orig: 261, 100
+  offset: 0, 0
+  index: -1
+xx1
+  rotate: false
+  xy: 734, 20
+  size: 70, 89
+  orig: 70, 89
+  offset: 0, 0
+  index: -1
+xx2
+  rotate: false
+  xy: 806, 54
+  size: 43, 55
+  orig: 43, 55
+  offset: 0, 0
+  index: -1
+xx3
+  rotate: false
+  xy: 806, 2
+  size: 39, 50
+  orig: 39, 50
+  offset: 0, 0
+  index: -1

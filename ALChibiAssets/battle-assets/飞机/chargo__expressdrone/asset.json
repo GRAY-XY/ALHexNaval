@@ -1,0 +1,38 @@
+{
+  "id": "chargo__expressdrone",
+  "model": "expressdrone",
+  "name": "高速速运无人机",
+  "names": [
+    "高速速运无人机",
+    "法戈技能用 货运无人机"
+  ],
+  "category": "飞机",
+  "source": "chargo/expressdrone",
+  "path": "battle-assets/飞机/chargo__expressdrone",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "expressdrone_9190161446841699003.png",
+      "name": "expressdrone",
+      "width": 236,
+      "height": 208,
+      "role": "战斗贴图",
+      "path_id": 9190161446841699003,
+      "source": "CAB-88626786050336e2ed3e3675769721f2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__expressdrone/aircraft_shadow_2192772484218123160.png"
+}

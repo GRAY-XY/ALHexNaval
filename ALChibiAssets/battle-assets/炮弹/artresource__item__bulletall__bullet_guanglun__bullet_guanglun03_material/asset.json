@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bullet_guanglun__bullet_guanglun03_material",
+  "model": "bullet_guanglun03_material",
+  "name": "bullet_guanglun03_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bullet_guanglun/bullet_guanglun03_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bullet_guanglun__bullet_guanglun03_material",
+  "images": [
+    {
+      "file": "bullet_guanglun03_-457930507054317897.png",
+      "name": "bullet_guanglun03",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -457930507054317897,
+      "source": "CAB-416c48e11b532af68eb6831b07d3c5a5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

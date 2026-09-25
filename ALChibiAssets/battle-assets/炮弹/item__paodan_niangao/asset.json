@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_niangao",
+  "model": "paodan_niangao",
+  "name": "年糕炮弹",
+  "names": [
+    "年糕炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_niangao",
+  "path": "battle-assets/炮弹/item__paodan_niangao",
+  "images": [
+    {
+      "file": "paodan_niangao_2611882726676406107.png",
+      "name": "paodan_niangao",
+      "width": 128,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": 2611882726676406107,
+      "source": "CAB-a4ef51a9f81b0751163d83f4c565cc72"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_niangao/paodan_niangao_2611882726676406107.png"
+}

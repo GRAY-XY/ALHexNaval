@@ -1,0 +1,48 @@
+{
+  "id": "chargo__tianshan",
+  "model": "tianshan",
+  "name": "天山",
+  "names": [
+    "天山",
+    "第13章通用鱼雷机",
+    "第13章空袭 鱼雷机",
+    "第14章通用鱼雷机",
+    "第14章空袭 鱼雷机",
+    "【困难13章】通用鱼雷机",
+    "【困难13章】空袭 鱼雷机",
+    "【困难14章】通用鱼雷机",
+    "【困难14章】空袭 鱼雷机",
+    "【主线15章】通用鱼雷机",
+    "【主线16章前半】空袭 鱼雷机",
+    "【主线16章后半】通用鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/tianshan",
+  "path": "battle-assets/飞机/chargo__tianshan",
+  "images": [
+    {
+      "file": "tianshan_-7796454114355966987.png",
+      "name": "tianshan",
+      "width": 247,
+      "height": 246,
+      "role": "战斗贴图",
+      "path_id": -7796454114355966987,
+      "source": "CAB-bd1b4cef4c36dddbbcc6f270ebfdc720"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__tianshan/tianshan_-7796454114355966987.png"
+}

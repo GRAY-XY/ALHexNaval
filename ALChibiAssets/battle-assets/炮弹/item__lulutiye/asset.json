@@ -1,0 +1,28 @@
+{
+  "id": "item__lulutiye",
+  "model": "lulutiye",
+  "name": "lulutiye",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/lulutiye",
+  "path": "battle-assets/炮弹/item__lulutiye",
+  "images": [
+    {
+      "file": "niao_-4750080975786163735.png",
+      "name": "niao",
+      "width": 319,
+      "height": 272,
+      "role": "战斗贴图",
+      "path_id": -4750080975786163735,
+      "source": "CAB-19b36c84a62cdbb686022d878046c8cb"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19961
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__lulutiye/niao_-4750080975786163735.png"
+}

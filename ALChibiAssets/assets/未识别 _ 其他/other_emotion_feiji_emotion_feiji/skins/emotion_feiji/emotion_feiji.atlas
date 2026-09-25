@@ -1,0 +1,27 @@
+
+emotion_feiji.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huo_r1
+  rotate: false
+  xy: 2, 2
+  size: 280, 431
+  orig: 280, 431
+  offset: 0, 0
+  index: -1
+huo_r2
+  rotate: false
+  xy: 571, 19
+  size: 245, 414
+  orig: 245, 414
+  offset: 0, 0
+  index: -1
+huo_r3
+  rotate: false
+  xy: 284, 19
+  size: 285, 414
+  orig: 285, 414
+  offset: 0, 0
+  index: -1

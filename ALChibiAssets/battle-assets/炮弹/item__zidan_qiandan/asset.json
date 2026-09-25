@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_qiandan",
+  "model": "zidan_qiandan",
+  "name": "老旧脱漆子弹",
+  "names": [
+    "老旧脱漆子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_qiandan",
+  "path": "battle-assets/炮弹/item__zidan_qiandan",
+  "images": [
+    {
+      "file": "zidan_qiandan_8683710549337524622.png",
+      "name": "zidan_qiandan",
+      "width": 128,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": 8683710549337524622,
+      "source": "CAB-ba75581749ea78de8c0c55f6e9bedb19"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_qiandan/zidan_qiandan_8683710549337524622.png"
+}

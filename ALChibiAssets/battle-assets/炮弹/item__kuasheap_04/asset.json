@@ -1,0 +1,33 @@
+{
+  "id": "item__kuasheap_04",
+  "model": "kuasheap_04",
+  "name": "kuasheap_04",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/kuasheap_04",
+  "path": "battle-assets/炮弹/item__kuasheap_04",
+  "images": [
+    {
+      "file": "kuasheAP_04_8530210824532632454.png",
+      "name": "kuasheAP_04",
+      "width": 120,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 8530210824532632454,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    168234,
+    168241,
+    3032001,
+    3370103,
+    3376008,
+    3376106
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__kuasheap_04/kuasheAP_04_8530210824532632454.png"
+}

@@ -1,0 +1,694 @@
+{
+  "verifiedAt": "2026-09-17T13:20:37.280Z",
+  "status": "passed",
+  "checks": [
+    "12 copied skeletons render in the fleet view",
+    "Pointer dragging changes the camera",
+    "Wheel zoom keeps the world position under the cursor",
+    "Clicking the rendered chibi selects its ship",
+    "Facing button changes the ship orientation",
+    "Grid toggle hides hex lines",
+    "Pause stops skeleton animation time",
+    "Minimap navigation moves off-screen ships out of the animation update",
+    "Full-map overview uses icons and the overview terrain texture",
+    "128 map size renders with intact ship assets",
+    "128 map stays within the terrain chunk cache limit during panning",
+    "256 map size renders with intact ship assets",
+    "256 map stays within the terrain chunk cache limit during panning",
+    "512 map size renders with intact ship assets",
+    "512 map stays within the terrain chunk cache limit during panning",
+    "Distant-region navigation evicts old chunk textures",
+    "980px desktop layout keeps navigation within the viewport",
+    "Wide 4K overview adapts terrain detail to keep texture caching bounded",
+    "No uncaught browser errors during map interaction and size changes"
+  ],
+  "benchmarks": [
+    {
+      "mapSize": 128,
+      "totalCells": 16384,
+      "landCells": 1046,
+      "terrainDataBytes": 32768,
+      "generationMs": 11.799999999813735,
+      "camera": {
+        "x": 1562.324573186745,
+        "y": 1411.7982111396896,
+        "zoom": 0.92,
+        "width": 1160,
+        "height": 940
+      },
+      "terrain": {
+        "cachedChunks": 36,
+        "visibleChunks": 20,
+        "pendingChunks": 0,
+        "generatedChunks": 36,
+        "estimatedTerrainTextureBytes": 30642336,
+        "detail": true,
+        "chunkLimit": 96
+      },
+      "ships": {
+        "rigsLoaded": 12,
+        "visibleRigs": 10,
+        "visibleIcons": 0,
+        "errors": [],
+        "calibration": [
+          {
+            "id": "lafei",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2915173871150648,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -192.5800018310547,
+              "y": -336.17205810546875,
+              "width": 361.45249938964844,
+              "height": 337.55249774456024
+            }
+          },
+          {
+            "id": "biaoqiang",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2953959097423055,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -142.47808837890625,
+              "y": -331.7581481933594,
+              "width": 260.9142532348633,
+              "height": 335.2980966567993
+            }
+          },
+          {
+            "id": "lingbo",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2916255320184594,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -128.1732635498047,
+              "y": -336.0473937988281,
+              "width": 240.03170776367188,
+              "height": 350.55995655059814
+            }
+          },
+          {
+            "id": "z23",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2881696477045509,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -116.29191589355469,
+              "y": -340.07745361328125,
+              "width": 225.53160858154297,
+              "height": 340.03601336851716
+            }
+          },
+          {
+            "id": "hailunna",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28903566601312713,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -147.58839416503906,
+              "y": -339.0585021972656,
+              "width": 256.5333786010742,
+              "height": 342.58671379089355
+            }
+          },
+          {
+            "id": "beierfasite",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31646777285611694,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -137.17225646972656,
+              "y": -309.6681823730469,
+              "width": 279.14186096191406,
+              "height": 312.3639540672302
+            }
+          },
+          {
+            "id": "gaoxiong",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.3253250450311723,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -185.454345703125,
+              "y": -301.2371826171875,
+              "width": 312.3809356689453,
+              "height": 302.9466128349304
+            }
+          },
+          {
+            "id": "ougen",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2816788292035969,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -180.83868408203125,
+              "y": -347.9139709472656,
+              "width": 328.02745056152344,
+              "height": 349.59391379356384
+            }
+          },
+          {
+            "id": "yanzhan",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28363017841971716,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -162.39231872558594,
+              "y": -345.5203552246094,
+              "width": 319.1253356933594,
+              "height": 374.2548313140869
+            }
+          },
+          {
+            "id": "bisimai",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28789737172474184,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -160.8424835205078,
+              "y": -340.3990783691406,
+              "width": 338.3264617919922,
+              "height": 356.48109436035156
+            }
+          },
+          {
+            "id": "qiye",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28810909743405705,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -207.31349182128906,
+              "y": -340.14892578125,
+              "width": 378.39202880859375,
+              "height": 399.3262367248535
+            }
+          },
+          {
+            "id": "dujiaoshou",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31048826477917696,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -138.24501037597656,
+              "y": -315.63189697265625,
+              "width": 242.72390747070312,
+              "height": 361.2186279296875
+            }
+          }
+        ]
+      },
+      "fps": 58,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 (0x00002704) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "jsHeapBytes": 69045992,
+      "selected": "preview-lafei",
+      "gridVisible": true,
+      "benchmark": {
+        "frames": 90,
+        "elapsedMs": 1530.8999999994412,
+        "medianFrameMs": 16.699999999254942,
+        "p95FrameMs": 22.09999999962747,
+        "pan": true,
+        "scope": "12 preview ships; browser rendering only. Does not include AI, movement, combat, or networking."
+      }
+    },
+    {
+      "mapSize": 256,
+      "totalCells": 65536,
+      "landCells": 5981,
+      "terrainDataBytes": 131072,
+      "generationMs": 20.09999999962747,
+      "camera": {
+        "x": 2726.2627158730306,
+        "y": 2419.7982111396896,
+        "zoom": 0.92,
+        "width": 1160,
+        "height": 940
+      },
+      "terrain": {
+        "cachedChunks": 46,
+        "visibleChunks": 25,
+        "pendingChunks": 0,
+        "generatedChunks": 46,
+        "estimatedTerrainTextureBytes": 36892080,
+        "detail": true,
+        "chunkLimit": 96
+      },
+      "ships": {
+        "rigsLoaded": 12,
+        "visibleRigs": 10,
+        "visibleIcons": 0,
+        "errors": [],
+        "calibration": [
+          {
+            "id": "lafei",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2915173871150648,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -192.5800018310547,
+              "y": -336.17205810546875,
+              "width": 361.45249938964844,
+              "height": 337.55249774456024
+            }
+          },
+          {
+            "id": "biaoqiang",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2953959097423055,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -142.47808837890625,
+              "y": -331.7581481933594,
+              "width": 260.9142532348633,
+              "height": 335.2980966567993
+            }
+          },
+          {
+            "id": "lingbo",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2916255320184594,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -128.1732635498047,
+              "y": -336.0473937988281,
+              "width": 240.03170776367188,
+              "height": 350.55995655059814
+            }
+          },
+          {
+            "id": "z23",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2881696477045509,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -116.29191589355469,
+              "y": -340.07745361328125,
+              "width": 225.53160858154297,
+              "height": 340.03601336851716
+            }
+          },
+          {
+            "id": "hailunna",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28903566601312713,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -147.58839416503906,
+              "y": -339.0585021972656,
+              "width": 256.5333786010742,
+              "height": 342.58671379089355
+            }
+          },
+          {
+            "id": "beierfasite",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31646777285611694,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -137.17225646972656,
+              "y": -309.6681823730469,
+              "width": 279.14186096191406,
+              "height": 312.3639540672302
+            }
+          },
+          {
+            "id": "gaoxiong",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.3253250450311723,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -185.454345703125,
+              "y": -301.2371826171875,
+              "width": 312.3809356689453,
+              "height": 302.9466128349304
+            }
+          },
+          {
+            "id": "ougen",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2816788292035969,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -180.83868408203125,
+              "y": -347.9139709472656,
+              "width": 328.02745056152344,
+              "height": 349.59391379356384
+            }
+          },
+          {
+            "id": "yanzhan",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28363017841971716,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -162.39231872558594,
+              "y": -345.5203552246094,
+              "width": 319.1253356933594,
+              "height": 374.2548313140869
+            }
+          },
+          {
+            "id": "bisimai",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28789737172474184,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -160.8424835205078,
+              "y": -340.3990783691406,
+              "width": 338.3264617919922,
+              "height": 356.48109436035156
+            }
+          },
+          {
+            "id": "qiye",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28810909743405705,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -207.31349182128906,
+              "y": -340.14892578125,
+              "width": 378.39202880859375,
+              "height": 399.3262367248535
+            }
+          },
+          {
+            "id": "dujiaoshou",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31048826477917696,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -138.24501037597656,
+              "y": -315.63189697265625,
+              "width": 242.72390747070312,
+              "height": 361.2186279296875
+            }
+          }
+        ]
+      },
+      "fps": 58,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 (0x00002704) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "jsHeapBytes": 80102892,
+      "selected": "preview-lafei",
+      "gridVisible": true,
+      "benchmark": {
+        "frames": 90,
+        "elapsedMs": 1533.5999999996275,
+        "medianFrameMs": 16.700000000186265,
+        "p95FrameMs": 21.90000000037253,
+        "pan": true,
+        "scope": "12 preview ships; browser rendering only. Does not include AI, movement, combat, or networking."
+      }
+    },
+    {
+      "mapSize": 512,
+      "totalCells": 262144,
+      "landCells": 27515,
+      "terrainDataBytes": 524288,
+      "generationMs": 177.69999999925494,
+      "camera": {
+        "x": 4908.646733409816,
+        "y": 4561.79821113969,
+        "zoom": 0.92,
+        "width": 1160,
+        "height": 940
+      },
+      "terrain": {
+        "cachedChunks": 41,
+        "visibleChunks": 20,
+        "pendingChunks": 0,
+        "generatedChunks": 41,
+        "estimatedTerrainTextureBytes": 33770280,
+        "detail": true,
+        "chunkLimit": 96
+      },
+      "ships": {
+        "rigsLoaded": 12,
+        "visibleRigs": 10,
+        "visibleIcons": 0,
+        "errors": [],
+        "calibration": [
+          {
+            "id": "lafei",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2915173871150648,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -192.5800018310547,
+              "y": -336.17205810546875,
+              "width": 361.45249938964844,
+              "height": 337.55249774456024
+            }
+          },
+          {
+            "id": "biaoqiang",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2953959097423055,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -142.47808837890625,
+              "y": -331.7581481933594,
+              "width": 260.9142532348633,
+              "height": 335.2980966567993
+            }
+          },
+          {
+            "id": "lingbo",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2916255320184594,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -128.1732635498047,
+              "y": -336.0473937988281,
+              "width": 240.03170776367188,
+              "height": 350.55995655059814
+            }
+          },
+          {
+            "id": "z23",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2881696477045509,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -116.29191589355469,
+              "y": -340.07745361328125,
+              "width": 225.53160858154297,
+              "height": 340.03601336851716
+            }
+          },
+          {
+            "id": "hailunna",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28903566601312713,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -147.58839416503906,
+              "y": -339.0585021972656,
+              "width": 256.5333786010742,
+              "height": 342.58671379089355
+            }
+          },
+          {
+            "id": "beierfasite",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31646777285611694,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -137.17225646972656,
+              "y": -309.6681823730469,
+              "width": 279.14186096191406,
+              "height": 312.3639540672302
+            }
+          },
+          {
+            "id": "gaoxiong",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.3253250450311723,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -185.454345703125,
+              "y": -301.2371826171875,
+              "width": 312.3809356689453,
+              "height": 302.9466128349304
+            }
+          },
+          {
+            "id": "ougen",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2816788292035969,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -180.83868408203125,
+              "y": -347.9139709472656,
+              "width": 328.02745056152344,
+              "height": 349.59391379356384
+            }
+          },
+          {
+            "id": "yanzhan",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28363017841971716,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -162.39231872558594,
+              "y": -345.5203552246094,
+              "width": 319.1253356933594,
+              "height": 374.2548313140869
+            }
+          },
+          {
+            "id": "bisimai",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28789737172474184,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -160.8424835205078,
+              "y": -340.3990783691406,
+              "width": 338.3264617919922,
+              "height": 356.48109436035156
+            }
+          },
+          {
+            "id": "qiye",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28810909743405705,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -207.31349182128906,
+              "y": -340.14892578125,
+              "width": 378.39202880859375,
+              "height": 399.3262367248535
+            }
+          },
+          {
+            "id": "dujiaoshou",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31048826477917696,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -138.24501037597656,
+              "y": -315.63189697265625,
+              "width": 242.72390747070312,
+              "height": 361.2186279296875
+            }
+          }
+        ]
+      },
+      "fps": 59,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 (0x00002704) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "jsHeapBytes": 74272458,
+      "selected": "preview-lafei",
+      "gridVisible": true,
+      "benchmark": {
+        "frames": 90,
+        "elapsedMs": 1532.4000000003725,
+        "medianFrameMs": 16.700000000186265,
+        "p95FrameMs": 21.700000000186265,
+        "pan": true,
+        "scope": "12 preview ships; browser rendering only. Does not include AI, movement, combat, or networking."
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "cacheEviction": {
+    "terrain": {
+      "cachedChunks": 96,
+      "visibleChunks": 16,
+      "pendingChunks": 0,
+      "generatedChunks": 163,
+      "estimatedTerrainTextureBytes": 68110080,
+      "detail": true,
+      "chunkLimit": 96
+    },
+    "jsHeapBytes": 60372167
+  },
+  "wideWindow": {
+    "camera": {
+      "x": 4450,
+      "y": 2562.5,
+      "zoom": 0.4,
+      "width": 3560,
+      "height": 2050
+    },
+    "terrain": {
+      "cachedChunks": 25,
+      "visibleChunks": 0,
+      "pendingChunks": 0,
+      "generatedChunks": 25,
+      "estimatedTerrainTextureBytes": 23780520,
+      "detail": false,
+      "chunkLimit": 96
+    }
+  }
+}

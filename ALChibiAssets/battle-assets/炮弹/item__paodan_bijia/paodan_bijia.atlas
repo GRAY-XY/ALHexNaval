@@ -1,0 +1,41 @@
+
+paodan_bijia.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bi_1
+  rotate: false
+  xy: 210, 138
+  size: 32, 111
+  orig: 32, 111
+  offset: 0, 0
+  index: -1
+bi_2
+  rotate: false
+  xy: 210, 25
+  size: 32, 111
+  orig: 32, 111
+  offset: 0, 0
+  index: -1
+bi_3
+  rotate: false
+  xy: 244, 138
+  size: 32, 111
+  orig: 32, 111
+  offset: 0, 0
+  index: -1
+bi_4
+  rotate: false
+  xy: 244, 25
+  size: 32, 111
+  orig: 32, 111
+  offset: 0, 0
+  index: -1
+bijia
+  rotate: true
+  xy: 2, 2
+  size: 247, 206
+  orig: 247, 206
+  offset: 0, 0
+  index: -1

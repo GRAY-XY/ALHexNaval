@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_wushidao",
+  "model": "yulei_wushidao",
+  "name": "武士刀鱼雷",
+  "names": [
+    "武士刀鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_wushidao",
+  "path": "battle-assets/鱼雷/item__yulei_wushidao",
+  "images": [
+    {
+      "file": "yulei_wushidao_7039026498955901570.png",
+      "name": "yulei_wushidao",
+      "width": 128,
+      "height": 38,
+      "role": "战斗贴图",
+      "path_id": 7039026498955901570,
+      "source": "CAB-75f238ba370958463af42cf67f3b2f79"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_wushidao/yulei_wushidao_7039026498955901570.png"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "item__wuzang_luolei",
+  "model": "wuzang_luolei",
+  "name": "wuzang_luolei",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/wuzang_luolei",
+  "path": "battle-assets/其他战斗特效/item__wuzang_luolei",
+  "images": [],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

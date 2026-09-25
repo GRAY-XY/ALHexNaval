@@ -1,0 +1,101 @@
+{
+  "id": "bullet__other",
+  "model": "other",
+  "name": "other",
+  "names": [],
+  "category": "炮弹",
+  "source": "bullet/other",
+  "path": "battle-assets/炮弹/bullet__other",
+  "images": [
+    {
+      "file": "projectile08_anim_-6947938084654845908.png",
+      "name": "projectile08_anim",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6947938084654845908,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "path_00382_00000_-2765675480854738622.png",
+      "name": "path_00382_00000",
+      "width": 64,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -2765675480854738622,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "path_00268_-686796572196083925.png",
+      "name": "path_00268",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -686796572196083925,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "AnimatedStar_380227637142330474.png",
+      "name": "AnimatedStar",
+      "width": 32,
+      "height": 32,
+      "role": "原始纹理",
+      "path_id": 380227637142330474,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "GF_192_6045384595022049078.png",
+      "name": "GF_192",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6045384595022049078,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "yanhuo_00363_6340164363666312539.png",
+      "name": "yanhuo_00363",
+      "width": 64,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": 6340164363666312539,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "yanhuo_00369_6351974463680143829.png",
+      "name": "yanhuo_00369",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6351974463680143829,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "GF_208_8359250902665951597.png",
+      "name": "GF_208",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8359250902665951597,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    },
+    {
+      "file": "LightningArrowSpark_8391313994533269728.png",
+      "name": "LightningArrowSpark",
+      "width": 64,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": 8391313994533269728,
+      "source": "CAB-25ff9fdf0592f94c3a659b6d846c9233"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "zimudan",
+    "zimudan 1",
+    "aersasi_fukong"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

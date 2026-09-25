@@ -1,0 +1,17 @@
+{
+  "id": "item__alertarea_looping",
+  "model": "alertarea_looping",
+  "name": "alertarea_looping",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/alertarea_looping",
+  "path": "battle-assets/炮弹/item__alertarea_looping",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3361214
+  ],
+  "has_preview": false,
+  "prefab": true
+}

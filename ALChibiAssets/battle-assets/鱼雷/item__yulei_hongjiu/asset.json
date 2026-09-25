@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_hongjiu",
+  "model": "yulei_hongjiu",
+  "name": "葡萄酒鱼雷",
+  "names": [
+    "葡萄酒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hongjiu",
+  "path": "battle-assets/鱼雷/item__yulei_hongjiu",
+  "images": [
+    {
+      "file": "yulei_hongjiu_6194897449795321938.png",
+      "name": "yulei_hongjiu",
+      "width": 128,
+      "height": 36,
+      "role": "战斗贴图",
+      "path_id": 6194897449795321938,
+      "source": "CAB-9346ccd9dd9dc852504d0de1e77d8f07"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3384003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hongjiu/yulei_hongjiu_6194897449795321938.png"
+}

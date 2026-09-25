@@ -1,0 +1,202 @@
+
+chongying_m_boss03.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 479, 201
+  orig: 479, 201
+  offset: 0, 0
+  index: -1
+guihuo_1
+  rotate: true
+  xy: 168, 872
+  size: 37, 40
+  orig: 37, 40
+  offset: 0, 0
+  index: -1
+guihuo_2
+  rotate: true
+  xy: 2, 890
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+guihuo_3
+  rotate: true
+  xy: 210, 872
+  size: 37, 63
+  orig: 37, 63
+  offset: 0, 0
+  index: -1
+guihuo_4
+  rotate: false
+  xy: 57, 873
+  size: 48, 36
+  orig: 48, 36
+  offset: 0, 0
+  index: -1
+huhuo_1
+  rotate: false
+  xy: 837, 678
+  size: 148, 132
+  orig: 148, 132
+  offset: 0, 0
+  index: -1
+huhuo_2
+  rotate: false
+  xy: 275, 862
+  size: 98, 47
+  orig: 98, 47
+  offset: 0, 0
+  index: -1
+huhuo_3
+  rotate: false
+  xy: 375, 854
+  size: 194, 55
+  orig: 194, 55
+  offset: 0, 0
+  index: -1
+huhuo_4
+  rotate: false
+  xy: 176, 632
+  size: 279, 109
+  orig: 279, 109
+  offset: 0, 0
+  index: -1
+huhuo_5
+  rotate: false
+  xy: 691, 843
+  size: 151, 66
+  orig: 151, 66
+  offset: 0, 0
+  index: -1
+huhuo_6
+  rotate: false
+  xy: 24, 883
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+huhuo_7
+  rotate: false
+  xy: 571, 852
+  size: 118, 57
+  orig: 118, 57
+  offset: 0, 0
+  index: -1
+huhuo_8
+  rotate: false
+  xy: 107, 873
+  size: 59, 36
+  orig: 59, 36
+  offset: 0, 0
+  index: -1
+jiaban_l
+  rotate: false
+  xy: 2, 791
+  size: 191, 79
+  orig: 191, 79
+  offset: 0, 0
+  index: -1
+jiaban_l_huo
+  rotate: false
+  xy: 195, 748
+  size: 184, 104
+  orig: 184, 104
+  offset: 0, 0
+  index: -1
+jiaban_r
+  rotate: true
+  xy: 280, 440
+  size: 190, 173
+  orig: 190, 173
+  offset: 0, 0
+  index: -1
+jiaban_r_huo
+  rotate: false
+  xy: 455, 414
+  size: 219, 164
+  orig: 219, 164
+  offset: 0, 0
+  index: -1
+jz_zhuangjia
+  rotate: false
+  xy: 457, 580
+  size: 218, 142
+  orig: 218, 142
+  offset: 0, 0
+  index: -1
+jz_zhuangjia_huo
+  rotate: false
+  xy: 272, 205
+  size: 315, 207
+  orig: 315, 207
+  offset: 0, 0
+  index: -1
+jz_zhuangjia_l
+  rotate: false
+  xy: 2, 653
+  size: 172, 136
+  orig: 172, 136
+  offset: 0, 0
+  index: -1
+jz_zhuangjia_l_huo
+  rotate: false
+  xy: 844, 812
+  size: 143, 97
+  orig: 143, 97
+  offset: 0, 0
+  index: -1
+qianzhua
+  rotate: false
+  xy: 661, 724
+  size: 174, 117
+  orig: 174, 117
+  offset: 0, 0
+  index: -1
+weiba_1
+  rotate: false
+  xy: 2, 288
+  size: 268, 180
+  orig: 268, 180
+  offset: 0, 0
+  index: -1
+weiba_2
+  rotate: false
+  xy: 589, 127
+  size: 234, 220
+  orig: 234, 220
+  offset: 0, 0
+  index: -1
+weiba_3
+  rotate: false
+  xy: 677, 520
+  size: 213, 156
+  orig: 213, 156
+  offset: 0, 0
+  index: -1
+weiba_4
+  rotate: false
+  xy: 676, 349
+  size: 259, 169
+  orig: 259, 169
+  offset: 0, 0
+  index: -1
+weiba_5
+  rotate: false
+  xy: 381, 743
+  size: 278, 107
+  orig: 278, 107
+  offset: 0, 0
+  index: -1
+weiba_6
+  rotate: true
+  xy: 2, 470
+  size: 160, 276
+  orig: 160, 276
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__wave_01",
+  "model": "wave_01",
+  "name": "wave_01",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/wave_01",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__wave_01",
+  "images": [
+    {
+      "file": "wave_01_1909404526720100184.png",
+      "name": "wave_01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1909404526720100184,
+      "source": "CAB-fa0955decf31c79fa0f6636fd30ac543"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

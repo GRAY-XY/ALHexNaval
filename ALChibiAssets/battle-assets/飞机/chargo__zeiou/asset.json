@@ -1,0 +1,39 @@
+{
+  "id": "chargo__zeiou",
+  "model": "zeiou",
+  "name": "默认皇家轰炸机",
+  "names": [
+    "默认皇家轰炸机",
+    "贼鸥",
+    "【翻格子活动】皇家轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/zeiou",
+  "path": "battle-assets/飞机/chargo__zeiou",
+  "images": [
+    {
+      "file": "zeiou_-6338706194422255396.png",
+      "name": "zeiou",
+      "width": 253,
+      "height": 231,
+      "role": "战斗贴图",
+      "path_id": -6338706194422255396,
+      "source": "CAB-184437bc14aefecd3d7dc47d162e2d18"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__zeiou/zeiou_-6338706194422255396.png"
+}

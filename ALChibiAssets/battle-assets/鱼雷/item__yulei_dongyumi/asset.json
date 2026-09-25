@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dongyumi",
+  "model": "yulei_dongyumi",
+  "name": "冻玉米鱼雷",
+  "names": [
+    "冻玉米鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dongyumi",
+  "path": "battle-assets/鱼雷/item__yulei_dongyumi",
+  "images": [
+    {
+      "file": "yulei_dongyumi_-8064764792939255567.png",
+      "name": "yulei_dongyumi",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": -8064764792939255567,
+      "source": "CAB-dcf103dcad0f53f824b74b1ad3ee4532"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dongyumi/yulei_dongyumi_-8064764792939255567.png"
+}

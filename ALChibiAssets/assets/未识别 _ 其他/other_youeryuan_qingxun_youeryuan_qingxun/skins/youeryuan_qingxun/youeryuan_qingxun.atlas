@@ -1,0 +1,48 @@
+
+youeryuan_qingxun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 172
+  size: 551, 316
+  orig: 551, 316
+  offset: 0, 0
+  index: -1
+body_fengche
+  rotate: false
+  xy: 710, 75
+  size: 119, 121
+  orig: 119, 121
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: false
+  xy: 555, 198
+  size: 207, 290
+  orig: 207, 290
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: false
+  xy: 2, 87
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: false
+  xy: 2, 2
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: false
+  xy: 356, 87
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1

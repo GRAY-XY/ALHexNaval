@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zhaomingdan__smoke__smoke_01",
+  "model": "smoke_01",
+  "name": "smoke_01",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zhaomingdan/smoke/smoke_01",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zhaomingdan__smoke__smoke_01",
+  "images": [
+    {
+      "file": "Smoke_01_-6905274153826918485.png",
+      "name": "Smoke_01",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -6905274153826918485,
+      "source": "CAB-643adaf8d414296df46903606779ce48"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

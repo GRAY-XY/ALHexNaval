@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_ai_quantao",
+  "model": "zidan_ai_quantao",
+  "name": "拳套子弹",
+  "names": [
+    "拳套子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_ai_quantao",
+  "path": "battle-assets/炮弹/item__zidan_ai_quantao",
+  "images": [
+    {
+      "file": "zidan_ai_quantao_-5392405885418151543.png",
+      "name": "zidan_ai_quantao",
+      "width": 128,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -5392405885418151543,
+      "source": "CAB-fcfbc81f925b13d6c154bd09f1d38da0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_ai_quantao/zidan_ai_quantao_-5392405885418151543.png"
+}

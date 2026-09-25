@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-19",
+  "generator": "OpenAI built-in image generation",
+  "styleReference": "output/art-concepts/watercolor-maritime-fullscreen-v1.png",
+  "promptRecord": "data/directional-art-prompts.md",
+  "directionOrder": [
+    "east",
+    "southeast",
+    "southwest",
+    "west",
+    "northwest",
+    "northeast"
+  ],
+  "sourceSheets": [
+    {
+      "kind": "harbor",
+      "path": "assets/terrain/source-sheets/watercolor-harbor-six-source.png",
+      "bytes": 2325100,
+      "sha256": "09357e888be74ed6cccaa6526c4dbed3bfde1189780f96c6f6a18afbfb303baf",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "kind": "mountain",
+      "path": "assets/terrain/source-sheets/watercolor-mountain-six-source.png",
+      "bytes": 2200781,
+      "sha256": "968b4e886244f89d55752cea5110f0b9a8a0c763a62ee053fe008f8d96c0681c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "kind": "coast",
+      "path": "assets/terrain/source-sheets/watercolor-coast-six-source.png",
+      "bytes": 2116968,
+      "sha256": "c34eff9f432809e712aab22a37381463e3cef02f5b1ce96c9829f6a1157a9dbf",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "variants": [
+    {
+      "kind": "harbor",
+      "index": 0,
+      "direction": "east",
+      "path": "assets/terrain/directional/watercolor-harbor-0-east.png",
+      "bytes": 237098,
+      "sha256": "79cfd2d6c30378429d252936e44e0b4a563a3319ff2adbe6f9c81c66bea65ba3",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "harbor",
+      "index": 1,
+      "direction": "southeast",
+      "path": "assets/terrain/directional/watercolor-harbor-1-southeast.png",
+      "bytes": 275024,
+      "sha256": "0ca59edb7922dd75d69388b1769e7e839491da630b2135de474208d076598ea9",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "harbor",
+      "index": 2,
+      "direction": "southwest",
+      "path": "assets/terrain/directional/watercolor-harbor-2-southwest.png",
+      "bytes": 245842,
+      "sha256": "6a71b41d4b2a1decc3bf09d5cd0ab7bd791eefced6feca14ae67a480c4f59494",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "harbor",
+      "index": 3,
+      "direction": "west",
+      "path": "assets/terrain/directional/watercolor-harbor-3-west.png",
+      "bytes": 243583,
+      "sha256": "a78de595e147acf22e1e8e0d8e91367b80d8f2c59f1fc6e37dabe557238714dd",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "harbor",
+      "index": 4,
+      "direction": "northwest",
+      "path": "assets/terrain/directional/watercolor-harbor-4-northwest.png",
+      "bytes": 260968,
+      "sha256": "3e39e63d52a811fb71ef0b88a0ca928773f1188049e3e2f93d501f57920ac9f1",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "harbor",
+      "index": 5,
+      "direction": "northeast",
+      "path": "assets/terrain/directional/watercolor-harbor-5-northeast.png",
+      "bytes": 256524,
+      "sha256": "f01d53918f5974bd02cbdd545e1c962fa23f098bd008fc2efa7b0396d4016a90",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "mountain",
+      "index": 0,
+      "direction": "east",
+      "path": "assets/terrain/directional/watercolor-mountain-0-east.png",
+      "bytes": 206477,
+      "sha256": "3a8ec7528b6f1cfc0305a11b4727491ef3cf3c5c6f8128fa33185a788fab9ad9",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "mountain",
+      "index": 1,
+      "direction": "southeast",
+      "path": "assets/terrain/directional/watercolor-mountain-1-southeast.png",
+      "bytes": 235239,
+      "sha256": "c4f0a2276d9145bb70ebee685e0632bd59d3442ae686e0eec078c3e8ab56335d",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "mountain",
+      "index": 2,
+      "direction": "southwest",
+      "path": "assets/terrain/directional/watercolor-mountain-2-southwest.png",
+      "bytes": 224033,
+      "sha256": "502efd2c5b2d141233b5a7d3f3b5aa1c43279117d9d1ffd092a71cf3c5c4be97",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "mountain",
+      "index": 3,
+      "direction": "west",
+      "path": "assets/terrain/directional/watercolor-mountain-3-west.png",
+      "bytes": 200043,
+      "sha256": "b91d9d700da71b6dccfa58c4f0b068c1bcdfa0b502e93fcfb79f36c139bf6373",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "mountain",
+      "index": 4,
+      "direction": "northwest",
+      "path": "assets/terrain/directional/watercolor-mountain-4-northwest.png",
+      "bytes": 227637,
+      "sha256": "b7f2d20b719109f5d677c56a9237a342d211b6bd865d9b47ba0052a3db6f9de9",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "mountain",
+      "index": 5,
+      "direction": "northeast",
+      "path": "assets/terrain/directional/watercolor-mountain-5-northeast.png",
+      "bytes": 207671,
+      "sha256": "d0f1cbb9f16f971683b35e2a6e89dd860897572341ecb9024ea57533bfb88a1d",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "coast",
+      "index": 0,
+      "direction": "east",
+      "path": "assets/terrain/directional/watercolor-coast-0-east.png",
+      "bytes": 219808,
+      "sha256": "671d12c36add0ea3107014f13dfee5e44ef948df4d3da1bc86dae15794ea298f",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "coast",
+      "index": 1,
+      "direction": "southeast",
+      "path": "assets/terrain/directional/watercolor-coast-1-southeast.png",
+      "bytes": 223476,
+      "sha256": "e52fc6591674d2116fcc93425d9dc53ae0fa8c51d8c70ec0d0331682bef00d1c",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "coast",
+      "index": 2,
+      "direction": "southwest",
+      "path": "assets/terrain/directional/watercolor-coast-2-southwest.png",
+      "bytes": 228199,
+      "sha256": "e919da6df7b9ed48c15acaa7c30d70725c233a060b97c42c2da02e85bbdab13c",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "coast",
+      "index": 3,
+      "direction": "west",
+      "path": "assets/terrain/directional/watercolor-coast-3-west.png",
+      "bytes": 216139,
+      "sha256": "9fd527d61a07f8e566ce2e7cbf3ba48376b75b7e5a56b0496f51747b73c9c6f4",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "coast",
+      "index": 4,
+      "direction": "northwest",
+      "path": "assets/terrain/directional/watercolor-coast-4-northwest.png",
+      "bytes": 216527,
+      "sha256": "687422158e2b08f8aacd52d94f7e1316dd6b477d1171abcbca8fcf43f5a0161d",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "kind": "coast",
+      "index": 5,
+      "direction": "northeast",
+      "path": "assets/terrain/directional/watercolor-coast-5-northeast.png",
+      "bytes": 206600,
+      "sha256": "d5e6c08788d13e4382c1ad861dff70bb601ad2243364df434f176fdd9104d937",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

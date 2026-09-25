@@ -1,0 +1,26 @@
+{
+  "id": "item__val_bullet1",
+  "model": "val_bullet1",
+  "name": "val_bullet1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/val_bullet1",
+  "path": "battle-assets/炮弹/item__val_bullet1",
+  "images": [
+    {
+      "file": "shenyuanbullet15_-3071231662233746528.png",
+      "name": "shenyuanbullet15",
+      "width": 124,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -3071231662233746528,
+      "source": "CAB-026e2a4106aab973ba7f93b38661daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__val_bullet1/shenyuanbullet15_-3071231662233746528.png"
+}

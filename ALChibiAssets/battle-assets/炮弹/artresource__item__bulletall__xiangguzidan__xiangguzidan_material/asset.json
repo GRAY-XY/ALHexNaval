@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__xiangguzidan__xiangguzidan_material",
+  "model": "xiangguzidan_material",
+  "name": "xiangguzidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/xiangguzidan/xiangguzidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__xiangguzidan__xiangguzidan_material",
+  "images": [
+    {
+      "file": "xiangguzidan_3889701513769708050.png",
+      "name": "xiangguzidan",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3889701513769708050,
+      "source": "CAB-1e2b1f12e11406fccf9260c861d2b703"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,37 @@
+{
+  "id": "chargo__xf2a4",
+  "model": "xf2a4",
+  "name": "试作型XF2A-4水牛",
+  "names": [
+    "试作型XF2A-4水牛"
+  ],
+  "category": "飞机",
+  "source": "chargo/xf2a4",
+  "path": "battle-assets/飞机/chargo__xf2a4",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "XF2A4_-8896670994715484326.png",
+      "name": "XF2A4",
+      "width": 256,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": -8896670994715484326,
+      "source": "CAB-6fbb1c2d587cb13d1584e2c7b638b421"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__xf2a4/aircraft_shadow_2192772484218123160.png"
+}

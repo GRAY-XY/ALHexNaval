@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "All map sizes and player counts create unique sea harbors, one home per player and separate starting credits",
+      "passed": true
+    },
+    {
+      "name": "Capturing costs one combat action, no credits or oil, and does not grant immediate income",
+      "passed": true
+    },
+    {
+      "name": "An enemy ship inside the harbor perimeter blocks capture without spending action or resources",
+      "passed": true
+    },
+    {
+      "name": "Faraway, held, sunk, wrong-owner and spent-action capture commands reject atomically",
+      "passed": true
+    },
+    {
+      "name": "Income belongs to the incoming player and cycles preserve the faction oil50 rule",
+      "passed": true
+    },
+    {
+      "name": "Repair restores at most fourHP with two credits perHP and consumes the ships combat action",
+      "passed": true
+    },
+    {
+      "name": "Unaffordable repair and wrong harbor commands cannot heal, revive or charge resources",
+      "passed": true
+    },
+    {
+      "name": "Reinforcements replace a lost hull at an unoccupied sea berth and cannot act early or inherit cooldowns",
+      "passed": true
+    },
+    {
+      "name": "Each harbor supports only one replacement per round and rejects live hulls or unaffordable types",
+      "passed": true
+    },
+    {
+      "name": "No berth means no charge, no replacement, and no production quota consumption",
+      "passed": true
+    },
+    {
+      "name": "A destroyed carriers replacement cannot inherit its old airborne wing",
+      "passed": true
+    },
+    {
+      "name": "A player without hulls remains in play while owning a harbor and can recover through reinforcements",
+      "passed": true
+    },
+    {
+      "name": "Portless players with no surviving hulls are eliminated and skipped by turn rotation",
+      "passed": true
+    },
+    {
+      "name": "An air strike sinking a portless players last hull eliminates that player while other factions continue",
+      "passed": true
+    },
+    {
+      "name": "Capturing the last defended home wins by headquarters even when the opponent still has ships",
+      "passed": true
+    },
+    {
+      "name": "Losing the last harbor after losing all ships triggers elimination victory",
+      "passed": true
+    },
+    {
+      "name": "Finished matches freeze air movement and reject fresh launches and commands",
+      "passed": true
+    },
+    {
+      "name": "Unexplored harbors stay hidden and stale discovery does not reveal unseen enemy ownership changes",
+      "passed": true
+    },
+    {
+      "name": "Version12 migration retains hull, aircraft, oil and discovery while initializing only campaign fields",
+      "passed": true
+    },
+    {
+      "name": "Capturing a harbor raises the shared oil ceiling without granting immediate oil; next own turn fills the new ceiling",
+      "passed": true
+    },
+    {
+      "name": "The expanded oil pool can pay more than fifty DD movement steps within visible adjacent sea cells",
+      "passed": true
+    },
+    {
+      "name": "Losing a harbor reduces its former owners ceiling and clamps only excess oil",
+      "passed": true
+    },
+    {
+      "name": "Harbor bonuses do not increase or refill aircraft action points and flights still spend only their own budget",
+      "passed": true
+    },
+    {
+      "name": "Version13 offshore ports relocate to coast while ownership, quota, funds, forces, aircraft and exploration survive migration",
+      "passed": true
+    },
+    {
+      "name": "Current saves reject oil above the owning factions derived harbor capacity without mutating input",
+      "passed": true
+    },
+    {
+      "name": "Corrupt campaign states reject without changing the original match or caller data",
+      "passed": true
+    }
+  ],
+  "invalidSaveCases": 15,
+  "reinforcementCosts": {
+    "DD": 20,
+    "CL": 30,
+    "CA": 40,
+    "BB": 60,
+    "CV": 70,
+    "CVL": 50
+  },
+  "portOilBonus": 10,
+  "allPortsCoastal": true,
+  "benchmark": {
+    "size": 512,
+    "players": 8,
+    "ports": 259,
+    "constructionMs": 592.281
+  }
+}

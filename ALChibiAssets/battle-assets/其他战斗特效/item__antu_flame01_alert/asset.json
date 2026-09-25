@@ -1,0 +1,15 @@
+{
+  "id": "item__antu_flame01_alert",
+  "model": "antu_flame01_alert",
+  "name": "antu_flame01_alert",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/antu_flame01_alert",
+  "path": "battle-assets/其他战斗特效/item__antu_flame01_alert",
+  "images": [],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

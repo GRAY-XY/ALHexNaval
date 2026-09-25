@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_chaungketie",
+  "model": "zidan_chaungketie",
+  "name": "创可贴子弹",
+  "names": [
+    "创可贴子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_chaungketie",
+  "path": "battle-assets/炮弹/item__zidan_chaungketie",
+  "images": [
+    {
+      "file": "zidan_chaungketie_8328867274440031624.png",
+      "name": "zidan_chaungketie",
+      "width": 128,
+      "height": 33,
+      "role": "战斗贴图",
+      "path_id": 8328867274440031624,
+      "source": "CAB-6757e69f5e2f771c4c7748aaf7d14f15"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    164868
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_chaungketie/zidan_chaungketie_8328867274440031624.png"
+}

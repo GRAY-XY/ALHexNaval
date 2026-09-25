@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_shilaimu",
+  "model": "feiji_shilaimu",
+  "name": "【2022异世界勇者】带魔王 史莱姆浮游炮1",
+  "names": [
+    "【2022异世界勇者】带魔王 史莱姆浮游炮1",
+    "【2022异世界勇者】带魔王 史莱姆浮游炮2",
+    "有翼史莱姆(鱼雷)",
+    "有翼史莱姆(战斗)",
+    "有翼史莱姆(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_shilaimu",
+  "path": "battle-assets/飞机/chargo__feiji_shilaimu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_shilaimu/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "shilaimuqiupaodan.skel",
+    "atlas": "shilaimuqiupaodan.atlas",
+    "pages": [
+      "shilaimuqiupaodan.png"
+    ]
+  }
+}

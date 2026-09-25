@@ -1,0 +1,17 @@
+{
+  "id": "item__bisimai_fangkuai",
+  "model": "bisimai_fangkuai",
+  "name": "bisimai_fangkuai",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bisimai_fangkuai",
+  "path": "battle-assets/炮弹/item__bisimai_fangkuai",
+  "images": [],
+  "particle_systems": 15,
+  "animations": [],
+  "bullet_ids": [
+    19707
+  ],
+  "has_preview": false,
+  "prefab": true
+}

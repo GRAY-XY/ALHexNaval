@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_juyanlong2__feiji_juyanlong2_material",
+  "model": "feiji_juyanlong2_material",
+  "name": "feiji_juyanlong2_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_juyanlong2/feiji_juyanlong2_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_juyanlong2__feiji_juyanlong2_material",
+  "images": [
+    {
+      "file": "feiji_juyanlong2_6381286813205975037.png",
+      "name": "feiji_juyanlong2",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6381286813205975037,
+      "source": "CAB-91e7c646c218e416db5b2e220a71cd12"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

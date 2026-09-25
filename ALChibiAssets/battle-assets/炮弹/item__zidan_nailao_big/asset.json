@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_nailao_big",
+  "model": "zidan_nailao_big",
+  "name": "zidan_nailao_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_nailao_big",
+  "path": "battle-assets/炮弹/item__zidan_nailao_big",
+  "images": [
+    {
+      "file": "zidan_nailao_-745898131954776495.png",
+      "name": "zidan_nailao",
+      "width": 128,
+      "height": 75,
+      "role": "战斗贴图",
+      "path_id": -745898131954776495,
+      "source": "CAB-748da4ccd13cdeddfd48a0a9b2ec2159"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710110,
+    3169012
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_nailao_big/zidan_nailao_-745898131954776495.png"
+}

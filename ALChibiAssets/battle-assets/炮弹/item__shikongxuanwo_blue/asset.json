@@ -1,0 +1,23 @@
+{
+  "id": "item__shikongxuanwo_blue",
+  "model": "shikongxuanwo_blue",
+  "name": "shikongxuanwo_blue",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shikongxuanwo_blue",
+  "path": "battle-assets/炮弹/item__shikongxuanwo_blue",
+  "images": [],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    3154035,
+    3181243,
+    3181244,
+    3311106,
+    3311107,
+    3311122,
+    3311123
+  ],
+  "has_preview": false,
+  "prefab": true
+}

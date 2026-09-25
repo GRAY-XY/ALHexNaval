@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_nier_fist",
+  "model": "paodan_nier_fist",
+  "name": "三式拳套炮弹",
+  "names": [
+    "三式拳套炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nier_fist",
+  "path": "battle-assets/炮弹/item__paodan_nier_fist",
+  "images": [
+    {
+      "file": "paodan_nier_fist_-5990137879503727398.png",
+      "name": "paodan_nier_fist",
+      "width": 128,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -5990137879503727398,
+      "source": "CAB-eae9c3495642e3a387d390f0abfbf643"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_nier_fist/paodan_nier_fist_-5990137879503727398.png"
+}

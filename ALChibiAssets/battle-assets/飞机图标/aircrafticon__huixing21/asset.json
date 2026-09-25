@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__huixing21",
+  "model": "huixing21",
+  "name": "彗星二一型",
+  "names": [
+    "彗星二一型"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/huixing21",
+  "path": "battle-assets/飞机图标/aircrafticon__huixing21",
+  "images": [
+    {
+      "file": "huixing21_4181992572225684403.png",
+      "name": "huixing21",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 4181992572225684403,
+      "source": "CAB-27f2a0a24dd2b29b270ace34ca2b1904"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

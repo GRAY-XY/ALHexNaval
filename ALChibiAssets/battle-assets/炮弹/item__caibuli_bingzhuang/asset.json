@@ -1,0 +1,17 @@
+{
+  "id": "item__caibuli_bingzhuang",
+  "model": "caibuli_bingzhuang",
+  "name": "caibuli_bingzhuang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/caibuli_bingzhuang",
+  "path": "battle-assets/炮弹/item__caibuli_bingzhuang",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19702
+  ],
+  "has_preview": false,
+  "prefab": true
+}

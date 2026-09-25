@@ -1,0 +1,24 @@
+{
+  "id": "item__torpedo_mantou",
+  "model": "torpedo_mantou",
+  "name": "小海豹鱼雷",
+  "names": [
+    "小海豹鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_mantou",
+  "path": "battle-assets/鱼雷/item__torpedo_mantou",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "mantouyulei.skel",
+    "atlas": "mantouyulei.atlas",
+    "pages": [
+      "mantouyulei.png"
+    ]
+  }
+}

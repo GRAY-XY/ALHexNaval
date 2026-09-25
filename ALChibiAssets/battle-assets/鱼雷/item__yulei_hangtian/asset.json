@@ -1,0 +1,26 @@
+{
+  "id": "item__yulei_hangtian",
+  "model": "yulei_hangtian",
+  "name": "航天鱼雷(赤)",
+  "names": [
+    "航天鱼雷(赤)"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hangtian",
+  "path": "battle-assets/鱼雷/item__yulei_hangtian",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19214
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "hangtianyulei.skel",
+    "atlas": "hangtianyulei.atlas",
+    "pages": [
+      "hangtianyulei.png"
+    ]
+  }
+}

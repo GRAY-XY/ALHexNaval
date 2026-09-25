@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__xianyu_hongzha",
+  "model": "xianyu_hongzha",
+  "name": "咸鱼轰炸机",
+  "names": [
+    "咸鱼轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/xianyu_hongzha",
+  "path": "battle-assets/飞机图标/aircrafticon__xianyu_hongzha",
+  "images": [
+    {
+      "file": "xianyu_hongzha_5687823552241121070.png",
+      "name": "xianyu_hongzha",
+      "width": 256,
+      "height": 165,
+      "role": "原始精灵",
+      "path_id": 5687823552241121070,
+      "source": "CAB-3f01716e13eff62825e1af0fa5aaf765"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

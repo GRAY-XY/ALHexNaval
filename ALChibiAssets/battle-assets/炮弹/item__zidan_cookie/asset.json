@@ -1,0 +1,32 @@
+{
+  "id": "item__zidan_cookie",
+  "model": "zidan_cookie",
+  "name": "曲奇子弹",
+  "names": [
+    "曲奇子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_cookie",
+  "path": "battle-assets/炮弹/item__zidan_cookie",
+  "images": [
+    {
+      "file": "zidan_cookie_-2034791145978438030.png",
+      "name": "zidan_cookie",
+      "width": 64,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -2034791145978438030,
+      "source": "CAB-260c2760571a141f55519aa3a56520da"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "zidan_cookie_anim"
+  ],
+  "bullet_ids": [
+    710105
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_cookie/zidan_cookie_-2034791145978438030.png"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "chargo__feiji_tolove_feidie",
+  "model": "feiji_tolove_feidie",
+  "name": "【2024tolove联动 剧情战】唯 鱼雷机",
+  "names": [
+    "【2024tolove联动 剧情战】唯 鱼雷机",
+    "神秘飞碟舰载机（鱼雷）",
+    "神秘飞碟舰载机（战斗）",
+    "神秘飞碟舰载机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_tolove_feidie",
+  "path": "battle-assets/飞机/chargo__feiji_tolove_feidie",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_tolove_feidie_-4267531096019492991.png",
+      "name": "feiji_tolove_feidie",
+      "width": 620,
+      "height": 789,
+      "role": "战斗贴图",
+      "path_id": -4267531096019492991,
+      "source": "CAB-0c1b492a1c145582491eef01e17a4018"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_tolove_feidie/aircraft_shadow_2192772484218123160.png"
+}

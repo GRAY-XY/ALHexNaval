@@ -1,0 +1,64 @@
+{
+  "id": "item__laimuhao_jian01",
+  "model": "laimuhao_jian01",
+  "name": "laimuhao_jian01",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/laimuhao_jian01",
+  "path": "battle-assets/其他战斗特效/item__laimuhao_jian01",
+  "images": [
+    {
+      "file": "jian02_-8457203139916669557.png",
+      "name": "jian02",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8457203139916669557,
+      "source": "CAB-17c1e9cb336c65b5a97fd7409f3680b8"
+    },
+    {
+      "file": "glow_2_-1648932381268313747.png",
+      "name": "glow 2",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1648932381268313747,
+      "source": "CAB-17c1e9cb336c65b5a97fd7409f3680b8"
+    },
+    {
+      "file": "jian01_3633657888763465719.png",
+      "name": "jian01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3633657888763465719,
+      "source": "CAB-17c1e9cb336c65b5a97fd7409f3680b8"
+    },
+    {
+      "file": "center01_4121501426909415629.png",
+      "name": "center01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4121501426909415629,
+      "source": "CAB-17c1e9cb336c65b5a97fd7409f3680b8"
+    },
+    {
+      "file": "jian01_7596304812818588050.png",
+      "name": "jian01",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7596304812818588050,
+      "source": "CAB-17c1e9cb336c65b5a97fd7409f3680b8"
+    }
+  ],
+  "particle_systems": 21,
+  "animations": [
+    "yanzhandajian"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__laimuhao_jian01/jian02_-8457203139916669557.png"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "item__chuanmao",
+  "model": "chuanmao",
+  "name": "chuanmao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/chuanmao",
+  "path": "battle-assets/炮弹/item__chuanmao",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    29651045,
+    29651047,
+    29651052,
+    29651054,
+    3094004,
+    3094021
+  ],
+  "has_preview": false,
+  "prefab": true
+}

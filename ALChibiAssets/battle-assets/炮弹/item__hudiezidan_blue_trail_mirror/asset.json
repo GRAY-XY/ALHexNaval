@@ -1,0 +1,15 @@
+{
+  "id": "item__hudiezidan_blue_trail_mirror",
+  "model": "hudiezidan_blue_trail_mirror",
+  "name": "hudiezidan_blue_trail_mirror",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hudiezidan_blue_trail_mirror",
+  "path": "battle-assets/炮弹/item__hudiezidan_blue_trail_mirror",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

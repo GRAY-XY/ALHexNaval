@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_naicha",
+  "model": "zidan_naicha",
+  "name": "奶茶子弹",
+  "names": [
+    "奶茶子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_naicha",
+  "path": "battle-assets/炮弹/item__zidan_naicha",
+  "images": [
+    {
+      "file": "zidan_naicha_3941906569106348935.png",
+      "name": "zidan_naicha",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 3941906569106348935,
+      "source": "CAB-531941666516462cfa097aa541daad9b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710101
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_naicha/zidan_naicha_3941906569106348935.png"
+}

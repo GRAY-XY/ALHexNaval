@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_nongfu",
+  "model": "feiji_nongfu",
+  "name": "乡间农夫啾（鱼雷）",
+  "names": [
+    "乡间农夫啾（鱼雷）",
+    "乡间农夫啾（战斗）",
+    "乡间农夫啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_nongfu",
+  "path": "battle-assets/飞机/chargo__feiji_nongfu",
+  "images": [
+    {
+      "file": "feiji_nongfu_-1892416724278005910.png",
+      "name": "feiji_nongfu",
+      "width": 256,
+      "height": 138,
+      "role": "战斗贴图",
+      "path_id": -1892416724278005910,
+      "source": "CAB-bc6bfe383dba9ab045cb4c31a458ffae"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_nongfu/feiji_nongfu_-1892416724278005910.png"
+}

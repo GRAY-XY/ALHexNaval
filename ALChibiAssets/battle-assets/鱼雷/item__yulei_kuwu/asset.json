@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_kuwu",
+  "model": "yulei_kuwu",
+  "name": "苦无鱼雷",
+  "names": [
+    "苦无鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_kuwu",
+  "path": "battle-assets/鱼雷/item__yulei_kuwu",
+  "images": [
+    {
+      "file": "yulei_kuwu_-1114080472937396348.png",
+      "name": "yulei_kuwu",
+      "width": 128,
+      "height": 24,
+      "role": "战斗贴图",
+      "path_id": -1114080472937396348,
+      "source": "CAB-d33e9d7a6198161e0a1597d88e354c1a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_kuwu/yulei_kuwu_-1114080472937396348.png"
+}

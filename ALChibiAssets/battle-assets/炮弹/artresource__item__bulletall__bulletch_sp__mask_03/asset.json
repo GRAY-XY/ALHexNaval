@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__mask_03",
+  "model": "mask_03",
+  "name": "mask_03",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/mask_03",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__mask_03",
+  "images": [
+    {
+      "file": "Mask_03_-6874551824984048258.png",
+      "name": "Mask_03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6874551824984048258,
+      "source": "CAB-a457719fa2052d6843db10ff40a62198"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

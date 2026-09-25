@@ -1,0 +1,31 @@
+{
+  "id": "item__paodan_bingqiu",
+  "model": "paodan_bingqiu",
+  "name": "极冰之坠",
+  "names": [
+    "极冰之坠"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_bingqiu",
+  "path": "battle-assets/炮弹/item__paodan_bingqiu",
+  "images": [
+    {
+      "file": "bingqiu01_-3075333995411699991.png",
+      "name": "bingqiu01",
+      "width": 256,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": -3075333995411699991,
+      "source": "CAB-725c6f6f7a39f2f77fa03bd2e181e8b5"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    170932,
+    3139409
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_bingqiu/bingqiu01_-3075333995411699991.png"
+}

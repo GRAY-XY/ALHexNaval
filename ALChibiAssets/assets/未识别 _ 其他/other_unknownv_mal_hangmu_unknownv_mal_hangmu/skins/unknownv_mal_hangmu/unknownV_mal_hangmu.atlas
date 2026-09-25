@@ -1,0 +1,76 @@
+
+unknownV_mal_hangmu.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1
+  rotate: false
+  xy: 2, 525
+  size: 893, 470
+  orig: 893, 470
+  offset: 0, 0
+  index: -1
+hong_2
+  rotate: false
+  xy: 496, 2
+  size: 257, 177
+  orig: 257, 177
+  offset: 0, 0
+  index: -1
+hong_3
+  rotate: false
+  xy: 2, 127
+  size: 492, 396
+  orig: 492, 396
+  offset: 0, 0
+  index: -1
+hong_4
+  rotate: true
+  xy: 496, 181
+  size: 342, 160
+  orig: 342, 160
+  offset: 0, 0
+  index: -1
+hong_t1
+  rotate: true
+  xy: 658, 252
+  size: 129, 184
+  orig: 129, 184
+  offset: 0, 0
+  index: -1
+shou_1
+  rotate: true
+  xy: 755, 57
+  size: 193, 126
+  orig: 193, 126
+  offset: 0, 0
+  index: -1
+shou_2
+  rotate: false
+  xy: 658, 383
+  size: 276, 140
+  orig: 276, 140
+  offset: 0, 0
+  index: -1
+yan_1
+  rotate: true
+  xy: 897, 649
+  size: 81, 44
+  orig: 81, 44
+  offset: 0, 0
+  index: -1
+yan_2
+  rotate: true
+  xy: 897, 732
+  size: 130, 60
+  orig: 130, 60
+  offset: 0, 0
+  index: -1
+zui
+  rotate: false
+  xy: 897, 864
+  size: 82, 131
+  orig: 82, 131
+  offset: 0, 0
+  index: -1

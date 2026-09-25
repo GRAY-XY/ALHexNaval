@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yumao",
+  "model": "zidan_yumao",
+  "name": "羽毛子弹",
+  "names": [
+    "羽毛子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yumao",
+  "path": "battle-assets/炮弹/item__zidan_yumao",
+  "images": [
+    {
+      "file": "yumao_3172632773188794270.png",
+      "name": "yumao",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3172632773188794270,
+      "source": "CAB-cdedb8e8a7326a677aa74b656319f802"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yumao/yumao_3172632773188794270.png"
+}

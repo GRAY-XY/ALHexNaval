@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_hunianshuanggujian",
+  "model": "paodan_hunianshuanggujian",
+  "name": "兵器炮弹·双股剑",
+  "names": [
+    "兵器炮弹·双股剑"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hunianshuanggujian",
+  "path": "battle-assets/炮弹/item__paodan_hunianshuanggujian",
+  "images": [
+    {
+      "file": "paodan_hunianshuanggujian_-508900000756007303.png",
+      "name": "paodan_hunianshuanggujian",
+      "width": 128,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": -508900000756007303,
+      "source": "CAB-132a38f27cca818f9df3183fb95b6371"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hunianshuanggujian/paodan_hunianshuanggujian_-508900000756007303.png"
+}

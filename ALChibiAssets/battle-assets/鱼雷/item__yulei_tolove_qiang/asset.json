@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_tolove_qiang",
+  "model": "yulei_tolove_qiang",
+  "name": "宇宙帝王之枪鱼雷",
+  "names": [
+    "宇宙帝王之枪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tolove_qiang",
+  "path": "battle-assets/鱼雷/item__yulei_tolove_qiang",
+  "images": [
+    {
+      "file": "yulei_tolove_qiang_-452815965925554551.png",
+      "name": "yulei_tolove_qiang",
+      "width": 639,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": -452815965925554551,
+      "source": "CAB-d48f2460d0ea04362fe39732f2afbdfb"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tolove_qiang/yulei_tolove_qiang_-452815965925554551.png"
+}

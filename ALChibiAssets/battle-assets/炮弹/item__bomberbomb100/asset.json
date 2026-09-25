@@ -1,0 +1,46 @@
+{
+  "id": "item__bomberbomb100",
+  "model": "bomberbomb100",
+  "name": "bomberbomb100",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bomberbomb100",
+  "path": "battle-assets/炮弹/item__bomberbomb100",
+  "images": [
+    {
+      "file": "Bomberbomb100lb_799600918578832155.png",
+      "name": "Bomberbomb100lb",
+      "width": 105,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": 799600918578832155,
+      "source": "CAB-b3ad90ef057c86858e2f9c3d47903e17"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    2121,
+    2126,
+    2127,
+    2134,
+    19216,
+    19432,
+    19433,
+    19434,
+    19435,
+    19875,
+    19879,
+    19936,
+    19946,
+    19968,
+    19972,
+    19993,
+    160986,
+    167241,
+    170821
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bomberbomb100/Bomberbomb100lb_799600918578832155.png"
+}

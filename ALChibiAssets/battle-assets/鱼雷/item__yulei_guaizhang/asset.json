@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_guaizhang",
+  "model": "yulei_guaizhang",
+  "name": "拐杖鱼雷",
+  "names": [
+    "拐杖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_guaizhang",
+  "path": "battle-assets/鱼雷/item__yulei_guaizhang",
+  "images": [
+    {
+      "file": "yulei_guaizhang_5006794595304307973.png",
+      "name": "yulei_guaizhang",
+      "width": 128,
+      "height": 32,
+      "role": "战斗贴图",
+      "path_id": 5006794595304307973,
+      "source": "CAB-ff6f0f0b46a95f1af1313ef769098c06"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_guaizhang/yulei_guaizhang_5006794595304307973.png"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_jujian_big",
+  "model": "zidan_jujian_big",
+  "name": "zidan_jujian_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_jujian_big",
+  "path": "battle-assets/炮弹/item__zidan_jujian_big",
+  "images": [
+    {
+      "file": "yulei_jujian_-161257313396089397.png",
+      "name": "yulei_jujian",
+      "width": 128,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -161257313396089397,
+      "source": "CAB-cf0fb28729a67059ba8b5b55e5676e43"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    29650038,
+    29650039,
+    29650040
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jujian_big/yulei_jujian_-161257313396089397.png"
+}

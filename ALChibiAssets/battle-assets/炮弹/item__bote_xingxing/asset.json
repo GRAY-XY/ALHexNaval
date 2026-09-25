@@ -1,0 +1,19 @@
+{
+  "id": "item__bote_xingxing",
+  "model": "bote_xingxing",
+  "name": "bote_xingxing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bote_xingxing",
+  "path": "battle-assets/炮弹/item__bote_xingxing",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    164844,
+    164862,
+    170922
+  ],
+  "has_preview": false,
+  "prefab": true
+}

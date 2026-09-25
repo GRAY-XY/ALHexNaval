@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__glen",
+  "model": "glen",
+  "name": "伊25技能零侦LV1",
+  "names": [
+    "伊25技能零侦LV1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/glen",
+  "path": "battle-assets/飞机图标/aircrafticon__glen",
+  "images": [
+    {
+      "file": "glen_-2573503376620569299.png",
+      "name": "glen",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -2573503376620569299,
+      "source": "CAB-6ef7fec8de32d3012fea62e13ebbab8e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__yinghuochong",
+  "model": "yinghuochong",
+  "name": "萤火虫",
+  "names": [
+    "萤火虫",
+    "英仙座技能萤火虫Lv1",
+    "【2025狮UR活动SP】BOSS 光荣META 轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/yinghuochong",
+  "path": "battle-assets/飞机图标/aircrafticon__yinghuochong",
+  "images": [
+    {
+      "file": "yinghuochong_8077112283424750744.png",
+      "name": "yinghuochong",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 8077112283424750744,
+      "source": "CAB-311c0aa532ce8084ce1798b37173651d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

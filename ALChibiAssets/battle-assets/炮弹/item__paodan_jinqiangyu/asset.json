@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_jinqiangyu",
+  "model": "paodan_jinqiangyu",
+  "name": "金枪鱼浮球炮弹",
+  "names": [
+    "金枪鱼浮球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jinqiangyu",
+  "path": "battle-assets/炮弹/item__paodan_jinqiangyu",
+  "images": [
+    {
+      "file": "paodan_jinqiangyu_4769956155389181040.png",
+      "name": "paodan_jinqiangyu",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": 4769956155389181040,
+      "source": "CAB-6266fc16476df552ca750d06db970bed"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jinqiangyu/paodan_jinqiangyu_4769956155389181040.png"
+}

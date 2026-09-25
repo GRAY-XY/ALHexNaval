@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__961shilugong",
+  "model": "961shilugong",
+  "name": "96式陆攻",
+  "names": [
+    "96式陆攻",
+    "七夕活动96式陆攻"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/961shilugong",
+  "path": "battle-assets/飞机图标/aircrafticon__961shilugong",
+  "images": [
+    {
+      "file": "961shilugong_-5204112002228246649.png",
+      "name": "961shilugong",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -5204112002228246649,
+      "source": "CAB-0c7e103fd74dfd799018928f749c1104"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

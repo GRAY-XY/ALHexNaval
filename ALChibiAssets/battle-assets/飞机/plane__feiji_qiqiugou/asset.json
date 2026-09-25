@@ -1,0 +1,29 @@
+{
+  "id": "plane__feiji_qiqiugou",
+  "model": "feiji_qiqiugou",
+  "name": "汪汪气球飞机（鱼雷）",
+  "names": [
+    "汪汪气球飞机（鱼雷）",
+    "汪汪气球飞机（战斗）",
+    "汪汪气球飞机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "plane/feiji_qiqiugou",
+  "path": "battle-assets/飞机/plane__feiji_qiqiugou",
+  "images": [
+    {
+      "file": "feiji_qiqiugou_7641130634813149887.png",
+      "name": "feiji_qiqiugou",
+      "width": 241,
+      "height": 206,
+      "role": "原始精灵",
+      "path_id": 7641130634813149887,
+      "source": "CAB-b48fc0429820aedbec6318e564f99011"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

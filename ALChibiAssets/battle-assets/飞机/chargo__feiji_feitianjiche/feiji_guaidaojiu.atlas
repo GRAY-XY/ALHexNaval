@@ -1,0 +1,118 @@
+
+feiji_guaidaojiu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+caideng_1
+  rotate: true
+  xy: 265, 161
+  size: 93, 68
+  orig: 93, 68
+  offset: 0, 0
+  index: -1
+caideng_2
+  rotate: false
+  xy: 2, 3
+  size: 118, 59
+  orig: 118, 59
+  offset: 0, 0
+  index: -1
+caideng_3
+  rotate: true
+  xy: 122, 11
+  size: 74, 41
+  orig: 74, 41
+  offset: 0, 0
+  index: -1
+cd_1
+  rotate: true
+  xy: 177, 2
+  size: 11, 9
+  orig: 11, 9
+  offset: 0, 0
+  index: -1
+cd_2
+  rotate: true
+  xy: 188, 2
+  size: 11, 9
+  orig: 11, 9
+  offset: 0, 0
+  index: -1
+cd_2_1
+  rotate: false
+  xy: 221, 3
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+cd_2_2
+  rotate: false
+  xy: 254, 4
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+cd_2_3
+  rotate: false
+  xy: 265, 4
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+cd_2_4
+  rotate: false
+  xy: 232, 3
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+cd_2_5
+  rotate: false
+  xy: 243, 3
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+cd_3
+  rotate: true
+  xy: 165, 2
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+cd_4
+  rotate: true
+  xy: 199, 2
+  size: 11, 9
+  orig: 11, 9
+  offset: 0, 0
+  index: -1
+cd_5
+  rotate: true
+  xy: 210, 2
+  size: 11, 9
+  orig: 11, 9
+  offset: 0, 0
+  index: -1
+chuangdeng
+  rotate: false
+  xy: 165, 15
+  size: 161, 70
+  orig: 161, 70
+  offset: 0, 0
+  index: -1
+dalou
+  rotate: true
+  xy: 2, 64
+  size: 190, 112
+  orig: 190, 112
+  offset: 0, 0
+  index: -1
+jiu
+  rotate: true
+  xy: 116, 87
+  size: 167, 147
+  orig: 167, 147
+  offset: 0, 0
+  index: -1

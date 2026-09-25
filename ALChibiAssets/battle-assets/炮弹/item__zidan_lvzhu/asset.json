@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_lvzhu",
+  "model": "zidan_lvzhu",
+  "name": "幽冥子弹",
+  "names": [
+    "幽冥子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_lvzhu",
+  "path": "battle-assets/炮弹/item__zidan_lvzhu",
+  "images": [
+    {
+      "file": "zidan_lvzhu_-8918326621505658887.png",
+      "name": "zidan_lvzhu",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -8918326621505658887,
+      "source": "CAB-819b1037c8df03186dce964e04913400"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lvzhu/zidan_lvzhu_-8918326621505658887.png"
+}

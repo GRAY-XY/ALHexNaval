@@ -1,0 +1,37 @@
+{
+  "id": "chargo__huixing21",
+  "model": "huixing21",
+  "name": "彗星二一型",
+  "names": [
+    "彗星二一型"
+  ],
+  "category": "飞机",
+  "source": "chargo/huixing21",
+  "path": "battle-assets/飞机/chargo__huixing21",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "huixing21_-4732916021536771349.png",
+      "name": "huixing21",
+      "width": 256,
+      "height": 229,
+      "role": "战斗贴图",
+      "path_id": -4732916021536771349,
+      "source": "CAB-8251087b1686d054f1daf6c9a6e765e6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__huixing21/aircraft_shadow_2192772484218123160.png"
+}

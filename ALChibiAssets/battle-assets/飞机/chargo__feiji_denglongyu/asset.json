@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_denglongyu",
+  "model": "feiji_denglongyu",
+  "name": "金鲤灯影（鱼雷）",
+  "names": [
+    "金鲤灯影（鱼雷）",
+    "金鲤灯影（战斗）",
+    "金鲤灯影（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_denglongyu",
+  "path": "battle-assets/飞机/chargo__feiji_denglongyu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_denglongyu_-7967252147116856482.png",
+      "name": "feiji_denglongyu",
+      "width": 256,
+      "height": 178,
+      "role": "战斗贴图",
+      "path_id": -7967252147116856482,
+      "source": "CAB-bc727e497fd28c713f75c4de071da452"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_denglongyu/aircraft_shadow_2192772484218123160.png"
+}

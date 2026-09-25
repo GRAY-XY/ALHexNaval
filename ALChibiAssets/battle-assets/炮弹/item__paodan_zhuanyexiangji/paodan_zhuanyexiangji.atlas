@@ -1,0 +1,34 @@
+
+paodan_zhuanyexiangji.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xiangji
+  rotate: false
+  xy: 2, 2
+  size: 250, 192
+  orig: 250, 192
+  offset: 0, 0
+  index: -1
+xx_1
+  rotate: false
+  xy: 254, 115
+  size: 31, 36
+  orig: 31, 36
+  offset: 0, 0
+  index: -1
+xx_2
+  rotate: false
+  xy: 254, 153
+  size: 36, 41
+  orig: 36, 41
+  offset: 0, 0
+  index: -1
+xx_3
+  rotate: false
+  xy: 254, 84
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1

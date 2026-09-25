@@ -1,0 +1,53 @@
+{
+  "id": "item__paodan_tianshideng",
+  "model": "paodan_tianshideng",
+  "name": "天使街灯炮弹",
+  "names": [
+    "天使街灯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tianshideng",
+  "path": "battle-assets/炮弹/item__paodan_tianshideng",
+  "images": [
+    {
+      "file": "particles03_-8862810835882756416.png",
+      "name": "particles03",
+      "width": 256,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -8862810835882756416,
+      "source": "CAB-2a83935e8388c35c12d4b726933da05d"
+    },
+    {
+      "file": "star01_6138133043478789615.png",
+      "name": "star01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6138133043478789615,
+      "source": "CAB-2a83935e8388c35c12d4b726933da05d"
+    },
+    {
+      "file": "paodan_tianshideng_7817295174938607726.png",
+      "name": "paodan_tianshideng",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 7817295174938607726,
+      "source": "CAB-2a83935e8388c35c12d4b726933da05d"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tianshideng/particles03_-8862810835882756416.png",
+  "spine": {
+    "skel": "paodan_tianshideng.skel",
+    "atlas": "paodan_tianshideng.atlas",
+    "pages": [
+      "paodan_tianshideng.png"
+    ]
+  }
+}

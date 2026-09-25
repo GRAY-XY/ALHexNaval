@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_yangrouchuan",
+  "model": "yulei_yangrouchuan",
+  "name": "羊肉串鱼雷",
+  "names": [
+    "羊肉串鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yangrouchuan",
+  "path": "battle-assets/鱼雷/item__yulei_yangrouchuan",
+  "images": [
+    {
+      "file": "yulei_yangrouchuan_7464780041728841850.png",
+      "name": "yulei_yangrouchuan",
+      "width": 128,
+      "height": 23,
+      "role": "战斗贴图",
+      "path_id": 7464780041728841850,
+      "source": "CAB-6585e686497f631a46ec9cb4f5db0c9f"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3366003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yangrouchuan/yulei_yangrouchuan_7464780041728841850.png"
+}

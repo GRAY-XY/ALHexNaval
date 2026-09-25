@@ -1,0 +1,174 @@
+
+zidan_10daima.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+s10_0
+  rotate: true
+  xy: 73, 248
+  size: 53, 69
+  orig: 53, 69
+  offset: 0, 0
+  index: -1
+s10_1
+  rotate: true
+  xy: 769, 289
+  size: 48, 73
+  orig: 48, 73
+  offset: 0, 0
+  index: -1
+s1_0
+  rotate: true
+  xy: 144, 247
+  size: 54, 71
+  orig: 54, 71
+  offset: 0, 0
+  index: -1
+s1_1
+  rotate: true
+  xy: 242, 289
+  size: 48, 74
+  orig: 48, 74
+  offset: 0, 0
+  index: -1
+s2_0
+  rotate: true
+  xy: 217, 233
+  size: 54, 71
+  orig: 54, 71
+  offset: 0, 0
+  index: -1
+s2_1
+  rotate: true
+  xy: 318, 289
+  size: 48, 73
+  orig: 48, 73
+  offset: 0, 0
+  index: -1
+s3_0
+  rotate: true
+  xy: 290, 233
+  size: 54, 71
+  orig: 54, 71
+  offset: 0, 0
+  index: -1
+s3_1
+  rotate: true
+  xy: 393, 289
+  size: 48, 73
+  orig: 48, 73
+  offset: 0, 0
+  index: -1
+s4_0
+  rotate: true
+  xy: 363, 233
+  size: 54, 70
+  orig: 54, 70
+  offset: 0, 0
+  index: -1
+s4_1
+  rotate: true
+  xy: 844, 288
+  size: 49, 74
+  orig: 49, 74
+  offset: 0, 0
+  index: -1
+s5_0
+  rotate: true
+  xy: 435, 233
+  size: 54, 70
+  orig: 54, 70
+  offset: 0, 0
+  index: -1
+s5_1
+  rotate: true
+  xy: 920, 288
+  size: 49, 73
+  orig: 49, 73
+  offset: 0, 0
+  index: -1
+s6_0
+  rotate: true
+  xy: 507, 233
+  size: 54, 70
+  orig: 54, 70
+  offset: 0, 0
+  index: -1
+s6_1
+  rotate: true
+  xy: 468, 289
+  size: 48, 74
+  orig: 48, 74
+  offset: 0, 0
+  index: -1
+s7_0
+  rotate: true
+  xy: 579, 233
+  size: 54, 70
+  orig: 54, 70
+  offset: 0, 0
+  index: -1
+s7_1
+  rotate: true
+  xy: 544, 289
+  size: 48, 73
+  orig: 48, 73
+  offset: 0, 0
+  index: -1
+s8_0
+  rotate: true
+  xy: 2, 248
+  size: 53, 69
+  orig: 53, 69
+  offset: 0, 0
+  index: -1
+s8_1
+  rotate: true
+  xy: 619, 289
+  size: 48, 73
+  orig: 48, 73
+  offset: 0, 0
+  index: -1
+s9_0
+  rotate: true
+  xy: 651, 233
+  size: 54, 70
+  orig: 54, 70
+  offset: 0, 0
+  index: -1
+s9_1
+  rotate: true
+  xy: 694, 289
+  size: 48, 73
+  orig: 48, 73
+  offset: 0, 0
+  index: -1
+tuowei_b
+  rotate: false
+  xy: 2, 124
+  size: 631, 107
+  orig: 631, 107
+  offset: 0, 0
+  index: -1
+tuowei_f
+  rotate: false
+  xy: 440, 2
+  size: 568, 120
+  orig: 568, 120
+  offset: 0, 0
+  index: -1
+tuowei_t1
+  rotate: false
+  xy: 2, 303
+  size: 238, 34
+  orig: 238, 34
+  offset: 0, 0
+  index: -1
+tuowei_t2
+  rotate: false
+  xy: 2, 9
+  size: 436, 113
+  orig: 436, 113
+  offset: 0, 0
+  index: -1

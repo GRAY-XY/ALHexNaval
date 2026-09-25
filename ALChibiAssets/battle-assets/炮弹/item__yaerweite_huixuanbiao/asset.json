@@ -1,0 +1,29 @@
+{
+  "id": "item__yaerweite_huixuanbiao",
+  "model": "yaerweite_huixuanbiao",
+  "name": "yaerweite_huixuanbiao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yaerweite_huixuanbiao",
+  "path": "battle-assets/炮弹/item__yaerweite_huixuanbiao",
+  "images": [
+    {
+      "file": "mao01_-8620433898885192926.png",
+      "name": "mao01",
+      "width": 95,
+      "height": 494,
+      "role": "战斗贴图",
+      "path_id": -8620433898885192926,
+      "source": "CAB-5d6ae0a6a9e9c1252dd38fcf396129f6"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    79983,
+    79984
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yaerweite_huixuanbiao/mao01_-8620433898885192926.png"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "item__diancizhadan_purple",
+  "model": "diancizhadan_purple",
+  "name": "diancizhadan_purple",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/diancizhadan_purple",
+  "path": "battle-assets/炮弹/item__diancizhadan_purple",
+  "images": [],
+  "particle_systems": 9,
+  "animations": [],
+  "bullet_ids": [
+    3374015
+  ],
+  "has_preview": false,
+  "prefab": true
+}

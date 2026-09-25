@@ -1,0 +1,13 @@
+
+J-20.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+J-20
+  rotate: false
+  xy: 2, 2
+  size: 350, 288
+  orig: 350, 288
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__shengdan_feiji",
+  "model": "shengdan_feiji",
+  "name": "圣诞老啾(轰炸)",
+  "names": [
+    "圣诞老啾(轰炸)",
+    "圣诞老啾(战斗)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/shengdan_feiji",
+  "path": "battle-assets/飞机图标/aircrafticon__shengdan_feiji",
+  "images": [
+    {
+      "file": "shengdan_feiji_-8475389366016321353.png",
+      "name": "shengdan_feiji",
+      "width": 234,
+      "height": 178,
+      "role": "原始精灵",
+      "path_id": -8475389366016321353,
+      "source": "CAB-1e9e94185ba6b8d33a5bf5ed488d1fba"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

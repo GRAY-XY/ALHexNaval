@@ -1,0 +1,38 @@
+{
+  "id": "chargo__vit2",
+  "model": "vit2",
+  "name": "契卡洛夫技能鱼雷机",
+  "names": [
+    "契卡洛夫技能鱼雷机",
+    "试作型VIT-2（VK107）"
+  ],
+  "category": "飞机",
+  "source": "chargo/vit2",
+  "path": "battle-assets/飞机/chargo__vit2",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "VIT2_2345442414281258149.png",
+      "name": "VIT2",
+      "width": 248,
+      "height": 241,
+      "role": "战斗贴图",
+      "path_id": 2345442414281258149,
+      "source": "CAB-5e9151e9562ff902ea211b6de943390d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__vit2/aircraft_shadow_2192772484218123160.png"
+}

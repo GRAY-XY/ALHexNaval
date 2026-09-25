@@ -1,0 +1,111 @@
+
+zidan_sansepaopao.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+paopao_hong
+  rotate: true
+  xy: 208, 24
+  size: 102, 100
+  orig: 102, 100
+  offset: 0, 0
+  index: -1
+paopao_lan
+  rotate: true
+  xy: 2, 24
+  size: 102, 101
+  orig: 102, 101
+  offset: 0, 0
+  index: -1
+paopao_zi
+  rotate: true
+  xy: 105, 24
+  size: 102, 101
+  orig: 102, 101
+  offset: 0, 0
+  index: -1
+xiaopaopao_1
+  rotate: false
+  xy: 493, 21
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+xiaopaopao_2
+  rotate: true
+  xy: 453, 17
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+xiaopaopao_3
+  rotate: false
+  xy: 600, 40
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+xx_hong_1
+  rotate: true
+  xy: 373, 58
+  size: 68, 61
+  orig: 68, 61
+  offset: 0, 0
+  index: -1
+xx_hong_2
+  rotate: false
+  xy: 530, 4
+  size: 68, 60
+  orig: 68, 60
+  offset: 0, 0
+  index: -1
+xx_hong_3
+  rotate: false
+  xy: 310, 2
+  size: 46, 53
+  orig: 46, 53
+  offset: 0, 0
+  index: -1
+xx_lan_1
+  rotate: false
+  xy: 406, 4
+  size: 45, 52
+  orig: 45, 52
+  offset: 0, 0
+  index: -1
+xx_lan_2
+  rotate: false
+  xy: 570, 66
+  size: 68, 60
+  orig: 68, 60
+  offset: 0, 0
+  index: -1
+xx_lan_3
+  rotate: true
+  xy: 436, 58
+  size: 68, 61
+  orig: 68, 61
+  offset: 0, 0
+  index: -1
+xx_zi_1
+  rotate: true
+  xy: 310, 57
+  size: 69, 61
+  orig: 69, 61
+  offset: 0, 0
+  index: -1
+xx_zi_2
+  rotate: false
+  xy: 499, 66
+  size: 69, 60
+  orig: 69, 60
+  offset: 0, 0
+  index: -1
+xx_zi_3
+  rotate: false
+  xy: 358, 2
+  size: 46, 53
+  orig: 46, 53
+  offset: 0, 0
+  index: -1

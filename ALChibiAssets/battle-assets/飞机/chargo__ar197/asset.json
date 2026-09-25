@@ -1,0 +1,37 @@
+{
+  "id": "chargo__ar197",
+  "model": "ar197",
+  "name": "Ar-197舰载战斗机",
+  "names": [
+    "Ar-197舰载战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/ar197",
+  "path": "battle-assets/飞机/chargo__ar197",
+  "images": [
+    {
+      "file": "Ar197_7071795633749207111.png",
+      "name": "Ar197",
+      "width": 236,
+      "height": 255,
+      "role": "战斗贴图",
+      "path_id": 7071795633749207111,
+      "source": "CAB-d38713bef0de03eaf52785dcf8dd2730"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ar197/Ar197_7071795633749207111.png"
+}

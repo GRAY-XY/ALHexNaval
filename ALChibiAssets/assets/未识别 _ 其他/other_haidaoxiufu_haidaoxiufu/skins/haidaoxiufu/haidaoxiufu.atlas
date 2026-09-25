@@ -1,0 +1,104 @@
+
+haidaoxiufu.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuizi_1
+  rotate: true
+  xy: 483, 589
+  size: 432, 423
+  orig: 432, 423
+  offset: 0, 0
+  index: -1
+chuizi_2
+  rotate: false
+  xy: 908, 665
+  size: 336, 356
+  orig: 336, 356
+  offset: 0, 0
+  index: -1
+dingzi1
+  rotate: false
+  xy: 658, 456
+  size: 148, 131
+  orig: 148, 131
+  offset: 0, 0
+  index: -1
+dingzi2
+  rotate: true
+  xy: 483, 460
+  size: 127, 173
+  orig: 127, 173
+  offset: 0, 0
+  index: -1
+muban
+  rotate: true
+  xy: 1246, 730
+  size: 291, 219
+  orig: 291, 219
+  offset: 0, 0
+  index: -1
+shitou_1
+  rotate: true
+  xy: 1317, 567
+  size: 161, 145
+  orig: 161, 145
+  offset: 0, 0
+  index: -1
+shitou_2
+  rotate: false
+  xy: 808, 474
+  size: 151, 113
+  orig: 151, 113
+  offset: 0, 0
+  index: -1
+xx_1
+  rotate: false
+  xy: 1188, 329
+  size: 160, 162
+  orig: 160, 162
+  offset: 0, 0
+  index: -1
+xx_2
+  rotate: false
+  xy: 1149, 493
+  size: 166, 170
+  orig: 166, 170
+  offset: 0, 0
+  index: -1
+xx_3
+  rotate: true
+  xy: 961, 474
+  size: 189, 186
+  orig: 189, 186
+  offset: 0, 0
+  index: -1
+yanwu_1
+  rotate: true
+  xy: 2, 455
+  size: 566, 479
+  orig: 566, 479
+  offset: 0, 0
+  index: -1
+yanwu_2
+  rotate: true
+  xy: 462, 2
+  size: 451, 409
+  orig: 451, 409
+  offset: 0, 0
+  index: -1
+yanwu_3
+  rotate: false
+  xy: 2, 47
+  size: 458, 406
+  orig: 458, 406
+  offset: 0, 0
+  index: -1
+yanwu_4
+  rotate: true
+  xy: 873, 117
+  size: 355, 313
+  orig: 355, 313
+  offset: 0, 0
+  index: -1

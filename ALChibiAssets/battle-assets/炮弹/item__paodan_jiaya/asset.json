@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_jiaya",
+  "model": "paodan_jiaya",
+  "name": "假牙炮弹",
+  "names": [
+    "假牙炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jiaya",
+  "path": "battle-assets/炮弹/item__paodan_jiaya",
+  "images": [
+    {
+      "file": "particles02_-4594243369872088343.png",
+      "name": "particles02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4594243369872088343,
+      "source": "CAB-5cd324fbcfcbb3190b29dab8ca21cba8"
+    },
+    {
+      "file": "paodan_jiaya_-3524593741403696740.png",
+      "name": "paodan_jiaya",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -3524593741403696740,
+      "source": "CAB-5cd324fbcfcbb3190b29dab8ca21cba8"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jiaya/particles02_-4594243369872088343.png",
+  "spine": {
+    "skel": "paodan_jiaya.skel",
+    "atlas": "paodan_jiaya.atlas",
+    "pages": [
+      "paodan_jiaya.png"
+    ]
+  }
+}

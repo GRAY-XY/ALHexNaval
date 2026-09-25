@@ -1,0 +1,19 @@
+{
+  "id": "item__mofazidan02_opacity",
+  "model": "mofazidan02_opacity",
+  "name": "mofazidan02_opacity",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/mofazidan02_opacity",
+  "path": "battle-assets/炮弹/item__mofazidan02_opacity",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3125063,
+    3325051,
+    3325151
+  ],
+  "has_preview": false,
+  "prefab": true
+}

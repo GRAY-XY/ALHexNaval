@@ -1,0 +1,38 @@
+{
+  "id": "chargo__ershishuizhan",
+  "model": "ershishuizhan",
+  "name": "二式水上战斗机",
+  "names": [
+    "二式水上战斗机",
+    "大山 技能飞机"
+  ],
+  "category": "飞机",
+  "source": "chargo/ershishuizhan",
+  "path": "battle-assets/飞机/chargo__ershishuizhan",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "ershishuizhan_-3527752774003406131.png",
+      "name": "ershishuizhan",
+      "width": 245,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": -3527752774003406131,
+      "source": "CAB-8b46918f88ed431dfc7d890d66d26681"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ershishuizhan/aircraft_shadow_2192772484218123160.png"
+}

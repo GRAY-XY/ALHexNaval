@@ -1,0 +1,28 @@
+{
+  "id": "item__sanjiaoyingguang",
+  "model": "sanjiaoyingguang",
+  "name": "sanjiaoyingguang",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/sanjiaoyingguang",
+  "path": "battle-assets/其他战斗特效/item__sanjiaoyingguang",
+  "images": [
+    {
+      "file": "triangle01_-9177911935727190832.png",
+      "name": "triangle01",
+      "width": 94,
+      "height": 86,
+      "role": "战斗贴图",
+      "path_id": -9177911935727190832,
+      "source": "CAB-39b7b5461463fda7387d399ff5900c62"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "trangleAnimation"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__sanjiaoyingguang/triangle01_-9177911935727190832.png"
+}

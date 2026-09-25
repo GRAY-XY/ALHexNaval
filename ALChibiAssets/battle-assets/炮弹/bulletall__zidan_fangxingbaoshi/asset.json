@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_fangxingbaoshi",
+  "model": "zidan_fangxingbaoshi",
+  "name": "糖果宝石子弹",
+  "names": [
+    "糖果宝石子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_fangxingbaoshi",
+  "path": "battle-assets/炮弹/bulletall__zidan_fangxingbaoshi",
+  "images": [
+    {
+      "file": "zidan_fangxingbaoshi_489664501727774038.png",
+      "name": "zidan_fangxingbaoshi",
+      "width": 128,
+      "height": 34,
+      "role": "原始精灵",
+      "path_id": 489664501727774038,
+      "source": "CAB-5faf8cfd9df76cdac7b82270f2a75348"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

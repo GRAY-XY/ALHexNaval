@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yiyuanfeiji__yiyuanfeiji_material",
+  "model": "yiyuanfeiji_material",
+  "name": "yiyuanfeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/yiyuanfeiji/yiyuanfeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__yiyuanfeiji__yiyuanfeiji_material",
+  "images": [
+    {
+      "file": "yiyuanfeiji_8113176874113607125.png",
+      "name": "yiyuanfeiji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8113176874113607125,
+      "source": "CAB-126bf06e1584d96e76c9c2e7036ced42"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

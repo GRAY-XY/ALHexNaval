@@ -1,0 +1,34 @@
+{
+  "id": "item__bomberbomb1600",
+  "model": "bomberbomb1600",
+  "name": "bomberbomb1600",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bomberbomb1600",
+  "path": "battle-assets/炮弹/item__bomberbomb1600",
+  "images": [
+    {
+      "file": "Bomberbomb1600lb_1433068698497586969.png",
+      "name": "Bomberbomb1600lb",
+      "width": 128,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 1433068698497586969,
+      "source": "CAB-df565418f019715a8c6b5799bb24bd77"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    2124,
+    2128,
+    2129,
+    2132,
+    2133,
+    161170,
+    161173
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bomberbomb1600/Bomberbomb1600lb_1433068698497586969.png"
+}

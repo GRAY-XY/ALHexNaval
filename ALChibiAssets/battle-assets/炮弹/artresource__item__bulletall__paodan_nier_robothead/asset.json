@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__paodan_nier_robothead",
+  "model": "paodan_nier_robothead",
+  "name": "机械生命体炮弹",
+  "names": [
+    "机械生命体炮弹"
+  ],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_nier_robothead",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_nier_robothead",
+  "images": [
+    {
+      "file": "paodan_nier_robothead_-9209352561088964374.png",
+      "name": "paodan_nier_robothead",
+      "width": 128,
+      "height": 84,
+      "role": "原始精灵",
+      "path_id": -9209352561088964374,
+      "source": "CAB-46aeb9a80ded653d2bc4a279528c9e5d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

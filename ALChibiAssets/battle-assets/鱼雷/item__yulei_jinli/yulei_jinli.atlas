@@ -1,0 +1,27 @@
+
+yulei_jinli.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+liyu
+  rotate: false
+  xy: 495, 12
+  size: 177, 75
+  orig: 177, 75
+  offset: 0, 0
+  index: -1
+moshui_1
+  rotate: false
+  xy: 259, 16
+  size: 234, 71
+  orig: 234, 71
+  offset: 0, 0
+  index: -1
+moshui_2
+  rotate: false
+  xy: 2, 2
+  size: 255, 85
+  orig: 255, 85
+  offset: 0, 0
+  index: -1

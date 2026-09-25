@@ -1,0 +1,19 @@
+{
+  "id": "item__heifangzhou_jxuying",
+  "model": "heifangzhou_jxuying",
+  "name": "heifangzhou_jxuying",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_jxuying",
+  "path": "battle-assets/炮弹/item__heifangzhou_jxuying",
+  "images": [],
+  "particle_systems": 8,
+  "animations": [],
+  "bullet_ids": [
+    29643002,
+    29643003,
+    29643023
+  ],
+  "has_preview": false,
+  "prefab": true
+}

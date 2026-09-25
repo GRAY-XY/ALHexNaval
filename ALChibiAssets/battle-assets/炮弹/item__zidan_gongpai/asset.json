@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gongpai",
+  "model": "zidan_gongpai",
+  "name": "工牌子弹",
+  "names": [
+    "工牌子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gongpai",
+  "path": "battle-assets/炮弹/item__zidan_gongpai",
+  "images": [
+    {
+      "file": "zidan_gongpai_5850003283906869124.png",
+      "name": "zidan_gongpai",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": 5850003283906869124,
+      "source": "CAB-599b48e0d3bbc13e15c9494a1b5f9f86"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gongpai/zidan_gongpai_5850003283906869124.png"
+}

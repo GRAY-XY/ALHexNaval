@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_luntaijiu",
+  "model": "paodan_luntaijiu",
+  "name": "轮胎啾炮弹",
+  "names": [
+    "轮胎啾炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_luntaijiu",
+  "path": "battle-assets/炮弹/item__paodan_luntaijiu",
+  "images": [
+    {
+      "file": "star01_6138133043478789615.png",
+      "name": "star01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6138133043478789615,
+      "source": "CAB-4a2b573a3595fa8245c7f4ac04ff5cf3"
+    },
+    {
+      "file": "paodan_luntaijiu_7955521890613700921.png",
+      "name": "paodan_luntaijiu",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7955521890613700921,
+      "source": "CAB-4a2b573a3595fa8245c7f4ac04ff5cf3"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_luntaijiu/star01_6138133043478789615.png",
+  "spine": {
+    "skel": "paodan_luntaijiu.skel",
+    "atlas": "paodan_luntaijiu.atlas",
+    "pages": [
+      "paodan_luntaijiu.png"
+    ]
+  }
+}

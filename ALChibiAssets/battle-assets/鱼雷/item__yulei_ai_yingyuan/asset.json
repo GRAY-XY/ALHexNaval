@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_ai_yingyuan",
+  "model": "yulei_ai_yingyuan",
+  "name": "荧光棒鱼雷",
+  "names": [
+    "荧光棒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_ai_yingyuan",
+  "path": "battle-assets/鱼雷/item__yulei_ai_yingyuan",
+  "images": [
+    {
+      "file": "yulei_ai_yingyuan_7187186564887684289.png",
+      "name": "yulei_ai_yingyuan",
+      "width": 128,
+      "height": 20,
+      "role": "战斗贴图",
+      "path_id": 7187186564887684289,
+      "source": "CAB-9bae7398191df726f4e2d1e80b603a24"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_ai_yingyuan/yulei_ai_yingyuan_7187186564887684289.png"
+}

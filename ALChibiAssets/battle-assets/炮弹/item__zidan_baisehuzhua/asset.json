@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_baisehuzhua",
+  "model": "zidan_baisehuzhua",
+  "name": "zidan_baisehuzhua",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_baisehuzhua",
+  "path": "battle-assets/炮弹/item__zidan_baisehuzhua",
+  "images": [
+    {
+      "file": "line02_-2024273338981016629.png",
+      "name": "line02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2024273338981016629,
+      "source": "CAB-4714d2537f6cb8107b26c3602d15ff69"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19870,
+    170301
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_baisehuzhua/line02_-2024273338981016629.png"
+}

@@ -1,0 +1,125 @@
+
+dushi_hangmu.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 561, 338
+  size: 541, 408
+  orig: 541, 408
+  offset: 0, 0
+  index: -1
+dengguang_1
+  rotate: false
+  xy: 2, 593
+  size: 557, 286
+  orig: 557, 286
+  offset: 0, 0
+  index: -1
+dengguang_2
+  rotate: false
+  xy: 376, 381
+  size: 100, 119
+  orig: 100, 119
+  offset: 0, 0
+  index: -1
+dengpai1
+  rotate: true
+  xy: 180, 439
+  size: 152, 117
+  orig: 152, 117
+  offset: 0, 0
+  index: -1
+dengpai2
+  rotate: true
+  xy: 269, 76
+  size: 103, 85
+  orig: 103, 85
+  offset: 0, 0
+  index: -1
+dengpai3
+  rotate: true
+  xy: 2, 2
+  size: 177, 110
+  orig: 177, 110
+  offset: 0, 0
+  index: -1
+dengpai4
+  rotate: true
+  xy: 299, 458
+  size: 42, 47
+  orig: 42, 47
+  offset: 0, 0
+  index: -1
+dengpai5
+  rotate: true
+  xy: 269, 324
+  size: 113, 105
+  orig: 113, 105
+  offset: 0, 0
+  index: -1
+dengpai6
+  rotate: true
+  xy: 478, 388
+  size: 112, 66
+  orig: 112, 66
+  offset: 0, 0
+  index: -1
+hm01
+  rotate: true
+  xy: 2, 181
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+hm02
+  rotate: true
+  xy: 91, 181
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+hm03
+  rotate: true
+  xy: 180, 27
+  size: 410, 87
+  orig: 410, 87
+  offset: 0, 0
+  index: -1
+lou1
+  rotate: false
+  xy: 465, 238
+  size: 84, 141
+  orig: 84, 141
+  offset: 0, 0
+  index: -1
+lou2
+  rotate: true
+  xy: 299, 502
+  size: 89, 242
+  orig: 89, 242
+  offset: 0, 0
+  index: -1
+lou3
+  rotate: false
+  xy: 376, 152
+  size: 87, 227
+  orig: 87, 227
+  offset: 0, 0
+  index: -1
+lou4
+  rotate: false
+  xy: 269, 181
+  size: 85, 141
+  orig: 85, 141
+  offset: 0, 0
+  index: -1
+ta
+  rotate: false
+  xy: 114, 24
+  size: 59, 155
+  orig: 59, 155
+  offset: 0, 0
+  index: -1

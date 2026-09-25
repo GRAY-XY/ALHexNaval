@@ -1,0 +1,30 @@
+{
+  "id": "item__banai01",
+  "model": "banai01",
+  "name": "banai01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/banai01",
+  "path": "battle-assets/炮弹/item__banai01",
+  "images": [
+    {
+      "file": "banai01_2_589535791824245435.png",
+      "name": "banai01_2",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 589535791824245435,
+      "source": "CAB-c69ac39d7fa14d1cc9cb3a93e8306bac"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [
+    "banai01"
+  ],
+  "bullet_ids": [
+    600991
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__banai01/banai01_2_589535791824245435.png"
+}

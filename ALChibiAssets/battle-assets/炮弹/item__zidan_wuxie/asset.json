@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_wuxie",
+  "model": "zidan_wuxie",
+  "name": "舞鞋",
+  "names": [
+    "舞鞋"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_wuxie",
+  "path": "battle-assets/炮弹/item__zidan_wuxie",
+  "images": [
+    {
+      "file": "zidan_wuxie_4510322609183035425.png",
+      "name": "zidan_wuxie",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": 4510322609183035425,
+      "source": "CAB-348f7b0668550fa75892b6f6ffab5da0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_wuxie/zidan_wuxie_4510322609183035425.png"
+}

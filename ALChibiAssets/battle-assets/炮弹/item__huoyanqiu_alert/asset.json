@@ -1,0 +1,24 @@
+{
+  "id": "item__huoyanqiu_alert",
+  "model": "huoyanqiu_alert",
+  "name": "huoyanqiu_alert",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/huoyanqiu_alert",
+  "path": "battle-assets/炮弹/item__huoyanqiu_alert",
+  "images": [],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    29655019,
+    29655020,
+    29655021,
+    29655024,
+    29655034,
+    3049405,
+    3049413,
+    3049422
+  ],
+  "has_preview": false,
+  "prefab": true
+}

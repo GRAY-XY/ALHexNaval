@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gouyu",
+  "model": "zidan_gouyu",
+  "name": "勾玉子弹",
+  "names": [
+    "勾玉子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gouyu",
+  "path": "battle-assets/炮弹/item__zidan_gouyu",
+  "images": [
+    {
+      "file": "zidan_gouyu_9145602508415396862.png",
+      "name": "zidan_gouyu",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 9145602508415396862,
+      "source": "CAB-548e8bf8fc795b73bdea935db9ee8a6e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gouyu/zidan_gouyu_9145602508415396862.png"
+}

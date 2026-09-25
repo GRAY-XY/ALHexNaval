@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zaotang",
+  "model": "yulei_zaotang",
+  "name": "灶糖鱼雷",
+  "names": [
+    "灶糖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zaotang",
+  "path": "battle-assets/鱼雷/item__yulei_zaotang",
+  "images": [
+    {
+      "file": "yulei_zaotang_-7184179988432201584.png",
+      "name": "yulei_zaotang",
+      "width": 128,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -7184179988432201584,
+      "source": "CAB-cd02c10de6715de4fce8a83c35dfeded"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zaotang/yulei_zaotang_-7184179988432201584.png"
+}

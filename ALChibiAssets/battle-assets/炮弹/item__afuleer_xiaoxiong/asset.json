@@ -1,0 +1,45 @@
+{
+  "id": "item__afuleer_xiaoxiong",
+  "model": "afuleer_xiaoxiong",
+  "name": "afuleer_xiaoxiong",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/afuleer_xiaoxiong",
+  "path": "battle-assets/炮弹/item__afuleer_xiaoxiong",
+  "images": [
+    {
+      "file": "xiong_zhuiluo2_-2149166760884047628.png",
+      "name": "xiong_zhuiluo2",
+      "width": 1024,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": -2149166760884047628,
+      "source": "CAB-47c4c45a9bf524339eff90a72845d441"
+    },
+    {
+      "file": "xiong_zhuiluo_-2012855183969135077.png",
+      "name": "xiong_zhuiluo",
+      "width": 1024,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": -2012855183969135077,
+      "source": "CAB-47c4c45a9bf524339eff90a72845d441"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19406
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__afuleer_xiaoxiong/xiong_zhuiluo2_-2149166760884047628.png",
+  "spine": {
+    "skel": "xiong_zhuiluo.skel",
+    "atlas": "xiong_zhuiluo.atlas",
+    "pages": [
+      "xiong_zhuiluo.png",
+      "xiong_zhuiluo2.png"
+    ]
+  }
+}

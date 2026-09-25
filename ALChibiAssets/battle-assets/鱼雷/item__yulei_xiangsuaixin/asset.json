@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiangsuaixin",
+  "model": "yulei_xiangsuaixin",
+  "name": "像素爱心鱼雷",
+  "names": [
+    "像素爱心鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangsuaixin",
+  "path": "battle-assets/鱼雷/item__yulei_xiangsuaixin",
+  "images": [
+    {
+      "file": "aixinyulei01_-1789723904506464282.png",
+      "name": "aixinyulei01",
+      "width": 91,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": -1789723904506464282,
+      "source": "CAB-bb043cd10e34716f14c1d91761e974c3"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiangsuaixin/aixinyulei01_-1789723904506464282.png"
+}

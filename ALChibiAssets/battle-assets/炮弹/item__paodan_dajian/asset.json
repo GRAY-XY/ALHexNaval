@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_dajian",
+  "model": "paodan_dajian",
+  "name": "黑铁重剑",
+  "names": [
+    "黑铁重剑"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dajian",
+  "path": "battle-assets/炮弹/item__paodan_dajian",
+  "images": [
+    {
+      "file": "paodan_dajian_7806708052827466011.png",
+      "name": "paodan_dajian",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": 7806708052827466011,
+      "source": "CAB-05d2358dd4d854feef08bbab3977a8fb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "paodan_dajian_ani"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dajian/paodan_dajian_7806708052827466011.png"
+}

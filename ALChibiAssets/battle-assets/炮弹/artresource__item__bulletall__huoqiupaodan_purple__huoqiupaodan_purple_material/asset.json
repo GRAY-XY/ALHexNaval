@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__huoqiupaodan_purple__huoqiupaodan_purple_material",
+  "model": "huoqiupaodan_purple_material",
+  "name": "huoqiupaodan_purple_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/huoqiupaodan_purple/huoqiupaodan_purple_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__huoqiupaodan_purple__huoqiupaodan_purple_material",
+  "images": [
+    {
+      "file": "huoqiupaodan_purple_-7451155019932241484.png",
+      "name": "huoqiupaodan_purple",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7451155019932241484,
+      "source": "CAB-3596e777383b8aa5770b3e8f0f61c9b8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

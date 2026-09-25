@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__zidiangaisi",
+  "model": "zidiangaisi",
+  "name": "试作型紫电改四",
+  "names": [
+    "试作型紫电改四"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/zidiangaisi",
+  "path": "battle-assets/飞机图标/aircrafticon__zidiangaisi",
+  "images": [
+    {
+      "file": "zidiangaisi_-984966346071332988.png",
+      "name": "zidiangaisi",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -984966346071332988,
+      "source": "CAB-64c691c4b2066210f5499c23b70e8e20"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

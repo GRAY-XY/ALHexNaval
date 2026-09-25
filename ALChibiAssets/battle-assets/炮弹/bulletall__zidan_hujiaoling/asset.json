@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_hujiaoling",
+  "model": "zidan_hujiaoling",
+  "name": "病房呼叫铃子弹",
+  "names": [
+    "病房呼叫铃子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_hujiaoling",
+  "path": "battle-assets/炮弹/bulletall__zidan_hujiaoling",
+  "images": [
+    {
+      "file": "zidan_hujiaoling_-6453227602008273695.png",
+      "name": "zidan_hujiaoling",
+      "width": 128,
+      "height": 126,
+      "role": "原始精灵",
+      "path_id": -6453227602008273695,
+      "source": "CAB-c6eed814fc4ae68093c9a8de6602473c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

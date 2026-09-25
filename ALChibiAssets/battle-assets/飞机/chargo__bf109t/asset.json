@@ -1,0 +1,60 @@
+{
+  "id": "chargo__bf109t",
+  "model": "bf109t",
+  "name": "BF-109T舰载战斗机T1",
+  "names": [
+    "BF-109T舰载战斗机T1",
+    "BF-109T舰载战斗机T2",
+    "BF-109T舰载战斗机T3",
+    "【异色格A】【人型】齐柏林使用BF109T",
+    "【异色格A】【空袭】战斗机",
+    "【异色格B】【人型】齐柏林BF109T",
+    "【异色格B】【BOSS】齐柏林BF109T",
+    "【异色格B】【空袭】战斗机",
+    "【异色格C】【人型】齐柏林使用BF109T",
+    "【异色格C】【空袭】战斗机",
+    "【异色格D】【人型】齐柏林BF109T",
+    "【异色格D】【BOSS】齐柏林BF109T",
+    "【异色格D】【空袭】战斗机",
+    "七夕齐柏林使用BF109T (飞机*1",
+    "万圣节副本空袭BF109T",
+    "齐柏林使用BF109T (飞机",
+    "夏活普通空袭BF109T",
+    "夏活困难空袭BF109T",
+    "七夕活动夏活普通空袭BF109T",
+    "德系舰载-战斗机I",
+    "德系舰载-战斗机II",
+    "德系舰载-战斗机III",
+    "德系舰载-战斗机IV",
+    "德系舰载-战斗机V"
+  ],
+  "category": "飞机",
+  "source": "chargo/bf109t",
+  "path": "battle-assets/飞机/chargo__bf109t",
+  "images": [
+    {
+      "file": "BF109T_-2456814318407773006.png",
+      "name": "BF109T",
+      "width": 251,
+      "height": 240,
+      "role": "战斗贴图",
+      "path_id": -2456814318407773006,
+      "source": "CAB-7bd5de6e0be8ec5283e5d85674724234"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__bf109t/BF109T_-2456814318407773006.png"
+}

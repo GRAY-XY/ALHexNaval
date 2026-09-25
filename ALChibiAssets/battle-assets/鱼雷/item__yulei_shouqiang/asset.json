@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shouqiang",
+  "model": "yulei_shouqiang",
+  "name": "单发土枪鱼雷",
+  "names": [
+    "单发土枪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shouqiang",
+  "path": "battle-assets/鱼雷/item__yulei_shouqiang",
+  "images": [
+    {
+      "file": "yulei_shouqiang_-72935091457387351.png",
+      "name": "yulei_shouqiang",
+      "width": 128,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": -72935091457387351,
+      "source": "CAB-60e78696ab73d41b1b76c03a6018f5f9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shouqiang/yulei_shouqiang_-72935091457387351.png"
+}

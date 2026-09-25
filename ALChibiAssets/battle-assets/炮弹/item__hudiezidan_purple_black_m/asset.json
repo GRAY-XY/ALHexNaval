@@ -1,0 +1,43 @@
+{
+  "id": "item__hudiezidan_purple_black_m",
+  "model": "hudiezidan_purple_black_m",
+  "name": "hudiezidan_purple_black_m",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hudiezidan_purple_black_m",
+  "path": "battle-assets/炮弹/item__hudiezidan_purple_black_m",
+  "images": [
+    {
+      "file": "blue_09_6301330173530471569.png",
+      "name": "blue_09",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 6301330173530471569,
+      "source": "CAB-96f49171d021fa5a2be2ff6543b961fa"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3081130,
+    3081131,
+    3081132,
+    3083009,
+    3085016,
+    3085029,
+    3181211,
+    3181213,
+    3181280,
+    3181281,
+    3181282,
+    3181283,
+    3181284,
+    3181285,
+    3181286,
+    3314009
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hudiezidan_purple_black_m/blue_09_6301330173530471569.png"
+}

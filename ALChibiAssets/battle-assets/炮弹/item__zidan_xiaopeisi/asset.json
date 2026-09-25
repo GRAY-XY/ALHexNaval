@@ -1,0 +1,32 @@
+{
+  "id": "item__zidan_xiaopeisi",
+  "model": "zidan_xiaopeisi",
+  "name": "zidan_xiaopeisi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_xiaopeisi",
+  "path": "battle-assets/炮弹/item__zidan_xiaopeisi",
+  "images": [
+    {
+      "file": "zhua01_242909171145053960.png",
+      "name": "zhua01",
+      "width": 235,
+      "height": 167,
+      "role": "战斗贴图",
+      "path_id": 242909171145053960,
+      "source": "CAB-3185ee283b37555bb95baea188553713"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19456,
+    19457,
+    19458,
+    19459,
+    3165001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xiaopeisi/zhua01_242909171145053960.png"
+}

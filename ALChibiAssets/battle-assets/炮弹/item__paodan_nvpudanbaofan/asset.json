@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_nvpudanbaofan",
+  "model": "paodan_nvpudanbaofan",
+  "name": "蛋包饭炮弹",
+  "names": [
+    "蛋包饭炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nvpudanbaofan",
+  "path": "battle-assets/炮弹/item__paodan_nvpudanbaofan",
+  "images": [
+    {
+      "file": "paodan_nvpudanbaofan_5349804329575769206.png",
+      "name": "paodan_nvpudanbaofan",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 5349804329575769206,
+      "source": "CAB-8265b85c99b7ee9f4ed9c75f4db31cfa"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_nvpudanbaofan/paodan_nvpudanbaofan_5349804329575769206.png"
+}

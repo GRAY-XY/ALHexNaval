@@ -1,0 +1,34 @@
+
+idom_qianzao.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 259, 93
+  size: 79, 140
+  orig: 79, 140
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 259, 2
+  size: 89, 108
+  orig: 89, 108
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 2, 34
+  size: 255, 199
+  orig: 255, 199
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 340, 189
+  size: 44, 100
+  orig: 44, 100
+  offset: 0, 0
+  index: -1

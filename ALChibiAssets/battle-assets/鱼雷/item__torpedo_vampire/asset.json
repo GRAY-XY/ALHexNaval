@@ -1,0 +1,29 @@
+{
+  "id": "item__torpedo_vampire",
+  "model": "torpedo_vampire",
+  "name": "torpedo_vampire",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/torpedo_vampire",
+  "path": "battle-assets/鱼雷/item__torpedo_vampire",
+  "images": [
+    {
+      "file": "Torpedo_Vampire_-7172637365795515592.png",
+      "name": "Torpedo_Vampire",
+      "width": 432,
+      "height": 300,
+      "role": "战斗贴图",
+      "path_id": -7172637365795515592,
+      "source": "CAB-5c8acfe1f42bccabf7f4fe12a54ad59a"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    1802,
+    1810
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo_vampire/Torpedo_Vampire_-7172637365795515592.png"
+}

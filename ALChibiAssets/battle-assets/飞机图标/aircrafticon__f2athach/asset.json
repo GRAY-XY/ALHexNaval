@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__f2athach",
+  "model": "f2athach",
+  "name": "F2A水牛(萨奇队）",
+  "names": [
+    "F2A水牛(萨奇队）"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/f2athach",
+  "path": "battle-assets/飞机图标/aircrafticon__f2athach",
+  "images": [
+    {
+      "file": "F2AThach_280062889396673481.png",
+      "name": "F2AThach",
+      "width": 45,
+      "height": 44,
+      "role": "原始精灵",
+      "path_id": 280062889396673481,
+      "source": "CAB-e717170e4f3b66800b437190a35b6bbb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

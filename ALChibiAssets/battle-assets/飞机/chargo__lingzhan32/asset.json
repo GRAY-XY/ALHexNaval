@@ -1,0 +1,37 @@
+{
+  "id": "chargo__lingzhan32",
+  "model": "lingzhan32",
+  "name": "零战三二型",
+  "names": [
+    "零战三二型"
+  ],
+  "category": "飞机",
+  "source": "chargo/lingzhan32",
+  "path": "battle-assets/飞机/chargo__lingzhan32",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "lingzhan32_4481934536736401424.png",
+      "name": "lingzhan32",
+      "width": 252,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": 4481934536736401424,
+      "source": "CAB-f455fdf54543190512c489a23476f633"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__lingzhan32/aircraft_shadow_2192772484218123160.png"
+}

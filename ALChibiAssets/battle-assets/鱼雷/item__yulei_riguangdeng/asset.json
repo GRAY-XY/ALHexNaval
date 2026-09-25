@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_riguangdeng",
+  "model": "yulei_riguangdeng",
+  "name": "日光灯鱼雷",
+  "names": [
+    "日光灯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_riguangdeng",
+  "path": "battle-assets/鱼雷/item__yulei_riguangdeng",
+  "images": [
+    {
+      "file": "yulei_riguangdeng_-8444115311598992631.png",
+      "name": "yulei_riguangdeng",
+      "width": 128,
+      "height": 23,
+      "role": "战斗贴图",
+      "path_id": -8444115311598992631,
+      "source": "CAB-fec9c57167d54e00fb5ded0790323af7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_riguangdeng/yulei_riguangdeng_-8444115311598992631.png"
+}

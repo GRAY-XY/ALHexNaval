@@ -1,0 +1,26 @@
+{
+  "id": "item__bullet_xinnian",
+  "model": "bullet_xinnian",
+  "name": "烟花炮弹",
+  "names": [
+    "烟花炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/bullet_xinnian",
+  "path": "battle-assets/炮弹/item__bullet_xinnian",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3109009
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "yanhuapaodan.skel",
+    "atlas": "yanhuapaodan.atlas",
+    "pages": [
+      "yanhuapaodan.png"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_tolove_xin",
+  "model": "zidan_tolove_xin",
+  "name": "转转绳索君子弹",
+  "names": [
+    "转转绳索君子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tolove_xin",
+  "path": "battle-assets/炮弹/item__zidan_tolove_xin",
+  "images": [
+    {
+      "file": "zidan_tolove_xin_2486494385256686518.png",
+      "name": "zidan_tolove_xin",
+      "width": 162,
+      "height": 166,
+      "role": "战斗贴图",
+      "path_id": 2486494385256686518,
+      "source": "CAB-802f40d906b2b99292986ea78c455e12"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160981,
+    3227202
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tolove_xin/zidan_tolove_xin_2486494385256686518.png"
+}

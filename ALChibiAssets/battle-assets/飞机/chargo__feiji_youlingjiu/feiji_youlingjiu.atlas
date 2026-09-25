@@ -1,0 +1,48 @@
+
+feiji_youlingjiu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 35
+  size: 209, 128
+  orig: 209, 128
+  offset: 0, 0
+  index: -1
+yl_1
+  rotate: false
+  xy: 97, 6
+  size: 90, 27
+  orig: 90, 27
+  offset: 0, 0
+  index: -1
+yl_2
+  rotate: true
+  xy: 189, 2
+  size: 57, 28
+  orig: 57, 28
+  offset: 0, 0
+  index: -1
+yl_3
+  rotate: true
+  xy: 219, 2
+  size: 57, 28
+  orig: 57, 28
+  offset: 0, 0
+  index: -1
+yl_4
+  rotate: false
+  xy: 2, 2
+  size: 93, 31
+  orig: 93, 31
+  offset: 0, 0
+  index: -1
+yl_5
+  rotate: true
+  xy: 132, 61
+  size: 183, 126
+  orig: 183, 126
+  offset: 0, 0
+  index: -1

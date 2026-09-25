@@ -1,0 +1,18 @@
+{
+  "id": "item__yichui_zhanji",
+  "model": "yichui_zhanji",
+  "name": "yichui_zhanji",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yichui_zhanji",
+  "path": "battle-assets/鱼雷/item__yichui_zhanji",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160926,
+    161191
+  ],
+  "has_preview": false,
+  "prefab": true
+}

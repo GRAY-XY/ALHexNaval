@@ -1,0 +1,20 @@
+
+yulei_sanchaji.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cha
+  rotate: false
+  xy: 2, 122
+  size: 216, 70
+  orig: 216, 70
+  offset: 0, 0
+  index: -1
+guang
+  rotate: false
+  xy: 2, 2
+  size: 139, 118
+  orig: 139, 118
+  offset: 0, 0
+  index: -1

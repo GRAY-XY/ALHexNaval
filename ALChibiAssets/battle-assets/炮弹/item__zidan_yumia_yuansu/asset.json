@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yumia_yuansu",
+  "model": "zidan_yumia_yuansu",
+  "name": "元素核心子弹",
+  "names": [
+    "元素核心子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yumia_yuansu",
+  "path": "battle-assets/炮弹/item__zidan_yumia_yuansu",
+  "images": [
+    {
+      "file": "zidan_yuansu_-1364599673738724223.png",
+      "name": "zidan_yuansu",
+      "width": 84,
+      "height": 85,
+      "role": "战斗贴图",
+      "path_id": -1364599673738724223,
+      "source": "CAB-b2467c114d5635bacb441015eaebb7b8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yumia_yuansu/zidan_yuansu_-1364599673738724223.png"
+}

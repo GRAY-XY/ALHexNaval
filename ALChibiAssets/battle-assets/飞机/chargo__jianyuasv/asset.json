@@ -1,0 +1,37 @@
+{
+  "id": "chargo__jianyuasv",
+  "model": "jianyuasv",
+  "name": "剑鱼Mark.II-ASV",
+  "names": [
+    "剑鱼Mark.II-ASV"
+  ],
+  "category": "飞机",
+  "source": "chargo/jianyuasv",
+  "path": "battle-assets/飞机/chargo__jianyuasv",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "jianyuasv_4795304979917327219.png",
+      "name": "jianyuasv",
+      "width": 237,
+      "height": 247,
+      "role": "战斗贴图",
+      "path_id": 4795304979917327219,
+      "source": "CAB-c87f07cdaec5dfb72e3807095374c9e2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__jianyuasv/aircraft_shadow_2192772484218123160.png"
+}

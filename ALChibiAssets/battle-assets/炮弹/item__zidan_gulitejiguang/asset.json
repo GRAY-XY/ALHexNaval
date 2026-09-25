@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_gulitejiguang",
+  "model": "zidan_gulitejiguang",
+  "name": "古利特激光子弹",
+  "names": [
+    "古利特激光子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gulitejiguang",
+  "path": "battle-assets/炮弹/item__zidan_gulitejiguang",
+  "images": [
+    {
+      "file": "zidan01_-2214887057724089106.png",
+      "name": "zidan01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2214887057724089106,
+      "source": "CAB-0e1cb17908250ef0757d34d737acb987"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19762
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gulitejiguang/zidan01_-2214887057724089106.png"
+}

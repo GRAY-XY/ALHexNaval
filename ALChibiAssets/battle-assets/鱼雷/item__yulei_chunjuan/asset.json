@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_chunjuan",
+  "model": "yulei_chunjuan",
+  "name": "春卷鱼雷",
+  "names": [
+    "春卷鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chunjuan",
+  "path": "battle-assets/鱼雷/item__yulei_chunjuan",
+  "images": [
+    {
+      "file": "yulei_chunjuan_-5201280043663529207.png",
+      "name": "yulei_chunjuan",
+      "width": 128,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": -5201280043663529207,
+      "source": "CAB-fd6ec3862bdef21b63fd695c30a014a0"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chunjuan/yulei_chunjuan_-5201280043663529207.png"
+}

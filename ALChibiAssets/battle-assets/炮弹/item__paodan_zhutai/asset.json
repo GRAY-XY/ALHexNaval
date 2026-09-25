@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhutai",
+  "model": "paodan_zhutai",
+  "name": "烛台炮弹",
+  "names": [
+    "烛台炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhutai",
+  "path": "battle-assets/炮弹/item__paodan_zhutai",
+  "images": [
+    {
+      "file": "paodan_zhutai_-1455927274112876059.png",
+      "name": "paodan_zhutai",
+      "width": 128,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": -1455927274112876059,
+      "source": "CAB-c1c39235e1243bc03efb89aeab79f6ae"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhutai/paodan_zhutai_-1455927274112876059.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_liusu",
+  "model": "yulei_liusu",
+  "name": "湛蓝流苏鱼雷",
+  "names": [
+    "湛蓝流苏鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_liusu",
+  "path": "battle-assets/鱼雷/item__yulei_liusu",
+  "images": [
+    {
+      "file": "yulei_liusu_3877794034497924405.png",
+      "name": "yulei_liusu",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 3877794034497924405,
+      "source": "CAB-9c95b00a635fa00239924ea5211bd383"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_liusu/yulei_liusu_3877794034497924405.png",
+  "spine": {
+    "skel": "yulei_liusu.skel",
+    "atlas": "yulei_liusu.atlas",
+    "pages": [
+      "yulei_liusu.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_luomu",
+  "model": "zidan_luomu",
+  "name": "螺母子弹",
+  "names": [
+    "螺母子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_luomu",
+  "path": "battle-assets/炮弹/item__zidan_luomu",
+  "images": [
+    {
+      "file": "zidan_luomu_6967620170605490386.png",
+      "name": "zidan_luomu",
+      "width": 128,
+      "height": 83,
+      "role": "战斗贴图",
+      "path_id": 6967620170605490386,
+      "source": "CAB-f8b18e92f5922afdab01a9467024881d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_luomu/zidan_luomu_6967620170605490386.png"
+}

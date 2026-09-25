@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guaidaoyanjin",
+  "model": "zidan_guaidaoyanjin",
+  "name": "怪盗眼镜子弹",
+  "names": [
+    "怪盗眼镜子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guaidaoyanjin",
+  "path": "battle-assets/炮弹/item__zidan_guaidaoyanjin",
+  "images": [
+    {
+      "file": "zidan_guaidaoyanjin_-9010234608814080751.png",
+      "name": "zidan_guaidaoyanjin",
+      "width": 128,
+      "height": 42,
+      "role": "战斗贴图",
+      "path_id": -9010234608814080751,
+      "source": "CAB-3202bbc64ea938f070f503d7c636a1c3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guaidaoyanjin/zidan_guaidaoyanjin_-9010234608814080751.png"
+}

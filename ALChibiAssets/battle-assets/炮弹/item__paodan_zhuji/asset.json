@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhuji",
+  "model": "paodan_zhuji",
+  "name": "主机炮弹",
+  "names": [
+    "主机炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhuji",
+  "path": "battle-assets/炮弹/item__paodan_zhuji",
+  "images": [
+    {
+      "file": "paodan_zhuji_45953944552119469.png",
+      "name": "paodan_zhuji",
+      "width": 128,
+      "height": 89,
+      "role": "战斗贴图",
+      "path_id": 45953944552119469,
+      "source": "CAB-836c63976b5a727fd2efdc83a85530d4"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhuji/paodan_zhuji_45953944552119469.png"
+}

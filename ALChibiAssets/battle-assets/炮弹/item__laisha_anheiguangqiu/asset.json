@@ -1,0 +1,18 @@
+{
+  "id": "item__laisha_anheiguangqiu",
+  "model": "laisha_anheiguangqiu",
+  "name": "laisha_anheiguangqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_anheiguangqiu",
+  "path": "battle-assets/炮弹/item__laisha_anheiguangqiu",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19657,
+    19658
+  ],
+  "has_preview": false,
+  "prefab": true
+}

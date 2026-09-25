@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_fantianying",
+  "model": "zidan_fantianying",
+  "name": "番天印子弹",
+  "names": [
+    "番天印子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fantianying",
+  "path": "battle-assets/炮弹/item__zidan_fantianying",
+  "images": [
+    {
+      "file": "zidan_fantianying_6363931509606593894.png",
+      "name": "zidan_fantianying",
+      "width": 128,
+      "height": 140,
+      "role": "战斗贴图",
+      "path_id": 6363931509606593894,
+      "source": "CAB-9c653f32a96b2fedbfc878af3b071806"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fantianying/zidan_fantianying_6363931509606593894.png"
+}

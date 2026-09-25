@@ -1,0 +1,38 @@
+{
+  "id": "chargo__zidiangaier",
+  "model": "zidiangaier",
+  "name": "紫电改二",
+  "names": [
+    "紫电改二",
+    "【2020信浓活动EX】BOSS 信浓 第四波 大规模飞机"
+  ],
+  "category": "飞机",
+  "source": "chargo/zidiangaier",
+  "path": "battle-assets/飞机/chargo__zidiangaier",
+  "images": [
+    {
+      "file": "zidiangaier_-4550656845589042219.png",
+      "name": "zidiangaier",
+      "width": 254,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": -4550656845589042219,
+      "source": "CAB-3ce55f96b0b7c6c6fbeba22091acf3a4"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__zidiangaier/zidiangaier_-4550656845589042219.png"
+}

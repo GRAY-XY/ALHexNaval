@@ -1,0 +1,28 @@
+{
+  "id": "artresource__item__bulletall__bilibilibullet02",
+  "model": "bilibilibullet02",
+  "name": "bilibilibullet02",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bilibilibullet02",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bilibilibullet02",
+  "images": [
+    {
+      "file": "bilibilibullet02_-4450039804056104584.png",
+      "name": "bilibilibullet02",
+      "width": 24,
+      "height": 24,
+      "role": "原始精灵",
+      "path_id": -4450039804056104584,
+      "source": "CAB-00701666bf931619cf82c4252448ec07"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19812,
+    19830
+  ],
+  "has_preview": true,
+  "prefab": false
+}

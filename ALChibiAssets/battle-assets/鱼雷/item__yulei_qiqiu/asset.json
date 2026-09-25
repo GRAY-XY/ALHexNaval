@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_qiqiu",
+  "model": "yulei_qiqiu",
+  "name": "条幅气球鱼雷",
+  "names": [
+    "条幅气球鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qiqiu",
+  "path": "battle-assets/鱼雷/item__yulei_qiqiu",
+  "images": [
+    {
+      "file": "yulei_qiqiu_3547647610369015237.png",
+      "name": "yulei_qiqiu",
+      "width": 128,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": 3547647610369015237,
+      "source": "CAB-91d45ed79b75d4e20f8e7c92d6420ec2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qiqiu/yulei_qiqiu_3547647610369015237.png"
+}

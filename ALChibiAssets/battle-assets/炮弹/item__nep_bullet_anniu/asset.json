@@ -1,0 +1,24 @@
+{
+  "id": "item__nep_bullet_anniu",
+  "model": "nep_bullet_anniu",
+  "name": "按钮炮弹",
+  "names": [
+    "按钮炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/nep_bullet_anniu",
+  "path": "battle-assets/炮弹/item__nep_bullet_anniu",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "anniupaodan.skel",
+    "atlas": "anniupaodan.atlas",
+    "pages": [
+      "anniupaodan.png"
+    ]
+  }
+}

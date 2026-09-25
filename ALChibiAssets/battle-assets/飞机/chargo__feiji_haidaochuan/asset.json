@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_haidaochuan",
+  "model": "feiji_haidaochuan",
+  "name": "飞翔冒险船飞机(鱼雷)",
+  "names": [
+    "飞翔冒险船飞机(鱼雷)",
+    "飞翔冒险船飞机(战斗)",
+    "飞翔冒险船飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_haidaochuan",
+  "path": "battle-assets/飞机/chargo__feiji_haidaochuan",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_haidaochuan_7039360104106182337.png",
+      "name": "feiji_haidaochuan",
+      "width": 256,
+      "height": 182,
+      "role": "战斗贴图",
+      "path_id": 7039360104106182337,
+      "source": "CAB-dc81f68c609063f1b392309b1e027056"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_haidaochuan/aircraft_shadow_2192772484218123160.png"
+}

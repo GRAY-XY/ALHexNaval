@@ -1,0 +1,28 @@
+{
+  "id": "item__bomberbomb150",
+  "model": "bomberbomb150",
+  "name": "bomberbomb150",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bomberbomb150",
+  "path": "battle-assets/炮弹/item__bomberbomb150",
+  "images": [
+    {
+      "file": "Bomberbomb150lb_-3156399081446059327.png",
+      "name": "Bomberbomb150lb",
+      "width": 106,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": -3156399081446059327,
+      "source": "CAB-8082c8b136e195935ac3e5efbcf07458"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19999
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bomberbomb150/Bomberbomb150lb_-3156399081446059327.png"
+}

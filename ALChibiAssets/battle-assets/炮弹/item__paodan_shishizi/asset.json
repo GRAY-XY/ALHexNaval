@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_shishizi",
+  "model": "paodan_shishizi",
+  "name": "石狮子炮弹",
+  "names": [
+    "石狮子炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shishizi",
+  "path": "battle-assets/炮弹/item__paodan_shishizi",
+  "images": [
+    {
+      "file": "paodan_shishizi_-5059674584112903291.png",
+      "name": "paodan_shishizi",
+      "width": 128,
+      "height": 239,
+      "role": "战斗贴图",
+      "path_id": -5059674584112903291,
+      "source": "CAB-e2854dafa333cf8a0e2a41c27a018287"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3119485
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shishizi/paodan_shishizi_-5059674584112903291.png"
+}

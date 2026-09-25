@@ -1,0 +1,17 @@
+{
+  "id": "item__alertarea_circle_looping",
+  "model": "alertarea_circle_looping",
+  "name": "alertarea_circle_looping",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/alertarea_circle_looping",
+  "path": "battle-assets/炮弹/item__alertarea_circle_looping",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3315104
+  ],
+  "has_preview": false,
+  "prefab": true
+}

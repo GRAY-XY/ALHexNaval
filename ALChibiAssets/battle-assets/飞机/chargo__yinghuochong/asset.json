@@ -1,0 +1,39 @@
+{
+  "id": "chargo__yinghuochong",
+  "model": "yinghuochong",
+  "name": "萤火虫",
+  "names": [
+    "萤火虫",
+    "英仙座技能萤火虫Lv1",
+    "【2025狮UR活动SP】BOSS 光荣META 轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/yinghuochong",
+  "path": "battle-assets/飞机/chargo__yinghuochong",
+  "images": [
+    {
+      "file": "yinghuochong_3374323076087971303.png",
+      "name": "yinghuochong",
+      "width": 253,
+      "height": 231,
+      "role": "战斗贴图",
+      "path_id": 3374323076087971303,
+      "source": "CAB-ebe847e122ca76ccac350fa14dca9ff4"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__yinghuochong/yinghuochong_3374323076087971303.png"
+}

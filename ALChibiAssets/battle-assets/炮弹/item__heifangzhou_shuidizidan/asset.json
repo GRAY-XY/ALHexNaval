@@ -1,0 +1,45 @@
+{
+  "id": "item__heifangzhou_shuidizidan",
+  "model": "heifangzhou_shuidizidan",
+  "name": "heifangzhou_shuidizidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_shuidizidan",
+  "path": "battle-assets/炮弹/item__heifangzhou_shuidizidan",
+  "images": [
+    {
+      "file": "shuidizidan_1_-7456069792375748795.png",
+      "name": "shuidizidan 1",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7456069792375748795,
+      "source": "CAB-92a5fc8e22cba1cedc56b8cba0c4b02b"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    862021,
+    863021,
+    891607,
+    891668,
+    29643001,
+    29643012,
+    29643031,
+    29653039,
+    29653040,
+    29653041,
+    3024015,
+    3025016,
+    3025082,
+    3041258,
+    3061303,
+    3086003,
+    3086031,
+    3086032
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heifangzhou_shuidizidan/shuidizidan_1_-7456069792375748795.png"
+}

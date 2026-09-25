@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_menpiao",
+  "model": "yulei_menpiao",
+  "name": "Live入场券(鱼雷)",
+  "names": [
+    "Live入场券(鱼雷)"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_menpiao",
+  "path": "battle-assets/鱼雷/item__yulei_menpiao",
+  "images": [
+    {
+      "file": "yulei_menpiao_-5261768736123095971.png",
+      "name": "yulei_menpiao",
+      "width": 128,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -5261768736123095971,
+      "source": "CAB-7613b406b48e99c09baa4780f8982a73"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_menpiao/yulei_menpiao_-5261768736123095971.png"
+}

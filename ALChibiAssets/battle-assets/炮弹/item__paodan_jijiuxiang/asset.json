@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_jijiuxiang",
+  "model": "paodan_jijiuxiang",
+  "name": "急救箱(？)炮弹",
+  "names": [
+    "急救箱(？)炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jijiuxiang",
+  "path": "battle-assets/炮弹/item__paodan_jijiuxiang",
+  "images": [
+    {
+      "file": "paodan_jijiuxiang_-1377631916073795914.png",
+      "name": "paodan_jijiuxiang",
+      "width": 128,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": -1377631916073795914,
+      "source": "CAB-acb5ef72fe85155e9fc94381f590cdf2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jijiuxiang/paodan_jijiuxiang_-1377631916073795914.png"
+}

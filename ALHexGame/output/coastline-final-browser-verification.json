@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.6",
+  "url": "http://127.0.0.1:18768/",
+  "reference": "output/art-concepts/watercolor-maritime-fullscreen-v1.png",
+  "scope": "coastline rendering only; land details and gameplay data retained",
+  "visualChecks": [
+    "The coastline reads from land to sea as warm sand, narrow paper-white surf and cyan shallows",
+    "The warm beach remains visible at both 55 percent strategic view and 104 percent harbor tactical view",
+    "The white surf line is narrower than the sand band and is broken by short deterministic foam arcs",
+    "Deterministic radius variation changes the widths around bays and corners instead of creating a uniform outline",
+    "Sparse sand specks and foam marks soften exposed land-water edges without covering the six-direction harbor art",
+    "The 0.9.5 forests, mountains, meadow trails, rocks and harbor buildings remain unchanged and readable"
+  ],
+  "screenshots": [
+    "output/screenshots/coast-line-final.png",
+    "output/screenshots/coast-line-port-final.png"
+  ],
+  "consoleErrors": [],
+  "staticChecks": {
+    "build": "passed",
+    "landDetailSprites": 6,
+    "directionalAssets": 18,
+    "coordinateChecks": 344064,
+    "portChecks": 26,
+    "invalidPortSaveCases": 15,
+    "ruleChecks": 78,
+    "weightedPathCases": 80,
+    "invalidRuleSaveCases": 67,
+    "fogChecks": 16,
+    "invalidFogSaveCases": 7
+  },
+  "backup": "output/backups/coast-after-land-before-20260919-131951.zip"
+}

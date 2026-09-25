@@ -1,0 +1,40 @@
+{
+  "id": "chargo__sm79",
+  "model": "sm79",
+  "name": "【2021意大利活动】我方支援飞机B3",
+  "names": [
+    "【2021意大利活动】我方支援飞机B3",
+    "【2021意大利活动】我方支援飞机DS",
+    "【2021意大利活动】我方支援飞机SP",
+    "【2025曾克SP活动】BOSS 帝国警视长 第二波 全屏陆基飞机"
+  ],
+  "category": "飞机",
+  "source": "chargo/sm79",
+  "path": "battle-assets/飞机/chargo__sm79",
+  "images": [
+    {
+      "file": "SM79_-336995851113013616.png",
+      "name": "SM79",
+      "width": 256,
+      "height": 227,
+      "role": "战斗贴图",
+      "path_id": -336995851113013616,
+      "source": "CAB-3b0af23ce7677f6efa557a00b0ace8b2"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sm79/SM79_-336995851113013616.png"
+}

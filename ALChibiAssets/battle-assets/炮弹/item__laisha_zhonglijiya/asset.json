@@ -1,0 +1,17 @@
+{
+  "id": "item__laisha_zhonglijiya",
+  "model": "laisha_zhonglijiya",
+  "name": "laisha_zhonglijiya",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_zhonglijiya",
+  "path": "battle-assets/炮弹/item__laisha_zhonglijiya",
+  "images": [],
+  "particle_systems": 18,
+  "animations": [],
+  "bullet_ids": [
+    19499
+  ],
+  "has_preview": false,
+  "prefab": true
+}

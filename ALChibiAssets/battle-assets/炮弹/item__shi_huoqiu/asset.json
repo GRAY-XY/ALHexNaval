@@ -1,0 +1,33 @@
+{
+  "id": "item__shi_huoqiu",
+  "model": "shi_huoqiu",
+  "name": "shi_huoqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shi_huoqiu",
+  "path": "battle-assets/炮弹/item__shi_huoqiu",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    161101,
+    161102,
+    161103,
+    161104,
+    161105,
+    161106,
+    161107,
+    161108,
+    161109,
+    161110
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "huoqiupaodan.skel",
+    "atlas": "huoqiupaodan.atlas",
+    "pages": [
+      "huoqiupaodan.png"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+
+yulei_jiangbei.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiangbei
+  rotate: false
+  xy: 314, 6
+  size: 189, 161
+  orig: 189, 161
+  offset: 0, 0
+  index: -1
+shan_1
+  rotate: false
+  xy: 212, 169
+  size: 98, 66
+  orig: 98, 66
+  offset: 0, 0
+  index: -1
+shan_1_2
+  rotate: false
+  xy: 312, 169
+  size: 98, 66
+  orig: 98, 66
+  offset: 0, 0
+  index: -1
+shan_1_3
+  rotate: false
+  xy: 412, 169
+  size: 98, 66
+  orig: 98, 66
+  offset: 0, 0
+  index: -1
+shan_2
+  rotate: false
+  xy: 2, 189
+  size: 68, 46
+  orig: 68, 46
+  offset: 0, 0
+  index: -1
+shan_2_2
+  rotate: false
+  xy: 72, 189
+  size: 68, 46
+  orig: 68, 46
+  offset: 0, 0
+  index: -1
+shan_2_3
+  rotate: false
+  xy: 142, 189
+  size: 68, 46
+  orig: 68, 46
+  offset: 0, 0
+  index: -1
+shan_3
+  rotate: true
+  xy: 2, 106
+  size: 81, 102
+  orig: 81, 102
+  offset: 0, 0
+  index: -1
+shan_3_2
+  rotate: true
+  xy: 106, 106
+  size: 81, 102
+  orig: 81, 102
+  offset: 0, 0
+  index: -1
+shan_3_3
+  rotate: true
+  xy: 210, 86
+  size: 81, 102
+  orig: 81, 102
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 2
+  size: 289, 82
+  orig: 289, 82
+  offset: 0, 0
+  index: -1

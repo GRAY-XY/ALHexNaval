@@ -1,0 +1,31 @@
+{
+  "id": "item__paodan_laba",
+  "model": "paodan_laba",
+  "name": "兔兔喇叭炮弹",
+  "names": [
+    "兔兔喇叭炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_laba",
+  "path": "battle-assets/炮弹/item__paodan_laba",
+  "images": [
+    {
+      "file": "paodan_laba_-4288700819579808159.png",
+      "name": "paodan_laba",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": -4288700819579808159,
+      "source": "CAB-29b9653bee371e7090378c60628afb4f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3148008,
+    3148009
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_laba/paodan_laba_-4288700819579808159.png"
+}

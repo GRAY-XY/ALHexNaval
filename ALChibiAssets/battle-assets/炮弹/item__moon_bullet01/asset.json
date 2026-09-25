@@ -1,0 +1,36 @@
+{
+  "id": "item__moon_bullet01",
+  "model": "moon_bullet01",
+  "name": "moon_bullet01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/moon_bullet01",
+  "path": "battle-assets/炮弹/item__moon_bullet01",
+  "images": [
+    {
+      "file": "moon_bullet01_-5153564403186298534.png",
+      "name": "moon_bullet01",
+      "width": 94,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -5153564403186298534,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    801001,
+    801003,
+    801041,
+    801042,
+    3139704,
+    3304014,
+    3361202,
+    3361212,
+    3361213
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__moon_bullet01/moon_bullet01_-5153564403186298534.png"
+}

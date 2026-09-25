@@ -1,0 +1,55 @@
+
+unknownV_crystal_quzhu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 463, 159
+  size: 345, 209
+  orig: 345, 209
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: false
+  xy: 111, 27
+  size: 114, 28
+  orig: 114, 28
+  offset: 0, 0
+  index: -1
+chushou_2
+  rotate: false
+  xy: 2, 2
+  size: 107, 53
+  orig: 107, 53
+  offset: 0, 0
+  index: -1
+chushou_3
+  rotate: false
+  xy: 227, 25
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+paoguan
+  rotate: true
+  xy: 463, 50
+  size: 107, 84
+  orig: 107, 84
+  offset: 0, 0
+  index: -1
+shuibo_1
+  rotate: true
+  xy: 232, 59
+  size: 445, 229
+  orig: 445, 229
+  offset: 0, 0
+  index: -1
+shuibo_2
+  rotate: true
+  xy: 2, 57
+  size: 447, 228
+  orig: 447, 228
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_yujin",
+  "model": "yulei_yujin",
+  "name": "沙滩巾鱼雷",
+  "names": [
+    "沙滩巾鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_yujin",
+  "path": "battle-assets/鱼雷/bulletall__yulei_yujin",
+  "images": [
+    {
+      "file": "yulei_yujin_-7957520144606527590.png",
+      "name": "yulei_yujin",
+      "width": 128,
+      "height": 46,
+      "role": "原始精灵",
+      "path_id": -7957520144606527590,
+      "source": "CAB-d50a501e64ca0d3f99c0f9c387bee5d0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

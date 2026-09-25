@@ -1,0 +1,26 @@
+{
+  "id": "item__gaoliang_zhizhuwang",
+  "model": "gaoliang_zhizhuwang",
+  "name": "gaoliang_zhizhuwang",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/gaoliang_zhizhuwang",
+  "path": "battle-assets/其他战斗特效/item__gaoliang_zhizhuwang",
+  "images": [
+    {
+      "file": "zhizhuwang01_2321855955481038492.png",
+      "name": "zhizhuwang01",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2321855955481038492,
+      "source": "CAB-a0630f1a507ab9aeee89a00075be96f5"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__gaoliang_zhizhuwang/zhizhuwang01_2321855955481038492.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dongguazhong",
+  "model": "paodan_dongguazhong",
+  "name": "冬瓜盅炮弹",
+  "names": [
+    "冬瓜盅炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dongguazhong",
+  "path": "battle-assets/炮弹/item__paodan_dongguazhong",
+  "images": [
+    {
+      "file": "paodan_dongguazhong_-5719767060472966486.png",
+      "name": "paodan_dongguazhong",
+      "width": 128,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": -5719767060472966486,
+      "source": "CAB-9540c457ec4f660c56e8442d790dbf69"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dongguazhong/paodan_dongguazhong_-5719767060472966486.png"
+}

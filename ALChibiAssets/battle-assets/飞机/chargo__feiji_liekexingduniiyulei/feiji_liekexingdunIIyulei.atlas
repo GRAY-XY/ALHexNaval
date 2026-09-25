@@ -1,0 +1,153 @@
+
+feiji_liekexingdunIIyulei.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+buliao_1
+  rotate: true
+  xy: 419, 151
+  size: 101, 57
+  orig: 101, 57
+  offset: 0, 0
+  index: -1
+buliao_1_2
+  rotate: false
+  xy: 419, 92
+  size: 101, 57
+  orig: 101, 57
+  offset: 0, 0
+  index: -1
+buliao_1_3
+  rotate: true
+  xy: 478, 151
+  size: 101, 57
+  orig: 101, 57
+  offset: 0, 0
+  index: -1
+buliao_2
+  rotate: false
+  xy: 69, 9
+  size: 164, 69
+  orig: 164, 69
+  offset: 0, 0
+  index: -1
+buliao_2_2
+  rotate: false
+  xy: 235, 9
+  size: 164, 69
+  orig: 164, 69
+  offset: 0, 0
+  index: -1
+buliao_2_3
+  rotate: false
+  xy: 401, 16
+  size: 164, 69
+  orig: 164, 69
+  offset: 0, 0
+  index: -1
+buliao_3
+  rotate: true
+  xy: 2, 80
+  size: 172, 87
+  orig: 172, 87
+  offset: 0, 0
+  index: -1
+buliao_3_2
+  rotate: true
+  xy: 91, 80
+  size: 172, 87
+  orig: 172, 87
+  offset: 0, 0
+  index: -1
+buliao_3_3
+  rotate: true
+  xy: 180, 80
+  size: 172, 87
+  orig: 172, 87
+  offset: 0, 0
+  index: -1
+buliao_4
+  rotate: true
+  xy: 537, 155
+  size: 97, 47
+  orig: 97, 47
+  offset: 0, 0
+  index: -1
+buliao_4_2
+  rotate: false
+  xy: 575, 106
+  size: 97, 47
+  orig: 97, 47
+  offset: 0, 0
+  index: -1
+buliao_4_3
+  rotate: true
+  xy: 586, 155
+  size: 97, 47
+  orig: 97, 47
+  offset: 0, 0
+  index: -1
+buliao_5
+  rotate: true
+  xy: 269, 87
+  size: 165, 48
+  orig: 165, 48
+  offset: 0, 0
+  index: -1
+buliao_5_2
+  rotate: true
+  xy: 319, 87
+  size: 165, 48
+  orig: 165, 48
+  offset: 0, 0
+  index: -1
+buliao_5_3
+  rotate: true
+  xy: 369, 87
+  size: 165, 48
+  orig: 165, 48
+  offset: 0, 0
+  index: -1
+feiji
+  rotate: true
+  xy: 2, 2
+  size: 76, 65
+  orig: 76, 65
+  offset: 0, 0
+  index: -1
+feiji_fanguang
+  rotate: false
+  xy: 567, 3
+  size: 97, 87
+  orig: 97, 87
+  offset: 0, 0
+  index: -1
+feiji_tuowei
+  rotate: true
+  xy: 522, 92
+  size: 57, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+lizi_1
+  rotate: false
+  xy: 69, 2
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1
+lizi_1_2
+  rotate: false
+  xy: 76, 2
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1
+lizi_1_3
+  rotate: false
+  xy: 83, 2
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1

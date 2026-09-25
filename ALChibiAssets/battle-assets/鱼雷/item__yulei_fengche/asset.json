@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_fengche",
+  "model": "yulei_fengche",
+  "name": "风车鱼雷",
+  "names": [
+    "风车鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fengche",
+  "path": "battle-assets/鱼雷/item__yulei_fengche",
+  "images": [
+    {
+      "file": "yulei_trail02_2291347652746858589.png",
+      "name": "yulei_trail02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2291347652746858589,
+      "source": "CAB-394b7e7005929f8c120dfa8b657ec032"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_fengche/yulei_trail02_2291347652746858589.png",
+  "spine": {
+    "skel": "yulei_fengche.skel",
+    "atlas": "yulei_fengche.atlas",
+    "pages": [
+      "yulei_fengche.png"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "item__shanluan_xuequan_laser02",
+  "model": "shanluan_xuequan_laser02",
+  "name": "shanluan_xuequan_laser02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_xuequan_laser02",
+  "path": "battle-assets/炮弹/item__shanluan_xuequan_laser02",
+  "images": [],
+  "particle_systems": 21,
+  "animations": [],
+  "bullet_ids": [
+    19786
+  ],
+  "has_preview": false,
+  "prefab": true
+}

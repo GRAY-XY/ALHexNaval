@@ -1,0 +1,17 @@
+{
+  "id": "item__yilishabai_meta",
+  "model": "yilishabai_meta",
+  "name": "yilishabai_meta",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yilishabai_meta",
+  "path": "battle-assets/炮弹/item__yilishabai_meta",
+  "images": [],
+  "particle_systems": 18,
+  "animations": [],
+  "bullet_ids": [
+    19573
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,62 @@
+
+jiulaimu_shixianggui.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 302, 450
+  size: 545, 572
+  orig: 545, 572
+  offset: 0, 0
+  index: -1
+chibang_1
+  rotate: false
+  xy: 830, 142
+  size: 512, 306
+  orig: 512, 306
+  offset: 0, 0
+  index: -1
+chibang_2
+  rotate: false
+  xy: 302, 241
+  size: 522, 207
+  orig: 522, 207
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: true
+  xy: 2, 196
+  size: 826, 104
+  orig: 826, 104
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: true
+  xy: 108, 196
+  size: 826, 97
+  orig: 826, 97
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 95
+  size: 826, 99
+  orig: 826, 99
+  offset: 0, 0
+  index: -1
+shuihua_4
+  rotate: true
+  xy: 207, 196
+  size: 826, 93
+  orig: 826, 93
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 2
+  size: 501, 91
+  orig: 501, 91
+  offset: 0, 0
+  index: -1

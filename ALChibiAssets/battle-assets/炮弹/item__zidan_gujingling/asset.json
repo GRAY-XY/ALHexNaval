@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gujingling",
+  "model": "zidan_gujingling",
+  "name": "古精灵之箭子弹",
+  "names": [
+    "古精灵之箭子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gujingling",
+  "path": "battle-assets/炮弹/item__zidan_gujingling",
+  "images": [
+    {
+      "file": "zidan_gujingling_-1350236700069737421.png",
+      "name": "zidan_gujingling",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -1350236700069737421,
+      "source": "CAB-132595b40d51922aa69000dc4ed30e68"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gujingling/zidan_gujingling_-1350236700069737421.png"
+}

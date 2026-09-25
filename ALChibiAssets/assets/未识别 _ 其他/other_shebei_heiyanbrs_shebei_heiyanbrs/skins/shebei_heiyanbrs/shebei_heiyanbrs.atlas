@@ -1,0 +1,27 @@
+
+shebei_heiyanbrs.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huoyan_1
+  rotate: false
+  xy: 154, 8
+  size: 155, 214
+  orig: 155, 214
+  offset: 0, 0
+  index: -1
+huoyan_2
+  rotate: false
+  xy: 311, 19
+  size: 140, 203
+  orig: 140, 203
+  offset: 0, 0
+  index: -1
+huoyan_3
+  rotate: false
+  xy: 2, 2
+  size: 150, 220
+  orig: 150, 220
+  offset: 0, 0
+  index: -1

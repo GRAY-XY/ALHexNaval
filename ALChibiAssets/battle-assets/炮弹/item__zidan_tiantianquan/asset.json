@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_tiantianquan",
+  "model": "zidan_tiantianquan",
+  "name": "甜甜圈子弹",
+  "names": [
+    "甜甜圈子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tiantianquan",
+  "path": "battle-assets/炮弹/item__zidan_tiantianquan",
+  "images": [
+    {
+      "file": "tiantianquan01_3902682739454434911.png",
+      "name": "tiantianquan01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3902682739454434911,
+      "source": "CAB-2b8759924c1febc5abecacb131400967"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    710104
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tiantianquan/tiantianquan01_3902682739454434911.png"
+}

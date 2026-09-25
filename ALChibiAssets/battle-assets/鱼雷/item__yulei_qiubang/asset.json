@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_qiubang",
+  "model": "yulei_qiubang",
+  "name": "怪盗球棒鱼雷",
+  "names": [
+    "怪盗球棒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qiubang",
+  "path": "battle-assets/鱼雷/item__yulei_qiubang",
+  "images": [
+    {
+      "file": "yulei_qiubang_-2079915697765990845.png",
+      "name": "yulei_qiubang",
+      "width": 128,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": -2079915697765990845,
+      "source": "CAB-39932597b51222e29391d7781c073631"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qiubang/yulei_qiubang_-2079915697765990845.png"
+}

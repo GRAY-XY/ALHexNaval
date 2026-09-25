@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_lvxingping",
+  "model": "yulei_lvxingping",
+  "name": "旅行瓶鱼雷",
+  "names": [
+    "旅行瓶鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_lvxingping",
+  "path": "battle-assets/鱼雷/item__yulei_lvxingping",
+  "images": [
+    {
+      "file": "pingzi_7438351926023480035.png",
+      "name": "pingzi",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7438351926023480035,
+      "source": "CAB-510fba39295295f8f9f3832d0893dcc3"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_lvxingping/pingzi_7438351926023480035.png"
+}

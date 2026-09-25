@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_lianhua",
+  "model": "paodan_lianhua",
+  "name": "清荷炮弹",
+  "names": [
+    "清荷炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_lianhua",
+  "path": "battle-assets/炮弹/bulletall__paodan_lianhua",
+  "images": [
+    {
+      "file": "paodan_lianhua_8803323716805710748.png",
+      "name": "paodan_lianhua",
+      "width": 128,
+      "height": 65,
+      "role": "原始精灵",
+      "path_id": 8803323716805710748,
+      "source": "CAB-95196580a15fb383bd76bdb5cc701c7e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

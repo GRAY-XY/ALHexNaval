@@ -1,0 +1,21 @@
+{
+  "id": "item__hololive_zhanji01",
+  "model": "hololive_zhanji01",
+  "name": "hololive_zhanji01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hololive_zhanji01",
+  "path": "battle-assets/炮弹/item__hololive_zhanji01",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19086,
+    760116,
+    840125,
+    3087007,
+    3087008
+  ],
+  "has_preview": false,
+  "prefab": true
+}

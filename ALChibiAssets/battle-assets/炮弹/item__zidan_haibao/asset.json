@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_haibao",
+  "model": "zidan_haibao",
+  "name": "海报子弹",
+  "names": [
+    "海报子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_haibao",
+  "path": "battle-assets/炮弹/item__zidan_haibao",
+  "images": [
+    {
+      "file": "zidan_haibao_-6406127301837686962.png",
+      "name": "zidan_haibao",
+      "width": 128,
+      "height": 34,
+      "role": "战斗贴图",
+      "path_id": -6406127301837686962,
+      "source": "CAB-b46747d2b55b71b4ad58c53df6630aed"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_haibao/zidan_haibao_-6406127301837686962.png"
+}

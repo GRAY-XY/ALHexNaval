@@ -1,0 +1,125 @@
+
+paodan_shengqiu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daquan_1b
+  rotate: false
+  xy: 347, 355
+  size: 145, 154
+  orig: 145, 154
+  offset: 0, 0
+  index: -1
+daquan_1t
+  rotate: false
+  xy: 2, 128
+  size: 181, 187
+  orig: 181, 187
+  offset: 0, 0
+  index: -1
+daquan_2b
+  rotate: true
+  xy: 376, 163
+  size: 190, 83
+  orig: 190, 83
+  offset: 0, 0
+  index: -1
+daquan_2t
+  rotate: false
+  xy: 2, 2
+  size: 230, 124
+  orig: 230, 124
+  offset: 0, 0
+  index: -1
+daquan_3b
+  rotate: false
+  xy: 461, 167
+  size: 82, 186
+  orig: 82, 186
+  offset: 0, 0
+  index: -1
+daquan_3t
+  rotate: true
+  xy: 234, 41
+  size: 119, 229
+  orig: 119, 229
+  offset: 0, 0
+  index: -1
+he
+  rotate: true
+  xy: 2, 317
+  size: 192, 191
+  orig: 192, 191
+  offset: 0, 0
+  index: -1
+shandian_1
+  rotate: true
+  xy: 494, 401
+  size: 46, 45
+  orig: 46, 45
+  offset: 0, 0
+  index: -1
+shandian_2
+  rotate: true
+  xy: 541, 463
+  size: 46, 45
+  orig: 46, 45
+  offset: 0, 0
+  index: -1
+shandian_3
+  rotate: false
+  xy: 494, 449
+  size: 45, 60
+  orig: 45, 60
+  offset: 0, 0
+  index: -1
+shandian_4
+  rotate: false
+  xy: 541, 368
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+shandian_5
+  rotate: true
+  xy: 541, 415
+  size: 46, 45
+  orig: 46, 45
+  offset: 0, 0
+  index: -1
+shandian_6
+  rotate: false
+  xy: 494, 355
+  size: 45, 44
+  orig: 45, 44
+  offset: 0, 0
+  index: -1
+shandian_7
+  rotate: true
+  xy: 465, 73
+  size: 45, 43
+  orig: 45, 43
+  offset: 0, 0
+  index: -1
+shandian_8
+  rotate: false
+  xy: 465, 120
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+waihuan_1
+  rotate: false
+  xy: 185, 162
+  size: 189, 153
+  orig: 189, 153
+  offset: 0, 0
+  index: -1
+waihuan_2
+  rotate: false
+  xy: 195, 328
+  size: 150, 181
+  orig: 150, 181
+  offset: 0, 0
+  index: -1

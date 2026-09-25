@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feichuan__feichuan_material",
+  "model": "feichuan_material",
+  "name": "feichuan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/feichuan/feichuan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__feichuan__feichuan_material",
+  "images": [
+    {
+      "file": "feichuan_-8391382720036127279.png",
+      "name": "feichuan",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8391382720036127279,
+      "source": "CAB-8ebd269c38e1b7e5db7532737b019623"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

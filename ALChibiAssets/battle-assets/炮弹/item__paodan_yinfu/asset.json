@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_yinfu",
+  "model": "paodan_yinfu",
+  "name": "音符炮弹",
+  "names": [
+    "音符炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yinfu",
+  "path": "battle-assets/炮弹/item__paodan_yinfu",
+  "images": [
+    {
+      "file": "paodan_yinfu_-1995029986696514972.png",
+      "name": "paodan_yinfu",
+      "width": 127,
+      "height": 237,
+      "role": "战斗贴图",
+      "path_id": -1995029986696514972,
+      "source": "CAB-5a9bf765f92ee492d9f53956321baae8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160914
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yinfu/paodan_yinfu_-1995029986696514972.png"
+}

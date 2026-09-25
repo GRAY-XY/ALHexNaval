@@ -1,0 +1,31 @@
+{
+  "id": "item__weixu_baojian_dajian_huixuan",
+  "model": "weixu_baojian_dajian_huixuan",
+  "name": "weixu_baojian_dajian_huixuan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/weixu_baojian_dajian_huixuan",
+  "path": "battle-assets/炮弹/item__weixu_baojian_dajian_huixuan",
+  "images": [
+    {
+      "file": "weixu_baojian_dajian_-5178787333438033138.png",
+      "name": "weixu_baojian_dajian",
+      "width": 322,
+      "height": 168,
+      "role": "战斗贴图",
+      "path_id": -5178787333438033138,
+      "source": "CAB-46e7ba7b2f8d0bea033a7afa24c43fb4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3331207,
+    3331208,
+    3331209,
+    3331210
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__weixu_baojian_dajian_huixuan/weixu_baojian_dajian_-5178787333438033138.png"
+}

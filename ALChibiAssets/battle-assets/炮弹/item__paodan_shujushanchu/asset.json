@@ -1,0 +1,53 @@
+{
+  "id": "item__paodan_shujushanchu",
+  "model": "paodan_shujushanchu",
+  "name": "故障电磁炮弹",
+  "names": [
+    "故障电磁炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shujushanchu",
+  "path": "battle-assets/炮弹/item__paodan_shujushanchu",
+  "images": [
+    {
+      "file": "particles02_-5586220338365628318.png",
+      "name": "particles02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5586220338365628318,
+      "source": "CAB-ae6821ea9559861631371b9f2fd16e3f"
+    },
+    {
+      "file": "particles01_5335316890934379127.png",
+      "name": "particles01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5335316890934379127,
+      "source": "CAB-ae6821ea9559861631371b9f2fd16e3f"
+    },
+    {
+      "file": "line02_6509296066655577027.png",
+      "name": "line02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6509296066655577027,
+      "source": "CAB-ae6821ea9559861631371b9f2fd16e3f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shujushanchu/particles02_-5586220338365628318.png",
+  "spine": {
+    "skel": "paodan_shujushanchu.skel",
+    "atlas": "paodan_shujushanchu.atlas",
+    "pages": [
+      "paodan_shujushanchu.png"
+    ]
+  }
+}

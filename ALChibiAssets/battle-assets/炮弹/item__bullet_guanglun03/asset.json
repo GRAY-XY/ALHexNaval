@@ -1,0 +1,32 @@
+{
+  "id": "item__bullet_guanglun03",
+  "model": "bullet_guanglun03",
+  "name": "bullet_guanglun03",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_guanglun03",
+  "path": "battle-assets/炮弹/item__bullet_guanglun03",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3224018,
+    3224025,
+    3224026,
+    3224027,
+    3224028,
+    3224029,
+    3226024,
+    3355314,
+    3355330
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "bullet_guanglun03.skel",
+    "atlas": "bullet_guanglun03.atlas",
+    "pages": [
+      "bullet_guanglun03.png"
+    ]
+  }
+}

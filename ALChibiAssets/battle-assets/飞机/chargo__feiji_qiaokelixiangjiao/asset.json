@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_qiaokelixiangjiao",
+  "model": "feiji_qiaokelixiangjiao",
+  "name": "巧克力香蕉摊(鱼雷)",
+  "names": [
+    "巧克力香蕉摊(鱼雷)",
+    "巧克力香蕉摊(战斗)",
+    "巧克力香蕉摊(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_qiaokelixiangjiao",
+  "path": "battle-assets/飞机/chargo__feiji_qiaokelixiangjiao",
+  "images": [
+    {
+      "file": "feiji_qiaokelixiangjiao_-8624885544603492229.png",
+      "name": "feiji_qiaokelixiangjiao",
+      "width": 256,
+      "height": 257,
+      "role": "战斗贴图",
+      "path_id": -8624885544603492229,
+      "source": "CAB-7226e155b69a056a90ffc076a5a10afe"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_qiaokelixiangjiao/feiji_qiaokelixiangjiao_-8624885544603492229.png"
+}

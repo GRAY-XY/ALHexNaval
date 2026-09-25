@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_hunianmaobi",
+  "model": "yulei_hunianmaobi",
+  "name": "毛笔鱼雷",
+  "names": [
+    "毛笔鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hunianmaobi",
+  "path": "battle-assets/鱼雷/item__yulei_hunianmaobi",
+  "images": [
+    {
+      "file": "yulei_hunianmaobi_8506248502578361640.png",
+      "name": "yulei_hunianmaobi",
+      "width": 128,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": 8506248502578361640,
+      "source": "CAB-253ef6075d3ad4dbbe660f4349f0dfdf"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hunianmaobi/yulei_hunianmaobi_8506248502578361640.png"
+}

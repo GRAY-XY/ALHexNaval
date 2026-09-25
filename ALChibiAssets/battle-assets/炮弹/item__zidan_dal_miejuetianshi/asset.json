@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_dal_miejuetianshi",
+  "model": "zidan_dal_miejuetianshi",
+  "name": "灭绝天使之弹（子弹）",
+  "names": [
+    "灭绝天使之弹（子弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dal_miejuetianshi",
+  "path": "battle-assets/炮弹/item__zidan_dal_miejuetianshi",
+  "images": [
+    {
+      "file": "zidan_dal_miejuetianshi_-3342133512896736511.png",
+      "name": "zidan_dal_miejuetianshi",
+      "width": 110,
+      "height": 105,
+      "role": "战斗贴图",
+      "path_id": -3342133512896736511,
+      "source": "CAB-7bb10c548fdac3bf16e8741c8c9972da"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3335011
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dal_miejuetianshi/zidan_dal_miejuetianshi_-3342133512896736511.png"
+}

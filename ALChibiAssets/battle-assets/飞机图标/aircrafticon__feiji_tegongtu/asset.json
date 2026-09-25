@@ -1,0 +1,43 @@
+{
+  "id": "aircrafticon__feiji_tegongtu",
+  "model": "feiji_tegongtu",
+  "name": "【2026云龙SP活动】航母轰炸机 Lv1",
+  "names": [
+    "【2026云龙SP活动】航母轰炸机 Lv1",
+    "【2026云龙SP活动】航母轰炸机 Lv2",
+    "【2026云龙SP活动】航母轰炸机 Lv3",
+    "【2026云龙SP活动】航母轰炸机 Lv4",
+    "【2026云龙SP活动】航母轰炸机 Lv5",
+    "【2026云龙SP活动】航母战斗机 Lv1",
+    "【2026云龙SP活动】航母战斗机 Lv2",
+    "【2026云龙SP活动】航母战斗机 Lv3",
+    "【2026云龙SP活动】航母战斗机 Lv4",
+    "【2026云龙SP活动】航母战斗机 Lv5",
+    "【2026云龙SP活动 困难】精英蛋船 霓虹都市航母 战斗机",
+    "【2026云龙SP活动 困难】精英蛋船 霓虹都市航母 轰炸机",
+    "【2026云龙SP活动 SP】精英蛋船 霓虹都市航母 战斗机",
+    "【2026云龙SP活动 SP】精英蛋船 霓虹都市航母 轰炸机",
+    "空中特工兔(鱼雷)",
+    "空中特工兔(战斗)",
+    "空中特工兔(轰炸)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_tegongtu",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_tegongtu",
+  "images": [
+    {
+      "file": "feiji_tegongtu_-4143988783884505102.png",
+      "name": "feiji_tegongtu",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -4143988783884505102,
+      "source": "CAB-20abedfaffa1edd8e76d5a91bd771891"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,83 @@
+
+feiji_chiyanrongyuan.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beimao
+  rotate: false
+  xy: 2, 94
+  size: 267, 82
+  orig: 267, 82
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 540
+  size: 812, 447
+  orig: 812, 447
+  offset: 0, 0
+  index: -1
+leg_b1
+  rotate: false
+  xy: 616, 34
+  size: 146, 142
+  orig: 146, 142
+  offset: 0, 0
+  index: -1
+leg_b2
+  rotate: true
+  xy: 454, 41
+  size: 135, 160
+  orig: 135, 160
+  offset: 0, 0
+  index: -1
+leg_f2
+  rotate: false
+  xy: 743, 307
+  size: 57, 115
+  orig: 57, 115
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 178
+  size: 739, 360
+  orig: 739, 360
+  offset: 0, 0
+  index: -1
+zong_1
+  rotate: true
+  xy: 743, 424
+  size: 114, 63
+  orig: 114, 63
+  offset: 0, 0
+  index: -1
+zong_2
+  rotate: true
+  xy: 816, 773
+  size: 214, 152
+  orig: 214, 152
+  offset: 0, 0
+  index: -1
+zong_3
+  rotate: true
+  xy: 816, 560
+  size: 211, 128
+  orig: 211, 128
+  offset: 0, 0
+  index: -1
+zong_44
+  rotate: false
+  xy: 2, 2
+  size: 245, 90
+  orig: 245, 90
+  offset: 0, 0
+  index: -1
+zong_5
+  rotate: false
+  xy: 271, 102
+  size: 181, 74
+  orig: 181, 74
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yaoshui",
+  "model": "zidan_yaoshui",
+  "name": "怪奇药水子弹",
+  "names": [
+    "怪奇药水子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yaoshui",
+  "path": "battle-assets/炮弹/item__zidan_yaoshui",
+  "images": [
+    {
+      "file": "zidan_yaoshui_-4776654206301388672.png",
+      "name": "zidan_yaoshui",
+      "width": 127,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -4776654206301388672,
+      "source": "CAB-167dd4dee79ba9d9dead9463b67c5bb7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yaoshui/zidan_yaoshui_-4776654206301388672.png"
+}

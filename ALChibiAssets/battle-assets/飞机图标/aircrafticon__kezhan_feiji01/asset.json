@@ -1,0 +1,34 @@
+{
+  "id": "aircrafticon__kezhan_feiji01",
+  "model": "kezhan_feiji01",
+  "name": "【2026莫斯科UR活动】东煌风味 航母战斗机 Lv1",
+  "names": [
+    "【2026莫斯科UR活动】东煌风味 航母战斗机 Lv1",
+    "【2026莫斯科UR活动】东煌风味 航母战斗机 Lv2",
+    "【2026莫斯科UR活动】东煌风味 航母战斗机 Lv3",
+    "【2026莫斯科UR活动】东煌风味 航母战斗机 Lv4",
+    "【2026莫斯科UR活动】东煌风味 航母战斗机 Lv5",
+    "【2026莫斯科UR活动B】精英蛋船 东煌风味航母 战斗机",
+    "【2026莫斯科UR活动D】精英蛋船 东煌风味航母 战斗机",
+    "【2026莫斯科UR活动SP】精英蛋船 东煌风味航母 战斗机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/kezhan_feiji01",
+  "path": "battle-assets/飞机图标/aircrafticon__kezhan_feiji01",
+  "images": [
+    {
+      "file": "kezhan_feiji01_-905951468914557229.png",
+      "name": "kezhan_feiji01",
+      "width": 45,
+      "height": 36,
+      "role": "原始精灵",
+      "path_id": -905951468914557229,
+      "source": "CAB-9eaa3ac40e35ecb26dfcdee48df08b0c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

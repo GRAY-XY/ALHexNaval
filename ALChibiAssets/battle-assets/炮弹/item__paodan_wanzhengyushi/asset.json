@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_wanzhengyushi",
+  "model": "paodan_wanzhengyushi",
+  "name": "君子良佩炮弹",
+  "names": [
+    "君子良佩炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_wanzhengyushi",
+  "path": "battle-assets/炮弹/item__paodan_wanzhengyushi",
+  "images": [
+    {
+      "file": "paodan_wanzhengyushi_-5137640362080122055.png",
+      "name": "paodan_wanzhengyushi",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5137640362080122055,
+      "source": "CAB-33019abae6b9823f559b9d418034a46d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_wanzhengyushi/paodan_wanzhengyushi_-5137640362080122055.png",
+  "spine": {
+    "skel": "paodan_wanzhengyushi.skel",
+    "atlas": "paodan_wanzhengyushi.atlas",
+    "pages": [
+      "paodan_wanzhengyushi.png"
+    ]
+  }
+}

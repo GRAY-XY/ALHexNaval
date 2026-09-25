@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_dengpai",
+  "model": "yulei_dengpai",
+  "name": "霓虹灯牌鱼雷",
+  "names": [
+    "霓虹灯牌鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dengpai",
+  "path": "battle-assets/鱼雷/item__yulei_dengpai",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "yulei_dengpai.skel",
+    "atlas": "yulei_dengpai.atlas",
+    "pages": [
+      "yulei_dengpai.png"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "item__gulitejineng_gridlight",
+  "model": "gulitejineng_gridlight",
+  "name": "gulitejineng_gridlight",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulitejineng_gridlight",
+  "path": "battle-assets/炮弹/item__gulitejineng_gridlight",
+  "images": [
+    {
+      "file": "daoguang01_-257205868625706453.png",
+      "name": "daoguang01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -257205868625706453,
+      "source": "CAB-f58c4107f698ab720ac3def02004580f"
+    },
+    {
+      "file": "daoguang02_-152855139365349084.png",
+      "name": "daoguang02",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -152855139365349084,
+      "source": "CAB-f58c4107f698ab720ac3def02004580f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19531,
+    19533,
+    855637,
+    855644
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulitejineng_gridlight/daoguang01_-257205868625706453.png"
+}

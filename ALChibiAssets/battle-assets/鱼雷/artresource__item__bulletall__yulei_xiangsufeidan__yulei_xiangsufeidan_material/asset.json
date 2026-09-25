@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yulei_xiangsufeidan__yulei_xiangsufeidan_material",
+  "model": "yulei_xiangsufeidan_material",
+  "name": "yulei_xiangsufeidan_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_xiangsufeidan/yulei_xiangsufeidan_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_xiangsufeidan__yulei_xiangsufeidan_material",
+  "images": [
+    {
+      "file": "yulei_xiangsufeidan_-6825841038362548376.png",
+      "name": "yulei_xiangsufeidan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6825841038362548376,
+      "source": "CAB-3f361a682f5320e3906d527bb1ff8dec"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

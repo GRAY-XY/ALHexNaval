@@ -1,0 +1,45 @@
+{
+  "id": "chargo__feiji_dujiajiu1",
+  "model": "feiji_dujiajiu1",
+  "name": "【2026DOA三期EX普通】BOSS 伊莉丝 常驻轰炸机",
+  "names": [
+    "【2026DOA三期EX普通】BOSS 伊莉丝 常驻轰炸机",
+    "【2026DOA三期活动】假日花船 航母轰炸机 Lv1",
+    "【2026DOA三期活动】假日花船 航母轰炸机 Lv2",
+    "【2026DOA三期活动】假日花船 航母轰炸机 Lv3",
+    "【2026DOA三期活动】假日花船 航母轰炸机 Lv4",
+    "【2026DOA三期活动】假日花船 航母轰炸机 Lv5",
+    "日光浴啾(鱼雷)",
+    "日光浴啾(战斗)",
+    "日光浴啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_dujiajiu1",
+  "path": "battle-assets/飞机/chargo__feiji_dujiajiu1",
+  "images": [
+    {
+      "file": "feiji_dujiajiu1_6839243853615772610.png",
+      "name": "feiji_dujiajiu1",
+      "width": 256,
+      "height": 214,
+      "role": "战斗贴图",
+      "path_id": 6839243853615772610,
+      "source": "CAB-d5fab85d8b530ef3aa1df9c274cc6f78"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_dujiajiu1/feiji_dujiajiu1_6839243853615772610.png"
+}

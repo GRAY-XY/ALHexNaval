@@ -1,0 +1,45 @@
+{
+  "id": "item__deepcharge",
+  "model": "deepcharge",
+  "name": "deepcharge",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/deepcharge",
+  "path": "battle-assets/炮弹/item__deepcharge",
+  "images": [
+    {
+      "file": "deepcharge_5498630062932453105.png",
+      "name": "deepcharge",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": 5498630062932453105,
+      "source": "CAB-6132c9abe8caba8d2d12711e15470295"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    701,
+    1811,
+    1812,
+    1813,
+    1814,
+    1815,
+    1819,
+    1820,
+    1842,
+    19454,
+    19464,
+    19986,
+    80008,
+    80013,
+    80016,
+    80017,
+    80018,
+    164841
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__deepcharge/deepcharge_5498630062932453105.png"
+}

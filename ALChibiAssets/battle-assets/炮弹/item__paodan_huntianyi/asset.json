@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_huntianyi",
+  "model": "paodan_huntianyi",
+  "name": "星轨遗器炮弹",
+  "names": [
+    "星轨遗器炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_huntianyi",
+  "path": "battle-assets/炮弹/item__paodan_huntianyi",
+  "images": [
+    {
+      "file": "particles01_-3310787673558051681.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3310787673558051681,
+      "source": "CAB-df084e49407f95dd3a56b2b85fd27ee3"
+    },
+    {
+      "file": "paodan_huntianyi_-2378954924711880310.png",
+      "name": "paodan_huntianyi",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2378954924711880310,
+      "source": "CAB-df084e49407f95dd3a56b2b85fd27ee3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huntianyi/particles01_-3310787673558051681.png",
+  "spine": {
+    "skel": "paodan_huntianyi.skel",
+    "atlas": "paodan_huntianyi.atlas",
+    "pages": [
+      "paodan_huntianyi.png"
+    ]
+  }
+}

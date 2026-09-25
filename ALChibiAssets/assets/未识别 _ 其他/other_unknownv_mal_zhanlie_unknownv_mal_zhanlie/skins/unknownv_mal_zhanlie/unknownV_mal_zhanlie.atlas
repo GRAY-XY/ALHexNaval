@@ -1,0 +1,41 @@
+
+unknownV_mal_zhanlie.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1
+  rotate: true
+  xy: 468, 103
+  size: 775, 464
+  orig: 775, 464
+  offset: 0, 0
+  index: -1
+hei_1_f
+  rotate: true
+  xy: 2, 103
+  size: 775, 464
+  orig: 775, 464
+  offset: 0, 0
+  index: -1
+hong_1
+  rotate: true
+  xy: 934, 98
+  size: 338, 275
+  orig: 338, 275
+  offset: 0, 0
+  index: -1
+hong_2
+  rotate: true
+  xy: 934, 438
+  size: 440, 404
+  orig: 440, 404
+  offset: 0, 0
+  index: -1
+yan
+  rotate: true
+  xy: 2, 2
+  size: 99, 51
+  orig: 99, 51
+  offset: 0, 0
+  index: -1

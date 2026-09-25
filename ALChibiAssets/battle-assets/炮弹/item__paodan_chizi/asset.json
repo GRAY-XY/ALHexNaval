@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_chizi",
+  "model": "paodan_chizi",
+  "name": "三角尺炮弹",
+  "names": [
+    "三角尺炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chizi",
+  "path": "battle-assets/炮弹/item__paodan_chizi",
+  "images": [
+    {
+      "file": "sanjiaochi01_7566524569978328719.png",
+      "name": "sanjiaochi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7566524569978328719,
+      "source": "CAB-c740fb2e60e1552cce05496a28f0777b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chizi/sanjiaochi01_7566524569978328719.png"
+}

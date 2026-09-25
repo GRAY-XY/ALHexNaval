@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_kuwu1",
+  "model": "yulei_kuwu1",
+  "name": "yulei_kuwu1",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_kuwu1",
+  "path": "battle-assets/鱼雷/item__yulei_kuwu1",
+  "images": [
+    {
+      "file": "yulei_kuwu_-1114080472937396348.png",
+      "name": "yulei_kuwu",
+      "width": 128,
+      "height": 24,
+      "role": "战斗贴图",
+      "path_id": -1114080472937396348,
+      "source": "CAB-d33e9d7a6198161e0a1597d88e354c1a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19959
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_kuwu1/yulei_kuwu_-1114080472937396348.png"
+}

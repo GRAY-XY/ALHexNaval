@@ -1,0 +1,35 @@
+{
+  "id": "chargo__haibao_yulei",
+  "model": "haibao_yulei",
+  "name": "海豹鱼雷机",
+  "names": [
+    "海豹鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/haibao_yulei",
+  "path": "battle-assets/飞机/chargo__haibao_yulei",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__haibao_yulei/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "haibaoyuleiji.skel",
+    "atlas": "haibaoyuleiji.atlas",
+    "pages": [
+      "haibaoyuleiji.png"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_jingjimeigui",
+  "model": "yulei_jingjimeigui",
+  "name": "荆棘蔷薇鱼雷",
+  "names": [
+    "荆棘蔷薇鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jingjimeigui",
+  "path": "battle-assets/鱼雷/item__yulei_jingjimeigui",
+  "images": [
+    {
+      "file": "yulei_jingjimeigui_-1067713200117770393.png",
+      "name": "yulei_jingjimeigui",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1067713200117770393,
+      "source": "CAB-f0703abdedfb42125abe9c1a993fb5db"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jingjimeigui/yulei_jingjimeigui_-1067713200117770393.png",
+  "spine": {
+    "skel": "yulei_jingjimeigui.skel",
+    "atlas": "yulei_jingjimeigui.atlas",
+    "pages": [
+      "yulei_jingjimeigui.png"
+    ]
+  }
+}

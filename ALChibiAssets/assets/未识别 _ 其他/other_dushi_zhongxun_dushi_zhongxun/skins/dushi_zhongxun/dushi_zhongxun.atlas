@@ -1,0 +1,132 @@
+
+dushi_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 236, 2
+  size: 560, 311
+  orig: 560, 311
+  offset: 0, 0
+  index: -1
+dengpai_1
+  rotate: false
+  xy: 803, 695
+  size: 88, 73
+  orig: 88, 73
+  offset: 0, 0
+  index: -1
+dengpai_2
+  rotate: true
+  xy: 251, 719
+  size: 49, 54
+  orig: 49, 54
+  offset: 0, 0
+  index: -1
+dengpai_3
+  rotate: true
+  xy: 195, 720
+  size: 48, 54
+  orig: 48, 54
+  offset: 0, 0
+  index: -1
+dengpai_4
+  rotate: true
+  xy: 565, 537
+  size: 157, 178
+  orig: 157, 178
+  offset: 0, 0
+  index: -1
+dengpai_5
+  rotate: false
+  xy: 307, 714
+  size: 86, 54
+  orig: 86, 54
+  offset: 0, 0
+  index: -1
+dengpai_6
+  rotate: false
+  xy: 119, 721
+  size: 74, 47
+  orig: 74, 47
+  offset: 0, 0
+  index: -1
+guang_1
+  rotate: false
+  xy: 565, 315
+  size: 248, 217
+  orig: 248, 217
+  offset: 0, 0
+  index: -1
+guang_2
+  rotate: false
+  xy: 745, 534
+  size: 159, 159
+  orig: 159, 159
+  offset: 0, 0
+  index: -1
+guang_3
+  rotate: true
+  xy: 2, 143
+  size: 224, 232
+  orig: 224, 232
+  offset: 0, 0
+  index: -1
+guangquan_1
+  rotate: false
+  xy: 41, 738
+  size: 37, 30
+  orig: 37, 30
+  offset: 0, 0
+  index: -1
+guangquan_2
+  rotate: false
+  xy: 80, 738
+  size: 37, 30
+  orig: 37, 30
+  offset: 0, 0
+  index: -1
+guangquan_3
+  rotate: false
+  xy: 2, 739
+  size: 37, 29
+  orig: 37, 29
+  offset: 0, 0
+  index: -1
+lou_1
+  rotate: true
+  xy: 395, 696
+  size: 72, 188
+  orig: 72, 188
+  offset: 0, 0
+  index: -1
+lou_2
+  rotate: true
+  xy: 585, 696
+  size: 72, 216
+  orig: 72, 216
+  offset: 0, 0
+  index: -1
+zx01
+  rotate: false
+  xy: 2, 587
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1
+zx02
+  rotate: false
+  xy: 2, 478
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1
+zx03
+  rotate: false
+  xy: 2, 369
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1

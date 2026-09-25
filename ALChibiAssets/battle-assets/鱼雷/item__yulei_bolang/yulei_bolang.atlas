@@ -1,0 +1,69 @@
+
+yulei_bolang.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bailang_1
+  rotate: true
+  xy: 2, 5
+  size: 121, 61
+  orig: 121, 61
+  offset: 0, 0
+  index: -1
+bailang_2
+  rotate: false
+  xy: 286, 3
+  size: 154, 56
+  orig: 154, 56
+  offset: 0, 0
+  index: -1
+bailang_3
+  rotate: false
+  xy: 442, 10
+  size: 160, 49
+  orig: 160, 49
+  offset: 0, 0
+  index: -1
+dilang_1
+  rotate: false
+  xy: 500, 62
+  size: 210, 64
+  orig: 210, 64
+  offset: 0, 0
+  index: -1
+dilang_2
+  rotate: false
+  xy: 712, 62
+  size: 210, 64
+  orig: 210, 64
+  offset: 0, 0
+  index: -1
+dilang_3
+  rotate: false
+  xy: 65, 2
+  size: 219, 53
+  orig: 219, 53
+  offset: 0, 0
+  index: -1
+lanlang_1
+  rotate: false
+  xy: 283, 61
+  size: 215, 65
+  orig: 215, 65
+  offset: 0, 0
+  index: -1
+lanlang_2
+  rotate: false
+  xy: 65, 57
+  size: 216, 69
+  orig: 216, 69
+  offset: 0, 0
+  index: -1
+lanlang_3
+  rotate: false
+  xy: 604, 2
+  size: 240, 58
+  orig: 240, 58
+  offset: 0, 0
+  index: -1

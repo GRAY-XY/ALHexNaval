@@ -1,0 +1,76 @@
+
+dh_gongjijian.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 122
+  size: 694, 273
+  orig: 694, 273
+  offset: 0, 0
+  index: -1
+guangqiu
+  rotate: false
+  xy: 698, 191
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+guangqiu2
+  rotate: false
+  xy: 698, 259
+  size: 67, 66
+  orig: 67, 66
+  offset: 0, 0
+  index: -1
+lianjie
+  rotate: false
+  xy: 727, 173
+  size: 6, 16
+  orig: 6, 16
+  offset: 0, 0
+  index: -1
+lianjie2
+  rotate: false
+  xy: 698, 173
+  size: 6, 16
+  orig: 6, 16
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 2
+  size: 672, 20
+  orig: 672, 20
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 24
+  size: 665, 25
+  orig: 665, 25
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 94
+  size: 652, 26
+  orig: 652, 26
+  offset: 0, 0
+  index: -1
+waike
+  rotate: true
+  xy: 698, 327
+  size: 68, 69
+  orig: 68, 69
+  offset: 0, 0
+  index: -1
+waike2
+  rotate: false
+  xy: 656, 51
+  size: 69, 69
+  orig: 69, 69
+  offset: 0, 0
+  index: -1

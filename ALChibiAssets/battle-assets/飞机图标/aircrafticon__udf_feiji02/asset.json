@@ -1,0 +1,40 @@
+{
+  "id": "aircrafticon__udf_feiji02",
+  "model": "udf_feiji02",
+  "name": "【量产型】联合防卫部队-航母综合无人机 Lv1",
+  "names": [
+    "【量产型】联合防卫部队-航母综合无人机 Lv1",
+    "【量产型】联合防卫部队-航母综合无人机 Lv2",
+    "【量产型】联合防卫部队-航母综合无人机 Lv3",
+    "【量产型】联合防卫部队-航母综合无人机 Lv4",
+    "【量产型】联合防卫部队-航母综合无人机 Lv5",
+    "【大世界】大黄蜂meta 空袭 UDF卫星轰炸机 Lv1",
+    "【大世界】大黄蜂meta 空袭 UDF卫星轰炸机 Lv2",
+    "【大世界】大黄蜂meta 空袭 UDF卫星轰炸机 Lv3",
+    "【大世界】大黄蜂meta 空袭 UDF卫星轰炸机 Lv4",
+    "【大世界】大黄蜂meta 空袭 UDF卫星轰炸机 Lv5",
+    "【2023关岛活动B1】BOSS 卡拉布里亚之骄傲 第一波 舰载机2",
+    "【2023关岛活动D1】BOSS 卡拉布里亚之骄傲 第一波 舰载机2",
+    "【2023关岛活动SP】BOSS 卡拉布里亚之骄傲 第一波 舰载机2",
+    "【2025列克星敦II活动 剧情战】大黄蜂META 全图轰炸 飞机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/udf_feiji02",
+  "path": "battle-assets/飞机图标/aircrafticon__udf_feiji02",
+  "images": [
+    {
+      "file": "udf_feiji02_-613901461239949000.png",
+      "name": "udf_feiji02",
+      "width": 45,
+      "height": 38,
+      "role": "原始精灵",
+      "path_id": -613901461239949000,
+      "source": "CAB-f4ddea4c5b118d44eee631a5428a559a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

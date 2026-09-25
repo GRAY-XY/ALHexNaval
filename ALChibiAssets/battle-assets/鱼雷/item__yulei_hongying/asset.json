@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_hongying",
+  "model": "yulei_hongying",
+  "name": "一枝红樱鱼雷",
+  "names": [
+    "一枝红樱鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hongying",
+  "path": "battle-assets/鱼雷/item__yulei_hongying",
+  "images": [
+    {
+      "file": "yulei_hongying_-5769087454945143474.png",
+      "name": "yulei_hongying",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5769087454945143474,
+      "source": "CAB-1ae711eed3642c6dc4047e6ad47b0c5b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hongying/yulei_hongying_-5769087454945143474.png",
+  "spine": {
+    "skel": "yulei_hongying.skel",
+    "atlas": "yulei_hongying.atlas",
+    "pages": [
+      "yulei_hongying.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__torpedo_xiangpi",
+  "model": "torpedo_xiangpi",
+  "name": "橡皮擦鱼雷",
+  "names": [
+    "橡皮擦鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_xiangpi",
+  "path": "battle-assets/鱼雷/item__torpedo_xiangpi",
+  "images": [
+    {
+      "file": "torpedo_xiangpi_3016833212031768246.png",
+      "name": "torpedo_xiangpi",
+      "width": 256,
+      "height": 164,
+      "role": "战斗贴图",
+      "path_id": 3016833212031768246,
+      "source": "CAB-bfedf41f6a3e3e3d34d0798ca88015d1"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo_xiangpi/torpedo_xiangpi_3016833212031768246.png"
+}

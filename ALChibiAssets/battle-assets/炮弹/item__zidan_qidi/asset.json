@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_qidi",
+  "model": "zidan_qidi",
+  "name": "铜质汽笛子弹",
+  "names": [
+    "铜质汽笛子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_qidi",
+  "path": "battle-assets/炮弹/item__zidan_qidi",
+  "images": [
+    {
+      "file": "zidan_qidi_-8083600731388107484.png",
+      "name": "zidan_qidi",
+      "width": 128,
+      "height": 33,
+      "role": "战斗贴图",
+      "path_id": -8083600731388107484,
+      "source": "CAB-929004ef9cdfc1a37c4c00282c901714"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_qidi/zidan_qidi_-8083600731388107484.png"
+}

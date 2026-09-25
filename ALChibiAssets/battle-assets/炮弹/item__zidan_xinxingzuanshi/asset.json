@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xinxingzuanshi",
+  "model": "zidan_xinxingzuanshi",
+  "name": "海蓝心钻子弹",
+  "names": [
+    "海蓝心钻子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xinxingzuanshi",
+  "path": "battle-assets/炮弹/item__zidan_xinxingzuanshi",
+  "images": [
+    {
+      "file": "zidan_xinxingzuanshi_2261105062261875802.png",
+      "name": "zidan_xinxingzuanshi",
+      "width": 128,
+      "height": 31,
+      "role": "战斗贴图",
+      "path_id": 2261105062261875802,
+      "source": "CAB-a8b1165bacb361982c8a00aa3cf5dd1a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xinxingzuanshi/zidan_xinxingzuanshi_2261105062261875802.png"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__daodan",
+  "model": "daodan",
+  "name": "daodan",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/daodan",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__daodan",
+  "images": [
+    {
+      "file": "daodan_-59307757992001476.png",
+      "name": "daodan",
+      "width": 686,
+      "height": 309,
+      "role": "原始精灵",
+      "path_id": -59307757992001476,
+      "source": "CAB-98b890a6ff3c39e3a97acd06fc4467ee"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

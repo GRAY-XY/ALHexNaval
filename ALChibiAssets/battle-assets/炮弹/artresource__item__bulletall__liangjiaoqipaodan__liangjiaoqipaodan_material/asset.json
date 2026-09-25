@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__liangjiaoqipaodan__liangjiaoqipaodan_material",
+  "model": "liangjiaoqipaodan_material",
+  "name": "liangjiaoqipaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/liangjiaoqipaodan/liangjiaoqipaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__liangjiaoqipaodan__liangjiaoqipaodan_material",
+  "images": [
+    {
+      "file": "liangjiaoqipaodan_-1482098553717063982.png",
+      "name": "liangjiaoqipaodan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1482098553717063982,
+      "source": "CAB-7a78128048e3ab79ed834fbf4cb0e085"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

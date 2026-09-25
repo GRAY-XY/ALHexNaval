@@ -1,0 +1,25 @@
+{
+  "id": "bulletall__zidan_caisefenbi",
+  "model": "zidan_caisefenbi",
+  "name": "zidan_caisefenbi",
+  "names": [],
+  "category": "炮弹",
+  "source": "bulletall/zidan_caisefenbi",
+  "path": "battle-assets/炮弹/bulletall__zidan_caisefenbi",
+  "images": [
+    {
+      "file": "zidan_caisefenbi_9142593279118932455.png",
+      "name": "zidan_caisefenbi",
+      "width": 128,
+      "height": 28,
+      "role": "原始精灵",
+      "path_id": 9142593279118932455,
+      "source": "CAB-37c553b310b987fde6c8bedaafeef65a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

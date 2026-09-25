@@ -1,0 +1,29 @@
+{
+  "id": "item__shenyuan1_yingguang",
+  "model": "shenyuan1_yingguang",
+  "name": "shenyuan1_yingguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shenyuan1_yingguang",
+  "path": "battle-assets/炮弹/item__shenyuan1_yingguang",
+  "images": [
+    {
+      "file": "yingguangzidan01_-341729067895638898.png",
+      "name": "yingguangzidan01",
+      "width": 233,
+      "height": 78,
+      "role": "战斗贴图",
+      "path_id": -341729067895638898,
+      "source": "CAB-866804e4bc47cd17c309662d23a987c7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    855101,
+    20401000
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shenyuan1_yingguang/yingguangzidan01_-341729067895638898.png"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "item__shanluan_feiniao_zuozhan",
+  "model": "shanluan_feiniao_zuozhan",
+  "name": "shanluan_feiniao_zuozhan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_feiniao_zuozhan",
+  "path": "battle-assets/炮弹/item__shanluan_feiniao_zuozhan",
+  "images": [],
+  "particle_systems": 6,
+  "animations": [],
+  "bullet_ids": [
+    163612,
+    163651,
+    163653,
+    163661
+  ],
+  "has_preview": false,
+  "prefab": true
+}

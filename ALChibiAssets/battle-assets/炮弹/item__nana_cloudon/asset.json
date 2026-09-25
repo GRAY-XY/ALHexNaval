@@ -1,0 +1,46 @@
+{
+  "id": "item__nana_cloudon",
+  "model": "nana_cloudon",
+  "name": "nana_cloudon",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/nana_cloudon",
+  "path": "battle-assets/炮弹/item__nana_cloudon",
+  "images": [
+    {
+      "file": "shandian03_2517536296381062791.png",
+      "name": "shandian03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2517536296381062791,
+      "source": "CAB-d79110ec69c2f08051e2198fde129bf5"
+    },
+    {
+      "file": "shandian01_3635574525338120245.png",
+      "name": "shandian01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3635574525338120245,
+      "source": "CAB-d79110ec69c2f08051e2198fde129bf5"
+    },
+    {
+      "file": "yun01_4160381598918463957.png",
+      "name": "yun01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4160381598918463957,
+      "source": "CAB-d79110ec69c2f08051e2198fde129bf5"
+    }
+  ],
+  "particle_systems": 33,
+  "animations": [],
+  "bullet_ids": [
+    166712
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__nana_cloudon/shandian03_2517536296381062791.png"
+}

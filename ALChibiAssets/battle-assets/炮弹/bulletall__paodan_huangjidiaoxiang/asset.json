@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_huangjidiaoxiang",
+  "model": "paodan_huangjidiaoxiang",
+  "name": "石化啾啾像炮弹",
+  "names": [
+    "石化啾啾像炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_huangjidiaoxiang",
+  "path": "battle-assets/炮弹/bulletall__paodan_huangjidiaoxiang",
+  "images": [
+    {
+      "file": "paodan_huangjidiaoxiang_3750118470714627223.png",
+      "name": "paodan_huangjidiaoxiang",
+      "width": 128,
+      "height": 87,
+      "role": "原始精灵",
+      "path_id": 3750118470714627223,
+      "source": "CAB-de5d8a75325009fbcfb8cce0af468148"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

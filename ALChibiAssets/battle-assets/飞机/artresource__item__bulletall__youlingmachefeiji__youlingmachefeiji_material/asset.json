@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__youlingmachefeiji__youlingmachefeiji_material",
+  "model": "youlingmachefeiji_material",
+  "name": "youlingmachefeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/youlingmachefeiji/youlingmachefeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__youlingmachefeiji__youlingmachefeiji_material",
+  "images": [
+    {
+      "file": "youlingmachefeiji_-7246984508465910798.png",
+      "name": "youlingmachefeiji",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7246984508465910798,
+      "source": "CAB-dc85ca4ea881072fc61c5e9443b7eb96"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

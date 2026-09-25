@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_zhentou",
+  "model": "zidan_zhentou",
+  "name": "海浪抱枕子弹",
+  "names": [
+    "海浪抱枕子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_zhentou",
+  "path": "battle-assets/炮弹/bulletall__zidan_zhentou",
+  "images": [
+    {
+      "file": "zidan_zhentou_4438955560564934012.png",
+      "name": "zidan_zhentou",
+      "width": 128,
+      "height": 81,
+      "role": "原始精灵",
+      "path_id": 4438955560564934012,
+      "source": "CAB-9349172fca27ba23d813e681d2c79ea2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_denglong",
+  "model": "paodan_denglong",
+  "name": "炮弹·妖怪灯笼",
+  "names": [
+    "炮弹·妖怪灯笼"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_denglong",
+  "path": "battle-assets/炮弹/item__paodan_denglong",
+  "images": [
+    {
+      "file": "paodan_denglong_682495392627143474.png",
+      "name": "paodan_denglong",
+      "width": 128,
+      "height": 102,
+      "role": "战斗贴图",
+      "path_id": 682495392627143474,
+      "source": "CAB-f66b6657c57c9444cab16244bf35cfcc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_denglong/paodan_denglong_682495392627143474.png"
+}

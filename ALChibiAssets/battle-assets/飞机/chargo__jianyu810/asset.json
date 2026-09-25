@@ -1,0 +1,44 @@
+{
+  "id": "chargo__jianyu810",
+  "model": "jianyu810",
+  "name": "剑鱼(818中队)",
+  "names": [
+    "剑鱼(818中队)",
+    "【战术研修II】【蛋船】航母「Queen」-剑鱼(818中队)",
+    "【俾斯麦活动A3】鱼雷封锁",
+    "【俾斯麦活动C3】鱼雷封锁",
+    "【美系前哨站】鱼雷封锁",
+    "【意大利活动A3】BOSS-光辉 特殊鱼雷机",
+    "【意大利活动C3】BOSS-光辉 特殊鱼雷机",
+    "【大世界】皇家航母精英专属_剑鱼（皇家方舟）"
+  ],
+  "category": "飞机",
+  "source": "chargo/jianyu810",
+  "path": "battle-assets/飞机/chargo__jianyu810",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "jianyu810_-5839042932230318420.png",
+      "name": "jianyu810",
+      "width": 251,
+      "height": 235,
+      "role": "战斗贴图",
+      "path_id": -5839042932230318420,
+      "source": "CAB-91882a74fac2629d84612e04b25357d5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__jianyu810/aircraft_shadow_2192772484218123160.png"
+}

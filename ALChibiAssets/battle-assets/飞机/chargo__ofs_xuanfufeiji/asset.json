@@ -1,0 +1,53 @@
+{
+  "id": "chargo__ofs_xuanfufeiji",
+  "model": "ofs_xuanfufeiji",
+  "name": "【量产型】大洋联邦-中小型舰船悬浮无人机 I",
+  "names": [
+    "【量产型】大洋联邦-中小型舰船悬浮无人机 I",
+    "【量产型】大洋联邦-中小型舰船悬浮无人机 II",
+    "【量产型】大洋联邦-中小型舰船悬浮无人机 III",
+    "【量产型】大洋联邦-中小型舰船悬浮无人机 IV",
+    "【量产型】大洋联邦-中小型舰船悬浮无人机 V",
+    "【量产型】大洋联邦-大中型舰船悬浮无人机 I",
+    "【量产型】大洋联邦-大中型舰船悬浮无人机 II",
+    "【量产型】大洋联邦-大中型舰船悬浮无人机 III",
+    "【量产型】大洋联邦-大中型舰船悬浮无人机 IV",
+    "【量产型】大洋联邦-大中型舰船悬浮无人机 V",
+    "【精英】大洋联邦-大中型舰船悬浮无人机 I",
+    "【精英】大洋联邦-大中型舰船悬浮无人机 II",
+    "【精英】大洋联邦-大中型舰船悬浮无人机 III",
+    "【精英】大洋联邦-大中型舰船悬浮无人机 IV",
+    "【精英】大洋联邦-大中型舰船悬浮无人机 V",
+    "【2022美系活动A1】BOSS 重型驱逐舰 悬浮无人机",
+    "【2022美系活动C1】BOSS 重型驱逐舰 悬浮无人机"
+  ],
+  "category": "飞机",
+  "source": "chargo/ofs_xuanfufeiji",
+  "path": "battle-assets/飞机/chargo__ofs_xuanfufeiji",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "ofs_xuanfufeiji_5535381163789131054.png",
+      "name": "ofs_xuanfufeiji",
+      "width": 252,
+      "height": 217,
+      "role": "战斗贴图",
+      "path_id": 5535381163789131054,
+      "source": "CAB-66a994c2a5a7bf44a2e051b74ad1c30f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ofs_xuanfufeiji/aircraft_shadow_2192772484218123160.png"
+}

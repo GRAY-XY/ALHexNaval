@@ -1,0 +1,44 @@
+{
+  "id": "aircrafticon__chongying_u_feiji",
+  "model": "chongying_u_feiji",
+  "name": "【2025白凤UR活动】天原之息 航母战斗机 Lv1",
+  "names": [
+    "【2025白凤UR活动】天原之息 航母战斗机 Lv1",
+    "【2025白凤UR活动】天原之息 航母战斗机 Lv2",
+    "【2025白凤UR活动】天原之息 航母战斗机 Lv3",
+    "【2025白凤UR活动】天原之息 航母战斗机 Lv4",
+    "【2025白凤UR活动】天原之息 航母战斗机 Lv5",
+    "【2025白凤UR活动】天原之息 航母轰炸机 Lv1",
+    "【2025白凤UR活动】天原之息 航母轰炸机 Lv2",
+    "【2025白凤UR活动】天原之息 航母轰炸机 Lv3",
+    "【2025白凤UR活动】天原之息 航母轰炸机 Lv4",
+    "【2025白凤UR活动】天原之息 航母轰炸机 Lv5",
+    "【2025白凤UR活动C】精英蛋船 天原之息航母 战斗机",
+    "【2025白凤UR活动C】精英蛋船 天原之息航母 轰炸机",
+    "【2025白凤UR活动A3】BOSS 天原之息航母 战斗机",
+    "【2025白凤UR活动A3】BOSS 天原之息航母 轰炸机",
+    "【2025白凤UR活动A3】BOSS 天原之息航母 浮游炮",
+    "【2025白凤UR活动C3】BOSS 天原之息航母 战斗机",
+    "【2025白凤UR活动C3】BOSS 天原之息航母 轰炸机",
+    "【2025白凤UR活动C3】BOSS 天原之息航母 浮游炮"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/chongying_u_feiji",
+  "path": "battle-assets/飞机图标/aircrafticon__chongying_u_feiji",
+  "images": [
+    {
+      "file": "chongying_u_feiji_1841972805779239220.png",
+      "name": "chongying_u_feiji",
+      "width": 45,
+      "height": 28,
+      "role": "原始精灵",
+      "path_id": 1841972805779239220,
+      "source": "CAB-cdbdf99fd15edca25a483d334552dcc5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

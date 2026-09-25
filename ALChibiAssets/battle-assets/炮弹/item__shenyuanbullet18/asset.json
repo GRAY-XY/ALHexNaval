@@ -1,0 +1,32 @@
+{
+  "id": "item__shenyuanbullet18",
+  "model": "shenyuanbullet18",
+  "name": "shenyuanbullet18",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shenyuanbullet18",
+  "path": "battle-assets/炮弹/item__shenyuanbullet18",
+  "images": [
+    {
+      "file": "bullet10_-3253494292385249463.png",
+      "name": "bullet10",
+      "width": 119,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": -3253494292385249463,
+      "source": "CAB-1300cb821187cafa73185278fb1feec2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3310005,
+    3310207,
+    3311124,
+    3311126,
+    3316001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shenyuanbullet18/bullet10_-3253494292385249463.png"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "item__paodan_pugongying",
+  "model": "paodan_pugongying",
+  "name": "蒲公英炮弹",
+  "names": [
+    "蒲公英炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_pugongying",
+  "path": "battle-assets/炮弹/item__paodan_pugongying",
+  "images": [
+    {
+      "file": "trail01_-8016254495675804772.png",
+      "name": "trail01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8016254495675804772,
+      "source": "CAB-b1111c2a5679efe8ee750768f06f4038"
+    },
+    {
+      "file": "particles02_-2225788694477528790.png",
+      "name": "particles02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2225788694477528790,
+      "source": "CAB-b1111c2a5679efe8ee750768f06f4038"
+    },
+    {
+      "file": "particles01_3412641694115073169.png",
+      "name": "particles01",
+      "width": 64,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": 3412641694115073169,
+      "source": "CAB-b1111c2a5679efe8ee750768f06f4038"
+    },
+    {
+      "file": "paodan_pugongying_3744349462239112484.png",
+      "name": "paodan_pugongying",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3744349462239112484,
+      "source": "CAB-b1111c2a5679efe8ee750768f06f4038"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_pugongying/trail01_-8016254495675804772.png",
+  "spine": {
+    "skel": "paodan_pugongying.skel",
+    "atlas": "paodan_pugongying.atlas",
+    "pages": [
+      "paodan_pugongying.png"
+    ]
+  }
+}

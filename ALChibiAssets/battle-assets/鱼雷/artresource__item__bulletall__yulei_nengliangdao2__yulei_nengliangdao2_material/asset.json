@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yulei_nengliangdao2__yulei_nengliangdao2_material",
+  "model": "yulei_nengliangdao2_material",
+  "name": "yulei_nengliangdao2_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_nengliangdao2/yulei_nengliangdao2_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_nengliangdao2__yulei_nengliangdao2_material",
+  "images": [
+    {
+      "file": "yulei_nengliangdao2_-8186244395163102594.png",
+      "name": "yulei_nengliangdao2",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8186244395163102594,
+      "source": "CAB-d92488df9eda6b1bc35042ea3e744b88"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

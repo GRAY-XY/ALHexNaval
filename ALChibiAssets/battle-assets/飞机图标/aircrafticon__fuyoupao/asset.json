@@ -1,0 +1,47 @@
+{
+  "id": "aircrafticon__fuyoupao",
+  "model": "fuyoupao",
+  "name": "【大舰队北方商路BOSS】测试者 浮游炮",
+  "names": [
+    "【大舰队北方商路BOSS】测试者 浮游炮",
+    "【异色格B】【BOSS】魔鬼鱼浮游炮",
+    "【异色格D】【BOSS】魔鬼鱼浮游炮",
+    "测试者β型 浮游炮机体",
+    "【俾斯麦活动B2】BOSS –测试者β型-浮游炮",
+    "【俾斯麦活动D2】BOSS –测试者β型-浮游炮",
+    "【新美系活动A3】BOSS –测试者β型-浮游炮",
+    "【新美系活动C3】BOSS –测试者β型-浮游炮",
+    "【2020英系活动B3】BOSS 清除者 第一波 环绕浮游炮",
+    "【2020英系活动D3】BOSS 清除者 第一波 环绕浮游炮",
+    "【2020信浓活动普通T1】BOSS 测试者 第三波 浮游炮",
+    "【2020信浓活动普通T6】BOSS 测试者 一形态第一波 浮游炮",
+    "【2020信浓活动困难T1】BOSS 测试者 第三波 浮游炮",
+    "【2020信浓活动困难T6】BOSS 测试者 一形态第一波 浮游炮",
+    "魔鬼鱼浮游炮",
+    "【2022武藏活动A1】BOSS 测试者 第三波 浮游炮",
+    "【2022武藏活动A3】BOSS 清除者 第三波 环绕浮游炮",
+    "【2022武藏活动C1】BOSS 测试者 第三波 浮游炮",
+    "【2022武藏活动C3】BOSS 清除者 第三波 环绕浮游炮",
+    "【2023北联SP SP】BOSS 清除者γ型 第一波 环绕浮游炮",
+    "【2023北联SP EX】BOSS 清除者μ型 第一波 环绕浮游炮"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/fuyoupao",
+  "path": "battle-assets/飞机图标/aircrafticon__fuyoupao",
+  "images": [
+    {
+      "file": "fuyoupao_-7407739652719131592.png",
+      "name": "fuyoupao",
+      "width": 44,
+      "height": 34,
+      "role": "原始精灵",
+      "path_id": -7407739652719131592,
+      "source": "CAB-58ecc793ffe0bf357e19c8a0f64d18cd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

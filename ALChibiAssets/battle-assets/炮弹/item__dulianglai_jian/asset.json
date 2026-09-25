@@ -1,0 +1,36 @@
+{
+  "id": "item__dulianglai_jian",
+  "model": "dulianglai_jian",
+  "name": "dulianglai_jian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/dulianglai_jian",
+  "path": "battle-assets/炮弹/item__dulianglai_jian",
+  "images": [
+    {
+      "file": "jian_-8215640276643790080.png",
+      "name": "jian",
+      "width": 248,
+      "height": 32,
+      "role": "战斗贴图",
+      "path_id": -8215640276643790080,
+      "source": "CAB-6d78cbef6a35be0c5ca223338b21f4df"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    160927,
+    160928,
+    160929,
+    160930,
+    160931,
+    160932,
+    160933,
+    160934,
+    160935
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__dulianglai_jian/jian_-8215640276643790080.png"
+}

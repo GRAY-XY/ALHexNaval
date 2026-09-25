@@ -1,0 +1,104 @@
+
+diezhan_zhanlie.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 150, 267
+  size: 527, 243
+  orig: 527, 243
+  offset: 0, 0
+  index: -1
+che
+  rotate: true
+  xy: 150, 104
+  size: 161, 217
+  orig: 161, 217
+  offset: 0, 0
+  index: -1
+ji1
+  rotate: false
+  xy: 367, 45
+  size: 42, 57
+  orig: 42, 57
+  offset: 0, 0
+  index: -1
+ji2
+  rotate: false
+  xy: 309, 45
+  size: 56, 57
+  orig: 56, 57
+  offset: 0, 0
+  index: -1
+lajitong
+  rotate: false
+  xy: 271, 43
+  size: 36, 59
+  orig: 36, 59
+  offset: 0, 0
+  index: -1
+lajitong2
+  rotate: false
+  xy: 233, 42
+  size: 36, 60
+  orig: 36, 60
+  offset: 0, 0
+  index: -1
+ludeng_2
+  rotate: true
+  xy: 2, 14
+  size: 80, 189
+  orig: 80, 189
+  offset: 0, 0
+  index: -1
+qiang_1
+  rotate: false
+  xy: 214, 13
+  size: 38, 23
+  orig: 38, 23
+  offset: 0, 0
+  index: -1
+qiang_2
+  rotate: true
+  xy: 254, 2
+  size: 38, 23
+  orig: 38, 23
+  offset: 0, 0
+  index: -1
+qiang_3
+  rotate: true
+  xy: 193, 2
+  size: 34, 19
+  orig: 34, 19
+  offset: 0, 0
+  index: -1
+weapon_HG_fire1
+  rotate: true
+  xy: 193, 38
+  size: 64, 38
+  orig: 64, 38
+  offset: 0, 0
+  index: -1
+zl01
+  rotate: true
+  xy: 46, 100
+  size: 410, 55
+  orig: 410, 55
+  offset: 0, 0
+  index: -1
+zl02
+  rotate: true
+  xy: 103, 103
+  size: 407, 45
+  orig: 407, 45
+  offset: 0, 0
+  index: -1
+zl03
+  rotate: true
+  xy: 2, 96
+  size: 414, 42
+  orig: 414, 42
+  offset: 0, 0
+  index: -1

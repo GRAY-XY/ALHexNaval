@@ -1,0 +1,35 @@
+{
+  "id": "item__heihailunna_fuyoupao",
+  "model": "heihailunna_fuyoupao",
+  "name": "heihailunna_fuyoupao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heihailunna_fuyoupao",
+  "path": "battle-assets/炮弹/item__heihailunna_fuyoupao",
+  "images": [
+    {
+      "file": "heihailunna_fuyoupao_7963725536249988672.png",
+      "name": "heihailunna_fuyoupao",
+      "width": 400,
+      "height": 400,
+      "role": "原始纹理",
+      "path_id": 7963725536249988672,
+      "source": "CAB-a49bc547ec8be8258b0c1eb6e6f01dce"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    29644035,
+    29644036,
+    29644037,
+    29644038,
+    29644039,
+    29644040,
+    29644041,
+    29644042
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heihailunna_fuyoupao/heihailunna_fuyoupao_7963725536249988672.png"
+}

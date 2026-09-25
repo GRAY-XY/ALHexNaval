@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_chongqiyulei",
+  "model": "yulei_chongqiyulei",
+  "name": "充气鱼雷",
+  "names": [
+    "充气鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chongqiyulei",
+  "path": "battle-assets/鱼雷/item__yulei_chongqiyulei",
+  "images": [
+    {
+      "file": "yulei_chongqiyulei_6728477805395469923.png",
+      "name": "yulei_chongqiyulei",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 6728477805395469923,
+      "source": "CAB-228b8aaed01df0bb384e125578ea57b6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chongqiyulei/yulei_chongqiyulei_6728477805395469923.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jinglingzhang",
+  "model": "yulei_jinglingzhang",
+  "name": "精灵之杖鱼雷",
+  "names": [
+    "精灵之杖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jinglingzhang",
+  "path": "battle-assets/鱼雷/item__yulei_jinglingzhang",
+  "images": [
+    {
+      "file": "yulei_jinglingzhang_-2690158930269684445.png",
+      "name": "yulei_jinglingzhang",
+      "width": 102,
+      "height": 105,
+      "role": "战斗贴图",
+      "path_id": -2690158930269684445,
+      "source": "CAB-38c2e1e402dec04e20233dbe8d3d9538"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jinglingzhang/yulei_jinglingzhang_-2690158930269684445.png"
+}

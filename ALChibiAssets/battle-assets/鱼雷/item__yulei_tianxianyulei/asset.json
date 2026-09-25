@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_tianxianyulei",
+  "model": "yulei_tianxianyulei",
+  "name": "天线鱼雷",
+  "names": [
+    "天线鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tianxianyulei",
+  "path": "battle-assets/鱼雷/item__yulei_tianxianyulei",
+  "images": [
+    {
+      "file": "yulei_tianxianyulei_-528137601636176579.png",
+      "name": "yulei_tianxianyulei",
+      "width": 128,
+      "height": 58,
+      "role": "战斗贴图",
+      "path_id": -528137601636176579,
+      "source": "CAB-2670acc53a781ac4ed35f253e6b4f24a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    855140
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tianxianyulei/yulei_tianxianyulei_-528137601636176579.png"
+}

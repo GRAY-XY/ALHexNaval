@@ -1,0 +1,41 @@
+
+paodan_shujushanchu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+base1
+  rotate: false
+  xy: 245, 27
+  size: 225, 196
+  orig: 225, 196
+  offset: 0, 0
+  index: -1
+base2
+  rotate: false
+  xy: 675, 38
+  size: 238, 185
+  orig: 238, 185
+  offset: 0, 0
+  index: -1
+base3
+  rotate: true
+  xy: 472, 36
+  size: 187, 201
+  orig: 187, 201
+  offset: 0, 0
+  index: -1
+guang
+  rotate: false
+  xy: 2, 2
+  size: 241, 221
+  orig: 241, 221
+  offset: 0, 0
+  index: -1
+guangdian
+  rotate: true
+  xy: 915, 126
+  size: 97, 54
+  orig: 97, 54
+  offset: 0, 0
+  index: -1

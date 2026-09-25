@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_huoshimo",
+  "model": "zidan_huoshimo",
+  "name": "火使魔子弹",
+  "names": [
+    "火使魔子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huoshimo",
+  "path": "battle-assets/炮弹/item__zidan_huoshimo",
+  "images": [
+    {
+      "file": "huoqiu01_8605516955639954394.png",
+      "name": "huoqiu01",
+      "width": 222,
+      "height": 142,
+      "role": "战斗贴图",
+      "path_id": 8605516955639954394,
+      "source": "CAB-d0826ce66aaa391e9c9264d9ba3328c1"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huoshimo/huoqiu01_8605516955639954394.png"
+}

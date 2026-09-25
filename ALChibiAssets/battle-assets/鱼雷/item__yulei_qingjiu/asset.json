@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_qingjiu",
+  "model": "yulei_qingjiu",
+  "name": "清酒鱼雷",
+  "names": [
+    "清酒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qingjiu",
+  "path": "battle-assets/鱼雷/item__yulei_qingjiu",
+  "images": [
+    {
+      "file": "yulei_qingjiu_-3531881511608623612.png",
+      "name": "yulei_qingjiu",
+      "width": 128,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": -3531881511608623612,
+      "source": "CAB-777f2835b55e5d4b355f4a97e56515a0"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qingjiu/yulei_qingjiu_-3531881511608623612.png"
+}

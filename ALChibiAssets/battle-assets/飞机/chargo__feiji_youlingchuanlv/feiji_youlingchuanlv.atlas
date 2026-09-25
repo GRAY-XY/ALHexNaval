@@ -1,0 +1,62 @@
+
+feiji_youlingchuanlv.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuan_b
+  rotate: true
+  xy: 2, 51
+  size: 199, 145
+  orig: 199, 145
+  offset: 0, 0
+  index: -1
+chuan_t1
+  rotate: true
+  xy: 228, 122
+  size: 128, 80
+  orig: 128, 80
+  offset: 0, 0
+  index: -1
+chushou_b1
+  rotate: true
+  xy: 186, 11
+  size: 39, 34
+  orig: 39, 34
+  offset: 0, 0
+  index: -1
+chushou_t1
+  rotate: false
+  xy: 64, 5
+  size: 59, 44
+  orig: 59, 44
+  offset: 0, 0
+  index: -1
+chushou_t2
+  rotate: false
+  xy: 2, 2
+  size: 60, 47
+  orig: 60, 47
+  offset: 0, 0
+  index: -1
+chushou_t3
+  rotate: true
+  xy: 222, 14
+  size: 36, 16
+  orig: 36, 16
+  offset: 0, 0
+  index: -1
+chushou_t4
+  rotate: false
+  xy: 125, 11
+  size: 59, 38
+  orig: 59, 38
+  offset: 0, 0
+  index: -1
+diguang_1
+  rotate: true
+  xy: 149, 52
+  size: 198, 77
+  orig: 198, 77
+  offset: 0, 0
+  index: -1

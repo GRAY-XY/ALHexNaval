@@ -1,0 +1,153 @@
+
+dushi_qingxun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 670, 9
+  size: 82, 78
+  orig: 82, 78
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 48
+  size: 462, 266
+  orig: 462, 266
+  offset: 0, 0
+  index: -1
+dengpai_1
+  rotate: false
+  xy: 525, 187
+  size: 97, 105
+  orig: 97, 105
+  offset: 0, 0
+  index: -1
+dengpai_2
+  rotate: true
+  xy: 70, 6
+  size: 40, 45
+  orig: 40, 45
+  offset: 0, 0
+  index: -1
+dengpai_3
+  rotate: true
+  xy: 737, 94
+  size: 58, 65
+  orig: 58, 65
+  offset: 0, 0
+  index: -1
+dengpai_4
+  rotate: true
+  xy: 687, 223
+  size: 69, 60
+  orig: 69, 60
+  offset: 0, 0
+  index: -1
+guang_1
+  rotate: false
+  xy: 525, 294
+  size: 203, 216
+  orig: 203, 216
+  offset: 0, 0
+  index: -1
+guang_2
+  rotate: true
+  xy: 270, 11
+  size: 145, 155
+  orig: 145, 155
+  offset: 0, 0
+  index: -1
+guanghuan_1
+  rotate: true
+  xy: 624, 215
+  size: 77, 61
+  orig: 77, 61
+  offset: 0, 0
+  index: -1
+guanghuan_2
+  rotate: true
+  xy: 674, 136
+  size: 77, 61
+  orig: 77, 61
+  offset: 0, 0
+  index: -1
+guanghuan_3
+  rotate: true
+  xy: 737, 154
+  size: 67, 54
+  orig: 67, 54
+  offset: 0, 0
+  index: -1
+guanghuan_4
+  rotate: true
+  xy: 750, 25
+  size: 67, 53
+  orig: 67, 53
+  offset: 0, 0
+  index: -1
+lou1
+  rotate: false
+  xy: 542, 9
+  size: 67, 176
+  orig: 67, 176
+  offset: 0, 0
+  index: -1
+lou2
+  rotate: false
+  xy: 427, 21
+  size: 61, 135
+  orig: 61, 135
+  offset: 0, 0
+  index: -1
+lou3
+  rotate: false
+  xy: 490, 21
+  size: 50, 135
+  orig: 50, 135
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: true
+  xy: 270, 158
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: true
+  xy: 355, 158
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: true
+  xy: 440, 158
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+ss1
+  rotate: true
+  xy: 2, 2
+  size: 44, 66
+  orig: 44, 66
+  offset: 0, 0
+  index: -1
+ss2
+  rotate: false
+  xy: 611, 93
+  size: 61, 92
+  orig: 61, 92
+  offset: 0, 0
+  index: -1
+ss3
+  rotate: false
+  xy: 611, 4
+  size: 57, 87
+  orig: 57, 87
+  offset: 0, 0
+  index: -1

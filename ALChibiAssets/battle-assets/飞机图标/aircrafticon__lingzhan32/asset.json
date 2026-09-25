@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__lingzhan32",
+  "model": "lingzhan32",
+  "name": "零战三二型",
+  "names": [
+    "零战三二型"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/lingzhan32",
+  "path": "battle-assets/飞机图标/aircrafticon__lingzhan32",
+  "images": [
+    {
+      "file": "lingzhan32_5595902177114128778.png",
+      "name": "lingzhan32",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 5595902177114128778,
+      "source": "CAB-69091fc32d5eb0d286b3f61e9b6c9610"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

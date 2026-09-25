@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_zhuqiqiu",
+  "model": "feiji_zhuqiqiu",
+  "name": "气球小猪(鱼雷)",
+  "names": [
+    "气球小猪(鱼雷)",
+    "气球小猪(战斗)",
+    "气球小猪(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_zhuqiqiu",
+  "path": "battle-assets/飞机/chargo__feiji_zhuqiqiu",
+  "images": [
+    {
+      "file": "feiji_zhuqiqiu_-6059748564442728894.png",
+      "name": "feiji_zhuqiqiu",
+      "width": 121,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -6059748564442728894,
+      "source": "CAB-5802fe50e6b495dbe62a6e4ab21de10d"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_zhuqiqiu/feiji_zhuqiqiu_-6059748564442728894.png"
+}

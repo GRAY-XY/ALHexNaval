@@ -1,0 +1,44 @@
+{
+  "id": "item__zidan_dongzhiqiqiu",
+  "model": "zidan_dongzhiqiqiu",
+  "name": "折扣气球子弹",
+  "names": [
+    "折扣气球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dongzhiqiqiu",
+  "path": "battle-assets/炮弹/item__zidan_dongzhiqiqiu",
+  "images": [
+    {
+      "file": "line03_-5797563441105356551.png",
+      "name": "line03",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5797563441105356551,
+      "source": "CAB-2280cd02c6f563bc8dab2af80681a47c"
+    },
+    {
+      "file": "zidan_dongzhiqiqiu_12123348969670626.png",
+      "name": "zidan_dongzhiqiqiu",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 12123348969670626,
+      "source": "CAB-2280cd02c6f563bc8dab2af80681a47c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dongzhiqiqiu/line03_-5797563441105356551.png",
+  "spine": {
+    "skel": "zidan_dongzhiqiqiu.skel",
+    "atlas": "zidan_dongzhiqiqiu.atlas",
+    "pages": [
+      "zidan_dongzhiqiqiu.png"
+    ]
+  }
+}

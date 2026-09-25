@@ -1,0 +1,48 @@
+{
+  "id": "chargo__feiji_ouxiangfeiting",
+  "model": "feiji_ouxiangfeiting",
+  "name": "如月千早空艇Lv1",
+  "names": [
+    "如月千早空艇Lv1",
+    "【偶像大师联动】舰载轰炸机I",
+    "【偶像大师联动】舰载轰炸机II",
+    "【偶像大师联动】舰载轰炸机III",
+    "【偶像大师联动】舰载轰炸机IV",
+    "【偶像大师联动】舰载轰炸机V",
+    "【偶像大师联动SP3】BOSS 如月千早 轰炸机",
+    "【偶像大师联动VSP】BOSS 如月千早 轰炸机",
+    "【偶像大师联动EX】BOSS 天海春香 地毯轰炸机",
+    "啾啾应援飞艇(鱼雷)",
+    "啾啾应援飞艇(战斗)",
+    "啾啾应援飞艇(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_ouxiangfeiting",
+  "path": "battle-assets/飞机/chargo__feiji_ouxiangfeiting",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_ouxiangfeiting_-3778473708539019072.png",
+      "name": "feiji_ouxiangfeiting",
+      "width": 256,
+      "height": 139,
+      "role": "战斗贴图",
+      "path_id": -3778473708539019072,
+      "source": "CAB-2199af14d499c77b6a9423010ddbc97d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_ouxiangfeiting/aircraft_shadow_2192772484218123160.png"
+}

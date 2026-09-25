@@ -1,0 +1,29 @@
+{
+  "id": "item__music_yulei",
+  "model": "music_yulei",
+  "name": "music_yulei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/music_yulei",
+  "path": "battle-assets/鱼雷/item__music_yulei",
+  "images": [
+    {
+      "file": "yinfu_11_-8861391129620017963.png",
+      "name": "yinfu_11",
+      "width": 141,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": -8861391129620017963,
+      "source": "CAB-60fef4716006e27b3cc291f4786f6bf9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    780008,
+    852114
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__music_yulei/yinfu_11_-8861391129620017963.png"
+}

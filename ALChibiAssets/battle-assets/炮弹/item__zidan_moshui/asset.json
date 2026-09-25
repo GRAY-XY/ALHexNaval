@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_moshui",
+  "model": "zidan_moshui",
+  "name": "墨韵流光子弹",
+  "names": [
+    "墨韵流光子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_moshui",
+  "path": "battle-assets/炮弹/item__zidan_moshui",
+  "images": [
+    {
+      "file": "zidan_moshui_5459502679967376976.png",
+      "name": "zidan_moshui",
+      "width": 126,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": 5459502679967376976,
+      "source": "CAB-40cc3e1f339cfb01d6443d2fe0944b7b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_moshui/zidan_moshui_5459502679967376976.png"
+}

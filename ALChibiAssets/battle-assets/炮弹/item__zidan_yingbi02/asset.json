@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yingbi02",
+  "model": "zidan_yingbi02",
+  "name": "魔术硬币子弹",
+  "names": [
+    "魔术硬币子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yingbi02",
+  "path": "battle-assets/炮弹/item__zidan_yingbi02",
+  "images": [
+    {
+      "file": "yingbi01_2122225339015257547.png",
+      "name": "yingbi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2122225339015257547,
+      "source": "CAB-b2e60d6383b3af243d57c30b5ef022ad"
+    }
+  ],
+  "particle_systems": 8,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yingbi02/yingbi01_2122225339015257547.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiangbin",
+  "model": "yulei_xiangbin",
+  "name": "饮品鱼雷",
+  "names": [
+    "饮品鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangbin",
+  "path": "battle-assets/鱼雷/item__yulei_xiangbin",
+  "images": [
+    {
+      "file": "yulei_xiangbin_6550728803342537648.png",
+      "name": "yulei_xiangbin",
+      "width": 128,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": 6550728803342537648,
+      "source": "CAB-46fa347ff90fbd52b2b24138b46a0bce"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiangbin/yulei_xiangbin_6550728803342537648.png"
+}

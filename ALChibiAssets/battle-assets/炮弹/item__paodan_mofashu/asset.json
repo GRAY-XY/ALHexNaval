@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_mofashu",
+  "model": "paodan_mofashu",
+  "name": "魔法书炮弹",
+  "names": [
+    "魔法书炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mofashu",
+  "path": "battle-assets/炮弹/item__paodan_mofashu",
+  "images": [
+    {
+      "file": "paodan_mofashu_-2987856350811670030.png",
+      "name": "paodan_mofashu",
+      "width": 122,
+      "height": 120,
+      "role": "战斗贴图",
+      "path_id": -2987856350811670030,
+      "source": "CAB-598419fb8f3b411e5ad3ab4aa7474316"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mofashu/paodan_mofashu_-2987856350811670030.png"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "chargo__huoguan",
+  "model": "huoguan",
+  "name": "火冠",
+  "names": [
+    "火冠"
+  ],
+  "category": "飞机",
+  "source": "chargo/huoguan",
+  "path": "battle-assets/飞机/chargo__huoguan",
+  "images": [
+    {
+      "file": "huoguan_-597720336227531741.png",
+      "name": "huoguan",
+      "width": 246,
+      "height": 243,
+      "role": "战斗贴图",
+      "path_id": -597720336227531741,
+      "source": "CAB-c16ba36fc5b17d7fd7b9aa3b7b55ca07"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__huoguan/huoguan_-597720336227531741.png"
+}

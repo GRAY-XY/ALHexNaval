@@ -1,0 +1,17 @@
+{
+  "id": "item__laisha_zhuaji_huo",
+  "model": "laisha_zhuaji_huo",
+  "name": "laisha_zhuaji_huo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_zhuaji_huo",
+  "path": "battle-assets/炮弹/item__laisha_zhuaji_huo",
+  "images": [],
+  "particle_systems": 11,
+  "animations": [],
+  "bullet_ids": [
+    19482
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,25 @@
+{
+  "id": "aircrafticon__late299",
+  "model": "late299",
+  "name": "late299",
+  "names": [],
+  "category": "飞机图标",
+  "source": "aircrafticon/late299",
+  "path": "battle-assets/飞机图标/aircrafticon__late299",
+  "images": [
+    {
+      "file": "late299_4091335711629370226.png",
+      "name": "late299",
+      "width": 42,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 4091335711629370226,
+      "source": "CAB-1191c69b69d22b91ab7483a645a6ba7f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

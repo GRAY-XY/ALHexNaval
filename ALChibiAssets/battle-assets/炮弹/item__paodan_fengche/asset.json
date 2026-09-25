@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_fengche",
+  "model": "paodan_fengche",
+  "name": "风车炮弹",
+  "names": [
+    "风车炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_fengche",
+  "path": "battle-assets/炮弹/item__paodan_fengche",
+  "images": [
+    {
+      "file": "paodan_fengche_-4261486571572488062.png",
+      "name": "paodan_fengche",
+      "width": 128,
+      "height": 69,
+      "role": "战斗贴图",
+      "path_id": -4261486571572488062,
+      "source": "CAB-7f75fb62323b6fe620dea3a15485851b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_fengche/paodan_fengche_-4261486571572488062.png"
+}

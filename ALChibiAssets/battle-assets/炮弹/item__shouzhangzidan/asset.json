@@ -1,0 +1,34 @@
+{
+  "id": "item__shouzhangzidan",
+  "model": "shouzhangzidan",
+  "name": "shouzhangzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shouzhangzidan",
+  "path": "battle-assets/炮弹/item__shouzhangzidan",
+  "images": [
+    {
+      "file": "shouzhangzidan_3335996277625273565.png",
+      "name": "shouzhangzidan",
+      "width": 60,
+      "height": 315,
+      "role": "战斗贴图",
+      "path_id": 3335996277625273565,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29648018,
+    29648019,
+    29648045,
+    29648046,
+    29648047,
+    29648048,
+    29648059
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shouzhangzidan/shouzhangzidan_3335996277625273565.png"
+}

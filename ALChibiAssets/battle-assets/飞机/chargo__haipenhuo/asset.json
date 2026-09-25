@@ -1,0 +1,51 @@
+{
+  "id": "chargo__haipenhuo",
+  "model": "haipenhuo",
+  "name": "默认皇家战斗机",
+  "names": [
+    "默认皇家战斗机",
+    "默认皇家战斗机-自动防空",
+    "海喷火",
+    "光辉火箭弹战斗机LV1",
+    "胡蜂技能LV0",
+    "【俾斯麦活动A2】战斗机",
+    "【俾斯麦活动A3】战斗机",
+    "【俾斯麦活动C2】战斗机",
+    "【俾斯麦活动C3】战斗机",
+    "【美系前哨站】战斗机",
+    "【意大利活动A3】BOSS-光辉 战斗机",
+    "【意大利活动C3】BOSS-光辉 战斗机",
+    "【挑战关卡15】皇家方舟_战斗机",
+    "【翻格子活动】皇家战斗机",
+    "七夕活动海喷火"
+  ],
+  "category": "飞机",
+  "source": "chargo/haipenhuo",
+  "path": "battle-assets/飞机/chargo__haipenhuo",
+  "images": [
+    {
+      "file": "haipenhuo_1412194614680112174.png",
+      "name": "haipenhuo",
+      "width": 250,
+      "height": 237,
+      "role": "战斗贴图",
+      "path_id": 1412194614680112174,
+      "source": "CAB-ea0f19a29ff8dd0017d3893eac87b32f"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__haipenhuo/haipenhuo_1412194614680112174.png"
+}

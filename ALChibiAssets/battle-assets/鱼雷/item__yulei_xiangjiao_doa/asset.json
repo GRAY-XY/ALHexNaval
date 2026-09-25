@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiangjiao_doa",
+  "model": "yulei_xiangjiao_doa",
+  "name": "黄金香蕉鱼雷",
+  "names": [
+    "黄金香蕉鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangjiao_doa",
+  "path": "battle-assets/鱼雷/item__yulei_xiangjiao_doa",
+  "images": [
+    {
+      "file": "yulei_xiangjiao_doa_-9113033543417821253.png",
+      "name": "yulei_xiangjiao_doa",
+      "width": 128,
+      "height": 42,
+      "role": "战斗贴图",
+      "path_id": -9113033543417821253,
+      "source": "CAB-103579ff1d7ad0583fa2f939014e018b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiangjiao_doa/yulei_xiangjiao_doa_-9113033543417821253.png"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_baopodan",
+  "model": "paodan_baopodan",
+  "name": "铁球爆破弹",
+  "names": [
+    "铁球爆破弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_baopodan",
+  "path": "battle-assets/炮弹/item__paodan_baopodan",
+  "images": [
+    {
+      "file": "paodan_baopodan_-4104659179109531682.png",
+      "name": "paodan_baopodan",
+      "width": 128,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": -4104659179109531682,
+      "source": "CAB-f7a9c7bc58f8a21544f904daa1e540c6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3289010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_baopodan/paodan_baopodan_-4104659179109531682.png"
+}

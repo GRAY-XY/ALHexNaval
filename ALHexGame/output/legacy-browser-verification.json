@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "legacyVersion": 1,
+  "convertedVersion": 2,
+  "units": 48,
+  "ownUnits": 12,
+  "checks": [
+    "Legacy JSON import expands the old roster to all players",
+    "All old demo ships belong to the current player",
+    "Only 12 own ship rows appear",
+    "Reload preserves the migrated match"
+  ]
+}

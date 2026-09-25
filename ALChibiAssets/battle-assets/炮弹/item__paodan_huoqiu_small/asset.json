@@ -1,0 +1,41 @@
+{
+  "id": "item__paodan_huoqiu_small",
+  "model": "paodan_huoqiu_small",
+  "name": "paodan_huoqiu_small",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_huoqiu_small",
+  "path": "battle-assets/炮弹/item__paodan_huoqiu_small",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29655018,
+    29655035,
+    29655040,
+    29657019,
+    29664019,
+    29664020,
+    29664033,
+    29664037,
+    3107021,
+    3107022,
+    3139301,
+    3139302,
+    3139708,
+    3243242,
+    3274003,
+    3294008,
+    3346001,
+    3346002
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "huoqiupaodan.skel",
+    "atlas": "huoqiupaodan.atlas",
+    "pages": [
+      "huoqiupaodan.png"
+    ]
+  }
+}

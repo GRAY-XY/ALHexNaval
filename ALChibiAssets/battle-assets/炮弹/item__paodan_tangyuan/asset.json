@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tangyuan",
+  "model": "paodan_tangyuan",
+  "name": "汤圆炮弹",
+  "names": [
+    "汤圆炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tangyuan",
+  "path": "battle-assets/炮弹/item__paodan_tangyuan",
+  "images": [
+    {
+      "file": "paodan_tangyuan_-2959317646447216507.png",
+      "name": "paodan_tangyuan",
+      "width": 128,
+      "height": 100,
+      "role": "战斗贴图",
+      "path_id": -2959317646447216507,
+      "source": "CAB-f3874d5610f722cb67a9df5299178ffa"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tangyuan/paodan_tangyuan_-2959317646447216507.png"
+}

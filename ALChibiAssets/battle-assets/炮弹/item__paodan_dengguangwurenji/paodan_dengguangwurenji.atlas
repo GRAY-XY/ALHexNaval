@@ -1,0 +1,97 @@
+
+paodan_dengguangwurenji.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beiguang
+  rotate: false
+  xy: 2, 5
+  size: 173, 167
+  orig: 173, 167
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 177, 17
+  size: 159, 155
+  orig: 159, 155
+  offset: 0, 0
+  index: -1
+caixingxing_1
+  rotate: false
+  xy: 338, 123
+  size: 47, 49
+  orig: 47, 49
+  offset: 0, 0
+  index: -1
+caixingxing_2
+  rotate: true
+  xy: 338, 73
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1
+eye_L
+  rotate: false
+  xy: 338, 2
+  size: 29, 32
+  orig: 29, 32
+  offset: 0, 0
+  index: -1
+eye_R
+  rotate: true
+  xy: 387, 144
+  size: 28, 32
+  orig: 28, 32
+  offset: 0, 0
+  index: -1
+lx_1
+  rotate: true
+  xy: 379, 33
+  size: 38, 35
+  orig: 38, 35
+  offset: 0, 0
+  index: -1
+lx_2
+  rotate: false
+  xy: 338, 36
+  size: 39, 35
+  orig: 39, 35
+  offset: 0, 0
+  index: -1
+sandian_1
+  rotate: false
+  xy: 387, 98
+  size: 26, 21
+  orig: 26, 21
+  offset: 0, 0
+  index: -1
+sandian_2
+  rotate: false
+  xy: 387, 121
+  size: 28, 21
+  orig: 28, 21
+  offset: 0, 0
+  index: -1
+sandian_3
+  rotate: false
+  xy: 421, 151
+  size: 24, 21
+  orig: 24, 21
+  offset: 0, 0
+  index: -1
+sandian_4
+  rotate: false
+  xy: 415, 98
+  size: 25, 21
+  orig: 25, 21
+  offset: 0, 0
+  index: -1
+zui
+  rotate: false
+  xy: 421, 133
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1

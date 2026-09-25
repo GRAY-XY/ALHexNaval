@@ -1,0 +1,53 @@
+{
+  "id": "item__zidan_fuguhuaibiao",
+  "model": "zidan_fuguhuaibiao",
+  "name": "复古怀表子弹",
+  "names": [
+    "复古怀表子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fuguhuaibiao",
+  "path": "battle-assets/炮弹/item__zidan_fuguhuaibiao",
+  "images": [
+    {
+      "file": "particles03_-8862810835882756416.png",
+      "name": "particles03",
+      "width": 256,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -8862810835882756416,
+      "source": "CAB-ef0ca1fbe340f64f4e85470f14c9a52f"
+    },
+    {
+      "file": "zidan_fuguhuaibiao_-3405274387150985750.png",
+      "name": "zidan_fuguhuaibiao",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3405274387150985750,
+      "source": "CAB-ef0ca1fbe340f64f4e85470f14c9a52f"
+    },
+    {
+      "file": "particles01_8673162424896822212.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8673162424896822212,
+      "source": "CAB-ef0ca1fbe340f64f4e85470f14c9a52f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fuguhuaibiao/particles03_-8862810835882756416.png",
+  "spine": {
+    "skel": "zidan_fuguhuaibiao.skel",
+    "atlas": "zidan_fuguhuaibiao.atlas",
+    "pages": [
+      "zidan_fuguhuaibiao.png"
+    ]
+  }
+}

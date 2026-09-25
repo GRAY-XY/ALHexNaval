@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_datangguo",
+  "model": "yulei_datangguo",
+  "name": "大糖果鱼雷",
+  "names": [
+    "大糖果鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_datangguo",
+  "path": "battle-assets/鱼雷/item__yulei_datangguo",
+  "images": [
+    {
+      "file": "yulei_datangguo_-2218313425082900626.png",
+      "name": "yulei_datangguo",
+      "width": 128,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": -2218313425082900626,
+      "source": "CAB-7f77a8366b5a1afb41c7233cd03ca7fd"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_datangguo/yulei_datangguo_-2218313425082900626.png"
+}

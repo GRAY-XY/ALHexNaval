@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__tbdvt-8",
+  "model": "tbdvt-8",
+  "name": "TBD蹂躏者(VT-8中队)",
+  "names": [
+    "TBD蹂躏者(VT-8中队)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tbdvt-8",
+  "path": "battle-assets/飞机图标/aircrafticon__tbdvt-8",
+  "images": [
+    {
+      "file": "tbdvt-8_-1033657576440875554.png",
+      "name": "tbdvt-8",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -1033657576440875554,
+      "source": "CAB-3ee599cd10607fa1f50263e80d2f8e04"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

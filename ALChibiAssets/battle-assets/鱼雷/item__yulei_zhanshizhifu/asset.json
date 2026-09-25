@@ -1,0 +1,32 @@
+{
+  "id": "item__yulei_zhanshizhifu",
+  "model": "yulei_zhanshizhifu",
+  "name": "鱼雷:战士之斧",
+  "names": [
+    "鱼雷:战士之斧"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhanshizhifu",
+  "path": "battle-assets/鱼雷/item__yulei_zhanshizhifu",
+  "images": [
+    {
+      "file": "yulei_zhanshizhifu_-3523228972531180589.png",
+      "name": "yulei_zhanshizhifu",
+      "width": 128,
+      "height": 71,
+      "role": "战斗贴图",
+      "path_id": -3523228972531180589,
+      "source": "CAB-50dbac43426ae21d7b060aa887c9b6d8"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    710226,
+    3075101,
+    3076003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhanshizhifu/yulei_zhanshizhifu_-3523228972531180589.png"
+}

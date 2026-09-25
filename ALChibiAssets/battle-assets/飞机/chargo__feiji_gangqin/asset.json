@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_gangqin",
+  "model": "feiji_gangqin",
+  "name": "飞天三角钢琴(鱼雷)",
+  "names": [
+    "飞天三角钢琴(鱼雷)",
+    "飞天三角钢琴(战斗)",
+    "飞天三角钢琴(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_gangqin",
+  "path": "battle-assets/飞机/chargo__feiji_gangqin",
+  "images": [
+    {
+      "file": "feiji_gangqin_4509725001667572348.png",
+      "name": "feiji_gangqin",
+      "width": 256,
+      "height": 311,
+      "role": "战斗贴图",
+      "path_id": 4509725001667572348,
+      "source": "CAB-17755099fdef68d112aef1cf8461697b"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_gangqin/feiji_gangqin_4509725001667572348.png"
+}

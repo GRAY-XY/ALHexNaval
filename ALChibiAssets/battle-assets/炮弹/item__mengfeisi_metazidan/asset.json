@@ -1,0 +1,28 @@
+{
+  "id": "item__mengfeisi_metazidan",
+  "model": "mengfeisi_metazidan",
+  "name": "mengfeisi_metazidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/mengfeisi_metazidan",
+  "path": "battle-assets/炮弹/item__mengfeisi_metazidan",
+  "images": [
+    {
+      "file": "menfeisi_zidan_-8787855263291892131.png",
+      "name": "menfeisi_zidan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8787855263291892131,
+      "source": "CAB-0c374cd64da17de2bb2851bb3f56f971"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19422
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__mengfeisi_metazidan/menfeisi_zidan_-8787855263291892131.png"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "plane__ad1",
+  "model": "ad1",
+  "name": "AD1天袭者",
+  "names": [
+    "AD1天袭者",
+    "约克城Ⅱ天袭者舰载机",
+    "约克城Ⅱ一技能弹幕",
+    "埃塞克斯技能AD1 Lv1",
+    "独立专武弹幕",
+    "【大世界】约克城meta 轰炸机（领域展开后间隔大幅度缩短) Lv1",
+    "【大世界】约克城meta 轰炸机 Lv2",
+    "【大世界】约克城meta 轰炸机 Lv3",
+    "【大世界】约克城meta 轰炸机 Lv4",
+    "【大世界】约克城meta 轰炸机 Lv5",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv1",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv2",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv3",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv4",
+    "【大世界】萨拉托加meta 本体火箭弹轰炸机 Lv5"
+  ],
+  "category": "飞机",
+  "source": "plane/ad1",
+  "path": "battle-assets/飞机/plane__ad1",
+  "images": [
+    {
+      "file": "ad1_-2150192450238891494.png",
+      "name": "ad1",
+      "width": 240,
+      "height": 221,
+      "role": "原始精灵",
+      "path_id": -2150192450238891494,
+      "source": "CAB-ba5d6a44154396ff02febe1698e4f0ec"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

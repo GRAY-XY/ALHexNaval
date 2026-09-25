@@ -1,0 +1,32 @@
+{
+  "id": "item__paodan_mutong",
+  "model": "paodan_mutong",
+  "name": "桶子炮弹",
+  "names": [
+    "桶子炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mutong",
+  "path": "battle-assets/炮弹/item__paodan_mutong",
+  "images": [
+    {
+      "file": "paodan_mutong_-5680891092316551203.png",
+      "name": "paodan_mutong",
+      "width": 128,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": -5680891092316551203,
+      "source": "CAB-cc89d9a1cb102a0c9212f3bd1eea7074"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161187,
+    161190,
+    3090004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mutong/paodan_mutong_-5680891092316551203.png"
+}

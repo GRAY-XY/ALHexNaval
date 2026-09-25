@@ -1,0 +1,53 @@
+{
+  "id": "chargo__feiji_tegongtu",
+  "model": "feiji_tegongtu",
+  "name": "【2026云龙SP活动】航母轰炸机 Lv1",
+  "names": [
+    "【2026云龙SP活动】航母轰炸机 Lv1",
+    "【2026云龙SP活动】航母轰炸机 Lv2",
+    "【2026云龙SP活动】航母轰炸机 Lv3",
+    "【2026云龙SP活动】航母轰炸机 Lv4",
+    "【2026云龙SP活动】航母轰炸机 Lv5",
+    "【2026云龙SP活动】航母战斗机 Lv1",
+    "【2026云龙SP活动】航母战斗机 Lv2",
+    "【2026云龙SP活动】航母战斗机 Lv3",
+    "【2026云龙SP活动】航母战斗机 Lv4",
+    "【2026云龙SP活动】航母战斗机 Lv5",
+    "【2026云龙SP活动 困难】精英蛋船 霓虹都市航母 战斗机",
+    "【2026云龙SP活动 困难】精英蛋船 霓虹都市航母 轰炸机",
+    "【2026云龙SP活动 SP】精英蛋船 霓虹都市航母 战斗机",
+    "【2026云龙SP活动 SP】精英蛋船 霓虹都市航母 轰炸机",
+    "空中特工兔(鱼雷)",
+    "空中特工兔(战斗)",
+    "空中特工兔(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_tegongtu",
+  "path": "battle-assets/飞机/chargo__feiji_tegongtu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_tegongtu_1341869673976178831.png",
+      "name": "feiji_tegongtu",
+      "width": 256,
+      "height": 250,
+      "role": "战斗贴图",
+      "path_id": 1341869673976178831,
+      "source": "CAB-1ddc4a2723cc7169173279de25cd7347"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_tegongtu/aircraft_shadow_2192772484218123160.png"
+}

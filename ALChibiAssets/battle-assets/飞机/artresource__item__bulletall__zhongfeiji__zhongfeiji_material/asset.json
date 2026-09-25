@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zhongfeiji__zhongfeiji_material",
+  "model": "zhongfeiji_material",
+  "name": "zhongfeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/zhongfeiji/zhongfeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__zhongfeiji__zhongfeiji_material",
+  "images": [
+    {
+      "file": "zhongfeiji_2098766197795078752.png",
+      "name": "zhongfeiji",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2098766197795078752,
+      "source": "CAB-e907119c3050da5c8c9513ca90180029"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "item__heiqiyebomb_hit",
+  "model": "heiqiyebomb_hit",
+  "name": "heiqiyebomb_hit",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heiqiyebomb_hit",
+  "path": "battle-assets/炮弹/item__heiqiyebomb_hit",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,13 @@
+
+zidan_tolove_xingxing.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xingxing
+  rotate: false
+  xy: 2, 2
+  size: 171, 158
+  orig: 171, 158
+  offset: 0, 0
+  index: -1

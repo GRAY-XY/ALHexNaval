@@ -1,0 +1,153 @@
+
+paodan_shoutibao.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bao_1
+  rotate: true
+  xy: 2, 65
+  size: 185, 179
+  orig: 185, 179
+  offset: 0, 0
+  index: -1
+bao_2
+  rotate: true
+  xy: 182, 13
+  size: 50, 72
+  orig: 50, 72
+  offset: 0, 0
+  index: -1
+jin_1
+  rotate: true
+  xy: 183, 66
+  size: 38, 103
+  orig: 38, 103
+  offset: 0, 0
+  index: -1
+jin_1_2
+  rotate: false
+  xy: 279, 147
+  size: 38, 103
+  orig: 38, 103
+  offset: 0, 0
+  index: -1
+jin_1_3
+  rotate: true
+  xy: 279, 107
+  size: 38, 103
+  orig: 38, 103
+  offset: 0, 0
+  index: -1
+jin_2
+  rotate: true
+  xy: 256, 16
+  size: 48, 94
+  orig: 48, 94
+  offset: 0, 0
+  index: -1
+jin_2_2
+  rotate: true
+  xy: 397, 202
+  size: 48, 94
+  orig: 48, 94
+  offset: 0, 0
+  index: -1
+jin_2_3
+  rotate: true
+  xy: 397, 152
+  size: 48, 94
+  orig: 48, 94
+  offset: 0, 0
+  index: -1
+jin_3
+  rotate: true
+  xy: 319, 148
+  size: 102, 37
+  orig: 102, 37
+  offset: 0, 0
+  index: -1
+jin_3_2
+  rotate: true
+  xy: 358, 148
+  size: 102, 37
+  orig: 102, 37
+  offset: 0, 0
+  index: -1
+jin_3_3
+  rotate: false
+  xy: 288, 68
+  size: 102, 37
+  orig: 102, 37
+  offset: 0, 0
+  index: -1
+jinpiao_1
+  rotate: false
+  xy: 183, 106
+  size: 94, 144
+  orig: 94, 144
+  offset: 0, 0
+  index: -1
+shan_1
+  rotate: false
+  xy: 352, 21
+  size: 42, 45
+  orig: 42, 45
+  offset: 0, 0
+  index: -1
+shan_1_2
+  rotate: false
+  xy: 392, 101
+  size: 42, 45
+  orig: 42, 45
+  offset: 0, 0
+  index: -1
+shan_1_3
+  rotate: true
+  xy: 436, 108
+  size: 42, 45
+  orig: 42, 45
+  offset: 0, 0
+  index: -1
+shan_2
+  rotate: true
+  xy: 436, 64
+  size: 42, 44
+  orig: 42, 44
+  offset: 0, 0
+  index: -1
+shan_2_2
+  rotate: false
+  xy: 396, 18
+  size: 42, 44
+  orig: 42, 44
+  offset: 0, 0
+  index: -1
+shan_2_3
+  rotate: false
+  xy: 440, 18
+  size: 42, 44
+  orig: 42, 44
+  offset: 0, 0
+  index: -1
+shan_3
+  rotate: false
+  xy: 2, 2
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1
+shan_3_2
+  rotate: false
+  xy: 62, 2
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1
+shan_3_3
+  rotate: false
+  xy: 122, 2
+  size: 58, 61
+  orig: 58, 61
+  offset: 0, 0
+  index: -1

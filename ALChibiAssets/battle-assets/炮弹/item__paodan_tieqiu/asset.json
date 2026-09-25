@@ -1,0 +1,29 @@
+{
+  "id": "item__paodan_tieqiu",
+  "model": "paodan_tieqiu",
+  "name": "paodan_tieqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_tieqiu",
+  "path": "battle-assets/炮弹/item__paodan_tieqiu",
+  "images": [
+    {
+      "file": "paodan_tieqiu_3217838082405749042.png",
+      "name": "paodan_tieqiu",
+      "width": 65,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": 3217838082405749042,
+      "source": "CAB-89eadc0231fbd9e01e4966b1d641881f"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    160953,
+    3009001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tieqiu/paodan_tieqiu_3217838082405749042.png"
+}

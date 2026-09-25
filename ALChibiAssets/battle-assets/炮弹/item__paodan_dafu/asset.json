@@ -1,0 +1,29 @@
+{
+  "id": "item__paodan_dafu",
+  "model": "paodan_dafu",
+  "name": "paodan_dafu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_dafu",
+  "path": "battle-assets/炮弹/item__paodan_dafu",
+  "images": [
+    {
+      "file": "paodan_dafu_2440725633367774609.png",
+      "name": "paodan_dafu",
+      "width": 110,
+      "height": 126,
+      "role": "战斗贴图",
+      "path_id": 2440725633367774609,
+      "source": "CAB-3cab30a00952e3e28d1bde029ff065ff"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3139017,
+    3139018
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dafu/paodan_dafu_2440725633367774609.png"
+}

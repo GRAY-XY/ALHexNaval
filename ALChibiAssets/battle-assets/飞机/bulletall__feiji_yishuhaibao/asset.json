@@ -1,0 +1,29 @@
+{
+  "id": "bulletall__feiji_yishuhaibao",
+  "model": "feiji_yishuhaibao",
+  "name": "啾海报飞机（鱼雷）",
+  "names": [
+    "啾海报飞机（鱼雷）",
+    "啾海报飞机（战斗）",
+    "啾海报飞机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "bulletall/feiji_yishuhaibao",
+  "path": "battle-assets/飞机/bulletall__feiji_yishuhaibao",
+  "images": [
+    {
+      "file": "feiji_yishuhaibao_-7152734585927260051.png",
+      "name": "feiji_yishuhaibao",
+      "width": 256,
+      "height": 265,
+      "role": "原始精灵",
+      "path_id": -7152734585927260051,
+      "source": "CAB-4cc79b01f4063bb49ba659cfa09355be"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

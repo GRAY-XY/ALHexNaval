@@ -1,0 +1,55 @@
+{
+  "id": "item__wuzang_zhanlangjian",
+  "model": "wuzang_zhanlangjian",
+  "name": "wuzang_zhanlangjian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/wuzang_zhanlangjian",
+  "path": "battle-assets/炮弹/item__wuzang_zhanlangjian",
+  "images": [
+    {
+      "file": "dao01_-6849979114638411633.png",
+      "name": "dao01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6849979114638411633,
+      "source": "CAB-9149221fdacb5d34e36e6a51b1b63c05"
+    },
+    {
+      "file": "dao01_mask_1812748664631309354.png",
+      "name": "dao01_mask",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1812748664631309354,
+      "source": "CAB-9149221fdacb5d34e36e6a51b1b63c05"
+    },
+    {
+      "file": "new01_4312457478050314322.png",
+      "name": "new01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4312457478050314322,
+      "source": "CAB-9149221fdacb5d34e36e6a51b1b63c05"
+    },
+    {
+      "file": "new04_7329608507428382711.png",
+      "name": "new04",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7329608507428382711,
+      "source": "CAB-9149221fdacb5d34e36e6a51b1b63c05"
+    }
+  ],
+  "particle_systems": 98,
+  "animations": [],
+  "bullet_ids": [
+    19010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__wuzang_zhanlangjian/dao01_-6849979114638411633.png"
+}

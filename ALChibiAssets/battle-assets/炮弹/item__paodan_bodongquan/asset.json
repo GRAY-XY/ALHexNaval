@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_bodongquan",
+  "model": "paodan_bodongquan",
+  "name": "气功波炮弹",
+  "names": [
+    "气功波炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_bodongquan",
+  "path": "battle-assets/炮弹/item__paodan_bodongquan",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "paodan_bodongquan.skel",
+    "atlas": "paodan_bodongquan.atlas",
+    "pages": [
+      "paodan_bodongquan.png"
+    ]
+  }
+}

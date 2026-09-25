@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_shengjian",
+  "model": "yulei_shengjian",
+  "name": "圣剑鱼雷",
+  "names": [
+    "圣剑鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shengjian",
+  "path": "battle-assets/鱼雷/item__yulei_shengjian",
+  "images": [
+    {
+      "file": "yulei_shengjian_-29886754938682537.png",
+      "name": "yulei_shengjian",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -29886754938682537,
+      "source": "CAB-130db01d99b90da6d71b03ce243d8572"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19553,
+    855629,
+    855630,
+    855631,
+    855641,
+    855642
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shengjian/yulei_shengjian_-29886754938682537.png"
+}

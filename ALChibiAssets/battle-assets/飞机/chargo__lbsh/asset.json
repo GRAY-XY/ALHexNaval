@@ -1,0 +1,37 @@
+{
+  "id": "chargo__lbsh",
+  "model": "lbsh",
+  "name": "LBSh攻击机",
+  "names": [
+    "LBSh攻击机"
+  ],
+  "category": "飞机",
+  "source": "chargo/lbsh",
+  "path": "battle-assets/飞机/chargo__lbsh",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "LBSh_2854228609152955335.png",
+      "name": "LBSh",
+      "width": 250,
+      "height": 251,
+      "role": "战斗贴图",
+      "path_id": 2854228609152955335,
+      "source": "CAB-27d8575413049f118801e51816c0d0da"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__lbsh/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,69 @@
+
+feiji_anyingjiu.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daimao
+  rotate: false
+  xy: 461, 405
+  size: 43, 40
+  orig: 43, 40
+  offset: 0, 0
+  index: -1
+feiji_1
+  rotate: true
+  xy: 197, 2
+  size: 163, 162
+  orig: 163, 162
+  offset: 0, 0
+  index: -1
+jiu_hei
+  rotate: false
+  xy: 2, 12
+  size: 140, 138
+  orig: 140, 138
+  offset: 0, 0
+  index: -1
+liuguang_1
+  rotate: true
+  xy: 361, 4
+  size: 161, 142
+  orig: 161, 142
+  offset: 0, 0
+  index: -1
+tuowei1
+  rotate: false
+  xy: 409, 282
+  size: 50, 163
+  orig: 50, 163
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 292
+  size: 210, 153
+  orig: 210, 153
+  offset: 0, 0
+  index: -1
+yanwu_1
+  rotate: false
+  xy: 214, 307
+  size: 193, 138
+  orig: 193, 138
+  offset: 0, 0
+  index: -1
+yanwu_1_2
+  rotate: false
+  xy: 214, 167
+  size: 193, 138
+  orig: 193, 138
+  offset: 0, 0
+  index: -1
+yanwu_1_3
+  rotate: false
+  xy: 2, 152
+  size: 193, 138
+  orig: 193, 138
+  offset: 0, 0
+  index: -1

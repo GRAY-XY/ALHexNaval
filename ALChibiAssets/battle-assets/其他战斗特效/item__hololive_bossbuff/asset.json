@@ -1,0 +1,15 @@
+{
+  "id": "item__hololive_bossbuff",
+  "model": "hololive_bossbuff",
+  "name": "hololive_bossbuff",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/hololive_bossbuff",
+  "path": "battle-assets/其他战斗特效/item__hololive_bossbuff",
+  "images": [],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

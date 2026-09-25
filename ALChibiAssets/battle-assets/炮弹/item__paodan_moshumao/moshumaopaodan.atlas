@@ -1,0 +1,55 @@
+
+moshumaopaodan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baozha_1
+  rotate: true
+  xy: 324, 2
+  size: 45, 42
+  orig: 45, 42
+  offset: 0, 0
+  index: -1
+baozha_2
+  rotate: false
+  xy: 192, 6
+  size: 57, 41
+  orig: 57, 41
+  offset: 0, 0
+  index: -1
+baozha_3
+  rotate: true
+  xy: 368, 15
+  size: 36, 31
+  orig: 36, 31
+  offset: 0, 0
+  index: -1
+baozha_4
+  rotate: false
+  xy: 251, 17
+  size: 71, 30
+  orig: 71, 30
+  offset: 0, 0
+  index: -1
+baozha_z
+  rotate: true
+  xy: 367, 53
+  size: 198, 165
+  orig: 198, 165
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: true
+  xy: 192, 49
+  size: 202, 173
+  orig: 202, 173
+  offset: 0, 0
+  index: -1
+tuzi
+  rotate: true
+  xy: 2, 12
+  size: 239, 188
+  orig: 239, 188
+  offset: 0, 0
+  index: -1

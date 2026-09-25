@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_shizitou",
+  "model": "paodan_shizitou",
+  "name": "狮子头炮弹",
+  "names": [
+    "狮子头炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shizitou",
+  "path": "battle-assets/炮弹/item__paodan_shizitou",
+  "images": [
+    {
+      "file": "paodan_shizitou_-2743903815187693006.png",
+      "name": "paodan_shizitou",
+      "width": 128,
+      "height": 118,
+      "role": "战斗贴图",
+      "path_id": -2743903815187693006,
+      "source": "CAB-8e80f6c03e3d18ea3aa28b5b80f189ec"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3366008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shizitou/paodan_shizitou_-2743903815187693006.png"
+}

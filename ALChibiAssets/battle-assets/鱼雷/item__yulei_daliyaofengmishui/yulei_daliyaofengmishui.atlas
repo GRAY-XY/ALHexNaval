@@ -1,0 +1,195 @@
+
+yulei_daliyaofengmishui.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gaizi
+  rotate: false
+  xy: 724, 7
+  size: 63, 33
+  orig: 63, 33
+  offset: 0, 0
+  index: -1
+gaizi_2
+  rotate: false
+  xy: 789, 7
+  size: 63, 33
+  orig: 63, 33
+  offset: 0, 0
+  index: -1
+gaizi_3
+  rotate: false
+  xy: 782, 93
+  size: 63, 33
+  orig: 63, 33
+  offset: 0, 0
+  index: -1
+gd_g1
+  rotate: false
+  xy: 92, 5
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+gd_g1_2
+  rotate: false
+  xy: 109, 5
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+gd_g1_3
+  rotate: false
+  xy: 126, 5
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+gd_g2
+  rotate: true
+  xy: 194, 5
+  size: 16, 13
+  orig: 16, 13
+  offset: 0, 0
+  index: -1
+gd_g2_2
+  rotate: true
+  xy: 209, 5
+  size: 16, 13
+  orig: 16, 13
+  offset: 0, 0
+  index: -1
+gd_g2_3
+  rotate: true
+  xy: 224, 5
+  size: 16, 13
+  orig: 16, 13
+  offset: 0, 0
+  index: -1
+gd_p1
+  rotate: false
+  xy: 143, 5
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+gd_p1_2
+  rotate: false
+  xy: 160, 5
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+gd_p1_3
+  rotate: false
+  xy: 177, 5
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+gd_p2
+  rotate: false
+  xy: 2, 2
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+gd_p2_2
+  rotate: false
+  xy: 22, 2
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+gd_p2_3
+  rotate: false
+  xy: 42, 2
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+pingzi_1
+  rotate: false
+  xy: 310, 65
+  size: 186, 61
+  orig: 186, 61
+  offset: 0, 0
+  index: -1
+pingzi_2
+  rotate: false
+  xy: 498, 66
+  size: 96, 60
+  orig: 96, 60
+  offset: 0, 0
+  index: -1
+pingzi_3
+  rotate: false
+  xy: 495, 2
+  size: 112, 61
+  orig: 112, 61
+  offset: 0, 0
+  index: -1
+pingzi_4
+  rotate: false
+  xy: 310, 2
+  size: 183, 61
+  orig: 183, 61
+  offset: 0, 0
+  index: -1
+pingzi_5
+  rotate: true
+  xy: 62, 9
+  size: 12, 28
+  orig: 12, 28
+  offset: 0, 0
+  index: -1
+tuowei_g1
+  rotate: false
+  xy: 596, 68
+  size: 113, 24
+  orig: 113, 24
+  offset: 0, 0
+  index: -1
+tuowei_g1_2
+  rotate: false
+  xy: 609, 8
+  size: 113, 24
+  orig: 113, 24
+  offset: 0, 0
+  index: -1
+tuowei_g1_3
+  rotate: false
+  xy: 702, 42
+  size: 113, 24
+  orig: 113, 24
+  offset: 0, 0
+  index: -1
+tuowei_g2
+  rotate: false
+  xy: 596, 94
+  size: 91, 32
+  orig: 91, 32
+  offset: 0, 0
+  index: -1
+tuowei_g2_2
+  rotate: false
+  xy: 689, 94
+  size: 91, 32
+  orig: 91, 32
+  offset: 0, 0
+  index: -1
+tuowei_g2_3
+  rotate: false
+  xy: 609, 34
+  size: 91, 32
+  orig: 91, 32
+  offset: 0, 0
+  index: -1
+tuowei_p
+  rotate: false
+  xy: 2, 23
+  size: 306, 103
+  orig: 306, 103
+  offset: 0, 0
+  index: -1

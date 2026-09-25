@@ -1,0 +1,38 @@
+{
+  "id": "chargo__961shilugong",
+  "model": "961shilugong",
+  "name": "96式陆攻",
+  "names": [
+    "96式陆攻",
+    "七夕活动96式陆攻"
+  ],
+  "category": "飞机",
+  "source": "chargo/961shilugong",
+  "path": "battle-assets/飞机/chargo__961shilugong",
+  "images": [
+    {
+      "file": "961shilugong_-4216024472424335926.png",
+      "name": "961shilugong",
+      "width": 247,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": -4216024472424335926,
+      "source": "CAB-03c169d945bcebee6f08b501d9c0a8fc"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__961shilugong/961shilugong_-4216024472424335926.png"
+}

@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-18T14:57:30.669Z",
+  "version": "0.8.3",
+  "url": "http://127.0.0.1:18768/",
+  "passed": true,
+  "checks": [
+    {
+      "check": "Second port has its own Z23 choice",
+      "passed": true
+    },
+    {
+      "check": "First port remembers Prinz Eugen after switching ports",
+      "passed": true
+    },
+    {
+      "check": "Repair only at selected home port and keep port selected",
+      "passed": true
+    },
+    {
+      "check": "First port recruits independently and consumes its quota",
+      "passed": true
+    },
+    {
+      "check": "Other port quota and Z23 choice are unchanged by first port recruit",
+      "passed": true
+    },
+    {
+      "check": "Second port recruits Z23 in same round without switching away",
+      "passed": true
+    },
+    {
+      "check": "Escape clears port selection",
+      "passed": true
+    },
+    {
+      "check": "Click occupied port badge directly opens selected port and keeps movement disabled",
+      "passed": true
+    },
+    {
+      "check": "Box selection replaces port selection with two ships",
+      "passed": true
+    },
+    {
+      "check": "319 by 698 port drawer scrolls and keeps oil and turn controls visible",
+      "passed": true
+    },
+    {
+      "check": "Selecting port from directory reopens narrow drawer",
+      "passed": true
+    },
+    {
+      "check": "980 by 800 selected port panel and turn panel remain usable",
+      "passed": true
+    },
+    {
+      "check": "Turn handoff clears prior faction port selection",
+      "passed": true
+    },
+    {
+      "check": "Next own turn fills 60 oil and adds two-port income to 52 credits",
+      "passed": true
+    },
+    {
+      "check": "Next round restores port quota and confirms repaired Bismarck at 12 HP",
+      "passed": true
+    },
+    {
+      "check": "Enemy port ownership and owner color change to current faction",
+      "passed": true,
+      "evidence": {
+        "before": "--port-color: #9ae4c6;",
+        "after": "--port-color: #89d8e3;"
+      }
+    },
+    {
+      "check": "Capturing last HQ shows victory and freezes selected port services",
+      "passed": true
+    },
+    {
+      "check": "Original 256 by 256 four-faction first-round battle restored and survives reload",
+      "passed": true
+    },
+    {
+      "check": "No browser console errors",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "Neutral occupied port can be selected separately from Laffey and capture recolors it immediately",
+      "passed": true,
+      "evidence": "Observed before final rebuild: canvas clicks at Laffey head (494,333) and adjacent port badge (535,396); capture kept selected port and changed gold marker to blue, oil 50/50 to 50/60, credits remained 100. Same occupied badge retested on final build."
+    }
+  ],
+  "ruleChecks": {
+    "passed": true,
+    "scenarios": 26,
+    "invalidSaveCases": 15
+  },
+  "build": {
+    "typecheck": true,
+    "production": true,
+    "js": "index-DPiCxuh7.js",
+    "css": "index-CrMdefq8.css"
+  },
+  "viewports": [
+    "1280x720",
+    "980x800",
+    "319x698"
+  ],
+  "originalBattleRestored": true,
+  "viewportOverrideReset": true,
+  "screenshots": [
+    "port-individual-management.png",
+    "port-management-980.png",
+    "port-management-narrow.png",
+    "port-enemy-owner-color.png",
+    "port-captured-team-color.png"
+  ],
+  "backup": "output/backups/port-selection-before-20260918-224833.zip",
+  "saveVersion": 14
+}

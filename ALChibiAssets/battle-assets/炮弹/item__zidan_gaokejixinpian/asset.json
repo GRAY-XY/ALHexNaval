@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_gaokejixinpian",
+  "model": "zidan_gaokejixinpian",
+  "name": "指令芯片子弹",
+  "names": [
+    "指令芯片子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gaokejixinpian",
+  "path": "battle-assets/炮弹/item__zidan_gaokejixinpian",
+  "images": [
+    {
+      "file": "zidan_gaokejixinpian_-1163396447407729109.png",
+      "name": "zidan_gaokejixinpian",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": -1163396447407729109,
+      "source": "CAB-1d64a4b579361a50210568be74814633"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gaokejixinpian/zidan_gaokejixinpian_-1163396447407729109.png"
+}

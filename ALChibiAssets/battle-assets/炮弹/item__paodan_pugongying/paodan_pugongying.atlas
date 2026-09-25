@@ -1,0 +1,188 @@
+
+paodan_pugongying.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mao1
+  rotate: true
+  xy: 220, 65
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+mao10
+  rotate: true
+  xy: 136, 10
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+mao11
+  rotate: true
+  xy: 194, 51
+  size: 40, 24
+  orig: 40, 24
+  offset: 0, 0
+  index: -1
+mao12
+  rotate: false
+  xy: 218, 220
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+mao13
+  rotate: false
+  xy: 218, 93
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+mao14
+  rotate: false
+  xy: 225, 23
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+mao15
+  rotate: false
+  xy: 110, 9
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+mao16
+  rotate: true
+  xy: 62, 3
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+mao17
+  rotate: true
+  xy: 194, 25
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+mao18
+  rotate: false
+  xy: 186, 7
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+mao19
+  rotate: false
+  xy: 83, 13
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+mao2
+  rotate: true
+  xy: 225, 41
+  size: 22, 18
+  orig: 22, 18
+  offset: 0, 0
+  index: -1
+mao20
+  rotate: true
+  xy: 220, 7
+  size: 14, 17
+  orig: 14, 17
+  offset: 0, 0
+  index: -1
+mao3
+  rotate: true
+  xy: 218, 152
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+mao4
+  rotate: true
+  xy: 163, 12
+  size: 22, 21
+  orig: 22, 21
+  offset: 0, 0
+  index: -1
+mao5
+  rotate: false
+  xy: 204, 2
+  size: 14, 21
+  orig: 14, 21
+  offset: 0, 0
+  index: -1
+mao6
+  rotate: true
+  xy: 218, 184
+  size: 34, 33
+  orig: 34, 33
+  offset: 0, 0
+  index: -1
+mao7
+  rotate: true
+  xy: 218, 120
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+mao8
+  rotate: true
+  xy: 62, 39
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+mao9
+  rotate: true
+  xy: 62, 16
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+ronggan1
+  rotate: false
+  xy: 83, 40
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+ronggan2
+  rotate: true
+  xy: 2, 7
+  size: 53, 58
+  orig: 53, 58
+  offset: 0, 0
+  index: -1
+ronggan3
+  rotate: false
+  xy: 139, 36
+  size: 53, 58
+  orig: 53, 58
+  offset: 0, 0
+  index: -1
+ronggan4
+  rotate: true
+  xy: 2, 62
+  size: 65, 79
+  orig: 65, 79
+  offset: 0, 0
+  index: -1
+zhuti
+  rotate: false
+  xy: 2, 129
+  size: 214, 125
+  orig: 214, 125
+  offset: 0, 0
+  index: -1
+zhuti_gan
+  rotate: false
+  xy: 83, 96
+  size: 133, 22
+  orig: 133, 22
+  offset: 0, 0
+  index: -1

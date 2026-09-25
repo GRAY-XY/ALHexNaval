@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__xiongyingpaodan__xiongyingpaodan_material",
+  "model": "xiongyingpaodan_material",
+  "name": "xiongyingpaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/xiongyingpaodan/xiongyingpaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__xiongyingpaodan__xiongyingpaodan_material",
+  "images": [
+    {
+      "file": "xiongyingpaodan_-7355251881310419268.png",
+      "name": "xiongyingpaodan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7355251881310419268,
+      "source": "CAB-7f9300f2dc13afb799e1c46f64ca3873"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

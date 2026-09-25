@@ -1,0 +1,28 @@
+{
+  "id": "item__wg21",
+  "model": "wg21",
+  "name": "wg21",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/wg21",
+  "path": "battle-assets/炮弹/item__wg21",
+  "images": [
+    {
+      "file": "huojiandan02_6034866387496741916.png",
+      "name": "huojiandan02",
+      "width": 256,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": 6034866387496741916,
+      "source": "CAB-06ac9c2e400f0d8fa2ccc12fa558d507"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    2138
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__wg21/huojiandan02_6034866387496741916.png"
+}

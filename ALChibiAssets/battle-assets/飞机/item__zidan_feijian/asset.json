@@ -1,0 +1,37 @@
+{
+  "id": "item__zidan_feijian",
+  "model": "zidan_feijian",
+  "name": "飞剑子弹",
+  "names": [
+    "飞剑子弹"
+  ],
+  "category": "飞机",
+  "source": "item/zidan_feijian",
+  "path": "battle-assets/飞机/item__zidan_feijian",
+  "images": [
+    {
+      "file": "zidan_feijian_-8802949371875246013.png",
+      "name": "zidan_feijian",
+      "width": 127,
+      "height": 52,
+      "role": "战斗贴图",
+      "path_id": -8802949371875246013,
+      "source": "CAB-1c3efde761f9334ed4541b51554b9bf9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3239303,
+    3239304,
+    3239305,
+    3239306,
+    3359402,
+    3359412,
+    3359413,
+    3359414
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/item__zidan_feijian/zidan_feijian_-8802949371875246013.png"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "item__shanluan_feiniao_xiapi",
+  "model": "shanluan_feiniao_xiapi",
+  "name": "shanluan_feiniao_xiapi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_feiniao_xiapi",
+  "path": "battle-assets/炮弹/item__shanluan_feiniao_xiapi",
+  "images": [],
+  "particle_systems": 44,
+  "animations": [],
+  "bullet_ids": [
+    163673,
+    163674
+  ],
+  "has_preview": false,
+  "prefab": true
+}

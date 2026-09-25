@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shoukao",
+  "model": "zidan_shoukao",
+  "name": "手铐子弹",
+  "names": [
+    "手铐子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shoukao",
+  "path": "battle-assets/炮弹/item__zidan_shoukao",
+  "images": [
+    {
+      "file": "zidan_shoukao_5066202903779299037.png",
+      "name": "zidan_shoukao",
+      "width": 128,
+      "height": 73,
+      "role": "战斗贴图",
+      "path_id": 5066202903779299037,
+      "source": "CAB-e9140e3640057fb9b97c5e5743f00c5a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shoukao/zidan_shoukao_5066202903779299037.png"
+}

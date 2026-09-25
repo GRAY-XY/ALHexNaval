@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_huangjialiaoli",
+  "model": "paodan_huangjialiaoli",
+  "name": "皇家料理炮弹",
+  "names": [
+    "皇家料理炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_huangjialiaoli",
+  "path": "battle-assets/炮弹/item__paodan_huangjialiaoli",
+  "images": [
+    {
+      "file": "paodan_huangjialiaoli_9089814451992281595.png",
+      "name": "paodan_huangjialiaoli",
+      "width": 128,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": 9089814451992281595,
+      "source": "CAB-5559a9b312ad63654b2991a3497fe07f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huangjialiaoli/paodan_huangjialiaoli_9089814451992281595.png"
+}

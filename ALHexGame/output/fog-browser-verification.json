@@ -1,0 +1,28 @@
+{
+  "feature": "fog-of-war",
+  "version": "0.7.0",
+  "saveVersion": 12,
+  "date": "2026-09-18",
+  "url": "http://127.0.0.1:18768/",
+  "viewport": {"width": 1440, "height": 1050},
+  "method": "Actual browser controls, accessibility text and screenshots; no private game-state injection or inspection",
+  "passed": true,
+  "checks": [
+    {"name": "Original 256 four-player legacy match initializes local sight", "passed": true, "evidence": "12 own surviving ships, oil50, round1, Laffey26,30, explored0.6%; fog-original-fleet.png"},
+    {"name": "Map overview and minimap conceal unexplored terrain and distant enemies", "passed": true, "evidence": "fog-overview.png"},
+    {"name": "Visible enemy displays name and health and accepts a gun attack", "passed": true, "evidence": "fog-visible-enemy.png; UI reports enemy Laffey takes2 damage and remains4/6"},
+    {"name": "Retreat removes enemy display and preserves dim terrain memory", "passed": true, "evidence": "Laffey20,20→17,17 costs4oil,50→46; explored1.5%→1.8%; fog-after-retreat.png"},
+    {"name": "Version12 refresh preserves discovery, positions and resources", "passed": true, "evidence": "17,17, oil46, explored1.8%, enemy hidden; fog-restored-exploration.png"},
+    {"name": "Ship movement to an explored but unseen enemy hex is rejected", "passed": true, "evidence": "Right-click23,20: target outside current sight; cell label shallow water/outside sight; position17,17 and oil46 unchanged"},
+    {"name": "Aircraft launch expands sight with existing resource rules", "passed": true, "evidence": "Enterprise20,32 launches3 squadrons, oil46→37, eachAP20, endurance4; explored1.8%→2.4%"},
+    {"name": "Aircraft can scout unknown terrain by adjacent hex movement", "passed": true, "evidence": "Fighter18,31→9,31; initially unexplored label, then sea; AP20→11, oil37 unchanged; explored2.4%→3.3%; fog-air-recon.png"},
+    {"name": "Player handoff uses independent exploration and hides the other player's forces", "passed": true, "evidence": "Player2 explored1.5%, ownLaffey4/6 andJavelin6/6, noPlayer1 living units or planes shown; fog-player-two.png"},
+    {"name": "Return to Player1 and refresh keep scouting discovery and airplane AP", "passed": true, "evidence": "Round2 Player1 explored3.3%; fighterAP11/20 andendurance3; otherairAP20; oil50"},
+    {"name": "512 eight-player map overview and minimap respect fog", "passed": true, "evidence": "262144cells, eight-player selector, own12ships, explored0.1%, no distant enemies; fog-512-eight-players.png"},
+    {"name": "512 eight-player handoff switches fleet and sight", "passed": true, "evidence": "Player2 active, Laffey415,74, own12ships, oil50, tactical92%"},
+    {"name": "Original battle restored after temporary checks", "passed": true, "evidence": "256×256, fourplayers, round1 Player1, own12alive, oil50, Laffey26,30, noair; animations andaviation unpaused; fog-final-original.png"}
+  ],
+  "consoleErrors": [],
+  "screenshotsDirectory": "output/screenshots",
+  "limits": ["Local hotseat perspective filtering; network/server state isolation is not implemented", "Vision uses hex distance without island occlusion", "These checks do not measure whole-game performance under AI or mass combat"]
+}

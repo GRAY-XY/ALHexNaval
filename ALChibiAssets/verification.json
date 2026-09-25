@@ -1,0 +1,12 @@
+{
+  "characters": 921,
+  "other_groups": 603,
+  "materials": 3259,
+  "unique_skin_folders": 3259,
+  "files_in_skin_folders": 13065,
+  "duplicate_material_ids": [],
+  "issues": [],
+  "javelin_skins": 14,
+  "source_metadata": "AzurLaneTools/AzurLaneLuaScripts CN snapshots stored in metadata",
+  "independent_runtime": true
+}

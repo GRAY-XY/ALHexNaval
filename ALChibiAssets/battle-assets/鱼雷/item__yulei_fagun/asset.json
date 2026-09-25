@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_fagun",
+  "model": "yulei_fagun",
+  "name": "鱼雷「Baguette」",
+  "names": [
+    "鱼雷「Baguette」"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fagun",
+  "path": "battle-assets/鱼雷/item__yulei_fagun",
+  "images": [
+    {
+      "file": "yulei_fagun_-1587798186691209733.png",
+      "name": "yulei_fagun",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -1587798186691209733,
+      "source": "CAB-816954e6085327ab82143a1c0339b062"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_fagun/yulei_fagun_-1587798186691209733.png"
+}

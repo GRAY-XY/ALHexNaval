@@ -1,0 +1,48 @@
+
+tansuozhe_gaming.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+face_1
+  rotate: true
+  xy: 520, 94
+  size: 152, 107
+  orig: 152, 107
+  offset: 0, 0
+  index: -1
+face_2
+  rotate: true
+  xy: 401, 94
+  size: 152, 117
+  orig: 152, 117
+  offset: 0, 0
+  index: -1
+hanzhu_1
+  rotate: true
+  xy: 504, 16
+  size: 76, 46
+  orig: 76, 46
+  offset: 0, 0
+  index: -1
+hanzhu_2
+  rotate: true
+  xy: 401, 20
+  size: 72, 51
+  orig: 72, 51
+  offset: 0, 0
+  index: -1
+hanzhu_3
+  rotate: true
+  xy: 454, 18
+  size: 74, 48
+  orig: 74, 48
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 2
+  size: 397, 244
+  orig: 397, 244
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_rou",
+  "model": "zidan_rou",
+  "name": "肉肉子弹",
+  "names": [
+    "肉肉子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_rou",
+  "path": "battle-assets/炮弹/item__zidan_rou",
+  "images": [
+    {
+      "file": "zidan_rou_-4108530925517668086.png",
+      "name": "zidan_rou",
+      "width": 104,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -4108530925517668086,
+      "source": "CAB-c464ed53cd3572ccfc66f386f6b46749"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_rou/zidan_rou_-4108530925517668086.png"
+}

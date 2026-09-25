@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_shatanchengbao",
+  "model": "paodan_shatanchengbao",
+  "name": "海滨沙堡炮弹",
+  "names": [
+    "海滨沙堡炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_shatanchengbao",
+  "path": "battle-assets/炮弹/bulletall__paodan_shatanchengbao",
+  "images": [
+    {
+      "file": "paodan_shatanchengbao_3690150663947949227.png",
+      "name": "paodan_shatanchengbao",
+      "width": 128,
+      "height": 94,
+      "role": "原始精灵",
+      "path_id": 3690150663947949227,
+      "source": "CAB-54c1a20e23166f7ea6e0756e3e3bff18"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

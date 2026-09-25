@@ -1,0 +1,55 @@
+{
+  "id": "item__zidan_huixing01",
+  "model": "zidan_huixing01",
+  "name": "彗星术子弹",
+  "names": [
+    "彗星术子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huixing01",
+  "path": "battle-assets/炮弹/item__zidan_huixing01",
+  "images": [
+    {
+      "file": "huixing_01_-5335863556906901526.png",
+      "name": "huixing_01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5335863556906901526,
+      "source": "CAB-9074fe43a4afe96595cb2c28647894d4"
+    },
+    {
+      "file": "huixing_trail01_-824011549692002907.png",
+      "name": "huixing_trail01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -824011549692002907,
+      "source": "CAB-9074fe43a4afe96595cb2c28647894d4"
+    },
+    {
+      "file": "huixing_wave01_-152679971289863366.png",
+      "name": "huixing_wave01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -152679971289863366,
+      "source": "CAB-9074fe43a4afe96595cb2c28647894d4"
+    },
+    {
+      "file": "huixing_ring01_6373976873143521140.png",
+      "name": "huixing_ring01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6373976873143521140,
+      "source": "CAB-9074fe43a4afe96595cb2c28647894d4"
+    }
+  ],
+  "particle_systems": 8,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huixing01/huixing_01_-5335863556906901526.png"
+}

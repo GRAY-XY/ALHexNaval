@@ -1,0 +1,35 @@
+{
+  "id": "item__laimuhao_changqiang",
+  "model": "laimuhao_changqiang",
+  "name": "laimuhao_changqiang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laimuhao_changqiang",
+  "path": "battle-assets/炮弹/item__laimuhao_changqiang",
+  "images": [
+    {
+      "file": "laimuhao_changqiang_3994157840894611604.png",
+      "name": "laimuhao_changqiang",
+      "width": 340,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 3994157840894611604,
+      "source": "CAB-9ef225a49b14a24bed04b777cefc2eba"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "laimuhao_changqiangA"
+  ],
+  "bullet_ids": [
+    3325043,
+    3325045,
+    3325046,
+    3325143,
+    3325145,
+    3325146
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laimuhao_changqiang/laimuhao_changqiang_3994157840894611604.png"
+}

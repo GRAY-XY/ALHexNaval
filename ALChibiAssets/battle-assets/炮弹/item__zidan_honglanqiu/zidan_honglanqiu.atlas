@@ -1,0 +1,20 @@
+
+zidan_honglanqiu.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hong
+  rotate: false
+  xy: 2, 2
+  size: 124, 124
+  orig: 124, 124
+  offset: 0, 0
+  index: -1
+lan
+  rotate: false
+  xy: 128, 2
+  size: 124, 124
+  orig: 124, 124
+  offset: 0, 0
+  index: -1

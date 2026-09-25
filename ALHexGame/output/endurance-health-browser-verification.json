@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-18",
+  "version": "0.5.2",
+  "saveVersion": 7,
+  "passed": true,
+  "method": "CUA actual browser UI flows; manually observed, not an unattended regression script",
+  "checks": [
+    {"name": "US CV launches fighter, bomber and torpedo squadrons labelled by category and surviving count", "passed": true, "labels": ["战斗机-4机", "轰炸机-4机", "鱼雷机-4机"], "fuelTurns": 4},
+    {"name": "UK CVL launches three-aircraft squadrons with three owner turns of endurance", "passed": true, "labels": ["战斗机-3机", "鱼雷机-3机"], "fuelTurns": 3},
+    {"name": "First owner turn ending reduces CV/CVL endurance to 3/2; other player turn does not reduce it again", "passed": true},
+    {"name": "Realtime elapsed while inspecting and documenting does not consume endurance", "passed": true},
+    {"name": "Selected squadron title uses category-count; model and country remain in details", "passed": true, "selectedTitle": "鱼雷机-3机", "detailModel": "剑鱼", "fuelTurns": 2},
+    {"name": "Final remaining turn automatically sets CVL squadrons to return", "passed": true, "fuelTurns": 1},
+    {"name": "Two returning CVL squadrons recover to their mother; active squadron count changes from 5 to 3", "passed": true},
+    {"name": "Both friendly and enemy ship names have health bars and HP values beneath them", "passed": true, "friendlyColor": "green", "enemyColor": "red"},
+    {"name": "Artillery damage updates enemy Lafey bar to half and HP from 6 to 3", "passed": true, "hpBefore": 6, "hpAfter": 3},
+    {"name": "Handover to target owner confirms Lafey HP 3/6 in the ship UI", "passed": true},
+    {"name": "Camera dragging preserves ship-name and health-bar alignment", "passed": true},
+    {"name": "Moving Lafey from 12,20 to 13,20 keeps her name and health bar attached; oil decreases by one", "passed": true},
+    {"name": "No browser console errors observed after gameplay checks", "passed": true},
+    {"name": "Original battle restored after testing", "passed": true, "mapSize": 256, "players": 4, "round": 1, "oil": 50, "squadrons": 0}
+  ],
+  "rules": {"passed": true, "scenarios": 47, "weightedPathfindingMaps": 80, "invalidSaveCases": 51},
+  "buildAndTypecheck": "passed",
+  "screenshot": "screenshots/ship-health-bars.png",
+  "limits": ["Large aircraft-count performance and full-match balance were not tested."]
+}

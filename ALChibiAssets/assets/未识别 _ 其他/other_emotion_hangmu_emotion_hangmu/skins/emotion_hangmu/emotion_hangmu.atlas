@@ -1,0 +1,146 @@
+
+emotion_hangmu.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bq_1
+  rotate: false
+  xy: 1015, 201
+  size: 52, 46
+  orig: 52, 46
+  offset: 0, 0
+  index: -1
+bq_10
+  rotate: true
+  xy: 939, 138
+  size: 55, 63
+  orig: 55, 63
+  offset: 0, 0
+  index: -1
+bq_11
+  rotate: false
+  xy: 938, 77
+  size: 54, 59
+  orig: 54, 59
+  offset: 0, 0
+  index: -1
+bq_2
+  rotate: true
+  xy: 1956, 527
+  size: 54, 45
+  orig: 54, 45
+  offset: 0, 0
+  index: -1
+bq_3
+  rotate: false
+  xy: 1861, 375
+  size: 72, 56
+  orig: 72, 56
+  offset: 0, 0
+  index: -1
+bq_4
+  rotate: false
+  xy: 939, 195
+  size: 74, 52
+  orig: 74, 52
+  offset: 0, 0
+  index: -1
+bq_5
+  rotate: true
+  xy: 1861, 433
+  size: 148, 93
+  orig: 148, 93
+  offset: 0, 0
+  index: -1
+bq_6
+  rotate: false
+  xy: 834, 27
+  size: 102, 109
+  orig: 102, 109
+  offset: 0, 0
+  index: -1
+bq_7
+  rotate: false
+  xy: 834, 138
+  size: 103, 109
+  orig: 103, 109
+  offset: 0, 0
+  index: -1
+bq_8
+  rotate: false
+  xy: 1861, 309
+  size: 55, 64
+  orig: 55, 64
+  offset: 0, 0
+  index: -1
+bq_9
+  rotate: false
+  xy: 1861, 248
+  size: 53, 59
+  orig: 53, 59
+  offset: 0, 0
+  index: -1
+huo_1
+  rotate: false
+  xy: 979, 249
+  size: 464, 765
+  orig: 464, 765
+  offset: 0, 0
+  index: -1
+huo_2
+  rotate: false
+  xy: 504, 249
+  size: 473, 765
+  orig: 473, 765
+  offset: 0, 0
+  index: -1
+huo_3
+  rotate: false
+  xy: 2, 249
+  size: 500, 765
+  orig: 500, 765
+  offset: 0, 0
+  index: -1
+huo_l1
+  rotate: true
+  xy: 418, 3
+  size: 244, 414
+  orig: 244, 414
+  offset: 0, 0
+  index: -1
+huo_l2
+  rotate: true
+  xy: 1445, 10
+  size: 284, 414
+  orig: 284, 414
+  offset: 0, 0
+  index: -1
+huo_l3
+  rotate: false
+  xy: 1445, 583
+  size: 280, 431
+  orig: 280, 431
+  offset: 0, 0
+  index: -1
+huo_r1
+  rotate: false
+  xy: 1727, 583
+  size: 280, 431
+  orig: 280, 431
+  offset: 0, 0
+  index: -1
+huo_r2
+  rotate: true
+  xy: 2, 2
+  size: 245, 414
+  orig: 245, 414
+  offset: 0, 0
+  index: -1
+huo_r3
+  rotate: true
+  xy: 1445, 296
+  size: 285, 414
+  orig: 285, 414
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__yulei_zhangai",
+  "model": "yulei_zhangai",
+  "name": "三角筒鱼雷",
+  "names": [
+    "三角筒鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "bulletall/yulei_zhangai",
+  "path": "battle-assets/鱼雷/bulletall__yulei_zhangai",
+  "images": [
+    {
+      "file": "yulei_zhangai_2621583784160614715.png",
+      "name": "yulei_zhangai",
+      "width": 128,
+      "height": 100,
+      "role": "原始精灵",
+      "path_id": 2621583784160614715,
+      "source": "CAB-d2a1e3b329cf96ce6129b1dfc43b9b40"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

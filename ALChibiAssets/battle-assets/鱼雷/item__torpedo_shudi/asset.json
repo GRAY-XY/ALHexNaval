@@ -1,0 +1,28 @@
+{
+  "id": "item__torpedo_shudi",
+  "model": "torpedo_shudi",
+  "name": "竖笛鱼雷",
+  "names": [
+    "竖笛鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_shudi",
+  "path": "battle-assets/鱼雷/item__torpedo_shudi",
+  "images": [
+    {
+      "file": "torpedo_shudi_5954398632771547016.png",
+      "name": "torpedo_shudi",
+      "width": 256,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": 5954398632771547016,
+      "source": "CAB-df9a3502a408c391e180402be5cdb0a1"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo_shudi/torpedo_shudi_5954398632771547016.png"
+}

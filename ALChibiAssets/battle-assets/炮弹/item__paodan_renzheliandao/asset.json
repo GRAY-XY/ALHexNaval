@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_renzheliandao",
+  "model": "paodan_renzheliandao",
+  "name": "旋转镰刀炮弹",
+  "names": [
+    "旋转镰刀炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_renzheliandao",
+  "path": "battle-assets/炮弹/item__paodan_renzheliandao",
+  "images": [
+    {
+      "file": "paodan_renzheliandao_805571376963869607.png",
+      "name": "paodan_renzheliandao",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 805571376963869607,
+      "source": "CAB-d9ecafa9942e8d65f12280f86a6a88db"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_renzheliandao/paodan_renzheliandao_805571376963869607.png",
+  "spine": {
+    "skel": "paodan_renzheliandao.skel",
+    "atlas": "paodan_renzheliandao.atlas",
+    "pages": [
+      "paodan_renzheliandao.png"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "item__paodan_qiuxingshandian",
+  "model": "paodan_qiuxingshandian",
+  "name": "球形闪电炮弹",
+  "names": [
+    "球形闪电炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_qiuxingshandian",
+  "path": "battle-assets/炮弹/item__paodan_qiuxingshandian",
+  "images": [
+    {
+      "file": "shandianqiu02_-8662334795000055614.png",
+      "name": "shandianqiu02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8662334795000055614,
+      "source": "CAB-1e4afe20469b5a629ca5e09aa25ceaf4"
+    },
+    {
+      "file": "thunder01_-7410495400897960801.png",
+      "name": "thunder01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7410495400897960801,
+      "source": "CAB-1e4afe20469b5a629ca5e09aa25ceaf4"
+    },
+    {
+      "file": "shandianqiu01_-716970116179642901.png",
+      "name": "shandianqiu01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -716970116179642901,
+      "source": "CAB-1e4afe20469b5a629ca5e09aa25ceaf4"
+    }
+  ],
+  "particle_systems": 9,
+  "animations": [],
+  "bullet_ids": [
+    3162008,
+    3162016,
+    3162017,
+    3162018,
+    3162019,
+    3162020,
+    3162021,
+    3164021,
+    3164022,
+    3164023,
+    3164024,
+    3374009
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_qiuxingshandian/shandianqiu02_-8662334795000055614.png"
+}

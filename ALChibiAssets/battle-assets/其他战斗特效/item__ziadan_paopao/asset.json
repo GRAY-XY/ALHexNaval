@@ -1,0 +1,15 @@
+{
+  "id": "item__ziadan_paopao",
+  "model": "ziadan_paopao",
+  "name": "ziadan_paopao",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/ziadan_paopao",
+  "path": "battle-assets/其他战斗特效/item__ziadan_paopao",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,22 @@
+{
+  "id": "item__yurenjie_laser01",
+  "model": "yurenjie_laser01",
+  "name": "yurenjie_laser01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yurenjie_laser01",
+  "path": "battle-assets/炮弹/item__yurenjie_laser01",
+  "images": [],
+  "particle_systems": 24,
+  "animations": [],
+  "bullet_ids": [
+    710033,
+    855712,
+    856523,
+    856623,
+    3036021,
+    3164038
+  ],
+  "has_preview": false,
+  "prefab": true
+}

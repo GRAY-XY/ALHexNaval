@@ -1,0 +1,46 @@
+{
+  "id": "item__music_chuantou",
+  "model": "music_chuantou",
+  "name": "music_chuantou",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/music_chuantou",
+  "path": "battle-assets/炮弹/item__music_chuantou",
+  "images": [
+    {
+      "file": "yinfu_08_8733603232416993117.png",
+      "name": "yinfu_08",
+      "width": 236,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": 8733603232416993117,
+      "source": "CAB-df391f2e7aff04af1c28d8bcc52dd218"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19059,
+    19060,
+    19061,
+    19062,
+    19063,
+    19064,
+    19065,
+    19066,
+    19067,
+    19068,
+    79631,
+    852001,
+    852002,
+    852003,
+    852004,
+    852005,
+    852006,
+    852007,
+    852008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__music_chuantou/yinfu_08_8733603232416993117.png"
+}

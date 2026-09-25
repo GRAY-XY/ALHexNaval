@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_youling02",
+  "model": "yulei_youling02",
+  "name": "（快乐）幽灵鱼雷",
+  "names": [
+    "（快乐）幽灵鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_youling02",
+  "path": "battle-assets/鱼雷/item__yulei_youling02",
+  "images": [
+    {
+      "file": "youling_5145999615831685852.png",
+      "name": "youling",
+      "width": 256,
+      "height": 86,
+      "role": "战斗贴图",
+      "path_id": 5145999615831685852,
+      "source": "CAB-be816757b23c8e2f9df1486be2a0926a"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_youling02/youling_5145999615831685852.png"
+}

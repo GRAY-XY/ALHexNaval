@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__qinglan",
+  "model": "qinglan",
+  "name": "晴岚",
+  "names": [
+    "晴岚",
+    "伊404晴岚-跨队弹幕用",
+    "伊404雷击晴岚-专属弹幕用"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/qinglan",
+  "path": "battle-assets/飞机图标/aircrafticon__qinglan",
+  "images": [
+    {
+      "file": "qinglan_-5282631980814958347.png",
+      "name": "qinglan",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -5282631980814958347,
+      "source": "CAB-d540ced5bbc064e22afa8622c566d26d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

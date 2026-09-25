@@ -1,0 +1,31 @@
+{
+  "id": "aircrafticon__sb2c",
+  "model": "sb2c",
+  "name": "SB2C地狱俯冲者",
+  "names": [
+    "SB2C地狱俯冲者",
+    "无畏技能SB2C(VB-18)轰炸机Lv1",
+    "无畏专武技能SB2C(VB-18)轰炸机Lv1",
+    "无畏专武技能SB2C(VB-18)火箭机Lv1",
+    "【新美系活动D2】BOSS –大黄蜂 单颗投弹轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/sb2c",
+  "path": "battle-assets/飞机图标/aircrafticon__sb2c",
+  "images": [
+    {
+      "file": "sb2c_-1501124115054505478.png",
+      "name": "sb2c",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -1501124115054505478,
+      "source": "CAB-1b279559bde8f37951eb09549f54e35e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

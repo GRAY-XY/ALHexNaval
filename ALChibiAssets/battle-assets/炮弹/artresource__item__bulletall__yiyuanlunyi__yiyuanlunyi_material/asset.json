@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yiyuanlunyi__yiyuanlunyi_material",
+  "model": "yiyuanlunyi_material",
+  "name": "yiyuanlunyi_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/yiyuanlunyi/yiyuanlunyi_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__yiyuanlunyi__yiyuanlunyi_material",
+  "images": [
+    {
+      "file": "yiyuanlunyi_9005448627659194333.png",
+      "name": "yiyuanlunyi",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 9005448627659194333,
+      "source": "CAB-c6c48ce0bd292863321817e113d104b0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,32 @@
+{
+  "id": "item__zidan_qianliyan1",
+  "model": "zidan_qianliyan1",
+  "name": "zidan_qianliyan1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_qianliyan1",
+  "path": "battle-assets/炮弹/item__zidan_qianliyan1",
+  "images": [
+    {
+      "file": "zidan_qianliyan1_-1060270548232721684.png",
+      "name": "zidan_qianliyan1",
+      "width": 128,
+      "height": 85,
+      "role": "战斗贴图",
+      "path_id": -1060270548232721684,
+      "source": "CAB-17da62ffa5b2bd57f84dcf3877c405a3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    660051,
+    660052,
+    660053,
+    660054,
+    660093
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_qianliyan1/zidan_qianliyan1_-1060270548232721684.png"
+}

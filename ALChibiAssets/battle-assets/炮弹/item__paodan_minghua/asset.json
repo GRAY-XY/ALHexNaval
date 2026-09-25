@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_minghua",
+  "model": "paodan_minghua",
+  "name": "名画炮弹",
+  "names": [
+    "名画炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_minghua",
+  "path": "battle-assets/炮弹/item__paodan_minghua",
+  "images": [
+    {
+      "file": "paodan_minghua_3416166827279398621.png",
+      "name": "paodan_minghua",
+      "width": 128,
+      "height": 61,
+      "role": "战斗贴图",
+      "path_id": 3416166827279398621,
+      "source": "CAB-3b9e5f049769c2eecae98c2eae7e7745"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_minghua/paodan_minghua_3416166827279398621.png"
+}

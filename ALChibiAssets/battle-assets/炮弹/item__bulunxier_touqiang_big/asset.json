@@ -1,0 +1,28 @@
+{
+  "id": "item__bulunxier_touqiang_big",
+  "model": "bulunxier_touqiang_big",
+  "name": "bulunxier_touqiang_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulunxier_touqiang_big",
+  "path": "battle-assets/炮弹/item__bulunxier_touqiang_big",
+  "images": [
+    {
+      "file": "qiang_7682827236328438121.png",
+      "name": "qiang",
+      "width": 256,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": 7682827236328438121,
+      "source": "CAB-3b18ede57543515b3fedc13d696bb323"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19439
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulunxier_touqiang_big/qiang_7682827236328438121.png"
+}

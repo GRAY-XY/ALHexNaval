@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_tieshan",
+  "model": "paodan_tieshan",
+  "name": "铁扇炮弹",
+  "names": [
+    "铁扇炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tieshan",
+  "path": "battle-assets/炮弹/item__paodan_tieshan",
+  "images": [
+    {
+      "file": "paodan_tieshan_-681772404747728040.png",
+      "name": "paodan_tieshan",
+      "width": 92,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -681772404747728040,
+      "source": "CAB-17a523fd6d2d5482215f4d5db68b3af4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "paodan_tieshan_ani"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tieshan/paodan_tieshan_-681772404747728040.png"
+}

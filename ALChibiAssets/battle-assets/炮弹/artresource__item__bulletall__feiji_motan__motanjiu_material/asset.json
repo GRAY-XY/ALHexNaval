@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_motan__motanjiu_material",
+  "model": "motanjiu_material",
+  "name": "motanjiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/feiji_motan/motanjiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__feiji_motan__motanjiu_material",
+  "images": [
+    {
+      "file": "motanjiu_4231437471896147516.png",
+      "name": "motanjiu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4231437471896147516,
+      "source": "CAB-9cab3c95ff3d0153accf483841e10ed7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

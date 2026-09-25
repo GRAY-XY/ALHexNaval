@@ -1,0 +1,15 @@
+{
+  "id": "item__yurenjie_laser02",
+  "model": "yurenjie_laser02",
+  "name": "yurenjie_laser02",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/yurenjie_laser02",
+  "path": "battle-assets/其他战斗特效/item__yurenjie_laser02",
+  "images": [],
+  "particle_systems": 24,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

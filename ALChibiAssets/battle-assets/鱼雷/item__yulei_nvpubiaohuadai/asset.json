@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_nvpubiaohuadai",
+  "model": "yulei_nvpubiaohuadai",
+  "name": "裱花袋鱼雷",
+  "names": [
+    "裱花袋鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nvpubiaohuadai",
+  "path": "battle-assets/鱼雷/item__yulei_nvpubiaohuadai",
+  "images": [
+    {
+      "file": "biaohua_-2181538943545240176.png",
+      "name": "biaohua",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2181538943545240176,
+      "source": "CAB-81e977fee241fe17d192b16a3f7778e0"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nvpubiaohuadai/biaohua_-2181538943545240176.png"
+}

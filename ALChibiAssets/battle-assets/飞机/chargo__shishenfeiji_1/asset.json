@@ -1,0 +1,63 @@
+{
+  "id": "chargo__shishenfeiji_1",
+  "model": "shishenfeiji_1",
+  "name": "【2024天城航母活动B2】BOSS 赤城灵狐 第三波 高速冲撞飞机（无弹幕）",
+  "names": [
+    "【2024天城航母活动B2】BOSS 赤城灵狐 第三波 高速冲撞飞机（无弹幕）",
+    "【2024天城航母活动B2】BOSS 赤城灵狐 第三波 轰炸机",
+    "【2024天城航母活动B2】BOSS 赤城灵狐 第三波 鱼雷机",
+    "【2024天城航母活动B3】BOSS 赤城meta 第三波 高速轰炸机",
+    "【2024天城航母活动D2】BOSS 赤城灵狐 第三波 高速冲撞飞机（无弹幕）",
+    "【2024天城航母活动D2】BOSS 赤城灵狐 第三波 轰炸机",
+    "【2024天城航母活动D2】BOSS 赤城灵狐 第三波 鱼雷机",
+    "【2024天城航母活动D3】BOSS 赤城meta 第三波 高速轰炸机",
+    "【2024天城航母活动EX 普通】BOSS 赤城meta 三阶段 高速鱼雷机",
+    "【2024天城航母活动EX 困难】BOSS 赤城meta 三阶段 高速鱼雷机",
+    "【2024天城航母活动B】精英 赤城灵狐 高速冲撞飞机（无弹幕）",
+    "【2024天城航母活动D】精英 赤城灵狐 高速冲撞飞机（无弹幕）",
+    "【2024天城航母活动SP】精英 赤城灵狐 高速冲撞飞机（无弹幕）",
+    "【2025医院活动T3】BOSS 赤城 轰炸机 Lv1",
+    "【2025医院活动T3】BOSS 赤城 轰炸机 Lv2",
+    "【2025医院活动T3】BOSS 赤城 轰炸机 Lv3",
+    "【2025医院活动T3】BOSS 赤城 鱼雷机 Lv1",
+    "【2025医院活动T3】BOSS 赤城 鱼雷机 Lv2",
+    "【2025医院活动T3】BOSS 赤城 鱼雷机 Lv3",
+    "【2025医院活动T3】BOSS 赤城 战斗机 Lv1",
+    "【2025医院活动T3】BOSS 赤城 战斗机 Lv2",
+    "【2025医院活动T3】BOSS 赤城 战斗机 Lv3",
+    "【2025医院活动T3】BOSS 赤城 地毯式轰炸机 Lv1",
+    "【2025医院活动T3】BOSS 赤城 地毯式轰炸机 Lv2",
+    "【2025医院活动T3】BOSS 赤城 地毯式轰炸机 Lv3",
+    "【2025白凤UR活动SP】BOSS 凤翔meta 轰炸机",
+    "【2025白凤UR活动SP】BOSS 凤翔meta 战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/shishenfeiji_1",
+  "path": "battle-assets/飞机/chargo__shishenfeiji_1",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feilong_01_-5718053382406644387.png",
+      "name": "feilong_01",
+      "width": 240,
+      "height": 244,
+      "role": "战斗贴图",
+      "path_id": -5718053382406644387,
+      "source": "CAB-0503344e7855f364232158276fa8bf49"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__shishenfeiji_1/aircraft_shadow_2192772484218123160.png"
+}

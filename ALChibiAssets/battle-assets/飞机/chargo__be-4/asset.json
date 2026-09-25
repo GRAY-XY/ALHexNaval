@@ -1,0 +1,37 @@
+{
+  "id": "chargo__be-4",
+  "model": "be-4",
+  "name": "库尔斯克水上机Lv1",
+  "names": [
+    "库尔斯克水上机Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/be-4",
+  "path": "battle-assets/飞机/chargo__be-4",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "Be-4_7115911339521967132.png",
+      "name": "Be-4",
+      "width": 256,
+      "height": 202,
+      "role": "战斗贴图",
+      "path_id": 7115911339521967132,
+      "source": "CAB-d6db5c7cc69e43e2c56b32a5e317f8e4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__be-4/aircraft_shadow_2192772484218123160.png"
+}

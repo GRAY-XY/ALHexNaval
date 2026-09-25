@@ -1,0 +1,24 @@
+{
+  "id": "item__torpedo_haibao",
+  "model": "torpedo_haibao",
+  "name": "海豹鱼雷",
+  "names": [
+    "海豹鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/torpedo_haibao",
+  "path": "battle-assets/鱼雷/item__torpedo_haibao",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "haibaoyulei.skel",
+    "atlas": "haibaoyulei.atlas",
+    "pages": [
+      "haibaoyulei.png"
+    ]
+  }
+}

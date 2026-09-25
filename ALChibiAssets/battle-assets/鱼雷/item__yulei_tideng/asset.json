@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_tideng",
+  "model": "yulei_tideng",
+  "name": "提灯鱼雷",
+  "names": [
+    "提灯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tideng",
+  "path": "battle-assets/鱼雷/item__yulei_tideng",
+  "images": [
+    {
+      "file": "yulei_tideng_1215402574982630353.png",
+      "name": "yulei_tideng",
+      "width": 128,
+      "height": 81,
+      "role": "战斗贴图",
+      "path_id": 1215402574982630353,
+      "source": "CAB-f1f8ba61747130978998305dacd2d38b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tideng/yulei_tideng_1215402574982630353.png"
+}

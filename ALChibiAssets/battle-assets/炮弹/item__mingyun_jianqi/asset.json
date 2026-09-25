@@ -1,0 +1,29 @@
+{
+  "id": "item__mingyun_jianqi",
+  "model": "mingyun_jianqi",
+  "name": "mingyun_jianqi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/mingyun_jianqi",
+  "path": "battle-assets/炮弹/item__mingyun_jianqi",
+  "images": [
+    {
+      "file": "jianqi01_-8065224627524009069.png",
+      "name": "jianqi01",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -8065224627524009069,
+      "source": "CAB-6cb0562453564c37088ef5de03f17811"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19472,
+    19493
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__mingyun_jianqi/jianqi01_-8065224627524009069.png"
+}

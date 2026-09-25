@@ -1,0 +1,37 @@
+{
+  "id": "chargo__vit2jishu",
+  "model": "vit2jishu",
+  "name": "试作型VIT-2（模式调整）",
+  "names": [
+    "试作型VIT-2（模式调整）"
+  ],
+  "category": "飞机",
+  "source": "chargo/vit2jishu",
+  "path": "battle-assets/飞机/chargo__vit2jishu",
+  "images": [
+    {
+      "file": "vit2jishu_3497078965784945909.png",
+      "name": "vit2jishu",
+      "width": 226,
+      "height": 248,
+      "role": "战斗贴图",
+      "path_id": 3497078965784945909,
+      "source": "CAB-089b1e294b401334c6aabb6c578edd0f"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__vit2jishu/vit2jishu_3497078965784945909.png"
+}

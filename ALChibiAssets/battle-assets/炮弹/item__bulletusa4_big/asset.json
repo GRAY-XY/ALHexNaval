@@ -1,0 +1,41 @@
+{
+  "id": "item__bulletusa4_big",
+  "model": "bulletusa4_big",
+  "name": "bulletusa4_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletusa4_big",
+  "path": "battle-assets/炮弹/item__bulletusa4_big",
+  "images": [
+    {
+      "file": "bullet_UK4_7455443727048939557.png",
+      "name": "bullet_UK4",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 7455443727048939557,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161205,
+    3030004,
+    3031003,
+    3037003,
+    3037005,
+    3039001,
+    3039021,
+    3039023,
+    3039029,
+    3039031,
+    3039032,
+    3039033,
+    3039034,
+    3039035
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletusa4_big/bullet_UK4_7455443727048939557.png"
+}

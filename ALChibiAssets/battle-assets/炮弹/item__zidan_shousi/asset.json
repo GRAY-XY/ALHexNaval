@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shousi",
+  "model": "zidan_shousi",
+  "name": "寿司子弹",
+  "names": [
+    "寿司子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shousi",
+  "path": "battle-assets/炮弹/item__zidan_shousi",
+  "images": [
+    {
+      "file": "zidan_shousi_-8143966143596919521.png",
+      "name": "zidan_shousi",
+      "width": 128,
+      "height": 79,
+      "role": "战斗贴图",
+      "path_id": -8143966143596919521,
+      "source": "CAB-83571014016dbdcbfaa023976fa7c95b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shousi/zidan_shousi_-8143966143596919521.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__expressdrone",
+  "model": "expressdrone",
+  "name": "高速速运无人机",
+  "names": [
+    "高速速运无人机",
+    "法戈技能用 货运无人机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/expressdrone",
+  "path": "battle-assets/飞机图标/aircrafticon__expressdrone",
+  "images": [
+    {
+      "file": "expressdrone_2117860237343086472.png",
+      "name": "expressdrone",
+      "width": 45,
+      "height": 43,
+      "role": "原始精灵",
+      "path_id": 2117860237343086472,
+      "source": "CAB-a8d550d2ca666e2769a86d700f31caf2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

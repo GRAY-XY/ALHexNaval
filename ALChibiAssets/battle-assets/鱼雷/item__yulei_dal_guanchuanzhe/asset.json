@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dal_guanchuanzhe",
+  "model": "yulei_dal_guanchuanzhe",
+  "name": "贯穿者突击枪（鱼雷）",
+  "names": [
+    "贯穿者突击枪（鱼雷）"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dal_guanchuanzhe",
+  "path": "battle-assets/鱼雷/item__yulei_dal_guanchuanzhe",
+  "images": [
+    {
+      "file": "yulei_dal_guanchuanzhe_-8696397318581516230.png",
+      "name": "yulei_dal_guanchuanzhe",
+      "width": 123,
+      "height": 122,
+      "role": "战斗贴图",
+      "path_id": -8696397318581516230,
+      "source": "CAB-ee1938acde5d059ac15b9413dcf6d21f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dal_guanchuanzhe/yulei_dal_guanchuanzhe_-8696397318581516230.png"
+}

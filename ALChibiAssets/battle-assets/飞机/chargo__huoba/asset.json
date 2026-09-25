@@ -1,0 +1,37 @@
+{
+  "id": "chargo__huoba",
+  "model": "huoba",
+  "name": "火把",
+  "names": [
+    "火把"
+  ],
+  "category": "飞机",
+  "source": "chargo/huoba",
+  "path": "battle-assets/飞机/chargo__huoba",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "huoba_-7494092942000920889.png",
+      "name": "huoba",
+      "width": 253,
+      "height": 233,
+      "role": "战斗贴图",
+      "path_id": -7494092942000920889,
+      "source": "CAB-f9519f28cf476ffc12dd552cfea84d21"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__huoba/aircraft_shadow_2192772484218123160.png"
+}

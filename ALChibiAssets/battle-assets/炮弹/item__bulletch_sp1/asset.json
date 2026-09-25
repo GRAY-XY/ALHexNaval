@@ -1,0 +1,46 @@
+{
+  "id": "item__bulletch_sp1",
+  "model": "bulletch_sp1",
+  "name": "bulletch_sp1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletch_sp1",
+  "path": "battle-assets/炮弹/item__bulletch_sp1",
+  "images": [
+    {
+      "file": "bullet_qinglong_-1059268309418622376.png",
+      "name": "bullet_qinglong",
+      "width": 97,
+      "height": 22,
+      "role": "战斗贴图",
+      "path_id": -1059268309418622376,
+      "source": "CAB-58969ebd42b2d2cdd832ad3edd48f967"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19586,
+    74021,
+    74022,
+    830013,
+    830014,
+    830016,
+    830017,
+    830057,
+    830058,
+    830059,
+    830060,
+    855692,
+    893201,
+    3059004,
+    3059005,
+    3059006,
+    3059023,
+    3059024,
+    3108129
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletch_sp1/bullet_qinglong_-1059268309418622376.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_chaihuo",
+  "model": "yulei_chaihuo",
+  "name": "柴火鱼雷",
+  "names": [
+    "柴火鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chaihuo",
+  "path": "battle-assets/鱼雷/item__yulei_chaihuo",
+  "images": [
+    {
+      "file": "yulei_chaihuo_150005887292672184.png",
+      "name": "yulei_chaihuo",
+      "width": 164,
+      "height": 36,
+      "role": "战斗贴图",
+      "path_id": 150005887292672184,
+      "source": "CAB-05ac9288d0f99b9cb580cab55ec8797c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chaihuo/yulei_chaihuo_150005887292672184.png"
+}

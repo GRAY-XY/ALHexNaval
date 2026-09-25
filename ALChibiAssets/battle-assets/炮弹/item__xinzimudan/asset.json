@@ -1,0 +1,126 @@
+{
+  "id": "item__xinzimudan",
+  "model": "xinzimudan",
+  "name": "xinzimudan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xinzimudan",
+  "path": "battle-assets/炮弹/item__xinzimudan",
+  "images": [
+    {
+      "file": "zhuangjia02_01_-8102521505313179519.png",
+      "name": "zhuangjia02_01",
+      "width": 72,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": -8102521505313179519,
+      "source": "CAB-006f52ec232506257334c924fc5fb56f"
+    },
+    {
+      "file": "zhuangjia03_1026261131972483027.png",
+      "name": "zhuangjia03",
+      "width": 62,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 1026261131972483027,
+      "source": "CAB-7948fb11ab04bd73bda44c91bca1a926"
+    },
+    {
+      "file": "zhuangjia04_01_-5252375087605159138.png",
+      "name": "zhuangjia04_01",
+      "width": 61,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": -5252375087605159138,
+      "source": "CAB-a78ca7b883c62d19f7b4c60cfa0efa40"
+    },
+    {
+      "file": "zhuangjia02_-686090078187111935.png",
+      "name": "zhuangjia02",
+      "width": 61,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": -686090078187111935,
+      "source": "CAB-235a576c031cebd42ece061812de5b0d"
+    },
+    {
+      "file": "zhuangjia06_-8290555389638760942.png",
+      "name": "zhuangjia06",
+      "width": 99,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -8290555389638760942,
+      "source": "CAB-d03112ea6f60c5b0e15a79b23f4e1ca0"
+    },
+    {
+      "file": "zhuangjia01_01_-7373443858657645723.png",
+      "name": "zhuangjia01_01",
+      "width": 85,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -7373443858657645723,
+      "source": "CAB-24e655d5ea6aaa3c1517a83fbbabd8e4"
+    },
+    {
+      "file": "zhuangjia01_4674247753525844770.png",
+      "name": "zhuangjia01",
+      "width": 101,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 4674247753525844770,
+      "source": "CAB-552b1b6cc81b9aa4839adc279221bc38"
+    },
+    {
+      "file": "zhuangjia04_2297987602655950602.png",
+      "name": "zhuangjia04",
+      "width": 58,
+      "height": 78,
+      "role": "战斗贴图",
+      "path_id": 2297987602655950602,
+      "source": "CAB-58bc2b7d0f9b28130946a97ccfb26185"
+    },
+    {
+      "file": "zhuangjia03_01_6628811154670225726.png",
+      "name": "zhuangjia03_01",
+      "width": 73,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": 6628811154670225726,
+      "source": "CAB-57b740ba9a69a8231f3a33a949ba92c8"
+    },
+    {
+      "file": "zhuangjia05_7787739491368736171.png",
+      "name": "zhuangjia05",
+      "width": 85,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": 7787739491368736171,
+      "source": "CAB-04f9edfd92cefcc851bd31d059d46627"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    20120300,
+    20120301,
+    20120302,
+    20120303,
+    20120304,
+    20120305,
+    20122001,
+    20122002,
+    20310100,
+    20310101,
+    3345101,
+    3345102,
+    3345103,
+    3345104,
+    3345201,
+    3345202,
+    3345203,
+    3345204
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xinzimudan/zhuangjia02_01_-8102521505313179519.png"
+}

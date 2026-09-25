@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_queyu",
+  "model": "zidan_queyu",
+  "name": "花翎子弹",
+  "names": [
+    "花翎子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_queyu",
+  "path": "battle-assets/炮弹/bulletall__zidan_queyu",
+  "images": [
+    {
+      "file": "zidan_queyu_-3814849522262494298.png",
+      "name": "zidan_queyu",
+      "width": 128,
+      "height": 40,
+      "role": "原始精灵",
+      "path_id": -3814849522262494298,
+      "source": "CAB-b2ed71eee2c97c98ea04b9465a402882"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

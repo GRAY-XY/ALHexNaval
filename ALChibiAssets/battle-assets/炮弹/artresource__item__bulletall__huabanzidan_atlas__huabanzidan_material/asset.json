@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__huabanzidan_atlas__huabanzidan_material",
+  "model": "huabanzidan_material",
+  "name": "huabanzidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/huabanzidan_atlas/huabanzidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__huabanzidan_atlas__huabanzidan_material",
+  "images": [
+    {
+      "file": "huabanzidan_-3191063157379987447.png",
+      "name": "huabanzidan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3191063157379987447,
+      "source": "CAB-ce8787d9a6b9c673d57f0a17612d6f4b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

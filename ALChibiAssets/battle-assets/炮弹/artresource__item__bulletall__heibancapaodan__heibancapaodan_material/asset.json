@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__heibancapaodan__heibancapaodan_material",
+  "model": "heibancapaodan_material",
+  "name": "heibancapaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/heibancapaodan/heibancapaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__heibancapaodan__heibancapaodan_material",
+  "images": [
+    {
+      "file": "heibancapaodan_-2899756306650637449.png",
+      "name": "heibancapaodan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2899756306650637449,
+      "source": "CAB-af143447c32deaa3d608a4db0d0d6a25"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

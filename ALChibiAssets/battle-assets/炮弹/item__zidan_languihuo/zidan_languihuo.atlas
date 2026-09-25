@@ -1,0 +1,69 @@
+
+zidan_languihuo.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huo_1
+  rotate: false
+  xy: 2, 113
+  size: 157, 104
+  orig: 157, 104
+  offset: 0, 0
+  index: -1
+huo_2
+  rotate: true
+  xy: 161, 102
+  size: 115, 86
+  orig: 115, 86
+  offset: 0, 0
+  index: -1
+huo_3
+  rotate: true
+  xy: 2, 2
+  size: 109, 85
+  orig: 109, 85
+  offset: 0, 0
+  index: -1
+xhuo_1
+  rotate: false
+  xy: 89, 68
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+xhuo_1_2
+  rotate: false
+  xy: 143, 57
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+xhuo_1_3
+  rotate: false
+  xy: 89, 23
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+xhuo_2
+  rotate: false
+  xy: 197, 64
+  size: 45, 36
+  orig: 45, 36
+  offset: 0, 0
+  index: -1
+xhuo_2_2
+  rotate: false
+  xy: 197, 26
+  size: 45, 36
+  orig: 45, 36
+  offset: 0, 0
+  index: -1
+xhuo_2_3
+  rotate: false
+  xy: 143, 19
+  size: 45, 36
+  orig: 45, 36
+  offset: 0, 0
+  index: -1

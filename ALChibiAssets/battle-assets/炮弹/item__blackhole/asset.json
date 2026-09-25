@@ -1,0 +1,31 @@
+{
+  "id": "item__blackhole",
+  "model": "blackhole",
+  "name": "blackhole",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/blackhole",
+  "path": "battle-assets/炮弹/item__blackhole",
+  "images": [
+    {
+      "file": "kuasheHE_5154233129867773301.png",
+      "name": "kuasheHE",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 5154233129867773301,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    610054,
+    610055,
+    610056,
+    610057
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__blackhole/kuasheHE_5154233129867773301.png"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__idolfeiji__idolfeiji_material",
+  "model": "idolfeiji_material",
+  "name": "idolfeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/idolfeiji/idolfeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__idolfeiji__idolfeiji_material",
+  "images": [
+    {
+      "file": "idolfeiji_6086738143595122373.png",
+      "name": "idolfeiji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6086738143595122373,
+      "source": "CAB-32159dc010c77675d8ddce86e88837d9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

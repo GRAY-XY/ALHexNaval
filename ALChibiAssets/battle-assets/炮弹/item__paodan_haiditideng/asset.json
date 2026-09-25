@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_haiditideng",
+  "model": "paodan_haiditideng",
+  "name": "海底提灯炮弹",
+  "names": [
+    "海底提灯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_haiditideng",
+  "path": "battle-assets/炮弹/item__paodan_haiditideng",
+  "images": [
+    {
+      "file": "paodan_haiditideng_341304718442153727.png",
+      "name": "paodan_haiditideng",
+      "width": 106,
+      "height": 99,
+      "role": "战斗贴图",
+      "path_id": 341304718442153727,
+      "source": "CAB-6b9d15ba8bca0a2d7b253d2d199f632b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    161186
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_haiditideng/paodan_haiditideng_341304718442153727.png"
+}

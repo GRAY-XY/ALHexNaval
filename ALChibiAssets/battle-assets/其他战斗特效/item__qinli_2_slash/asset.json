@@ -1,0 +1,33 @@
+{
+  "id": "item__qinli_2_slash",
+  "model": "qinli_2_slash",
+  "name": "qinli_2_slash",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/qinli_2_slash",
+  "path": "battle-assets/其他战斗特效/item__qinli_2_slash",
+  "images": [
+    {
+      "file": "qinli_2_slash_-3095601199867124226.png",
+      "name": "qinli_2_slash",
+      "width": 2048,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": -3095601199867124226,
+      "source": "CAB-5e6ad9c7573b421d1cbe69f7cafc780a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__qinli_2_slash/qinli_2_slash_-3095601199867124226.png",
+  "spine": {
+    "skel": "qinli_2_slash.skel",
+    "atlas": "qinli_2_slash.atlas",
+    "pages": [
+      "qinli_2_slash.png"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+
+yulei_heiwudengpai.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dengpai
+  rotate: true
+  xy: 2, 31
+  size: 213, 118
+  orig: 213, 118
+  offset: 0, 0
+  index: -1
+dengpao_p11
+  rotate: true
+  xy: 333, 38
+  size: 206, 95
+  orig: 206, 95
+  offset: 0, 0
+  index: -1
+dengpao_p12
+  rotate: true
+  xy: 232, 31
+  size: 213, 99
+  orig: 213, 99
+  offset: 0, 0
+  index: -1
+dengpao_p21
+  rotate: false
+  xy: 430, 120
+  size: 115, 124
+  orig: 115, 124
+  offset: 0, 0
+  index: -1
+dengpao_p22
+  rotate: false
+  xy: 430, 2
+  size: 112, 116
+  orig: 112, 116
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 122, 42
+  size: 202, 108
+  orig: 202, 108
+  offset: 0, 0
+  index: -1

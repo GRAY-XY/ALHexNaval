@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__tianshangai",
+  "model": "tianshangai",
+  "name": "天山改",
+  "names": [
+    "天山改"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tianshangai",
+  "path": "battle-assets/飞机图标/aircrafticon__tianshangai",
+  "images": [
+    {
+      "file": "tianshanGai_5173811804610466479.png",
+      "name": "tianshanGai",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 5173811804610466479,
+      "source": "CAB-81827e49dc0d80c19a34b33e19ad7b85"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

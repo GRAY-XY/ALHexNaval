@@ -1,0 +1,26 @@
+{
+  "id": "item__sali_makalong",
+  "model": "sali_makalong",
+  "name": "sali_makalong",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/sali_makalong",
+  "path": "battle-assets/其他战斗特效/item__sali_makalong",
+  "images": [
+    {
+      "file": "zidan_makalong01_2385439997513395950.png",
+      "name": "zidan_makalong01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2385439997513395950,
+      "source": "CAB-c613584a9a8aa7d2128871f637f48078"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__sali_makalong/zidan_makalong01_2385439997513395950.png"
+}

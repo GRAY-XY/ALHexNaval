@@ -1,0 +1,32 @@
+{
+  "id": "item__ouxiang_tanzhaodeng",
+  "model": "ouxiang_tanzhaodeng",
+  "name": "ouxiang_tanzhaodeng",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_tanzhaodeng",
+  "path": "battle-assets/炮弹/item__ouxiang_tanzhaodeng",
+  "images": [
+    {
+      "file": "tanzhaodeng_2946780905283910522.png",
+      "name": "tanzhaodeng",
+      "width": 209,
+      "height": 169,
+      "role": "战斗贴图",
+      "path_id": 2946780905283910522,
+      "source": "CAB-45689764bbcc7a2317204d66099aeb12"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    852702,
+    852703,
+    852704,
+    852705,
+    852706
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_tanzhaodeng/tanzhaodeng_2946780905283910522.png"
+}

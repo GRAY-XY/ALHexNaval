@@ -1,0 +1,37 @@
+{
+  "id": "chargo__ln401e",
+  "model": "ln401e",
+  "name": "LN.401",
+  "names": [
+    "LN.401"
+  ],
+  "category": "飞机",
+  "source": "chargo/ln401e",
+  "path": "battle-assets/飞机/chargo__ln401e",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "LN401e_6894266115683552315.png",
+      "name": "LN401e",
+      "width": 234,
+      "height": 250,
+      "role": "战斗贴图",
+      "path_id": 6894266115683552315,
+      "source": "CAB-398bac05f357c9b6b1a19f480ca3b93e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ln401e/aircraft_shadow_2192772484218123160.png"
+}

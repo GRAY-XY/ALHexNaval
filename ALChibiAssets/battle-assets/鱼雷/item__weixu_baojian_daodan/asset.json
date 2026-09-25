@@ -1,0 +1,31 @@
+{
+  "id": "item__weixu_baojian_daodan",
+  "model": "weixu_baojian_daodan",
+  "name": "weixu_baojian_daodan",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/weixu_baojian_daodan",
+  "path": "battle-assets/鱼雷/item__weixu_baojian_daodan",
+  "images": [
+    {
+      "file": "weixu_baojian_daodan_-1684630397753861980.png",
+      "name": "weixu_baojian_daodan",
+      "width": 686,
+      "height": 301,
+      "role": "战斗贴图",
+      "path_id": -1684630397753861980,
+      "source": "CAB-5c2dd69df19aeff7f0ef68aef2628578"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3333003,
+    3333004,
+    3333005,
+    3333006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__weixu_baojian_daodan/weixu_baojian_daodan_-1684630397753861980.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "chargo__feiji_youhunshilaimu",
+  "model": "feiji_youhunshilaimu",
+  "name": "【2025马塞纳活动A2】BOSS 贝劳森林 战斗机",
+  "names": [
+    "【2025马塞纳活动A2】BOSS 贝劳森林 战斗机",
+    "【2025马塞纳活动B2】BOSS 阿尔比恩 战斗机",
+    "【2025马塞纳活动C2】BOSS 贝劳森林 战斗机",
+    "【2025马塞纳活动D2】BOSS 阿尔比恩 战斗机",
+    "幽魂啾莱姆舰载机(鱼雷)",
+    "幽魂啾莱姆舰载机(战斗)",
+    "幽魂啾莱姆舰载机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_youhunshilaimu",
+  "path": "battle-assets/飞机/chargo__feiji_youhunshilaimu",
+  "images": [
+    {
+      "file": "feiji_youhunshilaimu_6087547489787430614.png",
+      "name": "feiji_youhunshilaimu",
+      "width": 256,
+      "height": 221,
+      "role": "战斗贴图",
+      "path_id": 6087547489787430614,
+      "source": "CAB-76dee0dbffc57c258ca94fbe1fe9ad45"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_youhunshilaimu/feiji_youhunshilaimu_6087547489787430614.png"
+}

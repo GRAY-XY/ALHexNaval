@@ -1,0 +1,42 @@
+{
+  "id": "item__paodan_gouwuhe",
+  "model": "paodan_gouwuhe",
+  "name": "paodan_gouwuhe",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_gouwuhe",
+  "path": "battle-assets/炮弹/item__paodan_gouwuhe",
+  "images": [
+    {
+      "file": "paodan_gouwuhe_-7768865342849482080.png",
+      "name": "paodan_gouwuhe",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7768865342849482080,
+      "source": "CAB-8f097b96c263e90c8dd42a667b99b59f"
+    },
+    {
+      "file": "particles01_-3310787673558051681.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3310787673558051681,
+      "source": "CAB-8f097b96c263e90c8dd42a667b99b59f"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_gouwuhe/paodan_gouwuhe_-7768865342849482080.png",
+  "spine": {
+    "skel": "paodan_gouwuhe.skel",
+    "atlas": "paodan_gouwuhe.atlas",
+    "pages": [
+      "paodan_gouwuhe.png"
+    ]
+  }
+}

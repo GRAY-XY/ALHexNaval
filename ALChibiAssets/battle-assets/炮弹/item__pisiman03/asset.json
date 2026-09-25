@@ -1,0 +1,43 @@
+{
+  "id": "item__pisiman03",
+  "model": "pisiman03",
+  "name": "pisiman03",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/pisiman03",
+  "path": "battle-assets/炮弹/item__pisiman03",
+  "images": [
+    {
+      "file": "kuasheHE_5154233129867773301.png",
+      "name": "kuasheHE",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 5154233129867773301,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19153,
+    19217,
+    19218,
+    19219,
+    19220,
+    19395,
+    610060,
+    610061,
+    610062,
+    20110500,
+    20301201,
+    20301202,
+    20301203,
+    20303301,
+    21500514,
+    21500519
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__pisiman03/kuasheHE_5154233129867773301.png"
+}

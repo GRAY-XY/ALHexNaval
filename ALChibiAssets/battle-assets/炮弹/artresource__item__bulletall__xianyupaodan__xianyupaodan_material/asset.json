@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__xianyupaodan__xianyupaodan_material",
+  "model": "xianyupaodan_material",
+  "name": "xianyupaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/xianyupaodan/xianyupaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__xianyupaodan__xianyupaodan_material",
+  "images": [
+    {
+      "file": "xianyupaodan_2565503446435870989.png",
+      "name": "xianyupaodan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2565503446435870989,
+      "source": "CAB-3e65cea2a7d6bc3404f2b4e61bfddf00"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

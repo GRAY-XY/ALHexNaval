@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_qiaoqiaoban",
+  "model": "paodan_qiaoqiaoban",
+  "name": "跷跷板炮弹",
+  "names": [
+    "跷跷板炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_qiaoqiaoban",
+  "path": "battle-assets/炮弹/item__paodan_qiaoqiaoban",
+  "images": [
+    {
+      "file": "paodan_qiaoqiaoban_7158490578591510612.png",
+      "name": "paodan_qiaoqiaoban",
+      "width": 128,
+      "height": 99,
+      "role": "战斗贴图",
+      "path_id": 7158490578591510612,
+      "source": "CAB-c5800bb949591e8b0262a2f1e1661ade"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_qiaoqiaoban/paodan_qiaoqiaoban_7158490578591510612.png"
+}

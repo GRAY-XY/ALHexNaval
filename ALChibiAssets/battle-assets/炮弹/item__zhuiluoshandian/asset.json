@@ -1,0 +1,24 @@
+{
+  "id": "item__zhuiluoshandian",
+  "model": "zhuiluoshandian",
+  "name": "zhuiluoshandian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhuiluoshandian",
+  "path": "battle-assets/炮弹/item__zhuiluoshandian",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19315,
+    19589,
+    161461,
+    364015,
+    853124,
+    853331,
+    853332,
+    9999994
+  ],
+  "has_preview": false,
+  "prefab": true
+}

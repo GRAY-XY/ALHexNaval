@@ -1,0 +1,29 @@
+{
+  "id": "item__gulitejineng_instance",
+  "model": "gulitejineng_instance",
+  "name": "gulitejineng_instance",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulitejineng_instance",
+  "path": "battle-assets/炮弹/item__gulitejineng_instance",
+  "images": [
+    {
+      "file": "line02_8424244577407498018.png",
+      "name": "line02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8424244577407498018,
+      "source": "CAB-72c2b1a3e0ecfbca61f954bc7872ee6c"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19545,
+    855667
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulitejineng_instance/line02_8424244577407498018.png"
+}

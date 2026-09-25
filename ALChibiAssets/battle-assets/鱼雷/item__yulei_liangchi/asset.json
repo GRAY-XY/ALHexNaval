@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_liangchi",
+  "model": "yulei_liangchi",
+  "name": "悖论量尺鱼雷",
+  "names": [
+    "悖论量尺鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_liangchi",
+  "path": "battle-assets/鱼雷/item__yulei_liangchi",
+  "images": [
+    {
+      "file": "yulei_liangchi_4237358683021077201.png",
+      "name": "yulei_liangchi",
+      "width": 128,
+      "height": 25,
+      "role": "战斗贴图",
+      "path_id": 4237358683021077201,
+      "source": "CAB-021b3cd150156197f1667348a52b31e4"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_liangchi/yulei_liangchi_4237358683021077201.png"
+}

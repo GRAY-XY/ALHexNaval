@@ -1,0 +1,18 @@
+{
+  "id": "item__diancizhadan_alert_green",
+  "model": "diancizhadan_alert_green",
+  "name": "diancizhadan_alert_green",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/diancizhadan_alert_green",
+  "path": "battle-assets/炮弹/item__diancizhadan_alert_green",
+  "images": [],
+  "particle_systems": 11,
+  "animations": [],
+  "bullet_ids": [
+    3059002,
+    3059021
+  ],
+  "has_preview": false,
+  "prefab": true
+}

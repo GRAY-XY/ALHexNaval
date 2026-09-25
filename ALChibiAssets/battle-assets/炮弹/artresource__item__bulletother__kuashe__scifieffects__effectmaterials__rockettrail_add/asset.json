@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletother__kuashe__scifieffects__effectmaterials__rockettrail_add",
+  "model": "rockettrail_add",
+  "name": "rockettrail_add",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/kuashe/scifieffects/effectmaterials/rockettrail_add",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__kuashe__scifieffects__effectmaterials__rockettrail_add",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

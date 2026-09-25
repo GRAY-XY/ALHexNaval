@@ -1,0 +1,27 @@
+
+paodan_luntaijiu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiu
+  rotate: false
+  xy: 597, 91
+  size: 101, 106
+  orig: 101, 106
+  offset: 0, 0
+  index: -1
+luntai
+  rotate: true
+  xy: 468, 2
+  size: 195, 127
+  orig: 195, 127
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 5
+  size: 464, 192
+  orig: 464, 192
+  offset: 0, 0
+  index: -1

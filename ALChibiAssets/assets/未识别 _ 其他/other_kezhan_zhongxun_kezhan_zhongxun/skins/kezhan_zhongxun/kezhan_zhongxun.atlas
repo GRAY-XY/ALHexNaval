@@ -1,0 +1,160 @@
+
+kezhan_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuan
+  rotate: false
+  xy: 2, 685
+  size: 498, 334
+  orig: 498, 334
+  offset: 0, 0
+  index: -1
+guan1
+  rotate: false
+  xy: 232, 264
+  size: 31, 44
+  orig: 31, 44
+  offset: 0, 0
+  index: -1
+guan2
+  rotate: false
+  xy: 232, 310
+  size: 32, 44
+  orig: 32, 44
+  offset: 0, 0
+  index: -1
+jiang_1
+  rotate: false
+  xy: 232, 26
+  size: 74, 114
+  orig: 74, 114
+  offset: 0, 0
+  index: -1
+jiang_2
+  rotate: true
+  xy: 643, 522
+  size: 73, 113
+  orig: 73, 113
+  offset: 0, 0
+  index: -1
+jiang_3
+  rotate: true
+  xy: 87, 41
+  size: 74, 114
+  orig: 74, 114
+  offset: 0, 0
+  index: -1
+jiu_1
+  rotate: false
+  xy: 352, 320
+  size: 34, 40
+  orig: 34, 40
+  offset: 0, 0
+  index: -1
+jiu_2
+  rotate: false
+  xy: 308, 100
+  size: 34, 40
+  orig: 34, 40
+  offset: 0, 0
+  index: -1
+jiu_3
+  rotate: true
+  xy: 87, 5
+  size: 34, 40
+  orig: 34, 40
+  offset: 0, 0
+  index: -1
+qizi_1
+  rotate: true
+  xy: 352, 429
+  size: 65, 59
+  orig: 65, 59
+  offset: 0, 0
+  index: -1
+qizi_2
+  rotate: true
+  xy: 352, 362
+  size: 65, 59
+  orig: 65, 59
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: true
+  xy: 414, 331
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: true
+  xy: 267, 142
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: true
+  xy: 2, 2
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+zhengqi_1
+  rotate: true
+  xy: 499, 359
+  size: 236, 142
+  orig: 236, 142
+  offset: 0, 0
+  index: -1
+zhengqi_2
+  rotate: false
+  xy: 499, 215
+  size: 236, 142
+  orig: 236, 142
+  offset: 0, 0
+  index: -1
+zhengqi_3
+  rotate: true
+  xy: 87, 117
+  size: 237, 143
+  orig: 237, 143
+  offset: 0, 0
+  index: -1
+zhuo1
+  rotate: true
+  xy: 267, 496
+  size: 187, 145
+  orig: 187, 145
+  offset: 0, 0
+  index: -1
+zhuo2
+  rotate: false
+  xy: 2, 356
+  size: 263, 327
+  orig: 263, 327
+  offset: 0, 0
+  index: -1
+zhuo3
+  rotate: true
+  xy: 502, 597
+  size: 422, 406
+  orig: 422, 406
+  offset: 0, 0
+  index: -1
+zhuqi_1
+  rotate: true
+  xy: 352, 219
+  size: 99, 88
+  orig: 99, 88
+  offset: 0, 0
+  index: -1
+zhuqi_2
+  rotate: true
+  xy: 352, 118
+  size: 99, 88
+  orig: 99, 88
+  offset: 0, 0
+  index: -1

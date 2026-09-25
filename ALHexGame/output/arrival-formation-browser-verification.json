@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-18",
+  "version": "0.6.1",
+  "url": "http://127.0.0.1:18768/",
+  "method": "Real in-app browser UI through CUA; canvas screenshots and visible ship information panels",
+  "passed": true,
+  "checks": [
+    { "name": "Box selection includes four own ships in two rows", "passed": true },
+    { "name": "Selection panel explains departure-layout preservation", "passed": true },
+    { "name": "Right-click issues a common arrival-layout order", "passed": true },
+    { "name": "Every selected ship arrives with its original relative offset", "passed": true },
+    { "name": "Occupied destination footprint relocates as one layout", "passed": true },
+    { "name": "Four-ship movement spends 24 shared oil; all combat actions remain available", "passed": true },
+    { "name": "Three aircraft can be selected additively and moved together", "passed": true },
+    { "name": "Aircraft arrive in their original one-row spacing; fuel remains four turns", "passed": true },
+    { "name": "One carrier and three aircraft accept a common translated order", "passed": true },
+    { "name": "Mixed movement spends six ship oil and completes all orders", "passed": true },
+    { "name": "No browser console errors observed", "passed": true },
+    { "name": "Original 256 by 256 four-player round-one game restored with fifty oil", "passed": true }
+  ],
+  "shipPositions": [
+    { "name": "拉菲", "before": { "col": 12, "row": 20 }, "after": { "col": 17, "row": 22 } },
+    { "name": "标枪", "before": { "col": 14, "row": 20 }, "after": { "col": 19, "row": 22 } },
+    { "name": "高雄", "before": { "col": 12, "row": 22 }, "after": { "col": 17, "row": 24 } },
+    { "name": "欧根亲王", "before": { "col": 14, "row": 22 }, "after": { "col": 19, "row": 24 } }
+  ],
+  "mixedCarrier": { "before": { "col": 20, "row": 22 }, "after": { "col": 21, "row": 28 }, "oilBefore": 17, "oilAfter": 11 },
+  "screenshots": [
+    "output/screenshots/arrival-layout-before.png",
+    "output/screenshots/arrival-layout-after.png",
+    "output/screenshots/arrival-air-before.png",
+    "output/screenshots/arrival-air-after.png",
+    "output/screenshots/arrival-mixed-after.png"
+  ],
+  "limits": "Exact continuous aircraft offsets and cross-row hex translations are additionally verified in rule tests; UI aircraft panels expose rounded hex locations. Ship movement visuals were completed through normal facing commands before arrival capture. No AI or whole-match balance test."
+}

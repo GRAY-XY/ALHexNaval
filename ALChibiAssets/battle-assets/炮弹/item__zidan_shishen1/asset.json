@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_shishen1",
+  "model": "zidan_shishen1",
+  "name": "zidan_shishen1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_shishen1",
+  "path": "battle-assets/炮弹/item__zidan_shishen1",
+  "images": [
+    {
+      "file": "zidan_shishen1_-8008305375161649496.png",
+      "name": "zidan_shishen1",
+      "width": 128,
+      "height": 109,
+      "role": "战斗贴图",
+      "path_id": -8008305375161649496,
+      "source": "CAB-903ba21fbba918a67ec863e3be3f8942"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    660032,
+    660033
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shishen1/zidan_shishen1_-8008305375161649496.png"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_tuanzi3",
+  "model": "paodan_tuanzi3",
+  "name": "伊织炮弹",
+  "names": [
+    "伊织炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tuanzi3",
+  "path": "battle-assets/炮弹/item__paodan_tuanzi3",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "idom_yizhi.skel",
+    "atlas": "idom_yizhi.atlas",
+    "pages": [
+      "idom_yizhi.png"
+    ]
+  }
+}

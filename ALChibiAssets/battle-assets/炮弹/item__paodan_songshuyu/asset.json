@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_songshuyu",
+  "model": "paodan_songshuyu",
+  "name": "松鼠鱼炮弹",
+  "names": [
+    "松鼠鱼炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_songshuyu",
+  "path": "battle-assets/炮弹/item__paodan_songshuyu",
+  "images": [
+    {
+      "file": "paodan_songshuyu_2126103950844468592.png",
+      "name": "paodan_songshuyu",
+      "width": 128,
+      "height": 90,
+      "role": "战斗贴图",
+      "path_id": 2126103950844468592,
+      "source": "CAB-4b9b583f5e92e314a5cd1fbdd04508ce"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_songshuyu/paodan_songshuyu_2126103950844468592.png"
+}

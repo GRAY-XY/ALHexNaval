@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_motuo",
+  "model": "feiji_motuo",
+  "name": "摩托天使（鱼雷）",
+  "names": [
+    "摩托天使（鱼雷）",
+    "摩托天使（战斗）",
+    "摩托天使（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_motuo",
+  "path": "battle-assets/飞机/chargo__feiji_motuo",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_motuo_5833444811533653888.png",
+      "name": "feiji_motuo",
+      "width": 254,
+      "height": 109,
+      "role": "战斗贴图",
+      "path_id": 5833444811533653888,
+      "source": "CAB-c3ebd30fac233883083732d958596383"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_motuo/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_kafeibei",
+  "model": "yulei_kafeibei",
+  "name": "纸杯咖啡鱼雷",
+  "names": [
+    "纸杯咖啡鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_kafeibei",
+  "path": "battle-assets/鱼雷/item__yulei_kafeibei",
+  "images": [
+    {
+      "file": "yulei_kafeibei_-5870540294087750509.png",
+      "name": "yulei_kafeibei",
+      "width": 128,
+      "height": 89,
+      "role": "战斗贴图",
+      "path_id": -5870540294087750509,
+      "source": "CAB-6be3907ddb6b225574e1c3aefcdccc06"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_kafeibei/yulei_kafeibei_-5870540294087750509.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__bulisituoer_baiqi",
+  "model": "bulisituoer_baiqi",
+  "name": "bulisituoer_baiqi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulisituoer_baiqi",
+  "path": "battle-assets/炮弹/item__bulisituoer_baiqi",
+  "images": [
+    {
+      "file": "baiqi_8492327532115190403.png",
+      "name": "baiqi",
+      "width": 76,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": 8492327532115190403,
+      "source": "CAB-ec85a3f5a553e792164671148af2ee10"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19582
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulisituoer_baiqi/baiqi_8492327532115190403.png"
+}

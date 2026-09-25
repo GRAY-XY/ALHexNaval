@@ -1,0 +1,33 @@
+{
+  "id": "item__ninja_bullet07",
+  "model": "ninja_bullet07",
+  "name": "ninja_bullet07",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/ninja_bullet07",
+  "path": "battle-assets/鱼雷/item__ninja_bullet07",
+  "images": [
+    {
+      "file": "ninja_bullet07_-6033495882395308275.png",
+      "name": "ninja_bullet07",
+      "width": 360,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -6033495882395308275,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3108201,
+    3108202,
+    3108212,
+    3108410,
+    3109008,
+    3109013
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__ninja_bullet07/ninja_bullet07_-6033495882395308275.png"
+}

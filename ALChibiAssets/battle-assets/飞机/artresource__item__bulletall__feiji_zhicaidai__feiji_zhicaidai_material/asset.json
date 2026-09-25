@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_zhicaidai__feiji_zhicaidai_material",
+  "model": "feiji_zhicaidai_material",
+  "name": "feiji_zhicaidai_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_zhicaidai/feiji_zhicaidai_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_zhicaidai__feiji_zhicaidai_material",
+  "images": [
+    {
+      "file": "feiji_zhicaidai_-3544954846573482544.png",
+      "name": "feiji_zhicaidai",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3544954846573482544,
+      "source": "CAB-933c5ba07d64c99d3d7e9950968eee1b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

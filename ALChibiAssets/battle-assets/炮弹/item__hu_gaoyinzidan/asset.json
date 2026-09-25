@@ -1,0 +1,26 @@
+{
+  "id": "item__hu_gaoyinzidan",
+  "model": "hu_gaoyinzidan",
+  "name": "hu_gaoyinzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hu_gaoyinzidan",
+  "path": "battle-assets/炮弹/item__hu_gaoyinzidan",
+  "images": [
+    {
+      "file": "gaoyinfu01_5997838511307382982.png",
+      "name": "gaoyinfu01",
+      "width": 175,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": 5997838511307382982,
+      "source": "CAB-1fccd33614cb7f90d7f1dee20b4b975c"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hu_gaoyinzidan/gaoyinfu01_5997838511307382982.png"
+}

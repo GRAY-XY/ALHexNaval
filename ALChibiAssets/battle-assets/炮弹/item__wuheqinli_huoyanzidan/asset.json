@@ -1,0 +1,47 @@
+{
+  "id": "item__wuheqinli_huoyanzidan",
+  "model": "wuheqinli_huoyanzidan",
+  "name": "wuheqinli_huoyanzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/wuheqinli_huoyanzidan",
+  "path": "battle-assets/炮弹/item__wuheqinli_huoyanzidan",
+  "images": [
+    {
+      "file": "particles01_-8317168542599429932.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8317168542599429932,
+      "source": "CAB-da4275a78783ed8ca583ee7ca9104a3f"
+    },
+    {
+      "file": "jianqi01_7065251866016041262.png",
+      "name": "jianqi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7065251866016041262,
+      "source": "CAB-da4275a78783ed8ca583ee7ca9104a3f"
+    },
+    {
+      "file": "jianqi02_7392783244177797257.png",
+      "name": "jianqi02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7392783244177797257,
+      "source": "CAB-da4275a78783ed8ca583ee7ca9104a3f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    168259,
+    3335001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__wuheqinli_huoyanzidan/particles01_-8317168542599429932.png"
+}

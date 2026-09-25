@@ -1,0 +1,37 @@
+{
+  "id": "item__bullet_guanglun05",
+  "model": "bullet_guanglun05",
+  "name": "bullet_guanglun05",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_guanglun05",
+  "path": "battle-assets/炮弹/item__bullet_guanglun05",
+  "images": [
+    {
+      "file": "bullet_guanglun05_-5439241538117475050.png",
+      "name": "bullet_guanglun05",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -5439241538117475050,
+      "source": "CAB-be056d8868e87c300a78e4d2629687d1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    29663022,
+    29663023,
+    29663063
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_guanglun05/bullet_guanglun05_-5439241538117475050.png",
+  "spine": {
+    "skel": "bullet_guanglun05.skel",
+    "atlas": "bullet_guanglun05.atlas",
+    "pages": [
+      "bullet_guanglun05.png"
+    ]
+  }
+}

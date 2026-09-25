@@ -1,0 +1,37 @@
+{
+  "id": "chargo__tianshangai",
+  "model": "tianshangai",
+  "name": "天山改",
+  "names": [
+    "天山改"
+  ],
+  "category": "飞机",
+  "source": "chargo/tianshangai",
+  "path": "battle-assets/飞机/chargo__tianshangai",
+  "images": [
+    {
+      "file": "tianshanGai_-8078059850819401105.png",
+      "name": "tianshanGai",
+      "width": 239,
+      "height": 240,
+      "role": "战斗贴图",
+      "path_id": -8078059850819401105,
+      "source": "CAB-144e9d757f6b8954255ace40699850fa"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__tianshangai/tianshanGai_-8078059850819401105.png"
+}

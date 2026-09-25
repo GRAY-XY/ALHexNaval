@@ -1,0 +1,17 @@
+{
+  "id": "item__laisha_zhuaji_bing",
+  "model": "laisha_zhuaji_bing",
+  "name": "laisha_zhuaji_bing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_zhuaji_bing",
+  "path": "battle-assets/炮弹/item__laisha_zhuaji_bing",
+  "images": [],
+  "particle_systems": 13,
+  "animations": [],
+  "bullet_ids": [
+    19483
+  ],
+  "has_preview": false,
+  "prefab": true
+}

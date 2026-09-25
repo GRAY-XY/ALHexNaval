@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__yak7",
+  "model": "yak7",
+  "name": "Yak-7",
+  "names": [
+    "Yak-7"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/yak7",
+  "path": "battle-assets/飞机图标/aircrafticon__yak7",
+  "images": [
+    {
+      "file": "yak7_8382945612465105772.png",
+      "name": "yak7",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 8382945612465105772,
+      "source": "CAB-981578687310e85184ae9c14db65a006"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

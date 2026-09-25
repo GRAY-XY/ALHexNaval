@@ -1,0 +1,35 @@
+{
+  "id": "item__deleike_huoyandao",
+  "model": "deleike_huoyandao",
+  "name": "deleike_huoyandao",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/deleike_huoyandao",
+  "path": "battle-assets/其他战斗特效/item__deleike_huoyandao",
+  "images": [
+    {
+      "file": "huoyan04_-3717116510048728724.png",
+      "name": "huoyan04",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3717116510048728724,
+      "source": "CAB-84d71d7c3daa355440c370361b05db63"
+    },
+    {
+      "file": "huoyan01_8700128194500621116.png",
+      "name": "huoyan01",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8700128194500621116,
+      "source": "CAB-84d71d7c3daa355440c370361b05db63"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__deleike_huoyandao/huoyan04_-3717116510048728724.png"
+}

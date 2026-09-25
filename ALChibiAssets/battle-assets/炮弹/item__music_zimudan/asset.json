@@ -1,0 +1,31 @@
+{
+  "id": "item__music_zimudan",
+  "model": "music_zimudan",
+  "name": "music_zimudan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/music_zimudan",
+  "path": "battle-assets/炮弹/item__music_zimudan",
+  "images": [
+    {
+      "file": "yinfu_02_-8541251295255853436.png",
+      "name": "yinfu_02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8541251295255853436,
+      "source": "CAB-0e10b04b0522e064cc2253864379be90"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    650008,
+    650009,
+    780025,
+    780039
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__music_zimudan/yinfu_02_-8541251295255853436.png"
+}

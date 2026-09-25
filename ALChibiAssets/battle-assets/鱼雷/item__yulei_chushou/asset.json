@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_chushou",
+  "model": "yulei_chushou",
+  "name": "触手鱼雷",
+  "names": [
+    "触手鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chushou",
+  "path": "battle-assets/鱼雷/item__yulei_chushou",
+  "images": [
+    {
+      "file": "yulei_chushou_-4394152527418049096.png",
+      "name": "yulei_chushou",
+      "width": 128,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": -4394152527418049096,
+      "source": "CAB-fc5ec7b899b702cb08474f5b816de8b6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    161177
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chushou/yulei_chushou_-4394152527418049096.png"
+}

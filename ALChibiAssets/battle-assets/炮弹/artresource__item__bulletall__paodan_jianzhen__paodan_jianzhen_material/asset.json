@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paodan_jianzhen__paodan_jianzhen_material",
+  "model": "paodan_jianzhen_material",
+  "name": "paodan_jianzhen_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_jianzhen/paodan_jianzhen_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_jianzhen__paodan_jianzhen_material",
+  "images": [
+    {
+      "file": "paodan_jianzhen_8063043210605795388.png",
+      "name": "paodan_jianzhen",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 8063043210605795388,
+      "source": "CAB-54644fc660bbe47a590917d14847bd88"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

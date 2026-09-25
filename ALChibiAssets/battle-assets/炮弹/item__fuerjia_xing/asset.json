@@ -1,0 +1,29 @@
+{
+  "id": "item__fuerjia_xing",
+  "model": "fuerjia_xing",
+  "name": "fuerjia_xing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/fuerjia_xing",
+  "path": "battle-assets/炮弹/item__fuerjia_xing",
+  "images": [
+    {
+      "file": "bingzhui01_4647046596138396703.png",
+      "name": "bingzhui01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4647046596138396703,
+      "source": "CAB-a2bff668a7e43190453c8d2d39edc86a"
+    }
+  ],
+  "particle_systems": 17,
+  "animations": [],
+  "bullet_ids": [
+    19396,
+    3300101
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__fuerjia_xing/bingzhui01_4647046596138396703.png"
+}

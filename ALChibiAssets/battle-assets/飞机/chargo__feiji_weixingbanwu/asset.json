@@ -1,0 +1,46 @@
+{
+  "id": "chargo__feiji_weixingbanwu",
+  "model": "feiji_weixingbanwu",
+  "name": "坠星机LV1",
+  "names": [
+    "坠星机LV1",
+    "【偶像活动通用】量产型航空母舰(μ) 战斗机 Lv1",
+    "【偶像活动通用】量产型航空母舰(μ) 战斗机 Lv2",
+    "【偶像活动通用】量产型航空母舰(μ) 战斗机 Lv3",
+    "【偶像活动通用】量产型航空母舰(μ) 战斗机 Lv4",
+    "【偶像活动通用】量产型航空母舰(μ) 战斗机 Lv5",
+    "【2024偶像三期SP2】BOSS 可畏(μ兵装)  轰炸机",
+    "【2024偶像三期μSP】BOSS 可畏(μ兵装)  轰炸机",
+    "【2024偶像三期ISP2】BOSS 可畏(μ兵装)  轰炸机",
+    "卫星伴舞啾(鱼雷)",
+    "卫星伴舞啾(战斗)",
+    "卫星伴舞啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_weixingbanwu",
+  "path": "battle-assets/飞机/chargo__feiji_weixingbanwu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_weixingbanwu/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "weixingbanwu.skel",
+    "atlas": "weixingbanwu.atlas",
+    "pages": [
+      "weixingbanwu.png"
+    ]
+  }
+}

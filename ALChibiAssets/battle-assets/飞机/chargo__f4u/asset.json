@@ -1,0 +1,38 @@
+{
+  "id": "chargo__f4u",
+  "model": "f4u",
+  "name": "F4U海盗",
+  "names": [
+    "F4U海盗",
+    "F4U（VF-17“海盗”中队）"
+  ],
+  "category": "飞机",
+  "source": "chargo/f4u",
+  "path": "battle-assets/飞机/chargo__f4u",
+  "images": [
+    {
+      "file": "F4U_3012368762597351413.png",
+      "name": "F4U",
+      "width": 253,
+      "height": 248,
+      "role": "战斗贴图",
+      "path_id": 3012368762597351413,
+      "source": "CAB-35a986a0d992b7337dd69045d5e44933"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__f4u/F4U_3012368762597351413.png"
+}

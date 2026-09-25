@@ -1,0 +1,53 @@
+{
+  "id": "item__yulei_huapin",
+  "model": "yulei_huapin",
+  "name": "插花玉瓶鱼雷",
+  "names": [
+    "插花玉瓶鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huapin",
+  "path": "battle-assets/鱼雷/item__yulei_huapin",
+  "images": [
+    {
+      "file": "line01_-5020524147638028264.png",
+      "name": "line01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5020524147638028264,
+      "source": "CAB-b9b19ddb3c9a4d099581cf6963d30274"
+    },
+    {
+      "file": "particles01_-3310787673558051681.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3310787673558051681,
+      "source": "CAB-b9b19ddb3c9a4d099581cf6963d30274"
+    },
+    {
+      "file": "yulei_huapin_417845277645301022.png",
+      "name": "yulei_huapin",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 417845277645301022,
+      "source": "CAB-b9b19ddb3c9a4d099581cf6963d30274"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_huapin/line01_-5020524147638028264.png",
+  "spine": {
+    "skel": "yulei_huapin.skel",
+    "atlas": "yulei_huapin.atlas",
+    "pages": [
+      "yulei_huapin.png"
+    ]
+  }
+}

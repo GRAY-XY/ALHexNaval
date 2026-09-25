@@ -1,0 +1,30 @@
+{
+  "id": "aircrafticon__sm79",
+  "model": "sm79",
+  "name": "【2021意大利活动】我方支援飞机B3",
+  "names": [
+    "【2021意大利活动】我方支援飞机B3",
+    "【2021意大利活动】我方支援飞机DS",
+    "【2021意大利活动】我方支援飞机SP",
+    "【2025曾克SP活动】BOSS 帝国警视长 第二波 全屏陆基飞机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/sm79",
+  "path": "battle-assets/飞机图标/aircrafticon__sm79",
+  "images": [
+    {
+      "file": "SM79_-5467489553167845711.png",
+      "name": "SM79",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -5467489553167845711,
+      "source": "CAB-920b02403377e7823e6748875338af3e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__huixing12jia",
+  "model": "huixing12jia",
+  "name": "彗星一二型甲",
+  "names": [
+    "彗星一二型甲"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/huixing12jia",
+  "path": "battle-assets/飞机图标/aircrafticon__huixing12jia",
+  "images": [
+    {
+      "file": "huixing12jia_3416486791488970316.png",
+      "name": "huixing12jia",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 3416486791488970316,
+      "source": "CAB-09f0b3015f7c31422ef688b4c9c9fe6b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

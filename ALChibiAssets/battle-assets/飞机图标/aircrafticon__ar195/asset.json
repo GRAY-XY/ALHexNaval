@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__ar195",
+  "model": "ar195",
+  "name": "Ar-195舰载鱼雷机",
+  "names": [
+    "Ar-195舰载鱼雷机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ar195",
+  "path": "battle-assets/飞机图标/aircrafticon__ar195",
+  "images": [
+    {
+      "file": "Ar195_-9045601792894568181.png",
+      "name": "Ar195",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -9045601792894568181,
+      "source": "CAB-c355d5a2e7963511a6daccb2d53d0a16"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

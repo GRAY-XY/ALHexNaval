@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_douli",
+  "model": "paodan_douli",
+  "name": "游侠斗笠炮弹",
+  "names": [
+    "游侠斗笠炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_douli",
+  "path": "battle-assets/炮弹/item__paodan_douli",
+  "images": [
+    {
+      "file": "paodan_douli_8447618733225660334.png",
+      "name": "paodan_douli",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 8447618733225660334,
+      "source": "CAB-f77585d0d65b0a48cdabd604c9408c85"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_douli/paodan_douli_8447618733225660334.png"
+}

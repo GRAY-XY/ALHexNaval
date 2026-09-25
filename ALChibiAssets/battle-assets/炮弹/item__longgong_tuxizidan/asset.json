@@ -1,0 +1,36 @@
+{
+  "id": "item__longgong_tuxizidan",
+  "model": "longgong_tuxizidan",
+  "name": "longgong_tuxizidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/longgong_tuxizidan",
+  "path": "battle-assets/炮弹/item__longgong_tuxizidan",
+  "images": [
+    {
+      "file": "tuxi_4364711246416587865.png",
+      "name": "tuxi",
+      "width": 223,
+      "height": 222,
+      "role": "战斗贴图",
+      "path_id": 4364711246416587865,
+      "source": "CAB-b49571e12f8ae0b45352f9298a158a6d"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    853021,
+    853022,
+    853023,
+    853024,
+    853025,
+    853026,
+    853027,
+    853028,
+    853341
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__longgong_tuxizidan/tuxi_4364711246416587865.png"
+}

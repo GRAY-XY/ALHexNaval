@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_ai_lingdai",
+  "model": "yulei_ai_lingdai",
+  "name": "领带鱼雷",
+  "names": [
+    "领带鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_ai_lingdai",
+  "path": "battle-assets/鱼雷/item__yulei_ai_lingdai",
+  "images": [
+    {
+      "file": "yulei_ai_lingdai_1432982594796728780.png",
+      "name": "yulei_ai_lingdai",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": 1432982594796728780,
+      "source": "CAB-f6fade913ad8e99ffb7b29d6d09b2000"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_ai_lingdai/yulei_ai_lingdai_1432982594796728780.png"
+}

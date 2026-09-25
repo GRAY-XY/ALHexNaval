@@ -1,0 +1,40 @@
+{
+  "id": "chargo__feiji_feitiandujiaoshou",
+  "model": "feiji_feitiandujiaoshou",
+  "name": "【2024异世界冒险 剧情】独角兽 独角兽飞机",
+  "names": [
+    "【2024异世界冒险 剧情】独角兽 独角兽飞机",
+    "飞天独角兽(鱼雷)",
+    "飞天独角兽(战斗)",
+    "飞天独角兽(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_feitiandujiaoshou",
+  "path": "battle-assets/飞机/chargo__feiji_feitiandujiaoshou",
+  "images": [
+    {
+      "file": "feiji_feitiandujiaoshou_6288758603727928734.png",
+      "name": "feiji_feitiandujiaoshou",
+      "width": 213,
+      "height": 142,
+      "role": "战斗贴图",
+      "path_id": 6288758603727928734,
+      "source": "CAB-8650ebcb4debb749fb52eb6377bd8342"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_feitiandujiaoshou/feiji_feitiandujiaoshou_6288758603727928734.png"
+}

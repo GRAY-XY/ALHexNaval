@@ -1,0 +1,24 @@
+{
+  "id": "item__zidan_zhenliejiantou",
+  "model": "zidan_zhenliejiantou",
+  "name": "指向性箭头子弹",
+  "names": [
+    "指向性箭头子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhenliejiantou",
+  "path": "battle-assets/炮弹/item__zidan_zhenliejiantou",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "zidan_zhenliejiantou.skel",
+    "atlas": "zidan_zhenliejiantou.atlas",
+    "pages": [
+      "zidan_zhenliejiantou.png"
+    ]
+  }
+}

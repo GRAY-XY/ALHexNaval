@@ -1,0 +1,20 @@
+{
+  "id": "item__yumia_chuantoudan",
+  "model": "yumia_chuantoudan",
+  "name": "yumia_chuantoudan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yumia_chuantoudan",
+  "path": "battle-assets/炮弹/item__yumia_chuantoudan",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    168214,
+    168216,
+    168220,
+    168222
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,163 @@
+{
+  "format": "al-hex-match",
+  "version": 1,
+  "mapVersion": 1,
+  "size": 256,
+  "mapHash": "1af6e931",
+  "round": 1,
+  "activeIndex": 0,
+  "fleetSerial": 0,
+  "teams": [
+    {
+      "id": 1,
+      "name": "湛蓝舰队"
+    },
+    {
+      "id": 2,
+      "name": "翠绿舰队"
+    },
+    {
+      "id": 3,
+      "name": "琥珀舰队"
+    },
+    {
+      "id": 4,
+      "name": "紫罗兰舰队"
+    }
+  ],
+  "units": [
+    {
+      "col": 26,
+      "row": 30,
+      "instanceId": "preview-lafei",
+      "facing": "right",
+      "ownerId": 1,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lafei"
+    },
+    {
+      "col": 29,
+      "row": 30,
+      "instanceId": "preview-biaoqiang",
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "biaoqiang"
+    },
+    {
+      "col": 32,
+      "row": 30,
+      "instanceId": "preview-lingbo",
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lingbo"
+    },
+    {
+      "col": 35,
+      "row": 30,
+      "instanceId": "preview-z23",
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "z23"
+    },
+    {
+      "col": 26,
+      "row": 33,
+      "instanceId": "preview-hailunna",
+      "facing": "right",
+      "ownerId": 1,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "hailunna"
+    },
+    {
+      "col": 29,
+      "row": 33,
+      "instanceId": "preview-beierfasite",
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "beierfasite"
+    },
+    {
+      "col": 32,
+      "row": 33,
+      "instanceId": "preview-gaoxiong",
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "gaoxiong"
+    },
+    {
+      "col": 35,
+      "row": 33,
+      "instanceId": "preview-ougen",
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "ougen"
+    },
+    {
+      "col": 26,
+      "row": 36,
+      "instanceId": "preview-yanzhan",
+      "facing": "right",
+      "ownerId": 1,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "yanzhan"
+    },
+    {
+      "col": 29,
+      "row": 36,
+      "instanceId": "preview-bisimai",
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "bisimai"
+    },
+    {
+      "col": 32,
+      "row": 36,
+      "instanceId": "preview-qiye",
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "qiye"
+    },
+    {
+      "col": 35,
+      "row": 36,
+      "instanceId": "preview-dujiaoshou",
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "dujiaoshou"
+    }
+  ],
+  "fleets": []
+}

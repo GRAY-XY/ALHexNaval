@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__fw190f8",
+  "model": "fw190f8",
+  "name": "FW-190 F-8/U2",
+  "names": [
+    "FW-190 F-8/U2"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/fw190f8",
+  "path": "battle-assets/飞机图标/aircrafticon__fw190f8",
+  "images": [
+    {
+      "file": "fw190f8_-6376961094492727011.png",
+      "name": "fw190f8",
+      "width": 44,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6376961094492727011,
+      "source": "CAB-d047b2e880ac96cda0ac3ce3eb8638ea"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "item__shanluan_xuebugui_bingzhui",
+  "model": "shanluan_xuebugui_bingzhui",
+  "name": "shanluan_xuebugui_bingzhui",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_xuebugui_bingzhui",
+  "path": "battle-assets/炮弹/item__shanluan_xuebugui_bingzhui",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19789
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_feitianmache",
+  "model": "feiji_feitianmache",
+  "name": "飞天马车(鱼雷)",
+  "names": [
+    "飞天马车(鱼雷)",
+    "飞天马车(战斗)",
+    "飞天马车(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_feitianmache",
+  "path": "battle-assets/飞机/chargo__feiji_feitianmache",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_feitianmache_-7525837009913430770.png",
+      "name": "feiji_feitianmache",
+      "width": 256,
+      "height": 191,
+      "role": "战斗贴图",
+      "path_id": -7525837009913430770,
+      "source": "CAB-ebfe91d12d62b537b5b8a17edf75edd7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_feitianmache/aircraft_shadow_2192772484218123160.png"
+}

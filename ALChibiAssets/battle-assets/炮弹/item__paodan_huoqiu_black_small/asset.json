@@ -1,0 +1,22 @@
+{
+  "id": "item__paodan_huoqiu_black_small",
+  "model": "paodan_huoqiu_black_small",
+  "name": "paodan_huoqiu_black_small",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_huoqiu_black_small",
+  "path": "battle-assets/炮弹/item__paodan_huoqiu_black_small",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "huoqiupaodan_black.skel",
+    "atlas": "huoqiupaodan_black.atlas",
+    "pages": [
+      "huoqiupaodan_black.png"
+    ]
+  }
+}

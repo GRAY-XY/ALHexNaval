@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_tiegui",
+  "model": "yulei_tiegui",
+  "name": "铁轨鱼雷",
+  "names": [
+    "铁轨鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tiegui",
+  "path": "battle-assets/鱼雷/item__yulei_tiegui",
+  "images": [
+    {
+      "file": "yulei_tiegui_-8859810562732227937.png",
+      "name": "yulei_tiegui",
+      "width": 128,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": -8859810562732227937,
+      "source": "CAB-40c2871f4ecf35f2e84ea7136c533ff2"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tiegui/yulei_tiegui_-8859810562732227937.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhongheji",
+  "model": "yulei_zhongheji",
+  "name": "中和剂鱼雷",
+  "names": [
+    "中和剂鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhongheji",
+  "path": "battle-assets/鱼雷/item__yulei_zhongheji",
+  "images": [
+    {
+      "file": "lvping_3590944648992890482.png",
+      "name": "lvping",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3590944648992890482,
+      "source": "CAB-3bce44d2c4098b37dc01a72a890b6909"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhongheji/lvping_3590944648992890482.png"
+}

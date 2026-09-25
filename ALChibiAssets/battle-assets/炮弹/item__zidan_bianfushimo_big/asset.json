@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_bianfushimo_big",
+  "model": "zidan_bianfushimo_big",
+  "name": "zidan_bianfushimo_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_bianfushimo_big",
+  "path": "battle-assets/炮弹/item__zidan_bianfushimo_big",
+  "images": [
+    {
+      "file": "zidan_bianfushimo_6855473352644861052.png",
+      "name": "zidan_bianfushimo",
+      "width": 128,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": 6855473352644861052,
+      "source": "CAB-ea7a0b01b2319cd97d7d9592381dfae2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710204,
+    3139207,
+    3253021
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bianfushimo_big/zidan_bianfushimo_6855473352644861052.png"
+}

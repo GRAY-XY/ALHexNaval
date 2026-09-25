@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_senlinzhixin_green",
+  "model": "paodan_senlinzhixin_green",
+  "name": "森林之心炮弹（绿）",
+  "names": [
+    "森林之心炮弹（绿）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_senlinzhixin_green",
+  "path": "battle-assets/炮弹/item__paodan_senlinzhixin_green",
+  "images": [
+    {
+      "file": "paodan_senlinzhixin_green_-161444038780520276.png",
+      "name": "paodan_senlinzhixin_green",
+      "width": 128,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": -161444038780520276,
+      "source": "CAB-7e15ab0cc272f1318bd5a02db52fc77d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_senlinzhixin_green/paodan_senlinzhixin_green_-161444038780520276.png"
+}

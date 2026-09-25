@@ -1,0 +1,33 @@
+{
+  "id": "item__zidan_lanqiu",
+  "model": "zidan_lanqiu",
+  "name": "篮球子弹",
+  "names": [
+    "篮球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_lanqiu",
+  "path": "battle-assets/炮弹/item__zidan_lanqiu",
+  "images": [
+    {
+      "file": "zidan_lanqiu_2898129468863427003.png",
+      "name": "zidan_lanqiu",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 2898129468863427003,
+      "source": "CAB-0b6524db6f91ac2fbb0c7d356aac35b4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3160007,
+    3160008,
+    3160009,
+    3160010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lanqiu/zidan_lanqiu_2898129468863427003.png"
+}

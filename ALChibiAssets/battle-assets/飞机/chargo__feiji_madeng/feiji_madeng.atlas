@@ -1,0 +1,146 @@
+
+feiji_madeng.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 172, 63
+  size: 191, 151
+  orig: 191, 151
+  offset: 0, 0
+  index: -1
+liusu_1
+  rotate: false
+  xy: 37, 15
+  size: 9, 25
+  orig: 9, 25
+  offset: 0, 0
+  index: -1
+liusu_2
+  rotate: false
+  xy: 15, 14
+  size: 9, 26
+  orig: 9, 26
+  offset: 0, 0
+  index: -1
+liusu_3
+  rotate: false
+  xy: 26, 14
+  size: 9, 26
+  orig: 9, 26
+  offset: 0, 0
+  index: -1
+liusu_4
+  rotate: false
+  xy: 2, 14
+  size: 11, 26
+  orig: 11, 26
+  offset: 0, 0
+  index: -1
+piaodai_1
+  rotate: true
+  xy: 325, 80
+  size: 174, 42
+  orig: 174, 42
+  offset: 0, 0
+  index: -1
+piaodai_2
+  rotate: true
+  xy: 369, 84
+  size: 170, 41
+  orig: 170, 41
+  offset: 0, 0
+  index: -1
+qianbi_1
+  rotate: true
+  xy: 48, 22
+  size: 18, 9
+  orig: 18, 9
+  offset: 0, 0
+  index: -1
+qianbi_1_2
+  rotate: true
+  xy: 56, 2
+  size: 18, 9
+  orig: 18, 9
+  offset: 0, 0
+  index: -1
+qianbi_1_3
+  rotate: true
+  xy: 59, 22
+  size: 18, 9
+  orig: 18, 9
+  offset: 0, 0
+  index: -1
+qizi_2
+  rotate: false
+  xy: 2, 2
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+qizi_2_2
+  rotate: false
+  xy: 20, 2
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+qizi_2_3
+  rotate: false
+  xy: 38, 3
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+shanguang_1
+  rotate: true
+  xy: 2, 42
+  size: 212, 83
+  orig: 212, 83
+  offset: 0, 0
+  index: -1
+shanguang_2
+  rotate: true
+  xy: 87, 42
+  size: 212, 83
+  orig: 212, 83
+  offset: 0, 0
+  index: -1
+tideng_1
+  rotate: true
+  xy: 412, 118
+  size: 136, 128
+  orig: 136, 128
+  offset: 0, 0
+  index: -1
+tideng_2
+  rotate: true
+  xy: 172, 13
+  size: 48, 112
+  orig: 48, 112
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: false
+  xy: 286, 16
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: true
+  xy: 444, 39
+  size: 77, 44
+  orig: 77, 44
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: false
+  xy: 365, 33
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1

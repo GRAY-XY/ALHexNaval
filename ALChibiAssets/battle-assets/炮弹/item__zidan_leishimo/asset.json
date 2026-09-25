@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_leishimo",
+  "model": "zidan_leishimo",
+  "name": "雷使魔子弹",
+  "names": [
+    "雷使魔子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_leishimo",
+  "path": "battle-assets/炮弹/item__zidan_leishimo",
+  "images": [
+    {
+      "file": "leiqiu01_-7046800630191701169.png",
+      "name": "leiqiu01",
+      "width": 125,
+      "height": 125,
+      "role": "战斗贴图",
+      "path_id": -7046800630191701169,
+      "source": "CAB-0bfd618b5452ca574faf67831b047bae"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_leishimo/leiqiu01_-7046800630191701169.png"
+}

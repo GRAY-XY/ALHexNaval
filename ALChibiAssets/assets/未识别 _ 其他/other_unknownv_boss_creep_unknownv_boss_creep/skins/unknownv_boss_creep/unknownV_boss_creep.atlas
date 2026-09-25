@@ -1,0 +1,118 @@
+
+unknownV_boss_creep.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 1481, 155
+  size: 1379, 474
+  orig: 1379, 474
+  offset: 0, 0
+  index: -1
+chu_1
+  rotate: false
+  xy: 1618, 1617
+  size: 335, 414
+  orig: 335, 414
+  offset: 0, 0
+  index: -1
+chu_2
+  rotate: false
+  xy: 2, 144
+  size: 457, 213
+  orig: 457, 213
+  offset: 0, 0
+  index: -1
+chu_3
+  rotate: false
+  xy: 819, 166
+  size: 375, 191
+  orig: 375, 191
+  offset: 0, 0
+  index: -1
+chu_4
+  rotate: false
+  xy: 461, 74
+  size: 356, 283
+  orig: 356, 283
+  offset: 0, 0
+  index: -1
+diaoxian_1
+  rotate: false
+  xy: 200, 47
+  size: 163, 95
+  orig: 163, 95
+  offset: 0, 0
+  index: -1
+diaoxian_2
+  rotate: true
+  xy: 819, 2
+  size: 162, 172
+  orig: 162, 172
+  offset: 0, 0
+  index: -1
+diaoxian_3
+  rotate: true
+  xy: 1618, 1558
+  size: 57, 243
+  orig: 57, 243
+  offset: 0, 0
+  index: -1
+diaoxian_4
+  rotate: false
+  xy: 1955, 1828
+  size: 53, 203
+  orig: 53, 203
+  offset: 0, 0
+  index: -1
+diaoxian_5
+  rotate: false
+  xy: 1400, 255
+  size: 24, 102
+  orig: 24, 102
+  offset: 0, 0
+  index: -1
+diaoxian_6
+  rotate: true
+  xy: 2, 2
+  size: 140, 196
+  orig: 140, 196
+  offset: 0, 0
+  index: -1
+diaoxian_7
+  rotate: false
+  xy: 1196, 30
+  size: 202, 327
+  orig: 202, 327
+  offset: 0, 0
+  index: -1
+shuiqi
+  rotate: false
+  xy: 2, 1536
+  size: 1614, 495
+  orig: 1614, 495
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 1141
+  size: 1477, 393
+  orig: 1477, 393
+  offset: 0, 0
+  index: -1
+yy_2
+  rotate: false
+  xy: 2, 748
+  size: 1477, 391
+  orig: 1477, 391
+  offset: 0, 0
+  index: -1
+yy_3
+  rotate: false
+  xy: 2, 359
+  size: 1476, 387
+  orig: 1476, 387
+  offset: 0, 0
+  index: -1

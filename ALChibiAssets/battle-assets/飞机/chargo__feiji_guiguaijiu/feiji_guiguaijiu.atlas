@@ -1,0 +1,118 @@
+
+feiji_guiguaijiu.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fx_1
+  rotate: true
+  xy: 160, 86
+  size: 40, 44
+  orig: 40, 44
+  offset: 0, 0
+  index: -1
+fx_2
+  rotate: true
+  xy: 2, 2
+  size: 21, 43
+  orig: 21, 43
+  offset: 0, 0
+  index: -1
+fx_3
+  rotate: false
+  xy: 2, 217
+  size: 150, 37
+  orig: 150, 37
+  offset: 0, 0
+  index: -1
+fx_4
+  rotate: false
+  xy: 160, 55
+  size: 26, 29
+  orig: 26, 29
+  offset: 0, 0
+  index: -1
+fx_5
+  rotate: true
+  xy: 190, 40
+  size: 44, 23
+  orig: 44, 23
+  offset: 0, 0
+  index: -1
+fx_5_2
+  rotate: false
+  xy: 190, 15
+  size: 44, 23
+  orig: 44, 23
+  offset: 0, 0
+  index: -1
+fx_5_3
+  rotate: false
+  xy: 121, 2
+  size: 44, 23
+  orig: 44, 23
+  offset: 0, 0
+  index: -1
+fx_6
+  rotate: false
+  xy: 2, 53
+  size: 67, 26
+  orig: 67, 26
+  offset: 0, 0
+  index: -1
+fx_6_2
+  rotate: false
+  xy: 2, 25
+  size: 67, 26
+  orig: 67, 26
+  offset: 0, 0
+  index: -1
+fx_6_3
+  rotate: false
+  xy: 121, 27
+  size: 67, 26
+  orig: 67, 26
+  offset: 0, 0
+  index: -1
+fx_7
+  rotate: false
+  xy: 135, 191
+  size: 13, 24
+  orig: 13, 24
+  offset: 0, 0
+  index: -1
+fx_8
+  rotate: true
+  xy: 154, 128
+  size: 126, 47
+  orig: 126, 47
+  offset: 0, 0
+  index: -1
+fx_9
+  rotate: true
+  xy: 135, 55
+  size: 71, 23
+  orig: 71, 23
+  offset: 0, 0
+  index: -1
+fx_9_2
+  rotate: true
+  xy: 71, 8
+  size: 71, 23
+  orig: 71, 23
+  offset: 0, 0
+  index: -1
+fx_9_3
+  rotate: true
+  xy: 96, 8
+  size: 71, 23
+  orig: 71, 23
+  offset: 0, 0
+  index: -1
+jiujiu
+  rotate: false
+  xy: 2, 81
+  size: 131, 134
+  orig: 131, 134
+  offset: 0, 0
+  index: -1

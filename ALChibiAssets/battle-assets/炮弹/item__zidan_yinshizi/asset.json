@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_yinshizi",
+  "model": "zidan_yinshizi",
+  "name": "子弹：银十字",
+  "names": [
+    "子弹：银十字"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yinshizi",
+  "path": "battle-assets/炮弹/item__zidan_yinshizi",
+  "images": [
+    {
+      "file": "zidan_yinshizi_1532140022813302171.png",
+      "name": "zidan_yinshizi",
+      "width": 127,
+      "height": 132,
+      "role": "战斗贴图",
+      "path_id": 1532140022813302171,
+      "source": "CAB-22b3db191750d4ab49ec3acc668b864d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3139205
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yinshizi/zidan_yinshizi_1532140022813302171.png"
+}

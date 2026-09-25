@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_jiuweihu__feiji_jiuweihu_material",
+  "model": "feiji_jiuweihu_material",
+  "name": "feiji_jiuweihu_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_jiuweihu/feiji_jiuweihu_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_jiuweihu__feiji_jiuweihu_material",
+  "images": [
+    {
+      "file": "feiji_jiuweihu_7590099336963845255.png",
+      "name": "feiji_jiuweihu",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7590099336963845255,
+      "source": "CAB-47a1249a6cb18f31c72ae4d43b78c6ca"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

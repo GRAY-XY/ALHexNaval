@@ -1,0 +1,38 @@
+{
+  "id": "item__heifangzhou_zhongyu_yellow",
+  "model": "heifangzhou_zhongyu_yellow",
+  "name": "heifangzhou_zhongyu_yellow",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_zhongyu_yellow",
+  "path": "battle-assets/炮弹/item__heifangzhou_zhongyu_yellow",
+  "images": [
+    {
+      "file": "zhongyu_yelllow_5369886739385053557.png",
+      "name": "zhongyu_yelllow",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 5369886739385053557,
+      "source": "CAB-e9237d9908d8dc65ff63b83840ae9a12"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3243228,
+    3243229,
+    3243230,
+    3243231,
+    3243232,
+    3243233,
+    3243234,
+    3325015,
+    3325016,
+    3325115,
+    3325116
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heifangzhou_zhongyu_yellow/zhongyu_yelllow_5369886739385053557.png"
+}

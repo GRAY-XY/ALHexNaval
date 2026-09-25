@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__huoyanshishen",
+  "model": "huoyanshishen",
+  "name": "【2021岛风活动剧情】BOSS 白龙 特殊航空弹幕 天雷轰炸机",
+  "names": [
+    "【2021岛风活动剧情】BOSS 白龙 特殊航空弹幕 天雷轰炸机",
+    "【2021岛风活动剧情】BOSS 白龙 特殊航空弹幕 鱼雷机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/huoyanshishen",
+  "path": "battle-assets/飞机图标/aircrafticon__huoyanshishen",
+  "images": [
+    {
+      "file": "huoyanshishen_-3377801638376979345.png",
+      "name": "huoyanshishen",
+      "width": 44,
+      "height": 44,
+      "role": "原始精灵",
+      "path_id": -3377801638376979345,
+      "source": "CAB-6d5d84387105e824ee4226bbb92aae79"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

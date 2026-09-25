@@ -1,0 +1,62 @@
+{
+  "id": "item__yulei_dazhentong",
+  "model": "yulei_dazhentong",
+  "name": "注射器鱼雷",
+  "names": [
+    "注射器鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dazhentong",
+  "path": "battle-assets/鱼雷/item__yulei_dazhentong",
+  "images": [
+    {
+      "file": "yulei_dazhentong_-6183996924293590777.png",
+      "name": "yulei_dazhentong",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6183996924293590777,
+      "source": "CAB-837ed994f24c8d4a00a96c95d70ead0b"
+    },
+    {
+      "file": "ling09_-8221941904989790.png",
+      "name": "ling09",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8221941904989790,
+      "source": "CAB-837ed994f24c8d4a00a96c95d70ead0b"
+    },
+    {
+      "file": "particles01_706811745668627751.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": 706811745668627751,
+      "source": "CAB-837ed994f24c8d4a00a96c95d70ead0b"
+    },
+    {
+      "file": "mask01_clamp_5274062663145833792.png",
+      "name": "mask01_clamp",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5274062663145833792,
+      "source": "CAB-837ed994f24c8d4a00a96c95d70ead0b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dazhentong/yulei_dazhentong_-6183996924293590777.png",
+  "spine": {
+    "skel": "yulei_dazhentong.skel",
+    "atlas": "yulei_dazhentong.atlas",
+    "pages": [
+      "yulei_dazhentong.png"
+    ]
+  }
+}

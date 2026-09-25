@@ -1,0 +1,33 @@
+{
+  "id": "item__bullet_dayu05",
+  "model": "bullet_dayu05",
+  "name": "bullet_dayu05",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_dayu05",
+  "path": "battle-assets/炮弹/item__bullet_dayu05",
+  "images": [
+    {
+      "file": "center_02_8285326893979762063.png",
+      "name": "center_02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8285326893979762063,
+      "source": "CAB-d2dc2a618eead84cdcd5a33a51adf3ab"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    3245009,
+    3245209,
+    3309025,
+    3309026,
+    3325019,
+    3325119
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_dayu05/center_02_8285326893979762063.png"
+}

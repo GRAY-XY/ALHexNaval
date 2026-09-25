@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_dal_shufuzhe",
+  "model": "zidan_dal_shufuzhe",
+  "name": "束缚者之链弹（子弹）",
+  "names": [
+    "束缚者之链弹（子弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dal_shufuzhe",
+  "path": "battle-assets/炮弹/item__zidan_dal_shufuzhe",
+  "images": [
+    {
+      "file": "zidan_dal_shufuzhe_-863468039249539141.png",
+      "name": "zidan_dal_shufuzhe",
+      "width": 127,
+      "height": 127,
+      "role": "战斗贴图",
+      "path_id": -863468039249539141,
+      "source": "CAB-6eba3da0ec54fc4aeb39822572a71a36"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dal_shufuzhe/zidan_dal_shufuzhe_-863468039249539141.png"
+}

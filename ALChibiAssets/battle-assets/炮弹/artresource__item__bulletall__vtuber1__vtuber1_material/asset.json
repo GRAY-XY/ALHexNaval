@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__vtuber1__vtuber1_material",
+  "model": "vtuber1_material",
+  "name": "vtuber1_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/vtuber1/vtuber1_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__vtuber1__vtuber1_material",
+  "images": [
+    {
+      "file": "vtuber1_2069654940471161422.png",
+      "name": "vtuber1",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2069654940471161422,
+      "source": "CAB-9e51c5c4b97d9f944ebb7203def56e35"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

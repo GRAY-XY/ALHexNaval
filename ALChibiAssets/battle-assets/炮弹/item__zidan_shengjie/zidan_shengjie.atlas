@@ -1,0 +1,146 @@
+
+zidan_shengjie.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shengjie
+  rotate: false
+  xy: 2, 29
+  size: 182, 97
+  orig: 182, 97
+  offset: 0, 0
+  index: -1
+shengzi
+  rotate: false
+  xy: 308, 56
+  size: 107, 32
+  orig: 107, 32
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: false
+  xy: 2, 10
+  size: 93, 17
+  orig: 93, 17
+  offset: 0, 0
+  index: -1
+yun_1_2
+  rotate: false
+  xy: 186, 33
+  size: 93, 17
+  orig: 93, 17
+  offset: 0, 0
+  index: -1
+yun_1_3
+  rotate: false
+  xy: 281, 33
+  size: 93, 17
+  orig: 93, 17
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: false
+  xy: 441, 73
+  size: 49, 13
+  orig: 49, 13
+  offset: 0, 0
+  index: -1
+yun_2_2
+  rotate: false
+  xy: 441, 58
+  size: 49, 13
+  orig: 49, 13
+  offset: 0, 0
+  index: -1
+yun_2_3
+  rotate: false
+  xy: 376, 41
+  size: 49, 13
+  orig: 49, 13
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: false
+  xy: 430, 108
+  size: 60, 18
+  orig: 60, 18
+  offset: 0, 0
+  index: -1
+yun_3_2
+  rotate: true
+  xy: 492, 66
+  size: 60, 18
+  orig: 60, 18
+  offset: 0, 0
+  index: -1
+yun_3_3
+  rotate: false
+  xy: 430, 88
+  size: 60, 18
+  orig: 60, 18
+  offset: 0, 0
+  index: -1
+yun_4
+  rotate: false
+  xy: 186, 2
+  size: 83, 29
+  orig: 83, 29
+  offset: 0, 0
+  index: -1
+yun_4_2
+  rotate: false
+  xy: 271, 2
+  size: 83, 29
+  orig: 83, 29
+  offset: 0, 0
+  index: -1
+yun_4_3
+  rotate: false
+  xy: 356, 2
+  size: 83, 29
+  orig: 83, 29
+  offset: 0, 0
+  index: -1
+yun_5
+  rotate: false
+  xy: 97, 3
+  size: 47, 24
+  orig: 47, 24
+  offset: 0, 0
+  index: -1
+yun_5_2
+  rotate: false
+  xy: 441, 32
+  size: 47, 24
+  orig: 47, 24
+  offset: 0, 0
+  index: -1
+yun_5_3
+  rotate: false
+  xy: 441, 6
+  size: 47, 24
+  orig: 47, 24
+  offset: 0, 0
+  index: -1
+yun_6
+  rotate: false
+  xy: 186, 90
+  size: 120, 36
+  orig: 120, 36
+  offset: 0, 0
+  index: -1
+yun_6_2
+  rotate: false
+  xy: 186, 52
+  size: 120, 36
+  orig: 120, 36
+  offset: 0, 0
+  index: -1
+yun_6_3
+  rotate: false
+  xy: 308, 90
+  size: 120, 36
+  orig: 120, 36
+  offset: 0, 0
+  index: -1

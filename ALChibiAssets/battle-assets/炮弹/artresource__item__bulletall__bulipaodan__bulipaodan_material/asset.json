@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulipaodan__bulipaodan_material",
+  "model": "bulipaodan_material",
+  "name": "bulipaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulipaodan/bulipaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulipaodan__bulipaodan_material",
+  "images": [
+    {
+      "file": "bulipaodan_-1002068329753014102.png",
+      "name": "bulipaodan",
+      "width": 1024,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -1002068329753014102,
+      "source": "CAB-006f9d2e16b3d6f143568a320ec9046d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

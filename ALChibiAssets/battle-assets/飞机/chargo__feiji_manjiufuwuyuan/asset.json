@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_manjiufuwuyuan",
+  "model": "feiji_manjiufuwuyuan",
+  "name": "冒失女仆啾(鱼雷)",
+  "names": [
+    "冒失女仆啾(鱼雷)",
+    "冒失女仆啾(战斗)",
+    "冒失女仆啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_manjiufuwuyuan",
+  "path": "battle-assets/飞机/chargo__feiji_manjiufuwuyuan",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_manjiufuwuyuan_5081011222906444540.png",
+      "name": "feiji_manjiufuwuyuan",
+      "width": 256,
+      "height": 164,
+      "role": "战斗贴图",
+      "path_id": 5081011222906444540,
+      "source": "CAB-3179da6624c3ac687e6e337ab13375b9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_manjiufuwuyuan/aircraft_shadow_2192772484218123160.png"
+}

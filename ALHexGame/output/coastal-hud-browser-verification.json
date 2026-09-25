@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "date": "2026-09-18",
+  "version": "0.8.1",
+  "saveVersion": 14,
+  "url": "http://127.0.0.1:18768/",
+  "method": "Native browser UI, DOM text and screenshots; no game-state injection",
+  "finalBundle": "assets/index-CicQ6ZZ4.js",
+  "checks": [
+    {
+      "name": "Original version13 battle migrates to coastal harbors without changing ships or resources",
+      "passed": true,
+      "observed": "256x256, four players, round1, own12 living ships, oil50/50, credits40, one harbor, Laffey26,30 and explored0.6% preserved"
+    },
+    {
+      "name": "Unit details and aircraft controls are on the right, minimap bottom-left and turns bottom-right",
+      "passed": true,
+      "observed": "1280x720 and980x800 screenshots checked; right unit details scroll independently and both lower panels remain visible"
+    },
+    {
+      "name": "All three airborne squadrons remain controllable through the right panel",
+      "passed": true,
+      "observed": "Enterprise launches three US4-plane squadrons: oil50 to41; selecting fighter shows AP20/20, endurance4, ammo3 and faction oil41/50 in the right panel"
+    },
+    {
+      "name": "Minimap navigates and return-to-fleet restores the camera",
+      "passed": true,
+      "observed": "Clicked minimap and returned to fleet using the existing UI"
+    },
+    {
+      "name": "Capturing a second harbor raises the displayed oil cap without granting oil or credits",
+      "passed": true,
+      "observed": "ports-demo.json imported: Laffey captures neutral harbor17,16; oil50/50 to50/60, credits100 unchanged, owned harbors1 to2. Fleet, selected unit, turn summary and harbor dialog agree on the cap60"
+    },
+    {
+      "name": "Repair and reinforcement work from the relocated coastal home port",
+      "passed": true,
+      "observed": "Home port7,19 touches land. Bismarck HP8 to12 costs8 credits; Javelin replacement costs20, arrives at8,19 and waits until next own turn. Credits100 to92 to72"
+    },
+    {
+      "name": "Next own turn fills the derived cap and delivers harbor income",
+      "passed": true,
+      "observed": "After player2 then player1, round2 starts at oil60/60, credits92 and three living own hulls; Javelin becomes ready"
+    },
+    {
+      "name": "Version14 oil above50 survives a real page reload",
+      "passed": true,
+      "observed": "Refreshing retains round2, oil60/60, credits92 and two owned harbors"
+    },
+    {
+      "name": "319x698 viewport retains a usable chart, bottom-left minimap and bottom-right turn controls",
+      "passed": true,
+      "observed": "Compact header and wrapped tools; fleet and unit information use separate drawers. Opened and closed both drawers; selecting Laffey closes the fleet drawer and opens the unit drawer"
+    },
+    {
+      "name": "Victory and persisted results remain accessible in the new turn panel",
+      "passed": true,
+      "observed": "Captured enemy home91,11 using ports-victory-demo.json, won by all home ports; return-to-chart exposes View Result. Reload restores the victory dialog in the final build"
+    },
+    {
+      "name": "512x512 eight-player battle fits the final desktop rails and keeps hidden harbors undisclosed",
+      "passed": true,
+      "observed": "Native new battle:262144 cells, eight faction badges, 12 living own hulls, oil50/50, credits40. Harbor dialog lists only discovered own coastal home53,69, though there are eight total home ports"
+    },
+    {
+      "name": "Original battle restored and temporary viewport override reset",
+      "passed": true,
+      "observed": "Loaded Previous Battle256x256 four players round1; Laffey26,30, oil50/50, credits40, one own port, own12 living hulls and no airborne squadrons. Both compact drawers closed; returned camera to fleet; tab kept as deliverable"
+    }
+  ],
+  "headless": {
+    "ports": {"passed": true, "scenarioGroups": 26, "invalidSavesRejected": 15, "allPortsCoastal": true, "layouts": "128,256,512 with2,4,8 players", "largeMapHarbors": 263},
+    "rules": {"passed": true, "scenarioGroups": 78, "weightedDijkstraComparisons": 80, "invalidSavesRejected": 67},
+    "fog": {"passed": true, "scenarioGroups": 16, "invalidSavesRejected": 7},
+    "typescriptAndBuild": {"passed": true}
+  },
+  "consoleErrors": [],
+  "consoleWarnings": ["Existing PixiJS/pixi-spine utils.rgb2hex deprecation; no uncaught browser errors"],
+  "screenshots": [
+    "output/screenshots/coastal-hud-desktop.png",
+    "output/screenshots/coastal-hud-air-panel.png",
+    "output/screenshots/coastal-hud-oil60.png",
+    "output/screenshots/coastal-hud-980.png",
+    "output/screenshots/coastal-hud-narrow.png",
+    "output/screenshots/coastal-hud-512-eight.png"
+  ],
+  "scope": "UI and rule validation; no new benchmark of full-match rendering, AI or network play. Earlier desktop/air/oil screenshots precede the final compact drawer-only refinements; original-battle desktop screenshot and eight-player check use the final build.",
+  "backup": "output/backups/coastal-hud-before-20260918-213757.zip"
+}

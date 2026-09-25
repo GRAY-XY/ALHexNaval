@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_shutenghuahuan",
+  "model": "paodan_shutenghuahuan",
+  "name": "林间冠冕炮弹",
+  "names": [
+    "林间冠冕炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shutenghuahuan",
+  "path": "battle-assets/炮弹/item__paodan_shutenghuahuan",
+  "images": [
+    {
+      "file": "paodan_shutenghuahuan_4455746471817526524.png",
+      "name": "paodan_shutenghuahuan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4455746471817526524,
+      "source": "CAB-adf34aff8bd8f1bf44e4e53935f52243"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shutenghuahuan/paodan_shutenghuahuan_4455746471817526524.png",
+  "spine": {
+    "skel": "paodan_shutenghuahuan.skel",
+    "atlas": "paodan_shutenghuahuan.atlas",
+    "pages": [
+      "paodan_shutenghuahuan.png"
+    ]
+  }
+}

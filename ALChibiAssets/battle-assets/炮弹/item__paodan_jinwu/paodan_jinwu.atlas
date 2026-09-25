@@ -1,0 +1,118 @@
+
+paodan_jinwu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+faguanglizi_2
+  rotate: true
+  xy: 597, 63
+  size: 91, 65
+  orig: 91, 65
+  offset: 0, 0
+  index: -1
+faguanglizi_2_2
+  rotate: true
+  xy: 649, 162
+  size: 91, 65
+  orig: 91, 65
+  offset: 0, 0
+  index: -1
+faguanglizi_2_3
+  rotate: true
+  xy: 664, 69
+  size: 91, 65
+  orig: 91, 65
+  offset: 0, 0
+  index: -1
+he_1
+  rotate: true
+  xy: 716, 184
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+he_2
+  rotate: false
+  xy: 597, 2
+  size: 58, 59
+  orig: 58, 59
+  offset: 0, 0
+  index: -1
+he_3
+  rotate: true
+  xy: 436, 138
+  size: 115, 113
+  orig: 115, 113
+  offset: 0, 0
+  index: -1
+he_4
+  rotate: false
+  xy: 401, 3
+  size: 96, 97
+  orig: 96, 97
+  offset: 0, 0
+  index: -1
+he_4_2
+  rotate: false
+  xy: 499, 39
+  size: 96, 97
+  orig: 96, 97
+  offset: 0, 0
+  index: -1
+he_4_3
+  rotate: false
+  xy: 551, 156
+  size: 96, 97
+  orig: 96, 97
+  offset: 0, 0
+  index: -1
+huoqiu
+  rotate: false
+  xy: 2, 19
+  size: 220, 234
+  orig: 220, 234
+  offset: 0, 0
+  index: -1
+lizi_b
+  rotate: true
+  xy: 224, 78
+  size: 175, 69
+  orig: 175, 69
+  offset: 0, 0
+  index: -1
+lizi_b_2
+  rotate: false
+  xy: 224, 7
+  size: 175, 69
+  orig: 175, 69
+  offset: 0, 0
+  index: -1
+lizi_b_3
+  rotate: true
+  xy: 295, 78
+  size: 175, 69
+  orig: 175, 69
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: true
+  xy: 397, 102
+  size: 151, 37
+  orig: 151, 37
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: false
+  xy: 2, 4
+  size: 111, 13
+  orig: 111, 13
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: true
+  xy: 366, 88
+  size: 165, 29
+  orig: 165, 29
+  offset: 0, 0
+  index: -1

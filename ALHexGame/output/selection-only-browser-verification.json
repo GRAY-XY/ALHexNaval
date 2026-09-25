@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "date": "2026-09-18",
+  "version": "0.8.2",
+  "saveVersion": 14,
+  "url": "http://127.0.0.1:18768/",
+  "finalBundle": "assets/index-BL3X61R6.js",
+  "method": "Real browser controls, canvas clicks/box selection, visible DOM text and screenshots; no game-state injection",
+  "checks": [
+    {
+      "name": "Ship roster, fleet drawer and aircraft roster removed from the DOM",
+      "passed": true,
+      "observed": "fleet-list, air-list and fleet-panel-toggle each have zero DOM matches; left area contains only the floating minimap"
+    },
+    {
+      "name": "Chart uses the released left rail, oil remains clear in the lower-right turn area",
+      "passed": true,
+      "observed": "1280x720 and980x800 screenshots inspected: chart starts at the left edge, minimap floats bottom-left, unit details and oil/turn controls are on the right"
+    },
+    {
+      "name": "Ship navigation and carrier launch work without the roster",
+      "passed": true,
+      "observed": "Native128x128 two-player game starts on Laffey; Next Ship cycles to Enterprise, launching three US4-plane squadrons spends9 oil,50/50 to41/50"
+    },
+    {
+      "name": "Canvas selection shows only the selected aircraft details",
+      "passed": true,
+      "observed": "Clicked fighter and bomber separately on the chart: right heading/model switches from Fighter4/F4F to Bomber4/SBD, with current AP20/20, endurance4, ammo3, hull8/8, carrier Enterprise and location14,19 or15,19"
+    },
+    {
+      "name": "Current aircraft detail refreshes during adjacent-hex movement",
+      "passed": true,
+      "observed": "Fighter14,19 right-clicked to14,18, detail and progress bar update20/20 to19/20; faction oil remains41/50"
+    },
+    {
+      "name": "Canceling selection and selecting the mother ship clear aircraft details",
+      "passed": true,
+      "observed": "Escape shows the general empty unit prompt; Locate Carrier changes the heading to Enterprise and removes selected-air-action from the DOM"
+    },
+    {
+      "name": "Aircraft pause and current-squadron recall remain usable",
+      "passed": true,
+      "observed": "Pause moved to chart toolbar. While paused, Recall Squadron changes the selected fighter to Return with AP19 unchanged; Continue Flying sets aria-pressed false"
+    },
+    {
+      "name": "Box selection remains available directly on the chart",
+      "passed": true,
+      "observed": "Box selected12 friendly ships and3 friendly airborne squadrons; right panel shows15 currently selected units with fighter AP19 and other squadrons AP20. No permanent ship or aircraft roster"
+    },
+    {
+      "name": "319x698 compact unit drawer and lower panels remain usable",
+      "passed": true,
+      "observed": "Selected fighter detail retains AP19/20 when resized. Unit drawer closes via Collapse Unit Information; lower-left minimap and lower-right oil/turn controls remain visible, with no fleet drawer"
+    },
+    {
+      "name": "Harbor cap and income update the relocated oil summary",
+      "passed": true,
+      "observed": "Imported harbor demo; second port capture changes50/50 to50/60 without oil refill, player2 then player1 changes to60/60 and credits100 to120"
+    },
+    {
+      "name": "Victory still disables commands and exposes result viewing",
+      "passed": true,
+      "observed": "Captured the last enemy home port in victory demo, won by all home ports, End Turn disabled and View Result visible after returning to chart"
+    },
+    {
+      "name": "Original battle restored and saved UI remains compatible",
+      "passed": true,
+      "observed": "Restored Previous Battle256x256 four players round1: Laffey26,30, own12 living hulls, oil50/50, credits40, one owned port and explored0.6%. Final reload restores the same battle; temporary viewport override reset and tab retained"
+    }
+  ],
+  "typescriptAndProductionBuild": {"passed": true},
+  "finalBundleConsoleErrors": [],
+  "consoleWarnings": ["Existing PixiJS/pixi-spine rgb2hex deprecation"],
+  "resolvedDuringDevelopment": "Removed an obsolete campaign UI dependency on the deleted recall-all button, then rebuilt and verified startup, harbor operations and victory in the final bundle",
+  "screenshots": [
+    "output/screenshots/selection-only-desktop.png",
+    "output/screenshots/selection-only-air.png",
+    "output/screenshots/selection-only-980.png",
+    "output/screenshots/selection-only-narrow.png"
+  ],
+  "scope": "UI-only change; existing ship, aircraft, fog, harbor and save rules remain unchanged. No new full-match performance benchmark, AI or multiplayer validation",
+  "backup": "output/backups/selection-only-before-20260918-223635.zip"
+}

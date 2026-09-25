@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shousipinpan",
+  "model": "yulei_shousipinpan",
+  "name": "寿司拼盘鱼雷",
+  "names": [
+    "寿司拼盘鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shousipinpan",
+  "path": "battle-assets/鱼雷/item__yulei_shousipinpan",
+  "images": [
+    {
+      "file": "yulei_shousipinpan_1729108940891353662.png",
+      "name": "yulei_shousipinpan",
+      "width": 460,
+      "height": 186,
+      "role": "战斗贴图",
+      "path_id": 1729108940891353662,
+      "source": "CAB-07028cbdf719edf1c5928087554718fa"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shousipinpan/yulei_shousipinpan_1729108940891353662.png"
+}

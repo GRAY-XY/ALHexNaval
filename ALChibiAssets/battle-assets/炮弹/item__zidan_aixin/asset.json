@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_aixin",
+  "model": "zidan_aixin",
+  "name": "zidan_aixin",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_aixin",
+  "path": "battle-assets/炮弹/item__zidan_aixin",
+  "images": [
+    {
+      "file": "zidan_aixin_-7849797777600276165.png",
+      "name": "zidan_aixin",
+      "width": 93,
+      "height": 51,
+      "role": "战斗贴图",
+      "path_id": -7849797777600276165,
+      "source": "CAB-3343a35b2bc85314520d99a2f0bc2b3b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161069,
+    3380002
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_aixin/zidan_aixin_-7849797777600276165.png"
+}

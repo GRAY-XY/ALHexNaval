@@ -1,0 +1,31 @@
+{
+  "id": "item__paodan_jingjixigua",
+  "model": "paodan_jingjixigua",
+  "name": "竞技西瓜炮弹",
+  "names": [
+    "竞技西瓜炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jingjixigua",
+  "path": "battle-assets/炮弹/item__paodan_jingjixigua",
+  "images": [
+    {
+      "file": "paodan_jingjixigua_7615174456004050801.png",
+      "name": "paodan_jingjixigua",
+      "width": 128,
+      "height": 118,
+      "role": "战斗贴图",
+      "path_id": 7615174456004050801,
+      "source": "CAB-276ba3adebd2ef9f953229ee8f41dc0a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19234,
+    19235
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jingjixigua/paodan_jingjixigua_7615174456004050801.png"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "item__xiaowuzang_zhanlangjian",
+  "model": "xiaowuzang_zhanlangjian",
+  "name": "xiaowuzang_zhanlangjian",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/xiaowuzang_zhanlangjian",
+  "path": "battle-assets/其他战斗特效/item__xiaowuzang_zhanlangjian",
+  "images": [
+    {
+      "file": "dao01_mask_-4410862175055715669.png",
+      "name": "dao01_mask",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4410862175055715669,
+      "source": "CAB-4cc6ee0b130fc4ac5d4b54a273645cc0"
+    },
+    {
+      "file": "new01_4312457478050314322.png",
+      "name": "new01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4312457478050314322,
+      "source": "CAB-4cc6ee0b130fc4ac5d4b54a273645cc0"
+    },
+    {
+      "file": "xiaowuzang_dao_6548035970369502022.png",
+      "name": "xiaowuzang_dao",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6548035970369502022,
+      "source": "CAB-4cc6ee0b130fc4ac5d4b54a273645cc0"
+    },
+    {
+      "file": "new04_7329608507428382711.png",
+      "name": "new04",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7329608507428382711,
+      "source": "CAB-4cc6ee0b130fc4ac5d4b54a273645cc0"
+    }
+  ],
+  "particle_systems": 98,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__xiaowuzang_zhanlangjian/dao01_mask_-4410862175055715669.png"
+}

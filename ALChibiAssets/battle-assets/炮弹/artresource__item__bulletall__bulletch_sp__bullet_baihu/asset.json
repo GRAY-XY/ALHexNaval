@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__bullet_baihu",
+  "model": "bullet_baihu",
+  "name": "bullet_baihu",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/bullet_baihu",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__bullet_baihu",
+  "images": [
+    {
+      "file": "bullet_baihu_-4769879364325397423.png",
+      "name": "bullet_baihu",
+      "width": 97,
+      "height": 22,
+      "role": "原始精灵",
+      "path_id": -4769879364325397423,
+      "source": "CAB-685f87ce11c9b00aef17c11cdaa99261"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

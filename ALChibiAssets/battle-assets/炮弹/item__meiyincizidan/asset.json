@@ -1,0 +1,38 @@
+{
+  "id": "item__meiyincizidan",
+  "model": "meiyincizidan",
+  "name": "meiyincizidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/meiyincizidan",
+  "path": "battle-assets/炮弹/item__meiyincizidan",
+  "images": [
+    {
+      "file": "meiyincizidan_-9201968880445368030.png",
+      "name": "meiyincizidan",
+      "width": 256,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -9201968880445368030,
+      "source": "CAB-13b8937a064f47368fd075e21fc48e32"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19157,
+    19254,
+    19311,
+    19513,
+    19514,
+    160984,
+    160985,
+    167031,
+    170511,
+    170512,
+    3061440
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__meiyincizidan/meiyincizidan_-9201968880445368030.png"
+}

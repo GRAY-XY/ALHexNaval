@@ -1,0 +1,29 @@
+{
+  "id": "item__daofengbullet1",
+  "model": "daofengbullet1",
+  "name": "daofengbullet1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/daofengbullet1",
+  "path": "battle-assets/炮弹/item__daofengbullet1",
+  "images": [
+    {
+      "file": "shenyuanbullet3_-5590776567521510594.png",
+      "name": "shenyuanbullet3",
+      "width": 162,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -5590776567521510594,
+      "source": "CAB-ec66fff936c3bbd507afb641a7fc52c8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    79771,
+    79772
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__daofengbullet1/shenyuanbullet3_-5590776567521510594.png"
+}

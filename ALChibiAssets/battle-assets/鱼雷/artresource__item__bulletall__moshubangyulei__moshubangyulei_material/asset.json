@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__moshubangyulei__moshubangyulei_material",
+  "model": "moshubangyulei_material",
+  "name": "moshubangyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/moshubangyulei/moshubangyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__moshubangyulei__moshubangyulei_material",
+  "images": [
+    {
+      "file": "moshubangyulei_6342842149265599714.png",
+      "name": "moshubangyulei",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 6342842149265599714,
+      "source": "CAB-7cbb72a5e1eb479c3dd3c2d3e069de77"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

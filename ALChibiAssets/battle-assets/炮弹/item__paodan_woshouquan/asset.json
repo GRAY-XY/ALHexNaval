@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_woshouquan",
+  "model": "paodan_woshouquan",
+  "name": "握手券炮弹",
+  "names": [
+    "握手券炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_woshouquan",
+  "path": "battle-assets/炮弹/item__paodan_woshouquan",
+  "images": [
+    {
+      "file": "paodan_woshouquan_8454439339213254398.png",
+      "name": "paodan_woshouquan",
+      "width": 128,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": 8454439339213254398,
+      "source": "CAB-dfc5729cf9e12122540592103747b20a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_woshouquan/paodan_woshouquan_8454439339213254398.png"
+}

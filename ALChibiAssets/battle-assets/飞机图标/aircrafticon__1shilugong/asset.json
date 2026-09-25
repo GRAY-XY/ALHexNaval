@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__1shilugong",
+  "model": "1shilugong",
+  "name": "1式陆攻",
+  "names": [
+    "1式陆攻",
+    "七夕活动1式陆攻"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/1shilugong",
+  "path": "battle-assets/飞机图标/aircrafticon__1shilugong",
+  "images": [
+    {
+      "file": "1shilugong_6581315052836978534.png",
+      "name": "1shilugong",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 6581315052836978534,
+      "source": "CAB-53845844ea741ea0a9cd1b40bb3155fc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item__moliciqinwang_guihuo",
+  "model": "moliciqinwang_guihuo",
+  "name": "moliciqinwang_guihuo",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/moliciqinwang_guihuo",
+  "path": "battle-assets/其他战斗特效/item__moliciqinwang_guihuo",
+  "images": [
+    {
+      "file": "fire03_-4101115182629273544.png",
+      "name": "fire03",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4101115182629273544,
+      "source": "CAB-093d95e530637f490041794365c0cbe6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__moliciqinwang_guihuo/fire03_-4101115182629273544.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__tange",
+  "model": "tange",
+  "name": "塘鹅",
+  "names": [
+    "塘鹅",
+    "塘鹅（鱼雷挂载）"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tange",
+  "path": "battle-assets/飞机图标/aircrafticon__tange",
+  "images": [
+    {
+      "file": "tange_4553229556113410258.png",
+      "name": "tange",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 4553229556113410258,
+      "source": "CAB-76a14c48e2902aa9a9506b1fd9345320"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

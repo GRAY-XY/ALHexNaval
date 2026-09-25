@@ -1,0 +1,44 @@
+{
+  "id": "chargo__feiji_tiaojiutai",
+  "model": "feiji_tiaojiutai",
+  "name": "【偶像活动通用】航母人形 鱼雷机 Lv1",
+  "names": [
+    "【偶像活动通用】航母人形 鱼雷机 Lv1",
+    "【偶像活动通用】航母人形 鱼雷机 Lv2",
+    "【偶像活动通用】航母人形 鱼雷机 Lv3",
+    "【偶像活动通用】航母人形 鱼雷机 Lv4",
+    "【偶像活动通用】航母人形 鱼雷机 Lv5",
+    "调酒台飞行器(鱼雷)",
+    "调酒台飞行器(战斗)",
+    "调酒台飞行器(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_tiaojiutai",
+  "path": "battle-assets/飞机/chargo__feiji_tiaojiutai",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_tiaojiutai_-7022251084926908876.png",
+      "name": "feiji_tiaojiutai",
+      "width": 215,
+      "height": 255,
+      "role": "战斗贴图",
+      "path_id": -7022251084926908876,
+      "source": "CAB-e4c73ed34ad1305fe137cd4b7c8da8bf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_tiaojiutai/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__maoyin",
+  "model": "maoyin",
+  "name": "maoyin",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/maoyin",
+  "path": "battle-assets/炮弹/item__maoyin",
+  "images": [
+    {
+      "file": "AL_Fire04_-5413662214343195301.png",
+      "name": "AL_Fire04",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5413662214343195301,
+      "source": "CAB-de0c222e33ae5e089218f3d67accd0b6"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19960
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__maoyin/AL_Fire04_-5413662214343195301.png"
+}

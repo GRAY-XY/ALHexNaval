@@ -1,0 +1,31 @@
+{
+  "id": "item__hudiezidan_green",
+  "model": "hudiezidan_green",
+  "name": "hudiezidan_green",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hudiezidan_green",
+  "path": "battle-assets/炮弹/item__hudiezidan_green",
+  "images": [
+    {
+      "file": "blue_06_506104351696480285.png",
+      "name": "blue_06",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 506104351696480285,
+      "source": "CAB-9ee700c2b362db44d6e4e08038f09871"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    161062,
+    161065,
+    161067,
+    161068
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hudiezidan_green/blue_06_506104351696480285.png"
+}

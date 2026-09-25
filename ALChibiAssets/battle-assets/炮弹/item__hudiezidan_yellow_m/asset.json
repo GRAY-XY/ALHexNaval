@@ -1,0 +1,46 @@
+{
+  "id": "item__hudiezidan_yellow_m",
+  "model": "hudiezidan_yellow_m",
+  "name": "hudiezidan_yellow_m",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hudiezidan_yellow_m",
+  "path": "battle-assets/炮弹/item__hudiezidan_yellow_m",
+  "images": [
+    {
+      "file": "blue_07_-848335366990775049.png",
+      "name": "blue_07",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -848335366990775049,
+      "source": "CAB-e3a0a8887464dac99caf171ae54a66f4"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    760117,
+    760118,
+    760119,
+    760120,
+    760121,
+    760122,
+    760123,
+    760124,
+    760125,
+    3029334,
+    3069202,
+    3069203,
+    3080202,
+    3080203,
+    3239309,
+    3280510,
+    3317011,
+    3355006,
+    3355209
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hudiezidan_yellow_m/blue_07_-848335366990775049.png"
+}

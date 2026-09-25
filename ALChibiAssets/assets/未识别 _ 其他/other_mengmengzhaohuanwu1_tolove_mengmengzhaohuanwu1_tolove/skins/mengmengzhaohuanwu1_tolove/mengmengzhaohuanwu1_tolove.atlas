@@ -1,0 +1,111 @@
+
+mengmengzhaohuanwu1_tolove.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hua_1
+  rotate: true
+  xy: 388, 200
+  size: 145, 133
+  orig: 145, 133
+  offset: 0, 0
+  index: -1
+hua_2
+  rotate: true
+  xy: 471, 366
+  size: 139, 137
+  orig: 139, 137
+  offset: 0, 0
+  index: -1
+hua_3
+  rotate: true
+  xy: 510, 91
+  size: 107, 103
+  orig: 107, 103
+  offset: 0, 0
+  index: -1
+hua_4
+  rotate: false
+  xy: 328, 347
+  size: 141, 158
+  orig: 141, 158
+  offset: 0, 0
+  index: -1
+hua_5
+  rotate: false
+  xy: 388, 68
+  size: 120, 130
+  orig: 120, 130
+  offset: 0, 0
+  index: -1
+tewan
+  rotate: true
+  xy: 2, 2
+  size: 186, 304
+  orig: 186, 304
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: false
+  xy: 104, 221
+  size: 14, 41
+  orig: 14, 41
+  offset: 0, 0
+  index: -1
+tx_2
+  rotate: false
+  xy: 120, 222
+  size: 14, 40
+  orig: 14, 40
+  offset: 0, 0
+  index: -1
+tx_3
+  rotate: false
+  xy: 136, 222
+  size: 14, 40
+  orig: 14, 40
+  offset: 0, 0
+  index: -1
+tx_4
+  rotate: true
+  xy: 104, 205
+  size: 14, 41
+  orig: 14, 41
+  offset: 0, 0
+  index: -1
+tx_5
+  rotate: true
+  xy: 147, 206
+  size: 14, 40
+  orig: 14, 40
+  offset: 0, 0
+  index: -1
+zhaohuanzhen
+  rotate: true
+  xy: 2, 190
+  size: 315, 100
+  orig: 315, 100
+  offset: 0, 0
+  index: -1
+zhaohuanzhen_dg
+  rotate: true
+  xy: 220, 264
+  size: 241, 106
+  orig: 241, 106
+  offset: 0, 0
+  index: -1
+zhaohuanzhen_dg2
+  rotate: true
+  xy: 104, 264
+  size: 241, 114
+  orig: 241, 114
+  offset: 0, 0
+  index: -1
+zhaohuanzhen_dg3
+  rotate: true
+  xy: 308, 83
+  size: 179, 78
+  orig: 179, 78
+  offset: 0, 0
+  index: -1

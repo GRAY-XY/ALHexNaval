@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_biaoqianrifu",
+  "model": "zidan_biaoqianrifu",
+  "name": "折扣标签子弹",
+  "names": [
+    "折扣标签子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_biaoqianrifu",
+  "path": "battle-assets/炮弹/item__zidan_biaoqianrifu",
+  "images": [
+    {
+      "file": "zidan_biaoqianrifu_-1249448700037117575.png",
+      "name": "zidan_biaoqianrifu",
+      "width": 128,
+      "height": 107,
+      "role": "战斗贴图",
+      "path_id": -1249448700037117575,
+      "source": "CAB-bf2f6b3f662910a35dfb75b4876445e5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_biaoqianrifu/zidan_biaoqianrifu_-1249448700037117575.png"
+}

@@ -1,0 +1,90 @@
+
+chongying_m_zhanlie.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 55
+  size: 320, 183
+  orig: 320, 183
+  offset: 0, 0
+  index: -1
+houtui
+  rotate: false
+  xy: 623, 29
+  size: 62, 84
+  orig: 62, 84
+  offset: 0, 0
+  index: -1
+huo
+  rotate: false
+  xy: 2, 240
+  size: 523, 265
+  orig: 523, 265
+  offset: 0, 0
+  index: -1
+qianzhua
+  rotate: false
+  xy: 512, 18
+  size: 109, 84
+  orig: 109, 84
+  offset: 0, 0
+  index: -1
+weiba_1
+  rotate: false
+  xy: 622, 115
+  size: 213, 148
+  orig: 213, 148
+  offset: 0, 0
+  index: -1
+weiba_2
+  rotate: true
+  xy: 527, 265
+  size: 240, 184
+  orig: 240, 184
+  offset: 0, 0
+  index: -1
+weiba_3
+  rotate: false
+  xy: 324, 104
+  size: 296, 134
+  orig: 296, 134
+  offset: 0, 0
+  index: -1
+yan_1
+  rotate: false
+  xy: 111, 14
+  size: 100, 39
+  orig: 100, 39
+  offset: 0, 0
+  index: -1
+yan_2
+  rotate: false
+  xy: 2, 5
+  size: 107, 48
+  orig: 107, 48
+  offset: 0, 0
+  index: -1
+yan_3
+  rotate: false
+  xy: 343, 39
+  size: 167, 63
+  orig: 167, 63
+  offset: 0, 0
+  index: -1
+yan_4
+  rotate: false
+  xy: 275, 12
+  size: 66, 41
+  orig: 66, 41
+  offset: 0, 0
+  index: -1
+zui
+  rotate: false
+  xy: 213, 2
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1

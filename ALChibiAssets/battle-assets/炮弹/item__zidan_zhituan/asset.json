@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_zhituan",
+  "model": "zidan_zhituan",
+  "name": "废纸团子弹",
+  "names": [
+    "废纸团子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhituan",
+  "path": "battle-assets/炮弹/item__zidan_zhituan",
+  "images": [
+    {
+      "file": "zhituan01_-3788369884576919589.png",
+      "name": "zhituan01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3788369884576919589,
+      "source": "CAB-27205e911d3d5eb93ac025ca13c82fb6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zhituan/zhituan01_-3788369884576919589.png"
+}

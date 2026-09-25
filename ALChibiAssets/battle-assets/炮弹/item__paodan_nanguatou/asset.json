@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_nanguatou",
+  "model": "paodan_nanguatou",
+  "name": "炮弹：南瓜头",
+  "names": [
+    "炮弹：南瓜头"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nanguatou",
+  "path": "battle-assets/炮弹/item__paodan_nanguatou",
+  "images": [
+    {
+      "file": "paodan_nanguatou_-4201779282034925523.png",
+      "name": "paodan_nanguatou",
+      "width": 128,
+      "height": 116,
+      "role": "战斗贴图",
+      "path_id": -4201779282034925523,
+      "source": "CAB-f4c84ca203df5f9239557bceb6dc6269"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_nanguatou/paodan_nanguatou_-4201779282034925523.png"
+}

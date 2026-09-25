@@ -1,0 +1,37 @@
+{
+  "id": "chargo__yak7",
+  "model": "yak7",
+  "name": "Yak-7",
+  "names": [
+    "Yak-7"
+  ],
+  "category": "飞机",
+  "source": "chargo/yak7",
+  "path": "battle-assets/飞机/chargo__yak7",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "yak7_7496629968002527001.png",
+      "name": "yak7",
+      "width": 239,
+      "height": 242,
+      "role": "战斗贴图",
+      "path_id": 7496629968002527001,
+      "source": "CAB-a248b0eba327d2b59bdcc64cb30e1207"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__yak7/aircraft_shadow_2192772484218123160.png"
+}

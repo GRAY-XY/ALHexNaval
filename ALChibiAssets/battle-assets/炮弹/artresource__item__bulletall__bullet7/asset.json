@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bullet7",
+  "model": "bullet7",
+  "name": "bullet7",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bullet7",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bullet7",
+  "images": [
+    {
+      "file": "bullet7_3845168400393278527.png",
+      "name": "bullet7",
+      "width": 119,
+      "height": 53,
+      "role": "原始精灵",
+      "path_id": 3845168400393278527,
+      "source": "CAB-768d538eb3fa74421b4b30ba91ef6b00"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_youlinghuanrao",
+  "model": "yulei_youlinghuanrao",
+  "name": "幽灵机械鱼雷",
+  "names": [
+    "幽灵机械鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_youlinghuanrao",
+  "path": "battle-assets/鱼雷/item__yulei_youlinghuanrao",
+  "images": [
+    {
+      "file": "yulei_youlinghuanrao_7619231742350717282.png",
+      "name": "yulei_youlinghuanrao",
+      "width": 128,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": 7619231742350717282,
+      "source": "CAB-cc179814f46b6841bd45c18e4af45939"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_youlinghuanrao/yulei_youlinghuanrao_7619231742350717282.png"
+}

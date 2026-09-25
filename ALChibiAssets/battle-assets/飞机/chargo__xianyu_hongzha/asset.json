@@ -1,0 +1,37 @@
+{
+  "id": "chargo__xianyu_hongzha",
+  "model": "xianyu_hongzha",
+  "name": "咸鱼轰炸机",
+  "names": [
+    "咸鱼轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/xianyu_hongzha",
+  "path": "battle-assets/飞机/chargo__xianyu_hongzha",
+  "images": [
+    {
+      "file": "xianyu_hongzha_-2868010985595232944.png",
+      "name": "xianyu_hongzha",
+      "width": 256,
+      "height": 165,
+      "role": "战斗贴图",
+      "path_id": -2868010985595232944,
+      "source": "CAB-99fc953fbbc79a81fe9d8dc22f9c317a"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__xianyu_hongzha/xianyu_hongzha_-2868010985595232944.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_mutong_yumia",
+  "model": "paodan_mutong_yumia",
+  "name": "桶子炮弹",
+  "names": [
+    "桶子炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mutong_yumia",
+  "path": "battle-assets/炮弹/item__paodan_mutong_yumia",
+  "images": [
+    {
+      "file": "paodan_mutong_yumia_3597989173496809548.png",
+      "name": "paodan_mutong_yumia",
+      "width": 84,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 3597989173496809548,
+      "source": "CAB-700a883f36fa2928d1136d2aecf7c6ab"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mutong_yumia/paodan_mutong_yumia_3597989173496809548.png"
+}

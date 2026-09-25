@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_jinbi",
+  "model": "zidan_jinbi",
+  "name": "zidan_jinbi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_jinbi",
+  "path": "battle-assets/炮弹/item__zidan_jinbi",
+  "images": [
+    {
+      "file": "jinbi01_-232238767133113546.png",
+      "name": "jinbi01",
+      "width": 95,
+      "height": 99,
+      "role": "战斗贴图",
+      "path_id": -232238767133113546,
+      "source": "CAB-e7d8431169c487dd07cdecf886827989"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19455,
+    3139001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jinbi/jinbi01_-232238767133113546.png"
+}

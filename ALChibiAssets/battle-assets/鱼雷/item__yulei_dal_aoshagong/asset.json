@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dal_aoshagong",
+  "model": "yulei_dal_aoshagong",
+  "name": "鏖杀公之刃（鱼雷）",
+  "names": [
+    "鏖杀公之刃（鱼雷）"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dal_aoshagong",
+  "path": "battle-assets/鱼雷/item__yulei_dal_aoshagong",
+  "images": [
+    {
+      "file": "yulei_dal_aoshagong_-328466527222710303.png",
+      "name": "yulei_dal_aoshagong",
+      "width": 114,
+      "height": 112,
+      "role": "战斗贴图",
+      "path_id": -328466527222710303,
+      "source": "CAB-8eed91a047db5e5a7b1839df38dd4ef8"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dal_aoshagong/yulei_dal_aoshagong_-328466527222710303.png"
+}

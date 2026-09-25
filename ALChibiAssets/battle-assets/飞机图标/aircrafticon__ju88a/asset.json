@@ -1,0 +1,31 @@
+{
+  "id": "aircrafticon__ju88a",
+  "model": "ju88a",
+  "name": "德系陆航轰炸机I",
+  "names": [
+    "德系陆航轰炸机I",
+    "德系陆航轰炸机II",
+    "德系陆航轰炸机III",
+    "德系陆航轰炸机IV",
+    "德系陆航轰炸机V"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ju88a",
+  "path": "battle-assets/飞机图标/aircrafticon__ju88a",
+  "images": [
+    {
+      "file": "JU88A_-589741168421035201.png",
+      "name": "JU88A",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -589741168421035201,
+      "source": "CAB-00e6fd2e43169990c280ea94bfc01ff9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

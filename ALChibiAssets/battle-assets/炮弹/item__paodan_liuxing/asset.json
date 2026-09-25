@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_liuxing",
+  "model": "paodan_liuxing",
+  "name": "流星炮弹",
+  "names": [
+    "流星炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_liuxing",
+  "path": "battle-assets/炮弹/item__paodan_liuxing",
+  "images": [
+    {
+      "file": "paodan_liuxing_900532292314899879.png",
+      "name": "paodan_liuxing",
+      "width": 128,
+      "height": 114,
+      "role": "战斗贴图",
+      "path_id": 900532292314899879,
+      "source": "CAB-7440e6af42e735adcc85885e8060433d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_liuxing/paodan_liuxing_900532292314899879.png"
+}

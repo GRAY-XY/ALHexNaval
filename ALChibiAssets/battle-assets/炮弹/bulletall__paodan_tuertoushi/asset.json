@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_tuertoushi",
+  "model": "paodan_tuertoushi",
+  "name": "兔耳炮弹",
+  "names": [
+    "兔耳炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_tuertoushi",
+  "path": "battle-assets/炮弹/bulletall__paodan_tuertoushi",
+  "images": [
+    {
+      "file": "paodan_tuertoushi_-499347431145608774.png",
+      "name": "paodan_tuertoushi",
+      "width": 128,
+      "height": 82,
+      "role": "原始精灵",
+      "path_id": -499347431145608774,
+      "source": "CAB-84cc5430575f6bd50551dc360e301562"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

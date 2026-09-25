@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__shilaimufeiji__shilaimuqiupaodan_skeletondata",
+  "model": "shilaimuqiupaodan_skeletondata",
+  "name": "shilaimuqiupaodan_skeletondata",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/shilaimufeiji/shilaimuqiupaodan_skeletondata",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__shilaimufeiji__shilaimuqiupaodan_skeletondata",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__r5",
+  "model": "r5",
+  "name": "R-5轰炸机",
+  "names": [
+    "R-5轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/r5",
+  "path": "battle-assets/飞机图标/aircrafticon__r5",
+  "images": [
+    {
+      "file": "r5_6301865510381789904.png",
+      "name": "r5",
+      "width": 44,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 6301865510381789904,
+      "source": "CAB-ccd3d078e5c79a6ba9c1d6c9ee6a78c6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

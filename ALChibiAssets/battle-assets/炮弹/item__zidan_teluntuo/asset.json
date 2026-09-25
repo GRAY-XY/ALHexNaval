@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_teluntuo",
+  "model": "zidan_teluntuo",
+  "name": "zidan_teluntuo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_teluntuo",
+  "path": "battle-assets/炮弹/item__zidan_teluntuo",
+  "images": [
+    {
+      "file": "jian_4450322439754404555.png",
+      "name": "jian",
+      "width": 255,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": 4450322439754404555,
+      "source": "CAB-c9652856b95750fbede024cdc570ed42"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19438,
+    3240107
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_teluntuo/jian_4450322439754404555.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_fudou",
+  "model": "paodan_fudou",
+  "name": "福豆炮弹",
+  "names": [
+    "福豆炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_fudou",
+  "path": "battle-assets/炮弹/item__paodan_fudou",
+  "images": [
+    {
+      "file": "paodan_fudou_1344293362358375870.png",
+      "name": "paodan_fudou",
+      "width": 109,
+      "height": 144,
+      "role": "战斗贴图",
+      "path_id": 1344293362358375870,
+      "source": "CAB-f374a01bf672a3f5f1865ad9e4c58658"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_fudou/paodan_fudou_1344293362358375870.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_vbaoshi_doa",
+  "model": "zidan_vbaoshi_doa",
+  "name": "V宝石子弹",
+  "names": [
+    "V宝石子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_vbaoshi_doa",
+  "path": "battle-assets/炮弹/item__zidan_vbaoshi_doa",
+  "images": [
+    {
+      "file": "zidan_vbaoshi_doa_8355215003148279820.png",
+      "name": "zidan_vbaoshi_doa",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 8355215003148279820,
+      "source": "CAB-242dab9302f942766fa1f6937b6c855b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_vbaoshi_doa/zidan_vbaoshi_doa_8355215003148279820.png"
+}

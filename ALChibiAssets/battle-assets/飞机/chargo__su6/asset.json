@@ -1,0 +1,38 @@
+{
+  "id": "chargo__su6",
+  "model": "su6",
+  "name": "试作舰载型Su-6",
+  "names": [
+    "试作舰载型Su-6",
+    "纳希莫夫海军上将技能Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/su6",
+  "path": "battle-assets/飞机/chargo__su6",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "su6_-8200966343749956018.png",
+      "name": "su6",
+      "width": 208,
+      "height": 248,
+      "role": "战斗贴图",
+      "path_id": -8200966343749956018,
+      "source": "CAB-991f5c0b879bab9b76c9477af2e85793"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__su6/aircraft_shadow_2192772484218123160.png"
+}

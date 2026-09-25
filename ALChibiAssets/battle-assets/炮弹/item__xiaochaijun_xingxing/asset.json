@@ -1,0 +1,28 @@
+{
+  "id": "item__xiaochaijun_xingxing",
+  "model": "xiaochaijun_xingxing",
+  "name": "xiaochaijun_xingxing",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiaochaijun_xingxing",
+  "path": "battle-assets/炮弹/item__xiaochaijun_xingxing",
+  "images": [
+    {
+      "file": "xinxin01_-6114407523451505282.png",
+      "name": "xinxin01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6114407523451505282,
+      "source": "CAB-71aea2e815df610c45905bd6d1447a05"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19615
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xiaochaijun_xingxing/xinxin01_-6114407523451505282.png"
+}

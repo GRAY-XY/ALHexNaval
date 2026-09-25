@@ -1,0 +1,26 @@
+{
+  "id": "item__dongfangjiguang08",
+  "model": "dongfangjiguang08",
+  "name": "dongfangjiguang08",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/dongfangjiguang08",
+  "path": "battle-assets/其他战斗特效/item__dongfangjiguang08",
+  "images": [
+    {
+      "file": "dongfangjiguang08_-4559710180064977663.png",
+      "name": "dongfangjiguang08",
+      "width": 450,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": -4559710180064977663,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__dongfangjiguang08/dongfangjiguang08_-4559710180064977663.png"
+}

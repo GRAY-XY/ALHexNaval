@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paodan_xingxi__paodan_xingxi_material",
+  "model": "paodan_xingxi_material",
+  "name": "paodan_xingxi_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_xingxi/paodan_xingxi_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_xingxi__paodan_xingxi_material",
+  "images": [
+    {
+      "file": "paodan_xingxi_-4278478010231683234.png",
+      "name": "paodan_xingxi",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -4278478010231683234,
+      "source": "CAB-ac1c3b3c84e99db571aa60fefaf8732f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

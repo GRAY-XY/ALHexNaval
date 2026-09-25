@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_caochong",
+  "model": "paodan_caochong",
+  "name": "草丛？",
+  "names": [
+    "草丛？"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_caochong",
+  "path": "battle-assets/炮弹/item__paodan_caochong",
+  "images": [
+    {
+      "file": "paodan_caochong_2224191528295055822.png",
+      "name": "paodan_caochong",
+      "width": 128,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": 2224191528295055822,
+      "source": "CAB-40b7b9f3100e991de25bd19cdd8d6754"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_caochong/paodan_caochong_2224191528295055822.png"
+}

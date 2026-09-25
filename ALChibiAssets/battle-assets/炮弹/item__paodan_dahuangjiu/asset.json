@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_dahuangjiu",
+  "model": "paodan_dahuangjiu",
+  "name": "啾啾气球炮弹",
+  "names": [
+    "啾啾气球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dahuangjiu",
+  "path": "battle-assets/炮弹/item__paodan_dahuangjiu",
+  "images": [
+    {
+      "file": "paodan_dahuangjiu_9201708998511655680.png",
+      "name": "paodan_dahuangjiu",
+      "width": 128,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": 9201708998511655680,
+      "source": "CAB-61f7b8fd7e01f9e2aae12f7eba123b97"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3169013
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dahuangjiu/paodan_dahuangjiu_9201708998511655680.png"
+}

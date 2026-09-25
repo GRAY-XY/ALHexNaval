@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_aomomo",
+  "model": "yulei_aomomo",
+  "name": "鱼雷:奥陌陌",
+  "names": [
+    "鱼雷:奥陌陌"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_aomomo",
+  "path": "battle-assets/鱼雷/item__yulei_aomomo",
+  "images": [
+    {
+      "file": "yulei_aomomo_-5094863159448615004.png",
+      "name": "yulei_aomomo",
+      "width": 128,
+      "height": 26,
+      "role": "战斗贴图",
+      "path_id": -5094863159448615004,
+      "source": "CAB-1ca4b70073ac2f772f79751733bae866"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_aomomo/yulei_aomomo_-5094863159448615004.png"
+}

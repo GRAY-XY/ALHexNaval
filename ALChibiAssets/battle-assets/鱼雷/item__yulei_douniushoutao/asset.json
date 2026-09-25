@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_douniushoutao",
+  "model": "yulei_douniushoutao",
+  "name": "牛仔手套鱼雷",
+  "names": [
+    "牛仔手套鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_douniushoutao",
+  "path": "battle-assets/鱼雷/item__yulei_douniushoutao",
+  "images": [
+    {
+      "file": "yulei_douniushoutao_9189575543188382156.png",
+      "name": "yulei_douniushoutao",
+      "width": 97,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": 9189575543188382156,
+      "source": "CAB-dbad94c898a103bf8a93bb1c0b732bd7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_douniushoutao/yulei_douniushoutao_9189575543188382156.png"
+}

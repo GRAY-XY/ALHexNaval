@@ -1,0 +1,36 @@
+{
+  "id": "aircrafticon__ofs_zibaofeiji",
+  "model": "ofs_zibaofeiji",
+  "name": "【量产型】大洋联邦-快速冲底自爆无人机 I",
+  "names": [
+    "【量产型】大洋联邦-快速冲底自爆无人机 I",
+    "【量产型】大洋联邦-快速冲底自爆无人机 II",
+    "【量产型】大洋联邦-快速冲底自爆无人机 III",
+    "【量产型】大洋联邦-快速冲底自爆无人机 IV",
+    "【量产型】大洋联邦-快速冲底自爆无人机 V",
+    "【精英】大洋联邦-快速冲底自爆无人机 I",
+    "【精英】大洋联邦-快速冲底自爆无人机 II",
+    "【精英】大洋联邦-快速冲底自爆无人机 III",
+    "【精英】大洋联邦-快速冲底自爆无人机 IV",
+    "【精英】大洋联邦-快速冲底自爆无人机 V"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ofs_zibaofeiji",
+  "path": "battle-assets/飞机图标/aircrafticon__ofs_zibaofeiji",
+  "images": [
+    {
+      "file": "ofs_zibaofeiji_-6029484776400280931.png",
+      "name": "ofs_zibaofeiji",
+      "width": 45,
+      "height": 29,
+      "role": "原始精灵",
+      "path_id": -6029484776400280931,
+      "source": "CAB-cd75eb700366e8ac78d169fc86f80162"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

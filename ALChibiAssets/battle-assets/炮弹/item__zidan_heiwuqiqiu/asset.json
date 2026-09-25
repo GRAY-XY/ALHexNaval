@@ -1,0 +1,42 @@
+{
+  "id": "item__zidan_heiwuqiqiu",
+  "model": "zidan_heiwuqiqiu",
+  "name": "zidan_heiwuqiqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_heiwuqiqiu",
+  "path": "battle-assets/炮弹/item__zidan_heiwuqiqiu",
+  "images": [
+    {
+      "file": "zidan_heiwuqiqiu_-6681720833519882220.png",
+      "name": "zidan_heiwuqiqiu",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -6681720833519882220,
+      "source": "CAB-f8681a978feefe22ab378227099a9caf"
+    },
+    {
+      "file": "line02_7925128746446970792.png",
+      "name": "line02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7925128746446970792,
+      "source": "CAB-f8681a978feefe22ab378227099a9caf"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_heiwuqiqiu/zidan_heiwuqiqiu_-6681720833519882220.png",
+  "spine": {
+    "skel": "zidan_heiwuqiqiu.skel",
+    "atlas": "zidan_heiwuqiqiu.atlas",
+    "pages": [
+      "zidan_heiwuqiqiu.png"
+    ]
+  }
+}

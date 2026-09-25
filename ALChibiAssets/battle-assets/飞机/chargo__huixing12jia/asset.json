@@ -1,0 +1,37 @@
+{
+  "id": "chargo__huixing12jia",
+  "model": "huixing12jia",
+  "name": "彗星一二型甲",
+  "names": [
+    "彗星一二型甲"
+  ],
+  "category": "飞机",
+  "source": "chargo/huixing12jia",
+  "path": "battle-assets/飞机/chargo__huixing12jia",
+  "images": [
+    {
+      "file": "huixing12Jia_2221319288424956840.png",
+      "name": "huixing12Jia",
+      "width": 256,
+      "height": 236,
+      "role": "战斗贴图",
+      "path_id": 2221319288424956840,
+      "source": "CAB-d2439ee133d897598ceca2396f790d27"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__huixing12jia/huixing12Jia_2221319288424956840.png"
+}

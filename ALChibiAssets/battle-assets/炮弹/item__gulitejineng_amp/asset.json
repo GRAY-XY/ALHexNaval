@@ -1,0 +1,31 @@
+{
+  "id": "item__gulitejineng_amp",
+  "model": "gulitejineng_amp",
+  "name": "gulitejineng_amp",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulitejineng_amp",
+  "path": "battle-assets/炮弹/item__gulitejineng_amp",
+  "images": [
+    {
+      "file": "bullet03_6450699326116397805.png",
+      "name": "bullet03",
+      "width": 179,
+      "height": 74,
+      "role": "战斗贴图",
+      "path_id": 6450699326116397805,
+      "source": "CAB-a66de0d531cfa61c5a683caa0eb8ee1f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19537,
+    855549,
+    3139007,
+    3139008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulitejineng_amp/bullet03_6450699326116397805.png"
+}

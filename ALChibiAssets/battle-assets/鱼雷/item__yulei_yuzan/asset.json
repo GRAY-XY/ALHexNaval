@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_yuzan",
+  "model": "yulei_yuzan",
+  "name": "珍珠金簪鱼雷",
+  "names": [
+    "珍珠金簪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yuzan",
+  "path": "battle-assets/鱼雷/item__yulei_yuzan",
+  "images": [
+    {
+      "file": "yulei_yuzan_2977801693023110758.png",
+      "name": "yulei_yuzan",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2977801693023110758,
+      "source": "CAB-a07f4c43392b7d83e31988540f916da5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yuzan/yulei_yuzan_2977801693023110758.png",
+  "spine": {
+    "skel": "yulei_yuzan.skel",
+    "atlas": "yulei_yuzan.atlas",
+    "pages": [
+      "yulei_yuzan.png"
+    ]
+  }
+}

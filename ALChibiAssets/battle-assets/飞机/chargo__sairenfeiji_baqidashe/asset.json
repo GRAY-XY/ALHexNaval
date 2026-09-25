@@ -1,0 +1,44 @@
+{
+  "id": "chargo__sairenfeiji_baqidashe",
+  "model": "sairenfeiji_baqidashe",
+  "name": "【2024匹兹堡活动A3】BOSS 八岐大蛇 轰炸机",
+  "names": [
+    "【2024匹兹堡活动A3】BOSS 八岐大蛇 轰炸机",
+    "【2024匹兹堡活动A3】BOSS 八岐大蛇 战斗机",
+    "【2024匹兹堡活动C3】BOSS 八岐大蛇 轰炸机",
+    "【2024匹兹堡活动C3】BOSS 八岐大蛇 战斗机",
+    "【2024匹兹堡活动EX 挑战】BOSS 八岐大蛇 二阶段 战斗机",
+    "【2024匹兹堡活动EX 挑战】BOSS 八岐大蛇 二阶段 轰炸机",
+    "【2024匹兹堡活动EX 普通】BOSS 八岐大蛇 二阶段 战斗机",
+    "【2024匹兹堡活动EX 普通】BOSS 八岐大蛇 二阶段 轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/sairenfeiji_baqidashe",
+  "path": "battle-assets/飞机/chargo__sairenfeiji_baqidashe",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "sairenfeiji_baqidashe_-1063100129836984908.png",
+      "name": "sairenfeiji_baqidashe",
+      "width": 242,
+      "height": 162,
+      "role": "战斗贴图",
+      "path_id": -1063100129836984908,
+      "source": "CAB-f72ac92c4abdc8d52c2f1622c7698385"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sairenfeiji_baqidashe/aircraft_shadow_2192772484218123160.png"
+}

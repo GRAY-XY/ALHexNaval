@@ -1,0 +1,47 @@
+{
+  "id": "item__torpedo02",
+  "model": "torpedo02",
+  "name": "torpedo02",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/torpedo02",
+  "path": "battle-assets/鱼雷/item__torpedo02",
+  "images": [
+    {
+      "file": "Torpedo02_5372955392215871695.png",
+      "name": "Torpedo02",
+      "width": 88,
+      "height": 34,
+      "role": "战斗贴图",
+      "path_id": 5372955392215871695,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19348,
+    19642,
+    19644,
+    30058,
+    161041,
+    161042,
+    161043,
+    300512,
+    300513,
+    300514,
+    300515,
+    300516,
+    300517,
+    300518,
+    300519,
+    300520,
+    830088,
+    840118,
+    3123212,
+    3123235
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__torpedo02/Torpedo02_5372955392215871695.png"
+}

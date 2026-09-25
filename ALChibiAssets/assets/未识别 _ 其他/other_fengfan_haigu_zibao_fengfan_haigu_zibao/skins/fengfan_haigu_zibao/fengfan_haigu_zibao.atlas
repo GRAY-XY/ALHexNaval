@@ -1,0 +1,90 @@
+
+fengfan_haigu_zibao.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 357, 911
+  size: 105, 77
+  orig: 105, 77
+  offset: 0, 0
+  index: -1
+chujiao_1
+  rotate: false
+  xy: 38, 968
+  size: 44, 20
+  orig: 44, 20
+  offset: 0, 0
+  index: -1
+chujiao_2
+  rotate: false
+  xy: 126, 963
+  size: 35, 25
+  orig: 35, 25
+  offset: 0, 0
+  index: -1
+lizi_1
+  rotate: false
+  xy: 284, 933
+  size: 71, 55
+  orig: 71, 55
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 608
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 305
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+tiguang
+  rotate: false
+  xy: 237, 948
+  size: 45, 40
+  orig: 45, 40
+  offset: 0, 0
+  index: -1
+tui1
+  rotate: false
+  xy: 200, 955
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+tui2
+  rotate: true
+  xy: 84, 966
+  size: 22, 40
+  orig: 22, 40
+  offset: 0, 0
+  index: -1
+tui3
+  rotate: true
+  xy: 163, 958
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: -1
+tui4
+  rotate: true
+  xy: 2, 973
+  size: 15, 34
+  orig: 15, 34
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "shipVision": 6,
+  "airVision": 8,
+  "checks": [
+    {
+      "name": "Hex sight includes ring 6 and excludes ring 7 without leaking hidden target data",
+      "passed": true
+    },
+    {
+      "name": "Friendly spotting enables a battleship shot at seven hexes regardless of original nation",
+      "passed": true
+    },
+    {
+      "name": "Explored terrain remains after retreat while enemy positions disappear",
+      "passed": true
+    },
+    {
+      "name": "No automatic movement and no hidden-cell navigation after sight is lost",
+      "passed": true
+    },
+    {
+      "name": "Each of two, four and eight players has separate discovery and current sight",
+      "passed": true
+    },
+    {
+      "name": "Losing the last ship clears live sight without erasing discovery, including all-sunk battles",
+      "passed": true
+    },
+    {
+      "name": "Aircraft reveal eight hexes, fly over islands and keep independent action and oil accounting",
+      "passed": true
+    },
+    {
+      "name": "Every airplane role provides sight while stationed in an inactive player turn",
+      "passed": true
+    },
+    {
+      "name": "Removed aircraft withdraw sight but their reconnaissance remains explored",
+      "passed": true
+    },
+    {
+      "name": "Unseen ship and aircraft targets reject aviation commands without consuming ammunition",
+      "passed": true
+    },
+    {
+      "name": "Losing a pursued enemy clears targeting and preserves the already committed adjacent hex",
+      "passed": true
+    },
+    {
+      "name": "Version 12 restores exploration exactly and recomputes current sight from surviving units",
+      "passed": true
+    },
+    {
+      "name": "Version 11 starts discovery only around current forces and preserves battle resources",
+      "passed": true
+    },
+    {
+      "name": "Idle updates and turn switches never rebuild or erase unchanged sight",
+      "passed": true
+    },
+    {
+      "name": "Discovery masks exclude invalid cells and canonical saves cannot add them",
+      "passed": true
+    },
+    {
+      "name": "Malformed or missing discovery data rejects the save before changing the caller state",
+      "passed": true
+    }
+  ],
+  "invalidSaveCases": 7,
+  "benchmark": {
+    "size": 512,
+    "players": 8,
+    "ships": 96,
+    "refreshMs": 0.488399999999956,
+    "discoveryCharacters": 349536
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "item__yingguangzidan04",
+  "model": "yingguangzidan04",
+  "name": "yingguangzidan04",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yingguangzidan04",
+  "path": "battle-assets/炮弹/item__yingguangzidan04",
+  "images": [
+    {
+      "file": "yingguangzidan01_-341729067895638898.png",
+      "name": "yingguangzidan01",
+      "width": 233,
+      "height": 78,
+      "role": "战斗贴图",
+      "path_id": -341729067895638898,
+      "source": "CAB-866804e4bc47cd17c309662d23a987c7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    161372,
+    20121161,
+    20121162,
+    20124010,
+    20124012,
+    20441351
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yingguangzidan04/yingguangzidan01_-341729067895638898.png"
+}

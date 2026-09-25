@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_songzhen",
+  "model": "yulei_songzhen",
+  "name": "松果鱼雷",
+  "names": [
+    "松果鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_songzhen",
+  "path": "battle-assets/鱼雷/item__yulei_songzhen",
+  "images": [
+    {
+      "file": "yulei_songzhen_5698443455272502652.png",
+      "name": "yulei_songzhen",
+      "width": 128,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": 5698443455272502652,
+      "source": "CAB-bd62c7e00bc3ea2e6b162126b299e36e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_songzhen/yulei_songzhen_5698443455272502652.png"
+}

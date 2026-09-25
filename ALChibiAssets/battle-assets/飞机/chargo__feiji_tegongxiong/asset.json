@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_tegongxiong",
+  "model": "feiji_tegongxiong",
+  "name": "空中特工熊玩偶(鱼雷)",
+  "names": [
+    "空中特工熊玩偶(鱼雷)",
+    "空中特工熊玩偶(战斗)",
+    "空中特工熊玩偶(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_tegongxiong",
+  "path": "battle-assets/飞机/chargo__feiji_tegongxiong",
+  "images": [
+    {
+      "file": "feiji_tegongxiong_7354397299160249069.png",
+      "name": "feiji_tegongxiong",
+      "width": 256,
+      "height": 237,
+      "role": "战斗贴图",
+      "path_id": 7354397299160249069,
+      "source": "CAB-f3a796eebf6059594417747f37e37121"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_tegongxiong/feiji_tegongxiong_7354397299160249069.png"
+}

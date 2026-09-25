@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-09-25T02:33:13.276182+00:00",
+  "files": [
+    {
+      "path": "assets/ships/lafei/default/lafei.skel",
+      "bytes": 167605,
+      "sha256": "2bd15a8b5e2f8313feee1e1a6e4dea3468ccdab9c8df29a760a66ee65b658938",
+      "source": "ALChibiAssets/assets/白鹰/10117_拉菲/skins/lafei/lafei.skel"
+    },
+    {
+      "path": "assets/ships/lafei/default/lafei.atlas",
+      "bytes": 4714,
+      "sha256": "5d048aa1a03fac2445ed4564ec8e1b7b78e0372fd328e8c1ddbcb95d7211cda6",
+      "source": "ALChibiAssets/assets/白鹰/10117_拉菲/skins/lafei/lafei.atlas"
+    },
+    {
+      "path": "assets/ships/lafei/default/lafei.png",
+      "bytes": 195570,
+      "sha256": "1da4aaf9c81d082085c70b5a54384a12597fdb32c49343c128550d0a252103d5",
+      "source": "ALChibiAssets/assets/白鹰/10117_拉菲/skins/lafei/lafei.png"
+    },
+    {
+      "path": "assets/ships/lafei/default/__preview.png",
+      "bytes": 247241,
+      "sha256": "bf8d6ad3efb24015fb338fe89c3153fe9039e511103aa7377967221de151b3d3",
+      "source": "ALChibiAssets/assets/白鹰/10117_拉菲/skins/lafei/__preview.png"
+    },
+    {
+      "path": "assets/ships/biaoqiang/default/biaoqiang.skel",
+      "bytes": 109786,
+      "sha256": "0ae5ef7832a32db48620401c713fe1d0d98d381d9329567e2f5d1690d10c74cd",
+      "source": "ALChibiAssets/assets/皇家/20121_标枪/skins/biaoqiang/biaoqiang.skel"
+    },
+    {
+      "path": "assets/ships/biaoqiang/default/biaoqiang.atlas",
+      "bytes": 3858,
+      "sha256": "e585b943b38fbf93b6488f93a20b1f7ca4ca9db492a7ee950987e5572d57736b",
+      "source": "ALChibiAssets/assets/皇家/20121_标枪/skins/biaoqiang/biaoqiang.atlas"
+    },
+    {
+      "path": "assets/ships/biaoqiang/default/biaoqiang.png",
+      "bytes": 154918,
+      "sha256": "0a17d51746a7ae27d44f7877a3b56d0946eed4897cedae99cee6a950f3582830",
+      "source": "ALChibiAssets/assets/皇家/20121_标枪/skins/biaoqiang/biaoqiang.png"
+    },
+    {
+      "path": "assets/ships/biaoqiang/default/__preview.png",
+      "bytes": 222407,
+      "sha256": "bdce484c209eb3521ef7fe632617bc772d0433d39c6929869a70ada7674d849d",
+      "source": "ALChibiAssets/assets/皇家/20121_标枪/skins/biaoqiang/__preview.png"
+    },
+    {
+      "path": "assets/ships/lingbo/default/lingbo.skel",
+      "bytes": 170555,
+      "sha256": "c367f803ebd0ec749a0700af99e426907bc306924d253d2a1364dc4be97e5de9",
+      "source": "ALChibiAssets/assets/重樱/30105_绫波/skins/lingbo/lingbo.skel"
+    },
+    {
+      "path": "assets/ships/lingbo/default/lingbo.atlas",
+      "bytes": 4522,
+      "sha256": "05fcf29caee94ebb143a05f8b51c46eb135838ac5028e4b0cb3a7e5bb666ba55",
+      "source": "ALChibiAssets/assets/重樱/30105_绫波/skins/lingbo/lingbo.atlas"
+    },
+    {
+      "path": "assets/ships/lingbo/default/lingbo.png",
+      "bytes": 163584,
+      "sha256": "f92c25b9436cd6e0453d4e73b936b867c5f08fba8b3b2e241801dd1a08daf02b",
+      "source": "ALChibiAssets/assets/重樱/30105_绫波/skins/lingbo/lingbo.png"
+    },
+    {
+      "path": "assets/ships/lingbo/default/__preview.png",
+      "bytes": 208537,
+      "sha256": "4faf83426763b361908b3ec2bf8102e8fa7a5c14b2b1d88c1215d88d905f12a5",
+      "source": "ALChibiAssets/assets/重樱/30105_绫波/skins/lingbo/__preview.png"
+    },
+    {
+      "path": "assets/ships/z23/default/z23.skel",
+      "bytes": 155241,
+      "sha256": "666e253a292e5d53255d7b12a7c4b4a414a90d33f84fbde16b901a50a2db9d4a",
+      "source": "ALChibiAssets/assets/铁血/40123_Z23/skins/z23/z23.skel"
+    },
+    {
+      "path": "assets/ships/z23/default/z23.atlas",
+      "bytes": 3862,
+      "sha256": "4a42168da0ea23a4f86153bf61f49b7e7c44c050531507935fc812bdb9e986e5",
+      "source": "ALChibiAssets/assets/铁血/40123_Z23/skins/z23/z23.atlas"
+    },
+    {
+      "path": "assets/ships/z23/default/z23.png",
+      "bytes": 143892,
+      "sha256": "d3f196ce9a5908d6c2a1cd636c82d9b0d7ad5bfdf208912205255bed4ac1c1ae",
+      "source": "ALChibiAssets/assets/铁血/40123_Z23/skins/z23/z23.png"
+    },
+    {
+      "path": "assets/ships/z23/default/__preview.png",
+      "bytes": 220076,
+      "sha256": "cc56639c70ad06ae45d0250e06e115f820576042ebf9f3d36dabd0dbe229e5f3",
+      "source": "ALChibiAssets/assets/铁血/40123_Z23/skins/z23/__preview.png"
+    },
+    {
+      "path": "assets/ships/hailunna/default/hailunna.skel",
+      "bytes": 138874,
+      "sha256": "76e9368ab8020d4d21be72d9bc5f1659eba210e14baf54edd032866810fbff15",
+      "source": "ALChibiAssets/assets/白鹰/10205_海伦娜/skins/hailunna/hailunna.skel"
+    },
+    {
+      "path": "assets/ships/hailunna/default/hailunna.atlas",
+      "bytes": 3880,
+      "sha256": "92e200d1eb7b98ca49c509019ba9420f3c574846ceb95ce45d723c64b522ffd4",
+      "source": "ALChibiAssets/assets/白鹰/10205_海伦娜/skins/hailunna/hailunna.atlas"
+    },
+    {
+      "path": "assets/ships/hailunna/default/hailunna.png",
+      "bytes": 152829,
+      "sha256": "35b11101097f433a18d3fd0459194218d9a837c74c13525a77bc6c0e6398731d",
+      "source": "ALChibiAssets/assets/白鹰/10205_海伦娜/skins/hailunna/hailunna.png"
+    },
+    {
+      "path": "assets/ships/hailunna/default/__preview.png",
+      "bytes": 230422,
+      "sha256": "0c1927f68e461e2f3c34a465ecdba25e4e2dfb718474c5935b115ae1d460a769",
+      "source": "ALChibiAssets/assets/白鹰/10205_海伦娜/skins/hailunna/__preview.png"
+    },
+    {
+      "path": "assets/ships/beierfasite/default/beierfasite.skel",
+      "bytes": 180446,
+      "sha256": "2fa046f5c8af436c1a39c32e43ce5668e4932a5ba9dc8532d728ea0fe56f5cfa",
+      "source": "ALChibiAssets/assets/皇家/20212_贝尔法斯特/skins/beierfasite/beierfasite.skel"
+    },
+    {
+      "path": "assets/ships/beierfasite/default/beierfasite.atlas",
+      "bytes": 3772,
+      "sha256": "1414e3572f78bc765174a72f2fb27eff67f181f0506775d4538cd301c3c64b37",
+      "source": "ALChibiAssets/assets/皇家/20212_贝尔法斯特/skins/beierfasite/beierfasite.atlas"
+    },
+    {
+      "path": "assets/ships/beierfasite/default/beierfasite.png",
+      "bytes": 145464,
+      "sha256": "d15cbabc78119deaf0835b8e7b45d7fe3a51a36a6aba86b79da865860141b589",
+      "source": "ALChibiAssets/assets/皇家/20212_贝尔法斯特/skins/beierfasite/beierfasite.png"
+    },
+    {
+      "path": "assets/ships/beierfasite/default/__preview.png",
+      "bytes": 248877,
+      "sha256": "20a7cb942b1940166409112cf9bc6fee43ec6d19c0a08ec6365c914e6f3933d4",
+      "source": "ALChibiAssets/assets/皇家/20212_贝尔法斯特/skins/beierfasite/__preview.png"
+    },
+    {
+      "path": "assets/ships/gaoxiong/default/gaoxiong.skel",
+      "bytes": 125771,
+      "sha256": "1098279f64f17126bace2da011f99f996075f146a7a35e10fae7fd915f57cfbb",
+      "source": "ALChibiAssets/assets/重樱/30311_高雄/skins/gaoxiong/gaoxiong.skel"
+    },
+    {
+      "path": "assets/ships/gaoxiong/default/gaoxiong.atlas",
+      "bytes": 4418,
+      "sha256": "28a5ef52c1701a0356752e446e7de7852b0f78f070af967d6e45406fd69569c7",
+      "source": "ALChibiAssets/assets/重樱/30311_高雄/skins/gaoxiong/gaoxiong.atlas"
+    },
+    {
+      "path": "assets/ships/gaoxiong/default/gaoxiong.png",
+      "bytes": 146015,
+      "sha256": "ed5b2695b013d687c88a40789e445eeaf94010100a4f24759a0e836a8f807414",
+      "source": "ALChibiAssets/assets/重樱/30311_高雄/skins/gaoxiong/gaoxiong.png"
+    },
+    {
+      "path": "assets/ships/gaoxiong/default/__preview.png",
+      "bytes": 232858,
+      "sha256": "c18ea847aae6d4bec4639ce888a47629fce390e8919ebb485d7c1b6d7a6ce595",
+      "source": "ALChibiAssets/assets/重樱/30311_高雄/skins/gaoxiong/__preview.png"
+    },
+    {
+      "path": "assets/ships/ougen/default/ougen.skel",
+      "bytes": 294775,
+      "sha256": "944d408dc4a32eb3ff9d55754ccb377288149511089c94cfdc49c11082b767fe",
+      "source": "ALChibiAssets/assets/铁血/40303_欧根亲王/skins/ougen/ougen.skel"
+    },
+    {
+      "path": "assets/ships/ougen/default/ougen.atlas",
+      "bytes": 5618,
+      "sha256": "26ce184b5fdc8df31b0c69692683c97ce60d3f918ae67b200ba4b71d66dde940",
+      "source": "ALChibiAssets/assets/铁血/40303_欧根亲王/skins/ougen/ougen.atlas"
+    },
+    {
+      "path": "assets/ships/ougen/default/ougen.png",
+      "bytes": 210822,
+      "sha256": "67168ec9af976d13e63797238c66bb190197535e85a9bebfbda700b43f850690",
+      "source": "ALChibiAssets/assets/铁血/40303_欧根亲王/skins/ougen/ougen.png"
+    },
+    {
+      "path": "assets/ships/ougen/default/__preview.png",
+      "bytes": 284079,
+      "sha256": "c70b80f08f61d952b1f53d144f8d6fd90f8a320d7e8abed5b8d15c9e9d3633fd",
+      "source": "ALChibiAssets/assets/铁血/40303_欧根亲王/skins/ougen/__preview.png"
+    },
+    {
+      "path": "assets/ships/yanzhan/default/yanzhan.skel",
+      "bytes": 598434,
+      "sha256": "db9999ae38d3fa427da0e0f1fa8cd35daa89477ccb2ab4189599921fedfbad06",
+      "source": "ALChibiAssets/assets/皇家/20502_厌战/skins/yanzhan/yanzhan.skel"
+    },
+    {
+      "path": "assets/ships/yanzhan/default/yanzhan.atlas",
+      "bytes": 6671,
+      "sha256": "3bcaeddad9040bafa39e294aac74bd6d7df57da68d78d3fdc0813782fccbaf77",
+      "source": "ALChibiAssets/assets/皇家/20502_厌战/skins/yanzhan/yanzhan.atlas"
+    },
+    {
+      "path": "assets/ships/yanzhan/default/yanzhan.png",
+      "bytes": 304315,
+      "sha256": "a47b3da6d64a499e80abd100f2b30e050ae7c3b30da1214e666d1b1afac6d1de",
+      "source": "ALChibiAssets/assets/皇家/20502_厌战/skins/yanzhan/yanzhan.png"
+    },
+    {
+      "path": "assets/ships/yanzhan/default/__preview.png",
+      "bytes": 267514,
+      "sha256": "cd3685ee819da700c9723baf7f0629168aa65919c18454fd64254494849906e3",
+      "source": "ALChibiAssets/assets/皇家/20502_厌战/skins/yanzhan/__preview.png"
+    },
+    {
+      "path": "assets/ships/bisimai/default/bisimai.skel",
+      "bytes": 158856,
+      "sha256": "2a49b2aa4ccc967bebe364125258abc4f83026a3ad5927c67faf3ef62fd88e29",
+      "source": "ALChibiAssets/assets/铁血/40501_俾斯麦/skins/bisimai/bisimai.skel"
+    },
+    {
+      "path": "assets/ships/bisimai/default/bisimai.atlas",
+      "bytes": 4762,
+      "sha256": "42e010a7e3b29fc18c49a5be818833d4b69e70965ba9b351b7987ccd995b907f",
+      "source": "ALChibiAssets/assets/铁血/40501_俾斯麦/skins/bisimai/bisimai.atlas"
+    },
+    {
+      "path": "assets/ships/bisimai/default/bisimai.png",
+      "bytes": 195956,
+      "sha256": "a88f1b333965c6e0f8bbc58a21d84f443703130eb537c733dba839e338ef8834",
+      "source": "ALChibiAssets/assets/铁血/40501_俾斯麦/skins/bisimai/bisimai.png"
+    },
+    {
+      "path": "assets/ships/bisimai/default/__preview.png",
+      "bytes": 258812,
+      "sha256": "a498bb322f9c0b75a5008448f4ae8628fa12b05c85b06710686bb2eb1420a5d1",
+      "source": "ALChibiAssets/assets/铁血/40501_俾斯麦/skins/bisimai/__preview.png"
+    },
+    {
+      "path": "assets/ships/qiye/default/qiye.skel",
+      "bytes": 633239,
+      "sha256": "796fc9fc27d77e4ba5439660817b0a06667c9b4686d81cd41018262dceb1206f",
+      "source": "ALChibiAssets/assets/白鹰/10706_企业/skins/qiye/qiye.skel"
+    },
+    {
+      "path": "assets/ships/qiye/default/qiye.atlas",
+      "bytes": 6373,
+      "sha256": "673c4aadb9cea557c8955c8098bba7d16d85d416299ce2b859e3605ddda32358",
+      "source": "ALChibiAssets/assets/白鹰/10706_企业/skins/qiye/qiye.atlas"
+    },
+    {
+      "path": "assets/ships/qiye/default/qiye.png",
+      "bytes": 230768,
+      "sha256": "ce8be68c2578b57839536d35edde9b222fcb39a08617928b9cb4c83f06566966",
+      "source": "ALChibiAssets/assets/白鹰/10706_企业/skins/qiye/qiye.png"
+    },
+    {
+      "path": "assets/ships/qiye/default/__preview.png",
+      "bytes": 224865,
+      "sha256": "433ae0cb6c79279601997455b59fe0c7232f6293fd8b434a9d75dba86e1fd7ec",
+      "source": "ALChibiAssets/assets/白鹰/10706_企业/skins/qiye/__preview.png"
+    },
+    {
+      "path": "assets/ships/dujiaoshou/default/dujiaoshou.skel",
+      "bytes": 176880,
+      "sha256": "edc951d810707627f6fafa31f9efcf21b15eb1b0ceb59ad71df7d45a4f4dabe0",
+      "source": "ALChibiAssets/assets/皇家/20603_独角兽/skins/dujiaoshou/dujiaoshou.skel"
+    },
+    {
+      "path": "assets/ships/dujiaoshou/default/dujiaoshou.atlas",
+      "bytes": 5208,
+      "sha256": "a4e12043c26699ef9cbdc087e66dd96582649e25618ca201f32728ec12ba17d4",
+      "source": "ALChibiAssets/assets/皇家/20603_独角兽/skins/dujiaoshou/dujiaoshou.atlas"
+    },
+    {
+      "path": "assets/ships/dujiaoshou/default/dujiaoshou.png",
+      "bytes": 173496,
+      "sha256": "d69f4b657855b08608c77976902607577eded7c5401ea038b7cc2508aeaddf73",
+      "source": "ALChibiAssets/assets/皇家/20603_独角兽/skins/dujiaoshou/dujiaoshou.png"
+    },
+    {
+      "path": "assets/ships/dujiaoshou/default/__preview.png",
+      "bytes": 193244,
+      "sha256": "fe7139b87b2eb71506a0ce3375669d7a9374faea23c76892e11cd80875d24a07",
+      "source": "ALChibiAssets/assets/皇家/20603_独角兽/skins/dujiaoshou/__preview.png"
+    },
+    {
+      "path": "preview/vendor/pixi.min.js",
+      "bytes": 456150,
+      "sha256": "712a3e1943b062a907d86c5bb56b67c7b32a3f03b3654768b00b7016d30a24c6",
+      "source": "ALChibiAssets/vendor/pixi.min.js"
+    },
+    {
+      "path": "preview/vendor/pixi-spine.js",
+      "bytes": 362379,
+      "sha256": "76f45edf421c8bb408ec1be94338862e069e1e7f57cd20628dc60f6e5d009426",
+      "source": "ALChibiAssets/vendor/pixi-spine.js"
+    },
+    {
+      "path": "preview/vendor/PIXI-LICENSE.txt",
+      "bytes": 1092,
+      "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "source": "ALChibiAssets/vendor/PIXI-LICENSE.txt"
+    },
+    {
+      "path": "preview/vendor/SPINE-LICENSE.txt",
+      "bytes": 1470,
+      "sha256": "ae6ec834a618890360d86e5f576b0c69eec21309478ddc2dcc2689043d061ee4",
+      "source": "ALChibiAssets/vendor/SPINE-LICENSE.txt"
+    },
+    {
+      "path": "data/roster.json",
+      "bytes": 24059,
+      "sha256": "f941dcbcfb86709eeb87afe57597ac8fd07612b7e4e0a45375c82f20dc2d3134",
+      "source": "generated curated metadata"
+    },
+    {
+      "path": "data/source-receipts.json",
+      "bytes": 4750,
+      "sha256": "bbc7463784fb87b5ea8d520dd0aaffee631a0264af9f434cea1af3d3bb980280",
+      "source": "generated curated metadata"
+    }
+  ],
+  "total_bytes": 8874581
+}

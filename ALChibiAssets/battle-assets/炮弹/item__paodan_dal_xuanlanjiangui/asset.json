@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_dal_xuanlanjiangui",
+  "model": "paodan_dal_xuanlanjiangui",
+  "name": "灼烂歼鬼大战斧（炮弹）",
+  "names": [
+    "灼烂歼鬼大战斧（炮弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dal_xuanlanjiangui",
+  "path": "battle-assets/炮弹/item__paodan_dal_xuanlanjiangui",
+  "images": [
+    {
+      "file": "paodan_zhuolanjiangui_5417680903273413245.png",
+      "name": "paodan_zhuolanjiangui",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 5417680903273413245,
+      "source": "CAB-6393ff956205ab90b45ac2757ae842ac"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dal_xuanlanjiangui/paodan_zhuolanjiangui_5417680903273413245.png",
+  "spine": {
+    "skel": "paodan_zhuolanjiangui.skel",
+    "atlas": "paodan_zhuolanjiangui.atlas",
+    "pages": [
+      "paodan_zhuolanjiangui.png"
+    ]
+  }
+}

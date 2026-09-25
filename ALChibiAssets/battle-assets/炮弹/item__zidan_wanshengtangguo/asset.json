@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_wanshengtangguo",
+  "model": "zidan_wanshengtangguo",
+  "name": "子弹:万圣糖果",
+  "names": [
+    "子弹:万圣糖果"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_wanshengtangguo",
+  "path": "battle-assets/炮弹/item__zidan_wanshengtangguo",
+  "images": [
+    {
+      "file": "zidan_wanshengtangguo_2436071759996844724.png",
+      "name": "zidan_wanshengtangguo",
+      "width": 128,
+      "height": 116,
+      "role": "战斗贴图",
+      "path_id": 2436071759996844724,
+      "source": "CAB-187e4fe655d2cb90e5ad3b5a7dd7f3c8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_wanshengtangguo/zidan_wanshengtangguo_2436071759996844724.png"
+}

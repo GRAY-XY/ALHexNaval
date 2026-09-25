@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_xuancaidengqiu",
+  "model": "paodan_xuancaidengqiu",
+  "name": "灯球炮弹",
+  "names": [
+    "灯球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xuancaidengqiu",
+  "path": "battle-assets/炮弹/item__paodan_xuancaidengqiu",
+  "images": [
+    {
+      "file": "particles01_-3310787673558051681.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3310787673558051681,
+      "source": "CAB-f819548b645df908efd5a5cff61a3e02"
+    },
+    {
+      "file": "paodan_xuancaidengqiu_9041523526905955631.png",
+      "name": "paodan_xuancaidengqiu",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 9041523526905955631,
+      "source": "CAB-f819548b645df908efd5a5cff61a3e02"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xuancaidengqiu/particles01_-3310787673558051681.png",
+  "spine": {
+    "skel": "paodan_xuancaidengqiu.skel",
+    "atlas": "paodan_xuancaidengqiu.atlas",
+    "pages": [
+      "paodan_xuancaidengqiu.png"
+    ]
+  }
+}

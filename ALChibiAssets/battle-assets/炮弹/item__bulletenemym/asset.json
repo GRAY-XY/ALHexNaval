@@ -1,0 +1,42 @@
+{
+  "id": "item__bulletenemym",
+  "model": "bulletenemym",
+  "name": "bulletenemym",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletenemym",
+  "path": "battle-assets/炮弹/item__bulletenemym",
+  "images": [
+    {
+      "file": "bullet-05_-2957439419993641067.png",
+      "name": "bullet-05",
+      "width": 43,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": -2957439419993641067,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    30004,
+    30005,
+    30006,
+    30013,
+    30014,
+    30015,
+    30022,
+    30023,
+    30024,
+    30301,
+    30302,
+    30303,
+    40005,
+    399991,
+    500513
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletenemym/bullet-05_-2957439419993641067.png"
+}

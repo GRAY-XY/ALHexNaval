@@ -1,0 +1,118 @@
+
+paodan_hailang.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bailang_1
+  rotate: true
+  xy: 2, 2
+  size: 240, 208
+  orig: 240, 208
+  offset: 0, 0
+  index: -1
+bailang_2
+  rotate: true
+  xy: 771, 326
+  size: 209, 198
+  orig: 209, 198
+  offset: 0, 0
+  index: -1
+bailang_3
+  rotate: true
+  xy: 727, 26
+  size: 223, 205
+  orig: 223, 205
+  offset: 0, 0
+  index: -1
+diceng_1
+  rotate: false
+  xy: 548, 251
+  size: 221, 221
+  orig: 221, 221
+  offset: 0, 0
+  index: -1
+diceng_2
+  rotate: false
+  xy: 256, 267
+  size: 290, 205
+  orig: 290, 205
+  offset: 0, 0
+  index: -1
+fanguang_1
+  rotate: true
+  xy: 320, 474
+  size: 280, 252
+  orig: 280, 252
+  offset: 0, 0
+  index: -1
+fanguang_2
+  rotate: true
+  xy: 320, 474
+  size: 280, 252
+  orig: 280, 252
+  offset: 0, 0
+  index: -1
+fanguang_3
+  rotate: true
+  xy: 2, 244
+  size: 280, 252
+  orig: 280, 252
+  offset: 0, 0
+  index: -1
+guang_3
+  rotate: false
+  xy: 475, 44
+  size: 250, 205
+  orig: 250, 205
+  offset: 0, 0
+  index: -1
+lanlang_1
+  rotate: false
+  xy: 574, 537
+  size: 247, 217
+  orig: 247, 217
+  offset: 0, 0
+  index: -1
+lanlang_2
+  rotate: true
+  xy: 256, 18
+  size: 247, 217
+  orig: 247, 217
+  offset: 0, 0
+  index: -1
+lanlang_3
+  rotate: false
+  xy: 2, 526
+  size: 316, 228
+  orig: 316, 228
+  offset: 0, 0
+  index: -1
+shuidi_1
+  rotate: false
+  xy: 574, 518
+  size: 43, 17
+  orig: 43, 17
+  offset: 0, 0
+  index: -1
+shuidi_2
+  rotate: false
+  xy: 256, 480
+  size: 54, 20
+  orig: 54, 20
+  offset: 0, 0
+  index: -1
+shuidi_3
+  rotate: false
+  xy: 619, 522
+  size: 15, 13
+  orig: 15, 13
+  offset: 0, 0
+  index: -1
+shuidi_4
+  rotate: false
+  xy: 256, 502
+  size: 60, 22
+  orig: 60, 22
+  offset: 0, 0
+  index: -1

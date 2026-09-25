@@ -1,0 +1,28 @@
+{
+  "id": "item__heicanglong_zhuoying",
+  "model": "heicanglong_zhuoying",
+  "name": "heicanglong_zhuoying",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heicanglong_zhuoying",
+  "path": "battle-assets/炮弹/item__heicanglong_zhuoying",
+  "images": [
+    {
+      "file": "zhuoying01_7024137776359757506.png",
+      "name": "zhuoying01",
+      "width": 256,
+      "height": 219,
+      "role": "战斗贴图",
+      "path_id": 7024137776359757506,
+      "source": "CAB-75baf645f2b011d70b3737bb954370af"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29645187
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heicanglong_zhuoying/zhuoying01_7024137776359757506.png"
+}

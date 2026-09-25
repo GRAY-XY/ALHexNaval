@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paodan_nengliangmaodian__paodan_nengliangmaodian_material",
+  "model": "paodan_nengliangmaodian_material",
+  "name": "paodan_nengliangmaodian_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_nengliangmaodian/paodan_nengliangmaodian_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_nengliangmaodian__paodan_nengliangmaodian_material",
+  "images": [
+    {
+      "file": "paodan_nengliangmaodian_8465775857907307637.png",
+      "name": "paodan_nengliangmaodian",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 8465775857907307637,
+      "source": "CAB-787e71bb77aaf5ee9c399a50fdf45b77"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

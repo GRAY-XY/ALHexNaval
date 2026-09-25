@@ -1,0 +1,24 @@
+{
+  "id": "item__school_bullet_huaban",
+  "model": "school_bullet_huaban",
+  "name": "花瓣子弹",
+  "names": [
+    "花瓣子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/school_bullet_huaban",
+  "path": "battle-assets/炮弹/item__school_bullet_huaban",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "huabanzidan.skel",
+    "atlas": "huabanzidan.atlas",
+    "pages": [
+      "huabanzidan.png"
+    ]
+  }
+}

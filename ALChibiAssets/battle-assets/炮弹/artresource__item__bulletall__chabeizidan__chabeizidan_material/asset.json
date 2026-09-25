@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__chabeizidan__chabeizidan_material",
+  "model": "chabeizidan_material",
+  "name": "chabeizidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/chabeizidan/chabeizidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__chabeizidan__chabeizidan_material",
+  "images": [
+    {
+      "file": "chabeizidan_5873921215938008067.png",
+      "name": "chabeizidan",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5873921215938008067,
+      "source": "CAB-90825c449d91e6d2b468f54f448411b9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

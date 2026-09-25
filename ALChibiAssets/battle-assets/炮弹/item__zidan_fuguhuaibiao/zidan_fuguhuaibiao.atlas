@@ -1,0 +1,34 @@
+
+zidan_fuguhuaibiao.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biaopan
+  rotate: false
+  xy: 41, 27
+  size: 108, 56
+  orig: 108, 56
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 151, 2
+  size: 474, 81
+  orig: 474, 81
+  offset: 0, 0
+  index: -1
+zhizhen_1
+  rotate: true
+  xy: 2, 76
+  size: 7, 19
+  orig: 7, 19
+  offset: 0, 0
+  index: -1
+zhizhen_2
+  rotate: false
+  xy: 23, 76
+  size: 16, 7
+  orig: 16, 7
+  offset: 0, 0
+  index: -1

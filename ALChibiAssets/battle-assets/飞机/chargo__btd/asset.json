@@ -1,0 +1,41 @@
+{
+  "id": "chargo__btd",
+  "model": "btd",
+  "name": "BTD-1毁灭者",
+  "names": [
+    "BTD-1毁灭者",
+    "【2020埃塞克斯世界BOSS E难度】 轰炸机*5",
+    "【2020埃塞克斯世界BOSS N难度】 轰炸机*7",
+    "【2020埃塞克斯世界BOSS H难度】 轰炸机*10",
+    "【2020埃塞克斯世界BOSS EX难度】 轰炸机*7"
+  ],
+  "category": "飞机",
+  "source": "chargo/btd",
+  "path": "battle-assets/飞机/chargo__btd",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "BTD1_8882337856518219769.png",
+      "name": "BTD1",
+      "width": 253,
+      "height": 240,
+      "role": "战斗贴图",
+      "path_id": 8882337856518219769,
+      "source": "CAB-9436729f026981b360aade8e5018e755"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__btd/aircraft_shadow_2192772484218123160.png"
+}

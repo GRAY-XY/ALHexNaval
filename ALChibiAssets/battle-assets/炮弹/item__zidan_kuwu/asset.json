@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_kuwu",
+  "model": "zidan_kuwu",
+  "name": "苦无子弹",
+  "names": [
+    "苦无子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_kuwu",
+  "path": "battle-assets/炮弹/item__zidan_kuwu",
+  "images": [
+    {
+      "file": "zidan_kuwu_5355641635319487740.png",
+      "name": "zidan_kuwu",
+      "width": 384,
+      "height": 101,
+      "role": "战斗贴图",
+      "path_id": 5355641635319487740,
+      "source": "CAB-d8386f43f7832e3ec3ee1473fb22adc4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161169
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_kuwu/zidan_kuwu_5355641635319487740.png"
+}

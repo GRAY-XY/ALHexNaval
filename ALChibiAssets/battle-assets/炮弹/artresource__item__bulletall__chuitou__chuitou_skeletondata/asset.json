@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__chuitou__chuitou_skeletondata",
+  "model": "chuitou_skeletondata",
+  "name": "chuitou_skeletondata",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/chuitou/chuitou_skeletondata",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__chuitou__chuitou_skeletondata",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

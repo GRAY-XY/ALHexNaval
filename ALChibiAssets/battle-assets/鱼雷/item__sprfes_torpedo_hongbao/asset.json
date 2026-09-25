@@ -1,0 +1,31 @@
+{
+  "id": "item__sprfes_torpedo_hongbao",
+  "model": "sprfes_torpedo_hongbao",
+  "name": "红包鱼雷",
+  "names": [
+    "红包鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/sprfes_torpedo_hongbao",
+  "path": "battle-assets/鱼雷/item__sprfes_torpedo_hongbao",
+  "images": [
+    {
+      "file": "90920_8978466093074469275.png",
+      "name": "90920",
+      "width": 155,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": 8978466093074469275,
+      "source": "CAB-7a702bbe7d48be2b139a861aa368d2f6"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3119104,
+    3364002
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__sprfes_torpedo_hongbao/90920_8978466093074469275.png"
+}

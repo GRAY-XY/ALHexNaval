@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_gouhuo",
+  "model": "paodan_gouhuo",
+  "name": "篝火炮弹",
+  "names": [
+    "篝火炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_gouhuo",
+  "path": "battle-assets/炮弹/item__paodan_gouhuo",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "gouhuozidan.skel",
+    "atlas": "gouhuozidan.atlas",
+    "pages": [
+      "gouhuozidan.png"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chargo__shengdan_feiji2",
+  "model": "shengdan_feiji2",
+  "name": "圣诞飞啾(鱼雷)",
+  "names": [
+    "圣诞飞啾(鱼雷)",
+    "圣诞飞啾(战斗)"
+  ],
+  "category": "飞机",
+  "source": "chargo/shengdan_feiji2",
+  "path": "battle-assets/飞机/chargo__shengdan_feiji2",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__shengdan_feiji2/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "shengdanfeijiu.skel",
+    "atlas": "shengdanfeijiu.atlas",
+    "pages": [
+      "shengdanfeijiu.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_famen",
+  "model": "yulei_famen",
+  "name": "阀门鱼雷",
+  "names": [
+    "阀门鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_famen",
+  "path": "battle-assets/鱼雷/item__yulei_famen",
+  "images": [
+    {
+      "file": "yulei_famen_-5531577455716416712.png",
+      "name": "yulei_famen",
+      "width": 128,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": -5531577455716416712,
+      "source": "CAB-72d669d38cc22ee196b008bfd7f799a5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_famen/yulei_famen_-5531577455716416712.png"
+}

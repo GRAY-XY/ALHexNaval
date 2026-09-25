@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_jiujiuwanou",
+  "model": "paodan_jiujiuwanou",
+  "name": "展品啾炮弹",
+  "names": [
+    "展品啾炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_jiujiuwanou",
+  "path": "battle-assets/炮弹/bulletall__paodan_jiujiuwanou",
+  "images": [
+    {
+      "file": "paodan_jiujiuwanou_-3668026963406381046.png",
+      "name": "paodan_jiujiuwanou",
+      "width": 126,
+      "height": 75,
+      "role": "原始精灵",
+      "path_id": -3668026963406381046,
+      "source": "CAB-b72da2c92c89068ec064959b631ecde8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,55 @@
+
+feiji_zhubaojiu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiu
+  rotate: true
+  xy: 233, 8
+  size: 161, 180
+  orig: 161, 180
+  offset: 0, 0
+  index: -1
+shanguang_1
+  rotate: true
+  xy: 415, 111
+  size: 28, 27
+  orig: 28, 27
+  offset: 0, 0
+  index: -1
+shanguang_2
+  rotate: true
+  xy: 415, 62
+  size: 22, 21
+  orig: 22, 21
+  offset: 0, 0
+  index: -1
+shanguang_3
+  rotate: false
+  xy: 415, 141
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+shanguang_4
+  rotate: true
+  xy: 415, 40
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+shanguang_5
+  rotate: false
+  xy: 415, 86
+  size: 22, 23
+  orig: 22, 23
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 2
+  size: 229, 167
+  orig: 229, 167
+  offset: 0, 0
+  index: -1

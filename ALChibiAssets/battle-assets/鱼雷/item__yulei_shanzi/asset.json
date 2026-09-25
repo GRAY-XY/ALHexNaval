@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shanzi",
+  "model": "yulei_shanzi",
+  "name": "团扇鱼雷",
+  "names": [
+    "团扇鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shanzi",
+  "path": "battle-assets/鱼雷/item__yulei_shanzi",
+  "images": [
+    {
+      "file": "yulei_shanzi_5026039000439783819.png",
+      "name": "yulei_shanzi",
+      "width": 128,
+      "height": 57,
+      "role": "战斗贴图",
+      "path_id": 5026039000439783819,
+      "source": "CAB-0904b2867444a633528317988e5bbcdd"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shanzi/yulei_shanzi_5026039000439783819.png"
+}

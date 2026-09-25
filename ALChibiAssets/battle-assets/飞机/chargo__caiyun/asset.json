@@ -1,0 +1,46 @@
+{
+  "id": "chargo__caiyun",
+  "model": "caiyun",
+  "name": "彩云（舰攻型）",
+  "names": [
+    "彩云（舰攻型）",
+    "大凤技能彩云",
+    "伊13技能彩云",
+    "信浓技能彩云",
+    "伊14技能彩云",
+    "白龙搭载彩云舰攻型 Lv1",
+    "白龙搭载彩云舰攻型 天运改 Lv1 ",
+    "【2021岛风活动B3】BOSS 白龙 鱼雷机",
+    "【2021岛风活动D3】BOSS 白龙 鱼雷机",
+    "【2021岛风活动剧情】BOSS 白龙 鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/caiyun",
+  "path": "battle-assets/飞机/chargo__caiyun",
+  "images": [
+    {
+      "file": "caiyun_7267744893543685747.png",
+      "name": "caiyun",
+      "width": 254,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": 7267744893543685747,
+      "source": "CAB-1cfecd70db478fc35ec8448e5b048c33"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__caiyun/caiyun_7267744893543685747.png"
+}

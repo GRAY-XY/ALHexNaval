@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xingzi",
+  "model": "zidan_xingzi",
+  "name": "星子弹(紫)",
+  "names": [
+    "星子弹(紫)"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xingzi",
+  "path": "battle-assets/炮弹/item__zidan_xingzi",
+  "images": [
+    {
+      "file": "zidan_xingzi_3354029373334033948.png",
+      "name": "zidan_xingzi",
+      "width": 128,
+      "height": 127,
+      "role": "战斗贴图",
+      "path_id": 3354029373334033948,
+      "source": "CAB-5450db911c5227fad496c1550c0f621f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xingzi/zidan_xingzi_3354029373334033948.png"
+}

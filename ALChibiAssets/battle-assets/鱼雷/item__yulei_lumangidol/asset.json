@@ -1,0 +1,29 @@
+{
+  "id": "item__yulei_lumangidol",
+  "model": "yulei_lumangidol",
+  "name": "yulei_lumangidol",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_lumangidol",
+  "path": "battle-assets/鱼雷/item__yulei_lumangidol",
+  "images": [
+    {
+      "file": "yulei_lumangidol_7470659085538701831.png",
+      "name": "yulei_lumangidol",
+      "width": 128,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": 7470659085538701831,
+      "source": "CAB-632056756ef2169904efb7bb63d977ee"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    160889,
+    3146220
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_lumangidol/yulei_lumangidol_7470659085538701831.png"
+}

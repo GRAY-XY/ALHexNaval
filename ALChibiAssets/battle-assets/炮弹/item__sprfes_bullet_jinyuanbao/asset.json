@@ -1,0 +1,27 @@
+{
+  "id": "item__sprfes_bullet_jinyuanbao",
+  "model": "sprfes_bullet_jinyuanbao",
+  "name": "元宝炮弹",
+  "names": [
+    "元宝炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/sprfes_bullet_jinyuanbao",
+  "path": "battle-assets/炮弹/item__sprfes_bullet_jinyuanbao",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3119102,
+    3366020
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "jinyuanbao.skel",
+    "atlas": "jinyuanbao.atlas",
+    "pages": [
+      "jinyuanbao.png"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__f7f",
+  "model": "f7f",
+  "name": "F7F虎猫",
+  "names": [
+    "F7F虎猫"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/f7f",
+  "path": "battle-assets/飞机图标/aircrafticon__f7f",
+  "images": [
+    {
+      "file": "f7f_-5880134739602001490.png",
+      "name": "f7f",
+      "width": 45,
+      "height": 42,
+      "role": "原始精灵",
+      "path_id": -5880134739602001490,
+      "source": "CAB-f96d2bc5dfca85214c6af81b24ccc28e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

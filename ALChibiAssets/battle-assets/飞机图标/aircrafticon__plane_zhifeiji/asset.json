@@ -1,0 +1,48 @@
+{
+  "id": "aircrafticon__plane_zhifeiji",
+  "model": "plane_zhifeiji",
+  "name": "【2022愚人节】金布里鱼雷机",
+  "names": [
+    "【2022愚人节】金布里鱼雷机",
+    "【2022愚人节】金布里轰炸机",
+    "【2024幼儿园活动 普通】BOSS 航母石膏喵  战斗纸飞机",
+    "【2024幼儿园活动 困难】BOSS 航母石膏喵  战斗纸飞机",
+    "【2024幼儿园活动 SP】BOSS 航母石膏喵  战斗纸飞机",
+    "【2024幼儿园活动 EX】BOSS 航母石膏喵  战斗纸飞机",
+    "【2024幼儿园活动 EX】BOSS 轻巡石膏喵 第二波 航母雕像-战斗纸飞机",
+    "【2024幼儿园活动】航母战斗纸飞机 Lv1",
+    "【2024幼儿园活动】航母战斗纸飞机 Lv2",
+    "【2024幼儿园活动】航母战斗纸飞机 Lv3",
+    "【2024幼儿园活动】航母战斗纸飞机 Lv4",
+    "【2024幼儿园活动】航母战斗纸飞机 Lv5",
+    "【20206瑟堡SP活动】航母石膏喵 鱼雷机 Lv1",
+    "【20206瑟堡SP活动】航母石膏喵 鱼雷机 Lv2",
+    "【20206瑟堡SP活动】航母石膏喵 鱼雷机 Lv3",
+    "【20206瑟堡SP活动】航母石膏喵 鱼雷机 Lv4",
+    "【20206瑟堡SP活动】航母石膏喵 鱼雷机 Lv5",
+    "【20206瑟堡SP活动 困难】精英人形 航母石膏喵 战斗纸飞机",
+    "【20206瑟堡SP活动 SP】精英人形 航母石膏喵 战斗纸飞机",
+    "白色纸飞机(鱼雷)",
+    "白色纸飞机(战斗)",
+    "白色纸飞机(轰炸)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/plane_zhifeiji",
+  "path": "battle-assets/飞机图标/aircrafticon__plane_zhifeiji",
+  "images": [
+    {
+      "file": "plane_zhifeiji_-2284368952910722662.png",
+      "name": "plane_zhifeiji",
+      "width": 44,
+      "height": 41,
+      "role": "原始精灵",
+      "path_id": -2284368952910722662,
+      "source": "CAB-f352b8483a09b1d0651ac5a19028b842"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

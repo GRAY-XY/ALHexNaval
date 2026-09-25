@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_bojue",
+  "model": "feiji_bojue",
+  "name": "伯爵啾(鱼雷)",
+  "names": [
+    "伯爵啾(鱼雷)",
+    "伯爵啾(战斗)",
+    "伯爵啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_bojue",
+  "path": "battle-assets/飞机/chargo__feiji_bojue",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_bojue_-3209704607307327890.png",
+      "name": "feiji_bojue",
+      "width": 256,
+      "height": 217,
+      "role": "战斗贴图",
+      "path_id": -3209704607307327890,
+      "source": "CAB-60c7f3cfa50bcc79533800b230efd8b3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_bojue/aircraft_shadow_2192772484218123160.png"
+}

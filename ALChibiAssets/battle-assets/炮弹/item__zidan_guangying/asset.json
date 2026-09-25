@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_guangying",
+  "model": "zidan_guangying",
+  "name": "光影交缠子弹",
+  "names": [
+    "光影交缠子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guangying",
+  "path": "battle-assets/炮弹/item__zidan_guangying",
+  "images": [
+    {
+      "file": "zidan_guangying_-1271952090059744680.png",
+      "name": "zidan_guangying",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -1271952090059744680,
+      "source": "CAB-947a3efd286d4ba15364ece2704f1935"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guangying/zidan_guangying_-1271952090059744680.png",
+  "spine": {
+    "skel": "zidan_guangying.skel",
+    "atlas": "zidan_guangying.atlas",
+    "pages": [
+      "zidan_guangying.png"
+    ]
+  }
+}

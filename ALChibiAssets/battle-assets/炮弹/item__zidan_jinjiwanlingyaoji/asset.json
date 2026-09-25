@@ -1,0 +1,41 @@
+{
+  "id": "item__zidan_jinjiwanlingyaoji",
+  "model": "zidan_jinjiwanlingyaoji",
+  "name": "禁忌万灵药剂子弹",
+  "names": [
+    "禁忌万灵药剂子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jinjiwanlingyaoji",
+  "path": "battle-assets/炮弹/item__zidan_jinjiwanlingyaoji",
+  "images": [
+    {
+      "file": "zidan_jinjiwanlingyaoji_5697192509310530135.png",
+      "name": "zidan_jinjiwanlingyaoji",
+      "width": 124,
+      "height": 94,
+      "role": "战斗贴图",
+      "path_id": 5697192509310530135,
+      "source": "CAB-680f45dd716cf2b22b8804863c38ba2f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3139707,
+    3162009,
+    3162010,
+    3162011,
+    3162012,
+    3162013,
+    3162014,
+    3162015,
+    3164017,
+    3164018,
+    3164019,
+    3164020
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jinjiwanlingyaoji/zidan_jinjiwanlingyaoji_5697192509310530135.png"
+}

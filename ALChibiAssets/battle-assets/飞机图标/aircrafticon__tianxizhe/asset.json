@@ -1,0 +1,29 @@
+{
+  "id": "aircrafticon__tianxizhe",
+  "model": "tianxizhe",
+  "name": "阿尔比恩天袭者预警机",
+  "names": [
+    "阿尔比恩天袭者预警机",
+    "【2026莫斯科活动B3】BOSS 奇尔沙治 第二波 轰炸机",
+    "【2026莫斯科活动D3】BOSS 奇尔沙治 第二波 轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tianxizhe",
+  "path": "battle-assets/飞机图标/aircrafticon__tianxizhe",
+  "images": [
+    {
+      "file": "tianxizhe_1724523684606967258.png",
+      "name": "tianxizhe",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 1724523684606967258,
+      "source": "CAB-74054af87ff2123653b262937bd90006"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

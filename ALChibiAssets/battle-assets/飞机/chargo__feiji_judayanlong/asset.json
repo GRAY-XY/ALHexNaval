@@ -1,0 +1,38 @@
+{
+  "id": "chargo__feiji_judayanlong",
+  "model": "feiji_judayanlong",
+  "name": "飞鸟川专武-巨大炎龙",
+  "names": [
+    "飞鸟川专武-巨大炎龙",
+    "巨翼煌翼炎龙(鱼雷)",
+    "巨翼煌翼炎龙(战斗)",
+    "巨翼煌翼炎龙(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_judayanlong",
+  "path": "battle-assets/飞机/chargo__feiji_judayanlong",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_judayanlong/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "gulite_judayanlong.skel",
+    "atlas": "gulite_judayanlong.atlas",
+    "pages": [
+      "gulite_judayanlong.png"
+    ]
+  }
+}

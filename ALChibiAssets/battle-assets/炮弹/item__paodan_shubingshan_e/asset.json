@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_shubingshan_e",
+  "model": "paodan_shubingshan_e",
+  "name": "paodan_shubingshan_e",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_shubingshan_e",
+  "path": "battle-assets/炮弹/item__paodan_shubingshan_e",
+  "images": [
+    {
+      "file": "paodan_shanzi_e_6537125188348346784.png",
+      "name": "paodan_shanzi_e",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6537125188348346784,
+      "source": "CAB-deef5140cd9ccd9557bda81abeadb9ee"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3108301,
+    3108302,
+    3108306
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shubingshan_e/paodan_shanzi_e_6537125188348346784.png"
+}

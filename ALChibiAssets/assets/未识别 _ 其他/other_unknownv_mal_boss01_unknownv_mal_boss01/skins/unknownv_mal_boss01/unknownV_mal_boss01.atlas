@@ -1,0 +1,76 @@
+
+unknownV_mal_boss01.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1
+  rotate: false
+  xy: 1050, 79
+  size: 427, 468
+  orig: 427, 468
+  offset: 0, 0
+  index: -1
+hei_1_1
+  rotate: true
+  xy: 62, 53
+  size: 101, 97
+  orig: 101, 97
+  offset: 0, 0
+  index: -1
+hei_2
+  rotate: true
+  xy: 2, 156
+  size: 153, 409
+  orig: 153, 409
+  offset: 0, 0
+  index: -1
+hei_3
+  rotate: false
+  xy: 2, 311
+  size: 509, 702
+  orig: 509, 702
+  offset: 0, 0
+  index: -1
+hei_4
+  rotate: false
+  xy: 513, 338
+  size: 535, 675
+  orig: 535, 675
+  offset: 0, 0
+  index: -1
+hong_1
+  rotate: true
+  xy: 1050, 549
+  size: 464, 569
+  orig: 464, 569
+  offset: 0, 0
+  index: -1
+hong_1_1
+  rotate: true
+  xy: 2, 2
+  size: 46, 43
+  orig: 46, 43
+  offset: 0, 0
+  index: -1
+hong_1_2
+  rotate: false
+  xy: 161, 82
+  size: 67, 72
+  orig: 67, 72
+  offset: 0, 0
+  index: -1
+yan_1
+  rotate: true
+  xy: 2, 50
+  size: 104, 58
+  orig: 104, 58
+  offset: 0, 0
+  index: -1
+yan_2
+  rotate: false
+  xy: 47, 21
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,17 @@
+{
+  "id": "item__youmiya_modaoshu01",
+  "model": "youmiya_modaoshu01",
+  "name": "youmiya_modaoshu01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/youmiya_modaoshu01",
+  "path": "battle-assets/炮弹/item__youmiya_modaoshu01",
+  "images": [],
+  "particle_systems": 31,
+  "animations": [],
+  "bullet_ids": [
+    168229
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,53 @@
+{
+  "id": "item__youmiya_dazhaojiguang",
+  "model": "youmiya_dazhaojiguang",
+  "name": "youmiya_dazhaojiguang",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/youmiya_dazhaojiguang",
+  "path": "battle-assets/其他战斗特效/item__youmiya_dazhaojiguang",
+  "images": [
+    {
+      "file": "ring01_-8638353155305545093.png",
+      "name": "ring01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8638353155305545093,
+      "source": "CAB-717ae5b2f8c674a01d051c33584c6885"
+    },
+    {
+      "file": "tex_uifx_mask_314_-4413500609710103995.png",
+      "name": "tex_uifx_mask_314",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4413500609710103995,
+      "source": "CAB-717ae5b2f8c674a01d051c33584c6885"
+    },
+    {
+      "file": "wave01_-3655800755645714134.png",
+      "name": "wave01",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3655800755645714134,
+      "source": "CAB-717ae5b2f8c674a01d051c33584c6885"
+    },
+    {
+      "file": "line01_3615200624063391530.png",
+      "name": "line01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3615200624063391530,
+      "source": "CAB-717ae5b2f8c674a01d051c33584c6885"
+    }
+  ],
+  "particle_systems": 18,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__youmiya_dazhaojiguang/ring01_-8638353155305545093.png"
+}

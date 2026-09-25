@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_feidao",
+  "model": "paodan_feidao",
+  "name": "飞刀炮弹",
+  "names": [
+    "飞刀炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_feidao",
+  "path": "battle-assets/炮弹/item__paodan_feidao",
+  "images": [
+    {
+      "file": "paodan_feidao_5432189108587230678.png",
+      "name": "paodan_feidao",
+      "width": 128,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": 5432189108587230678,
+      "source": "CAB-f4ed350d1d60d712b7d1a37feef60dce"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_feidao/paodan_feidao_5432189108587230678.png"
+}

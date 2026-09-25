@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102839">
+  <link rel="icon" href="data:,">
+  <title>AL HEX NAVAL</title>
+</head>
+<body class="front-active">
+  <div id="front-end" class="front-end">
+    <div class="front-end-wash" aria-hidden="true"></div>
+    <section id="main-menu-page" class="front-page main-menu-page" aria-labelledby="main-menu-title">
+      <header class="front-title">
+        <span class="front-kicker">TURN-BASED NAVAL STRATEGY</span>
+        <div class="front-brand"><span class="front-emblem">✦</span><div><h1 id="main-menu-title">AL HEX NAVAL</h1><p>水彩群岛六角海战</p></div></div>
+      </header>
+      <div class="main-menu-layout">
+        <nav class="main-menu-actions" aria-label="主菜单">
+          <button id="continue-match" class="menu-command primary" disabled><span><strong>继续战局</strong><small id="continue-summary">正在准备海图…</small></span><b>›</b></button>
+          <button id="open-skirmish" class="menu-command"><span><strong>本地对战</strong><small>2～8方轮流指挥 · 自定义海域</small></span><b>›</b></button>
+          <button id="open-single-player" class="menu-command"><span><strong>单人对战</strong><small>与自动侦察、作战和经营的AI交战</small></span><b>›</b></button>
+          <button class="menu-command" disabled><span><strong>多人对战</strong><small>房间与联机同步开发中</small></span><em>开发中</em></button>
+          <button id="main-load" class="menu-command"><span><strong>读取战局</strong><small>手动、自动与上一战局存档</small></span><b>›</b></button>
+          <button id="main-settings" class="menu-command"><span><strong>设置与帮助</strong><small>显示、动画和快捷键</small></span><b>›</b></button>
+        </nav>
+        <aside class="front-notes">
+          <span class="front-kicker">当前规则</span>
+          <h2>大海域 · 多势力 · 回合制</h2>
+          <p>舰船共用石油，舰载机按六角格实时飞行。占领沿岸港口可提高石油上限。</p>
+          <dl><div><dt>地图</dt><dd>128 / 256 / 512</dd></div><div><dt>势力</dt><dd>2～8方</dd></div><div><dt>视野</dt><dd>战争迷雾</dd></div></dl>
+          <a class="gallery-link" href="./preview/" target="_blank" rel="noopener">查看舰船素材图鉴 ↗</a>
+        </aside>
+      </div>
+      <footer class="front-footer"><span>0.10.0 · AI席位</span><span>Esc · 暂停菜单</span></footer>
+    </section>
+    <section id="skirmish-page" class="front-page setup-page" aria-labelledby="setup-title" hidden>
+      <button id="setup-back" class="front-back">‹ 返回主界面</button>
+      <div class="setup-card">
+        <span id="setup-kicker" class="front-kicker">LOCAL SKIRMISH</span>
+        <h2 id="setup-title">建立本地战局</h2>
+        <p id="setup-description">各势力均可使用完整舰船阵容。本地玩家依次交接回合。</p>
+        <div class="setup-options">
+          <label><span>海域规模<small>更大的海图需要更长的首次生成时间</small></span><select id="map-size" aria-label="新战局海域规模"><option value="128">128 × 128 · 近海</option><option value="256" selected>256 × 256 · 群岛</option><option value="512">512 × 512 · 大洋</option></select></label>
+          <label><span>参战势力<small>所有势力拥有相同的完整舰船池</small></span><select id="team-count" aria-label="新战局势力数"><option value="2">2 方</option><option value="3">3 方</option><option value="4" selected>4 方</option><option value="5">5 方</option><option value="6">6 方</option><option value="7">7 方</option><option value="8">8 方</option></select></label>
+        </div>
+        <div class="seat-heading"><span>席位控制</span><small>启用席位可选玩家或AI；其余席位为空位</small></div>
+        <div id="seat-settings" class="seat-settings" aria-label="席位控制设置"></div>
+        <p id="seat-summary" class="seat-summary"></p>
+        <div class="setup-rules"><span>每回合补充石油</span><strong>50 + 港口加成</strong><span>胜利条件</span><strong>最后存续 / 夺取总部</strong></div>
+        <button id="new-match" class="start-match">开始战局</button>
+      </div>
+    </section>
+  </div>
+  <div id="app" aria-hidden="true">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">⬡</div><div><span class="eyebrow">NAVAL COMMAND</span><h1>AL HEX NAVAL</h1></div></div>
+      <div class="world-info"><span class="live-dot"></span><span id="map-summary">正在准备海图</span></div>
+      <div class="top-actions"><button id="open-pause" title="打开暂停菜单（Esc）">☰ 暂停菜单</button></div>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar">
+        <section class="minimap-panel"><div class="minimap-heading"><h2>海域导航</h2><button id="overview" class="text-button">全图 ↗</button></div><canvas id="minimap" aria-label="海域小地图，可点击或拖动定位"></canvas><p>点击或拖动小地图 · 快速定位海域</p></section>
+      </aside>
+      <main id="map-viewport" class="map-viewport" aria-label="六角海图" tabindex="0">
+        <div id="canvas-host"></div>
+        <div class="map-heading"><span class="eyebrow">ARCHIPELAGO CHART</span><h2>晨雾群岛</h2><p id="map-mode">战术视图 · 舰船详情</p><p id="fog-info">战争迷雾 · 舰船6格 / 飞机8格</p></div>
+        <div class="map-tools"><button id="open-ports">⚓ 港口与增援</button><button id="home" title="返回集结海域（空格）">⌖ 返回舰队</button><button id="grid-toggle" aria-pressed="true" title="显示或隐藏六角格（G）">⬡ 六角网格</button><button id="capture-map" title="将当前可见海域保存为PNG">▣ 海图截图</button><button id="animation-toggle" aria-pressed="false">Ⅱ 暂停动画</button><button id="air-pause" aria-pressed="false">Ⅱ 暂停飞行</button><button id="unit-panel-toggle" class="panel-toggle" aria-expanded="false">单位信息</button></div>
+        <div class="order-panel"><span id="route-info">选择本方舰船，右键海格安排航行</span><button id="move-mode" aria-pressed="false">航行指令 (R)</button></div>
+        <div id="message" class="message" role="status" hidden></div>
+        <div class="compass" aria-hidden="true"><span>N</span><div>✧</div></div>
+        <div class="zoom-controls"><button id="zoom-in" aria-label="放大海图">＋</button><span id="zoom-level">92%</span><button id="zoom-out" aria-label="缩小海图">−</button></div>
+        <div id="selection-box" class="selection-box" hidden aria-hidden="true"></div>
+        <div class="map-bottom"><span id="cell-info">左键框选 · 右键移动 · 中键 / WASD平移</span><span id="load-status" role="status">载入舰船素材…</span></div>
+        <div id="loading" class="loading"><div class="loading-ring"></div><h2>正在展开海图</h2><p>整理群岛与舰船位置…</p></div>
+      </main>
+      <aside class="unit-sidebar" aria-label="单位信息面板">
+        <div class="unit-panel-heading"><h2>单位信息</h2><button id="close-unit-panel" class="panel-toggle" aria-label="收起单位信息">收起</button><p id="selection-count" class="selection-count" role="status">左键拖框选择本方单位</p></div>
+        <section id="selection" class="selection" aria-label="选中单位信息"><div class="selection-empty">点击海图中的舰船、飞机或港口查看资料</div></section>
+        <div class="turn-panel"><div><span class="eyebrow">本地轮流指挥</span><h3 id="turn-label">第 1 轮 · 湛蓝舰队</h3><div class="team-oil-summary"><span>石油</span><strong id="team-oil">50 / 50</strong><div class="team-oil-meter"><span id="team-oil-fill"></span></div></div><p id="oil-rule-note">下次本方回合补满50点 · 每港口增加10上限</p><p id="pending-info"></p><p id="campaign-info"></p></div><button id="open-result" hidden>查看结算</button><button id="next-unit">下一艘 (Tab)</button><button id="end-turn">结束本方回合 →</button></div>
+      </aside>
+    </div>
+    <footer class="statusbar"><span><span class="status-mark">●</span> 六角海战原型</span><span>左键点击 / 框选 · 右键一起移动 · 中键 / WASD平移</span><div class="save-tools"><span id="save-status">自动保存</span><button id="save-match">保存</button><button id="load-match">读取</button><button id="export-match">导出</button><button id="import-match">导入</button></div></footer>
+    <div id="ai-turn-banner" class="ai-turn-banner" hidden><span>AI COMMAND</span><strong id="ai-turn-title">AI行动中</strong><small id="ai-turn-detail">海图与行动过程已隐藏，交接回玩家后重新显示</small></div>
+  </div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <dialog id="load-dialog"><h2>读取战局</h2><p>选择存档位置。读取前会保存当前战局至自动存档。</p><div id="save-slots"></div><button id="close-load">关闭</button></dialog>
+  <dialog id="port-dialog"><h2>港口与增援</h2><p id="port-summary"></p><p>选择“管理”定位并选中一座港口，在右侧单独进行占领、维修和增援。也可直接点击海图上的港口标记。</p><div id="port-list"></div><button id="close-ports">返回海图</button></dialog>
+  <dialog id="result-dialog"><h2 id="result-title"></h2><p id="result-description"></p><p>战局已结束。可以返回海图查看，或从暂停菜单返回主界面建立新战局。</p><button id="close-result">返回海图</button></dialog>
+  <dialog id="map-capture-dialog"><h2>当前海域截图</h2><img id="map-capture-image" alt="当前可见海域截图"><div class="dialog-actions"><button id="download-map-capture">下载 PNG</button><button id="close-map-capture">返回海图</button></div></dialog>
+  <dialog id="pause-dialog" class="pause-dialog">
+    <span class="front-kicker">GAME PAUSED</span><h2>战局暂停</h2><p id="pause-summary">当前战局已暂停</p>
+    <div class="pause-actions"><button id="resume-game" class="primary">继续战局</button><button id="pause-save">保存战局</button><button id="pause-load">读取战局</button><button id="pause-settings">设置与帮助</button><button id="return-main" class="quiet">返回主界面</button></div>
+    <small>按 Esc 继续</small>
+  </dialog>
+  <dialog id="settings-dialog" class="settings-dialog">
+    <span class="front-kicker">SETTINGS</span><h2>设置与帮助</h2>
+    <div class="settings-list">
+      <label><span><strong>显示六角网格</strong><small>保留距离和移动范围参照</small></span><input id="setting-grid" type="checkbox" checked></label>
+      <label><span><strong>播放舰船动画</strong><small>待机、移动、攻击与受击动作</small></span><input id="setting-animation" type="checkbox" checked></label>
+      <label><span><strong>航空实时飞行</strong><small>关闭后飞行中队保持原位</small></span><input id="setting-air" type="checkbox" checked></label>
+    </div>
+    <div class="shortcut-help"><h3>快捷键</h3><p><kbd>Esc</kbd> 暂停　<kbd>WASD</kbd> 平移　<kbd>G</kbd> 网格　<kbd>M</kbd> 全图　<kbd>R</kbd> 航行　<kbd>Tab</kbd> 下一艘　<kbd>Enter</kbd> 结束回合</p></div>
+    <button id="close-settings" class="primary">完成</button>
+  </dialog>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

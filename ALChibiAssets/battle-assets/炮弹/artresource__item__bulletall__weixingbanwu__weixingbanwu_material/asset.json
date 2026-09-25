@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__weixingbanwu__weixingbanwu_material",
+  "model": "weixingbanwu_material",
+  "name": "weixingbanwu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/weixingbanwu/weixingbanwu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__weixingbanwu__weixingbanwu_material",
+  "images": [
+    {
+      "file": "weixingbanwu_-3309197087188965073.png",
+      "name": "weixingbanwu",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3309197087188965073,
+      "source": "CAB-43900c080a169e104d9ea2efb583fd93"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

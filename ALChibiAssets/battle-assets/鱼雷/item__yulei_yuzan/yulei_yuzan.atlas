@@ -1,0 +1,55 @@
+
+yulei_yuzan.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diguang
+  rotate: false
+  xy: 2, 4
+  size: 209, 120
+  orig: 209, 120
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 403, 31
+  size: 93, 66
+  orig: 93, 66
+  offset: 0, 0
+  index: -1
+xx_1
+  rotate: true
+  xy: 213, 2
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+xx_2
+  rotate: false
+  xy: 471, 28
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: -1
+xx_3
+  rotate: false
+  xy: 503, 28
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: -1
+xx_4
+  rotate: false
+  xy: 471, 65
+  size: 45, 59
+  orig: 45, 59
+  offset: 0, 0
+  index: -1
+yuzhan
+  rotate: false
+  xy: 213, 24
+  size: 188, 100
+  orig: 188, 100
+  offset: 0, 0
+  index: -1

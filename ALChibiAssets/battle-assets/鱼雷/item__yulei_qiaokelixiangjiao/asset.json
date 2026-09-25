@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_qiaokelixiangjiao",
+  "model": "yulei_qiaokelixiangjiao",
+  "name": "巧克力香蕉鱼雷",
+  "names": [
+    "巧克力香蕉鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qiaokelixiangjiao",
+  "path": "battle-assets/鱼雷/item__yulei_qiaokelixiangjiao",
+  "images": [
+    {
+      "file": "yulei_qiaokelixiangjiao_-2767807154996132237.png",
+      "name": "yulei_qiaokelixiangjiao",
+      "width": 128,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": -2767807154996132237,
+      "source": "CAB-e3c0d5f756761f3897ce11fa39e42345"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qiaokelixiangjiao/yulei_qiaokelixiangjiao_-2767807154996132237.png"
+}

@@ -1,0 +1,41 @@
+
+chongying_u_zibao.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 268, 194
+  orig: 268, 194
+  offset: 0, 0
+  index: -1
+huo
+  rotate: false
+  xy: 2, 198
+  size: 337, 189
+  orig: 337, 189
+  offset: 0, 0
+  index: -1
+yanwu_1
+  rotate: true
+  xy: 272, 108
+  size: 88, 40
+  orig: 88, 40
+  offset: 0, 0
+  index: -1
+yanwu_2
+  rotate: false
+  xy: 272, 82
+  size: 69, 24
+  orig: 69, 24
+  offset: 0, 0
+  index: -1
+yanwu_3
+  rotate: false
+  xy: 314, 173
+  size: 64, 23
+  orig: 64, 23
+  offset: 0, 0
+  index: -1

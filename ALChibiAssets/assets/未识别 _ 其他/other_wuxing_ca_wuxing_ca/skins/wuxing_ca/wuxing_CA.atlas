@@ -1,0 +1,76 @@
+
+wuxing_CA.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: false
+  xy: 682, 165
+  size: 146, 123
+  orig: 146, 123
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 600
+  size: 581, 416
+  orig: 581, 416
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: false
+  xy: 682, 2
+  size: 90, 161
+  orig: 90, 161
+  offset: 0, 0
+  index: -1
+heiwu
+  rotate: true
+  xy: 2, 10
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu2
+  rotate: true
+  xy: 342, 10
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu3
+  rotate: true
+  xy: 682, 428
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+piaowu
+  rotate: false
+  xy: 585, 737
+  size: 62, 53
+  orig: 62, 53
+  offset: 0, 0
+  index: -1
+zx01
+  rotate: true
+  xy: 585, 792
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zx02
+  rotate: false
+  xy: 682, 359
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zx03
+  rotate: false
+  xy: 682, 290
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1

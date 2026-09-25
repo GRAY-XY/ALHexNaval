@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_huocheyancong",
+  "model": "yulei_huocheyancong",
+  "name": "沉寂烟塔鱼雷",
+  "names": [
+    "沉寂烟塔鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huocheyancong",
+  "path": "battle-assets/鱼雷/item__yulei_huocheyancong",
+  "images": [
+    {
+      "file": "yulei_huocheyancong_-8150318174444328689.png",
+      "name": "yulei_huocheyancong",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -8150318174444328689,
+      "source": "CAB-a276545b88d17471cd45d8301cbfc80e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_huocheyancong/yulei_huocheyancong_-8150318174444328689.png"
+}

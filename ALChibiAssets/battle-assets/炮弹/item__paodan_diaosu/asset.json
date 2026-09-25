@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_diaosu",
+  "model": "paodan_diaosu",
+  "name": "纪念雕像炮弹",
+  "names": [
+    "纪念雕像炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_diaosu",
+  "path": "battle-assets/炮弹/item__paodan_diaosu",
+  "images": [
+    {
+      "file": "diaosu01_-775441922319238304.png",
+      "name": "diaosu01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -775441922319238304,
+      "source": "CAB-962c5525c1e754367aed087c30eab468"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_diaosu/diaosu01_-775441922319238304.png"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "item__doublebulletusa_purple",
+  "model": "doublebulletusa_purple",
+  "name": "doublebulletusa_purple",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/doublebulletusa_purple",
+  "path": "battle-assets/炮弹/item__doublebulletusa_purple",
+  "images": [
+    {
+      "file": "bullet_UK8_-4518845227979222507.png",
+      "name": "bullet_UK8",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -4518845227979222507,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3341202,
+    3370008,
+    3370214,
+    3370215,
+    3370216,
+    3374001,
+    3374003,
+    3374006,
+    3376012,
+    3376105
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__doublebulletusa_purple/bullet_UK8_-4518845227979222507.png"
+}

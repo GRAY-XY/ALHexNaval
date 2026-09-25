@@ -1,0 +1,27 @@
+
+paodan_pojiutong.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chushou
+  rotate: true
+  xy: 159, 31
+  size: 123, 166
+  orig: 123, 166
+  offset: 0, 0
+  index: -1
+tongzi
+  rotate: false
+  xy: 2, 2
+  size: 155, 152
+  orig: 155, 152
+  offset: 0, 0
+  index: -1
+tongzi2
+  rotate: true
+  xy: 327, 84
+  size: 70, 44
+  orig: 70, 44
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__qigongpaozidan__qigongpaozidan_material",
+  "model": "qigongpaozidan_material",
+  "name": "qigongpaozidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/qigongpaozidan/qigongpaozidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__qigongpaozidan__qigongpaozidan_material",
+  "images": [
+    {
+      "file": "qigongpaozidan_-1512029074691068488.png",
+      "name": "qigongpaozidan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1512029074691068488,
+      "source": "CAB-496dd5d8e379c5f4d7d4e2ed57fe6d2a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

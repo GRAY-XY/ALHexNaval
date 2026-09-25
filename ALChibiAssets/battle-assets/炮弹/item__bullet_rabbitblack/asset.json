@@ -1,0 +1,29 @@
+{
+  "id": "item__bullet_rabbitblack",
+  "model": "bullet_rabbitblack",
+  "name": "bullet_rabbitblack",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_rabbitblack",
+  "path": "battle-assets/炮弹/item__bullet_rabbitblack",
+  "images": [
+    {
+      "file": "bullet_rabbitblack_8125457283465720980.png",
+      "name": "bullet_rabbitblack",
+      "width": 101,
+      "height": 106,
+      "role": "战斗贴图",
+      "path_id": 8125457283465720980,
+      "source": "CAB-ccfed5ea9f60f29681f33a64c9f9c2e8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160884,
+    170101
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_rabbitblack/bullet_rabbitblack_8125457283465720980.png"
+}

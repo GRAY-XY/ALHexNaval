@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jingui",
+  "model": "yulei_jingui",
+  "name": "一枝金桂鱼雷",
+  "names": [
+    "一枝金桂鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jingui",
+  "path": "battle-assets/鱼雷/item__yulei_jingui",
+  "images": [
+    {
+      "file": "yulei_jingui_659417745992798169.png",
+      "name": "yulei_jingui",
+      "width": 128,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": 659417745992798169,
+      "source": "CAB-b8561b632d6b1d379be2a16e590a82ac"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jingui/yulei_jingui_659417745992798169.png"
+}

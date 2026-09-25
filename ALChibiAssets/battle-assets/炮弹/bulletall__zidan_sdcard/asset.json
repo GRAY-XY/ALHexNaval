@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_sdcard",
+  "model": "zidan_sdcard",
+  "name": "存储卡子弹",
+  "names": [
+    "存储卡子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_sdcard",
+  "path": "battle-assets/炮弹/bulletall__zidan_sdcard",
+  "images": [
+    {
+      "file": "zidan_sdcard_9206043076921743762.png",
+      "name": "zidan_sdcard",
+      "width": 128,
+      "height": 60,
+      "role": "原始精灵",
+      "path_id": 9206043076921743762,
+      "source": "CAB-c8b94fb63fa0e29c23b2604a32885704"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

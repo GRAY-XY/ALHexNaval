@@ -1,0 +1,37 @@
+{
+  "id": "chargo__qiyu",
+  "model": "qiyu",
+  "name": "旗鱼",
+  "names": [
+    "旗鱼"
+  ],
+  "category": "飞机",
+  "source": "chargo/qiyu",
+  "path": "battle-assets/飞机/chargo__qiyu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "qiyu_7183804706311494097.png",
+      "name": "qiyu",
+      "width": 235,
+      "height": 255,
+      "role": "战斗贴图",
+      "path_id": 7183804706311494097,
+      "source": "CAB-09f23dfdbdefab17c615b9302252795f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__qiyu/aircraft_shadow_2192772484218123160.png"
+}

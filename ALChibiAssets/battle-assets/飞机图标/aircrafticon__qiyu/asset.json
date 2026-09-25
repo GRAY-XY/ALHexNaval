@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__qiyu",
+  "model": "qiyu",
+  "name": "旗鱼",
+  "names": [
+    "旗鱼"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/qiyu",
+  "path": "battle-assets/飞机图标/aircrafticon__qiyu",
+  "images": [
+    {
+      "file": "qiyu_6763703120766174664.png",
+      "name": "qiyu",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 6763703120766174664,
+      "source": "CAB-64d6b071b017a9fd4b0422f855106aad"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

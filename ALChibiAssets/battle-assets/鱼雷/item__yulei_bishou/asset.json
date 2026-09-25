@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_bishou",
+  "model": "yulei_bishou",
+  "name": "祭祀匕首鱼雷",
+  "names": [
+    "祭祀匕首鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_bishou",
+  "path": "battle-assets/鱼雷/item__yulei_bishou",
+  "images": [
+    {
+      "file": "yulei_bishou_6443335585247038177.png",
+      "name": "yulei_bishou",
+      "width": 128,
+      "height": 36,
+      "role": "战斗贴图",
+      "path_id": 6443335585247038177,
+      "source": "CAB-d3e2264d014ac6272fba1ad1b4f1ba26"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_bishou/yulei_bishou_6443335585247038177.png"
+}

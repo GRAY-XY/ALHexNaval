@@ -1,0 +1,61 @@
+
+tiancheng_m_boss01.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 393
+  size: 945, 331
+  orig: 945, 331
+  offset: 0, 0
+  index: -1
+pao1
+  rotate: true
+  xy: 949, 305
+  size: 145, 56
+  orig: 145, 56
+  offset: 0, 0
+  index: -1
+pao2
+  rotate: true
+  xy: 949, 590
+  size: 134, 71
+  orig: 134, 71
+  offset: 0, 0
+  index: -1
+pao3
+  rotate: true
+  xy: 949, 452
+  size: 136, 64
+  orig: 136, 64
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 2
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+
+tiancheng_m_boss012.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuihua_2
+  rotate: false
+  xy: 2, 305
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1

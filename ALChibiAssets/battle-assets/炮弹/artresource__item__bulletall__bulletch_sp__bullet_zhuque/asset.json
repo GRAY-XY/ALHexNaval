@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__bullet_zhuque",
+  "model": "bullet_zhuque",
+  "name": "bullet_zhuque",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/bullet_zhuque",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__bullet_zhuque",
+  "images": [
+    {
+      "file": "bullet_zhuque_3382689117408104747.png",
+      "name": "bullet_zhuque",
+      "width": 117,
+      "height": 40,
+      "role": "原始精灵",
+      "path_id": 3382689117408104747,
+      "source": "CAB-5f6ba21f6349cbe30e933cb9f02b7171"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

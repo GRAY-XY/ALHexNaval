@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__zhaomingdan__zhaomingdan_yanwu",
+  "model": "zhaomingdan_yanwu",
+  "name": "zhaomingdan_yanwu",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zhaomingdan/zhaomingdan_yanwu",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zhaomingdan__zhaomingdan_yanwu",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

@@ -1,0 +1,111 @@
+
+paodan_jiguangquan.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dingwei_1
+  rotate: true
+  xy: 110, 164
+  size: 39, 108
+  orig: 39, 108
+  offset: 0, 0
+  index: -1
+dingwei_1_2
+  rotate: false
+  xy: 147, 54
+  size: 39, 108
+  orig: 39, 108
+  offset: 0, 0
+  index: -1
+dingwei_2
+  rotate: false
+  xy: 53, 14
+  size: 45, 126
+  orig: 45, 126
+  offset: 0, 0
+  index: -1
+dingwei_2_2
+  rotate: false
+  xy: 100, 14
+  size: 45, 126
+  orig: 45, 126
+  offset: 0, 0
+  index: -1
+dingwei_3
+  rotate: true
+  xy: 236, 5
+  size: 77, 218
+  orig: 77, 218
+  offset: 0, 0
+  index: -1
+dingwei_4
+  rotate: true
+  xy: 188, 84
+  size: 78, 218
+  orig: 78, 218
+  offset: 0, 0
+  index: -1
+dingwei_5
+  rotate: false
+  xy: 2, 2
+  size: 49, 138
+  orig: 49, 138
+  offset: 0, 0
+  index: -1
+dingwei_6
+  rotate: true
+  xy: 147, 21
+  size: 31, 87
+  orig: 31, 87
+  offset: 0, 0
+  index: -1
+guangshu
+  rotate: true
+  xy: 2, 142
+  size: 351, 52
+  orig: 351, 52
+  offset: 0, 0
+  index: -1
+guangshu_h1
+  rotate: true
+  xy: 56, 142
+  size: 351, 52
+  orig: 351, 52
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 110, 205
+  size: 288, 32
+  orig: 288, 32
+  offset: 0, 0
+  index: -1
+tuowei_h1
+  rotate: true
+  xy: 144, 205
+  size: 288, 32
+  orig: 288, 32
+  offset: 0, 0
+  index: -1
+yuan_base1
+  rotate: false
+  xy: 178, 291
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1
+yuan_base2
+  rotate: false
+  xy: 382, 291
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1
+yuan_base2_2
+  rotate: false
+  xy: 408, 87
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1

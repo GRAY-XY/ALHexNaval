@@ -1,0 +1,54 @@
+{
+  "id": "chargo__g50",
+  "model": "g50",
+  "name": "默认撒丁战斗机",
+  "names": [
+    "默认撒丁战斗机",
+    "默认撒丁战斗机-自动防空",
+    "帝国战斗机弹幕G.50Lv1",
+    "天鹰技能G.50Lv1",
+    "G.50箭式战斗机T1",
+    "G.50箭式战斗机T2",
+    "G.50箭式战斗机T3",
+    "撒丁舰载鱼雷机I",
+    "撒丁舰载鱼雷机II",
+    "撒丁舰载鱼雷机III",
+    "撒丁舰载鱼雷机IV",
+    "撒丁舰载鱼雷机V",
+    "撒丁舰载轰炸机I",
+    "撒丁舰载轰炸机II",
+    "撒丁舰载轰炸机III",
+    "撒丁舰载轰炸机IV",
+    "撒丁舰载轰炸机V",
+    "【2025曾克SP活动】BOSS 帝国警视长 战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/g50",
+  "path": "battle-assets/飞机/chargo__g50",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "G50_6098282403666307604.png",
+      "name": "G50",
+      "width": 252,
+      "height": 231,
+      "role": "战斗贴图",
+      "path_id": 6098282403666307604,
+      "source": "CAB-f4678ced59241bd2a83393170e11273a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__g50/aircraft_shadow_2192772484218123160.png"
+}

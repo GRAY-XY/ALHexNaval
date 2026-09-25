@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__xianyu_yulei",
+  "model": "xianyu_yulei",
+  "name": "咸鱼鱼雷机",
+  "names": [
+    "咸鱼鱼雷机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/xianyu_yulei",
+  "path": "battle-assets/飞机图标/aircrafticon__xianyu_yulei",
+  "images": [
+    {
+      "file": "xianyu_yulei_-3751984586242639981.png",
+      "name": "xianyu_yulei",
+      "width": 256,
+      "height": 161,
+      "role": "原始精灵",
+      "path_id": -3751984586242639981,
+      "source": "CAB-a5c10cc54e3d55b0def7dcd4da0fb9e5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

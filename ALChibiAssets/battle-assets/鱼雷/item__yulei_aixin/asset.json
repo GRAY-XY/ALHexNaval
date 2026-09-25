@@ -1,0 +1,38 @@
+{
+  "id": "item__yulei_aixin",
+  "model": "yulei_aixin",
+  "name": "甜心鱼雷",
+  "names": [
+    "甜心鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_aixin",
+  "path": "battle-assets/鱼雷/item__yulei_aixin",
+  "images": [
+    {
+      "file": "aixin01_6376899438260802817.png",
+      "name": "aixin01",
+      "width": 165,
+      "height": 184,
+      "role": "战斗贴图",
+      "path_id": 6376899438260802817,
+      "source": "CAB-380c6044738ae5494165b8780e20b7be"
+    }
+  ],
+  "particle_systems": 10,
+  "animations": [],
+  "bullet_ids": [
+    164869,
+    3139401,
+    3148016,
+    3164013,
+    3164014,
+    3164037,
+    3223008,
+    3253022,
+    3380001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_aixin/aixin01_6376899438260802817.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yinbo_purple",
+  "model": "zidan_yinbo_purple",
+  "name": "zidan_yinbo_purple",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_yinbo_purple",
+  "path": "battle-assets/炮弹/item__zidan_yinbo_purple",
+  "images": [
+    {
+      "file": "zidan_yinbo_purple_1796534034386122854.png",
+      "name": "zidan_yinbo_purple",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1796534034386122854,
+      "source": "CAB-26c585c9aaf543714d93b965d8ec8832"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3341212
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yinbo_purple/zidan_yinbo_purple_1796534034386122854.png"
+}

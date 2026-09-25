@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_chongqizhadan",
+  "model": "paodan_chongqizhadan",
+  "name": "充气炸弹（炮弹）",
+  "names": [
+    "充气炸弹（炮弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chongqizhadan",
+  "path": "battle-assets/炮弹/item__paodan_chongqizhadan",
+  "images": [
+    {
+      "file": "paodan_chongqizhadan_-6954526512479721120.png",
+      "name": "paodan_chongqizhadan",
+      "width": 128,
+      "height": 85,
+      "role": "战斗贴图",
+      "path_id": -6954526512479721120,
+      "source": "CAB-9159c23b773070f29003c3e15a799aa6"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chongqizhadan/paodan_chongqizhadan_-6954526512479721120.png"
+}

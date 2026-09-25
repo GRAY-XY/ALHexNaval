@@ -1,0 +1,24 @@
+{
+  "id": "item__nep_bullet_xianggu",
+  "model": "nep_bullet_xianggu",
+  "name": "香菇炮弹",
+  "names": [
+    "香菇炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/nep_bullet_xianggu",
+  "path": "battle-assets/炮弹/item__nep_bullet_xianggu",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "xiangguzidan.skel",
+    "atlas": "xiangguzidan.atlas",
+    "pages": [
+      "xiangguzidan.png"
+    ]
+  }
+}

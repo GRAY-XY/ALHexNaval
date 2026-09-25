@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_hesitiya",
+  "model": "yulei_hesitiya",
+  "name": "赫斯缇雅之刃",
+  "names": [
+    "赫斯缇雅之刃"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hesitiya",
+  "path": "battle-assets/鱼雷/item__yulei_hesitiya",
+  "images": [
+    {
+      "file": "yulei_hesitiya_3864877570986786219.png",
+      "name": "yulei_hesitiya",
+      "width": 123,
+      "height": 123,
+      "role": "战斗贴图",
+      "path_id": 3864877570986786219,
+      "source": "CAB-11edad4135880ab57ca315283ad4746e"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hesitiya/yulei_hesitiya_3864877570986786219.png"
+}

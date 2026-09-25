@@ -1,0 +1,35 @@
+{
+  "id": "item__newbullet6",
+  "model": "newbullet6",
+  "name": "newbullet6",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/newbullet6",
+  "path": "battle-assets/炮弹/item__newbullet6",
+  "images": [
+    {
+      "file": "bullet3_-153749946414097182.png",
+      "name": "bullet3",
+      "width": 89,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -153749946414097182,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    750044,
+    750045,
+    750046,
+    750047,
+    750048,
+    750049,
+    750050,
+    750051
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__newbullet6/bullet3_-153749946414097182.png"
+}

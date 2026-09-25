@@ -1,0 +1,52 @@
+{
+  "id": "item__bulletusa5_big",
+  "model": "bulletusa5_big",
+  "name": "bulletusa5_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletusa5_big",
+  "path": "battle-assets/炮弹/item__bulletusa5_big",
+  "images": [
+    {
+      "file": "bullet_UK5_-8318151528721259795.png",
+      "name": "bullet_UK5",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -8318151528721259795,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    78231,
+    78232,
+    78233,
+    161207,
+    170905,
+    801013,
+    801015,
+    801016,
+    3030003,
+    3031002,
+    3037002,
+    3037004,
+    3039005,
+    3039022,
+    3039024,
+    3039030,
+    3039036,
+    3039037,
+    3039038,
+    3039039,
+    3039040,
+    3105007,
+    3105008,
+    3250003,
+    3250004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletusa5_big/bullet_UK5_-8318151528721259795.png"
+}

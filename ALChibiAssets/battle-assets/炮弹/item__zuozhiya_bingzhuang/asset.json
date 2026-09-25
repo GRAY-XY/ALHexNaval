@@ -1,0 +1,55 @@
+{
+  "id": "item__zuozhiya_bingzhuang",
+  "model": "zuozhiya_bingzhuang",
+  "name": "zuozhiya_bingzhuang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zuozhiya_bingzhuang",
+  "path": "battle-assets/炮弹/item__zuozhiya_bingzhuang",
+  "images": [
+    {
+      "file": "ring01_-8638353155305545093.png",
+      "name": "ring01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8638353155305545093,
+      "source": "CAB-9ab5833ac27fe1b712a9209cc3cfa901"
+    },
+    {
+      "file": "particles01_-8336944449934690142.png",
+      "name": "particles01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8336944449934690142,
+      "source": "CAB-9ab5833ac27fe1b712a9209cc3cfa901"
+    },
+    {
+      "file": "tex_uifx_mask_314_-4413500609710103995.png",
+      "name": "tex_uifx_mask_314",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4413500609710103995,
+      "source": "CAB-9ab5833ac27fe1b712a9209cc3cfa901"
+    },
+    {
+      "file": "wave01_-3655800755645714134.png",
+      "name": "wave01",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3655800755645714134,
+      "source": "CAB-9ab5833ac27fe1b712a9209cc3cfa901"
+    }
+  ],
+  "particle_systems": 19,
+  "animations": [],
+  "bullet_ids": [
+    170931
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zuozhiya_bingzhuang/ring01_-8638353155305545093.png"
+}

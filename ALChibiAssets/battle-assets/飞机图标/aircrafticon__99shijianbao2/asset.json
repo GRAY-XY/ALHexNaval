@@ -1,0 +1,37 @@
+{
+  "id": "aircrafticon__99shijianbao2",
+  "model": "99shijianbao2",
+  "name": "空母·加贺-轰炸机",
+  "names": [
+    "空母·加贺-轰炸机",
+    "99式舰爆绿（第1章空袭）",
+    "99式舰爆绿（第2章空袭）",
+    "99式舰爆绿（第3章空袭）",
+    "99式舰爆绿（第4章空袭）",
+    "99式舰爆绿（第5章空袭）",
+    "99式舰爆绿（第6章空袭）",
+    "江阴空袭  99式舰爆绿",
+    "国庆活动空袭  99式舰爆绿",
+    "99式舰爆绿",
+    "七夕活动99式舰爆绿"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/99shijianbao2",
+  "path": "battle-assets/飞机图标/aircrafticon__99shijianbao2",
+  "images": [
+    {
+      "file": "99shijianbao2_7655826519600014433.png",
+      "name": "99shijianbao2",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 7655826519600014433,
+      "source": "CAB-d12a468227e32d2f9f1be6656ba96939"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulizidan__bulizidan_material",
+  "model": "bulizidan_material",
+  "name": "bulizidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulizidan/bulizidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulizidan__bulizidan_material",
+  "images": [
+    {
+      "file": "bulizidan_624653591441969551.png",
+      "name": "bulizidan",
+      "width": 64,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 624653591441969551,
+      "source": "CAB-dc4c3f4f7700677a35a6f5c35bba2927"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

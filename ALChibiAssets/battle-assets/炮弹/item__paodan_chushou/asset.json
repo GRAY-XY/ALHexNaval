@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_chushou",
+  "model": "paodan_chushou",
+  "name": "越界触须炮弹",
+  "names": [
+    "越界触须炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chushou",
+  "path": "battle-assets/炮弹/item__paodan_chushou",
+  "images": [
+    {
+      "file": "paodan_chushou_-5351776529924511038.png",
+      "name": "paodan_chushou",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5351776529924511038,
+      "source": "CAB-158eb222f84acf735b801cbe5ca4ffc7"
+    },
+    {
+      "file": "line02_9155181050420102590.png",
+      "name": "line02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 9155181050420102590,
+      "source": "CAB-158eb222f84acf735b801cbe5ca4ffc7"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chushou/paodan_chushou_-5351776529924511038.png",
+  "spine": {
+    "skel": "paodan_chushou.skel",
+    "atlas": "paodan_chushou.atlas",
+    "pages": [
+      "paodan_chushou.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xunyicao",
+  "model": "yulei_xunyicao",
+  "name": "鱼雷「Lavande」",
+  "names": [
+    "鱼雷「Lavande」"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xunyicao",
+  "path": "battle-assets/鱼雷/item__yulei_xunyicao",
+  "images": [
+    {
+      "file": "yulei_xunyicao_3673927050945658347.png",
+      "name": "yulei_xunyicao",
+      "width": 128,
+      "height": 34,
+      "role": "战斗贴图",
+      "path_id": 3673927050945658347,
+      "source": "CAB-ebc1a184823fe8ed33ce596eb8703163"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xunyicao/yulei_xunyicao_3673927050945658347.png"
+}

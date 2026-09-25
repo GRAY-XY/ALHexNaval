@@ -1,0 +1,44 @@
+{
+  "id": "aircrafticon__g50",
+  "model": "g50",
+  "name": "默认撒丁战斗机",
+  "names": [
+    "默认撒丁战斗机",
+    "默认撒丁战斗机-自动防空",
+    "帝国战斗机弹幕G.50Lv1",
+    "天鹰技能G.50Lv1",
+    "G.50箭式战斗机T1",
+    "G.50箭式战斗机T2",
+    "G.50箭式战斗机T3",
+    "撒丁舰载鱼雷机I",
+    "撒丁舰载鱼雷机II",
+    "撒丁舰载鱼雷机III",
+    "撒丁舰载鱼雷机IV",
+    "撒丁舰载鱼雷机V",
+    "撒丁舰载轰炸机I",
+    "撒丁舰载轰炸机II",
+    "撒丁舰载轰炸机III",
+    "撒丁舰载轰炸机IV",
+    "撒丁舰载轰炸机V",
+    "【2025曾克SP活动】BOSS 帝国警视长 战斗机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/g50",
+  "path": "battle-assets/飞机图标/aircrafticon__g50",
+  "images": [
+    {
+      "file": "G50_2586260446567919104.png",
+      "name": "G50",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 2586260446567919104,
+      "source": "CAB-991b2d5a41d927e9bc856cd1ed3e852e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

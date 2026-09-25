@@ -1,0 +1,21 @@
+{
+  "id": "item__meta_fireball",
+  "model": "meta_fireball",
+  "name": "meta_fireball",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/meta_fireball",
+  "path": "battle-assets/炮弹/item__meta_fireball",
+  "images": [],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    19448,
+    855618,
+    29650017,
+    3039043,
+    3039044
+  ],
+  "has_preview": false,
+  "prefab": true
+}

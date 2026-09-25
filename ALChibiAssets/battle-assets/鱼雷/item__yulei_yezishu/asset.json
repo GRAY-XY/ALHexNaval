@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yezishu",
+  "model": "yulei_yezishu",
+  "name": "椰子树鱼雷",
+  "names": [
+    "椰子树鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yezishu",
+  "path": "battle-assets/鱼雷/item__yulei_yezishu",
+  "images": [
+    {
+      "file": "yulei_yezishu_2575467649613138263.png",
+      "name": "yulei_yezishu",
+      "width": 128,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": 2575467649613138263,
+      "source": "CAB-ae1d9ccddb03cd33b94f18be35a5b45f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yezishu/yulei_yezishu_2575467649613138263.png"
+}

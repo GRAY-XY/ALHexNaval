@@ -1,0 +1,29 @@
+{
+  "id": "item__kedouzidan_white",
+  "model": "kedouzidan_white",
+  "name": "kedouzidan_white",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/kedouzidan_white",
+  "path": "battle-assets/炮弹/item__kedouzidan_white",
+  "images": [
+    {
+      "file": "kedouzidan_white_-2674205808738877352.png",
+      "name": "kedouzidan_white",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -2674205808738877352,
+      "source": "CAB-8936b5e71d9857879889a85c0d8fae82"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3254020,
+    3258002
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__kedouzidan_white/kedouzidan_white_-2674205808738877352.png"
+}

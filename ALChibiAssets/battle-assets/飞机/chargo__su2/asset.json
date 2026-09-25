@@ -1,0 +1,39 @@
+{
+  "id": "chargo__su2",
+  "model": "su2",
+  "name": "契卡洛夫技能轰炸机Lv1",
+  "names": [
+    "契卡洛夫技能轰炸机Lv1",
+    "契卡洛夫技能轰炸机Lv1—追加",
+    "试作舰载型Su-2"
+  ],
+  "category": "飞机",
+  "source": "chargo/su2",
+  "path": "battle-assets/飞机/chargo__su2",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "SU2_1193753966592071168.png",
+      "name": "SU2",
+      "width": 246,
+      "height": 235,
+      "role": "战斗贴图",
+      "path_id": 1193753966592071168,
+      "source": "CAB-2303205599450006b64e09f5fc0b59d4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__su2/aircraft_shadow_2192772484218123160.png"
+}

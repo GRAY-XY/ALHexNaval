@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jujian",
+  "model": "yulei_jujian",
+  "name": "巨剑鱼雷",
+  "names": [
+    "巨剑鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jujian",
+  "path": "battle-assets/鱼雷/item__yulei_jujian",
+  "images": [
+    {
+      "file": "yulei_jujian_-161257313396089397.png",
+      "name": "yulei_jujian",
+      "width": 128,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -161257313396089397,
+      "source": "CAB-cf0fb28729a67059ba8b5b55e5676e43"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jujian/yulei_jujian_-161257313396089397.png"
+}

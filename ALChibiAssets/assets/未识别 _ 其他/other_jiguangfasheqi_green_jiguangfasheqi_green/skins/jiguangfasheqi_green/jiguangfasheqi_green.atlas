@@ -1,0 +1,97 @@
+
+jiguangfasheqi_green.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 242
+  size: 283, 268
+  orig: 283, 268
+  offset: 0, 0
+  index: -1
+dianlan_1
+  rotate: true
+  xy: 2, 162
+  size: 52, 324
+  orig: 52, 324
+  offset: 0, 0
+  index: -1
+dianlan_2
+  rotate: true
+  xy: 2, 108
+  size: 52, 324
+  orig: 52, 324
+  offset: 0, 0
+  index: -1
+dianlan_3
+  rotate: true
+  xy: 654, 163
+  size: 51, 324
+  orig: 51, 324
+  offset: 0, 0
+  index: -1
+dianlan_4
+  rotate: true
+  xy: 328, 162
+  size: 52, 324
+  orig: 52, 324
+  offset: 0, 0
+  index: -1
+dianlan_5
+  rotate: true
+  xy: 2, 54
+  size: 52, 324
+  orig: 52, 324
+  offset: 0, 0
+  index: -1
+dianlan_6
+  rotate: true
+  xy: 328, 2
+  size: 51, 323
+  orig: 51, 323
+  offset: 0, 0
+  index: -1
+dianlan_7
+  rotate: true
+  xy: 328, 108
+  size: 52, 324
+  orig: 52, 324
+  offset: 0, 0
+  index: -1
+dianlan_8
+  rotate: true
+  xy: 328, 55
+  size: 51, 324
+  orig: 51, 324
+  offset: 0, 0
+  index: -1
+guanghuan_blue_b
+  rotate: false
+  xy: 287, 216
+  size: 351, 142
+  orig: 351, 142
+  offset: 0, 0
+  index: -1
+guanghuan_red_f
+  rotate: false
+  xy: 287, 360
+  size: 351, 150
+  orig: 351, 150
+  offset: 0, 0
+  index: -1
+guanhuan_blue_f
+  rotate: false
+  xy: 640, 360
+  size: 351, 150
+  orig: 351, 150
+  offset: 0, 0
+  index: -1
+guanhuan_red_b
+  rotate: false
+  xy: 640, 216
+  size: 351, 142
+  orig: 351, 142
+  offset: 0, 0
+  index: -1

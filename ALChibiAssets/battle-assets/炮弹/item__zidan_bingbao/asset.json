@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_bingbao",
+  "model": "zidan_bingbao",
+  "name": "冰雹子弹",
+  "names": [
+    "冰雹子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bingbao",
+  "path": "battle-assets/炮弹/item__zidan_bingbao",
+  "images": [
+    {
+      "file": "bingbao_8544066876694976196.png",
+      "name": "bingbao",
+      "width": 212,
+      "height": 185,
+      "role": "战斗贴图",
+      "path_id": 8544066876694976196,
+      "source": "CAB-ba60ecb71365670ad82f3748dabadce1"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bingbao/bingbao_8544066876694976196.png"
+}

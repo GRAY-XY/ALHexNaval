@@ -1,0 +1,118 @@
+
+emotion_zibao.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_1
+  rotate: true
+  xy: 952, 761
+  size: 880, 746
+  orig: 880, 746
+  offset: 0, 0
+  index: -1
+body_2
+  rotate: true
+  xy: 2, 2
+  size: 891, 702
+  orig: 891, 702
+  offset: 0, 0
+  index: -1
+body_3
+  rotate: false
+  xy: 2, 895
+  size: 948, 746
+  orig: 948, 746
+  offset: 0, 0
+  index: -1
+huan_R1
+  rotate: false
+  xy: 706, 493
+  size: 122, 194
+  orig: 122, 194
+  offset: 0, 0
+  index: -1
+huan_R2
+  rotate: true
+  xy: 857, 610
+  size: 149, 203
+  orig: 149, 203
+  offset: 0, 0
+  index: -1
+huan_R3
+  rotate: false
+  xy: 706, 326
+  size: 105, 165
+  orig: 105, 165
+  offset: 0, 0
+  index: -1
+huan_l1
+  rotate: false
+  xy: 946, 444
+  size: 105, 164
+  orig: 105, 164
+  offset: 0, 0
+  index: -1
+huan_l2
+  rotate: false
+  xy: 1062, 565
+  size: 122, 194
+  orig: 122, 194
+  offset: 0, 0
+  index: -1
+huan_l3
+  rotate: false
+  xy: 706, 689
+  size: 149, 204
+  orig: 149, 204
+  offset: 0, 0
+  index: -1
+zibao_bq1
+  rotate: false
+  xy: 1053, 491
+  size: 84, 72
+  orig: 84, 72
+  offset: 0, 0
+  index: -1
+zibao_bq2
+  rotate: true
+  xy: 857, 798
+  size: 95, 73
+  orig: 95, 73
+  offset: 0, 0
+  index: -1
+zibao_bq3
+  rotate: true
+  xy: 1139, 494
+  size: 69, 61
+  orig: 69, 61
+  offset: 0, 0
+  index: -1
+zibao_bq4
+  rotate: true
+  xy: 1186, 701
+  size: 58, 72
+  orig: 58, 72
+  offset: 0, 0
+  index: -1
+zibao_bq5
+  rotate: true
+  xy: 830, 450
+  size: 158, 114
+  orig: 158, 114
+  offset: 0, 0
+  index: -1
+zibao_s1
+  rotate: false
+  xy: 813, 261
+  size: 96, 187
+  orig: 96, 187
+  offset: 0, 0
+  index: -1
+zibao_s2
+  rotate: false
+  xy: 706, 142
+  size: 92, 182
+  orig: 92, 182
+  offset: 0, 0
+  index: -1

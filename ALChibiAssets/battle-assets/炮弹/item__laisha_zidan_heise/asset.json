@@ -1,0 +1,17 @@
+{
+  "id": "item__laisha_zidan_heise",
+  "model": "laisha_zidan_heise",
+  "name": "laisha_zidan_heise",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_zidan_heise",
+  "path": "battle-assets/炮弹/item__laisha_zidan_heise",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19491
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,37 @@
+{
+  "id": "chargo__yak3",
+  "model": "yak3",
+  "name": "Yak-3",
+  "names": [
+    "Yak-3"
+  ],
+  "category": "飞机",
+  "source": "chargo/yak3",
+  "path": "battle-assets/飞机/chargo__yak3",
+  "images": [
+    {
+      "file": "yak3_1743448495961838329.png",
+      "name": "yak3",
+      "width": 239,
+      "height": 242,
+      "role": "战斗贴图",
+      "path_id": 1743448495961838329,
+      "source": "CAB-dff4a179c0d635695d1ad5c0419222ca"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__yak3/yak3_1743448495961838329.png"
+}

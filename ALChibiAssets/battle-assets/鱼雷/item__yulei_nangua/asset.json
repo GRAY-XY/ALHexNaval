@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_nangua",
+  "model": "yulei_nangua",
+  "name": "甜蜜陷阱鱼雷",
+  "names": [
+    "甜蜜陷阱鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nangua",
+  "path": "battle-assets/鱼雷/item__yulei_nangua",
+  "images": [
+    {
+      "file": "yulei_nangua_2678910873194449630.png",
+      "name": "yulei_nangua",
+      "width": 128,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 2678910873194449630,
+      "source": "CAB-cf4296cca4f8331e3d42745b2531689a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nangua/yulei_nangua_2678910873194449630.png"
+}

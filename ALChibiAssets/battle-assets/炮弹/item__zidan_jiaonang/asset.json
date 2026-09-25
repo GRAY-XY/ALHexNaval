@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jiaonang",
+  "model": "zidan_jiaonang",
+  "name": "安定胶囊子弹",
+  "names": [
+    "安定胶囊子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jiaonang",
+  "path": "battle-assets/炮弹/item__zidan_jiaonang",
+  "images": [
+    {
+      "file": "zidan_jiaonang_-1693480963116719403.png",
+      "name": "zidan_jiaonang",
+      "width": 128,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": -1693480963116719403,
+      "source": "CAB-88ae49f4765572d677aeea099c7db5dc"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jiaonang/zidan_jiaonang_-1693480963116719403.png"
+}

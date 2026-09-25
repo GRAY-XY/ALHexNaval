@@ -1,0 +1,28 @@
+{
+  "id": "item__xingyunzidan01",
+  "model": "xingyunzidan01",
+  "name": "星云子弹(黄)",
+  "names": [
+    "星云子弹(黄)"
+  ],
+  "category": "炮弹",
+  "source": "item/xingyunzidan01",
+  "path": "battle-assets/炮弹/item__xingyunzidan01",
+  "images": [
+    {
+      "file": "zidan01_-2173890037155890788.png",
+      "name": "zidan01",
+      "width": 191,
+      "height": 79,
+      "role": "战斗贴图",
+      "path_id": -2173890037155890788,
+      "source": "CAB-94b137a8fddd0ad759762f12d626acb8"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xingyunzidan01/zidan01_-2173890037155890788.png"
+}

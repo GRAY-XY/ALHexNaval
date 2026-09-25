@@ -1,0 +1,30 @@
+{
+  "id": "item__bawu_qidan",
+  "model": "bawu_qidan",
+  "name": "bawu_qidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bawu_qidan",
+  "path": "battle-assets/炮弹/item__bawu_qidan",
+  "images": [
+    {
+      "file": "zidan02_8699382450377934779.png",
+      "name": "zidan02",
+      "width": 244,
+      "height": 19,
+      "role": "战斗贴图",
+      "path_id": 8699382450377934779,
+      "source": "CAB-dabd8613864581226b1216cffc7c2d26"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    168251,
+    3335019,
+    3335020
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bawu_qidan/zidan02_8699382450377934779.png"
+}

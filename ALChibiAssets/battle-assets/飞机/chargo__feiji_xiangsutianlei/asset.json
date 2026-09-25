@@ -1,0 +1,37 @@
+{
+  "id": "chargo__feiji_xiangsutianlei",
+  "model": "feiji_xiangsutianlei",
+  "name": "像素天雷(鱼雷)",
+  "names": [
+    "像素天雷(鱼雷)",
+    "像素天雷(战斗)",
+    "像素天雷(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_xiangsutianlei",
+  "path": "battle-assets/飞机/chargo__feiji_xiangsutianlei",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_xiangsutianlei/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "feiji_xiangsutianlei.skel",
+    "atlas": "feiji_xiangsutianlei.atlas",
+    "pages": [
+      "feiji_xiangsutianlei.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiaotiqing",
+  "model": "yulei_xiaotiqing",
+  "name": "小提琴",
+  "names": [
+    "小提琴"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiaotiqing",
+  "path": "battle-assets/鱼雷/item__yulei_xiaotiqing",
+  "images": [
+    {
+      "file": "yulei_xiaotiqing_-4783706491366560800.png",
+      "name": "yulei_xiaotiqing",
+      "width": 128,
+      "height": 61,
+      "role": "战斗贴图",
+      "path_id": -4783706491366560800,
+      "source": "CAB-4707be4171797a4ca3fc2a5caa1e37d5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiaotiqing/yulei_xiaotiqing_-4783706491366560800.png"
+}

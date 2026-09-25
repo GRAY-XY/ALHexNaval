@@ -1,0 +1,26 @@
+{
+  "id": "item__zidan_changmao",
+  "model": "zidan_changmao",
+  "name": "zidan_changmao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_changmao",
+  "path": "battle-assets/炮弹/item__zidan_changmao",
+  "images": [
+    {
+      "file": "yuanchou01_4653772871817187436.png",
+      "name": "yuanchou01",
+      "width": 127,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": 4653772871817187436,
+      "source": "CAB-c116bb8bcc568fe4cc940e15ca7ecda8"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_changmao/yuanchou01_4653772871817187436.png"
+}

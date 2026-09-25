@@ -1,0 +1,15 @@
+{
+  "id": "item__jianqi_zongxiang_xiao",
+  "model": "jianqi_zongxiang_xiao",
+  "name": "jianqi_zongxiang_xiao",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/jianqi_zongxiang_xiao",
+  "path": "battle-assets/其他战斗特效/item__jianqi_zongxiang_xiao",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

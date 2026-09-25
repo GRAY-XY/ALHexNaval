@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jianqi_hong",
+  "model": "zidan_jianqi_hong",
+  "name": "zidan_jianqi_hong",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_jianqi_hong",
+  "path": "battle-assets/炮弹/item__zidan_jianqi_hong",
+  "images": [
+    {
+      "file": "jianqi_hong_-4246243488143603430.png",
+      "name": "jianqi_hong",
+      "width": 242,
+      "height": 138,
+      "role": "战斗贴图",
+      "path_id": -4246243488143603430,
+      "source": "CAB-9b00513d495988684f4bfb73feee952b"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    167684
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jianqi_hong/jianqi_hong_-4246243488143603430.png"
+}

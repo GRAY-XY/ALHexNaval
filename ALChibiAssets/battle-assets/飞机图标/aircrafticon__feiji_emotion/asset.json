@@ -1,0 +1,33 @@
+{
+  "id": "aircrafticon__feiji_emotion",
+  "model": "feiji_emotion",
+  "name": "【2026本宁顿活动A3】BOSS 情绪掠影航母 舰载机",
+  "names": [
+    "【2026本宁顿活动A3】BOSS 情绪掠影航母 舰载机",
+    "【2026本宁顿活动C3】BOSS 情绪掠影航母 舰载机",
+    "【2026本宁顿活动】情绪掠影航母 舰载机 Lv1",
+    "【2026本宁顿活动】情绪掠影航母 舰载机 Lv2",
+    "【2026本宁顿活动】情绪掠影航母 舰载机 Lv3",
+    "【2026本宁顿活动】情绪掠影航母 舰载机 Lv4",
+    "【2026本宁顿活动】情绪掠影航母 舰载机 Lv5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_emotion",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_emotion",
+  "images": [
+    {
+      "file": "feiji_emotion_4554691460681811563.png",
+      "name": "feiji_emotion",
+      "width": 40,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 4554691460681811563,
+      "source": "CAB-6a1e24588cb7068bb75bc2c3c3c44c3a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

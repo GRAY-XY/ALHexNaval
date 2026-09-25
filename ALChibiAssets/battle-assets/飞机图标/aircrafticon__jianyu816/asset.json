@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__jianyu816",
+  "model": "jianyu816",
+  "name": "追赶者剑鱼 Lv1",
+  "names": [
+    "追赶者剑鱼 Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/jianyu816",
+  "path": "battle-assets/飞机图标/aircrafticon__jianyu816",
+  "images": [
+    {
+      "file": "jianyu816_3284745172559388172.png",
+      "name": "jianyu816",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 3284745172559388172,
+      "source": "CAB-f6098f938bf44ebec61bb2f5392f02ff"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

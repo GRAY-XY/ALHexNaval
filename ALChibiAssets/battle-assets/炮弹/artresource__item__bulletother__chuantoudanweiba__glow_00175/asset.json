@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletother__chuantoudanweiba__glow_00175",
+  "model": "glow_00175",
+  "name": "glow_00175",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/chuantoudanweiba/glow_00175",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__chuantoudanweiba__glow_00175",
+  "images": [
+    {
+      "file": "glow_00175_1075968166638763468.png",
+      "name": "glow_00175",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1075968166638763468,
+      "source": "CAB-23f4d9ed756caac257c6520e6fd95826"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

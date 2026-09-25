@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiangjing",
+  "model": "yulei_xiangjing",
+  "name": "香精鱼雷",
+  "names": [
+    "香精鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangjing",
+  "path": "battle-assets/鱼雷/item__yulei_xiangjing",
+  "images": [
+    {
+      "file": "moping01_-2408699151940587522.png",
+      "name": "moping01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2408699151940587522,
+      "source": "CAB-3b3ea73f218c08714682efb90a39b8fb"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiangjing/moping01_-2408699151940587522.png"
+}

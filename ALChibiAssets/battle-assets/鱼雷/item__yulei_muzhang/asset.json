@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_muzhang",
+  "model": "yulei_muzhang",
+  "name": "牧杖鱼雷",
+  "names": [
+    "牧杖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_muzhang",
+  "path": "battle-assets/鱼雷/item__yulei_muzhang",
+  "images": [
+    {
+      "file": "yulei_muzhang_7041854535602986817.png",
+      "name": "yulei_muzhang",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": 7041854535602986817,
+      "source": "CAB-bd999ee86bb3de784518eafeb46fd115"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_muzhang/yulei_muzhang_7041854535602986817.png"
+}

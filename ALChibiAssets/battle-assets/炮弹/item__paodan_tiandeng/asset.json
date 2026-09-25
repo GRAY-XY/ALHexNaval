@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_tiandeng",
+  "model": "paodan_tiandeng",
+  "name": "祈福明灯炮弹",
+  "names": [
+    "祈福明灯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tiandeng",
+  "path": "battle-assets/炮弹/item__paodan_tiandeng",
+  "images": [
+    {
+      "file": "paodan_tiandeng_-1886490485321176013.png",
+      "name": "paodan_tiandeng",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1886490485321176013,
+      "source": "CAB-12c6c9fe2375c5fad2d362b752827135"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tiandeng/paodan_tiandeng_-1886490485321176013.png",
+  "spine": {
+    "skel": "paodan_tiandeng.skel",
+    "atlas": "paodan_tiandeng.atlas",
+    "pages": [
+      "paodan_tiandeng.png"
+    ]
+  }
+}

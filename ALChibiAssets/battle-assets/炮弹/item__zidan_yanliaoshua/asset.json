@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yanliaoshua",
+  "model": "zidan_yanliaoshua",
+  "name": "颜料刷子弹",
+  "names": [
+    "颜料刷子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yanliaoshua",
+  "path": "battle-assets/炮弹/item__zidan_yanliaoshua",
+  "images": [
+    {
+      "file": "zidan_yanliaoshua_-5451100497680357143.png",
+      "name": "zidan_yanliaoshua",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -5451100497680357143,
+      "source": "CAB-4a2074ab3540fd31537b4eb996bee1fe"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yanliaoshua/zidan_yanliaoshua_-5451100497680357143.png"
+}

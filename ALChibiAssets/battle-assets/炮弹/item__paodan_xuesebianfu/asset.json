@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_xuesebianfu",
+  "model": "paodan_xuesebianfu",
+  "name": "猩红光蝙炮弹",
+  "names": [
+    "猩红光蝙炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xuesebianfu",
+  "path": "battle-assets/炮弹/item__paodan_xuesebianfu",
+  "images": [
+    {
+      "file": "paodan_xuesebianfu_-8263663680147359495.png",
+      "name": "paodan_xuesebianfu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8263663680147359495,
+      "source": "CAB-0407d1ee7c60eb082e90abf0053719c2"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xuesebianfu/paodan_xuesebianfu_-8263663680147359495.png",
+  "spine": {
+    "skel": "paodan_xuesebianfu.skel",
+    "atlas": "paodan_xuesebianfu.atlas",
+    "pages": [
+      "paodan_xuesebianfu.png"
+    ]
+  }
+}

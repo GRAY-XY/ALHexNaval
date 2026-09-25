@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_qieqiqiu",
+  "model": "yulei_qieqiqiu",
+  "name": "企鹅鱼雷",
+  "names": [
+    "企鹅鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qieqiqiu",
+  "path": "battle-assets/鱼雷/item__yulei_qieqiqiu",
+  "images": [
+    {
+      "file": "yulei_qieqiqiu_2857592818698289073.png",
+      "name": "yulei_qieqiqiu",
+      "width": 128,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": 2857592818698289073,
+      "source": "CAB-4959eff167c06851827ae949253530f2"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qieqiqiu/yulei_qieqiqiu_2857592818698289073.png"
+}

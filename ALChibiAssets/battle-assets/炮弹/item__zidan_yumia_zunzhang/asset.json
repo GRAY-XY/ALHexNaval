@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yumia_zunzhang",
+  "model": "zidan_yumia_zunzhang",
+  "name": "尊长宝石子弹",
+  "names": [
+    "尊长宝石子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yumia_zunzhang",
+  "path": "battle-assets/炮弹/item__zidan_yumia_zunzhang",
+  "images": [
+    {
+      "file": "zidan_zunzhang_5004769220186458139.png",
+      "name": "zidan_zunzhang",
+      "width": 70,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 5004769220186458139,
+      "source": "CAB-3cb7f9498aacab2df74691430187d146"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yumia_zunzhang/zidan_zunzhang_5004769220186458139.png"
+}

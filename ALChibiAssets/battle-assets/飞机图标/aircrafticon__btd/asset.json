@@ -1,0 +1,31 @@
+{
+  "id": "aircrafticon__btd",
+  "model": "btd",
+  "name": "BTD-1毁灭者",
+  "names": [
+    "BTD-1毁灭者",
+    "【2020埃塞克斯世界BOSS E难度】 轰炸机*5",
+    "【2020埃塞克斯世界BOSS N难度】 轰炸机*7",
+    "【2020埃塞克斯世界BOSS H难度】 轰炸机*10",
+    "【2020埃塞克斯世界BOSS EX难度】 轰炸机*7"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/btd",
+  "path": "battle-assets/飞机图标/aircrafticon__btd",
+  "images": [
+    {
+      "file": "BTD_-983033498881137700.png",
+      "name": "BTD",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -983033498881137700,
+      "source": "CAB-924e92894dc9aa9c800a009e68b93706"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

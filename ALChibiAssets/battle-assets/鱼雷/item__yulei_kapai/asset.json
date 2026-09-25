@@ -1,0 +1,46 @@
+{
+  "id": "item__yulei_kapai",
+  "model": "yulei_kapai",
+  "name": "魔术扑克鱼雷",
+  "names": [
+    "魔术扑克鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_kapai",
+  "path": "battle-assets/鱼雷/item__yulei_kapai",
+  "images": [
+    {
+      "file": "line01_-6688771857236815847.png",
+      "name": "line01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6688771857236815847,
+      "source": "CAB-8e6ef97128725533ac960055e1a62ea5"
+    },
+    {
+      "file": "puke02_-3967552524173316079.png",
+      "name": "puke02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3967552524173316079,
+      "source": "CAB-8e6ef97128725533ac960055e1a62ea5"
+    },
+    {
+      "file": "puke01_8533560579587891636.png",
+      "name": "puke01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8533560579587891636,
+      "source": "CAB-8e6ef97128725533ac960055e1a62ea5"
+    }
+  ],
+  "particle_systems": 6,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_kapai/line01_-6688771857236815847.png"
+}

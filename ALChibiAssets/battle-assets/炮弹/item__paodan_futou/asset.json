@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_futou",
+  "model": "paodan_futou",
+  "name": "斧头炮弹",
+  "names": [
+    "斧头炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_futou",
+  "path": "battle-assets/炮弹/item__paodan_futou",
+  "images": [
+    {
+      "file": "futou_-4857926949736691771.png",
+      "name": "futou",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4857926949736691771,
+      "source": "CAB-d5f5954afb542bfe4749eab9939545ac"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_futou/futou_-4857926949736691771.png"
+}

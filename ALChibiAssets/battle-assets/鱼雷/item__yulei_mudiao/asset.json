@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_mudiao",
+  "model": "yulei_mudiao",
+  "name": "木雕鱼雷",
+  "names": [
+    "木雕鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_mudiao",
+  "path": "battle-assets/鱼雷/item__yulei_mudiao",
+  "images": [
+    {
+      "file": "yulei_mudiao_-7585873962505154132.png",
+      "name": "yulei_mudiao",
+      "width": 128,
+      "height": 93,
+      "role": "战斗贴图",
+      "path_id": -7585873962505154132,
+      "source": "CAB-bcfeb42a3b6134ece004b4d33ec5f728"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_mudiao/yulei_mudiao_-7585873962505154132.png"
+}

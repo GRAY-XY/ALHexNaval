@@ -1,0 +1,28 @@
+{
+  "id": "item__hololive_jianzhui",
+  "model": "hololive_jianzhui",
+  "name": "hololive_jianzhui",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hololive_jianzhui",
+  "path": "battle-assets/炮弹/item__hololive_jianzhui",
+  "images": [
+    {
+      "file": "hololive_jianzhui_-4758159195112397540.png",
+      "name": "hololive_jianzhui",
+      "width": 96,
+      "height": 41,
+      "role": "战斗贴图",
+      "path_id": -4758159195112397540,
+      "source": "CAB-01553d12156390f560958455c332ed16"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    660003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hololive_jianzhui/hololive_jianzhui_-4758159195112397540.png"
+}

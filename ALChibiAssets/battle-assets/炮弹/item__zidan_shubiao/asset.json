@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shubiao",
+  "model": "zidan_shubiao",
+  "name": "鼠标子弹",
+  "names": [
+    "鼠标子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shubiao",
+  "path": "battle-assets/炮弹/item__zidan_shubiao",
+  "images": [
+    {
+      "file": "zidan_shubiao_-5496194505997892771.png",
+      "name": "zidan_shubiao",
+      "width": 128,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": -5496194505997892771,
+      "source": "CAB-cdd1ccea98436ce21fa43ed78c87f115"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shubiao/zidan_shubiao_-5496194505997892771.png"
+}

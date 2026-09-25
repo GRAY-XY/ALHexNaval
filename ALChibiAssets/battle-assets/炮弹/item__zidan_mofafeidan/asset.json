@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_mofafeidan",
+  "model": "zidan_mofafeidan",
+  "name": "宝石魔弹",
+  "names": [
+    "宝石魔弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_mofafeidan",
+  "path": "battle-assets/炮弹/item__zidan_mofafeidan",
+  "images": [
+    {
+      "file": "mofazidan01_-6039567609140809088.png",
+      "name": "mofazidan01",
+      "width": 256,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": -6039567609140809088,
+      "source": "CAB-aec6d4667e509284e07c7476e0978e3c"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    3139026
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_mofafeidan/mofazidan01_-6039567609140809088.png"
+}

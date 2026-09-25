@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_shuijingxie",
+  "model": "paodan_shuijingxie",
+  "name": "水晶鞋炮弹",
+  "names": [
+    "水晶鞋炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shuijingxie",
+  "path": "battle-assets/炮弹/item__paodan_shuijingxie",
+  "images": [
+    {
+      "file": "paodan_shuijingxie_-1636996642023304376.png",
+      "name": "paodan_shuijingxie",
+      "width": 128,
+      "height": 87,
+      "role": "战斗贴图",
+      "path_id": -1636996642023304376,
+      "source": "CAB-745976a01feaa693687f4a2f732c54c2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shuijingxie/paodan_shuijingxie_-1636996642023304376.png"
+}

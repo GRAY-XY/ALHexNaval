@@ -1,0 +1,33 @@
+{
+  "id": "item__a2_slash",
+  "model": "a2_slash",
+  "name": "a2_slash",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/a2_slash",
+  "path": "battle-assets/其他战斗特效/item__a2_slash",
+  "images": [
+    {
+      "file": "A2_slash_4671798238008820123.png",
+      "name": "A2_slash",
+      "width": 2048,
+      "height": 2048,
+      "role": "原始纹理",
+      "path_id": 4671798238008820123,
+      "source": "CAB-89767991fd4bbdb1116f22510308112b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__a2_slash/A2_slash_4671798238008820123.png",
+  "spine": {
+    "skel": "A2_slash.skel",
+    "atlas": "A2_slash.atlas",
+    "pages": [
+      "A2_slash.png"
+    ]
+  }
+}

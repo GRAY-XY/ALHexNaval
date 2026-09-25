@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__guihuozidan__xxg_guihuozidan_material",
+  "model": "xxg_guihuozidan_material",
+  "name": "xxg_guihuozidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/guihuozidan/xxg_guihuozidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__guihuozidan__xxg_guihuozidan_material",
+  "images": [
+    {
+      "file": "xxg_guihuozidan_8584296495941590049.png",
+      "name": "xxg_guihuozidan",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 8584296495941590049,
+      "source": "CAB-63853189b34e66f82a2b26b50a3872ab"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

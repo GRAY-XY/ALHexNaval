@@ -1,0 +1,37 @@
+{
+  "id": "item__zidan_dieying",
+  "model": "zidan_dieying",
+  "name": "青红蝶影子弹",
+  "names": [
+    "青红蝶影子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dieying",
+  "path": "battle-assets/炮弹/item__zidan_dieying",
+  "images": [
+    {
+      "file": "dieying01_-8486063764746293573.png",
+      "name": "dieying01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8486063764746293573,
+      "source": "CAB-87d4bf9b38c2668af69205ec3d4d796d"
+    },
+    {
+      "file": "hudielizi_5085653034733807041.png",
+      "name": "hudielizi",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5085653034733807041,
+      "source": "CAB-87d4bf9b38c2668af69205ec3d4d796d"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dieying/dieying01_-8486063764746293573.png"
+}

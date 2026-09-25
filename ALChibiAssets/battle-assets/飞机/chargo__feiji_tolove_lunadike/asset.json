@@ -1,0 +1,40 @@
+{
+  "id": "chargo__feiji_tolove_lunadike",
+  "model": "feiji_tolove_lunadike",
+  "name": "【2024tolove联动 剧情战】唯 战斗机",
+  "names": [
+    "【2024tolove联动 剧情战】唯 战斗机",
+    "鲁娜迪克舰载机（鱼雷）",
+    "鲁娜迪克舰载机（战斗）",
+    "鲁娜迪克舰载机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_tolove_lunadike",
+  "path": "battle-assets/飞机/chargo__feiji_tolove_lunadike",
+  "images": [
+    {
+      "file": "feiji_tolove_lunadike_-2827423442457440830.png",
+      "name": "feiji_tolove_lunadike",
+      "width": 1096,
+      "height": 532,
+      "role": "战斗贴图",
+      "path_id": -2827423442457440830,
+      "source": "CAB-d549339bdb7ffc4f4b227e0d04c1b634"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_tolove_lunadike/feiji_tolove_lunadike_-2827423442457440830.png"
+}

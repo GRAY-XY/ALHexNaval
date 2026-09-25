@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tolove_heimeigui",
+  "model": "paodan_tolove_heimeigui",
+  "name": "黑之玫瑰炮弹",
+  "names": [
+    "黑之玫瑰炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tolove_heimeigui",
+  "path": "battle-assets/炮弹/item__paodan_tolove_heimeigui",
+  "images": [
+    {
+      "file": "paodan_tolove_heimeigui_1683510926515029429.png",
+      "name": "paodan_tolove_heimeigui",
+      "width": 482,
+      "height": 345,
+      "role": "战斗贴图",
+      "path_id": 1683510926515029429,
+      "source": "CAB-52a9f6de3db998606f212c5123d70b72"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tolove_heimeigui/paodan_tolove_heimeigui_1683510926515029429.png"
+}

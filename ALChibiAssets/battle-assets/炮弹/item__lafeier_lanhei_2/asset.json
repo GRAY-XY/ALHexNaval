@@ -1,0 +1,30 @@
+{
+  "id": "item__lafeier_lanhei_2",
+  "model": "lafeier_lanhei_2",
+  "name": "lafeier_lanhei_2",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/lafeier_lanhei_2",
+  "path": "battle-assets/炮弹/item__lafeier_lanhei_2",
+  "images": [
+    {
+      "file": "lanheizidan_2_4066654949870325915.png",
+      "name": "lanheizidan_2",
+      "width": 162,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": 4066654949870325915,
+      "source": "CAB-9f4b1c6b1e2f98fcedcd97d9fea23d5a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    167252,
+    167256,
+    167421
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__lafeier_lanhei_2/lanheizidan_2_4066654949870325915.png"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "item__luna_jiguang",
+  "model": "luna_jiguang",
+  "name": "luna_jiguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/luna_jiguang",
+  "path": "battle-assets/炮弹/item__luna_jiguang",
+  "images": [],
+  "particle_systems": 12,
+  "animations": [],
+  "bullet_ids": [
+    19706
+  ],
+  "has_preview": false,
+  "prefab": true
+}

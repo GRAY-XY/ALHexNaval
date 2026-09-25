@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_ai_dachui",
+  "model": "zidan_ai_dachui",
+  "name": "100T铁锤子弹",
+  "names": [
+    "100T铁锤子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_ai_dachui",
+  "path": "battle-assets/炮弹/item__zidan_ai_dachui",
+  "images": [
+    {
+      "file": "zidan_ai_dachui_-6453881497644627722.png",
+      "name": "zidan_ai_dachui",
+      "width": 108,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -6453881497644627722,
+      "source": "CAB-cba472ec96613f8187f6722b29ecd30a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "zidan_ai_dachui_anim"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_ai_dachui/zidan_ai_dachui_-6453881497644627722.png"
+}

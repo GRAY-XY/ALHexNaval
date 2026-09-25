@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jiamianmianju",
+  "model": "zidan_jiamianmianju",
+  "name": "假面面具",
+  "names": [
+    "假面面具"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jiamianmianju",
+  "path": "battle-assets/炮弹/item__zidan_jiamianmianju",
+  "images": [
+    {
+      "file": "zidan_jiamianmianju_7307083232426773243.png",
+      "name": "zidan_jiamianmianju",
+      "width": 127,
+      "height": 89,
+      "role": "战斗贴图",
+      "path_id": 7307083232426773243,
+      "source": "CAB-4d7a1d2dc9404948463a22b55e0e1884"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jiamianmianju/zidan_jiamianmianju_7307083232426773243.png"
+}

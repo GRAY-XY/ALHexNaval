@@ -1,0 +1,37 @@
+{
+  "id": "chargo__f2athach",
+  "model": "f2athach",
+  "name": "F2A水牛(萨奇队）",
+  "names": [
+    "F2A水牛(萨奇队）"
+  ],
+  "category": "飞机",
+  "source": "chargo/f2athach",
+  "path": "battle-assets/飞机/chargo__f2athach",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "F2AThach_3998130501260226578.png",
+      "name": "F2AThach",
+      "width": 252,
+      "height": 222,
+      "role": "战斗贴图",
+      "path_id": 3998130501260226578,
+      "source": "CAB-56b664cdaef125df7019a7230021ba44"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__f2athach/aircraft_shadow_2192772484218123160.png"
+}

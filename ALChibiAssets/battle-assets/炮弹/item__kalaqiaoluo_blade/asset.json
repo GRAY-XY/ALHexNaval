@@ -1,0 +1,28 @@
+{
+  "id": "item__kalaqiaoluo_blade",
+  "model": "kalaqiaoluo_blade",
+  "name": "kalaqiaoluo_blade",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/kalaqiaoluo_blade",
+  "path": "battle-assets/炮弹/item__kalaqiaoluo_blade",
+  "images": [
+    {
+      "file": "bullet03_6450699326116397805.png",
+      "name": "bullet03",
+      "width": 179,
+      "height": 74,
+      "role": "战斗贴图",
+      "path_id": 6450699326116397805,
+      "source": "CAB-3073539d665646f0ca5f21307dd41393"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    164865
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__kalaqiaoluo_blade/bullet03_6450699326116397805.png"
+}

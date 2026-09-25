@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_kafeibei",
+  "model": "zidan_kafeibei",
+  "name": "特调Espreso",
+  "names": [
+    "特调Espreso"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_kafeibei",
+  "path": "battle-assets/炮弹/item__zidan_kafeibei",
+  "images": [
+    {
+      "file": "zidan_kafeibei_2472642924737900423.png",
+      "name": "zidan_kafeibei",
+      "width": 128,
+      "height": 114,
+      "role": "战斗贴图",
+      "path_id": 2472642924737900423,
+      "source": "CAB-385ae35ed919da9fca3ba4b1c84a9672"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_kafeibei/zidan_kafeibei_2472642924737900423.png"
+}

@@ -1,0 +1,83 @@
+
+yulei_buguangbang.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daguangbang
+  rotate: false
+  xy: 2, 2
+  size: 340, 140
+  orig: 340, 140
+  offset: 0, 0
+  index: -1
+lizi_1
+  rotate: false
+  xy: 150, 174
+  size: 35, 18
+  orig: 35, 18
+  offset: 0, 0
+  index: -1
+lizi_1_2
+  rotate: false
+  xy: 80, 176
+  size: 33, 16
+  orig: 33, 16
+  offset: 0, 0
+  index: -1
+lizi_1_3
+  rotate: false
+  xy: 115, 176
+  size: 33, 16
+  orig: 33, 16
+  offset: 0, 0
+  index: -1
+lizi_2
+  rotate: true
+  xy: 2, 184
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+lizi_2_2
+  rotate: true
+  xy: 13, 184
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+lizi_2_3
+  rotate: true
+  xy: 24, 184
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+lizi_3
+  rotate: false
+  xy: 35, 179
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+lizi_3_2
+  rotate: false
+  xy: 50, 179
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+lizi_3_3
+  rotate: false
+  xy: 65, 179
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 187, 144
+  size: 241, 48
+  orig: 241, 48
+  offset: 0, 0
+  index: -1

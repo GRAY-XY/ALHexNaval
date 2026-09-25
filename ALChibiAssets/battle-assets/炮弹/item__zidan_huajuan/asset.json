@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_huajuan",
+  "model": "zidan_huajuan",
+  "name": "花卷子弹",
+  "names": [
+    "花卷子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huajuan",
+  "path": "battle-assets/炮弹/item__zidan_huajuan",
+  "images": [
+    {
+      "file": "baozi01_-5884803067028160230.png",
+      "name": "baozi01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5884803067028160230,
+      "source": "CAB-2d01792ebd9da28fe369e9c0954e9023"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3360104
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huajuan/baozi01_-5884803067028160230.png"
+}

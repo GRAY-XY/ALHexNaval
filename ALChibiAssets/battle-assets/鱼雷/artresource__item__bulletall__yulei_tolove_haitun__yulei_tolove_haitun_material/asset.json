@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yulei_tolove_haitun__yulei_tolove_haitun_material",
+  "model": "yulei_tolove_haitun_material",
+  "name": "yulei_tolove_haitun_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_tolove_haitun/yulei_tolove_haitun_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_tolove_haitun__yulei_tolove_haitun_material",
+  "images": [
+    {
+      "file": "yulei_tolove_haitun_-3303604916506164043.png",
+      "name": "yulei_tolove_haitun",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3303604916506164043,
+      "source": "CAB-072f22d9761b10ed5e48d1e5f2d51197"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_baiying__feiji_baiying_material",
+  "model": "feiji_baiying_material",
+  "name": "feiji_baiying_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_baiying/feiji_baiying_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_baiying__feiji_baiying_material",
+  "images": [
+    {
+      "file": "feiji_baiying_-5164314375117533692.png",
+      "name": "feiji_baiying",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -5164314375117533692,
+      "source": "CAB-b69df195f1e6279ca6184bf1672212f1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

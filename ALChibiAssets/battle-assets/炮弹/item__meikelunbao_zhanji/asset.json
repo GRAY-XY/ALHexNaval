@@ -1,0 +1,46 @@
+{
+  "id": "item__meikelunbao_zhanji",
+  "model": "meikelunbao_zhanji",
+  "name": "meikelunbao_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/meikelunbao_zhanji",
+  "path": "battle-assets/炮弹/item__meikelunbao_zhanji",
+  "images": [
+    {
+      "file": "new09_-2753383003148076062.png",
+      "name": "new09",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2753383003148076062,
+      "source": "CAB-b14c5130e5f2bbf22e1ed47ec397086d"
+    },
+    {
+      "file": "new08_-165626551819590227.png",
+      "name": "new08",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -165626551819590227,
+      "source": "CAB-b14c5130e5f2bbf22e1ed47ec397086d"
+    },
+    {
+      "file": "glow03_494024749288678258.png",
+      "name": "glow03",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 494024749288678258,
+      "source": "CAB-b14c5130e5f2bbf22e1ed47ec397086d"
+    }
+  ],
+  "particle_systems": 6,
+  "animations": [],
+  "bullet_ids": [
+    168481
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__meikelunbao_zhanji/new09_-2753383003148076062.png"
+}

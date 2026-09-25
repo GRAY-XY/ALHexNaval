@@ -1,0 +1,17 @@
+{
+  "id": "item__xiusidunjiguang",
+  "model": "xiusidunjiguang",
+  "name": "xiusidunjiguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiusidunjiguang",
+  "path": "battle-assets/炮弹/item__xiusidunjiguang",
+  "images": [],
+  "particle_systems": 13,
+  "animations": [],
+  "bullet_ids": [
+    19768
+  ],
+  "has_preview": false,
+  "prefab": true
+}

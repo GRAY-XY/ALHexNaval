@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_zuanshishoubiao",
+  "model": "yulei_zuanshishoubiao",
+  "name": "金钻腕表鱼雷",
+  "names": [
+    "金钻腕表鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zuanshishoubiao",
+  "path": "battle-assets/鱼雷/item__yulei_zuanshishoubiao",
+  "images": [
+    {
+      "file": "yulei_zuanshishoubiao_6569506754973543551.png",
+      "name": "yulei_zuanshishoubiao",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6569506754973543551,
+      "source": "CAB-69f868c816a8588bd0af3c1d361393c6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zuanshishoubiao/yulei_zuanshishoubiao_6569506754973543551.png",
+  "spine": {
+    "skel": "yulei_zuanshishoubiao.skel",
+    "atlas": "yulei_zuanshishoubiao.atlas",
+    "pages": [
+      "yulei_zuanshishoubiao.png"
+    ]
+  }
+}

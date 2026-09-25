@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shuijingerzhui",
+  "model": "yulei_shuijingerzhui",
+  "name": "水晶耳坠鱼雷",
+  "names": [
+    "水晶耳坠鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shuijingerzhui",
+  "path": "battle-assets/鱼雷/item__yulei_shuijingerzhui",
+  "images": [
+    {
+      "file": "yulei_shuijingerzhui_7839762094933775633.png",
+      "name": "yulei_shuijingerzhui",
+      "width": 128,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": 7839762094933775633,
+      "source": "CAB-3d8a4bac6997d64ae2645a493b764469"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shuijingerzhui/yulei_shuijingerzhui_7839762094933775633.png"
+}

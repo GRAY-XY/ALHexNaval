@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhinanzhenhd",
+  "model": "paodan_zhinanzhenhd",
+  "name": "指南针炮弹",
+  "names": [
+    "指南针炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhinanzhenhd",
+  "path": "battle-assets/炮弹/item__paodan_zhinanzhenhd",
+  "images": [
+    {
+      "file": "paodan_zhinanzhenhd_8018021772776158570.png",
+      "name": "paodan_zhinanzhenhd",
+      "width": 128,
+      "height": 119,
+      "role": "战斗贴图",
+      "path_id": 8018021772776158570,
+      "source": "CAB-81a4b050dc560a0d0ea23ca72816d661"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhinanzhenhd/paodan_zhinanzhenhd_8018021772776158570.png"
+}

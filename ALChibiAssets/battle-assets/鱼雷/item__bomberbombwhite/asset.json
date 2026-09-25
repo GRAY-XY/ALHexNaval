@@ -1,0 +1,29 @@
+{
+  "id": "item__bomberbombwhite",
+  "model": "bomberbombwhite",
+  "name": "bomberbombwhite",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/bomberbombwhite",
+  "path": "battle-assets/鱼雷/item__bomberbombwhite",
+  "images": [
+    {
+      "file": "BomberbombWhite_-2741793674129254635.png",
+      "name": "BomberbombWhite",
+      "width": 128,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": -2741793674129254635,
+      "source": "CAB-720c82cfbe9d5aa9edf9c956a03ffa5f"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19862,
+    3029330
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__bomberbombwhite/BomberbombWhite_-2741793674129254635.png"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "item__shandianzidansmall_mirror",
+  "model": "shandianzidansmall_mirror",
+  "name": "shandianzidansmall_mirror",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shandianzidansmall_mirror",
+  "path": "battle-assets/炮弹/item__shandianzidansmall_mirror",
+  "images": [],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    891407,
+    3304006
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zuolunqiang",
+  "model": "paodan_zuolunqiang",
+  "name": "左轮枪炮弹",
+  "names": [
+    "左轮枪炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zuolunqiang",
+  "path": "battle-assets/炮弹/item__paodan_zuolunqiang",
+  "images": [
+    {
+      "file": "paodan_zuolunqiang_-5205244625463736565.png",
+      "name": "paodan_zuolunqiang",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": -5205244625463736565,
+      "source": "CAB-3127c3d5c98e0733b932da803bd67884"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zuolunqiang/paodan_zuolunqiang_-5205244625463736565.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhuopai",
+  "model": "yulei_zhuopai",
+  "name": "粉菜单鱼雷",
+  "names": [
+    "粉菜单鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhuopai",
+  "path": "battle-assets/鱼雷/item__yulei_zhuopai",
+  "images": [
+    {
+      "file": "yulei_zhuopai_2314806074975636911.png",
+      "name": "yulei_zhuopai",
+      "width": 128,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": 2314806074975636911,
+      "source": "CAB-527536a91ede5cc6613787e31548e5eb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhuopai/yulei_zhuopai_2314806074975636911.png"
+}

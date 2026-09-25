@@ -1,0 +1,48 @@
+
+kapaizidan_2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hong_tuowei
+  rotate: false
+  xy: 2, 338
+  size: 600, 166
+  orig: 600, 166
+  offset: 0, 0
+  index: -1
+huang_tuowei
+  rotate: false
+  xy: 2, 170
+  size: 600, 166
+  orig: 600, 166
+  offset: 0, 0
+  index: -1
+lan_tuowei
+  rotate: false
+  xy: 2, 2
+  size: 600, 166
+  orig: 600, 166
+  offset: 0, 0
+  index: -1
+zidan_hong
+  rotate: true
+  xy: 604, 297
+  size: 207, 146
+  orig: 207, 146
+  offset: 0, 0
+  index: -1
+zidan_huang
+  rotate: false
+  xy: 604, 149
+  size: 207, 146
+  orig: 207, 146
+  offset: 0, 0
+  index: -1
+zidan_lan
+  rotate: false
+  xy: 752, 360
+  size: 207, 144
+  orig: 207, 144
+  offset: 0, 0
+  index: -1

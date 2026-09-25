@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_linglongqiu",
+  "model": "zidan_linglongqiu",
+  "name": "玲珑球子弹",
+  "names": [
+    "玲珑球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_linglongqiu",
+  "path": "battle-assets/炮弹/item__zidan_linglongqiu",
+  "images": [
+    {
+      "file": "zidan_linglongqiu_7432528577271176044.png",
+      "name": "zidan_linglongqiu",
+      "width": 128,
+      "height": 127,
+      "role": "战斗贴图",
+      "path_id": 7432528577271176044,
+      "source": "CAB-25ef5100b7636ffb60cee98523819984"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_linglongqiu/zidan_linglongqiu_7432528577271176044.png"
+}

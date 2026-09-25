@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_xintiao__feiji_xintiao_material",
+  "model": "feiji_xintiao_material",
+  "name": "feiji_xintiao_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/feiji_xintiao/feiji_xintiao_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__feiji_xintiao__feiji_xintiao_material",
+  "images": [
+    {
+      "file": "feiji_xintiao_1658744816398646643.png",
+      "name": "feiji_xintiao",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1658744816398646643,
+      "source": "CAB-8866816860d7781efc47a73cb5af3a62"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,32 @@
+{
+  "id": "item__huapai_baozha02",
+  "model": "huapai_baozha02",
+  "name": "huapai_baozha02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/huapai_baozha02",
+  "path": "battle-assets/炮弹/item__huapai_baozha02",
+  "images": [
+    {
+      "file": "huapai01_6661971661942006161.png",
+      "name": "huapai01",
+      "width": 226,
+      "height": 247,
+      "role": "战斗贴图",
+      "path_id": 6661971661942006161,
+      "source": "CAB-e18fb01a41e064c794f154140fa129d8"
+    }
+  ],
+  "particle_systems": 6,
+  "animations": [],
+  "bullet_ids": [
+    19243,
+    29610010,
+    29621120,
+    29621121,
+    29621122
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__huapai_baozha02/huapai01_6661971661942006161.png"
+}

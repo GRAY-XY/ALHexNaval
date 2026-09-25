@@ -1,0 +1,31 @@
+{
+  "id": "item__paodan_ai_3boss",
+  "model": "paodan_ai_3boss",
+  "name": "paodan_ai_3boss",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_ai_3boss",
+  "path": "battle-assets/炮弹/item__paodan_ai_3boss",
+  "images": [
+    {
+      "file": "paodan_ai_3_-4317030874501233593.png",
+      "name": "paodan_ai_3",
+      "width": 128,
+      "height": 36,
+      "role": "战斗贴图",
+      "path_id": -4317030874501233593,
+      "source": "CAB-525501a5b5c29dc7cb6c65230b6d4c72"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    600905,
+    600906,
+    600907,
+    600908
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_ai_3boss/paodan_ai_3_-4317030874501233593.png"
+}

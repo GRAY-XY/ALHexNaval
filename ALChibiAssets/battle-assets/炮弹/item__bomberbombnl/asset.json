@@ -1,0 +1,29 @@
+{
+  "id": "item__bomberbombnl",
+  "model": "bomberbombnl",
+  "name": "bomberbombnl",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bomberbombnl",
+  "path": "battle-assets/炮弹/item__bomberbombnl",
+  "images": [
+    {
+      "file": "BomberbombNL_7182539424921350669.png",
+      "name": "BomberbombNL",
+      "width": 125,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 7182539424921350669,
+      "source": "CAB-32e291ae68dcc999cc8f765136f3935e"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    20123,
+    161138
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bomberbombnl/BomberbombNL_7182539424921350669.png"
+}

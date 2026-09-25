@@ -1,0 +1,31 @@
+{
+  "id": "item__edu_zhanji",
+  "model": "edu_zhanji",
+  "name": "edu_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/edu_zhanji",
+  "path": "battle-assets/炮弹/item__edu_zhanji",
+  "images": [
+    {
+      "file": "wave05_-1454565527046202027.png",
+      "name": "wave05",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1454565527046202027,
+      "source": "CAB-7453590ef9473d81c1f4793d50c06b94"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    79979,
+    161031,
+    161114,
+    165204
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__edu_zhanji/wave05_-1454565527046202027.png"
+}

@@ -1,0 +1,76 @@
+
+chongying_u_boss02.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+di
+  rotate: false
+  xy: 2, 2
+  size: 1341, 261
+  orig: 1341, 261
+  offset: 0, 0
+  index: -1
+heiwu_1
+  rotate: true
+  xy: 859, 409
+  size: 831, 236
+  orig: 831, 236
+  offset: 0, 0
+  index: -1
+heiwu_2
+  rotate: true
+  xy: 2, 265
+  size: 831, 499
+  orig: 831, 499
+  offset: 0, 0
+  index: -1
+heiyan_n
+  rotate: true
+  xy: 503, 283
+  size: 813, 354
+  orig: 813, 354
+  offset: 0, 0
+  index: -1
+longshen_1
+  rotate: false
+  xy: 2, 1098
+  size: 680, 768
+  orig: 680, 768
+  offset: 0, 0
+  index: -1
+longshen_2
+  rotate: false
+  xy: 1097, 933
+  size: 579, 307
+  orig: 579, 307
+  offset: 0, 0
+  index: -1
+longshen_3
+  rotate: true
+  xy: 684, 1242
+  size: 624, 415
+  orig: 624, 415
+  offset: 0, 0
+  index: -1
+longtou_1
+  rotate: false
+  xy: 1101, 1262
+  size: 309, 272
+  orig: 309, 272
+  offset: 0, 0
+  index: -1
+longtou_1x
+  rotate: true
+  xy: 1408, 1632
+  size: 234, 201
+  orig: 234, 201
+  offset: 0, 0
+  index: -1
+longxu_1
+  rotate: false
+  xy: 1101, 1536
+  size: 305, 330
+  orig: 305, 330
+  offset: 0, 0
+  index: -1

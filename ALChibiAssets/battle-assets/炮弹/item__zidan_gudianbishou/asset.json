@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_gudianbishou",
+  "model": "zidan_gudianbishou",
+  "name": "古代匕首子弹",
+  "names": [
+    "古代匕首子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gudianbishou",
+  "path": "battle-assets/炮弹/item__zidan_gudianbishou",
+  "images": [
+    {
+      "file": "zidan_gudianbishou_-3566557540268653096.png",
+      "name": "zidan_gudianbishou",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3566557540268653096,
+      "source": "CAB-330e1117c17309e0e963617793444b9b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gudianbishou/zidan_gudianbishou_-3566557540268653096.png",
+  "spine": {
+    "skel": "zidan_gudianbishou.skel",
+    "atlas": "zidan_gudianbishou.atlas",
+    "pages": [
+      "zidan_gudianbishou.png"
+    ]
+  }
+}

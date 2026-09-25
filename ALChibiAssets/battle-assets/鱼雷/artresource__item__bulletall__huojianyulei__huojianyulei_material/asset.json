@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__huojianyulei__huojianyulei_material",
+  "model": "huojianyulei_material",
+  "name": "huojianyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/huojianyulei/huojianyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__huojianyulei__huojianyulei_material",
+  "images": [
+    {
+      "file": "huojianyulei_-4142676428979703320.png",
+      "name": "huojianyulei",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4142676428979703320,
+      "source": "CAB-b9d869f5f9c059ebf48cf918345da731"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

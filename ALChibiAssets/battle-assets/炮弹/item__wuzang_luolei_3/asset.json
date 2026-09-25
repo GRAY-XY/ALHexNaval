@@ -1,0 +1,29 @@
+{
+  "id": "item__wuzang_luolei_3",
+  "model": "wuzang_luolei_3",
+  "name": "wuzang_luolei_3",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/wuzang_luolei_3",
+  "path": "battle-assets/炮弹/item__wuzang_luolei_3",
+  "images": [
+    {
+      "file": "thunder_05_-3554972859408815798.png",
+      "name": "thunder_05",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3554972859408815798,
+      "source": "CAB-3abf22933c93ab4323ee2aac1ed3e052"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19402,
+    160991
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__wuzang_luolei_3/thunder_05_-3554972859408815798.png"
+}

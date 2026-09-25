@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_jishiben_doa",
+  "model": "paodan_jishiben_doa",
+  "name": "神秘记事本炮弹",
+  "names": [
+    "神秘记事本炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jishiben_doa",
+  "path": "battle-assets/炮弹/item__paodan_jishiben_doa",
+  "images": [
+    {
+      "file": "paodan_jishiben_1_doa_7028134187877254572.png",
+      "name": "paodan_jishiben_1_doa",
+      "width": 162,
+      "height": 125,
+      "role": "战斗贴图",
+      "path_id": 7028134187877254572,
+      "source": "CAB-e623bb58bc17e5ae2b2faa1fec566384"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jishiben_doa/paodan_jishiben_1_doa_7028134187877254572.png"
+}

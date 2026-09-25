@@ -1,0 +1,36 @@
+{
+  "id": "item__bullet_sailship_big",
+  "model": "bullet_sailship_big",
+  "name": "bullet_sailship_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_sailship_big",
+  "path": "battle-assets/炮弹/item__bullet_sailship_big",
+  "images": [
+    {
+      "file": "bullet_sailship_3718299048147809143.png",
+      "name": "bullet_sailship",
+      "width": 65,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": 3718299048147809143,
+      "source": "CAB-e6f3c8ff852057b2ac9eeb9c51830387"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    858,
+    859,
+    860,
+    161182,
+    3090002,
+    3090003,
+    3090006,
+    3091006,
+    3094018
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_sailship_big/bullet_sailship_3718299048147809143.png"
+}

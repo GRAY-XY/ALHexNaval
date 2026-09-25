@@ -1,0 +1,69 @@
+
+emotion_qingxun.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bq1
+  rotate: false
+  xy: 916, 534
+  size: 78, 100
+  orig: 78, 100
+  offset: 0, 0
+  index: -1
+bq2
+  rotate: false
+  xy: 710, 603
+  size: 89, 105
+  orig: 89, 105
+  offset: 0, 0
+  index: -1
+bq3
+  rotate: true
+  xy: 710, 453
+  size: 73, 61
+  orig: 73, 61
+  offset: 0, 0
+  index: -1
+bq4
+  rotate: true
+  xy: 916, 460
+  size: 72, 69
+  orig: 72, 69
+  offset: 0, 0
+  index: -1
+bq5
+  rotate: true
+  xy: 801, 645
+  size: 63, 41
+  orig: 63, 41
+  offset: 0, 0
+  index: -1
+bq6
+  rotate: false
+  xy: 710, 528
+  size: 204, 73
+  orig: 204, 73
+  offset: 0, 0
+  index: -1
+huo_1
+  rotate: false
+  xy: 2, 710
+  size: 853, 717
+  orig: 853, 717
+  offset: 0, 0
+  index: -1
+huo_2
+  rotate: false
+  xy: 2, 2
+  size: 706, 706
+  orig: 706, 706
+  offset: 0, 0
+  index: -1
+huo_3
+  rotate: true
+  xy: 857, 636
+  size: 791, 715
+  orig: 791, 715
+  offset: 0, 0
+  index: -1

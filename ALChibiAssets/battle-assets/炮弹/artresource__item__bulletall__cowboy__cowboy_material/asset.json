@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__cowboy__cowboy_material",
+  "model": "cowboy_material",
+  "name": "cowboy_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/cowboy/cowboy_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__cowboy__cowboy_material",
+  "images": [
+    {
+      "file": "cowboy_-80650454899267853.png",
+      "name": "cowboy",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -80650454899267853,
+      "source": "CAB-9ed626997fd8e6f491098f741abe0e48"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

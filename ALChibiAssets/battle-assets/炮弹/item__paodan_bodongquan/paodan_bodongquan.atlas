@@ -1,0 +1,41 @@
+
+paodan_bodongquan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: false
+  xy: 2, 12
+  size: 315, 106
+  orig: 315, 106
+  offset: 0, 0
+  index: -1
+02
+  rotate: false
+  xy: 319, 2
+  size: 349, 116
+  orig: 349, 116
+  offset: 0, 0
+  index: -1
+03
+  rotate: false
+  xy: 2, 120
+  size: 328, 101
+  orig: 328, 101
+  offset: 0, 0
+  index: -1
+04
+  rotate: false
+  xy: 332, 120
+  size: 335, 101
+  orig: 335, 101
+  offset: 0, 0
+  index: -1
+05
+  rotate: false
+  xy: 669, 120
+  size: 326, 101
+  orig: 326, 101
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,54 @@
+{
+  "id": "chargo__xiafei_yingxing",
+  "model": "xiafei_yingxing",
+  "name": "霞飞隐形飞机Lv1",
+  "names": [
+    "霞飞隐形飞机Lv1",
+    "圣马丁圣洁轰炸lv1",
+    "圣马丁圣洁轰炸 + lv1",
+    "冈依沙瓦号祈雨Lv1",
+    "冈依沙瓦号爆金币Lv1",
+    "【2024异世界冒险 剧情】霞飞 隐形飞机",
+    "【2024风帆二期】我方支援弹幕 光明女神的怜悯 隐形飞机",
+    "【2025狮UR活动A】我方支援 女王之光号 发射器（隐形飞机）",
+    "【2025狮UR活动B】我方支援 女王之光号 发射器（隐形飞机）",
+    "【2025狮UR活动C】我方支援 女王之光号 发射器（隐形飞机）",
+    "【2025狮UR活动D】我方支援 女王之光号 发射器（隐形飞机）",
+    "【2025狮UR活动SP】我方支援 女王之光号 发射器（隐形飞机）",
+    "【2025马塞纳活动 剧情战】我方支援技能 饱和式轰炸 隐形飞机",
+    "【2026本宁顿活动B】我方支援 雨中花海 隐形飞机",
+    "【2026本宁顿活动D】我方支援 雨中花海 隐形飞机",
+    "【2026本宁顿活动SP】我方支援 雨中花海 隐形飞机",
+    "【2026本宁顿活动 剧情战】女王之光号 发射器（隐形飞机）",
+    "【2026本宁顿活动 剧情战】雨中花海 隐形飞机"
+  ],
+  "category": "飞机",
+  "source": "chargo/xiafei_yingxing",
+  "path": "battle-assets/飞机/chargo__xiafei_yingxing",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "xiafei_yingxing_-1338269014667228149.png",
+      "name": "xiafei_yingxing",
+      "width": 32,
+      "height": 32,
+      "role": "战斗贴图",
+      "path_id": -1338269014667228149,
+      "source": "CAB-2f7f85a8ffeea7a68bf670e97c8e1e48"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__xiafei_yingxing/aircraft_shadow_2192772484218123160.png"
+}

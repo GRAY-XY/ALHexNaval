@@ -1,0 +1,25 @@
+{
+  "id": "aircrafticon__97jiangong1",
+  "model": "97jiangong1",
+  "name": "97jiangong1",
+  "names": [],
+  "category": "飞机图标",
+  "source": "aircrafticon/97jiangong1",
+  "path": "battle-assets/飞机图标/aircrafticon__97jiangong1",
+  "images": [
+    {
+      "file": "97jiangong1_-8918719970940686231.png",
+      "name": "97jiangong1",
+      "width": 44,
+      "height": 43,
+      "role": "原始精灵",
+      "path_id": -8918719970940686231,
+      "source": "CAB-c092ef78836c39e7b5751306cea255e6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

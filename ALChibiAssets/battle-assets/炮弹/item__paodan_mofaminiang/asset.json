@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_mofaminiang",
+  "model": "paodan_mofaminiang",
+  "name": "魔法秘酿炮弹",
+  "names": [
+    "魔法秘酿炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mofaminiang",
+  "path": "battle-assets/炮弹/item__paodan_mofaminiang",
+  "images": [
+    {
+      "file": "paodan_mofaminiang_8250804966024457417.png",
+      "name": "paodan_mofaminiang",
+      "width": 124,
+      "height": 93,
+      "role": "战斗贴图",
+      "path_id": 8250804966024457417,
+      "source": "CAB-73ed7b919cdf483288dcd9d0af4850e9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3384009
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mofaminiang/paodan_mofaminiang_8250804966024457417.png"
+}

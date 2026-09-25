@@ -1,0 +1,55 @@
+{
+  "id": "item__paodan_tutu",
+  "model": "paodan_tutu",
+  "name": "兔兔导弹",
+  "names": [
+    "兔兔导弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tutu",
+  "path": "battle-assets/炮弹/item__paodan_tutu",
+  "images": [
+    {
+      "file": "particles05_-3676072818761352345.png",
+      "name": "particles05",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3676072818761352345,
+      "source": "CAB-d6a11f891a112d2db32f78120f4dd58e"
+    },
+    {
+      "file": "smoke03_-1502918945925913226.png",
+      "name": "smoke03",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -1502918945925913226,
+      "source": "CAB-d6a11f891a112d2db32f78120f4dd58e"
+    },
+    {
+      "file": "tuhuojian_1064756813738787171.png",
+      "name": "tuhuojian",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 1064756813738787171,
+      "source": "CAB-d6a11f891a112d2db32f78120f4dd58e"
+    },
+    {
+      "file": "particles04_6672379427602634512.png",
+      "name": "particles04",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6672379427602634512,
+      "source": "CAB-d6a11f891a112d2db32f78120f4dd58e"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tutu/particles05_-3676072818761352345.png"
+}

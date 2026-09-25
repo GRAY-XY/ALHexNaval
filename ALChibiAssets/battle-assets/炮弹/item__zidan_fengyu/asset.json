@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_fengyu",
+  "model": "zidan_fengyu",
+  "name": "凤羽子弹",
+  "names": [
+    "凤羽子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fengyu",
+  "path": "battle-assets/炮弹/item__zidan_fengyu",
+  "images": [
+    {
+      "file": "zidan_fengyu_-625111116930173405.png",
+      "name": "zidan_fengyu",
+      "width": 1024,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -625111116930173405,
+      "source": "CAB-6b12e6a043e773d008b0ed7a5ad38a21"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fengyu/zidan_fengyu_-625111116930173405.png",
+  "spine": {
+    "skel": "zidan_fengyu.skel",
+    "atlas": "zidan_fengyu.atlas",
+    "pages": [
+      "zidan_fengyu.png"
+    ]
+  }
+}

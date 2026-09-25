@@ -1,0 +1,62 @@
+{
+  "id": "item__yulei_heibaiqi",
+  "model": "yulei_heibaiqi",
+  "name": "黑白旗鱼雷",
+  "names": [
+    "黑白旗鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_heibaiqi",
+  "path": "battle-assets/鱼雷/item__yulei_heibaiqi",
+  "images": [
+    {
+      "file": "line03_-7374053589799835907.png",
+      "name": "line03",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7374053589799835907,
+      "source": "CAB-81f664488cc00e6aef82e3622165fa68"
+    },
+    {
+      "file": "yulei_heibaiqi_-4204979323565415811.png",
+      "name": "yulei_heibaiqi",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4204979323565415811,
+      "source": "CAB-81f664488cc00e6aef82e3622165fa68"
+    },
+    {
+      "file": "particles01_6858949796512830573.png",
+      "name": "particles01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6858949796512830573,
+      "source": "CAB-81f664488cc00e6aef82e3622165fa68"
+    },
+    {
+      "file": "particles02_7588584155182929762.png",
+      "name": "particles02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7588584155182929762,
+      "source": "CAB-81f664488cc00e6aef82e3622165fa68"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_heibaiqi/line03_-7374053589799835907.png",
+  "spine": {
+    "skel": "yulei_heibaiqi.skel",
+    "atlas": "yulei_heibaiqi.atlas",
+    "pages": [
+      "yulei_heibaiqi.png"
+    ]
+  }
+}

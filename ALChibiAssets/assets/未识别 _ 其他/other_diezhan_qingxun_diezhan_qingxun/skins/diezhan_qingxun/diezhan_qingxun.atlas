@@ -1,0 +1,90 @@
+
+diezhan_qingxun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 52
+  size: 448, 311
+  orig: 448, 311
+  offset: 0, 0
+  index: -1
+ji1
+  rotate: false
+  xy: 388, 427
+  size: 73, 73
+  orig: 73, 73
+  offset: 0, 0
+  index: -1
+ji2
+  rotate: true
+  xy: 388, 353
+  size: 72, 73
+  orig: 72, 73
+  offset: 0, 0
+  index: -1
+ji2_qiang
+  rotate: false
+  xy: 381, 2
+  size: 146, 48
+  orig: 146, 48
+  offset: 0, 0
+  index: -1
+ji3
+  rotate: false
+  xy: 388, 277
+  size: 70, 74
+  orig: 70, 74
+  offset: 0, 0
+  index: -1
+ji3_qiang
+  rotate: false
+  xy: 315, 52
+  size: 146, 49
+  orig: 146, 49
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: true
+  xy: 463, 118
+  size: 382, 69
+  orig: 382, 69
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: false
+  xy: 2, 3
+  size: 377, 47
+  orig: 377, 47
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: true
+  xy: 315, 103
+  size: 397, 71
+  orig: 397, 71
+  offset: 0, 0
+  index: -1
+wangyuan
+  rotate: false
+  xy: 388, 203
+  size: 36, 32
+  orig: 36, 32
+  offset: 0, 0
+  index: -1
+weapon_HG_fire1
+  rotate: false
+  xy: 388, 237
+  size: 64, 38
+  orig: 64, 38
+  offset: 0, 0
+  index: -1
+weilan
+  rotate: false
+  xy: 529, 17
+  size: 86, 99
+  orig: 86, 99
+  offset: 0, 0
+  index: -1

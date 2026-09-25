@@ -1,0 +1,30 @@
+{
+  "id": "item__tianxiezuo_bullet",
+  "model": "tianxiezuo_bullet",
+  "name": "tianxiezuo_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/tianxiezuo_bullet",
+  "path": "battle-assets/炮弹/item__tianxiezuo_bullet",
+  "images": [
+    {
+      "file": "kuasheAP_04_8530210824532632454.png",
+      "name": "kuasheAP_04",
+      "width": 120,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 8530210824532632454,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    900538,
+    900544,
+    900546
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__tianxiezuo_bullet/kuasheAP_04_8530210824532632454.png"
+}

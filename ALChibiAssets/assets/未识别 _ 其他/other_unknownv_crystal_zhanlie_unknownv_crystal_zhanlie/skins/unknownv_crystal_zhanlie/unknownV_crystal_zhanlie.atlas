@@ -1,0 +1,167 @@
+
+unknownV_crystal_zhanlie.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 381
+  size: 561, 233
+  orig: 561, 233
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: false
+  xy: 348, 755
+  size: 137, 69
+  orig: 137, 69
+  offset: 0, 0
+  index: -1
+chushou_10
+  rotate: true
+  xy: 621, 600
+  size: 135, 141
+  orig: 135, 141
+  offset: 0, 0
+  index: -1
+chushou_2
+  rotate: false
+  xy: 2, 832
+  size: 56, 38
+  orig: 56, 38
+  offset: 0, 0
+  index: -1
+chushou_3
+  rotate: true
+  xy: 60, 830
+  size: 40, 97
+  orig: 40, 97
+  offset: 0, 0
+  index: -1
+chushou_4
+  rotate: false
+  xy: 764, 726
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+chushou_5
+  rotate: true
+  xy: 911, 681
+  size: 101, 110
+  orig: 101, 110
+  offset: 0, 0
+  index: -1
+chushou_6
+  rotate: false
+  xy: 479, 616
+  size: 140, 119
+  orig: 140, 119
+  offset: 0, 0
+  index: -1
+chushou_7
+  rotate: true
+  xy: 487, 747
+  size: 77, 108
+  orig: 77, 108
+  offset: 0, 0
+  index: -1
+chushou_8
+  rotate: false
+  xy: 947, 784
+  size: 60, 86
+  orig: 60, 86
+  offset: 0, 0
+  index: -1
+chushou_9
+  rotate: true
+  xy: 857, 816
+  size: 54, 88
+  orig: 54, 88
+  offset: 0, 0
+  index: -1
+pao_1
+  rotate: true
+  xy: 324, 647
+  size: 106, 153
+  orig: 106, 153
+  offset: 0, 0
+  index: -1
+pao_10
+  rotate: true
+  xy: 169, 659
+  size: 102, 153
+  orig: 102, 153
+  offset: 0, 0
+  index: -1
+pao_2
+  rotate: true
+  xy: 334, 826
+  size: 44, 172
+  orig: 44, 172
+  offset: 0, 0
+  index: -1
+pao_3
+  rotate: true
+  xy: 508, 826
+  size: 44, 173
+  orig: 44, 173
+  offset: 0, 0
+  index: -1
+pao_4
+  rotate: true
+  xy: 2, 685
+  size: 88, 165
+  orig: 88, 165
+  offset: 0, 0
+  index: -1
+pao_5
+  rotate: true
+  xy: 597, 737
+  size: 79, 165
+  orig: 79, 165
+  offset: 0, 0
+  index: -1
+pao_6
+  rotate: true
+  xy: 683, 818
+  size: 52, 172
+  orig: 52, 172
+  offset: 0, 0
+  index: -1
+pao_7
+  rotate: true
+  xy: 159, 830
+  size: 40, 173
+  orig: 40, 173
+  offset: 0, 0
+  index: -1
+pao_8
+  rotate: true
+  xy: 175, 763
+  size: 61, 171
+  orig: 61, 171
+  offset: 0, 0
+  index: -1
+pao_9
+  rotate: true
+  xy: 2, 775
+  size: 53, 171
+  orig: 53, 171
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: true
+  xy: 603, 2
+  size: 596, 279
+  orig: 596, 279
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 140
+  size: 599, 239
+  orig: 599, 239
+  offset: 0, 0
+  index: -1

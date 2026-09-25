@@ -1,0 +1,36 @@
+{
+  "id": "aircrafticon__alter_plane1",
+  "model": "alter_plane1",
+  "name": "【大世界】黑飞龙通用飞机战斗机lv1",
+  "names": [
+    "【大世界】黑飞龙通用飞机战斗机lv1",
+    "【大世界】黑飞龙通用飞机战斗机lv2",
+    "【大世界】黑飞龙通用飞机战斗机lv3",
+    "【大世界】黑飞龙通用飞机战斗机lv4",
+    "【大世界】黑飞龙通用飞机战斗机lv5",
+    "【大世界】黑飞龙通用飞机鱼雷机lv1",
+    "【大世界】黑飞龙通用飞机鱼雷机lv2",
+    "【大世界】黑飞龙通用飞机鱼雷机lv3",
+    "【大世界】黑飞龙通用飞机鱼雷机lv4",
+    "【大世界】黑飞龙通用飞机鱼雷机lv5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/alter_plane1",
+  "path": "battle-assets/飞机图标/aircrafticon__alter_plane1",
+  "images": [
+    {
+      "file": "alter_plane1_7354342629854096579.png",
+      "name": "alter_plane1",
+      "width": 44,
+      "height": 34,
+      "role": "原始精灵",
+      "path_id": 7354342629854096579,
+      "source": "CAB-8217e16d47661d17070a10632212009d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

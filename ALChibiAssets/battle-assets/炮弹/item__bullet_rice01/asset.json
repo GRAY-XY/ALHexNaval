@@ -1,0 +1,28 @@
+{
+  "id": "item__bullet_rice01",
+  "model": "bullet_rice01",
+  "name": "bullet_rice01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_rice01",
+  "path": "battle-assets/炮弹/item__bullet_rice01",
+  "images": [
+    {
+      "file": "newbullet2blue_-253248460710273840.png",
+      "name": "newbullet2blue",
+      "width": 94,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": -253248460710273840,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3097016
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_rice01/newbullet2blue_-253248460710273840.png"
+}

@@ -1,0 +1,104 @@
+
+feiji_peiyangmin.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biaomian
+  rotate: true
+  xy: 346, 158
+  size: 96, 104
+  orig: 96, 104
+  offset: 0, 0
+  index: -1
+jiu
+  rotate: false
+  xy: 346, 102
+  size: 50, 54
+  orig: 50, 54
+  offset: 0, 0
+  index: -1
+qipao_1
+  rotate: false
+  xy: 19, 15
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+qipao_2
+  rotate: false
+  xy: 2, 2
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+qipao_3
+  rotate: false
+  xy: 2, 32
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+qipao_4
+  rotate: false
+  xy: 23, 38
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+qipao_5
+  rotate: false
+  xy: 2, 15
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+qipao_6
+  rotate: false
+  xy: 15, 2
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+qipao_7
+  rotate: false
+  xy: 28, 3
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+qipao_8
+  rotate: false
+  xy: 35, 26
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+rongqi_1
+  rotate: false
+  xy: 188, 88
+  size: 156, 166
+  orig: 156, 166
+  offset: 0, 0
+  index: -1
+rongqi_t1
+  rotate: false
+  xy: 297, 4
+  size: 102, 82
+  orig: 102, 82
+  offset: 0, 0
+  index: -1
+rongqi_t2
+  rotate: false
+  xy: 188, 6
+  size: 107, 80
+  orig: 107, 80
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: true
+  xy: 2, 53
+  size: 201, 184
+  orig: 201, 184
+  offset: 0, 0
+  index: -1

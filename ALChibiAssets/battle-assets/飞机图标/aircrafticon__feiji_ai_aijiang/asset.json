@@ -1,0 +1,34 @@
+{
+  "id": "aircrafticon__feiji_ai_aijiang",
+  "model": "feiji_ai_aijiang",
+  "name": "绊爱技能轰炸机Lv1",
+  "names": [
+    "绊爱技能轰炸机Lv1",
+    "【绊爱联动】空袭 轰炸机",
+    "【绊爱联动SP2】轰炸机",
+    "【绊爱联动SP5】轰炸机",
+    "【绊爱联动EX】轰炸机",
+    "迷你爱酱(鱼雷)",
+    "迷你爱酱(战斗)",
+    "迷你爱酱(轰炸)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_ai_aijiang",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_ai_aijiang",
+  "images": [
+    {
+      "file": "feiji_ai_aijiang_1566260127023477265.png",
+      "name": "feiji_ai_aijiang",
+      "width": 44,
+      "height": 40,
+      "role": "原始精灵",
+      "path_id": 1566260127023477265,
+      "source": "CAB-e9dab6699e6d99dc8702b70d7354ddb7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

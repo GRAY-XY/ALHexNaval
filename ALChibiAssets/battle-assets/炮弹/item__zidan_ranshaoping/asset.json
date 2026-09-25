@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_ranshaoping",
+  "model": "zidan_ranshaoping",
+  "name": "烈焰酒瓶子弹",
+  "names": [
+    "烈焰酒瓶子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_ranshaoping",
+  "path": "battle-assets/炮弹/item__zidan_ranshaoping",
+  "images": [
+    {
+      "file": "zidan_ranshaoping_1370841163096417249.png",
+      "name": "zidan_ranshaoping",
+      "width": 128,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": 1370841163096417249,
+      "source": "CAB-4fbf8867262dd72a0f003877b8678233"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_ranshaoping/zidan_ranshaoping_1370841163096417249.png"
+}

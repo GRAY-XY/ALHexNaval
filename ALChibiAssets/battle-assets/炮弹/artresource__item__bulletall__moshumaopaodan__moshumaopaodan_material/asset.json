@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__moshumaopaodan__moshumaopaodan_material",
+  "model": "moshumaopaodan_material",
+  "name": "moshumaopaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/moshumaopaodan/moshumaopaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__moshumaopaodan__moshumaopaodan_material",
+  "images": [
+    {
+      "file": "moshumaopaodan_5307208905011617317.png",
+      "name": "moshumaopaodan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 5307208905011617317,
+      "source": "CAB-17dc27f818382d89ed2c29b514c95ea3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

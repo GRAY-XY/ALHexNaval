@@ -1,0 +1,62 @@
+{
+  "id": "item__yulei_emoweiba",
+  "model": "yulei_emoweiba",
+  "name": "恶魔尾巴鱼雷",
+  "names": [
+    "恶魔尾巴鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_emoweiba",
+  "path": "battle-assets/鱼雷/item__yulei_emoweiba",
+  "images": [
+    {
+      "file": "line02_-7119680387871705191.png",
+      "name": "line02",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7119680387871705191,
+      "source": "CAB-5e2fd10873552a026c25b9be5dadc15d"
+    },
+    {
+      "file": "yulei_emoweiba_-2896483588731375164.png",
+      "name": "yulei_emoweiba",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2896483588731375164,
+      "source": "CAB-5e2fd10873552a026c25b9be5dadc15d"
+    },
+    {
+      "file": "line03_-1308468022008906639.png",
+      "name": "line03",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1308468022008906639,
+      "source": "CAB-5e2fd10873552a026c25b9be5dadc15d"
+    },
+    {
+      "file": "particles01_5949931410896030115.png",
+      "name": "particles01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5949931410896030115,
+      "source": "CAB-5e2fd10873552a026c25b9be5dadc15d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_emoweiba/line02_-7119680387871705191.png",
+  "spine": {
+    "skel": "yulei_emoweiba.skel",
+    "atlas": "yulei_emoweiba.atlas",
+    "pages": [
+      "yulei_emoweiba.png"
+    ]
+  }
+}

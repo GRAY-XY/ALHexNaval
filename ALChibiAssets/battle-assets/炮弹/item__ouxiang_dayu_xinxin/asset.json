@@ -1,0 +1,24 @@
+{
+  "id": "item__ouxiang_dayu_xinxin",
+  "model": "ouxiang_dayu_xinxin",
+  "name": "ouxiang_dayu_xinxin",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_dayu_xinxin",
+  "path": "battle-assets/炮弹/item__ouxiang_dayu_xinxin",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    852108,
+    852109,
+    852113,
+    852505,
+    852537,
+    852605,
+    852619,
+    852772
+  ],
+  "has_preview": false,
+  "prefab": true
+}

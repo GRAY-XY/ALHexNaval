@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_shigui",
+  "model": "paodan_shigui",
+  "name": "式鬼壱号",
+  "names": [
+    "式鬼壱号"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shigui",
+  "path": "battle-assets/炮弹/item__paodan_shigui",
+  "images": [
+    {
+      "file": "paodan_shigui_-6078308724108147064.png",
+      "name": "paodan_shigui",
+      "width": 128,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -6078308724108147064,
+      "source": "CAB-1c29c6ef396cd3082098f9cac3959e18"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shigui/paodan_shigui_-6078308724108147064.png"
+}

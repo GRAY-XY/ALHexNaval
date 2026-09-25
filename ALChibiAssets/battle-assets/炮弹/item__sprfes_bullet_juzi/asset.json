@@ -1,0 +1,24 @@
+{
+  "id": "item__sprfes_bullet_juzi",
+  "model": "sprfes_bullet_juzi",
+  "name": "柑橘子弹",
+  "names": [
+    "柑橘子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/sprfes_bullet_juzi",
+  "path": "battle-assets/炮弹/item__sprfes_bullet_juzi",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "juzi.skel",
+    "atlas": "juzi.atlas",
+    "pages": [
+      "juzi.png"
+    ]
+  }
+}

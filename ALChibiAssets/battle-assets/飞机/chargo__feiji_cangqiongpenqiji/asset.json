@@ -1,0 +1,44 @@
+{
+  "id": "chargo__feiji_cangqiongpenqiji",
+  "model": "feiji_cangqiongpenqiji",
+  "name": "【2021古立特联动活动】宝多六花支援武器-苍穹喷气飞机LV1",
+  "names": [
+    "【2021古立特联动活动】宝多六花支援武器-苍穹喷气飞机LV1",
+    "【2021古立特联动活动】宝多六花支援武器-苍穹喷气飞机LV2",
+    "【2021古立特联动活动】宝多六花支援武器-苍穹喷气飞机LV3",
+    "【2021古立特联动活动】宝多六花支援武器-苍穹喷气飞机LV4",
+    "【2021古立特联动活动】宝多六花支援武器-苍穹喷气飞机LV5",
+    "苍穹喷气机(鱼雷)",
+    "苍穹喷气机(战斗)",
+    "苍穹喷气机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_cangqiongpenqiji",
+  "path": "battle-assets/飞机/chargo__feiji_cangqiongpenqiji",
+  "images": [
+    {
+      "file": "feiji_cangqiongpenqiji_5901196109932102792.png",
+      "name": "feiji_cangqiongpenqiji",
+      "width": 256,
+      "height": 239,
+      "role": "战斗贴图",
+      "path_id": 5901196109932102792,
+      "source": "CAB-4ff48365d399f86f9e557f816240a421"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_cangqiongpenqiji/feiji_cangqiongpenqiji_5901196109932102792.png"
+}

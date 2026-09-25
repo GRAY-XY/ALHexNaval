@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhashuqiu",
+  "model": "paodan_zhashuqiu",
+  "name": "炸薯球炮弹",
+  "names": [
+    "炸薯球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhashuqiu",
+  "path": "battle-assets/炮弹/item__paodan_zhashuqiu",
+  "images": [
+    {
+      "file": "paodan_zhashuqiu_-3306143208968454759.png",
+      "name": "paodan_zhashuqiu",
+      "width": 120,
+      "height": 69,
+      "role": "战斗贴图",
+      "path_id": -3306143208968454759,
+      "source": "CAB-0beac04e0b9d5fba2efd544b547948ec"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhashuqiu/paodan_zhashuqiu_-3306143208968454759.png"
+}

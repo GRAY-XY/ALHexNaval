@@ -1,0 +1,29 @@
+{
+  "id": "item__ouxiang_lv",
+  "model": "ouxiang_lv",
+  "name": "ouxiang_lv",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_lv",
+  "path": "battle-assets/炮弹/item__ouxiang_lv",
+  "images": [
+    {
+      "file": "green_-1632365650240475791.png",
+      "name": "green",
+      "width": 95,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": -1632365650240475791,
+      "source": "CAB-0ffe80dd83e9a8362cd77efd82cf150a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    852315,
+    852535
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_lv/green_-1632365650240475791.png"
+}

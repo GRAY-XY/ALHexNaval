@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__feiji_tianchengyulei__feiji_tianchengyulei_material",
+  "model": "feiji_tianchengyulei_material",
+  "name": "feiji_tianchengyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/feiji_tianchengyulei/feiji_tianchengyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__feiji_tianchengyulei__feiji_tianchengyulei_material",
+  "images": [
+    {
+      "file": "feiji_tianchengyulei_-5445448907943992655.png",
+      "name": "feiji_tianchengyulei",
+      "width": 2048,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": -5445448907943992655,
+      "source": "CAB-132ecb5b7e87ef6a0eed6a8d7317d3e4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

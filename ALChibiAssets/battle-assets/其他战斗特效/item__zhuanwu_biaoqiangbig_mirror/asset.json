@@ -1,0 +1,26 @@
+{
+  "id": "item__zhuanwu_biaoqiangbig_mirror",
+  "model": "zhuanwu_biaoqiangbig_mirror",
+  "name": "zhuanwu_biaoqiangbig_mirror",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/zhuanwu_biaoqiangbig_mirror",
+  "path": "battle-assets/其他战斗特效/item__zhuanwu_biaoqiangbig_mirror",
+  "images": [
+    {
+      "file": "biaoqiang01_5008402313247508465.png",
+      "name": "biaoqiang01",
+      "width": 246,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": 5008402313247508465,
+      "source": "CAB-bfd97cd7c1c159a73acf963ac38f7af2"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__zhuanwu_biaoqiangbig_mirror/biaoqiang01_5008402313247508465.png"
+}

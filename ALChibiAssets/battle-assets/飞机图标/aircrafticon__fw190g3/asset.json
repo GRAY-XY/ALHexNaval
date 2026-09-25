@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__fw190g3",
+  "model": "fw190g3",
+  "name": "试作舰载型FW-190 G-3/R1",
+  "names": [
+    "试作舰载型FW-190 G-3/R1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/fw190g3",
+  "path": "battle-assets/飞机图标/aircrafticon__fw190g3",
+  "images": [
+    {
+      "file": "fw190g3_-3295068341889979824.png",
+      "name": "fw190g3",
+      "width": 44,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -3295068341889979824,
+      "source": "CAB-4fb48998ff2195e746651787e9a19e84"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

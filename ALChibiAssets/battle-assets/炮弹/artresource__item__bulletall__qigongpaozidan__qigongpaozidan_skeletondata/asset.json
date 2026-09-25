@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__qigongpaozidan__qigongpaozidan_skeletondata",
+  "model": "qigongpaozidan_skeletondata",
+  "name": "qigongpaozidan_skeletondata",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/qigongpaozidan/qigongpaozidan_skeletondata",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__qigongpaozidan__qigongpaozidan_skeletondata",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

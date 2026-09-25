@@ -1,0 +1,37 @@
+{
+  "id": "chargo__fktv",
+  "model": "fktv",
+  "name": "金狮 定点空袭",
+  "names": [
+    "金狮 定点空袭"
+  ],
+  "category": "飞机",
+  "source": "chargo/fktv",
+  "path": "battle-assets/飞机/chargo__fktv",
+  "images": [
+    {
+      "file": "fktv_5658491447271712724.png",
+      "name": "fktv",
+      "width": 301,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": 5658491447271712724,
+      "source": "CAB-e2679ab8ea7f2799961b610a061b73b1"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fktv/fktv_5658491447271712724.png"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "item__leiniya_dazhao_pikan",
+  "model": "leiniya_dazhao_pikan",
+  "name": "leiniya_dazhao_pikan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/leiniya_dazhao_pikan",
+  "path": "battle-assets/炮弹/item__leiniya_dazhao_pikan",
+  "images": [
+    {
+      "file": "new04_104961424219230018.png",
+      "name": "new04",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 104961424219230018,
+      "source": "CAB-e7c2b4c99da2285d255325494d6092cc"
+    },
+    {
+      "file": "new04_glow_2254144820229027048.png",
+      "name": "new04_glow",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2254144820229027048,
+      "source": "CAB-e7c2b4c99da2285d255325494d6092cc"
+    },
+    {
+      "file": "new01_4312457478050314322.png",
+      "name": "new01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4312457478050314322,
+      "source": "CAB-e7c2b4c99da2285d255325494d6092cc"
+    },
+    {
+      "file": "wave03_5783643744487249323.png",
+      "name": "wave03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 5783643744487249323,
+      "source": "CAB-e7c2b4c99da2285d255325494d6092cc"
+    },
+    {
+      "file": "wave02_6506589747685178357.png",
+      "name": "wave02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6506589747685178357,
+      "source": "CAB-e7c2b4c99da2285d255325494d6092cc"
+    }
+  ],
+  "particle_systems": 126,
+  "animations": [],
+  "bullet_ids": [
+    161158
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__leiniya_dazhao_pikan/new04_104961424219230018.png"
+}

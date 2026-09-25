@@ -1,0 +1,55 @@
+
+jiaotang_white_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 561, 889
+  size: 77, 114
+  orig: 77, 114
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 602
+  size: 557, 401
+  orig: 557, 401
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: false
+  xy: 329, 541
+  size: 57, 59
+  orig: 57, 59
+  offset: 0, 0
+  index: -1
+body_t2
+  rotate: false
+  xy: 2, 2
+  size: 53, 35
+  orig: 53, 35
+  offset: 0, 0
+  index: -1
+zx01
+  rotate: true
+  xy: 2, 39
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1
+zx02
+  rotate: true
+  xy: 111, 39
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1
+zx03
+  rotate: true
+  xy: 220, 39
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1

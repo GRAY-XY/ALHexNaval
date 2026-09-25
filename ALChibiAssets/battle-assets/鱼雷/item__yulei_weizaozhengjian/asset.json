@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_weizaozhengjian",
+  "model": "yulei_weizaozhengjian",
+  "name": "万能身份证鱼雷",
+  "names": [
+    "万能身份证鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_weizaozhengjian",
+  "path": "battle-assets/鱼雷/item__yulei_weizaozhengjian",
+  "images": [
+    {
+      "file": "yulei_weizaozhengjian_-4049709582022670667.png",
+      "name": "yulei_weizaozhengjian",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4049709582022670667,
+      "source": "CAB-55e50599cf85f842a1458655c795873d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_weizaozhengjian/yulei_weizaozhengjian_-4049709582022670667.png",
+  "spine": {
+    "skel": "yulei_weizaozhengjian.skel",
+    "atlas": "yulei_weizaozhengjian.atlas",
+    "pages": [
+      "yulei_weizaozhengjian.png"
+    ]
+  }
+}

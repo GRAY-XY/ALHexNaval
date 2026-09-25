@@ -1,0 +1,28 @@
+{
+  "id": "item__bullet_shanluan_2",
+  "model": "bullet_shanluan_2",
+  "name": "bullet_shanluan_2",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_shanluan_2",
+  "path": "battle-assets/炮弹/item__bullet_shanluan_2",
+  "images": [
+    {
+      "file": "bullet_shanluan_2_-5782969082516993743.png",
+      "name": "bullet_shanluan_2",
+      "width": 346,
+      "height": 111,
+      "role": "战斗贴图",
+      "path_id": -5782969082516993743,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19732
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_shanluan_2/bullet_shanluan_2_-5782969082516993743.png"
+}

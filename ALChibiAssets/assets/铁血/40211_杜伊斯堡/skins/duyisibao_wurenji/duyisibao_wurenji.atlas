@@ -1,0 +1,55 @@
+
+duyisibao_wurenji.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chibang_l2
+  rotate: false
+  xy: 94, 45
+  size: 107, 29
+  orig: 107, 29
+  offset: 0, 0
+  index: -1
+chibang_r2
+  rotate: false
+  xy: 94, 76
+  size: 107, 29
+  orig: 107, 29
+  offset: 0, 0
+  index: -1
+chibanggen_L
+  rotate: false
+  xy: 136, 10
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+xl
+  rotate: true
+  xy: 2, 5
+  size: 43, 64
+  orig: 43, 64
+  offset: 0, 0
+  index: -1
+xlL
+  rotate: true
+  xy: 2, 50
+  size: 55, 90
+  orig: 55, 90
+  offset: 0, 0
+  index: -1
+xlR
+  rotate: false
+  xy: 203, 2
+  size: 49, 103
+  orig: 49, 103
+  offset: 0, 0
+  index: -1
+xlb
+  rotate: false
+  xy: 68, 9
+  size: 66, 34
+  orig: 66, 34
+  offset: 0, 0
+  index: -1

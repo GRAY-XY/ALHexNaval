@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__juzi__juzi_material",
+  "model": "juzi_material",
+  "name": "juzi_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/juzi/juzi_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__juzi__juzi_material",
+  "images": [
+    {
+      "file": "juzi_-7884972786734417920.png",
+      "name": "juzi",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7884972786734417920,
+      "source": "CAB-daa5244afc423a3e96a0ac2688c1a5e9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

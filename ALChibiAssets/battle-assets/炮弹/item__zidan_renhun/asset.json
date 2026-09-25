@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_renhun",
+  "model": "zidan_renhun",
+  "name": "忍魂子弹",
+  "names": [
+    "忍魂子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_renhun",
+  "path": "battle-assets/炮弹/item__zidan_renhun",
+  "images": [
+    {
+      "file": "zidan_renhun_-4715684599490386005.png",
+      "name": "zidan_renhun",
+      "width": 206,
+      "height": 144,
+      "role": "战斗贴图",
+      "path_id": -4715684599490386005,
+      "source": "CAB-f83785cd9bd240d215842d380c766f2a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_renhun/zidan_renhun_-4715684599490386005.png"
+}

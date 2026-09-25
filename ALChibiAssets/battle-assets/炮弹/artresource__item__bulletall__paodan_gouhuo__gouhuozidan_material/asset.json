@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paodan_gouhuo__gouhuozidan_material",
+  "model": "gouhuozidan_material",
+  "name": "gouhuozidan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_gouhuo/gouhuozidan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_gouhuo__gouhuozidan_material",
+  "images": [
+    {
+      "file": "gouhuozidan_5928237726828905130.png",
+      "name": "gouhuozidan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 5928237726828905130,
+      "source": "CAB-bee9b489fb7ceaa704377ac9efe6f045"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,125 @@
+
+zidan_fenhudie.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gd_1
+  rotate: false
+  xy: 864, 15
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+gd_10
+  rotate: false
+  xy: 813, 30
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 785, 7
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: false
+  xy: 761, 4
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: false
+  xy: 808, 7
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: false
+  xy: 831, 8
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+gd_6
+  rotate: false
+  xy: 733, 2
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+gd_7
+  rotate: false
+  xy: 887, 16
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+gd_8
+  rotate: false
+  xy: 733, 30
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+gd_9
+  rotate: false
+  xy: 785, 30
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+hudie_1
+  rotate: true
+  xy: 733, 58
+  size: 129, 148
+  orig: 129, 148
+  offset: 0, 0
+  index: -1
+hudie_2
+  rotate: false
+  xy: 883, 38
+  size: 92, 149
+  orig: 92, 149
+  offset: 0, 0
+  index: -1
+piaog_1
+  rotate: false
+  xy: 2, 18
+  size: 323, 169
+  orig: 323, 169
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 327, 27
+  size: 404, 160
+  orig: 404, 160
+  offset: 0, 0
+  index: -1
+xhd_1
+  rotate: false
+  xy: 864, 41
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+xhd_2
+  rotate: false
+  xy: 841, 31
+  size: 21, 25
+  orig: 21, 25
+  offset: 0, 0
+  index: -1
+xhd_3
+  rotate: true
+  xy: 762, 27
+  size: 29, 21
+  orig: 29, 21
+  offset: 0, 0
+  index: -1

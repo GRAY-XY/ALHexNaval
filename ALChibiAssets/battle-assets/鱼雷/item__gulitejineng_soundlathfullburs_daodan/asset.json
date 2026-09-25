@@ -1,0 +1,34 @@
+{
+  "id": "item__gulitejineng_soundlathfullburs_daodan",
+  "model": "gulitejineng_soundlathfullburs_daodan",
+  "name": "gulitejineng_soundlathfullburs_daodan",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/gulitejineng_soundlathfullburs_daodan",
+  "path": "battle-assets/鱼雷/item__gulitejineng_soundlathfullburs_daodan",
+  "images": [
+    {
+      "file": "daodan01_-39202179385843883.png",
+      "name": "daodan01",
+      "width": 234,
+      "height": 99,
+      "role": "战斗贴图",
+      "path_id": -39202179385843883,
+      "source": "CAB-66ec39525be73f19c897d6c15c0e707d"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19754,
+    19757,
+    19758,
+    19759,
+    19760,
+    855735,
+    855745
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__gulitejineng_soundlathfullburs_daodan/daodan01_-39202179385843883.png"
+}

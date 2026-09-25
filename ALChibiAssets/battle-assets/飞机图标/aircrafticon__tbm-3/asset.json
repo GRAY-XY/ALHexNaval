@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__tbm-3",
+  "model": "tbm-3",
+  "name": "TBM-3复仇者",
+  "names": [
+    "TBM-3复仇者"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tbm-3",
+  "path": "battle-assets/飞机图标/aircrafticon__tbm-3",
+  "images": [
+    {
+      "file": "tbm-3_5594442143987821117.png",
+      "name": "tbm-3",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 5594442143987821117,
+      "source": "CAB-7f7f987e41569efd7d0f447ce2b81fd9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

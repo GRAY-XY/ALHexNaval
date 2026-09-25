@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_chongqidaodan",
+  "model": "paodan_chongqidaodan",
+  "name": "充气导弹（炮弹）",
+  "names": [
+    "充气导弹（炮弹）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chongqidaodan",
+  "path": "battle-assets/炮弹/item__paodan_chongqidaodan",
+  "images": [
+    {
+      "file": "paodan_chongqidaodan_7439338932347190580.png",
+      "name": "paodan_chongqidaodan",
+      "width": 128,
+      "height": 118,
+      "role": "战斗贴图",
+      "path_id": 7439338932347190580,
+      "source": "CAB-1bab6307a516fcaf892a067e2401e792"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_chongqidaodan/paodan_chongqidaodan_7439338932347190580.png"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__huoqiupaodan_black__huoqiupaodan_black_material",
+  "model": "huoqiupaodan_black_material",
+  "name": "huoqiupaodan_black_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/huoqiupaodan_black/huoqiupaodan_black_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__huoqiupaodan_black__huoqiupaodan_black_material",
+  "images": [
+    {
+      "file": "huoqiupaodan_black_6362278200503375101.png",
+      "name": "huoqiupaodan_black",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6362278200503375101,
+      "source": "CAB-59a201138d7036907b0b591005808e37"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

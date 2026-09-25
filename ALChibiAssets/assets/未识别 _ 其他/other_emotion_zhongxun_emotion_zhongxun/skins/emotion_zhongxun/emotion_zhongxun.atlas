@@ -1,0 +1,118 @@
+
+emotion_zhongxun.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bq1
+  rotate: true
+  xy: 886, 777
+  size: 63, 42
+  orig: 63, 42
+  offset: 0, 0
+  index: -1
+bq2
+  rotate: false
+  xy: 994, 490
+  size: 208, 58
+  orig: 208, 58
+  offset: 0, 0
+  index: -1
+bq3
+  rotate: true
+  xy: 886, 719
+  size: 56, 32
+  orig: 56, 32
+  offset: 0, 0
+  index: -1
+bq4
+  rotate: true
+  xy: 886, 471
+  size: 225, 106
+  orig: 225, 106
+  offset: 0, 0
+  index: -1
+huo_b1
+  rotate: true
+  xy: 2, 2
+  size: 838, 709
+  orig: 838, 709
+  offset: 0, 0
+  index: -1
+huo_b2
+  rotate: true
+  xy: 936, 698
+  size: 872, 743
+  orig: 872, 743
+  offset: 0, 0
+  index: -1
+huo_b3
+  rotate: false
+  xy: 2, 842
+  size: 932, 728
+  orig: 932, 728
+  offset: 0, 0
+  index: -1
+hx_1_1
+  rotate: true
+  xy: 713, 489
+  size: 174, 171
+  orig: 174, 171
+  offset: 0, 0
+  index: -1
+hx_1_2
+  rotate: true
+  xy: 1069, 342
+  size: 146, 150
+  orig: 146, 150
+  offset: 0, 0
+  index: -1
+hx_1_3
+  rotate: true
+  xy: 885, 323
+  size: 146, 182
+  orig: 146, 182
+  offset: 0, 0
+  index: -1
+hx_2_1
+  rotate: false
+  xy: 713, 161
+  size: 146, 149
+  orig: 146, 149
+  offset: 0, 0
+  index: -1
+hx_2_2
+  rotate: true
+  xy: 1178, 550
+  size: 146, 181
+  orig: 146, 181
+  offset: 0, 0
+  index: -1
+hx_2_3
+  rotate: true
+  xy: 713, 312
+  size: 175, 170
+  orig: 175, 170
+  offset: 0, 0
+  index: -1
+hx_3_1
+  rotate: true
+  xy: 713, 665
+  size: 175, 171
+  orig: 175, 171
+  offset: 0, 0
+  index: -1
+hx_3_2
+  rotate: true
+  xy: 1069, 194
+  size: 146, 150
+  orig: 146, 150
+  offset: 0, 0
+  index: -1
+hx_3_3
+  rotate: true
+  xy: 994, 550
+  size: 146, 182
+  orig: 146, 182
+  offset: 0, 0
+  index: -1

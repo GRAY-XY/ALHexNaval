@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_tideng",
+  "model": "paodan_tideng",
+  "name": "夜行提灯炮弹",
+  "names": [
+    "夜行提灯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tideng",
+  "path": "battle-assets/炮弹/item__paodan_tideng",
+  "images": [
+    {
+      "file": "paodan_tideng_2076685975611962863.png",
+      "name": "paodan_tideng",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2076685975611962863,
+      "source": "CAB-07967fe5f625c75f375d5f058c4c4c85"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tideng/paodan_tideng_2076685975611962863.png",
+  "spine": {
+    "skel": "paodan_tideng.skel",
+    "atlas": "paodan_tideng.atlas",
+    "pages": [
+      "paodan_tideng.png"
+    ]
+  }
+}

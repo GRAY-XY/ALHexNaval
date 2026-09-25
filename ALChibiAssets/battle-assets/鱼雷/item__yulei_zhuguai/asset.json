@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhuguai",
+  "model": "yulei_zhuguai",
+  "name": "拐杖鱼雷",
+  "names": [
+    "拐杖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhuguai",
+  "path": "battle-assets/鱼雷/item__yulei_zhuguai",
+  "images": [
+    {
+      "file": "yulei_zhuguai_1281782720931974989.png",
+      "name": "yulei_zhuguai",
+      "width": 127,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": 1281782720931974989,
+      "source": "CAB-ad043ef050f34ea384d127d63d56aea0"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhuguai/yulei_zhuguai_1281782720931974989.png"
+}

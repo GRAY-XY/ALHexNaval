@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_huowen",
+  "model": "paodan_huowen",
+  "name": "火纹金扣炮弹",
+  "names": [
+    "火纹金扣炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_huowen",
+  "path": "battle-assets/炮弹/item__paodan_huowen",
+  "images": [
+    {
+      "file": "paodan_huowen_8213278894006647581.png",
+      "name": "paodan_huowen",
+      "width": 128,
+      "height": 74,
+      "role": "战斗贴图",
+      "path_id": 8213278894006647581,
+      "source": "CAB-4d7f67d0e400471ba869c5e353bc9968"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huowen/paodan_huowen_8213278894006647581.png"
+}

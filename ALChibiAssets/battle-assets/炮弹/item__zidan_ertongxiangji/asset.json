@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_ertongxiangji",
+  "model": "zidan_ertongxiangji",
+  "name": "童心相机子弹",
+  "names": [
+    "童心相机子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_ertongxiangji",
+  "path": "battle-assets/炮弹/item__zidan_ertongxiangji",
+  "images": [
+    {
+      "file": "zidan_ertongxiangji_-7961606199893985009.png",
+      "name": "zidan_ertongxiangji",
+      "width": 100,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -7961606199893985009,
+      "source": "CAB-534e8e40f605cb35b8c8586045c53475"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_ertongxiangji/zidan_ertongxiangji_-7961606199893985009.png"
+}

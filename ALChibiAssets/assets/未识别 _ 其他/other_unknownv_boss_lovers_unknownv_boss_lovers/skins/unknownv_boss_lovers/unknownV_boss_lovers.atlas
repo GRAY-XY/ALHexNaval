@@ -1,0 +1,181 @@
+
+unknownV_boss_lovers.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 1396, 911
+  size: 351, 480
+  orig: 351, 480
+  offset: 0, 0
+  index: -1
+chu_1
+  rotate: false
+  xy: 1276, 307
+  size: 334, 152
+  orig: 334, 152
+  offset: 0, 0
+  index: -1
+chu_2
+  rotate: true
+  xy: 1612, 319
+  size: 140, 164
+  orig: 140, 164
+  offset: 0, 0
+  index: -1
+chu_3
+  rotate: true
+  xy: 1749, 1085
+  size: 306, 220
+  orig: 306, 220
+  offset: 0, 0
+  index: -1
+chu_4
+  rotate: false
+  xy: 1396, 762
+  size: 375, 147
+  orig: 375, 147
+  offset: 0, 0
+  index: -1
+chu_5
+  rotate: false
+  xy: 283, 44
+  size: 260, 104
+  orig: 260, 104
+  offset: 0, 0
+  index: -1
+chu_6
+  rotate: true
+  xy: 1773, 685
+  size: 224, 125
+  orig: 224, 125
+  offset: 0, 0
+  index: -1
+chu_7
+  rotate: false
+  xy: 2, 42
+  size: 279, 106
+  orig: 279, 106
+  offset: 0, 0
+  index: -1
+chu_8
+  rotate: false
+  xy: 1228, 2
+  size: 276, 150
+  orig: 276, 150
+  offset: 0, 0
+  index: -1
+dachu_L
+  rotate: false
+  xy: 1228, 154
+  size: 287, 151
+  orig: 287, 151
+  offset: 0, 0
+  index: -1
+diaoxian_1
+  rotate: true
+  xy: 703, 49
+  size: 263, 523
+  orig: 263, 523
+  offset: 0, 0
+  index: -1
+diaoxian_2
+  rotate: true
+  xy: 2, 150
+  size: 162, 699
+  orig: 162, 699
+  offset: 0, 0
+  index: -1
+diaoxian_3
+  rotate: false
+  xy: 1246, 766
+  size: 148, 506
+  orig: 148, 506
+  offset: 0, 0
+  index: -1
+diaoxian_4
+  rotate: true
+  xy: 1438, 1717
+  size: 329, 561
+  orig: 329, 561
+  offset: 0, 0
+  index: -1
+halo
+  rotate: false
+  xy: 1276, 461
+  size: 491, 299
+  orig: 491, 299
+  offset: 0, 0
+  index: -1
+pao_L
+  rotate: false
+  xy: 2, 314
+  size: 635, 370
+  orig: 635, 370
+  offset: 0, 0
+  index: -1
+pao_r
+  rotate: false
+  xy: 639, 314
+  size: 635, 370
+  orig: 635, 370
+  offset: 0, 0
+  index: -1
+pao_t1
+  rotate: false
+  xy: 1438, 1393
+  size: 547, 322
+  orig: 547, 322
+  offset: 0, 0
+  index: -1
+pao_t2
+  rotate: true
+  xy: 1749, 911
+  size: 172, 153
+  orig: 172, 153
+  offset: 0, 0
+  index: -1
+shibo_2
+  rotate: false
+  xy: 2, 1786
+  size: 1434, 260
+  orig: 1434, 260
+  offset: 0, 0
+  index: -1
+shibo_3
+  rotate: false
+  xy: 2, 1524
+  size: 1434, 260
+  orig: 1434, 260
+  offset: 0, 0
+  index: -1
+shuibo_1
+  rotate: false
+  xy: 2, 1274
+  size: 1361, 248
+  orig: 1361, 248
+  offset: 0, 0
+  index: -1
+shuibo_2
+  rotate: false
+  xy: 2, 1078
+  size: 1242, 194
+  orig: 1242, 194
+  offset: 0, 0
+  index: -1
+shuibo_2_2
+  rotate: false
+  xy: 2, 882
+  size: 1242, 194
+  orig: 1242, 194
+  offset: 0, 0
+  index: -1
+shuibo_2_3
+  rotate: false
+  xy: 2, 686
+  size: 1242, 194
+  orig: 1242, 194
+  offset: 0, 0
+  index: -1

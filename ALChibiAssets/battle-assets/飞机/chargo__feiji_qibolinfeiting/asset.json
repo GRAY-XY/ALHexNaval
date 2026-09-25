@@ -1,0 +1,37 @@
+{
+  "id": "chargo__feiji_qibolinfeiting",
+  "model": "feiji_qibolinfeiting",
+  "name": "齐柏林空艇Lv1",
+  "names": [
+    "齐柏林空艇Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_qibolinfeiting",
+  "path": "battle-assets/飞机/chargo__feiji_qibolinfeiting",
+  "images": [
+    {
+      "file": "aircraft_shadow_scale_-8898844837199592969.png",
+      "name": "aircraft_shadow_scale",
+      "width": 240,
+      "height": 120,
+      "role": "战斗贴图",
+      "path_id": -8898844837199592969,
+      "source": "CAB-8b67919e8fd48a7f47a157d845be9b7c"
+    },
+    {
+      "file": "qibolinfeiting_5027963619279105915.png",
+      "name": "qibolinfeiting",
+      "width": 208,
+      "height": 462,
+      "role": "战斗贴图",
+      "path_id": 5027963619279105915,
+      "source": "CAB-8b67919e8fd48a7f47a157d845be9b7c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_qibolinfeiting/aircraft_shadow_scale_-8898844837199592969.png"
+}

@@ -1,0 +1,48 @@
+
+zidan_feicuiyuhuan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gd_1
+  rotate: false
+  xy: 223, 7
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+gd_1_2
+  rotate: false
+  xy: 261, 7
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+gd_1_3
+  rotate: false
+  xy: 299, 7
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+guangyun
+  rotate: true
+  xy: 2, 2
+  size: 231, 219
+  orig: 231, 219
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 402, 112
+  size: 361, 121
+  orig: 361, 121
+  offset: 0, 0
+  index: -1
+zidan
+  rotate: false
+  xy: 223, 46
+  size: 177, 187
+  orig: 177, 187
+  offset: 0, 0
+  index: -1

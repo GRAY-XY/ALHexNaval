@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_zhongshiqianbi",
+  "model": "zidan_zhongshiqianbi",
+  "name": "方孔金币子弹",
+  "names": [
+    "方孔金币子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhongshiqianbi",
+  "path": "battle-assets/炮弹/item__zidan_zhongshiqianbi",
+  "images": [
+    {
+      "file": "zidan_zhongshiqianbi_-959122851138592389.png",
+      "name": "zidan_zhongshiqianbi",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -959122851138592389,
+      "source": "CAB-a8bfbe7204a9d4affab273e45064c75f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zhongshiqianbi/zidan_zhongshiqianbi_-959122851138592389.png",
+  "spine": {
+    "skel": "zidan_zhongshiqianbi.skel",
+    "atlas": "zidan_zhongshiqianbi.atlas",
+    "pages": [
+      "zidan_zhongshiqianbi.png"
+    ]
+  }
+}

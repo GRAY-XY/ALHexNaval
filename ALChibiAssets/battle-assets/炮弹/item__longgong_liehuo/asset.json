@@ -1,0 +1,32 @@
+{
+  "id": "item__longgong_liehuo",
+  "model": "longgong_liehuo",
+  "name": "longgong_liehuo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/longgong_liehuo",
+  "path": "battle-assets/炮弹/item__longgong_liehuo",
+  "images": [
+    {
+      "file": "huoxi01_-2380079700580398730.png",
+      "name": "huoxi01",
+      "width": 256,
+      "height": 113,
+      "role": "战斗贴图",
+      "path_id": -2380079700580398730,
+      "source": "CAB-56947a8ac2656f015690305e092bd3f5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    853011,
+    853314,
+    853315,
+    853316,
+    853353
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__longgong_liehuo/huoxi01_-2380079700580398730.png"
+}

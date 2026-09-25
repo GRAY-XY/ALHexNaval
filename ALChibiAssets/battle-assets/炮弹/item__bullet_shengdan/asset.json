@@ -1,0 +1,28 @@
+{
+  "id": "item__bullet_shengdan",
+  "model": "bullet_shengdan",
+  "name": "圣诞袜炮弹",
+  "names": [
+    "圣诞袜炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/bullet_shengdan",
+  "path": "battle-assets/炮弹/item__bullet_shengdan",
+  "images": [
+    {
+      "file": "90510_-3496884275028272078.png",
+      "name": "90510",
+      "width": 199,
+      "height": 157,
+      "role": "战斗贴图",
+      "path_id": -3496884275028272078,
+      "source": "CAB-078b5904a9d2be72d5ab95a8731e9e81"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_shengdan/90510_-3496884275028272078.png"
+}

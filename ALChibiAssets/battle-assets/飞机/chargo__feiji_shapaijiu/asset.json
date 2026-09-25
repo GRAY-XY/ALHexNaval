@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_shapaijiu",
+  "model": "feiji_shapaijiu",
+  "name": "沙排啾(鱼雷)",
+  "names": [
+    "沙排啾(鱼雷)",
+    "沙排啾(战斗)",
+    "沙排啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_shapaijiu",
+  "path": "battle-assets/飞机/chargo__feiji_shapaijiu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_shapaijiu_-172530980689534815.png",
+      "name": "feiji_shapaijiu",
+      "width": 256,
+      "height": 278,
+      "role": "战斗贴图",
+      "path_id": -172530980689534815,
+      "source": "CAB-730684574329759e5bba6f83d48934fc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_shapaijiu/aircraft_shadow_2192772484218123160.png"
+}

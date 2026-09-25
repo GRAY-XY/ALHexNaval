@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_huahuanjiu_doa",
+  "model": "feiji_huahuanjiu_doa",
+  "name": "沙滩花环啾（鱼雷）",
+  "names": [
+    "沙滩花环啾（鱼雷）",
+    "沙滩花环啾（战斗）",
+    "沙滩花环啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_huahuanjiu_doa",
+  "path": "battle-assets/飞机/chargo__feiji_huahuanjiu_doa",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_huahuanjiu_doa_934058203639968744.png",
+      "name": "feiji_huahuanjiu_doa",
+      "width": 256,
+      "height": 221,
+      "role": "战斗贴图",
+      "path_id": 934058203639968744,
+      "source": "CAB-8edec753db6f39c764a351c314ad29b5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_huahuanjiu_doa/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item__a2_daoguang_hit",
+  "model": "a2_daoguang_hit",
+  "name": "a2_daoguang_hit",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/a2_daoguang_hit",
+  "path": "battle-assets/其他战斗特效/item__a2_daoguang_hit",
+  "images": [
+    {
+      "file": "line01_6520943215189339187.png",
+      "name": "line01",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 6520943215189339187,
+      "source": "CAB-486b715de88990cf2172213275b56e07"
+    }
+  ],
+  "particle_systems": 11,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__a2_daoguang_hit/line01_6520943215189339187.png"
+}

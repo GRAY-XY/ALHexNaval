@@ -1,0 +1,28 @@
+{
+  "id": "item__xiangdi_zidan",
+  "model": "xiangdi_zidan",
+  "name": "xiangdi_zidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xiangdi_zidan",
+  "path": "battle-assets/炮弹/item__xiangdi_zidan",
+  "images": [
+    {
+      "file": "xiangdi_zidan01_7785608924069776079.png",
+      "name": "xiangdi_zidan01",
+      "width": 128,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": 7785608924069776079,
+      "source": "CAB-572a4ca36f254ca19512c6d6cd09399c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170996
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xiangdi_zidan/xiangdi_zidan01_7785608924069776079.png"
+}

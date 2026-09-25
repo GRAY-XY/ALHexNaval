@@ -1,0 +1,31 @@
+{
+  "id": "item__heihailunna_jiandan05",
+  "model": "heihailunna_jiandan05",
+  "name": "heihailunna_jiandan05",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heihailunna_jiandan05",
+  "path": "battle-assets/炮弹/item__heihailunna_jiandan05",
+  "images": [
+    {
+      "file": "jiandan05_-1446568485207145889.png",
+      "name": "jiandan05",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1446568485207145889,
+      "source": "CAB-c01c512cd0b4ea32a8c2b2157fbdc975"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3325003,
+    3325042,
+    3325103,
+    3325142
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heihailunna_jiandan05/jiandan05_-1446568485207145889.png"
+}

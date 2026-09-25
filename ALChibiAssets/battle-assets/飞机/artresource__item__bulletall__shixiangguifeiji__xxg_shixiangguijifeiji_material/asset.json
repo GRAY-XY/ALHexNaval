@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shixiangguifeiji__xxg_shixiangguijifeiji_material",
+  "model": "xxg_shixiangguijifeiji_material",
+  "name": "xxg_shixiangguijifeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/shixiangguifeiji/xxg_shixiangguijifeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__shixiangguifeiji__xxg_shixiangguijifeiji_material",
+  "images": [
+    {
+      "file": "xxg_shixiangguijifeiji_-1885845459994314000.png",
+      "name": "xxg_shixiangguijifeiji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1885845459994314000,
+      "source": "CAB-7ee0da984049535b2632274036232f04"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

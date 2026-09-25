@@ -1,0 +1,41 @@
+
+feiji_zhuqingting.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ganzi
+  rotate: true
+  xy: 226, 2
+  size: 34, 186
+  orig: 34, 186
+  offset: 0, 0
+  index: -1
+shanye_11
+  rotate: true
+  xy: 2, 10
+  size: 115, 110
+  orig: 115, 110
+  offset: 0, 0
+  index: -1
+shanye_12
+  rotate: true
+  xy: 114, 12
+  size: 113, 110
+  orig: 113, 110
+  offset: 0, 0
+  index: -1
+shanye_21
+  rotate: false
+  xy: 226, 38
+  size: 85, 87
+  orig: 85, 87
+  offset: 0, 0
+  index: -1
+shanye_22
+  rotate: true
+  xy: 313, 41
+  size: 84, 65
+  orig: 84, 65
+  offset: 0, 0
+  index: -1

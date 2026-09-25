@@ -1,0 +1,34 @@
+
+ghostCL2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5
+  rotate: true
+  xy: 523, 334
+  size: 55, 48
+  orig: 55, 48
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 523, 284
+  size: 54, 48
+  orig: 54, 48
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 573, 341
+  size: 54, 48
+  orig: 54, 48
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 2
+  size: 519, 387
+  orig: 519, 387
+  offset: 0, 0
+  index: -1

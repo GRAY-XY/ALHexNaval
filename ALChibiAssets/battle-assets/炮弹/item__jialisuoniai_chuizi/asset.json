@@ -1,0 +1,28 @@
+{
+  "id": "item__jialisuoniai_chuizi",
+  "model": "jialisuoniai_chuizi",
+  "name": "jialisuoniai_chuizi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jialisuoniai_chuizi",
+  "path": "battle-assets/炮弹/item__jialisuoniai_chuizi",
+  "images": [
+    {
+      "file": "chuizi01_4380022214852232357.png",
+      "name": "chuizi01",
+      "width": 234,
+      "height": 116,
+      "role": "战斗贴图",
+      "path_id": 4380022214852232357,
+      "source": "CAB-8e76f9ee93cf788470a176e905c66790"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19697
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__jialisuoniai_chuizi/chuizi01_4380022214852232357.png"
+}

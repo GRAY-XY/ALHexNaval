@@ -1,0 +1,41 @@
+
+paodan_tierruite.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+paodan
+  rotate: false
+  xy: 190, 20
+  size: 143, 87
+  orig: 143, 87
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 18
+  size: 186, 89
+  orig: 186, 89
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 335, 29
+  size: 133, 78
+  orig: 133, 78
+  offset: 0, 0
+  index: -1
+yan_tuowei
+  rotate: true
+  xy: 470, 24
+  size: 83, 39
+  orig: 83, 39
+  offset: 0, 0
+  index: -1
+yanguang
+  rotate: false
+  xy: 335, 2
+  size: 39, 25
+  orig: 39, 25
+  offset: 0, 0
+  index: -1

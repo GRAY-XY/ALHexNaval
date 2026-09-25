@@ -1,0 +1,181 @@
+
+paodan_mofamao.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bianfu_1
+  rotate: false
+  xy: 206, 8
+  size: 70, 48
+  orig: 70, 48
+  offset: 0, 0
+  index: -1
+bianfu_11
+  rotate: false
+  xy: 270, 64
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+bianfu_12
+  rotate: false
+  xy: 297, 64
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+bianfu_13
+  rotate: false
+  xy: 303, 101
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+bianfu_1_2
+  rotate: true
+  xy: 292, 184
+  size: 70, 48
+  orig: 70, 48
+  offset: 0, 0
+  index: -1
+bianfu_1_3
+  rotate: false
+  xy: 278, 14
+  size: 70, 48
+  orig: 70, 48
+  offset: 0, 0
+  index: -1
+bianfu_2
+  rotate: true
+  xy: 174, 147
+  size: 107, 33
+  orig: 107, 33
+  offset: 0, 0
+  index: -1
+bianfu_22
+  rotate: false
+  xy: 303, 137
+  size: 30, 45
+  orig: 30, 45
+  offset: 0, 0
+  index: -1
+bianfu_23
+  rotate: false
+  xy: 335, 137
+  size: 30, 45
+  orig: 30, 45
+  offset: 0, 0
+  index: -1
+bianfu_24
+  rotate: false
+  xy: 350, 19
+  size: 30, 45
+  orig: 30, 45
+  offset: 0, 0
+  index: -1
+bianfu_2_2
+  rotate: false
+  xy: 95, 10
+  size: 109, 35
+  orig: 109, 35
+  offset: 0, 0
+  index: -1
+bianfu_2_3
+  rotate: true
+  xy: 137, 145
+  size: 109, 35
+  orig: 109, 35
+  offset: 0, 0
+  index: -1
+bianfu_3
+  rotate: true
+  xy: 235, 89
+  size: 76, 32
+  orig: 76, 32
+  offset: 0, 0
+  index: -1
+bianfu_33
+  rotate: false
+  xy: 2, 2
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+bianfu_34
+  rotate: false
+  xy: 33, 2
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+bianfu_35
+  rotate: false
+  xy: 64, 2
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+bianfu_3_2
+  rotate: true
+  xy: 258, 178
+  size: 76, 32
+  orig: 76, 32
+  offset: 0, 0
+  index: -1
+bianfu_3_3
+  rotate: true
+  xy: 269, 100
+  size: 76, 32
+  orig: 76, 32
+  offset: 0, 0
+  index: -1
+bianfu_4
+  rotate: true
+  xy: 137, 56
+  size: 87, 47
+  orig: 87, 47
+  offset: 0, 0
+  index: -1
+bianfu_44
+  rotate: true
+  xy: 235, 60
+  size: 27, 33
+  orig: 27, 33
+  offset: 0, 0
+  index: -1
+bianfu_45
+  rotate: false
+  xy: 324, 66
+  size: 27, 33
+  orig: 27, 33
+  offset: 0, 0
+  index: -1
+bianfu_46
+  rotate: false
+  xy: 330, 102
+  size: 27, 33
+  orig: 27, 33
+  offset: 0, 0
+  index: -1
+bianfu_4_2
+  rotate: true
+  xy: 186, 58
+  size: 87, 47
+  orig: 87, 47
+  offset: 0, 0
+  index: -1
+bianfu_4_3
+  rotate: true
+  xy: 209, 167
+  size: 87, 47
+  orig: 87, 47
+  offset: 0, 0
+  index: -1
+mofamao
+  rotate: true
+  xy: 2, 47
+  size: 207, 133
+  orig: 207, 133
+  offset: 0, 0
+  index: -1

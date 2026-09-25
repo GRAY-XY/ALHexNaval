@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paodan_bodongquan__paodan_bodongquan_material",
+  "model": "paodan_bodongquan_material",
+  "name": "paodan_bodongquan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_bodongquan/paodan_bodongquan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_bodongquan__paodan_bodongquan_material",
+  "images": [
+    {
+      "file": "paodan_bodongquan_3063502867492792333.png",
+      "name": "paodan_bodongquan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3063502867492792333,
+      "source": "CAB-d97efc3f6203b9b08694b086685086a0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

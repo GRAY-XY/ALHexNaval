@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_puke_big",
+  "model": "zidan_puke_big",
+  "name": "zidan_puke_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_puke_big",
+  "path": "battle-assets/炮弹/item__zidan_puke_big",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19232,
+    19239,
+    800070,
+    800071,
+    3146201,
+    3146202,
+    3146203,
+    3146204,
+    3146205,
+    3146206,
+    3146207,
+    3384006,
+    3384007
+  ],
+  "has_preview": false,
+  "prefab": true
+}

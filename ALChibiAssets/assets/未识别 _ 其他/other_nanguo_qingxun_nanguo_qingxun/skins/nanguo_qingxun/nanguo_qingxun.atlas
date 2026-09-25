@@ -1,0 +1,34 @@
+
+nanguo_qingxun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 584, 440
+  orig: 584, 440
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: false
+  xy: 588, 274
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: false
+  xy: 588, 189
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: false
+  xy: 588, 359
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1

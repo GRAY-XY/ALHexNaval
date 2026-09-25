@@ -1,0 +1,46 @@
+{
+  "id": "chargo__ofs_penqishifeiji",
+  "model": "ofs_penqishifeiji",
+  "name": "【量产型】大洋联邦-喷气式舰载机 I",
+  "names": [
+    "【量产型】大洋联邦-喷气式舰载机 I",
+    "【量产型】大洋联邦-喷气式舰载机 II",
+    "【量产型】大洋联邦-喷气式舰载机 III",
+    "【量产型】大洋联邦-喷气式舰载机 IV",
+    "【量产型】大洋联邦-喷气式舰载机 V",
+    "【精英】大洋联邦-喷气式舰载机 I",
+    "【精英】大洋联邦-喷气式舰载机 II",
+    "【精英】大洋联邦-喷气式舰载机 III",
+    "【精英】大洋联邦-喷气式舰载机 IV",
+    "【精英】大洋联邦-喷气式舰载机 V"
+  ],
+  "category": "飞机",
+  "source": "chargo/ofs_penqishifeiji",
+  "path": "battle-assets/飞机/chargo__ofs_penqishifeiji",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "ofs_penqishifeiji_898668523607725171.png",
+      "name": "ofs_penqishifeiji",
+      "width": 254,
+      "height": 192,
+      "role": "战斗贴图",
+      "path_id": 898668523607725171,
+      "source": "CAB-541ae2a313a9a3a58275039f7d5b2ba6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ofs_penqishifeiji/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,69 @@
+
+yaoyufeiji.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yuchiC1
+  rotate: false
+  xy: 260, 76
+  size: 70, 33
+  orig: 70, 33
+  offset: 0, 0
+  index: -1
+yuchiD1
+  rotate: false
+  xy: 148, 78
+  size: 110, 31
+  orig: 110, 31
+  offset: 0, 0
+  index: -1
+yuchiD2
+  rotate: false
+  xy: 101, 22
+  size: 112, 54
+  orig: 112, 54
+  offset: 0, 0
+  index: -1
+yuchiD3
+  rotate: false
+  xy: 384, 2
+  size: 114, 69
+  orig: 114, 69
+  offset: 0, 0
+  index: -1
+yuchiU1
+  rotate: false
+  xy: 2, 32
+  size: 97, 46
+  orig: 97, 46
+  offset: 0, 0
+  index: -1
+yuchiU2
+  rotate: false
+  xy: 62, 80
+  size: 84, 29
+  orig: 84, 29
+  offset: 0, 0
+  index: -1
+yuchiU3
+  rotate: false
+  xy: 2, 88
+  size: 58, 21
+  orig: 58, 21
+  offset: 0, 0
+  index: -1
+yudu1
+  rotate: false
+  xy: 332, 73
+  size: 121, 36
+  orig: 121, 36
+  offset: 0, 0
+  index: -1
+yuwei1
+  rotate: false
+  xy: 215, 16
+  size: 167, 55
+  orig: 167, 55
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,37 @@
+{
+  "id": "item__laimuhao_jian02",
+  "model": "laimuhao_jian02",
+  "name": "laimuhao_jian02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laimuhao_jian02",
+  "path": "battle-assets/炮弹/item__laimuhao_jian02",
+  "images": [
+    {
+      "file": "jian02_-2771838256866485227.png",
+      "name": "jian02",
+      "width": 245,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": -2771838256866485227,
+      "source": "CAB-0f1f9373c34bf313c1f74681c9df6b03"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    170882,
+    170883,
+    170884,
+    170885,
+    170886,
+    170887,
+    170888,
+    170889,
+    170890,
+    170891
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laimuhao_jian02/jian02_-2771838256866485227.png"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item__gaoliang_hudiezidan",
+  "model": "gaoliang_hudiezidan",
+  "name": "gaoliang_hudiezidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gaoliang_hudiezidan",
+  "path": "battle-assets/炮弹/item__gaoliang_hudiezidan",
+  "images": [
+    {
+      "file": "hudie01_-679695897125346698.png",
+      "name": "hudie01",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -679695897125346698,
+      "source": "CAB-bbf8a74813af649e9bc8373258eafc03"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gaoliang_hudiezidan/hudie01_-679695897125346698.png"
+}

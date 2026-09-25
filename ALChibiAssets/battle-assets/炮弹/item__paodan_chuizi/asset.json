@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_chuizi",
+  "model": "paodan_chuizi",
+  "name": "锤子炮弹",
+  "names": [
+    "锤子炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chuizi",
+  "path": "battle-assets/炮弹/item__paodan_chuizi",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "chuizi.skel",
+    "atlas": "chuizi.atlas",
+    "pages": [
+      "chuizi.png"
+    ]
+  }
+}

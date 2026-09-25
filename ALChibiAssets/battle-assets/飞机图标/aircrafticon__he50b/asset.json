@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__he50b",
+  "model": "he50b",
+  "name": "He-50b舰载轰炸机",
+  "names": [
+    "He-50b舰载轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/he50b",
+  "path": "battle-assets/飞机图标/aircrafticon__he50b",
+  "images": [
+    {
+      "file": "He50b_-5212585938704380526.png",
+      "name": "He50b",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -5212585938704380526,
+      "source": "CAB-790e987061a893b6e43ab0a6e4b6b2c5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

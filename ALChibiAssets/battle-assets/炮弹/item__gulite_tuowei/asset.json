@@ -1,0 +1,50 @@
+{
+  "id": "item__gulite_tuowei",
+  "model": "gulite_tuowei",
+  "name": "gulite_tuowei",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulite_tuowei",
+  "path": "battle-assets/炮弹/item__gulite_tuowei",
+  "images": [
+    {
+      "file": "bullet02_1833603413251901000.png",
+      "name": "bullet02",
+      "width": 220,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": 1833603413251901000,
+      "source": "CAB-5924272135c2f3aa27cd9c1bcab38cf1"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    843,
+    844,
+    845,
+    855002,
+    855010,
+    855011,
+    855200,
+    855201,
+    855202,
+    855203,
+    855204,
+    855647,
+    855648,
+    855649,
+    855650,
+    855651,
+    3290007,
+    3290009,
+    3290010,
+    3293023,
+    3293025,
+    3299011,
+    3299031
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulite_tuowei/bullet02_1833603413251901000.png"
+}

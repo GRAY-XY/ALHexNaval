@@ -1,0 +1,572 @@
+{
+  "format": "al-hex-match",
+  "version": 10,
+  "mapVersion": 1,
+  "size": 128,
+  "mapHash": "2d35e9b4",
+  "round": 1,
+  "activeIndex": 0,
+  "teams": [
+    {
+      "id": 1,
+      "name": "湛蓝舰队",
+      "oil": 2,
+      "credits": 40,
+      "eliminated": false
+    },
+    {
+      "id": 2,
+      "name": "翠绿舰队",
+      "oil": 50,
+      "credits": 40,
+      "eliminated": false
+    }
+  ],
+  "units": [
+    {
+      "col": 10,
+      "row": 63,
+      "instanceId": "team-1-lafei",
+      "ownerId": 1,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 6,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "lafei",
+      "order": {
+        "col": 100,
+        "row": 100
+      },
+      "notice": "自动航线受阻"
+    },
+    {
+      "col": 82,
+      "row": 80,
+      "instanceId": "team-1-biaoqiang",
+      "ownerId": 1,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 6,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "biaoqiang"
+    },
+    {
+      "col": 84,
+      "row": 80,
+      "instanceId": "team-1-lingbo",
+      "ownerId": 1,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 6,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "lingbo"
+    },
+    {
+      "col": 86,
+      "row": 80,
+      "instanceId": "team-1-z23",
+      "ownerId": 1,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 6,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "z23"
+    },
+    {
+      "col": 88,
+      "row": 80,
+      "instanceId": "team-1-hailunna",
+      "ownerId": 1,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 8,
+      "maxHp": 8,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "hailunna"
+    },
+    {
+      "col": 90,
+      "row": 80,
+      "instanceId": "team-1-beierfasite",
+      "ownerId": 1,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 8,
+      "maxHp": 8,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "beierfasite"
+    },
+    {
+      "col": 80,
+      "row": 83,
+      "instanceId": "team-1-gaoxiong",
+      "ownerId": 1,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 11,
+      "maxHp": 11,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "gaoxiong"
+    },
+    {
+      "col": 82,
+      "row": 83,
+      "instanceId": "team-1-ougen",
+      "ownerId": 1,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 11,
+      "maxHp": 11,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "ougen"
+    },
+    {
+      "col": 84,
+      "row": 83,
+      "instanceId": "team-1-yanzhan",
+      "ownerId": 1,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 16,
+      "maxHp": 16,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "yanzhan"
+    },
+    {
+      "col": 10,
+      "row": 66,
+      "instanceId": "team-1-bisimai",
+      "ownerId": 1,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 16,
+      "maxHp": 16,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "bisimai"
+    },
+    {
+      "col": 10,
+      "row": 69,
+      "instanceId": "team-1-qiye",
+      "ownerId": 1,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 10,
+      "maxHp": 10,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "qiye"
+    },
+    {
+      "col": 13,
+      "row": 69,
+      "instanceId": "team-1-dujiaoshou",
+      "ownerId": 1,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 9,
+      "maxHp": 9,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "dujiaoshou"
+    },
+    {
+      "col": 13,
+      "row": 63,
+      "instanceId": "team-2-lafei",
+      "ownerId": 2,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 3,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "lafei"
+    },
+    {
+      "col": 82,
+      "row": 86,
+      "instanceId": "team-2-biaoqiang",
+      "ownerId": 2,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 6,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "biaoqiang"
+    },
+    {
+      "col": 84,
+      "row": 86,
+      "instanceId": "team-2-lingbo",
+      "ownerId": 2,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 6,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "lingbo"
+    },
+    {
+      "col": 86,
+      "row": 86,
+      "instanceId": "team-2-z23",
+      "ownerId": 2,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 6,
+      "maxHp": 6,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "z23"
+    },
+    {
+      "col": 88,
+      "row": 86,
+      "instanceId": "team-2-hailunna",
+      "ownerId": 2,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 8,
+      "maxHp": 8,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "hailunna"
+    },
+    {
+      "col": 90,
+      "row": 86,
+      "instanceId": "team-2-beierfasite",
+      "ownerId": 2,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 8,
+      "maxHp": 8,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "beierfasite"
+    },
+    {
+      "col": 80,
+      "row": 89,
+      "instanceId": "team-2-gaoxiong",
+      "ownerId": 2,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 11,
+      "maxHp": 11,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "gaoxiong"
+    },
+    {
+      "col": 82,
+      "row": 89,
+      "instanceId": "team-2-ougen",
+      "ownerId": 2,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 11,
+      "maxHp": 11,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "ougen"
+    },
+    {
+      "col": 84,
+      "row": 89,
+      "instanceId": "team-2-yanzhan",
+      "ownerId": 2,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 16,
+      "maxHp": 16,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "yanzhan"
+    },
+    {
+      "col": 14,
+      "row": 66,
+      "instanceId": "team-2-bisimai",
+      "ownerId": 2,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 16,
+      "maxHp": 16,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "bisimai"
+    },
+    {
+      "col": 88,
+      "row": 89,
+      "instanceId": "team-2-qiye",
+      "ownerId": 2,
+      "facing": "right",
+      "action": 1,
+      "status": "ready",
+      "hp": 10,
+      "maxHp": 10,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "qiye"
+    },
+    {
+      "col": 90,
+      "row": 89,
+      "instanceId": "team-2-dujiaoshou",
+      "ownerId": 2,
+      "facing": "left",
+      "action": 1,
+      "status": "ready",
+      "hp": 9,
+      "maxHp": 9,
+      "guard": false,
+      "cooldowns": {},
+      "assetId": "dujiaoshou"
+    }
+  ],
+  "aviation": {
+    "serial": 0,
+    "squadrons": [],
+    "launched": {},
+    "aa": {}
+  },
+  "fog": {
+    "explored": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/38AAAAAAAAAAAAAAAAAwP9/AAAAAAAAAAAAAAAAAMD//wAAAAAAAAAAAAAAAADg//8AAAAAAAAAAAAAAAAA4P//AQAAAAAAAAAAAAAAAPD//wEAAAAAAAAAAAAAAADw//8DAAAAAAAAAAAAAAAA8P//AQAAAAAAAAAAAAAAAOD//wMAAAAAAAAAAAAAAADw//8DAAAAAAAAAAAAAAAA4P//AwAAAAAAAAAAAAAAAPD//wEAAAAAAAAAAAAAAADw//8DAAAAAAAAAAAAAAAA8P//AQAAAAAAAAAAAAAAAOD//wEAAAAAAAAAAAAAAADg//8AAAAAAAAAAAAAAAAAwP//AAAAAAAAAAAAAAAAAMD/fwAAAAAAAAAAAAAAAACA/38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIB/AAAAAAAAAAAAAAAAAADAfwAAAAAAAAAAAAAAAAAAwP8AAAAAAAAAAAAAAAAAAOD/AAAAAAAAAAAAAAAAAADg/wEAAAAAAAAAAAAAAAAA8P8BAAAAAAAAAAAAAAAAAOD/AwAAAAAAAAAAAAAAAADw/wMAAAAAAAAAAAAAAAAA8P8HAAAAAAAAAAAAAAAAAPD/BwAAAAAAAAAAAAAAAADg/w8AAAAAAAAAAAAAAAAA8P8PAAAAAAAAAAAAAAAAAOD/DwAAAAAAAAAAAAAAAADg/wcAAAAAAAAAAAAAAAAAwP8HAAAAAAAAAAAAAAAAAMD/AwAAAAAAAAAAAAAAAACA/wMAAAAAAACA/z8AAAAAgP8BAAAAAAAAwP8/AAAAAAAAAAAAAAAAAMD/fwAAAAAAAAAAAAAAAADg/38AAAAAAAAAAAAAAAAA4P//AAAAAAAAAAAAAAAAAPD//wAAAAAAAAAAAAAAAADw//8BAAAAAAAAAAAAAAAA+P//AAAAAAAAAAAAAAAAAPj//wAAAAAAAAAAAAAAAAD8/38AAAAAAAAAAAAAAAAA+P9/AAAAAAAAAAAAAAAAAPj/PwAAAAAAAAAAAAAAAADw/z8AAAAAAAAAAAAAAAAA8P8BAAAAAAAAAAAAAAAAAOD/AQAAAAAAAAAAAAAAAADg/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7/AQAAAAAAAAAAAAAAAAD//wEAAAAAAAAAAAAAAAAA//8DAAAAAAAAAAAAAAAAgP//AwAAAAAAAAAAAAAAAID//wcAAAAAAAAAAAAAAADA//8HAAAAAAAAAAAAAAAAwP//DwAAAAAAAAAAAAAAAMD//wcAAAAAAAAAAAAAAACA//8PAAAAAAAAAAAAAAAAwP//DwAAAAAAAAAAAAAAAID//w8AAAAAAAAAAAAAAADA//8HAAAAAAAAAAAAAAAAwP//DwAAAAAAAAAAAAAAAMD//wcAAAAAAAAAAAAAAACA//8HAAAAAAAAAAAAAAAAgP//AwAAAAAAAAAAAAAAAAD//wMAAAAAAAAAAAAAAAAA//8BAAAAAAAAAAAAAAAAAP7/AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwBAAAAAAAAAAAAAAAAAAD8AwAAAAAAAAAAAAAAAAAA/gMAAAAAAAAAAAAAAAAAAP4HAAAAAAAAAAAAAAAAAAD/BwAAAAAAAAAAAAAAAAAA/w8AAAAAAAAAAAAAAAAAgP8PAAAAAAAAAAAAAAAAAAD/DwAAAAAAAAAAAAAAAAAA/w8AAAAAAAAAAAAAAAAAAP8fAAAAAAAAAAAAAAAAAAD/DwAAAAAAAAAAAAAAAAAA/g8AAAAAAAAAAAAAAAAAAP4HAAAAAAAAAAAAAAAAAAD8BwAAAAAAAAAAAAAAAAAA/AMAAAAAAAAAAAAAAAAAAPgDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/z8AAAAAAAAAAAAAAAAAwP8/AAAAAAAAAAAAAAAAAMD/fwAAAAAAAAAAAAAAAADg/38AAAAAAAAAAAAAAAAA4P//AAAAAAAAAAAAAAAAAPD//wAAAAAAAAAAAAAAAADw//8BAAAAAAAAAAAAAAAA+P//AAAAAAAAAAAAAAAAAPj//wEAAAAAAAAAAAAAAAD8//8BAAAAAAAAAAAAAAAA+P//AQAAAAAAAAAAAAAAAPj//wAAAAAAAAAAAAAAAADw//8AAAAAAAAAAAAAAAAA8P9/AAAAAAAAAAAAAAAAAOD/fwAAAAAAAAAAAAAAAADg/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+    ]
+  },
+  "campaign": {
+    "ports": [
+      {
+        "col": 9,
+        "row": 13,
+        "id": "home-1",
+        "name": "1号母港",
+        "ownerId": 1,
+        "homeForId": 1,
+        "usedRound": 0
+      },
+      {
+        "col": 100,
+        "row": 15,
+        "id": "home-2",
+        "name": "2号母港",
+        "ownerId": 2,
+        "homeForId": 2,
+        "usedRound": 0
+      },
+      {
+        "col": 17,
+        "row": 16,
+        "id": "port-16-16",
+        "name": "群岛港 1",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 33,
+        "row": 15,
+        "id": "port-48-16",
+        "name": "群岛港 2",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 80,
+        "row": 15,
+        "id": "port-80-16",
+        "name": "群岛港 3",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 111,
+        "row": 14,
+        "id": "port-112-16",
+        "name": "群岛港 4",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 17,
+        "row": 42,
+        "id": "port-16-48",
+        "name": "群岛港 5",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 24,
+        "row": 48,
+        "id": "port-48-48",
+        "name": "群岛港 6",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 90,
+        "row": 59,
+        "id": "port-80-48",
+        "name": "群岛港 7",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 104,
+        "row": 62,
+        "id": "port-112-48",
+        "name": "群岛港 8",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 12,
+        "row": 63,
+        "id": "port-16-80",
+        "name": "群岛港 9",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 57,
+        "row": 99,
+        "id": "port-48-80",
+        "name": "群岛港 10",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 94,
+        "row": 76,
+        "id": "port-80-80",
+        "name": "群岛港 11",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 109,
+        "row": 75,
+        "id": "port-112-80",
+        "name": "群岛港 12",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 42,
+        "row": 125,
+        "id": "port-16-112",
+        "name": "群岛港 13",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 54,
+        "row": 107,
+        "id": "port-48-112",
+        "name": "群岛港 14",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 76,
+        "row": 111,
+        "id": "port-80-112",
+        "name": "群岛港 15",
+        "ownerId": 0,
+        "usedRound": 0
+      },
+      {
+        "col": 107,
+        "row": 116,
+        "id": "port-112-112",
+        "name": "群岛港 16",
+        "ownerId": 0,
+        "usedRound": 0
+      }
+    ],
+    "intel": [
+      [
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    ]
+  }
+}

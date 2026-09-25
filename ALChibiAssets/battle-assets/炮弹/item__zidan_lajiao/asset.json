@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_lajiao",
+  "model": "zidan_lajiao",
+  "name": "辣椒子弹",
+  "names": [
+    "辣椒子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_lajiao",
+  "path": "battle-assets/炮弹/item__zidan_lajiao",
+  "images": [
+    {
+      "file": "zidan_lajiao_-6761044859310120290.png",
+      "name": "zidan_lajiao",
+      "width": 128,
+      "height": 30,
+      "role": "战斗贴图",
+      "path_id": -6761044859310120290,
+      "source": "CAB-62556e2a66a0c6c3bf9ebd8bd53c53f7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lajiao/zidan_lajiao_-6761044859310120290.png"
+}

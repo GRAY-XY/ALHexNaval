@@ -1,0 +1,23 @@
+{
+  "id": "item__paodan_huoqiu_blue_middle",
+  "model": "paodan_huoqiu_blue_middle",
+  "name": "paodan_huoqiu_blue_middle",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/paodan_huoqiu_blue_middle",
+  "path": "battle-assets/鱼雷/item__paodan_huoqiu_blue_middle",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3310003,
+    3310201,
+    3310202,
+    3310203,
+    3310204,
+    3316003,
+    3316008
+  ],
+  "has_preview": false,
+  "prefab": true
+}

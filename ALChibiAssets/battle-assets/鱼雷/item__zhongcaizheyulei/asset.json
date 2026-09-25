@@ -1,0 +1,22 @@
+{
+  "id": "item__zhongcaizheyulei",
+  "model": "zhongcaizheyulei",
+  "name": "zhongcaizheyulei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/zhongcaizheyulei",
+  "path": "battle-assets/鱼雷/item__zhongcaizheyulei",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "sairenyulei.skel",
+    "atlas": "sairenyulei.atlas",
+    "pages": [
+      "sairenyulei.png"
+    ]
+  }
+}

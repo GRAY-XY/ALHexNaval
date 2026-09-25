@@ -1,0 +1,38 @@
+{
+  "id": "item__suolian_green",
+  "model": "suolian_green",
+  "name": "suolian_green",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/suolian_green",
+  "path": "battle-assets/炮弹/item__suolian_green",
+  "images": [
+    {
+      "file": "suolian_2_-3459088581273531607.png",
+      "name": "suolian_2",
+      "width": 110,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": -3459088581273531607,
+      "source": "CAB-da2b4b1c2bec66e940c3fae66edcb8fb"
+    },
+    {
+      "file": "suolian_green_-2217051541790334393.png",
+      "name": "suolian_green",
+      "width": 110,
+      "height": 85,
+      "role": "战斗贴图",
+      "path_id": -2217051541790334393,
+      "source": "CAB-6c9858076de1f194e17ba7a7ae731d9b"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    3279301,
+    3279304
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__suolian_green/suolian_2_-3459088581273531607.png"
+}

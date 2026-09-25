@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.0",
+  "passed": true,
+  "checks": [
+    {"name":"Watercolor texture assets load in production build","passed":true},
+    {"name":"Detailed ocean, shallow water, island and coastline render at tactical zoom","passed":true},
+    {"name":"Ink-wash explored and unexplored fog remains distinct","passed":true},
+    {"name":"Hex grid, ships, health bars and port marker remain readable","passed":true},
+    {"name":"Strategic overview and minimap remain usable","passed":true},
+    {"name":"512 by 512 map with eight factions loads successfully","passed":true},
+    {"name":"Original 256 by 256 four-faction battle restored","passed":true},
+    {"name":"No browser console errors","passed":true}
+  ],
+  "staticChecks": {"build":true,"coordinateChecks":344064,"fogChecks":16,"invalidFogSaveCases":7},
+  "screenshot":"output/screenshots/watercolor-map-desktop.png",
+  "backup":"output/backups/watercolor-map-before-20260919-104520.zip",
+  "saveVersion":14
+}

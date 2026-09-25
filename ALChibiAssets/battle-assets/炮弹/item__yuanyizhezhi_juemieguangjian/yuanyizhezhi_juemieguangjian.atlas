@@ -1,0 +1,174 @@
+
+yuanyizhezhi_juemieguangjian.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eff_gl_l0001
+  rotate: false
+  xy: 2, 377
+  size: 370, 369
+  orig: 370, 369
+  offset: 0, 0
+  index: -1
+fuyoupao-1
+  rotate: true
+  xy: 2, 217
+  size: 158, 167
+  orig: 158, 167
+  offset: 0, 0
+  index: -1
+fuyoupao-2
+  rotate: true
+  xy: 562, 187
+  size: 130, 66
+  orig: 130, 66
+  offset: 0, 0
+  index: -1
+fuyoupao-3
+  rotate: true
+  xy: 499, 55
+  size: 130, 66
+  orig: 130, 66
+  offset: 0, 0
+  index: -1
+fuyoupao-4
+  rotate: true
+  xy: 567, 42
+  size: 130, 66
+  orig: 130, 66
+  offset: 0, 0
+  index: -1
+fuyoupao-5
+  rotate: true
+  xy: 921, 523
+  size: 110, 94
+  orig: 110, 94
+  offset: 0, 0
+  index: -1
+fuyoupao-6
+  rotate: true
+  xy: 630, 174
+  size: 143, 44
+  orig: 143, 44
+  offset: 0, 0
+  index: -1
+fuyoupao-7
+  rotate: true
+  xy: 849, 159
+  size: 143, 44
+  orig: 143, 44
+  offset: 0, 0
+  index: -1
+fuyoupao-8
+  rotate: true
+  xy: 171, 217
+  size: 158, 167
+  orig: 158, 167
+  offset: 0, 0
+  index: -1
+fuyoupao-9
+  rotate: false
+  xy: 902, 172
+  size: 112, 201
+  orig: 112, 201
+  offset: 0, 0
+  index: -1
+fx1
+  rotate: true
+  xy: 562, 319
+  size: 125, 118
+  orig: 125, 118
+  offset: 0, 0
+  index: -1
+fx_7
+  rotate: true
+  xy: 635, 2
+  size: 134, 142
+  orig: 134, 142
+  offset: 0, 0
+  index: -1
+fx_bh_ring
+  rotate: false
+  xy: 685, 304
+  size: 215, 215
+  orig: 215, 215
+  offset: 0, 0
+  index: -1
+fx_bh_ring2
+  rotate: true
+  xy: 685, 521
+  size: 225, 234
+  orig: 225, 234
+  offset: 0, 0
+  index: -1
+fx_biim1
+  rotate: false
+  xy: 779, 19
+  size: 67, 117
+  orig: 67, 117
+  offset: 0, 0
+  index: -1
+fx_biim2
+  rotate: false
+  xy: 921, 375
+  size: 60, 146
+  orig: 60, 146
+  offset: 0, 0
+  index: -1
+fx_fet1
+  rotate: false
+  xy: 983, 409
+  size: 23, 63
+  orig: 23, 63
+  offset: 0, 0
+  index: -1
+fx_fet2
+  rotate: false
+  xy: 983, 474
+  size: 39, 47
+  orig: 39, 47
+  offset: 0, 0
+  index: -1
+fx_fl
+  rotate: false
+  xy: 895, 33
+  size: 126, 137
+  orig: 126, 137
+  offset: 0, 0
+  index: -1
+fx_ring3
+  rotate: false
+  xy: 374, 274
+  size: 186, 170
+  orig: 186, 170
+  offset: 0, 0
+  index: -1
+fx_shoot
+  rotate: true
+  xy: 374, 446
+  size: 300, 309
+  orig: 300, 309
+  offset: 0, 0
+  index: -1
+fx_star1
+  rotate: false
+  xy: 676, 138
+  size: 171, 164
+  orig: 171, 164
+  offset: 0, 0
+  index: -1
+fx_star2
+  rotate: false
+  xy: 340, 122
+  size: 157, 150
+  orig: 157, 150
+  offset: 0, 0
+  index: -1
+fx_star3
+  rotate: false
+  xy: 921, 635
+  size: 101, 111
+  orig: 101, 111
+  offset: 0, 0
+  index: -1

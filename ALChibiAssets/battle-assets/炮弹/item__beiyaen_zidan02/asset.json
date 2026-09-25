@@ -1,0 +1,28 @@
+{
+  "id": "item__beiyaen_zidan02",
+  "model": "beiyaen_zidan02",
+  "name": "beiyaen_zidan02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/beiyaen_zidan02",
+  "path": "battle-assets/炮弹/item__beiyaen_zidan02",
+  "images": [
+    {
+      "file": "beiyaenzidan02_5163618569230151308.png",
+      "name": "beiyaenzidan02",
+      "width": 247,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": 5163618569230151308,
+      "source": "CAB-b06970a82044f738ae1349bcb868965d"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    164431
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__beiyaen_zidan02/beiyaenzidan02_5163618569230151308.png"
+}

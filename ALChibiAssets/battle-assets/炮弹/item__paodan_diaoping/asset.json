@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_diaoping",
+  "model": "paodan_diaoping",
+  "name": "吊瓶炮弹",
+  "names": [
+    "吊瓶炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_diaoping",
+  "path": "battle-assets/炮弹/item__paodan_diaoping",
+  "images": [
+    {
+      "file": "paodan_diaoping_-5244599333896004244.png",
+      "name": "paodan_diaoping",
+      "width": 128,
+      "height": 126,
+      "role": "战斗贴图",
+      "path_id": -5244599333896004244,
+      "source": "CAB-69fd251202ed4b9737232b137204ecb7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_diaoping/paodan_diaoping_-5244599333896004244.png"
+}

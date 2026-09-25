@@ -1,0 +1,41 @@
+
+unknownV_mal_feiji.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1
+  rotate: false
+  xy: 2, 96
+  size: 400, 335
+  orig: 400, 335
+  offset: 0, 0
+  index: -1
+hei_2
+  rotate: false
+  xy: 404, 106
+  size: 357, 325
+  orig: 357, 325
+  offset: 0, 0
+  index: -1
+hong_1
+  rotate: true
+  xy: 763, 2
+  size: 191, 133
+  orig: 191, 133
+  offset: 0, 0
+  index: -1
+hong_2
+  rotate: true
+  xy: 763, 195
+  size: 236, 171
+  orig: 236, 171
+  offset: 0, 0
+  index: -1
+yan_1
+  rotate: true
+  xy: 898, 121
+  size: 72, 57
+  orig: 72, 57
+  offset: 0, 0
+  index: -1

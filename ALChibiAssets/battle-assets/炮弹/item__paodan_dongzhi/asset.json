@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dongzhi",
+  "model": "paodan_dongzhi",
+  "name": "精选礼盒炮弹",
+  "names": [
+    "精选礼盒炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dongzhi",
+  "path": "battle-assets/炮弹/item__paodan_dongzhi",
+  "images": [
+    {
+      "file": "paodan_dongzhi_-8570708674802043678.png",
+      "name": "paodan_dongzhi",
+      "width": 128,
+      "height": 138,
+      "role": "战斗贴图",
+      "path_id": -8570708674802043678,
+      "source": "CAB-7f589e36c32639202bd5dda9c4400146"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dongzhi/paodan_dongzhi_-8570708674802043678.png"
+}

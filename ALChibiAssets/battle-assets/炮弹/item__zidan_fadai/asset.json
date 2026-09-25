@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_fadai",
+  "model": "zidan_fadai",
+  "name": "发带炮弹",
+  "names": [
+    "发带炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fadai",
+  "path": "battle-assets/炮弹/item__zidan_fadai",
+  "images": [
+    {
+      "file": "zidan_fadai_-8716557510957837390.png",
+      "name": "zidan_fadai",
+      "width": 128,
+      "height": 71,
+      "role": "战斗贴图",
+      "path_id": -8716557510957837390,
+      "source": "CAB-ff2d426a4b600d48ce48ce48b53f1403"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    852451
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fadai/zidan_fadai_-8716557510957837390.png"
+}

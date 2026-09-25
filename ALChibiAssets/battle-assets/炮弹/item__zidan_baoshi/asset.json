@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_baoshi",
+  "model": "zidan_baoshi",
+  "name": "强化石子弹",
+  "names": [
+    "强化石子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_baoshi",
+  "path": "battle-assets/炮弹/item__zidan_baoshi",
+  "images": [
+    {
+      "file": "baoshi_1045877920170462797.png",
+      "name": "baoshi",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1045877920170462797,
+      "source": "CAB-9e9583bf3dfd1a345db3c83651d60ad5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19229,
+    19238
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_baoshi/baoshi_1045877920170462797.png"
+}

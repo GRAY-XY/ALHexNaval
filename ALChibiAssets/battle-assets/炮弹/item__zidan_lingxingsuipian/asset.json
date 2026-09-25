@@ -1,0 +1,32 @@
+{
+  "id": "item__zidan_lingxingsuipian",
+  "model": "zidan_lingxingsuipian",
+  "name": "zidan_lingxingsuipian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_lingxingsuipian",
+  "path": "battle-assets/炮弹/item__zidan_lingxingsuipian",
+  "images": [
+    {
+      "file": "lingxingzidan_8043153862051770561.png",
+      "name": "lingxingzidan",
+      "width": 219,
+      "height": 101,
+      "role": "战斗贴图",
+      "path_id": 8043153862051770561,
+      "source": "CAB-620877eab58984ad4efeffdfdcfaf6fb"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19681,
+    165510,
+    165517,
+    165518,
+    170281
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lingxingsuipian/lingxingzidan_8043153862051770561.png"
+}

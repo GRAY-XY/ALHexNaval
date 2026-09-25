@@ -1,0 +1,30 @@
+{
+  "id": "item__fubobianpaopaodan",
+  "model": "fubobianpaopaodan",
+  "name": "fubobianpaopaodan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/fubobianpaopaodan",
+  "path": "battle-assets/炮弹/item__fubobianpaopaodan",
+  "images": [
+    {
+      "file": "fubobianpaopaodan_4475150537055157547.png",
+      "name": "fubobianpaopaodan",
+      "width": 91,
+      "height": 37,
+      "role": "战斗贴图",
+      "path_id": 4475150537055157547,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [
+    "bianpaoAnimation"
+  ],
+  "bullet_ids": [
+    161025
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__fubobianpaopaodan/fubobianpaopaodan_4475150537055157547.png"
+}

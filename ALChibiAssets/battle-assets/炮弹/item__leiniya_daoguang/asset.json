@@ -1,0 +1,28 @@
+{
+  "id": "item__leiniya_daoguang",
+  "model": "leiniya_daoguang",
+  "name": "leiniya_daoguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/leiniya_daoguang",
+  "path": "battle-assets/炮弹/item__leiniya_daoguang",
+  "images": [
+    {
+      "file": "jianqi01_-210874697625290958.png",
+      "name": "jianqi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -210874697625290958,
+      "source": "CAB-7ccc3fa87d03f8970ad29d41628dc75f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    161151
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__leiniya_daoguang/jianqi01_-210874697625290958.png"
+}

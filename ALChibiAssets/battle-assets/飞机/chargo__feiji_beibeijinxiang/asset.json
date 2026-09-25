@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_beibeijinxiang",
+  "model": "feiji_beibeijinxiang",
+  "name": "贝贝金像飞机(鱼雷)",
+  "names": [
+    "贝贝金像飞机(鱼雷)",
+    "贝贝金像飞机(战斗)",
+    "贝贝金像飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_beibeijinxiang",
+  "path": "battle-assets/飞机/chargo__feiji_beibeijinxiang",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_beibeijinxiang_2653095292691708291.png",
+      "name": "feiji_beibeijinxiang",
+      "width": 646,
+      "height": 527,
+      "role": "战斗贴图",
+      "path_id": 2653095292691708291,
+      "source": "CAB-4fb176be69ce6596111eafa5d52c4812"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_beibeijinxiang/aircraft_shadow_2192772484218123160.png"
+}

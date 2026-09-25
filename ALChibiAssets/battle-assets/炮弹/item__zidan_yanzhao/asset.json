@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yanzhao",
+  "model": "zidan_yanzhao",
+  "name": "眼罩子弹",
+  "names": [
+    "眼罩子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yanzhao",
+  "path": "battle-assets/炮弹/item__zidan_yanzhao",
+  "images": [
+    {
+      "file": "zidan_yanzhao_-8391329340562843056.png",
+      "name": "zidan_yanzhao",
+      "width": 128,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": -8391329340562843056,
+      "source": "CAB-7bb8ea6fc23413b507cfe12e2d1534ab"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yanzhao/zidan_yanzhao_-8391329340562843056.png"
+}

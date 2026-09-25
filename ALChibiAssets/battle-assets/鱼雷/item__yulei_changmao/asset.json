@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_changmao",
+  "model": "yulei_changmao",
+  "name": "太阳神之矛鱼雷",
+  "names": [
+    "太阳神之矛鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_changmao",
+  "path": "battle-assets/鱼雷/item__yulei_changmao",
+  "images": [
+    {
+      "file": "yulei_changmao_-1255866547080939758.png",
+      "name": "yulei_changmao",
+      "width": 128,
+      "height": 30,
+      "role": "战斗贴图",
+      "path_id": -1255866547080939758,
+      "source": "CAB-b7bf9027fc620856eb6fc8690cee28d9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_changmao/yulei_changmao_-1255866547080939758.png"
+}

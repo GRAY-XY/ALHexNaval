@@ -1,0 +1,28 @@
+{
+  "id": "item__zhuanwu_biaoqiangbig",
+  "model": "zhuanwu_biaoqiangbig",
+  "name": "zhuanwu_biaoqiangbig",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhuanwu_biaoqiangbig",
+  "path": "battle-assets/炮弹/item__zhuanwu_biaoqiangbig",
+  "images": [
+    {
+      "file": "biaoqiang01_5008402313247508465.png",
+      "name": "biaoqiang01",
+      "width": 246,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": 5008402313247508465,
+      "source": "CAB-bfd97cd7c1c159a73acf963ac38f7af2"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19696
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zhuanwu_biaoqiangbig/biaoqiang01_5008402313247508465.png"
+}

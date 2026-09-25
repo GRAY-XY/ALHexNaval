@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "date": "2026-09-18",
+  "version": "0.8.0",
+  "saveVersion": 13,
+  "url": "http://127.0.0.1:18768/",
+  "interaction": "Real in-app browser UI; generated production-rule fixtures imported using the game's file chooser. No hidden game-state injection or inspection.",
+  "checks": [
+    {"name": "Original 256x256 four-player save upgraded with funds40 and own home harbor while preserving oil50, twelve living own ships, Laffey26,30 and fog0.6%", "passed": true},
+    {"name": "Original save preserved as previous battle before test matches", "passed": true},
+    {"name": "Port dialog lists only discovered or owned harbors; lost-visibility records explicitly identified", "passed": true},
+    {"name": "Repair Bismarck8/16 to12/16 costs8 credits, consumes combat action and leaves oil50", "passed": true},
+    {"name": "Replace sunk Javelin for20 credits at empty adjacent berth11,14; funds100 to92 after repair to72 after replacement", "passed": true},
+    {"name": "Fleet count immediately changes2/12 to3/12 after replacement", "passed": true},
+    {"name": "Replacement action0 with wait/stay and weapons disabled; explicit reinforcement preparation text", "passed": true},
+    {"name": "Port production quota blocks a second replacement in the same round", "passed": true},
+    {"name": "Refresh preserves funds72, repairedHP, replacement position and preparation delay", "passed": true},
+    {"name": "Capture neutral harbor with Laffey combat action; oil50 and funds72 unchanged, owned ports2 and next own income20", "passed": true},
+    {"name": "Next own round funds92, oil50, replacement action1 and ready; native replacement idle shown", "passed": true},
+    {"name": "Harbor label separated from occupying ship name and health bar at tactical zoom", "passed": true},
+    {"name": "Capture last initial home while opponent still has a surviving hull yields headquarters victory", "passed": true},
+    {"name": "Victory modal, read-only route message and disabled end-turn/movement/combat shown", "passed": true},
+    {"name": "Refresh restores headquarters result and disabled end-turn", "passed": true},
+    {"name": "Capture last enemy port after all enemy hulls sunk yields elimination victory and eliminated faction badge", "passed": true},
+    {"name": "512x512 eight-player battle initializes with only own known home in port list; undiscovered ports hidden", "passed": true},
+    {"name": "1280x720 and980x800 interface layout inspected; temporary viewport reset", "passed": true},
+    {"name": "Original 256x256 four-player round1 battle restored at handoff with funds40, own port1, oil50, twelve living own ships and fog0.6%", "passed": true}
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "output/screenshots/ports-reinforcement-ready.png",
+    "output/screenshots/ports-service-panel.png",
+    "output/screenshots/ports-headquarters-victory.png",
+    "output/screenshots/ports-512-eight-teams-980.png"
+  ],
+  "ruleProof": "output/ports-verification.json:20 scenario groups and14 invalid campaign saves; actual Spine checks verify replacement reset and single victory action separately.",
+  "limits": [
+    "Each representative hull has one slot per faction; reinforcements replace losses, not unlimited same-type ship production.",
+    "No AI, networking, permanent aircraft hangar attrition or full-match balance/performance proof.",
+    "Browser checks use small deterministic demo battles plus native initial largest-map layout; no full large-map campaign played."
+  ],
+  "originalBattleRestored": true
+}

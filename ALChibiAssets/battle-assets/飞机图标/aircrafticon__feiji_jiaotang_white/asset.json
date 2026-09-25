@@ -1,0 +1,40 @@
+{
+  "id": "aircrafticon__feiji_jiaotang_white",
+  "model": "feiji_jiaotang_white",
+  "name": "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 轰炸机 Lv1",
+  "names": [
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 轰炸机 Lv1",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 轰炸机 Lv2",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 轰炸机 Lv3",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 轰炸机 Lv4",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 轰炸机 Lv5",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 战斗机 Lv1",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 战斗机 Lv2",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 战斗机 Lv3",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 战斗机 Lv4",
+    "【2025拉斐尔活动】撒丁尼亚联盟航空母舰 战斗机 Lv5",
+    "【2024同盟活动B1】精英蛋船 教皇侵蚀航母 战斗机",
+    "【2024同盟活动B1】精英蛋船 教皇侵蚀航母 轰炸机",
+    "【2024同盟活动D1】精英蛋船 教皇侵蚀航母 战斗机",
+    "【2024同盟活动D1】精英蛋船 教皇侵蚀航母 轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_jiaotang_white",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_jiaotang_white",
+  "images": [
+    {
+      "file": "feiji_jiaotang_white_-5200823582351475651.png",
+      "name": "feiji_jiaotang_white",
+      "width": 45,
+      "height": 43,
+      "role": "原始精灵",
+      "path_id": -5200823582351475651,
+      "source": "CAB-5f4c5ebb9af87abf2f10483bc105f2cf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

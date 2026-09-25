@@ -1,0 +1,47 @@
+{
+  "id": "chargo__96jiangong",
+  "model": "96jiangong",
+  "name": "默认重樱战斗机",
+  "names": [
+    "默认重樱战斗机",
+    "默认重樱战斗机-自动防空",
+    "默认铁血战斗机",
+    "默认铁血鱼雷机",
+    "默认铁血轰炸机",
+    "默认铁血战斗机-自动防空",
+    "96式舰战",
+    "三笠剧情战斗机",
+    "【翻格子活动】铁血战斗机",
+    "【翻格子活动】铁血轰炸机",
+    "【翻格子活动】重樱战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/96jiangong",
+  "path": "battle-assets/飞机/chargo__96jiangong",
+  "images": [
+    {
+      "file": "96jiangong_-6922586258093126083.png",
+      "name": "96jiangong",
+      "width": 256,
+      "height": 246,
+      "role": "战斗贴图",
+      "path_id": -6922586258093126083,
+      "source": "CAB-fac70f0411178d03ef737cd9d380e41f"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__96jiangong/96jiangong_-6922586258093126083.png"
+}

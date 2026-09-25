@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_zisejiguang",
+  "model": "zidan_zisejiguang",
+  "name": "紫色激光子弹",
+  "names": [
+    "紫色激光子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zisejiguang",
+  "path": "battle-assets/炮弹/item__zidan_zisejiguang",
+  "images": [
+    {
+      "file": "zidan_zisejiguang_2500683548140218819.png",
+      "name": "zidan_zisejiguang",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": 2500683548140218819,
+      "source": "CAB-22b272e0ba3ecbd345d5f0a967fe7128"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zisejiguang/zidan_zisejiguang_2500683548140218819.png"
+}

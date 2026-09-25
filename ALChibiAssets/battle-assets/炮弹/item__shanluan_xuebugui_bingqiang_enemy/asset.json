@@ -1,0 +1,37 @@
+{
+  "id": "item__shanluan_xuebugui_bingqiang_enemy",
+  "model": "shanluan_xuebugui_bingqiang_enemy",
+  "name": "shanluan_xuebugui_bingqiang_enemy",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_xuebugui_bingqiang_enemy",
+  "path": "battle-assets/炮弹/item__shanluan_xuebugui_bingqiang_enemy",
+  "images": [
+    {
+      "file": "bingzhui03_-8411265244358246916.png",
+      "name": "bingzhui03",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8411265244358246916,
+      "source": "CAB-ac5b2d1aa44a405a764c43f898884f60"
+    },
+    {
+      "file": "bingzhui02_-2593441191900130304.png",
+      "name": "bingzhui02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2593441191900130304,
+      "source": "CAB-ac5b2d1aa44a405a764c43f898884f60"
+    }
+  ],
+  "particle_systems": 64,
+  "animations": [],
+  "bullet_ids": [
+    3105049
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shanluan_xuebugui_bingqiang_enemy/bingzhui03_-8411265244358246916.png"
+}

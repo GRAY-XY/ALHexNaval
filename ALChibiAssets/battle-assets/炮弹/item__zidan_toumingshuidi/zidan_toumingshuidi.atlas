@@ -1,0 +1,62 @@
+
+zidan_toumingshuidi.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuidi_1
+  rotate: false
+  xy: 288, 58
+  size: 75, 48
+  orig: 75, 48
+  offset: 0, 0
+  index: -1
+shuidi_1_2
+  rotate: false
+  xy: 365, 58
+  size: 75, 48
+  orig: 75, 48
+  offset: 0, 0
+  index: -1
+shuidi_1_3
+  rotate: true
+  xy: 442, 31
+  size: 75, 48
+  orig: 75, 48
+  offset: 0, 0
+  index: -1
+shuidi_2
+  rotate: false
+  xy: 288, 26
+  size: 54, 30
+  orig: 54, 30
+  offset: 0, 0
+  index: -1
+shuidi_2_2
+  rotate: false
+  xy: 344, 26
+  size: 54, 30
+  orig: 54, 30
+  offset: 0, 0
+  index: -1
+shuidi_2_3
+  rotate: true
+  xy: 400, 2
+  size: 54, 30
+  orig: 54, 30
+  offset: 0, 0
+  index: -1
+shuidi_3
+  rotate: false
+  xy: 106, 17
+  size: 180, 89
+  orig: 180, 89
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 10
+  size: 102, 96
+  orig: 102, 96
+  offset: 0, 0
+  index: -1

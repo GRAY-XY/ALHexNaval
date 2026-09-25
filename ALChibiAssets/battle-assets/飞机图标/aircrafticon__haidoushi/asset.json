@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__haidoushi",
+  "model": "haidoushi",
+  "name": "海斗士",
+  "names": [
+    "海斗士"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/haidoushi",
+  "path": "battle-assets/飞机图标/aircrafticon__haidoushi",
+  "images": [
+    {
+      "file": "haidoushi_-1069845681194737658.png",
+      "name": "haidoushi",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -1069845681194737658,
+      "source": "CAB-fc5f6f7ee96209f83e918631f0297e22"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

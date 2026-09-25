@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_youdeng",
+  "model": "paodan_youdeng",
+  "name": "油灯炮弹",
+  "names": [
+    "油灯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_youdeng",
+  "path": "battle-assets/炮弹/item__paodan_youdeng",
+  "images": [
+    {
+      "file": "paodan_youdeng_-2282546392275350780.png",
+      "name": "paodan_youdeng",
+      "width": 127,
+      "height": 91,
+      "role": "战斗贴图",
+      "path_id": -2282546392275350780,
+      "source": "CAB-efc74b9ff9fe3b534ea9b54c597b0045"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_youdeng/paodan_youdeng_-2282546392275350780.png"
+}

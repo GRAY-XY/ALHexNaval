@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_youling",
+  "model": "paodan_youling",
+  "name": "幽灵机械炮弹",
+  "names": [
+    "幽灵机械炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_youling",
+  "path": "battle-assets/炮弹/item__paodan_youling",
+  "images": [
+    {
+      "file": "paodan_youling_4071928778428577430.png",
+      "name": "paodan_youling",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 4071928778428577430,
+      "source": "CAB-0c89039088877fc3fc376dd65946d5b9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_youling/paodan_youling_4071928778428577430.png",
+  "spine": {
+    "skel": "paodan_youling.skel",
+    "atlas": "paodan_youling.atlas",
+    "pages": [
+      "paodan_youling.png"
+    ]
+  }
+}

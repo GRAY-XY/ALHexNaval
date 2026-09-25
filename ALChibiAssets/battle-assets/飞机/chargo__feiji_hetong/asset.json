@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_hetong",
+  "model": "feiji_hetong",
+  "name": "河童飞机(鱼雷)",
+  "names": [
+    "河童飞机(鱼雷)",
+    "河童飞机(战斗)",
+    "河童飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_hetong",
+  "path": "battle-assets/飞机/chargo__feiji_hetong",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_hetong_-3989834807987152344.png",
+      "name": "feiji_hetong",
+      "width": 124,
+      "height": 136,
+      "role": "战斗贴图",
+      "path_id": -3989834807987152344,
+      "source": "CAB-be8950a6e682944f04b8178f57263e86"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_hetong/aircraft_shadow_2192772484218123160.png"
+}

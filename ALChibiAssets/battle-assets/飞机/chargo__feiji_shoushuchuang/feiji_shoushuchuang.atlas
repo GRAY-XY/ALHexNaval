@@ -1,0 +1,27 @@
+
+feiji_shoushuchuang.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuang
+  rotate: false
+  xy: 204, 11
+  size: 148, 123
+  orig: 148, 123
+  offset: 0, 0
+  index: -1
+daimao
+  rotate: true
+  xy: 354, 120
+  size: 14, 12
+  orig: 14, 12
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 2
+  size: 200, 132
+  orig: 200, 132
+  offset: 0, 0
+  index: -1

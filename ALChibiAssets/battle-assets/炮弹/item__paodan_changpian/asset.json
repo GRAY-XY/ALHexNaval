@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_changpian",
+  "model": "paodan_changpian",
+  "name": "唱片炮弹",
+  "names": [
+    "唱片炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_changpian",
+  "path": "battle-assets/炮弹/item__paodan_changpian",
+  "images": [
+    {
+      "file": "changpian_1289315004021979903.png",
+      "name": "changpian",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1289315004021979903,
+      "source": "CAB-1afbb2ade09ad5bac2758909025993b4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3148006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_changpian/changpian_1289315004021979903.png"
+}

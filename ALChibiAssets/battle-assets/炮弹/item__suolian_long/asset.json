@@ -1,0 +1,44 @@
+{
+  "id": "item__suolian_long",
+  "model": "suolian_long",
+  "name": "suolian_long",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/suolian_long",
+  "path": "battle-assets/炮弹/item__suolian_long",
+  "images": [
+    {
+      "file": "suolian_1_8135168411080070024.png",
+      "name": "suolian_1",
+      "width": 110,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": 8135168411080070024,
+      "source": "CAB-6a150a981dd6750a3c9451f8b8a68474"
+    },
+    {
+      "file": "suolian_7115331638111776693.png",
+      "name": "suolian",
+      "width": 110,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 7115331638111776693,
+      "source": "CAB-14b3abf7108fe2de4c8075480207d514"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    29646021,
+    29646030,
+    29646033,
+    29646039,
+    29657041,
+    29657044,
+    3274013,
+    3274016
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__suolian_long/suolian_1_8135168411080070024.png"
+}

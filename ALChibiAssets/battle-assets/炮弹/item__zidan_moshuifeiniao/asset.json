@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_moshuifeiniao",
+  "model": "zidan_moshuifeiniao",
+  "name": "惊鸿子弹",
+  "names": [
+    "惊鸿子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_moshuifeiniao",
+  "path": "battle-assets/炮弹/item__zidan_moshuifeiniao",
+  "images": [
+    {
+      "file": "zidan_moshuifeiniao_2333890003675464297.png",
+      "name": "zidan_moshuifeiniao",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2333890003675464297,
+      "source": "CAB-3112cb54e2ff7bde64dca2dbfde5f23f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_moshuifeiniao/zidan_moshuifeiniao_2333890003675464297.png",
+  "spine": {
+    "skel": "zidan_moshuifeiniao.skel",
+    "atlas": "zidan_moshuifeiniao.atlas",
+    "pages": [
+      "zidan_moshuifeiniao.png"
+    ]
+  }
+}

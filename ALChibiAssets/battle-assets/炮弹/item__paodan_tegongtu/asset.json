@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tegongtu",
+  "model": "paodan_tegongtu",
+  "name": "特工兔玩偶炮弹",
+  "names": [
+    "特工兔玩偶炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tegongtu",
+  "path": "battle-assets/炮弹/item__paodan_tegongtu",
+  "images": [
+    {
+      "file": "paodan_tegongtu_-3528143659917102937.png",
+      "name": "paodan_tegongtu",
+      "width": 128,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": -3528143659917102937,
+      "source": "CAB-48b6dfb38e40a4d07b1e6441eb6ac72a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tegongtu/paodan_tegongtu_-3528143659917102937.png"
+}

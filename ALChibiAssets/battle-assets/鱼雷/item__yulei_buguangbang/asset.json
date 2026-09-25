@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_buguangbang",
+  "model": "yulei_buguangbang",
+  "name": "补光灯鱼雷",
+  "names": [
+    "补光灯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_buguangbang",
+  "path": "battle-assets/鱼雷/item__yulei_buguangbang",
+  "images": [
+    {
+      "file": "yulei_buguangbang_674406456249602225.png",
+      "name": "yulei_buguangbang",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 674406456249602225,
+      "source": "CAB-dcbcad391a86472a1d12061f6445d8a3"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_buguangbang/yulei_buguangbang_674406456249602225.png",
+  "spine": {
+    "skel": "yulei_buguangbang.skel",
+    "atlas": "yulei_buguangbang.atlas",
+    "pages": [
+      "yulei_buguangbang.png"
+    ]
+  }
+}

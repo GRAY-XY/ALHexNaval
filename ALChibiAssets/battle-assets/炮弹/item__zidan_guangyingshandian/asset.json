@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guangyingshandian",
+  "model": "zidan_guangyingshandian",
+  "name": "光影闪电子弹",
+  "names": [
+    "光影闪电子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guangyingshandian",
+  "path": "battle-assets/炮弹/item__zidan_guangyingshandian",
+  "images": [
+    {
+      "file": "zidan_guangyingshandian_-8574457399395541218.png",
+      "name": "zidan_guangyingshandian",
+      "width": 128,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": -8574457399395541218,
+      "source": "CAB-35b7794f862aca1661c40f04a6367b3c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guangyingshandian/zidan_guangyingshandian_-8574457399395541218.png"
+}

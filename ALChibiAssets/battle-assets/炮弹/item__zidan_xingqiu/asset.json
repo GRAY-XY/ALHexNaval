@@ -1,0 +1,37 @@
+{
+  "id": "item__zidan_xingqiu",
+  "model": "zidan_xingqiu",
+  "name": "进击啾啾之星",
+  "names": [
+    "进击啾啾之星"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xingqiu",
+  "path": "battle-assets/炮弹/item__zidan_xingqiu",
+  "images": [
+    {
+      "file": "xingxinzidan_-557633308783084653.png",
+      "name": "xingxinzidan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -557633308783084653,
+      "source": "CAB-c74b05e39559b35d4fcf1aaa15e3022e"
+    },
+    {
+      "file": "tuowei01_7455855117877502580.png",
+      "name": "tuowei01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7455855117877502580,
+      "source": "CAB-c74b05e39559b35d4fcf1aaa15e3022e"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xingqiu/xingxinzidan_-557633308783084653.png"
+}

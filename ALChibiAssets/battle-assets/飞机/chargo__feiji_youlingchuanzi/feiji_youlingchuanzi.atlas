@@ -1,0 +1,69 @@
+
+feiji_youlingchuanzi.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuan_b
+  rotate: true
+  xy: 82, 56
+  size: 196, 146
+  orig: 196, 146
+  offset: 0, 0
+  index: -1
+chuan_t1
+  rotate: true
+  xy: 230, 82
+  size: 170, 129
+  orig: 170, 129
+  offset: 0, 0
+  index: -1
+chushou_b1
+  rotate: false
+  xy: 2, 2
+  size: 31, 49
+  orig: 31, 49
+  offset: 0, 0
+  index: -1
+chushou_t1
+  rotate: true
+  xy: 35, 8
+  size: 43, 39
+  orig: 43, 39
+  offset: 0, 0
+  index: -1
+chushou_t2
+  rotate: true
+  xy: 299, 16
+  size: 64, 58
+  orig: 64, 58
+  offset: 0, 0
+  index: -1
+chushou_t3
+  rotate: true
+  xy: 139, 16
+  size: 38, 19
+  orig: 38, 19
+  offset: 0, 0
+  index: -1
+chushou_t4
+  rotate: false
+  xy: 76, 11
+  size: 61, 40
+  orig: 61, 40
+  offset: 0, 0
+  index: -1
+chushou_t5
+  rotate: true
+  xy: 230, 5
+  size: 75, 67
+  orig: 75, 67
+  offset: 0, 0
+  index: -1
+diguang_1
+  rotate: true
+  xy: 2, 53
+  size: 199, 78
+  orig: 199, 78
+  offset: 0, 0
+  index: -1

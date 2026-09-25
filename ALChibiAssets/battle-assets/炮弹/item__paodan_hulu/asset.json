@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_hulu",
+  "model": "paodan_hulu",
+  "name": "法宝葫芦炮弹",
+  "names": [
+    "法宝葫芦炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hulu",
+  "path": "battle-assets/炮弹/item__paodan_hulu",
+  "images": [
+    {
+      "file": "paodan_hulu_273256832829677163.png",
+      "name": "paodan_hulu",
+      "width": 128,
+      "height": 82,
+      "role": "战斗贴图",
+      "path_id": 273256832829677163,
+      "source": "CAB-d4de89fc4979a72fb5b0692d67006a2d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hulu/paodan_hulu_273256832829677163.png"
+}

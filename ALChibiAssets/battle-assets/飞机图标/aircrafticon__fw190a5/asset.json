@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__fw190a5",
+  "model": "fw190a5",
+  "name": "试作型舰载FW-190 A-5",
+  "names": [
+    "试作型舰载FW-190 A-5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/fw190a5",
+  "path": "battle-assets/飞机图标/aircrafticon__fw190a5",
+  "images": [
+    {
+      "file": "Fw190A5_8613447315767823043.png",
+      "name": "Fw190A5",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 8613447315767823043,
+      "source": "CAB-06bb7f8456acf5299917643651fda701"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

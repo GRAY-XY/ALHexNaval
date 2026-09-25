@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_matitie",
+  "model": "zidan_matitie",
+  "name": "马蹄铁子弹",
+  "names": [
+    "马蹄铁子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_matitie",
+  "path": "battle-assets/炮弹/item__zidan_matitie",
+  "images": [
+    {
+      "file": "zidan_matitie_8548967277526633184.png",
+      "name": "zidan_matitie",
+      "width": 128,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": 8548967277526633184,
+      "source": "CAB-01cbbde2f12273f519b4eec90fe43e2b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_matitie/zidan_matitie_8548967277526633184.png"
+}

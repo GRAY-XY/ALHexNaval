@@ -1,0 +1,35 @@
+{
+  "id": "item__music_yinfuzidan06_m",
+  "model": "music_yinfuzidan06_m",
+  "name": "music_yinfuzidan06_m",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/music_yinfuzidan06_m",
+  "path": "battle-assets/炮弹/item__music_yinfuzidan06_m",
+  "images": [
+    {
+      "file": "yinfu_13_-8657805891205039105.png",
+      "name": "yinfu_13",
+      "width": 194,
+      "height": 241,
+      "role": "战斗贴图",
+      "path_id": -8657805891205039105,
+      "source": "CAB-29780a29862c159262d0f14d3baf4210"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    830073,
+    3146110,
+    3146331,
+    3146335,
+    3146338,
+    3146340,
+    3175025,
+    3175125
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__music_yinfuzidan06_m/yinfu_13_-8657805891205039105.png"
+}

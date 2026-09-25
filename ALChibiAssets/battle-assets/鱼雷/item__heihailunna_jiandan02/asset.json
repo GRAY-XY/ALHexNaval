@@ -1,0 +1,40 @@
+{
+  "id": "item__heihailunna_jiandan02",
+  "model": "heihailunna_jiandan02",
+  "name": "heihailunna_jiandan02",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/heihailunna_jiandan02",
+  "path": "battle-assets/鱼雷/item__heihailunna_jiandan02",
+  "images": [
+    {
+      "file": "jiandan02_7767384607541096652.png",
+      "name": "jiandan02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7767384607541096652,
+      "source": "CAB-ed66e7f9ddc04004956ff398de67f2f9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    840144,
+    840145,
+    852543,
+    29644009,
+    3097005,
+    3115049,
+    3119013,
+    3139705,
+    3223001,
+    3226002,
+    3226102,
+    3239517,
+    3309004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__heihailunna_jiandan02/jiandan02_7767384607541096652.png"
+}

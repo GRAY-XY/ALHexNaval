@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__pixelbullet__piexlbullet_material",
+  "model": "piexlbullet_material",
+  "name": "piexlbullet_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/pixelbullet/piexlbullet_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__pixelbullet__piexlbullet_material",
+  "images": [
+    {
+      "file": "PiexlBullet_-8485821674626918247.png",
+      "name": "PiexlBullet",
+      "width": 512,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -8485821674626918247,
+      "source": "CAB-8cf2c9a5c9509e98151deadc52ccd514"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

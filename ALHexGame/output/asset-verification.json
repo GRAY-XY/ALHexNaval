@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "ships": 12,
+  "files_checked": 54,
+  "bytes": 8874581,
+  "ship_types": {
+    "DD": 4,
+    "CL": 2,
+    "CA": 2,
+    "BB": 2,
+    "CV": 1,
+    "CVL": 1
+  },
+  "units": [
+    {
+      "id": "lafei",
+      "name": "拉菲",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "biaoqiang",
+      "name": "标枪",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "lingbo",
+      "name": "绫波",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "z23",
+      "name": "Z23",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "hailunna",
+      "name": "海伦娜",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "beierfasite",
+      "name": "贝尔法斯特",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "gaoxiong",
+      "name": "高雄",
+      "spine_version": "3.8.99",
+      "animations": 21,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "ougen",
+      "name": "欧根亲王",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "yanzhan",
+      "name": "厌战",
+      "spine_version": "3.8.99",
+      "animations": 22,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "bisimai",
+      "name": "俾斯麦",
+      "spine_version": "3.8.99",
+      "animations": 22,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "qiye",
+      "name": "企业",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "dujiaoshou",
+      "name": "独角兽",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    }
+  ],
+  "issues": [],
+  "scope": "Static integrity only; actual playback report is browser-verification.json."
+}

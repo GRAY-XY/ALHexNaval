@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_aijibaoshi",
+  "model": "zidan_aijibaoshi",
+  "name": "太阳之眼宝石子弹",
+  "names": [
+    "太阳之眼宝石子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_aijibaoshi",
+  "path": "battle-assets/炮弹/item__zidan_aijibaoshi",
+  "images": [
+    {
+      "file": "zidan_baoshi_-3948533719803740960.png",
+      "name": "zidan_baoshi",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -3948533719803740960,
+      "source": "CAB-0cd38baa0ec2d6760d3bbf587e8e5a36"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_aijibaoshi/zidan_baoshi_-3948533719803740960.png"
+}

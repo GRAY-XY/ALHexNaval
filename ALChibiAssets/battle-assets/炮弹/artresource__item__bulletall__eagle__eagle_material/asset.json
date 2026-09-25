@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__eagle__eagle_material",
+  "model": "eagle_material",
+  "name": "eagle_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/eagle/eagle_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__eagle__eagle_material",
+  "images": [
+    {
+      "file": "eagle_1796969639248069069.png",
+      "name": "eagle",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1796969639248069069,
+      "source": "CAB-49852515f345b897fbd9f44f3a14eb7f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

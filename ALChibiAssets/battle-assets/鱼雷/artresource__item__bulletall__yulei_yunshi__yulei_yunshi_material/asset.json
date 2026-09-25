@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yulei_yunshi__yulei_yunshi_material",
+  "model": "yulei_yunshi_material",
+  "name": "yulei_yunshi_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_yunshi/yulei_yunshi_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_yunshi__yulei_yunshi_material",
+  "images": [
+    {
+      "file": "yulei_yunshi_-3525576205232948881.png",
+      "name": "yulei_yunshi",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3525576205232948881,
+      "source": "CAB-f213d52ae3149141b9a71b7bf882fc82"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

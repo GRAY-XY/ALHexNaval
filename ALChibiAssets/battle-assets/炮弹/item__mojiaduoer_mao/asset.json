@@ -1,0 +1,30 @@
+{
+  "id": "item__mojiaduoer_mao",
+  "model": "mojiaduoer_mao",
+  "name": "mojiaduoer_mao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/mojiaduoer_mao",
+  "path": "battle-assets/炮弹/item__mojiaduoer_mao",
+  "images": [
+    {
+      "file": "changmao01_7885790279727992368.png",
+      "name": "changmao01",
+      "width": 251,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 7885790279727992368,
+      "source": "CAB-1120cafa89c6fd8bfc7674e8d4268531"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    164471,
+    164472,
+    3250002
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__mojiaduoer_mao/changmao01_7885790279727992368.png"
+}

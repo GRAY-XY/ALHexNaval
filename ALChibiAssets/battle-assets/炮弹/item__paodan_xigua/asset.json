@@ -1,0 +1,45 @@
+{
+  "id": "item__paodan_xigua",
+  "model": "paodan_xigua",
+  "name": "西瓜炮弹",
+  "names": [
+    "西瓜炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xigua",
+  "path": "battle-assets/炮弹/item__paodan_xigua",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3163008,
+    3164025,
+    3164026,
+    3164027,
+    3164028,
+    3164029,
+    3164030,
+    3169010,
+    3386006
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xigua/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "xiguapaodan.skel",
+    "atlas": "xiguapaodan.atlas",
+    "pages": [
+      "xiguapaodan.png"
+    ]
+  }
+}

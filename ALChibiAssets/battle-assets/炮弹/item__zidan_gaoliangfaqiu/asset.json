@@ -1,0 +1,37 @@
+{
+  "id": "item__zidan_gaoliangfaqiu",
+  "model": "zidan_gaoliangfaqiu",
+  "name": "秘术法球子弹",
+  "names": [
+    "秘术法球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_gaoliangfaqiu",
+  "path": "battle-assets/炮弹/item__zidan_gaoliangfaqiu",
+  "images": [
+    {
+      "file": "line01_-1457942734965139790.png",
+      "name": "line01",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -1457942734965139790,
+      "source": "CAB-4f00fe1c920cd1b302c1b43f588d4b0e"
+    },
+    {
+      "file": "mofa02_1578222158020216262.png",
+      "name": "mofa02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1578222158020216262,
+      "source": "CAB-4f00fe1c920cd1b302c1b43f588d4b0e"
+    }
+  ],
+  "particle_systems": 6,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_gaoliangfaqiu/line01_-1457942734965139790.png"
+}

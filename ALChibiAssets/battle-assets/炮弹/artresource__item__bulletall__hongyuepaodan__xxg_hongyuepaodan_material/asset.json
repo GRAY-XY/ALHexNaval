@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__hongyuepaodan__xxg_hongyuepaodan_material",
+  "model": "xxg_hongyuepaodan_material",
+  "name": "xxg_hongyuepaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/hongyuepaodan/xxg_hongyuepaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__hongyuepaodan__xxg_hongyuepaodan_material",
+  "images": [
+    {
+      "file": "xxg_hongyuepaodan_-7433560321499562832.png",
+      "name": "xxg_hongyuepaodan",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7433560321499562832,
+      "source": "CAB-60076d144f3c79a0197b4474d140df59"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

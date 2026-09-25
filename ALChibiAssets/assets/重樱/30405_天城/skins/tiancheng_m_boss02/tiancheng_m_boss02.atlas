@@ -1,0 +1,62 @@
+
+tiancheng_m_boss02.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fanghuzhao
+  rotate: true
+  xy: 649, 60
+  size: 160, 264
+  orig: 160, 264
+  offset: 0, 0
+  index: -1
+liugang
+  rotate: false
+  xy: 446, 2
+  size: 201, 218
+  orig: 201, 218
+  offset: 0, 0
+  index: -1
+posun_1
+  rotate: false
+  xy: 893, 689
+  size: 76, 54
+  orig: 76, 54
+  offset: 0, 0
+  index: -1
+posun_2
+  rotate: false
+  xy: 893, 745
+  size: 111, 79
+  orig: 111, 79
+  offset: 0, 0
+  index: -1
+posunchuan
+  rotate: false
+  xy: 2, 516
+  size: 445, 308
+  orig: 445, 308
+  offset: 0, 0
+  index: -1
+shuihua_zs1
+  rotate: false
+  xy: 449, 524
+  size: 442, 300
+  orig: 442, 300
+  offset: 0, 0
+  index: -1
+shuihua_zs2
+  rotate: false
+  xy: 449, 222
+  size: 442, 300
+  orig: 442, 300
+  offset: 0, 0
+  index: -1
+shuihua_zs3
+  rotate: false
+  xy: 2, 214
+  size: 442, 300
+  orig: 442, 300
+  offset: 0, 0
+  index: -1

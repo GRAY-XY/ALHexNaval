@@ -1,0 +1,28 @@
+{
+  "id": "item__kaerduqi_futou",
+  "model": "kaerduqi_futou",
+  "name": "kaerduqi_futou",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/kaerduqi_futou",
+  "path": "battle-assets/炮弹/item__kaerduqi_futou",
+  "images": [
+    {
+      "file": "paodan_futou_-6321248585728102103.png",
+      "name": "paodan_futou",
+      "width": 128,
+      "height": 102,
+      "role": "战斗贴图",
+      "path_id": -6321248585728102103,
+      "source": "CAB-7610c6f2522de3f24ade877a67249e71"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161033
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__kaerduqi_futou/paodan_futou_-6321248585728102103.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_feibiaopan",
+  "model": "paodan_feibiaopan",
+  "name": "标靶炮弹",
+  "names": [
+    "标靶炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_feibiaopan",
+  "path": "battle-assets/炮弹/item__paodan_feibiaopan",
+  "images": [
+    {
+      "file": "paodan_feibiaopan_5560527337822763471.png",
+      "name": "paodan_feibiaopan",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5560527337822763471,
+      "source": "CAB-33cf572bf964a47472f19548baecd469"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_feibiaopan/paodan_feibiaopan_5560527337822763471.png",
+  "spine": {
+    "skel": "paodan_feibiaopan.skel",
+    "atlas": "paodan_feibiaopan.atlas",
+    "pages": [
+      "paodan_feibiaopan.png"
+    ]
+  }
+}

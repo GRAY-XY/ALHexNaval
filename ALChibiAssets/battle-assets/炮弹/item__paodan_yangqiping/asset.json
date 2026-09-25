@@ -1,0 +1,32 @@
+{
+  "id": "item__paodan_yangqiping",
+  "model": "paodan_yangqiping",
+  "name": "氧气瓶炮弹",
+  "names": [
+    "氧气瓶炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yangqiping",
+  "path": "battle-assets/炮弹/item__paodan_yangqiping",
+  "images": [
+    {
+      "file": "paodan_yangqiping_4503162526317262841.png",
+      "name": "paodan_yangqiping",
+      "width": 128,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": 4503162526317262841,
+      "source": "CAB-97743a7c7cbb0c265bc0bd169d446859"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3227209,
+    3252009,
+    3254003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yangqiping/paodan_yangqiping_4503162526317262841.png"
+}

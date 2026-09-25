@@ -1,0 +1,40 @@
+{
+  "id": "chargo__f2a",
+  "model": "f2a",
+  "name": "默认白鹰战斗机",
+  "names": [
+    "默认白鹰战斗机",
+    "默认白鹰战斗机-自动防空",
+    "F2A水牛",
+    "【翻格子活动】白鹰战斗机"
+  ],
+  "category": "飞机",
+  "source": "chargo/f2a",
+  "path": "battle-assets/飞机/chargo__f2a",
+  "images": [
+    {
+      "file": "F2A_4827350763043063281.png",
+      "name": "F2A",
+      "width": 256,
+      "height": 229,
+      "role": "战斗贴图",
+      "path_id": 4827350763043063281,
+      "source": "CAB-f7d5c223013dfd62b2e5dcebab74bf46"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__f2a/F2A_4827350763043063281.png"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "item__unknownv_mal_yulein",
+  "model": "unknownv_mal_yulein",
+  "name": "unknownv_mal_yulein",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/unknownv_mal_yulein",
+  "path": "battle-assets/鱼雷/item__unknownv_mal_yulein",
+  "images": [
+    {
+      "file": "unknownV_mal_yuleiN_9116565403587846598.png",
+      "name": "unknownV_mal_yuleiN",
+      "width": 208,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": 9116565403587846598,
+      "source": "CAB-0fc72ff123623ecefa8ec074773b0e2f"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__unknownv_mal_yulein/unknownV_mal_yuleiN_9116565403587846598.png"
+}

@@ -1,0 +1,27 @@
+
+zhiyuanjiufeiji.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiu
+  rotate: false
+  xy: 145, 95
+  size: 146, 158
+  orig: 146, 158
+  offset: 0, 0
+  index: -1
+sheng
+  rotate: true
+  xy: 145, 2
+  size: 91, 141
+  orig: 91, 141
+  offset: 0, 0
+  index: -1
+zhiyuan
+  rotate: true
+  xy: 2, 8
+  size: 245, 141
+  orig: 245, 141
+  offset: 0, 0
+  index: -1

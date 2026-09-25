@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__xiguapaodan__xiguapaodan_material",
+  "model": "xiguapaodan_material",
+  "name": "xiguapaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/xiguapaodan/xiguapaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__xiguapaodan__xiguapaodan_material",
+  "images": [
+    {
+      "file": "xiguapaodan_-1971701575238043227.png",
+      "name": "xiguapaodan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1971701575238043227,
+      "source": "CAB-cdbcbf95ccec670532ef1d4bf7af1f28"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

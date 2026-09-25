@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhangyushao",
+  "model": "yulei_zhangyushao",
+  "name": "章鱼烧鱼雷",
+  "names": [
+    "章鱼烧鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhangyushao",
+  "path": "battle-assets/鱼雷/item__yulei_zhangyushao",
+  "images": [
+    {
+      "file": "yulei_zhangyushao_2682983135925826513.png",
+      "name": "yulei_zhangyushao",
+      "width": 127,
+      "height": 79,
+      "role": "战斗贴图",
+      "path_id": 2682983135925826513,
+      "source": "CAB-2c637b0dcf2b09c8d48ce10a1e91705e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhangyushao/yulei_zhangyushao_2682983135925826513.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__longgong_huifu",
+  "model": "longgong_huifu",
+  "name": "longgong_huifu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/longgong_huifu",
+  "path": "battle-assets/炮弹/item__longgong_huifu",
+  "images": [
+    {
+      "file": "zhiliao01_4246204934220005421.png",
+      "name": "zhiliao01",
+      "width": 354,
+      "height": 134,
+      "role": "战斗贴图",
+      "path_id": 4246204934220005421,
+      "source": "CAB-57734b0baf4c8d2c75eddd48a8770d4e"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    853031,
+    853371,
+    853372,
+    853373,
+    853374,
+    853375,
+    3246008,
+    3295018
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__longgong_huifu/zhiliao01_4246204934220005421.png"
+}

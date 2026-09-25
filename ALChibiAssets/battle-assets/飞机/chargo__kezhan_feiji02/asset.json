@@ -1,0 +1,44 @@
+{
+  "id": "chargo__kezhan_feiji02",
+  "model": "kezhan_feiji02",
+  "name": "【2026莫斯科UR活动】东煌风味 航母轰炸机 Lv1",
+  "names": [
+    "【2026莫斯科UR活动】东煌风味 航母轰炸机 Lv1",
+    "【2026莫斯科UR活动】东煌风味 航母轰炸机 Lv2",
+    "【2026莫斯科UR活动】东煌风味 航母轰炸机 Lv3",
+    "【2026莫斯科UR活动】东煌风味 航母轰炸机 Lv4",
+    "【2026莫斯科UR活动】东煌风味 航母轰炸机 Lv5",
+    "【2026莫斯科UR活动B】精英蛋船 东煌风味航母 轰炸机",
+    "【2026莫斯科UR活动D】精英蛋船 东煌风味航母 轰炸机",
+    "【2026莫斯科UR活动SP】精英蛋船 东煌风味航母 轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/kezhan_feiji02",
+  "path": "battle-assets/飞机/chargo__kezhan_feiji02",
+  "images": [
+    {
+      "file": "kezhan_feiji02_5926660266748136707.png",
+      "name": "kezhan_feiji02",
+      "width": 256,
+      "height": 197,
+      "role": "战斗贴图",
+      "path_id": 5926660266748136707,
+      "source": "CAB-355407aed29dbc4fd55f433953c48529"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__kezhan_feiji02/kezhan_feiji02_5926660266748136707.png"
+}

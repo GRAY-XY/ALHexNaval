@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__xf5u",
+  "model": "xf5u",
+  "name": "试作型XF5U飞碟",
+  "names": [
+    "试作型XF5U飞碟"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/xf5u",
+  "path": "battle-assets/飞机图标/aircrafticon__xf5u",
+  "images": [
+    {
+      "file": "XF5U_-5680053459130739083.png",
+      "name": "XF5U",
+      "width": 40,
+      "height": 41,
+      "role": "原始精灵",
+      "path_id": -5680053459130739083,
+      "source": "CAB-35bfc77a92dafd6a4a064388f3c172f7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

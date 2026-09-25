@@ -1,0 +1,20 @@
+
+yulei_tolove_haitun.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+haitun
+  rotate: false
+  xy: 2, 2
+  size: 556, 235
+  orig: 556, 235
+  offset: 0, 0
+  index: -1
+haitun_qi
+  rotate: true
+  xy: 560, 115
+  size: 122, 72
+  orig: 122, 72
+  offset: 0, 0
+  index: -1

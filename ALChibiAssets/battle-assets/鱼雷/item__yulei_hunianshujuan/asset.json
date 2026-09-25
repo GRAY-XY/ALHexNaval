@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_hunianshujuan",
+  "model": "yulei_hunianshujuan",
+  "name": "书卷鱼雷",
+  "names": [
+    "书卷鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hunianshujuan",
+  "path": "battle-assets/鱼雷/item__yulei_hunianshujuan",
+  "images": [
+    {
+      "file": "yulei_hunianshujuan_-6882827099657109799.png",
+      "name": "yulei_hunianshujuan",
+      "width": 128,
+      "height": 86,
+      "role": "战斗贴图",
+      "path_id": -6882827099657109799,
+      "source": "CAB-ffa9acd945a86a7d65eb8e7f04529b96"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hunianshujuan/yulei_hunianshujuan_-6882827099657109799.png"
+}

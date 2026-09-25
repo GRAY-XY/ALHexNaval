@@ -1,0 +1,32 @@
+{
+  "id": "item__hololive_holoyu",
+  "model": "hololive_holoyu",
+  "name": "hololive_holoyu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hololive_holoyu",
+  "path": "battle-assets/炮弹/item__hololive_holoyu",
+  "images": [
+    {
+      "file": "hololive_holoyu_3160603011675548386.png",
+      "name": "hololive_holoyu",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 3160603011675548386,
+      "source": "CAB-a424fcda20bc0797f71c702fd220de34"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    660005,
+    660006,
+    660008,
+    660091,
+    660105
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hololive_holoyu/hololive_holoyu_3160603011675548386.png"
+}

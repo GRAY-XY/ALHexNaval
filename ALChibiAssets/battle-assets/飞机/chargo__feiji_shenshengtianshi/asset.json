@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_shenshengtianshi",
+  "model": "feiji_shenshengtianshi",
+  "name": "恶毒μ神圣天使轰炸机Lv1",
+  "names": [
+    "恶毒μ神圣天使轰炸机Lv1",
+    "【2024异世界冒险 剧情】利物浦 小天使飞机",
+    "神圣天使啾(鱼雷)",
+    "神圣天使啾(战斗)",
+    "神圣天使啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_shenshengtianshi",
+  "path": "battle-assets/飞机/chargo__feiji_shenshengtianshi",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_shenshengtianshi/aircraft_shadow_2192772484218123160.png",
+  "spine": {
+    "skel": "shenshengtianshi.skel",
+    "atlas": "shenshengtianshi.atlas",
+    "pages": [
+      "shenshengtianshi.png"
+    ]
+  }
+}

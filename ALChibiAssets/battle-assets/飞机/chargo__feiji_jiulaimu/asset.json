@@ -1,0 +1,46 @@
+{
+  "id": "chargo__feiji_jiulaimu",
+  "model": "feiji_jiulaimu",
+  "name": "【2024异世界冒险】魔法啾莱姆 轰炸机 Lv1",
+  "names": [
+    "【2024异世界冒险】魔法啾莱姆 轰炸机 Lv1",
+    "【2024异世界冒险】魔法啾莱姆 轰炸机 Lv2",
+    "【2024异世界冒险】魔法啾莱姆 轰炸机 Lv3",
+    "【2024异世界冒险】魔法啾莱姆 轰炸机 Lv4",
+    "【2024异世界冒险】魔法啾莱姆 轰炸机 Lv5",
+    "【2024异世界冒险】魔法啾莱姆 战斗机 Lv1",
+    "【2024异世界冒险】魔法啾莱姆 战斗机 Lv2",
+    "【2024异世界冒险】魔法啾莱姆 战斗机 Lv3",
+    "【2024异世界冒险】魔法啾莱姆 战斗机 Lv4",
+    "【2024异世界冒险】魔法啾莱姆 战斗机 Lv5"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_jiulaimu",
+  "path": "battle-assets/飞机/chargo__feiji_jiulaimu",
+  "images": [
+    {
+      "file": "feiji_jiulaimu_1233350751561272743.png",
+      "name": "feiji_jiulaimu",
+      "width": 256,
+      "height": 242,
+      "role": "战斗贴图",
+      "path_id": 1233350751561272743,
+      "source": "CAB-d458d43fca0ef04043c39c9f55237808"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_jiulaimu/feiji_jiulaimu_1233350751561272743.png"
+}

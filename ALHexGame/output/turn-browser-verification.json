@@ -1,0 +1,1196 @@
+{
+  "verifiedAt": "2026-09-17T13:39:11.859Z",
+  "passed": true,
+  "checks": [
+    "Four independent owners command the 12 representative ships",
+    "Match ownership is independent from original ship faction",
+    "Tab cycles to the next unit needing movement orders",
+    "Control-click selects three friendly ships",
+    "Fleet button creates a three-ship formation",
+    "Hover displays route cost and estimated owner turns",
+    "Right-click moves formation and keeps its remaining long-distance order",
+    "Moving members actually play the original movement animation",
+    "Movement retains authored feet pivots and rig scale",
+    "All ships end movement on unique hexes",
+    "All four forces act before the next round starts",
+    "Formation automatically continues when its owner receives the next turn",
+    "Manual load restores exact turn, resources, formation and destination",
+    "Reload recovers the automatic save without losing orders",
+    "Export creates a downloadable JSON save",
+    "Importing a valid JSON restores the exported match state",
+    "Invalid imports show an error and leave the live match unchanged",
+    "Disband removes membership and fleet orders",
+    "Mouse orders cannot move a ship owned by another force",
+    "Movement mode accepts left-click orders as an alternative to right-click",
+    "Wait spends current turn resources",
+    "Waiting ships recover on the next owner turn",
+    "Persistent hold continues across rounds",
+    "Wake changes standing order without refunding spent points",
+    "New match UI supports eight alternating forces",
+    "Eight forces rotate completely before advancing the round",
+    "Previous match slot recovers the game replaced by new-match creation",
+    "128 map keeps all 12 assets valid and terrain cache bounded",
+    "128 map supports a real cross-map hex route",
+    "256 map keeps all 12 assets valid and terrain cache bounded",
+    "256 map supports a real cross-map hex route",
+    "512 map keeps all 12 assets valid and terrain cache bounded",
+    "512 map supports a real cross-map hex route",
+    "980px window keeps fleet, minimap and save controls reachable",
+    "No uncaught or console errors during turn, movement, fleet and save operations"
+  ],
+  "benchmarks": [
+    {
+      "mapSize": 128,
+      "totalCells": 16384,
+      "landCells": 1046,
+      "terrainDataBytes": 32768,
+      "generationMs": 10.299999999813735,
+      "camera": {
+        "x": 630.4347826086956,
+        "y": 943.1742431778198,
+        "zoom": 0.92,
+        "width": 1160,
+        "height": 940
+      },
+      "terrain": {
+        "cachedChunks": 35,
+        "visibleChunks": 20,
+        "pendingChunks": 0,
+        "generatedChunks": 35,
+        "estimatedTerrainTextureBytes": 30017976,
+        "detail": true,
+        "chunkLimit": 96
+      },
+      "ships": {
+        "rigsLoaded": 12,
+        "visibleRigs": 9,
+        "visibleIcons": 0,
+        "errors": [],
+        "calibration": [
+          {
+            "id": "lafei",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2915173871150648,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -192.5800018310547,
+              "y": -336.17205810546875,
+              "width": 361.45249938964844,
+              "height": 337.55249774456024
+            }
+          },
+          {
+            "id": "biaoqiang",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2953959097423055,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -142.47808837890625,
+              "y": -331.7581481933594,
+              "width": 260.9142532348633,
+              "height": 335.2980966567993
+            }
+          },
+          {
+            "id": "lingbo",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2916255320184594,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -128.1732635498047,
+              "y": -336.0473937988281,
+              "width": 240.03170776367188,
+              "height": 350.55995655059814
+            }
+          },
+          {
+            "id": "z23",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2881696477045509,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -116.29191589355469,
+              "y": -340.07745361328125,
+              "width": 225.53160858154297,
+              "height": 340.03601336851716
+            }
+          },
+          {
+            "id": "hailunna",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28903566601312713,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -147.58839416503906,
+              "y": -339.0585021972656,
+              "width": 256.5333786010742,
+              "height": 342.58671379089355
+            }
+          },
+          {
+            "id": "beierfasite",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31646777285611694,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -137.17225646972656,
+              "y": -309.6681823730469,
+              "width": 279.14186096191406,
+              "height": 312.3639540672302
+            }
+          },
+          {
+            "id": "gaoxiong",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.3253250450311723,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -185.454345703125,
+              "y": -301.2371826171875,
+              "width": 312.3809356689453,
+              "height": 302.9466128349304
+            }
+          },
+          {
+            "id": "ougen",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2816788292035969,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -180.83868408203125,
+              "y": -347.9139709472656,
+              "width": 328.02745056152344,
+              "height": 349.59391379356384
+            }
+          },
+          {
+            "id": "yanzhan",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28363017841971716,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -162.39231872558594,
+              "y": -345.5203552246094,
+              "width": 319.1253356933594,
+              "height": 374.2548313140869
+            }
+          },
+          {
+            "id": "bisimai",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28789737172474184,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -160.8424835205078,
+              "y": -340.3990783691406,
+              "width": 338.3264617919922,
+              "height": 356.48109436035156
+            }
+          },
+          {
+            "id": "qiye",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28810909743405705,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -207.31349182128906,
+              "y": -340.14892578125,
+              "width": 378.39202880859375,
+              "height": 399.3262367248535
+            }
+          },
+          {
+            "id": "dujiaoshou",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31048826477917696,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -138.24501037597656,
+              "y": -315.63189697265625,
+              "width": 242.72390747070312,
+              "height": 361.2186279296875
+            }
+          }
+        ]
+      },
+      "fps": 59,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 (0x00002704) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "jsHeapBytes": 66060531,
+      "selected": "preview-lafei",
+      "gridVisible": true,
+      "match": {
+        "format": "al-hex-match",
+        "version": 1,
+        "mapVersion": 1,
+        "size": 128,
+        "mapHash": "ff438679",
+        "round": 1,
+        "activeIndex": 0,
+        "fleetSerial": 0,
+        "teams": [
+          {
+            "id": 1,
+            "name": "湛蓝舰队"
+          },
+          {
+            "id": 2,
+            "name": "翠绿舰队"
+          },
+          {
+            "id": 3,
+            "name": "琥珀舰队"
+          },
+          {
+            "id": 4,
+            "name": "紫罗兰舰队"
+          }
+        ],
+        "units": [
+          {
+            "col": 10,
+            "row": 14,
+            "instanceId": "preview-lafei",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "lafei"
+          },
+          {
+            "col": 13,
+            "row": 14,
+            "instanceId": "preview-biaoqiang",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "biaoqiang"
+          },
+          {
+            "col": 16,
+            "row": 14,
+            "instanceId": "preview-lingbo",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "lingbo"
+          },
+          {
+            "col": 19,
+            "row": 14,
+            "instanceId": "preview-z23",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "z23"
+          },
+          {
+            "col": 10,
+            "row": 17,
+            "instanceId": "preview-hailunna",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 3,
+            "action": 1,
+            "status": "ready",
+            "assetId": "hailunna"
+          },
+          {
+            "col": 13,
+            "row": 17,
+            "instanceId": "preview-beierfasite",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 3,
+            "action": 1,
+            "status": "ready",
+            "assetId": "beierfasite"
+          },
+          {
+            "col": 16,
+            "row": 17,
+            "instanceId": "preview-gaoxiong",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "gaoxiong"
+          },
+          {
+            "col": 19,
+            "row": 17,
+            "instanceId": "preview-ougen",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "ougen"
+          },
+          {
+            "col": 10,
+            "row": 20,
+            "instanceId": "preview-yanzhan",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "yanzhan"
+          },
+          {
+            "col": 13,
+            "row": 20,
+            "instanceId": "preview-bisimai",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "bisimai"
+          },
+          {
+            "col": 16,
+            "row": 20,
+            "instanceId": "preview-qiye",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "qiye"
+          },
+          {
+            "col": 19,
+            "row": 20,
+            "instanceId": "preview-dujiaoshou",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "dujiaoshou"
+          }
+        ],
+        "fleets": []
+      },
+      "moving": false,
+      "benchmark": {
+        "frames": 60,
+        "elapsedMs": 1021.2999999998137,
+        "medianFrameMs": 16.600000000558794,
+        "p95FrameMs": 22.399999999441206,
+        "pan": true,
+        "scope": "12 ships and turn/movement UI; rendering benchmark only. Does not include combat, AI or networking."
+      }
+    },
+    {
+      "mapSize": 256,
+      "totalCells": 65536,
+      "landCells": 5981,
+      "terrainDataBytes": 131072,
+      "generationMs": 44,
+      "camera": {
+        "x": 1456.355198077311,
+        "y": 1951.1742431778198,
+        "zoom": 0.92,
+        "width": 1160,
+        "height": 940
+      },
+      "terrain": {
+        "cachedChunks": 40,
+        "visibleChunks": 20,
+        "pendingChunks": 0,
+        "generatedChunks": 40,
+        "estimatedTerrainTextureBytes": 33145920,
+        "detail": true,
+        "chunkLimit": 96
+      },
+      "ships": {
+        "rigsLoaded": 12,
+        "visibleRigs": 6,
+        "visibleIcons": 0,
+        "errors": [],
+        "calibration": [
+          {
+            "id": "lafei",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2915173871150648,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -192.5800018310547,
+              "y": -336.17205810546875,
+              "width": 361.45249938964844,
+              "height": 337.55249774456024
+            }
+          },
+          {
+            "id": "biaoqiang",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2953959097423055,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -142.47808837890625,
+              "y": -331.7581481933594,
+              "width": 260.9142532348633,
+              "height": 335.2980966567993
+            }
+          },
+          {
+            "id": "lingbo",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2916255320184594,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -128.1732635498047,
+              "y": -336.0473937988281,
+              "width": 240.03170776367188,
+              "height": 350.55995655059814
+            }
+          },
+          {
+            "id": "z23",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2881696477045509,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -116.29191589355469,
+              "y": -340.07745361328125,
+              "width": 225.53160858154297,
+              "height": 340.03601336851716
+            }
+          },
+          {
+            "id": "hailunna",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28903566601312713,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -147.58839416503906,
+              "y": -339.0585021972656,
+              "width": 256.5333786010742,
+              "height": 342.58671379089355
+            }
+          },
+          {
+            "id": "beierfasite",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31646777285611694,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -137.17225646972656,
+              "y": -309.6681823730469,
+              "width": 279.14186096191406,
+              "height": 312.3639540672302
+            }
+          },
+          {
+            "id": "gaoxiong",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.3253250450311723,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -185.454345703125,
+              "y": -301.2371826171875,
+              "width": 312.3809356689453,
+              "height": 302.9466128349304
+            }
+          },
+          {
+            "id": "ougen",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2816788292035969,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -180.83868408203125,
+              "y": -347.9139709472656,
+              "width": 328.02745056152344,
+              "height": 349.59391379356384
+            }
+          },
+          {
+            "id": "yanzhan",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28363017841971716,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -162.39231872558594,
+              "y": -345.5203552246094,
+              "width": 319.1253356933594,
+              "height": 374.2548313140869
+            }
+          },
+          {
+            "id": "bisimai",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28789737172474184,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -160.8424835205078,
+              "y": -340.3990783691406,
+              "width": 338.3264617919922,
+              "height": 356.48109436035156
+            }
+          },
+          {
+            "id": "qiye",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28810909743405705,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -207.31349182128906,
+              "y": -340.14892578125,
+              "width": 378.39202880859375,
+              "height": 399.3262367248535
+            }
+          },
+          {
+            "id": "dujiaoshou",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31048826477917696,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -138.24501037597656,
+              "y": -315.63189697265625,
+              "width": 242.72390747070312,
+              "height": 361.2186279296875
+            }
+          }
+        ]
+      },
+      "fps": 58,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 (0x00002704) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "jsHeapBytes": 81036817,
+      "selected": "preview-lafei",
+      "gridVisible": true,
+      "match": {
+        "format": "al-hex-match",
+        "version": 1,
+        "mapVersion": 1,
+        "size": 256,
+        "mapHash": "1af6e931",
+        "round": 1,
+        "activeIndex": 0,
+        "fleetSerial": 0,
+        "teams": [
+          {
+            "id": 1,
+            "name": "湛蓝舰队"
+          },
+          {
+            "id": 2,
+            "name": "翠绿舰队"
+          },
+          {
+            "id": 3,
+            "name": "琥珀舰队"
+          },
+          {
+            "id": 4,
+            "name": "紫罗兰舰队"
+          }
+        ],
+        "units": [
+          {
+            "col": 26,
+            "row": 30,
+            "instanceId": "preview-lafei",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "lafei"
+          },
+          {
+            "col": 29,
+            "row": 30,
+            "instanceId": "preview-biaoqiang",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "biaoqiang"
+          },
+          {
+            "col": 32,
+            "row": 30,
+            "instanceId": "preview-lingbo",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "lingbo"
+          },
+          {
+            "col": 35,
+            "row": 30,
+            "instanceId": "preview-z23",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "z23"
+          },
+          {
+            "col": 26,
+            "row": 33,
+            "instanceId": "preview-hailunna",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 3,
+            "action": 1,
+            "status": "ready",
+            "assetId": "hailunna"
+          },
+          {
+            "col": 29,
+            "row": 33,
+            "instanceId": "preview-beierfasite",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 3,
+            "action": 1,
+            "status": "ready",
+            "assetId": "beierfasite"
+          },
+          {
+            "col": 32,
+            "row": 33,
+            "instanceId": "preview-gaoxiong",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "gaoxiong"
+          },
+          {
+            "col": 35,
+            "row": 33,
+            "instanceId": "preview-ougen",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "ougen"
+          },
+          {
+            "col": 26,
+            "row": 36,
+            "instanceId": "preview-yanzhan",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "yanzhan"
+          },
+          {
+            "col": 29,
+            "row": 36,
+            "instanceId": "preview-bisimai",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "bisimai"
+          },
+          {
+            "col": 32,
+            "row": 36,
+            "instanceId": "preview-qiye",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "qiye"
+          },
+          {
+            "col": 35,
+            "row": 36,
+            "instanceId": "preview-dujiaoshou",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "dujiaoshou"
+          }
+        ],
+        "fleets": []
+      },
+      "moving": false,
+      "benchmark": {
+        "frames": 60,
+        "elapsedMs": 1032.699999999255,
+        "medianFrameMs": 16.799999999813735,
+        "p95FrameMs": 22.399999999441206,
+        "pan": true,
+        "scope": "12 ships and turn/movement UI; rendering benchmark only. Does not include combat, AI or networking."
+      }
+    },
+    {
+      "mapSize": 512,
+      "totalCells": 262144,
+      "landCells": 27515,
+      "terrainDataBytes": 524288,
+      "generationMs": 87.09999999962747,
+      "camera": {
+        "x": 3638.7392156140972,
+        "y": 4093.17424317782,
+        "zoom": 0.92,
+        "width": 1160,
+        "height": 940
+      },
+      "terrain": {
+        "cachedChunks": 46,
+        "visibleChunks": 20,
+        "pendingChunks": 0,
+        "generatedChunks": 46,
+        "estimatedTerrainTextureBytes": 36892080,
+        "detail": true,
+        "chunkLimit": 96
+      },
+      "ships": {
+        "rigsLoaded": 12,
+        "visibleRigs": 6,
+        "visibleIcons": 0,
+        "errors": [],
+        "calibration": [
+          {
+            "id": "lafei",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2915173871150648,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -192.5800018310547,
+              "y": -336.17205810546875,
+              "width": 361.45249938964844,
+              "height": 337.55249774456024
+            }
+          },
+          {
+            "id": "biaoqiang",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2953959097423055,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -142.47808837890625,
+              "y": -331.7581481933594,
+              "width": 260.9142532348633,
+              "height": 335.2980966567993
+            }
+          },
+          {
+            "id": "lingbo",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2916255320184594,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -128.1732635498047,
+              "y": -336.0473937988281,
+              "width": 240.03170776367188,
+              "height": 350.55995655059814
+            }
+          },
+          {
+            "id": "z23",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2881696477045509,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -116.29191589355469,
+              "y": -340.07745361328125,
+              "width": 225.53160858154297,
+              "height": 340.03601336851716
+            }
+          },
+          {
+            "id": "hailunna",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28903566601312713,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -147.58839416503906,
+              "y": -339.0585021972656,
+              "width": 256.5333786010742,
+              "height": 342.58671379089355
+            }
+          },
+          {
+            "id": "beierfasite",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31646777285611694,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -137.17225646972656,
+              "y": -309.6681823730469,
+              "width": 279.14186096191406,
+              "height": 312.3639540672302
+            }
+          },
+          {
+            "id": "gaoxiong",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.3253250450311723,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -185.454345703125,
+              "y": -301.2371826171875,
+              "width": 312.3809356689453,
+              "height": 302.9466128349304
+            }
+          },
+          {
+            "id": "ougen",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.2816788292035969,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -180.83868408203125,
+              "y": -347.9139709472656,
+              "width": 328.02745056152344,
+              "height": 349.59391379356384
+            }
+          },
+          {
+            "id": "yanzhan",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28363017841971716,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -162.39231872558594,
+              "y": -345.5203552246094,
+              "width": 319.1253356933594,
+              "height": 374.2548313140869
+            }
+          },
+          {
+            "id": "bisimai",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28789737172474184,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -160.8424835205078,
+              "y": -340.3990783691406,
+              "width": 338.3264617919922,
+              "height": 356.48109436035156
+            }
+          },
+          {
+            "id": "qiye",
+            "facing": "right",
+            "basis": "authored-root-at-feet",
+            "scale": 0.28810909743405705,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -207.31349182128906,
+              "y": -340.14892578125,
+              "width": 378.39202880859375,
+              "height": 399.3262367248535
+            }
+          },
+          {
+            "id": "dujiaoshou",
+            "facing": "left",
+            "basis": "authored-root-at-feet",
+            "scale": 0.31048826477917696,
+            "pivotX": 0,
+            "pivotY": 0,
+            "bounds": {
+              "x": -138.24501037597656,
+              "y": -315.63189697265625,
+              "width": 242.72390747070312,
+              "height": 361.2186279296875
+            }
+          }
+        ]
+      },
+      "fps": 58,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 (0x00002704) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "jsHeapBytes": 68789193,
+      "selected": "preview-lafei",
+      "gridVisible": true,
+      "match": {
+        "format": "al-hex-match",
+        "version": 1,
+        "mapVersion": 1,
+        "size": 512,
+        "mapHash": "f732b8dc",
+        "round": 1,
+        "activeIndex": 0,
+        "fleetSerial": 0,
+        "teams": [
+          {
+            "id": 1,
+            "name": "湛蓝舰队"
+          },
+          {
+            "id": 2,
+            "name": "翠绿舰队"
+          },
+          {
+            "id": 3,
+            "name": "琥珀舰队"
+          },
+          {
+            "id": 4,
+            "name": "紫罗兰舰队"
+          }
+        ],
+        "units": [
+          {
+            "col": 56,
+            "row": 64,
+            "instanceId": "preview-lafei",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "lafei"
+          },
+          {
+            "col": 59,
+            "row": 64,
+            "instanceId": "preview-biaoqiang",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "biaoqiang"
+          },
+          {
+            "col": 62,
+            "row": 64,
+            "instanceId": "preview-lingbo",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "lingbo"
+          },
+          {
+            "col": 65,
+            "row": 64,
+            "instanceId": "preview-z23",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 4,
+            "action": 1,
+            "status": "ready",
+            "assetId": "z23"
+          },
+          {
+            "col": 56,
+            "row": 67,
+            "instanceId": "preview-hailunna",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 3,
+            "action": 1,
+            "status": "ready",
+            "assetId": "hailunna"
+          },
+          {
+            "col": 59,
+            "row": 67,
+            "instanceId": "preview-beierfasite",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 3,
+            "action": 1,
+            "status": "ready",
+            "assetId": "beierfasite"
+          },
+          {
+            "col": 62,
+            "row": 67,
+            "instanceId": "preview-gaoxiong",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "gaoxiong"
+          },
+          {
+            "col": 65,
+            "row": 67,
+            "instanceId": "preview-ougen",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "ougen"
+          },
+          {
+            "col": 56,
+            "row": 70,
+            "instanceId": "preview-yanzhan",
+            "facing": "right",
+            "ownerId": 1,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "yanzhan"
+          },
+          {
+            "col": 59,
+            "row": 70,
+            "instanceId": "preview-bisimai",
+            "facing": "left",
+            "ownerId": 2,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "bisimai"
+          },
+          {
+            "col": 62,
+            "row": 70,
+            "instanceId": "preview-qiye",
+            "facing": "right",
+            "ownerId": 3,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "qiye"
+          },
+          {
+            "col": 65,
+            "row": 70,
+            "instanceId": "preview-dujiaoshou",
+            "facing": "left",
+            "ownerId": 4,
+            "movement": 2,
+            "action": 1,
+            "status": "ready",
+            "assetId": "dujiaoshou"
+          }
+        ],
+        "fleets": []
+      },
+      "moving": false,
+      "benchmark": {
+        "frames": 60,
+        "elapsedMs": 1020.2999999998137,
+        "medianFrameMs": 16.700000000186265,
+        "p95FrameMs": 22,
+        "pan": true,
+        "scope": "12 ships and turn/movement UI; rendering benchmark only. Does not include combat, AI or networking."
+      }
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "longRoutes": [
+    {
+      "size": 128,
+      "elapsedMs": 7.8999999994412065,
+      "cost": 163,
+      "cells": 164,
+      "visited": 3416
+    },
+    {
+      "size": 256,
+      "elapsedMs": 27.40000000037253,
+      "cost": 329,
+      "cells": 330,
+      "visited": 13871
+    },
+    {
+      "size": 512,
+      "elapsedMs": 86.09999999962747,
+      "cost": 668,
+      "cells": 669,
+      "visited": 45370
+    }
+  ]
+}

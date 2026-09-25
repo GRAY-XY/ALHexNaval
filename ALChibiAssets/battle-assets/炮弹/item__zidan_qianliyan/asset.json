@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_qianliyan",
+  "model": "zidan_qianliyan",
+  "name": "千里眼子弹",
+  "names": [
+    "千里眼子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_qianliyan",
+  "path": "battle-assets/炮弹/item__zidan_qianliyan",
+  "images": [
+    {
+      "file": "zidan_qianliyan_7655799741941714174.png",
+      "name": "zidan_qianliyan",
+      "width": 128,
+      "height": 85,
+      "role": "战斗贴图",
+      "path_id": 7655799741941714174,
+      "source": "CAB-b4dad448697d6369b96f93d342251871"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_qianliyan/zidan_qianliyan_7655799741941714174.png"
+}

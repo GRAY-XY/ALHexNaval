@@ -1,0 +1,28 @@
+{
+  "id": "item__laisha_hudiezidan",
+  "model": "laisha_hudiezidan",
+  "name": "laisha_hudiezidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_hudiezidan",
+  "path": "battle-assets/炮弹/item__laisha_hudiezidan",
+  "images": [
+    {
+      "file": "blue_08_1365949457222872261.png",
+      "name": "blue_08",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 1365949457222872261,
+      "source": "CAB-4a67cff8806ca45c3f1ac7cca900d6a2"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19476
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laisha_hudiezidan/blue_08_1365949457222872261.png"
+}

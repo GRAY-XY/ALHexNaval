@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yaoshi",
+  "model": "yulei_yaoshi",
+  "name": "古典钥匙鱼雷",
+  "names": [
+    "古典钥匙鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yaoshi",
+  "path": "battle-assets/鱼雷/item__yulei_yaoshi",
+  "images": [
+    {
+      "file": "yulei_yaoshi_-6286726856613529488.png",
+      "name": "yulei_yaoshi",
+      "width": 128,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": -6286726856613529488,
+      "source": "CAB-84f57787a9cb0848828b029aff03a883"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yaoshi/yulei_yaoshi_-6286726856613529488.png"
+}

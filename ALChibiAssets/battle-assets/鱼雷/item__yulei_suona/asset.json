@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_suona",
+  "model": "yulei_suona",
+  "name": "唢呐鱼雷",
+  "names": [
+    "唢呐鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_suona",
+  "path": "battle-assets/鱼雷/item__yulei_suona",
+  "images": [
+    {
+      "file": "yulei_suona_-435406092257207885.png",
+      "name": "yulei_suona",
+      "width": 128,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": -435406092257207885,
+      "source": "CAB-4b0fa830b9755ccda2fbcc4e4aaa56cb"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_suona/yulei_suona_-435406092257207885.png"
+}

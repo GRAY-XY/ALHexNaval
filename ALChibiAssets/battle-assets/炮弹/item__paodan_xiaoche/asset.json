@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xiaoche",
+  "model": "paodan_xiaoche",
+  "name": "校车炮弹",
+  "names": [
+    "校车炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiaoche",
+  "path": "battle-assets/炮弹/item__paodan_xiaoche",
+  "images": [
+    {
+      "file": "paodan_xiaoche_-5400481490154911291.png",
+      "name": "paodan_xiaoche",
+      "width": 128,
+      "height": 103,
+      "role": "战斗贴图",
+      "path_id": -5400481490154911291,
+      "source": "CAB-49440107161f658b271a11b872ee7ca8"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xiaoche/paodan_xiaoche_-5400481490154911291.png"
+}

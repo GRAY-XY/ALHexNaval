@@ -1,0 +1,34 @@
+
+shenshengtianshi.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 2, 2
+  size: 161, 175
+  orig: 161, 175
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 2, 321
+  size: 87, 29
+  orig: 87, 29
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 91, 305
+  size: 97, 45
+  orig: 97, 45
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 2, 165
+  size: 151, 138
+  orig: 151, 138
+  offset: 0, 0
+  index: -1

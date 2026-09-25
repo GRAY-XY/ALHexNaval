@@ -1,0 +1,53 @@
+{
+  "id": "chargo__gl2",
+  "model": "gl2",
+  "name": "默认鸢尾战斗机",
+  "names": [
+    "默认鸢尾战斗机",
+    "默认鸢尾轰炸机",
+    "默认鸢尾战斗机-自动防空",
+    "GL.2舰载战斗机T0",
+    "【2020法系活动A2】精英贝亚恩级量产型 战斗机",
+    "【2020法系活动C2】精英贝亚恩级量产型 战斗机",
+    "【2022法系共斗H】BOSS 霞飞一形态 战斗机",
+    "【2022法系共斗H】BOSS 霞飞二形态 战斗机",
+    "【2022法系共斗EX】BOSS 霞飞一形态 战斗机",
+    "【2022法系共斗EX】BOSS 霞飞二形态 战斗机",
+    "【翻格子活动】鸢尾战斗机",
+    "【翻格子活动】鸢尾轰炸机",
+    "法系舰载-战斗机I",
+    "法系舰载-战斗机II",
+    "法系舰载-战斗机III",
+    "法系舰载-战斗机IV",
+    "法系舰载-战斗机V"
+  ],
+  "category": "飞机",
+  "source": "chargo/gl2",
+  "path": "battle-assets/飞机/chargo__gl2",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "GL2_7944155415300063704.png",
+      "name": "GL2",
+      "width": 249,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": 7944155415300063704,
+      "source": "CAB-82059a8b6f412c061a61472edd1f4547"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__gl2/aircraft_shadow_2192772484218123160.png"
+}

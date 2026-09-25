@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_qianshui",
+  "model": "feiji_qianshui",
+  "name": "飞天潜水啾(鱼雷)",
+  "names": [
+    "飞天潜水啾(鱼雷)",
+    "飞天潜水啾(战斗)",
+    "飞天潜水啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_qianshui",
+  "path": "battle-assets/飞机/chargo__feiji_qianshui",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_qianshui_4786132021570781373.png",
+      "name": "feiji_qianshui",
+      "width": 256,
+      "height": 220,
+      "role": "战斗贴图",
+      "path_id": 4786132021570781373,
+      "source": "CAB-798677729877c54717d93fff8ba0380d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_qianshui/aircraft_shadow_2192772484218123160.png"
+}

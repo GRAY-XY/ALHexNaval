@@ -1,0 +1,28 @@
+{
+  "id": "item__aila_huaduo",
+  "model": "aila_huaduo",
+  "name": "aila_huaduo",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/aila_huaduo",
+  "path": "battle-assets/炮弹/item__aila_huaduo",
+  "images": [
+    {
+      "file": "huaduo01_-8493431423701755155.png",
+      "name": "huaduo01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8493431423701755155,
+      "source": "CAB-94ee8583a8c220568c2d911b4ad073d9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    161155
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__aila_huaduo/huaduo01_-8493431423701755155.png"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__99shijianbaogai",
+  "model": "99shijianbaogai",
+  "name": "九九式舰爆改",
+  "names": [
+    "九九式舰爆改"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/99shijianbaogai",
+  "path": "battle-assets/飞机图标/aircrafticon__99shijianbaogai",
+  "images": [
+    {
+      "file": "99shijianbaoGai_2858229730341070516.png",
+      "name": "99shijianbaoGai",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 2858229730341070516,
+      "source": "CAB-0db261fac5e8f5fd545fcfaf1f694dd9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

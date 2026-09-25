@@ -1,0 +1,47 @@
+{
+  "id": "item__doublebulletusa_red",
+  "model": "doublebulletusa_red",
+  "name": "doublebulletusa_red",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/doublebulletusa_red",
+  "path": "battle-assets/炮弹/item__doublebulletusa_red",
+  "images": [
+    {
+      "file": "bullet_UK2_-7395523732423302044.png",
+      "name": "bullet_UK2",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -7395523732423302044,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3241104,
+    3246068,
+    3246069,
+    3246070,
+    3246071,
+    3246072,
+    3246073,
+    3246074,
+    3252004,
+    3254040,
+    3280018,
+    3280019,
+    3280211,
+    3280404,
+    3280601,
+    3289012,
+    3370212,
+    3370213,
+    3374005,
+    3374008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__doublebulletusa_red/bullet_UK2_-7395523732423302044.png"
+}

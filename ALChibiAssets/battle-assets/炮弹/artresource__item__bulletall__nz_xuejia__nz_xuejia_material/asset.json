@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__nz_xuejia__nz_xuejia_material",
+  "model": "nz_xuejia_material",
+  "name": "nz_xuejia_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/nz_xuejia/nz_xuejia_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__nz_xuejia__nz_xuejia_material",
+  "images": [
+    {
+      "file": "nz_xuejia_-2209873114874062708.png",
+      "name": "nz_xuejia",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2209873114874062708,
+      "source": "CAB-3a5449e2f0ae31753b9f3d0a8c053977"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

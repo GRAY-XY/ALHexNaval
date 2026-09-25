@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__materials__thunder_02",
+  "model": "thunder_02",
+  "name": "thunder_02",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/materials/thunder_02",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__materials__thunder_02",
+  "images": [
+    {
+      "file": "thunder_02_3805626074273652031.png",
+      "name": "thunder_02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3805626074273652031,
+      "source": "CAB-a76ad02021e3423cb27ac42dbd7d5d2b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

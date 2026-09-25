@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_yaoyuehuache",
+  "model": "feiji_yaoyuehuache",
+  "name": "南瓜车飞机(鱼雷)",
+  "names": [
+    "南瓜车飞机(鱼雷)",
+    "南瓜车飞机(战斗)",
+    "南瓜车飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_yaoyuehuache",
+  "path": "battle-assets/飞机/chargo__feiji_yaoyuehuache",
+  "images": [
+    {
+      "file": "feiji_yaoyuehuache_6714164292340408876.png",
+      "name": "feiji_yaoyuehuache",
+      "width": 256,
+      "height": 250,
+      "role": "战斗贴图",
+      "path_id": 6714164292340408876,
+      "source": "CAB-5c4313555bb8a74f909c400f2b32b940"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_yaoyuehuache/feiji_yaoyuehuache_6714164292340408876.png"
+}

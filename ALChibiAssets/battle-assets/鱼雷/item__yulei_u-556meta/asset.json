@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_u-556meta",
+  "model": "yulei_u-556meta",
+  "name": "yulei_u-556meta",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_u-556meta",
+  "path": "battle-assets/鱼雷/item__yulei_u-556meta",
+  "images": [
+    {
+      "file": "U-556_7769871620553351805.png",
+      "name": "U-556",
+      "width": 214,
+      "height": 78,
+      "role": "战斗贴图",
+      "path_id": 7769871620553351805,
+      "source": "CAB-d1b07893d68f3143bc060b7f32bbf715"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    160879,
+    160880,
+    170070
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_u-556meta/U-556_7769871620553351805.png"
+}

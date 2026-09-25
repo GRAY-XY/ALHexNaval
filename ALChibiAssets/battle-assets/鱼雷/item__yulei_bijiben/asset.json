@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_bijiben",
+  "model": "yulei_bijiben",
+  "name": "笔记本鱼雷",
+  "names": [
+    "笔记本鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_bijiben",
+  "path": "battle-assets/鱼雷/item__yulei_bijiben",
+  "images": [
+    {
+      "file": "yulei_bijiben_-6718110632757410219.png",
+      "name": "yulei_bijiben",
+      "width": 128,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -6718110632757410219,
+      "source": "CAB-1b276d2fa9c228eceb1cdbd498294d2a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_bijiben/yulei_bijiben_-6718110632757410219.png"
+}

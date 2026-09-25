@@ -1,0 +1,37 @@
+{
+  "id": "chargo__glen",
+  "model": "glen",
+  "name": "伊25技能零侦LV1",
+  "names": [
+    "伊25技能零侦LV1"
+  ],
+  "category": "飞机",
+  "source": "chargo/glen",
+  "path": "battle-assets/飞机/chargo__glen",
+  "images": [
+    {
+      "file": "glen_-4869386562456650071.png",
+      "name": "glen",
+      "width": 255,
+      "height": 231,
+      "role": "战斗贴图",
+      "path_id": -4869386562456650071,
+      "source": "CAB-93ce9322ed6977235cba92660ffb041a"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__glen/glen_-4869386562456650071.png"
+}

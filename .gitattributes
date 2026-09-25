@@ -1,0 +1,21 @@
+# Large binary art files use Git LFS. Run `git lfs install` before the first checkout.
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+*.skel filter=lfs diff=lfs merge=lfs -text
+*.bundle filter=lfs diff=lfs merge=lfs -text
+*.atlas -text
+ALChibiAssets/battle-native/** filter=lfs diff=lfs merge=lfs -text
+
+# Keep scripts and data stable across Windows/macOS/Linux contributors.
+*.ts text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.bat text eol=crlf

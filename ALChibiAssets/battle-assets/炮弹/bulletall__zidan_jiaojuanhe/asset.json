@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_jiaojuanhe",
+  "model": "zidan_jiaojuanhe",
+  "name": "电影胶卷子弹",
+  "names": [
+    "电影胶卷子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_jiaojuanhe",
+  "path": "battle-assets/炮弹/bulletall__zidan_jiaojuanhe",
+  "images": [
+    {
+      "file": "zidan_jiaojuanhe_5763858845081647528.png",
+      "name": "zidan_jiaojuanhe",
+      "width": 126,
+      "height": 60,
+      "role": "原始精灵",
+      "path_id": 5763858845081647528,
+      "source": "CAB-38fb7f5b3d7a79ce392bf74b3b1660bc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

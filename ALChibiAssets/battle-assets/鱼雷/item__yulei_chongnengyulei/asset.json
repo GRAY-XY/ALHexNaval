@@ -1,0 +1,26 @@
+{
+  "id": "item__yulei_chongnengyulei",
+  "model": "yulei_chongnengyulei",
+  "name": "戴拿巨刃鱼雷",
+  "names": [
+    "戴拿巨刃鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chongnengyulei",
+  "path": "battle-assets/鱼雷/item__yulei_chongnengyulei",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19763
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "gulite_chongnengyulei.skel",
+    "atlas": "gulite_chongnengyulei.atlas",
+    "pages": [
+      "gulite_chongnengyulei.png"
+    ]
+  }
+}

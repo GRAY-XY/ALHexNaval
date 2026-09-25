@@ -1,0 +1,37 @@
+{
+  "id": "item__bullet_ta01",
+  "model": "bullet_ta01",
+  "name": "bullet_ta01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_ta01",
+  "path": "battle-assets/炮弹/item__bullet_ta01",
+  "images": [
+    {
+      "file": "Bullet_ta01_-7250832213087154986.png",
+      "name": "Bullet_ta01",
+      "width": 129,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": -7250832213087154986,
+      "source": "CAB-af361ddf07505cfeef5103ba41f50b43"
+    },
+    {
+      "file": "bingzhui_1_1018503344111445958.png",
+      "name": "bingzhui_1",
+      "width": 242,
+      "height": 142,
+      "role": "战斗贴图",
+      "path_id": 1018503344111445958,
+      "source": "CAB-0613a3ea39dbea6b32b0a98f91b22243"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19198
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_ta01/Bullet_ta01_-7250832213087154986.png"
+}

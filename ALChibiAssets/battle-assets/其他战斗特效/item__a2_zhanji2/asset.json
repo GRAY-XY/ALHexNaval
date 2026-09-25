@@ -1,0 +1,15 @@
+{
+  "id": "item__a2_zhanji2",
+  "model": "a2_zhanji2",
+  "name": "a2_zhanji2",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/a2_zhanji2",
+  "path": "battle-assets/其他战斗特效/item__a2_zhanji2",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

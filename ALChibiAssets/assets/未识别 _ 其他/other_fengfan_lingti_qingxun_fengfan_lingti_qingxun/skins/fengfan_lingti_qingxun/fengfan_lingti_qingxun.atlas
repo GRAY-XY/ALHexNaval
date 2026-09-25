@@ -1,0 +1,160 @@
+
+fengfan_lingti_qingxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_s
+  rotate: true
+  xy: 863, 274
+  size: 265, 119
+  orig: 265, 119
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 1003, 871
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 1003, 858
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: false
+  xy: 1001, 777
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: false
+  xy: 1003, 845
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: false
+  xy: 1003, 897
+  size: 19, 12
+  orig: 19, 12
+  offset: 0, 0
+  index: -1
+gd_6
+  rotate: true
+  xy: 1014, 751
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+gd_7
+  rotate: false
+  xy: 1003, 884
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+huo
+  rotate: true
+  xy: 874, 541
+  size: 273, 125
+  orig: 273, 125
+  offset: 0, 0
+  index: -1
+lizi_t
+  rotate: false
+  xy: 874, 816
+  size: 127, 93
+  orig: 127, 93
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 608
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 305
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 2, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+zg_1
+  rotate: true
+  xy: 1001, 788
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+zg_2
+  rotate: true
+  xy: 1001, 800
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+zg_3
+  rotate: false
+  xy: 1003, 813
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+zg_4
+  rotate: false
+  xy: 1016, 804
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+zg_5
+  rotate: false
+  xy: 1001, 764
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+zg_6
+  rotate: false
+  xy: 1015, 767
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+zg_7
+  rotate: false
+  xy: 1003, 828
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+zg_8
+  rotate: false
+  xy: 1001, 751
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+zg_9
+  rotate: true
+  xy: 984, 486
+  size: 53, 33
+  orig: 53, 33
+  offset: 0, 0
+  index: -1

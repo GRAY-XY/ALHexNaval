@@ -1,0 +1,76 @@
+
+unknownV_siren_zibao.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 362, 73
+  size: 281, 162
+  orig: 281, 162
+  offset: 0, 0
+  index: -1
+cengdieguang_1
+  rotate: false
+  xy: 1126, 108
+  size: 199, 127
+  orig: 199, 127
+  offset: 0, 0
+  index: -1
+penshe_1
+  rotate: false
+  xy: 645, 80
+  size: 273, 23
+  orig: 273, 23
+  offset: 0, 0
+  index: -1
+penshe_2
+  rotate: false
+  xy: 922, 2
+  size: 329, 76
+  orig: 329, 76
+  offset: 0, 0
+  index: -1
+penshe_3
+  rotate: false
+  xy: 920, 80
+  size: 273, 23
+  orig: 273, 23
+  offset: 0, 0
+  index: -1
+shui_1
+  rotate: false
+  xy: 2, 3
+  size: 458, 67
+  orig: 458, 67
+  offset: 0, 0
+  index: -1
+shui_2
+  rotate: false
+  xy: 462, 4
+  size: 458, 67
+  orig: 458, 67
+  offset: 0, 0
+  index: -1
+shui_3
+  rotate: false
+  xy: 645, 168
+  size: 458, 67
+  orig: 458, 67
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 72
+  size: 358, 163
+  orig: 358, 163
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 645, 105
+  size: 479, 61
+  orig: 479, 61
+  offset: 0, 0
+  index: -1

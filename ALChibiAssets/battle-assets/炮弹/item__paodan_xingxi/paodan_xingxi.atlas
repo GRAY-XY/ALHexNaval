@@ -1,0 +1,55 @@
+
+paodan_xingxi.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baozha_1
+  rotate: false
+  xy: 250, 10
+  size: 239, 200
+  orig: 239, 200
+  offset: 0, 0
+  index: -1
+baozha_2
+  rotate: false
+  xy: 163, 238
+  size: 214, 170
+  orig: 214, 170
+  offset: 0, 0
+  index: -1
+baozha_3
+  rotate: false
+  xy: 2, 262
+  size: 159, 146
+  orig: 159, 146
+  offset: 0, 0
+  index: -1
+xingxi_1
+  rotate: false
+  xy: 2, 37
+  size: 246, 199
+  orig: 246, 199
+  offset: 0, 0
+  index: -1
+xingxi_2
+  rotate: false
+  xy: 605, 211
+  size: 220, 197
+  orig: 220, 197
+  offset: 0, 0
+  index: -1
+xingxi_3
+  rotate: false
+  xy: 379, 212
+  size: 224, 196
+  orig: 224, 196
+  offset: 0, 0
+  index: -1
+xingxi_4
+  rotate: false
+  xy: 491, 2
+  size: 258, 207
+  orig: 258, 207
+  offset: 0, 0
+  index: -1

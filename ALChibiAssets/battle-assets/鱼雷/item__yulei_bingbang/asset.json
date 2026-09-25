@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_bingbang",
+  "model": "yulei_bingbang",
+  "name": "冰棍鱼雷",
+  "names": [
+    "冰棍鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_bingbang",
+  "path": "battle-assets/鱼雷/item__yulei_bingbang",
+  "images": [
+    {
+      "file": "yulei_bingbang_7174880558187801828.png",
+      "name": "yulei_bingbang",
+      "width": 128,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": 7174880558187801828,
+      "source": "CAB-857cba7d64ef8c6feb2ea17b714d2665"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3386003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_bingbang/yulei_bingbang_7174880558187801828.png"
+}

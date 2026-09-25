@@ -1,0 +1,48 @@
+{
+  "id": "item__huangjia_changjiang02",
+  "model": "huangjia_changjiang02",
+  "name": "huangjia_changjiang02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/huangjia_changjiang02",
+  "path": "battle-assets/炮弹/item__huangjia_changjiang02",
+  "images": [
+    {
+      "file": "kuasheAP_04_8530210824532632454.png",
+      "name": "kuasheAP_04",
+      "width": 120,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": 8530210824532632454,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    },
+    {
+      "file": "changqiang01_-966790372201742763.png",
+      "name": "changqiang01",
+      "width": 204,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -966790372201742763,
+      "source": "CAB-e1fce1705d931872e6a1c185d46780fd"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    879015,
+    879016,
+    879017,
+    879018,
+    879019,
+    879020,
+    879021,
+    879022,
+    879023,
+    879024,
+    879025,
+    879026
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__huangjia_changjiang02/kuasheAP_04_8530210824532632454.png"
+}

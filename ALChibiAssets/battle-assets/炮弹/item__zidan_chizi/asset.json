@@ -1,0 +1,29 @@
+{
+  "id": "item__zidan_chizi",
+  "model": "zidan_chizi",
+  "name": "zidan_chizi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_chizi",
+  "path": "battle-assets/炮弹/item__zidan_chizi",
+  "images": [
+    {
+      "file": "zidan_chizi_3185090218543771731.png",
+      "name": "zidan_chizi",
+      "width": 329,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": 3185090218543771731,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160973,
+    160988
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_chizi/zidan_chizi_3185090218543771731.png"
+}

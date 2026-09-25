@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_guowangshilaimu",
+  "model": "paodan_guowangshilaimu",
+  "name": "啾莱姆炮弹（国王）",
+  "names": [
+    "啾莱姆炮弹（国王）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_guowangshilaimu",
+  "path": "battle-assets/炮弹/item__paodan_guowangshilaimu",
+  "images": [
+    {
+      "file": "paodan_guowangshilaimu_-8150131892788488806.png",
+      "name": "paodan_guowangshilaimu",
+      "width": 128,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": -8150131892788488806,
+      "source": "CAB-629bf0cbba76ee4a0dad9c36f780adb7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_guowangshilaimu/paodan_guowangshilaimu_-8150131892788488806.png"
+}

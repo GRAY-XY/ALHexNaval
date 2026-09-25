@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_zhangyuyan",
+  "model": "zidan_zhangyuyan",
+  "name": "蛸目子弹",
+  "names": [
+    "蛸目子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhangyuyan",
+  "path": "battle-assets/炮弹/item__zidan_zhangyuyan",
+  "images": [
+    {
+      "file": "zidan_zhangyuyan_1643029300487582462.png",
+      "name": "zidan_zhangyuyan",
+      "width": 120,
+      "height": 58,
+      "role": "战斗贴图",
+      "path_id": 1643029300487582462,
+      "source": "CAB-b2f8ff8875e1ba1a6c76c8723ee94ca7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zhangyuyan/zidan_zhangyuyan_1643029300487582462.png"
+}

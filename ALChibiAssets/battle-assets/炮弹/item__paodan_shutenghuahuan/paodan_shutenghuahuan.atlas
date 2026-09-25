@@ -1,0 +1,118 @@
+
+paodan_shutenghuahuan.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diguang_1
+  rotate: false
+  xy: 2, 89
+  size: 172, 150
+  orig: 172, 150
+  offset: 0, 0
+  index: -1
+hua_1
+  rotate: false
+  xy: 444, 77
+  size: 24, 20
+  orig: 24, 20
+  offset: 0, 0
+  index: -1
+hua_1_2
+  rotate: true
+  xy: 397, 40
+  size: 24, 20
+  orig: 24, 20
+  offset: 0, 0
+  index: -1
+hua_1_3
+  rotate: true
+  xy: 375, 24
+  size: 24, 20
+  orig: 24, 20
+  offset: 0, 0
+  index: -1
+hua_2
+  rotate: false
+  xy: 375, 77
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+hua_2_2
+  rotate: true
+  xy: 375, 50
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+hua_2_3
+  rotate: true
+  xy: 422, 72
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+paodan
+  rotate: true
+  xy: 361, 99
+  size: 140, 115
+  orig: 140, 115
+  offset: 0, 0
+  index: -1
+shuye_1
+  rotate: false
+  xy: 470, 82
+  size: 25, 15
+  orig: 25, 15
+  offset: 0, 0
+  index: -1
+shuye_1_2
+  rotate: true
+  xy: 419, 25
+  size: 25, 15
+  orig: 25, 15
+  offset: 0, 0
+  index: -1
+shuye_1_3
+  rotate: true
+  xy: 397, 13
+  size: 25, 15
+  orig: 25, 15
+  offset: 0, 0
+  index: -1
+shuye_2
+  rotate: true
+  xy: 402, 66
+  size: 31, 18
+  orig: 31, 18
+  offset: 0, 0
+  index: -1
+shuye_2_2
+  rotate: false
+  xy: 422, 52
+  size: 31, 18
+  orig: 31, 18
+  offset: 0, 0
+  index: -1
+shuye_2_3
+  rotate: true
+  xy: 455, 44
+  size: 31, 18
+  orig: 31, 18
+  offset: 0, 0
+  index: -1
+suduxian
+  rotate: false
+  xy: 176, 2
+  size: 197, 95
+  orig: 197, 95
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 176, 110
+  size: 183, 129
+  orig: 183, 129
+  offset: 0, 0
+  index: -1

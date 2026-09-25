@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_guancai",
+  "model": "yulei_guancai",
+  "name": "棺材鱼雷",
+  "names": [
+    "棺材鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_guancai",
+  "path": "battle-assets/鱼雷/item__yulei_guancai",
+  "images": [
+    {
+      "file": "yulei_guancai_-4529915731504763231.png",
+      "name": "yulei_guancai",
+      "width": 121,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -4529915731504763231,
+      "source": "CAB-c794f54a294d5e59df1ab5d8cdd3a76e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_guancai/yulei_guancai_-4529915731504763231.png"
+}

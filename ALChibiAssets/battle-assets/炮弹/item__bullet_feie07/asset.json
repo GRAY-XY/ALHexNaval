@@ -1,0 +1,15 @@
+{
+  "id": "item__bullet_feie07",
+  "model": "bullet_feie07",
+  "name": "bullet_feie07",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_feie07",
+  "path": "battle-assets/炮弹/item__bullet_feie07",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

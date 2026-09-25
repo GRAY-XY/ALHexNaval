@@ -1,0 +1,33 @@
+{
+  "id": "aircrafticon__feiji_ai_perform",
+  "model": "feiji_ai_perform",
+  "name": "【绊爱联动】空袭 战斗机",
+  "names": [
+    "【绊爱联动】空袭 战斗机",
+    "【绊爱联动SP2】战斗机",
+    "【绊爱联动SP5】战斗机",
+    "【绊爱联动EX】战斗机",
+    "迷你爱酱·周年(鱼雷)",
+    "迷你爱酱·周年(战斗)",
+    "迷你爱酱·周年(轰炸)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_ai_perform",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_ai_perform",
+  "images": [
+    {
+      "file": "feiji_ai_perform_-9195351654112766446.png",
+      "name": "feiji_ai_perform",
+      "width": 44,
+      "height": 39,
+      "role": "原始精灵",
+      "path_id": -9195351654112766446,
+      "source": "CAB-0d3f6b20d3ca810e318714137f1f1544"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

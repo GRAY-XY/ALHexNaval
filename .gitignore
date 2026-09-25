@@ -1,0 +1,16 @@
+# Local dependencies and generated builds
+**/node_modules/
+**/__pycache__/
+**/.playwright-cli/
+ALHexGame/dist/
+
+# Local verification artifacts that are reproducible or too noisy for reviews
+ALHexGame/output/backups/
+ALChibiAssets/output/
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

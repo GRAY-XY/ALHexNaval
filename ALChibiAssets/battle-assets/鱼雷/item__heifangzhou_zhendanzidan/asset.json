@@ -1,0 +1,44 @@
+{
+  "id": "item__heifangzhou_zhendanzidan",
+  "model": "heifangzhou_zhendanzidan",
+  "name": "heifangzhou_zhendanzidan",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/heifangzhou_zhendanzidan",
+  "path": "battle-assets/鱼雷/item__heifangzhou_zhendanzidan",
+  "images": [
+    {
+      "file": "zhendan_-788136552594074479.png",
+      "name": "zhendan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -788136552594074479,
+      "source": "CAB-19b759fa0cb7b9fb65d271b32a81eb7f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    855655,
+    855670,
+    20321620,
+    20321621,
+    20321622,
+    20321623,
+    20321624,
+    20321625,
+    29643004,
+    29643005,
+    29643006,
+    29643020,
+    29643021,
+    29643022,
+    29643024,
+    3139020,
+    3146336
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__heifangzhou_zhendanzidan/zhendan_-788136552594074479.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_hongsemaichong",
+  "model": "yulei_hongsemaichong",
+  "name": "猩红脉冲鱼雷",
+  "names": [
+    "猩红脉冲鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hongsemaichong",
+  "path": "battle-assets/鱼雷/item__yulei_hongsemaichong",
+  "images": [
+    {
+      "file": "yulei_hongsemaichong_1824368245374506366.png",
+      "name": "yulei_hongsemaichong",
+      "width": 128,
+      "height": 42,
+      "role": "战斗贴图",
+      "path_id": 1824368245374506366,
+      "source": "CAB-6565abc57cb1c9931b526cfedee54217"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hongsemaichong/yulei_hongsemaichong_1824368245374506366.png"
+}

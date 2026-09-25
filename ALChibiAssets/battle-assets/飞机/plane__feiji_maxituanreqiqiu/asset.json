@@ -1,0 +1,29 @@
+{
+  "id": "plane__feiji_maxituanreqiqiu",
+  "model": "feiji_maxituanreqiqiu",
+  "name": "星愿热气球飞机（鱼雷）",
+  "names": [
+    "星愿热气球飞机（鱼雷）",
+    "星愿热气球飞机（战斗）",
+    "星愿热气球飞机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "plane/feiji_maxituanreqiqiu",
+  "path": "battle-assets/飞机/plane__feiji_maxituanreqiqiu",
+  "images": [
+    {
+      "file": "feiji_maxituanreqiqiu_-3876126572019545717.png",
+      "name": "feiji_maxituanreqiqiu",
+      "width": 253,
+      "height": 249,
+      "role": "原始精灵",
+      "path_id": -3876126572019545717,
+      "source": "CAB-c791fecb85755acde5a68e1f46e1373b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

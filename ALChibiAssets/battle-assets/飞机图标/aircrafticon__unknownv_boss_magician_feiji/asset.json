@@ -1,0 +1,30 @@
+{
+  "id": "aircrafticon__unknownv_boss_magician_feiji",
+  "model": "unknownv_boss_magician_feiji",
+  "name": "【2025列克星敦II活动B3】BOSS 拟态兽-魔术师 常驻舰载机",
+  "names": [
+    "【2025列克星敦II活动B3】BOSS 拟态兽-魔术师 常驻舰载机",
+    "【2025列克星敦II活动B3】BOSS 拟态兽-魔术师 第三波 浮游炮舰载机",
+    "【2025列克星敦II活动D3】BOSS 拟态兽-魔术师 常驻舰载机",
+    "【2025列克星敦II活动D3】BOSS 拟态兽-魔术师 第三波 浮游炮舰载机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/unknownv_boss_magician_feiji",
+  "path": "battle-assets/飞机图标/aircrafticon__unknownv_boss_magician_feiji",
+  "images": [
+    {
+      "file": "unknownV_boss_magician_feiji_-425587381196741125.png",
+      "name": "unknownV_boss_magician_feiji",
+      "width": 45,
+      "height": 37,
+      "role": "原始精灵",
+      "path_id": -425587381196741125,
+      "source": "CAB-dcfa17ac395f0c183cda29b5fc5571ff"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

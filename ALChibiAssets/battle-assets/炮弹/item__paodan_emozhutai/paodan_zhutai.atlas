@@ -1,0 +1,41 @@
+
+paodan_zhutai.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dizuo
+  rotate: false
+  xy: 2, 9
+  size: 148, 229
+  orig: 148, 229
+  offset: 0, 0
+  index: -1
+huoyan_2
+  rotate: false
+  xy: 152, 2
+  size: 103, 40
+  orig: 103, 40
+  offset: 0, 0
+  index: -1
+zhutai_1
+  rotate: false
+  xy: 152, 131
+  size: 307, 107
+  orig: 307, 107
+  offset: 0, 0
+  index: -1
+zhutai_2
+  rotate: false
+  xy: 395, 45
+  size: 241, 84
+  orig: 241, 84
+  offset: 0, 0
+  index: -1
+zhutai_3
+  rotate: false
+  xy: 152, 44
+  size: 241, 85
+  orig: 241, 85
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,34 @@
+{
+  "id": "aircrafticon__tianlei",
+  "model": "tianlei",
+  "name": "天雷",
+  "names": [
+    "天雷",
+    "白龙天雷落雷飞机 Lv1",
+    "【主线15-4】BOSS 三阶段 瑞鹤 试作舰载型天雷",
+    "【2021岛风活动B3】BOSS 白龙 天雷轰炸机",
+    "【2021岛风活动D3】BOSS 白龙 天雷轰炸机",
+    "【2021岛风活动EX】BOSS 白龙 天雷轰炸机",
+    "【2021岛风活动EX2】BOSS 白龙 天雷轰炸机",
+    "【2021岛风活动剧情】BOSS 白龙 天雷轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tianlei",
+  "path": "battle-assets/飞机图标/aircrafticon__tianlei",
+  "images": [
+    {
+      "file": "tianlei_6332688716133814962.png",
+      "name": "tianlei",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 6332688716133814962,
+      "source": "CAB-c7bc7f8bf3e7bd59729abfe4e8b696ad"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

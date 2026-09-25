@@ -1,0 +1,139 @@
+
+zidan_moshuifeiniao.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 164, 59
+  size: 175, 66
+  orig: 175, 66
+  offset: 0, 0
+  index: -1
+chibang_r
+  rotate: false
+  xy: 341, 65
+  size: 143, 60
+  orig: 143, 60
+  offset: 0, 0
+  index: -1
+huifa_1
+  rotate: false
+  xy: 112, 42
+  size: 62, 14
+  orig: 62, 14
+  offset: 0, 0
+  index: -1
+huifa_2
+  rotate: true
+  xy: 25, 39
+  size: 86, 19
+  orig: 86, 19
+  offset: 0, 0
+  index: -1
+huifa_3
+  rotate: false
+  xy: 209, 13
+  size: 66, 44
+  orig: 66, 44
+  offset: 0, 0
+  index: -1
+huifa_4
+  rotate: false
+  xy: 176, 8
+  size: 31, 49
+  orig: 31, 49
+  offset: 0, 0
+  index: -1
+huifa_5
+  rotate: true
+  xy: 2, 30
+  size: 95, 21
+  orig: 95, 21
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: false
+  xy: 2, 4
+  size: 67, 24
+  orig: 67, 24
+  offset: 0, 0
+  index: -1
+yun_12
+  rotate: true
+  xy: 112, 58
+  size: 67, 24
+  orig: 67, 24
+  offset: 0, 0
+  index: -1
+yun_13
+  rotate: true
+  xy: 138, 58
+  size: 67, 24
+  orig: 67, 24
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: true
+  xy: 46, 41
+  size: 84, 31
+  orig: 84, 31
+  offset: 0, 0
+  index: -1
+yun_22
+  rotate: false
+  xy: 71, 8
+  size: 84, 31
+  orig: 84, 31
+  offset: 0, 0
+  index: -1
+yun_23
+  rotate: true
+  xy: 79, 41
+  size: 84, 31
+  orig: 84, 31
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: true
+  xy: 341, 3
+  size: 60, 17
+  orig: 60, 17
+  offset: 0, 0
+  index: -1
+yun_32
+  rotate: false
+  xy: 277, 21
+  size: 60, 17
+  orig: 60, 17
+  offset: 0, 0
+  index: -1
+yun_33
+  rotate: false
+  xy: 277, 2
+  size: 60, 17
+  orig: 60, 17
+  offset: 0, 0
+  index: -1
+yun_4
+  rotate: false
+  xy: 277, 40
+  size: 60, 17
+  orig: 60, 17
+  offset: 0, 0
+  index: -1
+yun_42
+  rotate: true
+  xy: 360, 3
+  size: 60, 17
+  orig: 60, 17
+  offset: 0, 0
+  index: -1
+yun_43
+  rotate: true
+  xy: 379, 3
+  size: 60, 17
+  orig: 60, 17
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__paodan_ai_1",
+  "model": "paodan_ai_1",
+  "name": "字幕炮弹:嗨多磨",
+  "names": [
+    "字幕炮弹:嗨多磨"
+  ],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_ai_1",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_ai_1",
+  "images": [
+    {
+      "file": "paodan_ai_1_7779819251092747016.png",
+      "name": "paodan_ai_1",
+      "width": 128,
+      "height": 48,
+      "role": "原始精灵",
+      "path_id": 7779819251092747016,
+      "source": "CAB-bb45e7d347bab3d0f67ea60fc78822fa"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

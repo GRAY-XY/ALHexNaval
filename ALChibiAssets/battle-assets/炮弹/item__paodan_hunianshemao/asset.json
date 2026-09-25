@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_hunianshemao",
+  "model": "paodan_hunianshemao",
+  "name": "兵器炮弹·蛇矛",
+  "names": [
+    "兵器炮弹·蛇矛"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hunianshemao",
+  "path": "battle-assets/炮弹/item__paodan_hunianshemao",
+  "images": [
+    {
+      "file": "paodan_hunianshemao_709085392411460441.png",
+      "name": "paodan_hunianshemao",
+      "width": 127,
+      "height": 13,
+      "role": "战斗贴图",
+      "path_id": 709085392411460441,
+      "source": "CAB-8cfadea2da6447817fb5e24ded7575c8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hunianshemao/paodan_hunianshemao_709085392411460441.png"
+}

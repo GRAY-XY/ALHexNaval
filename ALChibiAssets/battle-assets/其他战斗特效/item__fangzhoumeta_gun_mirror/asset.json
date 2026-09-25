@@ -1,0 +1,26 @@
+{
+  "id": "item__fangzhoumeta_gun_mirror",
+  "model": "fangzhoumeta_gun_mirror",
+  "name": "fangzhoumeta_gun_mirror",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/fangzhoumeta_gun_mirror",
+  "path": "battle-assets/其他战斗特效/item__fangzhoumeta_gun_mirror",
+  "images": [
+    {
+      "file": "heifangzhou_gun_-1760010251092835712.png",
+      "name": "heifangzhou_gun",
+      "width": 206,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": -1760010251092835712,
+      "source": "CAB-deeaae87b7f6e85d34579edace0ddd10"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__fangzhoumeta_gun_mirror/heifangzhou_gun_-1760010251092835712.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "item__yulei_fuchen",
+  "model": "yulei_fuchen",
+  "name": "拂尘鱼雷",
+  "names": [
+    "拂尘鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_fuchen",
+  "path": "battle-assets/鱼雷/item__yulei_fuchen",
+  "images": [
+    {
+      "file": "yulei_fuchen_7563679964354194095.png",
+      "name": "yulei_fuchen",
+      "width": 119,
+      "height": 25,
+      "role": "战斗贴图",
+      "path_id": 7563679964354194095,
+      "source": "CAB-61f850d7a30bd951c4c001a9afa222e2"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3360207,
+    3360208
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_fuchen/yulei_fuchen_7563679964354194095.png"
+}

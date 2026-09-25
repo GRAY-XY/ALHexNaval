@@ -1,0 +1,38 @@
+{
+  "id": "chargo__lingshishuizhen",
+  "model": "lingshishuizhen",
+  "name": "筑摩水上机Lv1",
+  "names": [
+    "筑摩水上机Lv1",
+    "筑摩水上机Lv1 重樱航母"
+  ],
+  "category": "飞机",
+  "source": "chargo/lingshishuizhen",
+  "path": "battle-assets/飞机/chargo__lingshishuizhen",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "lingshishuizhen_-1513029793715083618.png",
+      "name": "lingshishuizhen",
+      "width": 245,
+      "height": 197,
+      "role": "战斗贴图",
+      "path_id": -1513029793715083618,
+      "source": "CAB-4176ea99dfd6351399f54dde2062c1a4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__lingshishuizhen/aircraft_shadow_2192772484218123160.png"
+}

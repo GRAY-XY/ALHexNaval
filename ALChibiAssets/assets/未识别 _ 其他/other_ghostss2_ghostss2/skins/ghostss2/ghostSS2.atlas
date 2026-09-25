@@ -1,0 +1,13 @@
+
+ghostSS2.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 558, 398
+  orig: 558, 398
+  offset: 0, 0
+  index: -1

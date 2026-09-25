@@ -1,0 +1,45 @@
+{
+  "id": "item__yulei_yaoxing",
+  "model": "yulei_yaoxing",
+  "name": "耀星鱼雷",
+  "names": [
+    "耀星鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yaoxing",
+  "path": "battle-assets/鱼雷/item__yulei_yaoxing",
+  "images": [
+    {
+      "file": "shanguang_01_-8783301334698594251.png",
+      "name": "shanguang_01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8783301334698594251,
+      "source": "CAB-f302281a7960b53407944d2cbb59ff88"
+    },
+    {
+      "file": "yulei01_8264266033219061017.png",
+      "name": "yulei01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8264266033219061017,
+      "source": "CAB-f302281a7960b53407944d2cbb59ff88"
+    }
+  ],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    3370020,
+    3370106,
+    3370223,
+    3374017,
+    3376002,
+    3376014,
+    3376103
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yaoxing/shanguang_01_-8783301334698594251.png"
+}

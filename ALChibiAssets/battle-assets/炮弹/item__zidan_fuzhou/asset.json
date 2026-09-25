@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_fuzhou",
+  "model": "zidan_fuzhou",
+  "name": "符咒子弹",
+  "names": [
+    "符咒子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_fuzhou",
+  "path": "battle-assets/炮弹/item__zidan_fuzhou",
+  "images": [
+    {
+      "file": "zidan_fuzhou_4949965830823864820.png",
+      "name": "zidan_fuzhou",
+      "width": 128,
+      "height": 24,
+      "role": "战斗贴图",
+      "path_id": 4949965830823864820,
+      "source": "CAB-b507388c262fd4da487430d8da5e2f8e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_fuzhou/zidan_fuzhou_4949965830823864820.png"
+}

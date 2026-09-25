@@ -1,0 +1,31 @@
+{
+  "id": "item__plane_daodan_tuowei",
+  "model": "plane_daodan_tuowei",
+  "name": "plane_daodan_tuowei",
+  "names": [],
+  "category": "飞机",
+  "source": "item/plane_daodan_tuowei",
+  "path": "battle-assets/飞机/item__plane_daodan_tuowei",
+  "images": [
+    {
+      "file": "daodan_-59307757992001476.png",
+      "name": "daodan",
+      "width": 686,
+      "height": 309,
+      "role": "战斗贴图",
+      "path_id": -59307757992001476,
+      "source": "CAB-98b890a6ff3c39e3a97acd06fc4467ee"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    703,
+    3239203,
+    3241111,
+    3381007
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/item__plane_daodan_tuowei/daodan_-59307757992001476.png"
+}

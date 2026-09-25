@@ -1,0 +1,48 @@
+{
+  "id": "aircrafticon__feiji_ouxiangfeiji",
+  "model": "feiji_ouxiangfeiji",
+  "name": "如月千早集束飞机Lv1",
+  "names": [
+    "如月千早集束飞机Lv1",
+    "【偶像大师联动】舰载战斗机I",
+    "【偶像大师联动】舰载战斗机II",
+    "【偶像大师联动】舰载战斗机III",
+    "【偶像大师联动】舰载战斗机IV",
+    "【偶像大师联动】舰载战斗机V",
+    "【偶像大师联动】舰载鱼雷机I",
+    "【偶像大师联动】舰载鱼雷机II",
+    "【偶像大师联动】舰载鱼雷机III",
+    "【偶像大师联动】舰载鱼雷机IV",
+    "【偶像大师联动】舰载鱼雷机V",
+    "【偶像大师联动SP3】BOSS 如月千早 战斗机",
+    "【偶像大师联动SP3】BOSS 如月千早 鱼雷机",
+    "【偶像大师联动SP4】精英人形 如月千早 主题战斗机",
+    "【偶像大师联动SP4】精英人形 如月千早 主题鱼雷机",
+    "【偶像大师联动VSP】精英人形 如月千早 主题战斗机",
+    "【偶像大师联动VSP】精英人形 如月千早 主题鱼雷机",
+    "【偶像大师联动VSP】BOSS 如月千早 战斗机",
+    "【偶像大师联动VSP】BOSS 如月千早 鱼雷机",
+    "啾啾应援飞机(鱼雷)",
+    "啾啾应援飞机(战斗)",
+    "啾啾应援飞机(轰炸)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_ouxiangfeiji",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_ouxiangfeiji",
+  "images": [
+    {
+      "file": "feiji_ouxiangfeiji_-4861675137566976354.png",
+      "name": "feiji_ouxiangfeiji",
+      "width": 44,
+      "height": 35,
+      "role": "原始精灵",
+      "path_id": -4861675137566976354,
+      "source": "CAB-daa7802a80f0fe42a4929cc89e94917b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

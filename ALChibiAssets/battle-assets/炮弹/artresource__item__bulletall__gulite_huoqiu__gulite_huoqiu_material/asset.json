@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__gulite_huoqiu__gulite_huoqiu_material",
+  "model": "gulite_huoqiu_material",
+  "name": "gulite_huoqiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/gulite_huoqiu/gulite_huoqiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__gulite_huoqiu__gulite_huoqiu_material",
+  "images": [
+    {
+      "file": "gulite_huoqiu_-1858923522580687635.png",
+      "name": "gulite_huoqiu",
+      "width": 1024,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -1858923522580687635,
+      "source": "CAB-4097572a4c0e3aaee46201ec7c18a650"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

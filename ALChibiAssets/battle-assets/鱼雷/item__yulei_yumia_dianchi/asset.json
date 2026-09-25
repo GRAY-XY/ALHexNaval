@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yumia_dianchi",
+  "model": "yulei_yumia_dianchi",
+  "name": "究极电池鱼雷",
+  "names": [
+    "究极电池鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yumia_dianchi",
+  "path": "battle-assets/鱼雷/item__yulei_yumia_dianchi",
+  "images": [
+    {
+      "file": "yulei_dianchi_2942727537067640834.png",
+      "name": "yulei_dianchi",
+      "width": 112,
+      "height": 31,
+      "role": "战斗贴图",
+      "path_id": 2942727537067640834,
+      "source": "CAB-bd4d4cb2b4bffbb19a9052ed343029c9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yumia_dianchi/yulei_dianchi_2942727537067640834.png"
+}

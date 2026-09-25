@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletother__kuashe__scifieffects__effectmaterials__rockettail",
+  "model": "rockettail",
+  "name": "rockettail",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/kuashe/scifieffects/effectmaterials/rockettail",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__kuashe__scifieffects__effectmaterials__rockettail",
+  "images": [
+    {
+      "file": "rocketTail_-2203725259013362665.png",
+      "name": "rocketTail",
+      "width": 256,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": -2203725259013362665,
+      "source": "CAB-434bd230692017cf86b275c9750cb896"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

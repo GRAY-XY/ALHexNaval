@@ -1,0 +1,21 @@
+{
+  "id": "item__yulei_suolianbrs",
+  "model": "yulei_suolianbrs",
+  "name": "锁链鱼雷",
+  "names": [
+    "锁链鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_suolianbrs",
+  "path": "battle-assets/鱼雷/item__yulei_suolianbrs",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    167961,
+    167965,
+    3279208
+  ],
+  "has_preview": false,
+  "prefab": true
+}

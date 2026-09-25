@@ -1,0 +1,40 @@
+{
+  "id": "item__yinggelahan_xingxing01",
+  "model": "yinggelahan_xingxing01",
+  "name": "yinggelahan_xingxing01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yinggelahan_xingxing01",
+  "path": "battle-assets/炮弹/item__yinggelahan_xingxing01",
+  "images": [
+    {
+      "file": "xinxin01_6266656111963025024.png",
+      "name": "xinxin01",
+      "width": 210,
+      "height": 212,
+      "role": "战斗贴图",
+      "path_id": 6266656111963025024,
+      "source": "CAB-eaaecd2e40b625b81f9f8521468ff775"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19345,
+    19346,
+    19769,
+    161209,
+    163761,
+    165503,
+    856200,
+    856201,
+    856202,
+    3029329,
+    3250118,
+    3301101,
+    3361001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yinggelahan_xingxing01/xinxin01_6266656111963025024.png"
+}

@@ -1,0 +1,167 @@
+
+unknownV_crystal_hangmu.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 580, 37
+  size: 532, 437
+  orig: 532, 437
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: false
+  xy: 489, 802
+  size: 143, 59
+  orig: 143, 59
+  offset: 0, 0
+  index: -1
+chushou_2
+  rotate: false
+  xy: 2, 813
+  size: 145, 48
+  orig: 145, 48
+  offset: 0, 0
+  index: -1
+chushou_3
+  rotate: true
+  xy: 239, 620
+  size: 98, 105
+  orig: 98, 105
+  offset: 0, 0
+  index: -1
+chushou_4
+  rotate: false
+  xy: 149, 807
+  size: 101, 54
+  orig: 101, 54
+  offset: 0, 0
+  index: -1
+chushou_5
+  rotate: false
+  xy: 818, 571
+  size: 165, 136
+  orig: 165, 136
+  offset: 0, 0
+  index: -1
+chushou_6
+  rotate: true
+  xy: 2, 742
+  size: 69, 102
+  orig: 69, 102
+  offset: 0, 0
+  index: -1
+chushou_7
+  rotate: true
+  xy: 587, 714
+  size: 85, 141
+  orig: 85, 141
+  offset: 0, 0
+  index: -1
+chushou_8
+  rotate: true
+  xy: 252, 806
+  size: 55, 122
+  orig: 55, 122
+  offset: 0, 0
+  index: -1
+chushou_9
+  rotate: false
+  xy: 838, 796
+  size: 150, 65
+  orig: 150, 65
+  offset: 0, 0
+  index: -1
+feiji_1
+  rotate: false
+  xy: 730, 709
+  size: 124, 85
+  orig: 124, 85
+  offset: 0, 0
+  index: -1
+feiji_2
+  rotate: false
+  xy: 335, 720
+  size: 124, 84
+  orig: 124, 84
+  offset: 0, 0
+  index: -1
+feiji_3
+  rotate: false
+  xy: 461, 716
+  size: 124, 84
+  orig: 124, 84
+  offset: 0, 0
+  index: -1
+feiji_4
+  rotate: false
+  xy: 856, 709
+  size: 123, 85
+  orig: 123, 85
+  offset: 0, 0
+  index: -1
+piaodai_1
+  rotate: true
+  xy: 106, 734
+  size: 71, 114
+  orig: 71, 114
+  offset: 0, 0
+  index: -1
+piaodai_2
+  rotate: true
+  xy: 376, 806
+  size: 55, 111
+  orig: 55, 111
+  offset: 0, 0
+  index: -1
+piaodai_3
+  rotate: false
+  xy: 2, 638
+  size: 235, 90
+  orig: 235, 90
+  offset: 0, 0
+  index: -1
+piaodai_4
+  rotate: false
+  xy: 222, 730
+  size: 111, 74
+  orig: 111, 74
+  offset: 0, 0
+  index: -1
+piaodai_5
+  rotate: false
+  xy: 634, 801
+  size: 202, 60
+  orig: 202, 60
+  offset: 0, 0
+  index: -1
+piaodai_6
+  rotate: false
+  xy: 346, 598
+  size: 251, 114
+  orig: 251, 114
+  offset: 0, 0
+  index: -1
+piaodai_7
+  rotate: false
+  xy: 599, 583
+  size: 217, 124
+  orig: 217, 124
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 2, 300
+  size: 576, 296
+  orig: 576, 296
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 2
+  size: 566, 296
+  orig: 566, 296
+  offset: 0, 0
+  index: -1

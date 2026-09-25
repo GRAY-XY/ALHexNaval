@@ -1,0 +1,49 @@
+{
+  "id": "aircrafticon__tbd",
+  "model": "tbd",
+  "name": "默认白鹰鱼雷机",
+  "names": [
+    "默认白鹰鱼雷机",
+    "TBD蹂躏者",
+    "美系舰载-鱼雷机I",
+    "美系舰载-鱼雷机II",
+    "美系舰载-鱼雷机III",
+    "美系舰载-鱼雷机IV",
+    "美系舰载-鱼雷机V",
+    "【战术研修】【BOSS】萨拉托加-鱼雷机",
+    "大黄蜂-鱼雷机",
+    "第一章第一关大黄蜂boss专用轰炸机T1",
+    "世界boss专用轰炸机T1",
+    "【新美系活动B2】BOSS –大黄蜂 鱼雷机",
+    "【新美系活动D2】BOSS –大黄蜂 鱼雷机",
+    "【2022公海舰队活动】剧情战 美系支援飞机 鱼雷机",
+    "挑战关卡8地毯轰炸机T1",
+    "天秤座地毯轰炸机",
+    "【翻格子活动】白鹰鱼雷机",
+    "【大世界】美系舰载-鱼雷机I",
+    "【大世界】美系舰载-鱼雷机II",
+    "【大世界】美系舰载-鱼雷机III",
+    "【大世界】美系舰载-鱼雷机IV",
+    "【大世界】美系舰载-鱼雷机V",
+    "【2023克莱蒙梭活动】剧情战 美系支援飞机 鱼雷机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/tbd",
+  "path": "battle-assets/飞机图标/aircrafticon__tbd",
+  "images": [
+    {
+      "file": "tbd_8504749087354988849.png",
+      "name": "tbd",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 8504749087354988849,
+      "source": "CAB-1dffe88afd50dd7ef6a7181ddeeda1cd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

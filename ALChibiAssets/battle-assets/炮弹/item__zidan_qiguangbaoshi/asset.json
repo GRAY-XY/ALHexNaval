@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_qiguangbaoshi",
+  "model": "zidan_qiguangbaoshi",
+  "name": "七光宝石子弹",
+  "names": [
+    "七光宝石子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_qiguangbaoshi",
+  "path": "battle-assets/炮弹/item__zidan_qiguangbaoshi",
+  "images": [
+    {
+      "file": "zidan_qiguangbaoshi_-3234655535965580837.png",
+      "name": "zidan_qiguangbaoshi",
+      "width": 126,
+      "height": 98,
+      "role": "战斗贴图",
+      "path_id": -3234655535965580837,
+      "source": "CAB-8735365f4b3342cf59d14bd84f59874d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_qiguangbaoshi/zidan_qiguangbaoshi_-3234655535965580837.png"
+}

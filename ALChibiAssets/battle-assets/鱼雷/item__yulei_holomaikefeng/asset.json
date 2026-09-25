@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_holomaikefeng",
+  "model": "yulei_holomaikefeng",
+  "name": "空的麦克风鱼雷",
+  "names": [
+    "空的麦克风鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_holomaikefeng",
+  "path": "battle-assets/鱼雷/item__yulei_holomaikefeng",
+  "images": [
+    {
+      "file": "yulei_holomaikefeng_707210156319520690.png",
+      "name": "yulei_holomaikefeng",
+      "width": 128,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": 707210156319520690,
+      "source": "CAB-875f9804b57909c191bbd3eee8ad8e52"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    660081
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_holomaikefeng/yulei_holomaikefeng_707210156319520690.png"
+}

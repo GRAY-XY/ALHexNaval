@@ -1,0 +1,83 @@
+
+tolove_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 560, 2
+  size: 615, 403
+  orig: 615, 403
+  offset: 0, 0
+  index: -1
+body-t3
+  rotate: false
+  xy: 579, 633
+  size: 196, 114
+  orig: 196, 114
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: false
+  xy: 777, 619
+  size: 166, 128
+  orig: 166, 128
+  offset: 0, 0
+  index: -1
+body_t2
+  rotate: false
+  xy: 437, 688
+  size: 140, 59
+  orig: 140, 59
+  offset: 0, 0
+  index: -1
+body_t4
+  rotate: false
+  xy: 43, 700
+  size: 71, 47
+  orig: 71, 47
+  offset: 0, 0
+  index: -1
+body_t5
+  rotate: false
+  xy: 2, 732
+  size: 39, 15
+  orig: 39, 15
+  offset: 0, 0
+  index: -1
+pao_1
+  rotate: false
+  xy: 116, 691
+  size: 159, 56
+  orig: 159, 56
+  offset: 0, 0
+  index: -1
+pao_2
+  rotate: false
+  xy: 277, 691
+  size: 158, 56
+  orig: 158, 56
+  offset: 0, 0
+  index: -1
+zx01
+  rotate: false
+  xy: 2, 460
+  size: 552, 115
+  orig: 552, 115
+  offset: 0, 0
+  index: -1
+zx02
+  rotate: false
+  xy: 2, 335
+  size: 553, 123
+  orig: 553, 123
+  offset: 0, 0
+  index: -1
+zx03
+  rotate: false
+  xy: 2, 577
+  size: 556, 109
+  orig: 556, 109
+  offset: 0, 0
+  index: -1

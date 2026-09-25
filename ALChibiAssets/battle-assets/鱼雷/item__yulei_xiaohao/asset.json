@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiaohao",
+  "model": "yulei_xiaohao",
+  "name": "小号",
+  "names": [
+    "小号"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiaohao",
+  "path": "battle-assets/鱼雷/item__yulei_xiaohao",
+  "images": [
+    {
+      "file": "yulei_xiaohao_-9130710112492068724.png",
+      "name": "yulei_xiaohao",
+      "width": 128,
+      "height": 52,
+      "role": "战斗贴图",
+      "path_id": -9130710112492068724,
+      "source": "CAB-3b37fdcc1630db536a93cfd38466aa7e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiaohao/yulei_xiaohao_-9130710112492068724.png"
+}

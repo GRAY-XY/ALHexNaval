@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__mantoupaodan__mantoupaodan_material",
+  "model": "mantoupaodan_material",
+  "name": "mantoupaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/mantoupaodan/mantoupaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__mantoupaodan__mantoupaodan_material",
+  "images": [
+    {
+      "file": "mantoupaodan_-157373932078502062.png",
+      "name": "mantoupaodan",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -157373932078502062,
+      "source": "CAB-bd6d830f18dd98ed877d208853fc1267"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

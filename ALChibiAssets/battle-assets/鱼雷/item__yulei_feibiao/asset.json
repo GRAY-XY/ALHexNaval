@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_feibiao",
+  "model": "yulei_feibiao",
+  "name": "飞镖鱼雷",
+  "names": [
+    "飞镖鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_feibiao",
+  "path": "battle-assets/鱼雷/item__yulei_feibiao",
+  "images": [
+    {
+      "file": "yulei_feibiao_-2451611430009295545.png",
+      "name": "yulei_feibiao",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -2451611430009295545,
+      "source": "CAB-aafcb08d388bc5539143386773b8f907"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    170997
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_feibiao/yulei_feibiao_-2451611430009295545.png"
+}

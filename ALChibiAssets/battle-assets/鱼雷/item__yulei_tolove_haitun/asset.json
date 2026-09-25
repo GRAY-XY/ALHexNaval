@@ -1,0 +1,46 @@
+{
+  "id": "item__yulei_tolove_haitun",
+  "model": "yulei_tolove_haitun",
+  "name": "速射海豚君鱼雷",
+  "names": [
+    "速射海豚君鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tolove_haitun",
+  "path": "battle-assets/鱼雷/item__yulei_tolove_haitun",
+  "images": [
+    {
+      "file": "yulei03_02_-3685275306192803846.png",
+      "name": "yulei03_02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3685275306192803846,
+      "source": "CAB-b72b2ea67551efcb1b1ad6df0dda68d2"
+    },
+    {
+      "file": "yulei03_01_6741115918498055530.png",
+      "name": "yulei03_01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6741115918498055530,
+      "source": "CAB-b72b2ea67551efcb1b1ad6df0dda68d2"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3227206
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tolove_haitun/yulei03_02_-3685275306192803846.png",
+  "spine": {
+    "skel": "yulei_tolove_haitun.skel",
+    "atlas": "yulei_tolove_haitun.atlas",
+    "pages": [
+      "yulei_tolove_haitun.png"
+    ]
+  }
+}

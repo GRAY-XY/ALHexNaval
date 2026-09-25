@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletother__chuantoudanweiba__materials__glow_00141",
+  "model": "glow_00141",
+  "name": "glow_00141",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/chuantoudanweiba/materials/glow_00141",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__chuantoudanweiba__materials__glow_00141",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

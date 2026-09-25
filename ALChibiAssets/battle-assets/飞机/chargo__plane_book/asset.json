@@ -1,0 +1,39 @@
+{
+  "id": "chargo__plane_book",
+  "model": "plane_book",
+  "name": "教科书飞机(鱼雷)",
+  "names": [
+    "教科书飞机(鱼雷)",
+    "教科书飞机(战斗)",
+    "教科书飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/plane_book",
+  "path": "battle-assets/飞机/chargo__plane_book",
+  "images": [
+    {
+      "file": "plane_book_-7481923040443480345.png",
+      "name": "plane_book",
+      "width": 224,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": -7481923040443480345,
+      "source": "CAB-23026324024512abed4181aa935926ff"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__plane_book/plane_book_-7481923040443480345.png"
+}

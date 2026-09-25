@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_luyingdeng",
+  "model": "yulei_luyingdeng",
+  "name": "露营灯鱼雷",
+  "names": [
+    "露营灯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_luyingdeng",
+  "path": "battle-assets/鱼雷/item__yulei_luyingdeng",
+  "images": [
+    {
+      "file": "yulei_luyingdeng_7430287915530862462.png",
+      "name": "yulei_luyingdeng",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 7430287915530862462,
+      "source": "CAB-40ccb78c0b49dbc8577ae4b0d624cd46"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_luyingdeng/yulei_luyingdeng_7430287915530862462.png"
+}

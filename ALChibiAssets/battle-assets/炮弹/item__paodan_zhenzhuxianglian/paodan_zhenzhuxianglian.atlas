@@ -1,0 +1,34 @@
+
+paodan_zhenzhuxianglian.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shan_1
+  rotate: false
+  xy: 257, 142
+  size: 73, 74
+  orig: 73, 74
+  offset: 0, 0
+  index: -1
+shan_2
+  rotate: false
+  xy: 257, 2
+  size: 58, 62
+  orig: 58, 62
+  offset: 0, 0
+  index: -1
+shan_3
+  rotate: false
+  xy: 257, 66
+  size: 72, 74
+  orig: 72, 74
+  offset: 0, 0
+  index: -1
+xianglian
+  rotate: false
+  xy: 2, 7
+  size: 253, 209
+  orig: 253, 209
+  offset: 0, 0
+  index: -1

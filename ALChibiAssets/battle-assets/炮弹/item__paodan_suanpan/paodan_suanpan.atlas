@@ -1,0 +1,118 @@
+
+paodan_suanpan.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qiabi_1
+  rotate: false
+  xy: 80, 300
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+qiabi_1_2
+  rotate: false
+  xy: 106, 300
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+qiabi_1_3
+  rotate: false
+  xy: 132, 300
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+qiabi_2
+  rotate: false
+  xy: 158, 300
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+qiabi_2_2
+  rotate: false
+  xy: 184, 300
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+qiabi_2_3
+  rotate: false
+  xy: 210, 300
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+qiabi_3
+  rotate: false
+  xy: 2, 301
+  size: 24, 23
+  orig: 24, 23
+  offset: 0, 0
+  index: -1
+qiabi_3_2
+  rotate: false
+  xy: 28, 301
+  size: 24, 23
+  orig: 24, 23
+  offset: 0, 0
+  index: -1
+qiabi_3_3
+  rotate: false
+  xy: 54, 301
+  size: 24, 23
+  orig: 24, 23
+  offset: 0, 0
+  index: -1
+shanguang_1
+  rotate: false
+  xy: 182, 2
+  size: 296, 115
+  orig: 296, 115
+  offset: 0, 0
+  index: -1
+suanpan
+  rotate: false
+  xy: 2, 61
+  size: 178, 94
+  orig: 178, 94
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 232, 193
+  size: 230, 70
+  orig: 230, 70
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 231, 119
+  size: 227, 72
+  orig: 227, 72
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 2, 157
+  size: 227, 70
+  orig: 227, 70
+  offset: 0, 0
+  index: -1
+tuowei_4
+  rotate: false
+  xy: 2, 229
+  size: 228, 69
+  orig: 228, 69
+  offset: 0, 0
+  index: -1
+tuowei_5
+  rotate: false
+  xy: 236, 265
+  size: 184, 59
+  orig: 184, 59
+  offset: 0, 0
+  index: -1

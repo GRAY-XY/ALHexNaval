@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_chongfengzhou",
+  "model": "feiji_chongfengzhou",
+  "name": "冲锋舟飞机(鱼雷)",
+  "names": [
+    "冲锋舟飞机(鱼雷)",
+    "冲锋舟飞机(战斗)",
+    "冲锋舟飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_chongfengzhou",
+  "path": "battle-assets/飞机/chargo__feiji_chongfengzhou",
+  "images": [
+    {
+      "file": "feiji_chongfengzhou_-4226690284078016824.png",
+      "name": "feiji_chongfengzhou",
+      "width": 256,
+      "height": 123,
+      "role": "战斗贴图",
+      "path_id": -4226690284078016824,
+      "source": "CAB-0334790fe340a09442d1973eef3ee75f"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_chongfengzhou/feiji_chongfengzhou_-4226690284078016824.png"
+}

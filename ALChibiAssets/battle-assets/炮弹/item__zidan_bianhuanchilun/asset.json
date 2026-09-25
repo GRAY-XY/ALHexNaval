@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_bianhuanchilun",
+  "model": "zidan_bianhuanchilun",
+  "name": "永动齿轮子弹",
+  "names": [
+    "永动齿轮子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bianhuanchilun",
+  "path": "battle-assets/炮弹/item__zidan_bianhuanchilun",
+  "images": [
+    {
+      "file": "chilun_-390321813623184844.png",
+      "name": "chilun",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -390321813623184844,
+      "source": "CAB-d45e16f5caa1d21b04b0fc31d900ccd5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bianhuanchilun/chilun_-390321813623184844.png"
+}

@@ -1,0 +1,20 @@
+
+paodan_shoutun.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+paodan
+  rotate: true
+  xy: 506, 12
+  size: 177, 170
+  orig: 177, 170
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 2
+  size: 502, 187
+  orig: 502, 187
+  offset: 0, 0
+  index: -1

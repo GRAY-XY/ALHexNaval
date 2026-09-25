@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yaoping",
+  "model": "zidan_yaoping",
+  "name": "药瓶子弹",
+  "names": [
+    "药瓶子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yaoping",
+  "path": "battle-assets/炮弹/item__zidan_yaoping",
+  "images": [
+    {
+      "file": "zidan_yaoping_-4931353788065289518.png",
+      "name": "zidan_yaoping",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": -4931353788065289518,
+      "source": "CAB-5b5254fcc6d6eb095a24e5ad13eafb0d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yaoping/zidan_yaoping_-4931353788065289518.png"
+}

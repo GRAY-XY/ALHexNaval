@@ -1,0 +1,37 @@
+{
+  "id": "chargo__he50b",
+  "model": "he50b",
+  "name": "He-50b舰载轰炸机",
+  "names": [
+    "He-50b舰载轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/he50b",
+  "path": "battle-assets/飞机/chargo__he50b",
+  "images": [
+    {
+      "file": "He50b_-9085465793927279827.png",
+      "name": "He50b",
+      "width": 250,
+      "height": 243,
+      "role": "战斗贴图",
+      "path_id": -9085465793927279827,
+      "source": "CAB-dbf2ec29e0811737c110119900b5d504"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__he50b/He50b_-9085465793927279827.png"
+}

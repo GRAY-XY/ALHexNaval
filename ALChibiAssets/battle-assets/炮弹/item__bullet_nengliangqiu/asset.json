@@ -1,0 +1,30 @@
+{
+  "id": "item__bullet_nengliangqiu",
+  "model": "bullet_nengliangqiu",
+  "name": "bullet_nengliangqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_nengliangqiu",
+  "path": "battle-assets/炮弹/item__bullet_nengliangqiu",
+  "images": [
+    {
+      "file": "Wave12_1_-8779467045447238668.png",
+      "name": "Wave12 1",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8779467045447238668,
+      "source": "CAB-6a32cd1c21cab56fbb8aca5ee9375ffd"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    161063,
+    161066,
+    161148
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_nengliangqiu/Wave12_1_-8779467045447238668.png"
+}

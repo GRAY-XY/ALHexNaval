@@ -1,0 +1,52 @@
+{
+  "id": "chargo__feiji_djtai",
+  "model": "feiji_djtai",
+  "name": "【偶像活动通用】量产型航空母舰(μ) 轰炸机 Lv1",
+  "names": [
+    "【偶像活动通用】量产型航空母舰(μ) 轰炸机 Lv1",
+    "【偶像活动通用】量产型航空母舰(μ) 轰炸机 Lv2",
+    "【偶像活动通用】量产型航空母舰(μ) 轰炸机 Lv3",
+    "【偶像活动通用】量产型航空母舰(μ) 轰炸机 Lv4",
+    "【偶像活动通用】量产型航空母舰(μ) 轰炸机 Lv5",
+    "【偶像活动通用】航母人形 轰炸机 Lv1",
+    "【偶像活动通用】航母人形 轰炸机 Lv2",
+    "【偶像活动通用】航母人形 轰炸机 Lv3",
+    "【偶像活动通用】航母人形 轰炸机 Lv4",
+    "【偶像活动通用】航母人形 轰炸机 Lv5",
+    "【2024偶像三期SP2】BOSS 可畏(μ兵装)  战斗机",
+    "【2024偶像三期μSP】BOSS 可畏(μ兵装)  战斗机",
+    "【2024偶像三期ISP2】BOSS 可畏(μ兵装)  战斗机",
+    "DJ台飞行器(鱼雷)",
+    "DJ台飞行器(战斗)",
+    "DJ台飞行器(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_djtai",
+  "path": "battle-assets/飞机/chargo__feiji_djtai",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_DJtai_-3542821806285411466.png",
+      "name": "feiji_DJtai",
+      "width": 256,
+      "height": 215,
+      "role": "战斗贴图",
+      "path_id": -3542821806285411466,
+      "source": "CAB-776855a0bd290e097b078b1cd4a09795"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_djtai/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yezi",
+  "model": "zidan_yezi",
+  "name": "椰子子弹",
+  "names": [
+    "椰子子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yezi",
+  "path": "battle-assets/炮弹/item__zidan_yezi",
+  "images": [
+    {
+      "file": "zidan_yezi_-2365155425563539899.png",
+      "name": "zidan_yezi",
+      "width": 128,
+      "height": 123,
+      "role": "战斗贴图",
+      "path_id": -2365155425563539899,
+      "source": "CAB-a0d58d0a41e1c186a0d9f31c47ca0838"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yezi/zidan_yezi_-2365155425563539899.png"
+}

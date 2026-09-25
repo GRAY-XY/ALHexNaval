@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xiaodianxin",
+  "model": "zidan_xiaodianxin",
+  "name": "小点心子弹",
+  "names": [
+    "小点心子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xiaodianxin",
+  "path": "battle-assets/炮弹/item__zidan_xiaodianxin",
+  "images": [
+    {
+      "file": "dianxin01_-4778389000517734369.png",
+      "name": "dianxin01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4778389000517734369,
+      "source": "CAB-cfb87b7a5830d95e2971a2a6861d9770"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xiaodianxin/dianxin01_-4778389000517734369.png"
+}

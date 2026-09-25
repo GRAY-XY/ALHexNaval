@@ -1,0 +1,38 @@
+{
+  "id": "item__hololive_bullet1",
+  "model": "hololive_bullet1",
+  "name": "hololive_bullet1",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hololive_bullet1",
+  "path": "battle-assets/炮弹/item__hololive_bullet1",
+  "images": [
+    {
+      "file": "hololive_bullet1_5534435522998324857.png",
+      "name": "hololive_bullet1",
+      "width": 93,
+      "height": 43,
+      "role": "战斗贴图",
+      "path_id": 5534435522998324857,
+      "source": "CAB-9256b30cd302ff9c2fc28c03951a337a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19591,
+    660014,
+    660015,
+    660031,
+    660041,
+    660042,
+    660043,
+    660044,
+    660071,
+    660092,
+    660094
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hololive_bullet1/hololive_bullet1_5534435522998324857.png"
+}

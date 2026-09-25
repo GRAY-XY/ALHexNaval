@@ -1,0 +1,50 @@
+{
+  "id": "item__gulite_putong",
+  "model": "gulite_putong",
+  "name": "gulite_putong",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulite_putong",
+  "path": "battle-assets/炮弹/item__gulite_putong",
+  "images": [
+    {
+      "file": "bullet01_8225751849381977685.png",
+      "name": "bullet01",
+      "width": 220,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": 8225751849381977685,
+      "source": "CAB-4fbe50951dea1495b83a695428432973"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    841,
+    842,
+    847,
+    855001,
+    855005,
+    855006,
+    855007,
+    855009,
+    856001,
+    856002,
+    856003,
+    856004,
+    856005,
+    856006,
+    856007,
+    856008,
+    3051002,
+    3059011,
+    3059013,
+    3059014,
+    3279207,
+    3331416,
+    3333001
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulite_putong/bullet01_8225751849381977685.png"
+}

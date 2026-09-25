@@ -1,0 +1,33 @@
+{
+  "id": "aircrafticon__fba19",
+  "model": "fba19",
+  "name": "默认鸢尾水侦",
+  "names": [
+    "默认鸢尾水侦",
+    "镇海技能水上机Lv1",
+    "镇海技能水上机地毯式Lv1",
+    "FBA 19",
+    "华甲技能水上机弹幕Lv1",
+    "镇海改技能水上机Lv1",
+    "华甲改弹幕特殊舰载机Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/fba19",
+  "path": "battle-assets/飞机图标/aircrafticon__fba19",
+  "images": [
+    {
+      "file": "FBA19_-6599693627243841921.png",
+      "name": "FBA19",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6599693627243841921,
+      "source": "CAB-e2ac75de5f7a83708e7a16635dd306ed"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

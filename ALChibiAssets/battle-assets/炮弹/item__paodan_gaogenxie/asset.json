@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_gaogenxie",
+  "model": "paodan_gaogenxie",
+  "name": "高跟鞋炮弹",
+  "names": [
+    "高跟鞋炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_gaogenxie",
+  "path": "battle-assets/炮弹/item__paodan_gaogenxie",
+  "images": [
+    {
+      "file": "gaogenxie01_-8178081009354912501.png",
+      "name": "gaogenxie01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8178081009354912501,
+      "source": "CAB-51f130021f75587dbb003098343a8c0a"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_gaogenxie/gaogenxie01_-8178081009354912501.png"
+}

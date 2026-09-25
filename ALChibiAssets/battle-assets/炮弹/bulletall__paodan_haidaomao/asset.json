@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__paodan_haidaomao",
+  "model": "paodan_haidaomao",
+  "name": "船长帽炮弹",
+  "names": [
+    "船长帽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/paodan_haidaomao",
+  "path": "battle-assets/炮弹/bulletall__paodan_haidaomao",
+  "images": [
+    {
+      "file": "paodan_haidaomao_-7234471991209557805.png",
+      "name": "paodan_haidaomao",
+      "width": 123,
+      "height": 85,
+      "role": "原始精灵",
+      "path_id": -7234471991209557805,
+      "source": "CAB-9064968e991459a5f89818c9dc031165"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

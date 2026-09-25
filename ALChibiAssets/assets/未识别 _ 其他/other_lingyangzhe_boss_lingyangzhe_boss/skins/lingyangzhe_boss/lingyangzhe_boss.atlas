@@ -1,0 +1,118 @@
+
+lingyangzhe_boss.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_ko
+  rotate: false
+  xy: 2, 2
+  size: 503, 240
+  orig: 503, 240
+  offset: 0, 0
+  index: -1
+body_shang
+  rotate: false
+  xy: 419, 244
+  size: 303, 234
+  orig: 303, 234
+  offset: 0, 0
+  index: -1
+body_xia
+  rotate: false
+  xy: 613, 480
+  size: 350, 155
+  orig: 350, 155
+  offset: 0, 0
+  index: -1
+shetou_daiji
+  rotate: false
+  xy: 109, 754
+  size: 316, 93
+  orig: 316, 93
+  offset: 0, 0
+  index: -1
+shetou_shouji
+  rotate: false
+  xy: 2, 603
+  size: 307, 149
+  orig: 307, 149
+  offset: 0, 0
+  index: -1
+shouji_1
+  rotate: false
+  xy: 927, 793
+  size: 89, 105
+  orig: 89, 105
+  offset: 0, 0
+  index: -1
+shouji_2
+  rotate: false
+  xy: 2, 757
+  size: 105, 94
+  orig: 105, 94
+  offset: 0, 0
+  index: -1
+yanwu_1
+  rotate: false
+  xy: 869, 843
+  size: 56, 55
+  orig: 56, 55
+  offset: 0, 0
+  index: -1
+yanwu_2
+  rotate: false
+  xy: 654, 735
+  size: 123, 111
+  orig: 123, 111
+  offset: 0, 0
+  index: -1
+yanwu_3
+  rotate: false
+  xy: 779, 637
+  size: 180, 154
+  orig: 180, 154
+  offset: 0, 0
+  index: -1
+yj
+  rotate: false
+  xy: 311, 592
+  size: 300, 150
+  orig: 300, 150
+  offset: 0, 0
+  index: -1
+yj_ko
+  rotate: false
+  xy: 427, 744
+  size: 225, 102
+  orig: 225, 102
+  offset: 0, 0
+  index: -1
+yj_shouji
+  rotate: false
+  xy: 2, 416
+  size: 415, 174
+  orig: 415, 174
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 494, 848
+  size: 373, 50
+  orig: 373, 50
+  offset: 0, 0
+  index: -1
+zi_hx1
+  rotate: true
+  xy: 2, 853
+  size: 45, 249
+  orig: 45, 249
+  offset: 0, 0
+  index: -1
+zi_hx2
+  rotate: true
+  xy: 253, 849
+  size: 49, 239
+  orig: 49, 239
+  offset: 0, 0
+  index: -1

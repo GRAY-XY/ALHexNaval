@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_huati",
+  "model": "paodan_huati",
+  "name": "滑梯炮弹",
+  "names": [
+    "滑梯炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_huati",
+  "path": "battle-assets/炮弹/item__paodan_huati",
+  "images": [
+    {
+      "file": "paodan_huati_8402289406259426323.png",
+      "name": "paodan_huati",
+      "width": 128,
+      "height": 91,
+      "role": "战斗贴图",
+      "path_id": 8402289406259426323,
+      "source": "CAB-8a58f6608ebf5e7dc37d645136665c79"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huati/paodan_huati_8402289406259426323.png"
+}

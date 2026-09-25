@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yujinxiang_hong",
+  "model": "zidan_yujinxiang_hong",
+  "name": "红郁金香子弹",
+  "names": [
+    "红郁金香子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yujinxiang_hong",
+  "path": "battle-assets/炮弹/item__zidan_yujinxiang_hong",
+  "images": [
+    {
+      "file": "zidan_yujinxiang_hong_4772029521931044329.png",
+      "name": "zidan_yujinxiang_hong",
+      "width": 128,
+      "height": 38,
+      "role": "战斗贴图",
+      "path_id": 4772029521931044329,
+      "source": "CAB-724c7788d64e4e1e1213fbc6a5229595"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yujinxiang_hong/zidan_yujinxiang_hong_4772029521931044329.png"
+}

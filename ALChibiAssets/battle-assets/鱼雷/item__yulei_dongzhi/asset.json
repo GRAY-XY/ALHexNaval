@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_dongzhi",
+  "model": "yulei_dongzhi",
+  "name": "赠品购物袋鱼雷",
+  "names": [
+    "赠品购物袋鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_dongzhi",
+  "path": "battle-assets/鱼雷/item__yulei_dongzhi",
+  "images": [
+    {
+      "file": "yulei_dongzhi_4144631950741290300.png",
+      "name": "yulei_dongzhi",
+      "width": 128,
+      "height": 82,
+      "role": "战斗贴图",
+      "path_id": 4144631950741290300,
+      "source": "CAB-efd55a574f8de3a00141a728dc4c6484"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_dongzhi/yulei_dongzhi_4144631950741290300.png"
+}

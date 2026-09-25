@@ -1,0 +1,62 @@
+
+chongying_m_qianting.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 548, 90
+  size: 419, 256
+  orig: 419, 256
+  offset: 0, 0
+  index: -1
+huo
+  rotate: false
+  xy: 2, 2
+  size: 536, 272
+  orig: 536, 272
+  offset: 0, 0
+  index: -1
+huxu_1
+  rotate: true
+  xy: 473, 276
+  size: 70, 73
+  orig: 70, 73
+  offset: 0, 0
+  index: -1
+huxu_2
+  rotate: false
+  xy: 275, 284
+  size: 70, 62
+  orig: 70, 62
+  offset: 0, 0
+  index: -1
+yanwu_1
+  rotate: false
+  xy: 170, 301
+  size: 103, 45
+  orig: 103, 45
+  offset: 0, 0
+  index: -1
+yanwu_2
+  rotate: false
+  xy: 347, 277
+  size: 124, 69
+  orig: 124, 69
+  offset: 0, 0
+  index: -1
+yanwu_3
+  rotate: false
+  xy: 60, 304
+  size: 108, 42
+  orig: 108, 42
+  offset: 0, 0
+  index: -1
+yanwu_4
+  rotate: false
+  xy: 2, 326
+  size: 56, 20
+  orig: 56, 20
+  offset: 0, 0
+  index: -1

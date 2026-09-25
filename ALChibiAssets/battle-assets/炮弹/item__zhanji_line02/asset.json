@@ -1,0 +1,28 @@
+{
+  "id": "item__zhanji_line02",
+  "model": "zhanji_line02",
+  "name": "zhanji_line02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhanji_line02",
+  "path": "battle-assets/炮弹/item__zhanji_line02",
+  "images": [
+    {
+      "file": "Al_Line09_green_57383571239668217.png",
+      "name": "Al_Line09_green",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 57383571239668217,
+      "source": "CAB-783858b90b94eff29c6e12e69055f859"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3108126
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zhanji_line02/Al_Line09_green_57383571239668217.png"
+}

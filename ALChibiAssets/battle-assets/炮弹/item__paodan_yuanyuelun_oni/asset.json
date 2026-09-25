@@ -1,0 +1,31 @@
+{
+  "id": "item__paodan_yuanyuelun_oni",
+  "model": "paodan_yuanyuelun_oni",
+  "name": "paodan_yuanyuelun_oni",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_yuanyuelun_oni",
+  "path": "battle-assets/炮弹/item__paodan_yuanyuelun_oni",
+  "images": [
+    {
+      "file": "paodan_yuelunwu_oni_8546834202525076790.png",
+      "name": "paodan_yuelunwu_oni",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8546834202525076790,
+      "source": "CAB-859547bd05c9e58bc5f2df8a2769ed4e"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    29659029,
+    29659035,
+    3107030,
+    3107036
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yuanyuelun_oni/paodan_yuelunwu_oni_8546834202525076790.png"
+}

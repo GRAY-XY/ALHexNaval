@@ -1,0 +1,30 @@
+{
+  "id": "aircrafticon__feiji_ai_gamer",
+  "model": "feiji_ai_gamer",
+  "name": "【绊爱联动】空袭 鱼雷机",
+  "names": [
+    "【绊爱联动】空袭 鱼雷机",
+    "迷你爱酱·超级玩家(鱼雷)",
+    "迷你爱酱·超级玩家(战斗)",
+    "迷你爱酱·超级玩家(轰炸)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/feiji_ai_gamer",
+  "path": "battle-assets/飞机图标/aircrafticon__feiji_ai_gamer",
+  "images": [
+    {
+      "file": "feiji_ai_gamer_-936458381077016833.png",
+      "name": "feiji_ai_gamer",
+      "width": 44,
+      "height": 40,
+      "role": "原始精灵",
+      "path_id": -936458381077016833,
+      "source": "CAB-b0cd91d4b504e057625a629210ed8dcb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

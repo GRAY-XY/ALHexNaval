@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.7",
+  "url": "http://127.0.0.1:18768/",
+  "isolatedTestUrl": "http://127.0.0.1:18769/",
+  "browserChecks": [
+    "Startup shows the main menu while the map initializes behind it",
+    "Continue shows the saved round, map size and faction count and enters the current match",
+    "Local battle opens a separate setup page with 128, 256 and 512 map sizes and 2 through 8 factions",
+    "An isolated 128 by 128 two-faction match was created and entered successfully",
+    "Returning from the isolated match updated Continue to round 1, 128 by 128 and 2 factions",
+    "The in-game top bar contains the sea summary and pause button without new-game controls",
+    "The pause menu exposes resume, save, load, settings and return-to-main actions",
+    "Settings exposes hex grid, ship animation and realtime aviation toggles plus keyboard help",
+    "Escape closes and reopens the pause menu",
+    "Returning to the main menu preserves the current match and its Continue summary"
+  ],
+  "simulationBehavior": [
+    "Main-menu and pause states block map input and stop tick-driven aviation and ship animation updates",
+    "Resuming resets the frame timestamp so paused wall time is not simulated"
+  ],
+  "consoleErrors": [],
+  "staticChecks": {
+    "build": "passed",
+    "coordinateChecks": 344064,
+    "portChecks": 26,
+    "invalidPortSaveCases": 15,
+    "ruleChecks": 78,
+    "weightedPathCases": 80,
+    "invalidRuleSaveCases": 67,
+    "fogChecks": 16,
+    "invalidFogSaveCases": 7,
+    "landDetailSprites": 6,
+    "directionalAssets": 18
+  },
+  "backup": "output/backups/main-menu-before-20260919-140916.zip"
+}

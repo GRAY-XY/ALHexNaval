@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__distort_plane01",
+  "model": "distort_plane01",
+  "name": "distort_plane01",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/bulletch_sp/distort_plane01",
+  "path": "battle-assets/飞机/artresource__item__bulletall__bulletch_sp__distort_plane01",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_dongzhi",
+  "model": "feiji_dongzhi",
+  "name": "超级折扣推车（鱼雷）",
+  "names": [
+    "超级折扣推车（鱼雷）",
+    "超级折扣推车（战斗）",
+    "超级折扣推车（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_dongzhi",
+  "path": "battle-assets/飞机/chargo__feiji_dongzhi",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_dongzhi_3571208757525589326.png",
+      "name": "feiji_dongzhi",
+      "width": 256,
+      "height": 291,
+      "role": "战斗贴图",
+      "path_id": 3571208757525589326,
+      "source": "CAB-73285b80919f77ee4023d53b376b4b09"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_dongzhi/aircraft_shadow_2192772484218123160.png"
+}

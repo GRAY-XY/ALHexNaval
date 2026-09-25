@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_yunshi",
+  "model": "paodan_yunshi",
+  "name": "陨石术炮弹",
+  "names": [
+    "陨石术炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yunshi",
+  "path": "battle-assets/炮弹/item__paodan_yunshi",
+  "images": [
+    {
+      "file": "yunshi_1405903575848020392.png",
+      "name": "yunshi",
+      "width": 248,
+      "height": 237,
+      "role": "战斗贴图",
+      "path_id": 1405903575848020392,
+      "source": "CAB-89d700d12ec17a8c1bd70a03341271b8"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [
+    "yunshiAnimation"
+  ],
+  "bullet_ids": [
+    3139546,
+    3139709,
+    3300210,
+    3304004
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yunshi/yunshi_1405903575848020392.png"
+}

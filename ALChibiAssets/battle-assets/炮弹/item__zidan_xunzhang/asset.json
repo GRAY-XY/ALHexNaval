@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xunzhang",
+  "model": "zidan_xunzhang",
+  "name": "勋章子弹",
+  "names": [
+    "勋章子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xunzhang",
+  "path": "battle-assets/炮弹/item__zidan_xunzhang",
+  "images": [
+    {
+      "file": "zidan_xunzhang_-639349626968078527.png",
+      "name": "zidan_xunzhang",
+      "width": 128,
+      "height": 145,
+      "role": "战斗贴图",
+      "path_id": -639349626968078527,
+      "source": "CAB-ea8c25d019037ac9771c6e7cd48cb34d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xunzhang/zidan_xunzhang_-639349626968078527.png"
+}

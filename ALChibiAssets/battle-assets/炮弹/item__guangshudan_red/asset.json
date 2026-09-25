@@ -1,0 +1,30 @@
+{
+  "id": "item__guangshudan_red",
+  "model": "guangshudan_red",
+  "name": "guangshudan_red",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/guangshudan_red",
+  "path": "battle-assets/炮弹/item__guangshudan_red",
+  "images": [
+    {
+      "file": "guangshudan_red_-5122977633188869887.png",
+      "name": "guangshudan_red",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5122977633188869887,
+      "source": "CAB-f85979358c762370a8838f10e90a6fd5"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3119002,
+    3119450,
+    3264007
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__guangshudan_red/guangshudan_red_-5122977633188869887.png"
+}

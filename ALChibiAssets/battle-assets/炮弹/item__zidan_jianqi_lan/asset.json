@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_jianqi_lan",
+  "model": "zidan_jianqi_lan",
+  "name": "zidan_jianqi_lan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_jianqi_lan",
+  "path": "battle-assets/炮弹/item__zidan_jianqi_lan",
+  "images": [
+    {
+      "file": "jianqi_lan_-2392617895890753154.png",
+      "name": "jianqi_lan",
+      "width": 223,
+      "height": 138,
+      "role": "战斗贴图",
+      "path_id": -2392617895890753154,
+      "source": "CAB-17c2f223aaa7df3d1c0445fa05df3211"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    167683
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jianqi_lan/jianqi_lan_-2392617895890753154.png"
+}

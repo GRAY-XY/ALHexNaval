@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__zidan_nier_squarebullet",
+  "model": "zidan_nier_squarebullet",
+  "name": "Hack Burst",
+  "names": [
+    "Hack Burst"
+  ],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_nier_squarebullet",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_nier_squarebullet",
+  "images": [
+    {
+      "file": "zidan_nier_squarebullet_9170774476583772914.png",
+      "name": "zidan_nier_squarebullet",
+      "width": 128,
+      "height": 71,
+      "role": "原始精灵",
+      "path_id": 9170774476583772914,
+      "source": "CAB-72c49a1169d46388a4e839958a101015"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

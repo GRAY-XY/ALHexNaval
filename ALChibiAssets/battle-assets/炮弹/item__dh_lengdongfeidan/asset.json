@@ -1,0 +1,30 @@
+{
+  "id": "item__dh_lengdongfeidan",
+  "model": "dh_lengdongfeidan",
+  "name": "dh_lengdongfeidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/dh_lengdongfeidan",
+  "path": "battle-assets/炮弹/item__dh_lengdongfeidan",
+  "images": [
+    {
+      "file": "dh_lengdongfeidan_4675065915446965294.png",
+      "name": "dh_lengdongfeidan",
+      "width": 297,
+      "height": 136,
+      "role": "战斗贴图",
+      "path_id": 4675065915446965294,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3185002,
+    3187004,
+    3187005
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__dh_lengdongfeidan/dh_lengdongfeidan_4675065915446965294.png"
+}

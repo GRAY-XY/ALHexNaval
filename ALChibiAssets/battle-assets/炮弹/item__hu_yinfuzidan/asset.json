@@ -1,0 +1,26 @@
+{
+  "id": "item__hu_yinfuzidan",
+  "model": "hu_yinfuzidan",
+  "name": "hu_yinfuzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hu_yinfuzidan",
+  "path": "battle-assets/炮弹/item__hu_yinfuzidan",
+  "images": [
+    {
+      "file": "xiaoyinfu01_-2128399415837173988.png",
+      "name": "xiaoyinfu01",
+      "width": 64,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2128399415837173988,
+      "source": "CAB-a45e914af7c0a15a5ef45fb099b35aaa"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hu_yinfuzidan/xiaoyinfu01_-2128399415837173988.png"
+}

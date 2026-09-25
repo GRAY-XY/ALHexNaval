@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_nvputoushi",
+  "model": "zidan_nvputoushi",
+  "name": "发箍子弹(黑&白)",
+  "names": [
+    "发箍子弹(黑&白)"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_nvputoushi",
+  "path": "battle-assets/炮弹/item__zidan_nvputoushi",
+  "images": [
+    {
+      "file": "fagu_-4863606008524314703.png",
+      "name": "fagu",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4863606008524314703,
+      "source": "CAB-a4c17c4383cc9b431f06eb8114801c00"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_nvputoushi/fagu_-4863606008524314703.png"
+}

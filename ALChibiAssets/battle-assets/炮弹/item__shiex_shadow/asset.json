@@ -1,0 +1,31 @@
+{
+  "id": "item__shiex_shadow",
+  "model": "shiex_shadow",
+  "name": "shiex_shadow",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shiex_shadow",
+  "path": "battle-assets/炮弹/item__shiex_shadow",
+  "images": [
+    {
+      "file": "shiex_-6679731003165444889.png",
+      "name": "shiex",
+      "width": 247,
+      "height": 290,
+      "role": "战斗贴图",
+      "path_id": -6679731003165444889,
+      "source": "CAB-bddbd0f08531553a8175446f77ae8a62"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3275050,
+    3275051,
+    3275250,
+    3275251
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shiex_shadow/shiex_-6679731003165444889.png"
+}

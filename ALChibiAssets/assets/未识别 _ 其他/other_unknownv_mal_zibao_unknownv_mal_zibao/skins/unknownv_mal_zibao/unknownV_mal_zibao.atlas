@@ -1,0 +1,69 @@
+
+unknownV_mal_zibao.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hei_1_1
+  rotate: true
+  xy: 322, 25
+  size: 101, 97
+  orig: 101, 97
+  offset: 0, 0
+  index: -1
+hei_3_1
+  rotate: true
+  xy: 169, 94
+  size: 157, 151
+  orig: 157, 151
+  offset: 0, 0
+  index: -1
+hei_3_2
+  rotate: true
+  xy: 2, 80
+  size: 171, 165
+  orig: 171, 165
+  offset: 0, 0
+  index: -1
+hong_1_1
+  rotate: true
+  xy: 104, 32
+  size: 46, 43
+  orig: 46, 43
+  offset: 0, 0
+  index: -1
+hong_1_2
+  rotate: false
+  xy: 2, 6
+  size: 67, 72
+  orig: 67, 72
+  offset: 0, 0
+  index: -1
+hong_3_1
+  rotate: true
+  xy: 169, 5
+  size: 87, 83
+  orig: 87, 83
+  offset: 0, 0
+  index: -1
+hong_3_2
+  rotate: false
+  xy: 322, 128
+  size: 130, 123
+  orig: 130, 123
+  offset: 0, 0
+  index: -1
+yan_1
+  rotate: false
+  xy: 71, 2
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+yan_3
+  rotate: false
+  xy: 71, 31
+  size: 31, 47
+  orig: 31, 47
+  offset: 0, 0
+  index: -1

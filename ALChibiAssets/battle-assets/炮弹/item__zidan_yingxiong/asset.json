@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yingxiong",
+  "model": "zidan_yingxiong",
+  "name": "zidan_yingxiong",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_yingxiong",
+  "path": "battle-assets/炮弹/item__zidan_yingxiong",
+  "images": [
+    {
+      "file": "jian03_-5474149129147730350.png",
+      "name": "jian03",
+      "width": 256,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": -5474149129147730350,
+      "source": "CAB-abe61c1c51c036580502a9251c83d1b1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19570
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yingxiong/jian03_-5474149129147730350.png"
+}

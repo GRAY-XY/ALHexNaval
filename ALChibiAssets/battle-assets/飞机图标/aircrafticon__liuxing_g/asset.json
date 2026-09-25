@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__liuxing_g",
+  "model": "liuxing_g",
+  "name": "流星改",
+  "names": [
+    "流星改"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/liuxing_g",
+  "path": "battle-assets/飞机图标/aircrafticon__liuxing_g",
+  "images": [
+    {
+      "file": "liuxing_g_-7729396477821482664.png",
+      "name": "liuxing_g",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -7729396477821482664,
+      "source": "CAB-b6303a2febb1e662e67e3a3e11abb64a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

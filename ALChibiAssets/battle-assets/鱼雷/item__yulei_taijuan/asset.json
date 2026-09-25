@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_taijuan",
+  "model": "yulei_taijuan",
+  "name": "太卷鱼雷",
+  "names": [
+    "太卷鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_taijuan",
+  "path": "battle-assets/鱼雷/item__yulei_taijuan",
+  "images": [
+    {
+      "file": "yulei_taijuan_4556964737744981001.png",
+      "name": "yulei_taijuan",
+      "width": 493,
+      "height": 187,
+      "role": "战斗贴图",
+      "path_id": 4556964737744981001,
+      "source": "CAB-a2a00d0a93b49803a865f1553797a5d1"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_taijuan/yulei_taijuan_4556964737744981001.png"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__heifangzhou_gun",
+  "model": "heifangzhou_gun",
+  "name": "heifangzhou_gun",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/heifangzhou_gun",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__heifangzhou_gun",
+  "images": [
+    {
+      "file": "heifangzhou_gun_-1760010251092835712.png",
+      "name": "heifangzhou_gun",
+      "width": 206,
+      "height": 46,
+      "role": "原始精灵",
+      "path_id": -1760010251092835712,
+      "source": "CAB-deeaae87b7f6e85d34579edace0ddd10"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__kapaizidan_2__kapaizidan_2_material",
+  "model": "kapaizidan_2_material",
+  "name": "kapaizidan_2_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/kapaizidan_2/kapaizidan_2_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__kapaizidan_2__kapaizidan_2_material",
+  "images": [
+    {
+      "file": "kapaizidan_2_-8249863033731973822.png",
+      "name": "kapaizidan_2",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -8249863033731973822,
+      "source": "CAB-32af7ed5709fb7121b8a9e126d6b0a99"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

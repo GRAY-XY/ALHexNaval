@@ -1,0 +1,17 @@
+{
+  "id": "item__zhaomingdan_3",
+  "model": "zhaomingdan_3",
+  "name": "zhaomingdan_3",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhaomingdan_3",
+  "path": "battle-assets/炮弹/item__zhaomingdan_3",
+  "images": [],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    2050
+  ],
+  "has_preview": false,
+  "prefab": true
+}

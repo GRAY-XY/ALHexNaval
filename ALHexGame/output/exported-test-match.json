@@ -1,0 +1,578 @@
+{
+  "format": "al-hex-match",
+  "version": 2,
+  "mapVersion": 1,
+  "size": 128,
+  "mapHash": "ff438679",
+  "round": 2,
+  "activeIndex": 0,
+  "fleetSerial": 1,
+  "teams": [
+    {
+      "id": 1,
+      "name": "湛蓝舰队"
+    },
+    {
+      "id": 2,
+      "name": "翠绿舰队"
+    },
+    {
+      "id": 3,
+      "name": "琥珀舰队"
+    },
+    {
+      "id": 4,
+      "name": "紫罗兰舰队"
+    }
+  ],
+  "units": [
+    {
+      "instanceId": "team-1-lafei",
+      "col": 6,
+      "row": 13,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "fleetId": "fleet-1",
+      "assetId": "lafei"
+    },
+    {
+      "instanceId": "team-1-biaoqiang",
+      "col": 13,
+      "row": 14,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "biaoqiang"
+    },
+    {
+      "instanceId": "team-1-lingbo",
+      "col": 16,
+      "row": 14,
+      "facing": "right",
+      "ownerId": 1,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lingbo"
+    },
+    {
+      "instanceId": "team-1-z23",
+      "col": 19,
+      "row": 14,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "z23"
+    },
+    {
+      "instanceId": "team-1-hailunna",
+      "col": 7,
+      "row": 16,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 1,
+      "action": 1,
+      "status": "ready",
+      "fleetId": "fleet-1",
+      "assetId": "hailunna"
+    },
+    {
+      "instanceId": "team-1-beierfasite",
+      "col": 13,
+      "row": 17,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "beierfasite"
+    },
+    {
+      "instanceId": "team-1-gaoxiong",
+      "col": 16,
+      "row": 17,
+      "facing": "right",
+      "ownerId": 1,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "gaoxiong"
+    },
+    {
+      "instanceId": "team-1-ougen",
+      "col": 19,
+      "row": 17,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "ougen"
+    },
+    {
+      "instanceId": "team-1-yanzhan",
+      "col": 6,
+      "row": 19,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 0,
+      "action": 1,
+      "status": "ready",
+      "fleetId": "fleet-1",
+      "assetId": "yanzhan"
+    },
+    {
+      "instanceId": "team-1-bisimai",
+      "col": 13,
+      "row": 20,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "bisimai"
+    },
+    {
+      "instanceId": "team-1-qiye",
+      "col": 16,
+      "row": 20,
+      "facing": "right",
+      "ownerId": 1,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "qiye"
+    },
+    {
+      "instanceId": "team-1-dujiaoshou",
+      "col": 19,
+      "row": 20,
+      "facing": "left",
+      "ownerId": 1,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "dujiaoshou"
+    },
+    {
+      "instanceId": "team-2-lafei",
+      "col": 100,
+      "row": 16,
+      "facing": "right",
+      "ownerId": 2,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lafei"
+    },
+    {
+      "instanceId": "team-2-biaoqiang",
+      "col": 103,
+      "row": 16,
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "biaoqiang"
+    },
+    {
+      "instanceId": "team-2-lingbo",
+      "col": 106,
+      "row": 16,
+      "facing": "right",
+      "ownerId": 2,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lingbo"
+    },
+    {
+      "instanceId": "team-2-z23",
+      "col": 109,
+      "row": 16,
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "z23"
+    },
+    {
+      "instanceId": "team-2-hailunna",
+      "col": 100,
+      "row": 19,
+      "facing": "right",
+      "ownerId": 2,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "hailunna"
+    },
+    {
+      "instanceId": "team-2-beierfasite",
+      "col": 103,
+      "row": 19,
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "beierfasite"
+    },
+    {
+      "instanceId": "team-2-gaoxiong",
+      "col": 106,
+      "row": 19,
+      "facing": "right",
+      "ownerId": 2,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "gaoxiong"
+    },
+    {
+      "instanceId": "team-2-ougen",
+      "col": 109,
+      "row": 19,
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "ougen"
+    },
+    {
+      "instanceId": "team-2-yanzhan",
+      "col": 100,
+      "row": 22,
+      "facing": "right",
+      "ownerId": 2,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "yanzhan"
+    },
+    {
+      "instanceId": "team-2-bisimai",
+      "col": 103,
+      "row": 22,
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "bisimai"
+    },
+    {
+      "instanceId": "team-2-qiye",
+      "col": 106,
+      "row": 22,
+      "facing": "right",
+      "ownerId": 2,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "qiye"
+    },
+    {
+      "instanceId": "team-2-dujiaoshou",
+      "col": 109,
+      "row": 22,
+      "facing": "left",
+      "ownerId": 2,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "dujiaoshou"
+    },
+    {
+      "instanceId": "team-3-lafei",
+      "col": 100,
+      "row": 102,
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lafei"
+    },
+    {
+      "instanceId": "team-3-biaoqiang",
+      "col": 103,
+      "row": 102,
+      "facing": "left",
+      "ownerId": 3,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "biaoqiang"
+    },
+    {
+      "instanceId": "team-3-lingbo",
+      "col": 106,
+      "row": 102,
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lingbo"
+    },
+    {
+      "instanceId": "team-3-z23",
+      "col": 109,
+      "row": 102,
+      "facing": "left",
+      "ownerId": 3,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "z23"
+    },
+    {
+      "instanceId": "team-3-hailunna",
+      "col": 100,
+      "row": 105,
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "hailunna"
+    },
+    {
+      "instanceId": "team-3-beierfasite",
+      "col": 103,
+      "row": 105,
+      "facing": "left",
+      "ownerId": 3,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "beierfasite"
+    },
+    {
+      "instanceId": "team-3-gaoxiong",
+      "col": 106,
+      "row": 105,
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "gaoxiong"
+    },
+    {
+      "instanceId": "team-3-ougen",
+      "col": 109,
+      "row": 105,
+      "facing": "left",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "ougen"
+    },
+    {
+      "instanceId": "team-3-yanzhan",
+      "col": 100,
+      "row": 109,
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "yanzhan"
+    },
+    {
+      "instanceId": "team-3-bisimai",
+      "col": 104,
+      "row": 111,
+      "facing": "left",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "bisimai"
+    },
+    {
+      "instanceId": "team-3-qiye",
+      "col": 108,
+      "row": 108,
+      "facing": "right",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "qiye"
+    },
+    {
+      "instanceId": "team-3-dujiaoshou",
+      "col": 109,
+      "row": 108,
+      "facing": "left",
+      "ownerId": 3,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "dujiaoshou"
+    },
+    {
+      "instanceId": "team-4-lafei",
+      "col": 14,
+      "row": 102,
+      "facing": "right",
+      "ownerId": 4,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lafei"
+    },
+    {
+      "instanceId": "team-4-biaoqiang",
+      "col": 17,
+      "row": 102,
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "biaoqiang"
+    },
+    {
+      "instanceId": "team-4-lingbo",
+      "col": 20,
+      "row": 102,
+      "facing": "right",
+      "ownerId": 4,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "lingbo"
+    },
+    {
+      "instanceId": "team-4-z23",
+      "col": 23,
+      "row": 102,
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 4,
+      "action": 1,
+      "status": "ready",
+      "assetId": "z23"
+    },
+    {
+      "instanceId": "team-4-hailunna",
+      "col": 14,
+      "row": 105,
+      "facing": "right",
+      "ownerId": 4,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "hailunna"
+    },
+    {
+      "instanceId": "team-4-beierfasite",
+      "col": 17,
+      "row": 105,
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 3,
+      "action": 1,
+      "status": "ready",
+      "assetId": "beierfasite"
+    },
+    {
+      "instanceId": "team-4-gaoxiong",
+      "col": 20,
+      "row": 105,
+      "facing": "right",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "gaoxiong"
+    },
+    {
+      "instanceId": "team-4-ougen",
+      "col": 23,
+      "row": 105,
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "ougen"
+    },
+    {
+      "instanceId": "team-4-yanzhan",
+      "col": 14,
+      "row": 108,
+      "facing": "right",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "yanzhan"
+    },
+    {
+      "instanceId": "team-4-bisimai",
+      "col": 17,
+      "row": 108,
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "bisimai"
+    },
+    {
+      "instanceId": "team-4-qiye",
+      "col": 20,
+      "row": 108,
+      "facing": "right",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "qiye"
+    },
+    {
+      "instanceId": "team-4-dujiaoshou",
+      "col": 23,
+      "row": 108,
+      "facing": "left",
+      "ownerId": 4,
+      "movement": 2,
+      "action": 1,
+      "status": "ready",
+      "assetId": "dujiaoshou"
+    }
+  ],
+  "fleets": [
+    {
+      "id": "fleet-1",
+      "name": "湛蓝舰队 · 第1编队",
+      "ownerId": 1,
+      "members": [
+        "team-1-lafei",
+        "team-1-hailunna",
+        "team-1-yanzhan"
+      ],
+      "leaderId": "team-1-lafei",
+      "order": {
+        "col": 4,
+        "row": 14
+      }
+    }
+  ]
+}

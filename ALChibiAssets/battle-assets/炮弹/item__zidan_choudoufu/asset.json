@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_choudoufu",
+  "model": "zidan_choudoufu",
+  "name": "臭豆腐子弹",
+  "names": [
+    "臭豆腐子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_choudoufu",
+  "path": "battle-assets/炮弹/item__zidan_choudoufu",
+  "images": [
+    {
+      "file": "choudoufu01_-7424878389504350196.png",
+      "name": "choudoufu01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7424878389504350196,
+      "source": "CAB-cc2786ac5180c7c4b0cff89451c99a66"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_choudoufu/choudoufu01_-7424878389504350196.png"
+}

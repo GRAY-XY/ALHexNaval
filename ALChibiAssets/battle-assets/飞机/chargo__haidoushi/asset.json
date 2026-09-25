@@ -1,0 +1,37 @@
+{
+  "id": "chargo__haidoushi",
+  "model": "haidoushi",
+  "name": "海斗士",
+  "names": [
+    "海斗士"
+  ],
+  "category": "飞机",
+  "source": "chargo/haidoushi",
+  "path": "battle-assets/飞机/chargo__haidoushi",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "haidoushi_-5515768557472472760.png",
+      "name": "haidoushi",
+      "width": 256,
+      "height": 240,
+      "role": "战斗贴图",
+      "path_id": -5515768557472472760,
+      "source": "CAB-80843a62ed15f6a6cb5c7f125e0f0735"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__haidoushi/aircraft_shadow_2192772484218123160.png"
+}

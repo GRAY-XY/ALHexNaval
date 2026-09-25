@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_hongyue",
+  "model": "paodan_hongyue",
+  "name": "红月炮弹",
+  "names": [
+    "红月炮弹"
+  ],
+  "category": "鱼雷",
+  "source": "item/paodan_hongyue",
+  "path": "battle-assets/鱼雷/item__paodan_hongyue",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710213,
+    3139210,
+    3253019
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "xxg_hongyuepaodan.skel",
+    "atlas": "xxg_hongyuepaodan.atlas",
+    "pages": [
+      "xxg_hongyuepaodan.png"
+    ]
+  }
+}

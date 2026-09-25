@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_haohuashafa",
+  "model": "feiji_haohuashafa",
+  "name": "红色沙发飞机(鱼雷)",
+  "names": [
+    "红色沙发飞机(鱼雷)",
+    "红色沙发飞机(战斗)",
+    "红色沙发飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_haohuashafa",
+  "path": "battle-assets/飞机/chargo__feiji_haohuashafa",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_haohuashafa_4216500065410239412.png",
+      "name": "feiji_haohuashafa",
+      "width": 256,
+      "height": 202,
+      "role": "战斗贴图",
+      "path_id": 4216500065410239412,
+      "source": "CAB-786946d617eef0d91273c129508d4830"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_haohuashafa/aircraft_shadow_2192772484218123160.png"
+}

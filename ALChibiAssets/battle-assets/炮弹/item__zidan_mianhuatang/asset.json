@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_mianhuatang",
+  "model": "zidan_mianhuatang",
+  "name": "棉花糖子弹",
+  "names": [
+    "棉花糖子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_mianhuatang",
+  "path": "battle-assets/炮弹/item__zidan_mianhuatang",
+  "images": [
+    {
+      "file": "zidan_mianhuatang_-661542309902901841.png",
+      "name": "zidan_mianhuatang",
+      "width": 128,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -661542309902901841,
+      "source": "CAB-2145369a3ffd7f73933840ae066fba1e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_mianhuatang/zidan_mianhuatang_-661542309902901841.png"
+}

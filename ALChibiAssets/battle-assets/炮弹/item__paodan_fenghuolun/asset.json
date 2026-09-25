@@ -1,0 +1,37 @@
+{
+  "id": "item__paodan_fenghuolun",
+  "model": "paodan_fenghuolun",
+  "name": "火焰飞轮炮弹",
+  "names": [
+    "火焰飞轮炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_fenghuolun",
+  "path": "battle-assets/炮弹/item__paodan_fenghuolun",
+  "images": [
+    {
+      "file": "huoyanfeilun_trail01_-2146478684504565043.png",
+      "name": "huoyanfeilun_trail01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2146478684504565043,
+      "source": "CAB-49cbdfc27012b74f66647ca94f58ae1f"
+    },
+    {
+      "file": "huoyanfeilun01_2520725283912281819.png",
+      "name": "huoyanfeilun01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2520725283912281819,
+      "source": "CAB-49cbdfc27012b74f66647ca94f58ae1f"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_fenghuolun/huoyanfeilun_trail01_-2146478684504565043.png"
+}

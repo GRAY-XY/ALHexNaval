@@ -1,0 +1,46 @@
+{
+  "id": "item__shengwang_zhuanwu",
+  "model": "shengwang_zhuanwu",
+  "name": "shengwang_zhuanwu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shengwang_zhuanwu",
+  "path": "battle-assets/炮弹/item__shengwang_zhuanwu",
+  "images": [
+    {
+      "file": "line03_-4965726954453098866.png",
+      "name": "line03",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4965726954453098866,
+      "source": "CAB-815457d564e2a825a298ef8188dc847c"
+    },
+    {
+      "file": "jian01_-4339923859733436675.png",
+      "name": "jian01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -4339923859733436675,
+      "source": "CAB-815457d564e2a825a298ef8188dc847c"
+    },
+    {
+      "file": "line02_-2498378206438108655.png",
+      "name": "line02",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2498378206438108655,
+      "source": "CAB-815457d564e2a825a298ef8188dc847c"
+    }
+  ],
+  "particle_systems": 84,
+  "animations": [],
+  "bullet_ids": [
+    170929
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shengwang_zhuanwu/line03_-4965726954453098866.png"
+}

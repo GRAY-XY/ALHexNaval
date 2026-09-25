@@ -1,0 +1,28 @@
+{
+  "id": "item__lafeier_heituowei",
+  "model": "lafeier_heituowei",
+  "name": "lafeier_heituowei",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/lafeier_heituowei",
+  "path": "battle-assets/炮弹/item__lafeier_heituowei",
+  "images": [
+    {
+      "file": "bullet_UK7_-3176166397629671393.png",
+      "name": "bullet_UK7",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -3176166397629671393,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    167423
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__lafeier_heituowei/bullet_UK7_-3176166397629671393.png"
+}

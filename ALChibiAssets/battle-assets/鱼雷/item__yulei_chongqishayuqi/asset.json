@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_chongqishayuqi",
+  "model": "yulei_chongqishayuqi",
+  "name": "充气鲨鱼鳍鱼雷",
+  "names": [
+    "充气鲨鱼鳍鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chongqishayuqi",
+  "path": "battle-assets/鱼雷/item__yulei_chongqishayuqi",
+  "images": [
+    {
+      "file": "yulei_chongqishayuqi_1334009663534523036.png",
+      "name": "yulei_chongqishayuqi",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": 1334009663534523036,
+      "source": "CAB-b146e60a1243d383142686d62bf6619e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chongqishayuqi/yulei_chongqishayuqi_1334009663534523036.png"
+}

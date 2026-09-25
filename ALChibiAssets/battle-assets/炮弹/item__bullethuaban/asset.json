@@ -1,0 +1,47 @@
+{
+  "id": "item__bullethuaban",
+  "model": "bullethuaban",
+  "name": "bullethuaban",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullethuaban",
+  "path": "battle-assets/炮弹/item__bullethuaban",
+  "images": [
+    {
+      "file": "huabanzidan_-99407913124283724.png",
+      "name": "huabanzidan",
+      "width": 154,
+      "height": 185,
+      "role": "战斗贴图",
+      "path_id": -99407913124283724,
+      "source": "CAB-2171eb1b88b1d47e1c0a69c2dabed1dc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3146501,
+    3146502,
+    3146503,
+    3146504,
+    3146505,
+    3146506,
+    3146507,
+    3146508,
+    3146509,
+    3146510,
+    3148014,
+    3164015,
+    3258101,
+    3355103,
+    3355104,
+    3355105,
+    3355106,
+    3355107,
+    3355108,
+    3355112
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullethuaban/huabanzidan_-99407913124283724.png"
+}

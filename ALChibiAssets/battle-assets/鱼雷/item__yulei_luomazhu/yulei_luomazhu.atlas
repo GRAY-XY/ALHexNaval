@@ -1,0 +1,230 @@
+
+yulei_luomazhu.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lizi_1
+  rotate: false
+  xy: 175, 91
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+lizi_1_2
+  rotate: false
+  xy: 175, 79
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+lizi_1_3
+  rotate: false
+  xy: 77, 88
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+lizi_2
+  rotate: true
+  xy: 77, 80
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+lizi_2_2
+  rotate: true
+  xy: 108, 74
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+lizi_2_3
+  rotate: true
+  xy: 108, 66
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+piaoye_1
+  rotate: false
+  xy: 2, 100
+  size: 28, 21
+  orig: 28, 21
+  offset: 0, 0
+  index: -1
+piaoye_1_2
+  rotate: false
+  xy: 32, 100
+  size: 28, 21
+  orig: 28, 21
+  offset: 0, 0
+  index: -1
+piaoye_1_3
+  rotate: false
+  xy: 62, 100
+  size: 28, 21
+  orig: 28, 21
+  offset: 0, 0
+  index: -1
+piaoye_2
+  rotate: false
+  xy: 121, 81
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+piaoye_2_2
+  rotate: false
+  xy: 148, 81
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+piaoye_2_3
+  rotate: false
+  xy: 187, 80
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+piaoye_3
+  rotate: false
+  xy: 214, 80
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+piaoye_3_2
+  rotate: false
+  xy: 187, 58
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+piaoye_3_3
+  rotate: false
+  xy: 214, 58
+  size: 25, 20
+  orig: 25, 20
+  offset: 0, 0
+  index: -1
+piaoye_4
+  rotate: false
+  xy: 2, 81
+  size: 23, 17
+  orig: 23, 17
+  offset: 0, 0
+  index: -1
+piaoye_4_2
+  rotate: false
+  xy: 27, 81
+  size: 23, 17
+  orig: 23, 17
+  offset: 0, 0
+  index: -1
+piaoye_4_3
+  rotate: false
+  xy: 52, 81
+  size: 23, 17
+  orig: 23, 17
+  offset: 0, 0
+  index: -1
+piaoye_5
+  rotate: false
+  xy: 161, 63
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1
+piaoye_5_2
+  rotate: false
+  xy: 2, 65
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1
+piaoye_5_3
+  rotate: false
+  xy: 23, 65
+  size: 19, 14
+  orig: 19, 14
+  offset: 0, 0
+  index: -1
+piaoye_6
+  rotate: false
+  xy: 92, 103
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+piaoye_6_2
+  rotate: false
+  xy: 124, 103
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+piaoye_6_3
+  rotate: false
+  xy: 156, 103
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+piaoye_7
+  rotate: false
+  xy: 86, 64
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+piaoye_7_2
+  rotate: false
+  xy: 117, 63
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+piaoye_7_3
+  rotate: false
+  xy: 139, 63
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+piaoye_8
+  rotate: false
+  xy: 188, 102
+  size: 27, 19
+  orig: 27, 19
+  offset: 0, 0
+  index: -1
+piaoye_8_2
+  rotate: false
+  xy: 217, 102
+  size: 27, 19
+  orig: 27, 19
+  offset: 0, 0
+  index: -1
+piaoye_8_3
+  rotate: false
+  xy: 92, 82
+  size: 27, 19
+  orig: 27, 19
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 246, 2
+  size: 304, 91
+  orig: 304, 91
+  offset: 0, 0
+  index: -1
+zhuzi
+  rotate: false
+  xy: 2, 123
+  size: 242, 183
+  orig: 242, 183
+  offset: 0, 0
+  index: -1

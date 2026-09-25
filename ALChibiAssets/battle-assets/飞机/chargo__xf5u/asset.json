@@ -1,0 +1,37 @@
+{
+  "id": "chargo__xf5u",
+  "model": "xf5u",
+  "name": "试作型XF5U飞碟",
+  "names": [
+    "试作型XF5U飞碟"
+  ],
+  "category": "飞机",
+  "source": "chargo/xf5u",
+  "path": "battle-assets/飞机/chargo__xf5u",
+  "images": [
+    {
+      "file": "XF5U_294589708044637158.png",
+      "name": "XF5U",
+      "width": 218,
+      "height": 224,
+      "role": "战斗贴图",
+      "path_id": 294589708044637158,
+      "source": "CAB-356a7b12df4ce0e237183cdd84524f6b"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__xf5u/XF5U_294589708044637158.png"
+}

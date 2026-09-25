@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dianzitongjiling",
+  "model": "paodan_dianzitongjiling",
+  "name": "电子通缉令炮弹",
+  "names": [
+    "电子通缉令炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dianzitongjiling",
+  "path": "battle-assets/炮弹/item__paodan_dianzitongjiling",
+  "images": [
+    {
+      "file": "paodan_dianzitongjiling_5612541264320353376.png",
+      "name": "paodan_dianzitongjiling",
+      "width": 128,
+      "height": 82,
+      "role": "战斗贴图",
+      "path_id": 5612541264320353376,
+      "source": "CAB-6d2c09c9a99e5053d47b2c2862492c1a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dianzitongjiling/paodan_dianzitongjiling_5612541264320353376.png"
+}

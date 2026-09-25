@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__salatuojia",
+  "model": "salatuojia",
+  "name": "salatuojia",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/salatuojia",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__salatuojia",
+  "images": [
+    {
+      "file": "salatuojia_-6685094640840223777.png",
+      "name": "salatuojia",
+      "width": 102,
+      "height": 102,
+      "role": "原始精灵",
+      "path_id": -6685094640840223777,
+      "source": "CAB-1c1269c86df17afecff5fdc72fe51316"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

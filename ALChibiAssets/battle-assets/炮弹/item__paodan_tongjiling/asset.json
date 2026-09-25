@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tongjiling",
+  "model": "paodan_tongjiling",
+  "name": "通缉令炮弹",
+  "names": [
+    "通缉令炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tongjiling",
+  "path": "battle-assets/炮弹/item__paodan_tongjiling",
+  "images": [
+    {
+      "file": "paodan_tongjiling_-253410247636659850.png",
+      "name": "paodan_tongjiling",
+      "width": 95,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": -253410247636659850,
+      "source": "CAB-916ca512187671454cd89a6caea70f51"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tongjiling/paodan_tongjiling_-253410247636659850.png"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "item__bomberbombknife",
+  "model": "bomberbombknife",
+  "name": "bomberbombknife",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bomberbombknife",
+  "path": "battle-assets/炮弹/item__bomberbombknife",
+  "images": [
+    {
+      "file": "BomberbombKnife_-3067953872030819492.png",
+      "name": "BomberbombKnife",
+      "width": 111,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": -3067953872030819492,
+      "source": "CAB-06ff633053034ff6e749498bd408135a"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19864,
+    3169001,
+    3289001,
+    3289006,
+    3376010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bomberbombknife/BomberbombKnife_-3067953872030819492.png"
+}

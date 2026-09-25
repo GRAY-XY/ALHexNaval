@@ -1,0 +1,111 @@
+
+kezhan_zhanlie.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuan
+  rotate: false
+  xy: 2, 245
+  size: 679, 767
+  orig: 679, 767
+  offset: 0, 0
+  index: -1
+guan1
+  rotate: true
+  xy: 811, 71
+  size: 430, 420
+  orig: 430, 420
+  offset: 0, 0
+  index: -1
+guan2
+  rotate: false
+  xy: 443, 60
+  size: 366, 183
+  orig: 366, 183
+  offset: 0, 0
+  index: -1
+guan3
+  rotate: true
+  xy: 683, 503
+  size: 509, 469
+  orig: 509, 469
+  offset: 0, 0
+  index: -1
+huo1
+  rotate: false
+  xy: 577, 25
+  size: 113, 33
+  orig: 113, 33
+  offset: 0, 0
+  index: -1
+lajiao
+  rotate: true
+  xy: 443, 4
+  size: 54, 132
+  orig: 54, 132
+  offset: 0, 0
+  index: -1
+miao_1
+  rotate: true
+  xy: 683, 386
+  size: 115, 119
+  orig: 115, 119
+  offset: 0, 0
+  index: -1
+miao_2
+  rotate: false
+  xy: 683, 249
+  size: 115, 135
+  orig: 115, 135
+  offset: 0, 0
+  index: -1
+qizi_1
+  rotate: true
+  xy: 1154, 557
+  size: 101, 90
+  orig: 101, 90
+  offset: 0, 0
+  index: -1
+qz01
+  rotate: true
+  xy: 1154, 660
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz02
+  rotate: true
+  xy: 1239, 660
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+qz03
+  rotate: true
+  xy: 1233, 203
+  size: 352, 83
+  orig: 352, 83
+  offset: 0, 0
+  index: -1
+zhengqi_1
+  rotate: true
+  xy: 2, 2
+  size: 241, 145
+  orig: 241, 145
+  offset: 0, 0
+  index: -1
+zhengqi_2
+  rotate: true
+  xy: 149, 2
+  size: 241, 145
+  orig: 241, 145
+  offset: 0, 0
+  index: -1
+zhengqi_3
+  rotate: true
+  xy: 296, 2
+  size: 241, 145
+  orig: 241, 145
+  offset: 0, 0
+  index: -1

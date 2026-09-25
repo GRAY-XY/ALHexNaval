@@ -1,0 +1,28 @@
+{
+  "id": "item__newlinkchancebomb",
+  "model": "newlinkchancebomb",
+  "name": "newlinkchancebomb",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/newlinkchancebomb",
+  "path": "battle-assets/炮弹/item__newlinkchancebomb",
+  "images": [
+    {
+      "file": "newlinkchancebomb_-7039646874634008108.png",
+      "name": "newlinkchancebomb",
+      "width": 236,
+      "height": 217,
+      "role": "战斗贴图",
+      "path_id": -7039646874634008108,
+      "source": "CAB-46993bcb719f54b2343d7d1bbd5d4fc5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19738
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__newlinkchancebomb/newlinkchancebomb_-7039646874634008108.png"
+}

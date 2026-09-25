@@ -1,0 +1,24 @@
+{
+  "id": "item__school_bullet_fenbi",
+  "model": "school_bullet_fenbi",
+  "name": "粉笔子弹",
+  "names": [
+    "粉笔子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/school_bullet_fenbi",
+  "path": "battle-assets/炮弹/item__school_bullet_fenbi",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "fenbizidan.skel",
+    "atlas": "fenbizidan.atlas",
+    "pages": [
+      "fenbizidan.png"
+    ]
+  }
+}

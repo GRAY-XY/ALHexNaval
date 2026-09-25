@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_huangguan",
+  "model": "paodan_huangguan",
+  "name": "蔚蓝王冠炮弹",
+  "names": [
+    "蔚蓝王冠炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_huangguan",
+  "path": "battle-assets/炮弹/item__paodan_huangguan",
+  "images": [
+    {
+      "file": "paodan_huangguan_8435222427644183873.png",
+      "name": "paodan_huangguan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8435222427644183873,
+      "source": "CAB-f1fba6cac87e758615ece4b0bc7960b0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huangguan/paodan_huangguan_8435222427644183873.png",
+  "spine": {
+    "skel": "paodan_huangguan.skel",
+    "atlas": "paodan_huangguan.atlas",
+    "pages": [
+      "paodan_huangguan.png"
+    ]
+  }
+}

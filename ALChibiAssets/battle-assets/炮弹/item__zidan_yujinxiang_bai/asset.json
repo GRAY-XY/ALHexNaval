@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yujinxiang_bai",
+  "model": "zidan_yujinxiang_bai",
+  "name": "白郁金香子弹",
+  "names": [
+    "白郁金香子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yujinxiang_bai",
+  "path": "battle-assets/炮弹/item__zidan_yujinxiang_bai",
+  "images": [
+    {
+      "file": "zidan_yujinxiang_bai_-6858664141335974081.png",
+      "name": "zidan_yujinxiang_bai",
+      "width": 128,
+      "height": 37,
+      "role": "战斗贴图",
+      "path_id": -6858664141335974081,
+      "source": "CAB-f4479f289af55c3bac27d2edec1154b9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yujinxiang_bai/zidan_yujinxiang_bai_-6858664141335974081.png"
+}

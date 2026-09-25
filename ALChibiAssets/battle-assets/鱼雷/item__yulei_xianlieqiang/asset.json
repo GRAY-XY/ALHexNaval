@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xianlieqiang",
+  "model": "yulei_xianlieqiang",
+  "name": "线列枪鱼雷",
+  "names": [
+    "线列枪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xianlieqiang",
+  "path": "battle-assets/鱼雷/item__yulei_xianlieqiang",
+  "images": [
+    {
+      "file": "yulei_xianlieqiang_2862991908841125499.png",
+      "name": "yulei_xianlieqiang",
+      "width": 128,
+      "height": 37,
+      "role": "战斗贴图",
+      "path_id": 2862991908841125499,
+      "source": "CAB-c4b2c5525cadff2e0bac7e628cd0c3a3"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xianlieqiang/yulei_xianlieqiang_2862991908841125499.png"
+}

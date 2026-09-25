@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_youtiao",
+  "model": "yulei_youtiao",
+  "name": "油条鱼雷",
+  "names": [
+    "油条鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_youtiao",
+  "path": "battle-assets/鱼雷/item__yulei_youtiao",
+  "images": [
+    {
+      "file": "yulei_youtiao_-1321039364769047778.png",
+      "name": "yulei_youtiao",
+      "width": 128,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": -1321039364769047778,
+      "source": "CAB-43b3a06d851be1cd6d3aae0e9dadda96"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3360007
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_youtiao/yulei_youtiao_-1321039364769047778.png"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__jianqi_blue",
+  "model": "jianqi_blue",
+  "name": "jianqi_blue",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jianqi_blue",
+  "path": "battle-assets/炮弹/item__jianqi_blue",
+  "images": [
+    {
+      "file": "jianqi03_-7399218326060181393.png",
+      "name": "jianqi03",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -7399218326060181393,
+      "source": "CAB-da6a50edac57f81018be0e8a19204131"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3370101,
+    3370102,
+    3370111
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__jianqi_blue/jianqi03_-7399218326060181393.png"
+}

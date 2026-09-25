@@ -1,0 +1,28 @@
+{
+  "id": "item__yaerweite_touqiang",
+  "model": "yaerweite_touqiang",
+  "name": "yaerweite_touqiang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yaerweite_touqiang",
+  "path": "battle-assets/炮弹/item__yaerweite_touqiang",
+  "images": [
+    {
+      "file": "mao01_-8620433898885192926.png",
+      "name": "mao01",
+      "width": 95,
+      "height": 494,
+      "role": "战斗贴图",
+      "path_id": -8620433898885192926,
+      "source": "CAB-5d6ae0a6a9e9c1252dd38fcf396129f6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    79982
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yaerweite_touqiang/mao01_-8620433898885192926.png"
+}

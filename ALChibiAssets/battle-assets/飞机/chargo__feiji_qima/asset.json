@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_qima",
+  "model": "feiji_qima",
+  "name": "骑马啾(鱼雷)",
+  "names": [
+    "骑马啾(鱼雷)",
+    "骑马啾(战斗)",
+    "骑马啾(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_qima",
+  "path": "battle-assets/飞机/chargo__feiji_qima",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_qima_3720534090982259267.png",
+      "name": "feiji_qima",
+      "width": 256,
+      "height": 201,
+      "role": "战斗贴图",
+      "path_id": 3720534090982259267,
+      "source": "CAB-d36b5ee391908c53190fc109a274586c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_qima/aircraft_shadow_2192772484218123160.png"
+}

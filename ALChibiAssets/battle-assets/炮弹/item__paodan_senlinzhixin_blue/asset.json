@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_senlinzhixin_blue",
+  "model": "paodan_senlinzhixin_blue",
+  "name": "森林之心炮弹（蓝）",
+  "names": [
+    "森林之心炮弹（蓝）"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_senlinzhixin_blue",
+  "path": "battle-assets/炮弹/item__paodan_senlinzhixin_blue",
+  "images": [
+    {
+      "file": "paodan_senlinzhixin_blue_8410669013616673427.png",
+      "name": "paodan_senlinzhixin_blue",
+      "width": 128,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": 8410669013616673427,
+      "source": "CAB-af3d3a9e8c376287dcc156e9a16ae38f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_senlinzhixin_blue/paodan_senlinzhixin_blue_8410669013616673427.png"
+}

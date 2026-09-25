@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_aosika",
+  "model": "yulei_aosika",
+  "name": "小金人鱼雷",
+  "names": [
+    "小金人鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_aosika",
+  "path": "battle-assets/鱼雷/item__yulei_aosika",
+  "images": [
+    {
+      "file": "yulei_aosika_-6601221085342285817.png",
+      "name": "yulei_aosika",
+      "width": 128,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": -6601221085342285817,
+      "source": "CAB-8cfb00fc39401f83de1edcad205e19ee"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_aosika/yulei_aosika_-6601221085342285817.png"
+}

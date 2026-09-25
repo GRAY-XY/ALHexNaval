@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_bolang",
+  "model": "yulei_bolang",
+  "name": "随波逐流鱼雷 ",
+  "names": [
+    "随波逐流鱼雷 "
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_bolang",
+  "path": "battle-assets/鱼雷/item__yulei_bolang",
+  "images": [
+    {
+      "file": "yulei_bolang_-2666996991264832841.png",
+      "name": "yulei_bolang",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2666996991264832841,
+      "source": "CAB-f433416b6e55f7bdc3fe91eaabc0b3e3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_bolang/yulei_bolang_-2666996991264832841.png",
+  "spine": {
+    "skel": "yulei_bolang.skel",
+    "atlas": "yulei_bolang.atlas",
+    "pages": [
+      "yulei_bolang.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xintiao",
+  "model": "yulei_xintiao",
+  "name": "心跳检测仪鱼雷",
+  "names": [
+    "心跳检测仪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xintiao",
+  "path": "battle-assets/鱼雷/item__yulei_xintiao",
+  "images": [
+    {
+      "file": "yulei_xintiao_-1938364078872399108.png",
+      "name": "yulei_xintiao",
+      "width": 126,
+      "height": 41,
+      "role": "战斗贴图",
+      "path_id": -1938364078872399108,
+      "source": "CAB-6c37fcaef1ec9ccb2e91f62c30eb9aac"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xintiao/yulei_xintiao_-1938364078872399108.png"
+}

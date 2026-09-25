@@ -1,0 +1,26 @@
+{
+  "id": "item__zidan_caisefenbi",
+  "model": "zidan_caisefenbi",
+  "name": "zidan_caisefenbi",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_caisefenbi",
+  "path": "battle-assets/炮弹/item__zidan_caisefenbi",
+  "images": [
+    {
+      "file": "caiselabi01_-6113988551685024820.png",
+      "name": "caiselabi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6113988551685024820,
+      "source": "CAB-0117dc6cf35ada9b4cf68dcf582bc015"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_caisefenbi/caiselabi01_-6113988551685024820.png"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__paodan_shengqiu__paodan_shengqiu_material",
+  "model": "paodan_shengqiu_material",
+  "name": "paodan_shengqiu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/paodan_shengqiu/paodan_shengqiu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__paodan_shengqiu__paodan_shengqiu_material",
+  "images": [
+    {
+      "file": "paodan_shengqiu_1133725467845426568.png",
+      "name": "paodan_shengqiu",
+      "width": 1024,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 1133725467845426568,
+      "source": "CAB-c4bde3f0880dcd310a310aca5348abb2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "item__shixiang_zisedaoguang",
+  "model": "shixiang_zisedaoguang",
+  "name": "shixiang_zisedaoguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shixiang_zisedaoguang",
+  "path": "battle-assets/炮弹/item__shixiang_zisedaoguang",
+  "images": [
+    {
+      "file": "ziguang01_-6846692565778486344.png",
+      "name": "ziguang01",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6846692565778486344,
+      "source": "CAB-76aefe9f547ed10f458eef57eebed590"
+    },
+    {
+      "file": "daougang01_7737429344088139322.png",
+      "name": "daougang01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7737429344088139322,
+      "source": "CAB-76aefe9f547ed10f458eef57eebed590"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    168263,
+    168264,
+    168266,
+    3335006,
+    3335007,
+    3335010
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__shixiang_zisedaoguang/ziguang01_-6846692565778486344.png"
+}

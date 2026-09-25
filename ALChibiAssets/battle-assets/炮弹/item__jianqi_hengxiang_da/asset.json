@@ -1,0 +1,26 @@
+{
+  "id": "item__jianqi_hengxiang_da",
+  "model": "jianqi_hengxiang_da",
+  "name": "jianqi_hengxiang_da",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jianqi_hengxiang_da",
+  "path": "battle-assets/炮弹/item__jianqi_hengxiang_da",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19241,
+    19242,
+    19507,
+    19552,
+    29600010,
+    29601000,
+    29610501,
+    29622000,
+    29645080,
+    29645087
+  ],
+  "has_preview": false,
+  "prefab": true
+}

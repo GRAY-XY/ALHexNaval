@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_erhuan",
+  "model": "zidan_erhuan",
+  "name": "黄金圣环子弹",
+  "names": [
+    "黄金圣环子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_erhuan",
+  "path": "battle-assets/炮弹/item__zidan_erhuan",
+  "images": [
+    {
+      "file": "zidan_erhuan_3954660501858593963.png",
+      "name": "zidan_erhuan",
+      "width": 128,
+      "height": 78,
+      "role": "战斗贴图",
+      "path_id": 3954660501858593963,
+      "source": "CAB-05d8c77ba0f15802a16e5fa05b26d008"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_erhuan/zidan_erhuan_3954660501858593963.png"
+}

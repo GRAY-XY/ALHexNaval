@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_chongqixiaoting",
+  "model": "yulei_chongqixiaoting",
+  "name": "充气小艇鱼雷",
+  "names": [
+    "充气小艇鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chongqixiaoting",
+  "path": "battle-assets/鱼雷/item__yulei_chongqixiaoting",
+  "images": [
+    {
+      "file": "yulei_chongqixiaoting_4300239334256807549.png",
+      "name": "yulei_chongqixiaoting",
+      "width": 128,
+      "height": 82,
+      "role": "战斗贴图",
+      "path_id": 4300239334256807549,
+      "source": "CAB-6a986bafcb5e400ce36ff6158862686b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chongqixiaoting/yulei_chongqixiaoting_4300239334256807549.png"
+}

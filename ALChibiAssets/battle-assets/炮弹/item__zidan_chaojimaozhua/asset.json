@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_chaojimaozhua",
+  "model": "zidan_chaojimaozhua",
+  "name": "超级猫爪子弹",
+  "names": [
+    "超级猫爪子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_chaojimaozhua",
+  "path": "battle-assets/炮弹/item__zidan_chaojimaozhua",
+  "images": [
+    {
+      "file": "zidan_chaojimaozhua_2360517398826904908.png",
+      "name": "zidan_chaojimaozhua",
+      "width": 128,
+      "height": 61,
+      "role": "战斗贴图",
+      "path_id": 2360517398826904908,
+      "source": "CAB-63616e2e5153a66c1e036eacf3a1c274"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_chaojimaozhua/zidan_chaojimaozhua_2360517398826904908.png"
+}

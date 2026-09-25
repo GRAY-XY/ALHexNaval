@@ -1,0 +1,27 @@
+{
+  "id": "plane__yinghuochong1771",
+  "model": "yinghuochong1771",
+  "name": "萤火虫(1771中队)",
+  "names": [
+    "萤火虫(1771中队)"
+  ],
+  "category": "飞机",
+  "source": "plane/yinghuochong1771",
+  "path": "battle-assets/飞机/plane__yinghuochong1771",
+  "images": [
+    {
+      "file": "yinghuochong1771_-2830019133477983611.png",
+      "name": "yinghuochong1771",
+      "width": 256,
+      "height": 228,
+      "role": "原始精灵",
+      "path_id": -2830019133477983611,
+      "source": "CAB-88104be0705ac39cbae77efa7566d921"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

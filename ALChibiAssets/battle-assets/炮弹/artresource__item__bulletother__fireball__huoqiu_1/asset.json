@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletother__fireball__huoqiu_1",
+  "model": "huoqiu_1",
+  "name": "huoqiu_1",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletother/fireball/huoqiu_1",
+  "path": "battle-assets/炮弹/artresource__item__bulletother__fireball__huoqiu_1",
+  "images": [
+    {
+      "file": "huoqiu_1_-4839632336153544722.png",
+      "name": "huoqiu_1",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -4839632336153544722,
+      "source": "CAB-1380a37e2c981f5a3552e51cadec9b35"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

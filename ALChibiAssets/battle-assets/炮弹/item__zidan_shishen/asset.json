@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shishen",
+  "model": "zidan_shishen",
+  "name": "式神子弹",
+  "names": [
+    "式神子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shishen",
+  "path": "battle-assets/炮弹/item__zidan_shishen",
+  "images": [
+    {
+      "file": "zidan_shishen_3926380320300841263.png",
+      "name": "zidan_shishen",
+      "width": 128,
+      "height": 109,
+      "role": "战斗贴图",
+      "path_id": 3926380320300841263,
+      "source": "CAB-9bf3e6a2565539f38592fdb99d6ca36b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shishen/zidan_shishen_3926380320300841263.png"
+}

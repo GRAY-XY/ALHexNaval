@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_chuanmao",
+  "model": "yulei_chuanmao",
+  "name": "船锚鱼雷",
+  "names": [
+    "船锚鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chuanmao",
+  "path": "battle-assets/鱼雷/item__yulei_chuanmao",
+  "images": [
+    {
+      "file": "yulei_chuanmao_6827361740403972515.png",
+      "name": "yulei_chuanmao",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 6827361740403972515,
+      "source": "CAB-e0d9bc0b9f55bee0ed11a58a6a9acf94"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chuanmao/yulei_chuanmao_6827361740403972515.png",
+  "spine": {
+    "skel": "yulei_chuanmao.skel",
+    "atlas": "yulei_chuanmao.atlas",
+    "pages": [
+      "yulei_chuanmao.png"
+    ]
+  }
+}

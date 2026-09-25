@@ -1,0 +1,24 @@
+{
+  "id": "item__nep_bullet_shizi",
+  "model": "nep_bullet_shizi",
+  "name": "十字炮弹(紫)",
+  "names": [
+    "十字炮弹(紫)"
+  ],
+  "category": "炮弹",
+  "source": "item/nep_bullet_shizi",
+  "path": "battle-assets/炮弹/item__nep_bullet_shizi",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "shizipaodan.skel",
+    "atlas": "shizipaodan.atlas",
+    "pages": [
+      "shizipaodan.png"
+    ]
+  }
+}

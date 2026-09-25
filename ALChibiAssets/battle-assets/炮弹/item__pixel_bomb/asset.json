@@ -1,0 +1,26 @@
+{
+  "id": "item__pixel_bomb",
+  "model": "pixel_bomb",
+  "name": "pixel_bomb",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/pixel_bomb",
+  "path": "battle-assets/炮弹/item__pixel_bomb",
+  "images": [
+    {
+      "file": "pixelbomb_-7296725448506916493.png",
+      "name": "pixelbomb",
+      "width": 216,
+      "height": 144,
+      "role": "战斗贴图",
+      "path_id": -7296725448506916493,
+      "source": "CAB-3e8684630c96bcf7e047d917700a28e5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__pixel_bomb/pixelbomb_-7296725448506916493.png"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "item__bullet_fliud_purple",
+  "model": "bullet_fliud_purple",
+  "name": "bullet_fliud_purple",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_fliud_purple",
+  "path": "battle-assets/炮弹/item__bullet_fliud_purple",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3029309
+  ],
+  "has_preview": false,
+  "prefab": true
+}

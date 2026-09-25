@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__super__super_material",
+  "model": "super_material",
+  "name": "super_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/super/super_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__super__super_material",
+  "images": [
+    {
+      "file": "super_1102168866980643808.png",
+      "name": "super",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1102168866980643808,
+      "source": "CAB-fc73bdd26e761ab46490d5886a3bce4a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

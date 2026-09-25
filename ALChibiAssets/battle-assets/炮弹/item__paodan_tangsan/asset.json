@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tangsan",
+  "model": "paodan_tangsan",
+  "name": "炮弹·唐伞小僧",
+  "names": [
+    "炮弹·唐伞小僧"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tangsan",
+  "path": "battle-assets/炮弹/item__paodan_tangsan",
+  "images": [
+    {
+      "file": "paodan_tangsan_-9138736252837739088.png",
+      "name": "paodan_tangsan",
+      "width": 128,
+      "height": 75,
+      "role": "战斗贴图",
+      "path_id": -9138736252837739088,
+      "source": "CAB-170a942fac10cd577c609724e546f00e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tangsan/paodan_tangsan_-9138736252837739088.png"
+}

@@ -1,0 +1,20 @@
+
+yulei_huapin.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hua
+  rotate: false
+  xy: 206, 27
+  size: 74, 84
+  orig: 74, 84
+  offset: 0, 0
+  index: -1
+huapin
+  rotate: false
+  xy: 2, 2
+  size: 202, 109
+  orig: 202, 109
+  offset: 0, 0
+  index: -1

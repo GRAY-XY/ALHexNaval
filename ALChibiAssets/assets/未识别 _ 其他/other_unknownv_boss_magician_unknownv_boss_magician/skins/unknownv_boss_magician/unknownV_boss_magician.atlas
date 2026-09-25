@@ -1,0 +1,251 @@
+
+unknownV_boss_magician.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 339, 216
+  size: 302, 403
+  orig: 302, 403
+  offset: 0, 0
+  index: -1
+chu_1
+  rotate: false
+  xy: 1097, 88
+  size: 152, 90
+  orig: 152, 90
+  offset: 0, 0
+  index: -1
+chu_10
+  rotate: true
+  xy: 2, 210
+  size: 308, 335
+  orig: 308, 335
+  offset: 0, 0
+  index: -1
+chu_11
+  rotate: false
+  xy: 930, 654
+  size: 171, 106
+  orig: 171, 106
+  offset: 0, 0
+  index: -1
+chu_12
+  rotate: true
+  xy: 1765, 707
+  size: 313, 239
+  orig: 313, 239
+  offset: 0, 0
+  index: -1
+chu_13
+  rotate: false
+  xy: 1251, 14
+  size: 238, 85
+  orig: 238, 85
+  offset: 0, 0
+  index: -1
+chu_14
+  rotate: true
+  xy: 744, 62
+  size: 456, 150
+  orig: 456, 150
+  offset: 0, 0
+  index: -1
+chu_15
+  rotate: false
+  xy: 1765, 515
+  size: 237, 190
+  orig: 237, 190
+  offset: 0, 0
+  index: -1
+chu_16
+  rotate: false
+  xy: 339, 2
+  size: 222, 212
+  orig: 222, 212
+  offset: 0, 0
+  index: -1
+chu_17
+  rotate: false
+  xy: 896, 55
+  size: 151, 94
+  orig: 151, 94
+  offset: 0, 0
+  index: -1
+chu_18
+  rotate: false
+  xy: 2, 113
+  size: 333, 95
+  orig: 333, 95
+  offset: 0, 0
+  index: -1
+chu_19
+  rotate: true
+  xy: 1299, 188
+  size: 159, 243
+  orig: 159, 243
+  offset: 0, 0
+  index: -1
+chu_2
+  rotate: false
+  xy: 1544, 200
+  size: 425, 147
+  orig: 425, 147
+  offset: 0, 0
+  index: -1
+chu_3
+  rotate: false
+  xy: 405, 679
+  size: 350, 81
+  orig: 350, 81
+  offset: 0, 0
+  index: -1
+chu_4
+  rotate: true
+  xy: 1544, 74
+  size: 124, 174
+  orig: 124, 174
+  offset: 0, 0
+  index: -1
+chu_5
+  rotate: false
+  xy: 1299, 101
+  size: 238, 85
+  orig: 238, 85
+  offset: 0, 0
+  index: -1
+chu_6
+  rotate: true
+  xy: 896, 151
+  size: 367, 199
+  orig: 367, 199
+  offset: 0, 0
+  index: -1
+chu_7
+  rotate: false
+  xy: 2, 10
+  size: 240, 101
+  orig: 240, 101
+  offset: 0, 0
+  index: -1
+chu_8
+  rotate: true
+  xy: 1571, 505
+  size: 515, 192
+  orig: 515, 192
+  offset: 0, 0
+  index: -1
+chu_9
+  rotate: false
+  xy: 757, 653
+  size: 171, 107
+  orig: 171, 107
+  offset: 0, 0
+  index: -1
+fuyou_1
+  rotate: true
+  xy: 1097, 400
+  size: 118, 67
+  orig: 118, 67
+  offset: 0, 0
+  index: -1
+fuyou_p1
+  rotate: false
+  xy: 1103, 691
+  size: 20, 8
+  orig: 20, 8
+  offset: 0, 0
+  index: -1
+fuyou_p2
+  rotate: true
+  xy: 1103, 701
+  size: 38, 8
+  orig: 38, 8
+  offset: 0, 0
+  index: -1
+fuyou_p3
+  rotate: false
+  xy: 1128, 754
+  size: 21, 6
+  orig: 21, 6
+  offset: 0, 0
+  index: -1
+fuyou_p4
+  rotate: true
+  xy: 1103, 741
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+fuyou_p5
+  rotate: false
+  xy: 1113, 732
+  size: 21, 7
+  orig: 21, 7
+  offset: 0, 0
+  index: -1
+fuyou_p6
+  rotate: false
+  xy: 1114, 753
+  size: 12, 7
+  orig: 12, 7
+  offset: 0, 0
+  index: -1
+pao_L3
+  rotate: false
+  xy: 563, 14
+  size: 167, 200
+  orig: 167, 200
+  offset: 0, 0
+  index: -1
+pao_l1
+  rotate: false
+  xy: 2, 650
+  size: 401, 370
+  orig: 401, 370
+  offset: 0, 0
+  index: -1
+pao_l2
+  rotate: false
+  xy: 1526, 349
+  size: 483, 154
+  orig: 483, 154
+  offset: 0, 0
+  index: -1
+pao_r1
+  rotate: true
+  xy: 1097, 180
+  size: 167, 200
+  orig: 167, 200
+  offset: 0, 0
+  index: -1
+pao_r2
+  rotate: true
+  xy: 1168, 349
+  size: 411, 356
+  orig: 411, 356
+  offset: 0, 0
+  index: -1
+shuibo
+  rotate: false
+  xy: 2, 520
+  size: 1164, 128
+  orig: 1164, 128
+  offset: 0, 0
+  index: -1
+shuibo_2
+  rotate: false
+  xy: 405, 892
+  size: 1164, 128
+  orig: 1164, 128
+  offset: 0, 0
+  index: -1
+shuibo_3
+  rotate: false
+  xy: 405, 762
+  size: 1164, 128
+  orig: 1164, 128
+  offset: 0, 0
+  index: -1

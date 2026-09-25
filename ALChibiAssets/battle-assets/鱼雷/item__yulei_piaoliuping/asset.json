@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_piaoliuping",
+  "model": "yulei_piaoliuping",
+  "name": "漂流瓶鱼雷",
+  "names": [
+    "漂流瓶鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_piaoliuping",
+  "path": "battle-assets/鱼雷/item__yulei_piaoliuping",
+  "images": [
+    {
+      "file": "yulei_piaoliuping_-6240384111478709283.png",
+      "name": "yulei_piaoliuping",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -6240384111478709283,
+      "source": "CAB-7d14335cddbe7af5faac7e03057455b1"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_piaoliuping/yulei_piaoliuping_-6240384111478709283.png"
+}

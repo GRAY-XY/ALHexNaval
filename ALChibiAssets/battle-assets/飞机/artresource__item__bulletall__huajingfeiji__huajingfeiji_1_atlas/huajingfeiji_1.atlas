@@ -1,0 +1,153 @@
+
+huajingfeiji_1.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+benti_bai
+  rotate: false
+  xy: 270, 76
+  size: 133, 178
+  orig: 133, 178
+  offset: 0, 0
+  index: -1
+benti_hong
+  rotate: false
+  xy: 136, 74
+  size: 132, 180
+  orig: 132, 180
+  offset: 0, 0
+  index: -1
+benti_lv
+  rotate: false
+  xy: 2, 73
+  size: 132, 181
+  orig: 132, 181
+  offset: 0, 0
+  index: -1
+jiao_1_bai
+  rotate: false
+  xy: 367, 34
+  size: 33, 40
+  orig: 33, 40
+  offset: 0, 0
+  index: -1
+jiao_1_hong
+  rotate: false
+  xy: 405, 111
+  size: 32, 39
+  orig: 32, 39
+  offset: 0, 0
+  index: -1
+jiao_1_lv
+  rotate: false
+  xy: 402, 34
+  size: 33, 40
+  orig: 33, 40
+  offset: 0, 0
+  index: -1
+jiao_2_bai
+  rotate: false
+  xy: 335, 2
+  size: 28, 26
+  orig: 28, 26
+  offset: 0, 0
+  index: -1
+jiao_2_hong
+  rotate: true
+  xy: 365, 3
+  size: 25, 23
+  orig: 25, 23
+  offset: 0, 0
+  index: -1
+jiao_2_lv
+  rotate: true
+  xy: 439, 126
+  size: 24, 22
+  orig: 24, 22
+  offset: 0, 0
+  index: -1
+shou_bai
+  rotate: true
+  xy: 405, 81
+  size: 28, 43
+  orig: 28, 43
+  offset: 0, 0
+  index: -1
+shou_hong
+  rotate: true
+  xy: 390, 4
+  size: 28, 45
+  orig: 28, 45
+  offset: 0, 0
+  index: -1
+shou_lv
+  rotate: false
+  xy: 335, 30
+  size: 30, 44
+  orig: 30, 44
+  offset: 0, 0
+  index: -1
+toufa_bai
+  rotate: true
+  xy: 493, 154
+  size: 100, 84
+  orig: 100, 84
+  offset: 0, 0
+  index: -1
+toufa_hong
+  rotate: true
+  xy: 405, 152
+  size: 102, 86
+  orig: 102, 86
+  offset: 0, 0
+  index: -1
+toufa_lv
+  rotate: true
+  xy: 450, 22
+  size: 102, 86
+  orig: 102, 86
+  offset: 0, 0
+  index: -1
+toushi_1_bai
+  rotate: false
+  xy: 249, 11
+  size: 41, 61
+  orig: 41, 61
+  offset: 0, 0
+  index: -1
+toushi_1_hong
+  rotate: true
+  xy: 69, 15
+  size: 56, 73
+  orig: 56, 73
+  offset: 0, 0
+  index: -1
+toushi_1_lv
+  rotate: false
+  xy: 199, 17
+  size: 48, 55
+  orig: 48, 55
+  offset: 0, 0
+  index: -1
+toushi_2_bai
+  rotate: false
+  xy: 292, 14
+  size: 41, 60
+  orig: 41, 60
+  offset: 0, 0
+  index: -1
+toushi_2_hong
+  rotate: false
+  xy: 2, 5
+  size: 65, 66
+  orig: 65, 66
+  offset: 0, 0
+  index: -1
+toushi_2_lv
+  rotate: true
+  xy: 144, 13
+  size: 59, 53
+  orig: 59, 53
+  offset: 0, 0
+  index: -1

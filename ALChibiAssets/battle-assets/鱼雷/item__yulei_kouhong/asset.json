@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_kouhong",
+  "model": "yulei_kouhong",
+  "name": "口红鱼雷",
+  "names": [
+    "口红鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_kouhong",
+  "path": "battle-assets/鱼雷/item__yulei_kouhong",
+  "images": [
+    {
+      "file": "yulei_kouhong_-3872268377109938521.png",
+      "name": "yulei_kouhong",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -3872268377109938521,
+      "source": "CAB-b9a5bc106017ff62d51ba34192e32e6b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19334
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_kouhong/yulei_kouhong_-3872268377109938521.png"
+}

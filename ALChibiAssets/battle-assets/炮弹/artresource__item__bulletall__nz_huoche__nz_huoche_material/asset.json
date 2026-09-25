@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__nz_huoche__nz_huoche_material",
+  "model": "nz_huoche_material",
+  "name": "nz_huoche_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/nz_huoche/nz_huoche_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__nz_huoche__nz_huoche_material",
+  "images": [
+    {
+      "file": "nz_huoche_274136077856462671.png",
+      "name": "nz_huoche",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 274136077856462671,
+      "source": "CAB-694a0229a365bb20d4ea0ec9ca66960b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

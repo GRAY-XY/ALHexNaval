@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shuqing",
+  "model": "yulei_shuqing",
+  "name": "竖琴",
+  "names": [
+    "竖琴"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shuqing",
+  "path": "battle-assets/鱼雷/item__yulei_shuqing",
+  "images": [
+    {
+      "file": "yulei_shuqing_-8894567571001395296.png",
+      "name": "yulei_shuqing",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": -8894567571001395296,
+      "source": "CAB-0fe29d59c5e9b05121af78e700d6a2c6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shuqing/yulei_shuqing_-8894567571001395296.png"
+}

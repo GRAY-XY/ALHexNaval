@@ -1,0 +1,90 @@
+
+xxg_guihuozidan.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hong_1
+  rotate: false
+  xy: 521, 235
+  size: 122, 198
+  orig: 122, 198
+  offset: 0, 0
+  index: -1
+hong_2
+  rotate: false
+  xy: 2, 222
+  size: 131, 211
+  orig: 131, 211
+  offset: 0, 0
+  index: -1
+hong_3
+  rotate: false
+  xy: 2, 9
+  size: 131, 211
+  orig: 131, 211
+  offset: 0, 0
+  index: -1
+hong_4
+  rotate: false
+  xy: 135, 222
+  size: 131, 211
+  orig: 131, 211
+  offset: 0, 0
+  index: -1
+lan_1
+  rotate: false
+  xy: 516, 25
+  size: 121, 200
+  orig: 121, 200
+  offset: 0, 0
+  index: -1
+lan_2
+  rotate: false
+  xy: 268, 223
+  size: 126, 210
+  orig: 126, 210
+  offset: 0, 0
+  index: -1
+lan_3
+  rotate: false
+  xy: 135, 2
+  size: 126, 218
+  orig: 126, 218
+  offset: 0, 0
+  index: -1
+lan_4
+  rotate: false
+  xy: 263, 2
+  size: 126, 218
+  orig: 126, 218
+  offset: 0, 0
+  index: -1
+qing_1
+  rotate: false
+  xy: 639, 33
+  size: 118, 200
+  orig: 118, 200
+  offset: 0, 0
+  index: -1
+qing_2
+  rotate: false
+  xy: 645, 235
+  size: 118, 198
+  orig: 118, 198
+  offset: 0, 0
+  index: -1
+qing_3
+  rotate: false
+  xy: 391, 15
+  size: 123, 206
+  orig: 123, 206
+  offset: 0, 0
+  index: -1
+qing_4
+  rotate: false
+  xy: 396, 227
+  size: 123, 206
+  orig: 123, 206
+  offset: 0, 0
+  index: -1

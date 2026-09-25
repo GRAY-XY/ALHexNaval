@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_chuanghua",
+  "model": "zidan_chuanghua",
+  "name": "窗花子弹",
+  "names": [
+    "窗花子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_chuanghua",
+  "path": "battle-assets/炮弹/item__zidan_chuanghua",
+  "images": [
+    {
+      "file": "zidan_chuanghua_7292846093975536143.png",
+      "name": "zidan_chuanghua",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 7292846093975536143,
+      "source": "CAB-0438cc3dbc504488a51d280da189cdc9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_chuanghua/zidan_chuanghua_7292846093975536143.png"
+}

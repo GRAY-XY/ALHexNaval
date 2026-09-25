@@ -1,0 +1,28 @@
+{
+  "id": "item__salatuojia_zidan",
+  "model": "salatuojia_zidan",
+  "name": "salatuojia_zidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/salatuojia_zidan",
+  "path": "battle-assets/炮弹/item__salatuojia_zidan",
+  "images": [
+    {
+      "file": "salatuojia_-6685094640840223777.png",
+      "name": "salatuojia",
+      "width": 102,
+      "height": 102,
+      "role": "战斗贴图",
+      "path_id": -6685094640840223777,
+      "source": "CAB-1c1269c86df17afecff5fdc72fe51316"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    161221
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__salatuojia_zidan/salatuojia_-6685094640840223777.png"
+}

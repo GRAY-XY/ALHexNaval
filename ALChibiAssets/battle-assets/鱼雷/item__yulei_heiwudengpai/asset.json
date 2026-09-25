@@ -1,0 +1,33 @@
+{
+  "id": "item__yulei_heiwudengpai",
+  "model": "yulei_heiwudengpai",
+  "name": "yulei_heiwudengpai",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_heiwudengpai",
+  "path": "battle-assets/鱼雷/item__yulei_heiwudengpai",
+  "images": [
+    {
+      "file": "yulei_heiwudengpai_-2228727496023003982.png",
+      "name": "yulei_heiwudengpai",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2228727496023003982,
+      "source": "CAB-dc336ccc31d0511884c01245242e77b0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_heiwudengpai/yulei_heiwudengpai_-2228727496023003982.png",
+  "spine": {
+    "skel": "yulei_heiwudengpai.skel",
+    "atlas": "yulei_heiwudengpai.atlas",
+    "pages": [
+      "yulei_heiwudengpai.png"
+    ]
+  }
+}

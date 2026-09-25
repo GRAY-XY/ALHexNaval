@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_pengpengche",
+  "model": "paodan_pengpengche",
+  "name": "碰碰车炮弹",
+  "names": [
+    "碰碰车炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_pengpengche",
+  "path": "battle-assets/炮弹/item__paodan_pengpengche",
+  "images": [
+    {
+      "file": "paodan_pengpengche_-2068645729130883322.png",
+      "name": "paodan_pengpengche",
+      "width": 128,
+      "height": 92,
+      "role": "战斗贴图",
+      "path_id": -2068645729130883322,
+      "source": "CAB-8abc9c3d582a939a68ee56170a53eb84"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_pengpengche/paodan_pengpengche_-2068645729130883322.png"
+}

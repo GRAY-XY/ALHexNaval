@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__caishen__caishen_material",
+  "model": "caishen_material",
+  "name": "caishen_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/caishen/caishen_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__caishen__caishen_material",
+  "images": [
+    {
+      "file": "caishen_-8739843915768539871.png",
+      "name": "caishen",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -8739843915768539871,
+      "source": "CAB-79b28967b93b157e0d99339144ee2739"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

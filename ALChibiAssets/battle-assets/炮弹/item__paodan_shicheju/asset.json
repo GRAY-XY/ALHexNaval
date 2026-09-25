@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_shicheju",
+  "model": "paodan_shicheju",
+  "name": "矢车菊炮弹",
+  "names": [
+    "矢车菊炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shicheju",
+  "path": "battle-assets/炮弹/item__paodan_shicheju",
+  "images": [
+    {
+      "file": "paodan_shicheju_-3600549049853134526.png",
+      "name": "paodan_shicheju",
+      "width": 128,
+      "height": 118,
+      "role": "战斗贴图",
+      "path_id": -3600549049853134526,
+      "source": "CAB-0e683f8530d9db1459c84a8dc1f57d80"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shicheju/paodan_shicheju_-3600549049853134526.png"
+}

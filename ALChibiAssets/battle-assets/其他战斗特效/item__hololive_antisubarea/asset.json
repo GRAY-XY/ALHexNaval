@@ -1,0 +1,26 @@
+{
+  "id": "item__hololive_antisubarea",
+  "model": "hololive_antisubarea",
+  "name": "hololive_antisubarea",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/hololive_antisubarea",
+  "path": "battle-assets/其他战斗特效/item__hololive_antisubarea",
+  "images": [
+    {
+      "file": "sonarDisk_ai_-3112595403643646964.png",
+      "name": "sonarDisk_ai",
+      "width": 700,
+      "height": 700,
+      "role": "战斗贴图",
+      "path_id": -3112595403643646964,
+      "source": "CAB-ef16fa6a8d4d0b1727b3af99f748e409"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__hololive_antisubarea/sonarDisk_ai_-3112595403643646964.png"
+}

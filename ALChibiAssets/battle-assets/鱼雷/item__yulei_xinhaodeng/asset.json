@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xinhaodeng",
+  "model": "yulei_xinhaodeng",
+  "name": "信号灯鱼雷",
+  "names": [
+    "信号灯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xinhaodeng",
+  "path": "battle-assets/鱼雷/item__yulei_xinhaodeng",
+  "images": [
+    {
+      "file": "yulei_xinhaodeng_1410357118364554325.png",
+      "name": "yulei_xinhaodeng",
+      "width": 128,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": 1410357118364554325,
+      "source": "CAB-38d0d27892390b12dcacda77b49261a5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xinhaodeng/yulei_xinhaodeng_1410357118364554325.png"
+}

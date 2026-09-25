@@ -1,0 +1,44 @@
+{
+  "id": "item__yulei_jiangbei",
+  "model": "yulei_jiangbei",
+  "name": "冠军奖杯鱼雷",
+  "names": [
+    "冠军奖杯鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jiangbei",
+  "path": "battle-assets/鱼雷/item__yulei_jiangbei",
+  "images": [
+    {
+      "file": "yulei_jiangbei_-1530630075187736230.png",
+      "name": "yulei_jiangbei",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1530630075187736230,
+      "source": "CAB-266ac687ca112bf114ce76af7b8a23d0"
+    },
+    {
+      "file": "particles02_7588584155182929762.png",
+      "name": "particles02",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 7588584155182929762,
+      "source": "CAB-266ac687ca112bf114ce76af7b8a23d0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jiangbei/yulei_jiangbei_-1530630075187736230.png",
+  "spine": {
+    "skel": "yulei_jiangbei.skel",
+    "atlas": "yulei_jiangbei.atlas",
+    "pages": [
+      "yulei_jiangbei.png"
+    ]
+  }
+}

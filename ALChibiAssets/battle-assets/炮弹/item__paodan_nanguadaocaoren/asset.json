@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_nanguadaocaoren",
+  "model": "paodan_nanguadaocaoren",
+  "name": "炮弹:南瓜稻草人",
+  "names": [
+    "炮弹:南瓜稻草人"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nanguadaocaoren",
+  "path": "battle-assets/炮弹/item__paodan_nanguadaocaoren",
+  "images": [
+    {
+      "file": "paodan_nanguadaocaoren_-2796159170623366924.png",
+      "name": "paodan_nanguadaocaoren",
+      "width": 128,
+      "height": 164,
+      "role": "战斗贴图",
+      "path_id": -2796159170623366924,
+      "source": "CAB-9fc9b80bb304b20390b98ec787c34849"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_nanguadaocaoren/paodan_nanguadaocaoren_-2796159170623366924.png"
+}

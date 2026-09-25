@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_damojiu",
+  "model": "paodan_damojiu",
+  "name": "炮弹·达摩啾",
+  "names": [
+    "炮弹·达摩啾"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_damojiu",
+  "path": "battle-assets/炮弹/item__paodan_damojiu",
+  "images": [
+    {
+      "file": "paodan_damojiu_-3981108881621314009.png",
+      "name": "paodan_damojiu",
+      "width": 128,
+      "height": 115,
+      "role": "战斗贴图",
+      "path_id": -3981108881621314009,
+      "source": "CAB-0d48d312e736f18d6c31e5b51ebd10b7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_damojiu/paodan_damojiu_-3981108881621314009.png"
+}

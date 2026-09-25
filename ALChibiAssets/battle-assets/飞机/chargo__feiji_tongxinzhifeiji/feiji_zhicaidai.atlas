@@ -1,0 +1,34 @@
+
+feiji_zhicaidai.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cai_1
+  rotate: false
+  xy: 242, 35
+  size: 173, 73
+  orig: 173, 73
+  offset: 0, 0
+  index: -1
+cai_2
+  rotate: true
+  xy: 451, 2
+  size: 171, 37
+  orig: 171, 37
+  offset: 0, 0
+  index: -1
+cai_3
+  rotate: false
+  xy: 242, 110
+  size: 207, 63
+  orig: 207, 63
+  offset: 0, 0
+  index: -1
+feiji
+  rotate: false
+  xy: 2, 35
+  size: 238, 138
+  orig: 238, 138
+  offset: 0, 0
+  index: -1

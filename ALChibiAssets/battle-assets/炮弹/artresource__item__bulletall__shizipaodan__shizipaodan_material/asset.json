@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shizipaodan__shizipaodan_material",
+  "model": "shizipaodan_material",
+  "name": "shizipaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/shizipaodan/shizipaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__shizipaodan__shizipaodan_material",
+  "images": [
+    {
+      "file": "shizipaodan_-2953236731697076427.png",
+      "name": "shizipaodan",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -2953236731697076427,
+      "source": "CAB-f62be64558e0b2d1397939795bad7bb6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__xia_bullet",
+  "model": "xia_bullet",
+  "name": "xia_bullet",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xia_bullet",
+  "path": "battle-assets/炮弹/item__xia_bullet",
+  "images": [
+    {
+      "file": "xia_bullet_-5993585396338390290.png",
+      "name": "xia_bullet",
+      "width": 258,
+      "height": 111,
+      "role": "战斗贴图",
+      "path_id": -5993585396338390290,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    164810,
+    164811,
+    164812
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xia_bullet/xia_bullet_-5993585396338390290.png"
+}

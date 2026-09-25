@@ -1,0 +1,24 @@
+{
+  "id": "item__paodan_nengliangdan",
+  "model": "paodan_nengliangdan",
+  "name": "火焰炮弹",
+  "names": [
+    "火焰炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nengliangdan",
+  "path": "battle-assets/炮弹/item__paodan_nengliangdan",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "gulite_huoqiu.skel",
+    "atlas": "gulite_huoqiu.atlas",
+    "pages": [
+      "gulite_huoqiu.png"
+    ]
+  }
+}

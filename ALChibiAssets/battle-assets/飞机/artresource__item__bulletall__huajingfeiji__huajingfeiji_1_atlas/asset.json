@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__huajingfeiji__huajingfeiji_1_atlas",
+  "model": "huajingfeiji_1_atlas",
+  "name": "huajingfeiji_1_atlas",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/huajingfeiji/huajingfeiji_1_atlas",
+  "path": "battle-assets/飞机/artresource__item__bulletall__huajingfeiji__huajingfeiji_1_atlas",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

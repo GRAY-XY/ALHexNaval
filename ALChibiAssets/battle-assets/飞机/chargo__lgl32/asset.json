@@ -1,0 +1,37 @@
+{
+  "id": "chargo__lgl32",
+  "model": "lgl32",
+  "name": "LGL.32",
+  "names": [
+    "LGL.32"
+  ],
+  "category": "飞机",
+  "source": "chargo/lgl32",
+  "path": "battle-assets/飞机/chargo__lgl32",
+  "images": [
+    {
+      "file": "lgl32_3182067173927285850.png",
+      "name": "lgl32",
+      "width": 234,
+      "height": 244,
+      "role": "战斗贴图",
+      "path_id": 3182067173927285850,
+      "source": "CAB-df58c66eed638adf2d8ac646a01d9faa"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__lgl32/lgl32_3182067173927285850.png"
+}

@@ -1,0 +1,27 @@
+
+paodan_gouwuhe.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sidai_1
+  rotate: true
+  xy: 140, 16
+  size: 205, 100
+  orig: 205, 100
+  offset: 0, 0
+  index: -1
+sidai_2
+  rotate: true
+  xy: 2, 2
+  size: 219, 136
+  orig: 219, 136
+  offset: 0, 0
+  index: -1
+xiangzi
+  rotate: false
+  xy: 242, 60
+  size: 159, 161
+  orig: 159, 161
+  offset: 0, 0
+  index: -1

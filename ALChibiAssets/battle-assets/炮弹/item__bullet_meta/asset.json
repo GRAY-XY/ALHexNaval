@@ -1,0 +1,28 @@
+{
+  "id": "item__bullet_meta",
+  "model": "bullet_meta",
+  "name": "bullet_meta",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_meta",
+  "path": "battle-assets/炮弹/item__bullet_meta",
+  "images": [
+    {
+      "file": "metabullet_-6920340919081100176.png",
+      "name": "metabullet",
+      "width": 249,
+      "height": 67,
+      "role": "战斗贴图",
+      "path_id": -6920340919081100176,
+      "source": "CAB-6d844cd9cc04a7cad252cbbad2e5a1cc"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19447
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_meta/metabullet_-6920340919081100176.png"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_chonglangban",
+  "model": "yulei_chonglangban",
+  "name": "冲浪板鱼雷",
+  "names": [
+    "冲浪板鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_chonglangban",
+  "path": "battle-assets/鱼雷/item__yulei_chonglangban",
+  "images": [
+    {
+      "file": "yulei_chonglangban_1616576585362996562.png",
+      "name": "yulei_chonglangban",
+      "width": 128,
+      "height": 30,
+      "role": "战斗贴图",
+      "path_id": 1616576585362996562,
+      "source": "CAB-1bd06c4730da0ba2eeb376679c37e4b0"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3386008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_chonglangban/yulei_chonglangban_1616576585362996562.png"
+}

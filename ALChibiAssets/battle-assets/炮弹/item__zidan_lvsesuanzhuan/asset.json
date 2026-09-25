@@ -1,0 +1,38 @@
+{
+  "id": "item__zidan_lvsesuanzhuan",
+  "model": "zidan_lvsesuanzhuan",
+  "name": "zidan_lvsesuanzhuan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_lvsesuanzhuan",
+  "path": "battle-assets/炮弹/item__zidan_lvsesuanzhuan",
+  "images": [
+    {
+      "file": "AL_Line08_11_-2477877809365721119.png",
+      "name": "AL_Line08_11",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -2477877809365721119,
+      "source": "CAB-780c6457b89bbee2f346c10d046628c4"
+    },
+    {
+      "file": "zidan01_3902724418469917739.png",
+      "name": "zidan01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3902724418469917739,
+      "source": "CAB-780c6457b89bbee2f346c10d046628c4"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [
+    168242,
+    168244
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lvsesuanzhuan/AL_Line08_11_-2477877809365721119.png"
+}

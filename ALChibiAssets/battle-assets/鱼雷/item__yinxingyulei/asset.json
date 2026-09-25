@@ -1,0 +1,43 @@
+{
+  "id": "item__yinxingyulei",
+  "model": "yinxingyulei",
+  "name": "yinxingyulei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yinxingyulei",
+  "path": "battle-assets/鱼雷/item__yinxingyulei",
+  "images": [
+    {
+      "file": "Torpedo01_4188893520601756502.png",
+      "name": "Torpedo01",
+      "width": 88,
+      "height": 34,
+      "role": "战斗贴图",
+      "path_id": 4188893520601756502,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [
+    "yinxingyulei"
+  ],
+  "bullet_ids": [
+    20120600,
+    20121200,
+    20401200,
+    20401201,
+    20401202,
+    20401700,
+    20401701,
+    20401702,
+    20403100,
+    20403101,
+    20403102,
+    20409400,
+    20409500,
+    20409501
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yinxingyulei/Torpedo01_4188893520601756502.png"
+}

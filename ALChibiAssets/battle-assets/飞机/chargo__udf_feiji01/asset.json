@@ -1,0 +1,50 @@
+{
+  "id": "chargo__udf_feiji01",
+  "model": "udf_feiji01",
+  "name": "大黄蜂meta 空袭 UDF战斗机 LV1",
+  "names": [
+    "大黄蜂meta 空袭 UDF战斗机 LV1",
+    "【量产型】联合防卫部队-航母战斗机 Lv1",
+    "【量产型】联合防卫部队-航母战斗机 Lv2",
+    "【量产型】联合防卫部队-航母战斗机 Lv3",
+    "【量产型】联合防卫部队-航母战斗机 Lv4",
+    "【量产型】联合防卫部队-航母战斗机 Lv5",
+    "【大世界】大黄蜂meta 空袭 UDF战斗机 Lv1",
+    "【大世界】大黄蜂meta 空袭 UDF战斗机 Lv2",
+    "【大世界】大黄蜂meta 空袭 UDF战斗机 Lv3",
+    "【大世界】大黄蜂meta 空袭 UDF战斗机 Lv4",
+    "【大世界】大黄蜂meta 空袭 UDF战斗机 Lv5",
+    "【2023关岛活动B1】BOSS 卡拉布里亚之骄傲 第一波 舰载机1",
+    "【2023关岛活动D1】BOSS 卡拉布里亚之骄傲 第一波 舰载机1",
+    "【2023关岛活动SP】BOSS 卡拉布里亚之骄傲 第一波 舰载机1"
+  ],
+  "category": "飞机",
+  "source": "chargo/udf_feiji01",
+  "path": "battle-assets/飞机/chargo__udf_feiji01",
+  "images": [
+    {
+      "file": "udf_feiji01_2483820442306868761.png",
+      "name": "udf_feiji01",
+      "width": 347,
+      "height": 187,
+      "role": "战斗贴图",
+      "path_id": 2483820442306868761,
+      "source": "CAB-833bfb3edd1181b34316658461ac8c1e"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__udf_feiji01/udf_feiji01_2483820442306868761.png"
+}

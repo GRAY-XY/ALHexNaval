@@ -1,0 +1,37 @@
+{
+  "id": "chargo__pixel_hongzhaji",
+  "model": "pixel_hongzhaji",
+  "name": "像素轰炸机",
+  "names": [
+    "像素轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/pixel_hongzhaji",
+  "path": "battle-assets/飞机/chargo__pixel_hongzhaji",
+  "images": [
+    {
+      "file": "pixelhongzhaji_5330121840248906014.png",
+      "name": "pixelhongzhaji",
+      "width": 224,
+      "height": 196,
+      "role": "战斗贴图",
+      "path_id": 5330121840248906014,
+      "source": "CAB-f45f65793e8ee149de2cc2dc8c0717dc"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__pixel_hongzhaji/pixelhongzhaji_5330121840248906014.png"
+}

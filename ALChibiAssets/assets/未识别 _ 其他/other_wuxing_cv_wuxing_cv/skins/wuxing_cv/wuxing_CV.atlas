@@ -1,0 +1,62 @@
+
+wuxing_CV.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 682, 413
+  size: 586, 450
+  orig: 586, 450
+  offset: 0, 0
+  index: -1
+heiwu
+  rotate: true
+  xy: 2, 411
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu2
+  rotate: false
+  xy: 2, 71
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu3
+  rotate: true
+  xy: 342, 411
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+hm01
+  rotate: false
+  xy: 2, 2
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+hm02
+  rotate: false
+  xy: 228, 2
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+hm03
+  rotate: false
+  xy: 454, 2
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+piaowu
+  rotate: true
+  xy: 592, 347
+  size: 62, 53
+  orig: 62, 53
+  offset: 0, 0
+  index: -1

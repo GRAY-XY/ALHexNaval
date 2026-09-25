@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xiaolongbao",
+  "model": "paodan_xiaolongbao",
+  "name": "小笼包炮弹",
+  "names": [
+    "小笼包炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiaolongbao",
+  "path": "battle-assets/炮弹/item__paodan_xiaolongbao",
+  "images": [
+    {
+      "file": "paodan_xiaolongbao_184710634812967501.png",
+      "name": "paodan_xiaolongbao",
+      "width": 128,
+      "height": 109,
+      "role": "战斗贴图",
+      "path_id": 184710634812967501,
+      "source": "CAB-c9cc22c5fc4c1f4b476b68543391f60c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xiaolongbao/paodan_xiaolongbao_184710634812967501.png"
+}

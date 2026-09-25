@@ -1,0 +1,56 @@
+{
+  "id": "chargo__plane_sakura",
+  "model": "plane_sakura",
+  "name": "【2024幼儿园活动 普通】BOSS 航母石膏喵  轰炸纸飞机",
+  "names": [
+    "【2024幼儿园活动 普通】BOSS 航母石膏喵  轰炸纸飞机",
+    "【2024幼儿园活动 困难】BOSS 航母石膏喵  轰炸纸飞机",
+    "【2024幼儿园活动 SP】BOSS 航母石膏喵  轰炸纸飞机",
+    "【2024幼儿园活动 EX】BOSS 航母石膏喵  轰炸纸飞机",
+    "【2024幼儿园活动 EX】BOSS 轻巡石膏喵 第二波 航母雕像-轰炸纸飞机（就一架，血可以厚一些）",
+    "【2024幼儿园活动】航母轰炸纸飞机 Lv1",
+    "【2024幼儿园活动】航母轰炸纸飞机 Lv2",
+    "【2024幼儿园活动】航母轰炸纸飞机 Lv3",
+    "【2024幼儿园活动】航母轰炸纸飞机 Lv4",
+    "【2024幼儿园活动】航母轰炸纸飞机 Lv5",
+    "【20206瑟堡SP活动】航母石膏喵 轰炸机 Lv1",
+    "【20206瑟堡SP活动】航母石膏喵 轰炸机 Lv2",
+    "【20206瑟堡SP活动】航母石膏喵 轰炸机 Lv3",
+    "【20206瑟堡SP活动】航母石膏喵 轰炸机 Lv4",
+    "【20206瑟堡SP活动】航母石膏喵 轰炸机 Lv5",
+    "【20206瑟堡SP活动 困难】精英人形 航母石膏喵 轰炸纸飞机",
+    "【20206瑟堡SP活动 SP】精英人形 航母石膏喵 轰炸纸飞机",
+    "樱色纸飞机(鱼雷)",
+    "樱色纸飞机(战斗)",
+    "樱色纸飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/plane_sakura",
+  "path": "battle-assets/飞机/chargo__plane_sakura",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "plane_sakura_-6517045320380756089.png",
+      "name": "plane_sakura",
+      "width": 256,
+      "height": 190,
+      "role": "战斗贴图",
+      "path_id": -6517045320380756089,
+      "source": "CAB-4b21c93fd93342912a798725db3b014f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__plane_sakura/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "item__newbullet2_purple",
+  "model": "newbullet2_purple",
+  "name": "newbullet2_purple",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/newbullet2_purple",
+  "path": "battle-assets/炮弹/item__newbullet2_purple",
+  "images": [
+    {
+      "file": "newbullet2purple_5423243596783475075.png",
+      "name": "newbullet2purple",
+      "width": 94,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 5423243596783475075,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3033005,
+    3039008,
+    3039009,
+    3218110
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__newbullet2_purple/newbullet2purple_5423243596783475075.png"
+}

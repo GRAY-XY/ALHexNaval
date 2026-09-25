@@ -1,0 +1,64 @@
+{
+  "id": "item__tolove_zhanlangjian",
+  "model": "tolove_zhanlangjian",
+  "name": "tolove_zhanlangjian",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/tolove_zhanlangjian",
+  "path": "battle-assets/炮弹/item__tolove_zhanlangjian",
+  "images": [
+    {
+      "file": "new01_-8205973491626236718.png",
+      "name": "new01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -8205973491626236718,
+      "source": "CAB-94c2c717d5808d8f8940e41ed72c766d"
+    },
+    {
+      "file": "new04_-7917979110353449223.png",
+      "name": "new04",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7917979110353449223,
+      "source": "CAB-94c2c717d5808d8f8940e41ed72c766d"
+    },
+    {
+      "file": "new04_glow_1734604911290485145.png",
+      "name": "new04_glow",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1734604911290485145,
+      "source": "CAB-94c2c717d5808d8f8940e41ed72c766d"
+    },
+    {
+      "file": "guangren01_3284422866793761989.png",
+      "name": "guangren01",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3284422866793761989,
+      "source": "CAB-94c2c717d5808d8f8940e41ed72c766d"
+    },
+    {
+      "file": "dao01_mask_5811038957356727845.png",
+      "name": "dao01_mask",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 5811038957356727845,
+      "source": "CAB-94c2c717d5808d8f8940e41ed72c766d"
+    }
+  ],
+  "particle_systems": 98,
+  "animations": [],
+  "bullet_ids": [
+    160983
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__tolove_zhanlangjian/new01_-8205973491626236718.png"
+}

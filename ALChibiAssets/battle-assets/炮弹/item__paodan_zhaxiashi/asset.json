@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhaxiashi",
+  "model": "paodan_zhaxiashi",
+  "name": "炸虾狮炮弹",
+  "names": [
+    "炸虾狮炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhaxiashi",
+  "path": "battle-assets/炮弹/item__paodan_zhaxiashi",
+  "images": [
+    {
+      "file": "paodan_zhaxiashi_1131774626795389991.png",
+      "name": "paodan_zhaxiashi",
+      "width": 126,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": 1131774626795389991,
+      "source": "CAB-915425c0b99ff3b1d5e48da994e9a774"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhaxiashi/paodan_zhaxiashi_1131774626795389991.png"
+}

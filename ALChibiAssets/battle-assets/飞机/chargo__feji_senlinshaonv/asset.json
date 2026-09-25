@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feji_senlinshaonv",
+  "model": "feji_senlinshaonv",
+  "name": "林间花环啾（鱼雷）",
+  "names": [
+    "林间花环啾（鱼雷）",
+    "林间花环啾（战斗）",
+    "林间花环啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feji_senlinshaonv",
+  "path": "battle-assets/飞机/chargo__feji_senlinshaonv",
+  "images": [
+    {
+      "file": "feji_senlinshaonv_-3405088797802520207.png",
+      "name": "feji_senlinshaonv",
+      "width": 256,
+      "height": 175,
+      "role": "战斗贴图",
+      "path_id": -3405088797802520207,
+      "source": "CAB-5e1f31a8d32962a708a0749efd90993d"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feji_senlinshaonv/feji_senlinshaonv_-3405088797802520207.png"
+}

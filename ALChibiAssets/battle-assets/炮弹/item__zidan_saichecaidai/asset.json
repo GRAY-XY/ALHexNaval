@@ -1,0 +1,37 @@
+{
+  "id": "item__zidan_saichecaidai",
+  "model": "zidan_saichecaidai",
+  "name": "三色彩带子弹",
+  "names": [
+    "三色彩带子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_saichecaidai",
+  "path": "battle-assets/炮弹/item__zidan_saichecaidai",
+  "images": [
+    {
+      "file": "caidai01_-6608585877240271156.png",
+      "name": "caidai01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -6608585877240271156,
+      "source": "CAB-ad5a58c2881e2993ca153e0902d8177a"
+    },
+    {
+      "file": "star01_6138133043478789615.png",
+      "name": "star01",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6138133043478789615,
+      "source": "CAB-ad5a58c2881e2993ca153e0902d8177a"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_saichecaidai/caidai01_-6608585877240271156.png"
+}

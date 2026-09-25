@@ -1,0 +1,104 @@
+
+feiji_jiuweihu.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 14
+  size: 111, 87
+  orig: 111, 87
+  offset: 0, 0
+  index: -1
+huoyan_1
+  rotate: true
+  xy: 803, 59
+  size: 66, 55
+  orig: 66, 55
+  offset: 0, 0
+  index: -1
+huoyan_2
+  rotate: false
+  xy: 803, 2
+  size: 66, 55
+  orig: 66, 55
+  offset: 0, 0
+  index: -1
+huoyan_3
+  rotate: true
+  xy: 860, 59
+  size: 66, 54
+  orig: 66, 54
+  offset: 0, 0
+  index: -1
+tuoyan_1
+  rotate: false
+  xy: 250, 24
+  size: 143, 50
+  orig: 143, 50
+  offset: 0, 0
+  index: -1
+tuoyan_2
+  rotate: false
+  xy: 91, 62
+  size: 145, 63
+  orig: 145, 63
+  offset: 0, 0
+  index: -1
+tuoyan_3
+  rotate: false
+  xy: 91, 7
+  size: 157, 53
+  orig: 157, 53
+  offset: 0, 0
+  index: -1
+tuoyan_4
+  rotate: false
+  xy: 238, 76
+  size: 155, 49
+  orig: 155, 49
+  offset: 0, 0
+  index: -1
+weiba_1
+  rotate: true
+  xy: 476, 23
+  size: 102, 69
+  orig: 102, 69
+  offset: 0, 0
+  index: -1
+weiba_2
+  rotate: false
+  xy: 395, 30
+  size: 79, 95
+  orig: 79, 95
+  offset: 0, 0
+  index: -1
+weiba_3
+  rotate: true
+  xy: 677, 15
+  size: 110, 58
+  orig: 110, 58
+  offset: 0, 0
+  index: -1
+weiba_4
+  rotate: true
+  xy: 737, 26
+  size: 99, 64
+  orig: 99, 64
+  offset: 0, 0
+  index: -1
+weiba_5
+  rotate: true
+  xy: 547, 17
+  size: 108, 62
+  orig: 108, 62
+  offset: 0, 0
+  index: -1
+weiba_6
+  rotate: true
+  xy: 611, 23
+  size: 102, 64
+  orig: 102, 64
+  offset: 0, 0
+  index: -1

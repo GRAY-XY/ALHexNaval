@@ -1,0 +1,27 @@
+
+gezi_bianfu.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+wep_bat_body
+  rotate: false
+  xy: 33, 5
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+wep_wing_L
+  rotate: false
+  xy: 2, 2
+  size: 29, 74
+  orig: 29, 74
+  offset: 0, 0
+  index: -1
+wep_wing_R
+  rotate: false
+  xy: 33, 45
+  size: 53, 31
+  orig: 53, 31
+  offset: 0, 0
+  index: -1

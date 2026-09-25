@@ -1,0 +1,97 @@
+
+xxg_hongyuepaodan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bf_1_1
+  rotate: true
+  xy: 950, 2
+  size: 44, 16
+  orig: 44, 16
+  offset: 0, 0
+  index: -1
+bf_1_2
+  rotate: true
+  xy: 871, 4
+  size: 35, 19
+  orig: 35, 19
+  offset: 0, 0
+  index: -1
+bf_2_1
+  rotate: false
+  xy: 906, 21
+  size: 42, 25
+  orig: 42, 25
+  offset: 0, 0
+  index: -1
+bf_2_2
+  rotate: false
+  xy: 818, 21
+  size: 51, 18
+  orig: 51, 18
+  offset: 0, 0
+  index: -1
+bf_3_1
+  rotate: false
+  xy: 906, 48
+  size: 56, 30
+  orig: 56, 30
+  offset: 0, 0
+  index: -1
+bf_3_2
+  rotate: false
+  xy: 818, 41
+  size: 86, 37
+  orig: 86, 37
+  offset: 0, 0
+  index: -1
+bf_4_1
+  rotate: true
+  xy: 892, 23
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+bf_4_2
+  rotate: true
+  xy: 892, 5
+  size: 16, 11
+  orig: 16, 11
+  offset: 0, 0
+  index: -1
+guangyun
+  rotate: true
+  xy: 2, 22
+  size: 198, 203
+  orig: 198, 203
+  offset: 0, 0
+  index: -1
+hongyue
+  rotate: true
+  xy: 818, 80
+  size: 140, 139
+  orig: 140, 139
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 615, 28
+  size: 201, 192
+  orig: 201, 192
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 207, 28
+  size: 202, 192
+  orig: 202, 192
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 411, 28
+  size: 202, 192
+  orig: 202, 192
+  offset: 0, 0
+  index: -1

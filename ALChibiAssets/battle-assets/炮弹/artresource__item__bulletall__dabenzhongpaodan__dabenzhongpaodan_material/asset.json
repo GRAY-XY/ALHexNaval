@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__dabenzhongpaodan__dabenzhongpaodan_material",
+  "model": "dabenzhongpaodan_material",
+  "name": "dabenzhongpaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/dabenzhongpaodan/dabenzhongpaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__dabenzhongpaodan__dabenzhongpaodan_material",
+  "images": [
+    {
+      "file": "dabenzhongpaodan_2199159413209135873.png",
+      "name": "dabenzhongpaodan",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2199159413209135873,
+      "source": "CAB-65b9f573e0fa90da2c18b9a2f19c430f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

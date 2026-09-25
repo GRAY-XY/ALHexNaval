@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_xiangji_doa",
+  "model": "paodan_xiangji_doa",
+  "name": "长焦相机炮弹",
+  "names": [
+    "长焦相机炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiangji_doa",
+  "path": "battle-assets/炮弹/item__paodan_xiangji_doa",
+  "images": [
+    {
+      "file": "paodan_xiangji_doa_6086297483114765672.png",
+      "name": "paodan_xiangji_doa",
+      "width": 128,
+      "height": 69,
+      "role": "战斗贴图",
+      "path_id": 6086297483114765672,
+      "source": "CAB-adb0d2277f258fb1151b2da376097051"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xiangji_doa/paodan_xiangji_doa_6086297483114765672.png"
+}

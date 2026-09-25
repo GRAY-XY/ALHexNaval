@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_qiannai",
+  "model": "zidan_qiannai",
+  "name": "zidan_qiannai",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_qiannai",
+  "path": "battle-assets/炮弹/item__zidan_qiannai",
+  "images": [
+    {
+      "file": "AL_Star03_-5675545304793802594.png",
+      "name": "AL_Star03",
+      "width": 100,
+      "height": 100,
+      "role": "战斗贴图",
+      "path_id": -5675545304793802594,
+      "source": "CAB-e017b1a72f1103a179ab2a87f22f7441"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    161074
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_qiannai/AL_Star03_-5675545304793802594.png"
+}

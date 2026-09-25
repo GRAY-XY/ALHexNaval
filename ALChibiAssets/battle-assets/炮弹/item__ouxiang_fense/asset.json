@@ -1,0 +1,31 @@
+{
+  "id": "item__ouxiang_fense",
+  "model": "ouxiang_fense",
+  "name": "ouxiang_fense",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouxiang_fense",
+  "path": "battle-assets/炮弹/item__ouxiang_fense",
+  "images": [
+    {
+      "file": "pink_-2104582749674312143.png",
+      "name": "pink",
+      "width": 95,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": -2104582749674312143,
+      "source": "CAB-411310a5fa877f9126ecf0e74266bb41"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    852215,
+    852216,
+    852311,
+    852531
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouxiang_fense/pink_-2104582749674312143.png"
+}

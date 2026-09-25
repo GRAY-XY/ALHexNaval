@@ -1,0 +1,43 @@
+{
+  "id": "chargo__nep_green",
+  "model": "nep_green",
+  "name": "宝石枪雨LV0",
+  "names": [
+    "宝石枪雨LV0",
+    "翡绿之心轰炸机",
+    "翡绿之心鱼雷机",
+    "翡绿之心战斗机",
+    "绿心轰炸机",
+    "绿心战斗机",
+    "绿心鱼雷机"
+  ],
+  "category": "飞机",
+  "source": "chargo/nep_green",
+  "path": "battle-assets/飞机/chargo__nep_green",
+  "images": [
+    {
+      "file": "Nep_green_7041084376699708348.png",
+      "name": "Nep_green",
+      "width": 321,
+      "height": 348,
+      "role": "战斗贴图",
+      "path_id": 7041084376699708348,
+      "source": "CAB-552e56e4ef7b2d294c13031baca95e84"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__nep_green/Nep_green_7041084376699708348.png"
+}

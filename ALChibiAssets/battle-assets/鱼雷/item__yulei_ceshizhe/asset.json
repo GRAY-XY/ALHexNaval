@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_ceshizhe",
+  "model": "yulei_ceshizhe",
+  "name": "测试加速器鱼雷",
+  "names": [
+    "测试加速器鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_ceshizhe",
+  "path": "battle-assets/鱼雷/item__yulei_ceshizhe",
+  "images": [
+    {
+      "file": "yulei_ceshizhe_-6383575197493210301.png",
+      "name": "yulei_ceshizhe",
+      "width": 1024,
+      "height": 1024,
+      "role": "原始纹理",
+      "path_id": -6383575197493210301,
+      "source": "CAB-031b41aea15d9e772c14cfde7b95a9d0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_ceshizhe/yulei_ceshizhe_-6383575197493210301.png",
+  "spine": {
+    "skel": "yulei_ceshizhe.skel",
+    "atlas": "yulei_ceshizhe.atlas",
+    "pages": [
+      "yulei_ceshizhe.png"
+    ]
+  }
+}

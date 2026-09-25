@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_mianjv",
+  "model": "paodan_mianjv",
+  "name": "妖怪面具炮弹",
+  "names": [
+    "妖怪面具炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mianjv",
+  "path": "battle-assets/炮弹/item__paodan_mianjv",
+  "images": [
+    {
+      "file": "paodan_mianjv_4494023314959705005.png",
+      "name": "paodan_mianjv",
+      "width": 128,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4494023314959705005,
+      "source": "CAB-656c1c277a64ec1f51a3d3d39f9c5a4d"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mianjv/paodan_mianjv_4494023314959705005.png"
+}

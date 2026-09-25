@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__yulei_nier_dragonspear",
+  "model": "yulei_nier_dragonspear",
+  "name": "龙骑枪鱼雷",
+  "names": [
+    "龙骑枪鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_nier_dragonspear",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_nier_dragonspear",
+  "images": [
+    {
+      "file": "yulei_nier_dragonspear_-8578497126561478648.png",
+      "name": "yulei_nier_dragonspear",
+      "width": 128,
+      "height": 25,
+      "role": "原始精灵",
+      "path_id": -8578497126561478648,
+      "source": "CAB-e4f354b8555ee1dea3a472b75ecda093"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

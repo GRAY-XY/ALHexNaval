@@ -1,0 +1,15 @@
+{
+  "id": "item__jiguang_yujing",
+  "model": "jiguang_yujing",
+  "name": "jiguang_yujing",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/jiguang_yujing",
+  "path": "battle-assets/其他战斗特效/item__jiguang_yujing",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

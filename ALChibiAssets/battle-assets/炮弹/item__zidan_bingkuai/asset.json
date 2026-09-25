@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_bingkuai",
+  "model": "zidan_bingkuai",
+  "name": "冰块子弹",
+  "names": [
+    "冰块子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_bingkuai",
+  "path": "battle-assets/炮弹/item__zidan_bingkuai",
+  "images": [
+    {
+      "file": "zidan_bingkuai_-3014704651942152380.png",
+      "name": "zidan_bingkuai",
+      "width": 128,
+      "height": 71,
+      "role": "战斗贴图",
+      "path_id": -3014704651942152380,
+      "source": "CAB-4ae43a9b9c6e1a5a01157dfae999b36a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_bingkuai/zidan_bingkuai_-3014704651942152380.png"
+}

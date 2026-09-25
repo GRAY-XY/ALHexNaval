@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__br810",
+  "model": "br810",
+  "name": "BR.810",
+  "names": [
+    "BR.810"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/br810",
+  "path": "battle-assets/飞机图标/aircrafticon__br810",
+  "images": [
+    {
+      "file": "BR810_-4871117305349334164.png",
+      "name": "BR810",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -4871117305349334164,
+      "source": "CAB-38facacca4e14924b00b18f607b0015d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

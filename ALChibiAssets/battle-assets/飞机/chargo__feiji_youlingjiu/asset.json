@@ -1,0 +1,32 @@
+{
+  "id": "chargo__feiji_youlingjiu",
+  "model": "feiji_youlingjiu",
+  "name": "【2026虎UR活动B2】BOSS 光辉 第二波 轰炸机",
+  "names": [
+    "【2026虎UR活动B2】BOSS 光辉 第二波 轰炸机",
+    "【2026虎UR活动B2】BOSS 光辉 第二波 地毯式轰炸机",
+    "幽灵啾飞机（鱼雷）",
+    "幽灵啾飞机（战斗）",
+    "幽灵啾飞机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_youlingjiu",
+  "path": "battle-assets/飞机/chargo__feiji_youlingjiu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_youlingjiu/aircraft_shadow_2192772484218123160.png"
+}

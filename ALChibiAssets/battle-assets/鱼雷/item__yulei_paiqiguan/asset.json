@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_paiqiguan",
+  "model": "yulei_paiqiguan",
+  "name": "轰鸣鱼雷",
+  "names": [
+    "轰鸣鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_paiqiguan",
+  "path": "battle-assets/鱼雷/item__yulei_paiqiguan",
+  "images": [
+    {
+      "file": "yulei_paiqiguan_142707527310853373.png",
+      "name": "yulei_paiqiguan",
+      "width": 128,
+      "height": 45,
+      "role": "战斗贴图",
+      "path_id": 142707527310853373,
+      "source": "CAB-2c1d7f9165193b24486bf64575ad2c38"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_paiqiguan/yulei_paiqiguan_142707527310853373.png"
+}

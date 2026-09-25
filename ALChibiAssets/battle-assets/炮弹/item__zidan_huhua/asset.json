@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_huhua",
+  "model": "zidan_huhua",
+  "name": "蔷薇流星子弹",
+  "names": [
+    "蔷薇流星子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huhua",
+  "path": "battle-assets/炮弹/item__zidan_huhua",
+  "images": [
+    {
+      "file": "zidan_huhua_-3668400746550778207.png",
+      "name": "zidan_huhua",
+      "width": 128,
+      "height": 35,
+      "role": "战斗贴图",
+      "path_id": -3668400746550778207,
+      "source": "CAB-4e9d17645821534a139611bc49ce9b98"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huhua/zidan_huhua_-3668400746550778207.png"
+}

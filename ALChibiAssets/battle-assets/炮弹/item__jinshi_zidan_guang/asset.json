@@ -1,0 +1,19 @@
+{
+  "id": "item__jinshi_zidan_guang",
+  "model": "jinshi_zidan_guang",
+  "name": "jinshi_zidan_guang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jinshi_zidan_guang",
+  "path": "battle-assets/炮弹/item__jinshi_zidan_guang",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    161145,
+    161146,
+    161147
+  ],
+  "has_preview": false,
+  "prefab": true
+}

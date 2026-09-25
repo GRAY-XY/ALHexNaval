@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_chuangketie",
+  "model": "zidan_chuangketie",
+  "name": "平安创口贴子弹",
+  "names": [
+    "平安创口贴子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_chuangketie",
+  "path": "battle-assets/炮弹/bulletall__zidan_chuangketie",
+  "images": [
+    {
+      "file": "zidan_chuangketie_4284877290076608466.png",
+      "name": "zidan_chuangketie",
+      "width": 128,
+      "height": 123,
+      "role": "原始精灵",
+      "path_id": 4284877290076608466,
+      "source": "CAB-0cd1a3d65fb6e33864b4fe2248e99098"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

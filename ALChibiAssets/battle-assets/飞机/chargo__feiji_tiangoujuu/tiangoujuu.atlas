@@ -1,0 +1,41 @@
+
+tiangoujuu.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+c11
+  rotate: true
+  xy: 185, 2
+  size: 101, 63
+  orig: 101, 63
+  offset: 0, 0
+  index: -1
+c12
+  rotate: true
+  xy: 185, 105
+  size: 94, 83
+  orig: 94, 83
+  offset: 0, 0
+  index: -1
+c21
+  rotate: true
+  xy: 270, 126
+  size: 73, 64
+  orig: 73, 64
+  offset: 0, 0
+  index: -1
+c22
+  rotate: false
+  xy: 250, 12
+  size: 65, 91
+  orig: 65, 91
+  offset: 0, 0
+  index: -1
+manju
+  rotate: true
+  xy: 2, 2
+  size: 197, 181
+  orig: 197, 181
+  offset: 0, 0
+  index: -1

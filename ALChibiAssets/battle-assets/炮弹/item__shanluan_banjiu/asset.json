@@ -1,0 +1,17 @@
+{
+  "id": "item__shanluan_banjiu",
+  "model": "shanluan_banjiu",
+  "name": "shanluan_banjiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shanluan_banjiu",
+  "path": "battle-assets/炮弹/item__shanluan_banjiu",
+  "images": [],
+  "particle_systems": 81,
+  "animations": [],
+  "bullet_ids": [
+    19782
+  ],
+  "has_preview": false,
+  "prefab": true
+}

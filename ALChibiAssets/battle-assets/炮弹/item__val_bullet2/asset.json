@@ -1,0 +1,26 @@
+{
+  "id": "item__val_bullet2",
+  "model": "val_bullet2",
+  "name": "val_bullet2",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/val_bullet2",
+  "path": "battle-assets/炮弹/item__val_bullet2",
+  "images": [
+    {
+      "file": "bullet_val_8222521365149379683.png",
+      "name": "bullet_val",
+      "width": 129,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": 8222521365149379683,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__val_bullet2/bullet_val_8222521365149379683.png"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "chargo__ln401",
+  "model": "ln401",
+  "name": "霞飞鱼雷机弹幕Lv1",
+  "names": [
+    "霞飞鱼雷机弹幕Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/ln401",
+  "path": "battle-assets/飞机/chargo__ln401",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "LN401_1669340228566943458.png",
+      "name": "LN401",
+      "width": 247,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": 1669340228566943458,
+      "source": "CAB-540fe354eec143dd5d21c47e3c44261b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__ln401/aircraft_shadow_2192772484218123160.png"
+}

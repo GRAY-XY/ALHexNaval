@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_jingyu",
+  "model": "paodan_jingyu",
+  "name": "鲸鱼气球炮弹",
+  "names": [
+    "鲸鱼气球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_jingyu",
+  "path": "battle-assets/炮弹/item__paodan_jingyu",
+  "images": [
+    {
+      "file": "paodan_jingyu_-2790468504627506050.png",
+      "name": "paodan_jingyu",
+      "width": 128,
+      "height": 124,
+      "role": "战斗贴图",
+      "path_id": -2790468504627506050,
+      "source": "CAB-99aaa3f74e1f3a9a1a51a27672d3626a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_jingyu/paodan_jingyu_-2790468504627506050.png"
+}

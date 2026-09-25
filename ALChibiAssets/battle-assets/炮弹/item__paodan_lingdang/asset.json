@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_lingdang",
+  "model": "paodan_lingdang",
+  "name": "大铃铛炮弹",
+  "names": [
+    "大铃铛炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_lingdang",
+  "path": "battle-assets/炮弹/item__paodan_lingdang",
+  "images": [
+    {
+      "file": "ling01_4726690937892113016.png",
+      "name": "ling01",
+      "width": 219,
+      "height": 145,
+      "role": "战斗贴图",
+      "path_id": 4726690937892113016,
+      "source": "CAB-628a14e7444ed5584f81b8cd1054e3e5"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_lingdang/ling01_4726690937892113016.png"
+}

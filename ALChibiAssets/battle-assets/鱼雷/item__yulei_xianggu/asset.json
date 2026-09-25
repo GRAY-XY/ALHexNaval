@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xianggu",
+  "model": "yulei_xianggu",
+  "name": "香菇鱼雷",
+  "names": [
+    "香菇鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xianggu",
+  "path": "battle-assets/鱼雷/item__yulei_xianggu",
+  "images": [
+    {
+      "file": "yulei_xianggu_-3853119858437663854.png",
+      "name": "yulei_xianggu",
+      "width": 120,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": -3853119858437663854,
+      "source": "CAB-b6c9f7ed6115c86b0f2529681bc973cd"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xianggu/yulei_xianggu_-3853119858437663854.png"
+}

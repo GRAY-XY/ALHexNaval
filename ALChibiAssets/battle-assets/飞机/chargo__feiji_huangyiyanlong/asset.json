@@ -1,0 +1,45 @@
+{
+  "id": "chargo__feiji_huangyiyanlong",
+  "model": "feiji_huangyiyanlong",
+  "name": "支援武器煌翼炎龙",
+  "names": [
+    "支援武器煌翼炎龙",
+    "【2021古立特联动活动】千濑支援武器-煌翼炎龙LV1",
+    "【2021古立特联动活动】千濑支援武器-煌翼炎龙LV2",
+    "【2021古立特联动活动】千濑支援武器-煌翼炎龙LV3",
+    "【2021古立特联动活动】千濑支援武器-煌翼炎龙LV4",
+    "【2021古立特联动活动】千濑支援武器-煌翼炎龙LV5",
+    "煌翼炎龙(鱼雷)",
+    "煌翼炎龙(战斗)",
+    "煌翼炎龙(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_huangyiyanlong",
+  "path": "battle-assets/飞机/chargo__feiji_huangyiyanlong",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_huangyiyanlong_-344329988005839503.png",
+      "name": "feiji_huangyiyanlong",
+      "width": 256,
+      "height": 213,
+      "role": "战斗贴图",
+      "path_id": -344329988005839503,
+      "source": "CAB-7d73c6fd738a588eed74a5810e2dbfab"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_huangyiyanlong/aircraft_shadow_2192772484218123160.png"
+}

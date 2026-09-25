@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_caihong",
+  "model": "zidan_caihong",
+  "name": "彩虹子弹",
+  "names": [
+    "彩虹子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_caihong",
+  "path": "battle-assets/炮弹/item__zidan_caihong",
+  "images": [
+    {
+      "file": "yun01_-1905241212884828097.png",
+      "name": "yun01",
+      "width": 214,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": -1905241212884828097,
+      "source": "CAB-9a233fa46350b19ab86f7ed188407977"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3139706,
+    3146219
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_caihong/yun01_-1905241212884828097.png"
+}

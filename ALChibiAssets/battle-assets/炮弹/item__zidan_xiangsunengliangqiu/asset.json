@@ -1,0 +1,46 @@
+{
+  "id": "item__zidan_xiangsunengliangqiu",
+  "model": "zidan_xiangsunengliangqiu",
+  "name": "能量球子弹",
+  "names": [
+    "能量球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xiangsunengliangqiu",
+  "path": "battle-assets/炮弹/item__zidan_xiangsunengliangqiu",
+  "images": [
+    {
+      "file": "zidan_xiangsunengliangqiu02_-7841731463080773483.png",
+      "name": "zidan_xiangsunengliangqiu02",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -7841731463080773483,
+      "source": "CAB-c7c2fc4107f25305351c0bd234fc5735"
+    },
+    {
+      "file": "zidan_xiangsunengliangqiu01_-7465449175154823711.png",
+      "name": "zidan_xiangsunengliangqiu01",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -7465449175154823711,
+      "source": "CAB-c7c2fc4107f25305351c0bd234fc5735"
+    },
+    {
+      "file": "zidan_xiangsunengliangqiu03_2550462226168343847.png",
+      "name": "zidan_xiangsunengliangqiu03",
+      "width": 128,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": 2550462226168343847,
+      "source": "CAB-c7c2fc4107f25305351c0bd234fc5735"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xiangsunengliangqiu/zidan_xiangsunengliangqiu02_-7841731463080773483.png"
+}

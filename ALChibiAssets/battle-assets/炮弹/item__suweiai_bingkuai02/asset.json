@@ -1,0 +1,39 @@
+{
+  "id": "item__suweiai_bingkuai02",
+  "model": "suweiai_bingkuai02",
+  "name": "suweiai_bingkuai02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/suweiai_bingkuai02",
+  "path": "battle-assets/炮弹/item__suweiai_bingkuai02",
+  "images": [
+    {
+      "file": "bingkuai02_-1670837100924537008.png",
+      "name": "bingkuai02",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1670837100924537008,
+      "source": "CAB-e01b22eba35c81b64a043318d570888f"
+    }
+  ],
+  "particle_systems": 12,
+  "animations": [],
+  "bullet_ids": [
+    164032,
+    164033,
+    164034,
+    164035,
+    164036,
+    164037,
+    164038,
+    164039,
+    164040,
+    164041,
+    164042,
+    164043
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__suweiai_bingkuai02/bingkuai02_-1670837100924537008.png"
+}

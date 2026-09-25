@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yun",
+  "model": "paodan_yun",
+  "name": "白云炮弹",
+  "names": [
+    "白云炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yun",
+  "path": "battle-assets/炮弹/item__paodan_yun",
+  "images": [
+    {
+      "file": "paodan_yun_126895735076069437.png",
+      "name": "paodan_yun",
+      "width": 128,
+      "height": 120,
+      "role": "战斗贴图",
+      "path_id": 126895735076069437,
+      "source": "CAB-0b1a829ae4ce9c83649411e9a81e1619"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yun/paodan_yun_126895735076069437.png"
+}

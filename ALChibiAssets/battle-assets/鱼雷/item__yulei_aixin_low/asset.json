@@ -1,0 +1,26 @@
+{
+  "id": "item__yulei_aixin_low",
+  "model": "yulei_aixin_low",
+  "name": "yulei_aixin_low",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_aixin_low",
+  "path": "battle-assets/鱼雷/item__yulei_aixin_low",
+  "images": [
+    {
+      "file": "aixin01_6376899438260802817.png",
+      "name": "aixin01",
+      "width": 165,
+      "height": 184,
+      "role": "战斗贴图",
+      "path_id": 6376899438260802817,
+      "source": "CAB-380c6044738ae5494165b8780e20b7be"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_aixin_low/aixin01_6376899438260802817.png"
+}

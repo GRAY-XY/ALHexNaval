@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__pby",
+  "model": "pby",
+  "name": "库珀反潜PBY-Lv1",
+  "names": [
+    "库珀反潜PBY-Lv1",
+    "库珀轰炸PBY-Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/pby",
+  "path": "battle-assets/飞机图标/aircrafticon__pby",
+  "images": [
+    {
+      "file": "pby_-7318037040272448672.png",
+      "name": "pby",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -7318037040272448672,
+      "source": "CAB-01d39c2385daa7736b6365f7c2d91fdc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

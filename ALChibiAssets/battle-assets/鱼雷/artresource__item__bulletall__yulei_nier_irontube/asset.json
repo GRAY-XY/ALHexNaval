@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__yulei_nier_irontube",
+  "model": "yulei_nier_irontube",
+  "name": "铁管鱼雷",
+  "names": [
+    "铁管鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_nier_irontube",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_nier_irontube",
+  "images": [
+    {
+      "file": "yulei_nier_irontube_-83428761387093472.png",
+      "name": "yulei_nier_irontube",
+      "width": 128,
+      "height": 10,
+      "role": "原始精灵",
+      "path_id": -83428761387093472,
+      "source": "CAB-d8b3b11c56edba25f4f74da9f5c78db7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

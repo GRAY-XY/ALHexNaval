@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_youtiao",
+  "model": "paodan_youtiao",
+  "name": "paodan_youtiao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_youtiao",
+  "path": "battle-assets/炮弹/item__paodan_youtiao",
+  "images": [
+    {
+      "file": "yulei_youtiao_-1321039364769047778.png",
+      "name": "yulei_youtiao",
+      "width": 128,
+      "height": 55,
+      "role": "战斗贴图",
+      "path_id": -1321039364769047778,
+      "source": "CAB-5b3f19d70068d155fb2b0f1d4a6cd421"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3366005
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_youtiao/yulei_youtiao_-1321039364769047778.png"
+}

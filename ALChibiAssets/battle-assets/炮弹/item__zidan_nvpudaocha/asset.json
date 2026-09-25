@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_nvpudaocha",
+  "model": "zidan_nvpudaocha",
+  "name": "餐具子弹",
+  "names": [
+    "餐具子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_nvpudaocha",
+  "path": "battle-assets/炮弹/item__zidan_nvpudaocha",
+  "images": [
+    {
+      "file": "daocha_-1810796794311023547.png",
+      "name": "daocha",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1810796794311023547,
+      "source": "CAB-9b34137a60691e6f80d0ddaffd5da659"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_nvpudaocha/daocha_-1810796794311023547.png"
+}

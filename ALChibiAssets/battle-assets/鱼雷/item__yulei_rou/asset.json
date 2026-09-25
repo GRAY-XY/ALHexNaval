@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_rou",
+  "model": "yulei_rou",
+  "name": "肉肉鱼雷",
+  "names": [
+    "肉肉鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_rou",
+  "path": "battle-assets/鱼雷/item__yulei_rou",
+  "images": [
+    {
+      "file": "yulei_rou_4448991616427159314.png",
+      "name": "yulei_rou",
+      "width": 212,
+      "height": 84,
+      "role": "战斗贴图",
+      "path_id": 4448991616427159314,
+      "source": "CAB-f99bb6e520a758342f337dd06c88aeb6"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_rou/yulei_rou_4448991616427159314.png"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__gulitejineng_amplaser",
+  "model": "gulitejineng_amplaser",
+  "name": "gulitejineng_amplaser",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gulitejineng_amplaser",
+  "path": "battle-assets/炮弹/item__gulitejineng_amplaser",
+  "images": [
+    {
+      "file": "line03_906113710134646202.png",
+      "name": "line03",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 906113710134646202,
+      "source": "CAB-4bbfbe29d027efaf8c8a14802c8f36fb"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19532,
+    855210,
+    855636
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gulitejineng_amplaser/line03_906113710134646202.png"
+}

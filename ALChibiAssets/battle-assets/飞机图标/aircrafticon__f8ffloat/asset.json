@@ -1,0 +1,30 @@
+{
+  "id": "aircrafticon__f8ffloat",
+  "model": "f8ffloat",
+  "name": "试作型F8F熊猫（浮筒型）",
+  "names": [
+    "试作型F8F熊猫（浮筒型）",
+    "试作型F8F熊猫（浮筒型）-驱逐强化",
+    "哈尔福德水上机弹幕Lv1",
+    "哈尔福德天运水上机弹幕Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/f8ffloat",
+  "path": "battle-assets/飞机图标/aircrafticon__f8ffloat",
+  "images": [
+    {
+      "file": "f8ffloat_2624455342136805602.png",
+      "name": "f8ffloat",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 2624455342136805602,
+      "source": "CAB-5227e00861050d1ca59a2f2abc20748d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

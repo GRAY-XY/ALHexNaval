@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_yumia_yunshi",
+  "model": "paodan_yumia_yunshi",
+  "name": "陨石矿炮弹",
+  "names": [
+    "陨石矿炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yumia_yunshi",
+  "path": "battle-assets/炮弹/item__paodan_yumia_yunshi",
+  "images": [
+    {
+      "file": "paodan_yunshi_-1926709394530059406.png",
+      "name": "paodan_yunshi",
+      "width": 100,
+      "height": 78,
+      "role": "战斗贴图",
+      "path_id": -1926709394530059406,
+      "source": "CAB-3be9531e9a812a0807261cbe8b0f09c4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    168230
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yumia_yunshi/paodan_yunshi_-1926709394530059406.png"
+}

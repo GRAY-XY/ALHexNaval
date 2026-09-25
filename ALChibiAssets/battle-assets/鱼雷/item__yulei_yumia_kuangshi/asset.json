@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yumia_kuangshi",
+  "model": "yulei_yumia_kuangshi",
+  "name": "万能矿石鱼雷",
+  "names": [
+    "万能矿石鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yumia_kuangshi",
+  "path": "battle-assets/鱼雷/item__yulei_yumia_kuangshi",
+  "images": [
+    {
+      "file": "yulei_kuangshi_-7304651409059184702.png",
+      "name": "yulei_kuangshi",
+      "width": 93,
+      "height": 51,
+      "role": "战斗贴图",
+      "path_id": -7304651409059184702,
+      "source": "CAB-8d7bd51d0518b6a045ba1ba4390b2f46"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yumia_kuangshi/yulei_kuangshi_-7304651409059184702.png"
+}

@@ -1,0 +1,62 @@
+
+feiji_taiyangqiqiu.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+feiji_1
+  rotate: true
+  xy: 164, 262
+  size: 74, 97
+  orig: 74, 97
+  offset: 0, 0
+  index: -1
+feiji_2
+  rotate: true
+  xy: 263, 261
+  size: 75, 98
+  orig: 75, 98
+  offset: 0, 0
+  index: -1
+feiji_3
+  rotate: true
+  xy: 363, 261
+  size: 75, 97
+  orig: 75, 97
+  offset: 0, 0
+  index: -1
+feijituowei_1
+  rotate: false
+  xy: 110, 296
+  size: 52, 40
+  orig: 52, 40
+  offset: 0, 0
+  index: -1
+feijituowei_2
+  rotate: false
+  xy: 2, 298
+  size: 52, 38
+  orig: 52, 38
+  offset: 0, 0
+  index: -1
+feijituowei_3
+  rotate: false
+  xy: 56, 297
+  size: 52, 39
+  orig: 52, 39
+  offset: 0, 0
+  index: -1
+taiyang
+  rotate: true
+  xy: 2, 53
+  size: 207, 210
+  orig: 207, 210
+  offset: 0, 0
+  index: -1
+taiyang_g
+  rotate: false
+  xy: 214, 2
+  size: 280, 257
+  orig: 280, 257
+  offset: 0, 0
+  index: -1

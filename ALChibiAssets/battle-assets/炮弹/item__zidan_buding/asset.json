@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_buding",
+  "model": "zidan_buding",
+  "name": "布丁子弹",
+  "names": [
+    "布丁子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_buding",
+  "path": "battle-assets/炮弹/item__zidan_buding",
+  "images": [
+    {
+      "file": "zidan_buding_-7645111855673969720.png",
+      "name": "zidan_buding",
+      "width": 128,
+      "height": 80,
+      "role": "战斗贴图",
+      "path_id": -7645111855673969720,
+      "source": "CAB-e250b061cb87b62a2e277b578dc73b10"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710108
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_buding/zidan_buding_-7645111855673969720.png"
+}

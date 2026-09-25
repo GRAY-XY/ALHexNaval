@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_huoju",
+  "model": "yulei_huoju",
+  "name": "火炬鱼雷",
+  "names": [
+    "火炬鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huoju",
+  "path": "battle-assets/鱼雷/item__yulei_huoju",
+  "images": [
+    {
+      "file": "yulei_huoju_-4909477457507928426.png",
+      "name": "yulei_huoju",
+      "width": 128,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": -4909477457507928426,
+      "source": "CAB-d0b7f04e1118383c09088887967823ad"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_huoju/yulei_huoju_-4909477457507928426.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_xiangnang",
+  "model": "zidan_xiangnang",
+  "name": "新春香囊子弹",
+  "names": [
+    "新春香囊子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xiangnang",
+  "path": "battle-assets/炮弹/item__zidan_xiangnang",
+  "images": [
+    {
+      "file": "zidan_xiangnang_2547258242747121039.png",
+      "name": "zidan_xiangnang",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2547258242747121039,
+      "source": "CAB-c634a8f78f6d3215ec1ab63cb84de238"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xiangnang/zidan_xiangnang_2547258242747121039.png",
+  "spine": {
+    "skel": "zidan_xiangnang.skel",
+    "atlas": "zidan_xiangnang.atlas",
+    "pages": [
+      "zidan_xiangnang.png"
+    ]
+  }
+}

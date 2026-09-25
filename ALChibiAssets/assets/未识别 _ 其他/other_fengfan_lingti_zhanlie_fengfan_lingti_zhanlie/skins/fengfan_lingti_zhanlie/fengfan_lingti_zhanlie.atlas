@@ -1,0 +1,153 @@
+
+fengfan_lingti_zhanlie.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_s
+  rotate: false
+  xy: 292, 405
+  size: 338, 201
+  orig: 338, 201
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 64, 595
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 83, 595
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: false
+  xy: 34, 597
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: false
+  xy: 102, 595
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: false
+  xy: 183, 594
+  size: 19, 12
+  orig: 19, 12
+  offset: 0, 0
+  index: -1
+gd_6
+  rotate: false
+  xy: 21, 598
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+gd_7
+  rotate: false
+  xy: 121, 595
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+huo
+  rotate: false
+  xy: 632, 396
+  size: 337, 210
+  orig: 337, 210
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: false
+  xy: 971, 305
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 93
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: false
+  xy: 863, 2
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+zg_1
+  rotate: true
+  xy: 49, 596
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+zg_2
+  rotate: true
+  xy: 141, 595
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+zg_3
+  rotate: false
+  xy: 204, 593
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+zg_4
+  rotate: true
+  xy: 2, 601
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+zg_5
+  rotate: false
+  xy: 156, 595
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+zg_6
+  rotate: true
+  xy: 11, 599
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+zg_7
+  rotate: false
+  xy: 219, 591
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+zg_8
+  rotate: false
+  xy: 170, 595
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+zg_9
+  rotate: false
+  xy: 237, 573
+  size: 53, 33
+  orig: 53, 33
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,43 @@
+{
+  "id": "item__yulei_qipaoguojiuping",
+  "model": "yulei_qipaoguojiuping",
+  "name": "粉香槟鱼雷",
+  "names": [
+    "粉香槟鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qipaoguojiuping",
+  "path": "battle-assets/鱼雷/item__yulei_qipaoguojiuping",
+  "images": [
+    {
+      "file": "yulei_qipaoguojiuping_4518203434573137603.png",
+      "name": "yulei_qipaoguojiuping",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4518203434573137603,
+      "source": "CAB-4ade87357c81bcad9852ec7fef8ed616"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3355001,
+    3355002,
+    3355003,
+    3355008,
+    3355009,
+    3355101,
+    3355109
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qipaoguojiuping/yulei_qipaoguojiuping_4518203434573137603.png",
+  "spine": {
+    "skel": "yulei_qipaoguojiuping.skel",
+    "atlas": "yulei_qipaoguojiuping.atlas",
+    "pages": [
+      "yulei_qipaoguojiuping.png"
+    ]
+  }
+}

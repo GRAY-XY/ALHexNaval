@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__yak9k",
+  "model": "yak9k",
+  "name": "【2025荷兰SP活动剧情】我方北联航母蛋船 战斗机",
+  "names": [
+    "【2025荷兰SP活动剧情】我方北联航母蛋船 战斗机",
+    "【2025荷兰SP活动剧情】我方北联航母蛋船 轰炸机"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/yak9k",
+  "path": "battle-assets/飞机图标/aircrafticon__yak9k",
+  "images": [
+    {
+      "file": "yak9k_4222086451763452706.png",
+      "name": "yak9k",
+      "width": 45,
+      "height": 43,
+      "role": "原始精灵",
+      "path_id": 4222086451763452706,
+      "source": "CAB-efcfbd9e030321c7f5a23dd191cc99b6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

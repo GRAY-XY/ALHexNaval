@@ -1,0 +1,32 @@
+{
+  "id": "item__paodan_zuqiu",
+  "model": "paodan_zuqiu",
+  "name": "足球炮弹",
+  "names": [
+    "足球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zuqiu",
+  "path": "battle-assets/炮弹/item__paodan_zuqiu",
+  "images": [
+    {
+      "file": "paodan_zuqiu_-5484439238560224241.png",
+      "name": "paodan_zuqiu",
+      "width": 128,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": -5484439238560224241,
+      "source": "CAB-8334d66528b218198e46fac62feb22f4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3160013,
+    3164006,
+    3169007
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zuqiu/paodan_zuqiu_-5484439238560224241.png"
+}

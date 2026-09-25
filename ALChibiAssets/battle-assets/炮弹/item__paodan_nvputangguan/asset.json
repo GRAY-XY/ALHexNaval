@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_nvputangguan",
+  "model": "paodan_nvputangguan",
+  "name": "糖罐炮弹",
+  "names": [
+    "糖罐炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_nvputangguan",
+  "path": "battle-assets/炮弹/item__paodan_nvputangguan",
+  "images": [
+    {
+      "file": "paodan_nvputangguan_-6092315613060598742.png",
+      "name": "paodan_nvputangguan",
+      "width": 128,
+      "height": 136,
+      "role": "战斗贴图",
+      "path_id": -6092315613060598742,
+      "source": "CAB-ae81ffed1d28108725031cfba51a8e17"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_nvputangguan/paodan_nvputangguan_-6092315613060598742.png"
+}

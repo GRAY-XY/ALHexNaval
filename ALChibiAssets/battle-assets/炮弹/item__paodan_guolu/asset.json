@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_guolu",
+  "model": "paodan_guolu",
+  "name": "蒸汽爆发炮弹",
+  "names": [
+    "蒸汽爆发炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_guolu",
+  "path": "battle-assets/炮弹/item__paodan_guolu",
+  "images": [
+    {
+      "file": "paodan_guolu_-1591868102197760764.png",
+      "name": "paodan_guolu",
+      "width": 128,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": -1591868102197760764,
+      "source": "CAB-168d7cd4d77a306d394d69263399e5a2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_guolu/paodan_guolu_-1591868102197760764.png"
+}

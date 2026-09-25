@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__yanhuapaodan__yanhuapaodan_material",
+  "model": "yanhuapaodan_material",
+  "name": "yanhuapaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/yanhuapaodan/yanhuapaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__yanhuapaodan__yanhuapaodan_material",
+  "images": [
+    {
+      "file": "yanhuapaodan_-1737844303214241667.png",
+      "name": "yanhuapaodan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1737844303214241667,
+      "source": "CAB-9ad4e3c16030ddc506fd2da3ec5ffd4b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,27 @@
+
+yulei_qipaoguojiuping.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cb_1
+  rotate: true
+  xy: 247, 35
+  size: 76, 66
+  orig: 76, 66
+  offset: 0, 0
+  index: -1
+cb_2
+  rotate: true
+  xy: 315, 35
+  size: 76, 66
+  orig: 76, 66
+  offset: 0, 0
+  index: -1
+guozhi
+  rotate: false
+  xy: 2, 2
+  size: 243, 109
+  orig: 243, 109
+  offset: 0, 0
+  index: -1

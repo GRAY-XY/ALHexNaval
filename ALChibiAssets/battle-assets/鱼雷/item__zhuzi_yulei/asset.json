@@ -1,0 +1,28 @@
+{
+  "id": "item__zhuzi_yulei",
+  "model": "zhuzi_yulei",
+  "name": "zhuzi_yulei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/zhuzi_yulei",
+  "path": "battle-assets/鱼雷/item__zhuzi_yulei",
+  "images": [
+    {
+      "file": "zhuzi_yulei_597672752158718516.png",
+      "name": "zhuzi_yulei",
+      "width": 228,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 597672752158718516,
+      "source": "CAB-1fc7a163658709c94957f14cc1c082d4"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    170998
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__zhuzi_yulei/zhuzi_yulei_597672752158718516.png"
+}

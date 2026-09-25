@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-18",
+  "version": "0.6.2",
+  "saveVersion": 9,
+  "url": "http://127.0.0.1:18768/",
+  "method": "Real browser interactions through CUA, with visible UI observations",
+  "passed": true,
+  "checks": [
+    { "name": "Oil resource label", "passed": true, "observed": "Header, sidebar, selected unit details and turn statistics display 石油." },
+    { "name": "Fleet carrier launch budget", "passed": true, "observed": "Three Enterprise squadrons each launch with 20 / 20 action points and four turns of endurance; launch leaves 41 oil." },
+    { "name": "Independent movement resource", "passed": true, "observed": "Moving the selected fighter changes its action points from 20 to 17.77. The other two squadrons remain at 20; oil remains 41." },
+    { "name": "Visible action points", "passed": true, "observed": "Squadron list, map labels and selected squadron details display remaining / maximum action points. Selecting a new unit scrolls its details to the top." },
+    { "name": "Reload preserves action points", "passed": true, "observed": "The selected fighter displays 17.77 / 20 before and after refreshing and loading the saved battle." },
+    { "name": "Turn transition does not restore action points", "passed": true, "observed": "After both players end their turns, the fighter remains at 17.77 / 20. Endurance decreases from four to three turns and oil refills to 50." },
+    { "name": "Light carrier launch budget", "passed": true, "observed": "Two light-carrier squadrons each launch with 15 / 15 action points and three turns of endurance; oil becomes 44." },
+    { "name": "Exhaustion forces return", "passed": true, "observed": "In the dedicated fixture, a fighter with 0.35 action points moves until its resource reaches zero, then immediately displays 返航. Other squadrons remain at 20 and oil remains 41." },
+    { "name": "Exhausted squadron cannot be redirected", "passed": true, "observed": "Another movement command displays 该中队行动力已耗尽，正在返航；本次出动不会自动恢复行动力. The squadron remains at zero and continues returning." },
+    { "name": "Reload preserves exhausted return", "passed": true, "observed": "After refreshing the exhausted battle, the fighter still has zero action points and is returning." },
+    { "name": "Return recovery completes", "passed": true, "observed": "After unpausing, the exhausted fighter reaches its carrier and is recovered. The airborne list decreases from three to two, the carrier has one free squadron slot, and oil remains 41." },
+    { "name": "Browser console", "passed": true, "observed": "Browser error log query returns no errors." },
+    { "name": "Original battle restored", "passed": true, "observed": "The previous 256 by 256, four-player battle is restored at round one, active player one, 50 oil and zero airborne squadrons." }
+  ],
+  "screenshots": [
+    "output/screenshots/air-action-before.png",
+    "output/screenshots/air-action-after-reload.png",
+    "output/screenshots/air-action-depleted.png"
+  ],
+  "relatedRuleVerification": "output/rules-verification.json",
+  "scope": "Action-point display, movement spending, launch budgets, turn/save persistence, forced return and original battle restoration. Multiplayer networking, balance and large-map performance were not assessed by this check."
+}

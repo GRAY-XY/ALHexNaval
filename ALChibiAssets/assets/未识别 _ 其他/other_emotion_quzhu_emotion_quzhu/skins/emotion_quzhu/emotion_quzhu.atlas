@@ -1,0 +1,62 @@
+
+emotion_quzhu.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bq1
+  rotate: false
+  xy: 2, 2
+  size: 110, 88
+  orig: 110, 88
+  offset: 0, 0
+  index: -1
+bq2
+  rotate: false
+  xy: 2, 92
+  size: 111, 89
+  orig: 111, 89
+  offset: 0, 0
+  index: -1
+bq3
+  rotate: false
+  xy: 145, 169
+  size: 100, 78
+  orig: 100, 78
+  offset: 0, 0
+  index: -1
+bq4
+  rotate: false
+  xy: 247, 169
+  size: 100, 78
+  orig: 100, 78
+  offset: 0, 0
+  index: -1
+bq5
+  rotate: false
+  xy: 2, 183
+  size: 141, 64
+  orig: 141, 64
+  offset: 0, 0
+  index: -1
+huo_1
+  rotate: false
+  xy: 2, 249
+  size: 654, 716
+  orig: 654, 716
+  offset: 0, 0
+  index: -1
+huo_2
+  rotate: false
+  xy: 658, 249
+  size: 654, 716
+  orig: 654, 716
+  offset: 0, 0
+  index: -1
+huo_3
+  rotate: false
+  xy: 1314, 249
+  size: 654, 716
+  orig: 654, 716
+  offset: 0, 0
+  index: -1

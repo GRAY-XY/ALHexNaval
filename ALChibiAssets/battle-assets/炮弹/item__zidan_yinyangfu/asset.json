@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yinyangfu",
+  "model": "zidan_yinyangfu",
+  "name": "阴阳符子弹",
+  "names": [
+    "阴阳符子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yinyangfu",
+  "path": "battle-assets/炮弹/item__zidan_yinyangfu",
+  "images": [
+    {
+      "file": "zidan_yinyangfu_-8514869801725504593.png",
+      "name": "zidan_yinyangfu",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -8514869801725504593,
+      "source": "CAB-d8318f31d59826c8a02e3f4a3d5e7458"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yinyangfu/zidan_yinyangfu_-8514869801725504593.png"
+}

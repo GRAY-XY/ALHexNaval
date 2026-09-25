@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jianmuzhuang",
+  "model": "yulei_jianmuzhuang",
+  "name": "尖木桩鱼雷",
+  "names": [
+    "尖木桩鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jianmuzhuang",
+  "path": "battle-assets/鱼雷/item__yulei_jianmuzhuang",
+  "images": [
+    {
+      "file": "yulei_jianmuzhuang_-8835237465746220009.png",
+      "name": "yulei_jianmuzhuang",
+      "width": 128,
+      "height": 46,
+      "role": "战斗贴图",
+      "path_id": -8835237465746220009,
+      "source": "CAB-a47d8d105dfb4b3b24a599887eb60394"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jianmuzhuang/yulei_jianmuzhuang_-8835237465746220009.png"
+}

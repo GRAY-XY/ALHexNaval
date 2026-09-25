@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__ta152cr14",
+  "model": "ta152cr14",
+  "name": "试作舰载型Ta 152C-1/R14",
+  "names": [
+    "试作舰载型Ta 152C-1/R14",
+    "马克斯轰炸机Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/ta152cr14",
+  "path": "battle-assets/飞机图标/aircrafticon__ta152cr14",
+  "images": [
+    {
+      "file": "ta152cr14_3652209143908450756.png",
+      "name": "ta152cr14",
+      "width": 45,
+      "height": 44,
+      "role": "原始精灵",
+      "path_id": 3652209143908450756,
+      "source": "CAB-d78b782ab235935e68f0ec60ff956a82"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

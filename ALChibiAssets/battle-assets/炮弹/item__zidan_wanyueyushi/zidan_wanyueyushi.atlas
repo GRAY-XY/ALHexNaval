@@ -1,0 +1,48 @@
+
+zidan_wanyueyushi.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gd_1
+  rotate: false
+  xy: 818, 156
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+gd_1_2
+  rotate: false
+  xy: 818, 117
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+gd_1_3
+  rotate: true
+  xy: 818, 79
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+guangyun
+  rotate: false
+  xy: 2, 2
+  size: 206, 191
+  orig: 206, 191
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 386, 77
+  size: 430, 116
+  orig: 430, 116
+  offset: 0, 0
+  index: -1
+zidan
+  rotate: true
+  xy: 210, 22
+  size: 171, 174
+  orig: 171, 174
+  offset: 0, 0
+  index: -1

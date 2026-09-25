@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_shigao",
+  "model": "paodan_shigao",
+  "name": "石膏炮弹",
+  "names": [
+    "石膏炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shigao",
+  "path": "battle-assets/炮弹/item__paodan_shigao",
+  "images": [
+    {
+      "file": "paodan_shigao_7520406026948410517.png",
+      "name": "paodan_shigao",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": 7520406026948410517,
+      "source": "CAB-f8c22db7f0681078c0d1d57067d0753b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3252012,
+    3252013,
+    3252014,
+    3252015,
+    3252016,
+    3252017
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shigao/paodan_shigao_7520406026948410517.png"
+}

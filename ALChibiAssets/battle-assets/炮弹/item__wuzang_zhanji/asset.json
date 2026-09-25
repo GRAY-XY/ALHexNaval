@@ -1,0 +1,43 @@
+{
+  "id": "item__wuzang_zhanji",
+  "model": "wuzang_zhanji",
+  "name": "wuzang_zhanji",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/wuzang_zhanji",
+  "path": "battle-assets/炮弹/item__wuzang_zhanji",
+  "images": [
+    {
+      "file": "daoguang06_purple_-2911436465660010358.png",
+      "name": "daoguang06_purple",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -2911436465660010358,
+      "source": "CAB-aa9d44570f6d287c1c6405b48b301869"
+    },
+    {
+      "file": "daoguang03_purple_1458785466306113758.png",
+      "name": "daoguang03_purple",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 1458785466306113758,
+      "source": "CAB-aa9d44570f6d287c1c6405b48b301869"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    29654003,
+    3024009,
+    3024010,
+    3024013,
+    3025080,
+    3025110,
+    3087009
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__wuzang_zhanji/daoguang06_purple_-2911436465660010358.png"
+}

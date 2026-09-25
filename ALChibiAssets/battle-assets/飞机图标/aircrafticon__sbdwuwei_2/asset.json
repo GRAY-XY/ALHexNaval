@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__sbdwuwei_2",
+  "model": "sbdwuwei_2",
+  "name": "SBD-3无畏(麦克拉斯基队)",
+  "names": [
+    "SBD-3无畏(麦克拉斯基队)"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/sbdwuwei_2",
+  "path": "battle-assets/飞机图标/aircrafticon__sbdwuwei_2",
+  "images": [
+    {
+      "file": "SBDwuwei_2_7080607202462665167.png",
+      "name": "SBDwuwei_2",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 7080607202462665167,
+      "source": "CAB-9520aecd4fa02175c94837791f17135e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

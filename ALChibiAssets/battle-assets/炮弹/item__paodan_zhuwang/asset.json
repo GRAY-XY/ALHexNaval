@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_zhuwang",
+  "model": "paodan_zhuwang",
+  "name": "怨念之网炮弹",
+  "names": [
+    "怨念之网炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_zhuwang",
+  "path": "battle-assets/炮弹/item__paodan_zhuwang",
+  "images": [
+    {
+      "file": "paodan_zhuwang_3540671212026880994.png",
+      "name": "paodan_zhuwang",
+      "width": 128,
+      "height": 93,
+      "role": "战斗贴图",
+      "path_id": 3540671212026880994,
+      "source": "CAB-1006352cd9aecf97e9b2ff5b51b83faf"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_zhuwang/paodan_zhuwang_3540671212026880994.png"
+}

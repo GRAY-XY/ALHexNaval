@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zhisanjiufeiji__zhisanjiufeiji_material",
+  "model": "zhisanjiufeiji_material",
+  "name": "zhisanjiufeiji_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/zhisanjiufeiji/zhisanjiufeiji_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__zhisanjiufeiji__zhisanjiufeiji_material",
+  "images": [
+    {
+      "file": "zhisanjiufeiji_1199624011403081067.png",
+      "name": "zhisanjiufeiji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1199624011403081067,
+      "source": "CAB-f36bd075d686627abf5657a064bc0ae1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

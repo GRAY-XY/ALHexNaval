@@ -1,0 +1,19 @@
+{
+  "id": "item__zidan_10daima",
+  "model": "zidan_10daima",
+  "name": "数据子弹",
+  "names": [
+    "数据子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_10daima",
+  "path": "battle-assets/炮弹/item__zidan_10daima",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3227210
+  ],
+  "has_preview": false,
+  "prefab": true
+}

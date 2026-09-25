@@ -1,0 +1,41 @@
+{
+  "id": "item__bomberbomb2000",
+  "model": "bomberbomb2000",
+  "name": "bomberbomb2000",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bomberbomb2000",
+  "path": "battle-assets/炮弹/item__bomberbomb2000",
+  "images": [
+    {
+      "file": "Bomberbomb2000lb_-6698023320320725254.png",
+      "name": "Bomberbomb2000lb",
+      "width": 126,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": -6698023320320725254,
+      "source": "CAB-563a32b473eb0f8a893fa65823ef5b33"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    2125,
+    9000,
+    9001,
+    9002,
+    9003,
+    9004,
+    9005,
+    19105,
+    19935,
+    19992,
+    170712,
+    170820,
+    620024,
+    3280613
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bomberbomb2000/Bomberbomb2000lb_-6698023320320725254.png"
+}

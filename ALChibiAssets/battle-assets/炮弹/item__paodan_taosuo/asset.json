@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_taosuo",
+  "model": "paodan_taosuo",
+  "name": "套索炮弹",
+  "names": [
+    "套索炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_taosuo",
+  "path": "battle-assets/炮弹/item__paodan_taosuo",
+  "images": [
+    {
+      "file": "paodan_taosuo_3764671799085051764.png",
+      "name": "paodan_taosuo",
+      "width": 89,
+      "height": 53,
+      "role": "战斗贴图",
+      "path_id": 3764671799085051764,
+      "source": "CAB-6e462ef17dcfc0931d15ea9491251034"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_taosuo/paodan_taosuo_3764671799085051764.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_aoliege",
+  "model": "yulei_aoliege",
+  "name": "yulei_aoliege",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_aoliege",
+  "path": "battle-assets/鱼雷/item__yulei_aoliege",
+  "images": [
+    {
+      "file": "aoliege_yulei_-1691104215080275682.png",
+      "name": "aoliege_yulei",
+      "width": 226,
+      "height": 145,
+      "role": "战斗贴图",
+      "path_id": -1691104215080275682,
+      "source": "CAB-3a1f442058e1adbaebc0a34f7eef869e"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    165506
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_aoliege/aoliege_yulei_-1691104215080275682.png"
+}

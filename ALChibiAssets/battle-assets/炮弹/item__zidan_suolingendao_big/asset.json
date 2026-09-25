@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_suolingendao_big",
+  "model": "zidan_suolingendao_big",
+  "name": "zidan_suolingendao_big",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_suolingendao_big",
+  "path": "battle-assets/炮弹/item__zidan_suolingendao_big",
+  "images": [
+    {
+      "file": "zidan_suolingendao_8136657181083498965.png",
+      "name": "zidan_suolingendao",
+      "width": 128,
+      "height": 34,
+      "role": "战斗贴图",
+      "path_id": 8136657181083498965,
+      "source": "CAB-dbe143b4a8b1c0a2a5a3572287bbcfbc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3013005,
+    3015023,
+    3240008
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_suolingendao_big/zidan_suolingendao_8136657181083498965.png"
+}

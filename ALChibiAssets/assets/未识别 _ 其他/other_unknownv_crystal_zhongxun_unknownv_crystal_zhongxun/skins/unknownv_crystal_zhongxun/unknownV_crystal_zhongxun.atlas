@@ -1,0 +1,174 @@
+
+unknownV_crystal_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beibu_2
+  rotate: true
+  xy: 774, 765
+  size: 255, 201
+  orig: 255, 201
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 315, 114
+  size: 594, 299
+  orig: 594, 299
+  offset: 0, 0
+  index: -1
+body_t1
+  rotate: false
+  xy: 405, 7
+  size: 93, 49
+  orig: 93, 49
+  offset: 0, 0
+  index: -1
+body_t2
+  rotate: false
+  xy: 541, 59
+  size: 76, 53
+  orig: 76, 53
+  offset: 0, 0
+  index: -1
+chushou_1
+  rotate: false
+  xy: 405, 58
+  size: 134, 54
+  orig: 134, 54
+  offset: 0, 0
+  index: -1
+chushou_10
+  rotate: true
+  xy: 789, 553
+  size: 33, 38
+  orig: 33, 38
+  offset: 0, 0
+  index: -1
+chushou_11
+  rotate: false
+  xy: 664, 575
+  size: 80, 60
+  orig: 80, 60
+  offset: 0, 0
+  index: -1
+chushou_12
+  rotate: false
+  xy: 977, 693
+  size: 45, 112
+  orig: 45, 112
+  offset: 0, 0
+  index: -1
+chushou_13
+  rotate: false
+  xy: 597, 10
+  size: 65, 47
+  orig: 65, 47
+  offset: 0, 0
+  index: -1
+chushou_14
+  rotate: true
+  xy: 616, 560
+  size: 88, 27
+  orig: 88, 27
+  offset: 0, 0
+  index: -1
+chushou_15
+  rotate: true
+  xy: 616, 650
+  size: 58, 42
+  orig: 58, 42
+  offset: 0, 0
+  index: -1
+chushou_16
+  rotate: false
+  xy: 746, 581
+  size: 41, 39
+  orig: 41, 39
+  offset: 0, 0
+  index: -1
+chushou_2
+  rotate: true
+  xy: 918, 619
+  size: 144, 54
+  orig: 144, 54
+  offset: 0, 0
+  index: -1
+chushou_3
+  rotate: true
+  xy: 977, 807
+  size: 213, 42
+  orig: 213, 42
+  offset: 0, 0
+  index: -1
+chushou_4
+  rotate: true
+  xy: 774, 622
+  size: 141, 142
+  orig: 141, 142
+  offset: 0, 0
+  index: -1
+chushou_5
+  rotate: true
+  xy: 664, 637
+  size: 71, 86
+  orig: 71, 86
+  offset: 0, 0
+  index: -1
+chushou_6
+  rotate: true
+  xy: 500, 12
+  size: 44, 95
+  orig: 44, 95
+  offset: 0, 0
+  index: -1
+chushou_7
+  rotate: false
+  xy: 789, 588
+  size: 42, 32
+  orig: 42, 32
+  offset: 0, 0
+  index: -1
+chushou_8
+  rotate: false
+  xy: 833, 585
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+chushou_9
+  rotate: true
+  xy: 2, 2
+  size: 22, 33
+  orig: 22, 33
+  offset: 0, 0
+  index: -1
+paoguan_1
+  rotate: true
+  xy: 315, 8
+  size: 104, 88
+  orig: 104, 88
+  offset: 0, 0
+  index: -1
+paoguan_2
+  rotate: true
+  xy: 974, 565
+  size: 126, 35
+  orig: 126, 35
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: true
+  xy: 2, 26
+  size: 682, 311
+  orig: 682, 311
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: false
+  xy: 2, 710
+  size: 770, 310
+  orig: 770, 310
+  offset: 0, 0
+  index: -1

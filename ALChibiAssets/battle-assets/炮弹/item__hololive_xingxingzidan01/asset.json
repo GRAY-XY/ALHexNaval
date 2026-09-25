@@ -1,0 +1,32 @@
+{
+  "id": "item__hololive_xingxingzidan01",
+  "model": "hololive_xingxingzidan01",
+  "name": "hololive_xingxingzidan01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hololive_xingxingzidan01",
+  "path": "battle-assets/炮弹/item__hololive_xingxingzidan01",
+  "images": [
+    {
+      "file": "AL_Star03_-3498484054372390536.png",
+      "name": "AL_Star03",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3498484054372390536,
+      "source": "CAB-92a6163264b985fe1212946c4b1ce119"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19080,
+    852502,
+    852521,
+    852522,
+    852602
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hololive_xingxingzidan01/AL_Star03_-3498484054372390536.png"
+}

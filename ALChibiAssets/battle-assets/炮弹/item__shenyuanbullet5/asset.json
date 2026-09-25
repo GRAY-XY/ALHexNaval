@@ -1,0 +1,19 @@
+{
+  "id": "item__shenyuanbullet5",
+  "model": "shenyuanbullet5",
+  "name": "shenyuanbullet5",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shenyuanbullet5",
+  "path": "battle-assets/炮弹/item__shenyuanbullet5",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    20042600,
+    20042601,
+    29502400
+  ],
+  "has_preview": false,
+  "prefab": true
+}

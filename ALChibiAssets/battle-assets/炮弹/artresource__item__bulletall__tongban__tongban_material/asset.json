@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__tongban__tongban_material",
+  "model": "tongban_material",
+  "name": "tongban_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/tongban/tongban_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__tongban__tongban_material",
+  "images": [
+    {
+      "file": "tongban_-6261791913868032799.png",
+      "name": "tongban",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6261791913868032799,
+      "source": "CAB-793c90e648af467ec1704cdd12db67a7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

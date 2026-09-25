@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__xtb2d1",
+  "model": "xtb2d1",
+  "name": "XTB2D-1天空海盗",
+  "names": [
+    "XTB2D-1天空海盗"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/xtb2d1",
+  "path": "battle-assets/飞机图标/aircrafticon__xtb2d1",
+  "images": [
+    {
+      "file": "XTB2D1_6222751731976887414.png",
+      "name": "XTB2D1",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 6222751731976887414,
+      "source": "CAB-3d7431d77784fbbadd3a735a06a2e580"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

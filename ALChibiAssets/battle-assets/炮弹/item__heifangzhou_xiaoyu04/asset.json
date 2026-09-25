@@ -1,0 +1,33 @@
+{
+  "id": "item__heifangzhou_xiaoyu04",
+  "model": "heifangzhou_xiaoyu04",
+  "name": "heifangzhou_xiaoyu04",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_xiaoyu04",
+  "path": "battle-assets/炮弹/item__heifangzhou_xiaoyu04",
+  "images": [
+    {
+      "file": "xiaoyu04_3708344246902429577.png",
+      "name": "xiaoyu04",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3708344246902429577,
+      "source": "CAB-8212202f18241a0d37e29fa932ba4c4e"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3290005,
+    3292004,
+    3299005,
+    3299024,
+    3299025,
+    3331515
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heifangzhou_xiaoyu04/xiaoyu04_3708344246902429577.png"
+}

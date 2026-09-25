@@ -1,0 +1,37 @@
+{
+  "id": "item__laisha_fensedaoguang",
+  "model": "laisha_fensedaoguang",
+  "name": "laisha_fensedaoguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_fensedaoguang",
+  "path": "battle-assets/炮弹/item__laisha_fensedaoguang",
+  "images": [
+    {
+      "file": "huoyan03_-5445568012773668537.png",
+      "name": "huoyan03",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5445568012773668537,
+      "source": "CAB-f93b010d88c5de90f9b584cdcb15a65a"
+    },
+    {
+      "file": "huoyan04_-3717116510048728724.png",
+      "name": "huoyan04",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -3717116510048728724,
+      "source": "CAB-f93b010d88c5de90f9b584cdcb15a65a"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19477
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laisha_fensedaoguang/huoyan03_-5445568012773668537.png"
+}

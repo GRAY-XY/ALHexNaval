@@ -1,0 +1,47 @@
+{
+  "id": "chargo__feiji_unknownv03",
+  "model": "feiji_unknownv03",
+  "name": "【量产型】未知X拟态II类-航母舰载机 Lv1",
+  "names": [
+    "【量产型】未知X拟态II类-航母舰载机 Lv1",
+    "【量产型】未知X拟态II类-航母舰载机 Lv2",
+    "【量产型】未知X拟态II类-航母舰载机 Lv3",
+    "【量产型】未知X拟态II类-航母舰载机 Lv4",
+    "【量产型】未知X拟态II类-航母舰载机 Lv5",
+    "【2025狮UR活动B2】BOSS 未知X拟态II类 航母 舰载机",
+    "【2025狮UR活动B3】BOSS 拟态兽-嘶鸣尖啸大海怪 第三波 舰载机",
+    "【2025狮UR活动D2】BOSS 未知X拟态II类 航母 舰载机",
+    "【2025狮UR活动D3】BOSS 拟态兽-嘶鸣尖啸大海怪 第三波 舰载机",
+    "【2025列克星敦II活动B1】BOSS 拟态兽-女皇 第二波 大批量舰载机",
+    "【2025列克星敦II活动D1】BOSS 拟态兽-女皇 第二波 大批量舰载机"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_unknownv03",
+  "path": "battle-assets/飞机/chargo__feiji_unknownv03",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_unknownV03_545623891241944599.png",
+      "name": "feiji_unknownV03",
+      "width": 256,
+      "height": 127,
+      "role": "战斗贴图",
+      "path_id": 545623891241944599,
+      "source": "CAB-b176c708136fe536a21badc963e4b12e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_unknownv03/aircraft_shadow_2192772484218123160.png"
+}

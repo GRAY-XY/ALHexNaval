@@ -1,0 +1,69 @@
+
+dushi_qianting.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 149
+  size: 415, 314
+  orig: 415, 314
+  offset: 0, 0
+  index: -1
+dengpai1
+  rotate: true
+  xy: 761, 111
+  size: 60, 70
+  orig: 60, 70
+  offset: 0, 0
+  index: -1
+dengpai2
+  rotate: false
+  xy: 522, 104
+  size: 138, 67
+  orig: 138, 67
+  offset: 0, 0
+  index: -1
+guangquan_1
+  rotate: true
+  xy: 964, 366
+  size: 97, 50
+  orig: 97, 50
+  offset: 0, 0
+  index: -1
+guangquan_2
+  rotate: false
+  xy: 662, 122
+  size: 97, 49
+  orig: 97, 49
+  offset: 0, 0
+  index: -1
+guangquan_3
+  rotate: false
+  xy: 522, 52
+  size: 97, 50
+  orig: 97, 50
+  offset: 0, 0
+  index: -1
+qt01
+  rotate: false
+  xy: 419, 173
+  size: 533, 141
+  orig: 533, 141
+  offset: 0, 0
+  index: -1
+qt02
+  rotate: false
+  xy: 419, 316
+  size: 543, 147
+  orig: 543, 147
+  offset: 0, 0
+  index: -1
+qt03
+  rotate: false
+  xy: 2, 2
+  size: 518, 145
+  orig: 518, 145
+  offset: 0, 0
+  index: -1

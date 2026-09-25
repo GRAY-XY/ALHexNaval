@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_dixiachengsanmingzhi",
+  "model": "paodan_dixiachengsanmingzhi",
+  "name": "地下城超级豪华珍珠三明治",
+  "names": [
+    "地下城超级豪华珍珠三明治"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_dixiachengsanmingzhi",
+  "path": "battle-assets/炮弹/item__paodan_dixiachengsanmingzhi",
+  "images": [
+    {
+      "file": "paodan_dixiachengsanmingzhi_8149310496984763700.png",
+      "name": "paodan_dixiachengsanmingzhi",
+      "width": 122,
+      "height": 97,
+      "role": "战斗贴图",
+      "path_id": 8149310496984763700,
+      "source": "CAB-4639127445f9bd9077ca3d5070c91459"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_dixiachengsanmingzhi/paodan_dixiachengsanmingzhi_8149310496984763700.png"
+}

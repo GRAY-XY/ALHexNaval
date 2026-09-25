@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__idom_zi__idom_zi_material",
+  "model": "idom_zi_material",
+  "name": "idom_zi_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/idom_zi/idom_zi_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__idom_zi__idom_zi_material",
+  "images": [
+    {
+      "file": "idom_zi_-1854055599645607394.png",
+      "name": "idom_zi",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1854055599645607394,
+      "source": "CAB-c9c3160641a3d66cc911e1a3529441be"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "item__yulei_huojian",
+  "model": "yulei_huojian",
+  "name": "火箭鱼雷",
+  "names": [
+    "火箭鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huojian",
+  "path": "battle-assets/鱼雷/item__yulei_huojian",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19196,
+    19197,
+    19211,
+    79651
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "huojianyulei.skel",
+    "atlas": "huojianyulei.atlas",
+    "pages": [
+      "huojianyulei.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jianpan",
+  "model": "yulei_jianpan",
+  "name": "键盘鱼雷",
+  "names": [
+    "键盘鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jianpan",
+  "path": "battle-assets/鱼雷/item__yulei_jianpan",
+  "images": [
+    {
+      "file": "yulei_jianpan_7884336379912390612.png",
+      "name": "yulei_jianpan",
+      "width": 128,
+      "height": 87,
+      "role": "战斗贴图",
+      "path_id": 7884336379912390612,
+      "source": "CAB-4a521827e9bc1b53a404dea2519fe622"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jianpan/yulei_jianpan_7884336379912390612.png"
+}

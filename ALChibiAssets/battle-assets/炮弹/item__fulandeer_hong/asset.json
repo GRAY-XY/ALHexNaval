@@ -1,0 +1,28 @@
+{
+  "id": "item__fulandeer_hong",
+  "model": "fulandeer_hong",
+  "name": "fulandeer_hong",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/fulandeer_hong",
+  "path": "battle-assets/炮弹/item__fulandeer_hong",
+  "images": [
+    {
+      "file": "red_605851812727781610.png",
+      "name": "red",
+      "width": 95,
+      "height": 95,
+      "role": "战斗贴图",
+      "path_id": 605851812727781610,
+      "source": "CAB-0d0156d08c48f4070920ffeabfb8a485"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19719
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__fulandeer_hong/red_605851812727781610.png"
+}

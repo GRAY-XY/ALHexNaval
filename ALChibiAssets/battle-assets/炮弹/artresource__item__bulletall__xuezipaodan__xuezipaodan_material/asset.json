@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__xuezipaodan__xuezipaodan_material",
+  "model": "xuezipaodan_material",
+  "name": "xuezipaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/xuezipaodan/xuezipaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__xuezipaodan__xuezipaodan_material",
+  "images": [
+    {
+      "file": "xuezipaodan_-1998507677051186901.png",
+      "name": "xuezipaodan",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1998507677051186901,
+      "source": "CAB-a75b1055277e295ebfc5842647d6d269"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

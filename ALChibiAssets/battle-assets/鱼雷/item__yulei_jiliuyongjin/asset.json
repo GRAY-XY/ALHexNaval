@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_jiliuyongjin",
+  "model": "yulei_jiliuyongjin",
+  "name": "激流勇进鱼雷",
+  "names": [
+    "激流勇进鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_jiliuyongjin",
+  "path": "battle-assets/鱼雷/item__yulei_jiliuyongjin",
+  "images": [
+    {
+      "file": "yulei_jiliuyongjin_2874937841986203563.png",
+      "name": "yulei_jiliuyongjin",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": 2874937841986203563,
+      "source": "CAB-9ab06662a9ac53713c8e4d1574812c08"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_jiliuyongjin/yulei_jiliuyongjin_2874937841986203563.png"
+}

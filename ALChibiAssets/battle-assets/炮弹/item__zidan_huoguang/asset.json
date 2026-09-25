@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_huoguang",
+  "model": "zidan_huoguang",
+  "name": "火焰球子弹",
+  "names": [
+    "火焰球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_huoguang",
+  "path": "battle-assets/炮弹/item__zidan_huoguang",
+  "images": [
+    {
+      "file": "zidan_huoguang_2201483532816222187.png",
+      "name": "zidan_huoguang",
+      "width": 128,
+      "height": 50,
+      "role": "战斗贴图",
+      "path_id": 2201483532816222187,
+      "source": "CAB-794b7a8fcc1b220a75830ce85b9b8a59"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    170897
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_huoguang/zidan_huoguang_2201483532816222187.png"
+}

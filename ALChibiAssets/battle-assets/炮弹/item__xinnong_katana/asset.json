@@ -1,0 +1,36 @@
+{
+  "id": "item__xinnong_katana",
+  "model": "xinnong_katana",
+  "name": "xinnong_katana",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xinnong_katana",
+  "path": "battle-assets/炮弹/item__xinnong_katana",
+  "images": [
+    {
+      "file": "xinnong_katana_-7067950302595101286.png",
+      "name": "xinnong_katana",
+      "width": 412,
+      "height": 107,
+      "role": "战斗贴图",
+      "path_id": -7067950302595101286,
+      "source": "CAB-86c2fb49eb52e13368c79cae0a98e794"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    760115,
+    853101,
+    853301,
+    3081101,
+    3081103,
+    3081106,
+    3081110,
+    3081111,
+    3085020
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xinnong_katana/xinnong_katana_-7067950302595101286.png"
+}

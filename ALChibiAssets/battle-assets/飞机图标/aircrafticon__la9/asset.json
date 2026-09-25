@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__la9",
+  "model": "la9",
+  "name": "试作舰载型La-9",
+  "names": [
+    "试作舰载型La-9"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/la9",
+  "path": "battle-assets/飞机图标/aircrafticon__la9",
+  "images": [
+    {
+      "file": "la9_3523770077564274369.png",
+      "name": "la9",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 3523770077564274369,
+      "source": "CAB-9efb55c2c65ee3a02ebe6df6fc484a4f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

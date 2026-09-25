@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__gulite_yuanhuanguangren__gulite_yuanhuanguangren_material",
+  "model": "gulite_yuanhuanguangren_material",
+  "name": "gulite_yuanhuanguangren_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/gulite_yuanhuanguangren/gulite_yuanhuanguangren_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__gulite_yuanhuanguangren__gulite_yuanhuanguangren_material",
+  "images": [
+    {
+      "file": "gulite_yuanhuanguangren_-2741555675566624009.png",
+      "name": "gulite_yuanhuanguangren",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -2741555675566624009,
+      "source": "CAB-004adf1fd0542c9cf946d8aef14ce8a5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

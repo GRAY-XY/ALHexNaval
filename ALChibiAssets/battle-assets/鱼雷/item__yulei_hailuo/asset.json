@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_hailuo",
+  "model": "yulei_hailuo",
+  "name": "海螺鱼雷",
+  "names": [
+    "海螺鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_hailuo",
+  "path": "battle-assets/鱼雷/item__yulei_hailuo",
+  "images": [
+    {
+      "file": "yulei_hailuo_-8021556395077773600.png",
+      "name": "yulei_hailuo",
+      "width": 128,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -8021556395077773600,
+      "source": "CAB-c3d94718d267f9baadc4d5d3ee0d4432"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_hailuo/yulei_hailuo_-8021556395077773600.png"
+}

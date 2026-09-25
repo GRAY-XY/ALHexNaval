@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_banxiang",
+  "model": "feiji_banxiang",
+  "name": "半象飞机(鱼雷)",
+  "names": [
+    "半象飞机(鱼雷)",
+    "半象飞机(战斗)",
+    "半象飞机(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_banxiang",
+  "path": "battle-assets/飞机/chargo__feiji_banxiang",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_banxiang_-3478934381772596285.png",
+      "name": "feiji_banxiang",
+      "width": 510,
+      "height": 491,
+      "role": "战斗贴图",
+      "path_id": -3478934381772596285,
+      "source": "CAB-799de1dfca41038981df9ccf8a699d58"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_banxiang/aircraft_shadow_2192772484218123160.png"
+}

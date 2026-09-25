@@ -1,0 +1,31 @@
+{
+  "id": "item__heicanglong_lansehuapai",
+  "model": "heicanglong_lansehuapai",
+  "name": "heicanglong_lansehuapai",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heicanglong_lansehuapai",
+  "path": "battle-assets/炮弹/item__heicanglong_lansehuapai",
+  "images": [
+    {
+      "file": "kapai01_-2362068982115113362.png",
+      "name": "kapai01",
+      "width": 138,
+      "height": 174,
+      "role": "战斗贴图",
+      "path_id": -2362068982115113362,
+      "source": "CAB-ca1169379fdc7707cdd0dd27f66177da"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19506,
+    29645102,
+    29645103,
+    29645104
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heicanglong_lansehuapai/kapai01_-2362068982115113362.png"
+}

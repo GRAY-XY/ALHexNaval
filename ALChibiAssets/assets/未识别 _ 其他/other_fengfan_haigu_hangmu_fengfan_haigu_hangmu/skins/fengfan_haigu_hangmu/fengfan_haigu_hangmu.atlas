@@ -1,0 +1,118 @@
+
+fengfan_haigu_hangmu.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 1159, 619
+  size: 385, 226
+  orig: 385, 226
+  offset: 0, 0
+  index: -1
+dingwei
+  rotate: true
+  xy: 911, 148
+  size: 393, 248
+  orig: 393, 248
+  offset: 0, 0
+  index: -1
+huo_s
+  rotate: true
+  xy: 911, 543
+  size: 461, 246
+  orig: 461, 246
+  offset: 0, 0
+  index: -1
+lizi_b
+  rotate: true
+  xy: 1161, 337
+  size: 280, 194
+  orig: 280, 194
+  offset: 0, 0
+  index: -1
+shuihua_1
+  rotate: true
+  xy: 2, 134
+  size: 870, 301
+  orig: 870, 301
+  offset: 0, 0
+  index: -1
+shuihua_2
+  rotate: true
+  xy: 305, 145
+  size: 859, 301
+  orig: 859, 301
+  offset: 0, 0
+  index: -1
+shuihua_3
+  rotate: true
+  xy: 608, 155
+  size: 849, 301
+  orig: 849, 301
+  offset: 0, 0
+  index: -1
+zg_1
+  rotate: false
+  xy: 2, 16
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+zg_2
+  rotate: false
+  xy: 2, 31
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+zg_3
+  rotate: false
+  xy: 2, 46
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+zg_4
+  rotate: false
+  xy: 17, 52
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+zg_5
+  rotate: true
+  xy: 2, 2
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+zg_6
+  rotate: false
+  xy: 15, 36
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+zg_7
+  rotate: true
+  xy: 2, 61
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+zg_8
+  rotate: false
+  xy: 14, 18
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+zg_9
+  rotate: true
+  xy: 2, 79
+  size: 53, 33
+  orig: 53, 33
+  offset: 0, 0
+  index: -1

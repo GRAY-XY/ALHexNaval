@@ -1,0 +1,17 @@
+{
+  "id": "item__bullet_dayu01_alert",
+  "model": "bullet_dayu01_alert",
+  "name": "bullet_dayu01_alert",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_dayu01_alert",
+  "path": "battle-assets/炮弹/item__bullet_dayu01_alert",
+  "images": [],
+  "particle_systems": 7,
+  "animations": [],
+  "bullet_ids": [
+    3315101
+  ],
+  "has_preview": false,
+  "prefab": true
+}

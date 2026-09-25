@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_yinliao",
+  "model": "zidan_yinliao",
+  "name": "特调子弹",
+  "names": [
+    "特调子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yinliao",
+  "path": "battle-assets/炮弹/item__zidan_yinliao",
+  "images": [
+    {
+      "file": "zidan_yinliao_7104402847268955343.png",
+      "name": "zidan_yinliao",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7104402847268955343,
+      "source": "CAB-bed17ae07212785e50e46dd7a6313d35"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3148003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yinliao/zidan_yinliao_7104402847268955343.png"
+}

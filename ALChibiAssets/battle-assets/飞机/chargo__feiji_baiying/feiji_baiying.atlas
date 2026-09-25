@@ -1,0 +1,41 @@
+
+feiji_baiying.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 36
+  size: 191, 105
+  orig: 191, 105
+  offset: 0, 0
+  index: -1
+chibang_s1
+  rotate: true
+  xy: 195, 17
+  size: 124, 167
+  orig: 124, 167
+  offset: 0, 0
+  index: -1
+chibang_s2
+  rotate: false
+  xy: 553, 2
+  size: 144, 139
+  orig: 144, 139
+  offset: 0, 0
+  index: -1
+chibang_x1
+  rotate: true
+  xy: 364, 12
+  size: 129, 187
+  orig: 129, 187
+  offset: 0, 0
+  index: -1
+chibang_x2
+  rotate: false
+  xy: 699, 2
+  size: 144, 139
+  orig: 144, 139
+  offset: 0, 0
+  index: -1

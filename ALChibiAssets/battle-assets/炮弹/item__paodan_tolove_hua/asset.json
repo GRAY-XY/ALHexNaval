@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tolove_hua",
+  "model": "paodan_tolove_hua",
+  "name": "乳愈之花炮弹",
+  "names": [
+    "乳愈之花炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tolove_hua",
+  "path": "battle-assets/炮弹/item__paodan_tolove_hua",
+  "images": [
+    {
+      "file": "paodan_tolove_hua_6455350362391568998.png",
+      "name": "paodan_tolove_hua",
+      "width": 383,
+      "height": 227,
+      "role": "战斗贴图",
+      "path_id": 6455350362391568998,
+      "source": "CAB-6c29bcc8a5cc4e5635d7be759c7de90b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tolove_hua/paodan_tolove_hua_6455350362391568998.png"
+}

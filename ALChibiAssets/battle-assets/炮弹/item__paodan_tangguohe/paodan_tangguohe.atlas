@@ -1,0 +1,251 @@
+
+paodan_tangguohe.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b1
+  rotate: false
+  xy: 961, 98
+  size: 43, 130
+  orig: 43, 130
+  offset: 0, 0
+  index: -1
+b2
+  rotate: false
+  xy: 973, 230
+  size: 43, 131
+  orig: 43, 131
+  offset: 0, 0
+  index: -1
+b3
+  rotate: false
+  xy: 973, 363
+  size: 44, 131
+  orig: 44, 131
+  offset: 0, 0
+  index: -1
+b4
+  rotate: false
+  xy: 916, 201
+  size: 43, 131
+  orig: 43, 131
+  offset: 0, 0
+  index: -1
+body_b
+  rotate: true
+  xy: 923, 496
+  size: 145, 93
+  orig: 145, 93
+  offset: 0, 0
+  index: -1
+body_f
+  rotate: true
+  xy: 234, 414
+  size: 227, 228
+  orig: 227, 228
+  offset: 0, 0
+  index: -1
+body_f_2
+  rotate: true
+  xy: 2, 345
+  size: 227, 228
+  orig: 227, 228
+  offset: 0, 0
+  index: -1
+body_f_3
+  rotate: true
+  xy: 464, 414
+  size: 227, 228
+  orig: 227, 228
+  offset: 0, 0
+  index: -1
+gd_1
+  rotate: false
+  xy: 902, 507
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_1_2
+  rotate: false
+  xy: 902, 493
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_1_3
+  rotate: false
+  xy: 902, 479
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_2
+  rotate: false
+  xy: 902, 465
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_2_2
+  rotate: false
+  xy: 902, 451
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_2_3
+  rotate: false
+  xy: 902, 437
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_3
+  rotate: false
+  xy: 902, 423
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_3_2
+  rotate: false
+  xy: 902, 409
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_3_3
+  rotate: false
+  xy: 902, 395
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_4
+  rotate: false
+  xy: 902, 381
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_4_2
+  rotate: false
+  xy: 902, 367
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_4_3
+  rotate: false
+  xy: 902, 353
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_5
+  rotate: false
+  xy: 902, 339
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_5_2
+  rotate: false
+  xy: 902, 325
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+gd_5_3
+  rotate: false
+  xy: 902, 311
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 694, 582
+  size: 227, 59
+  orig: 227, 59
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 574
+  size: 230, 67
+  orig: 230, 67
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 694, 521
+  size: 226, 59
+  orig: 226, 59
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: false
+  xy: 916, 442
+  size: 55, 52
+  orig: 55, 52
+  offset: 0, 0
+  index: -1
+tx_1_2
+  rotate: false
+  xy: 916, 388
+  size: 55, 52
+  orig: 55, 52
+  offset: 0, 0
+  index: -1
+tx_1_3
+  rotate: false
+  xy: 916, 334
+  size: 55, 52
+  orig: 55, 52
+  offset: 0, 0
+  index: -1
+yanhua1_1
+  rotate: false
+  xy: 694, 313
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+yanhua1_2
+  rotate: false
+  xy: 232, 206
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+yanhua1_3
+  rotate: false
+  xy: 2, 137
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+yanhua2_1
+  rotate: false
+  xy: 440, 208
+  size: 206, 204
+  orig: 206, 204
+  offset: 0, 0
+  index: -1
+yanhua2_2
+  rotate: false
+  xy: 648, 107
+  size: 206, 204
+  orig: 206, 204
+  offset: 0, 0
+  index: -1
+yanhua2_3
+  rotate: false
+  xy: 440, 2
+  size: 206, 204
+  orig: 206, 204
+  offset: 0, 0
+  index: -1

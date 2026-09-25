@@ -1,0 +1,48 @@
+
+yulei_dongzhidengpai.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dengpai
+  rotate: true
+  xy: 2, 27
+  size: 211, 115
+  orig: 211, 115
+  offset: 0, 0
+  index: -1
+dengpao_p11
+  rotate: true
+  xy: 326, 33
+  size: 205, 93
+  orig: 205, 93
+  offset: 0, 0
+  index: -1
+dengpao_p12
+  rotate: true
+  xy: 227, 28
+  size: 210, 97
+  orig: 210, 97
+  offset: 0, 0
+  index: -1
+dengpao_p21
+  rotate: false
+  xy: 421, 117
+  size: 113, 121
+  orig: 113, 121
+  offset: 0, 0
+  index: -1
+dengpao_p22
+  rotate: false
+  xy: 421, 2
+  size: 109, 113
+  orig: 109, 113
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: true
+  xy: 119, 38
+  size: 200, 106
+  orig: 200, 106
+  offset: 0, 0
+  index: -1

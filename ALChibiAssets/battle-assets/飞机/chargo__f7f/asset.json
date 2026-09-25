@@ -1,0 +1,37 @@
+{
+  "id": "chargo__f7f",
+  "model": "f7f",
+  "name": "F7F虎猫",
+  "names": [
+    "F7F虎猫"
+  ],
+  "category": "飞机",
+  "source": "chargo/f7f",
+  "path": "battle-assets/飞机/chargo__f7f",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "f7f_196705864615499431.png",
+      "name": "f7f",
+      "width": 255,
+      "height": 205,
+      "role": "战斗贴图",
+      "path_id": 196705864615499431,
+      "source": "CAB-d8e3efc1b7f9710bec1813552fd6ecb6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__f7f/aircraft_shadow_2192772484218123160.png"
+}

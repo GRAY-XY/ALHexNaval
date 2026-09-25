@@ -1,0 +1,28 @@
+{
+  "id": "item__huanxianghao_chushouzidan",
+  "model": "huanxianghao_chushouzidan",
+  "name": "huanxianghao_chushouzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/huanxianghao_chushouzidan",
+  "path": "battle-assets/炮弹/item__huanxianghao_chushouzidan",
+  "images": [
+    {
+      "file": "chushou01_-7231376943121253306.png",
+      "name": "chushou01",
+      "width": 228,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": -7231376943121253306,
+      "source": "CAB-0b085ba7c6948a3b71ef8ebf76b7ce5b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160949
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__huanxianghao_chushouzidan/chushou01_-7231376943121253306.png"
+}

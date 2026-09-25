@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_xiangxun",
+  "model": "paodan_xiangxun",
+  "name": "芬芳香炉炮弹",
+  "names": [
+    "芬芳香炉炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_xiangxun",
+  "path": "battle-assets/炮弹/item__paodan_xiangxun",
+  "images": [
+    {
+      "file": "paodan_xiangxun_6505578852774173481.png",
+      "name": "paodan_xiangxun",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 6505578852774173481,
+      "source": "CAB-89c255b843cb79cb039d6df2097261c0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_xiangxun/paodan_xiangxun_6505578852774173481.png",
+  "spine": {
+    "skel": "paodan_xiangxun.skel",
+    "atlas": "paodan_xiangxun.atlas",
+    "pages": [
+      "paodan_xiangxun.png"
+    ]
+  }
+}

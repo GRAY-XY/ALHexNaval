@@ -1,0 +1,20 @@
+{
+  "id": "item__onimask",
+  "model": "onimask",
+  "name": "onimask",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/onimask",
+  "path": "battle-assets/炮弹/item__onimask",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3107006,
+    3107007,
+    3107008,
+    3107009
+  ],
+  "has_preview": false,
+  "prefab": true
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_tegongjiu",
+  "model": "paodan_tegongjiu",
+  "name": "特工啾玩偶炮弹",
+  "names": [
+    "特工啾玩偶炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_tegongjiu",
+  "path": "battle-assets/炮弹/item__paodan_tegongjiu",
+  "images": [
+    {
+      "file": "paodan_tegongjiu_7015715686142083134.png",
+      "name": "paodan_tegongjiu",
+      "width": 128,
+      "height": 83,
+      "role": "战斗贴图",
+      "path_id": 7015715686142083134,
+      "source": "CAB-980373a96dee1c25b8acd52dafc94443"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_tegongjiu/paodan_tegongjiu_7015715686142083134.png"
+}

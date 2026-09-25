@@ -1,0 +1,19 @@
+{
+  "id": "item__bullet_fliud_red",
+  "model": "bullet_fliud_red",
+  "name": "bullet_fliud_red",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_fliud_red",
+  "path": "battle-assets/炮弹/item__bullet_fliud_red",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3029314,
+    3036041,
+    3301111
+  ],
+  "has_preview": false,
+  "prefab": true
+}

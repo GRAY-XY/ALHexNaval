@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_yinliao",
+  "model": "yulei_yinliao",
+  "name": "维纳斯群岛饮料鱼雷",
+  "names": [
+    "维纳斯群岛饮料鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_yinliao",
+  "path": "battle-assets/鱼雷/item__yulei_yinliao",
+  "images": [
+    {
+      "file": "yulei_yinliao_-4902429399324603057.png",
+      "name": "yulei_yinliao",
+      "width": 128,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": -4902429399324603057,
+      "source": "CAB-1627e233cde0368c76880a836cd54176"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_yinliao/yulei_yinliao_-4902429399324603057.png"
+}

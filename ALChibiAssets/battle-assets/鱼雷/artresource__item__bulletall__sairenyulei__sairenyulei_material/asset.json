@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__sairenyulei__sairenyulei_material",
+  "model": "sairenyulei_material",
+  "name": "sairenyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/sairenyulei/sairenyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__sairenyulei__sairenyulei_material",
+  "images": [
+    {
+      "file": "sairenyulei_3561384247062657880.png",
+      "name": "sairenyulei",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3561384247062657880,
+      "source": "CAB-1ae7e2d31a702e01ef76f23c4e78f010"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

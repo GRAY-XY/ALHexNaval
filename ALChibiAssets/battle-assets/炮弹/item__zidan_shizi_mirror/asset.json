@@ -1,0 +1,26 @@
+{
+  "id": "item__zidan_shizi_mirror",
+  "model": "zidan_shizi_mirror",
+  "name": "zidan_shizi_mirror",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_shizi_mirror",
+  "path": "battle-assets/炮弹/item__zidan_shizi_mirror",
+  "images": [
+    {
+      "file": "shizi01_-5093095947086950055.png",
+      "name": "shizi01",
+      "width": 454,
+      "height": 367,
+      "role": "战斗贴图",
+      "path_id": -5093095947086950055,
+      "source": "CAB-d872cca7a5146853764597694f6b6b5c"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shizi_mirror/shizi01_-5093095947086950055.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_guantou",
+  "model": "zidan_guantou",
+  "name": "罐头子弹",
+  "names": [
+    "罐头子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_guantou",
+  "path": "battle-assets/炮弹/item__zidan_guantou",
+  "images": [
+    {
+      "file": "zidan_guantou_-3372311706812228943.png",
+      "name": "zidan_guantou",
+      "width": 141,
+      "height": 54,
+      "role": "战斗贴图",
+      "path_id": -3372311706812228943,
+      "source": "CAB-0b84454a66ccff599af33ba5a791af29"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_guantou/zidan_guantou_-3372311706812228943.png"
+}

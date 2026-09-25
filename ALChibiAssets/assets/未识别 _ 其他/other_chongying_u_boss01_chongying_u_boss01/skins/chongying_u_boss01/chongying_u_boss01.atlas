@@ -1,0 +1,153 @@
+
+chongying_u_boss01.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 166
+  size: 437, 227
+  orig: 437, 227
+  offset: 0, 0
+  index: -1
+boziguihuo_b
+  rotate: false
+  xy: 231, 339
+  size: 241, 264
+  orig: 241, 264
+  offset: 0, 0
+  index: -1
+er_yan
+  rotate: true
+  xy: 780, 530
+  size: 71, 94
+  orig: 71, 94
+  offset: 0, 0
+  index: -1
+guihuo_1
+  rotate: false
+  xy: 118, 40
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+guihuo_2
+  rotate: false
+  xy: 503, 701
+  size: 45, 63
+  orig: 45, 63
+  offset: 0, 0
+  index: -1
+houzhua
+  rotate: true
+  xy: 2, 2
+  size: 85, 114
+  orig: 85, 114
+  offset: 0, 0
+  index: -1
+huo_jiaodi
+  rotate: false
+  xy: 2, 910
+  size: 549, 73
+  orig: 549, 73
+  offset: 0, 0
+  index: -1
+qianzhua
+  rotate: true
+  xy: 447, 766
+  size: 142, 92
+  orig: 142, 92
+  offset: 0, 0
+  index: -1
+weiba_b
+  rotate: true
+  xy: 553, 603
+  size: 380, 343
+  orig: 380, 343
+  offset: 0, 0
+  index: -1
+weiba_f1
+  rotate: true
+  xy: 543, 431
+  size: 170, 235
+  orig: 170, 235
+  offset: 0, 0
+  index: -1
+weiba_f2
+  rotate: true
+  xy: 2, 605
+  size: 303, 270
+  orig: 303, 270
+  offset: 0, 0
+  index: -1
+weiba_f3
+  rotate: true
+  xy: 231, 91
+  size: 246, 216
+  orig: 246, 216
+  offset: 0, 0
+  index: -1
+weiba_f4
+  rotate: true
+  xy: 274, 605
+  size: 303, 171
+  orig: 303, 171
+  offset: 0, 0
+  index: -1
+weiba_f5
+  rotate: true
+  xy: 751, 180
+  size: 249, 139
+  orig: 249, 139
+  offset: 0, 0
+  index: -1
+yan_1
+  rotate: true
+  xy: 503, 614
+  size: 85, 38
+  orig: 85, 38
+  offset: 0, 0
+  index: -1
+yan_2
+  rotate: true
+  xy: 876, 510
+  size: 91, 58
+  orig: 91, 58
+  offset: 0, 0
+  index: -1
+yan_3
+  rotate: false
+  xy: 2, 89
+  size: 173, 75
+  orig: 173, 75
+  offset: 0, 0
+  index: -1
+yan_4
+  rotate: true
+  xy: 177, 81
+  size: 83, 35
+  orig: 83, 35
+  offset: 0, 0
+  index: -1
+yan_5
+  rotate: true
+  xy: 447, 612
+  size: 152, 54
+  orig: 152, 54
+  offset: 0, 0
+  index: -1
+yan_6
+  rotate: true
+  xy: 474, 407
+  size: 203, 67
+  orig: 203, 67
+  offset: 0, 0
+  index: -1
+yan_huan
+  rotate: false
+  xy: 474, 184
+  size: 275, 221
+  orig: 275, 221
+  offset: 0, 0
+  index: -1

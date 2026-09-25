@@ -1,0 +1,37 @@
+{
+  "id": "chargo__v156f3",
+  "model": "v156f3",
+  "name": "V-156-F",
+  "names": [
+    "V-156-F"
+  ],
+  "category": "飞机",
+  "source": "chargo/v156f3",
+  "path": "battle-assets/飞机/chargo__v156f3",
+  "images": [
+    {
+      "file": "v156f3_4693680375172653276.png",
+      "name": "v156f3",
+      "width": 231,
+      "height": 254,
+      "role": "战斗贴图",
+      "path_id": 4693680375172653276,
+      "source": "CAB-fbe06388a8813706d6b13c37a94592b0"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__v156f3/v156f3_4693680375172653276.png"
+}

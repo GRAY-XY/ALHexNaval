@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_lunyi",
+  "model": "paodan_lunyi",
+  "name": "废弃轮椅炮弹",
+  "names": [
+    "废弃轮椅炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_lunyi",
+  "path": "battle-assets/炮弹/item__paodan_lunyi",
+  "images": [
+    {
+      "file": "paodan_lunyi_-3420153879749046593.png",
+      "name": "paodan_lunyi",
+      "width": 128,
+      "height": 119,
+      "role": "战斗贴图",
+      "path_id": -3420153879749046593,
+      "source": "CAB-a657437cc4951e209294b53f6200d161"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_lunyi/paodan_lunyi_-3420153879749046593.png"
+}

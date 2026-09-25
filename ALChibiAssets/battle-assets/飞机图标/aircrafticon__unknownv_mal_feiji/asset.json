@@ -1,0 +1,33 @@
+{
+  "id": "aircrafticon__unknownv_mal_feiji",
+  "model": "unknownv_mal_feiji",
+  "name": "【2026伯利欣根活动B2】BOSS 恶念残影航母 舰载机",
+  "names": [
+    "【2026伯利欣根活动B2】BOSS 恶念残影航母 舰载机",
+    "【2026伯利欣根活动D2】BOSS 恶念残影航母 舰载机",
+    "【2026伯利欣根活动】恶念残影航母 舰载机 Lv1",
+    "【2026伯利欣根活动】恶念残影航母 舰载机 Lv2",
+    "【2026伯利欣根活动】恶念残影航母 舰载机 Lv3",
+    "【2026伯利欣根活动】恶念残影航母 舰载机 Lv4",
+    "【2026伯利欣根活动】恶念残影航母 舰载机 Lv5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/unknownv_mal_feiji",
+  "path": "battle-assets/飞机图标/aircrafticon__unknownv_mal_feiji",
+  "images": [
+    {
+      "file": "unknownV_mal_feiji_-1520569602432293147.png",
+      "name": "unknownV_mal_feiji",
+      "width": 45,
+      "height": 41,
+      "role": "原始精灵",
+      "path_id": -1520569602432293147,
+      "source": "CAB-be4abcb3368aabd0815e9732e6b7053c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

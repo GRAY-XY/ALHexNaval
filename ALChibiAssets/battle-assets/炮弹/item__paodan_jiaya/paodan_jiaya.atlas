@@ -1,0 +1,55 @@
+
+paodan_jiaya.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guan
+  rotate: true
+  xy: 817, 269
+  size: 235, 192
+  orig: 235, 192
+  offset: 0, 0
+  index: -1
+kai_1
+  rotate: false
+  xy: 344, 13
+  size: 214, 222
+  orig: 214, 222
+  offset: 0, 0
+  index: -1
+kai_2
+  rotate: true
+  xy: 785, 16
+  size: 219, 122
+  orig: 219, 122
+  offset: 0, 0
+  index: -1
+kai_3
+  rotate: false
+  xy: 560, 60
+  size: 223, 175
+  orig: 223, 175
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 2
+  size: 340, 242
+  orig: 340, 242
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 246
+  size: 411, 258
+  orig: 411, 258
+  offset: 0, 0
+  index: -1
+tuowei_3
+  rotate: false
+  xy: 415, 237
+  size: 400, 267
+  orig: 400, 267
+  offset: 0, 0
+  index: -1

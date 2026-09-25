@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yinxiang",
+  "model": "zidan_yinxiang",
+  "name": "音响子弹",
+  "names": [
+    "音响子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yinxiang",
+  "path": "battle-assets/炮弹/item__zidan_yinxiang",
+  "images": [
+    {
+      "file": "zidan_yinxiang_8150446271952942746.png",
+      "name": "zidan_yinxiang",
+      "width": 128,
+      "height": 128,
+      "role": "战斗贴图",
+      "path_id": 8150446271952942746,
+      "source": "CAB-8001c57d7f0eb746bcaea8827dc75ed1"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yinxiang/zidan_yinxiang_8150446271952942746.png"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "chargo__tbmvt-51",
+  "model": "tbmvt-51",
+  "name": "TBM复仇者(VT-51)",
+  "names": [
+    "TBM复仇者(VT-51)",
+    "圣哈辛托-VT-51鱼雷机Lv1",
+    "圣哈辛托-VT-51反潜机Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/tbmvt-51",
+  "path": "battle-assets/飞机/chargo__tbmvt-51",
+  "images": [
+    {
+      "file": "tbmvt-51_-153639912678163088.png",
+      "name": "tbmvt-51",
+      "width": 242,
+      "height": 252,
+      "role": "战斗贴图",
+      "path_id": -153639912678163088,
+      "source": "CAB-ed05d2caa03e3168aed6e0de43aa0700"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__tbmvt-51/tbmvt-51_-153639912678163088.png"
+}

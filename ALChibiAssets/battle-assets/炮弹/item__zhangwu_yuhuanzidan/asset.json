@@ -1,0 +1,29 @@
+{
+  "id": "item__zhangwu_yuhuanzidan",
+  "model": "zhangwu_yuhuanzidan",
+  "name": "zhangwu_yuhuanzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zhangwu_yuhuanzidan",
+  "path": "battle-assets/炮弹/item__zhangwu_yuhuanzidan",
+  "images": [
+    {
+      "file": "yupei_3660687897946954324.png",
+      "name": "yupei",
+      "width": 237,
+      "height": 124,
+      "role": "战斗贴图",
+      "path_id": 3660687897946954324,
+      "source": "CAB-7c9cda2f355bf7e38c04c9e391d32392"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    183181,
+    183182
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zhangwu_yuhuanzidan/yupei_3660687897946954324.png"
+}

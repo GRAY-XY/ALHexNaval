@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_caiqiu",
+  "model": "zidan_caiqiu",
+  "name": "啪啪彩球子弹",
+  "names": [
+    "啪啪彩球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_caiqiu",
+  "path": "battle-assets/炮弹/item__zidan_caiqiu",
+  "images": [
+    {
+      "file": "zidan_caiqiu_451332364714084048.png",
+      "name": "zidan_caiqiu",
+      "width": 122,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 451332364714084048,
+      "source": "CAB-ccfc4abbcf240f1da88ab122d3cc0112"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_caiqiu/zidan_caiqiu_451332364714084048.png"
+}

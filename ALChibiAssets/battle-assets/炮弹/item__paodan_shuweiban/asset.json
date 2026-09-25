@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_shuweiban",
+  "model": "paodan_shuweiban",
+  "name": "数位板炮弹",
+  "names": [
+    "数位板炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shuweiban",
+  "path": "battle-assets/炮弹/item__paodan_shuweiban",
+  "images": [
+    {
+      "file": "paodan_shuweiban_6943332545215422065.png",
+      "name": "paodan_shuweiban",
+      "width": 128,
+      "height": 88,
+      "role": "战斗贴图",
+      "path_id": 6943332545215422065,
+      "source": "CAB-f1894280627fbb42e8944daf9edc2210"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shuweiban/paodan_shuweiban_6943332545215422065.png"
+}

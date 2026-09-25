@@ -1,0 +1,35 @@
+{
+  "id": "item__gaomidu04",
+  "model": "gaomidu04",
+  "name": "gaomidu04",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/gaomidu04",
+  "path": "battle-assets/炮弹/item__gaomidu04",
+  "images": [
+    {
+      "file": "hwxqb_1_-1160730454591545268.png",
+      "name": "hwxqb_1",
+      "width": 48,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": -1160730454591545268,
+      "source": "CAB-9b35c3ecb415ce644dfeff567c6ebee3"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    20133760,
+    20133761,
+    20133762,
+    20133763,
+    20133764,
+    20420130,
+    20425011,
+    20425111
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__gaomidu04/hwxqb_1_-1160730454591545268.png"
+}

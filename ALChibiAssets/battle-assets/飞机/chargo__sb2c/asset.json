@@ -1,0 +1,41 @@
+{
+  "id": "chargo__sb2c",
+  "model": "sb2c",
+  "name": "SB2C地狱俯冲者",
+  "names": [
+    "SB2C地狱俯冲者",
+    "无畏技能SB2C(VB-18)轰炸机Lv1",
+    "无畏专武技能SB2C(VB-18)轰炸机Lv1",
+    "无畏专武技能SB2C(VB-18)火箭机Lv1",
+    "【新美系活动D2】BOSS –大黄蜂 单颗投弹轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/sb2c",
+  "path": "battle-assets/飞机/chargo__sb2c",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "sb2c_1502339047511427964.png",
+      "name": "sb2c",
+      "width": 249,
+      "height": 232,
+      "role": "战斗贴图",
+      "path_id": 1502339047511427964,
+      "source": "CAB-001c4f4bbdf99897b2e634db63df6c5c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__sb2c/aircraft_shadow_2192772484218123160.png"
+}

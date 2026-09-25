@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__haibaohongzhaji__haibaohongzhaji_material",
+  "model": "haibaohongzhaji_material",
+  "name": "haibaohongzhaji_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/haibaohongzhaji/haibaohongzhaji_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__haibaohongzhaji__haibaohongzhaji_material",
+  "images": [
+    {
+      "file": "haibaohongzhaji_8194426901006671712.png",
+      "name": "haibaohongzhaji",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8194426901006671712,
+      "source": "CAB-a85bb955f6875926e4f1024e8c200174"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

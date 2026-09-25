@@ -1,0 +1,38 @@
+{
+  "id": "chargo__tongmeng_feiji",
+  "model": "tongmeng_feiji",
+  "name": "【2024同盟活动B】地图机制-实验型轰炸机",
+  "names": [
+    "【2024同盟活动B】地图机制-实验型轰炸机",
+    "【2024同盟活动D】地图机制-实验型轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/tongmeng_feiji",
+  "path": "battle-assets/飞机/chargo__tongmeng_feiji",
+  "images": [
+    {
+      "file": "tongmeng_feiji_-437473908888528489.png",
+      "name": "tongmeng_feiji",
+      "width": 391,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": -437473908888528489,
+      "source": "CAB-a849d3a18df60649e76f0bcea5763953"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__tongmeng_feiji/tongmeng_feiji_-437473908888528489.png"
+}

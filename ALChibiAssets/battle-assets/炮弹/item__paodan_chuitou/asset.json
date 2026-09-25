@@ -1,0 +1,26 @@
+{
+  "id": "item__paodan_chuitou",
+  "model": "paodan_chuitou",
+  "name": "超级喵喵1号",
+  "names": [
+    "超级喵喵1号"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_chuitou",
+  "path": "battle-assets/炮弹/item__paodan_chuitou",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    710041
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "chuitou.skel",
+    "atlas": "chuitou.atlas",
+    "pages": [
+      "chuitou.png"
+    ]
+  }
+}

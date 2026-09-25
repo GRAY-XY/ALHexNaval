@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_dongzhi",
+  "model": "zidan_dongzhi",
+  "name": "折扣标签子弹",
+  "names": [
+    "折扣标签子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_dongzhi",
+  "path": "battle-assets/炮弹/item__zidan_dongzhi",
+  "images": [
+    {
+      "file": "zidan_dongzhi_-6649930195386705111.png",
+      "name": "zidan_dongzhi",
+      "width": 128,
+      "height": 107,
+      "role": "战斗贴图",
+      "path_id": -6649930195386705111,
+      "source": "CAB-8b2cf5690f2b8f629f4b3596e6c67814"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_dongzhi/zidan_dongzhi_-6649930195386705111.png"
+}

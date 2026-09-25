@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shizixing",
+  "model": "zidan_shizixing",
+  "name": "像素星光子弹",
+  "names": [
+    "像素星光子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_shizixing",
+  "path": "battle-assets/炮弹/item__zidan_shizixing",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3146102,
+    3148012,
+    3159043
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "zidan_shizixing.skel",
+    "atlas": "zidan_shizixing.atlas",
+    "pages": [
+      "zidan_shizixing.png"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_shuishao",
+  "model": "yulei_shuishao",
+  "name": "水勺鱼雷",
+  "names": [
+    "水勺鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_shuishao",
+  "path": "battle-assets/鱼雷/item__yulei_shuishao",
+  "images": [
+    {
+      "file": "yulei_shuishao_-1235497428042032477.png",
+      "name": "yulei_shuishao",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -1235497428042032477,
+      "source": "CAB-c25b634a65ce9a3bf5e2619bad22ea90"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_shuishao/yulei_shuishao_-1235497428042032477.png"
+}

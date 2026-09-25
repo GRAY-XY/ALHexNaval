@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_niuzaimao",
+  "model": "paodan_niuzaimao",
+  "name": "牛仔帽炮弹",
+  "names": [
+    "牛仔帽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_niuzaimao",
+  "path": "battle-assets/炮弹/item__paodan_niuzaimao",
+  "images": [
+    {
+      "file": "paodan_niuzaimao_8860597780059767462.png",
+      "name": "paodan_niuzaimao",
+      "width": 128,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 8860597780059767462,
+      "source": "CAB-cdae7c93655ee961a3b817322ee29bd6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_niuzaimao/paodan_niuzaimao_8860597780059767462.png"
+}

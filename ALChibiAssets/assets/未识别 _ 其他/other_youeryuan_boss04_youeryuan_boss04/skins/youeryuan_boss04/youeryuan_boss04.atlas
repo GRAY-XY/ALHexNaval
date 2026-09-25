@@ -1,0 +1,55 @@
+
+youeryuan_boss04.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mao
+  rotate: true
+  xy: 2, 2
+  size: 263, 381
+  orig: 263, 381
+  offset: 0, 0
+  index: -1
+shui_1
+  rotate: false
+  xy: 179, 342
+  size: 177, 42
+  orig: 177, 42
+  offset: 0, 0
+  index: -1
+shui_2
+  rotate: false
+  xy: 2, 348
+  size: 175, 36
+  orig: 175, 36
+  offset: 0, 0
+  index: -1
+shui_3
+  rotate: false
+  xy: 2, 302
+  size: 175, 44
+  orig: 175, 44
+  offset: 0, 0
+  index: -1
+tx_1
+  rotate: false
+  xy: 179, 267
+  size: 86, 73
+  orig: 86, 73
+  offset: 0, 0
+  index: -1
+tx_2
+  rotate: false
+  xy: 426, 311
+  size: 84, 73
+  orig: 84, 73
+  offset: 0, 0
+  index: -1
+tx_3
+  rotate: false
+  xy: 358, 321
+  size: 66, 63
+  orig: 66, 63
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,69 @@
+
+unknownV_siren_quzhu.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 534
+  size: 560, 363
+  orig: 560, 363
+  offset: 0, 0
+  index: -1
+body_2
+  rotate: false
+  xy: 2, 169
+  size: 560, 363
+  orig: 560, 363
+  offset: 0, 0
+  index: -1
+body_3
+  rotate: false
+  xy: 564, 534
+  size: 560, 363
+  orig: 560, 363
+  offset: 0, 0
+  index: -1
+body_swim
+  rotate: false
+  xy: 564, 169
+  size: 560, 363
+  orig: 560, 363
+  offset: 0, 0
+  index: -1
+dapao_1
+  rotate: false
+  xy: 1126, 847
+  size: 105, 50
+  orig: 105, 50
+  offset: 0, 0
+  index: -1
+dapao_2
+  rotate: false
+  xy: 495, 150
+  size: 97, 17
+  orig: 97, 17
+  offset: 0, 0
+  index: -1
+pao_2
+  rotate: false
+  xy: 2, 2
+  size: 97, 54
+  orig: 97, 54
+  offset: 0, 0
+  index: -1
+pao_3
+  rotate: false
+  xy: 2, 2
+  size: 97, 54
+  orig: 97, 54
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 58
+  size: 491, 109
+  orig: 491, 109
+  offset: 0, 0
+  index: -1

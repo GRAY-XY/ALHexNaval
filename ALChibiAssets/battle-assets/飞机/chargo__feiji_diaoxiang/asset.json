@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_diaoxiang",
+  "model": "feiji_diaoxiang",
+  "name": "飞天啾啾雕像(鱼雷)",
+  "names": [
+    "飞天啾啾雕像(鱼雷)",
+    "飞天啾啾雕像(战斗)",
+    "飞天啾啾雕像(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_diaoxiang",
+  "path": "battle-assets/飞机/chargo__feiji_diaoxiang",
+  "images": [
+    {
+      "file": "feiji_diaoxiang_-8809179801059948625.png",
+      "name": "feiji_diaoxiang",
+      "width": 256,
+      "height": 293,
+      "role": "战斗贴图",
+      "path_id": -8809179801059948625,
+      "source": "CAB-30a47e10b4390c3a3429f81122ae6043"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_diaoxiang/feiji_diaoxiang_-8809179801059948625.png"
+}

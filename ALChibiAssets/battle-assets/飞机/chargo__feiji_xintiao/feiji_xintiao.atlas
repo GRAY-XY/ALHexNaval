@@ -1,0 +1,27 @@
+
+feiji_xintiao.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+heart
+  rotate: true
+  xy: 2, 23
+  size: 135, 121
+  orig: 135, 121
+  offset: 0, 0
+  index: -1
+hun_1_B
+  rotate: false
+  xy: 2, 160
+  size: 191, 90
+  orig: 191, 90
+  offset: 0, 0
+  index: -1
+hun_2_B
+  rotate: true
+  xy: 125, 2
+  size: 156, 71
+  orig: 156, 71
+  offset: 0, 0
+  index: -1

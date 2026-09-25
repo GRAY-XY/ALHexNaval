@@ -1,0 +1,26 @@
+{
+  "id": "item__baofengyu_leiyun",
+  "model": "baofengyu_leiyun",
+  "name": "baofengyu_leiyun",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/baofengyu_leiyun",
+  "path": "battle-assets/其他战斗特效/item__baofengyu_leiyun",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 14,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__baofengyu_leiyun/aircraft_shadow_2192772484218123160.png"
+}

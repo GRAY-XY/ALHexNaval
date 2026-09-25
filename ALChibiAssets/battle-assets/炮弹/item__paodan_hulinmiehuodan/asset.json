@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_hulinmiehuodan",
+  "model": "paodan_hulinmiehuodan",
+  "name": "护林灭火弹",
+  "names": [
+    "护林灭火弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_hulinmiehuodan",
+  "path": "battle-assets/炮弹/item__paodan_hulinmiehuodan",
+  "images": [
+    {
+      "file": "paodan_hulinmiehuodan_-1149289393412678161.png",
+      "name": "paodan_hulinmiehuodan",
+      "width": 81,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -1149289393412678161,
+      "source": "CAB-3c55a1c3f16ab6ed2d3df534ce70d0e1"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19535
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_hulinmiehuodan/paodan_hulinmiehuodan_-1149289393412678161.png"
+}

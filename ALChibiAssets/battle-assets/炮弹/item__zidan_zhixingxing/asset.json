@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_zhixingxing",
+  "model": "zidan_zhixingxing",
+  "name": "纸星星子弹",
+  "names": [
+    "纸星星子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_zhixingxing",
+  "path": "battle-assets/炮弹/item__zidan_zhixingxing",
+  "images": [
+    {
+      "file": "zhixingxing_565739390420030551.png",
+      "name": "zhixingxing",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 565739390420030551,
+      "source": "CAB-eebbcff52948fd409823d7e333d9b1a5"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3169003
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_zhixingxing/zhixingxing_565739390420030551.png"
+}

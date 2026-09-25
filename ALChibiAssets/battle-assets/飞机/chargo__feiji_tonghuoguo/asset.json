@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_tonghuoguo",
+  "model": "feiji_tonghuoguo",
+  "name": "飞机:铜火锅(鱼雷)",
+  "names": [
+    "飞机:铜火锅(鱼雷)",
+    "飞机:铜火锅(战斗)",
+    "飞机:铜火锅(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_tonghuoguo",
+  "path": "battle-assets/飞机/chargo__feiji_tonghuoguo",
+  "images": [
+    {
+      "file": "feiji_tonghuoguo_-5872093131792685607.png",
+      "name": "feiji_tonghuoguo",
+      "width": 256,
+      "height": 261,
+      "role": "战斗贴图",
+      "path_id": -5872093131792685607,
+      "source": "CAB-1c2b245c5d1c4c773a63fe97ebcfeeec"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_tonghuoguo/feiji_tonghuoguo_-5872093131792685607.png"
+}

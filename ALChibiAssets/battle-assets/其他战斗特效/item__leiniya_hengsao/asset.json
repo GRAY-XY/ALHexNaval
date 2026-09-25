@@ -1,0 +1,15 @@
+{
+  "id": "item__leiniya_hengsao",
+  "model": "leiniya_hengsao",
+  "name": "leiniya_hengsao",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/leiniya_hengsao",
+  "path": "battle-assets/其他战斗特效/item__leiniya_hengsao",
+  "images": [],
+  "particle_systems": 12,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

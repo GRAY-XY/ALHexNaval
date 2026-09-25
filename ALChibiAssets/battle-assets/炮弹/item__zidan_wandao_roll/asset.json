@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_wandao_roll",
+  "model": "zidan_wandao_roll",
+  "name": "zidan_wandao_roll",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_wandao_roll",
+  "path": "battle-assets/炮弹/item__zidan_wandao_roll",
+  "images": [
+    {
+      "file": "zidan_wandao_4584987052570129089.png",
+      "name": "zidan_wandao",
+      "width": 128,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 4584987052570129089,
+      "source": "CAB-35d2d67765c1d36093e3846bc57013ef"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    863,
+    864,
+    3090005
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_wandao_roll/zidan_wandao_4584987052570129089.png"
+}

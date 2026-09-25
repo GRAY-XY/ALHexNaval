@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_fuxiaomodaoshu",
+  "model": "paodan_fuxiaomodaoshu",
+  "name": "拂晓魔导书炮弹",
+  "names": [
+    "拂晓魔导书炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_fuxiaomodaoshu",
+  "path": "battle-assets/炮弹/item__paodan_fuxiaomodaoshu",
+  "images": [
+    {
+      "file": "paodan_fuxiaomodaoshu_7339925699124815475.png",
+      "name": "paodan_fuxiaomodaoshu",
+      "width": 128,
+      "height": 94,
+      "role": "战斗贴图",
+      "path_id": 7339925699124815475,
+      "source": "CAB-19b1d733d5ce0aa81bf119cb84bdddbc"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_fuxiaomodaoshu/paodan_fuxiaomodaoshu_7339925699124815475.png"
+}

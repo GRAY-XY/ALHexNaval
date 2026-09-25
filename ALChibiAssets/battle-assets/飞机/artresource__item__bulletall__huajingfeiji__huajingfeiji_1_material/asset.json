@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__huajingfeiji__huajingfeiji_1_material",
+  "model": "huajingfeiji_1_material",
+  "name": "huajingfeiji_1_material",
+  "names": [],
+  "category": "飞机",
+  "source": "artresource/item/bulletall/huajingfeiji/huajingfeiji_1_material",
+  "path": "battle-assets/飞机/artresource__item__bulletall__huajingfeiji__huajingfeiji_1_material",
+  "images": [
+    {
+      "file": "huajingfeiji_1_3940539745509150899.png",
+      "name": "huajingfeiji_1",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 3940539745509150899,
+      "source": "CAB-795d84a3f01a0feaee64fe9477ef53c9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

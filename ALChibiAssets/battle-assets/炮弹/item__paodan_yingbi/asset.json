@@ -1,0 +1,30 @@
+{
+  "id": "item__paodan_yingbi",
+  "model": "paodan_yingbi",
+  "name": "硬币炮弹",
+  "names": [
+    "硬币炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yingbi",
+  "path": "battle-assets/炮弹/item__paodan_yingbi",
+  "images": [
+    {
+      "file": "yingbi_-3971828094930862838.png",
+      "name": "yingbi",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3971828094930862838,
+      "source": "CAB-0c4ef5f78df881a9d24318a44448a7d3"
+    }
+  ],
+  "particle_systems": 9,
+  "animations": [],
+  "bullet_ids": [
+    3139719
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yingbi/yingbi_-3971828094930862838.png"
+}

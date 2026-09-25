@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bingzhui_1",
+  "model": "bingzhui_1",
+  "name": "bingzhui_1",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bingzhui_1",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bingzhui_1",
+  "images": [
+    {
+      "file": "bingzhui_1_1018503344111445958.png",
+      "name": "bingzhui_1",
+      "width": 242,
+      "height": 142,
+      "role": "原始精灵",
+      "path_id": 1018503344111445958,
+      "source": "CAB-0613a3ea39dbea6b32b0a98f91b22243"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_tiwenji",
+  "model": "yulei_tiwenji",
+  "name": "体温计鱼雷",
+  "names": [
+    "体温计鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_tiwenji",
+  "path": "battle-assets/鱼雷/item__yulei_tiwenji",
+  "images": [
+    {
+      "file": "yulei_tiwenji_5214587122092077542.png",
+      "name": "yulei_tiwenji",
+      "width": 126,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": 5214587122092077542,
+      "source": "CAB-b1c1525d0ee8b068eee015f5f8f67a8e"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_tiwenji/yulei_tiwenji_5214587122092077542.png"
+}

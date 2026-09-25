@@ -1,0 +1,28 @@
+{
+  "id": "item__laisha_zidan_paodan",
+  "model": "laisha_zidan_paodan",
+  "name": "laisha_zidan_paodan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/laisha_zidan_paodan",
+  "path": "battle-assets/炮弹/item__laisha_zidan_paodan",
+  "images": [
+    {
+      "file": "zidan_-6253247451752993193.png",
+      "name": "zidan",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6253247451752993193,
+      "source": "CAB-974c55745b0cb02148401065828f54f3"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    19496
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__laisha_zidan_paodan/zidan_-6253247451752993193.png"
+}

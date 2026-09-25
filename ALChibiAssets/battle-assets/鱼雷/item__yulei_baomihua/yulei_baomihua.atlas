@@ -1,0 +1,111 @@
+
+yulei_baomihua.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bmh_1
+  rotate: true
+  xy: 731, 13
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+bmh_1_2
+  rotate: false
+  xy: 831, 110
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+bmh_1_3
+  rotate: false
+  xy: 870, 110
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+bmh_2
+  rotate: false
+  xy: 786, 59
+  size: 42, 41
+  orig: 42, 41
+  offset: 0, 0
+  index: -1
+bmh_2_2
+  rotate: true
+  xy: 731, 52
+  size: 42, 41
+  orig: 42, 41
+  offset: 0, 0
+  index: -1
+bmh_2_3
+  rotate: true
+  xy: 830, 58
+  size: 42, 41
+  orig: 42, 41
+  offset: 0, 0
+  index: -1
+bmh_3
+  rotate: false
+  xy: 816, 22
+  size: 38, 34
+  orig: 38, 34
+  offset: 0, 0
+  index: -1
+bmh_3_2
+  rotate: false
+  xy: 856, 22
+  size: 38, 34
+  orig: 38, 34
+  offset: 0, 0
+  index: -1
+bmh_3_3
+  rotate: false
+  xy: 873, 74
+  size: 38, 34
+  orig: 38, 34
+  offset: 0, 0
+  index: -1
+bmh_4
+  rotate: true
+  xy: 774, 10
+  size: 47, 40
+  orig: 47, 40
+  offset: 0, 0
+  index: -1
+bmh_5
+  rotate: false
+  xy: 786, 102
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+bmh_6
+  rotate: false
+  xy: 731, 96
+  size: 53, 49
+  orig: 53, 49
+  offset: 0, 0
+  index: -1
+hezi_b
+  rotate: false
+  xy: 469, 27
+  size: 140, 118
+  orig: 140, 118
+  offset: 0, 0
+  index: -1
+hezi_f
+  rotate: false
+  xy: 611, 27
+  size: 118, 118
+  orig: 118, 118
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 2, 2
+  size: 465, 143
+  orig: 465, 143
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_bailu",
+  "model": "feiji_bailu",
+  "name": "飞空城·白鹭(鱼雷)",
+  "names": [
+    "飞空城·白鹭(鱼雷)",
+    "飞空城·白鹭(战斗)",
+    "飞空城·白鹭(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_bailu",
+  "path": "battle-assets/飞机/chargo__feiji_bailu",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_bailu_-6916090424550598794.png",
+      "name": "feiji_bailu",
+      "width": 256,
+      "height": 227,
+      "role": "战斗贴图",
+      "path_id": -6916090424550598794,
+      "source": "CAB-27aed37da2b716af1524e5f8da3c682a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_bailu/aircraft_shadow_2192772484218123160.png"
+}

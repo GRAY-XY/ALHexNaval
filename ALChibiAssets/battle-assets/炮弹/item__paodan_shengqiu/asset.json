@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_shengqiu",
+  "model": "paodan_shengqiu",
+  "name": "星轨之环炮弹",
+  "names": [
+    "星轨之环炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shengqiu",
+  "path": "battle-assets/炮弹/item__paodan_shengqiu",
+  "images": [
+    {
+      "file": "AL_shijiexunyou01_5836817117324924517.png",
+      "name": "AL_shijiexunyou01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5836817117324924517,
+      "source": "CAB-017ef016d0af6a4989d750b362821c1c"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shengqiu/AL_shijiexunyou01_5836817117324924517.png",
+  "spine": {
+    "skel": "paodan_shengqiu.skel",
+    "atlas": "paodan_shengqiu.atlas",
+    "pages": [
+      "paodan_shengqiu.png"
+    ]
+  }
+}

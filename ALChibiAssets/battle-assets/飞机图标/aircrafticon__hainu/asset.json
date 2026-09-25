@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__hainu",
+  "model": "hainu",
+  "name": "海怒",
+  "names": [
+    "海怒",
+    "光荣meta战斗机弹幕Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/hainu",
+  "path": "battle-assets/飞机图标/aircrafticon__hainu",
+  "images": [
+    {
+      "file": "hainu_-7166335841338328676.png",
+      "name": "hainu",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -7166335841338328676,
+      "source": "CAB-ebf84ac0fcc0c3e3727854155f446ad8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

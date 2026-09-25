@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_mofazhen",
+  "model": "paodan_mofazhen",
+  "name": "魔法阵炮弹",
+  "names": [
+    "魔法阵炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mofazhen",
+  "path": "battle-assets/炮弹/item__paodan_mofazhen",
+  "images": [
+    {
+      "file": "paodan_mofazhen_7681298573032580724.png",
+      "name": "paodan_mofazhen",
+      "width": 128,
+      "height": 102,
+      "role": "战斗贴图",
+      "path_id": 7681298573032580724,
+      "source": "CAB-83c1d43b9991cdc99174c0bb310b4fa6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mofazhen/paodan_mofazhen_7681298573032580724.png"
+}

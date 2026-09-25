@@ -1,0 +1,24 @@
+{
+  "id": "item__yulei_penqijijia",
+  "model": "yulei_penqijijia",
+  "name": "湮灭能量鱼雷",
+  "names": [
+    "湮灭能量鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_penqijijia",
+  "path": "battle-assets/鱼雷/item__yulei_penqijijia",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "yulei_penqijijia.skel",
+    "atlas": "yulei_penqijijia.atlas",
+    "pages": [
+      "yulei_penqijijia.png"
+    ]
+  }
+}

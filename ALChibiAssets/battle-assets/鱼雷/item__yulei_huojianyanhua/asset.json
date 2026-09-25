@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_huojianyanhua",
+  "model": "yulei_huojianyanhua",
+  "name": "烟花鱼雷",
+  "names": [
+    "烟花鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_huojianyanhua",
+  "path": "battle-assets/鱼雷/item__yulei_huojianyanhua",
+  "images": [
+    {
+      "file": "yulei_huojianyanhua_-8085495325623517540.png",
+      "name": "yulei_huojianyanhua",
+      "width": 128,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": -8085495325623517540,
+      "source": "CAB-fe9f5f9c4d6f00e85cbdcaf88d16948b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_huojianyanhua/yulei_huojianyanhua_-8085495325623517540.png"
+}

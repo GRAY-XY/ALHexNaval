@@ -1,0 +1,21 @@
+{
+  "id": "item__diancizhadan_alert",
+  "model": "diancizhadan_alert",
+  "name": "diancizhadan_alert",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/diancizhadan_alert",
+  "path": "battle-assets/炮弹/item__diancizhadan_alert",
+  "images": [],
+  "particle_systems": 11,
+  "animations": [],
+  "bullet_ids": [
+    750058,
+    750136,
+    885014,
+    29655005,
+    3159032
+  ],
+  "has_preview": false,
+  "prefab": true
+}

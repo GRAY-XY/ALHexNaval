@@ -1,0 +1,33 @@
+{
+  "id": "item__paodan_huweilingdang",
+  "model": "paodan_huweilingdang",
+  "name": "paodan_huweilingdang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_huweilingdang",
+  "path": "battle-assets/炮弹/item__paodan_huweilingdang",
+  "images": [
+    {
+      "file": "paodan_huweilingdang_4456044953262593575.png",
+      "name": "paodan_huweilingdang",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 4456044953262593575,
+      "source": "CAB-c6b2bab6438f6cc64d715f0f3e4de1c4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huweilingdang/paodan_huweilingdang_4456044953262593575.png",
+  "spine": {
+    "skel": "paodan_huweilingdang.skel",
+    "atlas": "paodan_huweilingdang.atlas",
+    "pages": [
+      "paodan_huweilingdang.png"
+    ]
+  }
+}

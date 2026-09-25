@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_sushe",
+  "model": "zidan_sushe",
+  "name": "速射魔法子弹",
+  "names": [
+    "速射魔法子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_sushe",
+  "path": "battle-assets/炮弹/item__zidan_sushe",
+  "images": [
+    {
+      "file": "zidan_sushe_104001559958635592.png",
+      "name": "zidan_sushe",
+      "width": 119,
+      "height": 113,
+      "role": "战斗贴图",
+      "path_id": 104001559958635592,
+      "source": "CAB-975c5b3683c751b680a042ac4b15121b"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_sushe/zidan_sushe_104001559958635592.png"
+}

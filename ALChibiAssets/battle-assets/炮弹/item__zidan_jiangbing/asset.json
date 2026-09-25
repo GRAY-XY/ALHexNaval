@@ -1,0 +1,30 @@
+{
+  "id": "item__zidan_jiangbing",
+  "model": "zidan_jiangbing",
+  "name": "姜饼子弹",
+  "names": [
+    "姜饼子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jiangbing",
+  "path": "battle-assets/炮弹/item__zidan_jiangbing",
+  "images": [
+    {
+      "file": "jiangbing01_-1018657564271056122.png",
+      "name": "jiangbing01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1018657564271056122,
+      "source": "CAB-4100c775f38a6b73b1149047fb3e01fc"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    710106
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jiangbing/jiangbing01_-1018657564271056122.png"
+}

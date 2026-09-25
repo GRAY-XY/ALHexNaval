@@ -1,0 +1,31 @@
+{
+  "id": "item__zidan_makebi",
+  "model": "zidan_makebi",
+  "name": "马克笔子弹",
+  "names": [
+    "马克笔子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_makebi",
+  "path": "battle-assets/炮弹/item__zidan_makebi",
+  "images": [
+    {
+      "file": "makebi01_1494784152250838193.png",
+      "name": "makebi01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 1494784152250838193,
+      "source": "CAB-9c018da032898343e869f601c8df8405"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3382006,
+    3382007
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_makebi/makebi01_1494784152250838193.png"
+}

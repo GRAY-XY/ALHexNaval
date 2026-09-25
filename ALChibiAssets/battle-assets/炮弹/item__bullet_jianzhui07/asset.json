@@ -1,0 +1,31 @@
+{
+  "id": "item__bullet_jianzhui07",
+  "model": "bullet_jianzhui07",
+  "name": "bullet_jianzhui07",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_jianzhui07",
+  "path": "battle-assets/炮弹/item__bullet_jianzhui07",
+  "images": [
+    {
+      "file": "bullet_jianzhui07_-4137696343799027826.png",
+      "name": "bullet_jianzhui07",
+      "width": 109,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": -4137696343799027826,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    801029,
+    801030,
+    801031,
+    801032
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_jianzhui07/bullet_jianzhui07_-4137696343799027826.png"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "chargo__feiji_feikongchuan",
+  "model": "feiji_feikongchuan",
+  "name": "【2025拉斐尔活动】我方支援弹幕 飞空艇 飞机",
+  "names": [
+    "【2025拉斐尔活动】我方支援弹幕 飞空艇 飞机",
+    "【2025拉斐尔活动】我方支援弹幕 飞空艇 飞机（装饰用陪飞的，无挂载武器）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_feikongchuan",
+  "path": "battle-assets/飞机/chargo__feiji_feikongchuan",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_feikongchuan_-3816811090098922563.png",
+      "name": "feiji_feikongchuan",
+      "width": 256,
+      "height": 186,
+      "role": "战斗贴图",
+      "path_id": -3816811090098922563,
+      "source": "CAB-81c2d02fae86af87a3090e14e9200ccd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_feikongchuan/aircraft_shadow_2192772484218123160.png"
+}

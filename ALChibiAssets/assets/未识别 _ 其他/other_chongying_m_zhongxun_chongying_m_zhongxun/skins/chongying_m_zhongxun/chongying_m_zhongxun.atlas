@@ -1,0 +1,90 @@
+
+chongying_m_zhongxun.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 198, 212
+  size: 296, 244
+  orig: 296, 244
+  offset: 0, 0
+  index: -1
+gun
+  rotate: false
+  xy: 336, 18
+  size: 238, 192
+  orig: 238, 192
+  offset: 0, 0
+  index: -1
+gun_yan
+  rotate: true
+  xy: 154, 13
+  size: 105, 67
+  orig: 105, 67
+  offset: 0, 0
+  index: -1
+gun_yan2
+  rotate: true
+  xy: 198, 125
+  size: 85, 32
+  orig: 85, 32
+  offset: 0, 0
+  index: -1
+gun_yan3
+  rotate: false
+  xy: 267, 132
+  size: 67, 78
+  orig: 67, 78
+  offset: 0, 0
+  index: -1
+huo
+  rotate: true
+  xy: 2, 120
+  size: 388, 194
+  orig: 388, 194
+  offset: 0, 0
+  index: -1
+shou_l
+  rotate: false
+  xy: 2, 2
+  size: 150, 116
+  orig: 150, 116
+  offset: 0, 0
+  index: -1
+shouzhang_l
+  rotate: true
+  xy: 268, 59
+  size: 71, 63
+  orig: 71, 63
+  offset: 0, 0
+  index: -1
+yan_1
+  rotate: true
+  xy: 232, 131
+  size: 79, 33
+  orig: 79, 33
+  offset: 0, 0
+  index: -1
+yan_2
+  rotate: true
+  xy: 444, 410
+  size: 98, 43
+  orig: 98, 43
+  offset: 0, 0
+  index: -1
+yan_3
+  rotate: true
+  xy: 268, 11
+  size: 46, 34
+  orig: 46, 34
+  offset: 0, 0
+  index: -1
+yan_4
+  rotate: true
+  xy: 223, 2
+  size: 121, 43
+  orig: 121, 43
+  offset: 0, 0
+  index: -1

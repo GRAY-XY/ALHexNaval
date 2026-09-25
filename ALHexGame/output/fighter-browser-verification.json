@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-18",
+  "version": "0.5.1",
+  "saveVersion": 6,
+  "passed": true,
+  "method": "CUA actual browser UI flows; manually observed, not an unattended regression script",
+  "url": "http://127.0.0.1:18768/",
+  "checks": [
+    {"name": "Enterprise displays fixed US carrier aircraft and all three role names", "passed": true},
+    {"name": "Unicorn displays fixed UK carrier aircraft", "passed": true},
+    {"name": "No aircraft country select exists", "passed": true, "countrySelectCount": 0},
+    {"name": "Version 5 original play state loads into the updated app", "passed": true},
+    {"name": "Selected fighter shows both hex rings and the automatic interception explanation", "passed": true},
+    {"name": "Fighter starts three hexes from enemy bomber and does not automatically shoot", "passed": true, "ammo": 3},
+    {"name": "Only a move order to adjacent cell 28,20 is issued; no attack target is selected", "passed": true},
+    {"name": "Fighter automatically shoots after entering two hexes from enemy bomber", "passed": true, "ammoBefore": 3, "ammoAfter": 2, "oilBefore": 50, "oilAfter": 50},
+    {"name": "Fighter completes its original move and returns to patrol", "passed": true, "cell": {"col": 28, "row": 20}},
+    {"name": "Handover to enemy team confirms bomber suffered three HP damage", "passed": true, "hpBefore": 8, "hpAfter": 5, "planesAfter": 3},
+    {"name": "Global flight pause prevents additional automatic shots during inspection", "passed": true},
+    {"name": "Final build reloads with no captured browser console errors", "passed": true, "errors": []},
+    {"name": "Normal four-player 256 x 256 fresh play state is ready with flight pause off", "passed": true, "round": 1, "oil": 50, "squadrons": 0}
+  ],
+  "ruleChecks": {
+    "passed": true,
+    "scenarios": 43,
+    "weightedPathfindingMaps": 80,
+    "invalidSaveCases": 47,
+    "coverageIncludes": ["All 19 cells in the two hex rings", "Third-ring exclusion", "Friend filtering", "Nearest-target selection", "Move-order preservation", "Inactive fighter defense", "Return ceasefire", "Same-country rebasing", "Version 5 country migration"]
+  },
+  "typecheckAndBuild": "passed",
+  "demoSave": "fighter-patrol-demo.json",
+  "screenshot": "screenshots/fighter-patrol.png",
+  "limits": ["Large aircraft-count performance and full-match balance were not tested."]
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-19",
+  "version": "0.9.3",
+  "url": "http://127.0.0.1:18768/",
+  "reference": "output/art-concepts/watercolor-maritime-fullscreen-v1.png",
+  "directionOrder": [
+    "east",
+    "southeast",
+    "southwest",
+    "west",
+    "northwest",
+    "northeast"
+  ],
+  "assets": {
+    "sourceSheets": 3,
+    "runtimeVariants": 18,
+    "manifest": "data/directional-art.json",
+    "prompts": "data/directional-art-prompts.md",
+    "contactSheet": "output/screenshots/directional-art-contact.png"
+  },
+  "map": {
+    "size": 256,
+    "players": 4,
+    "strategicZoom": "55%",
+    "tacticalZoom": "104%",
+    "activeTeam": "湛蓝舰队",
+    "oil": "50 / 50",
+    "survivingShips": "12 / 12"
+  },
+  "visualChecks": [
+    "Coast edges use six separately painted shoreline overlays with sand, surf, turquoise shallows and rocks",
+    "Harbors select one of six fixed-camera sprites from the adjacent land direction and are never bitmap-rotated",
+    "Mountain ranges select one of six fixed-camera ridge variants and are never bitmap-rotated",
+    "Harbor buildings stay upright on land while the pier extends into the selected sea direction",
+    "Hex grid remains readable over the reference-style watercolor island, coast and ocean"
+  ],
+  "directionCoverage512": {
+    "harbors": [41, 32, 43, 43, 60, 40],
+    "coasts": [3653, 4256, 4322, 3653, 4256, 4322],
+    "mountains": [8017, 8063, 8101, 8075, 8115, 8079]
+  },
+  "screenshots": [
+    "output/screenshots/six-direction-map-final.png",
+    "output/screenshots/six-direction-port-final.png",
+    "output/screenshots/directional-art-contact.png"
+  ],
+  "consoleErrors": [],
+  "staticChecks": {
+    "build": "passed",
+    "directionalAssets": 18,
+    "allSixDirectionsCovered": true,
+    "coordinateChecks": 344064,
+    "portChecks": 26,
+    "invalidPortSaveCases": 15,
+    "ruleChecks": 78,
+    "weightedPathCases": 80,
+    "invalidRuleSaveCases": 67,
+    "fogChecks": 16,
+    "invalidFogSaveCases": 7
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_nongcha",
+  "model": "yulei_nongcha",
+  "name": "农叉鱼雷",
+  "names": [
+    "农叉鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nongcha",
+  "path": "battle-assets/鱼雷/item__yulei_nongcha",
+  "images": [
+    {
+      "file": "yulei_nongcha_7521296566088081397.png",
+      "name": "yulei_nongcha",
+      "width": 128,
+      "height": 35,
+      "role": "战斗贴图",
+      "path_id": 7521296566088081397,
+      "source": "CAB-185a7a58ea0fbb90be385287beae7eca"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nongcha/yulei_nongcha_7521296566088081397.png"
+}

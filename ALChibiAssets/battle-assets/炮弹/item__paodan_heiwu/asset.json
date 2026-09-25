@@ -1,0 +1,26 @@
+{
+  "id": "item__paodan_heiwu",
+  "model": "paodan_heiwu",
+  "name": "paodan_heiwu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_heiwu",
+  "path": "battle-assets/炮弹/item__paodan_heiwu",
+  "images": [
+    {
+      "file": "paodan_heiwu_6758717035343600700.png",
+      "name": "paodan_heiwu",
+      "width": 128,
+      "height": 136,
+      "role": "战斗贴图",
+      "path_id": 6758717035343600700,
+      "source": "CAB-010cfe1e36a1c53ff6130cf4300dbcc6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_heiwu/paodan_heiwu_6758717035343600700.png"
+}

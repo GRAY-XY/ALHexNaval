@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_huixing_low",
+  "model": "paodan_huixing_low",
+  "name": "paodan_huixing_low",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_huixing_low",
+  "path": "battle-assets/炮弹/item__paodan_huixing_low",
+  "images": [
+    {
+      "file": "bullet1_-160848755369948725.png",
+      "name": "bullet1",
+      "width": 89,
+      "height": 39,
+      "role": "战斗贴图",
+      "path_id": -160848755369948725,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 9,
+  "animations": [],
+  "bullet_ids": [
+    710211
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_huixing_low/bullet1_-160848755369948725.png"
+}

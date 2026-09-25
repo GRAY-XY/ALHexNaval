@@ -1,0 +1,41 @@
+{
+  "id": "aircrafticon__v156f",
+  "model": "v156f",
+  "name": "贝亚恩V-156F-LV1",
+  "names": [
+    "贝亚恩V-156F-LV1",
+    "贝亚恩meta轰炸机 Lv1",
+    "【2020法系活动A2】精英贝亚恩级量产型 轰炸机",
+    "【2020法系活动C2】精英贝亚恩级量产型 轰炸机",
+    "【2022法系共斗H】BOSS 霞飞一形态 轰炸机",
+    "【2022法系共斗H】BOSS 霞飞二形态 3way飞机",
+    "【2022法系共斗H】BOSS 霞飞二形态 轰炸机",
+    "【2022法系共斗EX】BOSS 霞飞一形态 轰炸机",
+    "【2022法系共斗EX】BOSS 霞飞二形态 5way飞机",
+    "【2022法系共斗EX】BOSS 霞飞二形态 轰炸机",
+    "法系舰载-轰炸机I",
+    "法系舰载-轰炸机II",
+    "法系舰载-轰炸机III",
+    "法系舰载-轰炸机IV",
+    "法系舰载-轰炸机V"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/v156f",
+  "path": "battle-assets/飞机图标/aircrafticon__v156f",
+  "images": [
+    {
+      "file": "v156f_4471371238273809281.png",
+      "name": "v156f",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 4471371238273809281,
+      "source": "CAB-1de3bcb3877805c98d30a4f9c2ee51bd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

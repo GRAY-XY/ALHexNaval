@@ -1,0 +1,17 @@
+{
+  "id": "item__shengdiyage_xiao",
+  "model": "shengdiyage_xiao",
+  "name": "shengdiyage_xiao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/shengdiyage_xiao",
+  "path": "battle-assets/炮弹/item__shengdiyage_xiao",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    160916
+  ],
+  "has_preview": false,
+  "prefab": true
+}

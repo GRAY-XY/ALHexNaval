@@ -1,0 +1,174 @@
+
+zidan_xiangnang.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+liusu_1
+  rotate: true
+  xy: 459, 42
+  size: 82, 18
+  orig: 82, 18
+  offset: 0, 0
+  index: -1
+liusu_2
+  rotate: true
+  xy: 479, 42
+  size: 82, 18
+  orig: 82, 18
+  offset: 0, 0
+  index: -1
+lizi_2
+  rotate: false
+  xy: 69, 3
+  size: 32, 7
+  orig: 32, 7
+  offset: 0, 0
+  index: -1
+lizi_2_2
+  rotate: false
+  xy: 459, 9
+  size: 32, 7
+  orig: 32, 7
+  offset: 0, 0
+  index: -1
+lizi_2_3
+  rotate: true
+  xy: 422, 92
+  size: 32, 7
+  orig: 32, 7
+  offset: 0, 0
+  index: -1
+lizi_3
+  rotate: false
+  xy: 2, 2
+  size: 65, 8
+  orig: 65, 8
+  offset: 0, 0
+  index: -1
+lizi_3_2
+  rotate: true
+  xy: 499, 59
+  size: 65, 8
+  orig: 65, 8
+  offset: 0, 0
+  index: -1
+lizi_3_3
+  rotate: false
+  xy: 355, 116
+  size: 65, 8
+  orig: 65, 8
+  offset: 0, 0
+  index: -1
+lizi_4
+  rotate: false
+  xy: 355, 84
+  size: 23, 6
+  orig: 23, 6
+  offset: 0, 0
+  index: -1
+lizi_4_2
+  rotate: false
+  xy: 380, 84
+  size: 23, 6
+  orig: 23, 6
+  offset: 0, 0
+  index: -1
+lizi_4_3
+  rotate: true
+  xy: 405, 67
+  size: 23, 6
+  orig: 23, 6
+  offset: 0, 0
+  index: -1
+lizi_5
+  rotate: true
+  xy: 431, 100
+  size: 24, 7
+  orig: 24, 7
+  offset: 0, 0
+  index: -1
+lizi_5_2
+  rotate: true
+  xy: 431, 74
+  size: 24, 7
+  orig: 24, 7
+  offset: 0, 0
+  index: -1
+lizi_5_3
+  rotate: true
+  xy: 440, 100
+  size: 24, 7
+  orig: 24, 7
+  offset: 0, 0
+  index: -1
+lizi_6
+  rotate: true
+  xy: 440, 74
+  size: 24, 6
+  orig: 24, 6
+  offset: 0, 0
+  index: -1
+lizi_6_2
+  rotate: true
+  xy: 448, 74
+  size: 24, 6
+  orig: 24, 6
+  offset: 0, 0
+  index: -1
+lizi_6_3
+  rotate: true
+  xy: 449, 100
+  size: 24, 6
+  orig: 24, 6
+  offset: 0, 0
+  index: -1
+lizi_7
+  rotate: false
+  xy: 459, 34
+  size: 45, 6
+  orig: 45, 6
+  offset: 0, 0
+  index: -1
+lizi_7_2
+  rotate: false
+  xy: 459, 26
+  size: 45, 6
+  orig: 45, 6
+  offset: 0, 0
+  index: -1
+lizi_7_3
+  rotate: false
+  xy: 459, 18
+  size: 45, 6
+  orig: 45, 6
+  offset: 0, 0
+  index: -1
+piao_1
+  rotate: false
+  xy: 124, 11
+  size: 165, 41
+  orig: 165, 41
+  offset: 0, 0
+  index: -1
+piao_2
+  rotate: false
+  xy: 291, 12
+  size: 166, 40
+  orig: 166, 40
+  offset: 0, 0
+  index: -1
+tuowei
+  rotate: false
+  xy: 124, 54
+  size: 229, 70
+  orig: 229, 70
+  offset: 0, 0
+  index: -1
+xiangnang
+  rotate: true
+  xy: 2, 12
+  size: 112, 120
+  orig: 112, 120
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,174 @@
+
+feiji_tianchenghongzha.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 676, 554
+  size: 238, 113
+  orig: 238, 113
+  offset: 0, 0
+  index: -1
+cb_n1
+  rotate: true
+  xy: 440, 546
+  size: 88, 234
+  orig: 88, 234
+  offset: 0, 0
+  index: -1
+cb_n2
+  rotate: false
+  xy: 1049, 789
+  size: 88, 233
+  orig: 88, 233
+  offset: 0, 0
+  index: -1
+cb_w1
+  rotate: false
+  xy: 923, 325
+  size: 107, 219
+  orig: 107, 219
+  offset: 0, 0
+  index: -1
+cb_w2
+  rotate: false
+  xy: 1032, 326
+  size: 109, 218
+  orig: 109, 218
+  offset: 0, 0
+  index: -1
+hongzha
+  rotate: true
+  xy: 793, 692
+  size: 330, 254
+  orig: 330, 254
+  offset: 0, 0
+  index: -1
+hongzha_1
+  rotate: false
+  xy: 985, 2
+  size: 172, 145
+  orig: 172, 145
+  offset: 0, 0
+  index: -1
+hongzha_2
+  rotate: false
+  xy: 916, 546
+  size: 170, 144
+  orig: 170, 144
+  offset: 0, 0
+  index: -1
+hongzha_3
+  rotate: true
+  xy: 923, 149
+  size: 174, 158
+  orig: 174, 158
+  offset: 0, 0
+  index: -1
+hongzha_tuowei
+  rotate: true
+  xy: 594, 669
+  size: 353, 197
+  orig: 353, 197
+  offset: 0, 0
+  index: -1
+huotuan1
+  rotate: false
+  xy: 272, 128
+  size: 365, 412
+  orig: 365, 412
+  offset: 0, 0
+  index: -1
+huotuan2
+  rotate: false
+  xy: 2, 542
+  size: 436, 480
+  orig: 436, 480
+  offset: 0, 0
+  index: -1
+huotuan_s1
+  rotate: true
+  xy: 2, 63
+  size: 477, 268
+  orig: 477, 268
+  offset: 0, 0
+  index: -1
+huotuan_s2
+  rotate: true
+  xy: 639, 207
+  size: 337, 282
+  orig: 337, 282
+  offset: 0, 0
+  index: -1
+n_h1
+  rotate: false
+  xy: 170, 17
+  size: 66, 44
+  orig: 66, 44
+  offset: 0, 0
+  index: -1
+n_h2
+  rotate: false
+  xy: 459, 4
+  size: 162, 122
+  orig: 162, 122
+  offset: 0, 0
+  index: -1
+n_h3
+  rotate: true
+  xy: 1139, 821
+  size: 201, 133
+  orig: 201, 133
+  offset: 0, 0
+  index: -1
+n_h4
+  rotate: false
+  xy: 272, 85
+  size: 157, 41
+  orig: 157, 41
+  offset: 0, 0
+  index: -1
+n_h5
+  rotate: true
+  xy: 1088, 578
+  size: 209, 99
+  orig: 209, 99
+  offset: 0, 0
+  index: -1
+wb_1
+  rotate: false
+  xy: 238, 19
+  size: 219, 42
+  orig: 219, 42
+  offset: 0, 0
+  index: -1
+wb_2
+  rotate: false
+  xy: 2, 9
+  size: 166, 52
+  orig: 166, 52
+  offset: 0, 0
+  index: -1
+wb_3
+  rotate: false
+  xy: 639, 137
+  size: 203, 68
+  orig: 203, 68
+  offset: 0, 0
+  index: -1
+yulei
+  rotate: true
+  xy: 440, 636
+  size: 386, 152
+  orig: 386, 152
+  offset: 0, 0
+  index: -1
+yulei_tuowei
+  rotate: false
+  xy: 623, 6
+  size: 360, 120
+  orig: 360, 120
+  offset: 0, 0
+  index: -1

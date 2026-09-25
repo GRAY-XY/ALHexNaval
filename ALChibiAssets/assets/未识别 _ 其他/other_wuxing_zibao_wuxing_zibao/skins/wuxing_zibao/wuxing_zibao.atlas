@@ -1,0 +1,62 @@
+
+wuxing_zibao.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+heiwu
+  rotate: false
+  xy: 2, 342
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu2
+  rotate: true
+  xy: 592, 9
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+heiwu3
+  rotate: false
+  xy: 2, 2
+  size: 588, 338
+  orig: 588, 338
+  offset: 0, 0
+  index: -1
+ji
+  rotate: false
+  xy: 744, 599
+  size: 221, 150
+  orig: 221, 150
+  offset: 0, 0
+  index: -1
+piaowu
+  rotate: false
+  xy: 2, 696
+  size: 62, 53
+  orig: 62, 53
+  offset: 0, 0
+  index: -1
+zd01
+  rotate: false
+  xy: 66, 682
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zd02
+  rotate: false
+  xy: 292, 682
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zd03
+  rotate: false
+  xy: 518, 682
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1

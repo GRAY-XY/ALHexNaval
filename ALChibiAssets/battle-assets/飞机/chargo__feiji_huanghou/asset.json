@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_huanghou",
+  "model": "feiji_huanghou",
+  "name": "尼罗女皇啾（鱼雷）",
+  "names": [
+    "尼罗女皇啾（鱼雷）",
+    "尼罗女皇啾（战斗）",
+    "尼罗女皇啾（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_huanghou",
+  "path": "battle-assets/飞机/chargo__feiji_huanghou",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feiji_huanghou_5607199076692704547.png",
+      "name": "feiji_huanghou",
+      "width": 256,
+      "height": 247,
+      "role": "战斗贴图",
+      "path_id": 5607199076692704547,
+      "source": "CAB-73d11a4f09f98c0accbe8b9ebaa5d8dc"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_huanghou/aircraft_shadow_2192772484218123160.png"
+}

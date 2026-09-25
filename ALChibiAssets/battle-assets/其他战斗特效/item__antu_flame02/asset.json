@@ -1,0 +1,15 @@
+{
+  "id": "item__antu_flame02",
+  "model": "antu_flame02",
+  "name": "antu_flame02",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/antu_flame02",
+  "path": "battle-assets/其他战斗特效/item__antu_flame02",
+  "images": [],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

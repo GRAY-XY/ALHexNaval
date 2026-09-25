@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__su6",
+  "model": "su6",
+  "name": "试作舰载型Su-6",
+  "names": [
+    "试作舰载型Su-6",
+    "纳希莫夫海军上将技能Lv1"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/su6",
+  "path": "battle-assets/飞机图标/aircrafticon__su6",
+  "images": [
+    {
+      "file": "su6_16730099461284886.png",
+      "name": "su6",
+      "width": 42,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": 16730099461284886,
+      "source": "CAB-6e6a873a1acfbaaf97b61a6f0b9912fe"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

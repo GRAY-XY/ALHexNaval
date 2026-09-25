@@ -1,0 +1,37 @@
+{
+  "id": "chargo__zidiangaisi",
+  "model": "zidiangaisi",
+  "name": "试作型紫电改四",
+  "names": [
+    "试作型紫电改四"
+  ],
+  "category": "飞机",
+  "source": "chargo/zidiangaisi",
+  "path": "battle-assets/飞机/chargo__zidiangaisi",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "zidiangaisi_-2155361918074127583.png",
+      "name": "zidiangaisi",
+      "width": 248,
+      "height": 233,
+      "role": "战斗贴图",
+      "path_id": -2155361918074127583,
+      "source": "CAB-f9c5b4901b1fde85b086de848223acb6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__zidiangaisi/aircraft_shadow_2192772484218123160.png"
+}

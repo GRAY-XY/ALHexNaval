@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__zidan_jiguangqiliu__zidan_jiguangqiliu_material",
+  "model": "zidan_jiguangqiliu_material",
+  "name": "zidan_jiguangqiliu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/zidan_jiguangqiliu/zidan_jiguangqiliu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__zidan_jiguangqiliu__zidan_jiguangqiliu_material",
+  "images": [
+    {
+      "file": "zidan_jiguangqiliu_4330911697802719508.png",
+      "name": "zidan_jiguangqiliu",
+      "width": 1024,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4330911697802719508,
+      "source": "CAB-d7ec0f477f9a407bf96c10cbee1e9fc3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

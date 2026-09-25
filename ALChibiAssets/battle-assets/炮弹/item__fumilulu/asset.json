@@ -1,0 +1,30 @@
+{
+  "id": "item__fumilulu",
+  "model": "fumilulu",
+  "name": "fumilulu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/fumilulu",
+  "path": "battle-assets/炮弹/item__fumilulu",
+  "images": [
+    {
+      "file": "AL_Smoke07_2568558077492797202.png",
+      "name": "AL_Smoke07",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2568558077492797202,
+      "source": "CAB-24b581e4d16bc3d5320673e1b3f737ce"
+    }
+  ],
+  "particle_systems": 5,
+  "animations": [
+    "fumilulu"
+  ],
+  "bullet_ids": [
+    19958
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__fumilulu/AL_Smoke07_2568558077492797202.png"
+}

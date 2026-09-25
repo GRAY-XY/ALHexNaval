@@ -1,0 +1,28 @@
+{
+  "id": "aircrafticon__f4u",
+  "model": "f4u",
+  "name": "F4U海盗",
+  "names": [
+    "F4U海盗",
+    "F4U（VF-17“海盗”中队）"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/f4u",
+  "path": "battle-assets/飞机图标/aircrafticon__f4u",
+  "images": [
+    {
+      "file": "F4U_-7224290990490608115.png",
+      "name": "F4U",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -7224290990490608115,
+      "source": "CAB-cffeee89d58711add3389447ffe63106"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

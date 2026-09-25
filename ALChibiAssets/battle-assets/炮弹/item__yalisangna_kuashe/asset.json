@@ -1,0 +1,28 @@
+{
+  "id": "item__yalisangna_kuashe",
+  "model": "yalisangna_kuashe",
+  "name": "yalisangna_kuashe",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yalisangna_kuashe",
+  "path": "battle-assets/炮弹/item__yalisangna_kuashe",
+  "images": [
+    {
+      "file": "kuashe_-6291084155373096474.png",
+      "name": "kuashe",
+      "width": 246,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -6291084155373096474,
+      "source": "CAB-16cf73c3d91b60c8e48cee20b7b4f1b2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19662
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__yalisangna_kuashe/kuashe_-6291084155373096474.png"
+}

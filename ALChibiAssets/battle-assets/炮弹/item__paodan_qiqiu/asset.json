@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_qiqiu",
+  "model": "paodan_qiqiu",
+  "name": "气球炮弹",
+  "names": [
+    "气球炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_qiqiu",
+  "path": "battle-assets/炮弹/item__paodan_qiqiu",
+  "images": [
+    {
+      "file": "qiqiu01_1937409767743940285.png",
+      "name": "qiqiu01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 1937409767743940285,
+      "source": "CAB-be76d5cf95348c0fbee1d8316970d058"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_qiqiu/qiqiu01_1937409767743940285.png"
+}

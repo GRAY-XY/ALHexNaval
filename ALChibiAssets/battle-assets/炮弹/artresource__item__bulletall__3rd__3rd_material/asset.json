@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__3rd__3rd_material",
+  "model": "3rd_material",
+  "name": "3rd_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/3rd/3rd_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__3rd__3rd_material",
+  "images": [
+    {
+      "file": "3rd_-4545224908558619759.png",
+      "name": "3rd",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -4545224908558619759,
+      "source": "CAB-9d9fe79de52e7473ee31590c121253c3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

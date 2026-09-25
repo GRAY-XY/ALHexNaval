@@ -1,0 +1,35 @@
+{
+  "id": "item__paodan_shoutibao",
+  "model": "paodan_shoutibao",
+  "name": "钞能力手包炮弹",
+  "names": [
+    "钞能力手包炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shoutibao",
+  "path": "battle-assets/炮弹/item__paodan_shoutibao",
+  "images": [
+    {
+      "file": "paodan_shoutibao_7735555050302687324.png",
+      "name": "paodan_shoutibao",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7735555050302687324,
+      "source": "CAB-bee846c09639f989af373f2453d0d9de"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shoutibao/paodan_shoutibao_7735555050302687324.png",
+  "spine": {
+    "skel": "paodan_shoutibao.skel",
+    "atlas": "paodan_shoutibao.atlas",
+    "pages": [
+      "paodan_shoutibao.png"
+    ]
+  }
+}

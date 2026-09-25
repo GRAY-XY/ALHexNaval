@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_mofamao",
+  "model": "paodan_mofamao",
+  "name": "魔法帽炮弹",
+  "names": [
+    "魔法帽炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_mofamao",
+  "path": "battle-assets/炮弹/item__paodan_mofamao",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_mofamao/aircraft_shadow_2192772484218123160.png"
+}

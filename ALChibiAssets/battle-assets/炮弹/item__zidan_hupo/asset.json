@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_hupo",
+  "model": "zidan_hupo",
+  "name": "琥珀子弹",
+  "names": [
+    "琥珀子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hupo",
+  "path": "battle-assets/炮弹/item__zidan_hupo",
+  "images": [
+    {
+      "file": "zidan_hupo_-7829810942437489320.png",
+      "name": "zidan_hupo",
+      "width": 128,
+      "height": 94,
+      "role": "战斗贴图",
+      "path_id": -7829810942437489320,
+      "source": "CAB-5435ac3ccdab9ca6bab96784699c5537"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hupo/zidan_hupo_-7829810942437489320.png"
+}

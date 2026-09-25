@@ -1,0 +1,19 @@
+{
+  "id": "item__yuekecheng_huaban",
+  "model": "yuekecheng_huaban",
+  "name": "yuekecheng_huaban",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/yuekecheng_huaban",
+  "path": "battle-assets/炮弹/item__yuekecheng_huaban",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    19669,
+    170823,
+    29663024
+  ],
+  "has_preview": false,
+  "prefab": true
+}

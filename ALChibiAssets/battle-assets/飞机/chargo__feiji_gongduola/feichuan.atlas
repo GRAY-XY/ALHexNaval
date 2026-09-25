@@ -1,0 +1,41 @@
+
+feichuan.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 8
+  size: 236, 118
+  orig: 236, 118
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 240, 2
+  size: 25, 16
+  orig: 25, 16
+  offset: 0, 0
+  index: -1
+h1
+  rotate: true
+  xy: 258, 8
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+j1
+  rotate: true
+  xy: 240, 29
+  size: 97, 84
+  orig: 97, 84
+  offset: 0, 0
+  index: -1
+j2
+  rotate: true
+  xy: 326, 48
+  size: 78, 46
+  orig: 78, 46
+  offset: 0, 0
+  index: -1

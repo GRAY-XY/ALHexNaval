@@ -1,0 +1,35 @@
+{
+  "id": "item__zidan_jiancifeiye",
+  "model": "zidan_jiancifeiye",
+  "name": "翠色流萤子弹",
+  "names": [
+    "翠色流萤子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_jiancifeiye",
+  "path": "battle-assets/炮弹/item__zidan_jiancifeiye",
+  "images": [
+    {
+      "file": "zidan_jiancifeiye_5928653287351247880.png",
+      "name": "zidan_jiancifeiye",
+      "width": 512,
+      "height": 64,
+      "role": "原始纹理",
+      "path_id": 5928653287351247880,
+      "source": "CAB-98d0926a625a49273988f9f990d97248"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jiancifeiye/zidan_jiancifeiye_5928653287351247880.png",
+  "spine": {
+    "skel": "zidan_jiancifeiye.skel",
+    "atlas": "zidan_jiancifeiye.atlas",
+    "pages": [
+      "zidan_jiancifeiye.png"
+    ]
+  }
+}

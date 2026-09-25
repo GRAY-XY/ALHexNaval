@@ -1,0 +1,41 @@
+
+youeryuan_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 206
+  size: 600, 358
+  orig: 600, 358
+  offset: 0, 0
+  index: -1
+body_t
+  rotate: true
+  xy: 2, 2
+  size: 202, 204
+  orig: 202, 204
+  offset: 0, 0
+  index: -1
+zx01
+  rotate: true
+  xy: 604, 3
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1
+zx02
+  rotate: true
+  xy: 713, 3
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1
+zx03
+  rotate: true
+  xy: 822, 3
+  size: 561, 107
+  orig: 561, 107
+  offset: 0, 0
+  index: -1

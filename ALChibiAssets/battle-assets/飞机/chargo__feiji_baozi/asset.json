@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_baozi",
+  "model": "feiji_baozi",
+  "name": "飞机:大包子(鱼雷)",
+  "names": [
+    "飞机:大包子(鱼雷)",
+    "飞机:大包子(战斗)",
+    "飞机:大包子(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_baozi",
+  "path": "battle-assets/飞机/chargo__feiji_baozi",
+  "images": [
+    {
+      "file": "feiji_baozi_-8575870752926056240.png",
+      "name": "feiji_baozi",
+      "width": 256,
+      "height": 197,
+      "role": "战斗贴图",
+      "path_id": -8575870752926056240,
+      "source": "CAB-2e2fe426c0a9522817f2169f3e504f29"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_baozi/feiji_baozi_-8575870752926056240.png"
+}

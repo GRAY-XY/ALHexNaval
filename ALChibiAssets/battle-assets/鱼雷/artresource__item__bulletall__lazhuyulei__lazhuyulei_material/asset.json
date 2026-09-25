@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__lazhuyulei__lazhuyulei_material",
+  "model": "lazhuyulei_material",
+  "name": "lazhuyulei_material",
+  "names": [],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/lazhuyulei/lazhuyulei_material",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__lazhuyulei__lazhuyulei_material",
+  "images": [
+    {
+      "file": "lazhuyulei_6047551534859180552.png",
+      "name": "lazhuyulei",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6047551534859180552,
+      "source": "CAB-ece98a8b5b2b1e828f3879529e73fe26"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_hudiejie",
+  "model": "zidan_hudiejie",
+  "name": "蝴蝶结子弹",
+  "names": [
+    "蝴蝶结子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hudiejie",
+  "path": "battle-assets/炮弹/item__zidan_hudiejie",
+  "images": [
+    {
+      "file": "zidan_hudiejie_172176184806583594.png",
+      "name": "zidan_hudiejie",
+      "width": 98,
+      "height": 94,
+      "role": "战斗贴图",
+      "path_id": 172176184806583594,
+      "source": "CAB-a26d23b99b1081164109780af31e01a5"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hudiejie/zidan_hudiejie_172176184806583594.png"
+}

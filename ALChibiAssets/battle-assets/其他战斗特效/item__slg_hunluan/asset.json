@@ -1,0 +1,15 @@
+{
+  "id": "item__slg_hunluan",
+  "model": "slg_hunluan",
+  "name": "slg_hunluan",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/slg_hunluan",
+  "path": "battle-assets/其他战斗特效/item__slg_hunluan",
+  "images": [],
+  "particle_systems": 13,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

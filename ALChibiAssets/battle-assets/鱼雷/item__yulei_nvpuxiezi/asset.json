@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_nvpuxiezi",
+  "model": "yulei_nvpuxiezi",
+  "name": "女仆鞋鱼雷",
+  "names": [
+    "女仆鞋鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nvpuxiezi",
+  "path": "battle-assets/鱼雷/item__yulei_nvpuxiezi",
+  "images": [
+    {
+      "file": "yulei_nvpuxiezi_7393787991234681278.png",
+      "name": "yulei_nvpuxiezi",
+      "width": 128,
+      "height": 70,
+      "role": "战斗贴图",
+      "path_id": 7393787991234681278,
+      "source": "CAB-28e41a31a25f73aaa74897886e12baba"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nvpuxiezi/yulei_nvpuxiezi_7393787991234681278.png"
+}

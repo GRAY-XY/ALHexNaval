@@ -1,0 +1,146 @@
+
+feiji_madengqipan.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 212
+  size: 151, 125
+  orig: 151, 125
+  offset: 0, 0
+  index: -1
+liusu_1
+  rotate: false
+  xy: 233, 91
+  size: 9, 25
+  orig: 9, 25
+  offset: 0, 0
+  index: -1
+liusu_2
+  rotate: false
+  xy: 216, 457
+  size: 9, 26
+  orig: 9, 26
+  offset: 0, 0
+  index: -1
+liusu_3
+  rotate: true
+  xy: 50, 9
+  size: 9, 26
+  orig: 9, 26
+  offset: 0, 0
+  index: -1
+liusu_4
+  rotate: false
+  xy: 233, 118
+  size: 11, 26
+  orig: 11, 26
+  offset: 0, 0
+  index: -1
+piaodai_1
+  rotate: true
+  xy: 155, 163
+  size: 174, 42
+  orig: 174, 42
+  offset: 0, 0
+  index: -1
+piaodai_2
+  rotate: false
+  xy: 2, 20
+  size: 169, 60
+  orig: 169, 60
+  offset: 0, 0
+  index: -1
+qianbi_1
+  rotate: true
+  xy: 140, 192
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: -1
+qianbi_1_2
+  rotate: true
+  xy: 140, 172
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: -1
+qianbi_1_3
+  rotate: false
+  xy: 234, 494
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: -1
+qizi_2
+  rotate: true
+  xy: 2, 2
+  size: 16, 22
+  orig: 16, 22
+  offset: 0, 0
+  index: -1
+qizi_2_2
+  rotate: false
+  xy: 216, 485
+  size: 16, 22
+  orig: 16, 22
+  offset: 0, 0
+  index: -1
+qizi_2_3
+  rotate: true
+  xy: 26, 2
+  size: 16, 22
+  orig: 16, 22
+  offset: 0, 0
+  index: -1
+shanguang_1
+  rotate: false
+  xy: 2, 424
+  size: 212, 83
+  orig: 212, 83
+  offset: 0, 0
+  index: -1
+shanguang_2
+  rotate: false
+  xy: 2, 339
+  size: 212, 83
+  orig: 212, 83
+  offset: 0, 0
+  index: -1
+tideng_1
+  rotate: false
+  xy: 2, 82
+  size: 136, 128
+  orig: 136, 128
+  offset: 0, 0
+  index: -1
+tideng_2
+  rotate: false
+  xy: 199, 225
+  size: 48, 112
+  orig: 48, 112
+  offset: 0, 0
+  index: -1
+yun_1
+  rotate: true
+  xy: 140, 84
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1
+yun_2
+  rotate: true
+  xy: 187, 67
+  size: 77, 44
+  orig: 77, 44
+  offset: 0, 0
+  index: -1
+yun_3
+  rotate: true
+  xy: 199, 146
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1

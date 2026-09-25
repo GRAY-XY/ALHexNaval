@@ -1,0 +1,61 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__mask_02",
+  "model": "mask_02",
+  "name": "mask_02",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/mask_02",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__mask_02",
+  "images": [
+    {
+      "file": "tex_IslandIslandShopUI_Mask_05_-7230465177333574466.png",
+      "name": "tex_IslandIslandShopUI_Mask_05",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -7230465177333574466,
+      "source": "CAB-3dd50fa141a531f8004e8d7f4a44b50e"
+    },
+    {
+      "file": "AL_hy03_2777938121357693528.png",
+      "name": "AL_hy03",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 2777938121357693528,
+      "source": "CAB-3dd50fa141a531f8004e8d7f4a44b50e"
+    },
+    {
+      "file": "Mask_02_4226960186005340526.png",
+      "name": "Mask_02",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4226960186005340526,
+      "source": "CAB-3dd50fa141a531f8004e8d7f4a44b50e"
+    },
+    {
+      "file": "tex_IslandIslandShopUI_Mask_04_4952296578393329347.png",
+      "name": "tex_IslandIslandShopUI_Mask_04",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 4952296578393329347,
+      "source": "CAB-3dd50fa141a531f8004e8d7f4a44b50e"
+    },
+    {
+      "file": "Mask_04_6207381079287519659.png",
+      "name": "Mask_04",
+      "width": 128,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 6207381079287519659,
+      "source": "CAB-3dd50fa141a531f8004e8d7f4a44b50e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

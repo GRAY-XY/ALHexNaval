@@ -1,0 +1,17 @@
+{
+  "id": "item__hudiezidan_cyan_m",
+  "model": "hudiezidan_cyan_m",
+  "name": "hudiezidan_cyan_m",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hudiezidan_cyan_m",
+  "path": "battle-assets/炮弹/item__hudiezidan_cyan_m",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3359315
+  ],
+  "has_preview": false,
+  "prefab": true
+}

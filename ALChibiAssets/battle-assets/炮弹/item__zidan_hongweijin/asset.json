@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_hongweijin",
+  "model": "zidan_hongweijin",
+  "name": "红围巾子弹",
+  "names": [
+    "红围巾子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hongweijin",
+  "path": "battle-assets/炮弹/item__zidan_hongweijin",
+  "images": [
+    {
+      "file": "zidan_hongweijin_4929291205151939252.png",
+      "name": "zidan_hongweijin",
+      "width": 360,
+      "height": 163,
+      "role": "战斗贴图",
+      "path_id": 4929291205151939252,
+      "source": "CAB-fe2d039329e20b941aaca56ce82dcb62"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hongweijin/zidan_hongweijin_4929291205151939252.png"
+}

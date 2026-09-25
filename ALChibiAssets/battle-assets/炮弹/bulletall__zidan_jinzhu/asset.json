@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_jinzhu",
+  "model": "zidan_jinzhu",
+  "name": "浑圆金珠子弹",
+  "names": [
+    "浑圆金珠子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_jinzhu",
+  "path": "battle-assets/炮弹/bulletall__zidan_jinzhu",
+  "images": [
+    {
+      "file": "zidan_jinzhu_4155225151525312195.png",
+      "name": "zidan_jinzhu",
+      "width": 128,
+      "height": 49,
+      "role": "原始精灵",
+      "path_id": 4155225151525312195,
+      "source": "CAB-f4c29bf79834517d883e0c4651dddcca"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

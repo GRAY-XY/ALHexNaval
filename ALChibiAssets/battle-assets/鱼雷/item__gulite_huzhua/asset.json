@@ -1,0 +1,32 @@
+{
+  "id": "item__gulite_huzhua",
+  "model": "gulite_huzhua",
+  "name": "gulite_huzhua",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/gulite_huzhua",
+  "path": "battle-assets/鱼雷/item__gulite_huzhua",
+  "images": [
+    {
+      "file": "huzhua_385935402052110196.png",
+      "name": "huzhua",
+      "width": 235,
+      "height": 112,
+      "role": "战斗贴图",
+      "path_id": 385935402052110196,
+      "source": "CAB-563dfa06187a23ef81350ce3567ffb83"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    710046,
+    855230,
+    855550,
+    855559,
+    855653
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__gulite_huzhua/huzhua_385935402052110196.png"
+}

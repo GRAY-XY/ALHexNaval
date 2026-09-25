@@ -1,0 +1,47 @@
+{
+  "id": "chargo__fuyoupao4",
+  "model": "fuyoupao4",
+  "name": "【精英】执棋者IV型 浮游炮 I",
+  "names": [
+    "【精英】执棋者IV型 浮游炮 I",
+    "【精英】执棋者IV型 浮游炮 II",
+    "【精英】执棋者IV型 浮游炮 III",
+    "【精英】执棋者IV型 浮游炮 IV",
+    "【精英】执棋者IV型 浮游炮 V",
+    "【2025优米雅联动 TS5】BOSS 炼金武装航母 浮游炮",
+    "【2025优米雅联动】炼金武装航母 浮游炮 Lv1",
+    "【2025优米雅联动】炼金武装航母 浮游炮 Lv2",
+    "【2025优米雅联动】炼金武装航母 浮游炮 Lv3",
+    "【2025优米雅联动】炼金武装航母 浮游炮 Lv4",
+    "【2025优米雅联动】炼金武装航母 浮游炮 Lv5"
+  ],
+  "category": "飞机",
+  "source": "chargo/fuyoupao4",
+  "path": "battle-assets/飞机/chargo__fuyoupao4",
+  "images": [
+    {
+      "file": "fuyoupao4_5439126762376905007.png",
+      "name": "fuyoupao4",
+      "width": 256,
+      "height": 176,
+      "role": "战斗贴图",
+      "path_id": 5439126762376905007,
+      "source": "CAB-7b30f45a0709d6759676756cbf2c9bce"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fuyoupao4/fuyoupao4_5439126762376905007.png"
+}

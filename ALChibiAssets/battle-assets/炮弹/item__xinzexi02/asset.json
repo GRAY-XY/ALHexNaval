@@ -1,0 +1,37 @@
+{
+  "id": "item__xinzexi02",
+  "model": "xinzexi02",
+  "name": "xinzexi02",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/xinzexi02",
+  "path": "battle-assets/炮弹/item__xinzexi02",
+  "images": [
+    {
+      "file": "lanheizidan_-835533573613980711.png",
+      "name": "lanheizidan",
+      "width": 162,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -835533573613980711,
+      "source": "CAB-019404004b1c6bcc835e45dc8c8f6980"
+    },
+    {
+      "file": "lanheizidan_1_-2882838416665448551.png",
+      "name": "lanheizidan_1",
+      "width": 162,
+      "height": 49,
+      "role": "战斗贴图",
+      "path_id": -2882838416665448551,
+      "source": "CAB-019404004b1c6bcc835e45dc8c8f6980"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    19292
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__xinzexi02/lanheizidan_-835533573613980711.png"
+}

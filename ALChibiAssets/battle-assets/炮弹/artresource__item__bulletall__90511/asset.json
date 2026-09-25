@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__90511",
+  "model": "90511",
+  "name": "90511",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/90511",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__90511",
+  "images": [
+    {
+      "file": "90511_-4468404843180537759.png",
+      "name": "90511",
+      "width": 215,
+      "height": 214,
+      "role": "原始精灵",
+      "path_id": -4468404843180537759,
+      "source": "CAB-68b9a7001613d1456db490d48f358cd3"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

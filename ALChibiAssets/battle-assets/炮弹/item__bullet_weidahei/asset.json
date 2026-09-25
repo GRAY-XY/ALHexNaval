@@ -1,0 +1,29 @@
+{
+  "id": "item__bullet_weidahei",
+  "model": "bullet_weidahei",
+  "name": "bullet_weidahei",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_weidahei",
+  "path": "battle-assets/炮弹/item__bullet_weidahei",
+  "images": [
+    {
+      "file": "weida_black_-3453229941566841585.png",
+      "name": "weida_black",
+      "width": 265,
+      "height": 360,
+      "role": "战斗贴图",
+      "path_id": -3453229941566841585,
+      "source": "CAB-e482f619cefc9d0d34ca6b4151350730"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    163421,
+    170198
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bullet_weidahei/weida_black_-3453229941566841585.png"
+}

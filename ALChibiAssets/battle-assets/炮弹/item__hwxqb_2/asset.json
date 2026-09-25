@@ -1,0 +1,51 @@
+{
+  "id": "item__hwxqb_2",
+  "model": "hwxqb_2",
+  "name": "hwxqb_2",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/hwxqb_2",
+  "path": "battle-assets/炮弹/item__hwxqb_2",
+  "images": [
+    {
+      "file": "hwxqb_2_-5940891453293952147.png",
+      "name": "hwxqb_2",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -5940891453293952147,
+      "source": "CAB-59a5f39406bffcd391f7d599313f6f65"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    7105,
+    19914,
+    840124,
+    891401,
+    891402,
+    891403,
+    891404,
+    989004,
+    3125025,
+    3139310,
+    3151302,
+    3151303,
+    3151304,
+    3151305,
+    3151306,
+    3151307,
+    3151308,
+    3151309,
+    3151310,
+    3151311,
+    3151316,
+    3155022,
+    3305113,
+    3305213
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__hwxqb_2/hwxqb_2_-5940891453293952147.png"
+}

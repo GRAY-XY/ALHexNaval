@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_nvputuoba",
+  "model": "yulei_nvputuoba",
+  "name": "拖把鱼雷",
+  "names": [
+    "拖把鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_nvputuoba",
+  "path": "battle-assets/鱼雷/item__yulei_nvputuoba",
+  "images": [
+    {
+      "file": "yulei_nvputuoba_-3782726325782474527.png",
+      "name": "yulei_nvputuoba",
+      "width": 128,
+      "height": 30,
+      "role": "战斗贴图",
+      "path_id": -3782726325782474527,
+      "source": "CAB-ec4e22f26a6070434202d0e9e15917e7"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_nvputuoba/yulei_nvputuoba_-3782726325782474527.png"
+}

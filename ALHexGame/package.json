@@ -1,0 +1,28 @@
+{
+  "name": "al-hex-naval",
+  "version": "0.10.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 18769 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build",
+    "check:coordinates": "node --experimental-strip-types tools/check_coordinates.ts",
+    "check:rules": "node --experimental-strip-types tools/check_match.ts",
+    "check:animations": "node --experimental-strip-types tools/check_ship_animation.ts",
+    "check:fog": "node --experimental-strip-types tools/check_fog.ts",
+    "check:ports": "node --experimental-strip-types tools/check_ports.ts",
+    "check:ai": "node --experimental-strip-types tools/check_ai.ts",
+    "check:directional-art": "node --experimental-strip-types tools/check_directional_art.ts",
+    "check:land-art": "node --experimental-strip-types tools/check_land_art.ts"
+  },
+  "dependencies": {
+    "pixi.js": "7.4.3",
+    "pixi-spine": "4.0.6"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "8.3.0",
+    "@types/node": "24.10.1"
+  }
+}

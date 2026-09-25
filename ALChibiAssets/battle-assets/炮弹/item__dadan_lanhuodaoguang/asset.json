@@ -1,0 +1,46 @@
+{
+  "id": "item__dadan_lanhuodaoguang",
+  "model": "dadan_lanhuodaoguang",
+  "name": "dadan_lanhuodaoguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/dadan_lanhuodaoguang",
+  "path": "battle-assets/炮弹/item__dadan_lanhuodaoguang",
+  "images": [
+    {
+      "file": "huoyan02_309213117699703741.png",
+      "name": "huoyan02",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 309213117699703741,
+      "source": "CAB-06faa7ee314035a49502587698fd859b"
+    },
+    {
+      "file": "fire_02_2658112351133640565.png",
+      "name": "fire_02",
+      "width": 512,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": 2658112351133640565,
+      "source": "CAB-06faa7ee314035a49502587698fd859b"
+    },
+    {
+      "file": "huoyan01_8700128194500621116.png",
+      "name": "huoyan01",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 8700128194500621116,
+      "source": "CAB-06faa7ee314035a49502587698fd859b"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    170818
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__dadan_lanhuodaoguang/huoyan02_309213117699703741.png"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "chargo__xf5f",
+  "model": "xf5f",
+  "name": "XF5F天箭",
+  "names": [
+    "XF5F天箭"
+  ],
+  "category": "飞机",
+  "source": "chargo/xf5f",
+  "path": "battle-assets/飞机/chargo__xf5f",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "XF5F_2089074922963472077.png",
+      "name": "XF5F",
+      "width": 245,
+      "height": 241,
+      "role": "战斗贴图",
+      "path_id": 2089074922963472077,
+      "source": "CAB-2e9205e072a9e4a6c0863b0280378558"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__xf5f/aircraft_shadow_2192772484218123160.png"
+}

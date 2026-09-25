@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_yanshi",
+  "model": "paodan_yanshi",
+  "name": "山岩裂石炮弹",
+  "names": [
+    "山岩裂石炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_yanshi",
+  "path": "battle-assets/炮弹/item__paodan_yanshi",
+  "images": [
+    {
+      "file": "paodan_yanshi_-1870063336739214800.png",
+      "name": "paodan_yanshi",
+      "width": 128,
+      "height": 94,
+      "role": "战斗贴图",
+      "path_id": -1870063336739214800,
+      "source": "CAB-b8e85db59521c2959a83aef2c1797ab9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_yanshi/paodan_yanshi_-1870063336739214800.png"
+}

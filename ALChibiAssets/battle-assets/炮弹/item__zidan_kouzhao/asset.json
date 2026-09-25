@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_kouzhao",
+  "model": "zidan_kouzhao",
+  "name": "口罩子弹",
+  "names": [
+    "口罩子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_kouzhao",
+  "path": "battle-assets/炮弹/item__zidan_kouzhao",
+  "images": [
+    {
+      "file": "zidan_kouzhao_-1708409625346666891.png",
+      "name": "zidan_kouzhao",
+      "width": 128,
+      "height": 66,
+      "role": "战斗贴图",
+      "path_id": -1708409625346666891,
+      "source": "CAB-f7bdf23d653af6fbf7d5119668c96d92"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_kouzhao/zidan_kouzhao_-1708409625346666891.png"
+}

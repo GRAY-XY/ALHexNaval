@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__liandao__liandao_material",
+  "model": "liandao_material",
+  "name": "liandao_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/liandao/liandao_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__liandao__liandao_material",
+  "images": [
+    {
+      "file": "liandao_3280960812162972597.png",
+      "name": "liandao",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 3280960812162972597,
+      "source": "CAB-9464bed9e86f7c17389635817cba54cd"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

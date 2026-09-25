@@ -1,0 +1,51 @@
+{
+  "id": "chargo__fl-282",
+  "model": "fl-282",
+  "name": "科隆改直升机Lv1",
+  "names": [
+    "科隆改直升机Lv1",
+    "科隆M直升机Lv1",
+    "【2024斯特拉斯堡活动T2】BOSS 科隆 直升机（浮游炮逻辑）",
+    "【2024斯特拉斯堡活动HT2】BOSS 科隆 直升机（浮游炮逻辑）"
+  ],
+  "category": "飞机",
+  "source": "chargo/fl-282",
+  "path": "battle-assets/飞机/chargo__fl-282",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "FL-282-1_-5948690819789601894.png",
+      "name": "FL-282-1",
+      "width": 254,
+      "height": 186,
+      "role": "战斗贴图",
+      "path_id": -5948690819789601894,
+      "source": "CAB-cd2f9d4e1fe4360874b69a2277188791"
+    },
+    {
+      "file": "FL-282-2_-4648987641752897898.png",
+      "name": "FL-282-2",
+      "width": 256,
+      "height": 192,
+      "role": "原始精灵",
+      "path_id": -4648987641752897898,
+      "source": "CAB-cd2f9d4e1fe4360874b69a2277188791"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "FL-282"
+  ],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fl-282/aircraft_shadow_2192772484218123160.png"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "chargo__feiji_hulifeiji",
+  "model": "feiji_hulifeiji",
+  "name": "白上吹雪狐笋轰炸机Lv1",
+  "names": [
+    "白上吹雪狐笋轰炸机Lv1",
+    "【hololive联动TS5】BOSS-白上吹雪 轰炸机",
+    "【hololive联动T6】BOSS-白上吹雪 轰炸机",
+    "【hololive联动EX】BOSS-白上吹雪 轰炸机",
+    "2.25马赫狐笋(鱼雷)",
+    "2.25马赫狐笋(战斗)",
+    "2.25马赫狐笋(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_hulifeiji",
+  "path": "battle-assets/飞机/chargo__feiji_hulifeiji",
+  "images": [
+    {
+      "file": "feiji_hulifeiji_-2501653210787973548.png",
+      "name": "feiji_hulifeiji",
+      "width": 256,
+      "height": 201,
+      "role": "战斗贴图",
+      "path_id": -2501653210787973548,
+      "source": "CAB-5580e1f0a7cfeb426961a8bdb55c666e"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_hulifeiji/feiji_hulifeiji_-2501653210787973548.png"
+}

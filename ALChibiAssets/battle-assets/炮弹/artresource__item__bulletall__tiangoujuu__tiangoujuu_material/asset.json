@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__tiangoujuu__tiangoujuu_material",
+  "model": "tiangoujuu_material",
+  "name": "tiangoujuu_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/tiangoujuu/tiangoujuu_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__tiangoujuu__tiangoujuu_material",
+  "images": [
+    {
+      "file": "tiangoujuu_7643385274785982286.png",
+      "name": "tiangoujuu",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 7643385274785982286,
+      "source": "CAB-9401e5c8dd6e1fdac9505c7e492df5c6"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

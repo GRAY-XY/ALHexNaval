@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhanpai",
+  "model": "yulei_zhanpai",
+  "name": "车站牌鱼雷",
+  "names": [
+    "车站牌鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhanpai",
+  "path": "battle-assets/鱼雷/item__yulei_zhanpai",
+  "images": [
+    {
+      "file": "yulei_zhanpai_7168083473846829010.png",
+      "name": "yulei_zhanpai",
+      "width": 128,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 7168083473846829010,
+      "source": "CAB-5e873857627fcc4bcb109aec6d593542"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhanpai/yulei_zhanpai_7168083473846829010.png"
+}

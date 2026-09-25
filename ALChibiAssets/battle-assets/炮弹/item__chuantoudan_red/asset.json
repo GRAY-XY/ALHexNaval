@@ -1,0 +1,20 @@
+{
+  "id": "item__chuantoudan_red",
+  "model": "chuantoudan_red",
+  "name": "chuantoudan_red",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/chuantoudan_red",
+  "path": "battle-assets/炮弹/item__chuantoudan_red",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3086046,
+    3086047,
+    3246056,
+    3246057
+  ],
+  "has_preview": false,
+  "prefab": true
+}

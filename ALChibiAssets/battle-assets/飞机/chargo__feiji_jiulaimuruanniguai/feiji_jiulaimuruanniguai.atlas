@@ -1,0 +1,118 @@
+
+feiji_jiulaimuruanniguai.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 553, 448
+  orig: 553, 448
+  offset: 0, 0
+  index: -1
+di
+  rotate: false
+  xy: 729, 277
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+di2
+  rotate: false
+  xy: 729, 234
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+di3
+  rotate: true
+  xy: 788, 333
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+liu_1
+  rotate: true
+  xy: 557, 362
+  size: 88, 77
+  orig: 88, 77
+  offset: 0, 0
+  index: -1
+liu_12
+  rotate: false
+  xy: 557, 283
+  size: 88, 77
+  orig: 88, 77
+  offset: 0, 0
+  index: -1
+liu_13
+  rotate: false
+  xy: 636, 373
+  size: 88, 77
+  orig: 88, 77
+  offset: 0, 0
+  index: -1
+liu_2
+  rotate: false
+  xy: 726, 320
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+liu_22
+  rotate: true
+  xy: 557, 221
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+liu_23
+  rotate: true
+  xy: 557, 159
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+liu_3
+  rotate: false
+  xy: 647, 291
+  size: 75, 80
+  orig: 75, 80
+  offset: 0, 0
+  index: -1
+liu_32
+  rotate: true
+  xy: 647, 214
+  size: 75, 80
+  orig: 75, 80
+  offset: 0, 0
+  index: -1
+liu_33
+  rotate: true
+  xy: 726, 375
+  size: 75, 80
+  orig: 75, 80
+  offset: 0, 0
+  index: -1
+liu_4
+  rotate: false
+  xy: 729, 196
+  size: 67, 36
+  orig: 67, 36
+  offset: 0, 0
+  index: -1
+liu_42
+  rotate: false
+  xy: 808, 414
+  size: 67, 36
+  orig: 67, 36
+  offset: 0, 0
+  index: -1
+liu_43
+  rotate: false
+  xy: 808, 376
+  size: 67, 36
+  orig: 67, 36
+  offset: 0, 0
+  index: -1

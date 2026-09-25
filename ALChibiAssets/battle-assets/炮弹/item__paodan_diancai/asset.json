@@ -1,0 +1,44 @@
+{
+  "id": "item__paodan_diancai",
+  "model": "paodan_diancai",
+  "name": "点踩炮弹",
+  "names": [
+    "点踩炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_diancai",
+  "path": "battle-assets/炮弹/item__paodan_diancai",
+  "images": [
+    {
+      "file": "particles01_-5909804393541884522.png",
+      "name": "particles01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -5909804393541884522,
+      "source": "CAB-80a88c9a0aedfb6900c8d3313888d689"
+    },
+    {
+      "file": "paodan_diancai_-3218213260890875673.png",
+      "name": "paodan_diancai",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -3218213260890875673,
+      "source": "CAB-80a88c9a0aedfb6900c8d3313888d689"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_diancai/particles01_-5909804393541884522.png",
+  "spine": {
+    "skel": "paodan_diancai.skel",
+    "atlas": "paodan_diancai.atlas",
+    "pages": [
+      "paodan_diancai.png"
+    ]
+  }
+}

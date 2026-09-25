@@ -1,0 +1,31 @@
+{
+  "id": "item__youmiya_hongzidan",
+  "model": "youmiya_hongzidan",
+  "name": "youmiya_hongzidan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/youmiya_hongzidan",
+  "path": "battle-assets/炮弹/item__youmiya_hongzidan",
+  "images": [
+    {
+      "file": "hongzidan_5577243302500621069.png",
+      "name": "hongzidan",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": 5577243302500621069,
+      "source": "CAB-13e59b40b1cfd63b82436ac01a2be8ab"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    168213,
+    168215,
+    168219,
+    168221
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__youmiya_hongzidan/hongzidan_5577243302500621069.png"
+}

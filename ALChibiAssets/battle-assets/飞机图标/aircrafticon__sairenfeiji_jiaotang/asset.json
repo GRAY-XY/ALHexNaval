@@ -1,0 +1,37 @@
+{
+  "id": "aircrafticon__sairenfeiji_jiaotang",
+  "model": "sairenfeiji_jiaotang",
+  "name": "【2023克莱蒙梭活动SP】BOSS 审判机甲-支配 第二波 审判型舰载机",
+  "names": [
+    "【2023克莱蒙梭活动SP】BOSS 审判机甲-支配 第二波 审判型舰载机",
+    "【2023克莱蒙梭活动】审判型航空母舰 轰炸机 Lv1",
+    "【2023克莱蒙梭活动】审判型航空母舰 轰炸机 Lv2",
+    "【2023克莱蒙梭活动】审判型航空母舰 轰炸机 Lv3",
+    "【2023克莱蒙梭活动】审判型航空母舰 轰炸机 Lv4",
+    "【2023克莱蒙梭活动】审判型航空母舰 轰炸机 Lv5",
+    "【2023克莱蒙梭活动】审判型航空母舰 战斗机 Lv1",
+    "【2023克莱蒙梭活动】审判型航空母舰 战斗机 Lv2",
+    "【2023克莱蒙梭活动】审判型航空母舰 战斗机 Lv3",
+    "【2023克莱蒙梭活动】审判型航空母舰 战斗机 Lv4",
+    "【2023克莱蒙梭活动】审判型航空母舰 战斗机 Lv5"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/sairenfeiji_jiaotang",
+  "path": "battle-assets/飞机图标/aircrafticon__sairenfeiji_jiaotang",
+  "images": [
+    {
+      "file": "sairenfeiji_jiaotang_1133929742763025265.png",
+      "name": "sairenfeiji_jiaotang",
+      "width": 45,
+      "height": 42,
+      "role": "原始精灵",
+      "path_id": 1133929742763025265,
+      "source": "CAB-c66dbf6a8107bfc3aedb6a044571167a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

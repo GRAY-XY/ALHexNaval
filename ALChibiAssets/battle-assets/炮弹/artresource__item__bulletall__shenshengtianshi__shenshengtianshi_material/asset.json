@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__shenshengtianshi__shenshengtianshi_material",
+  "model": "shenshengtianshi_material",
+  "name": "shenshengtianshi_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/shenshengtianshi/shenshengtianshi_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__shenshengtianshi__shenshengtianshi_material",
+  "images": [
+    {
+      "file": "shenshengtianshi_-8144892212063795361.png",
+      "name": "shenshengtianshi",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -8144892212063795361,
+      "source": "CAB-cf2e2451a81f929e7c81b282a99e1414"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_lindang",
+  "model": "zidan_lindang",
+  "name": "祈愿铃音子弹",
+  "names": [
+    "祈愿铃音子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_lindang",
+  "path": "battle-assets/炮弹/item__zidan_lindang",
+  "images": [
+    {
+      "file": "zidan_lindang_4790512769503638230.png",
+      "name": "zidan_lindang",
+      "width": 122,
+      "height": 81,
+      "role": "战斗贴图",
+      "path_id": 4790512769503638230,
+      "source": "CAB-f4f81813523dc0608b0fc19e7ea83e7b"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_lindang/zidan_lindang_4790512769503638230.png"
+}

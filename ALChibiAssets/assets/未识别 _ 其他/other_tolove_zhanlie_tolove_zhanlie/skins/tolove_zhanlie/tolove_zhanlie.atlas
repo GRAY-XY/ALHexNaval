@@ -1,0 +1,97 @@
+
+tolove_zhanlie.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 505, 419
+  size: 463, 368
+  orig: 463, 368
+  offset: 0, 0
+  index: -1
+body_t1
+  rotate: true
+  xy: 132, 512
+  size: 59, 72
+  orig: 59, 72
+  offset: 0, 0
+  index: -1
+body_t2
+  rotate: true
+  xy: 383, 521
+  size: 50, 65
+  orig: 50, 65
+  offset: 0, 0
+  index: -1
+chushou1
+  rotate: false
+  xy: 206, 514
+  size: 175, 57
+  orig: 175, 57
+  offset: 0, 0
+  index: -1
+chushou2
+  rotate: true
+  xy: 2, 505
+  size: 258, 128
+  orig: 258, 128
+  offset: 0, 0
+  index: -1
+chushou3
+  rotate: false
+  xy: 132, 662
+  size: 367, 101
+  orig: 367, 101
+  offset: 0, 0
+  index: -1
+chushou4
+  rotate: false
+  xy: 132, 573
+  size: 344, 87
+  orig: 344, 87
+  offset: 0, 0
+  index: -1
+chushou5
+  rotate: true
+  xy: 240, 73
+  size: 314, 98
+  orig: 314, 98
+  offset: 0, 0
+  index: -1
+chushou6
+  rotate: true
+  xy: 356, 174
+  size: 338, 113
+  orig: 338, 113
+  offset: 0, 0
+  index: -1
+pao
+  rotate: false
+  xy: 240, 389
+  size: 114, 123
+  orig: 114, 123
+  offset: 0, 0
+  index: -1
+zl01
+  rotate: false
+  xy: 2, 765
+  size: 501, 117
+  orig: 501, 117
+  offset: 0, 0
+  index: -1
+zl02
+  rotate: true
+  xy: 2, 2
+  size: 501, 117
+  orig: 501, 117
+  offset: 0, 0
+  index: -1
+zl03
+  rotate: true
+  xy: 121, 2
+  size: 501, 117
+  orig: 501, 117
+  offset: 0, 0
+  index: -1

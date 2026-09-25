@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_qishui",
+  "model": "yulei_qishui",
+  "name": "汽水鱼雷",
+  "names": [
+    "汽水鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_qishui",
+  "path": "battle-assets/鱼雷/item__yulei_qishui",
+  "images": [
+    {
+      "file": "yulei_qishui_-6212554330740075904.png",
+      "name": "yulei_qishui",
+      "width": 128,
+      "height": 56,
+      "role": "战斗贴图",
+      "path_id": -6212554330740075904,
+      "source": "CAB-b7fd9e3a70cb494382a548b7554c1cab"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_qishui/yulei_qishui_-6212554330740075904.png"
+}

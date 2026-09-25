@@ -1,0 +1,48 @@
+{
+  "id": "chargo__fuyoupao_shenyuan1",
+  "model": "fuyoupao_shenyuan1",
+  "name": "【大世界】深渊BOSS航母_p2_环绕浮游炮形态1",
+  "names": [
+    "【大世界】深渊BOSS航母_p2_环绕浮游炮形态1",
+    "【大世界】深渊BOSS航母_p2_环绕浮游炮形态2",
+    "【大世界】深渊BOSS航母_p2_环绕浮游炮形态3",
+    "【大世界】深渊BOSS航母_p2_环绕浮游炮形态4",
+    "【大世界】深渊BOSS航母_p2_环绕浮游炮形态5",
+    "【大世界】深渊BOSS航母_p2_环绕浮游炮形态6",
+    "【大世界】深渊BOSS航母_p3_前置浮游炮形态1",
+    "【大世界】深渊BOSS航母_p3_前置浮游炮形态2",
+    "【大世界】深渊BOSS航母_p3_前置浮游炮形态3",
+    "【大世界】深渊BOSS航母_p3_前置浮游炮形态4",
+    "【大世界】深渊BOSS航母_p3_前置浮游炮形态5",
+    "【大世界】深渊BOSS航母_p3_前置浮游炮形态6"
+  ],
+  "category": "飞机",
+  "source": "chargo/fuyoupao_shenyuan1",
+  "path": "battle-assets/飞机/chargo__fuyoupao_shenyuan1",
+  "images": [
+    {
+      "file": "fuyoupao2_-5255803132962169127.png",
+      "name": "fuyoupao2",
+      "width": 252,
+      "height": 204,
+      "role": "战斗贴图",
+      "path_id": -5255803132962169127,
+      "source": "CAB-ac569de501fe4ac9ed9c3c61cc23f0ab"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fuyoupao_shenyuan1/fuyoupao2_-5255803132962169127.png"
+}

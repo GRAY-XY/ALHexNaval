@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_hutaojiazi",
+  "model": "feiji_hutaojiazi",
+  "name": "胡桃夹子骑士(鱼雷)",
+  "names": [
+    "胡桃夹子骑士(鱼雷)",
+    "胡桃夹子骑士(战斗)",
+    "胡桃夹子骑士(轰炸)"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_hutaojiazi",
+  "path": "battle-assets/飞机/chargo__feiji_hutaojiazi",
+  "images": [
+    {
+      "file": "feiji_hutaojiazi_-1726182904530670257.png",
+      "name": "feiji_hutaojiazi",
+      "width": 255,
+      "height": 327,
+      "role": "战斗贴图",
+      "path_id": -1726182904530670257,
+      "source": "CAB-b7a26c79b1fe26a325bef43c5230321d"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_hutaojiazi/feiji_hutaojiazi_-1726182904530670257.png"
+}

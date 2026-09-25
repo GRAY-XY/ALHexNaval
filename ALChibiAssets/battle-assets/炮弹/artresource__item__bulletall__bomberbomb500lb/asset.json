@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bomberbomb500lb",
+  "model": "bomberbomb500lb",
+  "name": "bomberbomb500lb",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bomberbomb500lb",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bomberbomb500lb",
+  "images": [
+    {
+      "file": "Bomberbomb500lb_8085823269917185842.png",
+      "name": "Bomberbomb500lb",
+      "width": 100,
+      "height": 48,
+      "role": "原始精灵",
+      "path_id": 8085823269917185842,
+      "source": "CAB-ef1ccca667db1bc1d83be85135fbd833"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

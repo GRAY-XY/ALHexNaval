@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__bullet_qinglong",
+  "model": "bullet_qinglong",
+  "name": "bullet_qinglong",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/bullet_qinglong",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__bullet_qinglong",
+  "images": [
+    {
+      "file": "bullet_qinglong_-1059268309418622376.png",
+      "name": "bullet_qinglong",
+      "width": 97,
+      "height": 22,
+      "role": "原始精灵",
+      "path_id": -1059268309418622376,
+      "source": "CAB-58969ebd42b2d2cdd832ad3edd48f967"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": "aircrafticon__qiangfeng",
+  "model": "qiangfeng",
+  "name": "强风",
+  "names": [
+    "强风"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/qiangfeng",
+  "path": "battle-assets/飞机图标/aircrafticon__qiangfeng",
+  "images": [
+    {
+      "file": "qiangfeng_-2750097975755161616.png",
+      "name": "qiangfeng",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -2750097975755161616,
+      "source": "CAB-9de1bebf8de448c82329c1e7da5e4f0d"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

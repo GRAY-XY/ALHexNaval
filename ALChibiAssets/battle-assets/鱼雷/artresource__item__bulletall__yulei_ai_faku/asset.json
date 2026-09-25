@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__yulei_ai_faku",
+  "model": "yulei_ai_faku",
+  "name": "晃悠悠鱼雷",
+  "names": [
+    "晃悠悠鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_ai_faku",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_ai_faku",
+  "images": [
+    {
+      "file": "yulei_ai_faku_2257830684872471048.png",
+      "name": "yulei_ai_faku",
+      "width": 128,
+      "height": 60,
+      "role": "原始精灵",
+      "path_id": 2257830684872471048,
+      "source": "CAB-01c0ecea0d3354d56737e085830dfc1c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

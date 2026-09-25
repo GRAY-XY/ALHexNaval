@@ -1,0 +1,15 @@
+{
+  "id": "item__heifangzhou_xuyingdan_mirror",
+  "model": "heifangzhou_xuyingdan_mirror",
+  "name": "heifangzhou_xuyingdan_mirror",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/heifangzhou_xuyingdan_mirror",
+  "path": "battle-assets/其他战斗特效/item__heifangzhou_xuyingdan_mirror",
+  "images": [],
+  "particle_systems": 8,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

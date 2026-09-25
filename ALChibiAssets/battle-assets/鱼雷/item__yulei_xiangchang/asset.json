@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_xiangchang",
+  "model": "yulei_xiangchang",
+  "name": "香肠鱼雷",
+  "names": [
+    "香肠鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangchang",
+  "path": "battle-assets/鱼雷/item__yulei_xiangchang",
+  "images": [
+    {
+      "file": "yulei_xiangchang_914865077600607967.png",
+      "name": "yulei_xiangchang",
+      "width": 128,
+      "height": 44,
+      "role": "战斗贴图",
+      "path_id": 914865077600607967,
+      "source": "CAB-82e667be89fc879b779e915a8dd3e558"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiangchang/yulei_xiangchang_914865077600607967.png"
+}

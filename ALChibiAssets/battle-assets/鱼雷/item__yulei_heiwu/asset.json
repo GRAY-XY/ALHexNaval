@@ -1,0 +1,26 @@
+{
+  "id": "item__yulei_heiwu",
+  "model": "yulei_heiwu",
+  "name": "yulei_heiwu",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/yulei_heiwu",
+  "path": "battle-assets/鱼雷/item__yulei_heiwu",
+  "images": [
+    {
+      "file": "yulei_heiwu_-2373738029385555172.png",
+      "name": "yulei_heiwu",
+      "width": 128,
+      "height": 79,
+      "role": "战斗贴图",
+      "path_id": -2373738029385555172,
+      "source": "CAB-c5de4128dde39f1a830801a9b169b1ec"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_heiwu/yulei_heiwu_-2373738029385555172.png"
+}

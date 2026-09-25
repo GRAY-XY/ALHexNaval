@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_yumia_xianzhe",
+  "model": "zidan_yumia_xianzhe",
+  "name": "贤者之石子弹",
+  "names": [
+    "贤者之石子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_yumia_xianzhe",
+  "path": "battle-assets/炮弹/item__zidan_yumia_xianzhe",
+  "images": [
+    {
+      "file": "zidan_xianzhe_6245280734491432615.png",
+      "name": "zidan_xianzhe",
+      "width": 87,
+      "height": 62,
+      "role": "战斗贴图",
+      "path_id": 6245280734491432615,
+      "source": "CAB-2ac1f26f7b5b88ab5c5aca9deade81e4"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_yumia_xianzhe/zidan_xianzhe_6245280734491432615.png"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "item__zidan_jishang",
+  "model": "zidan_jishang",
+  "name": "zidan_jishang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_jishang",
+  "path": "battle-assets/炮弹/item__zidan_jishang",
+  "images": [
+    {
+      "file": "star_1_809225905862518968.png",
+      "name": "star 1",
+      "width": 256,
+      "height": 256,
+      "role": "战斗贴图",
+      "path_id": 809225905862518968,
+      "source": "CAB-3a330c70dd273479de3c41fd34a777c0"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    161473,
+    170161,
+    170162,
+    170163,
+    170164,
+    170165
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_jishang/star_1_809225905862518968.png"
+}

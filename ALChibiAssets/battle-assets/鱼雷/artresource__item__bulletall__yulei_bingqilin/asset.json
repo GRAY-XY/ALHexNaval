@@ -1,0 +1,27 @@
+{
+  "id": "artresource__item__bulletall__yulei_bingqilin",
+  "model": "yulei_bingqilin",
+  "name": "Gelato鱼雷",
+  "names": [
+    "Gelato鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "artresource/item/bulletall/yulei_bingqilin",
+  "path": "battle-assets/鱼雷/artresource__item__bulletall__yulei_bingqilin",
+  "images": [
+    {
+      "file": "yulei_bingqilin_3090357053900779551.png",
+      "name": "yulei_bingqilin",
+      "width": 128,
+      "height": 62,
+      "role": "原始精灵",
+      "path_id": 3090357053900779551,
+      "source": "CAB-b9aafa700aa9e290e8c4bc0fca8b9075"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

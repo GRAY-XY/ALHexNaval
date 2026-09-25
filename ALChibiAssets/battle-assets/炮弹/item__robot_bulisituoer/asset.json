@@ -1,0 +1,22 @@
+{
+  "id": "item__robot_bulisituoer",
+  "model": "robot_bulisituoer",
+  "name": "robot_bulisituoer",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/robot_bulisituoer",
+  "path": "battle-assets/炮弹/item__robot_bulisituoer",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    862018,
+    862019,
+    863018,
+    863019,
+    863041,
+    863042
+  ],
+  "has_preview": false,
+  "prefab": true
+}

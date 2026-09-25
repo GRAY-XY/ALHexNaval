@@ -1,0 +1,19 @@
+{
+  "id": "item__nengliangqiu",
+  "model": "nengliangqiu",
+  "name": "nengliangqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/nengliangqiu",
+  "path": "battle-assets/炮弹/item__nengliangqiu",
+  "images": [],
+  "particle_systems": 12,
+  "animations": [],
+  "bullet_ids": [
+    20136000,
+    20136001,
+    20136002
+  ],
+  "has_preview": false,
+  "prefab": true
+}

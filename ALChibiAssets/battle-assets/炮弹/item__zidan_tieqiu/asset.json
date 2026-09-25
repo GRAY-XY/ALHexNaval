@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_tieqiu",
+  "model": "zidan_tieqiu",
+  "name": "铁球子弹",
+  "names": [
+    "铁球子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_tieqiu",
+  "path": "battle-assets/炮弹/item__zidan_tieqiu",
+  "images": [
+    {
+      "file": "zidan_tieqiu_4983138141681686693.png",
+      "name": "zidan_tieqiu",
+      "width": 128,
+      "height": 65,
+      "role": "战斗贴图",
+      "path_id": 4983138141681686693,
+      "source": "CAB-bb26044581fc60d73b7d3adb78b575b8"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_tieqiu/zidan_tieqiu_4983138141681686693.png"
+}

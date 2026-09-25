@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-19",
+  "reference": "output/art-concepts/watercolor-maritime-fullscreen-v1.png",
+  "source": {
+    "path": "assets/terrain/source-sheets/watercolor-land-decoration-six-source.png",
+    "sha256": "4b56e79ce2f71f9bfc1bb109ff802c31aa8f684a59e8c96e43213d92ea8ae5c3",
+    "size": [1536, 1024]
+  },
+  "runtime": [
+    {"name": "dense-forest", "path": "assets/terrain/land-details/watercolor-land-detail-0-dense-forest.png", "sha256": "dce76cbb206e94fb7a878db27ae717fff43412b05947cac5615b8588802be545", "size": [512, 512]},
+    {"name": "sparse-grove", "path": "assets/terrain/land-details/watercolor-land-detail-1-sparse-grove.png", "sha256": "95ea77bed229fce27d1064e795da8fcc6e95adaf31fa16c4c4eab71b85299043", "size": [512, 512]},
+    {"name": "rocky-grassland", "path": "assets/terrain/land-details/watercolor-land-detail-2-rocky-grassland.png", "sha256": "110a8d02538f8a7dbbfefedf7424bcd847611206ce825d9e4fe6548c527c17e3", "size": [512, 512]},
+    {"name": "meadow-trail", "path": "assets/terrain/land-details/watercolor-land-detail-3-meadow-trail.png", "sha256": "54cc33fbaafe8c0bbe3f88f194a95f3961d5e109fb99c1278d28fb07e99b4206", "size": [512, 512]},
+    {"name": "forest-boulders", "path": "assets/terrain/land-details/watercolor-land-detail-4-forest-boulders.png", "sha256": "846915ac010dc0025f9a7b5c9aa9b0b4974b8b316688b3ef235f20b963188689", "size": [512, 512]},
+    {"name": "woodland-thicket", "path": "assets/terrain/land-details/watercolor-land-detail-5-woodland-thicket.png", "sha256": "fd2d545cb122281fde53208630fe63d3105da7834aac20d0bf742c02bb8d1d5c", "size": [512, 512]}
+  ],
+  "slicer": "tools/slice_land_details.py"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item__yulei_xiangyunshanzi",
+  "model": "yulei_xiangyunshanzi",
+  "name": "凌云折扇鱼雷",
+  "names": [
+    "凌云折扇鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_xiangyunshanzi",
+  "path": "battle-assets/鱼雷/item__yulei_xiangyunshanzi",
+  "images": [
+    {
+      "file": "yulei_xiangyunshanzi_2485256147145114116.png",
+      "name": "yulei_xiangyunshanzi",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2485256147145114116,
+      "source": "CAB-4cb8711dbaf1fa9442ea508dbe95a0a2"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_xiangyunshanzi/yulei_xiangyunshanzi_2485256147145114116.png",
+  "spine": {
+    "skel": "yulei_xiangyunshanzi.skel",
+    "atlas": "yulei_xiangyunshanzi.atlas",
+    "pages": [
+      "yulei_xiangyunshanzi.png"
+    ]
+  }
+}

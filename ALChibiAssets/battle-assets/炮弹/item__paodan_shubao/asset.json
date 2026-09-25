@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_shubao",
+  "model": "paodan_shubao",
+  "name": "手提书包炮弹",
+  "names": [
+    "手提书包炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_shubao",
+  "path": "battle-assets/炮弹/item__paodan_shubao",
+  "images": [
+    {
+      "file": "paodan_shubao_8886957728539110991.png",
+      "name": "paodan_shubao",
+      "width": 128,
+      "height": 102,
+      "role": "战斗贴图",
+      "path_id": 8886957728539110991,
+      "source": "CAB-7b8fc9e0656e8d78c4748bfc340050f7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_shubao/paodan_shubao_8886957728539110991.png"
+}

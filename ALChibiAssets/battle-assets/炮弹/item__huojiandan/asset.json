@@ -1,0 +1,53 @@
+{
+  "id": "item__huojiandan",
+  "model": "huojiandan",
+  "name": "huojiandan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/huojiandan",
+  "path": "battle-assets/炮弹/item__huojiandan",
+  "images": [
+    {
+      "file": "huojiandan01_-7459531617098549742.png",
+      "name": "huojiandan01",
+      "width": 256,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": -7459531617098549742,
+      "source": "CAB-d3dd0e061cd73af74d14dcabae13fb6a"
+    }
+  ],
+  "particle_systems": 4,
+  "animations": [],
+  "bullet_ids": [
+    2131,
+    2135,
+    2139,
+    2140,
+    2141,
+    19302,
+    19316,
+    19403,
+    19612,
+    19623,
+    19666,
+    19671,
+    161162,
+    161208,
+    161401,
+    164731,
+    164732,
+    167001,
+    167002,
+    169821,
+    170817,
+    170898,
+    29660017,
+    29663001,
+    3049003,
+    3254021
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__huojiandan/huojiandan01_-7459531617098549742.png"
+}

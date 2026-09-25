@@ -1,0 +1,62 @@
+
+youlingmachefeiji.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+che
+  rotate: false
+  xy: 157, 9
+  size: 157, 115
+  orig: 157, 115
+  offset: 0, 0
+  index: -1
+guihuo
+  rotate: false
+  xy: 316, 21
+  size: 178, 50
+  orig: 178, 50
+  offset: 0, 0
+  index: -1
+guihuo_b
+  rotate: false
+  xy: 316, 73
+  size: 178, 51
+  orig: 178, 51
+  offset: 0, 0
+  index: -1
+lunzi
+  rotate: true
+  xy: 496, 18
+  size: 106, 32
+  orig: 106, 32
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 2, 2
+  size: 153, 122
+  orig: 153, 122
+  offset: 0, 0
+  index: -1
+sheng
+  rotate: true
+  xy: 530, 58
+  size: 66, 45
+  orig: 66, 45
+  offset: 0, 0
+  index: -1
+xiaogui_1
+  rotate: true
+  xy: 530, 15
+  size: 41, 37
+  orig: 41, 37
+  offset: 0, 0
+  index: -1
+xiaogui_2
+  rotate: true
+  xy: 569, 16
+  size: 40, 36
+  orig: 40, 36
+  offset: 0, 0
+  index: -1

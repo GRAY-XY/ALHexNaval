@@ -1,0 +1,342 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "A* matches independent Dijkstra on 80 weighted/blocked maps",
+      "passed": true
+    },
+    {
+      "name": "Hex lines include both endpoints and use only adjacent cells",
+      "passed": true
+    },
+    {
+      "name": "Invalid map mask and land are impassable",
+      "passed": true
+    },
+    {
+      "name": "Friendly crossings are legal; stops on occupied cells are forbidden",
+      "passed": true
+    },
+    {
+      "name": "An unaffordable destination rejects without stopping at an intermediate friendly cell",
+      "passed": true
+    },
+    {
+      "name": "Enemy blocks a narrow sea lane, and enemy ownership rejects orders",
+      "passed": true
+    },
+    {
+      "name": "Shallow-water costs distinguish light ships from heavy ships",
+      "passed": true
+    },
+    {
+      "name": "Turn rotation refills only the incoming team to 50 oil and increments the round",
+      "passed": true
+    },
+    {
+      "name": "Movement has no remainder and owner turns refill oil without moving any ship",
+      "passed": true
+    },
+    {
+      "name": "A failed move does not resume when a blocker leaves or the next round starts",
+      "passed": true
+    },
+    {
+      "name": "Wait, hold and wake never refund shared oil or individual combat actions",
+      "passed": true
+    },
+    {
+      "name": "Temporary multi-selection preserves arrival offsets with shared oil and no stacking",
+      "passed": true
+    },
+    {
+      "name": "Group ships pass a one-cell lane separately without a rigid footprint",
+      "passed": true
+    },
+    {
+      "name": "Group commands validate ownership atomically and skip held ships without spending their oil",
+      "passed": true
+    },
+    {
+      "name": "Two and twelve selected ships have no old three-to-six member limit",
+      "passed": true
+    },
+    {
+      "name": "Box selection accepts every drag direction and includes boundaries",
+      "passed": true
+    },
+    {
+      "name": "Group movement preserves shallow costs and rejects an isolated member atomically",
+      "passed": true
+    },
+    {
+      "name": "Asymmetric arrival layouts preserve every world offset across odd and even rows",
+      "passed": true
+    },
+    {
+      "name": "An island, stationary ship or invalid boundary shifts the entire arrival footprint",
+      "passed": true
+    },
+    {
+      "name": "A formation too wide for the destination channel fails without changing orders or oil",
+      "passed": true
+    },
+    {
+      "name": "A short overlapping translation vacates selected cells and completes without stacking",
+      "passed": true
+    },
+    {
+      "name": "Aircraft preserve arbitrary departure spacing and reach exact translated positions",
+      "passed": true
+    },
+    {
+      "name": "Aircraft outside the map or with enemy ownership reject before any order changes",
+      "passed": true
+    },
+    {
+      "name": "Mixed ship and aircraft selection uses one translation and fits all members before moving",
+      "passed": true
+    },
+    {
+      "name": "Version 7 fleets and future routes are removed without changing positions, oil, HP or aviation",
+      "passed": true
+    },
+    {
+      "name": "Distant multi-ship moves reject atomically and stay still through save, reload and later turns",
+      "passed": true
+    },
+    {
+      "name": "Every one of 2 through 8 players has the entire shared roster and unique ship instances",
+      "passed": true
+    },
+    {
+      "name": "Different ships consume one shared 50-point oil pool in the same turn",
+      "passed": true
+    },
+    {
+      "name": "Expanded weapons enforce range, armor damage and island line of sight",
+      "passed": true
+    },
+    {
+      "name": "Defense reduces damage, torpedo cooldown lasts one owner turn, and actions never replenish early",
+      "passed": true
+    },
+    {
+      "name": "Sinking a selected ship releases its occupied cell without changing other ships positions",
+      "passed": true
+    },
+    {
+      "name": "Saved game restores independent ownership and resources without persistent groups or ship routes",
+      "passed": true
+    },
+    {
+      "name": "Distant single-ship moves do not create future orders or spend oil",
+      "passed": true
+    },
+    {
+      "name": "Version 10 pending ship routes are discarded once while ongoing aircraft commands remain intact",
+      "passed": true
+    },
+    {
+      "name": "Version 11 rejects removed ship-order fields even when their target is a legal sea cell",
+      "passed": true
+    },
+    {
+      "name": "Malformed saves reject versions, overlaps, impossible resources and removed group fields",
+      "passed": true
+    },
+    {
+      "name": "Different players can save and load the same ship asset without sharing resources or orders",
+      "passed": true
+    },
+    {
+      "name": "Version 1 migration gives the old complete demo roster to its current player and preserves ship progress",
+      "passed": true
+    },
+    {
+      "name": "Version 2 migration adds full hull, armor action state and empty cooldowns without moving ships",
+      "passed": true
+    },
+    {
+      "name": "Version 3 migration preserves combat state and replaces per-ship movement with 50 shared oil",
+      "passed": true
+    },
+    {
+      "name": "CV launches 3x4 and CVL launches 2x3 using shared oil and one action",
+      "passed": true
+    },
+    {
+      "name": "Launch atomically rejects insufficient oil, inactive teams and held carriers",
+      "passed": true
+    },
+    {
+      "name": "Aircraft country is fixed to carrier origin, independent of the player owner",
+      "passed": true
+    },
+    {
+      "name": "Independent realtime squadrons cross islands and pause on other player turns",
+      "passed": true
+    },
+    {
+      "name": "Bombers strike in realtime, respect armor and defense, and spend ammo instead of oil",
+      "passed": true
+    },
+    {
+      "name": "Fighters intercept enemy aircraft; non-fighters reject air targets",
+      "passed": true
+    },
+    {
+      "name": "Automatic fighter range covers both complete hex rings and excludes the third ring",
+      "passed": true
+    },
+    {
+      "name": "Patrolling fighters automatically attack nearby enemies without pursuing distant aircraft",
+      "passed": true
+    },
+    {
+      "name": "Automatic fire chooses nearby enemies, ignores friendly aircraft and preserves movement orders",
+      "passed": true
+    },
+    {
+      "name": "Inactive fighters defend automatically while position and fuel remain paused",
+      "passed": true
+    },
+    {
+      "name": "Returning fighters and bombers do not automatically intercept enemy aircraft",
+      "passed": true
+    },
+    {
+      "name": "Squadrons cannot rebase to a carrier from a different country",
+      "passed": true
+    },
+    {
+      "name": "Recall tracks the moving carrier; low fuel returns and AA causes aircraft losses",
+      "passed": true
+    },
+    {
+      "name": "In-flight save restores positions, orders, fuel, country, AA cooldown and next outcomes exactly",
+      "passed": true
+    },
+    {
+      "name": "Low-FPS aviation frames match twenty fine steps and long suspension catches up at most one second",
+      "passed": true
+    },
+    {
+      "name": "Version 4 migration preserves oil and hull state, removes old carrier strike cooldowns",
+      "passed": true
+    },
+    {
+      "name": "Version 5 flight saves migrate mixed-country wings to their carrier country without losing flight state",
+      "passed": true
+    },
+    {
+      "name": "Endurance consumes exactly one turn only when the squadron owner ends their turn",
+      "passed": true
+    },
+    {
+      "name": "Returning on the final endurance turn recovers to the moving mother before expiration",
+      "passed": true
+    },
+    {
+      "name": "Version 6 seconds-based flight endurance migrates upwards to complete owner turns",
+      "passed": true
+    },
+    {
+      "name": "Squadron labels use aircraft category and the surviving aircraft count",
+      "passed": true
+    },
+    {
+      "name": "Aircraft snap destinations to hex centers and charge one point per adjacent hex independently",
+      "passed": true
+    },
+    {
+      "name": "Idle aircraft and 2, 4 or 8 player turn cycles never restore aircraft action",
+      "passed": true
+    },
+    {
+      "name": "The last aircraft action completes exactly one hex then immediately forces return",
+      "passed": true
+    },
+    {
+      "name": "Spending exactly the remaining aircraft action at a destination still triggers return",
+      "passed": true
+    },
+    {
+      "name": "Attack approaches charge aircraft action and exhaustion prevents firing or new pursuit orders",
+      "passed": true
+    },
+    {
+      "name": "Stationary automatic fighter interception consumes ammunition but no movement action",
+      "passed": true
+    },
+    {
+      "name": "Manual recall spends remaining action before compulsory return and cannot bypass the movement budget",
+      "passed": true
+    },
+    {
+      "name": "Returning exhausted aircraft cannot replenish in flight; a later new launch has a new budget",
+      "passed": true
+    },
+    {
+      "name": "Legacy versions 7 and 8 migrate aircraft budgets using remaining endurance without mutating the save",
+      "passed": true
+    },
+    {
+      "name": "Aircraft spawn at valid hex centers even when the carrier is at a map corner",
+      "passed": true
+    },
+    {
+      "name": "Air routes cross land but detour around invalid hexes and reject disconnected targets atomically",
+      "passed": true
+    },
+    {
+      "name": "Aircraft keep asymmetric hex formations when translation crosses row parity",
+      "passed": true
+    },
+    {
+      "name": "Mid-leg commands preserve the committed adjacent hex and cannot reset its cost or animation",
+      "passed": true
+    },
+    {
+      "name": "A lost attack target finishes the pending hex then idles without freezing the flight animation",
+      "passed": true
+    },
+    {
+      "name": "Partial hex travel is preserved through player transitions and a saved game",
+      "passed": true
+    },
+    {
+      "name": "Version 9 free-flight saves snap to hexes and floor fractional budgets once without refilling",
+      "passed": true
+    },
+    {
+      "name": "Malformed aviation saves reject identity, ownership, timing, slot and command corruption",
+      "passed": true
+    }
+  ],
+  "weightedOracleCases": 80,
+  "invalidSaveCases": 67,
+  "pathfinding": [
+    {
+      "size": 128,
+      "elapsedMs": 5.844600000000355,
+      "visited": 1988,
+      "pathCells": 167,
+      "cost": 166
+    },
+    {
+      "size": 256,
+      "elapsedMs": 19.048800000000483,
+      "visited": 8041,
+      "pathCells": 332,
+      "cost": 331
+    },
+    {
+      "size": 512,
+      "elapsedMs": 57.893200000000434,
+      "visited": 24929,
+      "pathCells": 669,
+      "cost": 668
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__haibaopaodan__haibaopaodan_material",
+  "model": "haibaopaodan_material",
+  "name": "haibaopaodan_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/haibaopaodan/haibaopaodan_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__haibaopaodan__haibaopaodan_material",
+  "images": [
+    {
+      "file": "haibaopaodan_2538598185543632946.png",
+      "name": "haibaopaodan",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2538598185543632946,
+      "source": "CAB-e7eaf421906ad2093be93116f39f108b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item__yulei_mjianpan",
+  "model": "yulei_mjianpan",
+  "name": "电子琴鱼雷",
+  "names": [
+    "电子琴鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_mjianpan",
+  "path": "battle-assets/鱼雷/item__yulei_mjianpan",
+  "images": [
+    {
+      "file": "yulei_mjianpan_1528106932477250473.png",
+      "name": "yulei_mjianpan",
+      "width": 128,
+      "height": 48,
+      "role": "战斗贴图",
+      "path_id": 1528106932477250473,
+      "source": "CAB-66c0e6b3804ed20217f4139b0b309c47"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3146530
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_mjianpan/yulei_mjianpan_1528106932477250473.png"
+}

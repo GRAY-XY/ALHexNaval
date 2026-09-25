@@ -1,0 +1,38 @@
+{
+  "id": "item__yulei_zuantou",
+  "model": "yulei_zuantou",
+  "name": "钻头鱼雷",
+  "names": [
+    "钻头鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zuantou",
+  "path": "battle-assets/鱼雷/item__yulei_zuantou",
+  "images": [
+    {
+      "file": "gulite_zuantou_-1807793236945205253.png",
+      "name": "gulite_zuantou",
+      "width": 512,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": -1807793236945205253,
+      "source": "CAB-a2b2381e48dba5031d39c1b760bed397"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    19555,
+    855130
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zuantou/gulite_zuantou_-1807793236945205253.png",
+  "spine": {
+    "skel": "gulite_zuantou.skel",
+    "atlas": "gulite_zuantou.atlas",
+    "pages": [
+      "gulite_zuantou.png"
+    ]
+  }
+}

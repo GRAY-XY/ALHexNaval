@@ -1,0 +1,26 @@
+{
+  "id": "item__bulletusa7",
+  "model": "bulletusa7",
+  "name": "bulletusa7",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bulletusa7",
+  "path": "battle-assets/炮弹/item__bulletusa7",
+  "images": [
+    {
+      "file": "bullet7_-788254044266442545.png",
+      "name": "bullet7",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -788254044266442545,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__bulletusa7/bullet7_-788254044266442545.png"
+}

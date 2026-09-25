@@ -1,0 +1,28 @@
+{
+  "id": "item__yulei_zhongguojie",
+  "model": "yulei_zhongguojie",
+  "name": "吉祥如意鱼雷",
+  "names": [
+    "吉祥如意鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_zhongguojie",
+  "path": "battle-assets/鱼雷/item__yulei_zhongguojie",
+  "images": [
+    {
+      "file": "yulei_zhongguojie_-2005474153870947946.png",
+      "name": "yulei_zhongguojie",
+      "width": 128,
+      "height": 47,
+      "role": "战斗贴图",
+      "path_id": -2005474153870947946,
+      "source": "CAB-28d9264fcd26d01e25b277701cec5ff8"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_zhongguojie/yulei_zhongguojie_-2005474153870947946.png"
+}

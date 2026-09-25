@@ -1,0 +1,27 @@
+
+paodan_guaidaomianju.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mianju
+  rotate: false
+  xy: 409, 13
+  size: 241, 173
+  orig: 241, 173
+  offset: 0, 0
+  index: -1
+tuowei_1
+  rotate: false
+  xy: 2, 79
+  size: 405, 107
+  orig: 405, 107
+  offset: 0, 0
+  index: -1
+tuowei_2
+  rotate: false
+  xy: 2, 2
+  size: 187, 75
+  orig: 187, 75
+  offset: 0, 0
+  index: -1

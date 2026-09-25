@@ -1,0 +1,20 @@
+{
+  "id": "item__bullet_fliud_green",
+  "model": "bullet_fliud_green",
+  "name": "bullet_fliud_green",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/bullet_fliud_green",
+  "path": "battle-assets/炮弹/item__bullet_fliud_green",
+  "images": [],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [
+    3029303,
+    3295011,
+    3296042,
+    3296142
+  ],
+  "has_preview": false,
+  "prefab": true
+}

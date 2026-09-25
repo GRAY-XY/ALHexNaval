@@ -1,0 +1,15 @@
+{
+  "id": "artresource__item__bulletall__bulletch_sp__materials__wave_01",
+  "model": "wave_01",
+  "name": "wave_01",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/bulletch_sp/materials/wave_01",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__bulletch_sp__materials__wave_01",
+  "images": [],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": false
+}

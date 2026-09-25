@@ -1,0 +1,37 @@
+{
+  "id": "item__yulei_kapaishan",
+  "model": "yulei_kapaishan",
+  "name": "黑牌鱼雷",
+  "names": [
+    "黑牌鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_kapaishan",
+  "path": "battle-assets/鱼雷/item__yulei_kapaishan",
+  "images": [
+    {
+      "file": "yulei_kapaishan_-70119198748929583.png",
+      "name": "yulei_kapaishan",
+      "width": 512,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -70119198748929583,
+      "source": "CAB-1e11111816b53f7ae89772695ee83e59"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    164871
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_kapaishan/yulei_kapaishan_-70119198748929583.png",
+  "spine": {
+    "skel": "yulei_kapaishan.skel",
+    "atlas": "yulei_kapaishan.atlas",
+    "pages": [
+      "yulei_kapaishan.png"
+    ]
+  }
+}

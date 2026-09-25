@@ -1,0 +1,23 @@
+{
+  "id": "item__paodan_yuanyuelun_e",
+  "model": "paodan_yuanyuelun_e",
+  "name": "paodan_yuanyuelun_e",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_yuanyuelun_e",
+  "path": "battle-assets/炮弹/item__paodan_yuanyuelun_e",
+  "images": [],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    3108401,
+    3108402,
+    3108403,
+    3108404,
+    3108411,
+    3108412,
+    3108414
+  ],
+  "has_preview": false,
+  "prefab": true
+}

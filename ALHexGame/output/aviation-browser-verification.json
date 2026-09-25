@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-18",
+  "version": "0.5.0",
+  "passed": true,
+  "method": "CUA actual browser UI flows; manual observations, not an unattended regression script",
+  "url": "http://127.0.0.1:18768/",
+  "checks": [
+    {"name": "Existing version 4 save loads into version 5", "passed": true},
+    {"name": "CV launches three squadrons of four aircraft", "passed": true, "oilBefore": 50, "oilAfter": 41, "carrierActionBefore": 1, "carrierActionAfter": 0},
+    {"name": "CVL launches two squadrons of three aircraft", "passed": true, "oilBefore": 50, "oilAfter": 44},
+    {"name": "US, UK, JP and DE wing selections and original aircraft sprites", "passed": true},
+    {"name": "Select SBD squadron and right-click a destination; only that squadron moves", "passed": true},
+    {"name": "Right-click enemy ship issues an independent bomber attack", "passed": true, "target": "Enemy Helena", "targetHpBefore": 8, "targetHpAfter": 1, "squadronAmmoBefore": 3, "squadronAmmoAfter": 1},
+    {"name": "Enemy automatic anti-air damages attacking aircraft", "passed": true, "squadronHpBefore": 8, "squadronHpAfter": 5, "survivingPlanes": 3},
+    {"name": "Turn handover changes left ship list to active player's ships", "passed": true},
+    {"name": "BB artillery attacks at expanded range with original shell sprites", "passed": true, "targetHpBefore": 6, "targetHpAfter": 3},
+    {"name": "DD torpedo attacks five hexes away with original torpedo sprites", "passed": true, "damage": 4, "targetSunk": true},
+    {"name": "Recall all returns aircraft and clears list without page reload", "passed": true, "squadronsBefore": 2, "squadronsAfter": 0},
+    {"name": "1440 x 1050 desktop layout and 1280 x 720 / 980 x 800 compact layouts remain operable", "passed": true},
+    {"name": "No captured browser console errors", "passed": true, "errors": []},
+    {"name": "Temporary viewport override reset", "passed": true},
+    {"name": "Final normal play state restored", "passed": true, "mapSize": 256, "teams": 4, "round": 1, "activeTeam": 1, "oil": 50, "squadrons": 0, "selectedShip": "Enterprise"},
+    {"name": "Local game health endpoint responds successfully", "passed": true}
+  ],
+  "relatedChecks": {
+    "originalTextureHashesAndByteCopies": "combat-assets-verification.json",
+    "ruleScenarios": 36,
+    "weightedPathfindingMaps": 80,
+    "invalidSaveCases": 44,
+    "coordinateCells": 344064,
+    "typecheckAndBuild": "passed"
+  },
+  "screenshot": "screenshots/aviation-desktop.png",
+  "demoSave": "combat-demo.json",
+  "limits": [
+    "Large simultaneous aircraft counts, AI, multiplayer and full-match balance were not tested.",
+    "No permanent hangar attrition or offline combat replay in this prototype."
+  ]
+}

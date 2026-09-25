@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feiji_qiqiugou",
+  "model": "feiji_qiqiugou",
+  "name": "汪汪气球飞机（鱼雷）",
+  "names": [
+    "汪汪气球飞机（鱼雷）",
+    "汪汪气球飞机（战斗）",
+    "汪汪气球飞机（轰炸）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feiji_qiqiugou",
+  "path": "battle-assets/飞机/chargo__feiji_qiqiugou",
+  "images": [
+    {
+      "file": "feiji_qiqiugou_7641130634813149887.png",
+      "name": "feiji_qiqiugou",
+      "width": 241,
+      "height": 206,
+      "role": "战斗贴图",
+      "path_id": 7641130634813149887,
+      "source": "CAB-b48fc0429820aedbec6318e564f99011"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feiji_qiqiugou/feiji_qiqiugou_7641130634813149887.png"
+}

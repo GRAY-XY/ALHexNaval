@@ -1,0 +1,28 @@
+{
+  "id": "item__nep_torpedo_dianchi",
+  "model": "nep_torpedo_dianchi",
+  "name": "电池鱼雷",
+  "names": [
+    "电池鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/nep_torpedo_dianchi",
+  "path": "battle-assets/鱼雷/item__nep_torpedo_dianchi",
+  "images": [
+    {
+      "file": "90620_-7117911297680004938.png",
+      "name": "90620",
+      "width": 188,
+      "height": 68,
+      "role": "战斗贴图",
+      "path_id": -7117911297680004938,
+      "source": "CAB-33e036be8cde635a83b8f8f896545d79"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__nep_torpedo_dianchi/90620_-7117911297680004938.png"
+}

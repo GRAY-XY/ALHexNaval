@@ -1,0 +1,28 @@
+{
+  "id": "item__boge_bangqiu",
+  "model": "boge_bangqiu",
+  "name": "boge_bangqiu",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/boge_bangqiu",
+  "path": "battle-assets/炮弹/item__boge_bangqiu",
+  "images": [
+    {
+      "file": "zidan_bangqiu_8314093676963372843.png",
+      "name": "zidan_bangqiu",
+      "width": 128,
+      "height": 129,
+      "role": "战斗贴图",
+      "path_id": 8314093676963372843,
+      "source": "CAB-1bec81627947f5ac08972b5480ac9851"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160989
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__boge_bangqiu/zidan_bangqiu_8314093676963372843.png"
+}

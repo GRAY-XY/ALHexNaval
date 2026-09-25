@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_shoukaotolove",
+  "model": "zidan_shoukaotolove",
+  "name": "zidan_shoukaotolove",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/zidan_shoukaotolove",
+  "path": "battle-assets/炮弹/item__zidan_shoukaotolove",
+  "images": [
+    {
+      "file": "zidan_shoukao_1920948292719859237.png",
+      "name": "zidan_shoukao",
+      "width": 365,
+      "height": 247,
+      "role": "战斗贴图",
+      "path_id": 1920948292719859237,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    160974
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_shoukaotolove/zidan_shoukao_1920948292719859237.png"
+}

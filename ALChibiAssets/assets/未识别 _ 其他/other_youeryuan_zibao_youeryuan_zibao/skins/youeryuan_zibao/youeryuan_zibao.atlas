@@ -1,0 +1,97 @@
+
+youeryuan_zibao.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b_1
+  rotate: true
+  xy: 459, 132
+  size: 48, 35
+  orig: 48, 35
+  offset: 0, 0
+  index: -1
+b_2
+  rotate: true
+  xy: 506, 193
+  size: 61, 58
+  orig: 61, 58
+  offset: 0, 0
+  index: -1
+b_3
+  rotate: true
+  xy: 506, 132
+  size: 59, 57
+  orig: 59, 57
+  offset: 0, 0
+  index: -1
+chuan_b
+  rotate: true
+  xy: 2, 13
+  size: 241, 124
+  orig: 241, 124
+  offset: 0, 0
+  index: -1
+chuan_f1
+  rotate: true
+  xy: 335, 124
+  size: 130, 122
+  orig: 130, 122
+  offset: 0, 0
+  index: -1
+chuan_f2
+  rotate: false
+  xy: 415, 42
+  size: 55, 80
+  orig: 55, 80
+  offset: 0, 0
+  index: -1
+chuan_f3
+  rotate: false
+  xy: 459, 182
+  size: 45, 72
+  orig: 45, 72
+  offset: 0, 0
+  index: -1
+jiaodai
+  rotate: true
+  xy: 335, 26
+  size: 96, 78
+  orig: 96, 78
+  offset: 0, 0
+  index: -1
+jiaodai_b
+  rotate: true
+  xy: 472, 58
+  size: 72, 33
+  orig: 72, 33
+  offset: 0, 0
+  index: -1
+jiaodai_f
+  rotate: false
+  xy: 415, 2
+  size: 71, 38
+  orig: 71, 38
+  offset: 0, 0
+  index: -1
+zd01
+  rotate: true
+  xy: 128, 30
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zd02
+  rotate: true
+  xy: 197, 30
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1
+zd03
+  rotate: true
+  xy: 266, 30
+  size: 224, 67
+  orig: 224, 67
+  offset: 0, 0
+  index: -1

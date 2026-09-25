@@ -1,0 +1,26 @@
+{
+  "id": "item__unknownv_mal_yulei",
+  "model": "unknownv_mal_yulei",
+  "name": "unknownv_mal_yulei",
+  "names": [],
+  "category": "鱼雷",
+  "source": "item/unknownv_mal_yulei",
+  "path": "battle-assets/鱼雷/item__unknownv_mal_yulei",
+  "images": [
+    {
+      "file": "unknownV_mal_yulei_-7511250864801038082.png",
+      "name": "unknownV_mal_yulei",
+      "width": 209,
+      "height": 77,
+      "role": "战斗贴图",
+      "path_id": -7511250864801038082,
+      "source": "CAB-277e9ea52c53a3283f1439cfdaea8b96"
+    }
+  ],
+  "particle_systems": 1,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__unknownv_mal_yulei/unknownV_mal_yulei_-7511250864801038082.png"
+}

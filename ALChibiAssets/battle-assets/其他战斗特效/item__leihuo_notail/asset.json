@@ -1,0 +1,26 @@
+{
+  "id": "item__leihuo_notail",
+  "model": "leihuo_notail",
+  "name": "leihuo_notail",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/leihuo_notail",
+  "path": "battle-assets/其他战斗特效/item__leihuo_notail",
+  "images": [
+    {
+      "file": "kedouzidan_red_-7960610181715748890.png",
+      "name": "kedouzidan_red",
+      "width": 128,
+      "height": 64,
+      "role": "战斗贴图",
+      "path_id": -7960610181715748890,
+      "source": "CAB-3a85f094d226e8323c2ba9c8f4e17032"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/其他战斗特效/item__leihuo_notail/kedouzidan_red_-7960610181715748890.png"
+}

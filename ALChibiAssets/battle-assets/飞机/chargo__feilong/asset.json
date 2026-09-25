@@ -1,0 +1,39 @@
+{
+  "id": "chargo__feilong",
+  "model": "feilong",
+  "name": "飞龙",
+  "names": [
+    "飞龙",
+    "【2024同盟活动B】地图机制-跨队支援 无法回避的命运（鱼雷机）",
+    "【2024同盟活动D】地图机制-跨队支援 无法回避的命运（鱼雷机）"
+  ],
+  "category": "飞机",
+  "source": "chargo/feilong",
+  "path": "battle-assets/飞机/chargo__feilong",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "feilong_-8305202083348886964.png",
+      "name": "feilong",
+      "width": 254,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": -8305202083348886964,
+      "source": "CAB-fb248144b461485c884935b075ee083b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__feilong/aircraft_shadow_2192772484218123160.png"
+}

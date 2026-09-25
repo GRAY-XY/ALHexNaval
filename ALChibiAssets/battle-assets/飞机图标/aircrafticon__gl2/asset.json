@@ -1,0 +1,43 @@
+{
+  "id": "aircrafticon__gl2",
+  "model": "gl2",
+  "name": "默认鸢尾战斗机",
+  "names": [
+    "默认鸢尾战斗机",
+    "默认鸢尾轰炸机",
+    "默认鸢尾战斗机-自动防空",
+    "GL.2舰载战斗机T0",
+    "【2020法系活动A2】精英贝亚恩级量产型 战斗机",
+    "【2020法系活动C2】精英贝亚恩级量产型 战斗机",
+    "【2022法系共斗H】BOSS 霞飞一形态 战斗机",
+    "【2022法系共斗H】BOSS 霞飞二形态 战斗机",
+    "【2022法系共斗EX】BOSS 霞飞一形态 战斗机",
+    "【2022法系共斗EX】BOSS 霞飞二形态 战斗机",
+    "【翻格子活动】鸢尾战斗机",
+    "【翻格子活动】鸢尾轰炸机",
+    "法系舰载-战斗机I",
+    "法系舰载-战斗机II",
+    "法系舰载-战斗机III",
+    "法系舰载-战斗机IV",
+    "法系舰载-战斗机V"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/gl2",
+  "path": "battle-assets/飞机图标/aircrafticon__gl2",
+  "images": [
+    {
+      "file": "GL2_-8061625307220156323.png",
+      "name": "GL2",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -8061625307220156323,
+      "source": "CAB-4d826af281e5c4c8484b684d4795eb18"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

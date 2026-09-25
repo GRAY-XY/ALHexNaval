@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_kele",
+  "model": "paodan_kele",
+  "name": "可乐炮弹",
+  "names": [
+    "可乐炮弹"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_kele",
+  "path": "battle-assets/炮弹/item__paodan_kele",
+  "images": [
+    {
+      "file": "paodan_kele_633425829487494395.png",
+      "name": "paodan_kele",
+      "width": 128,
+      "height": 71,
+      "role": "战斗贴图",
+      "path_id": 633425829487494395,
+      "source": "CAB-c3f14ef7fb988fa88933c7e39bdf4a32"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_kele/paodan_kele_633425829487494395.png"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "item__yulei_longjuanfeng",
+  "model": "yulei_longjuanfeng",
+  "name": "火焰龙卷风鱼雷",
+  "names": [
+    "火焰龙卷风鱼雷"
+  ],
+  "category": "鱼雷",
+  "source": "item/yulei_longjuanfeng",
+  "path": "battle-assets/鱼雷/item__yulei_longjuanfeng",
+  "images": [
+    {
+      "file": "longjuanfeng03_-6843021337377984973.png",
+      "name": "longjuanfeng03",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6843021337377984973,
+      "source": "CAB-c9d7e8b619e637c9956f28257c41cddb"
+    },
+    {
+      "file": "mask01_-6791568060622268294.png",
+      "name": "mask01",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -6791568060622268294,
+      "source": "CAB-c9d7e8b619e637c9956f28257c41cddb"
+    },
+    {
+      "file": "wave01_2022156337523498456.png",
+      "name": "wave01",
+      "width": 256,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 2022156337523498456,
+      "source": "CAB-c9d7e8b619e637c9956f28257c41cddb"
+    }
+  ],
+  "particle_systems": 11,
+  "animations": [],
+  "bullet_ids": [
+    3139306
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/鱼雷/item__yulei_longjuanfeng/longjuanfeng03_-6843021337377984973.png"
+}

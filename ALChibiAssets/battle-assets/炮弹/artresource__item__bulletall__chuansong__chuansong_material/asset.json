@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__chuansong__chuansong_material",
+  "model": "chuansong_material",
+  "name": "chuansong_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/chuansong/chuansong_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__chuansong__chuansong_material",
+  "images": [
+    {
+      "file": "chuansong_-79042258006689496.png",
+      "name": "chuansong",
+      "width": 256,
+      "height": 128,
+      "role": "原始纹理",
+      "path_id": -79042258006689496,
+      "source": "CAB-e1cc6aad2850a96ff1f82c58067846d7"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

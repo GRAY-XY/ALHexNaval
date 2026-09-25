@@ -1,0 +1,25 @@
+{
+  "id": "aircrafticon__95shi",
+  "model": "95shi",
+  "name": "95shi",
+  "names": [],
+  "category": "飞机图标",
+  "source": "aircrafticon/95shi",
+  "path": "battle-assets/飞机图标/aircrafticon__95shi",
+  "images": [
+    {
+      "file": "95shi_-6527731442104947391.png",
+      "name": "95shi",
+      "width": 45,
+      "height": 45,
+      "role": "原始精灵",
+      "path_id": -6527731442104947391,
+      "source": "CAB-9326689ff24078c02a5573ca7be8f79e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

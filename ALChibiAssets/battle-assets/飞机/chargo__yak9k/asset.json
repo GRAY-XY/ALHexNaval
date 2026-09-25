@@ -1,0 +1,38 @@
+{
+  "id": "chargo__yak9k",
+  "model": "yak9k",
+  "name": "【2025荷兰SP活动剧情】我方北联航母蛋船 战斗机",
+  "names": [
+    "【2025荷兰SP活动剧情】我方北联航母蛋船 战斗机",
+    "【2025荷兰SP活动剧情】我方北联航母蛋船 轰炸机"
+  ],
+  "category": "飞机",
+  "source": "chargo/yak9k",
+  "path": "battle-assets/飞机/chargo__yak9k",
+  "images": [
+    {
+      "file": "yak9k_-6499177959451695784.png",
+      "name": "yak9k",
+      "width": 247,
+      "height": 222,
+      "role": "战斗贴图",
+      "path_id": -6499177959451695784,
+      "source": "CAB-02604db86bc1cc9f28c6c7b92074055f"
+    },
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__yak9k/yak9k_-6499177959451695784.png"
+}

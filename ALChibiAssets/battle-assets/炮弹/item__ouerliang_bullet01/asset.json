@@ -1,0 +1,37 @@
+{
+  "id": "item__ouerliang_bullet01",
+  "model": "ouerliang_bullet01",
+  "name": "ouerliang_bullet01",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/ouerliang_bullet01",
+  "path": "battle-assets/炮弹/item__ouerliang_bullet01",
+  "images": [
+    {
+      "file": "bullet7_-788254044266442545.png",
+      "name": "bullet7",
+      "width": 117,
+      "height": 40,
+      "role": "战斗贴图",
+      "path_id": -788254044266442545,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    },
+    {
+      "file": "orleans_bullet01_-6823880481071067375.png",
+      "name": "orleans_bullet01",
+      "width": 246,
+      "height": 96,
+      "role": "战斗贴图",
+      "path_id": -6823880481071067375,
+      "source": "CAB-48e01d23a2f9baf72d7ca570c5b2daa9"
+    }
+  ],
+  "particle_systems": 3,
+  "animations": [],
+  "bullet_ids": [
+    19522
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__ouerliang_bullet01/bullet7_-788254044266442545.png"
+}

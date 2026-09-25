@@ -1,0 +1,69 @@
+
+chonglangjiu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ji
+  rotate: true
+  xy: 2, 20
+  size: 229, 159
+  orig: 229, 159
+  offset: 0, 0
+  index: -1
+lhb-1
+  rotate: true
+  xy: 486, 60
+  size: 189, 31
+  orig: 189, 31
+  offset: 0, 0
+  index: -1
+lhb-2
+  rotate: true
+  xy: 303, 28
+  size: 221, 27
+  orig: 221, 27
+  offset: 0, 0
+  index: -1
+lhb-3
+  rotate: true
+  xy: 226, 21
+  size: 228, 75
+  orig: 228, 75
+  offset: 0, 0
+  index: -1
+lhb-4
+  rotate: true
+  xy: 431, 57
+  size: 192, 53
+  orig: 192, 53
+  offset: 0, 0
+  index: -1
+lhf-1
+  rotate: false
+  xy: 332, 2
+  size: 195, 39
+  orig: 195, 39
+  offset: 0, 0
+  index: -1
+lhf-2
+  rotate: true
+  xy: 332, 43
+  size: 206, 43
+  orig: 206, 43
+  offset: 0, 0
+  index: -1
+lhf-3
+  rotate: true
+  xy: 163, 20
+  size: 229, 61
+  orig: 229, 61
+  offset: 0, 0
+  index: -1
+lhf-4
+  rotate: true
+  xy: 377, 52
+  size: 197, 52
+  orig: 197, 52
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,35 @@
+{
+  "id": "item__heifangzhou_zhongyu_cyan",
+  "model": "heifangzhou_zhongyu_cyan",
+  "name": "heifangzhou_zhongyu_cyan",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/heifangzhou_zhongyu_cyan",
+  "path": "battle-assets/炮弹/item__heifangzhou_zhongyu_cyan",
+  "images": [
+    {
+      "file": "zhongyu_cyan_-8112431224047232754.png",
+      "name": "zhongyu_cyan",
+      "width": 256,
+      "height": 512,
+      "role": "原始纹理",
+      "path_id": -8112431224047232754,
+      "source": "CAB-077e45d3d4a087c883863c14f6d5f5db"
+    }
+  ],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    3230209,
+    3230215,
+    3231012,
+    3234045,
+    3271113,
+    3271213,
+    3345142,
+    3345242
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__heifangzhou_zhongyu_cyan/zhongyu_cyan_-8112431224047232754.png"
+}

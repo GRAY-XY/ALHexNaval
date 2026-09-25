@@ -1,0 +1,41 @@
+{
+  "id": "item__jiantouzidan12",
+  "model": "jiantouzidan12",
+  "name": "jiantouzidan12",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/jiantouzidan12",
+  "path": "battle-assets/炮弹/item__jiantouzidan12",
+  "images": [
+    {
+      "file": "jiantouzidan12_-7493323537388057754.png",
+      "name": "jiantouzidan12",
+      "width": 111,
+      "height": 106,
+      "role": "战斗贴图",
+      "path_id": -7493323537388057754,
+      "source": "CAB-04be7d582417401a3d27e1a0e465a19b"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [
+    3301204,
+    3301214,
+    3315008,
+    3315009,
+    3315036,
+    3315108,
+    3315109,
+    3315136,
+    3355324,
+    3355325,
+    3355326,
+    3355329,
+    3359214,
+    3359215
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__jiantouzidan12/jiantouzidan12_-7493323537388057754.png"
+}

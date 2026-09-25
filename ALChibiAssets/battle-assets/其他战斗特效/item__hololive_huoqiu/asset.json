@@ -1,0 +1,15 @@
+{
+  "id": "item__hololive_huoqiu",
+  "model": "hololive_huoqiu",
+  "name": "hololive_huoqiu",
+  "names": [],
+  "category": "其他战斗特效",
+  "source": "item/hololive_huoqiu",
+  "path": "battle-assets/其他战斗特效/item__hololive_huoqiu",
+  "images": [],
+  "particle_systems": 26,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": false,
+  "prefab": true
+}

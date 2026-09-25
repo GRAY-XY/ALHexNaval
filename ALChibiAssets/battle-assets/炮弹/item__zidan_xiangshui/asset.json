@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_xiangshui",
+  "model": "zidan_xiangshui",
+  "name": "炸弹(?)香水",
+  "names": [
+    "炸弹(?)香水"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_xiangshui",
+  "path": "battle-assets/炮弹/item__zidan_xiangshui",
+  "images": [
+    {
+      "file": "zidan_xiangshui_-4118733524831846939.png",
+      "name": "zidan_xiangshui",
+      "width": 128,
+      "height": 63,
+      "role": "战斗贴图",
+      "path_id": -4118733524831846939,
+      "source": "CAB-761badcedf9acdfec7e233a38c52b2c4"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_xiangshui/zidan_xiangshui_-4118733524831846939.png"
+}

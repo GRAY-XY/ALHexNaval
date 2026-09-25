@@ -1,0 +1,125 @@
+
+diezhan_zhongxun.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 373
+  size: 498, 207
+  orig: 498, 207
+  offset: 0, 0
+  index: -1
+dianxian
+  rotate: false
+  xy: 502, 298
+  size: 431, 111
+  orig: 431, 111
+  offset: 0, 0
+  index: -1
+dianxiangan
+  rotate: false
+  xy: 502, 411
+  size: 453, 169
+  orig: 453, 169
+  offset: 0, 0
+  index: -1
+ji1
+  rotate: true
+  xy: 410, 290
+  size: 81, 85
+  orig: 81, 85
+  offset: 0, 0
+  index: -1
+ji2
+  rotate: false
+  xy: 935, 298
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+ji3
+  rotate: true
+  xy: 401, 207
+  size: 81, 85
+  orig: 81, 85
+  offset: 0, 0
+  index: -1
+lieche_2
+  rotate: false
+  xy: 757, 2
+  size: 230, 216
+  orig: 230, 216
+  offset: 0, 0
+  index: -1
+lieche_3
+  rotate: false
+  xy: 2, 47
+  size: 277, 198
+  orig: 277, 198
+  offset: 0, 0
+  index: -1
+maoyan
+  rotate: false
+  xy: 488, 16
+  size: 267, 204
+  orig: 267, 204
+  offset: 0, 0
+  index: -1
+qiang_1
+  rotate: false
+  xy: 957, 385
+  size: 56, 37
+  orig: 56, 37
+  offset: 0, 0
+  index: -1
+qiang_2
+  rotate: false
+  xy: 888, 220
+  size: 127, 76
+  orig: 127, 76
+  offset: 0, 0
+  index: -1
+qiang_3
+  rotate: true
+  xy: 957, 424
+  size: 116, 60
+  orig: 116, 60
+  offset: 0, 0
+  index: -1
+weapon_HG_fire1
+  rotate: false
+  xy: 957, 542
+  size: 64, 38
+  orig: 64, 38
+  offset: 0, 0
+  index: -1
+weilan
+  rotate: false
+  xy: 497, 222
+  size: 389, 74
+  orig: 389, 74
+  offset: 0, 0
+  index: -1
+zx01
+  rotate: false
+  xy: 2, 298
+  size: 402, 36
+  orig: 402, 36
+  offset: 0, 0
+  index: -1
+zx02
+  rotate: false
+  xy: 2, 247
+  size: 397, 49
+  orig: 397, 49
+  offset: 0, 0
+  index: -1
+zx03
+  rotate: false
+  xy: 2, 336
+  size: 406, 35
+  orig: 406, 35
+  offset: 0, 0
+  index: -1

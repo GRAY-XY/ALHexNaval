@@ -1,0 +1,43 @@
+{
+  "id": "item__paodan_huoqiu_purple",
+  "model": "paodan_huoqiu_purple",
+  "name": "paodan_huoqiu_purple",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/paodan_huoqiu_purple",
+  "path": "battle-assets/炮弹/item__paodan_huoqiu_purple",
+  "images": [],
+  "particle_systems": 2,
+  "animations": [],
+  "bullet_ids": [
+    29659027,
+    3086034,
+    3086035,
+    3086036,
+    3086037,
+    3086038,
+    3086039,
+    3086040,
+    3086041,
+    3086042,
+    3204009,
+    3204011,
+    3204012,
+    3204013,
+    3204014,
+    3204015,
+    3204016,
+    3204027,
+    3216001,
+    3216003
+  ],
+  "has_preview": false,
+  "prefab": true,
+  "spine": {
+    "skel": "huoqiupaodan_purple.skel",
+    "atlas": "huoqiupaodan_purple.atlas",
+    "pages": [
+      "huoqiupaodan_purple.png"
+    ]
+  }
+}

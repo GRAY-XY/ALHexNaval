@@ -1,0 +1,31 @@
+{
+  "id": "aircrafticon__alter_plane3",
+  "model": "alter_plane3",
+  "name": "【2021美系活动B3】BOSS 苍龙·META 二阶段 余烬飞机",
+  "names": [
+    "【2021美系活动B3】BOSS 苍龙·META 二阶段 余烬飞机",
+    "【2021美系活动D3】BOSS 苍龙·META 二阶段 余烬飞机",
+    "【2021美系活动SP】BOSS 苍龙·META 第三波 飞机",
+    "【2021美系活动EX】BOSS 苍龙·META 第三波 飞机",
+    "【大世界】黑飞龙飞机3"
+  ],
+  "category": "飞机图标",
+  "source": "aircrafticon/alter_plane3",
+  "path": "battle-assets/飞机图标/aircrafticon__alter_plane3",
+  "images": [
+    {
+      "file": "alter_plane3_2985679118991722310.png",
+      "name": "alter_plane3",
+      "width": 44,
+      "height": 32,
+      "role": "原始精灵",
+      "path_id": 2985679118991722310,
+      "source": "CAB-c5d54e8fb80c07f635b6dc326c250f1a"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

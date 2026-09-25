@@ -1,0 +1,31 @@
+{
+  "id": "item__kebu_yanzhao",
+  "model": "kebu_yanzhao",
+  "name": "kebu_yanzhao",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/kebu_yanzhao",
+  "path": "battle-assets/炮弹/item__kebu_yanzhao",
+  "images": [
+    {
+      "file": "yanzhao_4045472741308176978.png",
+      "name": "yanzhao",
+      "width": 218,
+      "height": 223,
+      "role": "战斗贴图",
+      "path_id": 4045472741308176978,
+      "source": "CAB-75d404c96ebc34b17762973b40ef3410"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [
+    "yanzhaoAnimation"
+  ],
+  "bullet_ids": [
+    19523,
+    19524
+  ],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__kebu_yanzhao/yanzhao_4045472741308176978.png"
+}

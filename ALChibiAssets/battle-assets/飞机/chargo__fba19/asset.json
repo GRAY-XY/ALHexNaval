@@ -1,0 +1,43 @@
+{
+  "id": "chargo__fba19",
+  "model": "fba19",
+  "name": "默认鸢尾水侦",
+  "names": [
+    "默认鸢尾水侦",
+    "镇海技能水上机Lv1",
+    "镇海技能水上机地毯式Lv1",
+    "FBA 19",
+    "华甲技能水上机弹幕Lv1",
+    "镇海改技能水上机Lv1",
+    "华甲改弹幕特殊舰载机Lv1"
+  ],
+  "category": "飞机",
+  "source": "chargo/fba19",
+  "path": "battle-assets/飞机/chargo__fba19",
+  "images": [
+    {
+      "file": "aircraft_shadow_2192772484218123160.png",
+      "name": "aircraft_shadow",
+      "width": 120,
+      "height": 60,
+      "role": "战斗贴图",
+      "path_id": 2192772484218123160,
+      "source": "CAB-7d2a1439fc45ba6ad85f1ce0246cfc47"
+    },
+    {
+      "file": "FBA19_-7192612409838568823.png",
+      "name": "FBA19",
+      "width": 235,
+      "height": 238,
+      "role": "战斗贴图",
+      "path_id": -7192612409838568823,
+      "source": "CAB-b8e9bf922a3d9f948fbe897c94649e9f"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/飞机/chargo__fba19/aircraft_shadow_2192772484218123160.png"
+}

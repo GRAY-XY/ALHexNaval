@@ -1,0 +1,17 @@
+{
+  "id": "item__aersasi_jiguang",
+  "model": "aersasi_jiguang",
+  "name": "aersasi_jiguang",
+  "names": [],
+  "category": "炮弹",
+  "source": "item/aersasi_jiguang",
+  "path": "battle-assets/炮弹/item__aersasi_jiguang",
+  "images": [],
+  "particle_systems": 15,
+  "animations": [],
+  "bullet_ids": [
+    160905
+  ],
+  "has_preview": false,
+  "prefab": true
+}

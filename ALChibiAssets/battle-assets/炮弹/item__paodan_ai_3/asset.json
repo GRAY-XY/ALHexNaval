@@ -1,0 +1,28 @@
+{
+  "id": "item__paodan_ai_3",
+  "model": "paodan_ai_3",
+  "name": "字幕炮弹:可爱",
+  "names": [
+    "字幕炮弹:可爱"
+  ],
+  "category": "炮弹",
+  "source": "item/paodan_ai_3",
+  "path": "battle-assets/炮弹/item__paodan_ai_3",
+  "images": [
+    {
+      "file": "paodan_ai_3_-4317030874501233593.png",
+      "name": "paodan_ai_3",
+      "width": 128,
+      "height": 36,
+      "role": "战斗贴图",
+      "path_id": -4317030874501233593,
+      "source": "CAB-525501a5b5c29dc7cb6c65230b6d4c72"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__paodan_ai_3/paodan_ai_3_-4317030874501233593.png"
+}

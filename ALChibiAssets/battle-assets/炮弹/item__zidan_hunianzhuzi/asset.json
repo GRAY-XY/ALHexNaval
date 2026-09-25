@@ -1,0 +1,28 @@
+{
+  "id": "item__zidan_hunianzhuzi",
+  "model": "zidan_hunianzhuzi",
+  "name": "翠竹子弹",
+  "names": [
+    "翠竹子弹"
+  ],
+  "category": "炮弹",
+  "source": "item/zidan_hunianzhuzi",
+  "path": "battle-assets/炮弹/item__zidan_hunianzhuzi",
+  "images": [
+    {
+      "file": "zidan_hunianzhuzi_-8372855826934192293.png",
+      "name": "zidan_hunianzhuzi",
+      "width": 128,
+      "height": 76,
+      "role": "战斗贴图",
+      "path_id": -8372855826934192293,
+      "source": "CAB-d3e8b520bf8d60299eb0b049ff3bf67c"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": true,
+  "preview": "battle-assets/炮弹/item__zidan_hunianzhuzi/zidan_hunianzhuzi_-8372855826934192293.png"
+}

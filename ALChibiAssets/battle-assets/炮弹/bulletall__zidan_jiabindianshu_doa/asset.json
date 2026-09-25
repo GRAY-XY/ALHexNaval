@@ -1,0 +1,27 @@
+{
+  "id": "bulletall__zidan_jiabindianshu_doa",
+  "model": "zidan_jiabindianshu_doa",
+  "name": "嘉宾点数子弹",
+  "names": [
+    "嘉宾点数子弹"
+  ],
+  "category": "炮弹",
+  "source": "bulletall/zidan_jiabindianshu_doa",
+  "path": "battle-assets/炮弹/bulletall__zidan_jiabindianshu_doa",
+  "images": [
+    {
+      "file": "zidan_jiabindianshu_doa_-2323760655932831064.png",
+      "name": "zidan_jiabindianshu_doa",
+      "width": 128,
+      "height": 69,
+      "role": "原始精灵",
+      "path_id": -2323760655932831064,
+      "source": "CAB-bdc2073eaab83b1587c972aa8b85a65e"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

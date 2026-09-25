@@ -1,0 +1,25 @@
+{
+  "id": "artresource__item__bulletall__xianhe__xianhe_material",
+  "model": "xianhe_material",
+  "name": "xianhe_material",
+  "names": [],
+  "category": "炮弹",
+  "source": "artresource/item/bulletall/xianhe/xianhe_material",
+  "path": "battle-assets/炮弹/artresource__item__bulletall__xianhe__xianhe_material",
+  "images": [
+    {
+      "file": "xianhe_8519437625164300016.png",
+      "name": "xianhe",
+      "width": 1024,
+      "height": 256,
+      "role": "原始纹理",
+      "path_id": 8519437625164300016,
+      "source": "CAB-f9cc1fcefed7d274126ed60203b2c582"
+    }
+  ],
+  "particle_systems": 0,
+  "animations": [],
+  "bullet_ids": [],
+  "has_preview": true,
+  "prefab": false
+}

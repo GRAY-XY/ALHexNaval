@@ -1,0 +1,167 @@
+
+feiji_mozhuhuajuan.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+caoye_1
+  rotate: true
+  xy: 208, 2
+  size: 80, 92
+  orig: 80, 92
+  offset: 0, 0
+  index: -1
+caoye_5
+  rotate: false
+  xy: 302, 6
+  size: 73, 29
+  orig: 73, 29
+  offset: 0, 0
+  index: -1
+caoye_6
+  rotate: false
+  xy: 302, 37
+  size: 86, 45
+  orig: 86, 45
+  offset: 0, 0
+  index: -1
+caoye_7
+  rotate: false
+  xy: 208, 84
+  size: 140, 168
+  orig: 140, 168
+  offset: 0, 0
+  index: -1
+die_1
+  rotate: true
+  xy: 440, 62
+  size: 39, 37
+  orig: 39, 37
+  offset: 0, 0
+  index: -1
+die_1_2
+  rotate: true
+  xy: 479, 62
+  size: 39, 37
+  orig: 39, 37
+  offset: 0, 0
+  index: -1
+die_1_3
+  rotate: true
+  xy: 517, 156
+  size: 39, 37
+  orig: 39, 37
+  offset: 0, 0
+  index: -1
+die_2
+  rotate: true
+  xy: 407, 137
+  size: 55, 53
+  orig: 55, 53
+  offset: 0, 0
+  index: -1
+die_2_2
+  rotate: true
+  xy: 462, 137
+  size: 55, 53
+  orig: 55, 53
+  offset: 0, 0
+  index: -1
+die_2_3
+  rotate: true
+  xy: 464, 197
+  size: 55, 53
+  orig: 55, 53
+  offset: 0, 0
+  index: -1
+die_3
+  rotate: true
+  xy: 350, 194
+  size: 58, 55
+  orig: 58, 55
+  offset: 0, 0
+  index: -1
+die_3_2
+  rotate: true
+  xy: 350, 134
+  size: 58, 55
+  orig: 58, 55
+  offset: 0, 0
+  index: -1
+die_3_3
+  rotate: true
+  xy: 407, 194
+  size: 58, 55
+  orig: 58, 55
+  offset: 0, 0
+  index: -1
+feiye_1
+  rotate: true
+  xy: 350, 84
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+feiye_1_2
+  rotate: false
+  xy: 390, 40
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+feiye_1_3
+  rotate: true
+  xy: 394, 84
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+feiye_2
+  rotate: true
+  xy: 377, 3
+  size: 32, 56
+  orig: 32, 56
+  offset: 0, 0
+  index: -1
+feiye_2_2
+  rotate: true
+  xy: 435, 6
+  size: 32, 56
+  orig: 32, 56
+  offset: 0, 0
+  index: -1
+feiye_2_3
+  rotate: true
+  xy: 438, 103
+  size: 32, 56
+  orig: 32, 56
+  offset: 0, 0
+  index: -1
+feiye_3
+  rotate: false
+  xy: 496, 106
+  size: 46, 29
+  orig: 46, 29
+  offset: 0, 0
+  index: -1
+feiye_3_2
+  rotate: true
+  xy: 519, 206
+  size: 46, 29
+  orig: 46, 29
+  offset: 0, 0
+  index: -1
+feiye_3_3
+  rotate: true
+  xy: 550, 206
+  size: 46, 29
+  orig: 46, 29
+  offset: 0, 0
+  index: -1
+juanzhou
+  rotate: true
+  xy: 2, 18
+  size: 234, 204
+  orig: 234, 204
+  offset: 0, 0
+  index: -1
