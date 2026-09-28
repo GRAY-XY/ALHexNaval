@@ -28,7 +28,7 @@ function bestAttack(match:Match,unit:MatchUnit):{target:MatchUnit;weapon:WeaponD
   for(const target of visibleEnemies(match))for(const weapon of match.weapons(unit)){
     const preview=match.attackPreview(unit.instanceId,target.instanceId,weapon.id);if(!preview.valid)continue;
     const code=target.asset.ship_type.code,strategic=['CV','CVL','BB'].includes(code)?18:0;
-    const score=(preview.sunk?1000:0)+preview.damage*30+strategic-target.hp*2-preview.distance;
+    const chance=preview.hitChance??100,score=(preview.sunk?1000*chance/100:0)+preview.damage*chance/100*30+strategic-target.hp*2-preview.distance;
     if(!best||score>best.score||score===best.score&&target.instanceId.localeCompare(best.target.instanceId)<0)best={target,weapon,score};
   }
   return best;
@@ -141,7 +141,7 @@ export function executeAiTurn(match:Match):AiTurnReport {
   }
   if(!match.result)orderAircraft(match,report);
   for(const unit of units){
-    if(match.result||match.active.oil<=0)break;if(unit.status!=='ready')continue;
+    if(match.result||match.rulesetId!=='naval-v2'&&match.active.oil<=0)break;if(unit.status!=='ready')continue;
     const target=chooseMove(match,unit);if(!target)continue;
     try {report.moves.push(...match.issueMove(unit.instanceId,target));match.refreshVision();} catch {continue;}
     if(unit.action&&captureNearby(match,unit)){report.captures++;continue;}

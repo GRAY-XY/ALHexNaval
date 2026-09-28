@@ -1,11 +1,12 @@
 import { cellCenter, fromAxial, hexDistance, hexLine, neighbors, toAxial, worldToCell } from './hex.ts';
 import {FogOfWar,type SavedFog} from './fog.ts';
-import {createPorts,createLegacyPorts,PORT_OIL_BONUS,STARTING_CREDITS,PORT_INCOME,MAX_CREDITS,REPAIR_LIMIT,REPAIR_PRICE,REINFORCEMENT_COST,type Port,type PortView,type MatchResult,type SavedCampaign} from './ports.ts';
+import {createPorts,createLegacyPorts,PORT_OIL_BONUS,STARTING_CREDITS,PORT_INCOME,MAX_CREDITS,REPAIR_LIMIT,REPAIR_PRICE,REINFORCEMENT_COST,MAX_SUPPLY,STARTING_SUPPLY,type Port,type PortView,type MatchResult,type SavedCampaign} from './ports.ts';
 import { arrivalAnchor, translateCell } from './arrival.ts';
 import { cellKey, findRoute, sameCell, type Route } from './pathfinding.ts';
 import { HexWorld } from './world.ts';
 import { Terrain, type Cell, type DeployedShip, type ShipAsset } from './types.ts';
 import { emptyAviation, endAviationTurn, validateAviation, type AviationState, type Squadron } from './aircraft.ts';
+import { SHIP_RULES_V2, WEAPONS_V2, damageOnHitV2, hitChanceV2, rollDieV2, shipRulesV2 } from './naval-rules-v2.ts';
 
 export const TEAM_NAMES = ['湛蓝舰队', '翠绿舰队', '琥珀舰队', '紫罗兰舰队', '珊瑚舰队', '银白舰队', '金辉舰队', '绯红舰队'];
 export const TEAM_COLORS = [0x89d8e3, 0x9ae4c6, 0xf2c39c, 0xc8b7e8, 0xf29db4, 0xdde8f4, 0xe8d777, 0xf08476];
@@ -23,6 +24,7 @@ export type WeaponKind = 'gun' | 'torpedo' | 'air';
 export interface WeaponDefinition {
   id: string; name: string; kind: WeaponKind; minRange: number; maxRange: number; cooldown: number;
   damage: Record<Armor, number>;
+  power?: number; penetration?: number;
 }
 export const WEAPONS: Record<string, WeaponDefinition[]> = {
   DD: [{ id: 'light-gun', name: '轻型舰炮', kind: 'gun', minRange: 1, maxRange: 3, cooldown: 0, damage: { light: 2, medium: 1, heavy: 1 } },
@@ -38,18 +40,19 @@ export const WEAPONS: Record<string, WeaponDefinition[]> = {
 export interface MatchUnit extends DeployedShip {
   ownerId: number; action: number; status: 'ready' | 'wait' | 'hold' | 'sunk';
   hp: number; maxHp: number; guard: boolean; cooldowns: Record<string, number>;
+  movementUsed?: number; movedThisTurn?: boolean; torpedoes?: number;
   notice?: string;
   availableRound?:number;
 }
 export interface GroupMovePlan { source: Cell; target: Cell; orders: { instanceId: string; target: Cell; route: Route }[]; skipped: string[] }
 export interface GroupMoveOptions { source?: Cell; fits?: (source: Cell, target: Cell) => boolean }
 export interface MoveEvent { instanceId: string; cells: Cell[] }
-export interface CombatEvent { attackerId: string; targetId: string; weaponId: string; kind: WeaponKind; damage: number; hpBefore: number; hpAfter: number; sunk: boolean; origin?: { x: number; y: number } }
-export interface AttackPreview { valid: boolean; reason?: string; distance: number; damage: number; hpAfter: number; sunk: boolean; blocked: Cell[]; weapon?: WeaponDefinition }
+export interface CombatEvent { attackerId: string; targetId: string; weaponId: string; kind: WeaponKind; damage: number; hpBefore: number; hpAfter: number; sunk: boolean; hit?: boolean; dice?: [number, number]; origin?: { x: number; y: number } }
+export interface AttackPreview { valid: boolean; reason?: string; distance: number; damage: number; hpAfter: number; sunk: boolean; blocked: Cell[]; weapon?: WeaponDefinition; hitChance?: number }
 export type TeamController = 'human' | 'ai';
-export interface Team { id: number; name: string; oil: number; credits:number; eliminated:boolean; controller:TeamController }
+export interface Team { id: number; name: string; oil: number; credits:number; supply:number; eliminated:boolean; controller:TeamController }
 export interface SavedMatch {
-  format: 'al-hex-match'; version: 15; mapVersion: 1; size: number; mapHash: string;
+  format: 'al-hex-match'; version: 16; mapVersion: 1; size: number; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
   round: number; activeIndex: number; teams: Team[];
   units: (Omit<MatchUnit, 'asset'> & { assetId: string })[];
   aviation: AviationState;
@@ -66,6 +69,8 @@ export class Match {
   teams: Team[]; units: MatchUnit[];
   aviation = emptyAviation();
   round = 1; activeIndex = 0;
+  rulesetId: 'naval-v2' | 'classic-v1' = 'naval-v2';
+  combatState = 1;
   readonly hash: string;
   readonly world: HexWorld;
   readonly fog:FogOfWar;
@@ -77,15 +82,17 @@ export class Match {
     this.world = world;
     if (!Number.isInteger(teamCount) || teamCount < 2 || teamCount > 8 || !assets.length || new Set(assets.map(asset => asset.id)).size !== assets.length) throw Error('势力数应为 2～8，舰船池不能为空或重复');
     if(controllers&&(controllers.length!==teamCount||controllers.some(controller=>!['human','ai'].includes(controller))))throw Error('席位设置无效');
-    this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: TEAM_NAMES[i], oil: OIL_PER_TURN,credits:STARTING_CREDITS,eliminated:false,controller:controllers?.[i]??'human' }));
+    this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: TEAM_NAMES[i], oil: 0,credits:STARTING_CREDITS,supply:STARTING_SUPPLY,eliminated:false,controller:controllers?.[i]??'human' }));
     const occupied = new Set<string>(), starts = [[.12,.13],[.82,.15],[.82,.82],[.15,.82],[.48,.10],[.90,.50],[.50,.90],[.10,.50]];
     this.units = this.teams.flatMap((team,index) => {
       const origin = { col: Math.round(world.width * starts[index][0]), row: Math.round(world.height * starts[index][1]) };
       return world.deploy(assets, origin, team.id, occupied).map(unit => { const combat = profile(unit.asset.ship_type.code); return { ...unit, ownerId: team.id,
         action: 1, status: 'ready' as const,
-        hp: combat.maxHp, maxHp: combat.maxHp, guard: false, cooldowns: {} }; });
+        hp: combat.maxHp, maxHp: combat.maxHp, guard: false, cooldowns: {}, movementUsed: 0,
+        movedThisTurn:false,torpedoes: SHIP_RULES_V2[unit.asset.ship_type.code]?.torpedoes ?? 0 }; });
     });
     this.hash = mapHash(world);
+    this.combatState = globalThis.crypto.getRandomValues(new Uint32Array(1))[0];
     this.ports=createPorts(world,this.units,teamCount);
     this.portIntel=this.teams.map(t=>this.ports.map(p=>p.ownerId===t.id?t.id:-1));
     this.fog=new FogOfWar(world,teamCount);this.refreshVision();
@@ -107,9 +114,20 @@ export class Match {
   get active(): Team { return this.teams[this.activeIndex]; }
   unit(id: string): MatchUnit { const unit = this.units.find(u => u.instanceId === id); if (!unit) throw Error('找不到舰船'); return unit; }
   team(ownerId: number): Team { const team = this.teams.find(item => item.id === ownerId); if (!team) throw Error('找不到势力'); return team; }
-  budget(unit: MatchUnit): number { return this.team(unit.ownerId).oil; }
+  budget(unit: MatchUnit): number {
+    if(this.rulesetId==='naval-v2')return unit.movedThisTurn?0:Math.max(0,this.movementLimit(unit)-this.movementUsed(unit));
+    return this.team(unit.ownerId).oil;
+  }
+  movementUsed(unit:MatchUnit):number{return this.rulesetId==='naval-v2'?(unit.movementUsed??0):0;}
+  movementLimit(unit:MatchUnit):number {
+    if(this.rulesetId!=='naval-v2')return this.team(unit.ownerId).oil;
+    const stats=shipRulesV2(unit.asset.ship_type.code),damagePenalty=unit.hp<=unit.maxHp/4?stats.speed-1:unit.hp<=unit.maxHp/2?1:0;
+    return Math.max(1,Math.min(unit.guard?1:stats.speed,stats.speed-damagePenalty));
+  }
+  movementSpent(unit:MatchUnit,cost:number):void {if(this.rulesetId==='naval-v2')unit.movementUsed=(unit.movementUsed??0)+cost;}
+  private rollDie():number {const roll=rollDieV2(this.combatState);this.combatState=roll.state;return roll.die;}
   oilCap(owner=this.active.id):number {return BASE_OIL_CAP+PORT_OIL_BONUS*this.ports.filter(p=>p.ownerId===owner).length;}
-  weapons(unitOrId: MatchUnit | string): WeaponDefinition[] { const unit = typeof unitOrId === 'string' ? this.unit(unitOrId) : unitOrId; return WEAPONS[unit.asset.ship_type.code] ?? []; }
+  weapons(unitOrId: MatchUnit | string): WeaponDefinition[] { const unit = typeof unitOrId === 'string' ? this.unit(unitOrId) : unitOrId; return (this.rulesetId==='naval-v2'?WEAPONS_V2:WEAPONS)[unit.asset.ship_type.code] ?? []; }
   cooldown(unit: MatchUnit, weaponId: string): number { return Math.max(0, unit.cooldowns[weaponId] ?? 0); }
   assertPlayable():void {if(this.result)throw Error('战局已结束，可查看海图或建立新战局');}
   private requireActive(unit: MatchUnit): void {this.assertPlayable(); if (unit.ownerId !== this.active.id) throw Error('只能指挥当前势力的舰船'); if (unit.status === 'sunk') throw Error('该舰船已经沉没');if(unit.availableRound&&unit.availableRound>this.round)throw Error('增援舰船在下次本方回合投入使用'); }
@@ -118,7 +136,8 @@ export class Match {
   income(owner=this.active.id):number{return this.ports.filter(p=>p.ownerId===owner).length*PORT_INCOME;}
   capturePreview(id:string,portId:string):{valid:boolean;reason:string} {
     const u=this.unit(id),p=this.port(portId);
-    const reason=this.result?'战局已结束':u.ownerId!==this.active.id?'只能使用本方舰船':u.status!=='ready'||u.availableRound&&u.availableRound>this.round?'舰船当前无法作战':!u.action?'本舰作战行动已用':hexDistance(u,p)>1?'舰船需进入港口1格内':p.ownerId===u.ownerId?'已经是本方港口':this.units.some(v=>v.status!=='sunk'&&v.ownerId!==u.ownerId&&hexDistance(v,p)<=1)?'先清除港口1格内敌舰':'';
+    const range=this.rulesetId==='naval-v2'?0:1,eligible=this.rulesetId!=='naval-v2'||['DD','CL','CA'].includes(u.asset.ship_type.code);
+    const reason=this.result?'战局已结束':u.ownerId!==this.active.id?'只能使用本方舰船':u.status!=='ready'||u.availableRound&&u.availableRound>this.round?'舰船当前无法作战':!u.action?'本舰作战行动已用':!eligible?'只有驱逐舰和巡洋舰可以占领港口':hexDistance(u,p)>range?`舰船需进入港口${range?`${range}格内`:'所在海格'}`:p.ownerId===u.ownerId?'已经是本方港口':this.units.some(v=>v.status!=='sunk'&&v.ownerId!==u.ownerId&&hexDistance(v,p)<=1)?'先清除港口1格内敌舰':'';
     return {valid:!reason,reason};
   }
   capturePort(id:string,portId:string):void {
@@ -130,18 +149,31 @@ export class Match {
     this.campaignRevision++;this.resolveOutcome();
   }
   repairPreview(id:string,portId:string):{valid:boolean;reason:string;hp:number;cost:number} {
-    const u=this.unit(id),p=this.port(portId),hp=Math.min(REPAIR_LIMIT,u.maxHp-u.hp),cost=hp*REPAIR_PRICE;
-    const reason=this.result?'战局已结束':u.ownerId!==this.active.id||p.ownerId!==u.ownerId?'需要本方舰船与本方港口':u.status!=='ready'||u.availableRound&&u.availableRound>this.round?'舰船当前无法作战':!u.action?'本舰作战行动已用':hexDistance(u,p)>1?'舰船需进入港口1格内':!hp?'舰体耐久已经全满':this.active.credits<cost?`维修需要${cost}资金`:'';
+    const u=this.unit(id),p=this.port(portId),v2=this.rulesetId==='naval-v2',limit=v2?2:REPAIR_LIMIT;
+    const hp=Math.min(limit,u.maxHp-u.hp,v2?this.active.supply:Infinity),cost=v2?hp:hp*REPAIR_PRICE;
+    const enemiesNear=v2&&this.units.some(v=>v.status!=='sunk'&&v.ownerId!==u.ownerId&&hexDistance(v,p)<=2);
+    const reason=this.result?'战局已结束':u.ownerId!==this.active.id||p.ownerId!==u.ownerId?'需要本方舰船与本方港口':u.status!=='ready'||u.availableRound&&u.availableRound>this.round?'舰船当前无法作战':!u.action?'本舰作战行动已用':hexDistance(u,p)>(v2?0:1)?`舰船需进入港口${v2?'所在海格':'1格内'}`:p.serviceRound===this.round&&v2?'本港本回合已完成服务':enemiesNear?'港口2格内有敌舰，暂不能提供服务':!hp?'舰体耐久已经全满或补给不足':!v2&&this.active.credits<cost?`维修需要${cost}资金`:'';
     return {valid:!reason,reason,hp,cost};
   }
   repairShip(id:string,portId:string):void {
     const preview=this.repairPreview(id,portId);if(!preview.valid)throw Error(preview.reason);
-    const u=this.unit(id);this.active.credits-=preview.cost;u.hp+=preview.hp;u.action=0;u.notice=`港口维修恢复${preview.hp}耐久`;
+    const u=this.unit(id),p=this.port(portId);if(this.rulesetId==='naval-v2'){this.active.supply-=preview.cost;p.serviceRound=this.round;}else this.active.credits-=preview.cost;
+    u.hp+=preview.hp;u.action=0;u.notice=`港口维修恢复${preview.hp}耐久`;
     this.campaignRevision++;
+  }
+  torpedoReloadPreview(id:string,portId:string):{valid:boolean;reason:string;cost:number} {
+    const u=this.unit(id),p=this.port(portId),v2=this.rulesetId==='naval-v2',cost=2,max=shipRulesV2(u.asset.ship_type.code).torpedoes;
+    const enemiesNear=this.units.some(v=>v.status!=='sunk'&&v.ownerId!==u.ownerId&&hexDistance(v,p)<=2);
+    const reason=this.result?'战局已结束':!v2?'当前规则不支持此服务':u.ownerId!==this.active.id||p.ownerId!==u.ownerId?'需要本方舰船与本方港口':u.status!=='ready'||u.availableRound&&u.availableRound>this.round?'舰船当前无法作战':!u.action?'本舰作战行动已用':hexDistance(u,p)!==0?'舰船必须停泊在港口格':!max?'该舰种不携带鱼雷':(u.torpedoes??0)>=max?'鱼雷已经装满':p.serviceRound===this.round?'本港本回合已完成服务':enemiesNear?'港口2格内有敌舰，暂不能提供服务':this.active.supply<cost?`装填鱼雷需要${cost}补给点`:'';
+    return {valid:!reason,reason,cost};
+  }
+  reloadTorpedo(id:string,portId:string):void {
+    const preview=this.torpedoReloadPreview(id,portId);if(!preview.valid)throw Error(preview.reason);
+    const u=this.unit(id),p=this.port(portId);this.active.supply-=preview.cost;u.torpedoes=(u.torpedoes??0)+1;u.action=0;p.serviceRound=this.round;u.notice='港口补给装填了1发鱼雷';this.campaignRevision++;
   }
   reinforcementPreview(portId:string,id:string):{valid:boolean;reason:string;cost:number;cell?:Cell} {
     const p=this.port(portId),u=this.unit(id),cost=REINFORCEMENT_COST[u.asset.ship_type.code]??40;
-    let reason=this.result?'战局已结束':p.ownerId!==this.active.id||u.ownerId!==this.active.id?'只能在本方港口补充本方舰船':u.status!=='sunk'?'只能补充已损失的舰型':p.usedRound===this.round?'该港口本轮已提供增援':this.active.credits<cost?`增援需要${cost}资金`:'';
+    let reason=this.rulesetId==='naval-v2'?'V2标准战局不提供沉船增援':this.result?'战局已结束':p.ownerId!==this.active.id||u.ownerId!==this.active.id?'只能在本方港口补充本方舰船':u.status!=='sunk'?'只能补充已损失的舰型':p.usedRound===this.round?'该港口本轮已提供增援':this.active.credits<cost?`增援需要${cost}资金`:'';
     const occupied=new Set(this.units.filter(v=>v.status!=='sunk').map(cellKey));
     const cell=[p,...neighbors(p)].find(c=>this.world.isSea(c)&&!occupied.has(cellKey(c)));
     if(!reason&&!cell)reason='港口附近没有空闲泊位';
@@ -180,6 +212,7 @@ export class Match {
   }
   reachable(id: string): Cell[] {
     const unit = this.unit(id); if (this.result||unit.ownerId !== this.active.id || unit.status !== 'ready') return [];
+    if(this.rulesetId==='naval-v2'&&unit.movedThisTurn)return [];
     const start = unit, nav = this.navigation(unit), budget = this.budget(unit), queue = [{ cell: start as Cell, cost: 0 }], costs = new Map([[cellKey(start), 0]]), result = new Map<string, Cell>();
     for (let i = 0; i < queue.length; i++) { const item = queue[i]; if (item.cost !== costs.get(cellKey(item.cell))) continue;
       if (nav.stop(item.cell)) result.set(cellKey(item.cell), item.cell);
@@ -191,13 +224,17 @@ export class Match {
     const unit = this.unit(id); this.requireActive(unit);
     if(!this.canSee(unit.ownerId,target))throw Error('目标不在本方当前视野内，请分段移动或派飞机侦察');
     if (unit.status !== 'ready') throw Error('先唤醒或取消本回合待命，再安排航行');
+    if(this.rulesetId==='naval-v2'&&unit.movedThisTurn)throw Error('本舰本回合已经完成机动');
     const route = this.route(id, target); if (!route) throw Error('目标无法抵达：岛屿、无效海域或舰船阻挡');
-    if (route.cost > this.budget(unit)) throw Error(`石油不足：本次移动需要 ${route.cost} 点，当前剩余 ${this.budget(unit)} 点，请选择本回合可抵达的海格`);
+    if (route.cost > this.budget(unit)) throw Error(this.rulesetId==='naval-v2'
+      ? `超出本舰剩余航速：本次需要 ${route.cost} 格，本舰剩余 ${this.budget(unit)} 格`
+      : `石油不足：本次移动需要 ${route.cost} 点，当前剩余 ${this.budget(unit)} 点，请选择本回合可抵达的海格`);
     unit.notice = undefined;
     if (sameCell(unit,target)) return [];
     const cells = route.cells, end = cells[cells.length-1];
     unit.facing = end.col < unit.col ? 'left' : 'right'; unit.col = end.col; unit.row = end.row;
-    this.team(unit.ownerId).oil -= route.cost;
+    if(this.rulesetId==='naval-v2'){this.movementSpent(unit,route.cost);if(route.cost)unit.movedThisTurn=true;}else this.team(unit.ownerId).oil -= route.cost;
+    this.refreshVision();
     return [{ instanceId: unit.instanceId, cells }];
   }
   // Freeze only the arrival layout. Each member still follows an independent route.
@@ -235,6 +272,7 @@ export class Match {
           }
           break;
         }
+        if(this.rulesetId==='naval-v2'&&route.cost>this.budget(unit))break;
         orders.push({ instanceId: unit.instanceId, target: cell, route });
       }
       if (orders.length === ready.length) return { source, target: anchor, orders, skipped };
@@ -245,10 +283,14 @@ export class Match {
     const plan = this.planGroupMove(ids,target,options);
     if (!plan.orders.length) throw Error('选中的舰船暂无可用航线；请唤醒舰船或选择其他海格');
     const cost = plan.orders.reduce((sum,order) => sum + order.route.cost,0);
-    if (cost > this.active.oil) throw Error(`石油不足：整组移动需要 ${cost} 点，当前剩余 ${this.active.oil} 点，请选择更近的目标`);
-    const snapshots = plan.orders.map(order => { const unit=this.unit(order.instanceId);return {unit,col:unit.col,row:unit.row,facing:unit.facing,notice:unit.notice}; }), oil=this.active.oil;
+    if(this.rulesetId==='naval-v2') {
+      const over=plan.orders.find(order=>order.route.cost>this.budget(this.unit(order.instanceId)));
+      if(over)throw Error(`${this.unit(over.instanceId).asset.name} 超出本舰剩余航速`);
+    } else if (cost > this.active.oil) throw Error(`石油不足：整组移动需要 ${cost} 点，当前剩余 ${this.active.oil} 点，请选择更近的目标`);
+    const snapshots = plan.orders.map(order => { const unit=this.unit(order.instanceId);return {unit,col:unit.col,row:unit.row,facing:unit.facing,notice:unit.notice,movementUsed:unit.movementUsed,movedThisTurn:unit.movedThisTurn}; }), oil=this.active.oil;
     try {
       const events=this.moveTogether(plan.orders);
+      if(this.rulesetId==='naval-v2')for(const order of plan.orders)if(order.route.cost)this.unit(order.instanceId).movedThisTurn=true;
       return { events, assigned: plan.orders.length, skipped: plan.skipped.length, source: plan.source, target: plan.target };
     } catch(error) {
       this.active.oil=oil;for(const {unit,...snapshot} of snapshots)Object.assign(unit,snapshot);throw error;
@@ -284,21 +326,33 @@ export class Match {
           if (!nav.stop(route.cells[i])) continue;
           const end = route.cells[i]; entry.cells.push(...route.cells.slice(1,i+1));
           unit.facing = end.col < unit.col ? 'left' : 'right'; unit.col = end.col; unit.row = end.row;
-          this.team(unit.ownerId).oil -= cost;
+          if(this.rulesetId==='naval-v2')this.movementSpent(unit,cost);else this.team(unit.ownerId).oil -= cost;
           route.cells = route.cells.slice(i); route.costs = [0,...route.costs.slice(i+1)]; route.cost -= cost;
           progressed = true; break;
         }
       }
     } while (progressed);
     if (entries.some(entry => !sameCell(entry.unit,entry.target))) throw Error('所选舰船途中互相阻挡，本次移动未执行，请选择其他目标');
+    this.refreshVision();
     return entries.filter(entry => entry.cells.length > 1).map(entry => ({ instanceId: entry.unit.instanceId, cells: entry.cells }));
   }
   attackPreview(attackerId: string, targetId: string, weaponId: string): AttackPreview {
     const attacker = this.unit(attackerId), target = this.unit(targetId), weapon = this.weapons(attacker).find(item => item.id === weaponId);
     if(!this.unitVisible(target,attacker.ownerId))return {valid:false,reason:'目标不在本方当前视野内',distance:0,damage:0,hpAfter:0,sunk:false,blocked:[],weapon};
     const distance = hexDistance(attacker, target), blocked = weapon?.kind === 'air' ? [] : hexLine(attacker, target).slice(1, -1).filter(cell => this.world.at(cell) === Terrain.Land);
-    const armor = profile(target.asset.ship_type.code).armor, base = weapon?.damage[armor] ?? 0, damage = target.guard ? Math.max(1, base - 2) : base;
-    const result = (reason?: string): AttackPreview => ({ valid: !reason, reason, distance, damage, hpAfter: Math.max(0, target.hp - damage), sunk: damage >= target.hp, blocked, weapon });
+    const v2=this.rulesetId==='naval-v2',armor = profile(target.asset.ship_type.code).armor;
+    const v2Damage=weapon?damageOnHitV2(weapon,shipRulesV2(target.asset.ship_type.code).armor,false):0;
+    const base = weapon?(v2?v2Damage:weapon.damage[armor]??0):0, damage = !v2&&target.guard ? Math.max(1, base - 2) : base;
+    let hitChance=100;
+    if(v2&&weapon){
+      const targetEvasion=['DD','CL'].includes(target.asset.ship_type.code)?1:0;
+      const movedPenalty=this.movementUsed(attacker)>Math.floor(this.movementLimit(attacker)/2)?1:0;
+      const rangePenalty=weapon.kind==='torpedo'?Number(distance===4):Number(distance>Math.ceil(weapon.maxRange/2));
+      const closeContact=distance<=2?1:0;
+      const modifier=closeContact-targetEvasion-movedPenalty-rangePenalty-Number(attacker.guard)-Number(weapon.kind==='gun'&&target.guard)+(weapon.kind==='torpedo'&&distance===2?1:0);
+      hitChance=hitChanceV2(modifier,weapon.kind==='torpedo'?8:7);
+    }
+    const result = (reason?: string): AttackPreview => ({ valid: !reason, reason, distance, damage, hpAfter: Math.max(0, target.hp - damage), sunk: damage >= target.hp, blocked, weapon,hitChance });
     if (!weapon) return result('该舰种没有这种武器');
     if(this.result)return result('战局已结束');
     if (attacker.ownerId !== this.active.id) return result('只能由当前势力发动攻击');
@@ -307,6 +361,7 @@ export class Match {
     if (attacker.ownerId === target.ownerId) return result('不能攻击本方舰船');
     if (attacker.status !== 'ready') return result('待命或驻留舰船本回合无法攻击');
     if (!attacker.action) return result('本回合作战行动已使用');
+    if(v2&&weapon.kind==='torpedo'&&(attacker.torpedoes??0)<=0)return result('鱼雷已耗尽，请在港口补给');
     if (this.cooldown(attacker, weapon.id)) return result(`${weapon.name}冷却中：${this.cooldown(attacker, weapon.id)} 回合`);
     if (distance < weapon.minRange || distance > weapon.maxRange) return result(`超出射程：需要 ${weapon.minRange}～${weapon.maxRange} 格`);
     if (blocked.length) return result('射线被岛屿阻挡');
@@ -315,18 +370,32 @@ export class Match {
   attack(attackerId: string, targetId: string, weaponId: string): CombatEvent {
     const attacker = this.unit(attackerId), target = this.unit(targetId), preview = this.attackPreview(attackerId, targetId, weaponId);
     if (!preview.valid || !preview.weapon) throw Error(preview.reason ?? '无法发动攻击');
-    const hpBefore = target.hp; target.hp = preview.hpAfter; attacker.action = 0;
+    const hpBefore = target.hp;let damage=preview.damage,hit=true,dice:[number,number]|undefined;
+    if(this.rulesetId==='naval-v2'){
+      dice=[this.rollDie(),this.rollDie()];const total=dice[0]+dice[1],targetArmor=shipRulesV2(target.asset.ship_type.code).armor;
+      const targetEvasion=['DD','CL'].includes(target.asset.ship_type.code)?1:0;
+      const movedPenalty=this.movementUsed(attacker)>Math.floor(this.movementLimit(attacker)/2)?1:0;
+      const rangePenalty=preview.weapon.kind==='torpedo'?Number(preview.distance===4):Number(preview.distance>Math.ceil(preview.weapon.maxRange/2));
+      const modifier=Number(preview.distance<=2)-targetEvasion-movedPenalty-rangePenalty-Number(attacker.guard)-Number(preview.weapon.kind==='gun'&&target.guard)+(preview.weapon.kind==='torpedo'&&preview.distance===2?1:0);
+      hit=total===12||total!==2&&total+modifier>=(preview.weapon.kind==='torpedo'?8:7);
+      damage=hit?damageOnHitV2(preview.weapon,targetArmor,total===12):0;
+      if(preview.weapon.kind==='torpedo')attacker.torpedoes=Math.max(0,(attacker.torpedoes??0)-1);
+    }
+    target.hp = Math.max(0,target.hp-damage); attacker.action = 0;
     if (preview.weapon.cooldown) attacker.cooldowns[preview.weapon.id] = preview.weapon.cooldown + 1;
     attacker.facing = target.col < attacker.col ? 'left' : 'right';
-    if (!target.hp) this.sink(target); else target.notice = target.guard ? `防御姿态吸收伤害，剩余耐久 ${target.hp}/${target.maxHp}` : `遭到攻击，剩余耐久 ${target.hp}/${target.maxHp}`;
+    if (!target.hp) this.sink(target); else target.notice = damage ? target.guard ? `受到攻击，剩余耐久 ${target.hp}/${target.maxHp}` : `受到攻击，剩余耐久 ${target.hp}/${target.maxHp}` : '炮弹未命中';
     this.resolveOutcome();
-    return { attackerId, targetId, weaponId, kind: preview.weapon.kind, damage: preview.damage, hpBefore, hpAfter: target.hp, sunk: target.status === 'sunk' };
+    return { attackerId, targetId, weaponId, kind: preview.weapon.kind, damage, hpBefore, hpAfter: target.hp, sunk: target.status === 'sunk',hit,dice };
   }
   defend(id: string): void {
     const unit = this.unit(id); this.requireActive(unit);
     if (unit.status !== 'ready') throw Error('待命或驻留舰船本回合无法防御');
     if (!unit.action) throw Error('本回合作战行动已使用');
-    unit.action = 0; unit.guard = true; unit.notice = '防御姿态生效：受到的每次伤害减少 2 点，持续至下次本方回合';
+    if(this.rulesetId==='naval-v2'&&this.movementUsed(unit)>1)throw Error('进入警戒姿态前最多移动1格');
+    unit.action = 0; unit.guard = true; unit.notice = this.rulesetId==='naval-v2'
+      ? '警戒姿态生效：本舰最多移动1格，对舰射击命中 -1，敌方舰炮命中 -1，对空值 +1，持续至下次本方回合'
+      : '防御姿态生效：受到的每次伤害减少 2 点，持续至下次本方回合';
   }
   airDamage(squadron: Squadron, targetId: string): CombatEvent {
     this.assertPlayable();
@@ -349,7 +418,7 @@ export class Match {
   }
   wake(id: string): void { const unit = this.unit(id); this.requireActive(unit); unit.status = 'ready'; }
   nextPending(after?: string): MatchUnit | undefined {
-    const own = this.units.filter(u => u.ownerId === this.active.id && u.status === 'ready' && (this.active.oil > 0 || u.action > 0));
+    const own = this.units.filter(u => u.ownerId === this.active.id && u.status === 'ready' && (this.budget(u) > 0 || u.action > 0));
     if (!own.length) return;
     const index = own.findIndex(u => u.instanceId === after); return own[(index + 1) % own.length];
   }
@@ -357,8 +426,11 @@ export class Match {
     this.assertPlayable();this.resolveOutcome();if(this.result)return [];
     endAviationTurn(this,this.active.id);
     do {this.activeIndex = (this.activeIndex + 1) % this.teams.length; if (!this.activeIndex) this.round++;}while(this.active.eliminated);
-    this.active.oil = this.oilCap();
-    this.active.credits=Math.min(MAX_CREDITS,this.active.credits+this.income());this.campaignRevision++;
+    if(this.rulesetId!=='naval-v2')this.active.oil = this.oilCap();
+    if(this.rulesetId==='naval-v2'){
+      if(this.round>1)this.active.supply=Math.min(MAX_SUPPLY,this.active.supply+this.ports.filter(p=>p.ownerId===this.active.id).length);
+    }else this.active.credits=Math.min(MAX_CREDITS,this.active.credits+this.income());
+    this.campaignRevision++;
     const own = this.units.filter(u => u.ownerId === this.active.id);
     for (const unit of own) {
       if (unit.status === 'sunk') continue;
@@ -366,29 +438,34 @@ export class Match {
       unit.guard = false; if (unit.status === 'wait') unit.status = 'ready';
       if(unit.availableRound&&unit.availableRound<=this.round){delete unit.availableRound;unit.notice=undefined;}
       unit.action = unit.status === 'hold' ? 0 : 1;
+      if(this.rulesetId==='naval-v2'){unit.movementUsed=0;unit.movedThisTurn=false;}
     }
     return [];
   }
   save(): SavedMatch {
     this.refreshVision();this.resolveOutcome();
-    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 15, mapVersion: 1, size: this.world.width, mapHash: this.hash,
-      round: this.round, activeIndex: this.activeIndex, teams: this.teams,
+    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 16, mapVersion: 1, size: this.world.width, mapHash: this.hash,
+      rulesetId:this.rulesetId,combatState:this.combatState,round: this.round, activeIndex: this.activeIndex, teams: this.teams,
       units: this.units.map(({ asset, ...unit }) => ({ ...unit, assetId: asset.id })), aviation: this.aviation,fog:this.fog.save(),campaign:{ports:this.ports,intel:this.portIntel,result:this.result} }));
   }
   static load(input: unknown, assets: ShipAsset[]): Match {
     const data = input as any;
     const fail = (): never => { throw Error('存档格式或战局数据无效，当前战局未改变'); };
     const integer = (n: unknown, low: number, high: number) => Number.isInteger(n) && Number(n) >= low && Number(n) <= high;
-    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].includes(data.version) || data.mapVersion !== 1 || ![128,256,512].includes(data.size)) fail();
+    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16].includes(data.version) || data.mapVersion !== 1 || ![128,256,512].includes(data.size)) fail();
+    if(data.version>=16&&(!['naval-v2','classic-v1'].includes(data.rulesetId)||!integer(data.combatState,0,0xffffffff)))fail();
     if (!Array.isArray(data.teams) || !integer(data.teams.length, 2, 8) || !integer(data.activeIndex, 0, data.teams.length - 1) || !integer(data.round, 1, 1_000_000)) fail();
     if (data.version < 8 ? !integer(data.fleetSerial,0,1_000_000) || !Array.isArray(data.fleets) : data.fleets !== undefined || data.fleetSerial !== undefined) fail();
     if (data.teams.some((team: Team, i: number) => !team || team.id !== i + 1 || team.name !== TEAM_NAMES[i] || data.version >= 4 && !integer(team.oil, 0, data.version>=14?MAX_CREDITS:OIL_PER_TURN))) fail();
     if(data.version>=13&&data.teams.some((t:Team)=>!integer(t.credits,0,MAX_CREDITS)||typeof t.eliminated!=='boolean'))fail();
+    if(data.version>=16&&data.teams.some((t:Team)=>!integer(t.supply,0,MAX_SUPPLY)))fail();
     if(data.version>=15&&data.teams.some((t:Team)=>!['human','ai'].includes(t.controller)))fail();
     const expectedUnits = assets.length * (data.version === 1 ? 1 : data.teams.length);
     if (!Array.isArray(data.units) || data.units.length !== expectedUnits || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2)) fail();
     const match = new Match(new HexWorld(data.size), assets, data.teams.length); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
-    match.teams = data.teams.map((team: Team,i: number) => ({ id: i + 1, name: TEAM_NAMES[i], oil: data.version >= 4 ? team.oil : OIL_PER_TURN,credits:data.version>=13?team.credits:STARTING_CREDITS,eliminated:false,controller:data.version>=15?team.controller:'human' }));
+    match.rulesetId=data.version>=16?data.rulesetId:'classic-v1';
+    if(data.version>=16)match.combatState=data.combatState>>>0;
+    match.teams = data.teams.map((team: Team,i: number) => ({ id: i + 1, name: TEAM_NAMES[i], oil: data.version >= 4 ? team.oil : OIL_PER_TURN,credits:data.version>=13?team.credits:STARTING_CREDITS,supply:data.version>=16?team.supply:STARTING_SUPPLY,eliminated:false,controller:data.version>=15?team.controller:'human' }));
     const freshUnits = match.units;
     const identities = new Set<string>(), occupied = new Set<string>(), assetIds = new Set<string>(), legacyMembership = new Map<string,string>();
     const validCell = (cell: Cell | undefined): boolean => !!cell && integer(cell.col, 0, data.size - 1) && integer(cell.row, 0, data.size - 1) && match.world.isSea(cell);
@@ -398,6 +475,8 @@ export class Match {
       if (!saved || typeof saved.instanceId !== 'string' || saved.instanceId !== expectedId || identities.has(saved.instanceId) || assetIds.has(assetKey)) return fail();
       const asset = assets.find(a => a.id === saved.assetId); if (!asset || !validCell(saved) || !integer(saved.ownerId, 1, data.teams.length) || !['left','right'].includes(saved.facing)) return fail();
       const combat = profile(asset.ship_type.code), status = saved.status as MatchUnit['status'];
+      const v2Ship=shipRulesV2(asset.ship_type.code);
+      if(data.version>=16&&data.rulesetId==='naval-v2'&&(!integer(saved.movementUsed,0,v2Ship.speed)||typeof saved.movedThisTurn!=='boolean'||saved.movedThisTurn&&saved.movementUsed===0||!integer(saved.torpedoes,0,v2Ship.torpedoes)))return fail();
       if (!integer(saved.action, 0, 1) || data.version < 4 && !integer(saved.movement, 0, LEGACY_MOVEMENT[asset.ship_type.code] ?? 2) || data.version >= 4 && saved.movement !== undefined || !['ready','wait','hold',...(data.version >= 3 ? ['sunk'] : [])].includes(status)) return fail();
       const hp = data.version >= 3 ? saved.hp : combat.maxHp, maxHp = data.version >= 3 ? saved.maxHp : combat.maxHp;
       if (maxHp !== combat.maxHp || !integer(hp, 0, maxHp) || (status === 'sunk') !== (hp === 0)) return fail();
@@ -415,7 +494,9 @@ export class Match {
       identities.add(saved.instanceId); assetIds.add(assetKey);
       return { instanceId: saved.instanceId, asset, col: saved.col, row: saved.row, facing: saved.facing, ownerId: saved.ownerId,
         action: saved.action, status, hp, maxHp, guard, cooldowns: ['CV','CVL'].includes(asset.ship_type.code) ? {} : { ...cooldowns },
-        notice: saved.order || /航线|自动航行|计划航行/.test(saved.notice ?? '') ? undefined : saved.notice,...(saved.availableRound!==undefined?{availableRound:saved.availableRound}:{}) };
+        notice: saved.order || /航线|自动航行|计划航行/.test(saved.notice ?? '') ? undefined : saved.notice,
+        ...(data.version>=16&&data.rulesetId==='naval-v2'?{movementUsed:saved.movementUsed,movedThisTurn:saved.movedThisTurn,torpedoes:saved.torpedoes}:{}),
+        ...(saved.availableRound!==undefined?{availableRound:saved.availableRound}:{}) };
     });
     if (data.teams.some((team: Team) => !match.units.some(u => u.ownerId === team.id))) fail();
     const fleets = new Set<string>(), members = new Set<string>();
@@ -430,7 +511,7 @@ export class Match {
     }
     if ([...legacyMembership.keys()].some(id => !members.has(id))) fail();
     match.round = data.round; match.activeIndex = data.activeIndex;
-    if (data.version >= 5) match.aviation = validateAviation(data.aviation,match,data.version as 5|6|7|8|9|10|11|12|13|14|15);
+    if (data.version >= 5) match.aviation = validateAviation(data.aviation,match,data.version as 5|6|7|8|9|10|11|12|13|14|15|16);
     if (data.version === 1) {
       const ownerId = match.active.id;
       for (const unit of match.units) { unit.instanceId = `team-${ownerId}-${unit.asset.id}`; unit.ownerId = ownerId; }
@@ -445,8 +526,8 @@ export class Match {
       if(data.version===13)match.ports=createLegacyPorts(match.world,freshUnits,match.teams.length);
       if(!c||!Array.isArray(c.ports)||c.ports.length!==match.ports.length||!Array.isArray(c.intel)||c.intel.length!==match.teams.length)fail();
       match.ports=match.ports.map((p,i)=>{
-        const raw=c.ports[i];if(!raw||raw.id!==p.id||raw.name!==p.name||raw.col!==p.col||raw.row!==p.row||raw.homeForId!==p.homeForId||!integer(raw.ownerId,0,match.teams.length)||!integer(raw.usedRound,0,data.round))fail();
-        return {...p,ownerId:raw.ownerId,usedRound:raw.usedRound};
+        const raw=c.ports[i];if(!raw||raw.id!==p.id||raw.name!==p.name||raw.col!==p.col||raw.row!==p.row||raw.homeForId!==p.homeForId||!integer(raw.ownerId,0,match.teams.length)||!integer(raw.usedRound,0,data.round)||data.version>=16&&!integer(raw.serviceRound,0,data.round))fail();
+        return {...p,ownerId:raw.ownerId,usedRound:raw.usedRound,serviceRound:data.version>=16?raw.serviceRound:0};
       });
       if(c.intel.some((row:unknown)=>!Array.isArray(row)||row.length!==match.ports.length||row.some(v=>!integer(v,-1,match.teams.length))))fail();
       match.portIntel=c.intel.map((row:number[])=>[...row]);

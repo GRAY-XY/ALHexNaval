@@ -22,7 +22,9 @@ export class CampaignUI {
   }
   render():void {
     const m=this.host.match(),t=m.active,owned=m.ports.filter(p=>p.ownerId===t.id),result=m.result;
-    $('campaign-info').textContent=`资金 ${t.credits} · 港口 ${owned.length} · 下次本方回合收入 +${m.income()}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`;
+    $('campaign-info').textContent=m.rulesetId==='naval-v2'
+      ? `补给 ${t.supply}/8 · 港口 ${owned.length}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`
+      : `资金 ${t.credits} · 港口 ${owned.length} · 下次本方回合收入 +${m.income()}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`;
     $<HTMLButtonElement>('end-turn').disabled=!!result;
     $<HTMLButtonElement>('move-mode').disabled=!!result||!!this.host.selectedPort();
     $('open-result').hidden=!result;
@@ -42,7 +44,9 @@ export class CampaignUI {
   }
   private renderPorts():void {
     const m=this.host.match(),views=m.knownPorts(),list=$('port-list'),scroll=list.scrollTop;
-    $('port-summary').textContent=`${m.active.name} · 资金 ${m.active.credits} · 石油 ${m.active.oil}/${m.oilCap()} · 每港口收入10、石油上限+10 · 本方控制 ${m.ports.filter(p=>p.ownerId===m.active.id).length} 座 · 母港共${m.teams.length}座`;
+    $('port-summary').textContent=m.rulesetId==='naval-v2'
+      ? `${m.active.name} · 补给 ${m.active.supply}/8 · 本方控制 ${m.ports.filter(p=>p.ownerId===m.active.id).length} 座 · 母港共${m.teams.length}座`
+      : `${m.active.name} · 资金 ${m.active.credits} · 石油 ${m.active.oil}/${m.oilCap()} · 每港口收入10、石油上限+10 · 本方控制 ${m.ports.filter(p=>p.ownerId===m.active.id).length} 座 · 母港共${m.teams.length}座`;
     list.replaceChildren();
     for(const view of views.sort((a,b)=>Number(b.ownerId===m.active.id)-Number(a.ownerId===m.active.id)||Number(!!b.port.homeForId)-Number(!!a.port.homeForId))){
       const p=view.port,row=el('section','','port-card');row.dataset.port=p.id;
@@ -65,7 +69,8 @@ export class CampaignUI {
     const focus=document.createElement('button');focus.textContent='定位港口';focus.onclick=()=>this.host.focus(cellCenter(p));
     profile.append(head,el('p',`位置 ${p.col}, ${p.row} · ${view.visible?'当前视野':'视野外情报记录'}`,'port-position'),focus);
     const row=el('section','','port-card');
-    const nearby=m.units.filter(u=>u.ownerId===m.active.id&&u.status==='ready'&&u.action&&hexDistance(u,p)<=1);
+    const serviceRange=m.rulesetId==='naval-v2'?0:1;
+    const nearby=m.units.filter(u=>u.ownerId===m.active.id&&u.status==='ready'&&u.action&&hexDistance(u,p)<=serviceRange);
     nearby.sort((a,b)=>(b.maxHp-b.hp)-(a.maxHp-a.hp));
     const service=nearby.find(u=>u.instanceId===this.serviceChoices.get(id))??nearby.find(u=>u.instanceId===this.host.selected())??nearby[0];
     if(service)this.serviceChoices.set(id,service.instanceId);
@@ -76,18 +81,27 @@ export class CampaignUI {
     }
     if(!own){
       const preview=service?m.capturePreview(service.instanceId,id):undefined,b=document.createElement('button');
-      b.textContent=service?`占领港口 · ${service.asset.name} · 1作战行动`:'占领港口 · 需可作战舰船进入1格内';b.disabled=!preview?.valid;
-      b.onclick=()=>this.host.command(()=>m.capturePort(service!.instanceId,id),`已占领${p.name}，石油上限+${PORT_OIL_BONUS}，下次本方回合获得收入`);
+      b.textContent=service?`占领港口 · ${service.asset.name} · 1作战行动`:`占领港口 · 需可作战舰船${m.rulesetId==='naval-v2'?'停在港口格':'进入1格内'}`;b.disabled=!preview?.valid;
+      b.onclick=()=>this.host.command(()=>m.capturePort(service!.instanceId,id),m.rulesetId==='naval-v2'?`已占领${p.name} · 下回合起每回合提供1补给点`:`已占领${p.name}，石油上限+${PORT_OIL_BONUS}，下次本方回合获得收入`);
       row.append(b);if(preview?.reason)row.append(el('p',preview.reason,'port-reason'));
-      row.append(el('p','占领要求：本方舰船距港口不超过1格，且港口1格内没有敌舰。'));
+      row.append(el('p',m.rulesetId==='naval-v2'?'占领要求：驱逐舰、轻巡或重巡停在港口格，且港口1格内没有敌舰。':'占领要求：本方舰船距港口不超过1格，且港口1格内没有敌舰。'));
     }else{
-      row.append(el('p',`本港收入 +${PORT_INCOME}资金 / 本方回合 · 石油上限 +${PORT_OIL_BONUS}`,'port-benefits'),el('p',`本轮增援 ${p.usedRound===m.round?'1 / 1 · 已使用':'0 / 1 · 可用'}`,'port-quota'));
+      row.append(el('p',m.rulesetId==='naval-v2'?'本港每回合提供1补给点（储量上限8）':'本港收入 +10资金 / 本方回合 · 石油上限 +10','port-benefits'));
+      if(m.rulesetId!=='naval-v2')row.append(el('p',`本轮增援 ${p.usedRound===m.round?'1 / 1 · 已使用':'0 / 1 · 可用'}`,'port-quota'));
       const preview=service?m.repairPreview(service.instanceId,id):undefined,repair=document.createElement('button');
-      repair.textContent=service?`维修 ${service.asset.name} · +${preview!.hp}耐久 · ${preview!.cost}资金`:'维修 · 需受损且可作战舰船进入1格内';repair.disabled=!preview?.valid;
+      repair.textContent=service?`维修 ${service.asset.name} · +${preview!.hp}耐久 · ${preview!.cost}${m.rulesetId==='naval-v2'?'补给':'资金'}`:`维修 · 需受损且可作战舰船${m.rulesetId==='naval-v2'?'停在港口格':'进入1格内'}`;repair.disabled=!preview?.valid;
       repair.onclick=()=>this.host.command(()=>m.repairShip(service!.instanceId,id),'维修已完成，消耗本舰作战行动');row.append(repair);
       if(preview?.reason)row.append(el('p',preview.reason,'port-reason'));
+      if(m.rulesetId==='naval-v2'){
+        const reload=service?m.torpedoReloadPreview(service.instanceId,id):undefined,button=document.createElement('button');
+        button.textContent=service?`装填1发鱼雷 · 2补给`:'装填鱼雷 · 需舰船停在港口格';button.disabled=!reload?.valid;
+        button.onclick=()=>this.host.command(()=>m.reloadTorpedo(service!.instanceId,id),'鱼雷已装填，消耗本舰作战行动');row.append(button);
+        if(reload?.reason)row.append(el('p',reload.reason,'port-reason'));
+        row.append(el('p','每港每回合服务1艘舰船，可维修至多2点耐久或装填1发鱼雷；港口2格内有敌舰时不能服务。','port-rules'));
+      }
       const reserves=m.units.filter(u=>u.ownerId===m.active.id&&u.status==='sunk');
-      if(reserves.length){
+      if(m.rulesetId==='naval-v2')row.append(el('p','标准战局中舰船沉没后不会从港口增援。','port-rules'));
+      else if(reserves.length){
         let choice=this.choices.get(id);if(!reserves.some(u=>u.instanceId===choice)){choice=reserves[0].instanceId;this.choices.set(id,choice);}
         const label=el('label','增援舰型'),select=document.createElement('select');select.setAttribute('aria-label',`${p.name}增援舰型`);
         for(const u of reserves){const option=document.createElement('option');option.value=u.instanceId;option.textContent=`${u.asset.name} · ${REINFORCEMENT_COST[u.asset.ship_type.code]??40}资金`;select.append(option);}select.value=choice!;
@@ -96,7 +110,7 @@ export class CampaignUI {
         b.onclick=()=>this.host.command(()=>{const u=m.reinforce(id,choice!);this.host.redeploy(u.instanceId);},`${p.name}增援已抵达，下次本方回合投入使用`);
         label.append(select);row.append(label,b);if(recruit.reason)row.append(el('p',recruit.reason,'port-reason'));
       }else row.append(el('p','当前没有损失舰型需要增援'));
-      row.append(el('p','每港口每轮最多1艘增援；维修每次最多4耐久，每点2资金，使用1作战行动。资金和石油由本方所有港口共用。','port-rules'));
+      if(m.rulesetId!=='naval-v2')row.append(el('p','每港口每轮最多1艘增援；维修每次最多4耐久，每点2资金，使用1作战行动。资金和石油由本方所有港口共用。','port-rules'));
     }
     profile.append(row);panel.append(profile);panel.scrollTop=scroll;
   }

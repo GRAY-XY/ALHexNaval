@@ -171,6 +171,7 @@ export class ShipRenderer {
   playCombat(event: CombatEvent, animate = true): void {
     const attacker = this.visuals.find(v => v.unit.instanceId === event.attackerId), target = this.visuals.find(v => v.unit.instanceId === event.targetId);
     if (!target || !attacker && !event.origin) return;
+    if(event.hit===false){if(attacker)this.playAction(attacker.unit.instanceId,event.weaponId==='main-gun'?'main_gun':'attack',animate);return;}
     if (!animate) { if(event.sunk){target.pendingDeath=false;target.animation.sync('defeated');}target.root.alpha = event.sunk ? .26 : 1; return; }
     if(attacker) {this.playAction(attacker.unit.instanceId,event.kind==='air' ? 'skill' : event.weaponId==='main-gun' ? 'main_gun' : 'attack');}
     if(event.sunk)target.pendingDeath=true;

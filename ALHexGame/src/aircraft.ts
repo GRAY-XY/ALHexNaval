@@ -75,7 +75,7 @@ export function nationFor(match: Match, carrierId: string): AirNation {
 export function launchPreview(match: Match, carrierId: string): { valid: boolean; reason: string; oil: number; slots: number[] } {
   const carrier = match.unit(carrierId), stats = CARRIER_STATS[carrier.asset.ship_type.code];
   const slots = stats?.roles.map((_,i) => i).filter(i => !match.aviation.squadrons.some(s => s.carrierId === carrierId && s.slot === i)) ?? [];
-  const oil = slots.length * LAUNCH_OIL;
+  const oil = match.rulesetId==='naval-v2'?0:slots.length * LAUNCH_OIL;
   const reason = match.result?'战局已结束':!stats ? '该舰不是航母' : carrier.ownerId !== match.active.id ? '只能指挥本方航母' :
     carrier.status !== 'ready' ? '航母必须处于可行动状态' : !carrier.action ? '本舰作战行动已用' :
     match.aviation.launched[carrierId] === match.round ? '本回合已经出动一波' : !slots.length ? '全部中队仍在空中' :
@@ -91,7 +91,7 @@ export function launchWing(match: Match, carrierId: string): Squadron[] {
     nation, role: stats.roles[slot], slot, ...cellCenter(spawn),
     planes: stats.planes, hp: stats.planes * 2, maxHp: stats.planes * 2, fuelTurns: stats.endurance, actionPoints: stats.actionPoints, ammo: 3, cooldown: 0,
     heading: -Math.PI / 2, order: 'patrol' as const }; });
-  carrier.action = 0; match.active.oil -= preview.oil; match.aviation.launched[carrierId] = match.round;
+  carrier.action = 0;if(match.rulesetId!=='naval-v2')match.active.oil -= preview.oil;match.aviation.launched[carrierId] = match.round;
   match.aviation.squadrons.push(...launched); return launched;
 }
 export function commandSquadron(match: Match, id: string, destination?: Point, targetId?: string): void {
@@ -224,7 +224,7 @@ export function advanceAviation(match: Match, elapsedSeconds: number): CombatEve
   return events;
 }
 
-export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15 = 15): AviationState {
+export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16 = 16): AviationState {
   const state = input as AviationState & { nations?: Record<string,AirNation> };
   const migrateCountry=version===5, migrateEndurance=version<7;
   const fail = (): never => { throw Error('存档航空数据无效，当前战局未改变'); };
