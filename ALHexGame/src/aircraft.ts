@@ -128,22 +128,22 @@ export function launchPreview(match: Match, carrierId: string): { valid: boolean
   const slots=match.rulesetId==='naval-v2'&&deck?deck.squadrons.filter(s=>s.status==='ready').map(s=>s.slot).sort((a,b)=>a-b).slice(0,Math.max(0,operationsLimit-operationsUsed)):available;
   const oil = match.rulesetId==='naval-v2'?0:slots.length * LAUNCH_OIL;
   const pending=match.rulesetId==='naval-v2'&&match.aviationOrders.some(order=>order.carrierId===carrierId);
-  const reason = match.result?'战局已结束':match.rulesetId==='naval-v2'&&match.phase!=='aviation'?'航母起飞计划只能在行动计划阶段提交':!stats ? '该舰不是航母' : carrier.ownerId !== match.active.id ? '只能指挥本方航母' :
+  const reason = match.result?'战局已结束':match.rulesetId==='naval-v2'&&match.phase!=='aviation'?'只能在本方回合安排航母起飞':!stats ? '该舰不是航母' : carrier.ownerId !== match.active.id ? '只能指挥本方航母' :
     carrier.status !== 'ready' ? '航母必须处于可行动状态' : !carrier.action ? '本舰作战行动已用' :
-    pending?'本方起飞计划已锁定':match.aviation.launched[carrierId] === match.round ? '本回合已经出动一波' : !slots.length ? match.rulesetId==='naval-v2'&&deck?.squadrons.some(s=>s.status==='turnaround')?'中队正在整备，至少一个完整回合后重新待发':match.rulesetId==='naval-v2'&&operationsUsed>=operationsLimit?'本回合甲板操作已用完':'没有可出动的待发中队' :
+    pending?'起飞计划已安排':match.aviation.launched[carrierId] === match.round ? '本全局回合已经出动一波' : !slots.length ? match.rulesetId==='naval-v2'&&deck?.squadrons.some(s=>s.status==='turnaround')?'中队正在整备，至少一个完整回合后重新待发':match.rulesetId==='naval-v2'&&operationsUsed>=operationsLimit?'本全局回合甲板操作已用完':'没有可出动的待发中队' :
     match.active.oil < oil ? `起飞需要 ${oil} 点石油` : '';
   return { valid: !reason, reason, oil, slots,operationsUsed,operationsLimit };
 }
 export function orderCarrierLaunch(match:Match,carrierId:string):number[]{
   match.assertPlayable();
-  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('舰载机起飞计划只在V2行动计划阶段提交');
+  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('只能在本方回合安排舰载机起飞');
   const preview=launchPreview(match,carrierId);if(!preview.valid)throw Error(preview.reason);
   const order:CarrierLaunchOrder={ownerId:match.active.id,carrierId,slots:[...preview.slots]};match.aviationOrders.push(order);match.campaignRevision++;
   return [...order.slots];
 }
 export function cancelCarrierLaunch(match:Match,carrierId:string):void{
   match.assertPlayable();
-  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('起飞计划只能在行动计划阶段撤回');
+  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('起飞计划只能在本方规划时撤回');
   const index=match.aviationOrders.findIndex(order=>order.carrierId===carrierId&&order.ownerId===match.active.id);if(index<0)throw Error('本舰没有可撤回的起飞计划');
   match.aviationOrders.splice(index,1);match.campaignRevision++;
 }
@@ -162,7 +162,7 @@ function launchWingImmediately(match: Match, carrierId: string): Squadron[] {
   match.aviation.squadrons.push(...launched); return launched;
 }
 export function launchWing(match:Match,carrierId:string):Squadron[]{
-  if(match.rulesetId==='naval-v2')throw Error('V2航母必须先提交起飞计划，由全方统一结算');
+  if(match.rulesetId==='naval-v2')throw Error('V2航母必须先安排起飞，再在实施回合时执行');
   return launchWingImmediately(match,carrierId);
 }
 export function resolveQueuedCarrierLaunch(match:Match,order:CarrierLaunchOrder):Squadron[]{
@@ -175,7 +175,7 @@ export function resolveQueuedCarrierLaunch(match:Match,order:CarrierLaunchOrder)
 }
 export function commandSquadron(match: Match, id: string, destination?: Point, targetId?: string): void {
   match.assertPlayable();
-  if(match.rulesetId==='naval-v2'&&match.phase!=='combat')throw Error('航空命令在同步机动后的作战阶段执行');
+  if(match.rulesetId==='naval-v2'&&match.phase!=='aviation')throw Error('本回合行动已锁定');
   const squadron = match.aviation.squadrons.find(s => s.id === id);
   if (!squadron || squadron.ownerId !== match.active.id) throw Error('只能指挥本方飞行中队');
   if ((destination || targetId) && squadron.actionPoints <= 0) throw Error('该中队行动力已耗尽，正在返航；本次出动不会自动恢复行动力');
@@ -305,7 +305,7 @@ export function advanceAviation(match: Match, elapsedSeconds: number): CombatEve
   return events;
 }
 
-export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23 = 23): AviationState {
+export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24 = 24): AviationState {
   const state = input as AviationState & { nations?: Record<string,AirNation> };
   const migrateCountry=version===5, migrateEndurance=version<7;
   const fail = (): never => { throw Error('存档航空数据无效，当前战局未改变'); };

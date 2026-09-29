@@ -140,18 +140,21 @@ export function executeAiTurn(match:Match):AiTurnReport {
   match.assertPlayable();
   const report:AiTurnReport={teamId:match.active.id,moves:[],combats:[],captures:0,repairs:0,reinforcements:0,launched:0,airOrders:0,defended:0};
   if(match.rulesetId==='naval-v2'&&match.phase==='aviation'){
+    repairDamaged(match,report);
     const carriers=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&['CV','CVL'].includes(unit.asset.ship_type.code))
       .sort((a,b)=>a.instanceId.localeCompare(b.instanceId));
-    for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){try{report.launched+=orderCarrierLaunch(match,carrier.instanceId).length;}catch{/* A carrier may have become unavailable earlier in this planning phase. */}}}
+    for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){try{report.launched+=orderCarrierLaunch(match,carrier.instanceId).length;}catch{/* A carrier may have become unavailable earlier in this action. */}}}
     const units=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&!unit.movedThisTurn&&(!unit.availableRound||unit.availableRound<=match.round))
       .sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId));
     for(const unit of units){const target=chooseMove(match,unit);if(!target)continue;try{match.issueMove(unit.instanceId,target);}catch{/* A blocked or newly invalid route remains unplanned. */}}
-    return report;
-  }
-  if(match.rulesetId==='naval-v2'&&match.phase==='movement'){
-    const units=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&!unit.movedThisTurn&&(!unit.availableRound||unit.availableRound<=match.round))
+    const commanders=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&unit.action>0&&(!unit.availableRound||unit.availableRound<=match.round))
       .sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId));
-    for(const unit of units){const target=chooseMove(match,unit);if(!target)continue;try{match.issueMove(unit.instanceId,target);}catch{/* A blocked or newly invalid route remains unplanned. */}}
+    for(const unit of commanders){
+      const attack=bestAttack(match,unit);if(attack){try{executeAttack(match,report,unit,attack.target,attack.weapon);}catch{/* Keep a plan valid if the target changed. */}continue;}
+      if(!match.plannedMove(unit.instanceId)&&captureNearby(match,unit))report.captures++;
+    }
+    if(!match.result)orderAircraft(match,report);
+    for(const unit of commanders)if(!match.result&&unit.action){try{match.defend(unit.instanceId);report.defended++;}catch{/* A ship moved too far or became unavailable. */}}
     return report;
   }
   reinforceFleet(match,report);repairDamaged(match,report);

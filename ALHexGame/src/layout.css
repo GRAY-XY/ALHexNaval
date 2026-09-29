@@ -100,7 +100,7 @@
   .map-heading p{font-size:9px;max-width:calc(100vw - 24px);line-height:1.5}
   .map-tools{top:90px;left:8px;right:8px;flex-direction:row}
   .map-bottom{display:none}
-  .order-panel{left:8px;right:8px;bottom:218px;padding:8px;min-height:0}
+  .order-panel{left:8px;right:8px;bottom:252px;padding:8px;min-height:0}
   .order-panel #route-info{font-size:8px}
   .order-panel button{font-size:8px;padding:5px}
   .zoom-controls{right:8px;bottom:276px}
