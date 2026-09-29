@@ -44,6 +44,10 @@ export function isCoastalPort(world:HexWorld,cell:Cell):boolean {
   return world.isSea(cell)&&neighbors(cell).some(n=>world.at(n)===Terrain.Land)&&neighbors(cell).filter(n=>world.isSea(n)).length>=3;
 }
 export function createPorts(world:HexWorld,units:MatchUnit[],players:number):Port[] {
+  if(world.scenarioId==='test-5x10')return [
+    {col:4,row:1,id:'home-1',name:'1号母港',ownerId:1,homeForId:1,usedRound:0,serviceRound:0,occupationProgress:0},
+    {col:0,row:8,id:'home-2',name:'2号母港',ownerId:2,homeForId:2,usedRound:0,serviceRound:0,occupationProgress:0},
+  ];
   const ports=createLegacyPorts(world,units,players),offshore=ports.filter(p=>!isCoastalPort(world,p));
   if(!offshore.length)return ports;
   const coast:Cell[]=[];

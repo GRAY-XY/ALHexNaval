@@ -37,6 +37,21 @@ function placeAtPort(m:Match,id:string,portId:string):MatchUnit{
   const unit=m.unit(id),port=m.port(portId);Object.assign(unit,{col:port.col,row:port.row,status:'ready',hp:unit.maxHp,action:1,firedThisTurn:false});return unit;
 }
 
+check('The 5x10 test arena gives both sides one ship of every class and round-trips saves',()=>{
+  const world=new HexWorld(5,10,'test-5x10'),m=new Match(world,assets,2,['human','ai']);
+  assert.equal(world.width,5);assert.equal(world.height,10);assert.equal(world.landCells,0);
+  assert.equal(m.units.length,12);assert.equal(m.ports.length,2);assert.deepEqual(m.teams.map(team=>team.controller),['human','ai']);
+  for(const ownerId of [1,2]){
+    const fleet=m.units.filter(unit=>unit.ownerId===ownerId);
+    assert.deepEqual(fleet.map(unit=>unit.asset.ship_type.code).sort(),['BB','CA','CL','CV','CVL','DD']);
+    assert.equal(new Set(fleet.map(unit=>`${unit.col},${unit.row}`)).size,6);
+  }
+  assert.equal(new Set(m.units.map(unit=>`${unit.col},${unit.row}`)).size,12);
+  const saved=m.save();assert.equal(saved.version,23);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
+  assert.deepEqual(Match.load(saved,assets).save(),saved);
+  assert.throws(()=>new Match(world,assets,3),/只支持双方/);
+});
+
 check('Enemy harbor capture starts a siege and takes two capturing-side end phases',()=>{
   const m=scene(),port=m.port('home-2'),occupier=placeAtPort(m,'team-1-lafei',port.id);
   m.units.filter(u=>u.ownerId===2).forEach(sink);
@@ -171,7 +186,7 @@ check('V2 carrier launch and recovery spend deck operations and preserve a full 
   assert.deepEqual(preview.slots,[0,1]);assert.equal(preview.operationsLimit,2);assert.equal(preview.operationsUsed,0);
   assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);assert.equal(m.aviation.squadrons.length,0,'aircraft remain hidden until every side submits');
   cancelCarrierLaunch(m,carrier.instanceId);assert(launchPreview(m,carrier.instanceId).valid,'launch orders can be withdrawn before phase submission');orderCarrierLaunch(m,carrier.instanceId);
-  m.endTurn();const pending=m.save();assert.equal(pending.version,22);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
+  m.endTurn();const pending=m.save();assert.equal(pending.version,23);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
   m.endTurn();assert.equal(m.phase,'movement');const launched=m.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId),deck=m.aviation.decks[carrier.instanceId];assert.deepEqual(launched.map(s=>s.role),['fighter','bomber']);
   assert.deepEqual(deck.squadrons.map(s=>s.status),['airborne','airborne','reserve']);assert.equal(deck.operationsUsed,2);
   const fighter=launched[0];Object.assign(fighter,cellCenter(carrier),{order:'return',flight:undefined});tickAviation(m,.1);assert(m.aviation.squadrons.includes(fighter),'a squadron waits when this round has no landing operation left');
@@ -220,12 +235,12 @@ check('V2 alert posture no longer applies the legacy flat two-damage air reducti
   assert.equal(m.airDamage(bomber,target.instanceId).damage,2);
 });
 
-check('Legacy V2 saves migrate to version 22 and invalid contacts, siege, or queued orders are rejected',()=>{
+check('Legacy V2 saves migrate to version 23 and invalid contacts, siege, or queued orders are rejected',()=>{
   const m=scene(),current:any=m.save();
   for(const version of [16,17]){
     const raw=JSON.parse(JSON.stringify(current));raw.version=version;delete raw.contacts;
     if(version===16){for(const unit of raw.units)delete unit.firedThisTurn;for(const port of raw.campaign.ports){delete port.occupationOwnerId;delete port.occupationProgress;}}
-    const restored=Match.load(raw,assets);assert.equal(restored.save().version,22);assert(restored.units.every(u=>u.firedThisTurn===false));
+    const restored=Match.load(raw,assets);assert.equal(restored.save().version,23);assert(restored.units.every(u=>u.firedThisTurn===false));
   }
   const legacy18=JSON.parse(JSON.stringify(current));legacy18.version=18;legacy18.activeIndex=1;
   delete legacy18.phase;delete legacy18.initiativeIndex;delete legacy18.phaseSubmitted;delete legacy18.movementOrders;
@@ -234,11 +249,11 @@ check('Legacy V2 saves migrate to version 22 and invalid contacts, siege, or que
   assert.equal(restored18.phase,'combat');assert.deepEqual(restored18.phaseSubmitted,[1]);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   restored18.endTurn();assert.equal(restored18.phase,'aviation');assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   const legacy19=JSON.parse(JSON.stringify(current));legacy19.version=19;delete legacy19.combatOrders;
-  assert.equal(Match.load(legacy19,assets).save().version,22);
+  assert.equal(Match.load(legacy19,assets).save().version,23);
   const legacy20=JSON.parse(JSON.stringify(current));legacy20.version=20;delete legacy20.aviation.decks;
-  assert.equal(Match.load(legacy20,assets).save().version,22);
+  assert.equal(Match.load(legacy20,assets).save().version,23);
   const legacy21=JSON.parse(JSON.stringify(current));legacy21.version=21;delete legacy21.aviationOrders;
-  assert.equal(Match.load(legacy21,assets).save().version,22);
+  assert.equal(Match.load(legacy21,assets).save().version,23);
   const restored=Match.load(current,assets),invalid=restored.save() as any,port=invalid.campaign.ports.find((p:any)=>p.id==='home-2');port.occupationProgress=1;
   assert.throws(()=>Match.load(invalid,assets));
   const badContact=JSON.parse(JSON.stringify(current));badContact.contacts[0].push({unitId:'not-a-ship',ownerId:2,col:1,row:1,level:3,age:0,seenThisTurn:true,shipType:'BB',hpBand:'intact',sizeClass:'large'});

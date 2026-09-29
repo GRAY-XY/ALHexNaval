@@ -285,7 +285,7 @@ check('Version 10 pending ship routes are discarded once while ongoing aircraft 
   const legacy:any=JSON.parse(JSON.stringify(m.save()));legacy.version=10;
   legacy.units[0].order=m.world.nearbySea({col:100,row:100});legacy.units[0].notice='自动航线受阻';legacy.teams[0].oil=7;
   const before=JSON.stringify(legacy),loaded=loadRules(legacy,assets),saved=loaded.save();
-  assert.equal(JSON.stringify(legacy),before);assert.equal(saved.version,22);assert.equal(loaded.active.oil,7);
+  assert.equal(JSON.stringify(legacy),before);assert.equal(saved.version,23);assert.equal(loaded.active.oil,7);
   assert(saved.units.every(u=>!('order' in u)));assert.equal(loaded.units[0].notice,undefined);assert.deepEqual(saved.aviation,legacy.aviation);
   const positions=loaded.units.map(u=>({col:u.col,row:u.row}));for(let i=0;i<6;i++)assert.deepEqual(loaded.endTurn(),[]);
   assert.deepEqual(loaded.units.map(u=>({col:u.col,row:u.row})),positions);assert.equal(loaded.active.oil,50);
@@ -316,7 +316,7 @@ check('Version 1 migration gives the old complete demo roster to its current pla
   legacy.units[0].order=legacyTarget;
   legacy.units.filter((u:any)=>u.ownerId===1).forEach((u:any)=>{u.fleetId='fleet-1';delete u.order;});
   legacy.fleetSerial=1;legacy.fleets=[{id:'fleet-1',name:'湛蓝舰队 · 第1编队',ownerId:1,members:legacy.units.filter((u:any)=>u.ownerId===1).map((u:any)=>u.instanceId),leaderId:legacy.units[0].instanceId,order:legacyTarget}];
-  const migrated=loadRules(legacy,assets);assert.equal(migrated.active.id,3);assert.equal(migrated.units.length,48);assert.equal(migrated.save().version,22);assert.equal(migrated.active.oil,50);
+  const migrated=loadRules(legacy,assets);assert.equal(migrated.active.id,3);assert.equal(migrated.units.length,48);assert.equal(migrated.save().version,23);assert.equal(migrated.active.oil,50);
   const own=migrated.units.filter(u=>u.ownerId===3);assert.equal(own.length,12);own.forEach((u,i)=>{assert.equal(u.col,deployed[i].col);assert.equal(u.row,deployed[i].row);assert(!('movement' in u));});
   assert(migrated.units.every(u=>!('fleetId' in u)));assert(!('order' in own[0]));assert(!('fleets' in migrated.save()));
   assert.deepEqual(loadRules(migrated.save(),assets).save(),migrated.save());assert.equal(new Set(migrated.units.map(cellKey)).size,48);
@@ -325,14 +325,14 @@ check('Version 2 migration adds full hull, armor action state and empty cooldown
   const m=new RulesMatch(new HexWorld(128),assets),legacy:any=legacySave(m,2);
   for(const team of legacy.teams)delete team.oil;
   for(const unit of legacy.units){const asset=assets.find(a=>a.id===unit.assetId)!;unit.movement=legacyMove[asset.ship_type.code];delete unit.hp;delete unit.maxHp;delete unit.guard;delete unit.cooldowns;}
-  const migrated=loadRules(legacy,assets);assert.equal(migrated.save().version,22);assert.equal(migrated.units.length,m.units.length);assert(migrated.teams.every(team=>team.oil===50));
+  const migrated=loadRules(legacy,assets);assert.equal(migrated.save().version,23);assert.equal(migrated.units.length,m.units.length);assert(migrated.teams.every(team=>team.oil===50));
   migrated.units.forEach((unit,i)=>{assert.equal(unit.hp,unit.maxHp);assert.equal(unit.guard,false);assert.deepEqual(unit.cooldowns,{});assert.equal(unit.col,m.units[i].col);assert.equal(unit.row,m.units[i].row);});
 });
 check('Version 3 migration preserves combat state and replaces per-ship movement with 50 shared oil', () => {
   const m=new RulesMatch(new HexWorld(128),assets),legacy:any=legacySave(m,3);for(const team of legacy.teams)delete team.oil;
   for(const unit of legacy.units){const asset=assets.find(a=>a.id===unit.assetId)!;unit.movement=legacyMove[asset.ship_type.code];}
   legacy.units[0].hp=3;legacy.units[0].action=0;legacy.units[0].guard=true;
-  const migrated=loadRules(legacy,assets);assert.equal(migrated.save().version,22);assert.equal(migrated.units[0].hp,3);assert.equal(migrated.units[0].guard,true);assert.equal(migrated.active.oil,50);assert(!('movement' in migrated.units[0]));
+  const migrated=loadRules(legacy,assets);assert.equal(migrated.save().version,23);assert.equal(migrated.units[0].hp,3);assert.equal(migrated.units[0].guard,true);assert.equal(migrated.active.oil,50);assert(!('movement' in migrated.units[0]));
 });
 check('CV launches 3x4 and CVL launches 2x3 using shared oil and one action', () => {
   const m=new RulesMatch(new HexWorld(128),assets),cv=m.units.find(u=>u.ownerId===1&&u.asset.ship_type.code==='CV')!,cvl=m.units.find(u=>u.ownerId===1&&u.asset.ship_type.code==='CVL')!;
@@ -425,13 +425,13 @@ check('Low-FPS aviation frames match twenty fine steps and long suspension catch
 check('Version 4 migration preserves oil and hull state, removes old carrier strike cooldowns', () => {
   const m=new RulesMatch(new HexWorld(128),assets),legacy:any=legacySave(m,4);delete legacy.aviation;legacy.teams[0].oil=17;
   const carrier=legacy.units.find((u:any)=>u.assetId==='qiye');carrier.cooldowns={airstrike:2};carrier.action=0;
-  const loaded=loadRules(legacy,assets);assert.equal(loaded.active.oil,17);assert.equal(loaded.save().version,22);assert.deepEqual(loaded.unit(carrier.instanceId).cooldowns,{});assert.equal(loaded.aviation.squadrons.length,0);
+  const loaded=loadRules(legacy,assets);assert.equal(loaded.active.oil,17);assert.equal(loaded.save().version,23);assert.deepEqual(loaded.unit(carrier.instanceId).cooldowns,{});assert.equal(loaded.aviation.squadrons.length,0);
 });
 check('Version 5 flight saves migrate mixed-country wings to their carrier country without losing flight state', () => {
   const m=new RulesMatch(new HexWorld(128),assets),cv=m.units.find(u=>u.ownerId===1&&u.asset.ship_type.code==='CV')!,cvl=m.units.find(u=>u.ownerId===1&&u.asset.ship_type.code==='CVL')!;
   launchWing(m,cv.instanceId);launchWing(m,cvl.instanceId);const legacy:any=legacySave(m,5);legacy.aviation.nations={[cv.instanceId]:'de',[cvl.instanceId]:'jp'};
   legacy.aviation.squadrons.forEach((s:any)=>{s.nation=s.carrierId===cv.instanceId?'de':'jp';s.fuel=s.fuelTurns*30;delete s.fuelTurns;});
-  const before=JSON.stringify(legacy),loaded=loadRules(legacy,assets),expected:any=JSON.parse(before);expected.version=22;expected.combatState=loaded.save().combatState;expected.campaign=loaded.save().campaign;expected.teams=loaded.save().teams;expected.fog=loaded.save().fog;delete expected.fleets;delete expected.fleetSerial;delete expected.aviation.nations;
+  const before=JSON.stringify(legacy),loaded=loadRules(legacy,assets),expected:any=JSON.parse(before);expected.version=23;expected.height=128;expected.mapKind='archipelago';expected.combatState=loaded.save().combatState;expected.campaign=loaded.save().campaign;expected.teams=loaded.save().teams;expected.fog=loaded.save().fog;delete expected.fleets;delete expected.fleetSerial;delete expected.aviation.nations;
   expected.aviation.squadrons.forEach((s:any)=>{s.nation=s.carrierId===cv.instanceId?'us':'uk';s.fuelTurns=s.fuel/30;s.actionPoints=s.fuelTurns*5;delete s.fuel;});
   assert.deepEqual(loaded.save(),expected);assert.equal(JSON.stringify(legacy),before);
   for(const mutation of [(d:any)=>delete d.aviation.nations,(d:any)=>d.aviation.nations[cv.instanceId]='unknown']) {
@@ -459,7 +459,7 @@ check('Version 6 seconds-based flight endurance migrates upwards to complete own
   launchWing(m,cv.instanceId);launchWing(m,cvl.instanceId);const legacy:any=legacySave(m,6);
   legacy.aviation.squadrons.forEach((s:any,i:number)=>{s.fuel=[61,60,31,90,1][i];delete s.fuelTurns;});
   const before=JSON.stringify(legacy),loaded=loadRules(legacy,assets);
-  assert.deepEqual(loaded.aviation.squadrons.map(s=>s.fuelTurns),[3,2,2,3,1]);assert.equal(loaded.save().version,22);assert.equal(JSON.stringify(legacy),before);assert.equal(loaded.active.oil,35);
+  assert.deepEqual(loaded.aviation.squadrons.map(s=>s.fuelTurns),[3,2,2,3,1]);assert.equal(loaded.save().version,23);assert.equal(JSON.stringify(legacy),before);assert.equal(loaded.active.oil,35);
   assert.deepEqual(loadRules(loaded.save(),assets).save(),loaded.save());
   const invalid=JSON.parse(before);invalid.aviation.squadrons[0].fuel=121;assert.throws(()=>loadRules(invalid,assets));invalidSaveCases++;
 });
@@ -520,7 +520,7 @@ check('Legacy versions 7 and 8 migrate aircraft budgets using remaining enduranc
   for(const version of [7,8]) {
     const m=new RulesMatch(new HexWorld(128),assets),cv=m.units.find(u=>u.ownerId===1&&u.asset.ship_type.code==='CV')!,cvl=m.units.find(u=>u.ownerId===1&&u.asset.ship_type.code==='CVL')!;launchWing(m,cv.instanceId);launchWing(m,cvl.instanceId);
     const legacy=legacySave(m,version);legacy.aviation.squadrons[0].fuelTurns=2;legacy.aviation.squadrons[3].fuelTurns=1;legacy.teams[0].oil=13;const before=JSON.stringify(legacy),loaded=loadRules(legacy,assets);
-    assert.deepEqual(loaded.aviation.squadrons.map(s=>s.actionPoints),[10,20,20,5,15]);assert.equal(loaded.active.oil,13);assert.equal(loaded.save().version,22);assert.equal(JSON.stringify(legacy),before);assert.deepEqual(loadRules(loaded.save(),assets).save(),loaded.save());
+    assert.deepEqual(loaded.aviation.squadrons.map(s=>s.actionPoints),[10,20,20,5,15]);assert.equal(loaded.active.oil,13);assert.equal(loaded.save().version,23);assert.equal(JSON.stringify(legacy),before);assert.deepEqual(loadRules(loaded.save(),assets).save(),loaded.save());
   }
 });
 check('Aircraft spawn at valid hex centers even when the carrier is at a map corner', () => {

@@ -14,26 +14,34 @@ function smoothNoise(x: number, y: number, size: number): number {
 }
 export const TERRAIN_LABELS = ['深海', '海面', '浅滩', '岛屿'];
 export const TERRAIN_COLORS = ['#27617d', '#3b8da4', '#72b8bd', '#adb17a'];
+export type WorldScenario = 'archipelago' | 'test-5x10';
 
 export class HexWorld {
   readonly width: number;
   readonly height: number;
+  readonly scenarioId: WorldScenario;
   readonly terrain: Uint8Array;
   readonly valid: Uint8Array;
   readonly bounds;
   readonly generationMs: number;
   readonly landCells: number;
   readonly home: Cell;
-  constructor(size: number) {
+  constructor(size: number, height = size, scenarioId: WorldScenario = 'archipelago') {
     const started = performance.now();
-    this.width = this.height = size;
-    this.bounds = worldBounds(size, size);
-    this.terrain = new Uint8Array(size * size);
+    if (scenarioId === 'test-5x10' && (size !== 5 || height !== 10) || scenarioId === 'archipelago' && size !== height) throw Error('海图尺寸与场景不匹配');
+    this.width = size; this.height = height; this.scenarioId = scenarioId;
+    this.bounds = worldBounds(size, height);
+    this.terrain = new Uint8Array(size * height);
     // Validity is separate from terrain so later maps can have arbitrary outlines.
-    this.valid = new Uint8Array(size * size).fill(1);
-    this.home = { col: Math.round(size * .12), row: Math.round(size * .13) };
+    this.valid = new Uint8Array(size * height).fill(1);
+    this.home = scenarioId === 'test-5x10' ? { col: 2, row: 4 } : { col: Math.round(size * .12), row: Math.round(size * .13) };
+    if (scenarioId === 'test-5x10') {
+      this.landCells = 0;
+      this.generationMs = performance.now() - started;
+      return;
+    }
     let land = 0;
-    for (let row = 0; row < size; row++) for (let col = 0; col < size; col++) {
+    for (let row = 0; row < height; row++) for (let col = 0; col < size; col++) {
       const px = Math.floor(col / 30), py = Math.floor(row / 30);
       let island = -10;
       for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {

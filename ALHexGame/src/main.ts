@@ -82,7 +82,8 @@ class NavalMap {
   private elapsed = 0;
   private frames = 0;
   private rebuilding = false;
-  private setupMode:'local'|'single'='local';
+  private setupUsesTestMap=false;
+  private regularTeamCount=4;
   private setupControllers:TeamController[]=Array.from({length:TEAM_NAMES.length},()=> 'human');
   private aiRunning=false;
   private aiGeneration=0;
@@ -100,9 +101,10 @@ class NavalMap {
     this.app.ticker.maxFPS = 60;
     this.app.ticker.add(() => this.tick());
   }
-  async changeSize(size: number, teamCount = 4, controllers?:TeamController[]): Promise<void> {
+  async changeSize(size: number|'test-5x10', teamCount = 4, controllers?:TeamController[]): Promise<void> {
     if (this.match) this.writeSlot('previous', this.match.save());
-    await this.installMatch(new Match(new HexWorld(size), this.assets, teamCount,controllers)); this.persist();
+    const world=size==='test-5x10'?new HexWorld(5,10,'test-5x10'):new HexWorld(size);
+    await this.installMatch(new Match(world, this.assets, teamCount,controllers)); this.persist();
   }
   async installMatch(match: Match): Promise<void> {
     if (this.rebuilding) return;
@@ -130,9 +132,16 @@ class NavalMap {
         point => { this.camera.focus(point); this.dirty = true; });
       this.resize(); this.selected = this.units.find(u => u.ownerId === match.active.id)!.instanceId; this.chosen.add(this.selected); this.home(); this.renderSelection(); this.renderTurn();
       this.renderAirControls();
-      const size = this.world.width;
-      $('map-summary').textContent = `${size} × ${size} · ${(size * size).toLocaleString()} 格`;
-      $<HTMLSelectElement>('map-size').value = String(size); $<HTMLSelectElement>('team-count').value = String(match.teams.length);
+      const size = this.world.width,height=this.world.height;
+      $('map-summary').textContent = `${size} × ${height} · ${(size * height).toLocaleString()} 格`;
+      $('map-kicker').textContent=this.world.scenarioId==='test-5x10'?'FLEET TEST AREA':'ARCHIPELAGO CHART';
+      $('world-title').textContent=this.world.scenarioId==='test-5x10'?'舰队测试海域':'晨雾群岛';
+      $<HTMLSelectElement>('map-size').value = this.world.scenarioId==='test-5x10'?'test-5x10':String(size);
+      $<HTMLSelectElement>('team-count').value = String(match.teams.length);
+      this.setupUsesTestMap=this.world.scenarioId==='test-5x10';
+      $<HTMLSelectElement>('team-count').disabled=this.setupUsesTestMap;
+      $('team-count-hint').textContent=this.setupUsesTestMap?'双方各有六种舰种各一艘':'每个席位使用完整舰船阵容';
+      if(!this.setupUsesTestMap)this.regularTeamCount=match.teams.length;
       this.setupControllers=Array.from({length:TEAM_NAMES.length},(_,i)=>match.teams[i]?.controller??'human');this.renderSeatSettings();
       this.ready = true; this.dirty = true; this.app.start();
       this.updateMenuSummary();
@@ -440,14 +449,10 @@ class NavalMap {
     $('main-menu-page').hidden = page !== 'main';
     $('skirmish-page').hidden = page !== 'skirmish';
   }
-  private openSetup(mode:'local'|'single'):void {
-    this.setupMode=mode;
-    const count=Number($<HTMLSelectElement>('team-count').value);
-    this.setupControllers=Array.from({length:TEAM_NAMES.length},(_,i)=>mode==='single'&&i>0?'ai':'human');
-    $('setup-kicker').textContent=mode==='single'?'SINGLE PLAYER':'LOCAL SKIRMISH';
-    $('setup-title').textContent=mode==='single'?'建立单人战局':'建立本地战局';
-    $('setup-description').textContent=mode==='single'?'你指挥1号势力，其余启用席位由AI自动侦察、抢港、作战与经营。':'各势力均可使用完整舰船阵容。本地玩家依次交接回合，也可单独把席位改为AI。';
-    if(mode==='single'&&count<2)$<HTMLSelectElement>('team-count').value='4';
+  private openSetup():void {
+    $('setup-kicker').textContent='MATCH SETUP';
+    $('setup-title').textContent='建立战局';
+    $('setup-description').textContent='设置海图规模、势力与席位控制。将席位设为 AI 即可单人游玩；多个玩家席位可本地轮流指挥。';
     this.renderSeatSettings();this.showFrontPage('skirmish');
   }
   private renderSeatSettings():void {
@@ -456,11 +461,13 @@ class NavalMap {
       const row=element('label',`seat-row${i>=count?' empty':''}`);row.style.setProperty('--seat-color','#'+TEAM_COLORS[i].toString(16).padStart(6,'0'));
       const color=element('span','seat-color'),name=element('strong','',`${i+1}号 · ${TEAM_NAMES[i]}`),select=document.createElement('select');select.dataset.seat=String(i);select.setAttribute('aria-label',`${TEAM_NAMES[i]}控制方式`);
       for(const [value,label] of [['human','玩家'],['ai','AI'],['empty','空位']] as const){const option=document.createElement('option');option.value=value;option.textContent=label;if(value==='empty'&&i<2)option.disabled=true;select.append(option);}
+      if(this.setupUsesTestMap&&i>=2)select.disabled=true;
       select.value=i<count?this.setupControllers[i]:'empty';
       select.onchange=()=>{
         const value=select.value as TeamController|'empty',teamCount=$<HTMLSelectElement>('team-count');
         if(value==='empty')teamCount.value=String(Math.max(2,i));
         else{this.setupControllers[i]=value;teamCount.value=String(Math.max(Number(teamCount.value),i+1));}
+        if(!this.setupUsesTestMap)this.regularTeamCount=Number(teamCount.value)||this.regularTeamCount;
         this.renderSeatSettings();
       };
       row.append(color,name,select);host.append(row);
@@ -497,7 +504,7 @@ class NavalMap {
     const slots = $('save-slots'); slots.replaceChildren();
     for (const [slot, label] of [['manual','手动存档'],['auto','自动存档'],['previous','上一战局']] as const) {
       const button = document.createElement('button'), raw = localStorage.getItem(`alhex-${slot}-v1`); button.textContent = label; button.disabled = !raw;
-      if (raw) { try { const data = JSON.parse(raw); button.textContent += ` · 第 ${data.round} 轮 · ${data.size} × ${data.size} · ${data.teams.length} 方`; } catch { button.textContent += ' · 数据损坏'; } }
+      if (raw) { try { const data = JSON.parse(raw); button.textContent += ` · 第 ${data.round} 轮 · ${data.size} × ${data.height??data.size} · ${data.teams.length} 方`; } catch { button.textContent += ' · 数据损坏'; } }
       button.onclick = () => { $<HTMLDialogElement>('load-dialog').close(); try { this.restore(JSON.parse(raw!)).then(() => { if (enterAfterLoad) this.enterGame(); }).catch(error => this.notify(String(error))); } catch { this.notify('无法解析此存档，当前战局未改变'); } };
       slots.append(button);
     }
@@ -509,10 +516,18 @@ class NavalMap {
   }
   private installCommands(): void {
     $('continue-match').onclick=()=>this.enterGame();
-    $('open-skirmish').onclick=()=>this.openSetup('local');
-    $('open-single-player').onclick=()=>this.openSetup('single');
+    $('open-skirmish').onclick=()=>this.openSetup();
     $('setup-back').onclick=()=>this.showFrontPage('main');
-    $<HTMLSelectElement>('team-count').onchange=()=>this.renderSeatSettings();
+    $<HTMLSelectElement>('team-count').onchange=()=>{if(!this.setupUsesTestMap)this.regularTeamCount=Number($<HTMLSelectElement>('team-count').value)||this.regularTeamCount;this.renderSeatSettings();};
+    $<HTMLSelectElement>('map-size').onchange=()=>{
+      const isTest=$<HTMLSelectElement>('map-size').value==='test-5x10',teams=$<HTMLSelectElement>('team-count');
+      if(isTest&&!this.setupUsesTestMap)this.regularTeamCount=Number(teams.value)||this.regularTeamCount;
+      if(!isTest&&this.setupUsesTestMap)teams.value=String(this.regularTeamCount);
+      this.setupUsesTestMap=isTest;teams.disabled=isTest;
+      if(isTest)teams.value='2';else this.regularTeamCount=Number(teams.value)||this.regularTeamCount;
+      $('team-count-hint').textContent=isTest?'双方各有六种舰种各一艘':'每个席位使用完整舰船阵容';
+      this.renderSeatSettings();
+    };
     $('main-load').onclick=()=>this.openLoadDialog(true);
     $('main-settings').onclick=()=>this.openSettings();
     $('open-pause').onclick=()=>this.openPause();
@@ -548,18 +563,19 @@ class NavalMap {
       renderTexture.destroy(true);
       $<HTMLDialogElement>('map-capture-dialog').showModal();
     };
-    $('download-map-capture').onclick=()=>{const link=document.createElement('a');link.href=$<HTMLImageElement>('map-capture-image').src;link.download=`AL-HEX-NAVAL-海图-${this.world.width}格-第${this.match.round}轮.png`;link.click();};
+    $('download-map-capture').onclick=()=>{const link=document.createElement('a');link.href=$<HTMLImageElement>('map-capture-image').src;link.download=`AL-HEX-NAVAL-海图-${this.world.width}x${this.world.height}格-第${this.match.round}轮.png`;link.click();};
     $('close-map-capture').onclick=()=>$<HTMLDialogElement>('map-capture-dialog').close();
     $('new-match').onclick = () => { if (this.rebuilding) return;
       const button=$<HTMLButtonElement>('new-match');button.textContent='正在生成海域…';
       const count=Number($<HTMLSelectElement>('team-count').value),controllers=this.setupControllers.slice(0,count);if(!controllers.includes('human')){this.notify('至少需要一个玩家席位');return;}
-      this.changeSize(Number($<HTMLSelectElement>('map-size').value),count,controllers).then(() => { this.enterGame(); this.notify(`新战局已建立 · ${controllers.filter(value=>value==='human').length} 玩家 / ${controllers.filter(value=>value==='ai').length} AI`); }).catch(error => this.notify(String(error))).finally(()=>button.textContent='开始战局'); };
+      const mapChoice=$<HTMLSelectElement>('map-size').value;
+      this.changeSize(mapChoice==='test-5x10'?'test-5x10':Number(mapChoice),count,controllers).then(() => { this.enterGame(); this.notify(`新战局已建立 · ${controllers.filter(value=>value==='human').length} 玩家 / ${controllers.filter(value=>value==='ai').length} AI`); }).catch(error => this.notify(String(error))).finally(()=>button.textContent='开始战局'); };
     $('save-match').onclick = () => { if (this.writeSlot('manual', this.match.save())) { $('save-status').textContent = '手动存档已保存'; this.notify('已保存到手动存档；自动保存不会覆盖这个存档'); } };
     $('load-match').onclick = () => this.openLoadDialog(false);
     $('close-load').onclick = () => $<HTMLDialogElement>('load-dialog').close();
     $('export-match').onclick = () => {
       const blob = new Blob([JSON.stringify(this.match.save(), null, 2) + '\n'], { type: 'application/json' }), url = URL.createObjectURL(blob), a = document.createElement('a');
-      a.href = url; a.download = `AL-HEX-NAVAL-${this.world.width}格-第${this.match.round}轮.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 2000); this.notify('已导出战局 JSON，包含耐久、行动资源、冷却与航行指令');
+      a.href = url; a.download = `AL-HEX-NAVAL-${this.world.width}x${this.world.height}格-第${this.match.round}轮.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 2000); this.notify('已导出战局 JSON，包含耐久、行动资源、冷却与航行指令');
     };
     $('import-match').onclick = () => $('import-file').click();
     $<HTMLInputElement>('import-file').onchange = async event => {

@@ -57,8 +57,18 @@ export interface Team { id: number; name: string; oil: number; credits:number; s
 export type ContactLevel=1|2|3;
 export interface NavalContact {unitId:string;ownerId:number;col:number;row:number;level:ContactLevel;age:number;seenThisTurn:boolean;sizeClass?:'large'|'small';shipType?:string;hpBand?:'intact'|'damaged'|'critical'}
 export interface ContactReport {key:string;col:number;row:number;level:ContactLevel;age:number;sizeClass?:'large'|'small';shipType?:string;hpBand?:'intact'|'damaged'|'critical'}
+const TEST_ARENA_SHIP_TYPES=['DD','CL','CA','BB','CV','CVL'] as const;
+export function testArenaFleetAssets(assets:ShipAsset[]):ShipAsset[] {
+  const fleet=TEST_ARENA_SHIP_TYPES.map(code=>assets.find(asset=>asset.ship_type.code===code));
+  if(fleet.some(asset=>!asset))throw Error('测试海图需要驱逐舰、轻巡、重巡、战列舰、航母和轻航各一艘');
+  return fleet as ShipAsset[];
+}
+const TEST_ARENA_SPAWNS:Cell[][]=[
+  [{col:0,row:0},{col:1,row:0},{col:2,row:0},{col:3,row:0},{col:0,row:1},{col:1,row:1}],
+  [{col:4,row:9},{col:3,row:9},{col:2,row:9},{col:1,row:9},{col:4,row:8},{col:3,row:8}],
+];
 export interface SavedMatch {
-  format: 'al-hex-match'; version: 22; mapVersion: 1; size: number; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
+  format: 'al-hex-match'; version: 23; mapVersion: 1; size: number; height:number; mapKind:'archipelago'|'test-5x10'; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
   phase:'classic'|'aviation'|'movement'|'combat';initiativeIndex:number;phaseSubmitted:number[];aviationOrders:CarrierLaunchOrder[];movementOrders:NavalMoveOrder[];combatOrders:NavalAttackOrder[];
   round: number; activeIndex: number; teams: Team[];
   units: (Omit<MatchUnit, 'asset'> & { assetId: string })[];
@@ -94,12 +104,21 @@ export class Match {
   constructor(world: HexWorld, assets: ShipAsset[], teamCount = 4, controllers?:TeamController[]) {
     this.world = world;
     if (!Number.isInteger(teamCount) || teamCount < 2 || teamCount > 8 || !assets.length || new Set(assets.map(asset => asset.id)).size !== assets.length) throw Error('势力数应为 2～8，舰船池不能为空或重复');
+    if(world.scenarioId==='test-5x10'&&teamCount!==2)throw Error('5 × 10 测试海图只支持双方对战');
     if(controllers&&(controllers.length!==teamCount||controllers.some(controller=>!['human','ai'].includes(controller))))throw Error('席位设置无效');
+    const fleetAssets=world.scenarioId==='test-5x10'?testArenaFleetAssets(assets):assets;
     this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: TEAM_NAMES[i], oil: 0,credits:STARTING_CREDITS,supply:STARTING_SUPPLY,eliminated:false,controller:controllers?.[i]??'human' }));
     const occupied = new Set<string>(), starts = [[.12,.13],[.82,.15],[.82,.82],[.15,.82],[.48,.10],[.90,.50],[.50,.90],[.10,.50]];
     this.units = this.teams.flatMap((team,index) => {
+      if(world.scenarioId==='test-5x10')return TEST_ARENA_SPAWNS[index].map((cell,shipIndex)=>{
+        const asset=fleetAssets[shipIndex];occupied.add(`${cell.col},${cell.row}`);
+        const combat=profile(asset.ship_type.code);
+        return { ...cell,instanceId:`team-${team.id}-${asset.id}`,asset,ownerId:team.id,facing:shipIndex%2?'left' as const:'right' as const,
+          action:1,status:'ready' as const,hp:combat.maxHp,maxHp:combat.maxHp,guard:false,cooldowns:{},movementUsed:0,
+          movedThisTurn:false,firedThisTurn:false,torpedoes:SHIP_RULES_V2[asset.ship_type.code]?.torpedoes??0 };
+      });
       const origin = { col: Math.round(world.width * starts[index][0]), row: Math.round(world.height * starts[index][1]) };
-      return world.deploy(assets, origin, team.id, occupied).map(unit => { const combat = profile(unit.asset.ship_type.code); return { ...unit, ownerId: team.id,
+      return world.deploy(fleetAssets, origin, team.id, occupied).map(unit => { const combat = profile(unit.asset.ship_type.code); return { ...unit, ownerId: team.id,
         action: 1, status: 'ready' as const,
         hp: combat.maxHp, maxHp: combat.maxHp, guard: false, cooldowns: {}, movementUsed: 0,
         movedThisTurn:false,firedThisTurn:false,torpedoes: SHIP_RULES_V2[unit.asset.ship_type.code]?.torpedoes ?? 0 }; });
@@ -675,7 +694,7 @@ export class Match {
   }
   save(): SavedMatch {
     this.refreshVision();this.resolveOutcome();if(this.rulesetId==='naval-v2')initializeAviationDecks(this);
-    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 22, mapVersion: 1, size: this.world.width, mapHash: this.hash,
+    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 23, mapVersion: 1, size: this.world.width,height:this.world.height,mapKind:this.world.scenarioId,mapHash: this.hash,
       rulesetId:this.rulesetId,combatState:this.combatState,phase:this.rulesetId==='naval-v2'?this.phase:'classic',initiativeIndex:this.initiativeIndex,phaseSubmitted:this.rulesetId==='naval-v2'?this.phaseSubmitted:[],aviationOrders:this.rulesetId==='naval-v2'?this.aviationOrders:[],movementOrders:this.rulesetId==='naval-v2'?this.movementOrders:[],combatOrders:this.rulesetId==='naval-v2'?this.combatOrders:[],round: this.round, activeIndex: this.activeIndex, teams: this.teams,
       units: this.units.map(({ asset, ...unit }) => ({ ...unit, assetId: asset.id })),contacts:this.rulesetId==='naval-v2'?this.contacts:this.teams.map(()=>[]),aviation: this.aviation,fog:this.fog.save(),campaign:{ports:this.ports,intel:this.portIntel,result:this.result} }));
   }
@@ -683,7 +702,9 @@ export class Match {
     const data = input as any;
     const fail = (): never => { throw Error('存档格式或战局数据无效，当前战局未改变'); };
     const integer = (n: unknown, low: number, high: number) => Number.isInteger(n) && Number(n) >= low && Number(n) <= high;
-    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22].includes(data.version) || data.mapVersion !== 1 || ![128,256,512].includes(data.size)) fail();
+    const mapKind=data?.version>=23?data.mapKind:'archipelago',mapHeight=data?.version>=23?data.height:data?.size;
+    const validMap=mapKind==='archipelago'&&[128,256,512].includes(data?.size)&&mapHeight===data?.size||mapKind==='test-5x10'&&data?.size===5&&mapHeight===10;
+    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
     if(data.version>=16&&(!['naval-v2','classic-v1'].includes(data.rulesetId)||!integer(data.combatState,0,0xffffffff)))fail();
     if (!Array.isArray(data.teams) || !integer(data.teams.length, 2, 8) || !integer(data.activeIndex, 0, data.teams.length - 1) || !integer(data.round, 1, 1_000_000)) fail();
     if(data.version>=19&&(!integer(data.initiativeIndex,0,data.teams.length-1)||!Array.isArray(data.phaseSubmitted)||new Set(data.phaseSubmitted).size!==data.phaseSubmitted.length||data.phaseSubmitted.some((id:number)=>!integer(id,1,data.teams.length))||!Array.isArray(data.movementOrders)||data.rulesetId==='naval-v2'&&!(data.version>=22?['aviation','movement','combat']:['movement','combat']).includes(data.phase)||data.rulesetId==='classic-v1'&&data.phase!=='classic'))fail();
@@ -694,9 +715,12 @@ export class Match {
     if(data.version>=13&&data.teams.some((t:Team)=>!integer(t.credits,0,MAX_CREDITS)||typeof t.eliminated!=='boolean'))fail();
     if(data.version>=16&&data.teams.some((t:Team)=>!integer(t.supply,0,MAX_SUPPLY)))fail();
     if(data.version>=15&&data.teams.some((t:Team)=>!['human','ai'].includes(t.controller)))fail();
-    const expectedUnits = assets.length * (data.version === 1 ? 1 : data.teams.length);
+    if(mapKind==='test-5x10'&&data.teams.length!==2)fail();
+    const scenarioAssets=mapKind==='test-5x10'?testArenaFleetAssets(assets):assets;
+    const expectedUnits = scenarioAssets.length * (data.version === 1 ? 1 : data.teams.length);
     if (!Array.isArray(data.units) || data.units.length !== expectedUnits || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2)) fail();
-    const match = new Match(new HexWorld(data.size), assets, data.teams.length); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
+    const world=mapKind==='test-5x10'?new HexWorld(5,10,'test-5x10'):new HexWorld(data.size);
+    const match = new Match(world, assets, data.teams.length); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
     match.rulesetId=data.version>=16?data.rulesetId:'classic-v1';
     match.phase=data.version>=19?data.phase:match.rulesetId==='naval-v2'?'combat':'classic';
     match.initiativeIndex=data.version>=19?data.initiativeIndex:0;
@@ -705,12 +729,12 @@ export class Match {
     match.teams = data.teams.map((team: Team,i: number) => ({ id: i + 1, name: TEAM_NAMES[i], oil: data.version >= 4 ? team.oil : OIL_PER_TURN,credits:data.version>=13?team.credits:STARTING_CREDITS,supply:data.version>=16?team.supply:STARTING_SUPPLY,eliminated:false,controller:data.version>=15?team.controller:'human' }));
     const freshUnits = match.units;
     const identities = new Set<string>(), occupied = new Set<string>(), assetIds = new Set<string>(), legacyMembership = new Map<string,string>();
-    const validCell = (cell: Cell | undefined): boolean => !!cell && integer(cell.col, 0, data.size - 1) && integer(cell.row, 0, data.size - 1) && match.world.isSea(cell);
+    const validCell = (cell: Cell | undefined): boolean => !!cell && integer(cell.col, 0, data.size - 1) && integer(cell.row, 0, mapHeight - 1) && match.world.isSea(cell);
     const validNotice = (notice?: string) => notice === undefined || typeof notice === 'string' && notice.length < 160;
     match.units = data.units.map((raw: any) => {
       const saved = raw as any, expectedId = data.version === 1 ? `preview-${saved?.assetId}` : `team-${saved?.ownerId}-${saved?.assetId}`, assetKey = data.version === 1 ? saved?.assetId : `${saved?.ownerId}:${saved?.assetId}`;
       if (!saved || typeof saved.instanceId !== 'string' || saved.instanceId !== expectedId || identities.has(saved.instanceId) || assetIds.has(assetKey)) return fail();
-      const asset = assets.find(a => a.id === saved.assetId); if (!asset || !validCell(saved) || !integer(saved.ownerId, 1, data.teams.length) || !['left','right'].includes(saved.facing)) return fail();
+      const asset = scenarioAssets.find(a => a.id === saved.assetId); if (!asset || !validCell(saved) || !integer(saved.ownerId, 1, data.teams.length) || !['left','right'].includes(saved.facing)) return fail();
       const combat = profile(asset.ship_type.code), status = saved.status as MatchUnit['status'];
       const v2Ship=shipRulesV2(asset.ship_type.code);
       if((data.version>=16&&data.rulesetId==='naval-v2'&&(!integer(saved.movementUsed,0,v2Ship.speed)||typeof saved.movedThisTurn!=='boolean'||data.version<19&&saved.movedThisTurn&&saved.movementUsed===0||!integer(saved.torpedoes,0,v2Ship.torpedoes)))||(data.version>=17&&data.rulesetId==='naval-v2'&&typeof saved.firedThisTurn!=='boolean'))return fail();
@@ -798,7 +822,7 @@ export class Match {
     }
     if ([...legacyMembership.keys()].some(id => !members.has(id))) fail();
     match.round = data.round; match.activeIndex = data.activeIndex;
-    if (data.version >= 5) match.aviation = validateAviation(data.aviation,match,data.version as 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21);
+    if (data.version >= 5) match.aviation = validateAviation(data.aviation,match,data.version as 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23);
     if(data.version>=22){
       const seenLaunches=new Set<string>();
       for(const order of match.aviationOrders){
