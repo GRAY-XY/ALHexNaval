@@ -240,7 +240,7 @@ class NavalMap {
     const defend = document.createElement('button'); defend.className = 'defend'; defend.textContent = unit.guard ? '◆ 警戒姿态生效' : '◇ 进入警戒姿态';
     defend.disabled = !!this.match.result||!canCommand||this.match.rulesetId==='naval-v2'&&this.match.phase!=='combat' || unit.status !== 'ready' || !unit.action; defend.onclick = () => this.command(() => { this.match.defend(unit.instanceId); this.selectedWeapon = undefined; return []; },this.match.rulesetId==='naval-v2'?'已进入警戒姿态：最多移动1格，对舰射击 -1，敌方舰炮命中 -1，对空 +1':'已进入防御姿态：每次受到的伤害减少 2 点'); weapons.append(defend);
     face.disabled = !!this.match.result||!canCommand||unit.status === 'sunk'; panel.append(head, health, coords, status, weapons, actions, face);
-    if(planned&&canCommand){const cancel=document.createElement('button');cancel.textContent='撤回机动计划';cancel.disabled=this.match.phase!=='movement';cancel.onclick=()=>this.command(()=>{this.match.cancelMove(unit.instanceId);return[];});panel.append(cancel);}
+    if(planned&&canCommand){const cancel=document.createElement('button');cancel.textContent='撤回机动计划';cancel.disabled=this.match.phase!=='aviation'&&this.match.phase!=='movement';cancel.onclick=()=>this.command(()=>{this.match.cancelMove(unit.instanceId);return[];});panel.append(cancel);}
     const carrier = CARRIER_STATS[unit.asset.ship_type.code];
     if (carrier) {
       const wing = element('div','carrier-wing'), nation = nationFor(this.match,unit.instanceId);
@@ -257,7 +257,7 @@ class NavalMap {
   }
   private renderGroupSelection(): void {
     const panel = $('selection'); panel.replaceChildren();
-    panel.append(element('h3','group-title',`已选 ${this.selectionCount} 个单位`),element('p','group-help',`${this.chosen.size} 艘舰船 · ${this.chosenAir.size} 个飞行中队`),element('p','group-help',this.match.rulesetId==='naval-v2'?(this.match.phase==='aviation'?'航空准备阶段只提交航母起飞计划。Shift / Ctrl 可追加选择。':'右键提交机动目标；全方提交后同步沿航线前进，冲突会使舰船停在最后合法格。计划可在锁定前撤回。Shift / Ctrl 可追加选择。'):'右键海图一起移动；抵达时保持出发队形与间距，途中各自寻路。舰船需有足够石油在本回合一起抵达。Shift / Ctrl 可追加选择。'));
+    panel.append(element('h3','group-title',`已选 ${this.selectionCount} 个单位`),element('p','group-help',`${this.chosen.size} 艘舰船 · ${this.chosenAir.size} 个飞行中队`),element('p','group-help',this.match.rulesetId==='naval-v2'?(this.match.phase==='aviation'?'右键提交舰船航线；航母可同时安排舰载机起飞。计划可在锁定前撤回。Shift / Ctrl 可追加选择。':this.match.phase==='movement'?'旧存档机动阶段 · 右键提交机动目标；各方提交后同步结算。Shift / Ctrl 可追加选择。':'水面交战阶段 · 本回合舰船机动已结算。Shift / Ctrl 可追加选择。'):'右键海图一起移动；抵达时保持出发队形与间距，途中各自寻路。舰船需有足够石油在本回合一起抵达。Shift / Ctrl 可追加选择。'));
     const list = element('div','group-units');
     for (const id of this.chosen) { const unit=this.match.unit(id),ratio=unit.hp/unit.maxHp,band=ratio<=.25?'危急':ratio<=.5?'受损':'完好',hp=this.match.rulesetId==='naval-v2'&&unit.ownerId!==this.match.active.id?band:`${unit.hp}/${unit.maxHp}`;list.append(element('p','',`${unit.asset.name} · ${hp}${unit.status !== 'ready' ? ' · 待命 / 驻留' : ''}`)); }
     for (const id of this.chosenAir) { const s=this.match.aviation.squadrons.find(s=>s.id===id)!; list.append(element('p','',`${squadronName(s)} · 行动力${aircraftActionText(s)} · 续航${s.fuelTurns}回合`)); }
@@ -296,7 +296,7 @@ class NavalMap {
     if (squadron.destination) { const target=worldToCell(squadron.destination);info.append(element('p','',`目标格 ${target.col}, ${target.row}`)); }
     if (squadron.flight) info.append(element('p','',`飞往相邻格 ${squadron.flight.next.col}, ${squadron.flight.next.row}`));
     if (squadron.role === 'fighter') info.append(element('p','',`自动拦截：周围${FIGHTER_RANGE}格内敌机 · 移动和待命时生效 · 返航时停火`));
-    panel.append(head,action,info,element('p','air-help',this.match.rulesetId==='naval-v2'&&this.match.phase==='aviation'?'航空准备阶段 · 本阶段只锁定航母起飞计划；所有势力提交后同时起飞。':this.match.rulesetId==='naval-v2'&&this.match.phase==='movement'?'同步机动阶段 · 飞行中队暂停移动；航空命令在水面交战阶段下达。':this.match.rulesetId==='naval-v2'&&this.match.phase!=='combat'?'舰载机命令在水面交战阶段执行。':'右键格子：沿相邻六角格实时飞行，抵达格心；右键敌舰：持续攻击；战斗机可右键敌机拦截。每移动一格消耗1点本中队行动力，飞机可越过岛屿。'),recall,carrier);
+    panel.append(head,action,info,element('p','air-help',this.match.rulesetId==='naval-v2'&&this.match.phase==='aviation'?'行动计划阶段 · 可安排航母起飞与舰船航线；提交后飞机起飞、舰船同步机动。':this.match.rulesetId==='naval-v2'&&this.match.phase==='movement'?'旧存档机动阶段 · 飞行中队暂停移动；航空命令在交战阶段下达。':this.match.rulesetId==='naval-v2'&&this.match.phase!=='combat'?'舰载机命令在水面交战阶段执行。':'右键格子：沿相邻六角格实时飞行，抵达格心；右键敌舰：持续攻击；战斗机可右键敌机拦截。每移动一格消耗1点本中队行动力，飞机可越过岛屿。'),recall,carrier);
   }
   private airOrderName(s: Squadron): string { return ({ patrol: '空中待命', move: '前往目标', attack: '攻击目标', return: '返航' })[s.order]; }
   private renderAirControls(): void {
@@ -341,11 +341,11 @@ class NavalMap {
   }
   private renderTurn(): void {
     const active = this.match.active, own = this.units.filter(u => u.ownerId === active.id), alive = own.filter(u => u.status !== 'sunk'),
-      v2=this.match.rulesetId==='naval-v2',aviation=v2&&this.match.phase==='aviation',movement=v2&&this.match.phase==='movement',
-      pending = aviation?alive.filter(u=>u.status==='ready'&&u.action&&['CV','CVL'].includes(u.asset.ship_type.code)&&!this.match.aviationOrders.some(order=>order.carrierId===u.instanceId)).length:
-        alive.filter(u => u.status === 'ready' && (v2?(movement?!u.movedThisTurn:u.action>0):(this.match.budget(u)>0||u.action>0))).length;
+      v2=this.match.rulesetId==='naval-v2',aviation=v2&&this.match.phase==='aviation',movement=v2&&this.match.phase==='movement',planning=aviation||movement,
+      pending = planning?alive.filter(u=>u.status==='ready'&&!u.movedThisTurn).length:
+        alive.filter(u => u.status === 'ready' && (v2?u.action>0:(this.match.budget(u)>0||u.action>0))).length;
     const ai=active.controller==='ai';
-    const phaseLabel=v2?(aviation?'航空准备':movement?'机动计划':'水面交战'):'';
+    const phaseLabel=v2?(aviation?'行动计划':movement?'旧存档机动':'交战'):'';
     $('turn-label').textContent = `第 ${this.match.round} 轮 · ${active.name}${ai?' · AI':''}${phaseLabel?` · ${phaseLabel}`:''}`;
     $('turn-label').style.color = '#' + TEAM_COLORS[active.id - 1].toString(16);
     $('pending-info').textContent = `${alive.length}/${own.length} 艘存续 · ${ai?'AI自动处理':`${pending} 项待指挥`}${v2?` · 已提交 ${this.match.phaseSubmitted.length}/${this.match.teams.filter(t=>!t.eliminated).length}`:''}`;
@@ -363,8 +363,8 @@ class NavalMap {
     $('move-mode').setAttribute('aria-pressed', String(this.moveMode));
     this.renderSelectionCount();
     this.campaignUI.render();
-    const end=$<HTMLButtonElement>('end-turn');end.textContent=v2?(aviation?'提交航空计划 →':movement?'提交机动计划 →':'提交交战阶段 →'):'结束回合 →';end.disabled=ai||!!this.match.result;
-    $<HTMLButtonElement>('move-mode').disabled=ai||!!this.match.result||!!this.selectedPort||v2&&!movement;
+    const end=$<HTMLButtonElement>('end-turn');end.textContent=v2?(aviation?'提交行动计划 →':movement?'提交机动计划 →':'提交交战阶段 →'):'结束回合 →';end.disabled=ai||!!this.match.result;
+    $<HTMLButtonElement>('move-mode').disabled=ai||!!this.match.result||!!this.selectedPort||v2&&!planning;
     this.updateAiBanner();
   }
   private command(action: () => MoveEvent[], message?: string|(()=>string)): void {
@@ -379,7 +379,7 @@ class NavalMap {
     if(this.selectedPort){this.notify('港口操作在右侧面板进行，选择舰船或飞机后可移动');return;}
     if (this.selectionCount > 1) { this.moveSelected(cellCenter(cell)); return; }
     if (this.selectedAir) {
-      if(this.match.rulesetId==='naval-v2'&&this.match.phase!=='combat'){this.notify(this.match.phase==='aviation'?'航空准备阶段只提交航母起飞计划':'舰载机命令在水面交战阶段下达');return;}
+      if(this.match.rulesetId==='naval-v2'&&this.match.phase!=='combat'){this.notify(this.match.phase==='aviation'?'行动计划阶段先安排航母起飞和舰船航线；飞行中队在交战阶段下令':'舰载机命令在水面交战阶段下达');return;}
       const enemyAir = this.match.aviation.squadrons.find(s => s.ownerId !== this.match.active.id && this.match.airVisible(s)&&cellKey(worldToCell(s)) === cellKey(cell));
       const enemyShip = this.units.find(u => u.ownerId !== this.match.active.id && u.status !== 'sunk' &&this.match.unitVisible(u)&& cellKey(u) === cellKey(cell));
       this.airCommand(this.selectedAir,enemyAir || enemyShip ? undefined : cellCenter(cell),enemyAir?.id ?? enemyShip?.instanceId); return;
@@ -389,7 +389,7 @@ class NavalMap {
   }
   private moveSelected(point: Point): void {
     const cell=worldToCell(point); this.selectedWeapon=undefined;
-    if(this.match.rulesetId==='naval-v2'&&this.match.phase!=='combat'&&this.chosenAir.size){this.notify(this.match.phase==='aviation'?'航空准备阶段只提交航母起飞计划':'同步机动阶段只规划舰船；飞行中队请在水面交战阶段下令');return;}
+    if(this.match.rulesetId==='naval-v2'&&this.match.phase!=='combat'&&this.chosenAir.size){this.notify(this.match.phase==='aviation'?'行动计划阶段先安排航母起飞和舰船航线；飞行中队在交战阶段下令':'旧存档机动阶段只规划舰船；飞行中队请在交战阶段下令');return;}
     this.command(()=>{
       if (!Number.isFinite(point.x) || !Number.isFinite(point.y) || !this.world.contains(cell)) throw Error('目标超出有效海域');
       let events: MoveEvent[] = [], assigned=0, skipped=0;
@@ -547,7 +547,7 @@ class NavalMap {
       const phase=this.match.phase,round=this.match.round,v2=this.match.rulesetId==='naval-v2';
       this.command(() => this.advanceTurn(), () => {
         if(!v2)return '已交接指挥权；石油已补满当前上限';
-        if(phase==='aviation')return this.match.phase==='movement'?'全方航空计划已结算，进入同步机动':'航空计划已提交，交接给下一势力';
+        if(phase==='aviation')return this.match.phase==='combat'?'航空起飞与舰船机动已结算，进入交战':'行动计划已提交，交接给下一势力';
         if(phase==='movement')return this.match.phase==='combat'?'全方机动计划已提交；航线已同步结算，进入水面交战':'机动计划已提交，交接给下一势力';
         return this.match.round>round?`本轮交战结算完毕，进入第 ${this.match.round} 轮航空准备`:'交战阶段已提交，交接给下一势力';
       });
@@ -588,8 +588,8 @@ class NavalMap {
     if(this.match.result){this.routePreview=undefined;$('route-info').textContent='战局已结束 · 可查看海图或建立新战局';return;}
     if(this.match.active.controller==='ai'){this.routePreview=undefined;$('route-info').textContent='AI正在侦察、抢占港口并执行舰队命令';return;}
     if(this.selectedPort){this.routePreview=undefined;this.routeCacheKey=this.previewTargetKey='port';$('route-info').textContent='已选港口 · 在右侧管理占领、维修和增援 · 点击舰船或飞机继续指挥';return;}
-    if (this.selectionCount > 1) { this.routePreview=undefined;this.routeCacheKey=this.previewTargetKey='group';$('route-info').textContent=this.match.rulesetId==='naval-v2'?(this.match.phase==='aviation'?'航空准备阶段 · 选择航母并提交起飞计划':this.match.phase==='movement'?`已选 ${this.chosen.size} 艘舰船 / ${this.chosenAir.size} 个中队 · 右键提交本方机动计划`:'水面交战阶段 · 本回合舰船机动已结算'):`已选 ${this.chosen.size} 艘舰船 / ${this.chosenAir.size} 个中队 · 右键一起移动 · 舰船按各自航速移动，逐舰验证航线`;return; }
-    if (this.selectedAir) { this.routePreview = undefined; const squadron=this.match.aviation.squadrons.find(s=>s.id===this.selectedAir); $('route-info').textContent=this.match.rulesetId==='naval-v2'&&this.match.phase==='aviation'?'航空准备阶段 · 先锁定航母起飞计划':this.match.rulesetId==='naval-v2'&&this.match.phase==='movement'?'同步机动阶段 · 航空命令在水面交战阶段下达':`中队行动力 ${squadron ? aircraftActionText(squadron) : '—'} · 沿六角格移动，每格1点，耗尽返航，不自动恢复 · ${this.airPaused ? '航空已暂停' : '右键格子移动 / 攻击'}`; return; }
+    if (this.selectionCount > 1) { this.routePreview=undefined;this.routeCacheKey=this.previewTargetKey='group';$('route-info').textContent=this.match.rulesetId==='naval-v2'?(this.match.phase==='aviation'||this.match.phase==='movement'?`已选 ${this.chosen.size} 艘舰船 / ${this.chosenAir.size} 个中队 · 右键提交舰船航线`:'水面交战阶段 · 本回合舰船机动已结算'):`已选 ${this.chosen.size} 艘舰船 / ${this.chosenAir.size} 个中队 · 右键一起移动 · 舰船按各自航速移动，逐舰验证航线`;return; }
+    if (this.selectedAir) { this.routePreview = undefined; const squadron=this.match.aviation.squadrons.find(s=>s.id===this.selectedAir); $('route-info').textContent=this.match.rulesetId==='naval-v2'&&this.match.phase==='aviation'?'行动计划阶段 · 飞行中队命令在交战阶段下达':this.match.rulesetId==='naval-v2'&&this.match.phase==='movement'?'旧存档机动阶段 · 航空命令在交战阶段下达':`中队行动力 ${squadron ? aircraftActionText(squadron) : '—'} · 沿六角格移动，每格1点，耗尽返航，不自动恢复 · ${this.airPaused ? '航空已暂停' : '右键格子移动 / 攻击'}`; return; }
     const unit = this.units.find(u => u.instanceId === this.selected), target = this.hovered;
     if (unit && this.selectedWeapon) {
       const combatKey = `combat:${this.revision}:${unit.instanceId}:${this.selectedWeapon}:${this.hovered ? cellKey(this.hovered) : ''}`; this.routeCacheKey = this.previewTargetKey = combatKey;

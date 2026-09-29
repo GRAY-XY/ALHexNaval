@@ -143,6 +143,9 @@ export function executeAiTurn(match:Match):AiTurnReport {
     const carriers=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&['CV','CVL'].includes(unit.asset.ship_type.code))
       .sort((a,b)=>a.instanceId.localeCompare(b.instanceId));
     for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){try{report.launched+=orderCarrierLaunch(match,carrier.instanceId).length;}catch{/* A carrier may have become unavailable earlier in this planning phase. */}}}
+    const units=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&!unit.movedThisTurn&&(!unit.availableRound||unit.availableRound<=match.round))
+      .sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId));
+    for(const unit of units){const target=chooseMove(match,unit);if(!target)continue;try{match.issueMove(unit.instanceId,target);}catch{/* A blocked or newly invalid route remains unplanned. */}}
     return report;
   }
   if(match.rulesetId==='naval-v2'&&match.phase==='movement'){

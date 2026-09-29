@@ -221,7 +221,7 @@ export class Match {
   weapons(unitOrId: MatchUnit | string): WeaponDefinition[] { const unit = typeof unitOrId === 'string' ? this.unit(unitOrId) : unitOrId; return (this.rulesetId==='naval-v2'?WEAPONS_V2:WEAPONS)[unit.asset.ship_type.code] ?? []; }
   cooldown(unit: MatchUnit, weaponId: string): number { return Math.max(0, unit.cooldowns[weaponId] ?? 0); }
   assertPlayable():void {if(this.result)throw Error('战局已结束，可查看海图或建立新战局');}
-  private requireV2Phase(phase:'movement'|'combat'):void {if(this.rulesetId==='naval-v2'&&this.phase!==phase)throw Error(phase==='movement'?'当前已锁定机动计划，舰船移动将在所有势力提交后结算':'当前为机动计划阶段，请先提交各舰航线');}
+  private requireV2Phase(phase:'movement'|'combat'):void {if(this.rulesetId==='naval-v2'&&(phase==='movement'?this.phase!=='aviation'&&this.phase!=='movement':this.phase!==phase))throw Error(phase==='movement'?'当前阶段已锁定，舰船移动将在所有势力提交后结算':'舰船机动尚未结算，请先提交行动计划');}
   private requireActive(unit: MatchUnit): void {this.assertPlayable(); if (unit.ownerId !== this.active.id) throw Error('只能指挥当前势力的舰船'); if (unit.status === 'sunk') throw Error('该舰船已经沉没');if(unit.availableRound&&unit.availableRound>this.round)throw Error('增援舰船在下次本方回合投入使用'); }
   port(id:string):Port {const p=this.ports.find(p=>p.id===id);if(!p)throw Error('找不到港口');return p;}
   knownPorts(owner=this.active.id):PortView[]{return this.ports.flatMap((port,i)=>{const ownerId=this.portIntel[owner-1][i];return ownerId<0?[]:[{port,ownerId,visible:this.fog.state(owner,port)===2}];});}
@@ -306,13 +306,13 @@ export class Match {
   }
   route(id: string, target: Cell): Route | undefined {
     const unit = this.unit(id); if (unit.status === 'sunk') return;
-    const moving=this.rulesetId==='naval-v2'&&this.phase==='movement'?new Set(this.units.filter(u=>u.ownerId===unit.ownerId&&u.status==='ready'&&!u.movedThisTurn).map(u=>u.instanceId)):new Set<string>();
+    const moving=this.rulesetId==='naval-v2'&&(this.phase==='aviation'||this.phase==='movement')?new Set(this.units.filter(u=>u.ownerId===unit.ownerId&&u.status==='ready'&&!u.movedThisTurn).map(u=>u.instanceId)):new Set<string>();
     const nav = this.navigation(unit,moving);
     return findRoute(this.world, unit, target, nav.cost, nav.stop);
   }
   reachable(id: string): Cell[] {
     const unit = this.unit(id); if (this.result||unit.ownerId !== this.active.id || unit.status !== 'ready') return [];
-    if(this.rulesetId==='naval-v2'&&this.phase!=='movement')return [];
+    if(this.rulesetId==='naval-v2'&&this.phase!=='aviation'&&this.phase!=='movement')return [];
     if(this.rulesetId==='naval-v2'&&unit.movedThisTurn)return [];
     const start = unit, nav = this.navigation(unit), budget = this.budget(unit), queue = [{ cell: start as Cell, cost: 0 }], costs = new Map([[cellKey(start), 0]]), result = new Map<string, Cell>();
     for (let i = 0; i < queue.length; i++) { const item = queue[i]; if (item.cost !== costs.get(cellKey(item.cell))) continue;
@@ -571,7 +571,7 @@ export class Match {
   }
   wake(id: string): void { this.requireV2Phase('combat');const unit = this.unit(id); this.requireActive(unit); unit.status = 'ready'; }
   nextPending(after?: string): MatchUnit | undefined {
-    const own = this.units.filter(u => u.ownerId === this.active.id && u.status === 'ready' && (this.rulesetId==='naval-v2'?(this.phase==='movement'?!u.movedThisTurn:u.action>0):(this.budget(u)>0||u.action>0)));
+    const own = this.units.filter(u => u.ownerId === this.active.id && u.status === 'ready' && (this.rulesetId==='naval-v2'?(this.phase==='aviation'||this.phase==='movement'?!u.movedThisTurn:u.action>0):(this.budget(u)>0||u.action>0)));
     if (!own.length) return;
     const index = own.findIndex(u => u.instanceId === after); return own[(index + 1) % own.length];
   }
@@ -652,7 +652,7 @@ export class Match {
     if(this.phaseSubmitted.length<this.initiativeOrder().length){this.activeIndex=this.nextUnsubmittedTeam();this.campaignRevision++;return [];}
     this.phaseSubmitted=[];
     if(this.phase==='aviation'){
-      this.resolveAviationOrders();this.phase='movement';this.activeIndex=this.firstInitiativeTeam();this.campaignRevision++;return [];
+      this.resolveAviationOrders();const events=this.resolveMovementOrders();this.phase='combat';this.activeIndex=this.firstInitiativeTeam();this.campaignRevision++;return events;
     }
     if(this.phase==='movement'){
       const events=this.resolveMovementOrders();this.phase='combat';this.activeIndex=this.firstInitiativeTeam();this.campaignRevision++;return events;
@@ -782,7 +782,7 @@ export class Match {
       for(const raw of data.movementOrders){
         const order=raw as NavalMoveOrder|undefined,unit=order&&match.units.find(item=>item.instanceId===order.unitId);
         if(!order||!unit)return fail();
-        if(match.rulesetId!=='naval-v2'||data.phase!=='movement'||unit.ownerId!==order.ownerId||unit.status!=='ready'||!unit.movedThisTurn||seenOrders.has(unit.instanceId)||!data.phaseSubmitted.includes(unit.ownerId)&&unit.ownerId!==data.activeIndex+1)return fail();
+        if(match.rulesetId!=='naval-v2'||data.phase!=='aviation'&&data.phase!=='movement'||unit.ownerId!==order.ownerId||unit.status!=='ready'||!unit.movedThisTurn||seenOrders.has(unit.instanceId)||!data.phaseSubmitted.includes(unit.ownerId)&&unit.ownerId!==data.activeIndex+1)return fail();
         if(!Array.isArray(order.cells)||order.cells.length<2||order.cells.length>7||!Array.isArray(order.costs)||order.costs.length!==order.cells.length||order.costs[0]!==0||!validCell(order.target))return fail();
         const first=order.cells[0],last=order.cells[order.cells.length-1];
         if(!first||!last||!sameCell(first,unit)||!sameCell(last,order.target))return fail();

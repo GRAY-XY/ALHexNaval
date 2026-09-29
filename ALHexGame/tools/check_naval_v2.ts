@@ -72,8 +72,9 @@ check('Enemy proximity or fire interrupts an enemy-harbor siege',()=>{
   }
   {
     const m=scene(),port=m.port('home-2'),occupier=placeAtPort(m,'team-1-lafei',port.id),target=m.unit('team-2-lafei');
-    m.units.filter(u=>u.ownerId===2&&u!==target).forEach(sink);sink(target);
-    m.capturePort(occupier.instanceId,port.id);finishRound(m);assert.equal(port.occupationProgress,1);finishPhase(m);m.endTurn();
+    m.units.filter(u=>u.ownerId===2&&u!==target).forEach(sink);
+    Object.assign(target,seaCellAtDistance(m,port,6),{status:'ready',hp:target.maxHp,action:1});
+    m.capturePort(occupier.instanceId,port.id);finishRound(m);assert.equal(port.occupationProgress,1);assert.equal(m.phase,'combat');m.activeIndex=0;m.phaseSubmitted=[];
     Object.assign(target,{...seaCellAtDistance(m,port,2),status:'ready',hp:target.maxHp,action:1});
     const hp=target.hp;m.orderAttack(occupier.instanceId,target.instanceId,'light-gun');
     assert.equal(occupier.firedThisTurn,true);assert.equal(port.occupationOwnerId,undefined);assert.equal(port.ownerId,2);
@@ -82,11 +83,12 @@ check('Enemy proximity or fire interrupts an enemy-harbor siege',()=>{
 });
 
 check('Moving the occupying ship away clears pending enemy-harbor progress',()=>{
-  const m=scene(),port=m.port('home-2'),occupier=placeAtPort(m,'team-1-lafei',port.id);
-  m.units.filter(u=>u.ownerId===2).forEach(sink);m.capturePort(occupier.instanceId,port.id);finishRound(m);
-  assert.equal(port.occupationProgress,1);assert.equal(m.phase,'movement');m.endTurn();assert.equal(m.active.id,1);
+  const m=scene(),port=m.port('home-2'),occupier=placeAtPort(m,'team-1-lafei',port.id),enemy=m.unit('team-2-lafei');
+  m.units.filter(u=>u.ownerId===2&&u!==enemy).forEach(sink);Object.assign(enemy,seaCellAtDistance(m,port,6),{status:'ready',hp:enemy.maxHp,action:1});
+  m.capturePort(occupier.instanceId,port.id);finishRound(m);
+  assert.equal(port.occupationProgress,1);assert.equal(m.phase,'combat');m.phase='aviation';m.activeIndex=0;m.phaseSubmitted=[];
   const destination=seaCellAtDistance(m,port,2);
-  m.issueMove(occupier.instanceId,destination);assert.equal(port.occupationOwnerId,1);m.endTurn();assert.equal(m.phase,'combat');assert.equal(port.occupationOwnerId,undefined);assert.equal(port.occupationProgress,0);
+  m.issueMove(occupier.instanceId,destination);assert.equal(port.occupationOwnerId,1);m.endTurn();assert.equal(m.active.id,2);m.endTurn();assert.equal(m.phase,'combat');assert.equal(port.occupationOwnerId,undefined);assert.equal(port.occupationProgress,0);
 });
 
 check('Neutral harbors remain immediate captures',()=>{
@@ -119,6 +121,23 @@ check('V2 movement plans stay hidden until both sides submit; opposing ships con
   const events=m.endTurn();assert.equal(m.phase,'combat');assert.deepEqual(events,[]);
   assert.deepEqual({col:friendly.col,row:friendly.row},friendStart);assert.deepEqual({col:enemy.col,row:enemy.row},enemyStart);
   assert.equal(friendly.movementUsed,0);assert.equal(enemy.movementUsed,0);
+});
+
+check('V2 combines carrier launch and ship movement into one planning submission',()=>{
+  const m=new Match(new HexWorld(128),assets,2),carrier=m.unit('team-1-qiye'),mover=m.unit('team-1-lafei');
+  const destination=m.reachable(mover.instanceId).find(cell=>cell.col!==mover.col||cell.row!==mover.row);
+  assert(destination,'the destroyer should have a reachable move');
+  const start={col:mover.col,row:mover.row};
+  assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);
+  m.issueMove(mover.instanceId,destination);
+  assert.equal(m.phase,'aviation');assert.deepEqual({col:mover.col,row:mover.row},start);assert.equal(m.aviation.squadrons.length,0);
+  m.endTurn();assert.equal(m.active.id,2);const pending=m.save();assert.deepEqual(Match.load(pending,assets).save(),pending);
+  const opposing= m.unit('team-2-lafei'),enemyCell=m.reachable(opposing.instanceId).find(cell=>cell.col!==opposing.col||cell.row!==opposing.row);
+  assert(enemyCell);m.issueMove(opposing.instanceId,enemyCell);
+  const events=m.endTurn();assert.equal(m.phase,'combat');assert.equal(m.aviation.squadrons.length,2);
+  assert.deepEqual({col:mover.col,row:mover.row},destination);assert.deepEqual({col:opposing.col,row:opposing.row},enemyCell);
+  assert(events.some(event=>event.instanceId===mover.instanceId));assert(events.some(event=>event.instanceId===opposing.instanceId));
+  const round=m.round;m.endTurn();m.endTurn();assert.equal(m.phase,'aviation');assert.equal(m.round,round+1);
 });
 
 check('V2 committed routes survive a mid-planning save and resolve only after the final submission',()=>{
@@ -166,11 +185,11 @@ check('V2 AI queues movement orders and waits for shared resolution',()=>{
   m.endTurn();assert.equal(m.active.id,2);assert.deepEqual(m.phaseSubmitted,[1]);
 });
 
-check('V2 AI locks carrier launches during aviation preparation and all wings appear together',()=>{
+check('V2 AI queues carrier launches and ship routes in the shared planning phase',()=>{
   const m=new Match(new HexWorld(128),assets,2,['ai','human']),report=executeAiTurn(m);
-  assert.equal(report.launched,3);assert.equal(m.aviationOrders.length,2);assert.equal(m.aviation.squadrons.length,0);
+  assert.equal(report.launched,3);assert.equal(m.aviationOrders.length,2);assert(m.movementOrders.length>0);assert.equal(m.aviation.squadrons.length,0);
   m.endTurn();assert.equal(m.active.id,2);assert.deepEqual(Match.load(m.save(),assets).save(),m.save());
-  m.endTurn();assert.equal(m.phase,'movement');assert.equal(m.aviationOrders.length,0);assert.equal(m.aviation.squadrons.length,3);
+  m.endTurn();assert.equal(m.phase,'combat');assert.equal(m.aviationOrders.length,0);assert.equal(m.aviation.squadrons.length,3);
 });
 
 check('V2 AI locks a combat attack without applying damage before all sides submit',()=>{
@@ -187,7 +206,7 @@ check('V2 carrier launch and recovery spend deck operations and preserve a full 
   assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);assert.equal(m.aviation.squadrons.length,0,'aircraft remain hidden until every side submits');
   cancelCarrierLaunch(m,carrier.instanceId);assert(launchPreview(m,carrier.instanceId).valid,'launch orders can be withdrawn before phase submission');orderCarrierLaunch(m,carrier.instanceId);
   m.endTurn();const pending=m.save();assert.equal(pending.version,23);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
-  m.endTurn();assert.equal(m.phase,'movement');const launched=m.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId),deck=m.aviation.decks[carrier.instanceId];assert.deepEqual(launched.map(s=>s.role),['fighter','bomber']);
+  m.endTurn();assert.equal(m.phase,'combat');const launched=m.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId),deck=m.aviation.decks[carrier.instanceId];assert.deepEqual(launched.map(s=>s.role),['fighter','bomber']);
   assert.deepEqual(deck.squadrons.map(s=>s.status),['airborne','airborne','reserve']);assert.equal(deck.operationsUsed,2);
   const fighter=launched[0];Object.assign(fighter,cellCenter(carrier),{order:'return',flight:undefined});tickAviation(m,.1);assert(m.aviation.squadrons.includes(fighter),'a squadron waits when this round has no landing operation left');
   finishPhase(m);finishPhase(m);assert.equal(m.round,2);m.activeIndex=0;tickAviation(m,.1);

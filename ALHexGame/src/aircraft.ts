@@ -128,7 +128,7 @@ export function launchPreview(match: Match, carrierId: string): { valid: boolean
   const slots=match.rulesetId==='naval-v2'&&deck?deck.squadrons.filter(s=>s.status==='ready').map(s=>s.slot).sort((a,b)=>a-b).slice(0,Math.max(0,operationsLimit-operationsUsed)):available;
   const oil = match.rulesetId==='naval-v2'?0:slots.length * LAUNCH_OIL;
   const pending=match.rulesetId==='naval-v2'&&match.aviationOrders.some(order=>order.carrierId===carrierId);
-  const reason = match.result?'战局已结束':match.rulesetId==='naval-v2'&&match.phase!=='aviation'?'航空起飞计划在航空准备阶段提交':!stats ? '该舰不是航母' : carrier.ownerId !== match.active.id ? '只能指挥本方航母' :
+  const reason = match.result?'战局已结束':match.rulesetId==='naval-v2'&&match.phase!=='aviation'?'航母起飞计划只能在行动计划阶段提交':!stats ? '该舰不是航母' : carrier.ownerId !== match.active.id ? '只能指挥本方航母' :
     carrier.status !== 'ready' ? '航母必须处于可行动状态' : !carrier.action ? '本舰作战行动已用' :
     pending?'本方起飞计划已锁定':match.aviation.launched[carrierId] === match.round ? '本回合已经出动一波' : !slots.length ? match.rulesetId==='naval-v2'&&deck?.squadrons.some(s=>s.status==='turnaround')?'中队正在整备，至少一个完整回合后重新待发':match.rulesetId==='naval-v2'&&operationsUsed>=operationsLimit?'本回合甲板操作已用完':'没有可出动的待发中队' :
     match.active.oil < oil ? `起飞需要 ${oil} 点石油` : '';
@@ -136,14 +136,14 @@ export function launchPreview(match: Match, carrierId: string): { valid: boolean
 }
 export function orderCarrierLaunch(match:Match,carrierId:string):number[]{
   match.assertPlayable();
-  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('舰载机起飞计划只在V2航空准备阶段提交');
+  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('舰载机起飞计划只在V2行动计划阶段提交');
   const preview=launchPreview(match,carrierId);if(!preview.valid)throw Error(preview.reason);
   const order:CarrierLaunchOrder={ownerId:match.active.id,carrierId,slots:[...preview.slots]};match.aviationOrders.push(order);match.campaignRevision++;
   return [...order.slots];
 }
 export function cancelCarrierLaunch(match:Match,carrierId:string):void{
   match.assertPlayable();
-  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('起飞计划只能在航空准备阶段撤回');
+  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('起飞计划只能在行动计划阶段撤回');
   const index=match.aviationOrders.findIndex(order=>order.carrierId===carrierId&&order.ownerId===match.active.id);if(index<0)throw Error('本舰没有可撤回的起飞计划');
   match.aviationOrders.splice(index,1);match.campaignRevision++;
 }
