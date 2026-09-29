@@ -1,7 +1,7 @@
 import { cellCenter, fromAxial, hexDistance, hexLine, toAxial, worldToCell } from './hex.ts';
 import { arrivalAnchor, translateCell } from './arrival.ts';
 import { findRoute, sameCell } from './pathfinding.ts';
-import type { Match, CombatEvent } from './match.ts';
+import type { Match, CombatEvent, CarrierLaunchOrder } from './match.ts';
 import type { Cell, Point } from './types.ts';
 
 export const AIR_NATIONS = [
@@ -31,11 +31,15 @@ export interface Squadron extends Point {
   heading: number; order: 'patrol' | 'move' | 'attack' | 'return'; destination?: Point; targetId?: string;
   flight?: { next: Cell; progress: number };
 }
+export type DeckSquadronStatus='ready'|'reserve'|'airborne'|'turnaround'|'lost';
+export interface DeckSquadron {slot:number;role:AirRole;planes:number;hp:number;status:DeckSquadronStatus;readyRound?:number}
+export interface CarrierDeck {carrierId:string;ownerId:number;operationRound:number;operationsUsed:number;squadrons:DeckSquadron[]}
 export interface AviationState {
   serial: number; squadrons: Squadron[];
   launched: Record<string,number>; aa: Record<string,number>;
+  decks:Record<string,CarrierDeck>;
 }
-export function emptyAviation(): AviationState { return { serial: 0, squadrons: [], launched: {}, aa: {} }; }
+export function emptyAviation(): AviationState { return { serial: 0, squadrons: [], launched: {}, aa: {},decks:{} }; }
 export function squadronName(s: Squadron): string { return `${AIR_ROLES[s.role]}-${Math.ceil(s.hp/2)}机`; }
 export function aircraftActionLimit(s: Pick<Squadron,'planes'>): number { return s.planes * 5; }
 export function aircraftActionText(s: Squadron): string { return `${s.actionPoints} / ${aircraftActionLimit(s)}`; }
@@ -52,6 +56,50 @@ export function aircraftRoute(match: Match, start: Cell, target: Cell): Cell[] |
   return findRoute(match.world,start,target,()=>1,()=>true)?.cells;
 }
 function returnHome(s: Squadron): void { s.order='return'; s.targetId=undefined; s.destination=undefined; }
+function deckOperationLimit(carrier:Match['units'][number]):number{return carrier.asset.ship_type.code==='CV'?2:1;}
+function deckReadyLimit(carrier:Match['units'][number]):number{return carrier.asset.ship_type.code==='CV'?2:1;}
+function createDeck(match:Match,carrierId:string):CarrierDeck {
+  const carrier=match.unit(carrierId),stats=CARRIER_STATS[carrier.asset.ship_type.code];if(!stats)throw Error('该舰不是航母');
+  const ready=deckReadyLimit(carrier),destroyed=carrier.status==='sunk';
+  return {carrierId,ownerId:carrier.ownerId,operationRound:match.round,operationsUsed:0,squadrons:stats.roles.map((role,slot)=>({slot,role,planes:stats.planes,hp:destroyed?0:stats.planes*2,status:destroyed?'lost':slot<ready?'ready':'reserve'}))};
+}
+function deckFor(match:Match,carrierId:string,create=false):CarrierDeck|undefined {
+  let deck=match.aviation.decks[carrierId];if(!deck&&create){deck=createDeck(match,carrierId);match.aviation.decks[carrierId]=deck;}
+  if(deck&&deck.operationRound!==match.round){deck.operationRound=match.round;deck.operationsUsed=0;}
+  return deck;
+}
+export function initializeAviationDecks(match:Match):void {
+  if(match.rulesetId!=='naval-v2')return;
+  for(const carrier of match.units.filter(unit=>!!CARRIER_STATS[unit.asset.ship_type.code]))deckFor(match,carrier.instanceId,true);
+  for(const deck of Object.values(match.aviation.decks))for(const slot of deck.squadrons){
+    if(slot.status==='airborne'&&!match.aviation.squadrons.some(squadron=>squadron.carrierId===deck.carrierId&&squadron.slot===slot.slot)){slot.status='lost';slot.hp=0;delete slot.readyRound;}
+  }
+  for(const squadron of match.aviation.squadrons){const slot=match.aviation.decks[squadron.carrierId]?.squadrons.find(item=>item.slot===squadron.slot);if(slot&&slot.status!=='lost'){slot.status='airborne';slot.hp=squadron.hp;}}
+}
+export function beginAviationRound(match:Match):void {
+  if(match.rulesetId!=='naval-v2')return;
+  for(const deck of Object.values(match.aviation.decks)){
+    const carrier=match.units.find(unit=>unit.instanceId===deck.carrierId);if(!carrier)continue;
+    deck.operationRound=match.round;deck.operationsUsed=0;
+    for(const squadron of deck.squadrons)if(squadron.status==='turnaround'&&squadron.readyRound!==undefined&&squadron.readyRound<=match.round){squadron.status='reserve';delete squadron.readyRound;}
+    let ready=deck.squadrons.filter(squadron=>squadron.status==='ready').length;
+    for(const squadron of deck.squadrons.filter(squadron=>squadron.status==='reserve').sort((a,b)=>a.slot-b.slot))if(ready<deckReadyLimit(carrier)){squadron.status='ready';ready++;}
+  }
+}
+export function loseCarrierDeck(match:Match,carrierId:string):void {
+  const deck=match.aviation.decks[carrierId];if(!deck)return;
+  for(const squadron of deck.squadrons){squadron.status='lost';squadron.hp=0;delete squadron.readyRound;}
+}
+function loseAirSquadron(match:Match,s:Squadron):void {
+  const deck=match.aviation.decks[s.carrierId],slot=deck?.squadrons.find(item=>item.slot===s.slot);
+  if(slot){slot.status='lost';slot.hp=0;delete slot.readyRound;}
+}
+function recoverAirSquadron(match:Match,s:Squadron):boolean {
+  if(match.rulesetId!=='naval-v2')return true;
+  const deck=deckFor(match,s.carrierId,true),slot=deck!.squadrons.find(item=>item.slot===s.slot);
+  if(!slot||slot.status!=='airborne'||deck!.operationsUsed>=deckOperationLimit(match.unit(s.carrierId)))return false;
+  deck!.operationsUsed++;slot.status='turnaround';slot.hp=s.hp;slot.readyRound=match.round+2;return true;
+}
 function clearLostTargets(match: Match): void {
   for (const s of match.aviation.squadrons) if (s.targetId) {
     const ship=match.units.find(u=>u.instanceId===s.targetId&&u.status!=='sunk'),air=match.aviation.squadrons.find(a=>a.id===s.targetId);
@@ -62,6 +110,7 @@ export function endAviationTurn(match: Match, ownerId: number): void {
   for (const s of match.aviation.squadrons) if (s.ownerId===ownerId) {
     s.fuelTurns=Math.max(0,s.fuelTurns-1);
     if (s.fuelTurns<=1) { s.order='return'; s.targetId=undefined; s.destination=undefined; }
+    if(s.fuelTurns===0||s.hp<=0)loseAirSquadron(match,s);
   }
   match.aviation.squadrons=match.aviation.squadrons.filter(s=>s.hp>0 && s.fuelTurns>0);
   clearLostTargets(match);
@@ -72,30 +121,61 @@ export function nationFor(match: Match, carrierId: string): AirNation {
   if (!nation) throw Error('尚未准备该国家的舰载机素材');
   return nation.id;
 }
-export function launchPreview(match: Match, carrierId: string): { valid: boolean; reason: string; oil: number; slots: number[] } {
+export function launchPreview(match: Match, carrierId: string): { valid: boolean; reason: string; oil: number; slots: number[];operationsUsed:number;operationsLimit:number } {
   const carrier = match.unit(carrierId), stats = CARRIER_STATS[carrier.asset.ship_type.code];
-  const slots = stats?.roles.map((_,i) => i).filter(i => !match.aviation.squadrons.some(s => s.carrierId === carrierId && s.slot === i)) ?? [];
+  const deck=match.rulesetId==='naval-v2'&&stats?deckFor(match,carrierId,true):undefined,operationsLimit=match.rulesetId==='naval-v2'&&stats?deckOperationLimit(carrier):0,operationsUsed=deck?.operationsUsed??0;
+  const available=stats?.roles.map((_,i)=>i).filter(i=>!match.aviation.squadrons.some(s=>s.carrierId===carrierId&&s.slot===i))??[];
+  const slots=match.rulesetId==='naval-v2'&&deck?deck.squadrons.filter(s=>s.status==='ready').map(s=>s.slot).sort((a,b)=>a-b).slice(0,Math.max(0,operationsLimit-operationsUsed)):available;
   const oil = match.rulesetId==='naval-v2'?0:slots.length * LAUNCH_OIL;
-  const reason = match.result?'战局已结束':!stats ? '该舰不是航母' : carrier.ownerId !== match.active.id ? '只能指挥本方航母' :
+  const pending=match.rulesetId==='naval-v2'&&match.aviationOrders.some(order=>order.carrierId===carrierId);
+  const reason = match.result?'战局已结束':match.rulesetId==='naval-v2'&&match.phase!=='aviation'?'航空起飞计划在航空准备阶段提交':!stats ? '该舰不是航母' : carrier.ownerId !== match.active.id ? '只能指挥本方航母' :
     carrier.status !== 'ready' ? '航母必须处于可行动状态' : !carrier.action ? '本舰作战行动已用' :
-    match.aviation.launched[carrierId] === match.round ? '本回合已经出动一波' : !slots.length ? '全部中队仍在空中' :
+    pending?'本方起飞计划已锁定':match.aviation.launched[carrierId] === match.round ? '本回合已经出动一波' : !slots.length ? match.rulesetId==='naval-v2'&&deck?.squadrons.some(s=>s.status==='turnaround')?'中队正在整备，至少一个完整回合后重新待发':match.rulesetId==='naval-v2'&&operationsUsed>=operationsLimit?'本回合甲板操作已用完':'没有可出动的待发中队' :
     match.active.oil < oil ? `起飞需要 ${oil} 点石油` : '';
-  return { valid: !reason, reason, oil, slots };
+  return { valid: !reason, reason, oil, slots,operationsUsed,operationsLimit };
 }
-export function launchWing(match: Match, carrierId: string): Squadron[] {
+export function orderCarrierLaunch(match:Match,carrierId:string):number[]{
+  match.assertPlayable();
+  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('舰载机起飞计划只在V2航空准备阶段提交');
+  const preview=launchPreview(match,carrierId);if(!preview.valid)throw Error(preview.reason);
+  const order:CarrierLaunchOrder={ownerId:match.active.id,carrierId,slots:[...preview.slots]};match.aviationOrders.push(order);match.campaignRevision++;
+  return [...order.slots];
+}
+export function cancelCarrierLaunch(match:Match,carrierId:string):void{
+  match.assertPlayable();
+  if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('起飞计划只能在航空准备阶段撤回');
+  const index=match.aviationOrders.findIndex(order=>order.carrierId===carrierId&&order.ownerId===match.active.id);if(index<0)throw Error('本舰没有可撤回的起飞计划');
+  match.aviationOrders.splice(index,1);match.campaignRevision++;
+}
+function launchWingImmediately(match: Match, carrierId: string): Squadron[] {
   const preview = launchPreview(match,carrierId); if (!preview.valid) throw Error(preview.reason);
-  const carrier = match.unit(carrierId), stats = CARRIER_STATS[carrier.asset.ship_type.code], origin=toAxial(carrier), nation = nationFor(match,carrierId);
+  const carrier = match.unit(carrierId), stats = CARRIER_STATS[carrier.asset.ship_type.code], origin=toAxial(carrier), nation = nationFor(match,carrierId),deck=match.rulesetId==='naval-v2'?deckFor(match,carrierId,true):undefined;
   const launched = preview.slots.map(slot => {
+    const staged=deck?.squadrons.find(item=>item.slot===slot);
     const preferred=fromAxial(origin.q+slot-1,origin.r-1), spawn=match.world.contains(preferred) ? preferred : carrier;
     return { id: `air-${++match.aviation.serial}`, carrierId, ownerId: carrier.ownerId,
     nation, role: stats.roles[slot], slot, ...cellCenter(spawn),
-    planes: stats.planes, hp: stats.planes * 2, maxHp: stats.planes * 2, fuelTurns: stats.endurance, actionPoints: stats.actionPoints, ammo: 3, cooldown: 0,
+    planes: stats.planes, hp: staged?.hp??stats.planes * 2, maxHp: stats.planes * 2, fuelTurns: stats.endurance, actionPoints: stats.actionPoints, ammo: 3, cooldown: 0,
     heading: -Math.PI / 2, order: 'patrol' as const }; });
-  carrier.action = 0;if(match.rulesetId!=='naval-v2')match.active.oil -= preview.oil;match.aviation.launched[carrierId] = match.round;
+  carrier.action = 0;if(match.rulesetId!=='naval-v2')match.active.oil -= preview.oil;else{for(const squadron of launched){const staged=deck!.squadrons.find(item=>item.slot===squadron.slot)!;staged.status='airborne';}deck!.operationsUsed+=launched.length;}
+  match.aviation.launched[carrierId] = match.round;
   match.aviation.squadrons.push(...launched); return launched;
+}
+export function launchWing(match:Match,carrierId:string):Squadron[]{
+  if(match.rulesetId==='naval-v2')throw Error('V2航母必须先提交起飞计划，由全方统一结算');
+  return launchWingImmediately(match,carrierId);
+}
+export function resolveQueuedCarrierLaunch(match:Match,order:CarrierLaunchOrder):Squadron[]{
+  const carrier=match.unit(order.carrierId);if(match.rulesetId!=='naval-v2'||carrier.ownerId!==order.ownerId)throw Error('起飞计划所有权无效');
+  const activeIndex=match.activeIndex;match.activeIndex=order.ownerId-1;
+  try{
+    const preview=launchPreview(match,order.carrierId);if(!preview.valid||preview.slots.length!==order.slots.length||preview.slots.some((slot,index)=>slot!==order.slots[index]))throw Error(preview.reason||'起飞计划与当前甲板状态不一致');
+    return launchWingImmediately(match,order.carrierId);
+  }finally{match.activeIndex=activeIndex;}
 }
 export function commandSquadron(match: Match, id: string, destination?: Point, targetId?: string): void {
   match.assertPlayable();
+  if(match.rulesetId==='naval-v2'&&match.phase!=='combat')throw Error('航空命令在同步机动后的作战阶段执行');
   const squadron = match.aviation.squadrons.find(s => s.id === id);
   if (!squadron || squadron.ownerId !== match.active.id) throw Error('只能指挥本方飞行中队');
   if ((destination || targetId) && squadron.actionPoints <= 0) throw Error('该中队行动力已耗尽，正在返航；本次出动不会自动恢复行动力');
@@ -162,24 +242,24 @@ function fly(match: Match, s: Squadron, point: Point, speed: number, dt: number,
 }
 export function tickAviation(match: Match, seconds: number): CombatEvent[] {
   if (match.result||!Number.isFinite(seconds) || seconds <= 0) return [];
-  const dt = Math.min(seconds,.1), events: CombatEvent[] = [], removed = new Set<string>();
+  const dt = Math.min(seconds,.1), events: CombatEvent[] = [], removed = new Set<string>(),recovered=new Set<string>();
   for (const id of Object.keys(match.aviation.aa)) { match.aviation.aa[id] = Math.max(0,match.aviation.aa[id]-dt); if (!match.aviation.aa[id]) delete match.aviation.aa[id]; }
   for (const s of match.aviation.squadrons) {
-    if (s.hp <= 0 || s.fuelTurns<=0) { removed.add(s.id); continue; }
+    if (s.hp <= 0 || s.fuelTurns<=0) { loseAirSquadron(match,s);removed.add(s.id); continue; }
     // Inactive fighters remain stationary but can react defensively to nearby aircraft.
     if (s.ownerId !== match.active.id) { if (s.role === 'fighter') s.cooldown = Math.max(0,s.cooldown-dt); continue; }
     let carrier = match.units.find(u => u.instanceId === s.carrierId && u.status !== 'sunk');
     if (!carrier) {
       carrier = match.units.filter(u => u.ownerId === s.ownerId && u.status !== 'sunk' && CARRIER_STATS[u.asset.ship_type.code])
-        .filter(u => nationFor(match,u.instanceId) === s.nation && !match.aviation.squadrons.some(other => other.id !== s.id && other.carrierId === u.instanceId && other.slot === s.slot) && s.slot < CARRIER_STATS[u.asset.ship_type.code].roles.length)
+        .filter(u => nationFor(match,u.instanceId) === s.nation&&deckFor(match,u.instanceId,true)?.squadrons.some(slot=>slot.role===s.role&&slot.status==='lost'))
         .sort((a,b) => distance(s,cellCenter(a))-distance(s,cellCenter(b)))[0];
       if (!carrier) { removed.add(s.id); continue; }
-      s.carrierId = carrier.instanceId; s.order = 'return'; s.targetId = undefined; s.destination = undefined;
+      const slot=deckFor(match,carrier.instanceId,true)!.squadrons.find(item=>item.role===s.role&&item.status==='lost')!;s.carrierId = carrier.instanceId;s.slot=slot.slot;slot.status='airborne';slot.hp=s.hp;s.order = 'return'; s.targetId = undefined; s.destination = undefined;
     }
     const home = cellCenter(carrier), speed = s.role === 'fighter' ? 4.6 : 3.5;
     s.cooldown = Math.max(0,s.cooldown-dt);
     if (s.fuelTurns<=1 || !s.ammo || s.actionPoints<=0) returnHome(s);
-    if (s.order === 'return') { if (fly(match,s,home,speed,dt)) removed.add(s.id); }
+    if (s.order === 'return') { if (fly(match,s,home,speed,dt)&&recoverAirSquadron(match,s)) {removed.add(s.id);recovered.add(s.id);} }
     else if (s.order === 'move' && s.destination) { if (fly(match,s,s.destination,speed,dt) && s.actionPoints>0) { s.order = 'patrol'; s.destination = undefined; } }
     else if (s.order === 'patrol' && s.flight) fly(match,s,cellCenter(s.flight.next),speed,dt);
     else if (s.order === 'attack') {
@@ -210,6 +290,7 @@ export function tickAviation(match: Match, seconds: number): CombatEvent[] {
     const target = enemies.find(enemy => enemy.id === fighter.targetId) ?? enemies[0];
     if (target) fireAtAircraft(fighter,target,removed);
   }
+  for(const squadron of match.aviation.squadrons)if(removed.has(squadron.id)&&!recovered.has(squadron.id))loseAirSquadron(match,squadron);
   match.aviation.squadrons = match.aviation.squadrons.filter(s => !removed.has(s.id) && s.hp > 0);
   clearLostTargets(match);
   match.refreshVision();
@@ -224,7 +305,7 @@ export function advanceAviation(match: Match, elapsedSeconds: number): CombatEve
   return events;
 }
 
-export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16 = 16): AviationState {
+export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21 = 21): AviationState {
   const state = input as AviationState & { nations?: Record<string,AirNation> };
   const migrateCountry=version===5, migrateEndurance=version<7;
   const fail = (): never => { throw Error('存档航空数据无效，当前战局未改变'); };
@@ -233,6 +314,7 @@ export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|
   const record = (n: unknown) => !!n && typeof n === 'object' && !Array.isArray(n);
   const nation = (n: unknown) => AIR_NATIONS.some(item => item.id === n);
   if (!state || !integer(state.serial,0,1_000_000) || !Array.isArray(state.squadrons) || state.squadrons.length > match.units.length*3 || !record(state.launched) || !record(state.aa)) fail();
+  if(version>=21&&!record(state.decks))fail();
   if (migrateCountry) {
     if (!record(state.nations)) fail();
     for (const [id,n] of Object.entries(state.nations!)) if (!match.units.some(u => u.instanceId === id && CARRIER_STATS[u.asset.ship_type.code]) || !nation(n)) fail();
@@ -262,6 +344,7 @@ export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|
   }
   const restored: AviationState & { nations?: Record<string,AirNation> } = JSON.parse(JSON.stringify(state));
   delete restored.nations;
+  restored.decks=restored.decks&&typeof restored.decks==='object'?restored.decks:{};
   if (migrateCountry) for (const s of restored.squadrons) s.nation = nationFor(match,s.carrierId);
   if (migrateEndurance) for (const s of restored.squadrons) {
     const legacy=s as Squadron & {fuel?:number}; s.fuelTurns=Math.min(s.planes,Math.ceil(legacy.fuel!/30)); delete legacy.fuel;
@@ -275,5 +358,30 @@ export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|
   }
   const restoredIds=new Set(restored.squadrons.map(s=>s.id));
   for (const s of restored.squadrons) if (s.targetId && !match.units.some(u=>u.instanceId===s.targetId) && !restoredIds.has(s.targetId)) { s.order='patrol'; s.targetId=undefined; }
+  const carriers=match.units.filter(unit=>!!CARRIER_STATS[unit.asset.ship_type.code]);
+  if(version<21){
+    restored.decks={};
+    if(match.rulesetId==='naval-v2')for(const carrier of carriers){
+      const deck=createDeck(match,carrier.instanceId);for(const air of restored.squadrons.filter(item=>item.carrierId===carrier.instanceId)){const slot=deck.squadrons.find(item=>item.slot===air.slot);if(slot&&slot.status!=='lost'){slot.status='airborne';slot.hp=air.hp;}}
+      restored.decks[carrier.instanceId]=deck;
+    }
+  }else if(match.rulesetId==='classic-v1'){
+    if(Object.keys(restored.decks).length)fail();
+  }else{
+    if(Object.keys(restored.decks).length!==carriers.length)fail();
+    for(const carrier of carriers){
+      const deck=restored.decks[carrier.instanceId],stats=CARRIER_STATS[carrier.asset.ship_type.code];
+      if(!deck||deck.carrierId!==carrier.instanceId||deck.ownerId!==carrier.ownerId||deck.operationRound!==match.round||!integer(deck.operationsUsed,0,deckOperationLimit(carrier))||!Array.isArray(deck.squadrons)||deck.squadrons.length!==stats.roles.length)fail();
+      const seenSlots=new Set<number>();
+      for(const slot of deck.squadrons){
+        if(!integer(slot.slot,0,stats.roles.length-1)||seenSlots.has(slot.slot)||slot.role!==stats.roles[slot.slot]||!integer(slot.planes,3,4)||slot.planes!==stats.planes||!integer(slot.hp,0,slot.planes*2)||!['ready','reserve','airborne','turnaround','lost'].includes(slot.status))fail();
+        if((slot.status==='lost'&&slot.hp!==0)||(slot.status!=='lost'&&slot.hp===0)||(slot.status==='turnaround'&&slot.readyRound!==match.round+2)||(slot.status!=='turnaround'&&slot.readyRound!==undefined))fail();
+        const airKey=`${carrier.instanceId}:${slot.slot}`,air=restored.squadrons.find(item=>`${item.carrierId}:${item.slot}`===airKey);
+        if(carrier.status==='sunk'&&slot.status!=='lost'||slot.status==='airborne'&&!air&&carrier.status!=='sunk'||slot.status!=='airborne'&&air&&carrier.status!=='sunk')fail();
+        seenSlots.add(slot.slot);
+      }
+      if(deck.squadrons.filter(slot=>slot.status==='ready').length>deckReadyLimit(carrier))fail();
+    }
+  }
   return restored;
 }

@@ -62,7 +62,7 @@ export class ShipRenderer {
     const visual=this.visuals.find(v=>v.unit.instanceId===id);
     return visual ? {x:visual.root.x,y:visual.root.y} : {x:0,y:0};
   }
-  updateView(bounds: ViewBounds, zoom: number, selected=new Set<string>(), activeOwner=1, visible:(unit:MatchUnit)=>boolean=()=>true): void {
+  updateView(bounds: ViewBounds, zoom: number, selected=new Set<string>(), activeOwner=1, visible:(unit:MatchUnit)=>boolean=()=>true, rulesetId:'naval-v2'|'classic-v1'='classic-v1'): void {
     this.zoom = zoom; this.selected = selected; this.visibleRigs = this.visibleIcons = 0;
     for (const visual of this.visuals) {
       const point = visual.motion ? visual.root.position : cellCenter(visual.unit);
@@ -82,10 +82,11 @@ export class ShipRenderer {
       visual.nameplate.alpha=visual.unit.status==='sunk' ? .45 : 1;
       visual.nameplate.scale.set(1/Math.max(.7,zoom));
       this.placeNameplate(visual);
-      const ratio=Math.max(0,Math.min(1,visual.unit.hp/visual.unit.maxHp)),healthColor=visual.unit.ownerId===activeOwner ? 0x9ae4c6 : 0xf19590;
+      const ratio=Math.max(0,Math.min(1,visual.unit.hp/visual.unit.maxHp)),own=visual.unit.ownerId===activeOwner,healthColor=own ? 0x9ae4c6 : 0xf19590;
+      const hpBand=ratio<=.25?'危急':ratio<=.5?'受损':'完好',shownRatio=own||rulesetId!=='naval-v2'?ratio:hpBand==='危急'?.25:hpBand==='受损'?.5:1;
       visual.health.clear().lineStyle(1,0x051e32,1).beginFill(0x17384a,.95).drawRoundedRect(-34,0,68,7,2).endFill();
-      if (ratio>0) visual.health.lineStyle(0).beginFill(healthColor,1).drawRoundedRect(-33,1,66*ratio,5,1).endFill();
-      visual.hpLabel.text=`${visual.unit.hp}/${visual.unit.maxHp}`;
+      if (shownRatio>0) visual.health.lineStyle(0).beginFill(healthColor,1).drawRoundedRect(-33,1,66*shownRatio,5,1).endFill();
+      visual.hpLabel.text=own||rulesetId!=='naval-v2'?`${visual.unit.hp}/${visual.unit.maxHp}`:hpBand;
     }
   }
   private placeNameplate(visual: Visual): void {

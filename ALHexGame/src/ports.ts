@@ -4,7 +4,7 @@ import {Terrain,type Cell} from './types.ts';
 import type {MatchUnit} from './match.ts';
 import type {HexWorld} from './world.ts';
 
-export interface Port extends Cell {id:string;name:string;ownerId:number;homeForId?:number;usedRound:number;serviceRound?:number}
+export interface Port extends Cell {id:string;name:string;ownerId:number;homeForId?:number;usedRound:number;serviceRound?:number;occupationOwnerId?:number;occupationProgress:number}
 export interface PortView {port:Port;ownerId:number;visible:boolean}
 export interface MatchResult {winnerId:number|null;reason:'headquarters'|'elimination'|'draw';round:number}
 export interface SavedCampaign {ports:Port[];intel:number[][];result?:MatchResult}
@@ -32,11 +32,11 @@ export function createLegacyPorts(world:HexWorld,units:MatchUnit[],players:numbe
   for(let ownerId=1;ownerId<=players;ownerId++){
     const first=units.find(u=>u.ownerId===ownerId)!;
     const cell=berth(world,first,ports,3)??world.nearbySea(first,new Set(ports.map(cellKey)));
-    ports.push({...cell,id:`home-${ownerId}`,name:`${ownerId}号母港`,ownerId,homeForId:ownerId,usedRound:0,serviceRound:0});
+    ports.push({...cell,id:`home-${ownerId}`,name:`${ownerId}号母港`,ownerId,homeForId:ownerId,usedRound:0,serviceRound:0,occupationProgress:0});
   }
   for(let row=16;row<world.height;row+=32)for(let col=16;col<world.width;col+=32){
     const cell=berth(world,{col,row},ports,6);if(!cell)continue;
-    ports.push({...cell,id:`port-${col}-${row}`,name:`群岛港 ${ports.length-players+1}`,ownerId:0,usedRound:0,serviceRound:0});
+    ports.push({...cell,id:`port-${col}-${row}`,name:`群岛港 ${ports.length-players+1}`,ownerId:0,usedRound:0,serviceRound:0,occupationProgress:0});
   }
   return ports;
 }

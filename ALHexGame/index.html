@@ -26,8 +26,8 @@
         </nav>
         <aside class="front-notes">
           <span class="front-kicker">当前规则</span>
-          <h2>大海域 · 多势力 · 回合制</h2>
-          <p>舰船共用石油，舰载机按六角格实时飞行。占领沿岸港口可提高石油上限。</p>
+          <h2>同步机动 · 多势力 · 阶段交战</h2>
+          <p>每轮依次提交航空、机动和水面交战计划；舰载机与舰船在全方提交后同步结算。港口提供战术补给。</p>
           <dl><div><dt>地图</dt><dd>128 / 256 / 512</dd></div><div><dt>势力</dt><dd>2～8方</dd></div><div><dt>视野</dt><dd>战争迷雾</dd></div></dl>
           <a class="gallery-link" href="./preview/" target="_blank" rel="noopener">查看舰船素材图鉴 ↗</a>
         </aside>
@@ -39,7 +39,7 @@
       <div class="setup-card">
         <span id="setup-kicker" class="front-kicker">LOCAL SKIRMISH</span>
         <h2 id="setup-title">建立本地战局</h2>
-        <p id="setup-description">各势力均可使用完整舰船阵容。本地玩家依次交接回合。</p>
+        <p id="setup-description">各势力均可使用完整舰船阵容。每轮先锁定航母起飞计划，再提交舰船机动，最后进入水面交战阶段。</p>
         <div class="setup-options">
           <label><span>海域规模<small>更大的海图需要更长的首次生成时间</small></span><select id="map-size" aria-label="新战局海域规模"><option value="128">128 × 128 · 近海</option><option value="256" selected>256 × 256 · 群岛</option><option value="512">512 × 512 · 大洋</option></select></label>
           <label><span>参战势力<small>所有势力拥有相同的完整舰船池</small></span><select id="team-count" aria-label="新战局势力数"><option value="2">2 方</option><option value="3">3 方</option><option value="4" selected>4 方</option><option value="5">5 方</option><option value="6">6 方</option><option value="7">7 方</option><option value="8">8 方</option></select></label>
@@ -47,7 +47,7 @@
         <div class="seat-heading"><span>席位控制</span><small>启用席位可选玩家或AI；其余席位为空位</small></div>
         <div id="seat-settings" class="seat-settings" aria-label="席位控制设置"></div>
         <p id="seat-summary" class="seat-summary"></p>
-        <div class="setup-rules"><span>每回合补充石油</span><strong>50 + 港口加成</strong><span>胜利条件</span><strong>最后存续 / 夺取总部</strong></div>
+        <div class="setup-rules"><span>回合阶段</span><strong>航空准备 / 同步机动 / 水面交战</strong><span>胜利条件</span><strong>最后存续 / 控制全部母港</strong></div>
         <button id="new-match" class="start-match">开始战局</button>
       </div>
     </section>

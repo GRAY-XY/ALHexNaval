@@ -1,4 +1,4 @@
-import {commandSquadron,launchPreview,launchWing} from './aircraft.ts';
+import {commandSquadron,launchPreview,launchWing,orderCarrierLaunch} from './aircraft.ts';
 import {cellCenter,hexDistance,hexLine,neighbors,worldToCell} from './hex.ts';
 import {REINFORCEMENT_COST} from './ports.ts';
 import {cellKey} from './pathfinding.ts';
@@ -28,7 +28,9 @@ function bestAttack(match:Match,unit:MatchUnit):{target:MatchUnit;weapon:WeaponD
   for(const target of visibleEnemies(match))for(const weapon of match.weapons(unit)){
     const preview=match.attackPreview(unit.instanceId,target.instanceId,weapon.id);if(!preview.valid)continue;
     const code=target.asset.ship_type.code,strategic=['CV','CVL','BB'].includes(code)?18:0;
-    const chance=preview.hitChance??100,score=(preview.sunk?1000*chance/100:0)+preview.damage*chance/100*30+strategic-target.hp*2-preview.distance;
+    const chance=preview.hitChance??100,band=match.rulesetId==='naval-v2'?match.contactsFor(match.active.id).find(c=>c.key===target.instanceId)?.hpBand:undefined;
+    const knownHp=band==='critical'?target.maxHp*.125:band==='damaged'?target.maxHp*.375:band==='intact'?target.maxHp*.75:target.hp;
+    const score=(knownHp<=preview.damage?1000*chance/100:0)+preview.damage*chance/100*30+strategic-knownHp*2-preview.distance;
     if(!best||score>best.score||score===best.score&&target.instanceId.localeCompare(best.target.instanceId)<0)best={target,weapon,score};
   }
   return best;
@@ -39,6 +41,11 @@ function captureNearby(match:Match,unit:MatchUnit):boolean {
     .sort((a,b)=>Number(!!b.port.homeForId)-Number(!!a.port.homeForId)||a.port.id.localeCompare(b.port.id));
   for(const {port} of ports){const preview=match.capturePreview(unit.instanceId,port.id);if(preview.valid){match.capturePort(unit.instanceId,port.id);return true;}}
   return false;
+}
+
+function executeAttack(match:Match,report:AiTurnReport,attacker:MatchUnit,target:MatchUnit,weapon:WeaponDefinition):void {
+  if(match.rulesetId==='naval-v2')match.orderAttack(attacker.instanceId,target.instanceId,weapon.id);
+  else report.combats.push(match.attack(attacker.instanceId,target.instanceId,weapon.id));
 }
 
 function cellsWithin(origin:Cell,radius:number):Cell[]{
@@ -103,9 +110,11 @@ function reinforceFleet(match:Match,report:AiTurnReport):void {
 }
 
 function orderAircraft(match:Match,report:AiTurnReport):void {
-  const carriers=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&['CV','CVL'].includes(unit.asset.ship_type.code))
-    .sort((a,b)=>a.instanceId.localeCompare(b.instanceId));
-  for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){report.launched+=launchWing(match,carrier.instanceId).length;}}
+  if(match.rulesetId==='classic-v1'){
+    const carriers=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&['CV','CVL'].includes(unit.asset.ship_type.code))
+      .sort((a,b)=>a.instanceId.localeCompare(b.instanceId));
+    for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){report.launched+=launchWing(match,carrier.instanceId).length;}}
+  }
   const enemyAir=match.aviation.squadrons.filter(s=>s.ownerId!==match.active.id&&match.airVisible(s));
   const enemyShips=visibleEnemies(match);
   const objectives=match.knownPorts().filter(view=>view.ownerId!==match.active.id).map(view=>view.port);
@@ -130,13 +139,25 @@ export function executeAiTurn(match:Match):AiTurnReport {
   if(match.active.controller!=='ai')throw Error('当前不是AI席位');
   match.assertPlayable();
   const report:AiTurnReport={teamId:match.active.id,moves:[],combats:[],captures:0,repairs:0,reinforcements:0,launched:0,airOrders:0,defended:0};
+  if(match.rulesetId==='naval-v2'&&match.phase==='aviation'){
+    const carriers=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&['CV','CVL'].includes(unit.asset.ship_type.code))
+      .sort((a,b)=>a.instanceId.localeCompare(b.instanceId));
+    for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){try{report.launched+=orderCarrierLaunch(match,carrier.instanceId).length;}catch{/* A carrier may have become unavailable earlier in this planning phase. */}}}
+    return report;
+  }
+  if(match.rulesetId==='naval-v2'&&match.phase==='movement'){
+    const units=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&!unit.movedThisTurn&&(!unit.availableRound||unit.availableRound<=match.round))
+      .sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId));
+    for(const unit of units){const target=chooseMove(match,unit);if(!target)continue;try{match.issueMove(unit.instanceId,target);}catch{/* A blocked or newly invalid route remains unplanned. */}}
+    return report;
+  }
   reinforceFleet(match,report);repairDamaged(match,report);
   const units=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&(!unit.availableRound||unit.availableRound<=match.round))
     .sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId));
   for(const unit of units){
     if(match.result)break;
     const attack=unit.action?bestAttack(match,unit):undefined;
-    if(attack){report.combats.push(match.attack(unit.instanceId,attack.target.instanceId,attack.weapon.id));continue;}
+    if(attack){executeAttack(match,report,unit,attack.target,attack.weapon);continue;}
     if(unit.action&&captureNearby(match,unit))report.captures++;
   }
   if(!match.result)orderAircraft(match,report);
@@ -146,7 +167,7 @@ export function executeAiTurn(match:Match):AiTurnReport {
     try {report.moves.push(...match.issueMove(unit.instanceId,target));match.refreshVision();} catch {continue;}
     if(unit.action&&captureNearby(match,unit)){report.captures++;continue;}
     const attack=unit.action?bestAttack(match,unit):undefined;
-    if(attack)report.combats.push(match.attack(unit.instanceId,attack.target.instanceId,attack.weapon.id));
+    if(attack)executeAttack(match,report,unit,attack.target,attack.weapon);
   }
   for(const unit of units)if(!match.result&&unit.status==='ready'&&unit.action){try{match.defend(unit.instanceId);report.defended++;}catch{/* Unit became unavailable. */}}
   return report;

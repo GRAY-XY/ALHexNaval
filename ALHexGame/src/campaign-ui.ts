@@ -69,6 +69,8 @@ export class CampaignUI {
     const focus=document.createElement('button');focus.textContent='定位港口';focus.onclick=()=>this.host.focus(cellCenter(p));
     profile.append(head,el('p',`位置 ${p.col}, ${p.row} · ${view.visible?'当前视野':'视野外情报记录'}`,'port-position'),focus);
     const row=el('section','','port-card');
+    const occupationVisible=view.visible||p.occupationOwnerId===m.active.id;
+    if(m.rulesetId==='naval-v2'&&occupationVisible&&p.occupationOwnerId)row.append(el('p',`${m.team(p.occupationOwnerId).name}正在夺取港口 · 进度 ${p.occupationProgress}/2 个己方结束阶段`,'port-quota'));
     const serviceRange=m.rulesetId==='naval-v2'?0:1;
     const nearby=m.units.filter(u=>u.ownerId===m.active.id&&u.status==='ready'&&u.action&&hexDistance(u,p)<=serviceRange);
     nearby.sort((a,b)=>(b.maxHp-b.hp)-(a.maxHp-a.hp));
@@ -80,11 +82,14 @@ export class CampaignUI {
       select.value=service!.instanceId;select.onchange=()=>{this.serviceChoices.set(id,select.value);this.renderSelectedPort(panel,id);};label.append(select);row.append(label);
     }
     if(!own){
-      const preview=service?m.capturePreview(service.instanceId,id):undefined,b=document.createElement('button');
-      b.textContent=service?`占领港口 · ${service.asset.name} · 1作战行动`:`占领港口 · 需可作战舰船${m.rulesetId==='naval-v2'?'停在港口格':'进入1格内'}`;b.disabled=!preview?.valid;
-      b.onclick=()=>this.host.command(()=>m.capturePort(service!.instanceId,id),m.rulesetId==='naval-v2'?`已占领${p.name} · 下回合起每回合提供1补给点`:`已占领${p.name}，石油上限+${PORT_OIL_BONUS}，下次本方回合获得收入`);
-      row.append(b);if(preview?.reason)row.append(el('p',preview.reason,'port-reason'));
-      row.append(el('p',m.rulesetId==='naval-v2'?'占领要求：驱逐舰、轻巡或重巡停在港口格，且港口1格内没有敌舰。':'占领要求：本方舰船距港口不超过1格，且港口1格内没有敌舰。'));
+      const alreadyOccupying=m.rulesetId==='naval-v2'&&p.occupationOwnerId===m.active.id;
+      if(!alreadyOccupying){
+        const preview=service?m.capturePreview(service.instanceId,id):undefined,b=document.createElement('button');
+        b.textContent=service?`${m.rulesetId==='naval-v2'&&p.ownerId?'开始夺取':'占领港口'} · ${service.asset.name} · 1作战行动`:`占领港口 · 需可作战舰船${m.rulesetId==='naval-v2'?'停在港口格':'进入1格内'}`;b.disabled=!preview?.valid;
+        b.onclick=()=>this.host.command(()=>m.capturePort(service!.instanceId,id),m.rulesetId==='naval-v2'&&p.ownerId?`开始夺取${p.name}；需连续守住两个己方结束阶段`:m.rulesetId==='naval-v2'?`已占领${p.name} · 下回合起每回合提供1补给点`:`已占领${p.name}，石油上限+${PORT_OIL_BONUS}，下次本方回合获得收入`);
+        row.append(b);if(preview?.reason)row.append(el('p',preview.reason,'port-reason'));
+      }
+      row.append(el('p',m.rulesetId==='naval-v2'?(p.ownerId?'夺取敌港：驱逐舰、轻巡或重巡须停在港口格，清除港口1格内敌舰，并连续保持两个己方结束阶段；离港、开火或敌舰接近会中断夺取。':'占领中立港：驱逐舰、轻巡或重巡停在港口格，且港口1格内没有敌舰。'):'占领要求：本方舰船距港口不超过1格，且港口1格内没有敌舰。'));
     }else{
       row.append(el('p',m.rulesetId==='naval-v2'?'本港每回合提供1补给点（储量上限8）':'本港收入 +10资金 / 本方回合 · 石油上限 +10','port-benefits'));
       if(m.rulesetId!=='naval-v2')row.append(el('p',`本轮增援 ${p.usedRound===m.round?'1 / 1 · 已使用':'0 / 1 · 可用'}`,'port-quota'));
