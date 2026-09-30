@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#102839">
   <link rel="icon" href="data:,">
   <title>AL HEX NAVAL</title>
-  <script type="module" crossorigin src="./assets/index-DKlPmHi2.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BOXo6Q6w.css">
+  <script type="module" crossorigin src="./assets/index-Zxv7jJcs.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BMUFfy9V.css">
 </head>
 <body class="front-active">
   <div id="front-end" class="front-end">
@@ -21,6 +21,7 @@
         <nav class="main-menu-actions" aria-label="主菜单">
           <button id="continue-match" class="menu-command primary" disabled><span><strong>继续战局</strong><small id="continue-summary">正在准备海图…</small></span><b>›</b></button>
           <button id="open-skirmish" class="menu-command"><span><strong>开始对战</strong><small>本地轮流指挥 · 席位可设为 AI</small></span><b>›</b></button>
+          <button id="open-campaign" class="menu-command"><span><strong>历史战役</strong><small>五张二战战区地图 · 玩家对 AI</small></span><b>›</b></button>
           <button class="menu-command" disabled><span><strong>多人对战</strong><small>房间与联机同步开发中</small></span><em>开发中</em></button>
           <button id="main-load" class="menu-command"><span><strong>读取战局</strong><small>手动、自动与上一战局存档</small></span><b>›</b></button>
           <button id="main-settings" class="menu-command"><span><strong>设置与帮助</strong><small>显示、动画和快捷键</small></span><b>›</b></button>
@@ -33,7 +34,15 @@
           <a class="gallery-link" href="./preview/" target="_blank" rel="noopener">查看舰船素材图鉴 ↗</a>
         </aside>
       </div>
-      <footer class="front-footer"><span>0.10.0 · AI席位</span><span>Esc · 暂停菜单</span></footer>
+      <footer class="front-footer"><span>0.11.0 · 历史战役地图</span><span>Esc · 暂停菜单</span></footer>
+    </section>
+    <section id="campaign-page" class="front-page campaign-page" aria-labelledby="campaign-title" hidden>
+      <button id="campaign-back" class="front-back">‹ 返回主界面</button>
+      <div class="campaign-card">
+        <header class="campaign-header"><span class="front-kicker">PACIFIC · 1941—1944</span><h2 id="campaign-title">历史战役</h2><p>选择战区地图开始单人对局。海岸线按历史海图做战区级示意复原；舰队先使用当前素材阵容。</p></header>
+        <div class="campaign-selection"><nav id="campaign-levels" class="campaign-levels" aria-label="战役关卡"></nav><article id="campaign-brief" class="campaign-brief" aria-live="polite"></article></div>
+        <button id="start-campaign" class="start-match campaign-start">进入战区 · 玩家对 AI</button>
+      </div>
     </section>
     <section id="skirmish-page" class="front-page setup-page" aria-labelledby="setup-title" hidden>
       <button id="setup-back" class="front-back">‹ 返回主界面</button>

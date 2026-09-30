@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "generatedAt": "2026-09-19",
+  "version": 5,
+  "generatedAt": "2026-09-30",
   "style": "B watercolor maritime atlas",
   "generator": "OpenAI built-in image generation",
   "directionalManifest": "data/directional-art.json",
@@ -53,6 +53,12 @@
       "sha256": "4b56e79ce2f71f9bfc1bb109ff802c31aa8f684a59e8c96e43213d92ea8ae5c3",
       "purpose": "Six transparent watercolor land-detail clusters, sliced into runtime forest, rock, meadow and trail sprites",
       "promptSummary": "Reference-matched watercolor terrain atlas containing dense forest, sparse grove, rocky grassland, meadow trail, forest boulders and woodland thicket"
+    },
+    {
+      "path": "assets/terrain/source-sheets/wwii-pacific-landmarks.png",
+      "sha256": "8f3afe8aff08b25ce2f2b82d2dcc903a18f28f81e4b542dd5f3c085379d444c3",
+      "purpose": "Four transparent watercolor landmark illustrations for Pacific WWII campaign maps: airfield, seaplane station, naval yard, and field headquarters",
+      "promptSummary": "A four-panel watercolor atlas of modest 1940s Pacific island facilities; checkerboard preview was removed and genuine transparency verified before use"
     }
   ]
 }
