@@ -56,7 +56,7 @@ check('The 5x10 test arena gives both sides one ship of every class and round-tr
   }
   assert.equal(new Set(m.units.map(unit=>`${unit.col},${unit.row}`)).size,12);
   assert(m.units.filter(unit=>unit.ownerId===1).every(unit=>m.reachable(unit.instanceId).some(cell=>cell.col!==unit.col||cell.row!==unit.row)),'the test fleet should not start boxed in by friendly ships');
-  const saved=m.save();assert.equal(saved.version,26);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
+  const saved=m.save();assert.equal(saved.version,27);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
   assert.deepEqual(Match.load(saved,assets).save(),saved);
   assert.throws(()=>new Match(world,assets,3),/只支持双方/);
 });
@@ -344,7 +344,7 @@ check('V2 carrier launch resolves on its side turn and recovery preserves a full
   assert.deepEqual(preview.slots,[0,1]);assert.equal(preview.operationsLimit,2);assert.equal(preview.operationsUsed,0);
   assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);assert.equal(m.aviation.squadrons.length,0,'aircraft appear after this side implements its orders');
   assert.equal(carrier.action,0);cancelCarrierLaunch(m,carrier.instanceId);assert.equal(carrier.action,1);assert(launchPreview(m,carrier.instanceId).valid,'launch orders can be withdrawn before phase submission');orderCarrierLaunch(m,carrier.instanceId);
-  const pending=m.save();assert.equal(pending.version,26);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
+  const pending=m.save();assert.equal(pending.version,27);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
   m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,1);const launched=m.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId),deck=m.aviation.decks[carrier.instanceId];assert.deepEqual(launched.map(s=>s.role),['fighter','bomber']);
   assert(launched.every(s=>s.fuelTurns===CARRIER_STATS[carrier.asset.ship_type.code].endurance),'newly launched planes keep full fuel until their first commandable owner turn');
   assert.deepEqual(deck.squadrons.map(s=>s.status),['airborne','airborne','reserve']);assert.equal(deck.operationsUsed,2,'launches spend this carrier turn deck operations');
@@ -364,7 +364,7 @@ check('V2 aircraft losses permanently remove the deck squadron and survive save 
   assert.throws(()=>Match.load(invalid,assets),'a deck cannot retain an airborne slot after its squadron is destroyed');
 });
 
-check('V2 contact reports hide L2 ship identity, expose L3 identity, and decay stale reports',()=>{
+check('V2 contacts retain a stale last-known ship mark without following its hidden movement',()=>{
   const m=scene(),port=m.port('home-1'),origin={col:port.col,row:port.row},spotter=m.unit('team-1-lafei'),enemy=m.units.find(u=>u.ownerId===2&&u.asset.ship_type.code==='BB')!;
   m.units.filter(u=>u!==spotter&&u!==enemy).forEach(sink);
   Object.assign(spotter,origin,{status:'ready',hp:spotter.maxHp,action:1});
@@ -377,10 +377,34 @@ check('V2 contact reports hide L2 ship identity, expose L3 identity, and decay s
   assert.equal(report.level,3);assert.equal(report.shipType,'BB');assert(m.unitVisible(enemy));assert(m.attackPreview(spotter.instanceId,enemy.instanceId,'light-gun').valid);
   Object.assign(enemy,lastReport);m.refreshVision();assert(!m.unitVisible(enemy));
   const hidden=seaCellAtDistance(m,origin,10);Object.assign(enemy,hidden);m.refreshVision();finishRound(m);
-  report=m.contactsFor(1).find(c=>c.key===enemy.instanceId)!;assert.equal(report.level,2);assert.equal(report.age,0);
+  report=m.contactsFor(1).find(c=>c.key===enemy.instanceId)!;assert.equal(report.level,2);assert.equal(report.age,0);assert.equal(report.shipType,'BB');assert.equal(report.assetId,enemy.asset.id);assert.deepEqual({col:report.col,row:report.row},lastReport);
   finishRound(m);
-  report=m.contactsFor(1).find(c=>c.key===enemy.instanceId)!;assert.equal(report.level,1);assert.equal(report.age,1);assert.equal(report.shipType,undefined);
-  finishRound(m);assert(!m.contactsFor(1).some(c=>c.key===enemy.instanceId));
+  report=m.contactsFor(1).find(c=>c.key===enemy.instanceId)!;assert.equal(report.level,2);assert.equal(report.age,1);assert.equal(report.shipType,'BB');assert.equal(report.assetId,enemy.asset.id);assert.deepEqual({col:report.col,row:report.row},lastReport);
+  finishRound(m);report=m.contactsFor(1).find(c=>c.key===enemy.instanceId)!;assert.equal(report.age,2);assert.deepEqual({col:report.col,row:report.row},lastReport);
+});
+
+check('Aircraft create enemy ship contacts over islands and stale reports stay at their last-known cell',()=>{
+  const m=scene(),enemy=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='DD')!,scoutCell={col:64,row:64};
+  m.units.forEach(unit=>sink(unit));
+  const targetCell=seaCellAtDistance(m,scoutCell,6),blocker=hexLine(scoutCell,targetCell).slice(1,-1)[0];
+  m.world.terrain[blocker.row*m.world.width+blocker.col]=Terrain.Land;Object.assign(enemy,targetCell,{status:'ready',hp:enemy.maxHp});
+  const scout:Squadron={id:'air-900',carrierId:'team-1-qiye',ownerId:1,nation:'jp',role:'bomber',slot:0,...cellCenter(scoutCell),planes:4,hp:8,maxHp:8,fuelTurns:3,actionPoints:20,ammo:3,cooldown:0,heading:0,order:'patrol'};
+  m.aviation.squadrons.push(scout);m.refreshVision();
+  let report=m.contactsFor(1).find(contact=>contact.key===enemy.instanceId)!;
+  assert(report,'aircraft should report enemy ships within their eight-hex reconnaissance range');assert.equal(report.level,2);assert.equal(report.shipType,undefined);assert.deepEqual({col:report.col,row:report.row},targetCell);
+  const lastKnown={col:report.col,row:report.row};Object.assign(enemy,seaCellAtDistance(m,scoutCell,10));m.refreshVision();report=m.contactsFor(1).find(contact=>contact.key===enemy.instanceId)!;
+  assert.deepEqual({col:report.col,row:report.row},lastKnown,'the contact must not track an enemy after it leaves sight');
+});
+
+check('A visible sunken ship keeps its defeated sprite contact, then becomes a gray last-known contact',()=>{
+  const m=scene(),port=m.port('home-1'),origin={col:port.col,row:port.row},spotter=m.unit('team-1-lafei'),enemy=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='BB')!;
+  m.units.filter(unit=>unit!==spotter&&unit!==enemy).forEach(sink);Object.assign(spotter,origin,{status:'ready',hp:spotter.maxHp,action:1});
+  const wreck=seaCellAtDistance(m,origin,2);Object.assign(enemy,wreck,{status:'ready',hp:enemy.maxHp});m.refreshVision();assert(m.unitVisible(enemy));
+  sink(enemy);m.refreshVision();assert(m.unitVisible(enemy),'the revealed wreck remains live-visible so its defeated animation stays on screen');
+  let report=m.contactsFor(1).find(contact=>contact.key===enemy.instanceId)!;assert.equal(report.level,3);assert.equal(report.shipType,'BB');
+  Object.assign(spotter,seaCellAtDistance(m,origin,9));m.refreshVision();assert(!m.unitVisible(enemy));report=m.contactsFor(1).find(contact=>contact.key===enemy.instanceId)!;
+  assert.equal(report.level,2);assert.equal(report.shipType,'BB');assert.equal(report.assetId,enemy.asset.id);assert.deepEqual({col:report.col,row:report.row},wreck);
+  const saved=m.save();assert.equal(saved.version,27);assert.deepEqual(Match.load(saved,assets).save(),saved);
 });
 
 check('V2 alert posture no longer applies the legacy flat two-damage air reduction',()=>{
@@ -456,7 +480,7 @@ check('V2 fighters can intercept aircraft but cannot attack ships',()=>{
 check('V2 loading clears legacy fighter attacks against ships',()=>{
   const m=scene(),carrier=m.unit('team-1-qiye'),target=m.unit('team-2-lafei'),fighter=launchV2(m,carrier.instanceId).find(squadron=>squadron.role==='fighter')!;
   fighter.order='attack';fighter.targetId=target.instanceId;fighter.cooldown=3.5;fighter.flight={next:neighbors(worldToCell(fighter))[0],progress:.9};const oldPosition={x:fighter.x,y:fighter.y};
-  const saved=m.save();assert.equal(saved.version,26);const legacy=JSON.parse(JSON.stringify(saved));legacy.version=25;
+  const saved=m.save();assert.equal(saved.version,27);const legacy=JSON.parse(JSON.stringify(saved));legacy.version=25;
   const restored=Match.load(legacy,assets),loaded=restored.aviation.squadrons.find(squadron=>squadron.id===fighter.id)!;
   assert.equal(loaded.order,'patrol');assert.equal(loaded.targetId,undefined);assert.equal(loaded.cooldown,0,'legacy real-time cooldown does not suppress the first turn-based attack');
   assert.equal(loaded.flight,undefined,'legacy partial real-time movement is discarded instead of granting a free extra turn step');assert.deepEqual({x:loaded.x,y:loaded.y},oldPosition);
@@ -568,12 +592,12 @@ check('V4 an air-strike kill cancels a later planned torpedo without consuming i
   assert.match(attacker.notice??'',/取消/);
 });
 
-check('Legacy V2 saves migrate to version 26 and previously submitted orders resolve once',()=>{
+check('Legacy V2 saves migrate to version 27 and previously submitted orders resolve once',()=>{
   const m=scene(),current:any=m.save();
   for(const version of [16,17]){
     const raw=JSON.parse(JSON.stringify(current));raw.version=version;delete raw.contacts;
     if(version===16){for(const unit of raw.units)delete unit.firedThisTurn;for(const port of raw.campaign.ports){delete port.occupationOwnerId;delete port.occupationProgress;}}
-    const restored=Match.load(raw,assets);assert.equal(restored.save().version,26);assert(restored.units.every(u=>u.firedThisTurn===false));
+    const restored=Match.load(raw,assets);assert.equal(restored.save().version,27);assert(restored.units.every(u=>u.firedThisTurn===false));
   }
   const legacy18=JSON.parse(JSON.stringify(current));legacy18.version=18;legacy18.activeIndex=1;
   delete legacy18.phase;delete legacy18.initiativeIndex;delete legacy18.phaseSubmitted;delete legacy18.movementOrders;
@@ -582,11 +606,11 @@ check('Legacy V2 saves migrate to version 26 and previously submitted orders res
   assert.equal(restored18.phase,'aviation');assert.deepEqual(restored18.phaseSubmitted,[1]);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   restored18.endTurn();assert.equal(restored18.phase,'aviation');assert.equal(restored18.round,2);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   const legacy19=JSON.parse(JSON.stringify(current));legacy19.version=19;legacy19.phase='combat';delete legacy19.combatOrders;
-  assert.equal(Match.load(legacy19,assets).save().version,26);
+  assert.equal(Match.load(legacy19,assets).save().version,27);
   const legacy20=JSON.parse(JSON.stringify(current));legacy20.version=20;legacy20.phase='combat';delete legacy20.aviation.decks;
-  assert.equal(Match.load(legacy20,assets).save().version,26);
+  assert.equal(Match.load(legacy20,assets).save().version,27);
   const legacy21=JSON.parse(JSON.stringify(current));legacy21.version=21;legacy21.phase='combat';delete legacy21.aviationOrders;
-  assert.equal(Match.load(legacy21,assets).save().version,26);
+  assert.equal(Match.load(legacy21,assets).save().version,27);
   const oldTurn=scene(),oldUnit=oldTurn.unit('team-1-lafei'),oldDestination=oldTurn.reachable(oldUnit.instanceId).find(cell=>cell.col!==oldUnit.col||cell.row!==oldUnit.row)!;
   oldTurn.issueMove(oldUnit.instanceId,oldDestination);const submitted:any=oldTurn.save();submitted.version=23;submitted.activeIndex=1;submitted.phaseSubmitted=[1];
   const migrated=Match.load(submitted,assets);assert.equal(migrated.active.id,2);assert.equal(migrated.round,1);assert.deepEqual(migrated.phaseSubmitted,[1]);
@@ -607,7 +631,7 @@ check('Legacy V2 saves migrate to version 26 and previously submitted orders res
   assert(shallowRoute,'the starting area should include a shallow-water route');oldMovement.issueMove(battleship.instanceId,shallowRoute.cells.at(-1)!);
   const version24:any=oldMovement.save();version24.version=24;
   for(const order of version24.movementOrders)order.costs=order.cells.map((cell:any,index:number)=>index===0?0:oldMovement.world.at(cell)===Terrain.Shallow&&!['DD','CL'].includes(battleship.asset.ship_type.code)?2:1);
-  const migratedMovement=Match.load(version24,assets);assert.equal(migratedMovement.save().version,26);assert(migratedMovement.movementOrders[0].costs.slice(1).every(cost=>cost===1),'old shallow-water surcharges should be removed during migration');
+  const migratedMovement=Match.load(version24,assets);assert.equal(migratedMovement.save().version,27);assert(migratedMovement.movementOrders[0].costs.slice(1).every(cost=>cost===1),'old shallow-water surcharges should be removed during migration');
   const oldLaunch=scene(),oldCarrier=oldLaunch.unit('team-1-qiye');orderCarrierLaunch(oldLaunch,oldCarrier.instanceId);
   const version24Launch:any=oldLaunch.save();version24Launch.version=24;version24Launch.units.find((unit:any)=>unit.instanceId===oldCarrier.instanceId).action=1;
   const migratedLaunch=Match.load(version24Launch,assets);assert.equal(migratedLaunch.unit(oldCarrier.instanceId).action,0,'an older queued launch should reserve its action after migration');

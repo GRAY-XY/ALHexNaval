@@ -135,7 +135,7 @@ class NavalMap {
       this.chosen.clear(); this.chosenAir.clear(); $('selection-box').hidden = true; this.moveMode = false; this.selectedWeapon = undefined; this.selectedAir = undefined; this.selectedPort = undefined; this.revision++; this.routeCacheKey = ''; this.routePreview = undefined;
       this.camera = new Camera(this.world.bounds); this.terrain = new TerrainRenderer(this.world); this.ships = new ShipRenderer(this.units);
       this.aircraft = new AircraftRenderer();
-      this.fog=new FogRenderer(this.world,match.fog);this.ports=new PortRenderer(this.world);this.contacts=new ContactRenderer();this.visionRevision=-1;this.campaignRevision=-1;
+      this.fog=new FogRenderer(this.world,match.fog);this.ports=new PortRenderer(this.world);this.contacts=new ContactRenderer(this.assets);this.visionRevision=-1;this.campaignRevision=-1;
       this.campaignUI=new CampaignUI({match:()=>this.match,selected:()=>this.selected,selectedPort:()=>this.selectedPort,selectPort:(id,focus)=>this.selectPort(id,focus),command:(action,message)=>this.command(()=>{action();return[];},message),select:(id,focus)=>this.select(id,focus),focus:p=>{this.camera.focus(p,1.04);this.dirty=true;},redeploy:id=>this.ships.redeploy(id),victory:owner=>{for(const u of this.units.filter(u=>u.ownerId===owner&&u.status!=='sunk'))this.ships.playAction(u.instanceId,'victory',!this.animationsPaused);}});
       this.worldLayer.addChild(this.terrain.container, this.grid, this.fog.container,this.highlight, this.ships.container,this.contacts.container, this.ports.container, this.aircraft.container);
       this.minimap = new Minimap($<HTMLCanvasElement>('minimap'), this.world, this.terrain.overviewCanvas, this.units, this.camera,

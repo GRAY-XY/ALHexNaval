@@ -1,5 +1,5 @@
 import { cellCenter, fromAxial, hexDistance, hexLine, neighbors, toAxial, worldToCell } from './hex.ts';
-import {FogOfWar,type SavedFog} from './fog.ts';
+import {AIR_VISION,FogOfWar,type SavedFog} from './fog.ts';
 import {createPorts,createLegacyPorts,PORT_OIL_BONUS,STARTING_CREDITS,PORT_INCOME,MAX_CREDITS,REPAIR_LIMIT,REPAIR_PRICE,REINFORCEMENT_COST,MAX_SUPPLY,STARTING_SUPPLY,type Port,type PortView,type MatchResult,type SavedCampaign} from './ports.ts';
 import { arrivalAnchor, translateCell } from './arrival.ts';
 import { cellKey, findRoute, sameCell, type Route } from './pathfinding.ts';
@@ -56,8 +56,8 @@ export interface AttackPreview { valid: boolean; reason?: string; distance: numb
 export type TeamController = 'human' | 'ai';
 export interface Team { id: number; name: string; oil: number; credits:number; supply:number; eliminated:boolean; controller:TeamController }
 export type ContactLevel=1|2|3;
-export interface NavalContact {unitId:string;ownerId:number;col:number;row:number;level:ContactLevel;age:number;seenThisTurn:boolean;sizeClass?:'large'|'small';shipType?:string;hpBand?:'intact'|'damaged'|'critical'}
-export interface ContactReport {key:string;col:number;row:number;level:ContactLevel;age:number;sizeClass?:'large'|'small';shipType?:string;hpBand?:'intact'|'damaged'|'critical'}
+export interface NavalContact {unitId:string;ownerId:number;col:number;row:number;level:ContactLevel;age:number;seenThisTurn:boolean;sizeClass?:'large'|'small';shipType?:string;assetId?:string;hpBand?:'intact'|'damaged'|'critical'}
+export interface ContactReport {key:string;col:number;row:number;level:ContactLevel;age:number;sizeClass?:'large'|'small';shipType?:string;assetId?:string;hpBand?:'intact'|'damaged'|'critical'}
 const TEST_ARENA_SHIP_TYPES=['DD','CL','CA','BB','CV','CVL'] as const;
 export function testArenaFleetAssets(assets:ShipAsset[]):ShipAsset[] {
   const fleet=TEST_ARENA_SHIP_TYPES.map(code=>assets.find(asset=>asset.ship_type.code===code));
@@ -69,7 +69,7 @@ const TEST_ARENA_SPAWNS:Cell[][]=[
   [{col:4,row:9},{col:2,row:9},{col:0,row:9},{col:3,row:8},{col:1,row:8},{col:4,row:7}],
 ];
 export interface SavedMatch {
-  format: 'al-hex-match'; version: 26; mapVersion: 1; size: number; height:number; mapKind:'archipelago'|'test-5x10'; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
+  format: 'al-hex-match'; version: 27; mapVersion: 1; size: number; height:number; mapKind:'archipelago'|'test-5x10'; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
   phase:'classic'|'aviation';initiativeIndex:number;phaseSubmitted:number[];aviationOrders:CarrierLaunchOrder[];movementOrders:NavalMoveOrder[];combatOrders:NavalAttackOrder[];
   round: number; activeIndex: number; teams: Team[];
   units: (Omit<MatchUnit, 'asset'> & { assetId: string })[];
@@ -156,7 +156,7 @@ export class Match {
     if(this.rulesetId!=='naval-v2')return [];
     this.refreshVision();
     return this.contacts[owner-1].map(contact=>({key:contact.unitId,col:contact.col,row:contact.row,level:contact.level,age:contact.age,
-      ...(contact.level>=2?{sizeClass:contact.sizeClass}:{}),...(contact.level===3?{shipType:contact.shipType,hpBand:contact.hpBand}:{})}));
+      ...(contact.level>=2?{sizeClass:contact.sizeClass}:{}),...(contact.shipType?{shipType:contact.shipType}:{}),...(contact.assetId?{assetId:contact.assetId}:{}),...(contact.level===3?{hpBand:contact.hpBand}:{})}));
   }
   private canObserveShip(ownerId:number,unit:MatchUnit):ContactLevel|undefined {
     let best:ContactLevel=0 as ContactLevel;
@@ -167,6 +167,13 @@ export class Match {
       const level:ContactLevel=distance<=2?3:2;
       if(level>best)best=level;
     }
+    for(const scout of this.aviation.squadrons){
+      if(scout.ownerId!==ownerId||scout.hp<=0||scout.fuelTurns<=0)continue;
+      const distance=hexDistance(worldToCell(scout),unit);if(distance>AIR_VISION)continue;
+      // Aircraft spot over islands and reveal a contact without requiring a ship's line of sight.
+      const level:ContactLevel=distance<=2?3:2;
+      if(level>best)best=level;
+    }
     return best||undefined;
   }
   private refreshContacts():boolean {
@@ -174,18 +181,22 @@ export class Match {
     for(const owner of this.teams){
       const records=new Map(this.contacts[owner.id-1].map(contact=>[contact.unitId,contact]));
       for(const target of this.units){
-        if(target.status==='sunk'||target.ownerId===owner.id)continue;
-        const observed=this.canObserveShip(owner.id,target);if(!observed)continue;
-        const code=target.asset.ship_type.code,level=observed,old=records.get(target.instanceId);
+        if(target.ownerId===owner.id)continue;
+        const old=records.get(target.instanceId),observed=this.canObserveShip(owner.id,target);
+        if(!observed){
+          if(old?.level===3){old.level=2;delete old.hpBand;}
+          continue;
+        }
+        const code=target.asset.ship_type.code,level=observed;
         const ratio=target.hp/target.maxHp,hpBand:NavalContact['hpBand']=ratio<=.25?'critical':ratio<=.5?'damaged':'intact';
         records.set(target.instanceId,{unitId:target.instanceId,ownerId:target.ownerId,col:target.col,row:target.row,level,age:0,seenThisTurn:true,
-          ...(level>=2?{sizeClass:['BB','CV'].includes(code)?'large' as const:'small' as const}:{}),...(level===3?{shipType:code,hpBand}:{})});
+          ...(level>=2?{sizeClass:['BB','CV'].includes(code)?'large' as const:'small' as const}:{}),
+          ...(level===3?{shipType:code,assetId:target.asset.id,hpBand}:old?.shipType?{shipType:old.shipType,...(old.assetId?{assetId:old.assetId}:{})}:{})});
         if(level===3)current[owner.id-1].add(target.instanceId);
-        if(old&&old.level===3&&level<3){const report=records.get(target.instanceId)!;delete report.shipType;delete report.hpBand;}
       }
       for(const [id,contact] of records){
         if(current[owner.id-1].has(id))continue;
-        if(contact.level===3){contact.level=2;delete contact.shipType;delete contact.hpBand;}
+        if(contact.level===3){contact.level=2;delete contact.hpBand;}
       }
       this.contacts[owner.id-1]=[...records.values()].sort((a,b)=>a.unitId.localeCompare(b.unitId));
     }
@@ -195,12 +206,11 @@ export class Match {
   private ageContacts(ownerId:number):void {
     if(this.rulesetId!=='naval-v2')return;
     const reports=this.contacts[ownerId-1];let changed=false;
-    this.contacts[ownerId-1]=reports.flatMap(contact=>{
-      if(contact.seenThisTurn){contact.seenThisTurn=false;return [contact];}
-      contact.age++;if(contact.level===3){contact.level=2;delete contact.shipType;delete contact.hpBand;}
-      else if(contact.level===2){contact.level=1;delete contact.sizeClass;}
-      else {changed=true;return [];}
-      changed=true;return [contact];
+    this.contacts[ownerId-1]=reports.map(contact=>{
+      if(contact.seenThisTurn){contact.seenThisTurn=false;return contact;}
+      if(contact.age<100){contact.age++;changed=true;}
+      if(contact.level===3){contact.level=2;delete contact.hpBand;}
+      return contact;
     });
     if(changed)this.campaignRevision++;
   }
@@ -878,7 +888,7 @@ export class Match {
   }
   save(): SavedMatch {
     this.refreshVision();this.resolveOutcome();if(this.rulesetId==='naval-v2')initializeAviationDecks(this);
-    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 26, mapVersion: 1, size: this.world.width,height:this.world.height,mapKind:this.world.scenarioId,mapHash: this.hash,
+    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 27, mapVersion: 1, size: this.world.width,height:this.world.height,mapKind:this.world.scenarioId,mapHash: this.hash,
       rulesetId:this.rulesetId,combatState:this.combatState,phase:this.rulesetId==='naval-v2'?this.phase:'classic',initiativeIndex:this.initiativeIndex,phaseSubmitted:this.rulesetId==='naval-v2'?this.phaseSubmitted:[],aviationOrders:this.rulesetId==='naval-v2'?this.aviationOrders:[],movementOrders:this.rulesetId==='naval-v2'?this.movementOrders:[],combatOrders:this.rulesetId==='naval-v2'?this.combatOrders:[],round: this.round, activeIndex: this.activeIndex, teams: this.teams,
       units: this.units.map(({ asset, ...unit }) => ({ ...unit, assetId: asset.id })),contacts:this.rulesetId==='naval-v2'?this.contacts:this.teams.map(()=>[]),aviation: this.aviation,fog:this.fog.save(),campaign:{ports:this.ports,intel:this.portIntel,result:this.result} }));
   }
@@ -888,7 +898,7 @@ export class Match {
     const integer = (n: unknown, low: number, high: number) => Number.isInteger(n) && Number(n) >= low && Number(n) <= high;
     const mapKind=data?.version>=23?data.mapKind:'archipelago',mapHeight=data?.version>=23?data.height:data?.size;
     const validMap=mapKind==='archipelago'&&[128,256,512].includes(data?.size)&&mapHeight===data?.size||mapKind==='test-5x10'&&data?.size===5&&mapHeight===10;
-    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
+    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
     if(data.version>=16&&(!['naval-v2','classic-v1'].includes(data.rulesetId)||!integer(data.combatState,0,0xffffffff)))fail();
     if (!Array.isArray(data.teams) || !integer(data.teams.length, 2, 8) || !integer(data.activeIndex, 0, data.teams.length - 1) || !integer(data.round, 1, 1_000_000)) fail();
     if(data.version>=19&&(!integer(data.initiativeIndex,0,data.teams.length-1)||!Array.isArray(data.phaseSubmitted)||new Set(data.phaseSubmitted).size!==data.phaseSubmitted.length||data.phaseSubmitted.some((id:number)=>!integer(id,1,data.teams.length))||!Array.isArray(data.movementOrders)||data.rulesetId==='naval-v2'&&(data.version>=24?data.phase!=='aviation':!(data.version>=22?['aviation','movement','combat']:['movement','combat']).includes(data.phase))||data.rulesetId==='classic-v1'&&data.phase!=='classic'))fail();
@@ -954,7 +964,7 @@ export class Match {
         return records.map((raw:unknown)=>{
           const contact=raw as NavalContact,unit=contact&&match.units.find(u=>u.instanceId===contact.unitId);
           if(!contact||!unit||unit.ownerId!==contact.ownerId||contact.ownerId===ownerIndex+1||known.has(contact.unitId)||!validCell(contact)||!integer(contact.level,1,3)||!integer(contact.age,0,100)||typeof contact.seenThisTurn!=='boolean')return fail();
-          if(contact.level===1&&(contact.sizeClass!==undefined||contact.shipType!==undefined||contact.hpBand!==undefined)||contact.level>=2&&!['large','small'].includes(contact.sizeClass??'')||contact.level<3&&(contact.shipType!==undefined||contact.hpBand!==undefined)||contact.level===3&&(contact.shipType!==unit.asset.ship_type.code||!['intact','damaged','critical'].includes(contact.hpBand??'')||contact.col!==unit.col||contact.row!==unit.row||!contact.seenThisTurn||!match.canObserveShip(ownerIndex+1,unit)))return fail();
+          if(contact.level===1&&(contact.sizeClass!==undefined||contact.hpBand!==undefined)||contact.level>=2&&!['large','small'].includes(contact.sizeClass??'')||contact.shipType!==undefined&&contact.shipType!==unit.asset.ship_type.code||contact.assetId!==undefined&&(contact.assetId!==unit.asset.id||contact.shipType!==unit.asset.ship_type.code)||contact.level<3&&contact.hpBand!==undefined||contact.level===3&&(contact.shipType!==unit.asset.ship_type.code||contact.assetId!==unit.asset.id||!['intact','damaged','critical'].includes(contact.hpBand??'')||contact.col!==unit.col||contact.row!==unit.row||!contact.seenThisTurn||!match.canObserveShip(ownerIndex+1,unit)))return fail();
           known.add(contact.unitId);return {...contact};
         });
       });
