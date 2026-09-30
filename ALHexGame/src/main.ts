@@ -24,6 +24,7 @@ import {loadWatercolorTextures} from './watercolor-textures.ts';
 import {executeAiTurn} from './ai.ts';
 import {TEAM_NAMES,type TeamController} from './match.ts';
 import {shipRulesV2} from './naval-rules-v2.ts';
+import {CAMPAIGN_BATTLES,campaignBattle,type CampaignBattleId} from './historical-battles.ts';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T => document.getElementById(id) as T;
 function element(tag: string, className = '', text?: string): HTMLElement {
@@ -93,6 +94,7 @@ class NavalMap {
   private frames = 0;
   private rebuilding = false;
   private setupUsesTestMap=false;
+  private selectedCampaignId:CampaignBattleId='pearl-harbor';
   private regularTeamCount=4;
   private setupControllers:TeamController[]=Array.from({length:TEAM_NAMES.length},()=> 'human');
   private aiRunning=false;
@@ -115,6 +117,12 @@ class NavalMap {
     if (this.match) this.writeSlot('previous', this.match.save());
     const world=size==='test-5x10'?new HexWorld(5,10,'test-5x10'):new HexWorld(size);
     await this.installMatch(new Match(world, this.assets, teamCount,controllers)); this.persist();
+  }
+  private async startCampaignBattle(id:CampaignBattleId):Promise<void>{
+    const battle=campaignBattle(id);if(!battle)throw Error('战役关卡不存在');
+    if(this.match)this.writeSlot('previous',this.match.save());
+    const world=new HexWorld(battle.width,battle.height,battle.id),match=new Match(world,this.assets,2,['human','ai']);
+    await this.installMatch(match);this.persist();this.enterGame();this.notify(`${battle.title} · 第1回合，玩家指挥${battle.sides[0]}`);
   }
   async installMatch(match: Match): Promise<void> {
     if (this.rebuilding) return;
@@ -142,11 +150,12 @@ class NavalMap {
         point => { this.camera.focus(point); this.dirty = true; });
       this.resize(); this.selected = this.units.find(u => u.ownerId === match.active.id)!.instanceId; this.chosen.add(this.selected); this.home(); this.renderSelection(); this.renderTurn();
       this.renderAirControls();
-      const size = this.world.width,height=this.world.height;
-      $('map-summary').textContent = `${size} × ${height} · ${(size * height).toLocaleString()} 格`;
-      $('map-kicker').textContent=this.world.scenarioId==='test-5x10'?'FLEET TEST AREA':'ARCHIPELAGO CHART';
-      $('world-title').textContent=this.world.scenarioId==='test-5x10'?'舰队测试海域':'晨雾群岛';
-      $<HTMLSelectElement>('map-size').value = this.world.scenarioId==='test-5x10'?'test-5x10':String(size);
+      const size = this.world.width,height=this.world.height,battle=campaignBattle(this.world.scenarioId);
+      $('map-summary').textContent = battle?`${battle.date} · ${size} × ${height} 战区示意图`:`${size} × ${height} · ${(size * height).toLocaleString()} 格`;
+      $('map-kicker').textContent=battle?`${battle.date} · HISTORICAL THEATER`:this.world.scenarioId==='test-5x10'?'FLEET TEST AREA':'ARCHIPELAGO CHART';
+      $('world-title').textContent=battle?battle.title:this.world.scenarioId==='test-5x10'?'舰队测试海域':'晨雾群岛';
+      $('map-mode').textContent=battle?`${battle.theater} · 战区地理示意复原`:'战术视图 · 舰船详情';
+      $<HTMLSelectElement>('map-size').value = this.world.scenarioId==='test-5x10'?'test-5x10':battle?'256':String(size);
       $<HTMLSelectElement>('team-count').value = String(match.teams.length);
       this.setupUsesTestMap=this.world.scenarioId==='test-5x10';
       $<HTMLSelectElement>('team-count').disabled=this.setupUsesTestMap;
@@ -465,9 +474,22 @@ class NavalMap {
     $<HTMLButtonElement>('continue-match').disabled = !this.ready;
     $('pause-summary').textContent = `第 ${this.match.round} 轮 · ${this.match.active.name} · ${this.world.width} × ${this.world.height} · ${this.match.teams.length} 方`;
   }
-  private showFrontPage(page: 'main' | 'skirmish'): void {
+  private showFrontPage(page: 'main' | 'skirmish' | 'campaign'): void {
     $('main-menu-page').hidden = page !== 'main';
     $('skirmish-page').hidden = page !== 'skirmish';
+    $('campaign-page').hidden = page !== 'campaign';
+  }
+  private openCampaign():void{this.renderCampaignLevels();this.showFrontPage('campaign');}
+  private renderCampaignLevels():void{
+    const nav=$('campaign-levels');nav.replaceChildren();
+    for(const [index,battle] of CAMPAIGN_BATTLES.entries()){
+      const button=document.createElement('button');button.type='button';button.className=`campaign-level${battle.id===this.selectedCampaignId?' selected':''}`;button.setAttribute('aria-pressed',String(battle.id===this.selectedCampaignId));
+      button.append(element('span','campaign-level-number',String(index+1)));
+      const text=element('span','');text.append(element('strong','',battle.title),element('small','',battle.date));button.append(text,element('em','',`${battle.width} × ${battle.height}`));
+      button.onclick=()=>{this.selectedCampaignId=battle.id;this.renderCampaignLevels();};nav.append(button);
+    }
+    const battle=campaignBattle(this.selectedCampaignId)!;
+    const brief=$('campaign-brief');brief.replaceChildren(element('span','campaign-date',`${battle.date}　·　${battle.theater}`),element('h3','',battle.title),element('p','',battle.summary),element('p','campaign-objective',`本关构想：${battle.objective}`),element('p','campaign-note',`地图尺寸 ${battle.width} × ${battle.height} · 玩家：${battle.sides[0]} · AI：${battle.sides[1]}。现阶段使用素材库现有舰船；地图按历史资料简化绘制，格子不代表精确航海比例。`));
   }
   private openSetup():void {
     $('setup-kicker').textContent='MATCH SETUP';
@@ -537,6 +559,9 @@ class NavalMap {
   private installCommands(): void {
     $('continue-match').onclick=()=>this.enterGame();
     $('open-skirmish').onclick=()=>this.openSetup();
+    $('open-campaign').onclick=()=>this.openCampaign();
+    $('campaign-back').onclick=()=>this.showFrontPage('main');
+    $('start-campaign').onclick=()=>{const button=$<HTMLButtonElement>('start-campaign');if(this.rebuilding)return;button.disabled=true;button.textContent='正在展开战区海图…';this.startCampaignBattle(this.selectedCampaignId).catch(error=>this.notify(String(error))).finally(()=>{button.disabled=false;button.textContent='进入战区 · 玩家对 AI';});};
     $('setup-back').onclick=()=>this.showFrontPage('main');
     $<HTMLSelectElement>('team-count').onchange=()=>{if(!this.setupUsesTestMap)this.regularTeamCount=Number($<HTMLSelectElement>('team-count').value)||this.regularTeamCount;this.renderSeatSettings();};
     $<HTMLSelectElement>('map-size').onchange=()=>{
@@ -741,7 +766,7 @@ class NavalMap {
       const openDialog=document.querySelector<HTMLDialogElement>('dialog[open]');
       if(key==='escape'&&!openDialog){
         event.preventDefault();
-        if(!$('front-end').hidden){if(!$('skirmish-page').hidden)this.showFrontPage('main');return;}
+        if(!$('front-end').hidden){if(!$('skirmish-page').hidden||!$('campaign-page').hidden)this.showFrontPage('main');return;}
         if(this.ready){this.openPause();return;}
       }
       if (!this.ready || this.menuPaused || openDialog || /INPUT|SELECT|TEXTAREA/.test((event.target as HTMLElement).tagName)) return;

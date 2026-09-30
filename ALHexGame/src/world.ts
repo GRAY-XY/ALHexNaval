@@ -1,5 +1,6 @@
 import { cellCenter, neighbors, worldBounds } from './hex.ts';
 import { Terrain, type Cell, type DeployedShip, type ShipAsset } from './types.ts';
+import { campaignBattle, isCampaignBattleId, type CampaignBattle, type CampaignLandmark, type CampaignLocation, type WorldScenario } from './historical-battles.ts';
 
 export function randomAt(x: number, y: number, salt = 0): number {
   let n = Math.imul(x + 117 + salt, 374761393) ^ Math.imul(y + 91, 668265263);
@@ -14,7 +15,7 @@ function smoothNoise(x: number, y: number, size: number): number {
 }
 export const TERRAIN_LABELS = ['深海', '海面', '浅滩', '岛屿'];
 export const TERRAIN_COLORS = ['#27617d', '#3b8da4', '#72b8bd', '#adb17a'];
-export type WorldScenario = 'archipelago' | 'test-5x10';
+export type { WorldScenario } from './historical-battles.ts';
 
 export class HexWorld {
   readonly width: number;
@@ -26,17 +27,30 @@ export class HexWorld {
   readonly generationMs: number;
   readonly landCells: number;
   readonly home: Cell;
+  readonly startPositions: Cell[];
+  readonly landmarks: CampaignLandmark[];
+  readonly locations: CampaignLocation[];
   constructor(size: number, height = size, scenarioId: WorldScenario = 'archipelago') {
     const started = performance.now();
-    if (scenarioId === 'test-5x10' && (size !== 5 || height !== 10) || scenarioId === 'archipelago' && size !== height) throw Error('海图尺寸与场景不匹配');
+    const battle = campaignBattle(scenarioId);
+    if (scenarioId === 'test-5x10' && (size !== 5 || height !== 10) || scenarioId === 'archipelago' && size !== height || battle && (size !== battle.width || height !== battle.height)
+      || scenarioId !== 'test-5x10' && scenarioId !== 'archipelago' && !isCampaignBattleId(scenarioId)) throw Error('海图尺寸与场景不匹配');
     this.width = size; this.height = height; this.scenarioId = scenarioId;
     this.bounds = worldBounds(size, height);
     this.terrain = new Uint8Array(size * height);
     // Validity is separate from terrain so later maps can have arbitrary outlines.
     this.valid = new Uint8Array(size * height).fill(1);
-    this.home = scenarioId === 'test-5x10' ? { col: 2, row: 4 } : { col: Math.round(size * .12), row: Math.round(size * .13) };
+    this.home = battle ? { col: Math.floor(size / 2), row: Math.floor(height / 2) } : scenarioId === 'test-5x10' ? { col: 2, row: 4 } : { col: Math.round(size * .12), row: Math.round(size * .13) };
+    this.startPositions = battle ? battle.starts.map(cell => ({ ...cell })) : [];
+    this.landmarks = battle?.landmarks ?? [];
+    this.locations = battle?.locations ?? [];
     if (scenarioId === 'test-5x10') {
       this.landCells = 0;
+      this.generationMs = performance.now() - started;
+      return;
+    }
+    if (battle) {
+      this.landCells = this.generateBattleTerrain(battle);
       this.generationMs = performance.now() - started;
       return;
     }
@@ -84,6 +98,53 @@ export class HexWorld {
     }
     this.landCells = land;
     this.generationMs = performance.now() - started;
+  }
+  private generateBattleTerrain(battle: CampaignBattle): number {
+    const masks = new Uint8Array(this.width * this.height), polygons = battle.land.map(polygon => polygon.map(([x,y]) => ({ x, y }))), cuts = (battle.cuts ?? []).map(polygon => polygon.map(([x,y]) => ({ x, y })));
+    for (let row = 0; row < this.height; row++) for (let col = 0; col < this.width; col++) {
+      const x = col / (this.width - 1), y = row / (this.height - 1), index = row * this.width + col;
+      let land = polygons.some(polygon => this.insidePolygon(x, y, polygon)) && !cuts.some(polygon => this.insidePolygon(x, y, polygon));
+      if (land && polygons.some(polygon => this.insidePolygon(x, y, polygon) && this.polygonEdgeDistance(x, y, polygon) < .012) && randomAt(col, row, battle.width + 521) < .29) land = false;
+      if (land) masks[index] = 1;
+    }
+    let landCount = 0;
+    for (let row = 0; row < this.height; row++) for (let col = 0; col < this.width; col++) {
+      const index = row * this.width + col;
+      if (masks[index]) { this.terrain[index] = Terrain.Land; landCount++; continue; }
+      let shoreDistance = Infinity;
+      for (let dy = -2; dy <= 2; dy++) for (let dx = -2; dx <= 2; dx++) {
+        const distance = Math.max(Math.abs(dx), Math.abs(dy), Math.abs(dx + dy));
+        if (distance > 2 || shoreDistance <= distance) continue;
+        const next = { col: col + dx, row: row + dy };
+        if (this.contains(next) && masks[next.row * this.width + next.col]) shoreDistance = distance;
+      }
+      const x = col / (this.width - 1), y = row / (this.height - 1);
+      const reef = battle.reefs?.some(shape => {
+        const dx = (x - shape.col) / shape.rx, dy = (y - shape.row) / shape.ry, radius = dx * dx + dy * dy;
+        if (radius > 1) return false;
+        if (shape.innerRx && shape.innerRy) return (x - shape.col) ** 2 / shape.innerRx ** 2 + (y - shape.row) ** 2 / shape.innerRy ** 2 >= 1;
+        return true;
+      });
+      this.terrain[index] = reef || shoreDistance <= 2 ? Terrain.Shallow : smoothNoise(col, row, 11) > .46 ? Terrain.Sea : Terrain.Deep;
+    }
+    return landCount;
+  }
+  private insidePolygon(x: number, y: number, polygon: { x: number; y: number }[]): boolean {
+    let inside = false;
+    for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+      const a = polygon[i], b = polygon[j];
+      if ((a.y > y) !== (b.y > y) && x < (b.x - a.x) * (y - a.y) / (b.y - a.y) + a.x) inside = !inside;
+    }
+    return inside;
+  }
+  private polygonEdgeDistance(x: number, y: number, polygon: { x: number; y: number }[]): number {
+    let closest = Infinity;
+    for (let i = 0; i < polygon.length; i++) {
+      const a = polygon[i], b = polygon[(i + 1) % polygon.length], dx = b.x - a.x, dy = b.y - a.y;
+      const t = Math.max(0, Math.min(1, ((x - a.x) * dx + (y - a.y) * dy) / (dx * dx + dy * dy || 1)));
+      closest = Math.min(closest, Math.hypot(x - (a.x + dx * t), y - (a.y + dy * t)));
+    }
+    return closest;
   }
   contains(cell: Cell): boolean {
     return Number.isInteger(cell.col) && Number.isInteger(cell.row) && cell.col >= 0 && cell.row >= 0 && cell.col < this.width && cell.row < this.height

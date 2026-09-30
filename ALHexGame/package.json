@@ -1,6 +1,6 @@
 {
   "name": "al-hex-naval",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -16,7 +16,8 @@
     "check:ports": "node --experimental-strip-types tools/check_ports.ts",
     "check:ai": "node --experimental-strip-types tools/check_ai.ts",
     "check:directional-art": "node --experimental-strip-types tools/check_directional_art.ts",
-    "check:land-art": "node --experimental-strip-types tools/check_land_art.ts"
+    "check:land-art": "node --experimental-strip-types tools/check_land_art.ts",
+    "check:historical-battles": "node --experimental-strip-types tools/check_historical_battles.ts"
   },
   "dependencies": {
     "pixi.js": "7.4.3",

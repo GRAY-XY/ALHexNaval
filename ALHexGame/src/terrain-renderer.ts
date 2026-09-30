@@ -1,4 +1,4 @@
-import {Container,Sprite,Texture} from 'pixi.js';
+import {Container,Sprite,Texture,Graphics,Text,TextStyle} from 'pixi.js';
 import {cellCenter,HEX_RADIUS,HEX_WIDTH,hexVertices,neighbors,ROW_HEIGHT} from './hex.ts';
 import {HexWorld,randomAt,TERRAIN_COLORS} from './world.ts';
 import {Terrain,type Cell,type ViewBounds} from './types.ts';
@@ -195,6 +195,7 @@ export class TerrainRenderer {
   private overview:Sprite;
   private detail=new Container();
   private landmarks=new Container();
+  private campaignOverlay=new Container();
   private chunks=new Map<string,Chunk>();
   private mountains=new Map<string,Mountain>();
   private landDetails=new Map<string,Mountain>();
@@ -209,10 +210,25 @@ export class TerrainRenderer {
     this.container.eventMode='none';this.overviewCanvas=world.overviewCanvas();this.overview=new Sprite(Texture.from(this.overviewCanvas));
     this.overview.width=world.bounds.width;this.overview.height=world.bounds.height;this.overviewBytes=this.overviewCanvas.width*this.overviewCanvas.height*4;
     this.landmarks.sortableChildren=true;
-    this.container.addChild(this.overview,this.detail,this.landmarks);
+    this.campaignOverlay.sortableChildren=true;
+    this.container.addChild(this.overview,this.detail,this.landmarks,this.campaignOverlay);
+    this.createCampaignOverlay();
+  }
+  private createCampaignOverlay():void {
+    const kinds={airfield:0,'seaplane-base':1,'naval-yard':2,'field-hq':3} as const,textStyle=new TextStyle({fontFamily:'STKaiti, KaiTi, Microsoft YaHei, serif',fontSize:22,fontWeight:'bold',fill:0xf4e7c4,stroke:0x173a45,strokeThickness:4,dropShadow:true,dropShadowColor:0x102f3d,dropShadowBlur:2,dropShadowDistance:1,letterSpacing:1});
+    for(const location of this.world.locations){
+      const center=cellCenter(location),mark=new Graphics(),color=location.kind==='land'?0xe8d7ab:location.kind==='strait'?0xf0c882:0xb7e7dc;
+      mark.lineStyle(1.6,0x153746,.82).beginFill(color,.86).drawCircle(0,0,4.5).endFill();mark.position.set(center.x,center.y);mark.zIndex=center.y+10;this.campaignOverlay.addChild(mark);
+      const label=new Text(location.name,textStyle);label.anchor.set(.5,.5);label.position.set(center.x,center.y-17);label.zIndex=center.y+20;this.campaignOverlay.addChild(label);
+    }
+    for(const landmark of this.world.landmarks){
+      const center=cellCenter(landmark),texture=Texture.from(watercolorTextures().campaignLandmarks[kinds[landmark.kind]]),sprite=new Sprite(texture),width=landmark.kind==='airfield'?440:landmark.kind==='naval-yard'?420:390;
+      sprite.anchor.set(.5,.52);sprite.position.set(center.x,center.y);sprite.width=width;sprite.height=width*2/3;sprite.alpha=.94;sprite.zIndex=center.y+30;this.campaignOverlay.addChild(sprite);
+      const label=new Text(landmark.name,textStyle);label.anchor.set(.5,.5);label.position.set(center.x,center.y-width*.37);label.zIndex=center.y+31;this.campaignOverlay.addChild(label);
+    }
   }
   updateView(bounds:ViewBounds,zoom:number):void {
-    this.stamp++;this.detail.visible=zoom>=DETAIL_ZOOM;this.landmarks.visible=zoom>=DETAIL_ZOOM;this.needed.clear();this.pending=[];
+    this.stamp++;this.detail.visible=zoom>=DETAIL_ZOOM;this.landmarks.visible=zoom>=DETAIL_ZOOM;this.campaignOverlay.visible=zoom>=.44;this.needed.clear();this.pending=[];
     for(const chunk of this.chunks.values())chunk.sprite.visible=false;for(const mountain of this.mountains.values())mountain.sprite.visible=false;for(const detail of this.landDetails.values())detail.sprite.visible=false;if(!this.detail.visible)return;
     const minCol=Math.max(0,Math.floor(bounds.left/HEX_WIDTH)-2),maxCol=Math.min(this.world.width-1,Math.ceil(bounds.right/HEX_WIDTH)+2);
     const minRow=Math.max(0,Math.floor(bounds.top/ROW_HEIGHT)-2),maxRow=Math.min(this.world.height-1,Math.ceil(bounds.bottom/ROW_HEIGHT)+2);

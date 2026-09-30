@@ -4,6 +4,7 @@ import {createPorts,createLegacyPorts,PORT_OIL_BONUS,STARTING_CREDITS,PORT_INCOM
 import { arrivalAnchor, translateCell } from './arrival.ts';
 import { cellKey, findRoute, sameCell, type Route } from './pathfinding.ts';
 import { HexWorld } from './world.ts';
+import { campaignBattle, isCampaignBattleId, type WorldScenario } from './historical-battles.ts';
 import { Terrain, type Cell, type DeployedShip, type ShipAsset } from './types.ts';
 import { beginAviationRound, CARRIER_STATS, emptyAviation, endAviationTurn, initializeAviationDecks, loseCarrierDeck, resolveAviationTurn, resolveQueuedCarrierLaunch, squadronName, validateAviation, type AircraftMoveEvent, type AviationState, type Squadron } from './aircraft.ts';
 import { SHIP_RULES_V2, WEAPONS_V2, damageOnHitV2, hitChanceV2, rollDieV2, shipRulesV2 } from './naval-rules-v2.ts';
@@ -69,7 +70,7 @@ const TEST_ARENA_SPAWNS:Cell[][]=[
   [{col:4,row:9},{col:2,row:9},{col:0,row:9},{col:3,row:8},{col:1,row:8},{col:4,row:7}],
 ];
 export interface SavedMatch {
-  format: 'al-hex-match'; version: 27; mapVersion: 1; size: number; height:number; mapKind:'archipelago'|'test-5x10'; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
+  format: 'al-hex-match'; version: 27; mapVersion: 1; size: number; height:number; mapKind:WorldScenario; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
   phase:'classic'|'aviation';initiativeIndex:number;phaseSubmitted:number[];aviationOrders:CarrierLaunchOrder[];movementOrders:NavalMoveOrder[];combatOrders:NavalAttackOrder[];
   round: number; activeIndex: number; teams: Team[];
   units: (Omit<MatchUnit, 'asset'> & { assetId: string })[];
@@ -109,7 +110,8 @@ export class Match {
     if(world.scenarioId==='test-5x10'&&teamCount!==2)throw Error('5 × 10 测试海图只支持双方对战');
     if(controllers&&(controllers.length!==teamCount||controllers.some(controller=>!['human','ai'].includes(controller))))throw Error('席位设置无效');
     const fleetAssets=world.scenarioId==='test-5x10'?testArenaFleetAssets(assets):assets;
-    this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: TEAM_NAMES[i], oil: 0,credits:STARTING_CREDITS,supply:STARTING_SUPPLY,eliminated:false,controller:controllers?.[i]??'human' }));
+    const battle=campaignBattle(world.scenarioId);
+    this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: battle?.sides[i]??TEAM_NAMES[i], oil: 0,credits:STARTING_CREDITS,supply:STARTING_SUPPLY,eliminated:false,controller:controllers?.[i]??'human' }));
     const occupied = new Set<string>(), starts = [[.12,.13],[.82,.15],[.82,.82],[.15,.82],[.48,.10],[.90,.50],[.50,.90],[.10,.50]];
     this.units = this.teams.flatMap((team,index) => {
       if(world.scenarioId==='test-5x10')return TEST_ARENA_SPAWNS[index].map((cell,shipIndex)=>{
@@ -119,7 +121,7 @@ export class Match {
           action:1,status:'ready' as const,hp:combat.maxHp,maxHp:combat.maxHp,guard:false,cooldowns:{},movementUsed:0,
           movedThisTurn:false,firedThisTurn:false,torpedoes:SHIP_RULES_V2[asset.ship_type.code]?.torpedoes??0 };
       });
-      const origin = { col: Math.round(world.width * starts[index][0]), row: Math.round(world.height * starts[index][1]) };
+      const origin = world.startPositions[index]??{ col: Math.round(world.width * starts[index][0]), row: Math.round(world.height * starts[index][1]) };
       return world.deploy(fleetAssets, origin, team.id, occupied).map(unit => { const combat = profile(unit.asset.ship_type.code); return { ...unit, ownerId: team.id,
         action: 1, status: 'ready' as const,
         hp: combat.maxHp, maxHp: combat.maxHp, guard: false, cooldowns: {}, movementUsed: 0,
@@ -896,8 +898,8 @@ export class Match {
     const data = input as any;
     const fail = (): never => { throw Error('存档格式或战局数据无效，当前战局未改变'); };
     const integer = (n: unknown, low: number, high: number) => Number.isInteger(n) && Number(n) >= low && Number(n) <= high;
-    const mapKind=data?.version>=23?data.mapKind:'archipelago',mapHeight=data?.version>=23?data.height:data?.size;
-    const validMap=mapKind==='archipelago'&&[128,256,512].includes(data?.size)&&mapHeight===data?.size||mapKind==='test-5x10'&&data?.size===5&&mapHeight===10;
+    const mapKind=data?.version>=23?data.mapKind:'archipelago',mapHeight=data?.version>=23?data.height:data?.size,battle=isCampaignBattleId(mapKind)?campaignBattle(mapKind):undefined;
+    const validMap=mapKind==='archipelago'&&[128,256,512].includes(data?.size)&&mapHeight===data?.size||mapKind==='test-5x10'&&data?.size===5&&mapHeight===10||!!battle&&data?.size===battle.width&&mapHeight===battle.height;
     if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
     if(data.version>=16&&(!['naval-v2','classic-v1'].includes(data.rulesetId)||!integer(data.combatState,0,0xffffffff)))fail();
     if (!Array.isArray(data.teams) || !integer(data.teams.length, 2, 8) || !integer(data.activeIndex, 0, data.teams.length - 1) || !integer(data.round, 1, 1_000_000)) fail();
@@ -905,7 +907,8 @@ export class Match {
     if(data.version>=22&&!Array.isArray(data.aviationOrders))fail();
     if(data.version>=20&&!Array.isArray(data.combatOrders))fail();
     if (data.version < 8 ? !integer(data.fleetSerial,0,1_000_000) || !Array.isArray(data.fleets) : data.fleets !== undefined || data.fleetSerial !== undefined) fail();
-    if (data.teams.some((team: Team, i: number) => !team || team.id !== i + 1 || team.name !== TEAM_NAMES[i] || data.version >= 4 && !integer(team.oil, 0, data.version>=14?MAX_CREDITS:OIL_PER_TURN))) fail();
+    const teamNames=battle?.sides??TEAM_NAMES;
+    if (data.teams.some((team: Team, i: number) => !team || team.id !== i + 1 || team.name !== teamNames[i] || data.version >= 4 && !integer(team.oil, 0, data.version>=14?MAX_CREDITS:OIL_PER_TURN))) fail();
     if(data.version>=13&&data.teams.some((t:Team)=>!integer(t.credits,0,MAX_CREDITS)||typeof t.eliminated!=='boolean'))fail();
     if(data.version>=16&&data.teams.some((t:Team)=>!integer(t.supply,0,MAX_SUPPLY)))fail();
     if(data.version>=15&&data.teams.some((t:Team)=>!['human','ai'].includes(t.controller)))fail();
@@ -913,7 +916,7 @@ export class Match {
     const scenarioAssets=mapKind==='test-5x10'?testArenaFleetAssets(assets):assets;
     const expectedUnits = scenarioAssets.length * (data.version === 1 ? 1 : data.teams.length);
     if (!Array.isArray(data.units) || data.units.length !== expectedUnits || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2)) fail();
-    const world=mapKind==='test-5x10'?new HexWorld(5,10,'test-5x10'):new HexWorld(data.size);
+    const world=mapKind==='test-5x10'?new HexWorld(5,10,'test-5x10'):battle?new HexWorld(battle.width,battle.height,battle.id):new HexWorld(data.size);
     const match = new Match(world, assets, data.teams.length); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
     match.rulesetId=data.version>=16?data.rulesetId:'classic-v1';
     match.phase=data.version>=19?data.phase:match.rulesetId==='naval-v2'?'combat':'classic';
@@ -921,7 +924,7 @@ export class Match {
     match.initiativeIndex=data.version>=19?data.initiativeIndex:0;
     match.phaseSubmitted=data.version>=19?[...data.phaseSubmitted]:match.rulesetId==='naval-v2'?data.teams.slice(0,data.activeIndex).filter((team:Team)=>!team.eliminated).map((team:Team)=>team.id):[];
     if(data.version>=16)match.combatState=data.combatState>>>0;
-    match.teams = data.teams.map((team: Team,i: number) => ({ id: i + 1, name: TEAM_NAMES[i], oil: data.version >= 4 ? team.oil : OIL_PER_TURN,credits:data.version>=13?team.credits:STARTING_CREDITS,supply:data.version>=16?team.supply:STARTING_SUPPLY,eliminated:false,controller:data.version>=15?team.controller:'human' }));
+    match.teams = data.teams.map((team: Team,i: number) => ({ id: i + 1, name: teamNames[i], oil: data.version >= 4 ? team.oil : OIL_PER_TURN,credits:data.version>=13?team.credits:STARTING_CREDITS,supply:data.version>=16?team.supply:STARTING_SUPPLY,eliminated:false,controller:data.version>=15?team.controller:'human' }));
     const freshUnits = match.units;
     const identities = new Set<string>(), occupied = new Set<string>(), assetIds = new Set<string>(), legacyMembership = new Map<string,string>();
     const validCell = (cell: Cell | undefined): boolean => !!cell && integer(cell.col, 0, data.size - 1) && integer(cell.row, 0, mapHeight - 1) && match.world.isSea(cell);

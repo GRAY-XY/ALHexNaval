@@ -3,6 +3,7 @@ import {cellKey} from './pathfinding.ts';
 import {Terrain,type Cell} from './types.ts';
 import type {MatchUnit} from './match.ts';
 import type {HexWorld} from './world.ts';
+import {campaignBattle} from './historical-battles.ts';
 
 export interface Port extends Cell {id:string;name:string;ownerId:number;homeForId?:number;usedRound:number;serviceRound?:number;occupationOwnerId?:number;occupationProgress:number}
 export interface PortView {port:Port;ownerId:number;visible:boolean}
@@ -48,6 +49,15 @@ export function createPorts(world:HexWorld,units:MatchUnit[],players:number):Por
     {col:4,row:1,id:'home-1',name:'1号母港',ownerId:1,homeForId:1,usedRound:0,serviceRound:0,occupationProgress:0},
     {col:0,row:8,id:'home-2',name:'2号母港',ownerId:2,homeForId:2,usedRound:0,serviceRound:0,occupationProgress:0},
   ];
+  const battle=campaignBattle(world.scenarioId);
+  if(battle){
+    const ports:Port[]=[];
+    return battle.ports.map((site,index)=>{
+      const cell=berth(world,site,ports,Math.max(world.width,world.height));
+      if(!cell)throw Error(`${site.name}附近没有可用的沿岸锚地`);
+      const port:Port={...cell,id:`campaign-${battle.id}-${index+1}`,name:site.name,ownerId:0,usedRound:0,serviceRound:0,occupationProgress:0};ports.push(port);return port;
+    });
+  }
   const ports=createLegacyPorts(world,units,players),offshore=ports.filter(p=>!isCoastalPort(world,p));
   if(!offshore.length)return ports;
   const coast:Cell[]=[];
