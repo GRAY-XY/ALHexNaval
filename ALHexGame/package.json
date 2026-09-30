@@ -10,6 +10,7 @@
     "check:coordinates": "node --experimental-strip-types tools/check_coordinates.ts",
     "check:rules": "node --experimental-strip-types tools/check_match.ts",
     "check:naval-v2": "node --experimental-strip-types tools/check_naval_v2.ts",
+    "check:combat-balance": "node --experimental-strip-types tools/check_combat_balance.ts",
     "check:animations": "node --experimental-strip-types tools/check_ship_animation.ts",
     "check:fog": "node --experimental-strip-types tools/check_fog.ts",
     "check:ports": "node --experimental-strip-types tools/check_ports.ts",

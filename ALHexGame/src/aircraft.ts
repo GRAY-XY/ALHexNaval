@@ -31,6 +31,8 @@ export interface Squadron extends Point {
   heading: number; order: 'patrol' | 'move' | 'attack' | 'return'; destination?: Point; targetId?: string;
   flight?: { next: Cell; progress: number };
 }
+export interface AircraftMoveEvent { id:string; from:Point; to:Point }
+export interface AviationTurnResolution { combatEvents:CombatEvent[]; moves:AircraftMoveEvent[] }
 export type DeckSquadronStatus='ready'|'reserve'|'airborne'|'turnaround'|'lost';
 export interface DeckSquadron {slot:number;role:AirRole;planes:number;hp:number;status:DeckSquadronStatus;readyRound?:number}
 export interface CarrierDeck {carrierId:string;ownerId:number;operationRound:number;operationsUsed:number;squadrons:DeckSquadron[]}
@@ -106,10 +108,12 @@ function clearLostTargets(match: Match): void {
     if(!ship&&!air||ship&&!match.unitVisible(ship,s.ownerId)||air&&!match.airVisible(air,s.ownerId)){s.order='patrol';s.targetId=undefined;}
   }
 }
-export function endAviationTurn(match: Match, ownerId: number): void {
+export function endAviationTurn(match: Match, ownerId: number, skipFuelIds: ReadonlySet<string> = new Set()): void {
   for (const s of match.aviation.squadrons) if (s.ownerId===ownerId) {
-    s.fuelTurns=Math.max(0,s.fuelTurns-1);
-    if (s.fuelTurns<=1) { s.order='return'; s.targetId=undefined; s.destination=undefined; }
+    if(!skipFuelIds.has(s.id)){
+      s.fuelTurns=Math.max(0,s.fuelTurns-1);
+      if (s.fuelTurns<=1) { s.order='return'; s.targetId=undefined; s.destination=undefined; }
+    }
     if(s.fuelTurns===0||s.hp<=0)loseAirSquadron(match,s);
   }
   match.aviation.squadrons=match.aviation.squadrons.filter(s=>s.hp>0 && s.fuelTurns>0);
@@ -185,6 +189,7 @@ export function commandSquadron(match: Match, id: string, destination?: Point, t
     if (!enemyAir && !enemyShip || (enemyAir ?? enemyShip)!.ownerId === squadron.ownerId) throw Error('请选择敌方目标');
     if(enemyAir&&!match.airVisible(enemyAir,squadron.ownerId)||enemyShip&&!match.unitVisible(enemyShip,squadron.ownerId))throw Error('目标不在本方当前视野内');
     if (enemyAir && squadron.role !== 'fighter') throw Error('只有战斗机可以执行空中拦截');
+    if (match.rulesetId==='naval-v2'&&enemyShip&&squadron.role==='fighter') throw Error('战斗机不能攻击舰船');
     if (!squadron.ammo) throw Error('弹药耗尽，请返航');
     squadron.order = 'attack'; squadron.targetId = targetId; squadron.destination = undefined;
   } else if (destination) {
@@ -193,6 +198,11 @@ export function commandSquadron(match: Match, id: string, destination?: Point, t
     if (!aircraftRoute(match,start,target)) throw Error('飞机无法沿有效六角格抵达目标');
     squadron.order = 'move'; squadron.destination = cellCenter(target); squadron.targetId = undefined;
   } else { squadron.order = 'return'; squadron.destination = undefined; squadron.targetId = undefined; }
+}
+export function cancelSquadronOrder(match:Match,id:string):void{
+  match.assertPlayable();if(match.rulesetId==='naval-v2'&&match.phase!=='aviation')throw Error('本回合行动已锁定');
+  const squadron=match.aviation.squadrons.find(item=>item.id===id);if(!squadron||squadron.ownerId!==match.active.id)throw Error('只能取消本方中队的命令');
+  squadron.order='patrol';squadron.destination=undefined;squadron.targetId=undefined;squadron.flight=undefined;
 }
 export function planSquadronTranslation(match: Match, ids: string[], delta: Point): { id: string; destination: Point }[] {
   match.assertPlayable();
@@ -242,7 +252,7 @@ function fly(match: Match, s: Squadron, point: Point, speed: number, dt: number,
   return !s.flight && hexDistance(worldToCell(s),target)<=stop;
 }
 export function tickAviation(match: Match, seconds: number): CombatEvent[] {
-  if (match.result||!Number.isFinite(seconds) || seconds <= 0) return [];
+  if (match.rulesetId==='naval-v2'||match.result||!Number.isFinite(seconds) || seconds <= 0) return [];
   const dt = Math.min(seconds,.1), events: CombatEvent[] = [], removed = new Set<string>(),recovered=new Set<string>();
   for (const id of Object.keys(match.aviation.aa)) { match.aviation.aa[id] = Math.max(0,match.aviation.aa[id]-dt); if (!match.aviation.aa[id]) delete match.aviation.aa[id]; }
   for (const s of match.aviation.squadrons) {
@@ -271,7 +281,7 @@ export function tickAviation(match: Match, seconds: number): CombatEvent[] {
         if (s.flight || !fighterInRange(s,air)) fly(match,s,air,speed,dt,FIGHTER_RANGE);
         if (s.actionPoints>0 && fighterInRange(s,air) && !s.cooldown) fireAtAircraft(s,air,removed);
       } else if (ship && fly(match,s,target,speed,dt,1) && s.actionPoints>0 && !s.cooldown) {
-        s.cooldown = 7; s.ammo--; events.push(match.airDamage(s,ship.instanceId));
+        s.cooldown = 7; s.ammo--; events.push(match.airDamage(s,ship.instanceId));if(s.hp<=0)removed.add(s.id);
       }
     }
     if (s.actionPoints<=0) returnHome(s);
@@ -298,6 +308,94 @@ export function tickAviation(match: Match, seconds: number): CombatEvent[] {
   return events;
 }
 
+const AIR_STEPS_PER_TURN:Record<AirRole,number>={fighter:4,bomber:3,torpedo:3};
+function moveForTurn(match:Match,s:Squadron,destination:Point,stop:number,afterStep?:(cell:Cell)=>boolean):boolean{
+  const target=worldToCell(destination),route=aircraftRoute(match,worldToCell(s),target);
+  if(!route)return false;
+  let moved=0;
+  for(const next of route.slice(1)){
+    if(moved>=AIR_STEPS_PER_TURN[s.role]||hexDistance(worldToCell(s),target)<=stop||(s.actionPoints<=0&&s.order!=='return'))break;
+    const previous=cellCenter(worldToCell(s)),center=cellCenter(next);Object.assign(s,center);s.heading=Math.atan2(center.y-previous.y,center.x-previous.x);
+    if(s.actionPoints>0)s.actionPoints--;moved++;
+    if(afterStep&&!afterStep(next))break;
+    if(hexDistance(next,target)<=stop)break;
+  }
+  return hexDistance(worldToCell(s),target)<=stop;
+}
+function airCombatEvent(attacker:Squadron,target:Squadron,hpBefore:number):CombatEvent{
+  const damage=hpBefore-target.hp;
+  return {attackerId:attacker.id,attackerLabel:squadronName(attacker),targetId:target.id,targetLabel:squadronName(target),weaponId:'fighter-intercept',kind:'air',damage,hpBefore,hpAfter:target.hp,sunk:target.hp===0,hit:damage>0,targetIsAircraft:true,origin:{x:attacker.x,y:attacker.y}};
+}
+function intercept(match:Match,attacker:Squadron,target:Squadron,removed:Set<string>,events:CombatEvent[]):boolean{
+  if(attacker.role!=='fighter'||!attacker.ammo||attacker.cooldown||attacker.fuelTurns<=0||attacker.actionPoints<=0||!fighterInRange(attacker,target))return false;
+  const hpBefore=target.hp;attacker.cooldown=7;attacker.ammo--;target.hp=Math.max(0,target.hp-3);if(!target.hp)removed.add(target.id);events.push(airCombatEvent(attacker,target,hpBefore));return true;
+}
+function fighterScreen(match:Match,attacker:Squadron,events:CombatEvent[],removed:Set<string>):boolean{
+  const screen=match.aviation.squadrons.filter(target=>target.ownerId!==attacker.ownerId&&target.role==='fighter'&&target.hp>0&&!removed.has(target.id)&&!target.cooldown&&target.ammo>0&&target.fuelTurns>0&&target.actionPoints>0&&target.order!=='return'&&fighterInRange(attacker,target)&&match.airVisible(attacker,target.ownerId))
+    .sort((a,b)=>distance(attacker,a)-distance(attacker,b)||a.id.localeCompare(b.id))[0];
+  return screen?intercept(match,screen,attacker,removed,events):false;
+}
+export function resolveAviationTurn(match:Match,ownerId:number,eligibleIds?:ReadonlySet<string>):AviationTurnResolution{
+  if(match.rulesetId!=='naval-v2'||match.result)return {combatEvents:[],moves:[]};
+  const events:CombatEvent[]=[],moves:AircraftMoveEvent[]=[],removed=new Set<string>(),recovered=new Set<string>();
+  const squadrons=match.aviation.squadrons.filter(s=>s.ownerId===ownerId&&(!eligibleIds||eligibleIds.has(s.id))).slice().sort((a,b)=>a.id.localeCompare(b.id));
+  for(const s of squadrons){
+    if(s.hp<=0||s.fuelTurns<=0){loseAirSquadron(match,s);removed.add(s.id);continue;}
+    const from=aircraftPosition(s);if(s.flight){Object.assign(s,cellCenter(s.flight.next));s.flight=undefined;}
+    const initial={x:from.x,y:from.y};
+    if(s.fuelTurns<=1||!s.ammo||s.actionPoints<=0)returnHome(s);
+    if(s.order==='return'){
+      let carrier=match.units.find(unit=>unit.instanceId===s.carrierId&&unit.status!=='sunk');
+      if(!carrier){
+        carrier=match.units.filter(unit=>unit.ownerId===s.ownerId&&unit.status!=='sunk'&&CARRIER_STATS[unit.asset.ship_type.code])
+          .filter(unit=>nationFor(match,unit.instanceId)===s.nation&&deckFor(match,unit.instanceId,true)?.squadrons.some(slot=>slot.role===s.role&&slot.status==='lost'))
+          .sort((a,b)=>distance(s,cellCenter(a))-distance(s,cellCenter(b))||a.instanceId.localeCompare(b.instanceId))[0];
+        if(!carrier){removed.add(s.id);continue;}
+        const slot=deckFor(match,carrier.instanceId,true)!.squadrons.find(item=>item.role===s.role&&item.status==='lost')!;s.carrierId=carrier.instanceId;s.slot=slot.slot;slot.status='airborne';slot.hp=s.hp;
+      }
+      if(moveForTurn(match,s,cellCenter(carrier),0)&&recoverAirSquadron(match,s)){removed.add(s.id);recovered.add(s.id);}
+    }else if(s.order==='move'&&s.destination){
+      const previous={x:s.x,y:s.y};
+      if(moveForTurn(match,s,s.destination,0)){s.order='patrol';s.destination=undefined;}
+      if(s.x!==previous.x||s.y!==previous.y)match.refreshVision();
+    }else if(s.order==='attack'){
+      const air=match.aviation.squadrons.find(item=>item.id===s.targetId&&item.hp>0&&!removed.has(item.id)),ship=match.units.find(unit=>unit.instanceId===s.targetId&&unit.status!=='sunk');
+      if(air&&s.role==='fighter'&&match.airVisible(air,s.ownerId)){
+        moveForTurn(match,s,air,FIGHTER_RANGE);
+        match.refreshVision();
+        if(s.ammo&&!s.cooldown&&fighterInRange(s,air))intercept(match,s,air,removed,events);
+        s.order='patrol';s.targetId=undefined;
+      }else if(ship&&s.role!=='fighter'&&match.unitVisible(ship,s.ownerId)){
+        let screened=false;
+        const screenAtStep=()=>{
+          if(!screened&&fighterScreen(match,s,events,removed))screened=true;
+          return s.hp>0;
+        };
+        screenAtStep();
+        const inRange=moveForTurn(match,s,cellCenter(ship),1,screenAtStep);match.refreshVision();
+        if(inRange&&match.unitVisible(ship,s.ownerId)){
+          if(!screened)screenAtStep();
+          if(s.hp>0&&s.ammo&&!s.cooldown){s.ammo--;s.cooldown=7;events.push(match.airDamage(s,ship.instanceId));if(s.hp<=0)removed.add(s.id);}
+          s.order='patrol';s.targetId=undefined;
+        }
+      }else{s.order='patrol';s.targetId=undefined;}
+    }
+    if(s.order!=='return'&&s.role==='fighter'&&!s.cooldown&&s.ammo&&s.actionPoints>0){
+      const enemy=match.aviation.squadrons.filter(target=>target.ownerId!==s.ownerId&&target.hp>0&&!removed.has(target.id)&&fighterInRange(s,target)&&match.airVisible(target,s.ownerId))
+        .sort((a,b)=>distance(s,a)-distance(s,b)||a.id.localeCompare(b.id))[0];
+      if(enemy)intercept(match,s,enemy,removed,events);
+    }
+    if(s.ammo<=0&&s.order!=='return')returnHome(s);
+    if(s.actionPoints<=0&&s.order!=='return')returnHome(s);
+    if(s.x!==initial.x||s.y!==initial.y)moves.push({id:s.id,from,to:{x:s.x,y:s.y}});
+    if(match.result)break;
+  }
+  for(const squadron of match.aviation.squadrons)if(removed.has(squadron.id)&&!recovered.has(squadron.id))loseAirSquadron(match,squadron);
+  match.aviation.squadrons=match.aviation.squadrons.filter(s=>!removed.has(s.id)&&s.hp>0);
+  for(const squadron of match.aviation.squadrons)if(squadron.targetId&&removed.has(squadron.targetId)){squadron.order='patrol';squadron.targetId=undefined;}
+  match.refreshVision();return {combatEvents:events,moves};
+}
+
 export function advanceAviation(match: Match, elapsedSeconds: number): CombatEvent[] {
   if (!Number.isFinite(elapsedSeconds) || elapsedSeconds <= 0) return [];
   // Ordinary background/low-FPS frames catch up; long suspension never replays a whole battle.
@@ -306,7 +404,7 @@ export function advanceAviation(match: Match, elapsedSeconds: number): CombatEve
   return events;
 }
 
-export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25 = 25): AviationState {
+export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26 = 26): AviationState {
   const state = input as AviationState & { nations?: Record<string,AirNation> };
   const migrateCountry=version===5, migrateEndurance=version<7;
   const fail = (): never => { throw Error('存档航空数据无效，当前战局未改变'); };
@@ -330,7 +428,7 @@ export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|
     // Rebased squadrons may keep their original role and size.
     const legacy=s as Squadron & {fuel?:number};
     if (migrateEndurance ? !finite(legacy.fuel,0,120) || 'fuelTurns' in s : !integer(s.fuelTurns,1,s.planes) || 'fuel' in s) fail();
-    if (!integer(s.planes,3,4) || s.maxHp !== s.planes*2 || !integer(s.hp,1,s.maxHp) || !integer(s.ammo,0,3) || !finite(s.cooldown,0,7) || !finite(s.heading,-Math.PI,Math.PI) || !finite(s.x,0,match.world.bounds.width) || !finite(s.y,0,match.world.bounds.height) || !match.world.contains(worldToCell(s))) fail();
+    if (!integer(s.planes,3,4) || s.maxHp !== s.planes*2 || !integer(s.hp,1,s.maxHp) || !integer(s.ammo,0,3) || !(version>=26&&match.rulesetId==='naval-v2'?(s.cooldown===0||s.cooldown===7):finite(s.cooldown,0,7)) || !finite(s.heading,-Math.PI,Math.PI) || !finite(s.x,0,match.world.bounds.width) || !finite(s.y,0,match.world.bounds.height) || !match.world.contains(worldToCell(s))) fail();
     if (version>=9 && (!finite(s.actionPoints,0,aircraftActionLimit(s)) || s.actionPoints===0 && s.order!=='return')) fail();
     if (version>=10) {
       const center=cellCenter(worldToCell(s));
@@ -351,6 +449,7 @@ export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|
     const legacy=s as Squadron & {fuel?:number}; s.fuelTurns=Math.min(s.planes,Math.ceil(legacy.fuel!/30)); delete legacy.fuel;
   }
   restored.squadrons=restored.squadrons.filter(s=>s.fuelTurns>0);
+  if(match.rulesetId==='naval-v2'&&version<26)for(const squadron of restored.squadrons){squadron.cooldown=0;delete squadron.flight;}
   if (version<9) for (const s of restored.squadrons) s.actionPoints=aircraftActionLimit(s)*s.fuelTurns/s.planes;
   if (version<10) for (const s of restored.squadrons) {
     Object.assign(s,cellCenter(worldToCell(s)));s.actionPoints=Math.floor(s.actionPoints);
@@ -358,7 +457,10 @@ export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|
     if (s.actionPoints===0) returnHome(s);
   }
   const restoredIds=new Set(restored.squadrons.map(s=>s.id));
-  for (const s of restored.squadrons) if (s.targetId && !match.units.some(u=>u.instanceId===s.targetId) && !restoredIds.has(s.targetId)) { s.order='patrol'; s.targetId=undefined; }
+  for (const s of restored.squadrons) if (s.targetId) {
+    const shipTarget=match.units.find(unit=>unit.instanceId===s.targetId);
+    if((!shipTarget&&!restoredIds.has(s.targetId))||(match.rulesetId==='naval-v2'&&s.role==='fighter'&&!!shipTarget)){s.order='patrol';s.targetId=undefined;}
+  }
   const carriers=match.units.filter(unit=>!!CARRIER_STATS[unit.asset.ship_type.code]);
   if(version<21){
     restored.decks={};

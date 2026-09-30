@@ -75,12 +75,12 @@ check('Losing a pursued enemy clears targeting and preserves the already committ
 });
 check('Version 12 restores exploration exactly and recomputes current sight from surviving units',()=>{
   const {m,ship}=scenario(true),previous={col:ship.col,row:ship.row};Object.assign(ship,m.world.nearbySea({col:40,row:40}));m.refreshVision();m.active.oil=7;
-  const saved=m.save(),loaded=Match.load(saved,assets);assert.equal(saved.version,25);assert.deepEqual(loaded.save(),saved);assert.equal(loaded.fog.state(1,previous),1);assert.equal(loaded.active.oil,7);
+  const saved=m.save(),loaded=Match.load(saved,assets);assert.equal(saved.version,26);assert.deepEqual(loaded.save(),saved);assert.equal(loaded.fog.state(1,previous),1);assert.equal(loaded.active.oil,7);
   assert(!loaded.unitVisible(loaded.unit('team-2-lafei')));assert(loaded.canSee(1,loaded.unit(ship.instanceId)));
 });
 check('Version 11 starts discovery only around current forces and preserves battle resources',()=>{
   const {m,ship}=scenario(true),previous={col:ship.col,row:ship.row};Object.assign(ship,m.world.nearbySea({col:40,row:40}));const legacy:any=m.save();legacy.version=11;delete legacy.fog;legacy.teams[0].oil=13;
-  const before=JSON.stringify(legacy),loaded=Match.load(legacy,assets);assert.equal(JSON.stringify(legacy),before);assert.equal(loaded.fog.state(1,previous),0);assert.equal(loaded.active.oil,13);assert.equal(loaded.save().version,25);
+  const before=JSON.stringify(legacy),loaded=Match.load(legacy,assets);assert.equal(JSON.stringify(legacy),before);assert.equal(loaded.fog.state(1,previous),0);assert.equal(loaded.active.oil,13);assert.equal(loaded.save().version,26);
 });
 check('Idle updates and turn switches never rebuild or erase unchanged sight',()=>{
   const m=classicMatch(new HexWorld(128),assets,2),before=m.fog.revision;for(let i=0;i<100;i++)assert(!m.refreshVision());m.endTurn();m.refreshVision();assert.equal(m.fog.revision,before);

@@ -1,5 +1,5 @@
 import { Assets, Container, Graphics, Sprite, Text, TextStyle } from 'pixi.js';
-import { aircraftActionText, aircraftPosition, planeTexture, squadronName, type Squadron, AIR_NATIONS, FIGHTER_RANGE } from './aircraft.ts';
+import { aircraftActionText, aircraftPosition, planeTexture, squadronName, type AircraftMoveEvent, type Squadron, AIR_NATIONS, FIGHTER_RANGE } from './aircraft.ts';
 import { cellCenter, fromAxial, hexDistance, hexVertices, toAxial, worldToCell } from './hex.ts';
 import { TEAM_COLORS } from './match.ts';
 import type { Point, ViewBounds } from './types.ts';
@@ -8,7 +8,7 @@ export async function loadCombatTextures(): Promise<void> {
   const paths = ['shell','torpedo','bomb',...AIR_NATIONS.flatMap(n => ['fighter','bomber','torpedo'].map(role => `${n.id}-${role}`))];
   await Promise.all(paths.map(name => Assets.load(new URL(`./assets/combat/${name}.png`,document.baseURI).href)));
 }
-interface AirVisual { root: Container; marker: Graphics; planes: Sprite[]; label: Text }
+interface AirVisual { root: Container; marker: Graphics; planes: Sprite[]; label: Text; motion?:{from:Point;to:Point;started:number;duration:number} }
 export class AircraftRenderer {
   readonly container = new Container();
   private range = new Graphics();
@@ -49,8 +49,11 @@ export class AircraftRenderer {
         label.anchor.set(.5); label.position.y = 40; root.addChild(label); this.container.addChild(root);
         visual = { root, marker, planes, label }; this.visuals.set(s.id,visual);
       }
-      const point=aircraftPosition(s);
-      visual.root.position.set(point.x,point.y); visual.root.visible = point.x > bounds.left-70 && point.x < bounds.right+70 && point.y > bounds.top-70 && point.y < bounds.bottom+70;
+      if(visual.motion){const t=visual.motion.duration?Math.min(1,(performance.now()-visual.motion.started)/visual.motion.duration):1;
+        visual.root.position.set(visual.motion.from.x+(visual.motion.to.x-visual.motion.from.x)*t,visual.motion.from.y+(visual.motion.to.y-visual.motion.from.y)*t);
+        if(t>=1)visual.motion=undefined;
+      }else{const point=aircraftPosition(s);visual.root.position.set(point.x,point.y);}
+      visual.root.visible = visual.root.x > bounds.left-70 && visual.root.x < bounds.right+70 && visual.root.y > bounds.top-70 && visual.root.y < bounds.bottom+70;
       visual.root.scale.set(Math.max(1,.55/zoom)); const selectedNow = selected.has(s.id), count = Math.ceil(s.hp/2), color = TEAM_COLORS[s.ownerId-1];
       visual.marker.clear().lineStyle(selectedNow ? 2 : 1,color,selectedNow ? 1 : .55).drawEllipse(0,0,42,32);
       visual.marker.lineStyle(3,0x17384a,1).moveTo(-25,34).lineTo(25,34).lineStyle(3,0xa7e9c9,1).moveTo(-25,34).lineTo(-25+50*s.hp/s.maxHp,34);
@@ -61,6 +64,12 @@ export class AircraftRenderer {
         sprite.rotation = s.heading + Math.PI;
       });
       visual.label.text = `${squadronName(s)}\n行动力 ${aircraftActionText(s)}`; visual.label.visible = zoom >= .58 || selectedNow;
+    }
+  }
+  move(events:AircraftMoveEvent[],animate=true):void{
+    for(const event of events){const visual=this.visuals.get(event.id);if(!visual)continue;
+      if(animate){visual.root.position.set(event.from.x,event.from.y);visual.motion={from:event.from,to:event.to,started:performance.now(),duration:Math.min(1.2,.16*Math.hypot(event.to.x-event.from.x,event.to.y-event.from.y)/70)};}
+      else{visual.motion=undefined;visual.root.position.set(event.to.x,event.to.y);}
     }
   }
   pick(point: Point, squadrons: Squadron[]): Squadron | undefined {

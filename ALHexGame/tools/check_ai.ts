@@ -14,12 +14,12 @@ function aiMatch(){const match=new Match(new HexWorld(128),assets,2,['ai','human
 function sink(unit:MatchUnit){Object.assign(unit,{hp:0,action:0,status:'sunk',guard:false});}
 
 check('AI and player seat controllers persist in v15 saves',()=>{
-  const m=aiMatch(),saved=m.save(),loaded=Match.load(saved,assets);assert.equal(saved.version,25);assert.deepEqual(loaded.teams.map(team=>team.controller),['ai','human']);assert.deepEqual(loaded.save(),saved);
+  const m=aiMatch(),saved=m.save(),loaded=Match.load(saved,assets);assert.equal(saved.version,26);assert.deepEqual(loaded.teams.map(team=>team.controller),['ai','human']);assert.deepEqual(loaded.save(),saved);
 });
 
 check('v14 saves migrate to human seats so old local games are never taken over',()=>{
   const m=aiMatch(),legacy:any=m.save();legacy.version=14;for(const team of legacy.teams)delete team.controller;
-  const before=JSON.stringify(legacy),loaded=Match.load(legacy,assets);assert.equal(JSON.stringify(legacy),before);assert(loaded.teams.every(team=>team.controller==='human'));assert.equal(loaded.save().version,25);
+  const before=JSON.stringify(legacy),loaded=Match.load(legacy,assets);assert.equal(JSON.stringify(legacy),before);assert(loaded.teams.every(team=>team.controller==='human'));assert.equal(loaded.save().version,26);
 });
 
 check('invalid v15 seat controllers reject without mutating input',()=>{

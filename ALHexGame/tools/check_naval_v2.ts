@@ -2,9 +2,9 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {Match,type MatchUnit} from '../src/match.ts';
 import {executeAiTurn} from '../src/ai.ts';
-import {beginAviationRound,cancelCarrierLaunch,launchPreview,orderCarrierLaunch,tickAviation} from '../src/aircraft.ts';
-import {cellCenter,hexDistance,hexLine,neighbors} from '../src/hex.ts';
-import {rollDieV2} from '../src/naval-rules-v2.ts';
+import {advanceAviation,beginAviationRound,cancelCarrierLaunch,commandSquadron,CARRIER_STATS,initializeAviationDecks,launchPreview,nationFor,orderCarrierLaunch,resolveAviationTurn,tickAviation,type Squadron} from '../src/aircraft.ts';
+import {cellCenter,hexDistance,hexLine,neighbors,worldToCell} from '../src/hex.ts';
+import {hitChanceV2,rollDieV2} from '../src/naval-rules-v2.ts';
 import {HexWorld} from '../src/world.ts';
 import {Terrain,type Cell,type Roster} from '../src/types.ts';
 
@@ -23,6 +23,14 @@ function seaCellAtDistance(m:Match,origin:Cell,distance:number,blocked=new Set<s
   }
   const found=cells.filter(c=>hexDistance(c,origin)===distance).sort((a,b)=>a.row-b.row||a.col-b.col)[0];
   if(!found)throw Error(`No sea cell at distance ${distance}`);return found;
+}
+function seedForDice(expected:number[]):number{
+  for(let seed=1;seed<1_000_000;seed++){
+    let state=seed,match=true;
+    for(const value of expected){const roll=rollDieV2(state);state=roll.state;if(roll.die!==value){match=false;break;}}
+    if(match)return seed;
+  }
+  throw Error(`No seed found for dice ${expected.join(',')}`);
 }
 function seaConflictCells(m:Match):{target:Cell;starts:[Cell,Cell]}{
   for(let row=0;row<m.world.height;row++)for(let col=0;col<m.world.width;col++){
@@ -48,7 +56,7 @@ check('The 5x10 test arena gives both sides one ship of every class and round-tr
   }
   assert.equal(new Set(m.units.map(unit=>`${unit.col},${unit.row}`)).size,12);
   assert(m.units.filter(unit=>unit.ownerId===1).every(unit=>m.reachable(unit.instanceId).some(cell=>cell.col!==unit.col||cell.row!==unit.row)),'the test fleet should not start boxed in by friendly ships');
-  const saved=m.save();assert.equal(saved.version,25);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
+  const saved=m.save();assert.equal(saved.version,26);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
   assert.deepEqual(Match.load(saved,assets).save(),saved);
   assert.throws(()=>new Match(world,assets,3),/只支持双方/);
 });
@@ -78,8 +86,11 @@ check('Enemy proximity or fire interrupts an enemy-harbor siege',()=>{
     m.capturePort(occupier.instanceId,port.id);finishRound(m);assert.equal(port.occupationProgress,1);assert.equal(m.phase,'aviation');m.activeIndex=0;m.phaseSubmitted=[];
     Object.assign(target,{...seaCellAtDistance(m,port,2),status:'ready',hp:target.maxHp,action:1});
     const hp=target.hp;m.orderAttack(occupier.instanceId,target.instanceId,'light-gun');
-    assert.equal(occupier.firedThisTurn,true);assert.equal(port.occupationOwnerId,undefined);assert.equal(port.ownerId,2);
+    assert.equal(occupier.firedThisTurn,false);assert.equal(port.occupationOwnerId,1);assert.equal(port.occupationProgress,1,'a planned shot should not interrupt a siege before it resolves');
+    m.cancelAttack(occupier.instanceId);assert.equal(occupier.action,1);assert.equal(occupier.firedThisTurn,false);assert.equal(port.occupationOwnerId,1);assert.equal(port.occupationProgress,1,'canceling a planned shot should preserve siege progress');
+    m.orderAttack(occupier.instanceId,target.instanceId,'light-gun');assert.equal(port.occupationOwnerId,1,'planning does not resolve combat');
     assert.equal(target.hp,hp,'locked water attacks wait for shared combat resolution');
+    m.endTurn();assert.equal(occupier.firedThisTurn,true,'a shot becomes fired only when combat resolves');assert.equal(port.occupationOwnerId,undefined);assert.equal(port.occupationProgress,0);assert.equal(port.ownerId,2,'an executed shot interrupts the siege');
   }
 });
 
@@ -254,6 +265,28 @@ check('Replanning one ship from a group keeps its teammates routes as individual
   m.cancelMove(anchor.instanceId);assert.equal(m.movementOrders.length,1);assert.deepEqual(m.plannedMove(other.instanceId),otherTarget);assert(other.movedThisTurn);
 });
 
+check('V2 attack previews expose the exact modifier breakdown used by the 2d6 odds',()=>{
+  const m=scene(),attacker=m.units.find(unit=>unit.ownerId===1&&unit.asset.ship_type.code==='DD')!,target=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='DD')!;
+  m.units.filter(unit=>unit!==attacker&&unit!==target).forEach(sink);sink(target);
+  Object.assign(attacker,{col:60,row:60,status:'ready',hp:attacker.maxHp,action:1,guard:false,movementUsed:0,movedThisTurn:false});
+  const cell=seaCellAtDistance(m,attacker,2);Object.assign(target,cell,{status:'ready',hp:target.maxHp,action:1,guard:false});m.refreshVision();
+  const preview=m.attackPreview(attacker.instanceId,target.instanceId,'light-gun');
+  assert(preview.valid);assert.equal(preview.hitModifier,0);assert.equal(preview.hitTarget,7);assert.equal(preview.hitChance,hitChanceV2(0,7));
+  assert.deepEqual(preview.modifiers,[{label:'近距',value:1},{label:'目标机动',value:-1}]);
+});
+
+check('V2 planned torpedo attacks can be canceled after save and replanned without losing resources',()=>{
+  const m=scene(),attacker=m.units.find(unit=>unit.ownerId===1&&unit.asset.ship_type.code==='DD')!,target=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='DD')!;
+  m.units.filter(unit=>unit!==attacker&&unit!==target).forEach(sink);sink(target);
+  Object.assign(attacker,{col:60,row:60,status:'ready',hp:attacker.maxHp,action:1,guard:false,movementUsed:0,movedThisTurn:false,firedThisTurn:false,torpedoes:2});
+  const cell=seaCellAtDistance(m,attacker,2);Object.assign(target,cell,{status:'ready',hp:target.maxHp,action:1,guard:false});m.refreshVision();
+  m.orderAttack(attacker.instanceId,target.instanceId,'torpedo');assert.equal(attacker.action,0);assert.equal(attacker.torpedoes,1);assert.equal(attacker.firedThisTurn,false);
+  const restored=Match.load(m.save(),assets),loadedAttacker=restored.unit(attacker.instanceId),hp=restored.unit(target.instanceId).hp;
+  assert(restored.plannedAttack(attacker.instanceId));restored.cancelAttack(attacker.instanceId);
+  assert.equal(restored.plannedAttack(attacker.instanceId),undefined);assert.equal(loadedAttacker.action,1);assert.equal(loadedAttacker.torpedoes,2);assert.equal(loadedAttacker.firedThisTurn,false);assert.equal(restored.unit(target.instanceId).hp,hp);
+  restored.orderAttack(attacker.instanceId,target.instanceId,'torpedo');assert.equal(loadedAttacker.torpedoes,1);restored.cancelAttack(attacker.instanceId);assert.equal(loadedAttacker.torpedoes,2);
+});
+
 check('V2 water attacks resolve for each side on its own turn and remain deterministic across saves',()=>{
   const m=scene(),blue=m.units.find(u=>u.ownerId===1&&u.asset.ship_type.code==='BB')!,green=m.units.find(u=>u.ownerId===2&&u.asset.ship_type.code==='BB')!;
   const blueReserve=m.unit('team-1-lafei'),greenReserve=m.unit('team-2-lafei');
@@ -311,11 +344,12 @@ check('V2 carrier launch resolves on its side turn and recovery preserves a full
   assert.deepEqual(preview.slots,[0,1]);assert.equal(preview.operationsLimit,2);assert.equal(preview.operationsUsed,0);
   assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);assert.equal(m.aviation.squadrons.length,0,'aircraft appear after this side implements its orders');
   assert.equal(carrier.action,0);cancelCarrierLaunch(m,carrier.instanceId);assert.equal(carrier.action,1);assert(launchPreview(m,carrier.instanceId).valid,'launch orders can be withdrawn before phase submission');orderCarrierLaunch(m,carrier.instanceId);
-  const pending=m.save();assert.equal(pending.version,25);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
+  const pending=m.save();assert.equal(pending.version,26);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
   m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,1);const launched=m.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId),deck=m.aviation.decks[carrier.instanceId];assert.deepEqual(launched.map(s=>s.role),['fighter','bomber']);
+  assert(launched.every(s=>s.fuelTurns===CARRIER_STATS[carrier.asset.ship_type.code].endurance),'newly launched planes keep full fuel until their first commandable owner turn');
   assert.deepEqual(deck.squadrons.map(s=>s.status),['airborne','airborne','reserve']);assert.equal(deck.operationsUsed,2,'launches spend this carrier turn deck operations');
   m.endTurn();assert.equal(m.phase,'aviation');assert.equal(m.round,2);assert.equal(deck.operationsUsed,0,'deck operations reset at the global round boundary');
-  const fighter=launched[0];Object.assign(fighter,cellCenter(carrier),{order:'return',flight:undefined});m.activeIndex=0;tickAviation(m,.1);
+  const fighter=launched[0];Object.assign(fighter,cellCenter(carrier),{order:'return',flight:undefined});m.activeIndex=0;resolveAviationTurn(m,1);
   assert(!m.aviation.squadrons.includes(fighter));assert.equal(deck.operationsUsed,1);assert.equal(deck.squadrons[0].status,'turnaround');assert.equal(deck.squadrons[0].readyRound,4);
   const saved=m.save(),restored=Match.load(saved,assets);assert.deepEqual(restored.save(),saved);
   restored.round=3;beginAviationRound(restored);assert.equal(restored.aviation.decks[carrier.instanceId].squadrons[0].status,'turnaround');
@@ -323,7 +357,7 @@ check('V2 carrier launch resolves on its side turn and recovery preserves a full
 });
 
 check('V2 aircraft losses permanently remove the deck squadron and survive save restoration',()=>{
-  const m=scene(),carrier=m.unit('team-1-qiye'),fighter=launchV2(m,carrier.instanceId)[0];fighter.hp=0;tickAviation(m,.1);
+  const m=scene(),carrier=m.unit('team-1-qiye'),fighter=launchV2(m,carrier.instanceId)[0];fighter.hp=0;resolveAviationTurn(m,fighter.ownerId);
   assert(!m.aviation.squadrons.some(s=>s.id===fighter.id));assert.equal(m.aviation.decks[carrier.instanceId].squadrons[fighter.slot].status,'lost');
   const saved=m.save();assert.deepEqual(Match.load(saved,assets).save(),saved);
   const invalid=JSON.parse(JSON.stringify(saved));invalid.aviation.decks[carrier.instanceId].squadrons[fighter.slot].status='airborne';
@@ -352,20 +386,194 @@ check('V2 contact reports hide L2 ship identity, expose L3 identity, and decay s
 check('V2 alert posture no longer applies the legacy flat two-damage air reduction',()=>{
   const m=scene(),carrier=m.unit('team-1-qiye'),target=m.unit('team-2-qiye');
   const origin=m.port('home-1');Object.assign(carrier,{col:origin.col,row:origin.row,status:'ready',hp:carrier.maxHp,action:1});
-  Object.assign(target,seaCellAtDistance(m,origin,3),{status:'ready',hp:target.maxHp,guard:true});
+  Object.assign(target,seaCellAtDistance(m,carrier,2),{status:'ready',hp:target.maxHp,guard:true});m.refreshVision();
   const bomber=launchV2(m,carrier.instanceId).find(s=>s.role==='bomber')!;
-  const guarded=m.airDamage(bomber,target.instanceId).damage;target.hp=target.maxHp;target.guard=false;
+  m.combatState=seedForDice([1,1,1,1]);const guarded=m.airDamage(bomber,target.instanceId).damage;target.hp=target.maxHp;target.guard=false;m.combatState=seedForDice([1,1,1,1]);
   const unguarded=m.airDamage(bomber,target.instanceId).damage;assert.equal(guarded,unguarded);assert.equal(guarded,4);
   m.rulesetId='classic-v1';m.active.oil=50;target.hp=target.maxHp;target.guard=true;
   assert.equal(m.airDamage(bomber,target.instanceId).damage,2);
 });
 
-check('Legacy V2 saves migrate to version 25 and previously submitted orders resolve once',()=>{
+check('V2 ship AA rolls once per air strike using target, alert, and up to two escorts',()=>{
+  const m=scene(),carrier=m.unit('team-1-qiye'),target=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='BB')!;
+  const escorts=m.units.filter(unit=>unit.ownerId===2&&unit!==target).slice(0,2);
+  m.units.filter(unit=>unit!==carrier&&unit!==target&&!escorts.includes(unit)).forEach(sink);
+  Object.assign(carrier,{col:60,row:60,status:'ready',hp:carrier.maxHp,action:1});
+  Object.assign(target,seaCellAtDistance(m,carrier,2),{status:'ready',hp:target.maxHp,guard:true});
+  for(const escort of escorts){const cell=seaCellAtDistance(m,target,1);Object.assign(escort,cell,{status:'ready',hp:escort.maxHp});}
+  m.refreshVision();m.combatState=seedForDice([1,1,1,1,1]);
+  const bomber={id:'air-test',carrierId:carrier.instanceId,ownerId:1,nation:'us',role:'bomber',slot:1,planes:4,hp:8,maxHp:8,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,x:0,y:0,order:'attack' as const};
+  const event=m.airDamage(bomber,target.instanceId);
+  assert.deepEqual(event.aa?.dice,[1,1,1,1,1],'BB AA, two escorts, and alert posture are capped at five dice');
+  assert.deepEqual(event.aa?.escortIds.slice().sort(),escorts.map(unit=>unit.instanceId).sort());
+  assert.equal(event.aa?.aircraftLost,0);assert.equal(event.aa?.suppression,0);
+});
+
+check('V2 AA losses happen before the strike and 5s suppress air damage',()=>{
+  const m=scene(),carrier=m.unit('team-1-qiye'),target=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='CA')!;
+  m.units.filter(unit=>unit!==carrier&&unit!==target).forEach(sink);
+  Object.assign(carrier,{col:60,row:60,status:'ready',hp:carrier.maxHp,action:1});
+  Object.assign(target,seaCellAtDistance(m,carrier,2),{status:'ready',hp:target.maxHp,guard:false});m.refreshVision();m.combatState=seedForDice([6,5]);
+  const bomber={id:'air-test',carrierId:carrier.instanceId,ownerId:1,nation:'us',role:'bomber',slot:1,planes:4,hp:8,maxHp:8,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,x:0,y:0,order:'attack' as const};
+  const event=m.airDamage(bomber,target.instanceId);
+  assert.deepEqual(event.aa?.dice,[6,5]);assert.equal(event.aa?.aircraftLost,1);assert.equal(event.aa?.suppression,1);
+  assert.equal(bomber.hp,6);assert.equal(event.damage,2,'three surviving aircraft deal three base damage, reduced by one suppression');
+  assert.equal(event.hit,true);
+});
+
+check('V2 AA does not chip aircraft merely for flying near a ship',()=>{
+  const m=scene(),carrier=m.unit('team-1-qiye'),target=m.unit('team-2-lafei');m.units.filter(unit=>unit!==carrier&&unit!==target).forEach(sink);
+  Object.assign(carrier,{col:60,row:60,status:'ready',hp:carrier.maxHp});Object.assign(target,seaCellAtDistance(m,carrier,2),{status:'ready',hp:target.maxHp});
+  const cell=seaCellAtDistance(m,target,1),center=cellCenter(cell),bomber={id:'air-test',carrierId:carrier.instanceId,ownerId:1,nation:'us' as const,role:'bomber' as const,slot:1,planes:4,hp:8,maxHp:8,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,...center,order:'patrol' as const};
+  m.aviation.squadrons.push(bomber);m.refreshVision();tickAviation(m,.1);
+  assert.equal(bomber.hp,8);assert.equal(m.aviation.aa[target.instanceId],undefined);
+});
+
+check('V2 damaged ships lose one AA die but never fall below one',()=>{
+  const setup=(code:string)=>{
+    const m=scene(),carrier=m.unit('team-1-qiye'),target=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code===code)!;
+    m.units.filter(unit=>unit!==carrier&&unit!==target).forEach(sink);
+    Object.assign(carrier,{col:60,row:60,status:'ready',hp:carrier.maxHp,action:1});Object.assign(target,seaCellAtDistance(m,carrier,2),{status:'ready',hp:target.maxHp,guard:false});m.refreshVision();
+    const bomber={id:'air-test',carrierId:carrier.instanceId,ownerId:1,nation:'us' as const,role:'bomber' as const,slot:1,planes:4,hp:8,maxHp:8,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,x:0,y:0,order:'attack' as const};
+    return {m,target,bomber};
+  };
+  const bb=setup('BB');bb.target.hp=bb.target.maxHp/2;bb.m.combatState=seedForDice([1,1]);
+  assert.equal(bb.m.airDamage(bb.bomber,bb.target.instanceId).aa?.dice.length,2,'damaged BB AA falls from three dice to two');
+  bb.target.hp=bb.target.maxHp;bb.m.combatState=seedForDice([1,1,1]);
+  assert.equal(bb.m.airDamage(bb.bomber,bb.target.instanceId).aa?.dice.length,3,'full-strength BB keeps all three dice');
+  const dd=setup('DD');dd.target.hp=dd.target.maxHp/2;dd.m.combatState=seedForDice([1]);
+  assert.equal(dd.m.airDamage(dd.bomber,dd.target.instanceId).aa?.dice.length,1,'damaged DD AA remains at the one-die minimum');
+});
+
+check('V2 fighters can intercept aircraft but cannot attack ships',()=>{
+  const m=scene(),carrier=m.unit('team-1-qiye'),target=m.unit('team-2-lafei');
+  m.units.filter(unit=>unit!==carrier&&unit!==target).forEach(sink);Object.assign(carrier,{col:60,row:60,status:'ready',hp:carrier.maxHp});Object.assign(target,seaCellAtDistance(m,carrier,2),{status:'ready',hp:target.maxHp});
+  const fighter={id:'air-test',carrierId:carrier.instanceId,ownerId:1,nation:'us' as const,role:'fighter' as const,slot:0,planes:4,hp:8,maxHp:8,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,x:0,y:0,order:'patrol' as const};
+  m.aviation.squadrons.push(fighter);m.activeIndex=0;m.refreshVision();
+  assert.throws(()=>commandSquadron(m,fighter.id,undefined,target.instanceId),/战斗机不能攻击舰船/);
+});
+
+check('V2 loading clears legacy fighter attacks against ships',()=>{
+  const m=scene(),carrier=m.unit('team-1-qiye'),target=m.unit('team-2-lafei'),fighter=launchV2(m,carrier.instanceId).find(squadron=>squadron.role==='fighter')!;
+  fighter.order='attack';fighter.targetId=target.instanceId;fighter.cooldown=3.5;fighter.flight={next:neighbors(worldToCell(fighter))[0],progress:.9};const oldPosition={x:fighter.x,y:fighter.y};
+  const saved=m.save();assert.equal(saved.version,26);const legacy=JSON.parse(JSON.stringify(saved));legacy.version=25;
+  const restored=Match.load(legacy,assets),loaded=restored.aviation.squadrons.find(squadron=>squadron.id===fighter.id)!;
+  assert.equal(loaded.order,'patrol');assert.equal(loaded.targetId,undefined);assert.equal(loaded.cooldown,0,'legacy real-time cooldown does not suppress the first turn-based attack');
+  assert.equal(loaded.flight,undefined,'legacy partial real-time movement is discarded instead of granting a free extra turn step');assert.deepEqual({x:loaded.x,y:loaded.y},oldPosition);
+  const current=JSON.parse(JSON.stringify(saved));current.aviation.squadrons.find((s:any)=>s.id===fighter.id).cooldown=7;
+  assert.equal(Match.load(current,assets).unit(carrier.instanceId).instanceId,carrier.instanceId,'V3 sentinel cooldowns survive save loading');
+  current.aviation.squadrons.find((s:any)=>s.id===fighter.id).cooldown=3.5;assert.throws(()=>Match.load(current,assets),/存档/,'new V3 saves accept only the per-round ready/spent cooldown values');
+});
+
+check('V3 air orders wait for handover and resolve identically at different frame rates',()=>{
+  const setup=()=>{
+    const m=scene(),carrier=m.unit('team-1-qiye'),target=m.unit('team-2-lafei');m.units.filter(unit=>unit!==carrier&&unit!==target).forEach(sink);
+    Object.assign(carrier,{col:60,row:60,status:'ready',hp:carrier.maxHp,action:1});const cell=seaCellAtDistance(m,carrier,2);Object.assign(target,cell,{status:'ready',hp:target.maxHp});
+    const bomber=launchV2(m,carrier.instanceId).find(squadron=>squadron.role==='bomber')!;Object.assign(bomber,cellCenter(carrier));m.activeIndex=0;m.refreshVision();commandSquadron(m,bomber.id,undefined,target.instanceId);
+    return {m,bomber,target};
+  };
+  const first=setup(),saved=first.m.save();
+  const fast=Match.load(saved,assets),slow=Match.load(saved,assets),fastPlane=fast.aviation.squadrons.find(squadron=>squadron.role==='bomber')!,slowPlane=slow.aviation.squadrons.find(squadron=>squadron.role==='bomber')!;
+  const fastStart={x:fastPlane.x,y:fastPlane.y},fastHp=fast.unit(first.target.instanceId).hp;
+  assert.deepEqual(advanceAviation(fast,1),[]);for(let i=0;i<20;i++)assert.deepEqual(advanceAviation(slow,.05),[]);
+  assert.deepEqual({x:fastPlane.x,y:fastPlane.y},fastStart);assert.equal(fast.unit(first.target.instanceId).hp,fastHp);assert.equal(fastPlane.order,'attack');
+  fast.endTurn();slow.endTurn();
+  const fastEvents=fast.takeResolvedCombatEvents(),slowEvents=slow.takeResolvedCombatEvents();
+  assert.deepEqual(fastEvents,slowEvents);assert.equal(fastEvents.filter(event=>event.attackerId===fastPlane.id&&!event.targetIsAircraft).length,1,'one planned air order produces at most one ship strike per side turn');
+  assert.equal(fastPlane.ammo,2);assert.equal(fastPlane.order,'patrol');assert(fast.unit(first.target.instanceId).hp<fastHp);
+  assert.deepEqual(fast.save(),slow.save(),'same turn commands and seed produce identical results regardless of render ticks');
+});
+
+check('V3 bomber movement advances at most three hexes per own turn',()=>{
+  const m=scene(),carrier=m.unit('team-1-qiye');m.units.filter(unit=>unit.ownerId!==1).forEach(sink);
+  Object.assign(carrier,{col:60,row:60,status:'ready',hp:carrier.maxHp,action:1});
+  const bomber=launchV2(m,carrier.instanceId).find(squadron=>squadron.role==='bomber')!,start={col:carrier.col,row:carrier.row};let destination:Cell|undefined;
+  for(let row=0;row<m.world.height&&!destination;row++)for(let col=0;col<m.world.width;col++){const cell={col,row};if(m.world.contains(cell)&&hexDistance(start,cell)===8){destination=cell;break;}}
+  assert(destination,'a valid map cell exists eight hexes away');
+  Object.assign(bomber,cellCenter(carrier));m.activeIndex=0;commandSquadron(m,bomber.id,cellCenter(destination));m.endTurn();
+  assert.equal(hexDistance(start,worldToCell(bomber)),3);assert.equal(bomber.actionPoints,17);assert.equal(bomber.order,'move');assert.deepEqual(worldToCell(bomber.destination!),destination);
+});
+
+check('V3 fighter CAP intercepts a bomber along its route even when the endpoint is outside the screen',()=>{
+  const m=new Match(new HexWorld(5,10,'test-5x10'),assets,2),attackerCarrier=m.unit('team-1-qiye'),defenderCarrier=m.unit('team-2-qiye'),target=m.unit('team-2-lafei'),scout=m.unit('team-1-lafei');
+  m.units.filter(unit=>unit!==attackerCarrier&&unit!==defenderCarrier&&unit!==target&&unit!==scout).forEach(sink);
+  const cells:Cell[]=[];for(let row=0;row<m.world.height;row++)for(let col=0;col<m.world.width;col++)cells.push({col,row});
+  let layout:{start:Cell;target:Cell;screen:Cell;route:Cell[]}|undefined;
+  for(const start of cells){
+    for(const targetCell of cells){
+      if(hexDistance(start,targetCell)!==4)continue;
+      const route=hexLine(start,targetCell);if(route.length!==5)continue;
+      const screen=cells.find(cell=>hexDistance(start,cell)>2&&hexDistance(route[1],cell)<=2&&hexDistance(route[3],cell)>2);
+      if(screen&&![`${start.col},${start.row}`,`${targetCell.col},${targetCell.row}`,`${route[3].col},${route[3].row}`,`${screen.col},${screen.row}`].includes('0,0')&&![`${start.col},${start.row}`,`${targetCell.col},${targetCell.row}`,`${route[3].col},${route[3].row}`,`${screen.col},${screen.row}`].includes('4,9')){layout={start,target:targetCell,screen,route};break;}
+    }
+    if(layout)break;
+  }
+  assert(layout,'the 5x10 arena has a straight attack route crossing a CAP ring outside the final approach');
+  Object.assign(attackerCarrier,{col:0,row:0,status:'ready',hp:attackerCarrier.maxHp});
+  Object.assign(defenderCarrier,{col:4,row:9,status:'ready',hp:defenderCarrier.maxHp});
+  Object.assign(target,{...layout.target,status:'ready',hp:target.maxHp});
+  Object.assign(scout,{...layout.route[3],status:'ready',hp:scout.maxHp});
+  const makeAir=(id:string,ownerId:number,carrierId:string,role:'fighter'|'bomber',cell:Cell):Squadron=>{
+    const carrier=m.unit(carrierId),planes=4;
+    return {id,carrierId,ownerId,nation:nationFor(m,carrierId),role,slot:role==='fighter'?0:1,...cellCenter(cell),planes,hp:planes*2,maxHp:planes*2,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,order:'patrol'};
+  };
+  const bomber=makeAir('air-101',1,attackerCarrier.instanceId,'bomber',layout.start),fighter=makeAir('air-102',2,defenderCarrier.instanceId,'fighter',layout.screen);
+  m.aviation.serial=102;m.aviation.squadrons.push(bomber,fighter);initializeAviationDecks(m);m.activeIndex=0;m.combatState=seedForDice([1]);m.refreshVision();
+  commandSquadron(m,bomber.id,undefined,target.instanceId);const resolution=resolveAviationTurn(m,1);
+  assert(hexDistance(worldToCell(bomber),layout.screen)>2,'the bomber ends outside the defender fighter range');
+  assert.equal(fighter.cooldown,7);assert.equal(fighter.ammo,2);assert.equal(bomber.hp,bomber.maxHp-3,'the fighter hits while the bomber crosses the ring');
+  assert(resolution.combatEvents.some(event=>event.targetIsAircraft&&event.targetId===bomber.id),'the mid-route intercept is reported');
+  assert(resolution.combatEvents.some(event=>event.targetId===target.instanceId),'the surviving bomber still resolves its strike');
+  const startingScreen=cells.find(cell=>hexDistance(layout.start,cell)>0&&hexDistance(layout.start,cell)<=2&&hexDistance(layout.route[3],cell)>2);
+  assert(startingScreen,'the test arena has a CAP ring around the previous-turn aircraft position');
+  Object.assign(fighter,cellCenter(startingScreen),{cooldown:0,ammo:3});Object.assign(bomber,cellCenter(layout.start),{hp:bomber.maxHp,actionPoints:20,ammo:3,cooldown:0,order:'patrol',targetId:undefined});target.hp=target.maxHp;m.combatState=seedForDice([1]);m.refreshVision();
+  commandSquadron(m,bomber.id,undefined,target.instanceId);const startingResolution=resolveAviationTurn(m,1);
+  assert(hexDistance(worldToCell(bomber),startingScreen)>2,'the bomber exits a ring it occupied at the start of the turn');
+  assert.equal(fighter.cooldown,7);assert.equal(bomber.hp,bomber.maxHp-3,'a defender can intercept before the bomber exits the ring');
+  assert(startingResolution.combatEvents.some(event=>event.targetIsAircraft&&event.targetId===bomber.id),'the starting-ring intercept is reported');
+});
+
+check('V3 return orders use the carrier position after this turn\'s ship movement',()=>{
+  const m=new Match(new HexWorld(5,10,'test-5x10'),assets,2),carrier=m.unit('team-1-qiye');
+  m.units.filter(unit=>unit!==carrier).forEach(sink);
+  const cells:Cell[]=[];for(let row=0;row<m.world.height;row++)for(let col=0;col<m.world.width;col++)cells.push({col,row});
+  let layout:{carrier:Cell;plane:Cell;next:Cell}|undefined;
+  for(const carrierCell of cells){
+    const plane=cells.find(cell=>hexDistance(carrierCell,cell)===4);
+    const next=neighbors(carrierCell).find(cell=>m.world.contains(cell)&&hexDistance(cell,carrierCell)===1&&plane&&hexDistance(cell,plane)===3);
+    if(plane&&next){layout={carrier:carrierCell,plane,next};break;}
+  }
+  assert(layout,'the test arena has a carrier step that brings a returning plane within its movement limit');
+  Object.assign(carrier,{...layout.carrier,status:'ready',hp:carrier.maxHp,action:1});
+  const bomber:Squadron={id:'air-101',carrierId:carrier.instanceId,ownerId:1,nation:nationFor(m,carrier.instanceId),role:'bomber',slot:1,...cellCenter(layout.plane),planes:4,hp:8,maxHp:8,fuelTurns:3,actionPoints:20,ammo:3,cooldown:0,heading:0,order:'patrol'};
+  m.aviation.serial=101;m.aviation.squadrons.push(bomber);initializeAviationDecks(m);m.refreshVision();
+  commandSquadron(m,bomber.id);m.issueMove(carrier.instanceId,layout.next);m.endTurn();
+  assert.equal(m.aviation.squadrons.some(squadron=>squadron.id===bomber.id),false,'the plane recovers at the carrier\'s new position');
+  assert.equal(m.aviation.decks[carrier.instanceId].squadrons.find(slot=>slot.slot===bomber.slot)?.status,'turnaround');
+});
+
+check('V4 an air-strike kill cancels a later planned torpedo without consuming it',()=>{
+  const m=new Match(new HexWorld(5,10,'test-5x10'),assets,2),carrier=m.unit('team-1-qiye'),attacker=m.units.find(unit=>unit.ownerId===1&&unit.asset.ship_type.code==='DD')!,target=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='DD')!;
+  m.units.filter(unit=>unit!==carrier&&unit!==attacker&&unit!==target).forEach(sink);
+  Object.assign(carrier,{col:0,row:0,status:'ready',hp:carrier.maxHp});Object.assign(target,{col:2,row:4,status:'ready',hp:4});
+  Object.assign(attacker,{...seaCellAtDistance(m,target,2),status:'ready',hp:attacker.maxHp,action:1,torpedoes:2});
+  const planeCell=seaCellAtDistance(m,target,1,new Set([`${attacker.col},${attacker.row}`]));
+  const bomber:Squadron={id:'air-101',carrierId:carrier.instanceId,ownerId:1,nation:nationFor(m,carrier.instanceId),role:'bomber',slot:1,...cellCenter(planeCell),planes:4,hp:8,maxHp:8,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,order:'patrol'};
+  m.aviation.serial=101;m.aviation.squadrons.push(bomber);initializeAviationDecks(m);m.refreshVision();
+  commandSquadron(m,bomber.id,undefined,target.instanceId);m.orderAttack(attacker.instanceId,target.instanceId,'torpedo');m.combatState=seedForDice([1]);m.endTurn();
+  assert.equal(target.status,'sunk','the seeded bomber strike sinks the four-HP destroyer before cannon-and-torpedo resolution');
+  assert.equal(attacker.torpedoes,2,'the reserved torpedo is returned when its target was sunk by the earlier air phase');
+  assert.equal(attacker.action,1);assert.equal(attacker.firedThisTurn,false);
+  assert.equal(m.takeResolvedCombatEvents().filter(event=>event.attackerId===attacker.instanceId).length,0,'no impossible shot or event is generated against a sunk ship');
+  assert.match(attacker.notice??'',/取消/);
+});
+
+check('Legacy V2 saves migrate to version 26 and previously submitted orders resolve once',()=>{
   const m=scene(),current:any=m.save();
   for(const version of [16,17]){
     const raw=JSON.parse(JSON.stringify(current));raw.version=version;delete raw.contacts;
     if(version===16){for(const unit of raw.units)delete unit.firedThisTurn;for(const port of raw.campaign.ports){delete port.occupationOwnerId;delete port.occupationProgress;}}
-    const restored=Match.load(raw,assets);assert.equal(restored.save().version,25);assert(restored.units.every(u=>u.firedThisTurn===false));
+    const restored=Match.load(raw,assets);assert.equal(restored.save().version,26);assert(restored.units.every(u=>u.firedThisTurn===false));
   }
   const legacy18=JSON.parse(JSON.stringify(current));legacy18.version=18;legacy18.activeIndex=1;
   delete legacy18.phase;delete legacy18.initiativeIndex;delete legacy18.phaseSubmitted;delete legacy18.movementOrders;
@@ -374,11 +582,11 @@ check('Legacy V2 saves migrate to version 25 and previously submitted orders res
   assert.equal(restored18.phase,'aviation');assert.deepEqual(restored18.phaseSubmitted,[1]);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   restored18.endTurn();assert.equal(restored18.phase,'aviation');assert.equal(restored18.round,2);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   const legacy19=JSON.parse(JSON.stringify(current));legacy19.version=19;legacy19.phase='combat';delete legacy19.combatOrders;
-  assert.equal(Match.load(legacy19,assets).save().version,25);
+  assert.equal(Match.load(legacy19,assets).save().version,26);
   const legacy20=JSON.parse(JSON.stringify(current));legacy20.version=20;legacy20.phase='combat';delete legacy20.aviation.decks;
-  assert.equal(Match.load(legacy20,assets).save().version,25);
+  assert.equal(Match.load(legacy20,assets).save().version,26);
   const legacy21=JSON.parse(JSON.stringify(current));legacy21.version=21;legacy21.phase='combat';delete legacy21.aviationOrders;
-  assert.equal(Match.load(legacy21,assets).save().version,25);
+  assert.equal(Match.load(legacy21,assets).save().version,26);
   const oldTurn=scene(),oldUnit=oldTurn.unit('team-1-lafei'),oldDestination=oldTurn.reachable(oldUnit.instanceId).find(cell=>cell.col!==oldUnit.col||cell.row!==oldUnit.row)!;
   oldTurn.issueMove(oldUnit.instanceId,oldDestination);const submitted:any=oldTurn.save();submitted.version=23;submitted.activeIndex=1;submitted.phaseSubmitted=[1];
   const migrated=Match.load(submitted,assets);assert.equal(migrated.active.id,2);assert.equal(migrated.round,1);assert.deepEqual(migrated.phaseSubmitted,[1]);
@@ -399,7 +607,7 @@ check('Legacy V2 saves migrate to version 25 and previously submitted orders res
   assert(shallowRoute,'the starting area should include a shallow-water route');oldMovement.issueMove(battleship.instanceId,shallowRoute.cells.at(-1)!);
   const version24:any=oldMovement.save();version24.version=24;
   for(const order of version24.movementOrders)order.costs=order.cells.map((cell:any,index:number)=>index===0?0:oldMovement.world.at(cell)===Terrain.Shallow&&!['DD','CL'].includes(battleship.asset.ship_type.code)?2:1);
-  const migratedMovement=Match.load(version24,assets);assert.equal(migratedMovement.save().version,25);assert(migratedMovement.movementOrders[0].costs.slice(1).every(cost=>cost===1),'old shallow-water surcharges should be removed during migration');
+  const migratedMovement=Match.load(version24,assets);assert.equal(migratedMovement.save().version,26);assert(migratedMovement.movementOrders[0].costs.slice(1).every(cost=>cost===1),'old shallow-water surcharges should be removed during migration');
   const oldLaunch=scene(),oldCarrier=oldLaunch.unit('team-1-qiye');orderCarrierLaunch(oldLaunch,oldCarrier.instanceId);
   const version24Launch:any=oldLaunch.save();version24Launch.version=24;version24Launch.units.find((unit:any)=>unit.instanceId===oldCarrier.instanceId).action=1;
   const migratedLaunch=Match.load(version24Launch,assets);assert.equal(migratedLaunch.unit(oldCarrier.instanceId).action,0,'an older queued launch should reserve its action after migration');

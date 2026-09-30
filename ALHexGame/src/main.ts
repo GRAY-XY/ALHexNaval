@@ -10,7 +10,7 @@ import {CampaignUI} from './campaign-ui.ts';
 import {SHIP_VISION,AIR_VISION} from './fog.ts';
 import { ShipRenderer } from './ships.ts';
 import { AircraftRenderer, loadCombatTextures } from './aircraft-renderer.ts';
-import { AIR_NATIONS, AIR_ROLES, CARRIER_STATS, FIGHTER_RANGE, advanceAviation, aircraftActionLimit, aircraftActionText, aircraftPosition, cancelCarrierLaunch, commandSquadron, launchPreview, launchWing, nationFor, orderCarrierLaunch, planeName, planeTexture, planSquadronTranslation, squadronName, type Squadron } from './aircraft.ts';
+import { AIR_NATIONS, AIR_ROLES, CARRIER_STATS, FIGHTER_RANGE, advanceAviation, aircraftActionLimit, aircraftActionText, aircraftPosition, cancelCarrierLaunch, cancelSquadronOrder, commandSquadron, launchPreview, launchWing, nationFor, orderCarrierLaunch, planeName, planeTexture, planSquadronTranslation, squadronName, type Squadron } from './aircraft.ts';
 import { arrivalAnchor, arrivalTranslation } from './arrival.ts';
 import { Minimap } from './minimap.ts';
 import { COMBAT_STATS, Match, TEAM_COLORS, type CombatEvent, type MatchUnit, type MoveEvent } from './match.ts';
@@ -238,8 +238,9 @@ class NavalMap {
       weapons.append(b);
     }
     const defend = document.createElement('button'); defend.className = 'defend'; defend.textContent = unit.guard ? '◆ 警戒姿态生效' : '◇ 进入警戒姿态';
-    defend.disabled = !!this.match.result||!canCommand||this.match.rulesetId==='naval-v2'&&this.match.phase!=='aviation' || unit.status !== 'ready' || !unit.action; defend.onclick = () => this.command(() => { this.match.defend(unit.instanceId); this.selectedWeapon = undefined; return []; },this.match.rulesetId==='naval-v2'?'已进入警戒姿态：最多移动1格，对舰射击 -1，敌方舰炮命中 -1，对空 +1':'已进入防御姿态：每次受到的伤害减少 2 点'); weapons.append(defend);
+    defend.disabled = !!this.match.result||!canCommand||this.match.rulesetId==='naval-v2'&&this.match.phase!=='aviation' || unit.status !== 'ready' || !unit.action; defend.onclick = () => this.command(() => { this.match.defend(unit.instanceId); this.selectedWeapon = undefined; return []; },this.match.rulesetId==='naval-v2'?'已进入警戒姿态：最多移动1格，敌方舰炮命中 -1，本舰对空 +1':'已进入防御姿态：每次受到的伤害减少 2 点'); weapons.append(defend);
     face.disabled = !!this.match.result||!canCommand||unit.status === 'sunk'; panel.append(head, health, coords, status, weapons, actions, face);
+    if(queuedAttack&&canCommand){const cancel=document.createElement('button');cancel.textContent='取消攻击计划';cancel.disabled=!!this.match.result;cancel.onclick=()=>this.command(()=>{this.match.cancelAttack(unit.instanceId);this.selectedWeapon=undefined;return[];},'已取消攻击计划，行动和鱼雷已返还，可重新选择目标');panel.append(cancel);}
     if(planned&&canCommand){const cancel=document.createElement('button');cancel.textContent='取消航线';cancel.disabled=!!this.match.result;cancel.onclick=()=>this.command(()=>{this.match.cancelMove(unit.instanceId);return[];});panel.append(cancel);}
     const carrier = CARRIER_STATS[unit.asset.ship_type.code];
     if (carrier) {
@@ -289,22 +290,26 @@ class NavalMap {
     for(let i=0;i<10;i++)actionMeter.append(element('span',i*aircraftActionLimit(squadron)/10<squadron.actionPoints?'filled':''));
     action.append(actionHead,actionMeter,element('p','ap-hint',squadron.actionPoints===0?'行动力已耗尽 · 自动返航 · 本次出动不恢复':'沿六角格移动 · 每格1点 · 耗尽返航 · 不自动恢复'));
     const info = element('div','flight-details'); info.append(element('p','',`存续飞机 ${Math.ceil(squadron.hp/2)} / ${squadron.planes} · 机体 ${squadron.hp}/${squadron.maxHp}`),
-      element('p','',`续航 ${squadron.fuelTurns} 回合 · 弹药 ${squadron.ammo} / 3 · 攻击间隔 ${Math.ceil(squadron.cooldown)} 秒`),element('p','',`母舰 ${this.match.unit(squadron.carrierId).asset.name} · ${this.airOrderName(squadron)}`));
+      element('p','',`续航 ${squadron.fuelTurns} 回合 · 弹药 ${squadron.ammo} / 3 · ${this.match.rulesetId==='naval-v2'?(squadron.cooldown?'本轮已交战':'本轮未交战'):`攻击间隔 ${Math.ceil(squadron.cooldown)} 秒`}`),element('p','',`母舰 ${this.match.unit(squadron.carrierId).asset.name} · ${this.airOrderName(squadron)}`));
+    if(squadron.ownerId===this.match.active.id&&squadron.targetId){const targetShip=this.units.find(unit=>unit.instanceId===squadron.targetId),targetAir=this.match.aviation.squadrons.find(unit=>unit.id===squadron.targetId);if(targetShip||targetAir)info.append(element('p','',`计划目标：${targetShip?.asset.name??squadronName(targetAir!)}`));}
     const recall = document.createElement('button'); recall.id = 'recall-air'; recall.textContent = '召回中队';recall.disabled=!!this.match.result||this.match.active.controller==='ai'||this.match.rulesetId==='naval-v2'&&this.match.phase!=='aviation'; recall.onclick = () => this.airCommand(squadron.id);
     const carrier = document.createElement('button'); carrier.textContent = '定位母舰'; carrier.onclick = () => this.select(squadron.carrierId,true);
     const cell = worldToCell(squadron); info.append(element('p','',`当前位置 ${cell.col}, ${cell.row}`));
     if (squadron.destination) { const target=worldToCell(squadron.destination);info.append(element('p','',`目标格 ${target.col}, ${target.row}`)); }
     if (squadron.flight) info.append(element('p','',`飞往相邻格 ${squadron.flight.next.col}, ${squadron.flight.next.row}`));
     if (squadron.role === 'fighter') info.append(element('p','',`自动拦截：周围${FIGHTER_RANGE}格内敌机 · 移动和待命时生效 · 返航时停火`));
-    panel.append(head,action,info,element('p','air-help',this.match.rulesetId==='naval-v2'?'本方回合内可同时指挥舰船与舰载机。右键格子：沿相邻六角格实时飞行，抵达格心；右键敌舰：持续攻击；战斗机可右键敌机拦截。每移动一格消耗1点本中队行动力，飞机可越过岛屿。':'右键格子：沿相邻六角格实时飞行，抵达格心；右键敌舰：持续攻击；战斗机可右键敌机拦截。每移动一格消耗1点本中队行动力，飞机可越过岛屿。'),recall,carrier);
+    panel.append(head,action,info,element('p','air-help',this.match.rulesetId==='naval-v2'?'本方回合右键格子或敌方目标安排中队命令，点击实施后结算；每次本方行动最多飞行3格（战斗机4格），每格消耗1点行动力，对舰最多攻击一次。右键可改令，实施前可清除计划。':'右键格子：沿相邻六角格实时飞行，抵达格心；右键敌舰：持续攻击；战斗机可右键敌机拦截。每移动一格消耗1点本中队行动力，飞机可越过岛屿。'),recall,carrier);
+    if(this.match.rulesetId==='naval-v2'&&squadron.order!=='patrol'&&squadron.ownerId===this.match.active.id){const clear=document.createElement('button');clear.textContent='清除航空计划';clear.disabled=!!this.match.result||this.match.active.controller==='ai';clear.onclick=()=>this.airCommand(squadron.id,undefined,undefined,true);panel.append(clear);}
   }
   private airOrderName(s: Squadron): string { return ({ patrol: '空中待命', move: '前往目标', attack: '攻击目标', return: '返航' })[s.order]; }
   private renderAirControls(): void {
-    $('air-pause').textContent = this.airPaused ? '▶ 继续飞行' : 'Ⅱ 暂停飞行'; $('air-pause').setAttribute('aria-pressed',String(this.airPaused));
+    const button=$('air-pause') as HTMLButtonElement;
+    if(this.match.rulesetId==='naval-v2'){button.textContent='航空命令在实施时结算';button.disabled=true;button.setAttribute('aria-pressed','true');return;}
+    button.disabled=false;button.textContent = this.airPaused ? '▶ 继续飞行' : 'Ⅱ 暂停飞行'; button.setAttribute('aria-pressed',String(this.airPaused));
   }
-  private airCommand(id: string, point?: Point, targetId?: string): void {
+  private airCommand(id: string, point?: Point, targetId?: string,clear=false): void {
     if(this.match.active.controller==='ai'){this.notify('AI正在指挥当前势力，请等待自动交接回合');return;}
-    try { commandSquadron(this.match,id,point,targetId); this.renderAirControls(); this.renderSelection(); this.dirty = true; this.persist(); }
+    try { if(clear)cancelSquadronOrder(this.match,id);else commandSquadron(this.match,id,point,targetId); this.renderAirControls(); this.renderSelection(); this.dirty = true; this.persist(); }
     catch (error) { this.notify(error instanceof Error ? error.message : String(error)); }
   }
   private notify(message: string): void {
@@ -318,7 +323,18 @@ class NavalMap {
     if(visible){$('ai-turn-title').textContent=`${this.match.active.name} · AI行动中`;$('ai-turn-detail').textContent=detail??'海图与行动过程已隐藏，交接回玩家后重新显示';}
   }
   private advanceTurn():MoveEvent[]{
-    const events=this.match.endTurn();for(const combat of this.match.takeResolvedCombatEvents())this.ships.playCombat(combat,!this.animationsPaused);
+    const combatOwners=new Map<string,number>([
+      ...this.match.units.map(unit=>[unit.instanceId,unit.ownerId] as const),
+      ...this.match.aviation.squadrons.map(squadron=>[squadron.id,squadron.ownerId] as const),
+    ]),events=this.match.endTurn(),viewerId=this.match.active.id;
+    for(const combat of this.match.takeResolvedCombatEvents()){
+      if(combatOwners.get(combat.attackerId)!==viewerId&&combatOwners.get(combat.targetId)!==viewerId)continue;
+      if(combat.targetIsAircraft)this.notify(`${combat.attackerLabel??combat.attackerId}拦截${combat.targetLabel??'敌机'} · 造成 ${combat.damage} 点机体伤害`);
+      else{this.ships.playCombat(combat,!this.animationsPaused);if(combat.aa){const result=combat.aa.dice.length?`防空骰 ${combat.aa.dice.join('+')}`:'无防空骰';this.notify(`${this.match.unit(combat.targetId).asset.name}防空 · ${result} · 击落 ${combat.aa.aircraftLost} 架 · 压制 ${combat.aa.suppression} · 空袭伤害 ${combat.damage}`);}
+    }
+    }
+    const visibleAirMoves=this.match.takeResolvedAviationMoves().filter(move=>combatOwners.get(move.id)===viewerId||this.match.canSee(viewerId,worldToCell(move.from))&&this.match.canSee(viewerId,worldToCell(move.to)));
+    this.aircraft.move(visibleAirMoves,!this.animationsPaused);
     for(const carrierId of this.match.takeResolvedAviationLaunches())this.ships.playAction(carrierId,'skill',!this.animationsPaused);
     const next=this.match.nextPending()??this.units.find(u=>u.ownerId===this.match.active.id&&u.status!=='sunk')??this.units.find(u=>u.ownerId===this.match.active.id);
     this.chosen.clear();this.chosenAir.clear();this.selectedWeapon=undefined;this.selectedAir=undefined;this.selectedPort=undefined;this.selected=next?.instanceId;
@@ -585,7 +601,7 @@ class NavalMap {
       this.routePreview = undefined; const hoveredUnit = this.hovered && this.units.find(item =>this.match.unitVisible(item)&& item.status !== 'sunk' && item.col === this.hovered!.col && item.row === this.hovered!.row && item.instanceId !== unit.instanceId);
       if (!hoveredUnit) $('route-info').textContent = `${this.match.weapons(unit).find(w => w.id === this.selectedWeapon)?.name ?? '武器'}瞄准中 · 左键点击敌舰`;
       else { const preview = this.match.attackPreview(unit.instanceId,hoveredUnit.instanceId,this.selectedWeapon); $('route-info').textContent = preview.valid ? this.match.rulesetId==='naval-v2'
-        ? `命中率 ${preview.hitChance}% · 命中造成 ${preview.damage} 点伤害 · ${hoveredUnit.asset.name} 当前状态 ${({intact:'完好',damaged:'受损',critical:'危急'} as const)[this.match.contactsFor(unit.ownerId).find(c=>c.key===hoveredUnit.instanceId)?.hpBand??'intact']}`
+        ? `命中率 ${preview.hitChance}% · 2d6 ${preview.hitModifier!>=0?'+':''}${preview.hitModifier} ≥ ${preview.hitTarget}（${preview.modifiers?.length?preview.modifiers.map(item=>`${item.value>0?'+':''}${item.value} ${item.label}`).join('、'):'无修正'}）· 命中伤害 ${preview.damage} · 目标${({intact:'完好',damaged:'受损',critical:'危急'} as const)[this.match.contactsFor(unit.ownerId).find(c=>c.key===hoveredUnit.instanceId)?.hpBand??'intact']}`
         : `预计造成 ${preview.damage} 点伤害 · ${hoveredUnit.asset.name} ${hoveredUnit.hp} → ${preview.hpAfter}${preview.sunk ? ' · 将被击沉' : ''}` : preview.reason!; }
       return;
     }
@@ -833,11 +849,14 @@ class NavalMap {
     if (this.keyState.has('w') || this.keyState.has('arrowup')) dy += 430 * delta;
     if (this.keyState.has('s') || this.keyState.has('arrowdown')) dy -= 430 * delta;
     if (dx || dy) { this.camera.pan(dx, dy); this.dirty = true; }
-    if (!this.airPaused && !this.match.result&&this.match.aviation.squadrons.length) {
+    if (!this.airPaused && this.match.rulesetId!=='naval-v2'&&!this.match.result&&this.match.aviation.squadrons.length) {
       // Catch up ordinary low-FPS frames in small simulation steps, without replaying a long suspended tab.
       const before = this.match.aviation.squadrons.length, flightSeconds = Math.min(1,elapsedSeconds), events = advanceAviation(this.match,elapsedSeconds);
       const countChanged = before !== this.match.aviation.squadrons.length;
-      for (const event of events) if(this.match.unitVisible(this.match.unit(event.targetId)))this.ships.playCombat(event,!this.animationsPaused);
+      for (const event of events) if(this.match.unitVisible(this.match.unit(event.targetId))){
+        this.ships.playCombat(event,!this.animationsPaused);
+        if(event.aa){const result=event.aa.dice.length?`防空骰 ${event.aa.dice.join('+')}`:'无防空骰';this.notify(`${this.match.unit(event.targetId).asset.name}防空 · ${result} · 击落 ${event.aa.aircraftLost} 架 · 压制 ${event.aa.suppression} · 空袭伤害 ${event.damage}`);}
+      }
       if (events.length) { this.revision++; this.renderTurn(); }
       this.dirty = true; this.airUIElapsed += flightSeconds;
       if (this.airUIElapsed >= 1 || events.length || countChanged) { this.airUIElapsed = 0; this.pruneSelection();this.renderAirControls();this.renderSelectionCount(); if (this.chosenAir.size || events.length || countChanged) this.renderSelection(); this.persist(); }
