@@ -138,14 +138,14 @@ export function orderCarrierLaunch(match:Match,carrierId:string):number[]{
   match.assertPlayable();
   if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('只能在本方回合安排舰载机起飞');
   const preview=launchPreview(match,carrierId);if(!preview.valid)throw Error(preview.reason);
-  const order:CarrierLaunchOrder={ownerId:match.active.id,carrierId,slots:[...preview.slots]};match.aviationOrders.push(order);match.campaignRevision++;
+  const order:CarrierLaunchOrder={ownerId:match.active.id,carrierId,slots:[...preview.slots]};match.aviationOrders.push(order);match.unit(carrierId).action=0;match.campaignRevision++;
   return [...order.slots];
 }
 export function cancelCarrierLaunch(match:Match,carrierId:string):void{
   match.assertPlayable();
   if(match.rulesetId!=='naval-v2'||match.phase!=='aviation')throw Error('起飞计划只能在本方规划时撤回');
   const index=match.aviationOrders.findIndex(order=>order.carrierId===carrierId&&order.ownerId===match.active.id);if(index<0)throw Error('本舰没有可撤回的起飞计划');
-  match.aviationOrders.splice(index,1);match.campaignRevision++;
+  match.aviationOrders.splice(index,1);match.unit(carrierId).action=1;match.campaignRevision++;
 }
 function launchWingImmediately(match: Match, carrierId: string): Squadron[] {
   const preview = launchPreview(match,carrierId); if (!preview.valid) throw Error(preview.reason);
@@ -169,9 +169,10 @@ export function resolveQueuedCarrierLaunch(match:Match,order:CarrierLaunchOrder)
   const carrier=match.unit(order.carrierId);if(match.rulesetId!=='naval-v2'||carrier.ownerId!==order.ownerId)throw Error('起飞计划所有权无效');
   const activeIndex=match.activeIndex;match.activeIndex=order.ownerId-1;
   try{
+    carrier.action=1;
     const preview=launchPreview(match,order.carrierId);if(!preview.valid||preview.slots.length!==order.slots.length||preview.slots.some((slot,index)=>slot!==order.slots[index]))throw Error(preview.reason||'起飞计划与当前甲板状态不一致');
     return launchWingImmediately(match,order.carrierId);
-  }finally{match.activeIndex=activeIndex;}
+  }catch(error){carrier.action=0;throw error;}finally{match.activeIndex=activeIndex;}
 }
 export function commandSquadron(match: Match, id: string, destination?: Point, targetId?: string): void {
   match.assertPlayable();
@@ -305,7 +306,7 @@ export function advanceAviation(match: Match, elapsedSeconds: number): CombatEve
   return events;
 }
 
-export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24 = 24): AviationState {
+export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25 = 25): AviationState {
   const state = input as AviationState & { nations?: Record<string,AirNation> };
   const migrateCountry=version===5, migrateEndurance=version<7;
   const fail = (): never => { throw Error('存档航空数据无效，当前战局未改变'); };

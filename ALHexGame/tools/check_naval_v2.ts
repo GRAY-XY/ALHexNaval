@@ -6,7 +6,7 @@ import {beginAviationRound,cancelCarrierLaunch,launchPreview,orderCarrierLaunch,
 import {cellCenter,hexDistance,hexLine,neighbors} from '../src/hex.ts';
 import {rollDieV2} from '../src/naval-rules-v2.ts';
 import {HexWorld} from '../src/world.ts';
-import {type Cell,type Roster} from '../src/types.ts';
+import {Terrain,type Cell,type Roster} from '../src/types.ts';
 
 const assets=(JSON.parse(readFileSync('data/roster.json','utf8')) as Roster).units;
 const checks:string[]=[];
@@ -47,7 +47,8 @@ check('The 5x10 test arena gives both sides one ship of every class and round-tr
     assert.equal(new Set(fleet.map(unit=>`${unit.col},${unit.row}`)).size,6);
   }
   assert.equal(new Set(m.units.map(unit=>`${unit.col},${unit.row}`)).size,12);
-  const saved=m.save();assert.equal(saved.version,24);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
+  assert(m.units.filter(unit=>unit.ownerId===1).every(unit=>m.reachable(unit.instanceId).some(cell=>cell.col!==unit.col||cell.row!==unit.row)),'the test fleet should not start boxed in by friendly ships');
+  const saved=m.save();assert.equal(saved.version,25);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
   assert.deepEqual(Match.load(saved,assets).save(),saved);
   assert.throws(()=>new Match(world,assets,3),/只支持双方/);
 });
@@ -108,7 +109,7 @@ check('V2 sight uses each ship profile while classic sight remains six hexes',()
   m.rulesetId='classic-v1';m.refreshVision();assert.equal(m.fog.state(1,seaCellAtDistance(m,origin,5)),2);
 });
 
-check('V2 executes the current side movement before handing over; the next side cannot enter its occupied cell',()=>{
+check('V2 executes one side move before handover and stops short of an occupied goal',()=>{
   const m=scene(),friendly=m.unit('team-1-lafei'),enemy=m.unit('team-2-lafei');
   m.units.filter(u=>u!==friendly&&u!==enemy).forEach(sink);
   const {target,starts}=seaConflictCells(m);
@@ -118,9 +119,11 @@ check('V2 executes the current side movement before handing over; the next side 
   assert.deepEqual(m.issueMove(friendly.instanceId,target),[]);assert.deepEqual({col:friendly.col,row:friendly.row},friendStart);
   const events=m.endTurn();assert.equal(m.active.id,2);assert.equal(events.length,1);assert.deepEqual({col:friendly.col,row:friendly.row},target);
   assert.deepEqual(m.reachable(enemy.instanceId).some(cell=>cell.col===target.col&&cell.row===target.row),false);
-  assert.throws(()=>m.issueMove(enemy.instanceId,target),/无法抵达|阻挡/);assert.deepEqual({col:enemy.col,row:enemy.row},enemyStart);
+  const enemyRoute=m.route(enemy.instanceId,target);assert(enemyRoute);const enemyDestination=enemyRoute.cells.at(-1)!;assert.notDeepEqual(enemyDestination,target);
+  m.issueMove(enemy.instanceId,target);assert.deepEqual({col:enemy.col,row:enemy.row},enemyStart);
+  const enemyEvents=m.endTurn();assert.equal(m.round,2);assert.deepEqual({col:enemy.col,row:enemy.row},enemyDestination);assert(enemyEvents.some(event=>event.instanceId===enemy.instanceId));
   m.endTurn();assert.equal(m.phase,'aviation');assert.equal(m.round,2);
-  assert.deepEqual({col:friendly.col,row:friendly.row},target);assert.deepEqual({col:enemy.col,row:enemy.row},enemyStart);
+  assert.deepEqual({col:friendly.col,row:friendly.row},target);
   assert.equal(friendly.movementUsed,0);assert.equal(enemy.movementUsed,0);
 });
 
@@ -130,6 +133,7 @@ check('V2 combines carrier launch and ship movement in one side turn, then immed
   assert(destination,'the destroyer should have a reachable move');
   const start={col:mover.col,row:mover.row};
   assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);
+  assert.equal(carrier.action,0,'the launch command reserves this carrier action');
   m.issueMove(mover.instanceId,destination);
   assert.equal(m.phase,'aviation');assert.deepEqual({col:mover.col,row:mover.row},start);assert.equal(m.aviation.squadrons.length,0);
   const pending=m.save();assert.deepEqual(Match.load(pending,assets).save(),pending);
@@ -153,6 +157,47 @@ check('V2 planned routes survive a save and resolve on that side turn before han
   m.endTurn();assert.equal(m.round,2);assert.equal(m.movementUsed(mover),0);assert.equal(mover.movedThisTurn,false);assert.deepEqual(m.phaseSubmitted,[]);
 });
 
+check('A planned ship can revise or cancel its route before executing one move',()=>{
+  const m=scene(),mover=m.unit('team-1-lafei'),other=m.unit('team-2-lafei');
+  m.units.filter(unit=>unit!==mover&&unit!==other).forEach(sink);m.refreshVision();
+  const start={col:mover.col,row:mover.row},destinations=m.reachable(mover.instanceId).filter(cell=>cell.col!==mover.col||cell.row!==mover.row);
+  assert(destinations.length>=2,'the ship should have at least two reachable destinations');
+  const [first,second]=[destinations[0],destinations[destinations.length-1]];
+  m.issueMove(mover.instanceId,first);assert.equal(m.movementOrders.length,1);assert(mover.movedThisTurn);
+  assert(m.reachable(mover.instanceId).some(cell=>cell.col===second.col&&cell.row===second.row),'a planned ship should still show legal destinations for replanning');
+  m.issueMove(mover.instanceId,second);assert.deepEqual(m.plannedMove(mover.instanceId),second);assert.equal(m.movementOrders.length,1);
+  assert.deepEqual({col:mover.col,row:mover.row},start,'editing the route must not move the ship before handover');
+  assert.throws(()=>m.issueMove(mover.instanceId,{col:128,row:128}));assert.deepEqual(m.plannedMove(mover.instanceId),second,'an invalid replacement must preserve the previous route');
+  m.cancelMove(mover.instanceId);assert.equal(m.plannedMove(mover.instanceId),undefined);assert.equal(mover.movedThisTurn,false);
+  m.issueMove(mover.instanceId,second);const events=m.endTurn();
+  assert.equal(m.active.id,2);assert.deepEqual({col:mover.col,row:mover.row},second);assert.equal(events.filter(event=>event.instanceId===mover.instanceId).length,1);
+});
+
+check('A remote or uncharted click plans the closest reachable move toward it',()=>{
+  const m=scene(),mover=m.unit('team-1-lafei');m.units.filter(unit=>unit!==mover&&unit.ownerId===1).forEach(sink);m.refreshVision();
+  const target=seaCellAtDistance(m,mover,9);assert.equal(m.isExplored(1,target),false,'the distant destination should be uncharted');
+  const route=m.route(mover.instanceId,target);assert(route&&route.cost>0&&route.cost<=m.movementLimit(mover));
+  const endpoint=route.cells.at(-1)!;assert(m.isExplored(1,endpoint));assert(hexDistance(endpoint,target)<hexDistance(mover,target));
+  m.issueMove(mover.instanceId,target);assert.deepEqual(m.plannedMove(mover.instanceId),endpoint,'the order should store the actual one-turn destination');
+});
+
+check('All V2 sea terrain costs one movement point, including shallow water',()=>{
+  for(const id of ['team-1-lafei','team-1-hailunna','team-1-gaoxiong','team-1-yanzhan','team-1-qiye','team-1-dujiaoshou']){
+    const world=new HexWorld(5,10,'test-5x10'),m=new Match(world,assets,2),ship=m.unit(id);world.terrain.fill(Terrain.Shallow);
+    m.units.filter(unit=>unit!==ship).forEach(sink);m.refreshVision();
+    const route=m.reachable(ship.instanceId).map(target=>m.route(ship.instanceId,target)).find(candidate=>candidate&&candidate.cost>0);
+    assert(route,`${ship.asset.ship_type.code} should have a reachable shallow-water route`);
+    assert(route.cost<=m.movementLimit(ship));assert.equal(route.cost,route.cells.length-1);assert(route.costs.every((cost,index)=>cost===Number(index>0)));
+  }
+});
+
+check('Each side acts once per turn and port supply is automatic at round rollover',()=>{
+  const m=scene(),before=m.teams.map(team=>team.supply);
+  m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,1);assert.deepEqual(m.teams.map(team=>team.supply),before);
+  m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,2);
+  for(const team of m.teams){const ports=m.ports.filter(port=>port.ownerId===team.id).length;assert.equal(team.supply,Math.min(8,before[team.id-1]+ports));}
+});
+
 check('A planned route and ship attack execute together before the next side acts',()=>{
   const m=scene(),attacker=m.unit('team-1-bisimai'),target=m.unit('team-2-lafei');
   m.units.filter(unit=>unit!==attacker&&unit!==target&&unit.instanceId!=='team-2-bisimai').forEach(sink);
@@ -168,17 +213,18 @@ check('A planned route and ship attack execute together before the next side act
   assert.equal(m.takeResolvedCombatEvents().length,1,'the queued attack resolves in the same side turn as movement');
 });
 
-check('Group movement shows one central route and cancelling its arrow clears the whole group',()=>{
+check('Group movement gives ships separate routes while showing one representative arrow',()=>{
   const m=scene(),first=m.unit('team-1-lafei'),second=m.unit('team-1-bisimai');
   m.units.filter(unit=>unit!==first&&unit!==second).forEach(sink);
   const origin={col:first.col,row:first.row},target=seaCellAtDistance(m,origin,3);
   const occupied=new Set(m.units.filter(unit=>unit.status!=='sunk'&&unit!==first&&unit!==second).map(unit=>`${unit.col},${unit.row}`));
-  const starts=neighbors(target).filter(cell=>m.world.isSea(cell)&&!occupied.has(`${cell.col},${cell.row}`));
-  assert(starts.length>=2,'nearby water should fit two ships');
+  const starts=[seaCellAtDistance(m,target,3,occupied)];occupied.add(`${starts[0].col},${starts[0].row}`);starts.push(seaCellAtDistance(m,target,3,occupied));
   Object.assign(first,starts[0],{status:'ready',hp:first.maxHp,movedThisTurn:false,movementUsed:0});
   Object.assign(second,starts[1],{status:'ready',hp:second.maxHp,movedThisTurn:false,movementUsed:0});m.refreshVision();
   const issued=m.issueGroupMove([first.instanceId,second.instanceId],target);
   assert.equal(issued.assigned,2);assert.equal(m.movementOrders.length,2);
+  assert.notDeepEqual(m.movementOrders[0].target,m.movementOrders[1].target,'each ship gets its own unoccupied destination');
+  for(const order of m.movementOrders)assert(hexDistance(order.target,target)<hexDistance(m.unit(order.unitId),target),'each ship should move closer to the shared destination');
   const [a,b]=m.movementOrders;assert(a.groupId&&a.groupId===b.groupId);assert.equal([a,b].filter(order=>order.groupAnchor).length,1);
   const shown=m.displayMovementOrders(1);assert.equal(shown.length,1);assert.equal(shown[0].groupAnchor,true);
   assert.equal(m.displayMovementOrders(2).length,0,'the opposing side cannot see the active side planning route');
@@ -186,6 +232,26 @@ check('Group movement shows one central route and cancelling its arrow clears th
   assert.equal(shown[0].unitId,expected.instanceId,'the single displayed route belongs to the ship closest to the formation center');
   const pending=m.save();assert.deepEqual(Match.load(pending,assets).save(),pending,'group routes retain their single visible anchor in saves');
   m.cancelMove(shown[0].unitId);assert.equal(m.movementOrders.length,0);assert(!first.movedThisTurn&&!second.movedThisTurn);
+});
+
+check('Replanning one ship from a group keeps its teammates routes as individual orders',()=>{
+  const m=scene(),first=m.unit('team-1-lafei'),second=m.unit('team-1-bisimai'),origin={col:first.col,row:first.row},target=seaCellAtDistance(m,origin,3);
+  m.units.filter(unit=>unit!==first&&unit!==second).forEach(sink);
+  const occupied=new Set(m.units.filter(unit=>unit.status!=='sunk'&&unit!==first&&unit!==second).map(unit=>`${unit.col},${unit.row}`));
+  const starts=[seaCellAtDistance(m,target,3,occupied)];occupied.add(`${starts[0].col},${starts[0].row}`);starts.push(seaCellAtDistance(m,target,3,occupied));
+  Object.assign(first,starts[0],{status:'ready',hp:first.maxHp,movedThisTurn:false,movementUsed:0});
+  Object.assign(second,starts[1],{status:'ready',hp:second.maxHp,movedThisTurn:false,movementUsed:0});m.refreshVision();
+  assert.equal(m.issueGroupMove([first.instanceId,second.instanceId],target).assigned,2);
+  const anchorOrder=m.movementOrders.find(order=>order.groupAnchor)!;
+  const otherOrder=m.movementOrders.find(order=>order.unitId!==anchorOrder.unitId)!;
+  const anchor=m.unit(anchorOrder.unitId),other=m.unit(otherOrder.unitId),otherTarget={...otherOrder.target};
+  const destination=m.reachable(anchor.instanceId).find(cell=>(cell.col!==anchor.col||cell.row!==anchor.row)&&(cell.col!==otherTarget.col||cell.row!==otherTarget.row));
+  assert(destination,'the group anchor should have an alternate route');
+  m.issueMove(anchor.instanceId,destination);
+  assert.deepEqual(m.plannedMove(anchor.instanceId),destination);assert.deepEqual(m.plannedMove(other.instanceId),otherTarget);
+  assert.equal(m.movementOrders.length,2);assert(m.movementOrders.every(order=>!order.groupId));
+  assert.deepEqual(Match.load(m.save(),assets).save(),m.save(),'individualized group routes should remain valid in saves');
+  m.cancelMove(anchor.instanceId);assert.equal(m.movementOrders.length,1);assert.deepEqual(m.plannedMove(other.instanceId),otherTarget);assert(other.movedThisTurn);
 });
 
 check('V2 water attacks resolve for each side on its own turn and remain deterministic across saves',()=>{
@@ -244,8 +310,8 @@ check('V2 carrier launch resolves on its side turn and recovery preserves a full
   const m=scene(),carrier=m.unit('team-1-qiye');m.phase='aviation';const preview=launchPreview(m,carrier.instanceId);
   assert.deepEqual(preview.slots,[0,1]);assert.equal(preview.operationsLimit,2);assert.equal(preview.operationsUsed,0);
   assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);assert.equal(m.aviation.squadrons.length,0,'aircraft appear after this side implements its orders');
-  cancelCarrierLaunch(m,carrier.instanceId);assert(launchPreview(m,carrier.instanceId).valid,'launch orders can be withdrawn before phase submission');orderCarrierLaunch(m,carrier.instanceId);
-  const pending=m.save();assert.equal(pending.version,24);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
+  assert.equal(carrier.action,0);cancelCarrierLaunch(m,carrier.instanceId);assert.equal(carrier.action,1);assert(launchPreview(m,carrier.instanceId).valid,'launch orders can be withdrawn before phase submission');orderCarrierLaunch(m,carrier.instanceId);
+  const pending=m.save();assert.equal(pending.version,25);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
   m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,1);const launched=m.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId),deck=m.aviation.decks[carrier.instanceId];assert.deepEqual(launched.map(s=>s.role),['fighter','bomber']);
   assert.deepEqual(deck.squadrons.map(s=>s.status),['airborne','airborne','reserve']);assert.equal(deck.operationsUsed,2,'launches spend this carrier turn deck operations');
   m.endTurn();assert.equal(m.phase,'aviation');assert.equal(m.round,2);assert.equal(deck.operationsUsed,0,'deck operations reset at the global round boundary');
@@ -294,12 +360,12 @@ check('V2 alert posture no longer applies the legacy flat two-damage air reducti
   assert.equal(m.airDamage(bomber,target.instanceId).damage,2);
 });
 
-check('Legacy V2 saves migrate to version 24 and previously submitted orders resolve once',()=>{
+check('Legacy V2 saves migrate to version 25 and previously submitted orders resolve once',()=>{
   const m=scene(),current:any=m.save();
   for(const version of [16,17]){
     const raw=JSON.parse(JSON.stringify(current));raw.version=version;delete raw.contacts;
     if(version===16){for(const unit of raw.units)delete unit.firedThisTurn;for(const port of raw.campaign.ports){delete port.occupationOwnerId;delete port.occupationProgress;}}
-    const restored=Match.load(raw,assets);assert.equal(restored.save().version,24);assert(restored.units.every(u=>u.firedThisTurn===false));
+    const restored=Match.load(raw,assets);assert.equal(restored.save().version,25);assert(restored.units.every(u=>u.firedThisTurn===false));
   }
   const legacy18=JSON.parse(JSON.stringify(current));legacy18.version=18;legacy18.activeIndex=1;
   delete legacy18.phase;delete legacy18.initiativeIndex;delete legacy18.phaseSubmitted;delete legacy18.movementOrders;
@@ -308,11 +374,11 @@ check('Legacy V2 saves migrate to version 24 and previously submitted orders res
   assert.equal(restored18.phase,'aviation');assert.deepEqual(restored18.phaseSubmitted,[1]);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   restored18.endTurn();assert.equal(restored18.phase,'aviation');assert.equal(restored18.round,2);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   const legacy19=JSON.parse(JSON.stringify(current));legacy19.version=19;legacy19.phase='combat';delete legacy19.combatOrders;
-  assert.equal(Match.load(legacy19,assets).save().version,24);
+  assert.equal(Match.load(legacy19,assets).save().version,25);
   const legacy20=JSON.parse(JSON.stringify(current));legacy20.version=20;legacy20.phase='combat';delete legacy20.aviation.decks;
-  assert.equal(Match.load(legacy20,assets).save().version,24);
+  assert.equal(Match.load(legacy20,assets).save().version,25);
   const legacy21=JSON.parse(JSON.stringify(current));legacy21.version=21;legacy21.phase='combat';delete legacy21.aviationOrders;
-  assert.equal(Match.load(legacy21,assets).save().version,24);
+  assert.equal(Match.load(legacy21,assets).save().version,25);
   const oldTurn=scene(),oldUnit=oldTurn.unit('team-1-lafei'),oldDestination=oldTurn.reachable(oldUnit.instanceId).find(cell=>cell.col!==oldUnit.col||cell.row!==oldUnit.row)!;
   oldTurn.issueMove(oldUnit.instanceId,oldDestination);const submitted:any=oldTurn.save();submitted.version=23;submitted.activeIndex=1;submitted.phaseSubmitted=[1];
   const migrated=Match.load(submitted,assets);assert.equal(migrated.active.id,2);assert.equal(migrated.round,1);assert.deepEqual(migrated.phaseSubmitted,[1]);
@@ -323,11 +389,20 @@ check('Legacy V2 saves migrate to version 24 and previously submitted orders res
   queued.issueMove(attacker.instanceId,destination);queued.orderAttack(attacker.instanceId,target.instanceId,'main-gun');
   let criticalSeed=1;for(;criticalSeed<100000;criticalSeed++){const first=rollDieV2(criticalSeed),second=rollDieV2(first.state);if(first.die===6&&second.die===6)break;}
   assert(criticalSeed<100000);queued.combatState=criticalSeed;
-  const legacyBatch:any=queued.save();legacyBatch.version=23;legacyBatch.activeIndex=1;legacyBatch.phaseSubmitted=[1];
+  const legacyBatch:any=queued.save();legacyBatch.version=23;legacyBatch.activeIndex=1;legacyBatch.phaseSubmitted=[1];legacyBatch.units.find((unit:any)=>unit.instanceId===carrier.instanceId).action=1;
+  for(const order of legacyBatch.movementOrders){const unit=queued.unit(order.unitId);order.costs=order.cells.map((cell:any,index:number)=>index===0?0:queued.world.at(cell)===Terrain.Shallow&&!['DD','CL'].includes(unit.asset.ship_type.code)?2:1);}
   const batchMigrated=Match.load(legacyBatch,assets),resolvedHp=batchMigrated.unit(target.instanceId).hp;
   assert.equal(batchMigrated.active.id,2);assert.deepEqual(batchMigrated.phaseSubmitted,[1]);assert.equal(batchMigrated.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId).length,launchSlots.length);
   assert.deepEqual({col:batchMigrated.unit(attacker.instanceId).col,row:batchMigrated.unit(attacker.instanceId).row},destination);assert(resolvedHp<target.maxHp);assert.equal(batchMigrated.aviationOrders.length+batchMigrated.movementOrders.length+batchMigrated.combatOrders.length,0);
   const migratedAgain=Match.load(batchMigrated.save(),assets);assert.equal(migratedAgain.unit(target.instanceId).hp,resolvedHp);assert.equal(migratedAgain.aviation.squadrons.length,batchMigrated.aviation.squadrons.length);
+  const oldMovement=scene(),battleship=oldMovement.unit('team-1-bisimai'),shallowRoute=oldMovement.reachable(battleship.instanceId).map(cell=>oldMovement.route(battleship.instanceId,cell)).find(route=>route&&route.cost>0&&route.cells.some((cell,index)=>index>0&&oldMovement.world.at(cell)===Terrain.Shallow));
+  assert(shallowRoute,'the starting area should include a shallow-water route');oldMovement.issueMove(battleship.instanceId,shallowRoute.cells.at(-1)!);
+  const version24:any=oldMovement.save();version24.version=24;
+  for(const order of version24.movementOrders)order.costs=order.cells.map((cell:any,index:number)=>index===0?0:oldMovement.world.at(cell)===Terrain.Shallow&&!['DD','CL'].includes(battleship.asset.ship_type.code)?2:1);
+  const migratedMovement=Match.load(version24,assets);assert.equal(migratedMovement.save().version,25);assert(migratedMovement.movementOrders[0].costs.slice(1).every(cost=>cost===1),'old shallow-water surcharges should be removed during migration');
+  const oldLaunch=scene(),oldCarrier=oldLaunch.unit('team-1-qiye');orderCarrierLaunch(oldLaunch,oldCarrier.instanceId);
+  const version24Launch:any=oldLaunch.save();version24Launch.version=24;version24Launch.units.find((unit:any)=>unit.instanceId===oldCarrier.instanceId).action=1;
+  const migratedLaunch=Match.load(version24Launch,assets);assert.equal(migratedLaunch.unit(oldCarrier.instanceId).action,0,'an older queued launch should reserve its action after migration');
   const restored=Match.load(current,assets),invalid=restored.save() as any,port=invalid.campaign.ports.find((p:any)=>p.id==='home-2');port.occupationProgress=1;
   assert.throws(()=>Match.load(invalid,assets));
   const badContact=JSON.parse(JSON.stringify(current));badContact.contacts[0].push({unitId:'not-a-ship',ownerId:2,col:1,row:1,level:3,age:0,seenThisTurn:true,shipType:'BB',hpBand:'intact',sizeClass:'large'});

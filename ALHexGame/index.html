@@ -26,7 +26,7 @@
         <aside class="front-notes">
           <span class="front-kicker">当前规则</span>
           <h2>单阶段行动 · 多势力海空战</h2>
-          <p>双方轮流行动。轮到一方时先规划舰船移动、攻击与航母起飞，点击执行后立刻结算，再交给对手；双方每回合使用同一套行动。航线箭头可右键或触摸取消，集体移动只显示队形中央舰船的箭头。</p>
+          <p>双方轮流规划并执行同一套行动。右键目标即可让舰船驶近；集体移动不再要求保持队形，各舰自动寻找可达位置。路线可随时修改或取消，浅海与普通海格移动费用相同。</p>
           <dl><div><dt>地图</dt><dd>5×10 测试 / 128 / 256 / 512</dd></div><div><dt>势力</dt><dd>2～8方</dd></div><div><dt>视野</dt><dd>战争迷雾</dd></div></dl>
           <a class="gallery-link" href="./preview/" target="_blank" rel="noopener">查看舰船素材图鉴 ↗</a>
         </aside>
@@ -46,7 +46,7 @@
         <div class="seat-heading"><span>席位控制</span><small>启用席位可选玩家或AI；其余席位为空位</small></div>
         <div id="seat-settings" class="seat-settings" aria-label="席位控制设置"></div>
         <p id="seat-summary" class="seat-summary"></p>
-        <div class="setup-rules"><span>回合流程</span><strong>轮流行动 · 规划后执行</strong><span>胜利条件</span><strong>最后存续 / 控制全部母港</strong></div>
+        <div class="setup-rules"><span>回合流程</span><strong>双方轮流 · 同一套行动</strong><span>胜利条件</span><strong>最后存续 / 控制全部母港</strong></div>
         <button id="new-match" class="start-match">开始战局</button>
       </div>
     </section>
@@ -76,10 +76,10 @@
       <aside class="unit-sidebar" aria-label="单位信息面板">
         <div class="unit-panel-heading"><h2>单位信息</h2><button id="close-unit-panel" class="panel-toggle" aria-label="收起单位信息">收起</button><p id="selection-count" class="selection-count" role="status">左键拖框选择本方单位</p></div>
         <section id="selection" class="selection" aria-label="选中单位信息"><div class="selection-empty">点击海图中的舰船、飞机或港口查看资料</div></section>
-        <div class="turn-panel"><div><span class="eyebrow">当前指挥势力</span><h3 id="turn-label">第 1 轮 · 湛蓝舰队</h3><div class="team-oil-summary"><span id="team-resource-label">石油</span><strong id="team-oil">50 / 50</strong><div class="team-oil-meter"><span id="team-oil-fill"></span></div></div><p id="oil-rule-note">下次本方回合补满50点 · 每港口增加10上限</p><p id="pending-info"></p><p id="campaign-info"></p></div><button id="open-result" hidden>查看结算</button><button id="next-unit">下一艘 (Tab)</button><button id="end-turn">实施并交接 →</button></div>
+        <div class="turn-panel"><div><span class="eyebrow">当前指挥势力</span><h3 id="turn-label">第 1 轮 · 湛蓝舰队</h3><div class="team-oil-summary"><span id="team-resource-label">石油</span><strong id="team-oil">50 / 50</strong><div class="team-oil-meter"><span id="team-oil-fill"></span></div></div><p id="oil-rule-note">下次本方回合补满50点 · 每港口增加10上限</p><p id="pending-info"></p><p id="campaign-info"></p></div><button id="open-result" hidden>查看结算</button><button id="next-unit">下一艘 (Tab)</button><button id="end-turn">执行并交接 →</button></div>
       </aside>
     </div>
-    <footer class="statusbar"><span><span class="status-mark">●</span> 六角海战原型</span><span>左键点击 / 框选 · 右键一起移动 · 中键 / WASD平移</span><div class="save-tools"><span id="save-status">自动保存</span><button id="save-match">保存</button><button id="load-match">读取</button><button id="export-match">导出</button><button id="import-match">导入</button></div></footer>
+    <footer class="statusbar"><span><span class="status-mark">●</span> 六角海战原型</span><span>左键点选 / 框选 · 右键安排或修改航线 · 中键 / WASD平移</span><div class="save-tools"><span id="save-status">自动保存</span><button id="save-match">保存</button><button id="load-match">读取</button><button id="export-match">导出</button><button id="import-match">导入</button></div></footer>
     <div id="ai-turn-banner" class="ai-turn-banner" hidden><span>AI COMMAND</span><strong id="ai-turn-title">AI行动中</strong><small id="ai-turn-detail">海图与行动过程已隐藏，交接回玩家后重新显示</small></div>
   </div>
   <input id="import-file" type="file" accept=".json,application/json" hidden>
