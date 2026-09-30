@@ -32,6 +32,16 @@ function element(tag: string, className = '', text?: string): HTMLElement {
 function assetUrl(path: string): string { return new URL('./' + path, document.baseURI).href; }
 function nextFrame(): Promise<void> { return new Promise(resolve => requestAnimationFrame(() => resolve())); }
 function delay(milliseconds:number):Promise<void>{return new Promise(resolve=>setTimeout(resolve,milliseconds));}
+function drawAttackArrow(graphics:Graphics,from:Cell,to:Cell,zoom:number,alpha=1):void{
+  const startCell=cellCenter(from),targetCell=cellCenter(to),dx=targetCell.x-startCell.x,dy=targetCell.y-startCell.y,distance=Math.hypot(dx,dy);
+  if(distance<1)return;
+  const ux=dx/distance,uy=dy/distance,startOffset=Math.min(24,distance*.24),targetOffset=Math.min(24,distance*.24);
+  const x1=startCell.x+ux*startOffset,y1=startCell.y+uy*startOffset,x2=targetCell.x-ux*targetOffset,y2=targetCell.y-uy*targetOffset;
+  const headLength=Math.min(18/zoom,distance*.28),halfWidth=Math.min(9/zoom,headLength*.55),backX=x2-ux*headLength,backY=y2-uy*headLength,sideX=-uy*halfWidth,sideY=ux*halfWidth;
+  graphics.lineStyle(5/zoom,0x38171b,.9*alpha).moveTo(x1,y1).lineTo(x2,y2);
+  graphics.lineStyle(2.8/zoom,0xf04448,.98*alpha).moveTo(x1,y1).lineTo(x2,y2);
+  graphics.lineStyle(1.5/zoom,0x38171b,.95*alpha).beginFill(0xf04448,.98*alpha).drawPolygon([x2,y2,backX+sideX,backY+sideY,backX-sideX,backY-sideY]).endFill();
+}
 
 class NavalMap {
   readonly app: Application;
@@ -805,10 +815,17 @@ class NavalMap {
         this.highlight.lineStyle(1.5/zoom,color,.9).drawCircle(route[0].x,route[0].y,4/zoom);
       }
     }
+    for(const order of this.match.combatOrders){
+      if(order.ownerId!==this.match.active.id)continue;
+      const attacker=this.match.unit(order.attackerId),target=this.match.unit(order.targetId);
+      if(attacker.status==='sunk'||target.status==='sunk'||!this.match.unitVisible(target,order.ownerId))continue;
+      drawAttackArrow(this.highlight,this.match.plannedMove(attacker.instanceId)??attacker,target,zoom);
+    }
     if (selected && this.selectedWeapon && zoom >= .36) for (const target of this.units.filter(u => u.ownerId !== selected.ownerId && u.status !== 'sunk')) {
       const preview = this.match.attackPreview(selected.instanceId,target.instanceId,this.selectedWeapon); if (!preview.valid) continue;
       const hovered = this.hovered?.col === target.col && this.hovered?.row === target.row;
       this.highlight.lineStyle((hovered ? 3 : 1.8) / zoom,0xf09a84,.95).beginFill(0xd75e52,hovered ? .23 : .1).drawPolygon(hexVertices(cellCenter(target)).flatMap(p => [p.x,p.y])).endFill();
+      if(hovered)drawAttackArrow(this.highlight,this.match.plannedMove(selected.instanceId)??selected,target,zoom,.72);
     }
     if (this.hovered && this.world.contains(this.hovered) && zoom >= .46) {
       this.highlight.lineStyle(1 / zoom, 0xe1eef1, .65).beginFill(0xd4e7ef, .05).drawPolygon(hexVertices(cellCenter(this.hovered)).flatMap(p => [p.x, p.y])).endFill();
