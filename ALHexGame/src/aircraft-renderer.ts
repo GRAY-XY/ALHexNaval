@@ -1,7 +1,7 @@
 import { Assets, Container, Graphics, Sprite, Text, TextStyle } from 'pixi.js';
-import { aircraftActionText, aircraftPosition, planeTexture, squadronName, type AircraftMoveEvent, type Squadron, AIR_NATIONS, FIGHTER_RANGE } from './aircraft.ts';
+import { aircraftActionText, aircraftPosition, aircraftRoute, planeTexture, squadronName, type AircraftMoveEvent, type Squadron, AIR_NATIONS, FIGHTER_RANGE } from './aircraft.ts';
 import { cellCenter, fromAxial, hexDistance, hexVertices, toAxial, worldToCell } from './hex.ts';
-import { TEAM_COLORS } from './match.ts';
+import { TEAM_COLORS, type Match } from './match.ts';
 import type { Point, ViewBounds } from './types.ts';
 
 export async function loadCombatTextures(): Promise<void> {
@@ -13,16 +13,30 @@ export class AircraftRenderer {
   readonly container = new Container();
   private range = new Graphics();
   private cells = new Graphics();
+  private routes = new Graphics();
   private visuals = new Map<string,AirVisual>();
-  constructor() { this.container.eventMode = 'none'; this.container.addChild(this.range,this.cells); }
-  update(squadrons: Squadron[], bounds: ViewBounds, zoom: number, selected=new Set<string>()): void {
+  constructor() { this.container.eventMode = 'none'; this.container.addChild(this.range,this.cells,this.routes); }
+  update(squadrons: Squadron[], bounds: ViewBounds, zoom: number, selected=new Set<string>(),match?:Match): void {
     this.range.clear();
     this.cells.clear();
+    this.routes.clear();
     for (const s of squadrons.filter(s=>selected.has(s.id))) {
       const color=TEAM_COLORS[s.ownerId-1];
       this.cells.lineStyle(2,color,.8).drawPolygon(hexVertices(cellCenter(worldToCell(s)),39).flatMap(p=>[p.x,p.y]));
       if(s.flight)this.cells.lineStyle(1,color,.5).drawPolygon(hexVertices(cellCenter(s.flight.next),39).flatMap(p=>[p.x,p.y]));
       if(s.destination)this.cells.lineStyle(2,color,1).beginFill(color,.12).drawPolygon(hexVertices(s.destination,39).flatMap(p=>[p.x,p.y])).endFill();
+    }
+    if(match)for(const s of squadrons.filter(s=>s.ownerId===match.active.id&&s.order==='move'&&s.destination)){
+      const current=aircraftPosition(s),start=s.flight?.next??worldToCell(s),route=aircraftRoute(match,start,worldToCell(s.destination!));
+      if(!route?.length)continue;
+      const points=s.flight?[current,...route.map(cellCenter)]:route.map(cellCenter);
+      if(points.length<2)continue;
+      const color=TEAM_COLORS[s.ownerId-1]??0xb6f3d6;
+      for(let i=1;i<points.length;i++){
+        this.routes.lineStyle(4/zoom,0x0b2234,.78).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
+        this.routes.lineStyle(2.2/zoom,color,.95).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
+        if(i<points.length-1)this.routes.beginFill(color,.9).drawCircle(points[i].x,points[i].y,2.8/zoom).endFill();
+      }
     }
     const fighter = squadrons.find(s=>selected.has(s.id) && s.role==='fighter');
     if (fighter) {

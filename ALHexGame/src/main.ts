@@ -844,7 +844,7 @@ class NavalMap {
     this.match.refreshVision();const bounds = camera.viewBounds(); this.terrain.updateView(bounds, camera.zoom); this.fog.update(bounds,camera.zoom,this.match.active.id);
     this.ships.updateView(bounds, camera.zoom, this.chosen, this.match.active.id,u=>this.match.unitVisible(u),this.match.rulesetId);
     this.contacts.update(this.match.contactsFor(),bounds,camera.zoom);
-    this.aircraft.update(this.match.aviation.squadrons.filter(s=>this.match.airVisible(s)),bounds,camera.zoom,this.chosenAir);
+    this.aircraft.update(this.match.aviation.squadrons.filter(s=>this.match.airVisible(s)),bounds,camera.zoom,this.chosenAir,this.match);
     const ports=this.match.knownPorts(),occupiedPorts=new Set(this.units.filter(u=>u.status!=='sunk'&&this.match.unitVisible(u)).map(cellKey));this.ports.update(ports,bounds,camera.zoom,occupiedPorts,this.selectedPort);
     this.updateRoute(); this.drawGrid(); this.minimap.draw(this.fog.overviewCanvas,u=>this.match.unitVisible(u),ports,this.selectedPort);
     $('fog-info').textContent=`战争迷雾 · ${this.match.rulesetId==='naval-v2'?'舰船按舰种2–4格':`舰船${SHIP_VISION}格`} / 飞机${AIR_VISION}格 · 已探索 ${(this.match.fog.field(this.match.active.id).known.size/(this.world.width*this.world.height)*100).toFixed(1)}%`;
