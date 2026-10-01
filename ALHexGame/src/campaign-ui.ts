@@ -27,7 +27,7 @@ export class CampaignUI {
   }
   render():void {
     const m=this.host.match(),t=m.active,owned=m.ports.filter(p=>p.ownerId===t.id),result=m.result;
-    const battle=campaignBattle(m.world.scenarioId),objective=battle?m.campaignObjectiveStatus(t.id):undefined;
+    const battle=m.sandboxMode?undefined:campaignBattle(m.world.scenarioId),objective=battle?m.campaignObjectiveStatus(t.id):undefined;
     $('campaign-info').textContent=m.rulesetId==='naval-v2'
       ? `${objective?`${objective.description} · ${objective.current}/${objective.target} · 第${Math.min(m.round,battle?.mission.roundLimit??m.round)}/${battle?.mission.roundLimit??m.round}轮 · `:''}补给 ${t.supply}/8 · 港口 ${owned.length}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`
       : `资金 ${t.credits} · 港口 ${owned.length} · 下次本方回合收入 +${m.income()}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`;

@@ -22,7 +22,7 @@ check('Archipelago games start with a representative fleet and deliver the rest 
     assert.equal(match.fleetEntryStatus(ownerId)?.remaining,assets.length-7);
     assert.equal(match.fleetEntryStatus(ownerId)?.nextRound,2);
   }
-  const saved=match.save();assert.equal(saved.version,29);assert.equal(saved.fleetEntryMode,'staggered');
+  const saved=match.save();assert.equal(saved.version,30);assert.equal(saved.fleetEntryMode,'staggered');
   assert.deepEqual(Match.load(saved,assets).save(),saved,'the reserve schedule should survive save/load');
   endRound(match);
   assert.equal(match.round,2);assert.equal(match.units.length,22);

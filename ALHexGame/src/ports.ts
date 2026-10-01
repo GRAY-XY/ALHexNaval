@@ -30,8 +30,9 @@ function berth(world:HexWorld,origin:Cell,ports:Port[],radius:number):Cell|undef
 // Retained to validate v13 saves before relocating their offshore harbors.
 export function createLegacyPorts(world:HexWorld,units:MatchUnit[],players:number):Port[] {
   const ports:Port[]=[];
+  const starts=[[.12,.13],[.82,.15],[.82,.82],[.15,.82],[.48,.10],[.90,.50],[.50,.90],[.10,.50]];
   for(let ownerId=1;ownerId<=players;ownerId++){
-    const first=units.find(u=>u.ownerId===ownerId)!;
+    const first=units.find(u=>u.ownerId===ownerId)??world.startPositions[ownerId-1]??{col:Math.round(world.width*starts[ownerId-1][0]),row:Math.round(world.height*starts[ownerId-1][1])};
     const cell=berth(world,first,ports,3)??world.nearbySea(first,new Set(ports.map(cellKey)));
     ports.push({...cell,id:`home-${ownerId}`,name:`${ownerId}号母港`,ownerId,homeForId:ownerId,usedRound:0,serviceRound:0,occupationProgress:0});
   }

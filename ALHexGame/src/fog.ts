@@ -11,6 +11,7 @@ interface VisionField {explored:Uint8Array;visible:Uint8Array;known:Set<number>;
 export class FogOfWar {
   private fields:VisionField[];
   private signature?:string;
+  private allRevealed=false;
   revision=0;
   private world:HexWorld;
   constructor(world:HexWorld,teams:number){
@@ -28,7 +29,23 @@ export class FogOfWar {
       const i=cell.row*this.world.width+cell.col;field.visible[i]=1;field.explored[i]=1;field.lit.add(i);field.known.add(i);
     }
   }
+  revealAll():boolean {
+    if(this.allRevealed)return false;
+    this.allRevealed=true;this.signature='__all__';
+    for(const field of this.fields)for(let i=0;i<field.explored.length;i++){
+      const cell={col:i%this.world.width,row:Math.floor(i/this.world.width)};
+      if(!this.world.contains(cell))continue;
+      field.visible[i]=1;field.explored[i]=1;field.lit.add(i);field.known.add(i);
+    }
+    this.revision++;return true;
+  }
+  clear():void {
+    this.allRevealed=false;this.signature=undefined;
+    for(const field of this.fields){field.explored.fill(0);field.visible.fill(0);field.known.clear();field.lit.clear();}
+    this.revision++;
+  }
   refresh(units:MatchUnit[],air:Squadron[],rulesetId:'naval-v2'|'classic-v1'='classic-v1'):boolean {
+    if(this.allRevealed)return false;
     const sources=units.filter(u=>u.status!=='sunk').map(u=>({owner:u.ownerId,cell:{col:u.col,row:u.row},radius:rulesetId==='naval-v2'?shipVisionV2(u.asset.ship_type.code,u.submerged):SHIP_VISION}))
       .concat(air.filter(s=>s.hp>0&&s.fuelTurns>0).map(s=>({owner:s.ownerId,cell:worldToCell(s),radius:AIR_VISION})));
     const signature=sources.map(s=>`${s.owner}:${s.cell.col},${s.cell.row}:${s.radius}`).join('|');
@@ -56,6 +73,6 @@ export class FogOfWar {
         if(!this.world.contains({col:i%this.world.width,row:Math.floor(i/this.world.width)}))throw Error('迷雾存档包含无效海格');
         field.explored[i]=1;field.known.add(i);
       }
-    });this.signature=undefined;this.revision++;
+    });this.allRevealed=false;this.signature=undefined;this.revision++;
   }
 }

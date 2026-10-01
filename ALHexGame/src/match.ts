@@ -49,7 +49,8 @@ export interface MatchUnit extends DeployedShip {
   submerged?:boolean;
 }
 export interface FleetReserve {ownerId:number;assetId:string;arrivalRound:number;entryCell:Cell;facing:'left'|'right'}
-export type FleetEntryMode='immediate'|'staggered';
+export type FleetEntryMode='immediate'|'staggered'|'manual';
+export interface MatchOptions {sandboxMode?:boolean;sandboxEditing?:boolean}
 export interface GroupMovePlan { source: Cell; target: Cell; orders: { instanceId: string; target: Cell; route: Route }[]; skipped: string[] }
 export interface GroupMoveOptions { source?: Cell; fits?: (source: Cell, target: Cell) => boolean }
 export interface MoveEvent { instanceId: string; cells: Cell[] }
@@ -76,7 +77,8 @@ const TEST_ARENA_SPAWNS:Cell[][]=[
   [{col:4,row:9},{col:2,row:9},{col:0,row:9},{col:3,row:8},{col:1,row:8},{col:4,row:7},{col:2,row:8}],
 ];
 export interface SavedMatch {
-  format: 'al-hex-match'; version: 29; mapVersion: 1; size: number; height:number; mapKind:WorldScenario; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
+  format: 'al-hex-match'; version: 30; mapVersion: 1; size: number; height:number; mapKind:WorldScenario; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
+  sandboxMode:boolean;sandboxEditing:boolean;sandboxSerial:number;
   submarineRosterLegacy?:true;
   fleetEntryMode:FleetEntryMode;
   fleetReserve:FleetReserve[];
@@ -116,13 +118,18 @@ export class Match {
   campaignRevision=0;
   submarineRosterLegacy=false;
   fleetEntryMode:FleetEntryMode;
+  sandboxMode:boolean;
+  sandboxEditing:boolean;
+  sandboxSerial=1;
   private readonly assetsById:Map<string,ShipAsset>;
-  constructor(world: HexWorld, assets: ShipAsset[], teamCount = 4, controllers?:TeamController[], fleetEntry:FleetEntryMode='immediate') {
+  constructor(world: HexWorld, assets: ShipAsset[], teamCount = 4, controllers?:TeamController[], fleetEntry:FleetEntryMode='immediate',options:MatchOptions={}) {
     this.world = world;
     if (!Number.isInteger(teamCount) || teamCount < 2 || teamCount > 8 || !assets.length || new Set(assets.map(asset => asset.id)).size !== assets.length) throw Error('势力数应为 2～8，舰船池不能为空或重复');
     if(world.scenarioId==='test-5x10'&&teamCount!==2)throw Error('5 × 10 测试海图只支持双方对战');
     if(controllers&&(controllers.length!==teamCount||controllers.some(controller=>!['human','ai'].includes(controller))))throw Error('席位设置无效');
-    if(!['immediate','staggered'].includes(fleetEntry))throw Error('舰队入场方式无效');
+    if(!['immediate','staggered','manual'].includes(fleetEntry))throw Error('舰队入场方式无效');
+    this.sandboxMode=options.sandboxMode===true;this.sandboxEditing=options.sandboxEditing===true;
+    if(this.sandboxEditing&&!this.sandboxMode||this.sandboxMode!==(fleetEntry==='manual'))throw Error('沙盒规则与舰队入场方式不匹配');
     this.fleetEntryMode=fleetEntry;
     const battle=campaignBattle(world.scenarioId);
     if(battle&&teamCount!==2)throw Error('历史战役只支持双方对战');
@@ -136,7 +143,7 @@ export class Match {
       }))
       :this.teams.map(()=>assets);
     const occupied = new Set<string>(), starts = [[.12,.13],[.82,.15],[.82,.82],[.15,.82],[.48,.10],[.90,.50],[.50,.90],[.10,.50]];
-    this.units = this.teams.flatMap((team,index) => {
+    this.units = this.sandboxMode?[]:this.teams.flatMap((team,index) => {
       const fleetAssets=fleetAssetsByTeam[index];
       const origin = world.startPositions[index]??{ col: Math.round(world.width * starts[index][0]), row: Math.round(world.height * starts[index][1]) };
       const startingIds=fleetEntry==='staggered'?new Set(this.startingFleet(fleetAssets,world.scenarioId,battle!==undefined).map(asset=>asset.id)):new Set(fleetAssets.map(asset=>asset.id));
@@ -175,6 +182,47 @@ export class Match {
     const combat=profile(asset.ship_type.code);
     return {...cell,instanceId:`team-${ownerId}-${asset.id}`,asset,ownerId,facing,action:1,status:'ready',hp:combat.maxHp,maxHp:combat.maxHp,guard:false,cooldowns:{},movementUsed:0,movedThisTurn:false,firedThisTurn:false,torpedoes:SHIP_RULES_V2[asset.ship_type.code]?.torpedoes??0,...(asset.ship_type.code==='SS'?{submerged:true}:{})};
   }
+  placeSandboxShip(assetId:string,ownerId:number,cell:Cell):MatchUnit {
+    if(!this.sandboxEditing||!this.sandboxMode)throw Error('只能在沙盒编辑器中放置舰船');
+    if(!this.assetsById.has(assetId)||!Number.isInteger(ownerId)||ownerId<1||ownerId>this.teams.length)throw Error('舰船或所属势力无效');
+    if(!this.world.isSea(cell))throw Error('只能在有效海格上放置舰船');
+    if(this.units.some(unit=>unit.col===cell.col&&unit.row===cell.row))throw Error('这个海格已经有舰船');
+    if(this.units.length>=500)throw Error('当前布阵已达到500艘舰船上限');
+    if(this.sandboxSerial>999_999)throw Error('舰船编号已达到沙盒存档上限');
+    const asset=this.assetsById.get(assetId)!,unit=this.createFleetUnit(asset,ownerId,cell,this.sandboxSerial%2?'right':'left');
+    unit.instanceId=`sandbox-${this.sandboxSerial++}`;this.units.push(unit);
+    initializeAviationDecks(this);this.refreshVision();this.campaignRevision++;return unit;
+  }
+  removeSandboxShip(instanceId:string):void {
+    if(!this.sandboxEditing)throw Error('只能在沙盒编辑器中移除舰船');
+    const index=this.units.findIndex(unit=>unit.instanceId===instanceId);if(index<0)throw Error('找不到这艘舰船');
+    this.units.splice(index,1);delete this.aviation.decks[instanceId];
+    this.aviation.squadrons=this.aviation.squadrons.filter(squadron=>squadron.carrierId!==instanceId);
+    this.aviationOrders=this.aviationOrders.filter(order=>order.carrierId!==instanceId);
+    this.movementOrders=this.movementOrders.filter(order=>order.unitId!==instanceId);
+    this.combatOrders=this.combatOrders.filter(order=>order.attackerId!==instanceId&&order.targetId!==instanceId);
+    initializeAviationDecks(this);this.refreshVision();this.campaignRevision++;
+  }
+  assignSandboxOwner(instanceId:string,ownerId:number):void {
+    if(!this.sandboxEditing||!Number.isInteger(ownerId)||ownerId<1||ownerId>this.teams.length)throw Error('沙盒编辑器中的目标势力无效');
+    const unit=this.units.find(item=>item.instanceId===instanceId);if(!unit)throw Error('找不到这艘舰船');
+    unit.ownerId=ownerId;const deck=this.aviation.decks[instanceId];if(deck)deck.ownerId=ownerId;
+    for(const squadron of this.aviation.squadrons)if(squadron.carrierId===instanceId)squadron.ownerId=ownerId;
+    this.refreshVision();this.campaignRevision++;
+  }
+  setSandboxController(ownerId:number,controller:TeamController):void {
+    if(!this.sandboxEditing||!Number.isInteger(ownerId)||ownerId<1||ownerId>this.teams.length||!['human','ai'].includes(controller))throw Error('沙盒席位设置无效');
+    this.team(ownerId).controller=controller;this.campaignRevision++;
+  }
+  beginSandboxGame():void {
+    if(!this.sandboxMode||!this.sandboxEditing)throw Error('当前战局不在沙盒编辑阶段');
+    const empty=this.teams.filter(team=>!this.units.some(unit=>unit.ownerId===team.id&&unit.status!=='sunk'));
+    if(empty.length)throw Error(`请先为每个势力至少放置一艘舰船：${empty.map(team=>team.name).join('、')}`);
+    const humanIndex=this.teams.findIndex(team=>team.controller==='human');if(humanIndex<0)throw Error('至少需要一个玩家控制的势力');
+    this.activeIndex=humanIndex;this.phaseSubmitted=[];
+    this.sandboxEditing=false;for(const team of this.teams)team.eliminated=false;
+    this.fog.clear();this.refreshVision();this.resolveOutcome();this.campaignRevision++;
+  }
   fleetEntryStatus(ownerId:number):{remaining:number;nextRound:number;nextCount:number}|undefined{
     const queued=this.fleetReserve.filter(entry=>entry.ownerId===ownerId);if(!queued.length)return;
     const nextRound=Math.min(...queued.map(entry=>entry.arrivalRound));return {remaining:queued.length,nextRound,nextCount:queued.filter(entry=>entry.arrivalRound===nextRound).length};
@@ -197,6 +245,7 @@ export class Match {
     return arrivals;
   }
   refreshVision():boolean {
+    if(this.sandboxEditing){const changed=this.fog.revealAll();if(changed)this.syncPortIntel();return changed;}
     const changed=this.fog.refresh(this.units,this.aviation.squadrons,this.rulesetId);
     if(changed)this.syncPortIntel();
     const contactsChanged=this.rulesetId==='naval-v2'?this.refreshContacts():false;
@@ -211,11 +260,12 @@ export class Match {
   canSee(owner:number,cell:Cell):boolean {this.refreshVision();return this.fog.state(owner,cell)===2;}
   isExplored(owner:number,cell:Cell):boolean {this.refreshVision();return this.fog.state(owner,cell)>0;}
   unitVisible(unit:MatchUnit,owner=this.active.id):boolean {
+    if(this.sandboxEditing)return true;
     if(unit.ownerId===owner)return true;
     if(this.rulesetId==='naval-v2'){this.refreshVision();return this.currentContactIds[owner-1]?.has(unit.instanceId)??false;}
     return this.canSee(owner,unit);
   }
-  airVisible(air:Squadron,owner=this.active.id):boolean {return air.ownerId===owner||this.canSee(owner,worldToCell(air));}
+  airVisible(air:Squadron,owner=this.active.id):boolean {return this.sandboxEditing||air.ownerId===owner||this.canSee(owner,worldToCell(air));}
   contactsFor(owner=this.active.id):ContactReport[] {
     if(this.rulesetId!=='naval-v2')return [];
     this.refreshVision();
@@ -385,7 +435,7 @@ export class Match {
   }
   resolveOutcome():void {
     for(const t of this.teams){const cap=this.oilCap(t.id);if(t.oil>cap){t.oil=cap;this.campaignRevision++;}}
-    if(this.result)return;
+    if(this.result||this.sandboxEditing)return;
     for(const t of this.teams){const eliminated=!this.units.some(u=>u.ownerId===t.id&&u.status!=='sunk')&&!this.fleetReserve.some(entry=>entry.ownerId===t.id)&&!this.ports.some(p=>p.ownerId===t.id);if(t.eliminated!==eliminated){t.eliminated=eliminated;this.campaignRevision++;}}
     if(this.rulesetId==='naval-v2'){
       this.phaseSubmitted=this.phaseSubmitted.filter(id=>!this.team(id).eliminated);
@@ -393,7 +443,7 @@ export class Match {
     }
     const surviving=this.teams.filter(t=>!t.eliminated),homes=this.ports.filter(p=>p.homeForId),battle=campaignBattle(this.world.scenarioId);
     if(surviving.length<=1)this.result={winnerId:surviving[0]?.id??null,reason:surviving.length?'elimination':'draw',round:this.round};
-    else if(battle){
+    else if(battle&&!this.sandboxMode){
       const deadline=this.round>battle.mission.roundLimit,score=(ownerId:number)=>{
         const objective=battle.mission.objectives[ownerId-1],enemy=3-ownerId;
         if(objective.kind==='sink-ships'){
@@ -1024,7 +1074,7 @@ export class Match {
   }
   save(): SavedMatch {
     this.refreshVision();this.resolveOutcome();if(this.rulesetId==='naval-v2')initializeAviationDecks(this);
-    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 29, ...(this.submarineRosterLegacy?{submarineRosterLegacy:true as const}:{}),fleetEntryMode:this.fleetEntryMode, mapVersion: 1, size: this.world.width,height:this.world.height,mapKind:this.world.scenarioId,mapHash: this.hash,
+    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 30, sandboxMode:this.sandboxMode,sandboxEditing:this.sandboxEditing,sandboxSerial:this.sandboxSerial, ...(this.submarineRosterLegacy?{submarineRosterLegacy:true as const}:{}),fleetEntryMode:this.fleetEntryMode, mapVersion: 1, size: this.world.width,height:this.world.height,mapKind:this.world.scenarioId,mapHash: this.hash,
       rulesetId:this.rulesetId,combatState:this.combatState,phase:this.rulesetId==='naval-v2'?this.phase:'classic',initiativeIndex:this.initiativeIndex,phaseSubmitted:this.rulesetId==='naval-v2'?this.phaseSubmitted:[],aviationOrders:this.rulesetId==='naval-v2'?this.aviationOrders:[],movementOrders:this.rulesetId==='naval-v2'?this.movementOrders:[],combatOrders:this.rulesetId==='naval-v2'?this.combatOrders:[],round: this.round, activeIndex: this.activeIndex, teams: this.teams,
       units: this.units.map(({ asset, ...unit }) => ({ ...unit, assetId: asset.id })),fleetReserve:this.fleetReserve,contacts:this.rulesetId==='naval-v2'?this.contacts:this.teams.map(()=>[]),aviation: this.aviation,fog:this.fog.save(),campaign:{ports:this.ports,intel:this.portIntel,result:this.result} }));
   }
@@ -1034,9 +1084,11 @@ export class Match {
     const integer = (n: unknown, low: number, high: number) => Number.isInteger(n) && Number(n) >= low && Number(n) <= high;
     const mapKind=data?.version>=23?data.mapKind:'archipelago',mapHeight=data?.version>=23?data.height:data?.size,battle=isCampaignBattleId(mapKind)?campaignBattle(mapKind):undefined;
     const validMap=mapKind==='archipelago'&&[128,256,512].includes(data?.size)&&mapHeight===data?.size||mapKind==='test-5x10'&&data?.size===5&&mapHeight===10||!!battle&&data?.size===battle.width&&mapHeight===battle.height;
-    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
+    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
     if(data.version>=16&&(!['naval-v2','classic-v1'].includes(data.rulesetId)||!integer(data.combatState,0,0xffffffff)))fail();
-    if(data.version>=29&&!['immediate','staggered'].includes(data.fleetEntryMode))fail();
+    const sandboxMode=data?.version>=30?data.sandboxMode===true:false,sandboxEditing=data?.version>=30?data.sandboxEditing===true:false,sandboxSerial=data?.version>=30?data.sandboxSerial:1;
+    if(data.version>=30&&(typeof data.sandboxMode!=='boolean'||typeof data.sandboxEditing!=='boolean'||!integer(sandboxSerial,1,1_000_000)||sandboxEditing&&!sandboxMode||sandboxMode!==(data.fleetEntryMode==='manual')))fail();
+    if(data.version>=29&&!['immediate','staggered'].includes(data.fleetEntryMode)&&!(data.version>=30&&sandboxMode&&data.fleetEntryMode==='manual'))fail();
     if (!Array.isArray(data.teams) || !integer(data.teams.length, 2, 8) || !integer(data.activeIndex, 0, data.teams.length - 1) || !integer(data.round, 1, 1_000_000)) fail();
     if(data.version>=19&&(!integer(data.initiativeIndex,0,data.teams.length-1)||!Array.isArray(data.phaseSubmitted)||new Set(data.phaseSubmitted).size!==data.phaseSubmitted.length||data.phaseSubmitted.some((id:number)=>!integer(id,1,data.teams.length))||!Array.isArray(data.movementOrders)||data.rulesetId==='naval-v2'&&(data.version>=24?data.phase!=='aviation':!(data.version>=22?['aviation','movement','combat']:['movement','combat']).includes(data.phase))||data.rulesetId==='classic-v1'&&data.phase!=='classic'))fail();
     if(data.version>=22&&!Array.isArray(data.aviationOrders))fail();
@@ -1048,11 +1100,11 @@ export class Match {
     if(data.version>=16&&data.teams.some((t:Team)=>!integer(t.supply,0,MAX_SUPPLY)))fail();
     if(data.version>=15&&data.teams.some((t:Team)=>!['human','ai'].includes(t.controller)))fail();
     if(mapKind==='test-5x10'&&data.teams.length!==2)fail();
-    const scenarioAssets=mapKind==='test-5x10'?testArenaFleetAssets(assets):assets;
+    const scenarioAssets=sandboxMode?assets:mapKind==='test-5x10'?testArenaFleetAssets(assets):assets;
     const expectedUnits = battle?battle.startingFleetIds.flat().length:scenarioAssets.length * (data.version === 1 ? 1 : data.teams.length);
     if(data.version>=29&&!Array.isArray(data.fleetReserve)||data.version<29&&data.fleetReserve!==undefined&&!Array.isArray(data.fleetReserve))fail();
     const reserveCount=data.version>=29?data.fleetReserve.length:0;
-    if(data.version>=29&&data.fleetEntryMode==='immediate'&&reserveCount)fail();
+    if(data.version>=29&&data.fleetEntryMode==='immediate'&&reserveCount||sandboxMode&&reserveCount)fail();
     const legacySubmarineCount=battle?battle.startingFleetIds.flat().filter(id=>id==='i19').length:0;
     const legacyRosterCounts=battle?[expectedUnits-legacySubmarineCount]:mapKind==='test-5x10'
       ?[TEST_ARENA_SHIP_TYPES.filter(code=>code!=='SS').length*data.teams.length]
@@ -1062,11 +1114,13 @@ export class Match {
     const legacyFullCampaignRoster=data.version<29&&!!battle&&data.version!==1&&Array.isArray(data.units)&&data.units.length===assets.length*data.teams.length;
     const savedRosterCount=data.units?.length+reserveCount;
     if(!Array.isArray(data.units))fail();
-    if(data.version>=29){
+    if(sandboxMode){if(data.units.length>500)fail();}
+    else if(data.version>=29){
       if(data.submarineRosterLegacy===true?reserveCount!==0||!validLegacyRoster:savedRosterCount!==expectedUnits)fail();
     }else if(data.units.length !== expectedUnits&&!legacyFullCampaignRoster&&!validLegacyRoster || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2))fail();
     const world=mapKind==='test-5x10'?new HexWorld(5,10,'test-5x10'):battle?new HexWorld(battle.width,battle.height,battle.id):new HexWorld(data.size);
-    const match = new Match(world, assets, data.teams.length,undefined,data.version>=29?data.fleetEntryMode:'immediate'); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
+    const match = new Match(world, assets, data.teams.length,undefined,data.version>=29?data.fleetEntryMode:'immediate',{sandboxMode,sandboxEditing}); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
+    match.sandboxSerial=sandboxSerial;
     match.submarineRosterLegacy=validLegacyRoster&&data.units.length!==expectedUnits;
     match.rulesetId=data.version>=16?data.rulesetId:'classic-v1';
     match.phase=data.version>=19?data.phase:match.rulesetId==='naval-v2'?'combat':'classic';
@@ -1081,8 +1135,8 @@ export class Match {
     const validNotice = (notice?: string) => notice === undefined || typeof notice === 'string' && notice.length < 160;
     match.units = data.units.map((raw: any) => {
       const saved = raw as any, expectedId = data.version === 1 ? `preview-${saved?.assetId}` : `team-${saved?.ownerId}-${saved?.assetId}`, assetKey = data.version === 1 ? saved?.assetId : `${saved?.ownerId}:${saved?.assetId}`;
-      if (!saved || typeof saved.instanceId !== 'string' || saved.instanceId !== expectedId || identities.has(saved.instanceId) || assetIds.has(assetKey)) return fail();
-      const asset = scenarioAssets.find(a => a.id === saved.assetId); if (!asset || !validCell(saved) || !integer(saved.ownerId, 1, data.teams.length) || !['left','right'].includes(saved.facing)) return fail();
+      if (!saved || typeof saved.instanceId !== 'string' || (sandboxMode?!/^sandbox-[1-9]\d{0,5}$/.test(saved.instanceId):saved.instanceId !== expectedId) || identities.has(saved.instanceId) || !sandboxMode&&assetIds.has(assetKey)) return fail();
+      const asset = (sandboxMode?assets:scenarioAssets).find(a => a.id === saved.assetId); if (!asset || !validCell(saved) || !integer(saved.ownerId, 1, data.teams.length) || !['left','right'].includes(saved.facing)) return fail();
       const combat = profile(asset.ship_type.code), status = saved.status as MatchUnit['status'];
       const v2Ship=shipRulesV2(asset.ship_type.code),savedSubmerged=asset.ship_type.code==='SS'?(data.version>=28?saved.submerged:true):undefined;
       if(data.version>=28&&(asset.ship_type.code==='SS'?typeof saved.submerged!=='boolean':saved.submerged!==undefined))return fail();
@@ -1102,10 +1156,10 @@ export class Match {
       if (Object.entries(cooldowns).some(([id, turns]) => !weaponIds.has(id) || !integer(turns, 1, 9))) return fail();
       if (status !== 'sunk') {
         const key=cellKey(saved),sameHex=occupied.get(key)??[],submergedSub=asset.ship_type.code==='SS'&&savedSubmerged===true;
-        if(sameHex.length&&!(data.version>=28&&data.rulesetId==='naval-v2'&&sameHex.length===1&&sameHex[0]!==submergedSub))return fail();
+        if(sameHex.length&&(sandboxMode||!(data.version>=28&&data.rulesetId==='naval-v2'&&sameHex.length===1&&sameHex[0]!==submergedSub)))return fail();
         sameHex.push(submergedSub);occupied.set(key,sameHex);
       }
-      identities.add(saved.instanceId); assetIds.add(assetKey);
+      identities.add(saved.instanceId);if(!sandboxMode)assetIds.add(assetKey);
       return { instanceId: saved.instanceId, asset, col: saved.col, row: saved.row, facing: saved.facing, ownerId: saved.ownerId,
         action: saved.action, status, hp, maxHp, guard, cooldowns: ['CV','CVL'].includes(asset.ship_type.code) ? {} : { ...cooldowns },
         notice: saved.order || /航线|自动航行|计划航行/.test(saved.notice ?? '') ? undefined : saved.notice,
@@ -1113,6 +1167,7 @@ export class Match {
         ...(asset.ship_type.code==='SS'?{submerged:savedSubmerged}:{}),
         ...(saved.availableRound!==undefined?{availableRound:saved.availableRound}:{}) };
     });
+    if(sandboxMode){const serials=match.units.map(unit=>Number(unit.instanceId.slice('sandbox-'.length)));if(serials.some(serial=>serial>=sandboxSerial))fail();}
     if(data.version>=29){
       const recordedByTeam=match.teams.map(team=>new Set(match.units.filter(unit=>unit.ownerId===team.id).map(unit=>unit.asset.id)));
       match.fleetReserve=data.fleetReserve.map((raw:unknown)=>{
@@ -1120,14 +1175,15 @@ export class Match {
         if(!saved||!asset||!integer(saved.ownerId,1,match.teams.length)||!ownerIds?.includes(saved.assetId)||saved.arrivalRound<=data.round||!integer(saved.arrivalRound,data.round+1,1_000_000)||!validCell(saved.entryCell)||!['left','right'].includes(saved.facing)||assetIds.has(assetKey))return fail();
         assetIds.add(assetKey);recordedByTeam[saved.ownerId-1].add(saved.assetId);return {ownerId:saved.ownerId,assetId:saved.assetId,arrivalRound:saved.arrivalRound,entryCell:{...saved.entryCell},facing:saved.facing};
       });
-      if(data.submarineRosterLegacy!==true){
+      if(!sandboxMode&&data.submarineRosterLegacy!==true){
         for(let ownerId=1;ownerId<=match.teams.length;ownerId++){
           const expectedIds=battle?battle.startingFleetIds[ownerId-1]:scenarioAssets.map(asset=>asset.id);
           if(recordedByTeam[ownerId-1].size!==expectedIds.length||expectedIds.some(id=>!recordedByTeam[ownerId-1].has(id)))fail();
         }
       }
     }
-    if (data.teams.some((team: Team) => !match.units.some(u => u.ownerId === team.id)&&!match.fleetReserve.some(entry=>entry.ownerId===team.id))) fail();
+    if(sandboxMode){if(!sandboxEditing&&data.teams.some((team:Team)=>!match.units.some(unit=>unit.ownerId===team.id&&unit.status!=='sunk')))fail();}
+    else if (data.teams.some((team: Team) => !match.units.some(u => u.ownerId === team.id)&&!match.fleetReserve.some(entry=>entry.ownerId===team.id))) fail();
     if(data.version>=18){
       if(!Array.isArray(data.contacts)||data.contacts.length!==match.teams.length)fail();
       match.contacts=data.contacts.map((records:unknown,ownerIndex:number)=>{

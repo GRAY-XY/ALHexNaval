@@ -10,5 +10,5 @@
     "allowImportingTsExtensions": true,
     "types": ["vite/client", "node"]
   },
-  "include": ["src", "vite.config.ts", "tools/check_coordinates.ts", "tools/check_match.ts", "tools/check_ship_animation.ts", "tools/check_fog.ts", "tools/check_ports.ts", "tools/check_ai.ts"]
+  "include": ["src", "vite.config.ts", "tools/check_coordinates.ts", "tools/check_match.ts", "tools/check_ship_animation.ts", "tools/check_fog.ts", "tools/check_ports.ts", "tools/check_ai.ts", "tools/check_sandbox_editor.ts"]
 }
