@@ -48,6 +48,8 @@ export interface MatchUnit extends DeployedShip {
   availableRound?:number;
   submerged?:boolean;
 }
+export interface FleetReserve {ownerId:number;assetId:string;arrivalRound:number;entryCell:Cell;facing:'left'|'right'}
+export type FleetEntryMode='immediate'|'staggered';
 export interface GroupMovePlan { source: Cell; target: Cell; orders: { instanceId: string; target: Cell; route: Route }[]; skipped: string[] }
 export interface GroupMoveOptions { source?: Cell; fits?: (source: Cell, target: Cell) => boolean }
 export interface MoveEvent { instanceId: string; cells: Cell[] }
@@ -74,8 +76,10 @@ const TEST_ARENA_SPAWNS:Cell[][]=[
   [{col:4,row:9},{col:2,row:9},{col:0,row:9},{col:3,row:8},{col:1,row:8},{col:4,row:7},{col:2,row:8}],
 ];
 export interface SavedMatch {
-  format: 'al-hex-match'; version: 28; mapVersion: 1; size: number; height:number; mapKind:WorldScenario; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
+  format: 'al-hex-match'; version: 29; mapVersion: 1; size: number; height:number; mapKind:WorldScenario; mapHash: string; rulesetId: 'naval-v2' | 'classic-v1'; combatState: number;
   submarineRosterLegacy?:true;
+  fleetEntryMode:FleetEntryMode;
+  fleetReserve:FleetReserve[];
   phase:'classic'|'aviation';initiativeIndex:number;phaseSubmitted:number[];aviationOrders:CarrierLaunchOrder[];movementOrders:NavalMoveOrder[];combatOrders:NavalAttackOrder[];
   round: number; activeIndex: number; teams: Team[];
   units: (Omit<MatchUnit, 'asset'> & { assetId: string })[];
@@ -92,6 +96,7 @@ export function mapHash(world: HexWorld): string {
 
 export class Match {
   teams: Team[]; units: MatchUnit[];
+  fleetReserve:FleetReserve[]=[];
   aviation = emptyAviation();
   round = 1; activeIndex = 0;
   rulesetId: 'naval-v2' | 'classic-v1' = 'naval-v2';
@@ -110,14 +115,19 @@ export class Match {
   result?:MatchResult;
   campaignRevision=0;
   submarineRosterLegacy=false;
-  constructor(world: HexWorld, assets: ShipAsset[], teamCount = 4, controllers?:TeamController[]) {
+  fleetEntryMode:FleetEntryMode;
+  private readonly assetsById:Map<string,ShipAsset>;
+  constructor(world: HexWorld, assets: ShipAsset[], teamCount = 4, controllers?:TeamController[], fleetEntry:FleetEntryMode='immediate') {
     this.world = world;
     if (!Number.isInteger(teamCount) || teamCount < 2 || teamCount > 8 || !assets.length || new Set(assets.map(asset => asset.id)).size !== assets.length) throw Error('势力数应为 2～8，舰船池不能为空或重复');
     if(world.scenarioId==='test-5x10'&&teamCount!==2)throw Error('5 × 10 测试海图只支持双方对战');
     if(controllers&&(controllers.length!==teamCount||controllers.some(controller=>!['human','ai'].includes(controller))))throw Error('席位设置无效');
+    if(!['immediate','staggered'].includes(fleetEntry))throw Error('舰队入场方式无效');
+    this.fleetEntryMode=fleetEntry;
     const battle=campaignBattle(world.scenarioId);
     if(battle&&teamCount!==2)throw Error('历史战役只支持双方对战');
     if(battle)this.activeIndex=battle.firstMoverIndex;
+    this.assetsById=new Map(assets.map(asset=>[asset.id,asset]));
     this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: battle?.sides[i]??TEAM_NAMES[i], oil: 0,credits:STARTING_CREDITS,supply:STARTING_SUPPLY,eliminated:false,controller:controllers?.[i]??'human' }));
     const fleetAssetsByTeam:ShipAsset[][]=world.scenarioId==='test-5x10'
       ?this.teams.map(()=>testArenaFleetAssets(assets))
@@ -128,19 +138,23 @@ export class Match {
     const occupied = new Set<string>(), starts = [[.12,.13],[.82,.15],[.82,.82],[.15,.82],[.48,.10],[.90,.50],[.50,.90],[.10,.50]];
     this.units = this.teams.flatMap((team,index) => {
       const fleetAssets=fleetAssetsByTeam[index];
-      if(world.scenarioId==='test-5x10')return TEST_ARENA_SPAWNS[index].map((cell,shipIndex)=>{
-        const asset=fleetAssets[shipIndex];occupied.add(`${cell.col},${cell.row}`);
-        const combat=profile(asset.ship_type.code);
-        return { ...cell,instanceId:`team-${team.id}-${asset.id}`,asset,ownerId:team.id,facing:shipIndex%2?'left' as const:'right' as const,
-          action:1,status:'ready' as const,hp:combat.maxHp,maxHp:combat.maxHp,guard:false,cooldowns:{},movementUsed:0,
-          movedThisTurn:false,firedThisTurn:false,torpedoes:SHIP_RULES_V2[asset.ship_type.code]?.torpedoes??0,...(asset.ship_type.code==='SS'?{submerged:true}:{}) };
-      });
       const origin = world.startPositions[index]??{ col: Math.round(world.width * starts[index][0]), row: Math.round(world.height * starts[index][1]) };
-      return world.deploy(fleetAssets, origin, team.id, occupied).map(unit => { const combat = profile(unit.asset.ship_type.code); return { ...unit, ownerId: team.id,
-        action: 1, status: 'ready' as const,
-        hp: combat.maxHp, maxHp: combat.maxHp, guard: false, cooldowns: {}, movementUsed: 0,
-        movedThisTurn:false,firedThisTurn:false,torpedoes: SHIP_RULES_V2[unit.asset.ship_type.code]?.torpedoes ?? 0,
-        ...(unit.asset.ship_type.code==='SS'?{submerged:true}:{}) }; });
+      const startingIds=fleetEntry==='staggered'?new Set(this.startingFleet(fleetAssets,world.scenarioId,battle!==undefined).map(asset=>asset.id)):new Set(fleetAssets.map(asset=>asset.id));
+      const starting=fleetAssets.map((asset,shipIndex)=>({asset,shipIndex})).filter(entry=>startingIds.has(entry.asset.id));
+      if(fleetEntry==='staggered'){
+        const waveSize=world.scenarioId==='archipelago'?4:2;
+        let reserveIndex=0;
+        for(const {asset,shipIndex} of fleetAssets.map((asset,shipIndex)=>({asset,shipIndex})).filter(entry=>!startingIds.has(entry.asset.id))){
+          const preferred=world.scenarioId==='test-5x10'?TEST_ARENA_SPAWNS[index][shipIndex]:{col:origin.col-5+(shipIndex%4)*3,row:origin.row-3+Math.floor(shipIndex/4)*3};
+          const entryCell=world.scenarioId==='test-5x10'?preferred:world.nearbySea(preferred);
+          this.fleetReserve.push({ownerId:team.id,assetId:asset.id,arrivalRound:2+Math.floor(reserveIndex++/waveSize),entryCell,facing:shipIndex%2?'left':'right'});
+        }
+      }
+      if(world.scenarioId==='test-5x10')return starting.map(({asset,shipIndex})=>{
+        const cell=TEST_ARENA_SPAWNS[index][shipIndex];occupied.add(`${cell.col},${cell.row}`);
+        return this.createFleetUnit(asset,team.id,cell,shipIndex%2?'left':'right');
+      });
+      return world.deploy(starting.map(entry=>entry.asset), origin, team.id, occupied).map(unit=>this.createFleetUnit(unit.asset,team.id,unit,unit.facing));
     });
     this.hash = mapHash(world);
     this.combatState = globalThis.crypto.getRandomValues(new Uint32Array(1))[0];
@@ -148,6 +162,39 @@ export class Match {
     this.portIntel=this.teams.map(t=>this.ports.map(p=>p.ownerId===t.id?t.id:-1));
     this.contacts=this.teams.map(()=>[]);this.currentContactIds=this.teams.map(()=>new Set());
     this.fog=new FogOfWar(world,teamCount);this.refreshVision();
+  }
+  private startingFleet(fleetAssets:ShipAsset[],scenarioId:WorldScenario,isCampaign:boolean):ShipAsset[]{
+    if(scenarioId==='test-5x10')return fleetAssets.slice(0,4);
+    const targetCount=Math.min(isCampaign?4:7,fleetAssets.length),priority=isCampaign?['CV','CVL','BB','CA','CL','DD','SS']:['DD','CL','CA','BB','CV','CVL','SS'];
+    const selected:ShipAsset[]=isCampaign?fleetAssets.filter(asset=>['CV','CVL'].includes(asset.ship_type.code)).slice(0,2):[];
+    for(const code of priority){const asset=fleetAssets.find(item=>item.ship_type.code===code&&!selected.includes(item));if(asset&&selected.length<targetCount)selected.push(asset);}
+    for(const asset of fleetAssets)if(selected.length<targetCount&&!selected.includes(asset))selected.push(asset);
+    return selected;
+  }
+  private createFleetUnit(asset:ShipAsset,ownerId:number,cell:Cell,facing:'left'|'right'):MatchUnit{
+    const combat=profile(asset.ship_type.code);
+    return {...cell,instanceId:`team-${ownerId}-${asset.id}`,asset,ownerId,facing,action:1,status:'ready',hp:combat.maxHp,maxHp:combat.maxHp,guard:false,cooldowns:{},movementUsed:0,movedThisTurn:false,firedThisTurn:false,torpedoes:SHIP_RULES_V2[asset.ship_type.code]?.torpedoes??0,...(asset.ship_type.code==='SS'?{submerged:true}:{})};
+  }
+  fleetEntryStatus(ownerId:number):{remaining:number;nextRound:number;nextCount:number}|undefined{
+    const queued=this.fleetReserve.filter(entry=>entry.ownerId===ownerId);if(!queued.length)return;
+    const nextRound=Math.min(...queued.map(entry=>entry.arrivalRound));return {remaining:queued.length,nextRound,nextCount:queued.filter(entry=>entry.arrivalRound===nextRound).length};
+  }
+  private deployScheduledFleet():MatchUnit[]{
+    const arrivals:MatchUnit[]=[],remaining:FleetReserve[]=[];
+    for(const reserve of this.fleetReserve){
+      if(reserve.arrivalRound>this.round){remaining.push(reserve);continue;}
+      const asset=this.assetsById.get(reserve.assetId);
+      if(!asset)throw Error(`增援舰船素材缺失：${reserve.assetId}`);
+      try{
+        const occupied=new Set(this.units.map(cellKey)),cell=this.world.nearbySea(reserve.entryCell,occupied),unit=this.createFleetUnit(asset,reserve.ownerId,cell,reserve.facing);
+        unit.notice=`第 ${this.round} 轮增援已抵达`;this.units.push(unit);arrivals.push(unit);
+      }catch{
+        remaining.push({...reserve,arrivalRound:this.round+1});
+      }
+    }
+    this.fleetReserve=remaining;
+    if(arrivals.length){initializeAviationDecks(this);this.refreshVision();this.campaignRevision++;}
+    return arrivals;
   }
   refreshVision():boolean {
     const changed=this.fog.refresh(this.units,this.aviation.squadrons,this.rulesetId);
@@ -339,7 +386,7 @@ export class Match {
   resolveOutcome():void {
     for(const t of this.teams){const cap=this.oilCap(t.id);if(t.oil>cap){t.oil=cap;this.campaignRevision++;}}
     if(this.result)return;
-    for(const t of this.teams){const eliminated=!this.units.some(u=>u.ownerId===t.id&&u.status!=='sunk')&&!this.ports.some(p=>p.ownerId===t.id);if(t.eliminated!==eliminated){t.eliminated=eliminated;this.campaignRevision++;}}
+    for(const t of this.teams){const eliminated=!this.units.some(u=>u.ownerId===t.id&&u.status!=='sunk')&&!this.fleetReserve.some(entry=>entry.ownerId===t.id)&&!this.ports.some(p=>p.ownerId===t.id);if(t.eliminated!==eliminated){t.eliminated=eliminated;this.campaignRevision++;}}
     if(this.rulesetId==='naval-v2'){
       this.phaseSubmitted=this.phaseSubmitted.filter(id=>!this.team(id).eliminated);
       if(this.active.eliminated){const next=this.initiativeOrder().find(index=>!this.phaseSubmitted.includes(this.teams[index].id));if(next!==undefined)this.activeIndex=next;}
@@ -913,6 +960,7 @@ export class Match {
         unit.action=unit.status==='hold'||unit.status==='sunk'?0:1;unit.movementUsed=0;unit.movedThisTurn=false;
       }
     }
+    this.deployScheduledFleet();
     this.phase='aviation';this.activeIndex=this.firstInitiativeTeam();this.campaignRevision++;this.resolveOutcome();
   }
   private resolveLegacySubmittedTurns(activeOwnerId:number):void {
@@ -958,7 +1006,9 @@ export class Match {
     if(this.rulesetId==='naval-v2'){this.assertPlayable();this.resolvedCombatEvents=[];this.resolvedAviationLaunches=[];this.resolvedAviationMoves=[];return this.endV2Turn();}
     this.assertPlayable();this.refreshVision();this.ageContacts(this.active.id);this.updatePortOccupations(this.active.id);this.resolveOutcome();if(this.result)return [];
     endAviationTurn(this,this.active.id);
+    const previousRound=this.round;
     do {this.activeIndex = (this.activeIndex + 1) % this.teams.length; if (!this.activeIndex) this.round++;}while(this.active.eliminated);
+    if(this.round!==previousRound)this.deployScheduledFleet();
     this.active.oil = this.oilCap();
     this.active.credits=Math.min(MAX_CREDITS,this.active.credits+this.income());
     this.campaignRevision++;
@@ -974,9 +1024,9 @@ export class Match {
   }
   save(): SavedMatch {
     this.refreshVision();this.resolveOutcome();if(this.rulesetId==='naval-v2')initializeAviationDecks(this);
-    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 28, ...(this.submarineRosterLegacy?{submarineRosterLegacy:true as const}:{}), mapVersion: 1, size: this.world.width,height:this.world.height,mapKind:this.world.scenarioId,mapHash: this.hash,
+    return JSON.parse(JSON.stringify({ format: 'al-hex-match', version: 29, ...(this.submarineRosterLegacy?{submarineRosterLegacy:true as const}:{}),fleetEntryMode:this.fleetEntryMode, mapVersion: 1, size: this.world.width,height:this.world.height,mapKind:this.world.scenarioId,mapHash: this.hash,
       rulesetId:this.rulesetId,combatState:this.combatState,phase:this.rulesetId==='naval-v2'?this.phase:'classic',initiativeIndex:this.initiativeIndex,phaseSubmitted:this.rulesetId==='naval-v2'?this.phaseSubmitted:[],aviationOrders:this.rulesetId==='naval-v2'?this.aviationOrders:[],movementOrders:this.rulesetId==='naval-v2'?this.movementOrders:[],combatOrders:this.rulesetId==='naval-v2'?this.combatOrders:[],round: this.round, activeIndex: this.activeIndex, teams: this.teams,
-      units: this.units.map(({ asset, ...unit }) => ({ ...unit, assetId: asset.id })),contacts:this.rulesetId==='naval-v2'?this.contacts:this.teams.map(()=>[]),aviation: this.aviation,fog:this.fog.save(),campaign:{ports:this.ports,intel:this.portIntel,result:this.result} }));
+      units: this.units.map(({ asset, ...unit }) => ({ ...unit, assetId: asset.id })),fleetReserve:this.fleetReserve,contacts:this.rulesetId==='naval-v2'?this.contacts:this.teams.map(()=>[]),aviation: this.aviation,fog:this.fog.save(),campaign:{ports:this.ports,intel:this.portIntel,result:this.result} }));
   }
   static load(input: unknown, assets: ShipAsset[]): Match {
     const data = input as any;
@@ -984,8 +1034,9 @@ export class Match {
     const integer = (n: unknown, low: number, high: number) => Number.isInteger(n) && Number(n) >= low && Number(n) <= high;
     const mapKind=data?.version>=23?data.mapKind:'archipelago',mapHeight=data?.version>=23?data.height:data?.size,battle=isCampaignBattleId(mapKind)?campaignBattle(mapKind):undefined;
     const validMap=mapKind==='archipelago'&&[128,256,512].includes(data?.size)&&mapHeight===data?.size||mapKind==='test-5x10'&&data?.size===5&&mapHeight===10||!!battle&&data?.size===battle.width&&mapHeight===battle.height;
-    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
+    if (!data || data.format !== 'al-hex-match' || ![1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29].includes(data.version) || data.mapVersion !== 1 || !validMap) fail();
     if(data.version>=16&&(!['naval-v2','classic-v1'].includes(data.rulesetId)||!integer(data.combatState,0,0xffffffff)))fail();
+    if(data.version>=29&&!['immediate','staggered'].includes(data.fleetEntryMode))fail();
     if (!Array.isArray(data.teams) || !integer(data.teams.length, 2, 8) || !integer(data.activeIndex, 0, data.teams.length - 1) || !integer(data.round, 1, 1_000_000)) fail();
     if(data.version>=19&&(!integer(data.initiativeIndex,0,data.teams.length-1)||!Array.isArray(data.phaseSubmitted)||new Set(data.phaseSubmitted).size!==data.phaseSubmitted.length||data.phaseSubmitted.some((id:number)=>!integer(id,1,data.teams.length))||!Array.isArray(data.movementOrders)||data.rulesetId==='naval-v2'&&(data.version>=24?data.phase!=='aviation':!(data.version>=22?['aviation','movement','combat']:['movement','combat']).includes(data.phase))||data.rulesetId==='classic-v1'&&data.phase!=='classic'))fail();
     if(data.version>=22&&!Array.isArray(data.aviationOrders))fail();
@@ -999,16 +1050,23 @@ export class Match {
     if(mapKind==='test-5x10'&&data.teams.length!==2)fail();
     const scenarioAssets=mapKind==='test-5x10'?testArenaFleetAssets(assets):assets;
     const expectedUnits = battle?battle.startingFleetIds.flat().length:scenarioAssets.length * (data.version === 1 ? 1 : data.teams.length);
+    if(data.version>=29&&!Array.isArray(data.fleetReserve)||data.version<29&&data.fleetReserve!==undefined&&!Array.isArray(data.fleetReserve))fail();
+    const reserveCount=data.version>=29?data.fleetReserve.length:0;
+    if(data.version>=29&&data.fleetEntryMode==='immediate'&&reserveCount)fail();
     const legacySubmarineCount=battle?battle.startingFleetIds.flat().filter(id=>id==='i19').length:0;
     const legacyRosterCounts=battle?[expectedUnits-legacySubmarineCount]:mapKind==='test-5x10'
       ?[TEST_ARENA_SHIP_TYPES.filter(code=>code!=='SS').length*data.teams.length]
       :[scenarioAssets.filter(asset=>asset.ship_type.code!=='SS').length*(data.version===1?1:data.teams.length),scenarioAssets.filter(asset=>INITIAL_ROSTER_IDS.has(asset.id)).length*(data.version===1?1:data.teams.length)];
     const validLegacyRoster=(data.version<28||data.submarineRosterLegacy===true)&&Array.isArray(data.units)&&legacyRosterCounts.includes(data.units.length);
     if(data.submarineRosterLegacy!==undefined&&data.submarineRosterLegacy!==true||data.version>=28&&data.submarineRosterLegacy===true&&!validLegacyRoster)fail();
-    const legacyFullCampaignRoster=!!battle&&data.version!==1&&Array.isArray(data.units)&&data.units.length===assets.length*data.teams.length;
-    if (!Array.isArray(data.units) || data.units.length !== expectedUnits&&!legacyFullCampaignRoster&&!validLegacyRoster || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2)) fail();
+    const legacyFullCampaignRoster=data.version<29&&!!battle&&data.version!==1&&Array.isArray(data.units)&&data.units.length===assets.length*data.teams.length;
+    const savedRosterCount=data.units?.length+reserveCount;
+    if(!Array.isArray(data.units))fail();
+    if(data.version>=29){
+      if(data.submarineRosterLegacy===true?reserveCount!==0||!validLegacyRoster:savedRosterCount!==expectedUnits)fail();
+    }else if(data.units.length !== expectedUnits&&!legacyFullCampaignRoster&&!validLegacyRoster || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2))fail();
     const world=mapKind==='test-5x10'?new HexWorld(5,10,'test-5x10'):battle?new HexWorld(battle.width,battle.height,battle.id):new HexWorld(data.size);
-    const match = new Match(world, assets, data.teams.length); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
+    const match = new Match(world, assets, data.teams.length,undefined,data.version>=29?data.fleetEntryMode:'immediate'); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
     match.submarineRosterLegacy=validLegacyRoster&&data.units.length!==expectedUnits;
     match.rulesetId=data.version>=16?data.rulesetId:'classic-v1';
     match.phase=data.version>=19?data.phase:match.rulesetId==='naval-v2'?'combat':'classic';
@@ -1055,7 +1113,21 @@ export class Match {
         ...(asset.ship_type.code==='SS'?{submerged:savedSubmerged}:{}),
         ...(saved.availableRound!==undefined?{availableRound:saved.availableRound}:{}) };
     });
-    if (data.teams.some((team: Team) => !match.units.some(u => u.ownerId === team.id))) fail();
+    if(data.version>=29){
+      const recordedByTeam=match.teams.map(team=>new Set(match.units.filter(unit=>unit.ownerId===team.id).map(unit=>unit.asset.id)));
+      match.fleetReserve=data.fleetReserve.map((raw:unknown)=>{
+        const saved=raw as FleetReserve,ownerIds=battle?battle.startingFleetIds[saved?.ownerId-1]:scenarioAssets.map(asset=>asset.id),asset=saved&&assets.find(item=>item.id===saved.assetId),assetKey=`${saved?.ownerId}:${saved?.assetId}`;
+        if(!saved||!asset||!integer(saved.ownerId,1,match.teams.length)||!ownerIds?.includes(saved.assetId)||saved.arrivalRound<=data.round||!integer(saved.arrivalRound,data.round+1,1_000_000)||!validCell(saved.entryCell)||!['left','right'].includes(saved.facing)||assetIds.has(assetKey))return fail();
+        assetIds.add(assetKey);recordedByTeam[saved.ownerId-1].add(saved.assetId);return {ownerId:saved.ownerId,assetId:saved.assetId,arrivalRound:saved.arrivalRound,entryCell:{...saved.entryCell},facing:saved.facing};
+      });
+      if(data.submarineRosterLegacy!==true){
+        for(let ownerId=1;ownerId<=match.teams.length;ownerId++){
+          const expectedIds=battle?battle.startingFleetIds[ownerId-1]:scenarioAssets.map(asset=>asset.id);
+          if(recordedByTeam[ownerId-1].size!==expectedIds.length||expectedIds.some(id=>!recordedByTeam[ownerId-1].has(id)))fail();
+        }
+      }
+    }
+    if (data.teams.some((team: Team) => !match.units.some(u => u.ownerId === team.id)&&!match.fleetReserve.some(entry=>entry.ownerId===team.id))) fail();
     if(data.version>=18){
       if(!Array.isArray(data.contacts)||data.contacts.length!==match.teams.length)fail();
       match.contacts=data.contacts.map((records:unknown,ownerIndex:number)=>{
@@ -1123,7 +1195,7 @@ export class Match {
     }
     if ([...legacyMembership.keys()].some(id => !members.has(id))) fail();
     match.round = data.round; match.activeIndex = data.activeIndex;
-    if (data.version >= 5) match.aviation = validateAviation(data.aviation,match,data.version as 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28);
+    if (data.version >= 5) match.aviation = validateAviation(data.aviation,match,data.version as 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29);
     if(data.version>=22){
       const seenLaunches=new Set<string>();
       for(const order of match.aviationOrders){

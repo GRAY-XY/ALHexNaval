@@ -42,7 +42,13 @@ export class ShipRenderer {
   constructor(units: MatchUnit[]) {
     this.container.eventMode = 'none'; this.container.sortableChildren = true;
     this.nameplates.zIndex=100000; this.nameplates.sortableChildren=true; this.container.addChild(this.nameplates);
+    this.syncUnits(units);
+  }
+  syncUnits(units: MatchUnit[]): void {
+    const known = new Set(this.visuals.map(visual => visual.unit.instanceId));
     for (const unit of units) {
+      if (known.has(unit.instanceId)) continue;
+      known.add(unit.instanceId);
       const root = new Container(), point = cellCenter(unit), color = unit.ownerId ? TEAM_COLORS[unit.ownerId - 1] : FACTION_COLORS[unit.asset.faction.id] ?? 0x9ae4c6;
       root.position.set(point.x, point.y); root.zIndex = point.y;
       const water = new Graphics(); water.beginFill(0x051e32, .3).drawEllipse(0, 9, 28, 8).endFill();

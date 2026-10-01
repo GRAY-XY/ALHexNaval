@@ -121,13 +121,13 @@ class NavalMap {
   async changeSize(size: number|'test-5x10', teamCount = 4, controllers?:TeamController[]): Promise<void> {
     if (this.match) this.writeSlot('previous', this.match.save());
     const world=size==='test-5x10'?new HexWorld(5,10,'test-5x10'):new HexWorld(size);
-    await this.installMatch(new Match(world, this.assets, teamCount,controllers)); this.persist();
+    await this.installMatch(new Match(world, this.assets, teamCount,controllers,'staggered')); this.persist();
   }
   private async startCampaignBattle(id:CampaignBattleId):Promise<void>{
     const battle=campaignBattle(id);if(!battle)throw Error('战役关卡不存在');
     if(this.match)this.writeSlot('previous',this.match.save());
     const side=this.campaignProgress.selectedSide,controllers:TeamController[]=['ai','ai'];controllers[side]='human';
-    const world=new HexWorld(battle.width,battle.height,battle.id),match=new Match(world,this.assets,2,controllers);
+    const world=new HexWorld(battle.width,battle.height,battle.id),match=new Match(world,this.assets,2,controllers,'staggered');
     await this.installMatch(match);this.persist();this.enterGame();this.notify(`${battle.title} · 第1回合，玩家指挥${battle.sides[side]}`);
   }
   private saveCampaignProgress():void{
@@ -184,7 +184,7 @@ class NavalMap {
       $<HTMLSelectElement>('team-count').value = String(match.teams.length);
       this.setupUsesTestMap=this.world.scenarioId==='test-5x10';
       $<HTMLSelectElement>('team-count').disabled=this.setupUsesTestMap;
-      $('team-count-hint').textContent=this.setupUsesTestMap?'双方各有七种舰种各一艘':'每个席位使用完整舰船阵容';
+      $('team-count-hint').textContent=this.setupUsesTestMap?'双方先派4艘，其余从第2轮起每轮最多2艘':'每方先派7艘（各舰型1艘），其余从第2轮起每轮最多4艘';
       if(!this.setupUsesTestMap)this.regularTeamCount=match.teams.length;
       this.setupControllers=Array.from({length:TEAM_NAMES.length},(_,i)=>match.teams[i]?.controller??'human');this.renderSeatSettings();
       this.ready = true; this.dirty = true; this.app.start();
@@ -380,7 +380,9 @@ class NavalMap {
     const combatOwners=new Map<string,number>([
       ...this.match.units.map(unit=>[unit.instanceId,unit.ownerId] as const),
       ...this.match.aviation.squadrons.map(squadron=>[squadron.id,squadron.ownerId] as const),
-    ]),events=this.match.endTurn(),viewerId=this.match.active.id;
+    ]),events=this.match.endTurn();
+    this.ships.syncUnits(this.match.units);
+    const viewerId=this.match.active.id;
     for(const combat of this.match.takeResolvedCombatEvents()){
       if(combatOwners.get(combat.attackerId)!==viewerId&&combatOwners.get(combat.targetId)!==viewerId)continue;
       if(combat.targetIsAircraft)this.notify(`${combat.attackerLabel??combat.attackerId}拦截${combat.targetLabel??'敌机'} · 造成 ${combat.damage} 点机体伤害`);
@@ -414,10 +416,11 @@ class NavalMap {
       v2=this.match.rulesetId==='naval-v2',
       pending = v2?alive.filter(u=>u.status==='ready'&&(!u.movedThisTurn||u.action>0)).length:
         alive.filter(u => u.status === 'ready' && (this.match.budget(u)>0||u.action>0)).length;
-    const ai=active.controller==='ai';
+    const ai=active.controller==='ai',incoming=this.match.fleetEntryStatus(active.id);
+    const incomingText=incoming?` · 预备队 ${incoming.remaining} 艘，第 ${incoming.nextRound} 轮抵达 ${incoming.nextCount} 艘`:'';
     $('turn-label').textContent = `第 ${this.match.round} 轮 · ${active.name}${ai?' · AI':''}`;
     $('turn-label').style.color = '#' + TEAM_COLORS[active.id - 1].toString(16);
-    $('pending-info').textContent = `${alive.length}/${own.length} 艘存续 · ${ai?'AI自动行动':`${pending} 艘舰船可行动`}${v2?` · 本轮已完成 ${this.match.phaseSubmitted.length}/${this.match.teams.filter(t=>!t.eliminated).length} 方行动`:''}`;
+    $('pending-info').textContent = `${alive.length}/${own.length} 艘存续 · ${ai?'AI自动行动':`${pending} 艘舰船可行动`}${incomingText}${v2?` · 本轮已完成 ${this.match.phaseSubmitted.length}/${this.match.teams.filter(t=>!t.eliminated).length} 方行动`:''}`;
     if(this.match.rulesetId==='naval-v2'){
       $('team-resource-label').textContent='补给';$('team-oil').textContent=`${active.supply} / 8`;$('team-oil-fill').style.width=`${active.supply/8*100}%`;
       $('oil-rule-note').textContent='己方港口每轮自动补给 · 港口可维修舰体和装填鱼雷';
@@ -529,7 +532,7 @@ class NavalMap {
       button.onclick=()=>{this.selectedCampaignId=battle.id;this.renderCampaignLevels();};nav.append(button);
     }
     const battle=campaignBattle(this.selectedCampaignId)!;
-    const opponentIndex=(1-sideIndex) as CampaignSideIndex,brief=$('campaign-brief');brief.replaceChildren(element('span','campaign-date',`${battle.date}　·　${battle.theater}`),element('h3','',battle.title),element('p','',battle.summary),element('p','campaign-objective',`任务目标：${battle.mission.objectives[sideIndex].description}`),element('p','',`交战双方：玩家指挥${battle.sides[sideIndex]}，AI指挥${battle.sides[opponentIndex]}。`),element('p','campaign-note',`限时 ${battle.mission.roundLimit} 轮 · 初始舰队 ${battle.startingFleetIds[sideIndex].length} 艘 · 历史地理与舰船编成按现有素材和规则作简化表现。`));
+    const opponentIndex=(1-sideIndex) as CampaignSideIndex,brief=$('campaign-brief');brief.replaceChildren(element('span','campaign-date',`${battle.date}　·　${battle.theater}`),element('h3','',battle.title),element('p','',battle.summary),element('p','campaign-objective',`任务目标：${battle.mission.objectives[sideIndex].description}`),element('p','',`交战双方：玩家指挥${battle.sides[sideIndex]}，AI指挥${battle.sides[opponentIndex]}。`),element('p','campaign-note',`限时 ${battle.mission.roundLimit} 轮 · 本方舰队共 ${battle.startingFleetIds[sideIndex].length} 艘，开局派出4艘，其余从第2轮起每轮最多2艘抵达 · 历史地理与舰船编成按现有素材和规则作简化表现。`));
     const start=$<HTMLButtonElement>('start-campaign'),record=sideProgress.records[battle.id];start.textContent=record?.outcome==='victory'?'重战本关':`进入第 ${CAMPAIGN_BATTLES.findIndex(item=>item.id===battle.id)+1} 关`;
   }
   private openSetup():void {
@@ -613,7 +616,7 @@ class NavalMap {
       if(!isTest&&this.setupUsesTestMap)teams.value=String(this.regularTeamCount);
       this.setupUsesTestMap=isTest;teams.disabled=isTest;
       if(isTest)teams.value='2';else this.regularTeamCount=Number(teams.value)||this.regularTeamCount;
-      $('team-count-hint').textContent=isTest?'双方各有七种舰种各一艘':'每个席位使用完整舰船阵容';
+      $('team-count-hint').textContent=isTest?'双方先派4艘，其余从第2轮起每轮最多2艘':'每方先派7艘（各舰型1艘），其余从第2轮起每轮最多4艘';
       this.renderSeatSettings();
     };
     $('main-load').onclick=()=>this.openLoadDialog(true);
@@ -910,6 +913,7 @@ class NavalMap {
     this.worldLayer.scale.set(camera.zoom);
     this.worldLayer.position.set(camera.viewportWidth / 2 - camera.x * camera.zoom, camera.viewportHeight / 2 - camera.y * camera.zoom);
     this.match.refreshVision();const bounds = camera.viewBounds(); this.terrain.updateView(bounds, camera.zoom); this.fog.update(bounds,camera.zoom,this.match.active.id);
+    this.ships.syncUnits(this.match.units);
     this.ships.updateView(bounds, camera.zoom, this.chosen, this.match.active.id,u=>this.match.unitVisible(u),this.match.rulesetId);
     this.contacts.update(this.match.contactsFor(),bounds,camera.zoom);
     this.aircraft.update(this.match.aviation.squadrons.filter(s=>this.match.airVisible(s)),bounds,camera.zoom,this.chosenAir,this.match);

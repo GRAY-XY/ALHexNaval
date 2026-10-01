@@ -110,7 +110,7 @@ check('Version13 offshore ports relocate to coast while ownership, quota, funds,
   const raw:any=m.save();raw.version=13;const before=JSON.stringify(raw),loaded=Match.load(raw,assets);
   assert.equal(JSON.stringify(raw),before);assert(loaded.ports.every(p=>isCoastalPort(loaded.world,p)));
   assert.deepEqual(loaded.ports.map(p=>({id:p.id,owner:p.ownerId,used:p.usedRound})),raw.campaign.ports.map((p:any)=>({id:p.id,owner:p.ownerId,used:p.usedRound})));
-  assert.equal(loaded.active.credits,77);assert.equal(loaded.active.oil,17);assert.equal(loaded.oilCap(),60);assert.equal(loaded.save().version,28);
+  assert.equal(loaded.active.credits,77);assert.equal(loaded.active.oil,17);assert.equal(loaded.oilCap(),60);assert.equal(loaded.save().version,29);
   assert.deepEqual(loaded.save().units,raw.units);assert.deepEqual(loaded.save().aviation,raw.aviation);assert.deepEqual(loaded.save().fog,raw.fog);
   assert.deepEqual(Match.load(loaded.save(),assets).save(),loaded.save());
 });
