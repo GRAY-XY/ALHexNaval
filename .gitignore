@@ -4,6 +4,31 @@
 **/.playwright-cli/
 ALHexGame/dist/
 
+# Local credentials and private keys
+.env
+.env.*
+!.env.example
+!.env.sample
+**/.npmrc
+**/.pypirc
+**/.netrc
+**/.aws/credentials
+**/application_default_credentials.json
+**/credentials
+**/credentials.*
+**/credentials*.json
+**/*service-account*.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.jks
+**/*.keystore
+**/id_rsa
+**/id_ed25519
+**/id_ecdsa
+**/id_dsa
+
 # Local verification artifacts that are reproducible or too noisy for reviews
 ALHexGame/output/backups/
 ALChibiAssets/output/
