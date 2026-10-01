@@ -15,7 +15,7 @@ function sink(u:MatchUnit){Object.assign(u,{hp:0,action:0,status:'sunk',guard:fa
 function scene(){const m=classicMatch(new HexWorld(128)),p=m.ports.find(p=>!p.ownerId&&m.units.every(u=>hexDistance(u,p)>2))!,u=m.unit('team-1-lafei');assert(p);Object.assign(u,{col:p.col,row:p.row});m.refreshVision();return {m,p,u};}
 function own(){const s=scene();s.m.capturePort(s.u.instanceId,s.p.id);s.u.action=1;return s;}
 check('All map sizes and player counts create unique sea harbors, one home per player and separate starting credits',()=>{
-  for(const size of [128,256,512])for(const players of [2,4,8]){const m=classicMatch(new HexWorld(size),assets,players);assert.equal(m.ports.filter(p=>p.homeForId).length,players);assert.equal(new Set(m.ports.map(cellKey)).size,m.ports.length);assert(m.ports.every(p=>isCoastalPort(m.world,p)));assert(m.teams.every(t=>t.credits===40&&t.oil===50&&m.oilCap(t.id)===50&&!t.eliminated));assert.equal(m.ports.filter(p=>p.homeForId===1)[0].ownerId,1);assert(!m.result);}
+  for(const size of [128,256,512])for(const players of [2,4,8]){const world=new HexWorld(players===8?Math.max(256,size):size),m=classicMatch(world,assets,players);assert.equal(m.ports.filter(p=>p.homeForId).length,players);assert.equal(new Set(m.ports.map(cellKey)).size,m.ports.length);assert(m.ports.every(p=>isCoastalPort(m.world,p)));assert(m.teams.every(t=>t.credits===40&&t.oil===50&&m.oilCap(t.id)===50&&!t.eliminated));assert.equal(m.ports.filter(p=>p.homeForId===1)[0].ownerId,1);assert(!m.result);}
 });
 check('Capturing costs one combat action, no credits or oil, and does not grant immediate income',()=>{
   const {m,p,u}=scene();const credit=m.active.credits,oil=m.active.oil,income=m.income();m.capturePort(u.instanceId,p.id);assert.equal(p.ownerId,1);assert.equal(u.action,0);assert.equal(m.active.credits,credit);assert.equal(m.active.oil,oil);assert.equal(m.income(),income+10);assert.equal(m.portIntel[0][m.ports.indexOf(p)],1);assert.throws(()=>m.capturePort(u.instanceId,p.id));
@@ -27,7 +27,7 @@ check('Faraway, held, sunk, wrong-owner and spent-action capture commands reject
   for(const mode of ['far','hold','sunk','other','spent']){const {m,p,u}=scene();let id=u.instanceId;if(mode==='far')Object.assign(u,m.world.nearbySea({col:60,row:60}));if(mode==='hold'){u.status='hold';u.action=0;}if(mode==='sunk')sink(u);if(mode==='other')id='team-2-lafei';if(mode==='spent')u.action=0;const before=m.save();assert.throws(()=>m.capturePort(id,p.id));assert.deepEqual(m.save(),before);}
 });
 check('Income belongs to the incoming player and cycles preserve the faction oil50 rule',()=>{
-  for(const players of [2,4,8]){const m=classicMatch(new HexWorld(128),assets,players);m.active.oil=7;for(let i=1;i<=players;i++){const next=i%players+1,before=m.team(next).credits;m.endTurn();assert.equal(m.active.id,next);assert.equal(m.active.credits,before+m.income());assert.equal(m.active.oil,50);}assert.equal(m.round,2);}
+  for(const players of [2,4,8]){const m=classicMatch(new HexWorld(players===8?256:128),assets,players);m.active.oil=7;for(let i=1;i<=players;i++){const next=i%players+1,before=m.team(next).credits;m.endTurn();assert.equal(m.active.id,next);assert.equal(m.active.credits,before+m.income());assert.equal(m.active.oil,50);}assert.equal(m.round,2);}
 });
 check('Repair restores at most fourHP with two credits perHP and consumes the ships combat action',()=>{
   const {m,p,u}=own();u.hp=1;const oil=m.active.oil;m.repairShip(u.instanceId,p.id);assert.equal(u.hp,5);assert.equal(m.active.credits,32);assert.equal(u.action,0);assert.equal(m.active.oil,oil);assert.throws(()=>m.repairShip(u.instanceId,p.id));m.endTurn();m.endTurn();m.repairShip(u.instanceId,p.id);assert.equal(u.hp,6);assert.equal(m.active.credits,50);assert.throws(()=>m.repairShip(u.instanceId,p.id));
@@ -78,7 +78,7 @@ check('Version12 migration retains hull, aircraft, oil and discovery while initi
 });
 check('Capturing a harbor raises the shared oil ceiling without granting immediate oil; next own turn fills the new ceiling',()=>{
   for(const players of [2,4,8]){
-    const m=classicMatch(new HexWorld(128),assets,players),u=m.unit('team-1-lafei'),p=m.ports.find(p=>!p.ownerId&&m.units.every(v=>hexDistance(v,p)>2))!;
+    const m=classicMatch(new HexWorld(players===8?256:128),assets,players),u=m.unit('team-1-lafei'),p=m.ports.find(p=>!p.ownerId&&m.units.every(v=>hexDistance(v,p)>2))!;
     Object.assign(u,{col:p.col,row:p.row});m.active.oil=7;m.capturePort(u.instanceId,p.id);assert.equal(m.oilCap(),60);assert.equal(m.active.oil,7);
     for(let i=0;i<players;i++)m.endTurn();assert.equal(m.active.oil,60);assert.deepEqual(Match.load(m.save(),assets).save(),m.save());
   }
@@ -110,7 +110,7 @@ check('Version13 offshore ports relocate to coast while ownership, quota, funds,
   const raw:any=m.save();raw.version=13;const before=JSON.stringify(raw),loaded=Match.load(raw,assets);
   assert.equal(JSON.stringify(raw),before);assert(loaded.ports.every(p=>isCoastalPort(loaded.world,p)));
   assert.deepEqual(loaded.ports.map(p=>({id:p.id,owner:p.ownerId,used:p.usedRound})),raw.campaign.ports.map((p:any)=>({id:p.id,owner:p.ownerId,used:p.usedRound})));
-  assert.equal(loaded.active.credits,77);assert.equal(loaded.active.oil,17);assert.equal(loaded.oilCap(),60);assert.equal(loaded.save().version,27);
+  assert.equal(loaded.active.credits,77);assert.equal(loaded.active.oil,17);assert.equal(loaded.oilCap(),60);assert.equal(loaded.save().version,28);
   assert.deepEqual(loaded.save().units,raw.units);assert.deepEqual(loaded.save().aviation,raw.aviation);assert.deepEqual(loaded.save().fog,raw.fog);
   assert.deepEqual(Match.load(loaded.save(),assets).save(),loaded.save());
 });

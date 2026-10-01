@@ -172,7 +172,7 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
     objective: '盟军护卫舰队从南侧守住亨德森机场；日军舰队从西北进入铁底湾。',
     sides: ['盟军护卫舰队', '日本增援舰队'], startingFleetIds: [
       ['lafei','fulaiche','hailunna','kelifulan','baerdimo','huashengdun'],
-      ['lingbo','xuefeng','changliang','gaoxiong','miaogao','changmen'],
+      ['lingbo','xuefeng','changliang','gaoxiong','miaogao','changmen','i19'],
     ], firstMoverIndex:1, mission:{roundLimit:10,objectives:[
       {kind:'hold-port',portIndex:0,description:'守住亨德森机场至第10轮结束，阻止日军炮击与增援'},
       {kind:'capture-port',portIndex:0,description:'攻占亨德森机场，支援日军在瓜岛的增援行动'},

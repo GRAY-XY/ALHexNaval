@@ -190,6 +190,7 @@ export function commandSquadron(match: Match, id: string, destination?: Point, t
     if(enemyAir&&!match.airVisible(enemyAir,squadron.ownerId)||enemyShip&&!match.unitVisible(enemyShip,squadron.ownerId))throw Error('目标不在本方当前视野内');
     if (enemyAir && squadron.role !== 'fighter') throw Error('只有战斗机可以执行空中拦截');
     if (match.rulesetId==='naval-v2'&&enemyShip&&squadron.role==='fighter') throw Error('战斗机不能攻击舰船');
+    if (match.rulesetId==='naval-v2'&&enemyShip&&enemyShip.asset.ship_type.code==='SS'&&enemyShip.submerged&&squadron.role!=='bomber') throw Error('只有轰炸机可以攻击潜航潜艇');
     if (!squadron.ammo) throw Error('弹药耗尽，请返航');
     squadron.order = 'attack'; squadron.targetId = targetId; squadron.destination = undefined;
   } else if (destination) {
@@ -365,7 +366,7 @@ export function resolveAviationTurn(match:Match,ownerId:number,eligibleIds?:Read
         match.refreshVision();
         if(s.ammo&&!s.cooldown&&fighterInRange(s,air))intercept(match,s,air,removed,events);
         s.order='patrol';s.targetId=undefined;
-      }else if(ship&&s.role!=='fighter'&&match.unitVisible(ship,s.ownerId)){
+      }else if(ship&&s.role!=='fighter'&&(!(ship.asset.ship_type.code==='SS'&&ship.submerged)||s.role==='bomber')&&match.unitVisible(ship,s.ownerId)){
         let screened=false;
         const screenAtStep=()=>{
           if(!screened&&fighterScreen(match,s,events,removed))screened=true;
@@ -404,7 +405,7 @@ export function advanceAviation(match: Match, elapsedSeconds: number): CombatEve
   return events;
 }
 
-export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26 = 26): AviationState {
+export function validateAviation(input: unknown, match: Match, version: 5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28 = 28): AviationState {
   const state = input as AviationState & { nations?: Record<string,AirNation> };
   const migrateCountry=version===5, migrateEndurance=version<7;
   const fail = (): never => { throw Error('存档航空数据无效，当前战局未改变'); };

@@ -267,6 +267,17 @@
       "skin_id": 307050,
       "source_directory": "assets/重樱/30705_翔鹤/skins/xianghe",
       "source_bundle_sha256": "6113ec94babc08b57bbcc987259446ffae7a82f531c6e5dc248c268c804cf7a9"
+    },
+    {
+      "unit_id": "i19",
+      "ship_group": 30801,
+      "statistics_id": 308011,
+      "type": 8,
+      "nationality": 3,
+      "armor_type": 1,
+      "skin_id": 308010,
+      "source_directory": "assets/重樱/30801_伊19/skins/i19",
+      "source_bundle_sha256": "61267aaa3ab6142ea230294ca755d34dd7f74f6a68d0ddb9c18afba0d2fb4bf1"
     }
   ]
 }

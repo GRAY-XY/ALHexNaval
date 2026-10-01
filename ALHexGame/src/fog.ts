@@ -3,7 +3,7 @@ import type {MatchUnit} from './match.ts';
 import type {Squadron} from './aircraft.ts';
 import type {Cell} from './types.ts';
 import type {HexWorld} from './world.ts';
-import {shipRulesV2} from './naval-rules-v2.ts';
+import {shipVisionV2} from './naval-rules-v2.ts';
 
 export const SHIP_VISION=6, AIR_VISION=8;
 export interface SavedFog {explored:string[]}
@@ -29,7 +29,7 @@ export class FogOfWar {
     }
   }
   refresh(units:MatchUnit[],air:Squadron[],rulesetId:'naval-v2'|'classic-v1'='classic-v1'):boolean {
-    const sources=units.filter(u=>u.status!=='sunk').map(u=>({owner:u.ownerId,cell:{col:u.col,row:u.row},radius:rulesetId==='naval-v2'?shipRulesV2(u.asset.ship_type.code).vision:SHIP_VISION}))
+    const sources=units.filter(u=>u.status!=='sunk').map(u=>({owner:u.ownerId,cell:{col:u.col,row:u.row},radius:rulesetId==='naval-v2'?shipVisionV2(u.asset.ship_type.code,u.submerged):SHIP_VISION}))
       .concat(air.filter(s=>s.hp>0&&s.fuelTurns>0).map(s=>({owner:s.ownerId,cell:worldToCell(s),radius:AIR_VISION})));
     const signature=sources.map(s=>`${s.owner}:${s.cell.col},${s.cell.row}:${s.radius}`).join('|');
     if(signature===this.signature)return false;this.signature=signature;

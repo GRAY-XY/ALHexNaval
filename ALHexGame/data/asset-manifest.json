@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-10-01T05:11:31.764862+00:00",
+  "prepared_at": "2026-10-01T10:51:47.352275+00:00",
   "files": [
     {
       "path": "assets/ships/lafei/default/lafei.skel",
@@ -579,6 +579,30 @@
       "source": "ALChibiAssets/assets/重樱/30705_翔鹤/skins/xianghe/__preview.png"
     },
     {
+      "path": "assets/ships/i19/default/I19.skel",
+      "bytes": 168047,
+      "sha256": "3723f04d498d309e68f1347d7fda02124c774b6856c65a4adac84037e998c35b",
+      "source": "ALChibiAssets/assets/重樱/30801_伊19/skins/i19/I19.skel"
+    },
+    {
+      "path": "assets/ships/i19/default/I19.atlas",
+      "bytes": 4047,
+      "sha256": "1dad577b6cb2bfe4514f81b9bed69f44b5fb6c7dfc692ebb379ea7563a7927ff",
+      "source": "ALChibiAssets/assets/重樱/30801_伊19/skins/i19/I19.atlas"
+    },
+    {
+      "path": "assets/ships/i19/default/I19.png",
+      "bytes": 197762,
+      "sha256": "a3fccdbecca4d2746c9d36cbb786a0c4c8ccd449ea955daf6e972e2def88acca",
+      "source": "ALChibiAssets/assets/重樱/30801_伊19/skins/i19/I19.png"
+    },
+    {
+      "path": "assets/ships/i19/default/__preview.png",
+      "bytes": 232525,
+      "sha256": "0513698cc202c242de315d19abdd878c8b27ffe381317dc80a56e5cdd4753cfc",
+      "source": "ALChibiAssets/assets/重樱/30801_伊19/skins/i19/__preview.png"
+    },
+    {
       "path": "preview/vendor/pixi.min.js",
       "bytes": 456150,
       "sha256": "712a3e1943b062a907d86c5bb56b67c7b32a3f03b3654768b00b7016d30a24c6",
@@ -604,16 +628,16 @@
     },
     {
       "path": "data/roster.json",
-      "bytes": 48080,
-      "sha256": "ede04c817bb1c1631bd76a2bd71575b5198cdd29b47a89453f9e9cda616797db",
+      "bytes": 50183,
+      "sha256": "f8807ffb0f9d5d3fb6c7df886afcdbd4232022c507b3113c9c0be4ee70a499df",
       "source": "generated curated metadata"
     },
     {
       "path": "data/source-receipts.json",
-      "bytes": 9198,
-      "sha256": "5fd59259788daca3789562be8784566ea750248c8d28b19ed63063011fb56a35",
+      "bytes": 9555,
+      "sha256": "9babea9c713328df4e63ce98e977b27b6a162b93fcca8c2ae804fe4863533642",
       "source": "generated curated metadata"
     }
   ],
-  "total_bytes": 16063139
+  "total_bytes": 16667980
 }

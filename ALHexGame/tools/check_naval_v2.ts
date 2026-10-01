@@ -48,15 +48,15 @@ function placeAtPort(m:Match,id:string,portId:string):MatchUnit{
 check('The 5x10 test arena gives both sides one ship of every class and round-trips saves',()=>{
   const world=new HexWorld(5,10,'test-5x10'),m=new Match(world,assets,2,['human','ai']);
   assert.equal(world.width,5);assert.equal(world.height,10);assert.equal(world.landCells,0);
-  assert.equal(m.units.length,12);assert.equal(m.ports.length,2);assert.deepEqual(m.teams.map(team=>team.controller),['human','ai']);
+  assert.equal(m.units.length,14);assert.equal(m.ports.length,2);assert.deepEqual(m.teams.map(team=>team.controller),['human','ai']);
   for(const ownerId of [1,2]){
     const fleet=m.units.filter(unit=>unit.ownerId===ownerId);
-    assert.deepEqual(fleet.map(unit=>unit.asset.ship_type.code).sort(),['BB','CA','CL','CV','CVL','DD']);
-    assert.equal(new Set(fleet.map(unit=>`${unit.col},${unit.row}`)).size,6);
+    assert.deepEqual(fleet.map(unit=>unit.asset.ship_type.code).sort(),['BB','CA','CL','CV','CVL','DD','SS']);
+    assert.equal(new Set(fleet.map(unit=>`${unit.col},${unit.row}`)).size,7);
   }
-  assert.equal(new Set(m.units.map(unit=>`${unit.col},${unit.row}`)).size,12);
+  assert.equal(new Set(m.units.map(unit=>`${unit.col},${unit.row}`)).size,14);
   assert(m.units.filter(unit=>unit.ownerId===1).every(unit=>m.reachable(unit.instanceId).some(cell=>cell.col!==unit.col||cell.row!==unit.row)),'the test fleet should not start boxed in by friendly ships');
-  const saved=m.save();assert.equal(saved.version,27);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
+  const saved=m.save();assert.equal(saved.version,28);assert.equal(saved.mapKind,'test-5x10');assert.equal(saved.size,5);assert.equal(saved.height,10);
   assert.deepEqual(Match.load(saved,assets).save(),saved);
   assert.throws(()=>new Match(world,assets,3),/只支持双方/);
 });
@@ -193,7 +193,7 @@ check('A remote or uncharted click plans the closest reachable move toward it',(
 });
 
 check('All V2 sea terrain costs one movement point, including shallow water',()=>{
-  for(const id of ['team-1-lafei','team-1-hailunna','team-1-gaoxiong','team-1-yanzhan','team-1-qiye','team-1-dujiaoshou']){
+  for(const id of ['team-1-lafei','team-1-hailunna','team-1-gaoxiong','team-1-yanzhan','team-1-qiye','team-1-dujiaoshou','team-1-i19']){
     const world=new HexWorld(5,10,'test-5x10'),m=new Match(world,assets,2),ship=m.unit(id);world.terrain.fill(Terrain.Shallow);
     m.units.filter(unit=>unit!==ship).forEach(sink);m.refreshVision();
     const route=m.reachable(ship.instanceId).map(target=>m.route(ship.instanceId,target)).find(candidate=>candidate&&candidate.cost>0);
@@ -344,7 +344,7 @@ check('V2 carrier launch resolves on its side turn and recovery preserves a full
   assert.deepEqual(preview.slots,[0,1]);assert.equal(preview.operationsLimit,2);assert.equal(preview.operationsUsed,0);
   assert.deepEqual(orderCarrierLaunch(m,carrier.instanceId),[0,1]);assert.equal(m.aviation.squadrons.length,0,'aircraft appear after this side implements its orders');
   assert.equal(carrier.action,0);cancelCarrierLaunch(m,carrier.instanceId);assert.equal(carrier.action,1);assert(launchPreview(m,carrier.instanceId).valid,'launch orders can be withdrawn before phase submission');orderCarrierLaunch(m,carrier.instanceId);
-  const pending=m.save();assert.equal(pending.version,27);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
+  const pending=m.save();assert.equal(pending.version,28);assert.equal(pending.phase,'aviation');assert.deepEqual(pending.aviationOrders[0].slots,[0,1]);assert.deepEqual(Match.load(pending,assets).save(),pending);
   m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,1);const launched=m.aviation.squadrons.filter(s=>s.carrierId===carrier.instanceId),deck=m.aviation.decks[carrier.instanceId];assert.deepEqual(launched.map(s=>s.role),['fighter','bomber']);
   assert(launched.every(s=>s.fuelTurns===CARRIER_STATS[carrier.asset.ship_type.code].endurance),'newly launched planes keep full fuel until their first commandable owner turn');
   assert.deepEqual(deck.squadrons.map(s=>s.status),['airborne','airborne','reserve']);assert.equal(deck.operationsUsed,2,'launches spend this carrier turn deck operations');
@@ -396,6 +396,77 @@ check('Aircraft create enemy ship contacts over islands and stale reports stay a
   assert.deepEqual({col:report.col,row:report.row},lastKnown,'the contact must not track an enemy after it leaves sight');
 });
 
+check('Submerged submarines evade ordinary spotting but destroyers and nearby aircraft detect them',()=>{
+  const m=scene(),sub=m.unit('team-1-i19'),ca=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='CA')!,dd=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='DD')!;
+  m.units.filter(unit=>unit!==sub&&unit!==ca&&unit!==dd).forEach(sink);
+  const origin={col:m.port('home-1').col,row:m.port('home-1').row};Object.assign(sub,origin,{status:'ready',hp:sub.maxHp,action:1,submerged:true});
+  Object.assign(ca,seaCellAtDistance(m,origin,1),{status:'ready',hp:ca.maxHp});m.refreshVision();
+  assert.equal(sub.submerged,true);assert(!m.unitVisible(sub,2),'a nearby cruiser does not passively reveal a submerged submarine');
+  sink(ca);Object.assign(dd,seaCellAtDistance(m,origin,2),{status:'ready',hp:dd.maxHp});m.refreshVision();
+  assert(!m.unitVisible(sub,2),'a destroyer two hexes away has no sonar contact');
+  Object.assign(dd,seaCellAtDistance(m,origin,1),{status:'ready',hp:dd.maxHp});m.refreshVision();
+  assert(m.unitVisible(sub,2),'a destroyer detects a submarine one hex away');
+  sink(dd);
+  const bomberCell=seaCellAtDistance(m,origin,2),bomber:Squadron={id:'air-sub-test',carrierId:'team-2-qiye',ownerId:2,nation:'us',role:'bomber',slot:0,...cellCenter(bomberCell),planes:4,hp:8,maxHp:8,fuelTurns:3,actionPoints:20,ammo:3,cooldown:0,heading:0,order:'patrol'};
+  m.aviation.squadrons.push(bomber);m.refreshVision();assert(m.unitVisible(sub,2),'aircraft detect a submerged submarine within two hexes');
+  assert.throws(()=>m.airDamage({...bomber,role:'fighter'},sub.instanceId),/轰炸机/);
+  const event=m.airDamage(bomber,sub.instanceId);assert.equal(event.kind,'asw');assert.equal(event.damage,3);assert.equal(event.aa?.dice.length,0,'submarines have no AA fire');
+  const oldPosition={col:bomberCell.col,row:bomberCell.row},far=seaCellAtDistance(m,origin,3);Object.assign(bomber,cellCenter(far));m.refreshVision();
+  assert(!m.unitVisible(sub,2),'aircraft do not detect a submerged submarine from three hexes away');
+  const stale=m.contactsFor(2).find(contact=>contact.key===sub.instanceId)!;assert.deepEqual({col:stale.col,row:stale.row},origin);assert(oldPosition.col===bomberCell.col&&oldPosition.row===bomberCell.row);
+});
+
+check('Depth changes use the attack action, set surface speed, and cannot surface beneath a ship',()=>{
+  const m=new Match(new HexWorld(5,10,'test-5x10'),assets,2),sub=m.unit('team-1-i19');
+  assert.equal(sub.submerged,true);assert.equal(m.movementLimit(sub),2);
+  m.setSubmarineDepth(sub.instanceId,false);assert.equal(sub.action,0);assert.equal(sub.submerged,false);assert.equal(m.movementLimit(sub),4);
+  const saved=m.save(),restored=Match.load(saved,assets);assert.equal(restored.unit(sub.instanceId).submerged,false);assert.equal(restored.movementLimit(restored.unit(sub.instanceId)),4);
+  assert(m.reachable(sub.instanceId).some(cell=>cell.col!==sub.col||cell.row!==sub.row),'a submarine may still move after spending its attack action to surface');
+  assert.throws(()=>m.setSubmarineDepth(sub.instanceId,true),/作战行动/);
+  const blocked=new Match(new HexWorld(5,10,'test-5x10'),assets,2),under=blocked.unit('team-1-i19'),surface=blocked.unit('team-2-lafei');
+  Object.assign(surface,{col:under.col,row:under.row,status:'ready',hp:surface.maxHp});
+  assert.throws(()=>blocked.setSubmarineDepth(under.instanceId,false),/水面舰船/);assert.equal(under.action,1);assert.equal(under.submerged,true);
+  const planned=new Match(new HexWorld(5,10,'test-5x10'),assets,2),mover=planned.unit('team-1-i19'),destination=planned.reachable(mover.instanceId).find(cell=>cell.col!==mover.col||cell.row!==mover.row)!;
+  planned.issueMove(mover.instanceId,destination);assert.throws(()=>planned.setSubmarineDepth(mover.instanceId,false),/规划航线/);
+});
+
+check('Destroyer depth charges hit a detected submarine; ordinary guns cannot target it',()=>{
+  const m=scene(),sub=m.unit('team-2-i19'),dd=m.unit('team-1-lafei');m.units.filter(unit=>unit!==sub&&unit!==dd).forEach(sink);
+  const origin={col:m.port('home-2').col,row:m.port('home-2').row};Object.assign(sub,origin,{status:'ready',hp:sub.maxHp,action:1,submerged:true});
+  Object.assign(dd,seaCellAtDistance(m,origin,1),{status:'ready',hp:dd.maxHp,action:1});m.refreshVision();
+  assert(m.attackPreview(dd.instanceId,sub.instanceId,'depth-charge').valid);
+  assert(!m.attackPreview(dd.instanceId,sub.instanceId,'light-gun').valid);
+  m.combatState=seedForDice([6,1]);m.orderAttack(dd.instanceId,sub.instanceId,'depth-charge');m.endTurn();
+  const event=m.takeResolvedCombatEvents().find(item=>item.attackerId===dd.instanceId)!;assert.equal(event.kind,'asw');assert.equal(event.hit,true);assert.equal(event.damage,3);assert.equal(sub.hp,2);
+});
+
+check('Unknown submerged submarines do not block enemy movement and leave a stale torpedo-launch report',()=>{
+  const traversal=scene(),ca=traversal.unit('team-2-gaoxiong'),sub=traversal.unit('team-1-i19');traversal.units.filter(unit=>unit!==ca&&unit!==sub).forEach(sink);
+  const origin={col:traversal.port('home-1').col,row:traversal.port('home-1').row};Object.assign(sub,origin,{status:'ready',hp:sub.maxHp,submerged:true});
+  Object.assign(ca,seaCellAtDistance(traversal,origin,2),{status:'ready',hp:ca.maxHp});traversal.activeIndex=1;traversal.refreshVision();
+  assert(!traversal.unitVisible(sub,2));const route=traversal.route(ca.instanceId,origin);assert(route&&route.cells.at(-1)!.col===origin.col&&route.cells.at(-1)!.row===origin.row,'the route planner should allow an unknown underwater contact cell');
+  traversal.issueMove(ca.instanceId,origin);traversal.endTurn();assert(ca.col===sub.col&&ca.row===sub.row,'a ship may pass through and share a hex with a hidden submarine');assert(!traversal.unitVisible(sub,2));
+  const coLocated=traversal.save(),restoredOverlap=Match.load(coLocated,assets);assert.deepEqual(restoredOverlap.save(),coLocated,'a legal surface-ship and submerged-submarine overlap must survive save and load');
+
+  const attack=scene(),attacker=attack.unit('team-1-i19'),target=attack.unit('team-2-lafei');attack.units.filter(unit=>unit!==attacker&&unit!==target).forEach(sink);
+  const launch={col:attack.port('home-1').col,row:attack.port('home-1').row};Object.assign(attacker,launch,{status:'ready',hp:attacker.maxHp,action:1,submerged:true});
+  Object.assign(target,seaCellAtDistance(attack,launch,2),{status:'ready',hp:target.maxHp,action:1});attack.refreshVision();
+  attack.orderAttack(attacker.instanceId,target.instanceId,'sub-torpedo');attack.endTurn();
+  let report=attack.contactsFor(2).find(contact=>contact.key===attacker.instanceId)!;assert.equal(report.level,2);assert.deepEqual({col:report.col,row:report.row},launch);assert(!attack.unitVisible(attacker,2));
+  Object.assign(attacker,seaCellAtDistance(attack,launch,8));attack.refreshVision();report=attack.contactsFor(2).find(contact=>contact.key===attacker.instanceId)!;
+  assert.deepEqual({col:report.col,row:report.row},launch,'the wake marks the firing position and does not track the submarine');
+  const saved=attack.save(),restored=Match.load(saved,assets);assert.equal(saved.version,28);assert.deepEqual(restored.save(),saved);
+});
+
+check('Old submarine-free 5x10 saves load, retain their fleet, and round-trip with an explicit migration marker',()=>{
+  const current=new Match(new HexWorld(5,10,'test-5x10'),assets,2).save(),olderWithSubs:any=JSON.parse(JSON.stringify(current));olderWithSubs.version=27;for(const unit of olderWithSubs.units)delete unit.submerged;
+  const restoredSubSaves=Match.load(olderWithSubs,assets);assert(restoredSubSaves.units.filter(unit=>unit.asset.ship_type.code==='SS').every(unit=>unit.submerged));assert.equal(restoredSubSaves.save().version,28);assert.equal(restoredSubSaves.save().submarineRosterLegacy,undefined);
+  const legacy:any=JSON.parse(JSON.stringify(current));legacy.version=27;
+  legacy.units=legacy.units.filter((unit:any)=>unit.assetId!=='i19');legacy.contacts=legacy.contacts.map((row:any[])=>row.filter(contact=>contact.unitId!=='team-1-i19'&&contact.unitId!=='team-2-i19'));
+  const restored=Match.load(legacy,assets);assert.equal(restored.units.length,12);const migrated=restored.save();assert.equal(migrated.version,28);assert.equal(migrated.submarineRosterLegacy,true);
+  assert.deepEqual(Match.load(migrated,assets).save(),migrated);
+});
+
 check('A visible sunken ship keeps its defeated sprite contact, then becomes a gray last-known contact',()=>{
   const m=scene(),port=m.port('home-1'),origin={col:port.col,row:port.row},spotter=m.unit('team-1-lafei'),enemy=m.units.find(unit=>unit.ownerId===2&&unit.asset.ship_type.code==='BB')!;
   m.units.filter(unit=>unit!==spotter&&unit!==enemy).forEach(sink);Object.assign(spotter,origin,{status:'ready',hp:spotter.maxHp,action:1});
@@ -404,7 +475,7 @@ check('A visible sunken ship keeps its defeated sprite contact, then becomes a g
   let report=m.contactsFor(1).find(contact=>contact.key===enemy.instanceId)!;assert.equal(report.level,3);assert.equal(report.shipType,'BB');
   Object.assign(spotter,seaCellAtDistance(m,origin,9));m.refreshVision();assert(!m.unitVisible(enemy));report=m.contactsFor(1).find(contact=>contact.key===enemy.instanceId)!;
   assert.equal(report.level,2);assert.equal(report.shipType,'BB');assert.equal(report.assetId,enemy.asset.id);assert.deepEqual({col:report.col,row:report.row},wreck);
-  const saved=m.save();assert.equal(saved.version,27);assert.deepEqual(Match.load(saved,assets).save(),saved);
+  const saved=m.save();assert.equal(saved.version,28);assert.deepEqual(Match.load(saved,assets).save(),saved);
 });
 
 check('V2 alert posture no longer applies the legacy flat two-damage air reduction',()=>{
@@ -480,7 +551,7 @@ check('V2 fighters can intercept aircraft but cannot attack ships',()=>{
 check('V2 loading clears legacy fighter attacks against ships',()=>{
   const m=scene(),carrier=m.unit('team-1-qiye'),target=m.unit('team-2-lafei'),fighter=launchV2(m,carrier.instanceId).find(squadron=>squadron.role==='fighter')!;
   fighter.order='attack';fighter.targetId=target.instanceId;fighter.cooldown=3.5;fighter.flight={next:neighbors(worldToCell(fighter))[0],progress:.9};const oldPosition={x:fighter.x,y:fighter.y};
-  const saved=m.save();assert.equal(saved.version,27);const legacy=JSON.parse(JSON.stringify(saved));legacy.version=25;
+  const saved=m.save();assert.equal(saved.version,28);const legacy=JSON.parse(JSON.stringify(saved));legacy.version=25;
   const restored=Match.load(legacy,assets),loaded=restored.aviation.squadrons.find(squadron=>squadron.id===fighter.id)!;
   assert.equal(loaded.order,'patrol');assert.equal(loaded.targetId,undefined);assert.equal(loaded.cooldown,0,'legacy real-time cooldown does not suppress the first turn-based attack');
   assert.equal(loaded.flight,undefined,'legacy partial real-time movement is discarded instead of granting a free extra turn step');assert.deepEqual({x:loaded.x,y:loaded.y},oldPosition);
@@ -592,12 +663,12 @@ check('V4 an air-strike kill cancels a later planned torpedo without consuming i
   assert.match(attacker.notice??'',/取消/);
 });
 
-check('Legacy V2 saves migrate to version 27 and previously submitted orders resolve once',()=>{
+check('Legacy V2 saves migrate to version 28 and previously submitted orders resolve once',()=>{
   const m=scene(),current:any=m.save();
   for(const version of [16,17]){
     const raw=JSON.parse(JSON.stringify(current));raw.version=version;delete raw.contacts;
     if(version===16){for(const unit of raw.units)delete unit.firedThisTurn;for(const port of raw.campaign.ports){delete port.occupationOwnerId;delete port.occupationProgress;}}
-    const restored=Match.load(raw,assets);assert.equal(restored.save().version,27);assert(restored.units.every(u=>u.firedThisTurn===false));
+    const restored=Match.load(raw,assets);assert.equal(restored.save().version,28);assert(restored.units.every(u=>u.firedThisTurn===false));
   }
   const legacy18=JSON.parse(JSON.stringify(current));legacy18.version=18;legacy18.activeIndex=1;
   delete legacy18.phase;delete legacy18.initiativeIndex;delete legacy18.phaseSubmitted;delete legacy18.movementOrders;
@@ -606,11 +677,11 @@ check('Legacy V2 saves migrate to version 27 and previously submitted orders res
   assert.equal(restored18.phase,'aviation');assert.deepEqual(restored18.phaseSubmitted,[1]);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   restored18.endTurn();assert.equal(restored18.phase,'aviation');assert.equal(restored18.round,2);assert.deepEqual({col:restored18.unit('team-1-lafei').col,row:restored18.unit('team-1-lafei').row},position);
   const legacy19=JSON.parse(JSON.stringify(current));legacy19.version=19;legacy19.phase='combat';delete legacy19.combatOrders;
-  assert.equal(Match.load(legacy19,assets).save().version,27);
+  assert.equal(Match.load(legacy19,assets).save().version,28);
   const legacy20=JSON.parse(JSON.stringify(current));legacy20.version=20;legacy20.phase='combat';delete legacy20.aviation.decks;
-  assert.equal(Match.load(legacy20,assets).save().version,27);
+  assert.equal(Match.load(legacy20,assets).save().version,28);
   const legacy21=JSON.parse(JSON.stringify(current));legacy21.version=21;legacy21.phase='combat';delete legacy21.aviationOrders;
-  assert.equal(Match.load(legacy21,assets).save().version,27);
+  assert.equal(Match.load(legacy21,assets).save().version,28);
   const oldTurn=scene(),oldUnit=oldTurn.unit('team-1-lafei'),oldDestination=oldTurn.reachable(oldUnit.instanceId).find(cell=>cell.col!==oldUnit.col||cell.row!==oldUnit.row)!;
   oldTurn.issueMove(oldUnit.instanceId,oldDestination);const submitted:any=oldTurn.save();submitted.version=23;submitted.activeIndex=1;submitted.phaseSubmitted=[1];
   const migrated=Match.load(submitted,assets);assert.equal(migrated.active.id,2);assert.equal(migrated.round,1);assert.deepEqual(migrated.phaseSubmitted,[1]);
@@ -631,7 +702,7 @@ check('Legacy V2 saves migrate to version 27 and previously submitted orders res
   assert(shallowRoute,'the starting area should include a shallow-water route');oldMovement.issueMove(battleship.instanceId,shallowRoute.cells.at(-1)!);
   const version24:any=oldMovement.save();version24.version=24;
   for(const order of version24.movementOrders)order.costs=order.cells.map((cell:any,index:number)=>index===0?0:oldMovement.world.at(cell)===Terrain.Shallow&&!['DD','CL'].includes(battleship.asset.ship_type.code)?2:1);
-  const migratedMovement=Match.load(version24,assets);assert.equal(migratedMovement.save().version,27);assert(migratedMovement.movementOrders[0].costs.slice(1).every(cost=>cost===1),'old shallow-water surcharges should be removed during migration');
+  const migratedMovement=Match.load(version24,assets);assert.equal(migratedMovement.save().version,28);assert(migratedMovement.movementOrders[0].costs.slice(1).every(cost=>cost===1),'old shallow-water surcharges should be removed during migration');
   const oldLaunch=scene(),oldCarrier=oldLaunch.unit('team-1-qiye');orderCarrierLaunch(oldLaunch,oldCarrier.instanceId);
   const version24Launch:any=oldLaunch.save();version24Launch.version=24;version24Launch.units.find((unit:any)=>unit.instanceId===oldCarrier.instanceId).action=1;
   const migratedLaunch=Match.load(version24Launch,assets);assert.equal(migratedLaunch.unit(oldCarrier.instanceId).action,0,'an older queued launch should reserve its action after migration');

@@ -2,8 +2,10 @@ import {commandSquadron,launchPreview,launchWing,orderCarrierLaunch} from './air
 import {cellCenter,hexDistance,hexLine,neighbors,worldToCell} from './hex.ts';
 import {REINFORCEMENT_COST} from './ports.ts';
 import {cellKey} from './pathfinding.ts';
+import {campaignBattle} from './historical-battles.ts';
+import {damageOnHitV2,shipRulesV2} from './naval-rules-v2.ts';
 import type {CombatEvent,Match,MatchUnit,MoveEvent,WeaponDefinition} from './match.ts';
-import type {Cell} from './types.ts';
+import {Terrain,type Cell} from './types.ts';
 
 export interface AiTurnReport {
   teamId:number;
@@ -24,10 +26,11 @@ function visibleEnemies(match:Match):MatchUnit[] {
 }
 
 function bestAttack(match:Match,unit:MatchUnit):{target:MatchUnit;weapon:WeaponDefinition;score:number}|undefined {
+  const mission=campaignBattle(match.world.scenarioId)?.mission.objectives[match.active.id-1];
   let best:{target:MatchUnit;weapon:WeaponDefinition;score:number}|undefined;
   for(const target of visibleEnemies(match))for(const weapon of match.weapons(unit)){
     const preview=match.attackPreview(unit.instanceId,target.instanceId,weapon.id);if(!preview.valid)continue;
-    const code=target.asset.ship_type.code,strategic=['CV','CVL','BB'].includes(code)?18:0;
+    const code=target.asset.ship_type.code,strategic=(['CV','CVL','BB'].includes(code)?18:0)+(mission?.kind==='sink-ships'&&(!mission.targetTypes||mission.targetTypes.includes(code))?80:0);
     const chance=preview.hitChance??100,band=match.rulesetId==='naval-v2'?match.contactsFor(match.active.id).find(c=>c.key===target.instanceId)?.hpBand:undefined;
     const knownHp=band==='critical'?target.maxHp*.125:band==='damaged'?target.maxHp*.375:band==='intact'?target.maxHp*.75:target.hp;
     const score=(knownHp<=preview.damage?1000*chance/100:0)+preview.damage*chance/100*30+strategic-knownHp*2-preview.distance;
@@ -65,15 +68,58 @@ function explorationScore(match:Match,cell:Cell,owner:number):number {
   return unknown*4+frontier;
 }
 
+function threatAt(match:Match,unit:MatchUnit,cell:Cell,enemies:MatchUnit[]):number {
+  const armor=shipRulesV2(unit.asset.ship_type.code).armor,armorClass=armor<=1?'light':armor<=2?'medium':'heavy';
+  let total=0;
+  for(const enemy of enemies){
+    if(enemy.status!=='ready')continue;
+    const distance=hexDistance(cell,enemy);
+    const best=match.weapons(enemy).filter(weapon=>distance>=weapon.minRange&&distance<=weapon.maxRange&&match.cooldown(enemy,weapon.id)===0
+      &&(weapon.kind!=='torpedo'||(enemy.torpedoes??0)>0)
+      &&(weapon.kind==='air'||!hexLine(enemy,cell).slice(1,-1).some(sample=>match.world.at(sample)===Terrain.Land)))
+      .reduce((value,weapon)=>{
+        const damage=weapon.power===undefined?weapon.damage[armorClass]:damageOnHitV2(weapon,armor,false);
+        return Math.max(value,damage*(weapon.kind==='torpedo'?1.35:1));
+      },0);
+    total+=best;
+  }
+  return total;
+}
+
+function campaignPortGoal(match:Match,unit:MatchUnit):{port:Cell;kind:'capture-port'|'hold-port'}|undefined {
+  const objective=campaignBattle(match.world.scenarioId)?.mission.objectives[match.active.id-1];
+  if(!objective||(objective.kind!=='capture-port'&&objective.kind!=='hold-port'))return;
+  const port=match.ports[objective.portIndex];if(!port)return;
+  const eligible=(candidate:MatchUnit)=>candidate.ownerId===unit.ownerId&&candidate.status==='ready'&&(!candidate.availableRound||candidate.availableRound<=match.round)&&['DD','CL','CA'].includes(candidate.asset.ship_type.code);
+  if(objective.kind==='capture-port'){
+    if(port.ownerId===unit.ownerId)return;
+    const leader=match.units.filter(eligible).sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId))[0];
+    return leader?.instanceId===unit.instanceId?{port,kind:objective.kind}:undefined;
+  }
+  const candidates=match.units.filter(eligible),stationed=candidates.filter(candidate=>hexDistance(candidate,port)<=2)
+    .sort((a,b)=>hexDistance(a,port)-hexDistance(b,port)||(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId));
+  const guard=stationed[0]??candidates.sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId))[0];
+  return guard?.instanceId===unit.instanceId?{port,kind:objective.kind}:undefined;
+}
+
 function chooseMove(match:Match,unit:MatchUnit):Cell|undefined {
   const reachable=match.reachable(unit.instanceId);if(reachable.length<2)return;
   const current={col:unit.col,row:unit.row},enemies=visibleEnemies(match);
   const ownPorts=match.knownPorts().filter(view=>view.ownerId===unit.ownerId).map(view=>view.port);
   const targetPorts=match.knownPorts().filter(view=>view.ownerId!==unit.ownerId).map(view=>view.port);
+  const campaignGoal=campaignPortGoal(match,unit);
+  if(campaignGoal&&campaignGoal.kind==='hold-port'&&hexDistance(unit,campaignGoal.port)<=2){
+    const currentThreat=threatAt(match,unit,unit,enemies);if(!currentThreat)return;
+    return reachable.filter(cell=>hexDistance(cell,campaignGoal.port)<=2)
+      .map(cell=>({cell,threat:threatAt(match,unit,cell,enemies),distance:hexDistance(cell,campaignGoal.port)}))
+      .filter(candidate=>candidate.threat<currentThreat)
+      .sort((a,b)=>a.threat-b.threat||a.distance-b.distance||a.cell.row-b.cell.row||a.cell.col-b.cell.col)[0]?.cell;
+  }
+  if(campaignGoal&&campaignGoal.kind==='capture-port'&&hexDistance(unit,campaignGoal.port)===0)return;
   const retreat=unit.hp/unit.maxHp<=.38&&ownPorts.length;
   const objective=retreat
     ? ownPorts.sort((a,b)=>hexDistance(unit,a)-hexDistance(unit,b))[0]
-    : enemies.sort((a,b)=>hexDistance(unit,a)-hexDistance(unit,b))[0]
+    : campaignGoal?.port??enemies.sort((a,b)=>hexDistance(unit,a)-hexDistance(unit,b))[0]
       ??targetPorts.sort((a,b)=>hexDistance(unit,a)-hexDistance(unit,b))[0];
   const maxRange=Math.max(1,...match.weapons(unit).map(weapon=>weapon.maxRange));
   const scored=reachable.filter(cell=>cellKey(cell)!==cellKey(current)).map(cell=>{
@@ -82,6 +128,7 @@ function chooseMove(match:Match,unit:MatchUnit):Cell|undefined {
     if(objective){
       const distance=hexDistance(cell,objective);
       if(retreat)score+=1000-distance*80;
+      else if(campaignGoal)score+=(hexDistance(current,campaignGoal.port)-distance)*10000-threatAt(match,unit,cell,enemies)*2400;
       else if('instanceId' in objective)score+=700-Math.abs(distance-maxRange)*75-distance;
       else score+=600-distance*55;
     }
@@ -116,12 +163,16 @@ function orderAircraft(match:Match,report:AiTurnReport):void {
     for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){report.launched+=launchWing(match,carrier.instanceId).length;}}
   }
   const enemyAir=match.aviation.squadrons.filter(s=>s.ownerId!==match.active.id&&match.airVisible(s));
-  const enemyShips=visibleEnemies(match);
+  const enemyShips=visibleEnemies(match),mission=campaignBattle(match.world.scenarioId)?.mission.objectives[match.active.id-1];
   const objectives=match.knownPorts().filter(view=>view.ownerId!==match.active.id).map(view=>view.port);
   for(const squadron of match.aviation.squadrons.filter(s=>s.ownerId===match.active.id&&s.actionPoints>0&&s.order!=='return')){
     const cell=worldToCell(squadron);
     const air=squadron.role==='fighter'?enemyAir.slice().sort((a,b)=>hexDistance(cell,worldToCell(a))-hexDistance(cell,worldToCell(b))||a.id.localeCompare(b.id))[0]:undefined;
-    const ship=enemyShips.slice().sort((a,b)=>hexDistance(cell,a)-hexDistance(cell,b)||a.instanceId.localeCompare(b.instanceId))[0];
+    const validShipTargets=squadron.role==='fighter'?[]:enemyShips.filter(unit=>!(unit.asset.ship_type.code==='SS'&&unit.submerged&&squadron.role!=='bomber'));
+    const ship=validShipTargets.slice().sort((a,b)=>{
+      const priority=(unit:MatchUnit)=>mission?.kind==='sink-ships'&&(!mission.targetTypes||mission.targetTypes.includes(unit.asset.ship_type.code))?1:0;
+      return priority(b)-priority(a)||hexDistance(cell,a)-hexDistance(cell,b)||a.instanceId.localeCompare(b.instanceId);
+    })[0];
     try {
       if(air)commandSquadron(match,squadron.id,undefined,air.id);
       else if(ship)commandSquadron(match,squadron.id,undefined,ship.instanceId);
@@ -141,6 +192,17 @@ export function executeAiTurn(match:Match):AiTurnReport {
   const report:AiTurnReport={teamId:match.active.id,moves:[],combats:[],captures:0,repairs:0,reinforcements:0,launched:0,airOrders:0,defended:0};
   if(match.rulesetId==='naval-v2'&&match.phase==='aviation'){
     repairDamaged(match,report);
+    for(const submarine of match.units.filter(unit=>unit.ownerId===match.active.id&&unit.asset.ship_type.code==='SS'&&unit.status==='ready'&&unit.action>0)){
+      const enemies=visibleEnemies(match),shipThreat=enemies.some(enemy=>{
+        const distance=hexDistance(submarine,enemy);
+        return match.weapons(enemy).some(weapon=>weapon.kind!=='asw'&&distance>=weapon.minRange&&distance<=weapon.maxRange
+          &&(weapon.kind==='air'||!hexLine(enemy,submarine).slice(1,-1).some(cell=>match.world.at(cell)===Terrain.Land)));
+      });
+      const bomberThreat=match.aviation.squadrons.some(s=>s.ownerId!==match.active.id&&s.role==='bomber'&&s.hp>0&&s.fuelTurns>0&&match.airVisible(s)&&hexDistance(submarine,worldToCell(s))<=2);
+      const detected=enemies.some(enemy=>hexDistance(submarine,enemy)<=6)||bomberThreat;
+      const shouldSubmerge=!submarine.submerged&&(shipThreat||bomberThreat),shouldSurface=submarine.submerged&&!detected;
+      if(shouldSubmerge||shouldSurface){try{match.setSubmarineDepth(submarine.instanceId,shouldSubmerge);}catch{/* Depth change may be unavailable after another order. */}}
+    }
     const carriers=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&['CV','CVL'].includes(unit.asset.ship_type.code))
       .sort((a,b)=>a.instanceId.localeCompare(b.instanceId));
     for(const carrier of carriers){const preview=launchPreview(match,carrier.instanceId);if(preview.valid){try{report.launched+=orderCarrierLaunch(match,carrier.instanceId).length;}catch{/* A carrier may have become unavailable earlier in this action. */}}}
@@ -150,6 +212,14 @@ export function executeAiTurn(match:Match):AiTurnReport {
     const commanders=match.units.filter(unit=>unit.ownerId===match.active.id&&unit.status==='ready'&&unit.action>0&&(!unit.availableRound||unit.availableRound<=match.round))
       .sort((a,b)=>(typePriority[a.asset.ship_type.code]??9)-(typePriority[b.asset.ship_type.code]??9)||a.instanceId.localeCompare(b.instanceId));
     for(const unit of commanders){
+      const objective=campaignBattle(match.world.scenarioId)?.mission.objectives[match.active.id-1];
+      const objectivePort=objective?.kind==='capture-port'?match.ports[objective.portIndex]:undefined;
+      const occupyingObjectivePort=objectivePort&&objectivePort.ownerId!==unit.ownerId&&unit.col===objectivePort.col&&unit.row===objectivePort.row;
+      if(occupyingObjectivePort&&objectivePort.occupationOwnerId===unit.ownerId)continue;
+      if(occupyingObjectivePort&&!match.plannedMove(unit.instanceId)){
+        const preview=match.capturePreview(unit.instanceId,objectivePort.id);
+        if(preview.valid){match.capturePort(unit.instanceId,objectivePort.id);report.captures++;continue;}
+      }
       const attack=bestAttack(match,unit);if(attack){try{executeAttack(match,report,unit,attack.target,attack.weapon);}catch{/* Keep a plan valid if the target changed. */}continue;}
       if(!match.plannedMove(unit.instanceId)&&captureNearby(match,unit))report.captures++;
     }

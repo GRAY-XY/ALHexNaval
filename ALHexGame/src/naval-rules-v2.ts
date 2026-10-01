@@ -4,7 +4,9 @@ export interface ShipRuleProfile {
   maxHp: number;
   armor: number;
   speed: number;
+  surfaceSpeed?: number;
   vision: number;
+  surfaceVision?: number;
   aa: number;
   torpedoes: number;
 }
@@ -16,16 +18,19 @@ export const SHIP_RULES_V2: Record<string, ShipRuleProfile> = {
   BB: { maxHp: 16, armor: 3, speed: 3, vision: 2, aa: 3, torpedoes: 0 },
   CV: { maxHp: 10, armor: 1, speed: 3, vision: 2, aa: 2, torpedoes: 0 },
   CVL: { maxHp: 9, armor: 1, speed: 4, vision: 2, aa: 1, torpedoes: 0 },
+  SS: { maxHp: 5, armor: 0, speed: 2, surfaceSpeed: 4, vision: 2, surfaceVision: 3, aa: 0, torpedoes: 2 },
 };
 
 export const WEAPONS_V2: Record<string, WeaponDefinition[]> = {
   DD: [
     { id: 'light-gun', name: '驱逐舰主炮', kind: 'gun', minRange: 1, maxRange: 3, cooldown: 0, damage: { light: 2, medium: 2, heavy: 2 }, power: 2, penetration: 0 },
     { id: 'torpedo', name: '鱼雷齐射', kind: 'torpedo', minRange: 2, maxRange: 4, cooldown: 0, damage: { light: 5, medium: 5, heavy: 5 }, power: 5, penetration: 3 },
+    { id: 'depth-charge', name: '反潜深弹', kind: 'asw', minRange: 0, maxRange: 1, cooldown: 0, damage: { light: 3, medium: 3, heavy: 3 }, power: 3, penetration: 0 },
   ],
   CL: [
     { id: 'medium-gun', name: '轻巡主炮', kind: 'gun', minRange: 1, maxRange: 4, cooldown: 0, damage: { light: 3, medium: 3, heavy: 3 }, power: 3, penetration: 1 },
     { id: 'torpedo', name: '鱼雷齐射', kind: 'torpedo', minRange: 2, maxRange: 4, cooldown: 0, damage: { light: 4, medium: 4, heavy: 4 }, power: 4, penetration: 3 },
+    { id: 'depth-charge', name: '反潜深弹', kind: 'asw', minRange: 0, maxRange: 1, cooldown: 0, damage: { light: 3, medium: 3, heavy: 3 }, power: 3, penetration: 0 },
   ],
   CA: [
     { id: 'heavy-gun', name: '重巡主炮', kind: 'gun', minRange: 1, maxRange: 5, cooldown: 0, damage: { light: 4, medium: 4, heavy: 4 }, power: 4, penetration: 2 },
@@ -35,10 +40,23 @@ export const WEAPONS_V2: Record<string, WeaponDefinition[]> = {
     { id: 'main-gun', name: '战列舰主炮', kind: 'gun', minRange: 2, maxRange: 7, cooldown: 0, damage: { light: 6, medium: 6, heavy: 6 }, power: 6, penetration: 3 },
   ],
   CV: [], CVL: [],
+  SS: [
+    { id: 'sub-torpedo', name: '潜艇鱼雷', kind: 'torpedo', minRange: 2, maxRange: 4, cooldown: 0, damage: { light: 4, medium: 4, heavy: 4 }, power: 4, penetration: 3 },
+  ],
 };
 
 export function shipRulesV2(code: string): ShipRuleProfile {
   return SHIP_RULES_V2[code] ?? SHIP_RULES_V2.CA;
+}
+
+export function shipVisionV2(code: string, submerged?: boolean): number {
+  const profile = shipRulesV2(code);
+  return code === 'SS' && !submerged ? profile.surfaceVision ?? profile.vision : profile.vision;
+}
+
+export function shipSpeedV2(code: string, submerged?: boolean): number {
+  const profile = shipRulesV2(code);
+  return code === 'SS' && !submerged ? profile.surfaceSpeed ?? profile.speed : profile.speed;
 }
 
 export function damageOnHitV2(weapon: WeaponDefinition, targetArmor: number, critical: boolean): number {

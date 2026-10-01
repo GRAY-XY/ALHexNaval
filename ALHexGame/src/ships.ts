@@ -178,8 +178,8 @@ export class ShipRenderer {
     if(event.sunk)target.pendingDeath=true;
     const root = new Container(), graphic = new Graphics(), sprites: Sprite[] = [];
     root.zIndex = Math.max(attacker?.root.zIndex ?? target.root.zIndex,target.root.zIndex)+200; root.addChild(graphic); this.container.addChild(root);
-    const texture = event.kind === 'torpedo' ? 'torpedo' : event.kind === 'air' ? 'bomb' : 'shell';
-    for (let i=0;i<(event.kind === 'air' ? 1 : 3);i++) { const sprite = Sprite.from(new URL(`./assets/combat/${texture}.png`,document.baseURI).href); sprite.anchor.set(.5); sprite.scale.set(38/Math.max(1,sprite.texture.width)); root.addChild(sprite); sprites.push(sprite); }
+    const texture = event.kind === 'torpedo' ? 'torpedo' : event.kind === 'air'||event.kind==='asw' ? 'bomb' : 'shell';
+    for (let i=0;i<(event.kind === 'air'||event.kind==='asw' ? 1 : 3);i++) { const sprite = Sprite.from(new URL(`./assets/combat/${texture}.png`,document.baseURI).href); sprite.anchor.set(.5); sprite.scale.set(38/Math.max(1,sprite.texture.width)); root.addChild(sprite); sprites.push(sprite); }
     const origin = event.origin ?? { x: attacker!.root.x, y: attacker!.root.y-16 };
     this.effects.push({ root, graphic, sprites, origin, target, elapsed: 0, duration: event.kind === 'torpedo' ? 1.25 : .85, delay:attacker ? Math.min(.4,Math.max(.12,attacker.animation.duration*.2)) : 0, impacted:false, event });
   }

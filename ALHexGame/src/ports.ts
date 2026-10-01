@@ -13,7 +13,7 @@ export const STARTING_CREDITS=40,PORT_INCOME=10,MAX_CREDITS=1_000_000_000;
 export const PORT_OIL_BONUS=10;
 export const REPAIR_LIMIT=4,REPAIR_PRICE=2;
 export const MAX_SUPPLY=8,STARTING_SUPPLY=4;
-export const REINFORCEMENT_COST:Record<string,number>={DD:20,CL:30,CA:40,BB:60,CV:70,CVL:50};
+export const REINFORCEMENT_COST:Record<string,number>={DD:20,CL:30,CA:40,BB:60,CV:70,CVL:50,SS:35};
 
 function berth(world:HexWorld,origin:Cell,ports:Port[],radius:number):Cell|undefined {
   const a=toAxial(origin),candidates:Cell[]=[];

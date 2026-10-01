@@ -1769,6 +1769,86 @@
         "missing_left": "mirror the corresponding right-facing animation"
       },
       "design_hint": "远洋航母打击（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "i19",
+      "ship_group": 30801,
+      "name": "伊19",
+      "faction": {
+        "id": 3,
+        "name": "重樱"
+      },
+      "ship_type": {
+        "source_code": 8,
+        "code": "SS",
+        "name": "潜水舰"
+      },
+      "original_armor": {
+        "code": 1,
+        "name": "轻型"
+      },
+      "skin": {
+        "id": 308010,
+        "name": "伊19",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/i19/default",
+        "skeleton": "assets/ships/i19/default/I19.skel",
+        "atlas": "assets/ships/i19/default/I19.atlas",
+        "pages": [
+          "assets/ships/i19/default/I19.png"
+        ],
+        "preview": "assets/ships/i19/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "attack_swim",
+        "attack_swim_left",
+        "dance",
+        "dead",
+        "dead_swim",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "skill_swim",
+        "sleep",
+        "stand",
+        "stand2",
+        "swim",
+        "swim_left",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "victory_swim",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "swim",
+        "move": "swim",
+        "move_left": "swim_left",
+        "attack": "attack_swim",
+        "attack_left": "attack_swim_left",
+        "main_gun": "attack_swim",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "潜艇伏击与隐蔽机动（初步方向，未写入战斗数值）"
     }
   ],
   "runtime": {

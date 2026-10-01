@@ -30,3 +30,4 @@
 .selection-box{position:absolute;border:1px solid #c0f5d8;background:#a5e6ce22;box-shadow:0 0 0 1px #12374455;pointer-events:none;z-index:20}.selection-box[hidden]{display:none}.selection-count{font-size:10px;color:#b8e9d3;margin:9px 4px 0;flex-shrink:0}.group-title{font-size:17px;color:#c0f1dc;margin:4px 0 10px}.group-help{font-size:10px;line-height:1.8;color:#aac7cd;margin:7px 0}.group-units{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0}.group-units p{font-size:10px;margin:0;padding:5px 7px;border:1px solid #52777b66;border-radius:5px;background:#17384a}.selection>button{margin-top:5px}
 #map-capture-dialog{max-width:min(94vw,1040px)}
 #map-capture-image{display:block;max-width:min(88vw,994px);max-height:68vh;margin:14px auto;border:1px solid rgba(151,220,211,.45);background:#0d2d44}
+.submarine-help{margin:5px 0;padding:7px 9px;border:1px solid #6faab066;border-radius:6px;background:#173c4a;color:#b7d9d5;font-size:9px;line-height:1.65}

@@ -35,9 +35,11 @@ SELECTION = [
     ('30505', 'changmen', '长门', '战列舰主炮打击'),
     ('30701', 'chicheng', '赤城', '舰载机打击'),
     ('30705', 'xianghe', '翔鹤', '远洋航母打击'),
+    ('30801', 'i19', '伊19', '潜艇伏击与隐蔽机动'),
 ]
 TYPES = {1: ('DD', '驱逐舰'), 2: ('CL', '轻巡洋舰'), 3: ('CA', '重巡洋舰'),
-         5: ('BB', '战列舰'), 6: ('CVL', '轻型航空母舰'), 7: ('CV', '航空母舰')}
+         5: ('BB', '战列舰'), 6: ('CVL', '轻型航空母舰'), 7: ('CV', '航空母舰'),
+         8: ('SS', '潜水舰')}
 ARMOR = {1: '轻型', 2: '中型', 3: '重型'}
 
 
@@ -81,12 +83,15 @@ def copy_identical(src, dst, records, origin):
                     'sha256': sha(dst), 'source': origin})
 
 
-def animation_map(names):
+def animation_map(names, submarine=False):
     def pick(*choices):
         return next((name for name in choices if name in names), None)
-    return {'idle': pick('stand', 'idle', 'normal'), 'move': pick('move', 'walk'),
-            'move_left': pick('move_left'), 'attack': pick('attack'),
-            'attack_left': pick('attack_left'), 'main_gun': pick('attack_main', 'attack'),
+    return {'idle': pick('swim', 'stand', 'idle', 'normal') if submarine else pick('stand', 'idle', 'normal'),
+            'move': pick('swim', 'move', 'walk') if submarine else pick('move', 'walk'),
+            'move_left': pick('swim_left', 'move_left') if submarine else pick('move_left'),
+            'attack': pick('attack_swim', 'attack') if submarine else pick('attack'),
+            'attack_left': pick('attack_swim_left', 'attack_left') if submarine else pick('attack_left'),
+            'main_gun': pick('attack_swim', 'attack_main', 'attack') if submarine else pick('attack_main', 'attack'),
             'skill': pick('skill'), 'victory': pick('victory'),
             'defeated': pick('dead'), 'hurt': pick('hurt', 'hit', 'damage')}
 
@@ -133,7 +138,7 @@ def main():
                            'atlas': base + '/' + skin['atlas'],
                            'pages': [base + '/' + page for page in skin['pages']],
                            'preview': base + '/' + Path(skin['preview']).name},
-                'spine_version': version, 'animations': names, 'animation_map': animation_map(names),
+                'spine_version': version, 'animations': names, 'animation_map': animation_map(names, type_code == 'SS'),
                 'animation_evidence': 'copied-source-log; current browser verification in output/',
                 'fallbacks': {'hurt': 'keep current animation; game renderer adds flash/shake',
                               'missing_left': 'mirror the corresponding right-facing animation'},

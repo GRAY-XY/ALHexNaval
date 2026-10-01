@@ -184,7 +184,7 @@ class NavalMap {
       $<HTMLSelectElement>('team-count').value = String(match.teams.length);
       this.setupUsesTestMap=this.world.scenarioId==='test-5x10';
       $<HTMLSelectElement>('team-count').disabled=this.setupUsesTestMap;
-      $('team-count-hint').textContent=this.setupUsesTestMap?'双方各有六种舰种各一艘':'每个席位使用完整舰船阵容';
+      $('team-count-hint').textContent=this.setupUsesTestMap?'双方各有七种舰种各一艘':'每个席位使用完整舰船阵容';
       if(!this.setupUsesTestMap)this.regularTeamCount=match.teams.length;
       this.setupControllers=Array.from({length:TEAM_NAMES.length},(_,i)=>match.teams[i]?.controller??'human');this.renderSeatSettings();
       this.ready = true; this.dirty = true; this.app.start();
@@ -272,6 +272,16 @@ class NavalMap {
     ] as const) { const b = document.createElement('button'); b.id = id; b.textContent = label; b.disabled = !canCommand || unit.status === 'sunk'||this.match.rulesetId==='naval-v2'&&this.match.phase!=='aviation';
       b.disabled=b.disabled||!!this.match.result||!!unit.availableRound&&unit.availableRound>this.match.round;b.onclick = () => this.command(() => { command(); return []; }); actions.append(b); }
     const weapons = element('div','weapon-actions');
+    const submarineControls:HTMLElement[]=[];
+    if(this.match.rulesetId==='naval-v2'&&unit.asset.ship_type.code==='SS'){
+      submarineControls.push(element('p','submarine-help',unit.submerged
+        ?'潜航：每回合最多移动 2 格。普通舰艇看不见；驱逐舰/轻巡相邻可发现，飞机 2 格内可发现。反制方式：驱逐舰/轻巡深弹、轰炸机反潜。鱼雷发射会暴露发射时的位置。'
+        :'水面：每回合最多移动 4 格，普通舰艇可发现。上浮或下潜会用掉本回合攻击行动。'));
+      const depth=document.createElement('button');depth.id='submarine-depth';depth.textContent=unit.submerged?'▲ 上浮 · 航速 4':'▼ 下潜 · 航速 2';
+      depth.disabled=!canCommand||!!this.match.result||this.match.phase!=='aviation'||unit.status!=='ready'||!unit.action||!!planned||this.match.movementUsed(unit)>0||!!queuedAttack||!!unit.availableRound&&unit.availableRound>this.match.round;
+      depth.onclick=()=>this.command(()=>{this.match.setSubmarineDepth(unit.instanceId,!unit.submerged);this.selectedWeapon=undefined;return[];});submarineControls.push(depth);
+    }
+    if(this.match.rulesetId==='naval-v2'&&['DD','CL'].includes(unit.asset.ship_type.code))submarineControls.push(element('p','submarine-help','反潜：先发现潜航潜艇，再于 0～1 格内使用深弹攻击。'));
     for (const weapon of this.match.weapons(unit)) {
       const cooldown = this.match.cooldown(unit,weapon.id), b = document.createElement('button'); b.className = this.selectedWeapon === weapon.id ? 'weapon active' : 'weapon';
       b.dataset.weapon = weapon.id; b.setAttribute('aria-pressed',String(this.selectedWeapon === weapon.id));
@@ -283,7 +293,7 @@ class NavalMap {
     }
     const defend = document.createElement('button'); defend.className = 'defend'; defend.textContent = unit.guard ? '◆ 警戒姿态生效' : '◇ 进入警戒姿态';
     defend.disabled = !!this.match.result||!canCommand||this.match.rulesetId==='naval-v2'&&this.match.phase!=='aviation' || unit.status !== 'ready' || !unit.action; defend.onclick = () => this.command(() => { this.match.defend(unit.instanceId); this.selectedWeapon = undefined; return []; },this.match.rulesetId==='naval-v2'?'已进入警戒姿态：最多移动1格，敌方舰炮命中 -1，本舰对空 +1':'已进入防御姿态：每次受到的伤害减少 2 点'); weapons.append(defend);
-    face.disabled = !!this.match.result||!canCommand||unit.status === 'sunk'; panel.append(head, health, coords, status, weapons, actions, face);
+    face.disabled = !!this.match.result||!canCommand||unit.status === 'sunk'; panel.append(head, health, coords, status,...submarineControls, weapons, actions, face);
     if(queuedAttack&&canCommand){const cancel=document.createElement('button');cancel.textContent='取消攻击计划';cancel.disabled=!!this.match.result;cancel.onclick=()=>this.command(()=>{this.match.cancelAttack(unit.instanceId);this.selectedWeapon=undefined;return[];},'已取消攻击计划，行动和鱼雷已返还，可重新选择目标');panel.append(cancel);}
     if(planned&&canCommand){const cancel=document.createElement('button');cancel.textContent='取消航线';cancel.disabled=!!this.match.result;cancel.onclick=()=>this.command(()=>{this.match.cancelMove(unit.instanceId);return[];});panel.append(cancel);}
     const carrier = CARRIER_STATS[unit.asset.ship_type.code];
@@ -374,7 +384,7 @@ class NavalMap {
     for(const combat of this.match.takeResolvedCombatEvents()){
       if(combatOwners.get(combat.attackerId)!==viewerId&&combatOwners.get(combat.targetId)!==viewerId)continue;
       if(combat.targetIsAircraft)this.notify(`${combat.attackerLabel??combat.attackerId}拦截${combat.targetLabel??'敌机'} · 造成 ${combat.damage} 点机体伤害`);
-      else{this.ships.playCombat(combat,!this.animationsPaused);if(combat.aa){const result=combat.aa.dice.length?`防空骰 ${combat.aa.dice.join('+')}`:'无防空骰';this.notify(`${this.match.unit(combat.targetId).asset.name}防空 · ${result} · 击落 ${combat.aa.aircraftLost} 架 · 压制 ${combat.aa.suppression} · 空袭伤害 ${combat.damage}`);}
+      else{this.ships.playCombat(combat,!this.animationsPaused);if(combat.kind==='asw'){const attacker=this.match.units.find(unit=>unit.instanceId===combat.attackerId),name=combat.attackerLabel??attacker?.asset.name??'舰载轰炸机';this.notify(`${name}执行反潜攻击 · ${combat.hit?'命中':'未命中'} · 造成 ${combat.damage} 点伤害`);}else if(combat.aa){const result=combat.aa.dice.length?`防空骰 ${combat.aa.dice.join('+')}`:'无防空骰';this.notify(`${this.match.unit(combat.targetId).asset.name}防空 · ${result} · 击落 ${combat.aa.aircraftLost} 架 · 压制 ${combat.aa.suppression} · 空袭伤害 ${combat.damage}`);}
     }
     }
     const visibleAirMoves=this.match.takeResolvedAviationMoves().filter(move=>combatOwners.get(move.id)===viewerId||this.match.canSee(viewerId,worldToCell(move.from))&&this.match.canSee(viewerId,worldToCell(move.to)));
@@ -603,7 +613,7 @@ class NavalMap {
       if(!isTest&&this.setupUsesTestMap)teams.value=String(this.regularTeamCount);
       this.setupUsesTestMap=isTest;teams.disabled=isTest;
       if(isTest)teams.value='2';else this.regularTeamCount=Number(teams.value)||this.regularTeamCount;
-      $('team-count-hint').textContent=isTest?'双方各有六种舰种各一艘':'每个席位使用完整舰船阵容';
+      $('team-count-hint').textContent=isTest?'双方各有七种舰种各一艘':'每个席位使用完整舰船阵容';
       this.renderSeatSettings();
     };
     $('main-load').onclick=()=>this.openLoadDialog(true);
