@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#102839">
   <link rel="icon" href="data:,">
   <title>AL HEX NAVAL</title>
-  <script type="module" crossorigin src="./assets/index-DiGh6C8q.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Dk3Fwtun.css">
+  <script type="module" crossorigin src="./assets/index-C01Y8Rbm.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CkvShgJl.css">
 </head>
 <body class="front-active">
   <div id="front-end" class="front-end">
@@ -21,6 +21,7 @@
         <nav class="main-menu-actions" aria-label="主菜单">
           <button id="continue-match" class="menu-command primary" disabled><span><strong>继续战局</strong><small id="continue-summary">正在准备海图…</small></span><b>›</b></button>
           <button id="open-skirmish" class="menu-command"><span><strong>开始对战</strong><small>本地轮流指挥 · 席位可设为 AI</small></span><b>›</b></button>
+          <button id="open-sandbox" class="menu-command"><span><strong>沙盒编辑器</strong><small>选地图、放置舰船并自由编组</small></span><b>›</b></button>
           <button id="open-campaign" class="menu-command"><span><strong>历史战役</strong><small>五关连续战役 · 选择阵营对战 AI</small></span><b>›</b></button>
           <button class="menu-command" disabled><span><strong>多人对战</strong><small>房间与联机同步开发中</small></span><em>开发中</em></button>
           <button id="main-load" class="menu-command"><span><strong>读取战局</strong><small>手动、自动与上一战局存档</small></span><b>›</b></button>
@@ -63,6 +64,24 @@
         <button id="new-match" class="start-match">开始战局</button>
       </div>
     </section>
+    <section id="sandbox-setup-page" class="front-page setup-page sandbox-setup-page" aria-labelledby="sandbox-setup-title" hidden>
+      <button id="sandbox-setup-back" class="front-back">‹ 返回主界面</button>
+      <div class="setup-card sandbox-setup-card">
+        <span class="front-kicker">FLEET LAB · OPEN SCENARIO</span>
+        <h2 id="sandbox-setup-title">沙盒编辑器</h2>
+        <p>从现有海图中任选一张，自由摆放舰船和势力。布阵完成后，可直接开始对战。</p>
+        <div class="setup-options">
+          <label><span>选择地图<small>包含测试海域、全部群岛尺寸与五张历史战役地图</small></span><select id="sandbox-map" aria-label="沙盒地图">
+            <optgroup label="测试海域"><option value="test-5x10">舰队测试海域 · 5 × 10</option></optgroup>
+            <optgroup label="群岛"><option value="archipelago:128">近海 · 128 × 128</option><option value="archipelago:256" selected>群岛 · 256 × 256</option><option value="archipelago:512">大洋 · 512 × 512</option></optgroup>
+            <optgroup label="历史战役地图"><option value="pearl-harbor">珍珠港袭击 · 100 × 80</option><option value="coral-sea">珊瑚海海战 · 128 × 104</option><option value="midway">中途岛海战 · 112 × 88</option><option value="guadalcanal">瓜达尔卡纳尔海战 · 112 × 92</option><option value="leyte-gulf">莱特湾海战 · 120 × 100</option></optgroup>
+          </select></label>
+          <label><span>参战势力<small id="sandbox-team-hint">双方轮流指挥，可在编辑器内切换玩家 / AI</small></span><select id="sandbox-team-count" aria-label="沙盒势力数量"><option value="2" selected>2 方</option><option value="3">3 方</option><option value="4">4 方</option><option value="5">5 方</option><option value="6">6 方</option><option value="7">7 方</option><option value="8">8 方</option></select></label>
+        </div>
+        <div class="setup-rules"><span>编辑</span><strong>左键放置 / 选择 · 右键移除</strong><span>舰船</span><strong>使用当前素材库全部舰船</strong></div>
+        <button id="sandbox-create" class="start-match">创建编辑海图</button>
+      </div>
+    </section>
   </div>
   <div id="app" aria-hidden="true">
     <header class="topbar">
@@ -77,7 +96,7 @@
       <main id="map-viewport" class="map-viewport" aria-label="六角海图" tabindex="0">
         <div id="canvas-host"></div>
         <div class="map-heading"><span id="map-kicker" class="eyebrow">ARCHIPELAGO CHART</span><h2 id="world-title">晨雾群岛</h2><p id="map-mode">战术视图 · 舰船详情</p><p id="fog-info">战争迷雾 · 舰船6格 / 飞机8格</p></div>
-        <div class="map-tools"><button id="open-ports">⚓ 港口与增援</button><button id="home" title="返回集结海域（空格）">⌖ 返回舰队</button><button id="grid-toggle" aria-pressed="true" title="显示或隐藏六角格（G）">⬡ 六角网格</button><button id="capture-map" title="将当前可见海域保存为PNG">▣ 海图截图</button><button id="animation-toggle" aria-pressed="false">Ⅱ 暂停动画</button><button id="air-pause" aria-pressed="false">Ⅱ 暂停飞行</button><button id="unit-panel-toggle" class="panel-toggle" aria-expanded="false">单位信息</button></div>
+        <div class="map-tools"><button id="open-ports">⚓ 港口与增援</button><button id="home" title="返回集结海域（空格）">⌖ 返回舰队</button><button id="grid-toggle" aria-pressed="true" title="显示或隐藏六角格（G）">⬡ 六角网格</button><button id="capture-map" title="将当前可见海域保存为PNG">▣ 海图截图</button><button id="animation-toggle" aria-pressed="false">Ⅱ 暂停动画</button><button id="air-pause" aria-pressed="false">Ⅱ 暂停飞行</button><button id="unit-panel-toggle" class="panel-toggle" aria-expanded="false">单位信息</button><button id="sandbox-panel-toggle" class="panel-toggle" aria-expanded="true">舰船面板</button></div>
         <div class="order-panel"><span id="route-info">选择本方舰船，右键海格安排航行</span><button id="move-mode" aria-pressed="false">航行指令 (R)</button></div>
         <div id="message" class="message" role="status" hidden></div>
         <div class="compass" aria-hidden="true"><span>N</span><div>✧</div></div>
@@ -88,6 +107,18 @@
       </main>
       <aside class="unit-sidebar" aria-label="单位信息面板">
         <div class="unit-panel-heading"><h2>单位信息</h2><button id="close-unit-panel" class="panel-toggle" aria-label="收起单位信息">收起</button><p id="selection-count" class="selection-count" role="status">左键拖框选择本方单位</p></div>
+        <section id="sandbox-editor-panel" class="sandbox-editor-panel" aria-label="沙盒编辑器" hidden>
+          <div class="sandbox-team-control"><label for="sandbox-owner">放置到阵营</label><select id="sandbox-owner" aria-label="放置舰船所属阵营"></select><button id="sandbox-controller" type="button"></button></div>
+          <p class="sandbox-help">选择舰船后点击海格放置。点击已有舰船可选中并改换队伍；右键舰船可移除。</p>
+          <div class="sandbox-palette-heading"><strong>舰船素材</strong><input id="sandbox-search" type="search" placeholder="搜索舰船" aria-label="搜索舰船素材"></div>
+          <div id="sandbox-palette" class="sandbox-palette" role="listbox" aria-label="选择要放置的舰船"></div>
+          <section id="sandbox-selected-tools" class="sandbox-selected-tools" hidden>
+            <strong id="sandbox-selected-name"></strong><label for="sandbox-selected-owner">舰船所属阵营</label><select id="sandbox-selected-owner" aria-label="更改已选舰船的阵营"></select><button id="sandbox-remove-selected" type="button">移除选中舰船</button>
+          </section>
+          <p id="sandbox-fleet-summary" class="sandbox-fleet-summary"></p>
+          <button id="sandbox-start" class="sandbox-start" type="button">开始对战</button>
+          <button id="sandbox-exit" class="sandbox-exit" type="button">退出编辑器</button>
+        </section>
         <section id="selection" class="selection" aria-label="选中单位信息"><div class="selection-empty">点击海图中的舰船、飞机或港口查看资料</div></section>
         <div class="turn-panel"><div><span class="eyebrow">当前指挥势力</span><h3 id="turn-label">第 1 轮 · 湛蓝舰队</h3><div class="team-oil-summary"><span id="team-resource-label">石油</span><strong id="team-oil">50 / 50</strong><div class="team-oil-meter"><span id="team-oil-fill"></span></div></div><p id="oil-rule-note">下次本方回合补满50点 · 每港口增加10上限</p><p id="pending-info"></p><p id="campaign-info"></p></div><button id="open-result" hidden>查看结算</button><button id="next-unit">下一艘 (Tab)</button><button id="end-turn">执行并交接 →</button></div>
       </aside>
