@@ -4,11 +4,12 @@ async (page) => {
   const ensure = (condition, message) => { if (!condition) throw Error(message); report.checks.push(message); };
   const waitReady = async size => {
     await page.waitForFunction(size => window.navalMap?.ready && window.navalMap.world.width === size, size);
-    await page.waitForFunction(() => !window.navalMap.dirty && window.navalMap.stats().ships.rigsLoaded === 12 && window.navalMap.stats().terrain.pendingChunks === 0);
+    await page.waitForFunction(() => {const map=window.navalMap;return !map.dirty&&map.stats().ships.rigsLoaded===map.assets.length&&map.stats().terrain.pendingChunks===0;});
   };
   await waitReady(256);
   const initial = await page.evaluate(() => window.navalMap.stats());
-  ensure(initial.ships.visibleRigs === 12 && initial.ships.errors.length === 0, '12 copied skeletons render in the fleet view');
+  const rosterSize=await page.evaluate(()=>window.navalMap.assets.length);
+  ensure(initial.ships.visibleRigs === rosterSize && initial.ships.errors.length === 0, `${rosterSize} copied skeletons render in the fleet view`);
   const viewport = await page.locator('#canvas-host canvas').boundingBox();
   const start = { x: viewport.x + viewport.width * .65, y: viewport.y + viewport.height * .7 };
   await page.mouse.move(start.x, start.y); await page.mouse.down();
@@ -48,7 +49,7 @@ async (page) => {
   await page.getByRole('button', { name: '全图 ↗' }).click();
   await page.waitForFunction(() => !window.navalMap.dirty && window.navalMap.camera.zoom < .36);
   const overview = await page.evaluate(() => window.navalMap.stats());
-  ensure(!overview.terrain.detail && overview.ships.visibleRigs === 0 && overview.ships.visibleIcons === 12, 'Full-map overview uses icons and the overview terrain texture');
+  ensure(!overview.terrain.detail && overview.ships.visibleRigs === 0 && overview.ships.visibleIcons === rosterSize, 'Full-map overview uses icons and the overview terrain texture');
   await page.screenshot({ path: 'output/playwright/海图-战略总览.png' });
   for (const size of [128, 256, 512]) {
     await page.getByRole('combobox', { name: '海域规模' }).selectOption(String(size));

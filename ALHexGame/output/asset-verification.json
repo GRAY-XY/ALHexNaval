@@ -1,14 +1,14 @@
 {
   "status": "passed",
-  "ships": 12,
-  "files_checked": 54,
-  "bytes": 8874581,
+  "ships": 24,
+  "files_checked": 102,
+  "bytes": 16063139,
   "ship_types": {
-    "DD": 4,
-    "CL": 2,
-    "CA": 2,
-    "BB": 2,
-    "CV": 1,
+    "DD": 6,
+    "CL": 4,
+    "CA": 4,
+    "BB": 4,
+    "CV": 5,
     "CVL": 1
   },
   "units": [
@@ -92,6 +92,90 @@
     {
       "id": "dujiaoshou",
       "name": "独角兽",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "fulaiche",
+      "name": "弗莱彻",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "kelifulan",
+      "name": "克利夫兰",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "baerdimo",
+      "name": "巴尔的摩",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "huashengdun",
+      "name": "华盛顿",
+      "spine_version": "3.8.99",
+      "animations": 21,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "yuekecheng",
+      "name": "约克城",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "dahuangfeng",
+      "name": "大黄蜂",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "xuefeng",
+      "name": "雪风",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "changliang",
+      "name": "长良",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "miaogao",
+      "name": "妙高",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "changmen",
+      "name": "长门",
+      "spine_version": "3.8.99",
+      "animations": 21,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "chicheng",
+      "name": "赤城",
+      "spine_version": "3.8.99",
+      "animations": 29,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "xianghe",
+      "name": "翔鹤",
       "spine_version": "3.8.99",
       "animations": 20,
       "missing_native_hurt": true

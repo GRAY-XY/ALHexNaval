@@ -1,8 +1,9 @@
 import {Container,Sprite,Texture,Graphics,Text,TextStyle} from 'pixi.js';
-import {cellCenter,HEX_RADIUS,HEX_WIDTH,hexVertices,neighbors,ROW_HEIGHT} from './hex.ts';
+import {cellCenter,hexDistance,HEX_RADIUS,HEX_WIDTH,hexVertices,neighbors,ROW_HEIGHT} from './hex.ts';
 import {HexWorld,randomAt,TERRAIN_COLORS} from './world.ts';
 import {Terrain,type Cell,type ViewBounds} from './types.ts';
 import {watercolorTextures} from './watercolor-textures.ts';
+import {campaignBattle,type CampaignMountainRange} from './historical-battles.ts';
 
 const CHUNK_SIZE=6;
 const TEXTURE_SCALE=.86;
@@ -23,7 +24,44 @@ function landNeighborCount(world:HexWorld,cell:Cell):number {
   return neighbors(cell).filter(next=>world.at(next)===Terrain.Land).length;
 }
 
+function rangeDistance(col:number,row:number,range:CampaignMountainRange,width:number,height:number):number {
+  let nearest=Infinity;
+  for(let index=1;index<range.points.length;index++){
+    const [ax,ay]=range.points[index-1],[bx,by]=range.points[index],x=col-ax*(width-1),y=row-ay*(height-1),dx=(bx-ax)*(width-1),dy=(by-ay)*(height-1);
+    const t=Math.max(0,Math.min(1,(x*dx+y*dy)/(dx*dx+dy*dy||1))),distance=Math.hypot(x-dx*t,y-dy*t);
+    nearest=Math.min(nearest,distance);
+  }
+  return nearest;
+}
+
+function hasMountainClearance(world:HexWorld,cell:Cell):boolean {
+  for(let row=Math.max(0,cell.row-2);row<=Math.min(world.height-1,cell.row+2);row++)for(let col=Math.max(0,cell.col-2);col<=Math.min(world.width-1,cell.col+2);col++){
+    const nearby={col,row};if(hexDistance(cell,nearby)<=2&&world.at(nearby)!==Terrain.Land)return false;
+  }
+  return true;
+}
+
+function isCampaignMountainSeed(world:HexWorld,cell:Cell,ranges:CampaignMountainRange[]):boolean {
+  if(world.at(cell)!==Terrain.Land||landNeighborCount(world,cell)<5||!hasMountainClearance(world,cell))return false;
+  let rangeIndex=-1,distance=Infinity;
+  ranges.forEach((range,index)=>{const next=rangeDistance(cell.col,cell.row,range,world.width,world.height);if(next<distance&&next<=range.halfWidth){rangeIndex=index;distance=next;}});
+  if(rangeIndex<0)return false;
+  const range=ranges[rangeIndex],salt=76+rangeIndex*103,relativeDistance=distance/range.halfWidth;
+  const rank=randomAt(cell.col,cell.row,salt)+relativeDistance*.34,limit=.36*(1-relativeDistance*.62);
+  if(rank>limit)return false;
+  for(let row=Math.max(0,cell.row-2);row<=Math.min(world.height-1,cell.row+2);row++)for(let col=Math.max(0,cell.col-2);col<=Math.min(world.width-1,cell.col+2);col++){
+    const next={col,row};if((col===cell.col&&row===cell.row)||hexDistance(cell,next)>2)continue;
+    if(world.at(next)!==Terrain.Land||!hasMountainClearance(world,next))continue;
+    const nextDistance=rangeDistance(col,row,range,world.width,world.height);if(nextDistance>range.halfWidth)continue;
+    const nextRelativeDistance=nextDistance/range.halfWidth,nextRank=randomAt(col,row,salt)+nextRelativeDistance*.34,nextLimit=.36*(1-nextRelativeDistance*.62);
+    if(nextRank<rank&&nextRank<=nextLimit)return false;
+  }
+  return true;
+}
+
 function isMountainSeed(world:HexWorld,cell:Cell):boolean {
+  const ranges=campaignBattle(world.scenarioId)?.mountainRanges;
+  if(ranges)return ranges.length>0&&isCampaignMountainSeed(world,cell,ranges);
   if(world.at(cell)!==Terrain.Land||landNeighborCount(world,cell)<5)return false;
   const score=randomAt(cell.col,cell.row,76);if(score>.32)return false;
   for(let row=cell.row-3;row<=cell.row+3;row++)for(let col=cell.col-3;col<=cell.col+3;col++){
@@ -222,9 +260,16 @@ export class TerrainRenderer {
       const label=new Text(location.name,textStyle);label.anchor.set(.5,.5);label.position.set(center.x,center.y-17);label.zIndex=center.y+20;this.campaignOverlay.addChild(label);
     }
     for(const landmark of this.world.landmarks){
-      const center=cellCenter(landmark),texture=Texture.from(watercolorTextures().campaignLandmarks[kinds[landmark.kind]]),sprite=new Sprite(texture),width=landmark.kind==='airfield'?440:landmark.kind==='naval-yard'?420:390;
-      sprite.anchor.set(.5,.52);sprite.position.set(center.x,center.y);sprite.width=width;sprite.height=width*2/3;sprite.alpha=.94;sprite.zIndex=center.y+30;this.campaignOverlay.addChild(sprite);
-      const label=new Text(landmark.name,textStyle);label.anchor.set(.5,.5);label.position.set(center.x,center.y-width*.37);label.zIndex=center.y+31;this.campaignOverlay.addChild(label);
+      const center=cellCenter(landmark),texture=Texture.from(watercolorTextures().campaignLandmarks[kinds[landmark.kind]]),sprite=new Sprite(texture),width=({airfield:230,'seaplane-base':205,'naval-yard':215,'field-hq':170} as const)[landmark.kind],height=width*2/3;
+      sprite.anchor.set(.5,.52);sprite.position.set(center.x,center.y);sprite.width=width;sprite.height=height;sprite.alpha=.98;sprite.zIndex=center.y+30;this.campaignOverlay.addChild(sprite);
+      const aircraftRoles=landmark.kind==='airfield'?['fighter','bomber']:landmark.kind==='seaplane-base'?['torpedo']:[];
+      if(landmark.airNation)aircraftRoles.forEach((role,index)=>{
+        const aircraftTexture=Texture.from(new URL(`./assets/combat/${landmark.airNation}-${role}.png`,document.baseURI).href),aircraft=new Sprite(aircraftTexture),size=28;
+        aircraft.anchor.set(.5);aircraft.scale.set(size/Math.max(aircraftTexture.width,aircraftTexture.height));
+        const offset=landmark.kind==='airfield'?{x:index===0?-21:21,y:height*.31}:{x:-31,y:height*.27};
+        aircraft.position.set(center.x+offset.x,center.y+offset.y);aircraft.alpha=.92;aircraft.zIndex=center.y+30.5+index*.01;this.campaignOverlay.addChild(aircraft);
+      });
+      const label=new Text(landmark.name,textStyle);label.anchor.set(.5,.5);label.position.set(center.x,center.y-height*.52-18);label.zIndex=center.y+31;this.campaignOverlay.addChild(label);
     }
   }
   updateView(bounds:ViewBounds,zoom:number):void {

@@ -489,7 +489,7 @@ class NavalMap {
       button.onclick=()=>{this.selectedCampaignId=battle.id;this.renderCampaignLevels();};nav.append(button);
     }
     const battle=campaignBattle(this.selectedCampaignId)!;
-    const brief=$('campaign-brief');brief.replaceChildren(element('span','campaign-date',`${battle.date}　·　${battle.theater}`),element('h3','',battle.title),element('p','',battle.summary),element('p','campaign-objective',`本关构想：${battle.objective}`),element('p','campaign-note',`地图尺寸 ${battle.width} × ${battle.height} · 玩家：${battle.sides[0]} · AI：${battle.sides[1]}。现阶段使用素材库现有舰船；地图按历史资料简化绘制，格子不代表精确航海比例。`));
+    const brief=$('campaign-brief');brief.replaceChildren(element('span','campaign-date',`${battle.date}　·　${battle.theater}`),element('h3','',battle.title),element('p','',battle.summary),element('p','campaign-objective',`本关构想：${battle.objective}`),element('p','campaign-note',`地图尺寸 ${battle.width} × ${battle.height} · 玩家：${battle.sides[0]}（${battle.startingFleetIds[0].length} 艘）· AI：${battle.sides[1]}（${battle.startingFleetIds[1].length} 艘）。双方只部署本关编定的初始舰队；地图按历史资料简化绘制，格子不代表精确航海比例。`));
   }
   private openSetup():void {
     $('setup-kicker').textContent='MATCH SETUP';

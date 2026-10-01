@@ -2,7 +2,7 @@
   "passed": true,
   "checks": [
     {
-      "name": "All 12 copied Spine binaries load with finite timeline poses",
+      "name": "All 24 copied Spine binaries load with finite timeline poses",
       "passed": true
     },
     {
@@ -424,6 +424,374 @@
         {
           "name": "stand",
           "duration": 9.333333015441895
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "fulaiche",
+      "name": "弗莱彻",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "kelifulan",
+      "name": "克利夫兰",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1.8333333730697632
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8
+        },
+        {
+          "name": "victory",
+          "duration": 3.3333332538604736
+        }
+      ]
+    },
+    {
+      "id": "baerdimo",
+      "name": "巴尔的摩",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 7
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "huashengdun",
+      "name": "华盛顿",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 12.166666984558105
+        },
+        {
+          "name": "victory",
+          "duration": 1.6666666269302368
+        }
+      ]
+    },
+    {
+      "id": "yuekecheng",
+      "name": "约克城",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8.166666984558105
+        },
+        {
+          "name": "victory",
+          "duration": 3.5
+        }
+      ]
+    },
+    {
+      "id": "dahuangfeng",
+      "name": "大黄蜂",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1.3333333730697632
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 1.6666666269302368
+        }
+      ]
+    },
+    {
+      "id": "xuefeng",
+      "name": "雪风",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 7
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "changliang",
+      "name": "长良",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.9333333373069763
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 10.5
+        },
+        {
+          "name": "victory",
+          "duration": 2.5
+        }
+      ]
+    },
+    {
+      "id": "miaogao",
+      "name": "妙高",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1.100000023841858
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8.666666984558105
+        },
+        {
+          "name": "victory",
+          "duration": 3.3333332538604736
+        }
+      ]
+    },
+    {
+      "id": "changmen",
+      "name": "长门",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 12.333333015441895
+        },
+        {
+          "name": "victory",
+          "duration": 3
+        }
+      ]
+    },
+    {
+      "id": "chicheng",
+      "name": "赤城",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1.3333333730697632
+        },
+        {
+          "name": "dead",
+          "duration": 1.5
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 11.5
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "xianghe",
+      "name": "翔鹤",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1.5
+        },
+        {
+          "name": "dead",
+          "duration": 1.1666666269302368
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8
         },
         {
           "name": "victory",

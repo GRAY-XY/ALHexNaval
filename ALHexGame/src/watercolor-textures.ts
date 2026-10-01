@@ -26,19 +26,10 @@ async function loadAsset(path:string,maxSize=512):Promise<HTMLCanvasElement>{
   const context=canvas.getContext('2d')!;context.drawImage(bitmap,0,0,canvas.width,canvas.height);bitmap.close();return canvas;
 }
 
-async function loadAtlas(path:string,columns:number,rows:number):Promise<HTMLCanvasElement[]>{
-  const response=await fetch(new URL('./'+path,document.baseURI));if(!response.ok)throw Error(`无法读取图集素材：${path}`);
-  const bitmap=await createImageBitmap(await response.blob()),frameWidth=bitmap.width/columns,frameHeight=bitmap.height/rows,frames:HTMLCanvasElement[]=[];
-  for(let row=0;row<rows;row++)for(let column=0;column<columns;column++){
-    const canvas=document.createElement('canvas');canvas.width=frameWidth;canvas.height=frameHeight;
-    canvas.getContext('2d')!.drawImage(bitmap,column*frameWidth,row*frameHeight,frameWidth,frameHeight,0,0,frameWidth,frameHeight);frames.push(canvas);
-  }
-  bitmap.close();return frames;
-}
-
 export async function loadWatercolorTextures():Promise<void>{
   const directional=(kind:string)=>Promise.all(ART_DIRECTIONS.map((name,index)=>loadAsset(`assets/terrain/directional/watercolor-${kind}-${index}-${name}.png`)));
   const landDetailNames=['dense-forest','sparse-grove','rocky-grassland','meadow-trail','forest-boulders','woodland-thicket'];
+  const landmarkNames=['airfield','seaplane-station','naval-yard','field-headquarters'];
   const [ocean,land,mountains,harbors,coasts,landDetails,campaignLandmarks]=await Promise.all([
     loadTile('assets/terrain/watercolor-ocean.png'),
     loadTile('assets/terrain/watercolor-land.png'),
@@ -46,7 +37,7 @@ export async function loadWatercolorTextures():Promise<void>{
     directional('harbor'),
     directional('coast'),
     Promise.all(landDetailNames.map((name,index)=>loadAsset(`assets/terrain/land-details/watercolor-land-detail-${index}-${name}.png`))),
-    loadAtlas('assets/terrain/source-sheets/wwii-pacific-landmarks.png',2,2),
+    Promise.all(landmarkNames.map(name=>loadAsset(`assets/terrain/landmarks/wwii-${name}.png`))),
   ]);
   textures={ocean,land,mountains,harbors,coasts,landDetails,campaignLandmarks};
 }

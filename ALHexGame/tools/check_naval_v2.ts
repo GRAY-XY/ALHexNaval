@@ -325,10 +325,10 @@ check('V2 AI uses the same turn commands and resolves them before handing over',
 });
 
 check('V2 AI can launch aircraft and move ships in the same turn',()=>{
-  const m=new Match(new HexWorld(128),assets,2,['ai','human']),report=executeAiTurn(m);
-  assert.equal(report.launched,3);assert.equal(m.aviationOrders.length,2);assert(m.movementOrders.length>0);assert.equal(m.aviation.squadrons.length,0);
+  const m=new Match(new HexWorld(128),assets,2,['ai','human']),launches=m.units.filter(unit=>unit.ownerId===m.active.id&&['CV','CVL'].includes(unit.asset.ship_type.code)).map(unit=>launchPreview(m,unit.instanceId)).filter(preview=>preview.valid),expectedLaunched=launches.reduce((sum,preview)=>sum+preview.slots.length,0),report=executeAiTurn(m);
+  assert.equal(report.launched,expectedLaunched);assert.equal(m.aviationOrders.length,launches.length);assert(m.movementOrders.length>0);assert.equal(m.aviation.squadrons.length,0);
   const before=m.save();assert.deepEqual(Match.load(before,assets).save(),before);
-  m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,1);assert.equal(m.aviationOrders.length,0);assert.equal(m.movementOrders.length,0);assert.equal(m.aviation.squadrons.length,3);
+  m.endTurn();assert.equal(m.active.id,2);assert.equal(m.round,1);assert.equal(m.aviationOrders.length,0);assert.equal(m.movementOrders.length,0);assert.equal(m.aviation.squadrons.length,expectedLaunched);
 });
 
 check('V2 AI attacks resolve immediately when its side ends the turn',()=>{

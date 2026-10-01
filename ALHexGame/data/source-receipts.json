@@ -1,6 +1,6 @@
 {
   "source_library": "ALChibiAssets/library.json",
-  "source_library_sha256": "8474e0599005ae0f7a59bce38d32bb698b305ca92fea1b5e040e1c4927c83c8f",
+  "source_library_sha256": "466320f7957b57c4af71711f4cd715f6290ad2e5070ae519b3a828988922f4e6",
   "source_statistics": "ALChibiAssets/metadata/ships.json",
   "source_statistics_sha256": "6203bb1e27d91059009193acfbfa047ffa8fa9a5cd4df69b1205ce6c3f202cd5",
   "units": [
@@ -135,6 +135,138 @@
       "skin_id": 206030,
       "source_directory": "assets/皇家/20603_独角兽/skins/dujiaoshou",
       "source_bundle_sha256": "570d98002744befb3296b453ca39e03c157fff9ce1ff6301e4560d72cb861c01"
+    },
+    {
+      "unit_id": "fulaiche",
+      "ship_group": 10109,
+      "statistics_id": 101091,
+      "type": 1,
+      "nationality": 1,
+      "armor_type": 1,
+      "skin_id": 101090,
+      "source_directory": "assets/白鹰/10109_弗莱彻/skins/fulaiche",
+      "source_bundle_sha256": "7f13a26cb42880be91f80a0bb896b262b702a9117c0ba55267ec6033aa1625e4"
+    },
+    {
+      "unit_id": "kelifulan",
+      "ship_group": 10209,
+      "statistics_id": 102091,
+      "type": 2,
+      "nationality": 1,
+      "armor_type": 1,
+      "skin_id": 102090,
+      "source_directory": "assets/白鹰/10209_克利夫兰/skins/kelifulan",
+      "source_bundle_sha256": "0c53f287c07e7f1a1686966837dd82913c83a5619cd7a548b108d9166d6a7c96"
+    },
+    {
+      "unit_id": "baerdimo",
+      "ship_group": 10316,
+      "statistics_id": 103161,
+      "type": 3,
+      "nationality": 1,
+      "armor_type": 2,
+      "skin_id": 103160,
+      "source_directory": "assets/白鹰/10316_巴尔的摩/skins/baerdimo",
+      "source_bundle_sha256": "a7a3b700a7429eb6bc611b4473cec61f56527eda6570c9f8d88b7a4b6fcf82c2"
+    },
+    {
+      "unit_id": "huashengdun",
+      "ship_group": 10513,
+      "statistics_id": 105131,
+      "type": 5,
+      "nationality": 1,
+      "armor_type": 3,
+      "skin_id": 105130,
+      "source_directory": "assets/白鹰/10513_华盛顿/skins/huashengdun",
+      "source_bundle_sha256": "ae21f66d4e8fa81b98656dd9492988f36d8d1c30786a26e117d6c453180ced13"
+    },
+    {
+      "unit_id": "yuekecheng",
+      "ship_group": 10705,
+      "statistics_id": 107051,
+      "type": 7,
+      "nationality": 1,
+      "armor_type": 2,
+      "skin_id": 107050,
+      "source_directory": "assets/白鹰/10705_约克城/skins/yuekecheng",
+      "source_bundle_sha256": "3f52d1fd76ce2c0953a1af0342fb2ac42b7b1c080fc68aaa139c840a2a9f20da"
+    },
+    {
+      "unit_id": "dahuangfeng",
+      "ship_group": 10707,
+      "statistics_id": 107071,
+      "type": 7,
+      "nationality": 1,
+      "armor_type": 2,
+      "skin_id": 107070,
+      "source_directory": "assets/白鹰/10707_大黄蜂/skins/dahuangfeng",
+      "source_bundle_sha256": "f071f29163ea759df1d8d262defff9470c827e49fb535e20c4de05eeabcb8d90"
+    },
+    {
+      "unit_id": "xuefeng",
+      "ship_group": 30116,
+      "statistics_id": 301161,
+      "type": 1,
+      "nationality": 3,
+      "armor_type": 1,
+      "skin_id": 301160,
+      "source_directory": "assets/重樱/30116_雪风/skins/xuefeng",
+      "source_bundle_sha256": "1c2b24fc930fa3f7a7422f35978af33aded469e432b4aaa28a8ce8a6b45270c1"
+    },
+    {
+      "unit_id": "changliang",
+      "ship_group": 30204,
+      "statistics_id": 302041,
+      "type": 2,
+      "nationality": 3,
+      "armor_type": 1,
+      "skin_id": 302040,
+      "source_directory": "assets/重樱/30204_长良/skins/changliang",
+      "source_bundle_sha256": "dc4c72f3f36842cc7f4e493be91a12c8191abdad5c79f92b134f120b5bd220a7"
+    },
+    {
+      "unit_id": "miaogao",
+      "ship_group": 30307,
+      "statistics_id": 303071,
+      "type": 3,
+      "nationality": 3,
+      "armor_type": 2,
+      "skin_id": 303070,
+      "source_directory": "assets/重樱/30307_妙高/skins/miaogao",
+      "source_bundle_sha256": "80ab3ca9749bc6dc86799177b4a5a19e4f9adc74b96ea313deb94983b56c35a8"
+    },
+    {
+      "unit_id": "changmen",
+      "ship_group": 30505,
+      "statistics_id": 305051,
+      "type": 5,
+      "nationality": 3,
+      "armor_type": 3,
+      "skin_id": 305050,
+      "source_directory": "assets/重樱/30505_长门/skins/changmen",
+      "source_bundle_sha256": "d72d05d67324175bb2076f1ec865b71300a686bf2203f506d0dec20d8204bc51"
+    },
+    {
+      "unit_id": "chicheng",
+      "ship_group": 30701,
+      "statistics_id": 307011,
+      "type": 7,
+      "nationality": 3,
+      "armor_type": 2,
+      "skin_id": 307010,
+      "source_directory": "assets/重樱/30701_赤城/skins/chicheng",
+      "source_bundle_sha256": "2919934f6d490c47bc46512f39aa5a9b187abbdd7778786d58d3ce106573c055"
+    },
+    {
+      "unit_id": "xianghe",
+      "ship_group": 30705,
+      "statistics_id": 307051,
+      "type": 7,
+      "nationality": 3,
+      "armor_type": 2,
+      "skin_id": 307050,
+      "source_directory": "assets/重樱/30705_翔鹤/skins/xianghe",
+      "source_bundle_sha256": "6113ec94babc08b57bbcc987259446ffae7a82f531c6e5dc248c268c804cf7a9"
     }
   ]
 }

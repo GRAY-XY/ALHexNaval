@@ -29,7 +29,7 @@ function rig(i:number,asset:Pick<ShipAsset,'animation_map'>=assets[i]) {
 }
 function all(test:(i:number)=>void){assets.forEach((_,i)=>test(i));}
 
-check('All 12 copied Spine binaries load with finite timeline poses',()=>all(i=>{const r=rig(i);r.animation.bind(r.port);r.advance(.25);assert.equal(r.state.getCurrent(0).animation.name,assets[i].animation_map.idle);}));
+check(`All ${assets.length} copied Spine binaries load with finite timeline poses`,()=>all(i=>{const r=rig(i);r.animation.bind(r.port);r.advance(.25);assert.equal(r.state.getCurrent(0).animation.name,assets[i].animation_map.idle);}));
 check('A fresh attack survives the first idle synchronization',()=>all(i=>{const r=rig(i);r.animation.bind(r.port);r.animation.request('attack');r.advance(.2);assert.equal(r.state.getCurrent(0).animation.name,assets[i].animation_map.attack);assert(r.animation.active);assert(!r.state.getCurrent(0).loop);}));
 check('Repeated movement and idle transitions never restart or truncate an attack',()=>all(i=>{const r=rig(i);r.animation.bind(r.port);r.animation.request('attack');const duration=r.animation.duration;for(let j=0;j<6;j++)r.advance(duration/10,j%2?'idle':'move');assert.equal(r.state.getCurrent(0).animation.name,assets[i].animation_map.attack);assert(Math.abs(r.state.getCurrent(0).trackTime-duration*.6)<1e-7);r.advance(duration*.5,'move');assert.equal(r.state.getCurrent(0).animation.name,assets[i].animation_map.move);assert(r.state.getCurrent(0).loop);}));
 check('Completed attacks return to the current idle state',()=>all(i=>{const r=rig(i);r.animation.bind(r.port);r.animation.request('attack');r.advance(r.animation.duration+.1);assert.equal(r.state.getCurrent(0).animation.name,assets[i].animation_map.idle);assert(!r.animation.active);}));

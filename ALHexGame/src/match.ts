@@ -109,11 +109,18 @@ export class Match {
     if (!Number.isInteger(teamCount) || teamCount < 2 || teamCount > 8 || !assets.length || new Set(assets.map(asset => asset.id)).size !== assets.length) throw Error('势力数应为 2～8，舰船池不能为空或重复');
     if(world.scenarioId==='test-5x10'&&teamCount!==2)throw Error('5 × 10 测试海图只支持双方对战');
     if(controllers&&(controllers.length!==teamCount||controllers.some(controller=>!['human','ai'].includes(controller))))throw Error('席位设置无效');
-    const fleetAssets=world.scenarioId==='test-5x10'?testArenaFleetAssets(assets):assets;
     const battle=campaignBattle(world.scenarioId);
+    if(battle&&teamCount!==2)throw Error('历史战役只支持双方对战');
     this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: battle?.sides[i]??TEAM_NAMES[i], oil: 0,credits:STARTING_CREDITS,supply:STARTING_SUPPLY,eliminated:false,controller:controllers?.[i]??'human' }));
+    const fleetAssetsByTeam:ShipAsset[][]=world.scenarioId==='test-5x10'
+      ?this.teams.map(()=>testArenaFleetAssets(assets))
+      :battle?battle.startingFleetIds.map(ids=>ids.map(id=>{
+        const asset=assets.find(item=>item.id===id);if(!asset)throw Error(`战役舰船素材缺失：${id}`);return asset;
+      }))
+      :this.teams.map(()=>assets);
     const occupied = new Set<string>(), starts = [[.12,.13],[.82,.15],[.82,.82],[.15,.82],[.48,.10],[.90,.50],[.50,.90],[.10,.50]];
     this.units = this.teams.flatMap((team,index) => {
+      const fleetAssets=fleetAssetsByTeam[index];
       if(world.scenarioId==='test-5x10')return TEST_ARENA_SPAWNS[index].map((cell,shipIndex)=>{
         const asset=fleetAssets[shipIndex];occupied.add(`${cell.col},${cell.row}`);
         const combat=profile(asset.ship_type.code);
@@ -914,8 +921,9 @@ export class Match {
     if(data.version>=15&&data.teams.some((t:Team)=>!['human','ai'].includes(t.controller)))fail();
     if(mapKind==='test-5x10'&&data.teams.length!==2)fail();
     const scenarioAssets=mapKind==='test-5x10'?testArenaFleetAssets(assets):assets;
-    const expectedUnits = scenarioAssets.length * (data.version === 1 ? 1 : data.teams.length);
-    if (!Array.isArray(data.units) || data.units.length !== expectedUnits || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2)) fail();
+    const expectedUnits = battle?battle.startingFleetIds.flat().length:scenarioAssets.length * (data.version === 1 ? 1 : data.teams.length);
+    const legacyFullCampaignRoster=!!battle&&data.version!==1&&Array.isArray(data.units)&&data.units.length===assets.length*data.teams.length;
+    if (!Array.isArray(data.units) || data.units.length !== expectedUnits&&!legacyFullCampaignRoster || data.version < 8 && data.fleets.length > Math.floor(expectedUnits / 2)) fail();
     const world=mapKind==='test-5x10'?new HexWorld(5,10,'test-5x10'):battle?new HexWorld(battle.width,battle.height,battle.id):new HexWorld(data.size);
     const match = new Match(world, assets, data.teams.length); if (match.hash !== data.mapHash) throw Error('存档地图与当前生成规则不同，当前战局未改变');
     match.rulesetId=data.version>=16?data.rulesetId:'classic-v1';

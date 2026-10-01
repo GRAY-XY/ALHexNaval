@@ -111,4 +111,4 @@ $('zoom').oninput=()=>{if(sprite){sprite.scale.set(baseScale*Number($('zoom').va
 $('reset').onclick=()=>{if(sprite){fitSprite();app.renderer.render(app.stage);}};
 $('verify').onclick=()=>verifyAll().catch(error=>{$('verification-status').textContent=String(error);});
 window.assetPreview={verifyAll,openUnit,get roster(){return roster;},get sprite(){return sprite;},get unit(){return activeUnit;},get paused(){return paused;},lastReport:null};
-(async()=>{try{roster=await(await fetch('../data/roster.json')).json();renderCards();$('summary').textContent='4 个原始阵营 / 6 种舰种 / 12 艘舰船';$('verify').disabled=false;}catch(error){$('verification-status').textContent='资料读取失败：'+String(error);}})();
+(async()=>{try{roster=await(await fetch('../data/roster.json')).json();renderCards();const factions=new Set(roster.units.map(unit=>unit.faction.id)),types=new Set(roster.units.map(unit=>unit.ship_type.code));$('summary').textContent=`${factions.size} 个原始阵营 / ${types.size} 种舰种 / ${roster.units.length} 艘舰船`;$('verify').disabled=false;}catch(error){$('verification-status').textContent='资料读取失败：'+String(error);}})();

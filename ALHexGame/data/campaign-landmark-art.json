@@ -1,0 +1,83 @@
+{
+  "version": 6,
+  "generatedAt": "2026-10-01",
+  "generator": "OpenAI built-in image generation",
+  "promptSet": "data/historical-landmark-art-prompts.md",
+  "processing": "tools/prepare_landmark_art.py removes the magenta chroma key and decontaminates edge pixels",
+  "sources": [
+    {
+      "kind": "airfield",
+      "path": "data/landmark-art-source/wwii-airfield-key.png",
+      "sha256": "a63c8ecb5d7a414bf8c7c59b576a5d0b4c446b906d016667b1129c921fc36bc1",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "kind": "seaplane-base",
+      "path": "data/landmark-art-source/wwii-seaplane-station-key.png",
+      "sha256": "2ad70670aa1f91091b05dd43b7b89961d56a3d746abd26ca1d375d695e3ee681",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "kind": "naval-yard",
+      "path": "data/landmark-art-source/wwii-naval-yard-key.png",
+      "sha256": "de7bf42893198aa4e03251abfaa6e90fd60e8f2b65327fcdf3d056ee1bbbd725",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "kind": "field-hq",
+      "path": "data/landmark-art-source/wwii-field-headquarters-key.png",
+      "sha256": "89ba6c6ce6f987f05738fc07bb70674a877b825bb995decfb309662738533555",
+      "size": [
+        1402,
+        1122
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "kind": "airfield",
+      "path": "assets/terrain/landmarks/wwii-airfield.png",
+      "sha256": "63e81aa1b13b90cf708da9a34e6da83befdc6fee289067ff69bea6ff9ab7696c",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "kind": "seaplane-base",
+      "path": "assets/terrain/landmarks/wwii-seaplane-station.png",
+      "sha256": "b60649f416525d03fe69e3e40da6f00637e3ec001ddd73a8449927e470891c57",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "kind": "naval-yard",
+      "path": "assets/terrain/landmarks/wwii-naval-yard.png",
+      "sha256": "fb99661c3dd6a322da9e13c0bcef9a8a96d5567f5d208bce69c56ad21ec24e71",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "kind": "field-hq",
+      "path": "assets/terrain/landmarks/wwii-field-headquarters.png",
+      "sha256": "8b42e9cd427968246119c1e309f7b48411ebe243faf45b5e9e9befe4db0403bd",
+      "size": [
+        1402,
+        1122
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-09-25T02:33:13.276182+00:00",
+  "prepared_at": "2026-10-01T05:11:31.764862+00:00",
   "files": [
     {
       "path": "assets/ships/lafei/default/lafei.skel",
@@ -291,6 +291,294 @@
       "source": "ALChibiAssets/assets/皇家/20603_独角兽/skins/dujiaoshou/__preview.png"
     },
     {
+      "path": "assets/ships/fulaiche/default/fulaiche.skel",
+      "bytes": 116465,
+      "sha256": "c43bb8c188e86d8577b2a39bafeeb2f8d6bfa2e240eca13608db89b1d51a5edf",
+      "source": "ALChibiAssets/assets/白鹰/10109_弗莱彻/skins/fulaiche/fulaiche.skel"
+    },
+    {
+      "path": "assets/ships/fulaiche/default/fulaiche.atlas",
+      "bytes": 3292,
+      "sha256": "fb694491a7aebaca3f295cf7985f62a1c49f6fe4df2c9a99972ca056bde1bb94",
+      "source": "ALChibiAssets/assets/白鹰/10109_弗莱彻/skins/fulaiche/fulaiche.atlas"
+    },
+    {
+      "path": "assets/ships/fulaiche/default/fulaiche.png",
+      "bytes": 133747,
+      "sha256": "a22a849492eef37d4bd1f899bb78a589ec8adb58debfd7f3d8043c9aa3354e1a",
+      "source": "ALChibiAssets/assets/白鹰/10109_弗莱彻/skins/fulaiche/fulaiche.png"
+    },
+    {
+      "path": "assets/ships/fulaiche/default/__preview.png",
+      "bytes": 201776,
+      "sha256": "e411ab053e7f99b2b592ae8d0958ebb68c05e9ff3b60c61151a7da21038ec427",
+      "source": "ALChibiAssets/assets/白鹰/10109_弗莱彻/skins/fulaiche/__preview.png"
+    },
+    {
+      "path": "assets/ships/kelifulan/default/kelifulan.skel",
+      "bytes": 165519,
+      "sha256": "1cf4656d26aa9e1d757604b65b8be87030df04fe5901fd26fd17c100cb088de6",
+      "source": "ALChibiAssets/assets/白鹰/10209_克利夫兰/skins/kelifulan/kelifulan.skel"
+    },
+    {
+      "path": "assets/ships/kelifulan/default/kelifulan.atlas",
+      "bytes": 6326,
+      "sha256": "fb5ce3a843f393fba0647e6493b1f3b0365df2e344a87673c1bd306c063bf7ca",
+      "source": "ALChibiAssets/assets/白鹰/10209_克利夫兰/skins/kelifulan/kelifulan.atlas"
+    },
+    {
+      "path": "assets/ships/kelifulan/default/kelifulan.png",
+      "bytes": 199316,
+      "sha256": "34c9f6e95c1d19d6da76fe4ce33d77ce7d10289b2eb6a35cf042b832c4c57438",
+      "source": "ALChibiAssets/assets/白鹰/10209_克利夫兰/skins/kelifulan/kelifulan.png"
+    },
+    {
+      "path": "assets/ships/kelifulan/default/__preview.png",
+      "bytes": 213298,
+      "sha256": "1468e8a162a076004dc5b866220a4d015a595062a1e16df607c08703218e09e6",
+      "source": "ALChibiAssets/assets/白鹰/10209_克利夫兰/skins/kelifulan/__preview.png"
+    },
+    {
+      "path": "assets/ships/baerdimo/default/baerdimo.skel",
+      "bytes": 99992,
+      "sha256": "8d9fb0613d83b0bbbdd40cdc68d8bb1d873c1779608c8214517de136aa131ea5",
+      "source": "ALChibiAssets/assets/白鹰/10316_巴尔的摩/skins/baerdimo/baerdimo.skel"
+    },
+    {
+      "path": "assets/ships/baerdimo/default/baerdimo.atlas",
+      "bytes": 3498,
+      "sha256": "ef50b108e6e99c60ff463ad9db0618d0a66d240f570b43d770b5dee7e995c9a5",
+      "source": "ALChibiAssets/assets/白鹰/10316_巴尔的摩/skins/baerdimo/baerdimo.atlas"
+    },
+    {
+      "path": "assets/ships/baerdimo/default/baerdimo.png",
+      "bytes": 149726,
+      "sha256": "bd90080c6416bd301ab12421239003200fccb575b832b024ed57911c9ba3cb46",
+      "source": "ALChibiAssets/assets/白鹰/10316_巴尔的摩/skins/baerdimo/baerdimo.png"
+    },
+    {
+      "path": "assets/ships/baerdimo/default/__preview.png",
+      "bytes": 179376,
+      "sha256": "68ca277886b8f7fbc8224105c1f4e26b05b5613a58cea4c338bf41809a26cda4",
+      "source": "ALChibiAssets/assets/白鹰/10316_巴尔的摩/skins/baerdimo/__preview.png"
+    },
+    {
+      "path": "assets/ships/huashengdun/default/huashengdun.skel",
+      "bytes": 104518,
+      "sha256": "87259745493d6787489311a4351106b6072bda82d87fae7fdd03a7c619b99408",
+      "source": "ALChibiAssets/assets/白鹰/10513_华盛顿/skins/huashengdun/huashengdun.skel"
+    },
+    {
+      "path": "assets/ships/huashengdun/default/huashengdun.atlas",
+      "bytes": 4284,
+      "sha256": "5f948a6d42f2811dcb5f64d1b1e8920da7f16e1038ee85c6e70a93c9842b8476",
+      "source": "ALChibiAssets/assets/白鹰/10513_华盛顿/skins/huashengdun/huashengdun.atlas"
+    },
+    {
+      "path": "assets/ships/huashengdun/default/huashengdun.png",
+      "bytes": 186151,
+      "sha256": "684f49ed47bec3e6a76db5b864229d3c3bb33c35a94ce56aeb220d89a17d2bcd",
+      "source": "ALChibiAssets/assets/白鹰/10513_华盛顿/skins/huashengdun/huashengdun.png"
+    },
+    {
+      "path": "assets/ships/huashengdun/default/__preview.png",
+      "bytes": 291376,
+      "sha256": "8d280605dd8c43560cb78813fb0a0aa417a084d8d6a517df9345f182d53282e4",
+      "source": "ALChibiAssets/assets/白鹰/10513_华盛顿/skins/huashengdun/__preview.png"
+    },
+    {
+      "path": "assets/ships/yuekecheng/default/yuekecheng.skel",
+      "bytes": 158191,
+      "sha256": "4579eb640a96d503136bd459f9aea5a94bd04f7e58fe8de4a6f5c667c658db21",
+      "source": "ALChibiAssets/assets/白鹰/10705_约克城/skins/yuekecheng/yuekecheng.skel"
+    },
+    {
+      "path": "assets/ships/yuekecheng/default/yuekecheng.atlas",
+      "bytes": 2941,
+      "sha256": "31b922f8955b72e9cc5aec2b38969e1b71c5f386ab949e44516d3fecf6726e92",
+      "source": "ALChibiAssets/assets/白鹰/10705_约克城/skins/yuekecheng/yuekecheng.atlas"
+    },
+    {
+      "path": "assets/ships/yuekecheng/default/yuekecheng.png",
+      "bytes": 145035,
+      "sha256": "4085df87ca6d06d7acfd762f50a508c52f6ddbccb98fe4d87d17575700f1d378",
+      "source": "ALChibiAssets/assets/白鹰/10705_约克城/skins/yuekecheng/yuekecheng.png"
+    },
+    {
+      "path": "assets/ships/yuekecheng/default/__preview.png",
+      "bytes": 221951,
+      "sha256": "c5c4f431038be6cc84dc87132c1da224873c838ff58a6badac7d45b589657a6b",
+      "source": "ALChibiAssets/assets/白鹰/10705_约克城/skins/yuekecheng/__preview.png"
+    },
+    {
+      "path": "assets/ships/dahuangfeng/default/dahuangfeng.skel",
+      "bytes": 152258,
+      "sha256": "665a13262783f63d611aef55afd145f40d10b958d35de869de2066e4c2b1b2a8",
+      "source": "ALChibiAssets/assets/白鹰/10707_大黄蜂/skins/dahuangfeng/dahuangfeng.skel"
+    },
+    {
+      "path": "assets/ships/dahuangfeng/default/dahuangfeng.atlas",
+      "bytes": 3589,
+      "sha256": "d04e93d53eac44e49176c65d93d9deb90e350abe08bf72a6a4052620ec7a62d2",
+      "source": "ALChibiAssets/assets/白鹰/10707_大黄蜂/skins/dahuangfeng/dahuangfeng.atlas"
+    },
+    {
+      "path": "assets/ships/dahuangfeng/default/dahuangfeng.png",
+      "bytes": 165758,
+      "sha256": "af4e56f81c1048c75edf396beaa3520da56c9fe0c0ceeca8a3a2c6af0fc32ba4",
+      "source": "ALChibiAssets/assets/白鹰/10707_大黄蜂/skins/dahuangfeng/dahuangfeng.png"
+    },
+    {
+      "path": "assets/ships/dahuangfeng/default/__preview.png",
+      "bytes": 185422,
+      "sha256": "14d0ebcb72b1ae04739dd50ef8a07d909fef1dfceb478dafbb6a05ebc49c0d07",
+      "source": "ALChibiAssets/assets/白鹰/10707_大黄蜂/skins/dahuangfeng/__preview.png"
+    },
+    {
+      "path": "assets/ships/xuefeng/default/xuefeng.skel",
+      "bytes": 237934,
+      "sha256": "c091e68355f411a31ec7b1f9a2ee825b2dbe375c2ce2178e64d39001b67ea11a",
+      "source": "ALChibiAssets/assets/重樱/30116_雪风/skins/xuefeng/xuefeng.skel"
+    },
+    {
+      "path": "assets/ships/xuefeng/default/xuefeng.atlas",
+      "bytes": 4532,
+      "sha256": "613deae4291f301b8833f5473eceb92f80d0848d11068afc19433f340f99eb2e",
+      "source": "ALChibiAssets/assets/重樱/30116_雪风/skins/xuefeng/xuefeng.atlas"
+    },
+    {
+      "path": "assets/ships/xuefeng/default/xuefeng.png",
+      "bytes": 145716,
+      "sha256": "c0f4b3524f18bcc0093f6c52d94bbb5eda1bc9fb9b8c4499aa0ae3022f61f170",
+      "source": "ALChibiAssets/assets/重樱/30116_雪风/skins/xuefeng/xuefeng.png"
+    },
+    {
+      "path": "assets/ships/xuefeng/default/__preview.png",
+      "bytes": 229967,
+      "sha256": "65acc2563ec6a3da671e3647adebecd72dcdde966d4be60f0c857c515bcd4ece",
+      "source": "ALChibiAssets/assets/重樱/30116_雪风/skins/xuefeng/__preview.png"
+    },
+    {
+      "path": "assets/ships/changliang/default/changliang.skel",
+      "bytes": 206598,
+      "sha256": "4ba577fefd114b02fb6c82ebda9adf2c8e8c71bcce508ee49227d28e33b83526",
+      "source": "ALChibiAssets/assets/重樱/30204_长良/skins/changliang/changliang.skel"
+    },
+    {
+      "path": "assets/ships/changliang/default/changliang.atlas",
+      "bytes": 3296,
+      "sha256": "1d8b04235095fd0ffd8fa5ac2a6562da9c5198a8497fd10f8242c70a8727e39b",
+      "source": "ALChibiAssets/assets/重樱/30204_长良/skins/changliang/changliang.atlas"
+    },
+    {
+      "path": "assets/ships/changliang/default/changliang.png",
+      "bytes": 139522,
+      "sha256": "75cc50aff7cdc5f7620efdd379eb27a292d33b9bfec24a7012dafd47bd812ef9",
+      "source": "ALChibiAssets/assets/重樱/30204_长良/skins/changliang/changliang.png"
+    },
+    {
+      "path": "assets/ships/changliang/default/__preview.png",
+      "bytes": 171903,
+      "sha256": "152ee8536f2030505298e33ccbc0ab482993145da78bd12df695563a5f68b0f1",
+      "source": "ALChibiAssets/assets/重樱/30204_长良/skins/changliang/__preview.png"
+    },
+    {
+      "path": "assets/ships/miaogao/default/miaogao.skel",
+      "bytes": 119363,
+      "sha256": "28d8761ce6095c0033143dddd9e2a5cdf9a271505eac2a378d68a7a9ee8d87b5",
+      "source": "ALChibiAssets/assets/重樱/30307_妙高/skins/miaogao/miaogao.skel"
+    },
+    {
+      "path": "assets/ships/miaogao/default/miaogao.atlas",
+      "bytes": 4568,
+      "sha256": "37345a4aeee445f27af60157e3de6496d6f6811629a00692d8e0cbce44848f34",
+      "source": "ALChibiAssets/assets/重樱/30307_妙高/skins/miaogao/miaogao.atlas"
+    },
+    {
+      "path": "assets/ships/miaogao/default/miaogao.png",
+      "bytes": 159533,
+      "sha256": "8e1019271ec7974fe3ef1351acfaa1d4e79506519a0c676308d290c2c71ab9e2",
+      "source": "ALChibiAssets/assets/重樱/30307_妙高/skins/miaogao/miaogao.png"
+    },
+    {
+      "path": "assets/ships/miaogao/default/__preview.png",
+      "bytes": 179503,
+      "sha256": "6606937c8f31a547ddf3f3ca22abeec59cdc5f3143235b7443ba0e8213f48c8a",
+      "source": "ALChibiAssets/assets/重樱/30307_妙高/skins/miaogao/__preview.png"
+    },
+    {
+      "path": "assets/ships/changmen/default/changmen.skel",
+      "bytes": 332640,
+      "sha256": "8b86e229fc09ff986c3df52ff9738e9bcbad6a1f957a4a3f2986684e2c5ce181",
+      "source": "ALChibiAssets/assets/重樱/30505_长门/skins/changmen/changmen.skel"
+    },
+    {
+      "path": "assets/ships/changmen/default/changmen.atlas",
+      "bytes": 5093,
+      "sha256": "3074156ef2d50c9daaf2441c8e263af3dbc54fd7bd9e420bac085fc3db1e1fa9",
+      "source": "ALChibiAssets/assets/重樱/30505_长门/skins/changmen/changmen.atlas"
+    },
+    {
+      "path": "assets/ships/changmen/default/changmen.png",
+      "bytes": 230768,
+      "sha256": "dee31bd67c65659d706ad43c9a1dc2f115c4bce3fd6725c4971e1066edef9156",
+      "source": "ALChibiAssets/assets/重樱/30505_长门/skins/changmen/changmen.png"
+    },
+    {
+      "path": "assets/ships/changmen/default/__preview.png",
+      "bytes": 244491,
+      "sha256": "65b8e6a2116dc8666058af87d2177ee52855c82ba0a71a1b524da5c9ab3ad6dc",
+      "source": "ALChibiAssets/assets/重樱/30505_长门/skins/changmen/__preview.png"
+    },
+    {
+      "path": "assets/ships/chicheng/default/chicheng.skel",
+      "bytes": 432971,
+      "sha256": "f049d5b58c0f1134dfc141b1e0d0bb12f6ed8ea56aaca276e03f2403f3a526cd",
+      "source": "ALChibiAssets/assets/重樱/30701_赤城/skins/chicheng/chicheng.skel"
+    },
+    {
+      "path": "assets/ships/chicheng/default/chicheng.atlas",
+      "bytes": 4839,
+      "sha256": "ae0c5567a0eedba8c22d72814fd305497441c1def4a549f57fd197698ed0ee3f",
+      "source": "ALChibiAssets/assets/重樱/30701_赤城/skins/chicheng/chicheng.atlas"
+    },
+    {
+      "path": "assets/ships/chicheng/default/chicheng.png",
+      "bytes": 224853,
+      "sha256": "04a58a07ef3d7aae1738dd73a631e1012bb9dbabf16b79b3a4cf760ca03ab608",
+      "source": "ALChibiAssets/assets/重樱/30701_赤城/skins/chicheng/chicheng.png"
+    },
+    {
+      "path": "assets/ships/chicheng/default/__preview.png",
+      "bytes": 224739,
+      "sha256": "020feb61db610a302e4b24b32d8191912ae971bde92632dedbc4522540735a81",
+      "source": "ALChibiAssets/assets/重樱/30701_赤城/skins/chicheng/__preview.png"
+    },
+    {
+      "path": "assets/ships/xianghe/default/xianghe.skel",
+      "bytes": 263839,
+      "sha256": "c5f8a365301f0127a42d434b6ef478d8801ea0a6c881cbeaed967518e541e55c",
+      "source": "ALChibiAssets/assets/重樱/30705_翔鹤/skins/xianghe/xianghe.skel"
+    },
+    {
+      "path": "assets/ships/xianghe/default/xianghe.atlas",
+      "bytes": 4704,
+      "sha256": "479f8456085f5d190f4d3b3f2c3ac972fd594991ddfc47e5e3c2f3dd7e4e9e11",
+      "source": "ALChibiAssets/assets/重樱/30705_翔鹤/skins/xianghe/xianghe.atlas"
+    },
+    {
+      "path": "assets/ships/xianghe/default/xianghe.png",
+      "bytes": 190606,
+      "sha256": "1f357f03c8a5e2036a35f89224352619259da78e777b134ede0243011df966ac",
+      "source": "ALChibiAssets/assets/重樱/30705_翔鹤/skins/xianghe/xianghe.png"
+    },
+    {
+      "path": "assets/ships/xianghe/default/__preview.png",
+      "bytes": 304259,
+      "sha256": "a2a616b58f3ad011401df10dcadf02005fed8bcd8f27d43c97c2421f4fa8f016",
+      "source": "ALChibiAssets/assets/重樱/30705_翔鹤/skins/xianghe/__preview.png"
+    },
+    {
       "path": "preview/vendor/pixi.min.js",
       "bytes": 456150,
       "sha256": "712a3e1943b062a907d86c5bb56b67c7b32a3f03b3654768b00b7016d30a24c6",
@@ -304,28 +592,28 @@
     },
     {
       "path": "preview/vendor/PIXI-LICENSE.txt",
-      "bytes": 1092,
-      "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "bytes": 1113,
+      "sha256": "1804f596e355384f754dc8fe7f2864de789b4069f0f7169826e5fbd82b8ae130",
       "source": "ALChibiAssets/vendor/PIXI-LICENSE.txt"
     },
     {
       "path": "preview/vendor/SPINE-LICENSE.txt",
-      "bytes": 1470,
-      "sha256": "ae6ec834a618890360d86e5f576b0c69eec21309478ddc2dcc2689043d061ee4",
+      "bytes": 1496,
+      "sha256": "0220217ba28607b02c010893ce5caa30ab68342f0e0514b821492a8c767d929b",
       "source": "ALChibiAssets/vendor/SPINE-LICENSE.txt"
     },
     {
       "path": "data/roster.json",
-      "bytes": 24059,
-      "sha256": "f941dcbcfb86709eeb87afe57597ac8fd07612b7e4e0a45375c82f20dc2d3134",
+      "bytes": 48080,
+      "sha256": "ede04c817bb1c1631bd76a2bd71575b5198cdd29b47a89453f9e9cda616797db",
       "source": "generated curated metadata"
     },
     {
       "path": "data/source-receipts.json",
-      "bytes": 4750,
-      "sha256": "bbc7463784fb87b5ea8d520dd0aaffee631a0264af9f434cea1af3d3bb980280",
+      "bytes": 9198,
+      "sha256": "5fd59259788daca3789562be8784566ea750248c8d28b19ed63063011fb56a35",
       "source": "generated curated metadata"
     }
   ],
-  "total_bytes": 8874581
+  "total_bytes": 16063139
 }
