@@ -111,6 +111,7 @@ export class Match {
     if(controllers&&(controllers.length!==teamCount||controllers.some(controller=>!['human','ai'].includes(controller))))throw Error('席位设置无效');
     const battle=campaignBattle(world.scenarioId);
     if(battle&&teamCount!==2)throw Error('历史战役只支持双方对战');
+    if(battle)this.activeIndex=battle.firstMoverIndex;
     this.teams = Array.from({ length: teamCount }, (_, i) => ({ id: i + 1, name: battle?.sides[i]??TEAM_NAMES[i], oil: 0,credits:STARTING_CREDITS,supply:STARTING_SUPPLY,eliminated:false,controller:controllers?.[i]??'human' }));
     const fleetAssetsByTeam:ShipAsset[][]=world.scenarioId==='test-5x10'
       ?this.teams.map(()=>testArenaFleetAssets(assets))
@@ -324,10 +325,46 @@ export class Match {
       this.phaseSubmitted=this.phaseSubmitted.filter(id=>!this.team(id).eliminated);
       if(this.active.eliminated){const next=this.initiativeOrder().find(index=>!this.phaseSubmitted.includes(this.teams[index].id));if(next!==undefined)this.activeIndex=next;}
     }
-    const surviving=this.teams.filter(t=>!t.eliminated),homes=this.ports.filter(p=>p.homeForId);
+    const surviving=this.teams.filter(t=>!t.eliminated),homes=this.ports.filter(p=>p.homeForId),battle=campaignBattle(this.world.scenarioId);
     if(surviving.length<=1)this.result={winnerId:surviving[0]?.id??null,reason:surviving.length?'elimination':'draw',round:this.round};
+    else if(battle){
+      const deadline=this.round>battle.mission.roundLimit,score=(ownerId:number)=>{
+        const objective=battle.mission.objectives[ownerId-1],enemy=3-ownerId;
+        if(objective.kind==='sink-ships'){
+          const sunk=this.units.filter(unit=>unit.ownerId===enemy&&unit.status==='sunk'&&(!objective.targetTypes||objective.targetTypes.includes(unit.asset.ship_type.code))).length;
+          return {value:sunk,target:objective.count,complete:sunk>=objective.count};
+        }
+        if(objective.kind==='preserve-fleet'){
+          const afloat=this.units.filter(unit=>unit.ownerId===ownerId&&unit.status!=='sunk').length;
+          return {value:afloat,target:objective.minimumShips,complete:deadline&&afloat>=objective.minimumShips};
+        }
+        const held=this.ports[objective.portIndex]?.ownerId===ownerId;
+        return {value:Number(held),target:1,complete:objective.kind==='capture-port'?held:deadline&&held};
+      };
+      const scores=this.teams.map(team=>score(team.id)),finished=scores.map((item,index)=>item.complete?index:-1).filter(index=>index>=0);
+      if(finished.length===1)this.result={winnerId:this.teams[finished[0]].id,reason:deadline?'time-limit':'objective',round:deadline?battle.mission.roundLimit:this.round};
+      else if(finished.length>1||deadline){
+        const ratios=scores.map(item=>Math.min(1,item.value/Math.max(1,item.target))),delta=ratios[0]-ratios[1];
+        const winner=Math.abs(delta)<.001?null:delta>0?1:2;
+        this.result={winnerId:winner,reason:deadline?'time-limit':'draw',round:deadline?battle.mission.roundLimit:this.round};
+      }
+    }
     else if(homes.length&&homes[0].ownerId&&homes.every(p=>p.ownerId===homes[0].ownerId))this.result={winnerId:homes[0].ownerId,reason:'headquarters',round:this.round};
     if(this.result)this.campaignRevision++;
+  }
+  campaignObjectiveStatus(ownerId:number):{description:string;current:number;target:number;complete:boolean}|undefined {
+    const battle=campaignBattle(this.world.scenarioId);if(!battle||!Number.isInteger(ownerId)||ownerId<1||ownerId>2)return;
+    const objective=battle.mission.objectives[ownerId-1],deadline=this.round>battle.mission.roundLimit,enemy=3-ownerId;
+    if(objective.kind==='sink-ships'){
+      const current=this.units.filter(unit=>unit.ownerId===enemy&&unit.status==='sunk'&&(!objective.targetTypes||objective.targetTypes.includes(unit.asset.ship_type.code))).length;
+      return {description:objective.description,current:Math.min(current,objective.count),target:objective.count,complete:current>=objective.count};
+    }
+    if(objective.kind==='preserve-fleet'){
+      const current=this.units.filter(unit=>unit.ownerId===ownerId&&unit.status!=='sunk').length;
+      return {description:objective.description,current:Math.min(current,objective.minimumShips),target:objective.minimumShips,complete:deadline&&current>=objective.minimumShips};
+    }
+    const current=Number(this.ports[objective.portIndex]?.ownerId===ownerId);
+    return {description:objective.description,current,target:1,complete:objective.kind==='capture-port'?!!current:deadline&&!!current};
   }
   private navigation(unit: MatchUnit, moving = new Set<string>()) {
     const occupied = new Map(this.units.filter(u => u.status !== 'sunk' && u.instanceId !== unit.instanceId).map(u => [cellKey(u), u]));
@@ -836,7 +873,7 @@ export class Match {
         unit.action=unit.status==='hold'||unit.status==='sunk'?0:1;unit.movementUsed=0;unit.movedThisTurn=false;
       }
     }
-    this.phase='aviation';this.activeIndex=this.firstInitiativeTeam();this.campaignRevision++;
+    this.phase='aviation';this.activeIndex=this.firstInitiativeTeam();this.campaignRevision++;this.resolveOutcome();
   }
   private resolveLegacySubmittedTurns(activeOwnerId:number):void {
     const previouslySubmitted=new Set(this.phaseSubmitted);

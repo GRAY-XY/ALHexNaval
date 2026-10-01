@@ -18,7 +18,17 @@ export interface CampaignLocation extends Cell {
   kind: CampaignLocationKind;
 }
 
-export interface CampaignPort extends Cell { name: string }
+export interface CampaignPort extends Cell { name: string; ownerId?: 0|1|2 }
+
+export type CampaignObjective =
+  | { kind: 'sink-ships'; count: number; targetTypes?: string[]; description: string }
+  | { kind: 'capture-port'|'hold-port'; portIndex: number; description: string }
+  | { kind: 'preserve-fleet'; minimumShips: number; description: string };
+
+export interface CampaignMission {
+  roundLimit: number;
+  objectives: [CampaignObjective, CampaignObjective];
+}
 
 export interface CampaignMountainRange {
   /** Normalized ridge centerline in map coordinates. */
@@ -39,6 +49,8 @@ export interface CampaignBattle {
   sides: [string, string];
   /** Small opening forces selected from the shared asset pool for each side. */
   startingFleetIds: [string[], string[]];
+  firstMoverIndex: 0|1;
+  mission: CampaignMission;
   starts: [Cell, Cell];
   land: number[][][];
   mountainRanges?: CampaignMountainRange[];
@@ -57,11 +69,14 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
   {
     id: 'pearl-harbor', title: '珍珠港袭击', date: '1941年12月7日', theater: '夏威夷 · 瓦胡岛', width: 100, height: 80,
     summary: '瓦胡岛南岸、珍珠港入口与舰队锚地。以港湾防空、舰队疏散和攻击波次为核心的开篇关卡。',
-    objective: '玩家指挥港内守军；敌方由北侧海域进入。双方以少量舰船开局，围绕港湾防空、舰队疏散与攻击波次作战。',
+    objective: '珍珠港遭到突然袭击。日军先行动，攻击港内舰船与机场；美军要争取时间疏散舰队。',
     sides: ['美国太平洋舰队', '日本机动部队'], startingFleetIds: [
       ['lafei','fulaiche','hailunna','kelifulan','huashengdun','qiye'],
       ['lingbo','xuefeng','changliang','gaoxiong','chicheng','xianghe'],
-    ], starts: [{ col: 53, row: 61 }, { col: 51, row: 9 }],
+    ], firstMoverIndex:1, mission:{roundLimit:6,objectives:[
+      {kind:'preserve-fleet',minimumShips:3,description:'坚守至第6轮结束，并至少保住3艘舰船'},
+      {kind:'sink-ships',count:3,description:'在第6轮结束前击沉3艘美军舰船'},
+    ]}, starts: [{ col: 53, row: 61 }, { col: 51, row: 19 }],
     land: [[
       [.07,.48],[.09,.42],[.14,.39],[.15,.34],[.22,.31],[.27,.27],[.34,.28],[.39,.24],[.44,.27],[.49,.25],[.55,.29],[.61,.27],[.67,.30],[.72,.32],[.77,.37],[.84,.38],[.89,.43],[.93,.47],[.91,.51],[.86,.53],[.82,.58],[.76,.59],[.70,.64],[.64,.62],[.60,.57],[.56,.59],[.52,.56],[.47,.59],[.42,.56],[.35,.60],[.30,.58],[.25,.62],[.19,.59],[.14,.56],[.10,.54]
     ], [[.505,.54],[.525,.525],[.55,.53],[.565,.55],[.56,.58],[.54,.59],[.515,.575]]],
@@ -79,7 +94,7 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
       { name:'瓦胡岛', col:34, row:39, kind:'land' }, { name:'福特岛', col:54, row:55, kind:'land' },
       { name:'港口入口', col:43, row:69, kind:'sea' }, { name:'北太平洋接近海域', col:52, row:15, kind:'sea' },
     ],
-    ports: [{ name:'珍珠港锚地', col:53, row:48 }],
+    ports: [{ name:'珍珠港锚地', col:53, row:48, ownerId:1 }],
     sources: [`${NHC}/1941/pearl-harbor.html`, 'https://www.history.navy.mil/research/archives/digital-exhibits-highlights/action-reports/wwii-pearl-harbor-attack/pearl-harbor-mooring-and-berthing-plans.html'],
   },
   {
@@ -89,7 +104,10 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
     sides: ['盟军特混舰队', '日本机动部队'], startingFleetIds: [
       ['lafei','fulaiche','hailunna','baerdimo','qiye','yuekecheng'],
       ['lingbo','xuefeng','changliang','miaogao','chicheng','xianghe'],
-    ], starts: [{ col: 42, row: 74 }, { col: 87, row: 61 }],
+    ], firstMoverIndex:0, mission:{roundLimit:8,objectives:[
+      {kind:'hold-port',portIndex:0,description:'守住莫尔兹比港至第8轮结束'},
+      {kind:'capture-port',portIndex:0,description:'夺取莫尔兹比港，打开通往澳大利亚的门户'},
+    ]}, starts: [{ col: 42, row: 74 }, { col: 62, row: 48 }],
     land: [
       [[.02,.17],[.07,.13],[.14,.12],[.19,.08],[.28,.10],[.33,.07],[.40,.11],[.47,.09],[.53,.13],[.60,.12],[.65,.16],[.70,.19],[.76,.20],[.79,.25],[.75,.30],[.69,.31],[.65,.36],[.58,.37],[.54,.40],[.48,.38],[.43,.41],[.37,.38],[.32,.40],[.27,.37],[.22,.39],[.17,.35],[.12,.37],[.08,.32],[.03,.30]],
       [[.00,.68],[.03,.64],[.08,.62],[.12,.58],[.16,.60],[.18,.66],[.16,.73],[.15,.82],[.12,.90],[.10,.98],[.00,1]],
@@ -113,7 +131,7 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
       { name:'珊瑚海', col:56, row:70, kind:'sea' }, { name:'路易西亚德群岛', col:77, row:65, kind:'land' },
       { name:'新不列颠岛', col:102, row:46, kind:'land' }, { name:'托雷斯海峡', col:15, row:59, kind:'strait' },
     ],
-    ports: [{ name:'莫尔兹比港', col:43, row:39 }, { name:'拉包尔', col:98, row:43 }, { name:'德博因群岛', col:75, row:58 }],
+    ports: [{ name:'莫尔兹比港', col:43, row:39, ownerId:1 }, { name:'拉包尔', col:98, row:43, ownerId:2 }, { name:'德博因群岛', col:75, row:58, ownerId:2 }],
     sources: [`${NHC}/1942/battle-of-coral-sea.html`, 'https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/b/battle-of-the-coral-sea-combat-narrative.html'],
   },
   {
@@ -123,7 +141,10 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
     sides: ['美国特混舰队', '日本机动部队'], startingFleetIds: [
       ['fulaiche','hailunna','baerdimo','qiye','yuekecheng','dahuangfeng'],
       ['lingbo','xuefeng','changliang','miaogao','chicheng','xianghe'],
-    ], starts: [{ col: 84, row: 25 }, { col: 29, row: 23 }],
+    ], firstMoverIndex:0, mission:{roundLimit:9,objectives:[
+      {kind:'sink-ships',count:2,targetTypes:['CV','CVL'],description:'击沉至少2艘日本航空母舰'},
+      {kind:'capture-port',portIndex:0,description:'夺取中途岛航空站，为后续扩张打开通道'},
+    ]}, starts: [{ col: 84, row: 25 }, { col: 46, row: 29 }],
     land: [
       [[.493,.485],[.501,.476],[.514,.477],[.521,.484],[.52,.494],[.514,.501],[.501,.499]],
       [[.535,.501],[.543,.495],[.552,.498],[.555,.506],[.55,.514],[.539,.513]],
@@ -142,7 +163,7 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
       { name:'东岛', col:61, row:44, kind:'land' }, { name:'潟湖', col:59, row:47, kind:'sea' },
       { name:'北太平洋搜索区', col:46, row:28, kind:'sea' }, { name:'航母接近海域', col:84, row:32, kind:'sea' },
     ],
-    ports: [{ name:'中途岛航空站', col:57, row:43 }],
+    ports: [{ name:'中途岛航空站', col:57, row:43, ownerId:1 }],
     sources: ['https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/b/battle-of-midway-3-6-june-1942-combat-narrative.html', 'https://www.history.navy.mil/research/archives/digital-exhibits-highlights/action-reports/wwii-battle-of-midway/commander-in-chief-pacific-fleet.html'],
   },
   {
@@ -152,7 +173,10 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
     sides: ['盟军护卫舰队', '日本增援舰队'], startingFleetIds: [
       ['lafei','fulaiche','hailunna','kelifulan','baerdimo','huashengdun'],
       ['lingbo','xuefeng','changliang','gaoxiong','miaogao','changmen'],
-    ], starts: [{ col: 62, row: 75 }, { col: 38, row: 39 }],
+    ], firstMoverIndex:1, mission:{roundLimit:10,objectives:[
+      {kind:'hold-port',portIndex:0,description:'守住亨德森机场至第10轮结束，阻止日军炮击与增援'},
+      {kind:'capture-port',portIndex:0,description:'攻占亨德森机场，支援日军在瓜岛的增援行动'},
+    ]}, starts: [{ col: 62, row: 75 }, { col: 47, row: 44 }],
     land: [
       [[.12,.62],[.18,.58],[.24,.57],[.30,.59],[.36,.57],[.43,.59],[.49,.56],[.55,.58],[.61,.57],[.68,.60],[.75,.59],[.82,.61],[.89,.65],[.92,.70],[.88,.75],[.80,.78],[.73,.77],[.67,.80],[.59,.78],[.52,.81],[.45,.78],[.38,.80],[.32,.77],[.25,.78],[.19,.74],[.14,.72]],
       [[.22,.31],[.29,.29],[.36,.31],[.43,.30],[.50,.33],[.57,.31],[.64,.33],[.70,.35],[.76,.39],[.74,.43],[.67,.45],[.60,.43],[.54,.46],[.47,.43],[.40,.45],[.33,.42],[.27,.43],[.22,.39]],
@@ -176,7 +200,7 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
       { name:'铁底湾', col:55, row:52, kind:'sea' }, { name:'亨德森机场', col:59, row:58, kind:'land' },
       { name:'佛罗里达群岛', col:55, row:37, kind:'land' }, { name:'印迪斯彭萨布尔海峡', col:35, row:34, kind:'strait' },
     ],
-    ports: [{ name:'亨德森机场岸线', col:59, row:57 }, { name:'图拉吉锚地', col:42, row:40 }],
+    ports: [{ name:'亨德森机场岸线', col:59, row:57, ownerId:1 }, { name:'图拉吉锚地', col:42, row:40, ownerId:2 }],
     sources: [`${NHC}/1942/guadalcanal/naval-battle-of-guadalcanal.html`, 'https://www.history.navy.mil/content/dam/nhhc/news-and-events/multimedia%20gallery/New%20Infographics/FINAL_PART1_Guadalcanal_CruiserNightAction.pdf'],
   },
   {
@@ -186,7 +210,10 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
     sides: ['塔菲三号护航群', '日本中央舰队'], startingFleetIds: [
       ['lafei','fulaiche','hailunna','kelifulan','qiye','yuekecheng'],
       ['lingbo','xuefeng','changliang','gaoxiong','miaogao','changmen'],
-    ], starts: [{ col: 104, row: 36 }, { col: 43, row: 18 }],
+    ], firstMoverIndex:1, mission:{roundLimit:8,objectives:[
+      {kind:'hold-port',portIndex:0,description:'保护塔克洛班登陆场至第8轮结束'},
+      {kind:'capture-port',portIndex:0,description:'突破塔菲三号防线并夺取莱特登陆场'},
+    ]}, starts: [{ col: 104, row: 36 }, { col: 48, row: 27 }],
     land: [
       [[.55,.02],[.61,.00],[.70,.02],[.77,.06],[.80,.11],[.77,.17],[.78,.23],[.74,.29],[.76,.34],[.73,.40],[.69,.43],[.65,.40],[.63,.34],[.61,.29],[.63,.22],[.59,.17],[.57,.11]],
       [[.39,.42],[.46,.40],[.52,.43],[.56,.48],[.57,.54],[.55,.60],[.58,.66],[.55,.72],[.57,.80],[.54,.87],[.50,.93],[.44,.98],[.39,.96],[.36,.89],[.38,.81],[.34,.73],[.36,.65],[.33,.57],[.35,.50]],
@@ -213,7 +240,7 @@ export const CAMPAIGN_BATTLES: CampaignBattle[] = [
       { name:'迪纳加特岛', col:77, row:71, kind:'land' }, { name:'苏里高海峡', col:67, row:87, kind:'strait' },
       { name:'圣贝纳迪诺海峡', col:56, row:34, kind:'strait' },
     ],
-    ports: [{ name:'塔克洛班登陆场', col:53, row:51 }, { name:'萨马岛东岸', col:80, row:25 }],
+    ports: [{ name:'塔克洛班登陆场', col:53, row:51, ownerId:1 }, { name:'萨马岛东岸', col:80, row:25, ownerId:0 }],
     sources: [`${NHC}/1944/battle-of-leyte-gulf.html`, 'https://www.history.navy.mil/our-collections/photography/wars-and-events/world-war-ii/battle-of-leyte-gulf/battle-off-samar.html'],
   },
 ];

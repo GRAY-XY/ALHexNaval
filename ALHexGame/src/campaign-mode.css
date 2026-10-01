@@ -1,0 +1,15 @@
+.campaign-factions{display:flex;gap:8px;margin:0 0 6px}
+.campaign-factions button{padding:9px 18px;border:1px solid rgba(45,90,83,.32);border-radius:4px;background:rgba(66,112,94,.07);color:#365653;font-size:12px;font-weight:700;cursor:pointer}
+.campaign-factions button[aria-pressed="true"]{border-color:#287b72;background:rgba(40,123,114,.18);color:#184e50;box-shadow:inset 0 -2px #287b72}
+.campaign-progress-summary{margin:4px 0 12px;color:#68796f;font-size:10px}
+.campaign-level:disabled{opacity:.43;cursor:not-allowed;filter:grayscale(.4)}
+#campaign-continue{margin-right:8px;background:#287b72;color:#fff4d8}
+.campaign-header p{font-size:13px}
+.campaign-progress-summary{font-size:12px}
+.campaign-level{min-height:52px}
+.campaign-level strong{font-size:14px}
+.campaign-level>span:nth-child(2){min-width:0}
+.campaign-level small{font-size:11px;white-space:nowrap}
+.campaign-level em{font-size:10px}
+.campaign-brief p{font-size:14px}
+.campaign-brief .campaign-note{font-size:11px}

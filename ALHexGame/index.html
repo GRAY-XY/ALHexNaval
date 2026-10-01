@@ -19,7 +19,7 @@
         <nav class="main-menu-actions" aria-label="主菜单">
           <button id="continue-match" class="menu-command primary" disabled><span><strong>继续战局</strong><small id="continue-summary">正在准备海图…</small></span><b>›</b></button>
           <button id="open-skirmish" class="menu-command"><span><strong>开始对战</strong><small>本地轮流指挥 · 席位可设为 AI</small></span><b>›</b></button>
-          <button id="open-campaign" class="menu-command"><span><strong>历史战役</strong><small>五张二战战区地图 · 玩家对 AI</small></span><b>›</b></button>
+          <button id="open-campaign" class="menu-command"><span><strong>历史战役</strong><small>五关连续战役 · 选择阵营对战 AI</small></span><b>›</b></button>
           <button class="menu-command" disabled><span><strong>多人对战</strong><small>房间与联机同步开发中</small></span><em>开发中</em></button>
           <button id="main-load" class="menu-command"><span><strong>读取战局</strong><small>手动、自动与上一战局存档</small></span><b>›</b></button>
           <button id="main-settings" class="menu-command"><span><strong>设置与帮助</strong><small>显示、动画和快捷键</small></span><b>›</b></button>
@@ -37,7 +37,9 @@
     <section id="campaign-page" class="front-page campaign-page" aria-labelledby="campaign-title" hidden>
       <button id="campaign-back" class="front-back">‹ 返回主界面</button>
       <div class="campaign-card">
-        <header class="campaign-header"><span class="front-kicker">PACIFIC · 1941—1944</span><h2 id="campaign-title">历史战役</h2><p>选择战区地图开始单人对局。海岸线按历史海图做战区级示意复原；每关使用编定的精简初始舰队。</p></header>
+        <header class="campaign-header"><span class="front-kicker">PACIFIC · 1941—1944</span><h2 id="campaign-title">太平洋战役</h2><p>依照历史顺序指挥舰队参与五场战役。完成当前任务即可解锁下一关，进度保存在此浏览器中。</p></header>
+        <div class="campaign-factions" role="group" aria-label="选择战役阵营"><button id="campaign-side-allied" type="button" aria-pressed="true">盟军战役</button><button id="campaign-side-japanese" type="button" aria-pressed="false">日本战役</button></div>
+        <p id="campaign-progress-summary" class="campaign-progress-summary"></p>
         <div class="campaign-selection"><nav id="campaign-levels" class="campaign-levels" aria-label="战役关卡"></nav><article id="campaign-brief" class="campaign-brief" aria-live="polite"></article></div>
         <button id="start-campaign" class="start-match campaign-start">进入战区 · 玩家对 AI</button>
       </div>
@@ -94,7 +96,7 @@
   <input id="import-file" type="file" accept=".json,application/json" hidden>
   <dialog id="load-dialog"><h2>读取战局</h2><p>选择存档位置。读取前会保存当前战局至自动存档。</p><div id="save-slots"></div><button id="close-load">关闭</button></dialog>
   <dialog id="port-dialog"><h2>港口与增援</h2><p id="port-summary"></p><p>选择“管理”定位并选中一座港口，在右侧单独进行占领、维修和增援。也可直接点击海图上的港口标记。</p><div id="port-list"></div><button id="close-ports">返回海图</button></dialog>
-  <dialog id="result-dialog"><h2 id="result-title"></h2><p id="result-description"></p><p>战局已结束。可以返回海图查看，或从暂停菜单返回主界面建立新战局。</p><button id="close-result">返回海图</button></dialog>
+  <dialog id="result-dialog"><h2 id="result-title"></h2><p id="result-description"></p><p id="result-historical-note">战局已结束。可以返回海图查看，或从暂停菜单返回主界面建立新战局。</p><button id="campaign-continue" hidden>继续战役</button><button id="close-result">返回海图</button></dialog>
   <dialog id="map-capture-dialog"><h2>当前海域截图</h2><img id="map-capture-image" alt="当前可见海域截图"><div class="dialog-actions"><button id="download-map-capture">下载 PNG</button><button id="close-map-capture">返回海图</button></div></dialog>
   <dialog id="pause-dialog" class="pause-dialog">
     <span class="front-kicker">GAME PAUSED</span><h2>战局暂停</h2><p id="pause-summary">当前战局已暂停</p>

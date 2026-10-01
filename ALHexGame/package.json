@@ -15,6 +15,7 @@
     "check:fog": "node --experimental-strip-types tools/check_fog.ts",
     "check:ports": "node --experimental-strip-types tools/check_ports.ts",
     "check:ai": "node --experimental-strip-types tools/check_ai.ts",
+    "check:campaign-progress": "node --experimental-strip-types tools/check_campaign_progress.ts",
     "check:directional-art": "node --experimental-strip-types tools/check_directional_art.ts",
     "check:land-art": "node --experimental-strip-types tools/check_land_art.ts",
     "check:historical-battles": "node --experimental-strip-types tools/check_historical_battles.ts",

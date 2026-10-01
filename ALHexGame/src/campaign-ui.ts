@@ -1,6 +1,8 @@
 import {cellCenter,hexDistance} from './hex.ts';
 import {PORT_INCOME,PORT_OIL_BONUS,REINFORCEMENT_COST,type PortView} from './ports.ts';
 import {TEAM_COLORS,type Match} from './match.ts';
+import {CAMPAIGN_BATTLES,campaignBattle} from './historical-battles.ts';
+import type {CampaignSideIndex} from './campaign-progress.ts';
 import type {Point} from './types.ts';
 
 const $=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(id) as T;
@@ -11,6 +13,8 @@ interface Host {
   command:(action:()=>void,message?:string)=>void;
   select:(id:string,focus?:boolean)=>void;
   focus:(p:Point)=>void;redeploy:(id:string)=>void;victory:(owner:number)=>void;
+  recordCampaignOutcome:(battleId:string,side:CampaignSideIndex,outcome:'victory'|'defeat'|'draw',round:number)=>void;
+  continueCampaign:(battleId:string,side:CampaignSideIndex,won:boolean)=>void;
 }
 export class CampaignUI {
   private choices=new Map<string,string>();
@@ -19,20 +23,32 @@ export class CampaignUI {
   constructor(private host:Host){
     $('open-ports').onclick=()=>this.open();$('close-ports').onclick=()=>$<HTMLDialogElement>('port-dialog').close();
     $('open-result').onclick=()=>$<HTMLDialogElement>('result-dialog').showModal();$('close-result').onclick=()=>$<HTMLDialogElement>('result-dialog').close();
+    $<HTMLButtonElement>('campaign-continue').hidden=true;
   }
   render():void {
     const m=this.host.match(),t=m.active,owned=m.ports.filter(p=>p.ownerId===t.id),result=m.result;
+    const battle=campaignBattle(m.world.scenarioId),objective=battle?m.campaignObjectiveStatus(t.id):undefined;
     $('campaign-info').textContent=m.rulesetId==='naval-v2'
-      ? `补给 ${t.supply}/8 · 港口 ${owned.length}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`
+      ? `${objective?`${objective.description} · ${objective.current}/${objective.target} · 第${Math.min(m.round,battle?.mission.roundLimit??m.round)}/${battle?.mission.roundLimit??m.round}轮 · `:''}补给 ${t.supply}/8 · 港口 ${owned.length}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`
       : `资金 ${t.credits} · 港口 ${owned.length} · 下次本方回合收入 +${m.income()}${t.eliminated?' · 本方已淘汰':''}${result?' · 战局已结束':''}`;
     $<HTMLButtonElement>('end-turn').disabled=!!result;
     $<HTMLButtonElement>('move-mode').disabled=!!result||!!this.host.selectedPort();
     $('open-result').hidden=!result;
     if(result){
-      $<HTMLButtonElement>('next-unit').disabled=true;
-      $('result-title').textContent=result.winnerId?`${m.team(result.winnerId).name} 获胜`:'战局结束 · 平局';
-      $('result-description').textContent=`第${result.round}轮 · ${result.reason==='headquarters'?'控制了全部母港':result.reason==='elimination'?'其余阵营已被淘汰':'所有阵营均已失去舰船和港口'}`;
       const key=JSON.stringify(result);
+      $<HTMLButtonElement>('next-unit').disabled=true;
+      const humanSide=(m.teams.find(team=>team.controller==='human')?.id??1)-1 as CampaignSideIndex;
+      $('result-title').textContent=result.winnerId?`${m.team(result.winnerId).name} 获胜`:'战局结束 · 平局';
+      $('result-description').textContent=battle
+        ? `${battle.date} · ${result.round}/${battle.mission.roundLimit}轮 · ${battle.mission.objectives[humanSide].description}`
+        : `第${result.round}轮 · ${result.reason==='headquarters'?'控制了全部母港':result.reason==='elimination'?'其余阵营已被淘汰':result.reason==='objective'?'完成了战役目标':result.reason==='time-limit'?'达到了任务时限':'所有阵营均已失去舰船和港口'}`;
+      const continueButton=$<HTMLButtonElement>('campaign-continue');
+      if(battle){
+        const winner=result.winnerId===humanSide+1,outcome=result.winnerId===null?'draw':winner?'victory':'defeat';
+        continueButton.hidden=false;continueButton.textContent=winner?(CAMPAIGN_BATTLES.at(-1)?.id===battle.id?'完成战役':'推进战役'):'重试本关';continueButton.onclick=()=>this.host.continueCampaign(battle.id,humanSide,winner);
+        $('result-title').textContent=winner?'任务完成':result.winnerId===null?'任务未决 · 重新部署':'任务失败';
+        if(this.reportedResult!==key)this.host.recordCampaignOutcome(battle.id,humanSide,outcome,result.round);
+      }else continueButton.hidden=true;
       if(this.reportedResult!==key){this.reportedResult=key;if(result.winnerId)this.host.victory(result.winnerId);$<HTMLDialogElement>('port-dialog').close();$<HTMLDialogElement>('result-dialog').showModal();}
     }
     if($<HTMLDialogElement>('port-dialog').open)this.renderPorts();

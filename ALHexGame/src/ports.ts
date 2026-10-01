@@ -7,7 +7,7 @@ import {campaignBattle} from './historical-battles.ts';
 
 export interface Port extends Cell {id:string;name:string;ownerId:number;homeForId?:number;usedRound:number;serviceRound?:number;occupationOwnerId?:number;occupationProgress:number}
 export interface PortView {port:Port;ownerId:number;visible:boolean}
-export interface MatchResult {winnerId:number|null;reason:'headquarters'|'elimination'|'draw';round:number}
+export interface MatchResult {winnerId:number|null;reason:'headquarters'|'elimination'|'objective'|'time-limit'|'draw';round:number}
 export interface SavedCampaign {ports:Port[];intel:number[][];result?:MatchResult}
 export const STARTING_CREDITS=40,PORT_INCOME=10,MAX_CREDITS=1_000_000_000;
 export const PORT_OIL_BONUS=10;
@@ -55,7 +55,7 @@ export function createPorts(world:HexWorld,units:MatchUnit[],players:number):Por
     return battle.ports.map((site,index)=>{
       const cell=berth(world,site,ports,Math.max(world.width,world.height));
       if(!cell)throw Error(`${site.name}附近没有可用的沿岸锚地`);
-      const port:Port={...cell,id:`campaign-${battle.id}-${index+1}`,name:site.name,ownerId:0,usedRound:0,serviceRound:0,occupationProgress:0};ports.push(port);return port;
+      const port:Port={...cell,id:`campaign-${battle.id}-${index+1}`,name:site.name,ownerId:site.ownerId??0,usedRound:0,serviceRound:0,occupationProgress:0};ports.push(port);return port;
     });
   }
   const ports=createLegacyPorts(world,units,players),offshore=ports.filter(p=>!isCoastalPort(world,p));

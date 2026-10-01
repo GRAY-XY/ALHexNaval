@@ -20,11 +20,13 @@ import type { Cell, Point, Roster, ShipAsset } from './types.ts';
 import './style.css';
 import './layout.css';
 import './menu.css';
+import './campaign-mode.css';
 import {loadWatercolorTextures} from './watercolor-textures.ts';
 import {executeAiTurn} from './ai.ts';
 import {TEAM_NAMES,type TeamController} from './match.ts';
 import {shipRulesV2} from './naval-rules-v2.ts';
 import {CAMPAIGN_BATTLES,campaignBattle,type CampaignBattleId} from './historical-battles.ts';
+import {CAMPAIGN_PROGRESS_KEY,emptyCampaignProgress,readCampaignProgress,recordCampaignResult,selectCampaignSide,type CampaignProgress,type CampaignSideIndex} from './campaign-progress.ts';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T => document.getElementById(id) as T;
 function element(tag: string, className = '', text?: string): HTMLElement {
@@ -95,6 +97,7 @@ class NavalMap {
   private rebuilding = false;
   private setupUsesTestMap=false;
   private selectedCampaignId:CampaignBattleId='pearl-harbor';
+  private campaignProgress:CampaignProgress=emptyCampaignProgress();
   private regularTeamCount=4;
   private setupControllers:TeamController[]=Array.from({length:TEAM_NAMES.length},()=> 'human');
   private aiRunning=false;
@@ -103,6 +106,8 @@ class NavalMap {
   private resizeObserver: ResizeObserver;
   private drag?: { id: number; start: Point; last: Point; moved: boolean; mode: 'box' | 'pan' | 'order'; additive: boolean };
   constructor(readonly assets: ShipAsset[]) {
+    try{this.campaignProgress=readCampaignProgress(localStorage.getItem(CAMPAIGN_PROGRESS_KEY));}catch{this.campaignProgress=emptyCampaignProgress();}
+    this.selectedCampaignId=CAMPAIGN_BATTLES[this.campaignProgress.sides[this.campaignProgress.selectedSide].unlockedCount-1]?.id??CAMPAIGN_BATTLES[0].id;
     this.app = new Application({ width: 1000, height: 800, backgroundColor: 0x0d2d44, antialias: true,
       resolution: Math.min(window.devicePixelRatio || 1, 1.5), autoDensity: true, autoStart: false });
     this.worldLayer.eventMode = 'none'; this.app.stage.addChild(this.worldLayer);
@@ -121,8 +126,28 @@ class NavalMap {
   private async startCampaignBattle(id:CampaignBattleId):Promise<void>{
     const battle=campaignBattle(id);if(!battle)throw Error('战役关卡不存在');
     if(this.match)this.writeSlot('previous',this.match.save());
-    const world=new HexWorld(battle.width,battle.height,battle.id),match=new Match(world,this.assets,2,['human','ai']);
-    await this.installMatch(match);this.persist();this.enterGame();this.notify(`${battle.title} · 第1回合，玩家指挥${battle.sides[0]}`);
+    const side=this.campaignProgress.selectedSide,controllers:TeamController[]=['ai','ai'];controllers[side]='human';
+    const world=new HexWorld(battle.width,battle.height,battle.id),match=new Match(world,this.assets,2,controllers);
+    await this.installMatch(match);this.persist();this.enterGame();this.notify(`${battle.title} · 第1回合，玩家指挥${battle.sides[side]}`);
+  }
+  private saveCampaignProgress():void{
+    try{localStorage.setItem(CAMPAIGN_PROGRESS_KEY,JSON.stringify(this.campaignProgress));}catch{this.notify('战役进度无法写入浏览器存储；当前页面仍保留本次进度');}
+  }
+  private setCampaignSide(side:CampaignSideIndex):void{
+    this.campaignProgress=selectCampaignSide(this.campaignProgress,side);this.saveCampaignProgress();
+    const progress=this.campaignProgress.sides[side];if(CAMPAIGN_BATTLES.findIndex(battle=>battle.id===this.selectedCampaignId)>=progress.unlockedCount)this.selectedCampaignId=CAMPAIGN_BATTLES[progress.unlockedCount-1].id;
+    this.renderCampaignLevels();
+  }
+  private recordCampaignOutcome(battleId:string,side:CampaignSideIndex,outcome:'victory'|'defeat'|'draw',round:number):void{
+    if(!CAMPAIGN_BATTLES.some(battle=>battle.id===battleId))return;
+    this.campaignProgress=recordCampaignResult(this.campaignProgress,side,battleId as CampaignBattleId,outcome,round);this.saveCampaignProgress();
+  }
+  private continueCampaign(battleId:string,won:boolean):void{
+    const battleIndex=CAMPAIGN_BATTLES.findIndex(battle=>battle.id===battleId);
+    if(!won){void this.startCampaignBattle(battleId as CampaignBattleId).catch(error=>this.notify(String(error)));return;}
+    const next=CAMPAIGN_BATTLES[battleIndex+1];
+    if(next){this.selectedCampaignId=next.id;void this.startCampaignBattle(next.id).catch(error=>this.notify(String(error)));return;}
+    $<HTMLDialogElement>('result-dialog').close();this.showMainMenu();this.openCampaign();this.notify('太平洋战役完成 · 已解锁全部关卡');
   }
   async installMatch(match: Match): Promise<void> {
     if (this.rebuilding) return;
@@ -144,7 +169,7 @@ class NavalMap {
       this.camera = new Camera(this.world.bounds); this.terrain = new TerrainRenderer(this.world); this.ships = new ShipRenderer(this.units);
       this.aircraft = new AircraftRenderer();
       this.fog=new FogRenderer(this.world,match.fog);this.ports=new PortRenderer(this.world);this.contacts=new ContactRenderer(this.assets);this.visionRevision=-1;this.campaignRevision=-1;
-      this.campaignUI=new CampaignUI({match:()=>this.match,selected:()=>this.selected,selectedPort:()=>this.selectedPort,selectPort:(id,focus)=>this.selectPort(id,focus),command:(action,message)=>this.command(()=>{action();return[];},message),select:(id,focus)=>this.select(id,focus),focus:p=>{this.camera.focus(p,1.04);this.dirty=true;},redeploy:id=>this.ships.redeploy(id),victory:owner=>{for(const u of this.units.filter(u=>u.ownerId===owner&&u.status!=='sunk'))this.ships.playAction(u.instanceId,'victory',!this.animationsPaused);}});
+      this.campaignUI=new CampaignUI({match:()=>this.match,selected:()=>this.selected,selectedPort:()=>this.selectedPort,selectPort:(id,focus)=>this.selectPort(id,focus),command:(action,message)=>this.command(()=>{action();return[];},message),select:(id,focus)=>this.select(id,focus),focus:p=>{this.camera.focus(p,1.04);this.dirty=true;},redeploy:id=>this.ships.redeploy(id),victory:owner=>{for(const u of this.units.filter(u=>u.ownerId===owner&&u.status!=='sunk'))this.ships.playAction(u.instanceId,'victory',!this.animationsPaused);},recordCampaignOutcome:(battleId,side,outcome,round)=>this.recordCampaignOutcome(battleId,side,outcome,round),continueCampaign:(battleId,side,won)=>this.continueCampaign(battleId,won)});
       this.worldLayer.addChild(this.terrain.container, this.grid, this.fog.container,this.highlight, this.ships.container,this.contacts.container, this.ports.container, this.aircraft.container);
       this.minimap = new Minimap($<HTMLCanvasElement>('minimap'), this.world, this.terrain.overviewCanvas, this.units, this.camera,
         point => { this.camera.focus(point); this.dirty = true; });
@@ -481,15 +506,21 @@ class NavalMap {
   }
   private openCampaign():void{this.renderCampaignLevels();this.showFrontPage('campaign');}
   private renderCampaignLevels():void{
+    const sideIndex=this.campaignProgress.selectedSide,sideProgress=this.campaignProgress.sides[sideIndex];
+    if(CAMPAIGN_BATTLES.findIndex(battle=>battle.id===this.selectedCampaignId)>=sideProgress.unlockedCount)this.selectedCampaignId=CAMPAIGN_BATTLES[sideProgress.unlockedCount-1].id;
+    $<HTMLButtonElement>('campaign-side-allied').setAttribute('aria-pressed',String(sideIndex===0));$<HTMLButtonElement>('campaign-side-japanese').setAttribute('aria-pressed',String(sideIndex===1));
+    const won=Object.values(sideProgress.records).filter(record=>record?.outcome==='victory').length;
+    $('campaign-progress-summary').textContent=`玩家阵营：${sideIndex===0?'盟军':'日本'} · 已解锁 ${sideProgress.unlockedCount}/${CAMPAIGN_BATTLES.length} 关 · 胜利 ${won} 场`;
     const nav=$('campaign-levels');nav.replaceChildren();
     for(const [index,battle] of CAMPAIGN_BATTLES.entries()){
-      const button=document.createElement('button');button.type='button';button.className=`campaign-level${battle.id===this.selectedCampaignId?' selected':''}`;button.setAttribute('aria-pressed',String(battle.id===this.selectedCampaignId));
+      const unlocked=index<sideProgress.unlockedCount,record=sideProgress.records[battle.id],button=document.createElement('button');button.type='button';button.disabled=!unlocked;button.className=`campaign-level${battle.id===this.selectedCampaignId?' selected':''}`;button.setAttribute('aria-pressed',String(battle.id===this.selectedCampaignId));
       button.append(element('span','campaign-level-number',String(index+1)));
-      const text=element('span','');text.append(element('strong','',battle.title),element('small','',battle.date));button.append(text,element('em','',`${battle.width} × ${battle.height}`));
+      const text=element('span','');text.append(element('strong','',battle.title),element('small','',`${battle.date} · ${record?.outcome==='victory'?'已完成':unlocked?'可出击':'未解锁'}`));button.append(text,element('em','',`${battle.width} × ${battle.height}`));
       button.onclick=()=>{this.selectedCampaignId=battle.id;this.renderCampaignLevels();};nav.append(button);
     }
     const battle=campaignBattle(this.selectedCampaignId)!;
-    const brief=$('campaign-brief');brief.replaceChildren(element('span','campaign-date',`${battle.date}　·　${battle.theater}`),element('h3','',battle.title),element('p','',battle.summary),element('p','campaign-objective',`本关构想：${battle.objective}`),element('p','campaign-note',`地图尺寸 ${battle.width} × ${battle.height} · 玩家：${battle.sides[0]}（${battle.startingFleetIds[0].length} 艘）· AI：${battle.sides[1]}（${battle.startingFleetIds[1].length} 艘）。双方只部署本关编定的初始舰队；地图按历史资料简化绘制，格子不代表精确航海比例。`));
+    const opponentIndex=(1-sideIndex) as CampaignSideIndex,brief=$('campaign-brief');brief.replaceChildren(element('span','campaign-date',`${battle.date}　·　${battle.theater}`),element('h3','',battle.title),element('p','',battle.summary),element('p','campaign-objective',`任务目标：${battle.mission.objectives[sideIndex].description}`),element('p','',`交战双方：玩家指挥${battle.sides[sideIndex]}，AI指挥${battle.sides[opponentIndex]}。`),element('p','campaign-note',`限时 ${battle.mission.roundLimit} 轮 · 初始舰队 ${battle.startingFleetIds[sideIndex].length} 艘 · 历史地理与舰船编成按现有素材和规则作简化表现。`));
+    const start=$<HTMLButtonElement>('start-campaign'),record=sideProgress.records[battle.id];start.textContent=record?.outcome==='victory'?'重战本关':`进入第 ${CAMPAIGN_BATTLES.findIndex(item=>item.id===battle.id)+1} 关`;
   }
   private openSetup():void {
     $('setup-kicker').textContent='MATCH SETUP';
@@ -561,7 +592,9 @@ class NavalMap {
     $('open-skirmish').onclick=()=>this.openSetup();
     $('open-campaign').onclick=()=>this.openCampaign();
     $('campaign-back').onclick=()=>this.showFrontPage('main');
-    $('start-campaign').onclick=()=>{const button=$<HTMLButtonElement>('start-campaign');if(this.rebuilding)return;button.disabled=true;button.textContent='正在展开战区海图…';this.startCampaignBattle(this.selectedCampaignId).catch(error=>this.notify(String(error))).finally(()=>{button.disabled=false;button.textContent='进入战区 · 玩家对 AI';});};
+    $('campaign-side-allied').onclick=()=>this.setCampaignSide(0);
+    $('campaign-side-japanese').onclick=()=>this.setCampaignSide(1);
+    $('start-campaign').onclick=()=>{const button=$<HTMLButtonElement>('start-campaign');if(this.rebuilding)return;button.disabled=true;button.textContent='正在展开战区海图…';this.startCampaignBattle(this.selectedCampaignId).catch(error=>this.notify(String(error))).finally(()=>{button.disabled=false;this.renderCampaignLevels();});};
     $('setup-back').onclick=()=>this.showFrontPage('main');
     $<HTMLSelectElement>('team-count').onchange=()=>{if(!this.setupUsesTestMap)this.regularTeamCount=Number($<HTMLSelectElement>('team-count').value)||this.regularTeamCount;this.renderSeatSettings();};
     $<HTMLSelectElement>('map-size').onchange=()=>{
