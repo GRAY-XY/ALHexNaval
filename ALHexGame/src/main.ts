@@ -100,6 +100,7 @@ class NavalMap {
   private rebuilding = false;
   private setupUsesTestMap=false;
   private sandboxOwnerId=1;
+  private sandboxFactionId='all';
   private sandboxAssetId?:string;
   private sandboxUnitId?:string;
   private selectedCampaignId:CampaignBattleId='pearl-harbor';
@@ -242,8 +243,18 @@ class NavalMap {
     }
     const team=this.match.team(this.sandboxOwnerId),controller=$<HTMLButtonElement>('sandbox-controller');
     controller.textContent=team.controller==='human'?'本方由玩家控制 · 改为 AI':'本方由 AI 控制 · 改为玩家';controller.style.borderColor='#'+TEAM_COLORS[team.id-1].toString(16).padStart(6,'0');
+    const factionSelect=$<HTMLSelectElement>('sandbox-faction'),factions=[...new Map(this.assets.map(asset=>[asset.faction.id,asset.faction.name] as const))].sort((a,b)=>a[0]-b[0]),factionCounts=new Map<number,number>();
+    for(const asset of this.assets)factionCounts.set(asset.faction.id,(factionCounts.get(asset.faction.id)??0)+1);
+    factionSelect.replaceChildren(...[
+      {id:'all',name:'全部阵营',count:this.assets.length},
+      ...factions.map(([id,name])=>({id:String(id),name,count:factionCounts.get(id)??0})),
+    ].map(faction=>{const option=document.createElement('option');option.value=String(faction.id);option.textContent=`${faction.name} · ${faction.count}艘`;return option;}));
+    factionSelect.value=this.sandboxFactionId;
     const search=$<HTMLInputElement>('sandbox-search').value.trim().toLocaleLowerCase(),palette=$('sandbox-palette'),paletteScroll=palette.scrollTop;palette.replaceChildren();
-    for(const asset of this.assets.filter(item=>!search||`${item.name} ${item.ship_type.name} ${item.ship_type.code}`.toLocaleLowerCase().includes(search)).sort((a,b)=>a.name.localeCompare(b.name,'zh-CN'))){
+    const filteredAssets=this.assets.filter(item=>(this.sandboxFactionId==='all'||item.faction.id===Number(this.sandboxFactionId))&&(!search||`${item.name} ${item.ship_type.name} ${item.ship_type.code}`.toLocaleLowerCase().includes(search))).sort((a,b)=>a.name.localeCompare(b.name,'zh-CN'));
+    if(!filteredAssets.some(asset=>asset.id===this.sandboxAssetId))this.sandboxAssetId=filteredAssets[0]?.id;
+    $('sandbox-palette-empty').hidden=filteredAssets.length>0;
+    for(const asset of filteredAssets){
       const button=document.createElement('button');button.type='button';button.className=`sandbox-ship-option${asset.id===this.sandboxAssetId?' active':''}`;button.dataset.assetId=asset.id;button.setAttribute('role','option');button.setAttribute('aria-selected',String(asset.id===this.sandboxAssetId));
       const image=document.createElement('img');image.src=assetUrl(asset.assets.preview);image.alt='';const label=element('span');label.append(element('strong','',asset.name),element('small','',`${asset.ship_type.name} · ${asset.ship_type.code}`));button.append(image,label);
       button.onclick=()=>{this.sandboxAssetId=asset.id;this.sandboxUnitId=undefined;this.selected=undefined;this.chosen.clear();this.renderSelection();this.renderSandboxEditor();};palette.append(button);
@@ -635,7 +646,7 @@ class NavalMap {
     this.renderSeatSettings();this.showFrontPage('skirmish');
   }
   private openSandboxSetup():void {
-    this.sandboxOwnerId=1;this.sandboxAssetId=this.assets.find(asset=>asset.ship_type.code==='DD')?.id??this.assets[0]?.id;
+    this.sandboxOwnerId=1;this.sandboxFactionId='all';this.sandboxAssetId=this.assets.find(asset=>asset.ship_type.code==='DD')?.id??this.assets[0]?.id;
     this.showFrontPage('sandbox');
   }
   private async createSandbox():Promise<void> {
@@ -728,6 +739,7 @@ class NavalMap {
     };
     $('sandbox-create').onclick=()=>{if(this.rebuilding)return;const button=$<HTMLButtonElement>('sandbox-create');button.disabled=true;button.textContent='正在生成海图…';this.createSandbox().catch(error=>this.notify(error instanceof Error?error.message:String(error))).finally(()=>{button.disabled=false;button.textContent='创建编辑海图';});};
     $<HTMLSelectElement>('sandbox-owner').onchange=()=>{this.sandboxOwnerId=Number($<HTMLSelectElement>('sandbox-owner').value)||1;this.renderSandboxEditor();};
+    $<HTMLSelectElement>('sandbox-faction').onchange=()=>{this.sandboxFactionId=$<HTMLSelectElement>('sandbox-faction').value||'all';$('sandbox-palette').scrollTop=0;this.renderSandboxEditor();};
     $('sandbox-controller').onclick=()=>{const team=this.match.team(this.sandboxOwnerId);this.match.setSandboxController(team.id,team.controller==='human'?'ai':'human');this.renderSandboxEditor();this.persist();};
     $<HTMLInputElement>('sandbox-search').oninput=()=>this.renderSandboxEditor();
     $<HTMLSelectElement>('sandbox-selected-owner').onchange=()=>{if(!this.sandboxUnitId)return;try{const owner=Number($<HTMLSelectElement>('sandbox-selected-owner').value);this.match.assignSandboxOwner(this.sandboxUnitId,owner);this.sandboxOwnerId=owner;this.ships.syncUnits(this.match.units);this.renderSandboxEditor();this.renderSelection();this.persist();this.dirty=true;}catch(error){this.notify(error instanceof Error?error.message:String(error));}};
