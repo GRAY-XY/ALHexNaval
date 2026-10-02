@@ -44,11 +44,11 @@ export class AircraftRenderer {
       if(points.length<2)continue;
       const color=attacking?0xf04448:TEAM_COLORS[s.ownerId-1]??0xb6f3d6;
       for(let i=1;i<points.length;i++){
-        this.routes.lineStyle(4/zoom,0x0b2234,.78).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
-        this.routes.lineStyle(2.2/zoom,color,.95).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
-        if(i<points.length-1)this.routes.beginFill(color,.9).drawCircle(points[i].x,points[i].y,2.8/zoom).endFill();
+        this.routes.lineStyle(5.5/zoom,0x0b2234,.82).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
+        this.routes.lineStyle(3.3/zoom,color,.98).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
+        if(i<points.length-1)this.routes.beginFill(color,.95).drawCircle(points[i].x,points[i].y,3.4/zoom).endFill();
       }
-      const end=points[points.length-1],before=points[points.length-2],angle=Math.atan2(end.y-before.y,end.x-before.x),size=10/zoom,half=5/zoom;
+      const end=points[points.length-1],before=points[points.length-2],angle=Math.atan2(end.y-before.y,end.x-before.x),size=12/zoom,half=6/zoom;
       this.routes.beginFill(color,.98).drawPolygon([end.x,end.y,end.x-Math.cos(angle)*size-Math.sin(angle)*half,end.y-Math.sin(angle)*size+Math.cos(angle)*half,end.x-Math.cos(angle)*size+Math.sin(angle)*half,end.y-Math.sin(angle)*size-Math.cos(angle)*half]).endFill();
     }
     const fighter = squadrons.find(s=>selected.has(s.id) && s.role==='fighter');

@@ -43,10 +43,10 @@ function drawAttackArrow(graphics:Graphics,from:Cell,to:Cell,zoom:number,alpha=1
   if(distance<1)return;
   const ux=dx/distance,uy=dy/distance,startOffset=Math.min(24,distance*.24),targetOffset=Math.min(24,distance*.24);
   const x1=startCell.x+ux*startOffset,y1=startCell.y+uy*startOffset,x2=targetCell.x-ux*targetOffset,y2=targetCell.y-uy*targetOffset;
-  const headLength=Math.min(18/zoom,distance*.28),halfWidth=Math.min(9/zoom,headLength*.55),backX=x2-ux*headLength,backY=y2-uy*headLength,sideX=-uy*halfWidth,sideY=ux*halfWidth;
-  graphics.lineStyle(5/zoom,0x38171b,.9*alpha).moveTo(x1,y1).lineTo(x2,y2);
-  graphics.lineStyle(2.8/zoom,0xf04448,.98*alpha).moveTo(x1,y1).lineTo(x2,y2);
-  graphics.lineStyle(1.5/zoom,0x38171b,.95*alpha).beginFill(0xf04448,.98*alpha).drawPolygon([x2,y2,backX+sideX,backY+sideY,backX-sideX,backY-sideY]).endFill();
+  const headLength=Math.min(20/zoom,distance*.28),halfWidth=Math.min(10/zoom,headLength*.55),backX=x2-ux*headLength,backY=y2-uy*headLength,sideX=-uy*halfWidth,sideY=ux*halfWidth;
+  graphics.lineStyle(6.5/zoom,0x38171b,.9*alpha).moveTo(x1,y1).lineTo(x2,y2);
+  graphics.lineStyle(4/zoom,0xf04448,.98*alpha).moveTo(x1,y1).lineTo(x2,y2);
+  graphics.lineStyle(1.8/zoom,0x38171b,.95*alpha).beginFill(0xf04448,.98*alpha).drawPolygon([x2,y2,backX+sideX,backY+sideY,backX-sideX,backY-sideY]).endFill();
 }
 
 class NavalMap {
@@ -1025,12 +1025,12 @@ class NavalMap {
     }
     for(const order of this.match.displayMovementOrders()){
       const route=order.cells.map(cellCenter),color=TEAM_COLORS[order.ownerId-1]??0xb6f3d6;
-      for(let i=1;i<route.length;i++)this.highlight.lineStyle(3.2/zoom,color,.9).moveTo(route[i-1].x,route[i-1].y).lineTo(route[i].x,route[i].y);
+      for(let i=1;i<route.length;i++)this.highlight.lineStyle(4.5/zoom,color,.92).moveTo(route[i-1].x,route[i-1].y).lineTo(route[i].x,route[i].y);
       if(route.length>1){
-        const end=route[route.length-1],previous=route[route.length-2],angle=Math.atan2(end.y-previous.y,end.x-previous.x),length=17/zoom,width=8/zoom;
+        const end=route[route.length-1],previous=route[route.length-2],angle=Math.atan2(end.y-previous.y,end.x-previous.x),length=19/zoom,width=9.5/zoom;
         const back={x:end.x-length*Math.cos(angle),y:end.y-length*Math.sin(angle)},side={x:width*Math.sin(angle),y:-width*Math.cos(angle)};
         this.highlight.beginFill(color,.98).drawPolygon([end.x,end.y,back.x+side.x,back.y+side.y,back.x-side.x,back.y-side.y]).endFill();
-        this.highlight.lineStyle(1.5/zoom,color,.9).drawCircle(route[0].x,route[0].y,4/zoom);
+        this.highlight.lineStyle(2/zoom,color,.9).drawCircle(route[0].x,route[0].y,4.5/zoom);
       }
     }
     for(const order of this.match.combatOrders){
@@ -1051,8 +1051,8 @@ class NavalMap {
     if (this.routePreview && selected) {
       const route = this.routePreview;
       for (let i = 1; i < route.cells.length; i++) { const a = cellCenter(route.cells[i - 1]), b = cellCenter(route.cells[i]);
-        this.highlight.lineStyle(2.5 / zoom,0xb6f3d6,.9).moveTo(a.x,a.y).lineTo(b.x,b.y); }
-      const end = cellCenter(route.cells[route.cells.length - 1]); this.highlight.lineStyle(2 / zoom,0xb6f3d6,1).drawCircle(end.x,end.y,12 / zoom);
+        this.highlight.lineStyle(3.5 / zoom,0xb6f3d6,.95).moveTo(a.x,a.y).lineTo(b.x,b.y); }
+      const end = cellCenter(route.cells[route.cells.length - 1]); this.highlight.lineStyle(2.6 / zoom,0xb6f3d6,1).drawCircle(end.x,end.y,12.5 / zoom);
     }
   }
   private updateView(): void {
