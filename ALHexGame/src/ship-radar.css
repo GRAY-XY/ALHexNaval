@@ -1,0 +1,11 @@
+.ship-radar-card{margin:8px 0;padding:7px 7px 5px;border:1px solid rgba(128,190,174,.28);border-radius:7px;background:linear-gradient(145deg,rgba(27,65,70,.8),rgba(15,42,55,.8))}
+.ship-radar-heading{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:0 3px;color:#d7eee2}
+.ship-radar-heading strong{font-size:10px;font-weight:600;letter-spacing:.4px}
+.ship-radar-heading span,.ship-radar-caption{color:#8facb4;font-size:8px}
+.ship-radar-card svg{display:block;width:100%;height:auto;margin:1px auto 0;overflow:visible}
+.ship-radar-ring{fill:none;stroke:rgba(164,202,194,.2);stroke-width:1}
+.ship-radar-axis{stroke:rgba(164,202,194,.23);stroke-width:1}
+.ship-radar-shape{fill:rgba(127,215,184,.3);stroke:#9be6c8;stroke-width:1.5;stroke-linejoin:round}
+.ship-radar-point{fill:#f0d59a;stroke:#173a43;stroke-width:1}
+.ship-radar-label{fill:#c8ddda;font-size:8px;font-weight:500;paint-order:stroke;stroke:#153543;stroke-width:1.8px;stroke-linejoin:round}
+.ship-radar-caption{margin:0;text-align:center;line-height:1.5}

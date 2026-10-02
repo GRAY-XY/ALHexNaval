@@ -22,10 +22,12 @@ import './layout.css';
 import './menu.css';
 import './campaign-mode.css';
 import './sandbox-mode.css';
+import './ship-radar.css';
 import {loadWatercolorTextures} from './watercolor-textures.ts';
 import {executeAiTurn} from './ai.ts';
 import {TEAM_NAMES,type TeamController} from './match.ts';
 import {shipRulesV2} from './naval-rules-v2.ts';
+import {createShipRadar} from './ship-radar.ts';
 import {CAMPAIGN_BATTLES,campaignBattle,type CampaignBattleId} from './historical-battles.ts';
 import {CAMPAIGN_PROGRESS_KEY,emptyCampaignProgress,readCampaignProgress,recordCampaignResult,selectCampaignSide,type CampaignProgress,type CampaignSideIndex} from './campaign-progress.ts';
 
@@ -340,7 +342,7 @@ class NavalMap {
     }
     const defend = document.createElement('button'); defend.className = 'defend'; defend.textContent = unit.guard ? '◆ 警戒姿态生效' : '◇ 进入警戒姿态';
     defend.disabled = !!this.match.result||!canCommand||this.match.rulesetId==='naval-v2'&&this.match.phase!=='aviation' || unit.status !== 'ready' || !unit.action; defend.onclick = () => this.command(() => { this.match.defend(unit.instanceId); this.selectedWeapon = undefined; return []; },this.match.rulesetId==='naval-v2'?'已进入警戒姿态：最多移动1格，敌方舰炮命中 -1，本舰对空 +1':'已进入防御姿态：每次受到的伤害减少 2 点'); weapons.append(defend);
-    face.disabled = !!this.match.result||!canCommand||unit.status === 'sunk'; panel.append(head, health, coords, status,...submarineControls, weapons, actions, face);
+    face.disabled = !!this.match.result||!canCommand||unit.status === 'sunk'; panel.append(head, health,...(this.match.rulesetId==='naval-v2'?[createShipRadar(unit)]:[]), coords, status,...submarineControls, weapons, actions, face);
     if(queuedAttack&&canCommand){const cancel=document.createElement('button');cancel.textContent='取消攻击计划';cancel.disabled=!!this.match.result;cancel.onclick=()=>this.command(()=>{this.match.cancelAttack(unit.instanceId);this.selectedWeapon=undefined;return[];},'已取消攻击计划，行动和鱼雷已返还，可重新选择目标');panel.append(cancel);}
     if(planned&&canCommand){const cancel=document.createElement('button');cancel.textContent='取消航线';cancel.disabled=!!this.match.result;cancel.onclick=()=>this.command(()=>{this.match.cancelMove(unit.instanceId);return[];});panel.append(cancel);}
     const carrier = CARRIER_STATS[unit.asset.ship_type.code];
