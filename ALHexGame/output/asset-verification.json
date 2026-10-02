@@ -1,15 +1,16 @@
 {
   "status": "passed",
-  "ships": 24,
-  "files_checked": 102,
-  "bytes": 16063139,
+  "ships": 37,
+  "files_checked": 154,
+  "bytes": 25699657,
   "ship_types": {
-    "DD": 6,
-    "CL": 4,
-    "CA": 4,
-    "BB": 4,
-    "CV": 5,
-    "CVL": 1
+    "DD": 8,
+    "CL": 5,
+    "CA": 7,
+    "BB": 8,
+    "CV": 6,
+    "CVL": 1,
+    "SS": 2
   },
   "units": [
     {
@@ -176,6 +177,97 @@
     {
       "id": "xianghe",
       "name": "翔鹤",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "i19",
+      "name": "伊19",
+      "spine_version": "3.8.99",
+      "animations": 27,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "anshan",
+      "name": "鞍山",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "yixian",
+      "name": "逸仙",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "weineituo",
+      "name": "维托里奥·维内托",
+      "spine_version": "3.8.99",
+      "animations": 21,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "zhala",
+      "name": "扎拉",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "aisaikesi",
+      "name": "埃塞克斯",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "gangute",
+      "name": "甘古特",
+      "spine_version": "3.8.99",
+      "animations": 21,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "talin",
+      "name": "塔林",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "lisailiu",
+      "name": "黎塞留",
+      "spine_version": "3.8.99",
+      "animations": 21,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "xukufu",
+      "name": "絮库夫",
+      "spine_version": "3.8.99",
+      "animations": 27,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "rangbaer",
+      "name": "让·巴尔",
+      "spine_version": "3.8.99",
+      "animations": 22,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "fuxu",
+      "name": "福煦",
+      "spine_version": "3.8.99",
+      "animations": 20,
+      "missing_native_hurt": true
+    },
+    {
+      "id": "aifosen",
+      "name": "埃佛森",
       "spine_version": "3.8.99",
       "animations": 20,
       "missing_native_hurt": true

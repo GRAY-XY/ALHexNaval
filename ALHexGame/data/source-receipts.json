@@ -278,6 +278,138 @@
       "skin_id": 308010,
       "source_directory": "assets/重樱/30801_伊19/skins/i19",
       "source_bundle_sha256": "61267aaa3ab6142ea230294ca755d34dd7f74f6a68d0ddb9c18afba0d2fb4bf1"
+    },
+    {
+      "unit_id": "anshan",
+      "ship_group": 50101,
+      "statistics_id": 501011,
+      "type": 1,
+      "nationality": 5,
+      "armor_type": 1,
+      "skin_id": 501010,
+      "source_directory": "assets/东煌/50101_鞍山/skins/anshan",
+      "source_bundle_sha256": "4418ad603b69217ceeb5612337273b0e726814d931b0f4bb3f1b1da13808e2f3"
+    },
+    {
+      "unit_id": "yixian",
+      "ship_group": 50201,
+      "statistics_id": 502011,
+      "type": 2,
+      "nationality": 5,
+      "armor_type": 1,
+      "skin_id": 502010,
+      "source_directory": "assets/东煌/50201_逸仙/skins/yixian",
+      "source_bundle_sha256": "74bcd3473ea3d842270b8762b5b388860ccc0c466de9f7abeecb7b72c2982473"
+    },
+    {
+      "unit_id": "weineituo",
+      "ship_group": 60501,
+      "statistics_id": 605011,
+      "type": 5,
+      "nationality": 6,
+      "armor_type": 3,
+      "skin_id": 605010,
+      "source_directory": "assets/撒丁帝国/60501_维托里奥·维内托/skins/weineituo",
+      "source_bundle_sha256": "20474bbe3393d79fe7649ba8885a3898139146f2e37d4435d760bbaabdcd31a7"
+    },
+    {
+      "unit_id": "zhala",
+      "ship_group": 60302,
+      "statistics_id": 603021,
+      "type": 3,
+      "nationality": 6,
+      "armor_type": 2,
+      "skin_id": 603020,
+      "source_directory": "assets/撒丁帝国/60302_扎拉/skins/zhala",
+      "source_bundle_sha256": "5e8c375badf20efa0ed175e77eedb3f540efe107872bc9e61e4d7c3bb72054a4"
+    },
+    {
+      "unit_id": "aisaikesi",
+      "ship_group": 10709,
+      "statistics_id": 107091,
+      "type": 7,
+      "nationality": 1,
+      "armor_type": 2,
+      "skin_id": 107090,
+      "source_directory": "assets/白鹰/10709_埃塞克斯/skins/aisaikesi",
+      "source_bundle_sha256": "d974cebf92fc08c47d75e1cf9a715a2e9a40759c1b2176fbfd2a12460725c8a6"
+    },
+    {
+      "unit_id": "gangute",
+      "ship_group": 70501,
+      "statistics_id": 705011,
+      "type": 5,
+      "nationality": 7,
+      "armor_type": 3,
+      "skin_id": 705010,
+      "source_directory": "assets/北方联合/70501_甘古特/skins/gangute",
+      "source_bundle_sha256": "ef22acf5c5217772f033a1d4f735ad09134f12530dda24e506e0aa5a900fa2ce"
+    },
+    {
+      "unit_id": "talin",
+      "ship_group": 70301,
+      "statistics_id": 703011,
+      "type": 3,
+      "nationality": 7,
+      "armor_type": 2,
+      "skin_id": 703010,
+      "source_directory": "assets/北方联合/70301_塔林/skins/talin",
+      "source_bundle_sha256": "3efd59fc377c2333b38be0ee890d67c5069e3849dacc475e792147b0445445e8"
+    },
+    {
+      "unit_id": "lisailiu",
+      "ship_group": 80501,
+      "statistics_id": 805011,
+      "type": 5,
+      "nationality": 8,
+      "armor_type": 3,
+      "skin_id": 805010,
+      "source_directory": "assets/自由鸢尾/80501_黎塞留/skins/lisailiu",
+      "source_bundle_sha256": "388c73023daaa9fe77bcbdb17cd4b953c4c1c213cb3336b0c92d08698d7be9e4"
+    },
+    {
+      "unit_id": "xukufu",
+      "ship_group": 80801,
+      "statistics_id": 808011,
+      "type": 8,
+      "nationality": 8,
+      "armor_type": 1,
+      "skin_id": 808010,
+      "source_directory": "assets/自由鸢尾/80801_絮库夫/skins/xukufu",
+      "source_bundle_sha256": "4b7cdad9bff6cb8d6f448135dd34dc00802791113ee5a347aa07d9a9b006f0dd"
+    },
+    {
+      "unit_id": "rangbaer",
+      "ship_group": 90501,
+      "statistics_id": 905011,
+      "type": 5,
+      "nationality": 9,
+      "armor_type": 3,
+      "skin_id": 905010,
+      "source_directory": "assets/维希教廷/90501_让·巴尔/skins/rangbaer",
+      "source_bundle_sha256": "4aae8170a316b9d5a0817a17f4b8214de957647596e74dbb06e74fc28cc6c475"
+    },
+    {
+      "unit_id": "fuxu",
+      "ship_group": 90301,
+      "statistics_id": 903011,
+      "type": 3,
+      "nationality": 9,
+      "armor_type": 2,
+      "skin_id": 903010,
+      "source_directory": "assets/维希教廷/90301_福煦/skins/fuxu",
+      "source_bundle_sha256": "4fd3bd1279d29388c57ab78b0587124cbd5e8efc606de2e29b93b73ca9028a53"
+    },
+    {
+      "unit_id": "aifosen",
+      "ship_group": 110101,
+      "statistics_id": 1101011,
+      "type": 1,
+      "nationality": 11,
+      "armor_type": 1,
+      "skin_id": 1101010,
+      "source_directory": "assets/郁金王国/110101_埃佛森/skins/aifosen",
+      "source_bundle_sha256": "bf6807450cd2a24dc51cb40e65a879d6e196d82ba52e4a2492db7723fc5d665c"
     }
   ]
 }

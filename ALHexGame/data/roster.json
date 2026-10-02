@@ -1849,6 +1849,894 @@
         "missing_left": "mirror the corresponding right-facing animation"
       },
       "design_hint": "潜艇伏击与隐蔽机动（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "anshan",
+      "ship_group": 50101,
+      "name": "鞍山",
+      "faction": {
+        "id": 5,
+        "name": "东煌"
+      },
+      "ship_type": {
+        "source_code": 1,
+        "code": "DD",
+        "name": "驱逐舰"
+      },
+      "original_armor": {
+        "code": 1,
+        "name": "轻型"
+      },
+      "skin": {
+        "id": 501010,
+        "name": "鞍山",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/anshan/default",
+        "skeleton": "assets/ships/anshan/default/anshan.skel",
+        "atlas": "assets/ships/anshan/default/anshan.atlas",
+        "pages": [
+          "assets/ships/anshan/default/anshan.png"
+        ],
+        "preview": "assets/ships/anshan/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "驱逐舰护航与反潜（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "yixian",
+      "ship_group": 50201,
+      "name": "逸仙",
+      "faction": {
+        "id": 5,
+        "name": "东煌"
+      },
+      "ship_type": {
+        "source_code": 2,
+        "code": "CL",
+        "name": "轻巡洋舰"
+      },
+      "original_armor": {
+        "code": 1,
+        "name": "轻型"
+      },
+      "skin": {
+        "id": 502010,
+        "name": "逸仙",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/yixian/default",
+        "skeleton": "assets/ships/yixian/default/yixian.skel",
+        "atlas": "assets/ships/yixian/default/yixian.atlas",
+        "pages": [
+          "assets/ships/yixian/default/yixian.png"
+        ],
+        "preview": "assets/ships/yixian/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "轻巡洋舰与近海支援（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "weineituo",
+      "ship_group": 60501,
+      "name": "维托里奥·维内托",
+      "faction": {
+        "id": 6,
+        "name": "撒丁帝国"
+      },
+      "ship_type": {
+        "source_code": 5,
+        "code": "BB",
+        "name": "战列舰"
+      },
+      "original_armor": {
+        "code": 3,
+        "name": "重型"
+      },
+      "skin": {
+        "id": 605010,
+        "name": "维托里奥·维内托",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/weineituo/default",
+        "skeleton": "assets/ships/weineituo/default/weineituo.skel",
+        "atlas": "assets/ships/weineituo/default/weineituo.atlas",
+        "pages": [
+          "assets/ships/weineituo/default/weineituo.png"
+        ],
+        "preview": "assets/ships/weineituo/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "attack_main",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack_main",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "战列舰主炮打击（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "zhala",
+      "ship_group": 60302,
+      "name": "扎拉",
+      "faction": {
+        "id": 6,
+        "name": "撒丁帝国"
+      },
+      "ship_type": {
+        "source_code": 3,
+        "code": "CA",
+        "name": "重巡洋舰"
+      },
+      "original_armor": {
+        "code": 2,
+        "name": "中型"
+      },
+      "skin": {
+        "id": 603020,
+        "name": "扎拉",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/zhala/default",
+        "skeleton": "assets/ships/zhala/default/zhala.skel",
+        "atlas": "assets/ships/zhala/default/zhala.atlas",
+        "pages": [
+          "assets/ships/zhala/default/zhala.png"
+        ],
+        "preview": "assets/ships/zhala/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "重巡洋舰炮战（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "aisaikesi",
+      "ship_group": 10709,
+      "name": "埃塞克斯",
+      "faction": {
+        "id": 1,
+        "name": "白鹰"
+      },
+      "ship_type": {
+        "source_code": 7,
+        "code": "CV",
+        "name": "航空母舰"
+      },
+      "original_armor": {
+        "code": 2,
+        "name": "中型"
+      },
+      "skin": {
+        "id": 107090,
+        "name": "埃塞克斯",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/aisaikesi/default",
+        "skeleton": "assets/ships/aisaikesi/default/aisaikesi.skel",
+        "atlas": "assets/ships/aisaikesi/default/aisaikesi.atlas",
+        "pages": [
+          "assets/ships/aisaikesi/default/aisaikesi.png"
+        ],
+        "preview": "assets/ships/aisaikesi/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "舰载机打击与制空（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "gangute",
+      "ship_group": 70501,
+      "name": "甘古特",
+      "faction": {
+        "id": 7,
+        "name": "北方联合"
+      },
+      "ship_type": {
+        "source_code": 5,
+        "code": "BB",
+        "name": "战列舰"
+      },
+      "original_armor": {
+        "code": 3,
+        "name": "重型"
+      },
+      "skin": {
+        "id": 705010,
+        "name": "甘古特",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/gangute/default",
+        "skeleton": "assets/ships/gangute/default/gangute.skel",
+        "atlas": "assets/ships/gangute/default/gangute.atlas",
+        "pages": [
+          "assets/ships/gangute/default/gangute.png"
+        ],
+        "preview": "assets/ships/gangute/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "attack_main",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack_main",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "战列舰近海火力（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "talin",
+      "ship_group": 70301,
+      "name": "塔林",
+      "faction": {
+        "id": 7,
+        "name": "北方联合"
+      },
+      "ship_type": {
+        "source_code": 3,
+        "code": "CA",
+        "name": "重巡洋舰"
+      },
+      "original_armor": {
+        "code": 2,
+        "name": "中型"
+      },
+      "skin": {
+        "id": 703010,
+        "name": "塔林",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/talin/default",
+        "skeleton": "assets/ships/talin/default/talin.skel",
+        "atlas": "assets/ships/talin/default/talin.atlas",
+        "pages": [
+          "assets/ships/talin/default/talin.png"
+        ],
+        "preview": "assets/ships/talin/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "重巡洋舰编队支援（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "lisailiu",
+      "ship_group": 80501,
+      "name": "黎塞留",
+      "faction": {
+        "id": 8,
+        "name": "自由鸢尾"
+      },
+      "ship_type": {
+        "source_code": 5,
+        "code": "BB",
+        "name": "战列舰"
+      },
+      "original_armor": {
+        "code": 3,
+        "name": "重型"
+      },
+      "skin": {
+        "id": 805010,
+        "name": "黎塞留",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/lisailiu/default",
+        "skeleton": "assets/ships/lisailiu/default/lisailiu.skel",
+        "atlas": "assets/ships/lisailiu/default/lisailiu.atlas",
+        "pages": [
+          "assets/ships/lisailiu/default/lisailiu.png"
+        ],
+        "preview": "assets/ships/lisailiu/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "attack_main",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack_main",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "战列舰主炮打击（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "xukufu",
+      "ship_group": 80801,
+      "name": "絮库夫",
+      "faction": {
+        "id": 8,
+        "name": "自由鸢尾"
+      },
+      "ship_type": {
+        "source_code": 8,
+        "code": "SS",
+        "name": "潜水舰"
+      },
+      "original_armor": {
+        "code": 1,
+        "name": "轻型"
+      },
+      "skin": {
+        "id": 808010,
+        "name": "絮库夫",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/xukufu/default",
+        "skeleton": "assets/ships/xukufu/default/xukufu.skel",
+        "atlas": "assets/ships/xukufu/default/xukufu.atlas",
+        "pages": [
+          "assets/ships/xukufu/default/xukufu.png"
+        ],
+        "preview": "assets/ships/xukufu/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "attack_swim",
+        "attack_swim_left",
+        "dance",
+        "dead",
+        "dead_swim",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "skill_swim",
+        "sleep",
+        "stand",
+        "stand2",
+        "swim",
+        "swim_left",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "victory_swim",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "swim",
+        "move": "swim",
+        "move_left": "swim_left",
+        "attack": "attack_swim",
+        "attack_left": "attack_swim_left",
+        "main_gun": "attack_swim",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "大型潜艇伏击（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "rangbaer",
+      "ship_group": 90501,
+      "name": "让·巴尔",
+      "faction": {
+        "id": 9,
+        "name": "维希教廷"
+      },
+      "ship_type": {
+        "source_code": 5,
+        "code": "BB",
+        "name": "战列舰"
+      },
+      "original_armor": {
+        "code": 3,
+        "name": "重型"
+      },
+      "skin": {
+        "id": 905010,
+        "name": "让·巴尔",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/rangbaer/default",
+        "skeleton": "assets/ships/rangbaer/default/rangbaer.skel",
+        "atlas": "assets/ships/rangbaer/default/rangbaer.atlas",
+        "pages": [
+          "assets/ships/rangbaer/default/rangbaer.png"
+        ],
+        "preview": "assets/ships/rangbaer/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "attack_main",
+        "break",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack_main",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "战列舰主炮打击（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "fuxu",
+      "ship_group": 90301,
+      "name": "福煦",
+      "faction": {
+        "id": 9,
+        "name": "维希教廷"
+      },
+      "ship_type": {
+        "source_code": 3,
+        "code": "CA",
+        "name": "重巡洋舰"
+      },
+      "original_armor": {
+        "code": 2,
+        "name": "中型"
+      },
+      "skin": {
+        "id": 903010,
+        "name": "福煦",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/fuxu/default",
+        "skeleton": "assets/ships/fuxu/default/fuxu.skel",
+        "atlas": "assets/ships/fuxu/default/fuxu.atlas",
+        "pages": [
+          "assets/ships/fuxu/default/fuxu.png"
+        ],
+        "preview": "assets/ships/fuxu/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "重巡洋舰炮战（初步方向，未写入战斗数值）"
+    },
+    {
+      "id": "aifosen",
+      "ship_group": 110101,
+      "name": "埃佛森",
+      "faction": {
+        "id": 11,
+        "name": "郁金王国"
+      },
+      "ship_type": {
+        "source_code": 1,
+        "code": "DD",
+        "name": "驱逐舰"
+      },
+      "original_armor": {
+        "code": 1,
+        "name": "轻型"
+      },
+      "skin": {
+        "id": 1101010,
+        "name": "埃佛森",
+        "kind": "default"
+      },
+      "assets": {
+        "directory": "assets/ships/aifosen/default",
+        "skeleton": "assets/ships/aifosen/default/aifosen.skel",
+        "atlas": "assets/ships/aifosen/default/aifosen.atlas",
+        "pages": [
+          "assets/ships/aifosen/default/aifosen.png"
+        ],
+        "preview": "assets/ships/aifosen/default/__preview.png"
+      },
+      "spine_version": "3.8.99",
+      "animations": [
+        "attack",
+        "attack_left",
+        "dance",
+        "dead",
+        "motou",
+        "move",
+        "move_left",
+        "normal",
+        "sit",
+        "skill",
+        "sleep",
+        "stand",
+        "stand2",
+        "touch",
+        "tuozhuai",
+        "tuozhuai2",
+        "victory",
+        "walk",
+        "wash",
+        "yun"
+      ],
+      "animation_map": {
+        "idle": "stand",
+        "move": "move",
+        "move_left": "move_left",
+        "attack": "attack",
+        "attack_left": "attack_left",
+        "main_gun": "attack",
+        "skill": "skill",
+        "victory": "victory",
+        "defeated": "dead",
+        "hurt": null
+      },
+      "animation_evidence": "copied-source-log; current browser verification in output/",
+      "fallbacks": {
+        "hurt": "keep current animation; game renderer adds flash/shake",
+        "missing_left": "mirror the corresponding right-facing animation"
+      },
+      "design_hint": "驱逐舰护航（初步方向，未写入战斗数值）"
     }
   ],
   "runtime": {

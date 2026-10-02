@@ -2,7 +2,7 @@
   "passed": true,
   "checks": [
     {
-      "name": "All 24 copied Spine binaries load with finite timeline poses",
+      "name": "All 37 copied Spine binaries load with finite timeline poses",
       "passed": true
     },
     {
@@ -796,6 +796,412 @@
         {
           "name": "victory",
           "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "i19",
+      "name": "伊19",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 0.5
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8.333333015441895
+        },
+        {
+          "name": "victory",
+          "duration": 1.6666666269302368
+        }
+      ]
+    },
+    {
+      "id": "anshan",
+      "name": "鞍山",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 7.599999904632568
+        },
+        {
+          "name": "victory",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "yixian",
+      "name": "逸仙",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "victory",
+          "duration": 2.066666603088379
+        }
+      ]
+    },
+    {
+      "id": "weineituo",
+      "name": "维托里奥·维内托",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8.666666984558105
+        },
+        {
+          "name": "victory",
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "id": "zhala",
+      "name": "扎拉",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 7.333333492279053
+        },
+        {
+          "name": "victory",
+          "duration": 2.6666667461395264
+        }
+      ]
+    },
+    {
+      "id": "aisaikesi",
+      "name": "埃塞克斯",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1.0666667222976685
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 7.733333110809326
+        },
+        {
+          "name": "victory",
+          "duration": 3.066666603088379
+        }
+      ]
+    },
+    {
+      "id": "gangute",
+      "name": "甘古特",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 21.5
+        },
+        {
+          "name": "victory",
+          "duration": 4.5
+        }
+      ]
+    },
+    {
+      "id": "talin",
+      "name": "塔林",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 9.333333015441895
+        },
+        {
+          "name": "victory",
+          "duration": 4.666666507720947
+        }
+      ]
+    },
+    {
+      "id": "lisailiu",
+      "name": "黎塞留",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8999999761581421
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 17.16666603088379
+        },
+        {
+          "name": "victory",
+          "duration": 7.833333492279053
+        }
+      ]
+    },
+    {
+      "id": "xukufu",
+      "name": "絮库夫",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "skill",
+          "duration": 4.666666507720947
+        },
+        {
+          "name": "stand",
+          "duration": 7
+        },
+        {
+          "name": "victory",
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "id": "rangbaer",
+      "name": "让·巴尔",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "attack_main",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 0.8333333134651184
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 7
+        },
+        {
+          "name": "victory",
+          "duration": 2.0999999046325684
+        }
+      ]
+    },
+    {
+      "id": "fuxu",
+      "name": "福煦",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1.5333333015441895
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 8.800000190734863
+        },
+        {
+          "name": "victory",
+          "duration": 1.8333333730697632
+        }
+      ]
+    },
+    {
+      "id": "aifosen",
+      "name": "埃佛森",
+      "animations": [
+        {
+          "name": "attack",
+          "duration": 1
+        },
+        {
+          "name": "dead",
+          "duration": 1.3333333730697632
+        },
+        {
+          "name": "move",
+          "duration": 6
+        },
+        {
+          "name": "skill",
+          "duration": 6
+        },
+        {
+          "name": "stand",
+          "duration": 13.366666793823242
+        },
+        {
+          "name": "victory",
+          "duration": 8.666666984558105
         }
       ]
     }

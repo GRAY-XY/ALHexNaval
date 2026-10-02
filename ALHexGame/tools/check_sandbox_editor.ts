@@ -38,6 +38,20 @@ check('Palette placements can repeat ships, reject occupied or invalid cells, an
   assert.equal(third,'sandbox-3');
 });
 
+check('The added nation roster is available in the sandbox without auto-deploying ships',()=>{
+  const added=[
+    ['anshan',5],['yixian',5],['weineituo',6],['zhala',6],['aisaikesi',1],
+    ['gangute',7],['talin',7],['lisailiu',8],['xukufu',8],['rangbaer',9],['fuxu',9],['aifosen',11],
+  ] as const;
+  for(const [id,factionId] of added){
+    const asset=assets.find(item=>item.id===id);assert(asset,`${id} should be available in the ship palette`);
+    assert.equal(asset.faction.id,factionId,`${id} should appear under its source faction`);
+  }
+  const match=createEditor(new HexWorld(128));assert.equal(match.units.length,0,'a larger asset library must not auto-place the fleet');
+  for(const [index,[id]] of added.entries())place(match,id,index%2+1);
+  assert.equal(match.units.length,added.length,'sandbox ships are added only by manual placement');
+});
+
 check('Custom editor layouts round-trip, then begin normal turns with fog and without campaign deadlines',()=>{
   const battle=CAMPAIGN_BATTLES.find(item=>item.id==='midway')!,match=createEditor(new HexWorld(battle.width,battle.height,battle.id));
   const first=place(match,assets.find(item=>item.ship_type.code==='DD')!.id,1);

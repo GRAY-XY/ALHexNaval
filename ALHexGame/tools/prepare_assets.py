@@ -1,4 +1,4 @@
-"""Copy the first roster into a self-contained project, without changing originals."""
+"""Copy the curated ship roster into a self-contained project, without changing originals."""
 import csv
 import hashlib
 import json
@@ -36,6 +36,19 @@ SELECTION = [
     ('30701', 'chicheng', '赤城', '舰载机打击'),
     ('30705', 'xianghe', '翔鹤', '远洋航母打击'),
     ('30801', 'i19', '伊19', '潜艇伏击与隐蔽机动'),
+    # Third wave: broaden the sandbox roster across six additional factions.
+    ('50101', 'anshan', '鞍山', '驱逐舰护航与反潜'),
+    ('50201', 'yixian', '逸仙', '轻巡洋舰与近海支援'),
+    ('60501', 'weineituo', '维托里奥·维内托', '战列舰主炮打击'),
+    ('60302', 'zhala', '扎拉', '重巡洋舰炮战'),
+    ('10709', 'aisaikesi', '埃塞克斯', '舰载机打击与制空'),
+    ('70501', 'gangute', '甘古特', '战列舰近海火力'),
+    ('70301', 'talin', '塔林', '重巡洋舰编队支援'),
+    ('80501', 'lisailiu', '黎塞留', '战列舰主炮打击'),
+    ('80801', 'xukufu', '絮库夫', '大型潜艇伏击'),
+    ('90501', 'rangbaer', '让·巴尔', '战列舰主炮打击'),
+    ('90301', 'fuxu', '福煦', '重巡洋舰炮战'),
+    ('110101', 'aifosen', '埃佛森', '驱逐舰护航'),
 ]
 TYPES = {1: ('DD', '驱逐舰'), 2: ('CL', '轻巡洋舰'), 3: ('CA', '重巡洋舰'),
          5: ('BB', '战列舰'), 6: ('CVL', '轻型航空母舰'), 7: ('CV', '航空母舰'),
