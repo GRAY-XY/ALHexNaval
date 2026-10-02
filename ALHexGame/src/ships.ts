@@ -205,6 +205,11 @@ export class ShipRenderer {
     v.pendingDeath=false;v.reaction=undefined;v.motion=undefined;v.root.position.copyFrom(cellCenter(v.unit));v.root.alpha=1;v.animation.reset();
   }
   get moving(): boolean { return this.visuals.some(v => !!v.motion); }
+  get combatAnimating(): boolean { return this.effects.length>0; }
+  finishCombatEffects():void{
+    for(const effect of this.effects){if(!effect.impacted)this.impact(effect.target,effect.event.sunk);effect.root.destroy({children:true});}
+    this.effects=[];
+  }
   finishMotion(): void {
     for (const visual of this.visuals) { visual.motion = undefined; const p = cellCenter(visual.unit); visual.root.position.set(p.x, p.y); visual.root.zIndex = p.y; }
   }

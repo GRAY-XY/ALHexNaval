@@ -364,16 +364,15 @@ export function resolveAviationTurn(match:Match,ownerId:number,eligibleIds?:Read
       if(air&&s.role==='fighter'&&match.airVisible(air,s.ownerId)){
         moveForTurn(match,s,air,FIGHTER_RANGE);
         match.refreshVision();
-        if(s.ammo&&!s.cooldown&&fighterInRange(s,air))intercept(match,s,air,removed,events);
-        s.order='patrol';s.targetId=undefined;
+        if(s.ammo&&!s.cooldown&&fighterInRange(s,air)&&intercept(match,s,air,removed,events)){s.order='patrol';s.targetId=undefined;}
       }else if(ship&&s.role!=='fighter'&&(!(ship.asset.ship_type.code==='SS'&&ship.submerged)||s.role==='bomber')&&match.unitVisible(ship,s.ownerId)){
         let screened=false;
         const screenAtStep=()=>{
           if(!screened&&fighterScreen(match,s,events,removed))screened=true;
           return s.hp>0;
         };
-        screenAtStep();
-        const inRange=moveForTurn(match,s,cellCenter(ship),1,screenAtStep);match.refreshVision();
+        const survivesInitialScreen=screenAtStep();
+        const inRange=survivesInitialScreen&&moveForTurn(match,s,cellCenter(ship),1,screenAtStep);match.refreshVision();
         if(inRange&&match.unitVisible(ship,s.ownerId)){
           if(!screened)screenAtStep();
           if(s.hp>0&&s.ammo&&!s.cooldown){s.ammo--;s.cooldown=7;events.push(match.airDamage(s,ship.instanceId));if(s.hp<=0)removed.add(s.id);}

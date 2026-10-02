@@ -1,22 +1,25 @@
 import { Assets, Container, Graphics, Sprite, Text, TextStyle } from 'pixi.js';
 import { aircraftActionText, aircraftPosition, aircraftRoute, planeTexture, squadronName, type AircraftMoveEvent, type Squadron, AIR_NATIONS, FIGHTER_RANGE } from './aircraft.ts';
 import { cellCenter, fromAxial, hexDistance, hexVertices, toAxial, worldToCell } from './hex.ts';
-import { TEAM_COLORS, type Match } from './match.ts';
-import type { Point, ViewBounds } from './types.ts';
+import { TEAM_COLORS, type CombatEvent, type Match } from './match.ts';
+import type { Cell, Point, ViewBounds } from './types.ts';
 
 export async function loadCombatTextures(): Promise<void> {
   const paths = ['shell','torpedo','bomb',...AIR_NATIONS.flatMap(n => ['fighter','bomber','torpedo'].map(role => `${n.id}-${role}`))];
   await Promise.all(paths.map(name => Assets.load(new URL(`./assets/combat/${name}.png`,document.baseURI).href)));
 }
 interface AirVisual { root: Container; marker: Graphics; planes: Sprite[]; label: Text; motion?:{from:Point;to:Point;started:number;duration:number} }
+interface AirCombatVisual { root:Container; graphic:Graphics; from:Point; to:Point; started:number; duration:number }
 export class AircraftRenderer {
   readonly container = new Container();
   private range = new Graphics();
   private cells = new Graphics();
   private routes = new Graphics();
+  private combatLayer = new Container();
   private visuals = new Map<string,AirVisual>();
-  constructor() { this.container.eventMode = 'none'; this.container.addChild(this.range,this.cells,this.routes); }
-  update(squadrons: Squadron[], bounds: ViewBounds, zoom: number, selected=new Set<string>(),match?:Match): void {
+  private combatEffects:AirCombatVisual[]=[];
+  constructor() { this.container.eventMode = 'none'; this.combatLayer.sortableChildren=true;this.container.addChild(this.range,this.cells,this.routes,this.combatLayer); }
+  update(squadrons: Squadron[], bounds: ViewBounds, zoom: number, selected=new Set<string>(),match?:Match,routeOwnerId=match?.active.id): void {
     this.range.clear();
     this.cells.clear();
     this.routes.clear();
@@ -26,17 +29,27 @@ export class AircraftRenderer {
       if(s.flight)this.cells.lineStyle(1,color,.5).drawPolygon(hexVertices(cellCenter(s.flight.next),39).flatMap(p=>[p.x,p.y]));
       if(s.destination)this.cells.lineStyle(2,color,1).beginFill(color,.12).drawPolygon(hexVertices(s.destination,39).flatMap(p=>[p.x,p.y])).endFill();
     }
-    if(match)for(const s of squadrons.filter(s=>s.ownerId===match.active.id&&s.order==='move'&&s.destination)){
-      const current=aircraftPosition(s),start=s.flight?.next??worldToCell(s),route=aircraftRoute(match,start,worldToCell(s.destination!));
-      if(!route?.length)continue;
-      const points=s.flight?[current,...route.map(cellCenter)]:route.map(cellCenter);
+    if(match)for(const s of squadrons.filter(s=>s.ownerId===routeOwnerId&&(s.order==='move'&&s.destination||s.order==='attack'&&s.targetId))){
+      const attacking=s.order==='attack',current=aircraftPosition(s),start=s.flight?.next??worldToCell(s);
+      let targetCell:Cell|undefined;
+      if(attacking){
+        const air=match.aviation.squadrons.find(target=>target.id===s.targetId),ship=match.units.find(target=>target.instanceId===s.targetId);
+        if(air&&match.airVisible(air,s.ownerId))targetCell=worldToCell(air);
+        else if(ship&&match.unitVisible(ship,s.ownerId))targetCell=ship;
+      }else if(s.destination)targetCell=worldToCell(s.destination);
+      if(!targetCell)continue;
+      const route=aircraftRoute(match,start,targetCell);
+      let points=route?.length?(s.flight?[current,...route.map(cellCenter)]:route.map(cellCenter)):[current,cellCenter(targetCell)];
+      if(points.length<2)points=[current,cellCenter(targetCell)];
       if(points.length<2)continue;
-      const color=TEAM_COLORS[s.ownerId-1]??0xb6f3d6;
+      const color=attacking?0xf04448:TEAM_COLORS[s.ownerId-1]??0xb6f3d6;
       for(let i=1;i<points.length;i++){
         this.routes.lineStyle(4/zoom,0x0b2234,.78).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
         this.routes.lineStyle(2.2/zoom,color,.95).moveTo(points[i-1].x,points[i-1].y).lineTo(points[i].x,points[i].y);
         if(i<points.length-1)this.routes.beginFill(color,.9).drawCircle(points[i].x,points[i].y,2.8/zoom).endFill();
       }
+      const end=points[points.length-1],before=points[points.length-2],angle=Math.atan2(end.y-before.y,end.x-before.x),size=10/zoom,half=5/zoom;
+      this.routes.beginFill(color,.98).drawPolygon([end.x,end.y,end.x-Math.cos(angle)*size-Math.sin(angle)*half,end.y-Math.sin(angle)*size+Math.cos(angle)*half,end.x-Math.cos(angle)*size+Math.sin(angle)*half,end.y-Math.sin(angle)*size-Math.cos(angle)*half]).endFill();
     }
     const fighter = squadrons.find(s=>selected.has(s.id) && s.role==='fighter');
     if (fighter) {
@@ -79,6 +92,13 @@ export class AircraftRenderer {
       });
       visual.label.text = `${squadronName(s)}\n行动力 ${aircraftActionText(s)}`; visual.label.visible = zoom >= .58 || selectedNow;
     }
+    const now=performance.now();
+    for(const effect of [...this.combatEffects]){
+      const t=Math.max(0,Math.min(1,(now-effect.started)/effect.duration)),progress=Math.min(1,t/.72),x=effect.from.x+(effect.to.x-effect.from.x)*progress,y=effect.from.y+(effect.to.y-effect.from.y)*progress;
+      effect.graphic.clear().lineStyle(5,0x5b151a,.8).moveTo(effect.from.x,effect.from.y).lineTo(x,y).lineStyle(2.4,0xff4a43,1).moveTo(effect.from.x,effect.from.y).lineTo(x,y);
+      if(t>=.72)effect.graphic.lineStyle(3,0xffc477,Math.max(0,1-(t-.72)*3.5)).drawCircle(effect.to.x,effect.to.y,7+(t-.72)*44);
+      if(t>=1){effect.root.destroy({children:true});this.combatEffects=this.combatEffects.filter(item=>item!==effect);}
+    }
   }
   move(events:AircraftMoveEvent[],animate=true):void{
     for(const event of events){const visual=this.visuals.get(event.id);if(!visual)continue;
@@ -86,9 +106,20 @@ export class AircraftRenderer {
       else{visual.motion=undefined;visual.root.position.set(event.to.x,event.to.y);}
     }
   }
+  playCombat(event:CombatEvent,targetPosition:Point|undefined,animate=true):void{
+    if(!event.targetIsAircraft||!targetPosition||!animate)return;
+    const from=event.origin??this.visuals.get(event.attackerId)?.root.position;
+    if(!from)return;
+    const root=new Container(),graphic=new Graphics();root.zIndex=100000;root.addChild(graphic);this.combatLayer.addChild(root);
+    this.combatEffects.push({root,graphic,from:{x:from.x,y:from.y},to:{x:targetPosition.x,y:targetPosition.y},started:performance.now(),duration:.56});
+  }
+  get moving():boolean{return [...this.visuals.values()].some(visual=>!!visual.motion);}
+  get combatAnimating():boolean{return this.combatEffects.length>0;}
+  finishMotion(squadrons:Squadron[]):void{for(const squadron of squadrons){const visual=this.visuals.get(squadron.id);if(!visual)continue;visual.motion=undefined;const point=aircraftPosition(squadron);visual.root.position.set(point.x,point.y);}}
+  finishCombatEffects():void{for(const effect of this.combatEffects)effect.root.destroy({children:true});this.combatEffects=[];}
   pick(point: Point, squadrons: Squadron[]): Squadron | undefined {
     const distance=(s:Squadron)=>{const p=aircraftPosition(s);return Math.hypot(p.x-point.x,p.y-point.y);};
     return squadrons.filter(s=>distance(s)<48).sort((a,b)=>distance(a)-distance(b))[0];
   }
-  destroy(): void { this.container.destroy({ children: true, texture: false, baseTexture: false }); this.visuals.clear(); }
+  destroy(): void { this.combatEffects=[];this.container.destroy({ children: true, texture: false, baseTexture: false }); this.visuals.clear(); }
 }

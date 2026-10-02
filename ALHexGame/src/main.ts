@@ -108,6 +108,8 @@ class NavalMap {
   private setupControllers:TeamController[]=Array.from({length:TEAM_NAMES.length},()=> 'human');
   private aiRunning=false;
   private aiGeneration=0;
+  private handoverRunning=false;
+  private handoverOwnerId?:number;
   private keyState = new Set<string>();
   private resizeObserver: ResizeObserver;
   private drag?: { id: number; start: Point; last: Point; moved: boolean; mode: 'box' | 'pan' | 'order'; additive: boolean };
@@ -411,6 +413,7 @@ class NavalMap {
     button.disabled=false;button.textContent = this.airPaused ? '▶ 继续飞行' : 'Ⅱ 暂停飞行'; button.setAttribute('aria-pressed',String(this.airPaused));
   }
   private airCommand(id: string, point?: Point, targetId?: string,clear=false): void {
+    if(this.handoverRunning)return;
     if(this.match.active.controller==='ai'){this.notify('AI正在指挥当前势力，请等待自动交接回合');return;}
     try { if(clear)cancelSquadronOrder(this.match,id);else commandSquadron(this.match,id,point,targetId); this.renderAirControls(); this.renderSelection(); this.dirty = true; this.persist(); }
     catch (error) { this.notify(error instanceof Error ? error.message : String(error)); }
@@ -420,46 +423,84 @@ class NavalMap {
     this.messageTimer = setTimeout(() => { $('message').hidden = true; }, 5200);
   }
   private updateAiBanner(detail?:string):void {
-    const visible=this.ready&&!this.match.sandboxEditing&&!this.match.result&&this.match.active.controller==='ai'&&$('front-end').hidden;
-    document.body.classList.toggle('ai-turn',visible);$('ai-turn-banner').hidden=!visible;
+    const handover=this.handoverRunning&&this.ready&&!this.match.sandboxEditing&&$('front-end').hidden,
+      aiTurn=this.ready&&!this.match.sandboxEditing&&!this.match.result&&this.match.active.controller==='ai'&&$('front-end').hidden,
+      visible=handover||aiTurn;
+    document.body.classList.toggle('turn-handover',handover);document.body.classList.toggle('ai-turn',aiTurn&&!handover);$('ai-turn-banner').hidden=!visible;
     for(const panel of document.querySelectorAll<HTMLElement>('.workspace,.statusbar')){panel.inert=visible;if(visible)panel.setAttribute('aria-hidden','true');else panel.removeAttribute('aria-hidden');}
-    if(visible){$('ai-turn-title').textContent=`${this.match.active.name} · AI行动中`;$('ai-turn-detail').textContent=detail??'海图与行动过程已隐藏，交接回玩家后重新显示';}
+    if(handover){const acting=this.handoverOwnerId?this.match.team(this.handoverOwnerId).name:'本方',next=this.match.active.id===this.handoverOwnerId?'行动结算中':`交接至 ${this.match.active.name}`;$('ai-turn-title').textContent=`${acting} · ${next}`;$('ai-turn-detail').textContent=detail??'舰船与飞机抵达后，再交接指挥权';}
+    else if(aiTurn){$('ai-turn-title').textContent=`${this.match.active.name} · AI行动中`;$('ai-turn-detail').textContent=detail??'海图与行动过程已隐藏，交接回玩家后重新显示';}
   }
-  private advanceTurn():MoveEvent[]{
+  private get viewOwnerId():number{return this.handoverOwnerId??this.match.active.id;}
+  private async waitForMovement(match:Match):Promise<void>{
+    while(match===this.match&&(this.ships.moving||this.aircraft.moving)){
+      if(this.animationsPaused){this.ships.finishMotion();this.aircraft.finishMotion(match.aviation.squadrons);break;}
+      await delay(16);
+    }
+  }
+  private async waitForCombatAnimations(match:Match):Promise<void>{
+    while(match===this.match&&(this.ships.combatAnimating||this.aircraft.combatAnimating)){
+      if(this.animationsPaused){this.ships.finishCombatEffects();this.aircraft.finishCombatEffects();break;}
+      await delay(16);
+    }
+  }
+  private async advanceTurn():Promise<void>{
+    if(this.handoverRunning)return;
     if(this.match.sandboxEditing)throw Error('请先完成沙盒布阵，再开始对战');
-    const combatOwners=new Map<string,number>([
-      ...this.match.units.map(unit=>[unit.instanceId,unit.ownerId] as const),
-      ...this.match.aviation.squadrons.map(squadron=>[squadron.id,squadron.ownerId] as const),
-    ]),events=this.match.endTurn();
-    this.ships.syncUnits(this.match.units);
-    const viewerId=this.match.active.id;
-    for(const combat of this.match.takeResolvedCombatEvents()){
-      if(combatOwners.get(combat.attackerId)!==viewerId&&combatOwners.get(combat.targetId)!==viewerId)continue;
-      if(combat.targetIsAircraft)this.notify(`${combat.attackerLabel??combat.attackerId}拦截${combat.targetLabel??'敌机'} · 造成 ${combat.damage} 点机体伤害`);
-      else{this.ships.playCombat(combat,!this.animationsPaused);if(combat.kind==='asw'){const attacker=this.match.units.find(unit=>unit.instanceId===combat.attackerId),name=combat.attackerLabel??attacker?.asset.name??'舰载轰炸机';this.notify(`${name}执行反潜攻击 · ${combat.hit?'命中':'未命中'} · 造成 ${combat.damage} 点伤害`);}else if(combat.aa){const result=combat.aa.dice.length?`防空骰 ${combat.aa.dice.join('+')}`:'无防空骰';this.notify(`${this.match.unit(combat.targetId).asset.name}防空 · ${result} · 击落 ${combat.aa.aircraftLost} 架 · 压制 ${combat.aa.suppression} · 空袭伤害 ${combat.damage}`);}
+    const match=this.match,actingOwnerId=match.active.id,combatOwners=new Map<string,number>([
+      ...match.units.map(unit=>[unit.instanceId,unit.ownerId] as const),
+      ...match.aviation.squadrons.map(squadron=>[squadron.id,squadron.ownerId] as const),
+    ]),airPositions=new Map(match.aviation.squadrons.map(squadron=>[squadron.id,aircraftPosition(squadron)] as const));
+    this.handoverRunning=true;this.handoverOwnerId=actingOwnerId;this.updateAiBanner();
+    const end=$<HTMLButtonElement>('end-turn');end.textContent='移动结算中…';end.disabled=true;
+    let resolved=false;
+    try{
+      await this.waitForMovement(match);
+      if(match!==this.match)return;
+      const shipMoves=match.endTurn();resolved=true;this.ships.syncUnits(match.units);
+      const viewerId=match.active.id,combats=match.takeResolvedCombatEvents(),airMoves=match.takeResolvedAviationMoves(),launches=match.takeResolvedAviationLaunches();
+      this.updateAiBanner();
+      const visibleAirMoves=airMoves.filter(move=>combatOwners.get(move.id)===actingOwnerId||match.canSee(actingOwnerId,worldToCell(move.from))&&match.canSee(actingOwnerId,worldToCell(move.to)));
+      this.ships.move(shipMoves,!this.animationsPaused);this.aircraft.move(visibleAirMoves,!this.animationsPaused);
+      this.revision++;this.routeCacheKey='';this.dirty=true;this.persist();
+      await this.waitForMovement(match);
+      if(match!==this.match)return;
+      this.handoverOwnerId=viewerId;this.dirty=true;this.updateView();
+      for(const carrierId of launches)this.ships.playAction(carrierId,'skill',!this.animationsPaused);
+      for(const combat of combats){
+        if(combatOwners.get(combat.attackerId)!==viewerId&&combatOwners.get(combat.targetId)!==viewerId)continue;
+        if(combat.targetIsAircraft){this.aircraft.playCombat(combat,airPositions.get(combat.targetId),!this.animationsPaused);this.notify(`${combat.attackerLabel??combat.attackerId}拦截${combat.targetLabel??'敌机'} · 造成 ${combat.damage} 点机体伤害`);}
+        else{this.ships.playCombat(combat,!this.animationsPaused);if(combat.kind==='asw'){const attacker=match.units.find(unit=>unit.instanceId===combat.attackerId),name=combat.attackerLabel??attacker?.asset.name??'舰载轰炸机';this.notify(`${name}执行反潜攻击 · ${combat.hit?'命中':'未命中'} · 造成 ${combat.damage} 点伤害`);}else if(combat.aa){const target=match.units.find(unit=>unit.instanceId===combat.targetId);if(target){const result=combat.aa.dice.length?`防空骰 ${combat.aa.dice.join('+')}`:'无防空骰';this.notify(`${target.asset.name}防空 · ${result} · 击落 ${combat.aa.aircraftLost} 架 · 压制 ${combat.aa.suppression} · 空袭伤害 ${combat.damage}`);}}
+      }
+      }
+      await this.waitForCombatAnimations(match);
+      if(match!==this.match)return;
+      const next=match.nextPending()??match.units.find(u=>u.ownerId===match.active.id&&u.status!=='sunk')??match.units.find(u=>u.ownerId===match.active.id);
+      this.chosen.clear();this.chosenAir.clear();this.selectedWeapon=undefined;this.selectedAir=undefined;this.selectedPort=undefined;this.selected=next?.instanceId;
+      if(this.selected)this.chosen.add(this.selected);this.renderAirControls();this.home();
+    }catch(error){this.notify(error instanceof Error?error.message:String(error));}
+    finally{
+      this.handoverRunning=false;this.handoverOwnerId=undefined;
+      if(match===this.match){if(resolved){this.renderSelection();this.renderAirControls();this.renderTurn();this.persist();}else this.renderTurn();this.dirty=true;}
+      this.updateAiBanner();
     }
-    }
-    const visibleAirMoves=this.match.takeResolvedAviationMoves().filter(move=>combatOwners.get(move.id)===viewerId||this.match.canSee(viewerId,worldToCell(move.from))&&this.match.canSee(viewerId,worldToCell(move.to)));
-    this.aircraft.move(visibleAirMoves,!this.animationsPaused);
-    for(const carrierId of this.match.takeResolvedAviationLaunches())this.ships.playAction(carrierId,'skill',!this.animationsPaused);
-    const next=this.match.nextPending()??this.units.find(u=>u.ownerId===this.match.active.id&&u.status!=='sunk')??this.units.find(u=>u.ownerId===this.match.active.id);
-    this.chosen.clear();this.chosenAir.clear();this.selectedWeapon=undefined;this.selectedAir=undefined;this.selectedPort=undefined;this.selected=next?.instanceId;
-    if(this.selected)this.chosen.add(this.selected);this.renderAirControls();this.home();return events;
   }
   private async runAiTurnIfNeeded():Promise<void>{
     if(this.match.sandboxEditing)return;
-    if(this.aiRunning||!this.ready||this.menuPaused||this.match.result||this.match.active.controller!=='ai'||document.querySelector('dialog[open]'))return;
+    if(this.aiRunning||this.handoverRunning||!this.ready||this.menuPaused||this.match.result||this.match.active.controller!=='ai'||document.querySelector('dialog[open]'))return;
     this.aiRunning=true;const generation=this.aiGeneration,match=this.match,teamId=match.active.id;this.updateAiBanner('海图与行动过程已隐藏，正在等待AI完成回合…');
     try{
       await delay(320);if(generation!==this.aiGeneration||match!==this.match||this.menuPaused||match.active.id!==teamId)return;
       const report=executeAiTurn(match);this.ships.move(report.moves,!this.animationsPaused);
-      for(const event of report.combats)this.ships.playCombat(event,!this.animationsPaused);
       this.revision++;this.routeCacheKey='';this.renderSelection();this.renderTurn();this.dirty=true;this.persist();this.updateAiBanner('AI正在完成回合，稍后交接给下一位玩家…');
-      await delay(this.animationsPaused?260:1050);
+      await this.waitForMovement(match);
+      for(const event of report.combats)this.ships.playCombat(event,!this.animationsPaused);
+      await this.waitForCombatAnimations(match);
+      await delay(this.animationsPaused?120:650);
       while(this.menuPaused&&generation===this.aiGeneration&&match===this.match)await delay(150);
       if(generation!==this.aiGeneration||match!==this.match||match.active.id!==teamId||match.result)return;
-      const events=this.advanceTurn();this.ships.move(events,!this.animationsPaused);this.revision++;this.routeCacheKey='';this.renderSelection();this.renderTurn();this.dirty=true;this.persist();
-    }catch(error){console.error(error);this.notify(`AI回合发生错误：${error instanceof Error?error.message:String(error)}`);try{if(match===this.match&&!match.result&&match.active.id===teamId)this.advanceTurn();}catch{/* Keep the current state available for inspection. */}}
+      await this.advanceTurn();
+    }catch(error){console.error(error);this.notify(`AI回合发生错误：${error instanceof Error?error.message:String(error)}`);try{if(match===this.match&&!match.result&&match.active.id===teamId)await this.advanceTurn();}catch{/* Keep the current state available for inspection. */}}
     finally{this.aiRunning=false;this.updateAiBanner();}
   }
   private renderTurn(): void {
@@ -483,12 +524,12 @@ class NavalMap {
     $('move-mode').setAttribute('aria-pressed', String(this.moveMode));
     this.renderSelectionCount();
     this.campaignUI.render();
-    const end=$<HTMLButtonElement>('end-turn');end.textContent=v2?'执行并交接 →':'结束回合 →';end.disabled=ai||!!this.match.result;
+    const end=$<HTMLButtonElement>('end-turn');end.textContent=this.handoverRunning?'移动结算中…':v2?'执行并交接 →':'结束回合 →';end.disabled=this.handoverRunning||ai||!!this.match.result;
     $<HTMLButtonElement>('move-mode').disabled=ai||!!this.match.result||!!this.selectedPort;
     this.updateAiBanner();
   }
   private command(action: () => MoveEvent[], message?: string|(()=>string)): void {
-    if (!this.ready) return;
+    if (!this.ready||this.handoverRunning) return;
     if(this.match.active.controller==='ai'){this.notify('AI正在指挥当前势力，请等待自动交接回合');return;}
     try { this.match.assertPlayable();const events = action(); this.ships.move(events, !this.animationsPaused); this.revision++; this.routeCacheKey = '';
       this.renderSelection(); this.renderTurn(); this.dirty = true; this.persist(); if (message) this.notify(typeof message==='function'?message():message);
@@ -648,7 +689,7 @@ class NavalMap {
     $('front-end').hidden = false; document.body.classList.add('front-active');this.updateAiBanner(); $<HTMLButtonElement>('continue-match').focus(); $('app').setAttribute('aria-hidden','true');
   }
   private openPause(): void {
-    if (!this.ready || !$('front-end').hidden) return;
+    if (!this.ready || this.handoverRunning || !$('front-end').hidden) return;
     this.menuPaused = true; this.keyState.clear(); this.endDrag(); this.updateMenuSummary();this.updateAiBanner(); $<HTMLDialogElement>('pause-dialog').showModal();
   }
   private closePause(): void {
@@ -726,8 +767,8 @@ class NavalMap {
     $('sandbox-panel-toggle').onclick=()=>this.setUnitPanel($('sandbox-panel-toggle').getAttribute('aria-expanded')!=='true');
     $('close-unit-panel').onclick=()=>this.setUnitPanel(false);
     $('end-turn').onclick = () => {
-      const round=this.match.round,v2=this.match.rulesetId==='naval-v2';
-      this.command(() => this.advanceTurn(), () => !v2?'已交接指挥权；石油已补满当前上限':this.match.round>round?`本方命令已执行，进入第 ${this.match.round} 轮`:'本方命令已执行，交接给下一势力');
+      if(this.handoverRunning)return;
+      void this.advanceTurn().catch(error=>this.notify(error instanceof Error?error.message:String(error)));
     };
     $('next-unit').onclick = () => { const unit = this.match.nextPending(this.selected); if (unit) this.select(unit.instanceId, true); };
     $('move-mode').onclick = () => { this.moveMode = !this.moveMode; this.selectedWeapon = undefined; this.renderSelection(); this.renderTurn(); this.dirty = true; };
@@ -908,6 +949,7 @@ class NavalMap {
         if(!$('front-end').hidden){if(!$('skirmish-page').hidden||!$('campaign-page').hidden||!$('sandbox-setup-page').hidden)this.showFrontPage('main');return;}
         if(this.ready){this.openPause();return;}
       }
+      if(this.handoverRunning)return;
       if (!this.ready || this.menuPaused || openDialog || /INPUT|SELECT|TEXTAREA/.test((event.target as HTMLElement).tagName)) return;
       if(this.match.active.controller==='ai'&&!this.match.sandboxEditing)return;
       if (['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].includes(key)) { event.preventDefault(); this.keyState.add(key); }
@@ -955,7 +997,7 @@ class NavalMap {
       const minCol = Math.max(0, Math.floor(bounds.left / HEX_WIDTH) - 1), maxCol = Math.min(this.world.width - 1, Math.ceil(bounds.right / HEX_WIDTH));
       if ((maxRow - minRow + 1) * (maxCol - minCol + 1) <= 4000)
       for (let row = minRow; row <= maxRow; row++) for (let col = minCol; col <= maxCol; col++) {
-        const cell = { col, row }; if (!this.world.contains(cell)||this.match.fog.state(this.match.active.id,cell)===0) continue;
+        const cell = { col, row }; if (!this.world.contains(cell)||this.match.fog.state(this.viewOwnerId,cell)===0) continue;
         this.grid.drawPolygon(hexVertices(cellCenter(cell)).flatMap(p => [p.x, p.y]));
       }
     }
@@ -1005,18 +1047,18 @@ class NavalMap {
     const camera = this.camera;
     this.worldLayer.scale.set(camera.zoom);
     this.worldLayer.position.set(camera.viewportWidth / 2 - camera.x * camera.zoom, camera.viewportHeight / 2 - camera.y * camera.zoom);
-    this.match.refreshVision();const bounds = camera.viewBounds(); this.terrain.updateView(bounds, camera.zoom); this.fog.update(bounds,camera.zoom,this.match.active.id);
+    const viewerId=this.viewOwnerId;this.match.refreshVision();const bounds = camera.viewBounds(); this.terrain.updateView(bounds, camera.zoom); this.fog.update(bounds,camera.zoom,viewerId);
     this.ships.syncUnits(this.match.units);
-    this.ships.updateView(bounds, camera.zoom, this.chosen, this.match.active.id,u=>this.match.unitVisible(u),this.match.rulesetId);
-    this.contacts.update(this.match.contactsFor(),bounds,camera.zoom);
-    this.aircraft.update(this.match.aviation.squadrons.filter(s=>this.match.airVisible(s)),bounds,camera.zoom,this.chosenAir,this.match);
-    const ports=this.match.knownPorts(),occupiedPorts=new Set(this.units.filter(u=>u.status!=='sunk'&&this.match.unitVisible(u)).map(cellKey));this.ports.update(ports,bounds,camera.zoom,occupiedPorts,this.selectedPort);
-    this.updateRoute(); this.drawGrid(); this.minimap.draw(this.fog.overviewCanvas,u=>this.match.unitVisible(u),ports,this.selectedPort);
-    $('fog-info').textContent=this.match.sandboxEditing?`沙盒编辑 · 全图可见 · 已放置 ${this.units.length} 艘舰船`:`战争迷雾 · ${this.match.rulesetId==='naval-v2'?'舰船按舰种2–4格':`舰船${SHIP_VISION}格`} / 飞机${AIR_VISION}格 · 已探索 ${(this.match.fog.field(this.match.active.id).known.size/(this.world.width*this.world.height)*100).toFixed(1)}%`;
+    this.ships.updateView(bounds, camera.zoom, this.chosen, viewerId,u=>this.match.unitVisible(u,viewerId),this.match.rulesetId);
+    this.contacts.update(this.match.contactsFor(viewerId),bounds,camera.zoom);
+    this.aircraft.update(this.match.aviation.squadrons.filter(s=>this.match.airVisible(s,viewerId)),bounds,camera.zoom,this.chosenAir,this.match,viewerId);
+    const ports=this.match.knownPorts(viewerId),occupiedPorts=new Set(this.units.filter(u=>u.status!=='sunk'&&this.match.unitVisible(u,viewerId)).map(cellKey));this.ports.update(ports,bounds,camera.zoom,occupiedPorts,this.selectedPort);
+    this.updateRoute(); this.drawGrid(); this.minimap.draw(this.fog.overviewCanvas,u=>this.match.unitVisible(u,viewerId),ports,this.selectedPort);
+    $('fog-info').textContent=this.match.sandboxEditing?`沙盒编辑 · 全图可见 · 已放置 ${this.units.length} 艘舰船`:`战争迷雾 · ${this.match.rulesetId==='naval-v2'?'舰船按舰种2–4格':`舰船${SHIP_VISION}格`} / 飞机${AIR_VISION}格 · 已探索 ${(this.match.fog.field(viewerId).known.size/(this.world.width*this.world.height)*100).toFixed(1)}%`;
     $('zoom-level').textContent = `${Math.round(camera.zoom * 100)}%`;
     $('map-mode').textContent = this.match.sandboxEditing?'沙盒编辑 · 选择舰船后点击海格放置':this.match.sandboxMode?'沙盒对战 · 自由布阵':camera.zoom < .36 ? '战略总览 · 全海域' : camera.zoom < .58 ? '海域视图 · 舰种标记' : '战术视图 · 舰船详情';
     $('cell-info').textContent = this.hovered && this.world.contains(this.hovered)
-      ? `${this.match.isExplored(this.match.active.id,this.hovered)?TERRAIN_LABELS[this.world.at(this.hovered)!]:'未探索海域'}${!this.match.sandboxEditing&&this.match.isExplored(this.match.active.id,this.hovered)&&!this.match.canSee(this.match.active.id,this.hovered)?' · 视野外':''} · ${this.hovered.col}, ${this.hovered.row}` : this.match.sandboxEditing?'左键放置 / 选择舰船 · 右键移除 · 中键 / WASD平移':'左键框选 · 右键移动 · 中键 / WASD平移';
+      ? `${this.match.isExplored(viewerId,this.hovered)?TERRAIN_LABELS[this.world.at(this.hovered)!]:'未探索海域'}${!this.match.sandboxEditing&&this.match.isExplored(viewerId,this.hovered)&&!this.match.canSee(viewerId,this.hovered)?' · 视野外':''} · ${this.hovered.col}, ${this.hovered.row}` : this.match.sandboxEditing?'左键放置 / 选择舰船 · 右键移除 · 中键 / WASD平移':'左键框选 · 右键移动 · 中键 / WASD平移';
     this.dirty = false;
   }
   private tick(): void {
@@ -1044,8 +1086,8 @@ class NavalMap {
       if (this.airUIElapsed >= 1 || events.length || countChanged) { this.airUIElapsed = 0; this.pruneSelection();this.renderAirControls();this.renderSelectionCount(); if (this.chosenAir.size || events.length || countChanged) this.renderSelection(); this.persist(); }
     }
     this.match.refreshVision();if(this.visionRevision!==this.match.fog.revision){this.visionRevision=this.match.fog.revision;this.revision++;this.routeCacheKey='';if(this.selectedPort)this.renderSelection();this.dirty=true;}
-    if(this.campaignRevision!==this.match.campaignRevision){this.campaignRevision=this.match.campaignRevision;this.campaignUI.render();this.dirty=true;}
-    if (this.ships.moving || this.previewTargetKey !== this.routeCacheKey && performance.now() >= this.previewDue) this.dirty = true;
+    if(this.campaignRevision!==this.match.campaignRevision){this.campaignRevision=this.match.campaignRevision;if(!this.handoverRunning)this.campaignUI.render();this.dirty=true;}
+    if (this.ships.moving||this.aircraft.moving||this.ships.combatAnimating||this.aircraft.combatAnimating || this.previewTargetKey !== this.routeCacheKey && performance.now() >= this.previewDue) this.dirty = true;
     if (this.dirty) this.updateView(); this.terrain.buildPending(); this.ships.update(delta, this.animationsPaused ? 0 : delta);
     this.renderedFrames++; this.frames++; this.elapsed += elapsedSeconds;
     if (this.elapsed > .75) {

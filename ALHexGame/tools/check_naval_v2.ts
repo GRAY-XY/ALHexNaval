@@ -589,6 +589,29 @@ check('V3 bomber movement advances at most three hexes per own turn',()=>{
   assert.equal(hexDistance(start,worldToCell(bomber)),3);assert.equal(bomber.actionPoints,17);assert.equal(bomber.order,'move');assert.deepEqual(worldToCell(bomber.destination!),destination);
 });
 
+check('V3 fighter keeps a distant interception order until it can engage',()=>{
+  const m=new Match(new HexWorld(5,10,'test-5x10'),assets,2),attackerCarrier=m.unit('team-1-qiye'),targetCarrier=m.unit('team-2-qiye');
+  m.units.filter(unit=>unit!==attackerCarrier&&unit!==targetCarrier).forEach(sink);
+  Object.assign(attackerCarrier,{col:0,row:0,status:'ready',hp:attackerCarrier.maxHp});Object.assign(targetCarrier,{col:4,row:9,status:'ready',hp:targetCarrier.maxHp});
+  const cells:Cell[]=[];for(let row=0;row<m.world.height;row++)for(let col=0;col<m.world.width;col++)cells.push({col,row});
+  let layout:{start:Cell;target:Cell}|undefined;
+  for(const start of cells){if(`${start.col},${start.row}`==='0,0'||`${start.col},${start.row}`==='4,9')continue;
+    const target=cells.find(cell=>hexDistance(start,cell)===8&&`${cell.col},${cell.row}`!=='0,0'&&`${cell.col},${cell.row}`!=='4,9');
+    if(target){layout={start,target};break;}
+  }
+  assert(layout,'the compact arena has fighter positions eight hexes apart');
+  const makeFighter=(id:string,ownerId:number,carrierId:string,cell:Cell):Squadron=>({id,carrierId,ownerId,nation:nationFor(m,carrierId),role:'fighter',slot:0,...cellCenter(cell),planes:4,hp:8,maxHp:8,fuelTurns:4,actionPoints:20,ammo:3,cooldown:0,heading:0,order:'patrol'});
+  const attacker=makeFighter('air-101',1,attackerCarrier.instanceId,layout.start),target=makeFighter('air-102',2,targetCarrier.instanceId,layout.target);
+  m.aviation.serial=102;m.aviation.squadrons.push(attacker,target);initializeAviationDecks(m);m.activeIndex=0;m.refreshVision();
+  assert(m.airVisible(target,1),'the attacker can see the target at maximum air-vision range');
+  commandSquadron(m,attacker.id,undefined,target.id);resolveAviationTurn(m,1);
+  assert.equal(attacker.order,'attack');assert.equal(attacker.targetId,target.id,'the attack order persists while the fighter closes the gap');
+  assert(hexDistance(worldToCell(attacker),worldToCell(target))>2,'the first approach ends outside interception range');
+  const second=resolveAviationTurn(m,1);
+  assert.equal(attacker.order,'patrol');assert.equal(attacker.targetId,undefined,'a resolved interception clears its order');
+  assert.equal(target.hp,5);assert(second.combatEvents.some(event=>event.targetIsAircraft&&event.targetId===target.id),'the next side turn resolves the planned interception');
+});
+
 check('V3 fighter CAP intercepts a bomber along its route even when the endpoint is outside the screen',()=>{
   const m=new Match(new HexWorld(5,10,'test-5x10'),assets,2),attackerCarrier=m.unit('team-1-qiye'),defenderCarrier=m.unit('team-2-qiye'),target=m.unit('team-2-lafei'),scout=m.unit('team-1-lafei');
   m.units.filter(unit=>unit!==attackerCarrier&&unit!==defenderCarrier&&unit!==target&&unit!==scout).forEach(sink);
@@ -626,6 +649,10 @@ check('V3 fighter CAP intercepts a bomber along its route even when the endpoint
   assert(hexDistance(worldToCell(bomber),startingScreen)>2,'the bomber exits a ring it occupied at the start of the turn');
   assert.equal(fighter.cooldown,7);assert.equal(bomber.hp,bomber.maxHp-3,'a defender can intercept before the bomber exits the ring');
   assert(startingResolution.combatEvents.some(event=>event.targetIsAircraft&&event.targetId===bomber.id),'the starting-ring intercept is reported');
+  Object.assign(fighter,{cooldown:0,ammo:3,actionPoints:20});Object.assign(bomber,cellCenter(layout.start),{hp:3,actionPoints:20,ammo:3,cooldown:0,order:'patrol',targetId:undefined});target.hp=target.maxHp;m.refreshVision();
+  commandSquadron(m,bomber.id,undefined,target.instanceId);const lethalScreen=resolveAviationTurn(m,1);
+  assert.equal(m.aviation.squadrons.some(squadron=>squadron.id===bomber.id),false,'a bomber destroyed by the initial CAP screen is removed');
+  assert.equal(lethalScreen.moves.some(move=>move.id===bomber.id),false,'a destroyed bomber cannot take an extra hex after being hit');
 });
 
 check('V3 return orders use the carrier position after this turn\'s ship movement',()=>{
