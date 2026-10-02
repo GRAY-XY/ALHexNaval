@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#102839">
   <link rel="icon" href="data:,">
   <title>AL HEX NAVAL</title>
-  <script type="module" crossorigin src="./assets/index-BE9NCOAI.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BuZHEBbq.css">
+  <script type="module" crossorigin src="./assets/index-CvZFVBG8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-XBrD9T8r.css">
 </head>
 <body class="front-active">
   <div id="front-end" class="front-end">
@@ -110,8 +110,10 @@
         <section id="sandbox-editor-panel" class="sandbox-editor-panel" aria-label="沙盒编辑器" hidden>
           <div class="sandbox-team-control"><label for="sandbox-owner">放置到阵营</label><select id="sandbox-owner" aria-label="放置舰船所属阵营"></select><button id="sandbox-controller" type="button"></button></div>
           <p class="sandbox-help">选择舰船后点击海格放置。点击已有舰船可选中并改换队伍；右键舰船可移除。</p>
+          <div class="sandbox-faction-filter"><label for="sandbox-faction">国家 / 阵营</label><select id="sandbox-faction" aria-label="按国家或阵营筛选舰船"></select></div>
           <div class="sandbox-palette-heading"><strong>舰船素材</strong><input id="sandbox-search" type="search" placeholder="搜索舰船" aria-label="搜索舰船素材"></div>
           <div id="sandbox-palette" class="sandbox-palette" role="listbox" aria-label="选择要放置的舰船"></div>
+          <p id="sandbox-palette-empty" class="sandbox-palette-empty" hidden>没有符合条件的舰船。</p>
           <section id="sandbox-selected-tools" class="sandbox-selected-tools" hidden>
             <strong id="sandbox-selected-name"></strong><label for="sandbox-selected-owner">舰船所属阵营</label><select id="sandbox-selected-owner" aria-label="更改已选舰船的阵营"></select><button id="sandbox-remove-selected" type="button">移除选中舰船</button>
           </section>
