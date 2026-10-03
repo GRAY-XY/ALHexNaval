@@ -189,7 +189,7 @@ class NavalMap {
       $('map-summary').textContent = battle?`${battle.date} · ${size} × ${height} 战区示意图`:`${size} × ${height} · ${(size * height).toLocaleString()} 格`;
       $('map-kicker').textContent=battle?`${battle.date} · HISTORICAL THEATER`:this.world.scenarioId==='test-5x10'?'FLEET TEST AREA':'ARCHIPELAGO CHART';
       $('world-title').textContent=battle?battle.title:this.world.scenarioId==='test-5x10'?'舰队测试海域':'晨雾群岛';
-      $('map-mode').textContent=match.sandboxEditing?'沙盒编辑 · 选择舰船后点击海格放置':match.sandboxMode?'沙盒对战 · 自由布阵':'战术视图 · 舰船详情';
+      $('map-mode').textContent=match.sandboxEditing?'沙盒编辑 · 点击空海格放置 · 拖框选择':match.sandboxMode?'沙盒对战 · 自由布阵':'战术视图 · 舰船详情';
       $<HTMLSelectElement>('map-size').value = this.world.scenarioId==='test-5x10'?'test-5x10':battle?'256':String(size);
       $<HTMLSelectElement>('team-count').value = String(match.teams.length);
       this.setupUsesTestMap=this.world.scenarioId==='test-5x10';
@@ -266,12 +266,13 @@ class NavalMap {
     $<HTMLButtonElement>('sandbox-start').disabled=!this.match.teams.some(team=>team.controller==='human')||this.match.teams.some(item=>!this.units.some(unit=>unit.ownerId===item.id&&unit.status!=='sunk'));
   }
   private sandboxUnitAt(point:Point):MatchUnit|undefined {
-    const candidates=this.units.filter(unit=>{const anchor=this.camera.worldToScreen(cellCenter(unit));return Math.abs(point.x-anchor.x)<54*this.camera.zoom&&point.y>anchor.y-92*this.camera.zoom&&point.y<anchor.y+24*this.camera.zoom;});
-    candidates.sort((a,b)=>Math.abs(point.y-this.camera.worldToScreen(cellCenter(a)).y)-Math.abs(point.y-this.camera.worldToScreen(cellCenter(b)).y));return candidates[0];
+    const zoom=this.camera.zoom,halfWidth=Math.max(22,54*zoom),top=Math.max(22,92*zoom),bottom=Math.max(22,24*zoom);
+    const candidates=this.units.filter(unit=>{const anchor=this.camera.worldToScreen(cellCenter(unit));return Math.abs(point.x-anchor.x)<halfWidth&&point.y>anchor.y-top&&point.y<anchor.y+bottom;});
+    candidates.sort((a,b)=>{const pa=this.camera.worldToScreen(cellCenter(a)),pb=this.camera.worldToScreen(cellCenter(b));return Math.hypot(point.x-pa.x,point.y-pa.y)-Math.hypot(point.x-pb.x,point.y-pb.y);});return candidates[0];
   }
   private handleSandboxEditPointer(point:Point,button:number):void {
     const unit=this.sandboxUnitAt(point);
-    if(button===2){if(unit){this.match.removeSandboxShip(unit.instanceId);if(this.sandboxUnitId===unit.instanceId){this.sandboxUnitId=undefined;this.selected=undefined;this.chosen.clear();}this.ships.syncUnits(this.match.units);this.renderSandboxEditor();this.renderSelection();this.persist();this.dirty=true;}return;}
+    if(button===2){if(unit)this.removeSandboxShip(unit.instanceId);return;}
     if(button!==0)return;
     if(unit){this.select(unit.instanceId,false);return;}
     if(!this.sandboxAssetId){this.notify('先从右侧选择一艘舰船');return;}
@@ -279,6 +280,14 @@ class NavalMap {
     try{const placed=this.match.placeSandboxShip(this.sandboxAssetId,this.sandboxOwnerId,cell);this.ships.syncUnits(this.match.units);this.select(placed.instanceId,false);this.persist();this.notify(`${placed.asset.name}已部署到${this.match.team(placed.ownerId).name}`);}
     catch(error){this.notify(error instanceof Error?error.message:String(error));}
     this.dirty=true;
+  }
+  private removeSandboxShip(instanceId:string):void {
+    try{this.match.removeSandboxShip(instanceId);}
+    catch(error){this.notify(error instanceof Error?error.message:String(error));return;}
+    this.chosen.delete(instanceId);
+    if(this.selected===instanceId)this.selected=[...this.chosen][0];
+    this.sandboxUnitId=this.selected;
+    this.ships.syncUnits(this.match.units);this.renderSandboxEditor();this.renderSelection();this.renderSelectionCount();this.persist();this.dirty=true;
   }
   private selectPort(id:string,focus=false):void {
     const view=this.match.knownPorts().find(v=>v.port.id===id);if(!view)return;
@@ -659,7 +668,7 @@ class NavalMap {
     const controllers=Array.from({length:teams},()=> 'human' as TeamController),match=new Match(world,this.assets,teams,controllers,'manual',{sandboxMode:true,sandboxEditing:true});
     if(this.match)this.writeSlot('previous',this.match.save());
     this.sandboxOwnerId=1;this.sandboxUnitId=undefined;this.selected=undefined;
-    await this.installMatch(match);this.persist();this.enterGame();this.setUnitPanel(true);this.notify('沙盒海图已展开 · 选择舰船并点击海格布阵，右键可移除');
+    await this.installMatch(match);this.persist();this.enterGame();this.setUnitPanel(true);this.notify('沙盒海图已展开 · 点击空海格放置，拖框选择，右键移除');
   }
   private startSandboxGame():void {
     try{
@@ -743,7 +752,7 @@ class NavalMap {
     $('sandbox-controller').onclick=()=>{const team=this.match.team(this.sandboxOwnerId);this.match.setSandboxController(team.id,team.controller==='human'?'ai':'human');this.renderSandboxEditor();this.persist();};
     $<HTMLInputElement>('sandbox-search').oninput=()=>this.renderSandboxEditor();
     $<HTMLSelectElement>('sandbox-selected-owner').onchange=()=>{if(!this.sandboxUnitId)return;try{const owner=Number($<HTMLSelectElement>('sandbox-selected-owner').value);this.match.assignSandboxOwner(this.sandboxUnitId,owner);this.sandboxOwnerId=owner;this.ships.syncUnits(this.match.units);this.renderSandboxEditor();this.renderSelection();this.persist();this.dirty=true;}catch(error){this.notify(error instanceof Error?error.message:String(error));}};
-    $('sandbox-remove-selected').onclick=()=>{if(!this.sandboxUnitId)return;const id=this.sandboxUnitId;try{this.match.removeSandboxShip(id);this.sandboxUnitId=undefined;this.selected=undefined;this.chosen.clear();this.ships.syncUnits(this.match.units);this.renderSandboxEditor();this.renderSelection();this.persist();this.dirty=true;}catch(error){this.notify(error instanceof Error?error.message:String(error));}};
+    $('sandbox-remove-selected').onclick=()=>{if(this.sandboxUnitId)this.removeSandboxShip(this.sandboxUnitId);};
     $('sandbox-start').onclick=()=>this.startSandboxGame();
     $('sandbox-exit').onclick=()=>this.showMainMenu();
     $('open-campaign').onclick=()=>this.openCampaign();
@@ -815,7 +824,7 @@ class NavalMap {
     window.addEventListener('pagehide', () => { if (this.ready) this.persist(); });
   }
   private updateRoute(): void {
-    if(this.match.sandboxEditing){this.routePreview=undefined;this.routeCacheKey=this.previewTargetKey='sandbox';$('route-info').textContent='沙盒编辑 · 左键放置或选择舰船，右键移除';return;}
+    if(this.match.sandboxEditing){this.routePreview=undefined;this.routeCacheKey=this.previewTargetKey='sandbox';$('route-info').textContent='沙盒编辑 · 点击空海格放置，拖框选择，右键移除';return;}
     if(this.match.result){this.routePreview=undefined;$('route-info').textContent='战局已结束 · 可查看海图或建立新战局';return;}
     if(this.match.active.controller==='ai'){this.routePreview=undefined;$('route-info').textContent='AI正在侦察、抢占港口并执行舰队命令';return;}
     if(this.selectedPort){this.routePreview=undefined;this.routeCacheKey=this.previewTargetKey='port';$('route-info').textContent='已选港口 · 在右侧管理占领、维修和增援 · 点击舰船或飞机继续指挥';return;}
@@ -855,16 +864,18 @@ class NavalMap {
     const rect = $('map-viewport').getBoundingClientRect(); return { x: event.clientX - rect.left, y: event.clientY - rect.top };
   }
   private boxSelect(start: Point, end: Point, additive: boolean): void {
+    const sandboxEditing=this.match.sandboxEditing;
     this.selectedPort=undefined;
     if (!additive) { this.chosen.clear(); this.chosenAir.clear(); }
-    for (const unit of this.units.filter(u=>u.ownerId===this.match.active.id && u.status!=='sunk')) {
+    for (const unit of this.units.filter(u=>(sandboxEditing||u.ownerId===this.match.active.id) && u.status!=='sunk')) {
       const point=this.camera.worldToScreen(this.ships.position(unit.instanceId)); point.y -= this.camera.zoom>=.58 ? 35*this.camera.zoom : 0;
       if (inSelectionBox(point,start,end)) this.chosen.add(unit.instanceId);
     }
-    for (const s of this.match.aviation.squadrons.filter(s=>s.ownerId===this.match.active.id)) if (inSelectionBox(this.camera.worldToScreen(aircraftPosition(s)),start,end)) this.chosenAir.add(s.id);
+    for (const s of this.match.aviation.squadrons.filter(s=>sandboxEditing||s.ownerId===this.match.active.id)) if (inSelectionBox(this.camera.worldToScreen(aircraftPosition(s)),start,end)) this.chosenAir.add(s.id);
     this.selected=[...this.chosen][0];this.selectedAir=this.selected ? undefined : [...this.chosenAir][0];this.selectedWeapon=undefined;this.moveMode=false;this.routeCacheKey='';
+    if(sandboxEditing)this.sandboxUnitId=this.selected;
     if(this.chosen.size||this.chosenAir.size)this.setUnitPanel(true);
-    this.renderSelection();this.renderSelectionCount();this.renderAirControls();this.renderTurn();this.dirty=true;
+    this.renderSelection();this.renderSelectionCount();this.renderAirControls();this.renderTurn();if(sandboxEditing)this.renderSandboxEditor();this.dirty=true;
   }
   private endDrag(): void {
     const canvas=this.app.view as HTMLCanvasElement;
@@ -913,7 +924,12 @@ class NavalMap {
     canvas.addEventListener('pointerup', event => {
       if (!this.drag || this.drag.id !== event.pointerId) return;
       const point = this.localPoint(event);
-      if(this.match.sandboxEditing){this.handleSandboxEditPointer(point,event.button);this.endDrag();return;}
+      if(this.match.sandboxEditing){
+        const drag=this.drag;
+        if(drag.mode==='pan'){this.endDrag();return;}
+        if(drag.moved){if(event.button===0&&drag.mode==='box')this.boxSelect(drag.start,point,drag.additive);this.endDrag();return;}
+        this.handleSandboxEditPointer(point,event.button);this.endDrag();return;
+      }
       if(this.match.rulesetId==='naval-v2'&&this.match.phase==='aviation'&&event.button===2){
         const route=this.plannedArrowAt(point);
         if(route){this.command(()=>{this.match.cancelMove(route);return[];},'已取消这条航线');this.endDrag();return;}
@@ -1068,9 +1084,9 @@ class NavalMap {
     this.updateRoute(); this.drawGrid(); this.minimap.draw(this.fog.overviewCanvas,u=>this.match.unitVisible(u,viewerId),ports,this.selectedPort);
     $('fog-info').textContent=this.match.sandboxEditing?`沙盒编辑 · 全图可见 · 已放置 ${this.units.length} 艘舰船`:`战争迷雾 · ${this.match.rulesetId==='naval-v2'?'舰船按舰种2–4格':`舰船${SHIP_VISION}格`} / 飞机${AIR_VISION}格 · 已探索 ${(this.match.fog.field(viewerId).known.size/(this.world.width*this.world.height)*100).toFixed(1)}%`;
     $('zoom-level').textContent = `${Math.round(camera.zoom * 100)}%`;
-    $('map-mode').textContent = this.match.sandboxEditing?'沙盒编辑 · 选择舰船后点击海格放置':this.match.sandboxMode?'沙盒对战 · 自由布阵':camera.zoom < .36 ? '战略总览 · 全海域' : camera.zoom < .58 ? '海域视图 · 舰种标记' : '战术视图 · 舰船详情';
+    $('map-mode').textContent = this.match.sandboxEditing?'沙盒编辑 · 点击空海格放置 · 拖框选择':this.match.sandboxMode?'沙盒对战 · 自由布阵':camera.zoom < .36 ? '战略总览 · 全海域' : camera.zoom < .58 ? '海域视图 · 舰种标记' : '战术视图 · 舰船详情';
     $('cell-info').textContent = this.hovered && this.world.contains(this.hovered)
-      ? `${this.match.isExplored(viewerId,this.hovered)?TERRAIN_LABELS[this.world.at(this.hovered)!]:'未探索海域'}${!this.match.sandboxEditing&&this.match.isExplored(viewerId,this.hovered)&&!this.match.canSee(viewerId,this.hovered)?' · 视野外':''} · ${this.hovered.col}, ${this.hovered.row}` : this.match.sandboxEditing?'左键放置 / 选择舰船 · 右键移除 · 中键 / WASD平移':'左键框选 · 右键移动 · 中键 / WASD平移';
+      ? `${this.match.isExplored(viewerId,this.hovered)?TERRAIN_LABELS[this.world.at(this.hovered)!]:'未探索海域'}${!this.match.sandboxEditing&&this.match.isExplored(viewerId,this.hovered)&&!this.match.canSee(viewerId,this.hovered)?' · 视野外':''} · ${this.hovered.col}, ${this.hovered.row}` : this.match.sandboxEditing?'点击空海格放置 · 点击舰船选择 · 拖框多选 · 右键移除 · 中键 / WASD平移':'左键框选 · 右键移动 · 中键 / WASD平移';
     this.dirty = false;
   }
   private tick(): void {
