@@ -31,8 +31,8 @@ export async function loadWatercolorTextures():Promise<void>{
   const landDetailNames=['dense-forest','sparse-grove','rocky-grassland','meadow-trail','forest-boulders','woodland-thicket'];
   const landmarkNames=['airfield','seaplane-station','naval-yard','field-headquarters'];
   const [ocean,land,mountains,harbors,coasts,landDetails,campaignLandmarks]=await Promise.all([
-    loadTile('assets/terrain/watercolor-ocean.png'),
-    loadTile('assets/terrain/watercolor-land.png'),
+    loadTile('assets/terrain/watercolor-ocean.jpg'),
+    loadTile('assets/terrain/watercolor-land.jpg'),
     directional('mountain'),
     directional('harbor'),
     directional('coast'),
