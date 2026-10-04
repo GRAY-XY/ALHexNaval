@@ -1,5 +1,5 @@
 .front-end{position:fixed;inset:0;z-index:100;overflow:hidden;color:#173c48;background:#75cbd4 url('../assets/terrain/watercolor-ocean.jpg') center/620px repeat}
-.front-end[hidden],.front-page[hidden]{display:none}
+.front-end[hidden],.front-page[hidden],.menu-command[hidden]{display:none}
 .front-end::before{content:"";position:absolute;inset:-8% 43% -14% -14%;background:linear-gradient(100deg,rgba(230,225,164,.86),rgba(183,201,125,.82) 62%,rgba(250,243,202,.9) 63%,rgba(255,255,255,.92) 65%,rgba(60,190,204,.35) 67%,transparent 71%),url('../assets/terrain/watercolor-land.jpg') center/520px repeat;clip-path:polygon(0 0,82% 0,74% 12%,86% 24%,70% 38%,80% 50%,66% 64%,78% 78%,61% 100%,0 100%);filter:saturate(.88);opacity:.97}
 .front-end::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 70% 46%,transparent 0 24%,rgba(14,60,75,.15) 73%,rgba(8,37,51,.34) 100%),linear-gradient(90deg,rgba(250,241,210,.3),transparent 55%);box-shadow:inset 0 0 130px rgba(8,41,53,.35)}
 .front-end-wash{position:absolute;inset:0;opacity:.2;background-image:linear-gradient(30deg,transparent 49.6%,rgba(245,255,249,.34) 50%,transparent 50.4%),linear-gradient(150deg,transparent 49.6%,rgba(245,255,249,.28) 50%,transparent 50.4%);background-size:92px 54px;mask-image:linear-gradient(90deg,transparent 38%,#000 65%)}
