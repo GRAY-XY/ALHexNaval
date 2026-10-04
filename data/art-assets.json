@@ -7,14 +7,14 @@
   "landDetailManifest": "data/land-detail-art.json",
   "assets": [
     {
-      "path": "assets/terrain/watercolor-ocean.png",
-      "sha256": "c84c32504abfb037f003a1257df6a5b269e21a3a0851ee90640c07a127206e9c",
+      "path": "assets/terrain/watercolor-ocean.jpg",
+      "sha256": "938f472fdcb918324ac9877202599f8780bd1d85018437c697145865765cbb45",
       "purpose": "Watercolor ocean wash applied to deep sea, sea, and shallow-water hexes",
       "promptSummary": "Seamless top-down turquoise watercolor ocean wash on cold-press paper; no objects, coast, grid, text, or watermark"
     },
     {
-      "path": "assets/terrain/watercolor-land.png",
-      "sha256": "ef6a063a03804c8126a26dd278896eec0a3569cbcbb357dbcbabd9629d7ddd36",
+      "path": "assets/terrain/watercolor-land.jpg",
+      "sha256": "58038653a45e172a1fae5731bd6098ee84f36fb9e086c08de89cc0953209a5fd",
       "purpose": "Watercolor ground wash applied to island hexes",
       "promptSummary": "Seamless top-down sage and olive watercolor island ground on cold-press paper; no objects, coast, grid, text, or watermark"
     },
